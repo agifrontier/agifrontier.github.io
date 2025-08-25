@@ -6,8 +6,17 @@
 
     <title>{{ page.title | default: "Daily AI Paper" }}</title>
 
-    <!-- 1. Add a modern CSS for styling -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    <!-- 1. Switch to GitHub Markdown Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css">
+    <style>
+        body {
+            box-sizing: border-box;
+            min-width: 200px;
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 45px;
+        }
+    </style>
 
     <!-- 2. Add MathJax for LaTeX formula rendering -->
     <script>
@@ -28,9 +37,9 @@
 </head>
 <body>
 
-    <main>
+    <article class="markdown-body">
         {{ content }}
-    </main>
+    </article>
 
 </body>
 </html>
