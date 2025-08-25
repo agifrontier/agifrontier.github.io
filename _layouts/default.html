@@ -2,12 +2,35 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>{{ page.title | default: "Daily AI Paper" }}</title>
-    <!-- 在这里可以添加 CSS 样式链接 -->
+
+    <!-- 1. Add a modern CSS for styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+
+    <!-- 2. Add MathJax for LaTeX formula rendering -->
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [[', '], ['\(', '\)']],
+            displayMath: [['$', '$'], ['\[', '\]']],
+            processEscapes: true,
+            processEnvironments: true
+          },
+          options: {
+            skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+          }
+        };
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+
 </head>
 <body>
-    
-    {{ content }}
+
+    <main>
+        {{ content }}
+    </main>
 
 </body>
 </html>
