@@ -18,20 +18,20 @@
         }
     </style>
 
-    <!-- 2. Add MathJax for LaTeX formula rendering -->
+    <!-- 2. Add MathJax for LaTeX formula rendering (Correct Configuration) -->
     <script>
-        MathJax = {
-          tex: {
-            inlineMath: [[', '], ['\(', '\)']],
-            displayMath: [['$', '$'], ['\[', '\]']],
-            processEscapes: true,
-            processEnvironments: true
-          },
-          options: {
-            skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-          }
-        };
-      </script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$','$'], ['\\(','\\)']], // 定义行内公式的分隔符
+          displayMath: [['$$','$$'], ['\\[','\\]']], // 定义块级公式的分隔符
+          processEscapes: true,
+          processEnvironments: true
+        },
+        options: {
+          skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+        }
+      };
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
 
 </head>
