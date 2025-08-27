@@ -1,4 +1,4 @@
-a--
+---
 layout: default
 title: Attention Is All You Need
 ---
@@ -32,7 +32,7 @@ Transformer 是首个完全基于注意力机制 (attention mechanism) 的序列
 
 Transformer采用经典编码器-解码器结构，但**核心创新点是用堆叠的自注意力与前馈网络完全取代循环与卷积层，并融合多头机制与位置编码。**
 
-<p style="text-align: center;"><img src="/assets/images/1706.03762v7/ModalNet-21.png" alt="模型架构图" width="400" /></p>
+![模型架构图](images/1706.03762v7/ModalNet-21.png)
 
 ### 1. 编码器与解码器（Encoder & Decoder）
 - **编码器**：由6层组成，每层包含两部分：多头自注意力（Self-Attention）+前馈网络（Feed-Forward Network），全部层间都用残差连接与层归一化 (Layer Normalization)，输出全为512维。
@@ -43,7 +43,7 @@ Transformer采用经典编码器-解码器结构，但**核心创新点是用堆
   $$
   \mathrm{Attention}(Q,K,V)=\mathrm{softmax}(\frac{QK^{T}}{\sqrt{d_k}})V
   $$
-- 通过对Query和Key点积后缩放、softmax归一化，获得权重，再加权Value，实现高效注意力聚合。缩放因子 $$\sqrt{d_k}$$ 防止梯度消失/爆炸。
+- 通过对Query和Key点积后缩放、softmax归一化，获得权重，再加权Value，实现高效注意力聚合。缩放因子 $\sqrt{d_k}$ 防止梯度消失/爆炸。
 
 ### 3. 多头注意力（Multi-Head Attention）
 - 并行八个注意力头（$h=8$），每个头分别独立学习不同子空间依赖，最后拼接结果：
@@ -52,8 +52,8 @@ Transformer采用经典编码器-解码器结构，但**核心创新点是用堆
   $$
 - 有效提升模型同时着眼不同语义/结构维度的能力。
 
-![缩放点积及多头注意力图](/assets/images/1706.03762v7/ModalNet-19.png)
-![多头注意力结构图](/assets/images/1706.03762v7/ModalNet-20.png)
+![缩放点积及多头注意力图](images/1706.03762v7/ModalNet-19.png)
+![多头注意力结构图](images/1706.03762v7/ModalNet-20.png)
 
 ### 4. 位置编码（Positional Encoding）
 - 采用正弦/余弦固定式编码，使模型具备捕获序列顺序能力。
@@ -97,11 +97,11 @@ Transformer采用经典编码器-解码器结构，但**核心创新点是用堆
 ## 4. 可解释性示范
 - 多头注意力可聚焦于句法结构、长距离依赖与指代问题，分头学习不同语义关系。
 
-![注意力可视化示例1](/assets/images/1706.03762v7/x1.png)
-![注意力可视化示例2](/assets/images/1706.03762v7/x2.png)
-![注意力可视化示例3](/assets/images/1706.03762v7/x3.png)
-![注意力可视化示例4](/assets/images/1706.03762v7/x4.png)
-![注意力可视化示例5](/assets/images/1706.03762v7/x5.png)
+![注意力可视化示例1](images/1706.03762v7/x1.png)
+![注意力可视化示例2](images/1706.03762v7/x2.png)
+![注意力可视化示例3](images/1706.03762v7/x3.png)
+![注意力可视化示例4](images/1706.03762v7/x4.png)
+![注意力可视化示例5](images/1706.03762v7/x5.png)
 
 ## 总结结论
 Transformer模型通过完全抛弃循环和卷积，创新性地发挥多头自注意力与位置编码的威力，实现对序列数据的高效建模。理论与实验证明其在机器翻译等语言任务上极大提升了表现，并兼具训练效率与结果解释性，为自然语言处理智能体（Agent）领域开辟了全新路径。其高度并行性和广泛适用性预示着注意力机制将在多模态、长序列等更广泛智能体应用中不断取得突破。

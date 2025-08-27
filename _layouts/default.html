@@ -8,6 +8,8 @@
 
     <!-- 1. Switch to GitHub Markdown Style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css">
+
+    <!-- 您的自定义样式 -->
     <style>
         body {
             box-sizing: border-box;
@@ -16,14 +18,36 @@
             margin: 0 auto;
             padding: 45px;
         }
+
+        /* --- 新增的样式规则 --- */
+
+        /*
+         * 规则 1: 让表格本身在页面中居中显示。
+         * 我们通过 .markdown-body table 来选中被GitHub样式影响的表格，
+         * 并使用 margin 的 auto 属性来实现水平居中。
+         */
+        .markdown-body table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /*
+         * 规则 2: 让表格的表头(th)和单元格(td)内容居中。
+         * 这会覆盖掉 github-markdown.css 中默认的左对齐样式。
+         */
+        .markdown-body th,
+        .markdown-body td {
+            text-align: center;
+        }
+
     </style>
 
     <!-- 2. Add MathJax for LaTeX formula rendering (Correct Configuration) -->
     <script>
       MathJax = {
         tex: {
-          inlineMath: [['$','$'], ['\\(','\\)']], // 定义行内公式的分隔符
-          displayMath: [['$$','$$'], ['\\[','\\]']], // 定义块级公式的分隔符
+          inlineMath: [['$','$'], ['\\(','\\)']],
+          displayMath: [['$$','$$'], ['\[','\]']],
           processEscapes: true,
           processEnvironments: true
         },
