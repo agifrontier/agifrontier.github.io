@@ -1,22 +1,8 @@
 kramdown:
   input: GFM
   hard_wrap: false
-
-  # 关键步骤 1: 允许解析 HTML 块内的特殊标记
-  parse_block_html: true
-
-  # 关键步骤 2: 定义一个名为 'nomarkdown' 的特殊扩展
-  # 这会创建一个“保护壳”，让 Kramdown 不会处理壳内的任何 Markdown 语法
-  transpiled_opts:
-    nomarkdown:
-      # 定义保护壳的开始和结束标记
-      start: '$$'
-      stop: '$$'
-      # 定义行内保护壳的开始和结束标记
-      inline_start: '$'
-      inline_stop: '$'
-      # Passthrough 意味着完全不处理内部内容，原样输出
-      passthrough: true
+  math_engine: mathjax
+  syntax_highlighter: rouge
 
 collections:
   tutorials:

@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Paper Study</title>
 
-    <title>{{ page.title | default: "Daily AI Paper" }}</title>
-
-    <!-- 1. Switch to GitHub Markdown Style -->
+    <!-- 1. GitHub Markdown 样式 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.1.0/github-markdown.min.css">
 
-    <!-- 您的自定义样式 -->
+    <!-- 2. 自定义样式 -->
     <style>
         body {
             box-sizing: border-box;
@@ -18,36 +17,28 @@
             margin: 0 auto;
             padding: 45px;
         }
-
-        /* --- 新增的样式规则 --- */
-
-        /*
-         * 规则 1: 让表格本身在页面中居中显示。
-         * 我们通过 .markdown-body table 来选中被GitHub样式影响的表格，
-         * 并使用 margin 的 auto 属性来实现水平居中。
-         */
+        @media (max-width: 767px) {
+            body {
+                padding: 15px;
+            }
+        }
         .markdown-body table {
             margin-left: auto;
             margin-right: auto;
         }
-
-        /*
-         * 规则 2: 让表格的表头(th)和单元格(td)内容居中。
-         * 这会覆盖掉 github-markdown.css 中默认的左对齐样式。
-         */
         .markdown-body th,
         .markdown-body td {
             text-align: center;
         }
-
     </style>
 
-    <!-- 2. Add MathJax for LaTeX formula rendering (Correct Configuration) -->
+    <!-- 3. MathJax 配置 -->
     <script>
       MathJax = {
         tex: {
+          // 定义行内和块级公式的分隔符
           inlineMath: [['$','$'], ['\\(','\\)']],
-          displayMath: [['$$','$$'], ['\[','\]']],
+          displayMath: [['$$','$$'], ['\\[','\\]']],
           processEscapes: true,
           processEnvironments: true
         },
@@ -56,12 +47,14 @@
         }
       };
     </script>
+    <!-- 加载 MathJax 库 -->
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
 
 </head>
 <body>
 
     <article class="markdown-body">
+        <!-- Jekyll 会将 Markdown 文件的内容渲染到这里 -->
         {{ content }}
     </article>
 
