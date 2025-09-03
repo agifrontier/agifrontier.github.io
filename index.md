@@ -9,11 +9,14 @@ title: AI前沿分享主页
 
 ## 最新文章列表
 
+<h2>文章列表</h2>
+
 <ul>
-  {% for post in site.posts %}
+  {% for tutorial in site.tutorials %}
     <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      - <small>{{ post.date | date: "%Y年%m月%d日" }}</small>
+      <h3>
+        <a href="{{ tutorial.url | relative_url }}">{{ tutorial.title }}</a>
+      </h3>
     </li>
   {% endfor %}
 </ul>
