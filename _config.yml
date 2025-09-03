@@ -8,3 +8,8 @@ collections:
   tutorials:
     output: true
     permalink: /tutorials/:path/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
