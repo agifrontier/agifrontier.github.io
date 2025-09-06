@@ -1,0 +1,65 @@
+---
+layout: default
+title: "Tutorials"
+---
+
+<h1>{{ page.title }}</h1>
+
+{% assign docs_in_dir = site.tutorials %}
+{% assign static_in_dir = site.static_files | where_exp: "item", "item.path contains '/_tutorials/'" %}
+{% assign all_items = docs_in_dir | concat: static_in_dir %}
+
+{% comment %}
+  重要修改：将排序键改为 'last_modified_at'，这是插件提供的属性。
+{% endcomment %}
+{% assign sorted_items = all_items | sort: 'last_modified_at' | reverse %}
+
+<table>
+  <thead>
+    <tr>
+      <th>名称</th>
+      <th>最后修改时间</th>
+      <th>类型</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in sorted_items %}
+      <tr>
+        <td>
+          <a href="{{ site.baseurl }}{{ item.url | default: item.path }}">{{ item.title | default: item.name }}</a>
+        </td>
+        <td>
+          {% comment %}
+            重要修改：显示 item.last_modified_at
+          {% endcomment %}
+          {{ item.last_modified_at | date: "%Y-%m-%d %H:%M:%S" }}
+        </td>
+        <td>
+          {% if item.collection == "tutorials" %}
+            文档
+          {% else %}
+            静态文件
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+<style>
+  /* 您可以保留或自定义这些样式 */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+</style>

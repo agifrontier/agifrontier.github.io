@@ -11,8 +11,9 @@ title: AI前沿分享主页
 
 <h2>文章列表</h2>
 
+{% assign sorted_tutorials = site.tutorials | sort: 'last_modified_at' | reverse %}
 <ul>
-  {% for tutorial in site.tutorials %}
+  {% for tutorial in sorted_tutorials %}
     <li>
       <h3>
         <a href="{{ tutorial.url | relative_url }}">{{ tutorial.title }}</a>
