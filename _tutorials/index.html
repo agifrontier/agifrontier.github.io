@@ -5,61 +5,54 @@ title: "Tutorials"
 
 <h1>{{ page.title }}</h1>
 
-{% assign docs_in_dir = site.tutorials %}
-{% assign static_in_dir = site.static_files | where_exp: "item", "item.path contains '/_tutorials/'" %}
-{% assign all_items = docs_in_dir | concat: static_in_dir %}
 
-{% comment %}
-  重要修改：将排序键改为 'last_modified_at'，这是插件提供的属性。
-{% endcomment %}
-{% assign sorted_items = all_items | sort: 'last_modified_at' | reverse %}
+
+{% assign items_with_date = site.tutorials | where_exp: "item", "item.last_modified_at" %}
+{% assign sort_helper_array = "" | split: "," %}
+
+{% for item in items_with_date %}
+  {% if item.name != 'index.html' %}
+    {% capture sort_key %}{{ item.last_modified_at }}{% endcapture %}
+    {% capture new_item_string %}{{ sort_key | strip }}|{{ item.path }}{% endcapture %}
+    {% assign sort_helper_array = sort_helper_array | push: new_item_string %}
+  {% endif %}
+{% endfor %}
+
+{% assign sorted_array = sort_helper_array | sort | reverse %}
 
 <table>
   <thead>
     <tr>
       <th>名称</th>
       <th>最后修改时间</th>
-      <th>类型</th>
     </tr>
   </thead>
   <tbody>
-    {% for item in sorted_items %}
-      <tr>
-        <td>
-          <a href="{{ site.baseurl }}{{ item.url | default: item.path }}">{{ item.title | default: item.name }}</a>
-        </td>
-        <td>
-          {% comment %}
-            重要修改：显示 item.last_modified_at
-          {% endcomment %}
-          {{ item.last_modified_at | date: "%Y-%m-%d %H:%M:%S" }}
-        </td>
-        <td>
-          {% if item.collection == "tutorials" %}
-            文档
-          {% else %}
-            静态文件
-          {% endif %}
-        </td>
-      </tr>
+    {% for sort_string in sorted_array %}
+      {% assign parts = sort_string | split: "|" %}
+      {% assign item_path = parts[1] %}
+      {% assign item = site.documents | where: "path", item_path | first %}
+
+      {% if item %}
+        <tr>
+          <td>
+            <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+          </td>
+          <td>
+            {{ item.last_modified_at | date: "%Y-%m-%d %H:%M:%S" }}
+          </td>
+        </tr>
+      {% endif %}
     {% endfor %}
   </tbody>
 </table>
 
-
+<!-- 样式代码保持不变 -->
 <style>
-  /* 您可以保留或自定义这些样式 */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-  th {
-    background-color: #f2f2f2;
-  }
+  table { width: 100%; border-collapse: collapse; margin-top: 20px; border-spacing: 0; }
+  th, td { border: 0; border-bottom: 1px solid #e0e0e0; padding: 12px 15px; text-align: left; }
+  th { background-color: #f8f8f8; font-weight: 600; }
+  tr:hover { background-color: #f5f5f5; }
+  a { color: #007bff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
 </style>
