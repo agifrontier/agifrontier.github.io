@@ -31,7 +31,7 @@ title: "RiskPO: Risk-based Policy Optimization via Verifiable Reward for LLM Pos
 # 本文方法
 本文提出了**基于风险的策略优化 (Risk-based Policy Optimization, RiskPO)** 方法，其核心思想是用风险敏感的目标函数替代传统的均值目标，从而引导模型关注并解决更具挑战性的问题。
 
-<img src="/images/2510.00911/x2.jpg" alt="RiskPO框架" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2510.00911v1/x2.jpg" alt="RiskPO框架" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 ### 创新点
 RiskPO的核心创新在于引入了**混合风险价值 (Mixed Value-at-Risk, MVaR)** 目标，并结合了**问题捆绑 (Bundling)** 机制。
@@ -94,7 +94,7 @@ $${% endraw %}
 $${% endraw %}
 
 
-<img src="/images/2510.00911/x3.jpg" alt="对数概率与奖励分位水平的关系" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.00911v1/x3.jpg" alt="对数概率与奖励分位水平的关系" style="width:85%; max-width:450px; margin:auto; display:block;">
 这意味着使用MVaR目标的梯度更新步骤对熵的负面影响更小，从而能够有效减缓熵的下降速度，保持模型的探索能力。
 
 # 实验结论
@@ -130,16 +130,16 @@ $${% endraw %}
 ### 扩展推理边界
 实验比较了不同$k$值下的Pass@k指标。结果显示，随着$k$的增大，RiskPO相较于GRPO的优势愈发明显。这表明RiskPO不仅是提升了对已知解的采样效率（例如将Pass@16提升至Pass@1），更是学会了解决那些基线方法即使在多次尝试下也无法解决的新问题，从而真正扩展了模型的基础推理能力边界。
 
-<img src="/images/2510.00911/x4.jpg" alt="AMC和MATH500数据集上的Pass@k学习曲线" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2510.00911/x5.jpg" alt="AMC和MATH500数据集上的Pass@k学习曲线" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.00911v1/x4.jpg" alt="AMC和MATH500数据集上的Pass@k学习曲线" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.00911v1/x5.jpg" alt="AMC和MATH500数据集上的Pass@k学习曲线" style="width:85%; max-width:450px; margin:auto; display:block;">
 ... (其他Pass@k曲线图)
-<img src="/images/2510.00911/x9.jpg" alt="AMC和MATH500数据集上的Pass@k学习曲线" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.00911v1/x9.jpg" alt="AMC和MATH500数据集上的Pass@k学习曲线" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 缓解熵坍塌
 训练过程中的动态曲线验证了理论分析。如下图所示，与GRPO相比，RiskPO在整个训练过程中维持了显著更高的策略熵，有效避免了过早的熵坍塌。同时，尽管平均奖励（Mean reward）曲线相近，但RiskPO在风险度量指标上表现更优，说明其在解决困难问题上取得了更好的进展。
 
-<img src="/images/2510.00911/x10.jpg" alt="训练过程中的熵变化" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2510.00911/x11.jpg" alt="训练过程中的平均奖励变化" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.00911v1/x10.jpg" alt="训练过程中的熵变化" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.00911v1/x11.jpg" alt="训练过程中的平均奖励变化" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 总结
 实验结果有力地证明，RiskPO通过其创新的风险敏感目标和问题捆绑机制，能够有效缓解熵坍塌，促进模型探索，并最终在多个具有挑战性的推理任务上取得超越现有方法的性能。这表明，基于风险的优化是增强LLM推理能力的一个严谨且有效的范式。

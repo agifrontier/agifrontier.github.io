@@ -27,7 +27,7 @@ title: "Think Right: Learning to Mitigate Under-Over Thinking via Adaptive, Atte
 
 这导致了普遍存在的“适应性不足”问题，即模型在困难问题上因推理步骤不足而导致“思考不足”，准确率下降；而在简单问题上则会进行过多不必要的推理，造成“过度思考”，浪费了大量的计算资源和token。
 
-<img src="/images/2510.01581/x1.jpg" alt="图1：过度思考与思考不足的权衡" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01581v1/x1.jpg" alt="图1：过度思考与思考不足的权衡" style="width:90%; max-width:700px; margin:auto; display:block;">
 > 在简单问题上过度思考会浪费token，在困难问题上思考不足则会牺牲准确率。TRAC通过基于注意力的压缩来自适应问题难度，在提升准确率的同时实现了智能的资源分配。
 
 以往工作主要关注解决“过度思考”以提升效率，例如通过监督微调压缩的思维链、在推理时提前停止，或使用带长度惩罚的RL方法。这些方法通常以牺牲模型性能为代价来换取效率。
@@ -37,7 +37,7 @@ title: "Think Right: Learning to Mitigate Under-Over Thinking via Adaptive, Atte
 # 本文方法
 本文提出了 TRAC (Think Right with Adaptive, aTtentive Compression) 方法，旨在缓解模型的适应性不足问题。其核心挑战在于如何高效识别重要性低的token，并使压缩过程能够自适应于任务难度。TRAC通过一个基于注意力的压缩模块来实现这一目标，该模块根据评估出的任务难度来校准压缩程度，从而在保留核心信息的同时修剪不必要的推理步骤。
 
-<img src="/images/2510.01581/x2.jpg" alt="图2：TRAC方法概览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01581v1/x2.jpg" alt="图2：TRAC方法概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 > TRAC流程：首先，模型生成N个rollouts，并根据其通过率估计问题难度。接着，将推理过程反馈给模型，计算每个推理token的注意力分数。在注意力压缩步骤中，移除分数较低的步骤，移除程度由问题难度决定（越简单的问题压缩越狠）。最后，使用压缩后的推理轨迹计算正确性和长度奖励，并用这些奖励更新策略。
 
 ### 问题定义

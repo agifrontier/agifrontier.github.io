@@ -40,20 +40,20 @@ title: "Quagmires in SFT-RL Post-Training: When High SFT Scores Mislead and What
 
 如下图所示，SFT分数与RL后的最终性能之间的线性相关性（$R^{2}=0.43$）较弱，说明SFT分数只能解释最终性能约43%的变化，存在明显的预测鸿沟。
 
-<img src="/images/2510.01624/mistral-epoch.jpg" alt="图1：Mistral模型在不同SFT训练轮次下的SFT后（Pre-RL）与RL后（Post-RL）性能对比。SFT分数持续上升，但RL后性能在2轮后达到峰值并下降。" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01624v1/mistral-epoch.jpg" alt="图1：Mistral模型在不同SFT训练轮次下的SFT后（Pre-RL）与RL后（Post-RL）性能对比。SFT分数持续上升，但RL后性能在2轮后达到峰值并下降。" style="width:85%; max-width:600px; margin:auto; display:block;">
 
-<img src="/images/2510.01624/qwen3-epoch.jpg" alt="图2：Qwen3模型在不同SFT训练轮次下的性能对比，也展现出类似趋势。" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01624v1/qwen3-epoch.jpg" alt="图2：Qwen3模型在不同SFT训练轮次下的性能对比，也展现出类似趋势。" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 实例层面场景
 在这种场景下，训练流程固定，但SFT数据集不同。这对应了SFT数据筛选和构建的挑战。实验发现，某些数据选择策略（如选择解题步骤更短的“简单”样本）虽然能让模型在SFT阶段快速获得高分，但由于未能学习到更复杂的推理能力，其在RL后的最终表现反而更差。
 
 如下图所示，训练模型使用的数据不同（例如，仅使用短答案 vs. 随机采样），SFT分数高的模型（蓝色点）在RL后的性能可能远不如SFT分数较低的模型（橙色点）。
 
-<img src="/images/2510.01624/mistral-data-x3-2.jpg" alt="图3：Mistral模型在不同类型数据上的SFT与RL性能对比，显示高SFT分数不等于高RL后性能。" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01624v1/mistral-data-x3-2.jpg" alt="图3：Mistral模型在不同类型数据上的SFT与RL性能对比，显示高SFT分数不等于高RL后性能。" style="width:90%; max-width:700px; margin:auto; display:block;">
 
-<img src="/images/2510.01624/mistral-data.jpg" alt="图4：Mistral模型在“随机采样vs短答案”数据上的性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01624v1/mistral-data.jpg" alt="图4：Mistral模型在“随机采样vs短答案”数据上的性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
-<img src="/images/2510.01624/qwen3-data.jpg" alt="图5：Qwen3模型在不同数据上的性能对比" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.01624v1/qwen3-data.jpg" alt="图5：Qwen3模型在不同数据上的性能对比" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 提出的新预测指标
 为了解决SFT指标的误导性问题，本文提出了两个新的替代指标，它们能更准确地预测RL后的模型性能。
@@ -61,7 +61,7 @@ title: "Quagmires in SFT-RL Post-Training: When High SFT Scores Mislead and What
 #### 验证集上的泛化损失
 本文发现，在SFT训练过程中，随着模型在训练集上性能的提升（过拟合开始），其在留出验证集上的泛化损失会随之上升。这个泛化损失的上升趋势与后续RL阶段的性能增益呈现强烈的负相关关系。因此，通过监控泛化损失，可以在不进行昂贵的RL训练的情况下，提前判断SFT模型是否过拟合，并筛选出那些最有可能在RL后表现优异的模型。在实践中，可以排除那些SFT性能较低且泛化损失较高的模型。
 
-<img src="/images/2510.01624/gen_loss_teaser.jpg" alt="图6：泛化损失与RL后性能的关系。随着SFT训练加深，SFT性能（蓝线）提升，但泛化损失（橙线）先降后升，而RL后性能（绿线）在泛化损失最低点附近达到峰值。" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01624v1/gen_loss_teaser.jpg" alt="图6：泛化损失与RL后性能的关系。随着SFT训练加深，SFT性能（蓝线）提升，但泛化损失（橙线）先降后升，而RL后性能（绿线）在泛化损失最低点附近达到峰值。" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### Pass@k 在大 k 值下的准确率
 RLVR的目标是最大化Pass@1准确率，而其训练过程（如GRPO算法）的有效性与模型在SFT阶段已具备的“探索”能力强相关。本文认为，相比于仅看一次尝试能否成功的Pass@1，评估模型在多次（例如$k$次）尝试中能否至少成功一次的Pass@k指标，尤其是在$k$值较大时，能更好地反映模型的内在问题解决能力和潜力。一个高Pass@large k的模型意味着它已经有能力生成正确的解题路径，只是需要RL来帮助它稳定地将这种能力转化为更高的Pass@1性能。

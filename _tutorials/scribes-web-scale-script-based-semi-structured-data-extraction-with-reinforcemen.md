@@ -34,7 +34,7 @@ title: "SCRIBES: Web-Scale Script-Based Semi-Structured Data Extraction with Rei
 # 本文方法
 本文提出了SCRIBES框架，一个通过强化学习（Reinforcement Learning, RL）训练模型生成通用提取脚本的创新方法。
 
-<img src="/images/2510.01832/x1.jpg" alt="图1：SCRIBES框架概述" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01832v1/x1.jpg" alt="图1：SCRIBES框架概述" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 创新点
 SCRIBES的核心创新在于其独特的强化学习范式，它不依赖于对脚本本身的直接标注，而是利用网站内网页的结构相似性作为一种天然的监督信号。
@@ -54,7 +54,7 @@ $${% endraw %}
 
 在这个公式中，$r\_{\text{self}}(p)$ 是脚本在源页面上的表现得分，$r\_{\text{cross}}(p,q)$ 是其在同组其他页面上的表现得分。由于交叉得分占据了奖励的大部分权重，模型被强力引导去生成能够泛化到未见页面的脚本。
 
-<img src="/images/2510.01832/x2.jpg" alt="图2：HTML去重（Dedup）示例" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01832v1/x2.jpg" alt="图2：HTML去重（Dedup）示例" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 预处理：HTML去重
 为了处理LLM的上下文窗口限制，本文提出了一种HTML去重 (Dedup) 方法。它能将HTML中的重复结构性元素（如表格行）折叠，大幅缩减输入Token数量，实验证明这对模型性能有显著提升。
@@ -62,7 +62,7 @@ $${% endraw %}
 ### 从无标签数据中学习
 由于高质量的标注数据稀少，SCRIBES设计了一个巧妙的迭代训练流程，以利用来自野外（in-the-wild）的CommonCrawl（简称CC）无标签数据。
 
-<img src="/images/2510.01832/x3.jpg" alt="图3：利用CommonCrawl数据的训练流程" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01832v1/x3.jpg" alt="图3：利用CommonCrawl数据的训练流程" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 该流程分为几个步骤：
 1.  **数据筛选**: 从CC数据中筛选出包含半结构化内容的英文网页，并按域名分组。
@@ -96,7 +96,7 @@ SCRIBES在保持高质量的同时，显著提升了资源效率。在一个包�
 *   **野外数据训练**: 在高质量标注数据上预训练后，再利用CommonCrawl的野外数据进行迭代训练，能使模型性能进一步提升（Q-32B模型提升约5%）。研究还发现，优先训练“失败案例”子集的策略比在所有CC数据上训练效果更好。
 
 ### 错误分析
-<img src="/images/2510.01832/error_analysis_6.jpg" alt="图4：错误分析" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01832v1/error_analysis_6.jpg" alt="图4：错误分析" style="width:85%; max-width:600px; margin:auto; display:block;">
 模型在处理结构更复杂（HTML代码与纯文本长度比更高）的页面时性能下降。从页面类型来看，模型处理“水平表格” (Horizontal Tables) 的效果最好，其次是“属性-值对” (Attribute–Value Pairs)，而对“自由格式” (Free-Form) 页面的处理效果最差。
 
 ### 下游应用：问答任务

@@ -23,7 +23,7 @@ title: "Enhancing Large Language Model Reasoning with Reward Models: An Analytic
 
 因此，奖励模型（RMs）应运而生，作为真实世界评估的学习代理，为 LLM 生成的内容提供可扩展、自动化的反馈。与 VRM 不同，RM 既能应用于没有参考答案的新问题，也能评估没有确定性解的领域。本文对当代 RM 进行了系统性综述，重点关注其在增强 LLM 推理能力方面的贡献。
 
-<img src="/images/2510.01925/main.jpg" alt="主要应用概览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01925v1/main.jpg" alt="主要应用概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 # 奖励模型的基础
 奖励模型（RM）是一个参数化函数 $$$$R_{\theta}:\mathcal{X}\rightarrow\mathbb{R}$$$$，它将问题陈述 $p$、推理步骤 $\tau$ 等输入 $\mathcal{X}$ 映射到一个标量奖励值。RM 旨在评估 LLM 生成的推理轨迹 $\tau$ 的质量。

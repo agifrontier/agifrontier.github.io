@@ -36,7 +36,7 @@ title: "BroRL: Scaling Reinforcement Learning via Broadened Exploration"
 ## 理论分析：质量平衡方程
 本文的理论核心是基于一个简化的单步 RLVR 更新模型，通过质量平衡方程来分析正确Token的总概率质量 $$$Q\_{\mathrm{pos}}$$$ 的变化 $$$\Delta Q\_{\mathrm{pos}}$$$。
 
-<img src="/images/2510.01180/x2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01180v1/x2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 分析得出的核心方程为：
 
@@ -62,7 +62,7 @@ $${% endraw %}
 2.  **克服知识萎缩**：大的 $$$N$$$ 保证了对解空间的充分探索，使得模型在学习新知识时，不会忘记或损害已有的正确知识（即消除了知识萎缩 phenomenon of knowledge shrinkage）。
 3.  **计算与数据效率**：在实践中，BroRL 在相同的训练时间内，通过大 $$$N$$$ 的设计实现了更高的计算效率。它在算法层面减少了动态采样过程中的样本丢弃率，并在硬件层面将计算从内存密集型转化为计算密集型，从而将训练吞吐量提升了近一倍。
 
-<img src="/images/2510.01180/x1.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.01180v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 BroRL 建立在 ProRLv2 框架之上，采用 PPO 算法，但将每个prompt的rollout数量 $$$N$$$ 从16大幅提升至512。为适应增大的有效批次大小，学习率也根据批次大小的平方根进行了相应调整，以维持训练稳定。
 
@@ -71,7 +71,7 @@ BroRL 建立在 ProRLv2 框架之上，采用 PPO 算法，但将每个prompt的
 ## 仿真实验
 为验证理论分析的正确性，本文首先构建了一个Token级别的模拟器。实验设置了一个包含128,000个Token的词汇表，其中10,000个为正确Token。
 
-<img src="/images/2510.01180/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01180v1/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 仿真结果与理论预测高度一致：
 *   **更快的性能提升**：更大的探索次数 $$$N$$$ 使得正确Token的总概率质量 $$$Q\_{\mathrm{pos}}$$$ 增长更快、更稳定。
@@ -89,15 +89,15 @@ BroRL 建立在 ProRLv2 框架之上，采用 PPO 算法，但将每个prompt的
 3.  两者均无明显提升（表明对于某些极难问题，$$$N=512$$$ 可能仍不足够）。
 大多数任务属于前两种情况，从统计学上看，配对t检验显示 BroRL 相比 ProRL 具有显著的优势（$$$p=6.5\times 10^{-7}$$$），证明了其更强的学习动态和泛化能力。
 
-<img src="/images/2510.01180/x4.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2510.01180/x5.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2510.01180/x6.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2510.01180/x7.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2510.01180/x8.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2510.01180/x9.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2510.01180/x10.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2510.01180/x11.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2510.01180/x12.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01180v1/x4.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01180v1/x5.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01180v1/x6.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01180v1/x7.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01180v1/x8.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01180v1/x9.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01180v1/x10.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01180v1/x11.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01180v1/x12.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 
 **突破性能瓶颈**：

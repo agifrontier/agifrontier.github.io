@@ -42,14 +42,14 @@ title: "Asymmetric Proximal Policy Optimization: mini-critics boost LLM reasonin
 
 本文首先验证了一个关键假设：在RL4LLM领域，由于模型已经过预训练，使用一个小型评论家指导一个大型智能体是可行的。实验表明，即便是一个规模较小的评论家（如Qwen2-1.7B）也能为大型智能体（如Qwen2-8B）提供有效的学习信号。
 
-<img src="/images/2510.01656/x2.jpg" alt="Asymmetric PPO is possible due to the initial representational ability of the model." style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01656v1/x2.jpg" alt="Asymmetric PPO is possible due to the initial representational ability of the model." style="width:90%; max-width:700px; margin:auto; display:block;">
 
 然而，单个小型评论家受限于其表达能力，在面对稀疏奖励和长尾推理路径时，其价值估计的准确性依然不如对称的PPO。为了解决此问题，本文没有采用简单的集成（ensemble）方法——因为从同一预训练模型初始化的评论家行为高度一致，无法提供多样性。
 
 #### 创新点：组级非重叠数据划分
 本文提出了一种新颖的数据划分策略以促进评论家之间的差异化。具体做法是：对于每个prompt产生的一组响应，将它们均匀地划分为M个互不相交的子集 $$$\mathcal{D}\_m$$$，每个子集分配给一个迷你评论家 $$V_m$$ 进行训练。
 
-<img src="/images/2510.01656/x3.jpg" alt="Data Division Strategy" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.01656v1/x3.jpg" alt="Data Division Strategy" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 这种设计确保了在同一个prompt下，所有评论家都能观察到相似的推理模式（维持感知同步），但由于各自训练的响应和奖励不同，它们会学习到功能上互补的价值函数。训练评论家的损失函数如下：
 
@@ -84,13 +84,13 @@ $${% endraw %}
 
 其中 $$$\mathbb{I}^{\text{A}}\_{t}$$$ 是一个指示函数，当 $$$\sigma\_t$$$ 属于最低的 $$k%$$ 时取值为0。实验证明，这种方法在高数据复用率下能显著提升学习效率。
 
-<img src="/images/2510.01656/x4.jpg" alt="Advantage Masking Comparison" style="width:90%; max-width:700px; margin:auto; display:block;">
-<img src="/images/2510.01656/x5.jpg" alt="Value-std vs. Entropy States" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.01656v1/x4.jpg" alt="Advantage Masking Comparison" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01656v1/x5.jpg" alt="Value-std vs. Entropy States" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 #### 创新点2：基于价值分歧的熵过滤
 当评论家们对某个状态的价值估计存在巨大分歧（$$$\sigma\_t$$$ 很高）时，表明该状态可能与最终结果的关联度低，或者包含许多与推理无关的噪声（如无关紧要的副词、感叹词等）。在这些状态上进行探索是低效的。因此，本文提出在计算熵正则化项时，过滤掉这些高分歧状态，以引导模型进行更“安全”和有意义的探索。
 
-<img src="/images/2510.01656/x6.jpg" alt="Entropy Filtering Demonstration" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01656v1/x6.jpg" alt="Entropy Filtering Demonstration" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 修改后的完整PPO目标函数如下：
 
@@ -123,11 +123,11 @@ $${% endraw %}
 *   **性能提升**：在仅使用5000个样本进行训练后，AsyPPO在多个数学推理基准测试（如AIME、MATH-500等）上，性能稳定超过了GRPO和经典PPO等强基线。例如，在AIME上性能提升超过6%，在MATH上超过3%。
 *   **计算效率**：AsyPPO的非对称架构显著降低了计算开销。相比于对称PPO，其训练步骤的平均耗时和峰值GPU内存使用都大幅降低，效率与放弃评论家的GRPO相当。
 
-<img src="/images/2510.01656/x1.jpg" alt="Main Performance Comparison" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.01656v1/x1.jpg" alt="Main Performance Comparison" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *   **对大型模型的泛化能力**：AsyPPO成功地将能力泛化到了更大的模型上。实验中，由两个Qwen2-4B迷你评论家指导的Qwen2-14B智能体取得了最佳性能。更重要的是，AsyPPO使得更小的评论家（如Qwen2-1.7B）也能有效指导14B的大模型，而朴素的单评论家非对称PPO在这种设置下会失败。
 
-<img src="/images/2510.01656/x7.jpg" alt="Generalization to Large Models" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01656v1/x7.jpg" alt="Generalization to Large Models" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 #### 消融研究
 一系列消融实验揭示了AsyPPO各组件的最佳配置：
@@ -136,10 +136,10 @@ $${% endraw %}
 *   **熵过滤**：从熵正则化中过滤掉价值标准差最高的20%的状态，能在探索与利用之间取得最佳平衡，更大的过滤比例会导致熵崩溃。
 *   **价值聚合**：使用多个评论家价值估计的均值（mean）比使用最小值（min）效果更好，这表明在LLM推理任务中，价值过高估计（overestimation）可能不是主要问题。
 
-<img src="/images/2510.01656/x8.jpg" alt="Ablation Studies on Critics" style="width:90%; max-width:700px; margin:auto; display:block;">
-<img src="/images/2510.01656/x9.jpg" alt="Ablation on Advantage Masking" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2510.01656/x10.jpg" alt="Ablation on Entropy Filtering" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2510.01656/x11.jpg" alt="Entropy Curves during training" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.01656v1/x8.jpg" alt="Ablation Studies on Critics" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01656v1/x9.jpg" alt="Ablation on Advantage Masking" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.01656v1/x10.jpg" alt="Ablation on Entropy Filtering" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.01656v1/x11.jpg" alt="Entropy Curves during training" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 #### 最终结论
 本文成功地将RL4LLM中的评论家瓶颈问题重新定义为一个架构设计问题。提出的AsyPPO框架通过双轻量级迷你评论家和非重叠数据训练策略，不仅恢复了评论家在策略优化中的关键作用，还利用评论家之间的一致性/分歧信号来精细化策略更新，最终在提升LLM推理能力的同时，兼顾了计算效率和可扩展性，为设计可扩展、高效的RL4LLM算法指明了新的方向。

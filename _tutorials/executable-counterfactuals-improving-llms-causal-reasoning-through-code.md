@@ -40,7 +40,7 @@ title: "Executable Counterfactuals: Improving LLMs' Causal Reasoning Through Cod
 ### 可执行反事实：代码
 该框架通过基于模板的方法生成结构多样且逻辑可控的 Python 函数，以此作为反事实问题的载体。
 
-<img src="/images/2510.01539/x1.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01539v1/x1.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 <center>跨代码、数学和一个医疗玩具示例的可执行反事实，说明了溯因-干预-预测的过程。代码提供了一个受控、可执行的环境，能自然地映射到因果/计算图，并迁移到自然语言任务。</center>
 
 **方法本质**
@@ -56,15 +56,15 @@ title: "Executable Counterfactuals: Improving LLMs' Causal Reasoning Through Cod
 
 | 模板中用于生成训练集if-else函数的实例 |
 | :---: |
-| <img src="/images/2510.01539/x2.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;"> |
+| <img src="/images/2510.01539v1/x2.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;"> |
 
 | 从上述模板生成的代码函数 |
 | :---: |
-| <img src="/images/2510.01539/x3.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;"> |
+| <img src="/images/2510.01539v1/x3.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;"> |
 
 | 从同一模板生成的另一个结构不同的代码函数 |
 | :---: |
-| <img src="/images/2510.01539/x4.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;"> |
+| <img src="/images/2510.01539v1/x4.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;"> |
 
 <center>结构多样性源于本文的嵌套模板方法，其中单个模板可以生成结构和语义上不同的函数，如上图所示。</center>
 
@@ -79,7 +79,7 @@ title: "Executable Counterfactuals: Improving LLMs' Causal Reasoning Through Cod
 ### LLM在反事实推理上表现薄弱
 实验比较了多种先进LLM在本文框架下的反事实任务与其对应的干预任务上的表现。结果显示，即便是推理能力很强的模型（如 Qwen-32B），在能够轻松解决干预任务（已知隐藏变量）的同时，在反事实任务上的表现却大幅下滑（通常下降超过一半）。这证明了当前LLM的瓶颈确实在于“溯因”这一环节。
 
-<img src="/images/2510.01539/x5.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01539v1/x5.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 <center>即使是具有强大通用能力或思维功能的LLM，源于相同代码函数的反事实问题和干预问题之间的性能差距仍然巨大，显示了针对性改进反事实推理的重要性。</center>
 
 ### 基于蒸馏的SFT泛化能力差
@@ -97,7 +97,7 @@ title: "Executable Counterfactuals: Improving LLMs' Causal Reasoning Through Cod
 *   **一致且显著的提升**：RLVR在所有ID和OOD任务上都取得了显著且一致的性能提升，无论模型规模如何。
 *   **强大的泛化能力**：最重要的是，仅在代码任务上训练的模型，其反事实推理能力成功泛化到了结构完全不同的代码（如$$while$$循环和多隐藏变量）以及自然语言数学问题上。一个7B的RLVR模型在编码任务上的表现甚至超过了32B的基线模型。
 
-<img src="/images/2510.01539/x6.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01539v1/x6.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 <center>在GSM反事实数据集上的领域迁移准确率。RLVR持续展现出从基于代码到基于自然语言的反事实推理的有效泛化，而SFT则持续失败。此外，RLVR的改进也随着模型规模的增长而稳健扩展。</center>
 
 ### 推理轨迹的行为分析
@@ -112,7 +112,7 @@ title: "Executable Counterfactuals: Improving LLMs' Causal Reasoning Through Cod
 | **失败模式 2：随意假设**<br>当问题变得复杂时，模型会放弃推理，直接为隐藏变量假设一个任意值。 |
 | **失败模式 3：过度复杂化**<br>模型通过不必要的案例拆分和循环分析使问题复杂化，从而陷入困境。 |
 
-<img src="/images/2510.01539/x7.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01539v1/x7.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 <center>LLM-as-a-judge流水线的评估结果。对于每个模型在每个数据集上生成的响应，评估目标被解耦为“规划”（第一行；即是否忠实遵循了“溯因-干预-预测”策略）和“执行”（第二行；即中间计算是否正确执行）。</center>
 
 **最终结论**

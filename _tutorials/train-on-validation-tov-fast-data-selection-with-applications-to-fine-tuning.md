@@ -76,7 +76,7 @@ title: "Train on Validation (ToV): Fast data selection with applications to fine
     *   在5个实验中的4个，ToV的表现优于复杂的LESS方法。
     *   数据选择带来的性能提升非常显著，使用ToV选择一半数据($$n=8k$$)的效果，往往优于或持平于使用随机选择两倍数据($$n=16k$$)的效果，证明了其高效性。
 
-<img src="/images/2510.00386/x1.jpg" alt="图1：指令调优任务上的实验结果" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.00386v1/x1.jpg" alt="图1：指令调优任务上的实验结果" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 
 | 实验号 | 目标分布 | 训练池来源 (等比例混合) |
@@ -91,7 +91,7 @@ title: "Train on Validation (ToV): Fast data selection with applications to fine
     *   ToV同样系统性地优于随机选择和最大不确定性方法。
     *   与IT任务不同，LESS方法在该任务上表现不佳，未能超过随机选择的基线。而ToV则取得了稳定且显著的性能提升。
 
-<img src="/images/2510.00386/x3.jpg" alt="图2：命名实体识别任务上的实验结果" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.00386v1/x3.jpg" alt="图2：命名实体识别任务上的实验结果" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 
 | 实验号 | 目标分布 | 训练池来源 (等比例混合) |

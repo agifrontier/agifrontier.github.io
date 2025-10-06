@@ -99,8 +99,8 @@ title: "Less LLM, More Documents: Searching for Improved RAG"
 | 10$\times$| 50.8 | 36.3 | 55.1 | 40.5 | 58.1 | 43.4 | 59.4 | 44.4 | 60.1 | 44.9 |
 *<p align="center">NQ数据集上的F1/EM得分。阴影单元格表示较小模型首次超越下一级别模型在1x语料库下的性能点（$n^{\star}$）。</p>*
 
-<img src="/images/2510.02657/nq_f1_marked.jpg" alt="NQ数据集上F1得分随语料库规模的变化" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2510.02657/nq_em_marked.jpg" alt="NQ数据集上EM得分随语料库规模的变化" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.02657v1/nq_f1_marked.jpg" alt="NQ数据集上F1得分随语料库规模的变化" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.02657v1/nq_em_marked.jpg" alt="NQ数据集上EM得分随语料库规模的变化" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 
 ### 性能提升的根本原因
@@ -109,9 +109,9 @@ title: "Less LLM, More Documents: Searching for Improved RAG"
 *   **模型利用率保持稳定**：实验表明，不同大小的模型在将可用信息转化为正确答案的效率（即利用率）上并没有随语料库规模的扩大而系统性提升。这个比率在不同模型和语料库规模下都保持在一个相对稳定的窄带内。
 *   **中等模型利用率更高**：一个有趣的发现是，上下文利用率并非随模型规模单调递增。中等大小的模型（1.7B和4B）在某些情况下表现出比最大模型（14B）更高的利用率，这表明并非总是“模型越大，上下文利用得越好”。
 
-<img src="/images/2510.02657/answer_coverage.jpg" alt="黄金答案在检索上下文中的覆盖率" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.02657v1/answer_coverage.jpg" alt="黄金答案在检索上下文中的覆盖率" style="width:85%; max-width:600px; margin:auto; display:block;">
 
-<img src="/images/2510.02657/shard_wise_rate.jpg" alt="各模型利用率对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.02657v1/shard_wise_rate.jpg" alt="各模型利用率对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 最终结论
 本文的结论清晰而有力：在RAG系统中，“更多的文档”确实常常可以替代“更大的模型”。当面临推理成本或部署环境的限制时，投资于扩大和优化检索语料库是一个非常有效的策略。性能的提升主要源于语料库扩大后，为模型提供了更高质量（即包含答案）的证据。同时，研究也指出了其边界：语料库规模的收益会递减，通常在扩大5-6倍后趋于饱和。这一发现为设计兼顾性能与效率的RAG系统提供了重要的实践指导。

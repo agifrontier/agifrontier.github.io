@@ -58,7 +58,7 @@ title: "Demystifying Synthetic Data in LLM Pre-training: A Systematic Study of S
 *   **混合策略显著提升**：将任何类型的合成数据与CC混合，其性能都远超单独使用该合成数据。
 *   **最佳混合比例因类型而异**：对于HQ和QA重述数据，33%和67%的混合比例表现相似。而对于TXBK数据，33%的混合比例远优于67%，并且在大约20B tokens的训练数据量之后，其表现开始超越纯CC数据。
 
-<img src="/images/2510.01631/datascale4.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.01631v1/datascale4.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 #### 模型扩展
 固定数据量在不同模型大小上训练，损失函数遵循 $\hat{\mathcal{L}}(N)=\frac{A}{N^{\alpha}}+E$。
@@ -66,7 +66,7 @@ title: "Demystifying Synthetic Data in LLM Pre-training: A Systematic Study of S
 *   随着模型规模增大，对于重述数据（HQ/QA），33%的合成数据混合比例略优于67%，这与数据扩展的趋势相反，表明更大的模型对高比例合成数据的“容忍度”可能更低。
 *   对于TXBK数据，33%的混合比例始终优于67%，但其相对于纯CC数据的优势会随着模型增大而减小。
 
-<img src="/images/2510.01631/modelscale4.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.01631v1/modelscale4.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 #### 计算扩展与不可约损失
 通过拟合联合扩展定律 $\hat{\mathcal{L}}(N,D)=\frac{A}{N^{\alpha}}+\frac{B}{D^{\beta}}+E$，本文估算了各种数据混合下的理论最低损失（
@@ -74,7 +74,7 @@ irreducible loss, E）。
 *   **33% HQ混合表现最佳**：33% HQ重述数据与67% CC的混合，其不可约损失$E$在所有数据集中是最低的，甚至低于纯CC数据。这一经验证据有力地挑战了“模型崩溃”理论中关于任何合成数据引入终将损害性能的预测。
 *   **纯合成数据风险**：与之相对，纯QA重述数据和纯CC数据的不可约损失是最高的，表明了数据源选择对模型潜力的深远影响。
 
-<img src="/images/2510.01631/irred4.jpg" alt="Refer to to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01631v1/irred4.jpg" alt="Refer to to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 进一步研究
 
@@ -83,14 +83,14 @@ irreducible loss, E）。
 *   对于HQ和QA重述数据，在不同的模型和数据规模下，最佳混合比例都低于50%，并似乎向**约30%**收敛。
 *   对于TXBK教科书数据，其收益主要在较大规模下显现，且最佳比例通常低于重述数据。
 
-<img src="/images/2510.01631/allratio_h.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01631v1/allratio_h.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 #### 生成器能力影响
 一个反直觉的发现是，更大、更强的生成器模型不一定能产出更好的预训练数据。
 *   **存在能力门槛**：使用Llama-3 8B模型作为生成器，其产出的合成数据优于3B模型。
 *   **收益递减甚至为负**：然而，使用70B模型作为生成器，其产出的HQ和QA数据在下游模型上的表现并不优于8B模型，在某些情况下甚至更差。这表明，单纯提升生成器规模并非最优策略，可能存在其他因素如输出多样性、指令遵循保真度等在起作用。
 
-<img src="/images/2510.01631/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01631v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 #### 低层统计学解释
 对数据进行unigram频率分析发现：

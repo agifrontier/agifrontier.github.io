@@ -44,12 +44,12 @@ GEM是一个受OpenAI-Gym启发而构建的、专为LLM智能体设计的环境�
 *   **高效执行**:
     *   **异步矢量化 (Asynchronous vectorization)**: 支持并行执行多个环境实例，通过异步工具调用大幅提升数据收集的吞吐量。
     *   **自动重置 (Autoreset)**: 环境在结束时会自动重置，简化了连续数据生成的代码逻辑，用户无需手动管理每个子环境的状态。
-    <img src="/images/2510.01051/x2.jpg" alt="矢量化环境中自动重置的图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+    <img src="/images/2510.01051v1/x2.jpg" alt="矢量化环境中自动重置的图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 *   **灵活的包装器 (Wrappers)**: 与Gym类似，GEM使用包装器来轻松扩展功能，例如，可以自定义观测（Observation）的格式（如仅保留最新输出、或拼接全部历史记录），也可以将工具实现为包装器叠加在任何任务环境之上。
 
 ### RL算法：REINFORCE with ReBN
 
-<img src="/images/2510.01051/x3.jpg" alt="不同智能体RL视角的图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01051v1/x3.jpg" alt="不同智能体RL视角的图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 面对现有算法（如GRPO）在多轮任务上的局限性，本文回归到“响应即动作”的RL视角，并提出了一种简单、通用且高效的基线算法。
 
@@ -74,13 +74,13 @@ $${% endraw %}
 
 # 实验结论
 
-<img src="/images/2510.01051/x1.jpg" alt="来自5个不同类别环境的Qwen3智能体的学习曲线" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01051v1/x1.jpg" alt="来自5个不同类别环境的Qwen3智能体的学习曲线" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 本文通过一系列实验验证了GEM框架的有效性和REINFORCE with ReBN算法的优越性。
 
 ### 算法基准测试
 
-<img src="/images/2510.01051/x4.jpg" alt="在8个代表性GEM环境上进行的算法基准测试" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.01051v1/x4.jpg" alt="在8个代表性GEM环境上进行的算法基准测试" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在8个涵盖单轮和多轮任务的环境中，对PPO、GRPO、REINFORCE和REINFORCE with ReBN（简称ReBN）进行了公平对比。
 *   **GRPO**: 在单轮任务中表现良好，但在需要精细信用分配的多轮任务中表现不佳。
@@ -90,7 +90,7 @@ $${% endraw %}
 
 ### 折扣因子$$$\gamma$$$的影响
 
-<img src="/images/2510.01051/x5.jpg" alt="不同折扣因子训练下的平均轮数和回报" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01051v1/x5.jpg" alt="不同折扣因子训练下的平均轮数和回报" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在“猜数字”游戏中，实验证明，设置$$$\gamma < 1$$$会自然地激励智能体寻找更短的解决方案（即轮数更少）。只有当$$$\gamma$$$较小时，智能体才能学习到最优的二分搜索策略。这凸显了可调节折扣因子的重要性，而这是GRPO在多轮设定下所不具备的。
 
@@ -129,7 +129,7 @@ $${% endraw %}
 
 ### 泛化能力研究
 初步实验展示了积极的泛化结果：在$$game:Wordle-v0$$上训练的智能体，在未见过的$$ReasoningGym$$系列任务上也表现出性能提升。
-<img src="/images/2510.01051/x6.jpg" alt="在Wordle环境上的训练可以泛化到ReasoningGym" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01051v1/x6.jpg" alt="在Wordle环境上的训练可以泛化到ReasoningGym" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 总结
 本文成功推出了GEM，一个对标OpenAI-Gym的、用于智能体LLM的标准化训练和评估环境。同时，提出的REINFORCE with ReBN算法被证明是一个简单、通用且极为有效的基线方法，特别适合多轮交互任务。GEM及其配套工具和算法为未来更强大、更自主的AI系统的研究铺平了道路。

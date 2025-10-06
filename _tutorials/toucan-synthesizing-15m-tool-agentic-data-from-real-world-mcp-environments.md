@@ -40,12 +40,12 @@ title: "TOUCAN: Synthesizing 1.5M Tool-Agentic Data from Real-World MCP Environm
 ### 数据生成流程
 TOUCAN 的构建遵循一个五阶段的流水线，并辅以三个扩展机制来增加数据的多样性。
 
-<img src="/images/2510.01179/x4.jpg" alt="TOUCAN 构建流程" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01179v1/x4.jpg" alt="TOUCAN 构建流程" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 1.  **MCP 服务器引入 (MCP Server Onboarding)**：首先，从 GitHub 和 MCP 服务器注册平台 Smithery 收集了约 2800 个 MCP 服务器规范文件。经过严格筛选（仅保留可通过 HTTP 访问的远程服务器、排除需要第三方凭证的服务器、过滤掉功能异常的服务器），最终确定了 495 个高质量、功能多样的 MCP 服务器作为数据生成的基础环境。
 
-    <img src="/images/2510.01179/x3.jpg" alt="MCP 服务器筛选流程" style="width:85%; max-width:450px; margin:auto; display:block;">
-    <img src="/images/2510.01179/x5.jpg" alt="MCP 服务器领域分布" style="width:80%; max-width:300px; margin:auto; display:block;">
+    <img src="/images/2510.01179v1/x3.jpg" alt="MCP 服务器筛选流程" style="width:85%; max-width:450px; margin:auto; display:block;">
+    <img src="/images/2510.01179v1/x5.jpg" alt="MCP 服务器领域分布" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 2.  **任务合成 (Task Synthesis)**：为了确保任务的挑战性和真实性，本文利用五种不同的开源 LLM（$$Llama-3-70B-Instruct$$, $$Qwen2-72B-Instruct$$, $$Command-R+$$, $$Gemma-2-27B-IT$$, 和 $$Mistral-Large$$）和三种策略来生成需要使用工具的任务：
     *   **单服务器任务**：针对单个 MCP 服务器，生成调用其 1 到 3 个工具的任务。
@@ -68,15 +68,15 @@ TOUCAN 的构建遵循一个五阶段的流水线，并辅以三个扩展机制�
 ### 数据集分析
 最终生成的 TOUCAN 数据集在多样性和复杂性上表现出色。
 
-<img src="/images/2510.01179/x6.jpg" alt="TOUCAN 数据集统计分析" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.01179v1/x6.jpg" alt="TOUCAN 数据集统计分析" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 分析显示，TOUCAN 覆盖了大量的多服务器、多工具任务。大部分任务的上下文提供了比实际所需更多的工具，这对模型的工具选择能力提出了挑战。同时，数据集中包含了大量的多轮对话，交互长度和模式多样，更贴近真实世界。
 
-<img src="/images/2510.01179/x7.jpg" alt="子集统计" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2510.01179v1/x7.jpg" alt="子集统计" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 通过 LLM-as-a-judge 的质量评估，大部分任务的问题质量和场景真实性得分很高，轨迹的完整性和简洁性也令人满意。
 
-<img src="/images/2510.01179/x8.jpg" alt="质量统计" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.01179v1/x8.jpg" alt="质量统计" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 # 实验结论
 为了验证 TOUCAN 数据集的有效性，本文在 $$Llama-3-8B$$, $$Qwen2.5-14B-Instruct$$, 和 $$Gemma-2-27B$$ 等不同规模的基座模型上进行了监督式微调（SFT），并在多个主流的工具智能体评测基准上进行了评估。
@@ -114,11 +114,11 @@ TOUCAN 的构建遵循一个五阶段的流水线，并辅以三个扩展机制�
 *   **超越更强的闭源模型**：在 BFCL V3 基准上，TOUCAN 微调的模型（如 $$Gemma-2-27B$$）的平均准确率甚至超过了像 $$GPT-4.1-Turbo$$ 这样更大规模的闭源模型。
 *   **在真实环境中表现优异**：在 MCP-Universe 基准（该基准包含许多 TOUCAN 训练时未见过的工具）上，TOUCAN 微调的模型在同等参数规模的开源模型中取得了最佳性能，证明了 TOUCAN 带来的泛化能力。
 
-    <img src="/images/2510.01179/x9.jpg" alt="在 MCP-Universe 上的性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+    <img src="/images/2510.01179v1/x9.jpg" alt="在 MCP-Universe 上的性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *   **提升效率前沿**：实验表明，经过 TOUCAN 微调的模型能够在更小的模型尺寸下达到更高的任务成功率，有效推动了模型在智能体任务上的“帕累托前沿”，实现了更优的性能-效率权衡。
 
-    <img src="/images/2510.01179/x10.jpg" alt="模型性能 vs. 尺寸 (帕累托前沿)" style="width:80%; max-width:300px; margin:auto; display:block;">
+    <img src="/images/2510.01179v1/x10.jpg" alt="模型性能 vs. 尺寸 (帕累托前沿)" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 *   **消融实验验证**：对三种扩展机制（不相关任务、多样化、多轮对话）的消融分析证实，每个部分都对模型的最终性能有积极贡献。
 
