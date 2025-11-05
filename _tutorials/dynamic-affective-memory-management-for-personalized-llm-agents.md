@@ -7,7 +7,7 @@ title: "Dynamic Affective Memory Management for Personalized LLM Agents"
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.27418v1
 
-- **作者**: 
+- **作者**: Yueyan Li
 
 - **发布机构**: Beijing University of Posts and Telecommunications
 
