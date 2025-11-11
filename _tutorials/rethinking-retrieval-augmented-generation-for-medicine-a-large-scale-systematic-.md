@@ -37,7 +37,7 @@ title: "Rethinking Retrieval-Augmented Generation for Medicine: A Large-Scale, S
 ### 评估框架
 为了系统性地剖析RAG的性能，本文将整个流程分解为**证据检索、证据选择、响应生成**三个独立阶段进行评估。该评估由18位医学专家完成，针对GPT-4o和Llama-3.1-8B两个模型（分别设置有/无RAG），共产生了80,502项手动标注。
 
-![研究设计与评估框架](images/2511.06738v1/x1.png)
+<img src="/images/2511.06738v1/x1.jpg" alt="研究设计与评估框架" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 *   **数据准备**:
     *   **模型与知识库**: 使用领域内最常用的开源检索器MedCPT，在PubMed、维基百科、临床指南等多种医疗知识源上进行检索。评估了业界领先的闭源模型GPT-4o和主流开源模型Llama-3.1-8B。
@@ -64,14 +64,14 @@ title: "Rethinking Retrieval-Augmented Generation for Medicine: A Large-Scale, S
 *   **高失误率**: **31%** 的查询在Top-16结果中未能检索到任何一个相关段落。
 *   **低覆盖率**: Top-16段落总共仅能覆盖**32.8%** 的“必要陈述”，这意味着超过三分之二的关键信息从一开始就缺失了。
 
-![证据检索性能评估](images/2511.06738v1/x2.png)
+<img src="/images/2511.06738v1/x2.jpg" alt="证据检索性能评估" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 证据选择阶段的失败
 即使检索到了相关信息，模型也难以有效利用它们。
 *   **选择能力弱**: GPT-4o在选择相关证据上的精确率为41%，召回率为49%；Llama-3.1表现更差，精确率为43%，而召回率仅为**28%**。这意味着大量有用的信息被模型忽略了。
 *   **偏爱无关信息**: 两个模型生成的引用中，源自不相关段落的引用数量几乎是源自相关段落的两倍，表明模型在处理混杂信息时存在严重的选择障碍。
 
-![引用类型和证据选择性能分析](images/2511.06738v1/x3.png)
+<img src="/images/2511.06738v1/x3.jpg" alt="引用类型和证据选择性能分析" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 响应生成阶段的性能下降
 与不使用RAG的模型相比，标准RAG模型的表现反而更差。

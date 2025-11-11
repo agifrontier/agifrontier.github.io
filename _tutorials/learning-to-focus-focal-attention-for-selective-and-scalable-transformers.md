@@ -93,10 +93,10 @@ $${% endraw %}
 *   **训练数据**：在达到与基线模型相同的性能水平时，“焦点注意力”模型所需的训练数据量**减少了33%**。
 *   **上下文长度**：随着上下文长度从2048增加到8192，“焦点注意力”模型的性能优势（以验证损失衡量）相对于基线模型持续扩大，表明其在处理更长序列时更为有效。
 
-![模型参数伸缩性](images/2511.06818v1/scale_params_loss.png)
-![模型参数伸缩性下游任务](images/2511.06818v1/scale_params_tasks.png)
-![训练数据伸缩性](images/2511.06818v1/scale_tokens_loss.png)
-![训练数据伸缩性下游任务](images/2511.06818v1/scale_tokens_tasks.png)
+<img src="/images/2511.06818v1/scale_params_loss.jpg" alt="模型参数伸缩性" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.06818v1/scale_params_tasks.jpg" alt="模型参数伸缩性下游任务" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.06818v1/scale_tokens_loss.jpg" alt="训练数据伸缩性" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.06818v1/scale_tokens_tasks.jpg" alt="训练数据伸缩性下游任务" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 下游任务性能
 在常识推理基准测试中，2.7B参数的“焦点注意力”（恒定温度）模型比基线模型平均**绝对提升了2.2个百分点**。然而，*学习温度*变体在该项测试中表现不如*恒定温度*变体。
@@ -114,8 +114,8 @@ $${% endraw %}
 *   **检索增强生成 (RAG)**：在混合了黄金段落与干扰段落的开域问答任务中，“焦点注意力”同样展现出持续且显著的优越性。
 *   **总体表现**：在6大类长上下文任务中，“焦点注意力”在5类任务（ICL、长文档问答、RAG、检索、带引用的生成）中均取得了显著的相对性能提升，幅度从**17%到82%**不等。在“段落重排”任务上结果好坏参半。
 
-![长上下文ICL](images/2511.06818v1/icl.png)
-![长上下文RAG](images/2511.06818v1/rag.png)
+<img src="/images/2511.06818v1/icl.jpg" alt="长上下文ICL" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.06818v1/rag.jpg" alt="长上下文RAG" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 消融研究
 *   **最佳温度**：对于恒定温度变体，实验发现最佳温度 $$t$$ 在0.4附近。对于学习温度变体，将温度下限 $$τ_min$$ 设置为5时效果最好，过低的值（即过于锐利的注意力）反而会损害性能。
