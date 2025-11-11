@@ -3,123 +3,104 @@ layout: default
 title: "Learning to Focus: Focal Attention for Selective and Scalable Transformers"
 ---
 
-# Learning to Focus: Focal Attention for Selective and Scalable Transformers
+## Learning to Focus: Focal Attention for Selective and Scalable Transformers
 
 - **ArXiv URL**: http://arxiv.org/abs/2511.06818v1
 
-- **作者**: Dhananjay Ram; Wei Xia; Stefano Soatto
-
-- **发布机构**: AWS AI Labs
-
----
-
 # TL;DR
-本文提出了一种名为“焦点注意力”（Focal Attention）的机制，通过引入一个可控的温度参数来锐化注意力分布，使得模型能够更集中地关注相关Token，从而在模型大小、训练数据和上下文长度方面展现出卓越的伸缩性，并显著提升了长上下文任务的性能。
-
-# 关键定义
-本文的核心是对标准注意力机制进行修改，引入了温度缩放。关键概念如下：
-*   **焦点注意力 (Focal Attention)**：一种改进的注意力机制，它通过显式地控制Softmax函数的温度参数来锐化（sharpen）注意力概率分布。与标准注意力相比，它使模型能将注意力更集中于少数关键Token，忽略不相关的Token，从而减少注意力噪声。
-
-*   **恒定温度 (Constant Temperature)**：焦点注意力的一种实现方式。在整个模型的所有层和所有注意力头中，使用一个固定的、作为超参数的温度值 $$t$$（通常 $$t<1$$）来缩放注意力 logits。这种方法简单且有效。
-
-*   **学习温度 (Learned Temperature)**：焦点注意力的另一种实现方式。模型的每一层都会根据其隐藏状态动态地学习一个温度值 $$τ$$。这使得模型可以为不同层级学习不同的注意力锐度，例如，底层可能需要较柔和的注意力来捕捉广泛信息，而高层则需要更锐利的注意力来进行精确决策。
+本文提出一种名为**Focal Attention**的注意力机制，它通过控制softmax函数的温度参数来锐化注意力分布，使模型能更集中于相关Token并抑制无关Token，从而在更少的参数或训练数据下，显著提升模型性能，尤其在长上下文任务中表现优越。
 
 # 相关工作
-当前，基于Transformer架构的大语言模型是AI领域的主流。其核心组件是注意力机制，它通过Softmax函数为输入序列中的每个Token分配权重。然而，一个关键问题是，标准的Softmax注意力分布通常是“嘈杂的”（noisy），即它会为许多不相关的Token分配非零的概率，这在处理长上下文时尤其严重，因为不相关的信息会稀释对关键信息的关注，从而损害模型的特征选择和推理能力。
+当前，基于Transformer架构的大语言模型是AI领域的主流，其核心是注意力机制。标准的注意力机制使用softmax函数计算Token的权重，但在长上下文中，这种方式常常产生“嘈杂”的概率分布，即便是无关的Token也会被分配一定的注意力权重。这种噪声会损害模型每一层的特征选择效率，成为性能瓶颈，尤其在处理包含数千甚至数十万Token的长序列时问题更加突出。原始Transformer通过一个固定的缩放因子（维度的平方根倒数）来稳定训练，但这对于所有层和所有上下文可能并非最优。
 
-标准的Transformer模型通过一个固定的缩放因子 $$1/√d$$（其中 $$d$$ 是头维度）来隐式地调节注意力logits，但这相当于一个固定的温度，对于所有层和所有任务场景可能并非最优。
-
-本文旨在解决上述**注意力噪声**问题，通过一种更灵活的方式来控制注意力分布的锐度，使模型能够更“专注”，从而提升其在长上下文环境下的性能和整体的伸缩效率。
+本文旨在解决标准注意力机制中存在的**注意力分布噪声问题**，从而提升模型在复杂任务，特别是长上下文场景下的特征选择能力和整体性能。
 
 # 本文方法
+本文方法的核心是对Transformer中的标准注意力机制进行一个简单而有效的修改，提出了**Focal Attention**。其本质是在计算注意力权重时，显式地引入一个温度（temperature）参数来调整softmax函数的输出分布。
 
-本文提出的“焦点注意力”在标准自注意力机制的基础上进行了微小但关键的修改。标准的注意力计算如下：
-
-
-{% raw %}$$
-Attention(X) = softmax\left(\frac{QK^T}{\sqrt{d}}\right)V
-$${% endraw %}
+标准注意力机制的计算公式为：
 
 
-其中 $$√d$$ 实际上扮演了一个隐式的、固定的温度角色。
+{% raw %}$$ Attention(X) = \text{softmax}(\frac{QK^T}{\sqrt{d}})V $${% endraw %}
+
+
+其中 $$softmax$$ 的输入 logits 被一个固定的因子 $$sqrt(d)$$ 缩放。
+
+Focal Attention 修改了这个缩放因子，提出了两种实现方式：
+
+### 恒定温度（Constant Temperature）
+这是最简单的一种形式。引入一个全局的、作为超参数设定的温度缩放因子 $$t$$。公式变为：
+
+
+{% raw %}$$ Attention(X) = \text{softmax}(\frac{QK^T}{t\sqrt{d}})V $${% endraw %}
+
+
+通过设置一个较小的值（如 $$t < 1$$），可以增大logits之间的差异，使得softmax输出的概率分布更加“尖锐”（sharper）。这能让模型更聚焦于少数最相关的Token，并忽略大量不相关的背景信息，从而实现“降噪”和更精准的特征提取。
+
+<img src="/images/2511.06818v1/intro_base.jpg" alt="标准注意力与Focal Attention对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.06818v1/intro_focal.jpg" alt="标准注意力与Focal Attention对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+*图1：左图为基线模型的注意力分布，存在噪声。右图为Focal Attention的分布，更集中于相关Token。*
+
+### 可学习温度（Learned Temperature）
+为了让模型能根据不同层、不同上下文动态调整注意力的锐度，本文还提出了一种可学习的温度方案。温度 $$τ$$ 不再是固定的超参数，而是从当前注意力模块的输入隐状态 $$X$$ 中学习得到：
+
+
+{% raw %}$$ \tau = \text{clip}(\text{mean}(Xw_{\tau}), \tau_{min}, \tau_{max}) $${% endraw %}
+
+
+其中，$w\_{\tau}$ 是一个可学习的参数向量。然后，注意力计算变为：
+
+
+{% raw %}$$ Attention(X) = \text{softmax}(\frac{QK^T}{\tau})V $${% endraw %}
+
+
+这种方式允许模型自主学习在不同层级采用不同的注意力策略，例如在底层使用较“柔和”的注意力分布以捕捉更广泛的信息，而在高层使用更“尖锐”的分布以做出更确信的决策。
 
 ### 创新点
-“焦点注意力”的核心创新在于将这个隐式的、固定的温度替换为一个显式的、可控的温度参数，从而主动地锐化注意力分布。本文提出了两种实现方式：
-
-#### 1. 恒定温度的Transformer (Transformer with Constant Temperature)
-
-这是最简单的实现。引入一个全局的、固定的超参数 $$t$$（通常 $$t<1$$）来进一步缩放logits。公式变为：
-
-
-{% raw %}$$
-Attention(X) = softmax\left(\frac{QK^T}{t\sqrt{d}}\right)V
-$${% endraw %}
-
-
-当 $$t<1$$ 时，logits的差异被放大，Softmax的输出会变得更加“尖锐”，使得模型能将绝大部分注意力权重集中在少数最相关的Token上，从而有效过滤掉噪声。
-
-#### 2. 学习温度的Transformer (Transformer with Learned Temperature)
-
-为了实现更动态的控制，本文提出让模型为每一层自己学习合适的温度。具体来说，温度 $$τ$$ 是通过对该层注意力模块的输入 $$X$$ 进行线性变换后计算得到的：
-
-
-{% raw %}$$
-\tau = \text{clip}(\text{mean}(Xw_{\tau}), \tau_{\min}, \tau_{\max})
-$${% endraw %}
-
-
-其中 $$w_τ$$ 是一个可学习的参数矢量，$$τ_min$$ 和 $$τ_max$$ 是为了保证训练稳定而设定的温度范围。然后，注意力计算如下：
-
-
-{% raw %}$$
-Attention(X) = softmax\left(\frac{QK^T}{\tau}\right)V
-$${% endraw %}
-
-
-这种方式允许模型根据不同层级的抽象需求，自适应地调整注意力的锐度。例如，较底层的网络可能需要一个相对较大的 $$τ$$ （较柔和的注意力）来整合广泛的上下文信息，而较顶层的网络可能需要一个较小的 $$τ$$ （较锐利的注意力）来做出精确的决策。
-
-### 优点
-该方法的主要优点在于：
-*   **选择性增强**：通过锐化注意力，模型能更好地从长篇输入中筛选出关键信息，抑制无关信息的干扰。
-*   **伸缩性更优**：实验证明，与标准Transformer相比，“焦点注意力”在模型参数、训练数据和上下文长度上具有更好的伸缩性，能用更少的资源达到同等甚至更好的性能。
-*   **实现简单**：该方法仅需对注意力公式进行微小修改，计算开销几乎可以忽略不计，易于集成到现有的任何Transformer架构中。
+- **核心创新**：将通常用于模型输出层以控制生成多样性的**温度缩放技术**，创新性地应用到了Transformer模型**内部的每一层注意力机制**中，以解决特征选择中的噪声问题。
+- **优点**：该方法非常**简单**，只涉及对注意力计算公式的一个微小调整，计算开销极低。但它能有效**锐化注意力分布**，提升模型信噪比，从而在模型尺寸、训练数据和上下文长度等维度上展现出更优的**伸缩性（scaling properties）**。
 
 # 实验结论
+实验围绕LLaMA架构的模型，对Focal Attention的有效性进行了全面验证。
 
-本文通过一系列实验，系统地验证了“焦点注意力”的有效性。
+### 伸缩性（Scaling Properties）
+- **模型尺寸**：Focal Attention展现出更优的模型尺寸伸缩性。在达到与基线模型相同的性能时，Focal Attention最多可节省**42%的参数**。
+- **训练数据**：Focal Attention需要更少的训练数据。实验表明，使用Focal Attention的模型仅需**210B Token**的训练数据，即可达到基线模型使用**315B Token**训练后的性能水平，节省了约**33%**的训练数据。
+- **上下文长度**：随着上下文长度的增加（从2048到8192），Focal Attention相较于基线模型的性能优势也随之增大，证明了其在处理长序列上的优越性。
 
-### 伸缩性分析
-*   **模型大小**：“焦点注意力”模型可以用比基线模型少**42%的参数**达到相同的性能。随着模型规模的增大，其性能优势也愈发明显。
-*   **训练数据**：在达到与基线模型相同的性能水平时，“焦点注意力”模型所需的训练数据量**减少了33%**。
-*   **上下文长度**：随着上下文长度从2048增加到8192，“焦点注意力”模型的性能优势（以验证损失衡量）相对于基线模型持续扩大，表明其在处理更长序列时更为有效。
+<img src="/images/2511.06818v1/scale_params_loss.jpg" alt="模型尺寸扩展性" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.06818v1/scale_params_tasks.jpg" alt="模型尺寸扩展性" style="width:85%; max-width:600px; margin:auto; display:block;">
+*图2：Focal Attention在不同模型尺寸下的验证损失和任务平均准确率均优于基线模型。*
 
-<img src="/images/2511.06818v1/scale_params_loss.jpg" alt="模型参数伸缩性" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2511.06818v1/scale_params_tasks.jpg" alt="模型参数伸缩性下游任务" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2511.06818v1/scale_tokens_loss.jpg" alt="训练数据伸缩性" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2511.06818v1/scale_tokens_tasks.jpg" alt="训练数据伸缩性下游任务" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.06818v1/scale_tokens_loss.jpg" alt="训练数据扩展性" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.06818v1/scale_tokens_tasks.jpg" alt="训练数据扩展性" style="width:85%; max-width:600px; margin:auto; display:block;">
+*图3：随着训练Token数量增加，Focal Attention的性能优势愈发明显。*
 
-### 下游任务性能
-在常识推理基准测试中，2.7B参数的“焦点注意力”（恒定温度）模型比基线模型平均**绝对提升了2.2个百分点**。然而，*学习温度*变体在该项测试中表现不如*恒定温度*变体。
+### 下游任务与长上下文能力
+- **通用任务**：在一个2.7B参数的模型上，与基线模型相比，Focal Attention在常识推理基准测试中平均取得了**2.2个点的绝对提升**。
+
+<br>
 
 
-| 模型 | ARC-e | ARC-c | BoolQ | HellaSwag | LAMBADA | PIQA | WinoGrande | 平均 |
+| 模型 (2.7B @ 315B tokens) | ARC-e | ARC-c | BoolQ | HellaS. | LAMBADA | PIQA | WinoG. | **平均** |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Transformer (基线) | 73.18 | 44.58 | 80.52 | 77.85 | 73.53 | 79.54 | 70.09 | 71.33 |
-| 焦点注意力 (恒定) | **73.57** | **45.65** | **81.07** | **78.69** | 76.54 | **80.09** | **70.64** | **73.61** |
-| 焦点注意力 (学习) | 72.85 | 44.40 | 80.73 | 78.43 | **77.72** | 79.76 | 70.32 | 72.03 |
+| Transformer (基线) | 79.5 | 50.1 | 82.2 | 80.0 | 79.6 | 82.2 | 75.3 | 75.6 |
+| Focal Attention (恒定温度) | **81.7** | **52.4** | **84.5** | **81.4** | 79.2 | **82.3** | **76.0** | **78.2** |
+| Focal Attention (可学习温度) | 81.3 | 51.5 | 83.2 | 81.2 | **80.3** | 82.2 | 75.7 | 77.9 |
 
-### 长上下文能力
-在专门为长上下文设计的HELMET评测框架上，“焦点注意力”模型表现出显著优势，尤其是在以下任务中：
-*   **多样本上下文学习 (In-Context Learning)**：在多个数据集中，“焦点注意力”的性能远超基线模型，并且随着上下文中样本数量的增加，性能持续提升。
-*   **检索增强生成 (RAG)**：在混合了黄金段落与干扰段落的开域问答任务中，“焦点注意力”同样展现出持续且显著的优越性。
-*   **总体表现**：在6大类长上下文任务中，“焦点注意力”在5类任务（ICL、长文档问答、RAG、检索、带引用的生成）中均取得了显著的相对性能提升，幅度从**17%到82%**不等。在“段落重排”任务上结果好坏参半。
+<br>
 
-<img src="/images/2511.06818v1/icl.jpg" alt="长上下文ICL" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2511.06818v1/rag.jpg" alt="长上下文RAG" style="width:85%; max-width:600px; margin:auto; display:block;">
+- **长上下文任务**：这是Focal Attention表现最出色的领域。在HELMET长上下文评测框架中，Focal Attention在**上下文学习（In-Context Learning, ICL）**、**检索增强生成（RAG）**、**长文档问答**等任务上，取得了**17%到82%的显著相对性能提升**。即使在超出训练长度的上下文（如从32K扩展到64K）进行评估时，其性能优势依然稳固。
+
+<img src="/images/2511.06818v1/icl.jpg" alt="长上下文任务性能" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.06818v1/rag.jpg" alt="长上下文任务性能" style="width:85%; max-width:600px; margin:auto; display:block;">
+*图4：在上下文学习（左）和RAG（右）等长上下文任务中，Focal Attention显著优于基线模型。*
+
+- **表现平平的场景**："可学习温度"版本在部分任务上表现不如更简单的"恒定温度"版本。在长上下文评测中，"段落重排（Passage Reranking）"任务上的结果好坏参半。
 
 ### 消融研究
-*   **最佳温度**：对于恒定温度变体，实验发现最佳温度 $$t$$ 在0.4附近。对于学习温度变体，将温度下限 $$τ_min$$ 设置为5时效果最好，过低的值（即过于锐利的注意力）反而会损害性能。
-*   **适应性**：将预训练好的标准Transformer模型通过继续训练来适应“焦点注意力”，虽然能提升性能，但效果不如从头开始就使用“焦点注意力”进行训练。
+- 最佳温度值 $$t$$ 在0.4附近。所有测试的 $$t < 1$$ 的值都比 $$t = 1$$（基线）表现更好。
+- 从头开始使用Focal Attention进行训练，比在预训练好的模型上继续训练以适应Focal Attention效果更好。
 
 ### 总结
-“焦点注意力”是一种简单、高效且可广泛应用的注意力改进机制。它通过锐化注意力分布，显著提升了Transformer模型在处理长上下文时的选择性和效率，并在模型伸缩性方面展现出巨大潜力。为了获得最大收益，建议从训练之初就采用该方法。
+Focal Attention是一种简单、高效且易于实现的注意力机制改进。它通过锐化注意力分布，显著提升了Transformer模型的性能和伸缩效率，在长上下文任务中尤为有效，为构建更强大、更高效的大语言模型提供了一条极具前景的路径。
