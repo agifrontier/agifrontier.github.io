@@ -5,7 +5,7 @@ title: "Scaling Environments for LLM Agents in the Era of Learning from Interact
 
 # Agent智能进化论：阿里港科大万字综述，揭秘GEF三步循环
 
-<img src="/images/2511.09586v1/A__title.jpg" alt="Title Image" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.09586v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型Agent正以前所未有的速度发展，但一个巨大的瓶颈也随之浮现：静态数据集已经喂不饱它们了！
 
