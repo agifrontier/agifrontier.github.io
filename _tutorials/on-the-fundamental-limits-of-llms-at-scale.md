@@ -10,7 +10,6 @@ title: "On the Fundamental Limits of LLMs at Scale"
 “大力出奇迹”——这似乎已成为AI领域的黄金法则。从GPT-1的1.17亿参数到GPT-4的万亿级别，模型规模的指数级增长带来了惊人的能力涌现。我们似乎相信，只要数据够多、参数够大，一切问题都能被“暴力”解决。
 
 > **论文标题**：On the Fundamental Limits of LLMs at Scale
-
 > **ArXiv URL**：http://arxiv.org/abs/2511.12869v1
 
 然而，一篇由谷歌DeepMind、Meta、斯坦福等多家顶尖机构联合发表的论文，为这股狂热的“规模崇拜”踩下了理论的刹车。研究指出，LLM的性能提升并非无限，而是受制于五个根本性的“理论天花板”。
@@ -24,13 +23,9 @@ title: "On the Fundamental Limits of LLMs at Scale"
 该研究确定了五个相互关联、且无法仅通过扩大规模来解决的核心限制：
 
 1.  **幻觉 (Hallucination)**：模型会“一本正经地胡说八道”。
-
 2.  **上下文压缩 (Context Compression)**：长达百万的上下文窗口，有效利用率却远低于此。
-
 3.  **推理退化 (Reasoning Degradation)**：模型更擅长模式匹配，而非真正的逻辑推理。
-
 4.  **检索脆弱性 (Retrieval Fragility)**：RAG系统在检索和整合信息时存在固有缺陷。
-
 5.  **多模态错位 (Multimodal Misalignment)**：语言和视觉等不同模态的信息难以完美对齐。
 
 本文将重点解读论文中关于“幻觉”的深刻剖析，看看为何它是LLM无法根除的原罪。
@@ -46,7 +41,6 @@ title: "On the Fundamental Limits of LLMs at Scale"
 首先是**可计算性理论**（Computability Theory）的限制。一个惊人的结论源于哥德尔和图灵的理论：
 
 - **对角论证**（Diagonalization）：对于任何一个可被列举出来的LLM模型集合，我们总能构造出一个“刁钻”的问题，使得集合中的每一个模型都会出错。这意味着不存在一个“全知全能”的LLM。
-
 - **不可判定问题**（Undecidable Problems）：像著名的“停机问题”（Halting Problem）在理论上是无法被任何算法解决的。当LLM被问及这类问题时，它要么拒绝回答，要么必然产生幻觉。
 
 简单说，LLM作为一种计算设备，其能力有着数学上的明确边界。
@@ -56,7 +50,6 @@ title: "On the Fundamental Limits of LLMs at Scale"
 即便问题是可计算的，信息和统计规律也给出了另一重枷锁。
 
 - **信息瓶颈**：任何有限大小的模型（无论参数多大），其描述能力都是有限的。它无法无损地压缩和存储世界上无限的知识。就像用一张有限大小的图片去完美表示一幅无限细节的画，信息丢失和失真是必然的。
-
 - **样本复杂度**：要让模型准确记住所有“长尾知识”（即罕见事实），理论上需要天文数字般的训练样本。例如，要让模型对 $m$ 个独立事实的错误率低于 $\epsilon$，所需的样本量 $n$ 与 $m$ 成正比，即 $n = \Omega(m/\epsilon^2)$。这在实践中几乎不可能实现。
 
 ### 数据原罪：不完美的世界，不完美的模型
@@ -64,7 +57,6 @@ title: "On the Fundamental Limits of LLMs at Scale"
 理论极限设定了幻觉的下限，而训练数据中的固有缺陷则在现实中将这个问题无限放大。
 
 - **不完整与过时**：训练数据只是世界的一个有限快照。知识在不断更新，而模型却被“困在”了过去。如下图所示，时效性强的信息在短短6个月后，其有效性就可能下降到50%以下。
-
 - **噪声与长尾效应**：网络数据充斥着错误、偏见和矛盾信息。同时，知识分布极不均衡，模型对高频知识滚瓜烂熟，对低频的“长尾”知识则常常出错。
 
 <img src="/images/2511.12869v1/x3.jpg" alt="Figure 3: Empirical evidence of data-induced hallucinations." style="width:85%; max-width:600px; margin:auto; display:block;">

@@ -10,7 +10,6 @@ title: "Cognitive Foundations for Reasoning and Their Manifestation in LLMs"
 大语言模型（LLM）时常展现出一种令人费解的“认知失调”：它们能解决极其复杂的问题，却在一些看似更简单的变体上栽跟头。这是否意味着，LLM的“推理”与人类真正的思考过程，有着本质的不同？
 
 > **论文标题**：Cognitive Foundations for Reasoning and Their Manifestation in LLMs
-
 > **ArXiv URL**：http://arxiv.org/abs/2511.16660v1
 
 来自哈佛大学、普林斯顿大学等顶尖机构的一项最新研究，首次系统地回答了这个问题。研究者们不再仅仅关注答案的对错，而是深入“解剖”了模型思考的每一步。
@@ -36,11 +35,8 @@ title: "Cognitive Foundations for Reasoning and Their Manifestation in LLMs"
 为了解决这一危机，该研究从认知科学中汲取养分，建立了一个包含28个具体认知元素的统一分类法。这个框架从四个维度剖析推理过程：
 
 1.  **推理不变性 (Reasoning Invariants)**：推理必须遵守的基本规则，如逻辑一致性、组合性。
-
 2.  **元认知控制 (Meta-Cognitive Controls)**：选择、监控和调整推理策略的“总指挥”，包括自我意识、目标管理和评估。
-
 3.  **推理表征 (Reasoning Representations)**：知识的组织方式，例如是层级化的、因果的还是空间的。
-
 4.  **推理操作 (Reasoning Operations)**：构建和转换这些表征的具体动作，如验证、回溯和抽象。
 
 这个分类法为我们提供了一套前所未有的、精细化的“词汇表”，用以分析和比较机器与人类的思维过程。
@@ -52,7 +48,6 @@ title: "Cognitive Foundations for Reasoning and Their Manifestation in LLMs"
 分析结果揭示了惊人的结构性差异：
 
 -   **人类**：倾向于采用**层级嵌套**（hierarchical nesting）和**元认知监控**的策略。我们会进行抽象思考，并不断评估、修正自己的思路。
-
 -   **LLM**：严重依赖**浅层前向链式推理**（shallow forward chaining）。它们倾向于一步接一步地向前推进，缺乏有效的纠错和回顾机制。
 
 这种差异在处理**非结构化问题**（ill-structured problems）——例如没有唯一正确答案的开放式困境时，表现得最为明显。

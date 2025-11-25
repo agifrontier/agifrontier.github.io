@@ -10,7 +10,6 @@ title: "SkyRL-Agent: Efficient RL Training for Multi-turn LLM Agent"
 AI Agent无疑是当下最火热的技术浪潮，但要训练一个能在复杂、多步骤任务中稳定发挥的Agent，其背后高昂的算力成本和漫长的训练周期，正成为许多团队难以逾越的障碍。如果训练成本能直接减半，效率还能提升超过50%，会带来怎样的改变？
 
 > **论文标题**：SkyRL-Agent: Efficient RL Training for Multi-turn LLM Agent
-
 > **ArXiv URL**：http://arxiv.org/abs/2511.16108v1
 
 来自加州大学伯克利分校和Anyscale的研究者们给出了答案。他们推出了**SkyRL-Agent**，一个专为多轮、长周期的AI Agent打造的高效强化学习（RL）训练与评估框架。基于该框架，他们仅用纯粹的强化学习，就将一个开源模型在软件工程基准测试SWE-Bench上的通过率从24.4%提升至39.4%，而训练成本仅为同类先进模型的一半不到！
@@ -20,11 +19,8 @@ AI Agent无疑是当下最火热的技术浪潮，但要训练一个能在复杂
 ### 智能体训练的“老大难”问题
 
 传统的Agent训练方法常常面临几大痛点：
-
 1.  **效率低下**：训练过程涉及大量CPU密集型（如环境交互）和GPU密集型（如模型推理）操作，但两者常因调度不当而无法并行，导致昂贵的GPU资源闲置。
-
 2.  **集成困难**：为Agent添加新工具或适应新任务，往往需要重构代码，灵活性差。
-
 3.  **后端绑定**：Agent的实现通常与特定的RL训练后端（如VeRL, Tinker）紧密耦合，难以迁移和复用。
 
 SkyRL-Agent的设计初衷，正是为了解决这些“老大难”问题。
@@ -60,9 +56,7 @@ SkyRL-Agent通过一个“后端桥接”层，将Agent的执行逻辑与具体�
 为了验证框架的威力，研究团队使用SkyRL-Agent训练了一个名为**SA-SWE-32B**的软件工程智能体。该Agent基于Qwen3-32B模型，在SWE-Bench任务上进行纯粹的强化学习训练。
 
 训练的成功不仅依赖于高效的框架，还得益于一套精心设计的**工具增强训练配方**（tool-enhanced training recipe）：
-
 *   **引导式工具使用**：研究发现，Agent在代码库中定位错误时，常常低效地逐行查看文件，而不是使用搜索工具。为此，他们引入了一个基于**抽象语法树**（**Abstract Syntax Tree, AST**）的强大搜索工具，并辅以提示，引导Agent学会更高效地导航代码。
-
 *   **失败中学习**：当Agent执行失败或陷入循环时，系统会注入结构化的**提示**（hints），帮助Agent分析错误、自我纠正，从而显著提高了训练轨迹的质量和成功率。
 
 <img src="/images/2511.16108v1/x3.jpg" alt="训练效果对比" style="width:85%; max-width:450px; margin:auto; display:block;">
