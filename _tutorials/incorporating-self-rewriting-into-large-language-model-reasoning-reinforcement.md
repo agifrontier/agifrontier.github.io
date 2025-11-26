@@ -9,8 +9,7 @@ title: "Incorporating Self-Rewriting into Large Language Model Reasoning Reinfor
 
 大模型在解决复杂问题时，其推理过程常常显得冗长、混乱，甚至充满无效思考。你是否也曾被它绕来绕去的“思维过程”搞得头大？这不仅消耗了大量计算资源，也降低了我们对模型决策的信任度。
 
-> **论文标题**：Incorporating Self-Rewriting into Large Language Model Reasoning Reinforcement
-> **ArXiv URL**：http://arxiv.org/abs/2511.16331v1
+> ArXiv URL：http://arxiv.org/abs/2511.16331v1
 
 最近，来自字节跳动、北理和浙大的研究者提出了一种名为**自我重写**（**Self-Rewriting**）的全新框架。它通过让大模型自己“批改”和“重写”自己的推理过程，实现了惊人的效果：在推理长度大幅缩短46%的同时，准确率反而提升了0.6%，推理质量评分更是飙升7.2分！
 
@@ -21,12 +20,17 @@ title: "Incorporating Self-Rewriting into Large Language Model Reasoning Reinfor
 这种“唯结果论”的训练方式，忽略了对推理过程本身的精细打磨。
 
 这导致模型在思考时常常出现四大“思维病”：
+
 *   **过度思考**（Over-thinking）：在无关紧要的细节上反复纠缠。
+
 *   **思考不足**（Under-thinking）：跳过关键步骤，推理不充分。
+
 *   **重复思考**（Redundant-thinking）：反复陈述同样的想法，没有新进展。
+
 *   **无序思考**（Disordered-thinking）：思维线索混乱，东一榔头西一棒子。
 
 <img src="/images/2511.16331v1/intro.jpg" alt="模型推理中的常见缺陷" style="width:85%; max-width:450px; margin:auto; display:block;">
+
 *图1：大模型推理中常见的四种思维缺陷，而自我重写能显著改善这些问题。*
 
 这些问题不仅让模型的“内心戏”变得难以理解，还浪费了宝贵的计算资源，甚至可能导致最终结果出错。
@@ -42,6 +46,7 @@ title: "Incorporating Self-Rewriting into Large Language Model Reasoning Reinfor
 具体来说，只有当模型对一个问题的所有初步回答都正确时，才会触发“重写”机制。模型会将自己重写后的、更精炼的推理版本视为更优的答案，并在后续的强化学习中模仿这种高质量的思考方式。
 
 <img src="/images/2511.16331v1/method.jpg" alt="自我重写框架流程图" style="width:85%; max-width:600px; margin:auto; display:block;">
+
 *图2：自我重写框架。仅当所有初步推理都正确时，模型才会进行重写，并为重写后的版本赋予更高奖励。*
 
 如果初步回答中存在错误，则沿用传统的强化学习方式，奖励正确的答案。这种设计既保留了原有算法的优点，又引入了提升推理质量的“自我监督”信号。
@@ -55,6 +60,7 @@ title: "Incorporating Self-Rewriting into Large Language Model Reasoning Reinfor
 结果显示，自我重写方法在**准确率-长度权衡**上取得了最佳表现。
 
 <img src="/images/2511.16331v1/new_scatter.jpg" alt="不同方法在准确率-长度上的表现" style="width:85%; max-width:600px; margin:auto; display:block;">
+
 *图3：在不同推理长度下，自我重写（Self-Rewriting，红色）始终保持着最高的准确率。*
 
 如图所示，相较于其他只是简单惩罚长度的方法，自我重写能够在大幅压缩推理文本长度的同时，保持甚至提升在数学、科学、逻辑等多种复杂任务上的准确率。
@@ -66,6 +72,7 @@ title: "Incorporating Self-Rewriting into Large Language Model Reasoning Reinfor
 自我重写为何比传统的“长度惩罚”等方法更有效？研究者通过分析模型偏好的数据揭示了答案。
 
 <img src="/images/2511.16331v1/ratio_distribution.jpg" alt="不同方法下偏好/拒绝样本的长度比分布" style="width:85%; max-width:600px; margin:auto; display:block;">
+
 *图4：自我重写（左）产生的长度比例分布更多样，表明其能根据问题动态调整压缩程度。*
 
 上图显示，传统的长度偏好方法（右）倾向于统一地将文本缩短到一个固定的比例（中位数约0.7）。

@@ -9,8 +9,7 @@ title: "ELPO: Ensemble Learning Based Prompt Optimization for Large Language Mod
 
 与大语言模型（LLM）打交道时，我们总会遇到一个头疼的问题：模型表现对提示词（Prompt）极其敏感。
 
-> **论文标题**：ELPO: Ensemble Learning Based Prompt Optimization for Large Language Models
-> **ArXiv URL**：http://arxiv.org/abs/2511.16122v1
+> ArXiv URL：http://arxiv.org/abs/2511.16122v1
 
 换个同义词，调整下语序，结果可能天差地别。这催生了“提示词工程”这门手艺，但也让无数开发者陷入了反复试错的泥潭。
 
@@ -39,8 +38,11 @@ ELPO则像一个“智囊团”，它不押宝于任何单一策略，而是集�
 ELPO没有采用单一的生成策略，而是设计了一个“三驾马车”式的生成器组合，确保备选Prompt既有数量又有质量，还兼具多样性。
 
 这三种策略分别是：
+
 1.  **Bad-Case Reflection**：分析预测失败的样本，反思当前Prompt的不足之处，并生成改进版本。
+
 2.  **Evolutionary Reflection**：模拟生物进化，对表现好的Prompt进行“杂交”和“变异”，创造出新的优秀后代。
+
 3.  **Hard-Case Tracking**：这是ELPO的一大创新！它会持续追踪那些反复出错的“顽固”样本，结合导致失败的Prompt进行深度分析，从而生成泛化能力更强的指令。
 
 通过这种方式，ELPO构建了一个异常丰富的候选池，为后续的筛选提供了坚实的基础。
@@ -54,9 +56,11 @@ ELPO没有采用单一的生成策略，而是设计了一个“三驾马车”�
 为此，ELPO创造性地引入了一套基于**贝叶斯搜索**（**Bayesian Search**）和**多臂老虎机**（**Multi-Armed Bandit, MAB**）的智能筛选机制。
 
 *   **贝叶斯搜索**：它将Prompt映射到高维空间，通过评估一小部分Prompt的表现，来预测其他未经评估的Prompt的潜力。
+
 *   **MAB**：它则像一个精明的赌徒，在“探索”（尝试新Prompt）和“利用”（评估已知的好Prompt）之间做出权衡，用最少的资源快速锁定最有希望的候选者。
 
 ![搜索效率对比](images/2511.16122v1/Efficiency_of_search.png)
+
 *图注：ELPO的搜索策略在效率上表现优越*
 
 这套组合拳极大地降低了评估成本，让大规模Prompt优化在计算上成为可能。
@@ -87,8 +91,11 @@ ELPO的“组合拳”效果如何？实验结果给出了响亮的答案。
 ![](https://image.uc.cn/s/wemedia/s/upload/2024/762c95e54d3d75865a7f9202534f37fa.png)
 
 结果显示，ELPO在所有任务上都一致性地超越了包括APE、OPRO、Promptbreeder在内的所有SOTA方法。
+
 *   在ArSarcasm数据集上，ELPO将F1分数提升了 **7.6** 分。
+
 *   在BBH-navigate数据集上，F1分数提升了 **9.2** 分。
+
 *   在更具挑战性的GSM8K数学推理任务上，准确率也达到了惊人的 **96.0** 分。
 
 消融实验进一步证实，ELPO的每一个组件——多样的生成器、高效的搜索框架以及集成投票策略——都对最终的卓越性能做出了不可或缺的贡献。

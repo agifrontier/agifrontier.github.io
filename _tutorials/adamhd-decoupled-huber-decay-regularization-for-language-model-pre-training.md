@@ -9,8 +9,7 @@ title: "AdamHD: Decoupled Huber Decay Regularization for Language Model Pre-Trai
 
 在训练大语言模型（LLM）时，我们常常聚焦于模型架构、数据质量和训练规模，但一个“幕后英雄”同样至关重要——优化器。多年来，**AdamW** 一直是训练Transformer模型的黄金标准。但它真的完美无缺吗？
 
-> **论文标题**：AdamHD: Decoupled Huber Decay Regularization for Language Model Pre-Training
-> **ArXiv URL**：http://arxiv.org/abs/2511.14721v1
+> ArXiv URL：http://arxiv.org/abs/2511.14721v1
 
 来自哈佛和斯坦福大学的一项新研究指出，AdamW存在一个关键缺陷：**过度衰减**（**over-decay**）。这会导致模型训练后期性能不佳。为了解决这个问题，研究者们提出了AdamHD，一个AdamW的即插即用替代品，效果惊人！
 
@@ -29,15 +28,21 @@ AdamW的核心之一是**权重衰减**（**Weight Decay**），它通过一个 
 Huber损失函数本身并不新鲜，它在机器学习中常用于回归任务。但把它用到优化器的权重衰减上，却是个绝妙的创举。
 
 它的核心思想是“看人下菜碟”：
+
 *   当参数的绝对值小于某个阈值 $\delta$ 时，它采用二次方（$L\_2$-like）衰减，温和地进行正则化。
+
 *   当参数的绝对值超过阈值 $\delta$ 时，它切换为线性（$L\_1$-like）衰减，施加一个恒定的、有上限的拉力。
 
 <img src="/images/2511.14721v1/x1.jpg" alt="Huber与L1/L2正则化对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+
 *图1：Huber正则化（红色）结合了$L\_2$（蓝色）在原点附近的平滑性和$L\_1$（绿色）在远离原点处的线性增长特性。*
 
 这种设计一举多得：
+
 1.  **有界梯度**：避免了对大参数施加过大的惩罚。
+
 2.  **尺度不变性**：对参数的缩放不敏感，训练更稳定。
+
 3.  **促进稀疏性**：对大参数施加类似 $L\_1$ 的惩罚，能将一些不那么重要的参数推向零，使模型更稀疏。
 
 ### 即插即用，几乎零成本
@@ -68,6 +73,7 @@ Huber损失函数本身并不新鲜，它在机器学习中常用于回归任务
 与AdamW相比，AdamHD在达到相同的验证集困惑度（Perplexity）目标时，**训练速度（墙上时钟时间）快了10-15%**。这意味着更少的计算资源和时间成本。
 
 <img src="/images/2511.14721v1/loss_curve_gpt2_1558.jpg" alt="GPT-2 1.5B模型训练曲线" style="width:85%; max-width:450px; margin:auto; display:block;">
+
 *图2：在GPT-2 1.5B模型上，AdamHD（蓝色）的验证损失下降速度明显快于AdamW（橙色）。*
 
 #### 更低的困惑度

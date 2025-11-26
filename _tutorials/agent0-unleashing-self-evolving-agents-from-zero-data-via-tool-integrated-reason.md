@@ -9,20 +9,22 @@ title: "Agent0: Unleashing Self-Evolving Agents from Zero Data via Tool-Integrat
 
 当前，大语言模型（LLM）Agent的进化正面临一个巨大的瓶颈：对海量、高质量、人工标注数据的严重依赖。这不仅成本高昂、耗时费力，更将AI的潜力束缚在了人类知识的边界之内。有没有一种方法能让AI彻底摆脱“数据投喂”，实现真正的自我进化？
 
-> **论文标题**：Agent0: Unleashing Self-Evolving Agents from Zero Data via Tool-Integrated Reasoning
-> **ArXiv URL**：http://arxiv.org/abs/2511.16043v1
+> ArXiv URL：http://arxiv.org/abs/2511.16043v1
 
 来自Salesforce、斯坦福等机构的最新研究 **Agent0** 给出了一个颠覆性的答案。它构建了一个完全自主的框架，无需任何外部数据，仅通过内部“左右互搏”，就能从零开始进化出高性能的Agent。
 
 ### Agent0的核心：一场AI的“左右互搏”
 
 Agent0的构想巧妙而优雅。它从同一个基础LLM中初始化出两个功能不同的Agent：
+
 *   **课程Agent**（**Curriculum Agent**）：扮演“出题人”的角色，其目标是生成对当前“解题人”最具挑战性的前沿任务。
+
 *   **执行Agent**（**Executor Agent**）：扮演“解题人”的角色，其目标是学习解决“出题人”提出的日益复杂的任务。
 
 这两个Agent之间形成了一种共生竞争关系，共同在一个自我完善的循环中进化。
 
 <img src="/images/2511.16043v1/x1.jpg" alt="Agent0自主协同进化框架" style="width:85%; max-width:600px; margin:auto; display:block;">
+
 *图1: Agent0自主协同进化框架。课程Agent（左）通过强化学习生成前沿任务，执行Agent（右）学习解决这些任务。工具的集成驱动了一个良性循环，使任务复杂度和Agent能力同步螺旋式上升。*
 
 ### 协同进化循环：Agent0如何运转？
@@ -30,6 +32,7 @@ Agent0的构想巧妙而优雅。它从同一个基础LLM中初始化出两个�
 Agent0的进化过程是一个迭代的闭环。研究人员将其分为两个核心阶段：课程进化和执行者进化。
 
 <img src="/images/2511.16043v1/x2.jpg" alt="Agent0协同进化循环" style="width:85%; max-width:600px; margin:auto; display:block;">
+
 *图2: Agent0协同进化循环。 (1) 课程进化：课程Agent $\pi\_{\theta}$ 通过RL训练生成任务，其奖励 $R\_{C}$ 来自执行者的不确定性、工具使用频率和重复性惩罚。(2) 执行者进化：执行Agent $\pi\_{\phi}$ 在筛选后的高挑战性数据集 $\mathcal{D}^{(t)}$ 上进行训练。*
 
 #### 1. 课程Agent：聪明的出题人
@@ -37,7 +40,9 @@ Agent0的进化过程是一个迭代的闭环。研究人员将其分为两个�
 课程Agent的目标不是随机生成问题，而是精准地找到执行Agent的能力边界。它的训练基于**强化学习**（**Reinforcement Learning, RL**），其奖励信号 $R\_{C}$ 设计得十分精妙，主要包括三个部分：
 
 *   **不确定性奖励 $R\_{\text{unc}}$**：如果执行Agent对某个任务的多个回答高度不一致（即不确定性高），说明这个任务难度适中，课程Agent就会获得奖励。
+
 *   **工具使用奖励 $R\_{\text{tool}}$**：为了鼓励生成需要复杂推理的任务，当执行Agent在解题时调用外部工具（如代码解释器），课程Agent也会获得奖励。
+
 *   **重复性惩罚 $R\_{\text{rep}}$**：为了避免课程停滞不前，如果生成的任务与已有任务过于相似，则会受到惩罚。
 
 通过优化这个复合奖励，课程Agent学会了如何源源不断地创造出既有挑战性又多样化的新任务。
@@ -69,14 +74,17 @@ Agent0最关键的设计之一是引入了外部工具，比如代码解释器�
 Agent0的效果如何？研究人员在Qwen3-4B和Qwen3-8B等基础模型上进行了验证。结果令人振奋：
 
 *   **数学推理能力大幅提升**：在GSM8K、MATH等10个数学推理基准测试中，Agent0让Qwen3-8B-Base模型的性能平均提升了18%。
+
 *   **通用推理能力同步增强**：更令人惊喜的是，这种在数学领域培养出的复杂推理能力可以有效泛化。在MMLU-Pro等通用推理任务上，性能平均提升了24%，显著优于其他零数据自进化方法。
 
 <img src="/images/2511.16043v1/co_evo.jpg" alt="迭代过程中的性能提升" style="width:85%; max-width:600px; margin:auto; display:block;">
+
 *图3: 随着迭代次数增加，Agent0在数学和通用推理基准上的性能持续提升，证明了协同进化循环的有效性。*
 
 下图直观展示了任务的进化过程。从迭代1的简单几何问题，到迭代3的复杂约束满足问题，课程Agent生成的任务难度肉眼可见地增加。同时，执行Agent也展现出越来越强的混合推理能力，能够结合自然语言分析和代码执行来解决问题。
 
 <img src="/images/2511.16043v1/x3.jpg" alt="任务复杂度与解题能力进化示例" style="width:85%; max-width:600px; margin:auto; display:block;">
+
 *图4: 任务复杂度与解题能力进化示例。*
 
 ### 结论
