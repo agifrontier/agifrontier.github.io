@@ -37,7 +37,7 @@ title: "Defeating the Training-Inference Mismatch via FP16"
 ### 创新点
 本文的创新之处在于，它没有设计新的复杂算法，而是回归问题的本源，识别出浮点数精度是导致策略不匹配的关键因素。
 
-BF16 拥有与 FP32 相同的动态范围（8位指数），但牺牲了精度（7位尾数）。这使其在预训练中非常稳定，能避免梯度消失或爆炸。然而，在RL微调中，正是这种低精度导致了问题：训练和推理引擎中不同的计算实现（如CUDA内核优化、并行策略差异）会产生不同的舍入误差，这些误差在自回归生成过程中不断累积，最终导致两个引擎输出的概率分布 $$$\operatorname\*{{\color[rgb]{0,0,1}\pi}}$$$ (训练) 和 $$$\operatorname\*{{\color[rgb]{1,0,0}\mu}}$$$ (推理) 显著偏离。
+BF16 拥有与 FP32 相同的动态范围（8位指数），但牺牲了精度（7位尾数）。这使其在预训练中非常稳定，能避免梯度消失或爆炸。然而，在RL微调中，正是这种低精度导致了问题：训练和推理引擎中不同的计算实现（如CUDA内核优化、并行策略差异）会产生不同的舍入误差，这些误差在自回归生成过程中不断累积，最终导致两个引擎输出的概率分布 $$$\operatorname\*{% raw %}{{\color[rgb]{0,0,1}\pi}}{% endraw %}$$$ (训练) 和 $$$\operatorname\*{% raw %}{{\color[rgb]{1,0,0}\mu}}{% endraw %}$$$ (推理) 显著偏离。
 
 <img src="/images/2510.26788v1/x2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
