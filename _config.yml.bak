@@ -1,0 +1,16 @@
+kramdown:
+  input: GFM
+  hard_wrap: false
+  math_engine: mathjax
+  syntax_highlighter: rouge
+
+collections:
+  tutorials:
+    output: true
+    permalink: /tutorials/:path/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-last-modified-at

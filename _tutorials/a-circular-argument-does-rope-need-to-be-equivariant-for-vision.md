@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: post
 title: "A Circular Argument : Does RoPE need to be Equivariant for Vision?"
 date: 2025-12-11
+toc: true
 ---
 
 # 颠覆RoPE核心信仰：等变性不再神圣？Spherical RoPE性能持平甚至反超
