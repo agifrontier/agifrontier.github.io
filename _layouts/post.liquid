@@ -61,12 +61,12 @@ layout: default
   <article class="post-content">
     {% if page.toc and page.toc.beginning %}
       <div id="table-of-contents">
-        {% toc %}
+        {{ content | toc_only }}
       </div>
       <hr>
     {% endif %}
     <div id="markdown-content">
-      {{ content }}
+      {{ content | inject_anchors }}
     </div>
   </article>
 

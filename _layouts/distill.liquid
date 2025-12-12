@@ -70,11 +70,11 @@
         {% if page.toc %}
           <div class="mb-5" id="table-of-contents">
             <h4>Contents</h4>
-            {% toc %}
+            {{ content | toc_only }}
           </div>
         {% endif %}
 
-        {{ content }}
+        {{ content | inject_anchors }}
       </d-article>
 
       <d-appendix>
