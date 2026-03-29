@@ -3,7 +3,7 @@ layout: default
 title: "Algorithmic Thinking Theory"
 ---
 
-# LLM推理的“系统2”觉醒：谷歌、斯坦福联手揭秘“算法思维”理论
+## LLM推理的“系统2”觉醒：谷歌、斯坦福联手揭秘“算法思维”理论
 
 <img src="/images/2512.04923v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

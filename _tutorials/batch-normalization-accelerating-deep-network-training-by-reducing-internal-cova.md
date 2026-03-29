@@ -3,7 +3,7 @@ layout: default
 title: "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift"
 ---
 
-# 批量归一化（Batch Normalization）：深度学习的“稳定器”与“加速器”
+## 批量归一化（Batch Normalization）：深度学习的“稳定器”与“加速器”
 
 <img src="/images/1502.03167v3/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

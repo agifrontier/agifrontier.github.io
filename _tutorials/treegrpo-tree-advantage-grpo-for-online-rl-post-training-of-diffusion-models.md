@@ -3,7 +3,7 @@ layout: default
 title: "TreeGRPO: Tree-Advantage GRPO for Online RL Post-Training of Diffusion Models"
 ---
 
-# 训练加速2.4倍！TreeGRPO用“决策树”革新AI绘画模型对齐
+## 训练加速2.4倍！TreeGRPO用“决策树”革新AI绘画模型对齐
 
 <img src="/images/2512.08153v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

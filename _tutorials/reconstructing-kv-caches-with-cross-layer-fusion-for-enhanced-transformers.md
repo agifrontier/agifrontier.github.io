@@ -3,7 +3,7 @@ layout: default
 title: "Reconstructing KV Caches with Cross-layer Fusion For Enhanced Transformers"
 ---
 
-# KV缓存减半，性能反超！阿里FusedKV揭示K/V不对称共享新范式
+## KV缓存减半，性能反超！阿里FusedKV揭示K/V不对称共享新范式
 
 <img src="/images/2512.03870v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

@@ -3,7 +3,6 @@ layout: default
 title: "DeepDive: Advancing Deep Search Agents with Knowledge Graphs and Multi-Turn RL"
 ---
 
-# DeepDive: Advancing Deep Search Agents with Knowledge Graphs and Multi-Turn RL
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.10446v1
 
@@ -13,16 +12,16 @@ title: "DeepDive: Advancing Deep Search Agents with Knowledge Graphs and Multi-T
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了 DeepDive 方法，通过从知识图谱自动合成高难度问题，并采用端到端多轮强化学习进行训练，旨在提升大型语言模型（LLM）作为深度搜索智能体所需的长时序推理和信息检索能力。
 
-# 关键定义
+## 关键定义
 *   **深度搜索智能体 (Deep Search Agent)**: 指能够整合外部浏览工具的大型语言模型。这类智能体被期望能够对来自上百个在线信息源的内容进行推理和搜索，以定位和解决复杂、答案难以查找的问题，这要求其具备长时序推理能力。
 *   **难寻问题 (Hard-to-find Questions)**: 指那些涉及多个模糊实体、需要长时序推理和深度搜索才能解答的复杂问题。这类问题与传统问答数据（如 HotpotQA）中通过几次明确实体搜索就能解决的简单问题形成鲜明对比。
 *   **多轮强化学习 (Multi-Turn Reinforcement Learning)**: 一种端到端的训练范式，允许智能体在给出最终答案前，执行多轮“思考-行动-观察”的循环。这与单轮RL不同，它能更好地训练智能体进行迭代式推理和序贯式工具调用。
 *   **严格奖励 (Strict Rewards)**: 本文设计的一种二元（0/1）奖励函数。一个轨迹只有在同时满足两个条件时才能获得+1奖励：(1) 轨迹中每一步的格式（包括思维链和工具调用）都必须完全正确；(2) 最终答案必须与标准答案完全匹配。这种设计旨在防止奖励“作弊”并确保生成高质量的轨迹。
 
-# 相关工作
+## 相关工作
 当前，尽管大型语言模型在数学和编程等复杂推理任务上表现出色，但在作为深度搜索智能体方面，尤其是在开源模型领域，与顶尖的专有模型（如 OpenAI DeepResearch）相比仍存在巨大差距。
 
 研究现状的主要瓶颈可归结为两点：
@@ -31,7 +30,7 @@ title: "DeepDive: Advancing Deep Search Agents with Knowledge Graphs and Multi-T
 
 本文旨在解决上述两个核心问题，即通过创新的数据合成策略和训练框架，提升开源模型作为深度搜索智能体的能力。
 
-# 本文方法
+## 本文方法
 本文提出了 DeepDive 方法，旨在通过高质量的数据构建和端到端的强化学习训练，来提升深度搜索智能体的长时序信息获取能力。该方法包含两大核心技术：从知识图谱自动化合成问答数据，以及端到端多轮强化学习。
 
 ### 交互框架
@@ -108,7 +107,7 @@ $${% endraw %}
 
     同时，引入了**提前退出机制**，即一旦模型在任何步骤中产生格式错误，轨迹生成将立即终止并获得0奖励，这大大提高了训练效率和正样本的可靠性。
 
-# 实验结论
+## 实验结论
 
 ### 整体性能
 DeepDive 在多个具有挑战性的深度搜索基准测试中展现了卓越的性能。

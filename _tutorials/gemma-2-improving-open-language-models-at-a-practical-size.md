@@ -3,7 +3,6 @@ layout: default
 title: "Gemma 2: Improving Open Language Models at a Practical Size"
 ---
 
-# Gemma 2: Improving Open Language Models at a Practical Size
 
 - **ArXiv URL**: http://arxiv.org/abs/2408.00118v3
 
@@ -13,10 +12,10 @@ title: "Gemma 2: Improving Open Language Models at a Practical Size"
 
 ---
 
-# TL;DR
+## TL;DR
 本文介绍Gemma 2系列开放语言模型（2B、9B、27B），通过在Transformer架构中交错使用局部-全局注意力、采用分组查询注意力，并对2B和9B模型应用知识蒸馏进行训练，实现了在同等参数规模下的最佳性能，甚至能与2-3倍大的模型相媲美。
 
-# 关键定义
+## 关键定义
 本文主要在现有技术的基础上进行组合与改进，以下是对理解本文方法至关重要的几个核心技术：
 
 1.  **知识蒸馏 (Knowledge Distillation)**: 一种训练策略，其中一个较小的“学生”模型（如Gemma 2的2B和9B模型）不直接学习预测下一个词元 (token)，而是学习模仿一个更大、更强的“教师”模型的输出概率分布。这为学生模型提供了比标准one-hot标签更丰富的梯度信号，从而在同等训练数据量下达到更好的性能，模拟了在更多数据上训练的效果。
@@ -24,12 +23,12 @@ title: "Gemma 2: Improving Open Language Models at a Practical Size"
 3.  **分组查询注意力 (Grouped-Query Attention, GQA)**: 一种注意力变体，将查询头（Query heads）分成几组，每组共享一套键（Key）和值（Value）头。本文中，$$num_groups$$设为2，这意味着KV头的数量是Q头的一半。该技术在保持模型性能的同时，降低了推理时的内存占用和计算量。
 4.  **Logit软上限 (Logit soft-capping)**: 一种稳定训练的技术，通过一个$$tanh$$函数将注意力层和最终输出层的logits值限制在一个预设的$$soft_cap$$范围内（注意力层为50，最终层为30）。其公式为：$$logits$$ $\leftarrow$ $$soft_cap$$ $\times \tanh(\text{logits} / \text{soft\_cap})$。
 
-# 相关工作
+## 相关工作
 当前，小型语言模型的性能提升主要依赖于大幅增加训练数据量，但这种方法的回报遵循对数规律递减，即效果提升越来越有限。例如，最新的小型模型需要多达15T的token才能获得1-2%的微小性能改进，这表明现有的小模型仍处于训练不足（under-trained）的状态。
 
 本文旨在解决的核心问题是：如何在不单纯依赖海量增加训练数据的情况下，找到更有效的方法来提升小型语言模型的性能。研究者们探索用更丰富的训练目标（如知识蒸馏）替代传统的“下一个token预测”任务，为模型在每一步训练中提供更高质量的信息。
 
-# 本文方法
+## 本文方法
 Gemma 2模型家族建立在Gemma 1的解码器-仅（decoder-only）Transformer架构之上，但引入了多项关键的架构和训练方法改进。
 
 ### 模型架构
@@ -82,7 +81,7 @@ $${% endraw %}
 *   **模型合并**: 将不同超参数下训练得到的模型进行平均，以提升整体性能。
 *   **格式化**: 指令微调模型使用了新的对话格式，模型在生成结束时会明确使用$$<end_of_turn><eos>$$序列，而非仅有$$<eos>$$。这有助于更好地管理多轮对话流程。
 
-# 实验结论
+## 实验结论
 本文通过大量的消融实验和基准评估，验证了Gemma 2在架构和训练方法上的优势。
 
 ### 核心实验发现

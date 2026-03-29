@@ -3,7 +3,7 @@ layout: default
 title: "Controlling changes to attention logits"
 ---
 
-# Mistral AI新作QuacK：不靠归一化，动态学习率让Transformer训练提速10%
+## Mistral AI新作QuacK：不靠归一化，动态学习率让Transformer训练提速10%
 
 <img src="/images/2511.21377v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

@@ -3,7 +3,6 @@ layout: default
 title: "Architecting Resilient LLM Agents: A Guide to Secure Plan-then-Execute Implementations"
 ---
 
-# Architecting Resilient LLM Agents: A Guide to Secure Plan-then-Execute Implementations
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.08646v1
 
@@ -13,10 +12,10 @@ title: "Architecting Resilient LLM Agents: A Guide to Secure Plan-then-Execute I
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为“规划-执行” (Plan-then-Execute, P-t-E) 的弹性LLM智能体架构指南，该架构通过解耦战略规划与战术执行来建立控制流完整性，从而天然地抵御间接提示注入攻击，并为在LangChain、CrewAI和AutoGen等主流框架中实现该架构提供了详细的安全蓝图。
 
-# 关键定义
+## 关键定义
 本文的核心是围绕“规划-执行”模式展开的一系列架构概念，其中关键定义如下：
 
 *   **规划-执行模式 (Plan-then-Execute Pattern, P-t-E)**：一种智能体设计方法，其中智能体首先制定一个全面的、多步骤的计划来实现复杂目标，然后由一个独立的组件逐步执行该预定计划。其核心是规划与执行的显式解耦。
@@ -25,7 +24,7 @@ title: "Architecting Resilient LLM Agents: A Guide to Secure Plan-then-Execute I
 *   **验证器 (Verifier)**：一个可选的高级组件，在执行开始前对规划器输出的计划进行审查。它可以是人工专家（Human-in-the-Loop, HITL）或自动化智能体，用于确保计划的逻辑合理性、安全性及与目标的一致性。
 *   **控制流完整性 (Control-Flow Integrity)**：一个源自传统软件安全的概念，在此指智能体的主要执行路径（即计划）在暴露于任何外部、不可信数据之前就被确定和锁定。这使得嵌入在工具输出中的恶意指令无法改变预定义的动作序列。
 
-# 相关工作
+## 相关工作
 目前，LLM智能体领域最普遍的设计模式之一是**ReAct (Reason-Act)**。ReAct智能体在一个紧密的迭代循环中运行：生成一个**想法 (Thought)**，执行一个**动作 (Action)**（通常是工具调用），并观察**结果 (Observation)**，然后将该结果反馈到下一个循环中以生成新的想法。
 
 这种模式的主要瓶颈和问题包括：
@@ -34,7 +33,7 @@ title: "Architecting Resilient LLM Agents: A Guide to Secure Plan-then-Execute I
 
 本文旨在解决上述问题，提出一种更稳健、可预测且安全的智能体架构模式，即P-t-E，特别关注其在构建生产级、可信赖的LLM智能体应用中的价值。
 
-# 本文方法
+## 本文方法
 本文的核心贡献是系统性地阐述了“规划-执行”（P-t-E）架构，并提供了一套以安全为核心的设计原则和实现指南。这不仅是一种算法，更是一套构建弹性LLM智能体的架构蓝图。
 
 <img src="/images/2509.08646v1/page_1_Figure_0.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -65,7 +64,7 @@ P-t-E模式本身提供了强大的安全基础，但需要与一系列纵深防
 #### 更安全的模式变体：规划-验证-执行 (Plan-Validate-Execute)
 针对高风险应用，本文提出了P-t-E的一个增强变体。考虑到LLM可能产生“看似可信但实则错误”的计划，该模式在执行前引入一个强制的人工验证环节。智能体生成计划后，必须由人类专家审查并确认其逻辑性、安全性与正确性，然后才能授权执行器开始工作。
 
-# 实验结论
+## 实验结论
 本文没有传统的定量实验，而是通过分析如何在三个主流智能体框架中实现安全的P-t-E架构，来验证其设计原则的有效性和实用性。
 
 ### LangChain & LangGraph 实现

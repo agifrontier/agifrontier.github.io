@@ -3,7 +3,6 @@ layout: default
 title: "Model Compression using Progressive Channel Pruning"
 ---
 
-# Model Compression using Progressive Channel Pruning
 
 - **ArXiv URL**: http://arxiv.org/abs/2507.04792v1
 
@@ -11,10 +10,10 @@ title: "Model Compression using Progressive Channel Pruning"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为渐进式通道剪枝 (Progressive Channel Pruning, PCP) 的迭代式剪枝框架，该框架通过在每次迭代中执行“尝试-选择-剪枝”三步流水线，从多个最优选择的层中逐步移除少量通道，从而自动确定压缩后网络的最优结构，并成功将其应用于监督学习和迁移学习场景。
 
-# 关键定义
+## 关键定义
 本文提出的核心框架围绕以下几个关键步骤/概念：
 
 *   **渐进式通道剪枝 (Progressive Channel Pruning, PCP)**：一种新颖的迭代式通道剪枝框架。与一次性、逐层剪枝不同，PCP 在多轮迭代中，每轮只从部分被选中的层中剪去少量通道，通过渐进的方式逐步达到目标压缩率。
@@ -25,7 +24,7 @@ title: "Model Compression using Progressive Channel Pruning"
 
 *   **剪枝步骤 (Pruning Step)**：对“选择”步骤中确定的层进行永久性剪枝，并更新相关层的权重以补偿剪枝带来的精度损失。未被选中的层在此次迭代中保持不变。
 
-# 相关工作
+## 相关工作
 当前的深度模型压缩与加速技术主要包括张量分解、量化、优化实现、紧凑网络设计和连接剪枝。其中，通道剪枝作为一种结构化剪枝方法，因其对通用硬件友好而备受关注。
 
 然而，现有的通道剪枝方法存在一些瓶颈：
@@ -34,7 +33,7 @@ title: "Model Compression using Progressive Channel Pruning"
 
 本文旨在解决上述问题，提出一个能够**自动确定各层最优通道数**的剪枝框架，并将其**创新性地扩展到迁移学习场景**，以压缩域适应模型（如 DANN）。
 
-# 本文方法
+## 本文方法
 本文提出了渐进式通道剪枝（PCP）框架，首先介绍了其在标准监督学习下的工作原理，然后将其扩展到更具挑战性的迁移学习（无监督域适应）场景。
 
 ## 监督学习下的PCP方法
@@ -74,7 +73,7 @@ PCP的核心思想是通过一个迭代式的“尝试-选择-剪枝”三步流
 
 整个流程包括：首先预训练一个DANN模型，然后使用带有上述两项改进的PCP框架对其进行剪枝，最后再使用DANN方法对剪枝后的模型进行微调。
 
-# 实验结论
+## 实验结论
 （注：原文的实验部分内容不完整，以下结论基于论文前文的声明和方法论的预期效果。）
 
 本文在ImageNet和Office-31等标准数据集上，分别对监督学习和无监督域适应两种设置下的PCP框架进行了验证。

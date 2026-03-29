@@ -3,7 +3,7 @@ layout: default
 title: "A Concise Review of Hallucinations in LLMs and their Mitigation"
 ---
 
-# 终结AI幻觉：全面剖析大模型“胡说八道”的根源与应对策略
+## 终结AI幻觉：全面剖析大模型“胡说八道”的根源与应对策略
 
 <img src="/images/2512.02527v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

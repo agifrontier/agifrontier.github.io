@@ -3,7 +3,6 @@ layout: default
 title: "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"
 ---
 
-# DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning
 
 - **ArXiv URL**: http://arxiv.org/abs/2501.12948v1
 
@@ -13,23 +12,23 @@ title: "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcemen
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过大规模强化学习（无论是纯粹应用于基础模型还是结合少量冷启动数据），成功地激发并显著增强了大型语言模型的推理能力，推出了DeepSeek-R1系列模型，并验证了可以将这种高级推理能力通过蒸馏有效地迁移到更小的模型中。
 
-# 关键定义
+## 关键定义
 *   **DeepSeek-R1-Zero**: 本文提出的第一代推理模型之一。它的核心特征是直接在基础模型上进行大规模强化学习（Reinforcement Learning, RL），而**不经过**监督微调（Supervised Fine-Tuning, SFT）作为预备步骤。该模型验证了仅通过RL即可自发涌现出强大的推理能力。
 *   **DeepSeek-R1**: 在DeepSeek-R1-Zero基础上改进的增强版模型。它采用了一个多阶段训练流程，包括使用少量高质量的“冷启动数据”进行初始SFT，然后进行多轮RL和SFT的迭代，旨在解决R1-Zero的可读性问题并进一步提升性能和通用能力。
 *   **GRPO (Group Relative Policy Optimization)**: 本文采用的核心强化学习算法。它是一种无评论家（critic-free）的RL方法，通过在同一提示下采样一组输出，并根据这组输出的奖励（rewards）来估计优势（advantage），从而更新策略模型。这种方法相比传统方法节省了训练成本。
 *   **冷启动数据 (Cold-start data)**: 指用于DeepSeek-R1初始微调阶段的一小部分（数千条）高质量、长思维链（Chain-of-Thought, CoT）的监督数据。这些数据为模型提供了推理模式的“种子”，有助于加速RL收敛并确保生成内容具有良好的可读性。
 
-# 相关工作
+## 相关工作
 当前，训练后（post-training）阶段已成为提升大型语言模型（LLM）能力的关键环节，尤其是在推理方面。领域内的前沿（SOTA）工作，如OpenAI的o1系列模型，通过在推理时增加思维链的长度，在数学、编码和科学推理等任务上取得了显著进展。然而，如何有效地实现测试时计算扩展（test-time scaling）对整个研究界来说仍是一个开放性问题。
 
 现有的探索方向包括基于过程的奖励模型（process-based reward models）、强化学习以及蒙特卡洛树搜索（MCTS）等搜索算法。尽管这些方法取得了一定的成果，但尚未有任何一种方法能在通用推理性能上达到与OpenAI o1系列模型相媲美的水平。
 
 本文旨在解决的核心问题是：能否**仅通过纯粹的强化学习**，而不依赖任何监督数据，来激发LLM的推理潜力，并使其达到或超越当前最先进的水平。同时，本文也探索如何通过一个更完善的流程来解决纯RL方法可能带来的可读性差、语言混杂等问题。
 
-# 本文方法
+## 本文方法
 
 本文的核心方法是利用大规模强化学习来提升LLM的推理能力。作者提出了两种具体的实现路径：DeepSeek-R1-Zero，一种纯粹的RL探索；以及DeepSeek-R1，一个更成熟和用户友好的多阶段训练流程。
 
@@ -113,7 +112,7 @@ $${% endraw %}
 *   **方法**: 使用在DeepSeek-R1训练流程中（阶段三）收集的80万个高质量SFT样本，对Qwen和Llama系列的多个开源模型进行微调。
 *   **目的**: 验证大模型通过复杂流程学到的推理模式，可以被有效地“教会”给小模型，这是一种高效且经济的能力迁移方式。
 
-# 实验结论
+## 实验结论
 
 实验结果有力地证实了本文方法的有效性。
 

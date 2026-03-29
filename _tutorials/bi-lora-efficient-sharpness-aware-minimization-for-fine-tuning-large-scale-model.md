@@ -3,7 +3,6 @@ layout: default
 title: "Bi-LoRA: Efficient Sharpness-Aware Minimization for Fine-Tuning Large-Scale Models"
 ---
 
-# Bi-LoRA: Efficient Sharpness-Aware Minimization for Fine-Tuning Large-Scale Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2508.19564v1
 
@@ -13,10 +12,10 @@ title: "Bi-LoRA: Efficient Sharpness-Aware Minimization for Fine-Tuning Large-Sc
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 Bi-LoRA 的高效微调框架，它通过引入一个独立的辅助 LoRA 模块来模拟锐度感知最小化（SAM）的对抗性扰动，从而在不增加额外计算成本（仅需一次反向传播）的情况下，有效提升大模型微调的泛化能力。
 
-# 关键定义
+## 关键定义
 本文沿用了 Sharpness-Aware Minimization (SAM) 和 Low-Rank Adaptation (LoRA) 的已有定义，并基于此提出了核心方法：
 
 1.  **LoRA-SAM**：将 SAM 直接应用于 LoRA 参数的一种直接组合。其优化目标是最小化在 LoRA 参数 $(B, A)$ 的一个邻域内最差的损失。本文指出，这种方法将锐度优化限制在一个由 LoRA 参数自身定义的“受限子空间”内，从而限制了其泛化效果。
@@ -27,7 +26,7 @@ title: "Bi-LoRA: Efficient Sharpness-Aware Minimization for Fine-Tuning Large-Sc
 
     这种设计解耦了任务适应和锐度优化的过程，使得模型可以在单次前向和后向传播中同时完成两个方向的优化，从而在保持高效率的同时获得更好的泛化性能。
 
-# 相关工作
+## 相关工作
 当前，通过预训练再微调的范式在机器学习领域已成为标准。然而，随着模型规模的急剧增大，在有限数据上进行微调时，模型极易出现过拟合，损害泛化能力。
 
 一个有前景的方向是寻找损失函数上的“平坦最小值” (flat minima)，因为这通常与更好的泛化性能相关。Sharpness-Aware Minimization (SAM) 正是为此设计的优化器，它通过求解一个最小-最大（min-max）问题来寻找平坦区域，在小规模训练中取得了显著成功。但 SAM 的主要瓶颈在于其高昂的计算成本：它需要在每个训练步骤中进行两次前向和后向传播，这对于微调大型模型而言几乎是不可行的。
@@ -36,7 +35,7 @@ title: "Bi-LoRA: Efficient Sharpness-Aware Minimization for Fine-Tuning Large-Sc
 
 **本文旨在解决的问题是**：如何将 SAM 的泛化优势高效地应用于 LoRA 微调？直接的结合（即 LoRA-SAM）存在一个根本性的不匹配：对抗性扰动被限制在 LoRA 参数定义的低维子空间内，无法有效优化整个参数空间的锐度。本文提出的 Bi-LoRA 正是为了解决 LoRA-SAM 这种“子空间耦合”问题，旨在实现高效且更有效的锐度感知优化。
 
-# 本文方法
+## 本文方法
 
 本文的核心方法 Bi-LoRA 通过引入双 LoRA 模块，解耦了任务适应与锐度优化，从而实现了高效且强大的泛化能力提升。
 
@@ -133,7 +132,7 @@ $$``
 ### 推理
 训练结束后，辅助模块 $(B\_2A\_2)$ 被完全丢弃，因为它仅在训练阶段用于引导主模块寻找平坦区域。最终用于推理的模型结构与标准 LoRA 完全相同 ($W = W\_0 + B\_1A\_1$)，不引入任何额外的推理开销。
 
-# 实验结论
+## 实验结论
 
 本文通过在自然语言理解（NLU）、大型语言模型（LLM）和扩散模型等多种任务上的广泛实验，验证了 Bi-LoRA 的有效性和高效率。
 

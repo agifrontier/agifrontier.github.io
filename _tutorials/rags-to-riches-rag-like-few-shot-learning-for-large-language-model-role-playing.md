@@ -3,7 +3,6 @@ layout: default
 title: "RAGs to Riches: RAG-like Few-shot Learning for Large Language Model Role-playing"
 ---
 
-# RAGs to Riches: RAG-like Few-shot Learning for Large Language Model Role-playing
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.12168v1
 
@@ -13,10 +12,10 @@ title: "RAGs to Riches: RAG-like Few-shot Learning for Large Language Model Role
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 RAGs-to-Riches 的新颖提示框架，它将大语言模型（LLM）的角色扮演问题重构为一个类似检索增强生成（RAG）的文本检索任务，通过使用精心策划的、源于训练数据之外的参考范例，显著增强了模型在面对敌对用户时保持角色一致性的能力。
 
-# 关键定义
+## 关键定义
 本文提出了以下核心概念：
 
 *   **RAGs-to-Riches**: 一种新颖的、受检索增强生成（RAG）启发的少样本（few-shot）提示框架。它不依赖于模型训练数据中可能已存在的信息（如维基百科），而是通过提供从现实世界音频中转录的、带有丰富上下文标签的对话范例来引导模型的角色扮演行为，旨在提高角色的真实性和鲁棒性。
@@ -38,14 +37,14 @@ title: "RAGs to Riches: RAG-like Few-shot Learning for Large Language Model Role
 
 
 
-# 相关工作
+## 相关工作
 当前，实现 LLM 角色扮演的方法主要包括零样本（zero-shot）、少样本学习（特别是上下文学习 In-Context Learning, ICL）以及成本高昂的微调（fine-tuning）。这些方法，尤其是 ICL，通常依赖 LLM 自身生成或从维基百科等通用知识库中提取的“口头禅”和对话范例来构建角色档案。
 
 存在的主要问题是，这些范例很可能与 LLM 的预训练数据高度重叠。根据隐式贝叶斯推理理论，这种重叠会降低范例在推理时对模型输出的实际影响力，导致模型在面对非预期或敌对性输入（如“越狱”攻击）时，容易“出戏”（break character），产生不可预测甚至有害的行为。
 
 本文旨在解决这一具体问题：如何构建一个成本效益高且鲁棒的少样本学习框架，使 LLM 智能体在角色扮演时，即使面对试图破坏其角色的敌意用户，也能更稳定地保持角色一致性。
 
-# 本文方法
+## 本文方法
 本文的核心是将角色扮演问题重新定义为一个隐式贝叶斯推理优化问题，并为此设计了一套名为 RAGs-to-Riches 的提示工程框架。
 
 ### 理论基础：作为隐式贝叶斯推理的角色扮演
@@ -91,7 +90,7 @@ $${% endraw %}
 
 通过这些设计，RAGs-to-Riches 创建的提示 $$R$$ 旨在系统性地优化隐式贝叶斯推理过程，使得模型在推理时更倾向于遵循这些高质量、新颖的范例，从而更稳定地维持角色。
 
-# 实验结论
+## 实验结论
 本文通过一系列实验，对比了 RAGs-to-Riches (R2R)、传统的上下文学习 (ICL) 和零样本 (zero-shot) 三种框架在角色扮演任务上的表现。实验涉及 5 个名人角色和 453 次独特的交互。
 
 ### 角色扮演评估

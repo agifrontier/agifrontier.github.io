@@ -3,7 +3,6 @@ layout: default
 title: "A Survey on Agentic Multimodal Large Language Models"
 ---
 
-# A Survey on Agentic Multimodal Large Language Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.10991v1
 
@@ -13,7 +12,7 @@ title: "A Survey on Agentic Multimodal Large Language Models"
 
 ---
 
-# 关于Agentic多模态大语言模型的综述
+## 关于Agentic多模态大语言模型的综述
 
 本文是对Agentic多模态大语言模型（Agentic Multimodal Large Language Models, Agentic MLLMs）领域的综合性回顾。随着AI从传统的静态、被动系统向动态、主动、可泛化的智能体（Agent）范式转变，Agentic MLLMs应运而生。本文旨在系统性地梳理这一新兴领域，为其奠定概念基础，并与传统的基于MLLM的智能体进行区分。
 

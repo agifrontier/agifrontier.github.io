@@ -3,7 +3,6 @@ layout: default
 title: "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models"
 ---
 
-# DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2402.03300v3
 
@@ -13,19 +12,19 @@ title: "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Langu
 
 ---
 
-# TL;DR
+## TL;DR
 本文介绍了DeepSeekMath，一个通过在精心构建的120B数学语料上进行持续预训练，并采用一种名为GRPO的新型高效强化学习算法，从而将开源模型的数学推理能力推向接近GPT-4水平的7B语言模型。
 
-# 关键定义
+## 关键定义
 *   **DeepSeekMath Corpus**: 一个大规模、高质量的数学预训练语料库，包含120B token。它通过一个精心设计的迭代式数据筛选流程，从公开的Common Crawl网络数据中提取而来。该语料库是多语言的，且经过严格的去污染处理，是本文模型取得优异数学能力的基础。
 *   **组相对策略优化 (Group Relative Policy Optimization, GRPO)**: 本文提出的一种强化学习算法，是近端策略优化（PPO）的一个变体。其核心创新在于**移除了PPO中的评论家模型（critic model）**，转而通过对同一问题生成的多个（一组）答案的得分进行评估，使用这组分数的平均值作为基线（baseline）来估计优势函数。这种设计显著降低了训练过程中的内存消耗和计算负担，实现了更高效的强化学习。
 
-# 相关工作
+## 相关工作
 当前，顶尖的语言模型如GPT-4和Gemini-Ultra在数学推理方面表现出色，但它们是闭源的，其技术细节和模型权重均未公开。与此同时，现有的开源模型在数学能力上与这些顶尖模型存在显著的性能差距，这构成了该领域的一个关键瓶颈。
 
 本文旨在解决这一具体问题：**缩小开源社区与最先进闭源模型在数学推理能力上的差距**。通过构建一个更强大、公开可用的数学专用基础模型，推动相关领域的研究和应用。
 
-# 本文方法
+## 本文方法
 本文通过一个三阶段流程来构建和优化DeepSeekMath模型：大规模数学预训练、监督微调（SFT）和基于GRPO的强化学习（RL）。
 
 ## 阶段一：大规模数学预训练
@@ -83,7 +82,7 @@ $${% endraw %}
 ### DeepSeekMath-RL模型训练
 $$DeepSeekMath-RL$$ 模型是在 $$DeepSeekMath-Instruct 7B$$ 的基础上，仅使用SFT数据中与GSM8K和MATH相关的CoT格式问题进行GRPO训练得到的。这一受限的训练数据设置有助于检验RL阶段的泛化能力。
 
-# 实验结论
+## 实验结论
 本文通过在多个标准数学基准上的全面评估，验证了其方法在各个阶段的有效性。
 
 ### 预训练阶段的有效性

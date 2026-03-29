@@ -3,7 +3,7 @@ layout: default
 title: "Sentence-Anchored Gist Compression for Long-Context LLMs"
 ---
 
-# LLM长文本“瘦身”8倍：新方法让模型按“句”读取，性能几乎无损
+## LLM长文本“瘦身”8倍：新方法让模型按“句”读取，性能几乎无损
 
 当Kimi、GPT-4等模型的上下文窗口卷向数百万Token时，一个现实问题摆在了所有AI从业者面前：巨大的计算和内存开销。处理长文本的成本，尤其是Transformer架构中$O(n^2)$复杂度的自注意力机制，已成为制约大模型应用普及的瓶颈。有没有办法在不牺牲太多性能的前提下，为LLM的上下文处理过程“瘦身”呢？
 

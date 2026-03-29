@@ -3,7 +3,6 @@ layout: default
 title: "Improving Context Fidelity via Native Retrieval-Augmented Reasoning"
 ---
 
-# Improving Context Fidelity via Native Retrieval-Augmented Reasoning
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.13683v1
 
@@ -13,15 +12,15 @@ title: "Improving Context Fidelity via Native Retrieval-Augmented Reasoning"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为CARE的新型原生检索增强推理框架，通过教导大型语言模型（LLM）在推理链中动态地从输入上下文中检索并整合证据，以解决上下文失真问题，从而在无需昂贵外部工具的情况下显著提升答案的准确性和忠实度。
 
-# 关键定义
+## 关键定义
 *   **上下文忠实度 (Context Fidelity)**：指大型语言模型生成的答案与所提供的上下文信息保持一致、不产生矛盾或捏造事实的能力。这是评估知识密集型任务中模型可靠性的一个核心指标。
 *   **原生检索增强推理 (Native Retrieval-Augmented Reasoning)**：本文提出的核心范式。它指模型利用其固有的语言理解能力，直接从给定的输入上下文中识别和提取相关证据，并将其无缝地整合到自身的推理步骤中。这种方法与依赖外部索引、向量数据库或API调用的传统检索增强生成（RAG）形成对比。
 *   **CARE (Context-Aware Retrieval-Enhanced reasoning)**：本文提出的框架，是“原生检索增强推理”范式的具体实现。它通过一个两阶段训练过程（监督微调+强化学习）和课程学习策略，教会模型在生成答案时，主动地在推理过程中引用上下文证据，从而提升回答的质量和可信度。
 
-# 相关工作
+## 相关工作
 当前，提升大型语言模型（LLM）在问答任务中表现的方法主要有两类。第一类是通过链式思考（Chain of Thought, CoT）等提示工程策略来增强模型的推理能力，但这些方法在处理长篇或含噪声的上下文时，仍难以保证对上下文的忠实度。
 
 第二类是检索增强生成（Retrieval-Augmented Generation, RAG）。传统RAG方法通过从外部知识库检索信息来辅助生成，但这通常需要额外的模块（如向量数据库）和复杂的流程，增加了系统延迟和架构的冗余。并且，这些方法往往优先利用外部知识，可能忽略了用户在输入中已经提供的、最直接相关的上下文信息。
@@ -30,7 +29,7 @@ title: "Improving Context Fidelity via Native Retrieval-Augmented Reasoning"
 
 本文旨在解决的核心问题是**上下文幻觉 (context hallucination)**，即LLM在回答问题时生成与给定上下文相悖或无关的内容。具体而言，本文致力于在不依赖外部检索工具的前提下，教会模型如何更有效地利用输入上下文，通过在推理过程中显式地引用证据来保证答案的忠实度。
 
-# 本文方法
+## 本文方法
 
 本文提出了CARE（Context-Aware Retrieval-Enhanced reasoning）方法，一个旨在让LLM通过自身“原生”能力从输入上下文中进行检索，并将检索到的证据整合进推理过程的框架。其核心思想是，通过特定的训练使模型学会一种新的生成格式：在思考和推理的同时，显式地引用上下文中的事实依据。
 
@@ -98,7 +97,7 @@ $${% endraw %}
 *   **训练范式**：结合SFT和RL的两阶段训练范式，以及巧妙的检索奖励（$R\_{\text{ret}}$）设计，使得模型能够在没有大量证据标注数据的情况下学会忠实于上下文。
 *   **课程学习**：通过课程学习策略，模型的能力可以从简单任务泛化到复杂任务，增强了方法的通用性和鲁棒性。
 
-# 实验结论
+## 实验结论
 本文在一系列真实世界和反事实问答（QA）基准上进行了广泛实验，证明了CARE方法的有效性。
 
 ### 问答性能

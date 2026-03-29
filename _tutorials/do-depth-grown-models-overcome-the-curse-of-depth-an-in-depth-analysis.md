@@ -3,7 +3,7 @@ layout: default
 title: "Do Depth-Grown Models Overcome the Curse of Depth? An In-Depth Analysis"
 ---
 
-# 告别“深度诅咒”：谷歌新方法LIDAS让LLM动态生长，训练提速29%！
+## 告别“深度诅咒”：谷歌新方法LIDAS让LLM动态生长，训练提速29%！
 
 <img src="/images/2512.08819v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

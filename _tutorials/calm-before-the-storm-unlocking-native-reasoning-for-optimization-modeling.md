@@ -3,7 +3,6 @@ layout: default
 title: "CALM Before the STORM: Unlocking Native Reasoning for Optimization Modeling"
 ---
 
-# CALM Before the STORM: Unlocking Native Reasoning for Optimization Modeling
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.04204v1
 
@@ -13,24 +12,24 @@ title: "CALM Before the STORM: Unlocking Native Reasoning for Optimization Model
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出 CALM 框架，通过专家智能体注入轻量级提示来修正大型推理模型 (LRM) 的原生推理缺陷，从而生成高质量数据，并通过监督微调和强化学习两阶段训练，打造出在优化建模任务上达到业界顶尖水平且参数高效的模型 STORM。
 
-# 关键定义
+## 关键定义
 *   **原生推理模式 (Native Reasoning Mode)**：指现代大型推理模型 (LRM) 固有的、无需额外训练即可执行多轮迭代式自我修正与推理的能力。本文旨在保护并增强此能力，而非简单地用直接生成模式覆盖它。
 *   **CALM (Correcting Adaptation with Lightweight Modification)**：一个创新的数据策划框架。在该框架中，一个“干预者 (Intervener)”（专家模型）识别“推理者 (Reasoner)”（待训练模型）在其推理过程中出现的缺陷，并提供简短的修正提示，引导其生成高质量的专家级推理轨迹。
 *   **STORM (Soft-Tuned Optimization Reasoning Model)**：基于 CALM 框架训练得到的最终模型。它首先通过 CALM 生成的数据进行监督微调（软适应），然后通过强化学习进行能力强化，最终实现自主掌握。
 *   **计算驱动推理缺陷 (Computation-Driven Reasoning Deficiencies)**：一类推理缺陷，指 LRM 未能有效利用外部计算工具（如代码解释器和求解器），例如尝试手动计算复杂问题或编写碎片化的代码。
 *   **领域知识缺陷 (Domain-Specific Knowledge Deficiencies)**：另一类推理缺陷，指 LRM 在建模和逻辑上出现根本性错误，例如数学公式错误、遗漏约束条件或代码实现错误。
 
-# 相关工作
+## 相关工作
 目前，自动化优化建模领域的主流方法是利用大型语言模型 (LLM) 将自然语言问题描述直接转换为数学模型和求解器代码。这些方法，如 ORLM 和 LLMOPT，通常在预先收集的、不包含中间推理步骤的静态“问题-解决方案”数据集上对模型进行微调。我们将这种方法称为“直接生成 (direct generation)”范式。
 
 然而，随着具备复杂多步推理能力的大型推理模型 (LRM) 的出现，上述范式暴露了其局限性。直接在非反思性数据集上微调 LRM，会强制模型放弃其强大的原生推理模式，转而采用一种僵化的、非反思的生成风格。这导致模型在简单任务上略有提升，但在复杂任务上的性能却显著下降，未能充分发挥 LRM 的潜力。
 
 本文旨在解决的核心问题是：**如何有效地调整 LRM，以在不破坏其原生推理能力的前提下，充分利用其解决复杂的优化建模任务？** 本文的目标是设计一种新的适应方法，能够保留并增强 LRM 的迭代推理能力，从而实现更高水平的性能。
 
-# 本文方法
+## 本文方法
 
 ## 方法本质创新与优点
 本文方法的核心是 **CALM (Correcting Adaptation with Lightweight Modification)** 框架，它通过一种“专家-学生”式的协作模式，动态地生成高质量的推理数据。与以往直接微调问题-答案对的方法不同，CALM 的创新之处在于：
@@ -90,7 +89,7 @@ CALM 框架的运行流程如下：
     
     其中 $Ans(\tau)$ 是模型从轨迹中得到的答案，$Ans^{\*}$ 是标准答案。这一阶段旨在让模型学会自主探索并实现性能的最大化。
 
-# 实验结论
+## 实验结论
 
 ## 主要结果
 本文将最终模型 STORM (4B 参数) 与一系列基线模型在五个优化建模基准上进行了比较。

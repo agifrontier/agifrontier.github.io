@@ -3,7 +3,7 @@ layout: default
 title: "Towards a Science of Scaling Agent Systems"
 ---
 
-# AI Agent协作双刃剑：性能提升81%，错误放大17倍！DeepMind发布首个量化法则
+## AI Agent协作双刃剑：性能提升81%，错误放大17倍！DeepMind发布首个量化法则
 
 <img src="/images/2512.08296v1/A__title.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
 

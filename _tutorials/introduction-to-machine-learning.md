@@ -3,7 +3,6 @@ layout: default
 title: "Introduction to Machine Learning"
 ---
 
-# Introduction to Machine Learning
 
 - **ArXiv URL**: http://arxiv.org/abs/2409.02668v2
 
@@ -11,7 +10,7 @@ title: "Introduction to Machine Learning"
 
 ---
 
-# 机器学习导论
+## 机器学习导论
 
 本文是一部综合性的教科书或讲义，旨在介绍机器学习领域的数学基础和核心技术。其内容组织体现了对该领域的系统性分类。
 

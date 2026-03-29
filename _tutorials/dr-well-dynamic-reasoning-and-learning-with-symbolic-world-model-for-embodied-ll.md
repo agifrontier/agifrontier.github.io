@@ -3,7 +3,6 @@ layout: default
 title: "DR. WELL: Dynamic Reasoning and Learning with Symbolic World Model for Embodied LLM-Based Multi-Agent Collaboration"
 ---
 
-# DR. WELL: Dynamic Reasoning and Learning with Symbolic World Model for Embodied LLM-Based Multi-Agent Collaboration
 
 - **ArXiv URL**: http://arxiv.org/abs/2511.04646v1
 
@@ -13,10 +12,10 @@ title: "DR. WELL: Dynamic Reasoning and Learning with Symbolic World Model for E
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了DR. WELL，一个去中心化的神经符号框架，该框架通过结构化的协商协议和动态演化的符号世界模型，使基于大语言模型（LLM）的具身智能体能够高效地进行协作规划、学习与自我优化。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下几个核心概念：
 
 1.  **DR. WELL (Dynamic Reasoning and Learning with Symbolic World Model)**：一个去中心化的神经符号规划框架。它使基于LLM的智能体能够通过一个动态世界模型，在相互依赖的任务中进行协作。该框架的核心是结构化通信和基于经验的符号规划。
@@ -31,14 +30,14 @@ title: "DR. WELL: Dynamic Reasoning and Learning with Symbolic World Model for E
 
 4.  **符号规划与执行 (Symbolic Planning and Execution)**：智能体不直接生成详细的底层运动轨迹，而是生成由高级宏观动作（如 $$align$$, $$push$$）组成的序列。执行控制器负责检查每个动作的前提条件并将其转化为底层动作，而环境则验证动作的最终效果。
 
-# 相关工作
+## 相关工作
 当前，在多智能体强化学习 (MARL) 中实现可泛化的协作行为仍然是一个挑战。虽然近期研究引入了大语言模型 (LLM) 以提升灵活性，但在去中心化的具身环境中，直接使用LLM输出的策略非常脆弱。这主要是因为智能体需在部分可观测、通信受限和异步执行的条件下协调，且LLM对提示词非常敏感，难以泛化到不同的智能体数量或环境条件。
 
 将协调建立在底层轨迹层面容易失败，因为微小的时间或移动偏差会迅速累积并导致冲突。因此，研究的瓶颈在于如何在不依赖中心化控制和脆弱的底层对齐的情况下，实现稳定、高效的多智能体协作。
 
 本文旨在解决这一问题：**如何通过提升抽象层次，让去中心化的具身LLM智能体在有限通信下，实现鲁棒、可解释且能够通过经验学习不断优化的协作规划。**
 
-# 本文方法
+## 本文方法
 本文提出了DR. WELL框架，这是一个结合了神经方法（LLM的推理能力）和符号系统（结构化表征与规划）的去中心化协作框架。其核心设计在于通过符号抽象来简化协调问题。
 
 <img src="/images/2511.04646v1/x1.jpg" alt="DR. WELL 框架概览" style="width:85%; max-width:450px; margin:auto; display:block;">
@@ -94,7 +93,7 @@ title: "DR. WELL: Dynamic Reasoning and Learning with Symbolic World Model for E
 
 通过这种方式，WM将分散的、个体的经验整合为集体智慧，引导智能体群体朝着更高效的协作策略演化。
 
-# 实验结论
+## 实验结论
 本文在定制的协作推箱子环境 (Cooperative Push Block, CUBE) 中对DR. WELL框架进行了评估。在该环境中，推动不同尺寸的箱子需要不同数量的智能体协作。
 
 ### 基线智能体表现

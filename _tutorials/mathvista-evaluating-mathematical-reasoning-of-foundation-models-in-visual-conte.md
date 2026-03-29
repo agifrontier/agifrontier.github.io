@@ -3,7 +3,6 @@ layout: default
 title: "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts"
 ---
 
-# MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts
 
 - **ArXiv URL**: http://arxiv.org/abs/2310.02255v3
 
@@ -13,10 +12,10 @@ title: "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Vis
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了 MathVista，一个全面的基准测试，旨在系统性地评估基础模型在视觉情境下的数学推理能力，并揭示了即便是最先进的 GPT-4V 模型，其性能也与人类水平存在显著差距。
 
-# 关键定义
+## 关键定义
 本文为构建 MathVista 基准，建立了一个任务分类体系，其中包含以下关键定义：
 
 1.  **数学推理类型 (Mathematical Reasoning Types)**：确定了评估模型所需的七种核心数学推理能力。
@@ -35,12 +34,12 @@ title: "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Vis
     *   **教科书问答 (Textbook Question Answering, TQA)**：涉及科学主题和图表的知识密集型推理。
     *   **视觉问答 (Visual Question Answering, VQA)**：在通用视觉场景下回答需要数学计算的问题。
 
-# 相关工作
+## 相关工作
 当前的AI研究现状是，大量基准测试（如GSM-8K）主要评估纯文本环境下的数学推理能力，而通用的视觉问答（VQA）数据集中仅有少量问题涉及数学推理。这导致领域内缺乏一个能够系统性、全面性地评估模型在视觉与数学交叉领域能力的工具。
 
 本文旨在解决这一具体问题：创建一个综合性的基准（即 MathVista），用于评估基础模型（Foundation Models）在多样化的视觉情境下进行复杂数学推理的能力，从而推动能够处理现实世界中富含数学信息和视觉内容的通用人工智能智能体的发展。
 
-# 本文方法
+## 本文方法
 本文的核心贡献是构建了一个名为 **MathVista** 的新型基准测试。其构建过程和创新点如下：
 
 ### 数据集构建
@@ -94,7 +93,7 @@ Table 1: MathVista 的关键统计数据。
 <img src="/images/2310.02255v3/page_4_Figure_2.jpg" alt="MathVista 的源数据集分布。FQA：图表问答，GPS：几何问题求解，MWP：数学应用题，TQA：教科书问答，VQA：视觉问答。" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 
-# 实验结论
+## 实验结论
 本文对12个主流基础模型（包括LLMs、LMMs）在MathVista上进行了全面评估，得出了以下关键结论：
 
 ### 核心发现

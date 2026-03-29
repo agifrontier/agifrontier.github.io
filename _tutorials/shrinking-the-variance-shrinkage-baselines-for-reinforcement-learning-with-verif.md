@@ -3,7 +3,6 @@ layout: default
 title: "Shrinking the Variance: Shrinkage Baselines for Reinforcement Learning with Verifiable Rewards"
 ---
 
-# Shrinking the Variance: Shrinkage Baselines for Reinforcement Learning with Verifiable Rewards
 
 - **ArXiv URL**: http://arxiv.org/abs/2511.03710v1
 
@@ -13,10 +12,10 @@ title: "Shrinking the Variance: Shrinkage Baselines for Reinforcement Learning w
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种基于收缩估计 (shrinkage estimators) 的新型基线 (baseline) 方法，通过在统计上更优地结合单个提示 (per-prompt) 和跨提示批次 (across-prompt) 的奖励均值，来显著降低策略梯度估计的方差，从而为大型推理模型的强化学习训练带来更强的稳定性与性能。
 
-# 关键定义
+## 关键定义
 本文的核心方法建立在对强化学习中基线方法的统计学再思考之上，关键定义如下：
 
 1.  **带可验证奖励的强化学习 (Reinforcement Learning with Verifiable Rewards, RLVR)**: 一种针对大型推理模型（LRMs）的训练范式。在该范式中，模型根据稀疏的、基于规则的标量奖励进行优化，这些奖励明确地指示模型最终答案的正确性（例如，数学问题回答正确奖励为1，错误为0）。
@@ -24,7 +23,7 @@ title: "Shrinking the Variance: Shrinkage Baselines for Reinforcement Learning w
 3.  **收缩估计器 (Shrinkage Estimator)**: 一种统计估计方法，它通过将单个独立的估计值（如单个提示的样本均值）“收缩”或拉向一个共同的中心值（如整个批次的全局均值），来提高整体估计精度。这种方法通过引入少量偏置来换取方差的大幅降低，从而获得更低的总均方误差 (MSE)。
 4.  **James-Stein (JS) 基线**: 本文提出的具体基线方法。它应用了 James-Stein 收缩原理，为每个样本计算一个基线。该基线是“单个提示的留一法均值”和“跨提示的批次均值”的加权平均。为了确保策略梯度的无偏性，该方法在计算均值和收缩系数时均采用了精巧的留一法 (leave-one-out) 构造。
 
-# 相关工作
+## 相关工作
 当前，使用策略梯度方法（如 REINFORCE、GRPO）进行 RLVR 训练是提升大型推理模型能力的主流技术之一。然而，这些方法普遍面临策略梯度估计器方差过高的问题，这会导致训练过程不稳定，收敛困难。
 
 为了解决这一问题，研究者们引入了基线 (baseline) 来降低方差。现有方法主要分为两类：
@@ -33,7 +32,7 @@ title: "Shrinking the Variance: Shrinkage Baselines for Reinforcement Learning w
 
 本文旨在解决上述第二类方法中，因采样数量少而导致的基线估计不准、梯度方差过高的问题。通过引入统计学中的收缩估计原理，本文提出了一种更精确的基线估计方法，以在不增加计算开销和超参数的情况下，更有效地降低梯度方差。
 
-# 本文方法
+## 本文方法
 本文方法的核心在于，将估计一组基线的问题视为一个经典的“联合估计多个均值”的统计问题，并为此引入了 James-Stein (JS) 收缩估计器。
 
 ### 理论推导：从梯度方差到基线均方误差
@@ -107,7 +106,7 @@ $${% endraw %}
 - **即插即用**: 该方法是现有无评判员（critic-free）RL算法（如RLOO, GRPO）的直接替代品，无需修改模型架构或增加任何新的超参数。
 - **计算高效**: 所有计算都基于批次内的奖励样本，计算开销极小。
 
-# 实验结论
+## 实验结论
 本文在数学推理和逻辑谜题推理两大类任务上，对提出的 James-Stein (JS) 基线和标准的 RLOO 基线（即仅使用留一法单个提示均值）进行了对比实验。实验算法基于 GRPO（不带优势归一化，等价于 RLOO）。
 
 ### 数学推理

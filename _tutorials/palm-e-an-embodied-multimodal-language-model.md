@@ -3,7 +3,6 @@ layout: default
 title: "PaLM-E: An Embodied Multimodal Language Model"
 ---
 
-# PaLM-E: An Embodied Multimodal Language Model
 
 - **ArXiv URL**: http://arxiv.org/abs/2303.03378v1
 
@@ -13,22 +12,22 @@ title: "PaLM-E: An Embodied Multimodal Language Model"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种具身多模态语言模型 PaLM-E，通过将图像等连续的真实世界传感器数据直接注入到预训练语言模型的词嵌入空间，从而在一个统一的模型中实现了机器人规划、视觉问答和语言理解等多种任务，并证明了跨领域联合训练带来的正向知识迁移效应。
 
-# 关键定义
+## 关键定义
 *   **具身语言模型 (Embodied Language Models)**：本文提出的核心概念，指一类直接将来自真实世界的连续传感器模态（如图像、机器人状态）整合到语言模型中的模型。这使得语言模型能够建立词语与感知之间的联系，从而进行更具“接地气”（grounded）的推理。
 *   **多模态语句 (Multimodal Sentences)**：PaLM-E 的核心输入形式。它是一种特殊的 Token 序列，其中来自不同模态（如图像、状态）的输入被编码成向量，并与文本 Token 的向量交错排列，形成一个统一的输入序列供语言模型处理。例如，$$Q: What happened between <img 1> and <img 2>?$$
 *   **实体指代 (Entity Referrals)**：一种针对物体中心（object-centric）表征的专门技术。在输入提示中，通过 $$Object 1 is <obj 1>$$ 这样的文本为场景中的每个物体分配一个唯一的标签。这使得模型在生成的计划中可以使用如 $$obj 1$$ 这样的特殊 Token 来明确指代特定物体，解决了当多个物体属性相似时难以用自然语言区分的问题。
 
-# 相关工作
+## 相关工作
 当前领域内，大型语言模型 (Large Language Models, LLMs) 已展现出强大的通用推理能力，但它们普遍面临**接地气问题 (grounding problem)**：即难以将从海量文本中学到的抽象知识与现实世界的视觉、物理感知信息相关联。
 
 先前的工作，如 SayCan，尝试通过“语言模型输出 -> 调用外部感知或策略模型 -> 获得反馈”的循环来解决机器人任务，但语言模型本身并未直接接触到视觉等非文本信息，这在需要精细几何理解的场景中存在局限。此外，当前顶级的视觉语言模型 (Visual-Language Models, VLMs) 虽然能处理图文任务，但在未经专门训练的情况下，直接应用于具身推理任务（如机器人规划）时效果不佳。
 
 本文旨在解决上述接地气问题，目标是创建一个**单一的、通用的多模态模型**，该模型能够直接处理和理解来自机器人传感器的连续数据，并将其与语言知识无缝融合，从而有效执行具身推理任务（如机器人规划）和通用的视觉语言任务。
 
-# 本文方法
+## 本文方法
 PaLM-E 的核心思想是将机器人的视觉、状态等连续观测数据，通过编码器“翻译”成与语言 Token 相同维度的向量，然后将这些向量与文本 Token 向量混合，形成“多模态语句”，一同送入一个预训练的 LLM 进行处理。
 
 <img src="/images/2303.03378v1/page_0_Figure_4.jpg" alt="PaLM-E 架构图" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -64,7 +63,7 @@ PaLM-E 的输出是文本。
     2.  **端到端微调**：同时更新编码器、投影层和 LLM 的所有参数。
 *   **混合任务联合训练 (Co-training)**：本文的一个关键策略是将少量（约 8.9%）的具身机器人数据与海量的、多样化的互联网级视觉语言数据（如 VQA、图像描述）和纯语言数据混合在一起进行训练。其核心假设是，这种多样化的训练能够促进知识从通用领域向特定的机器人领域**迁移**。
 
-# 实验结论
+## 实验结论
 
 <img src="/images/2303.03378v1/page_5_Figure_7.jpg" alt="多任务迁移效果图" style="width:85%; max-width:600px; margin:auto; display:block;">
 

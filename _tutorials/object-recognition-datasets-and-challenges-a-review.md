@@ -3,7 +3,6 @@ layout: default
 title: "Object Recognition Datasets and Challenges: A Review"
 ---
 
-# Object Recognition Datasets and Challenges: A Review
 
 - **ArXiv URL**: http://arxiv.org/abs/2507.22361v1
 
@@ -13,10 +12,10 @@ title: "Object Recognition Datasets and Challenges: A Review"
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过对超过160个数据集的统计和描述，对物体识别领域的数据集和挑战赛进行了全面的回顾与分析，重点探讨了数据集在推动算法发展中的关键作用、主要数据集的演进趋势以及评估基准的变化。
 
-# 关键定义
+## 关键定义
 本文主要沿用并梳理了计算机视觉领域已有的核心概念，并未提出新的定义。关键概念如下：
 *   **物体识别 (Object Recognition)**：一个通用术语，涵盖了图像分类、物体定位、物体检测、实例分割和语义分割等一系列相关的计算机视觉任务。
 *   **图像分类 (Image Classification)**：为整张图像分配一个类别标签。
@@ -25,12 +24,12 @@ title: "Object Recognition Datasets and Challenges: A Review"
 *   **实例分割 (Instance Segmentation)**：在像素级别识别物体边界，并区分同一类别的不同实例（实例感知）。
 *   **全景分割 (Panoptic Segmentation)**：结合语义分割和实例分割，对图像中的所有像素进行分割，既要识别“事物”（Things，可数物体）的实例，也要分割“材料”（Stuff，背景区域）。
 
-# 相关工作
+## 相关工作
 物体识别是计算机视觉的基础任务之一。随着研究的深入，特别是深度学习技术的兴起，算法的性能越来越依赖于大规模、高质量的训练数据。在算法发展的每个阶段，都有相应的数据集被构建出来以匹配当时最先进算法的能力。
 
 然而，现有文献中虽然有许多关于算法进展和应用的综述，但缺乏一篇专门从数据集发展的角度对物体识别领域进行深入分析的综述。本文旨在填补这一空白，通过详细剖析过去二十年中主流物体识别数据集的演进、挑战和趋势，为研究者提供一个关于数据在物体识别领域所扮演角色的全面理解，并为未来的数据集构建指明方向。
 
-# 背景
+## 背景
 
 ## 物体识别任务概述
 
@@ -126,7 +125,7 @@ title: "Object Recognition Datasets and Challenges: A Review"
 
 *   **ROC曲线 (Receiver Operative Characteristic Curve)**：通过绘制真阳性率（召回率）与假阳性率（1-特异度）的关系曲线来评估分类器性能。曲线下面积（AUC）越大，性能越好。
 
-# 通用物体识别数据集
+## 通用物体识别数据集
 
 近年来，公开的标注数据集数量激增。本节对通用物体识别数据集及其相关挑战赛进行综述。
 

@@ -3,7 +3,6 @@ layout: default
 title: "Are Large Language Models Sensitive to the Motives Behind Communication?"
 ---
 
-# Are Large Language Models Sensitive to the Motives Behind Communication?
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.19687v1
 
@@ -13,10 +12,10 @@ title: "Are Large Language Models Sensitive to the Motives Behind Communication?
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过借鉴认知科学的理性模型，系统性地研究了大型语言模型（LLMs）是否能像人类一样识别和评估沟通背后的动机（即“动机警惕性”），发现它们在受控实验中表现出类似人类的能力，但在复杂的现实世界场景中表现不佳，不过简单的引导提示可以改善其表现。
 
-# 关键定义
+## 关键定义
 本文引入或重点使用了以下几个核心概念：
 
 *   **动机警惕性 (Motivational Vigilance)**：源于社会认知理论，指个体在接收信息时，能够主动追踪信息来源的意图 (intentions) 和激励 (incentives)，从而判断信息是否带有偏见（例如，是善意的还是自私的），并据此决定应在多大程度上信任和采纳该信息。这是人类进行选择性社会学习的关键能力。
@@ -27,14 +26,14 @@ title: "Are Large Language Models Sensitive to the Motives Behind Communication?
 
 *   **偶然观察到的信息 (Incidentally Observed Information)**：指并非为了直接说服听者而无意中透露的信息，例如偷听到的他人真实想法或日记内容。这两种信息的区分是测试基础警惕能力的第一步。
 
-# 相关工作
+## 相关工作
 当前，LLMs 处理的大部分在线信息都源于人类有目的的沟通，这些信息不可避免地受到个人动机和激励因素的影响。然而，现有研究表明 LLMs 在这方面存在明显缺陷，例如易受“越狱”攻击、表现出“奉承”（sycophancy）行为（即附和用户的错误观点而非陈述事实）、容易被在线环境中的误导性信息（如弹窗广告）干扰。这些问题暴露出 LLMs 训练范式中的一个核心瓶颈：过度优先考虑遵循用户指令和满足用户偏好，而缺乏对信息来源动机的批判性审查能力。
 
 尽管已有研究探讨了 LLMs 的心智理论 (Theory of Mind)、从众行为等社会能力，但目前学术界仍缺乏一个系统性的框架来衡量 LLM 在处理带有动机的沟通时的“警惕性”。
 
 本文旨在填补这一空白，通过引入认知科学中成熟的理论和实验范式，首次对 LLM 的动机警惕性进行全面、严谨的量化评估。
 
-# 本文方法
+## 本文方法
 本文设计了三个递进的实验范式，以评估 LLM 在不同情境下的动机警惕性能力。
 
 <img src="/images/2510.19687v1/x1.jpg" alt="本文设计的三个实验范式，旨在评估LLM警惕性的不同方面" style="width:85%; max-width:450px; margin:auto; display:block;">
@@ -81,7 +80,7 @@ title: "Are Large Language Models Sensitive to the Motives Behind Communication?
 *   **数据集构建**：本文创建了一个全新的、更贴近生态效度的测试集。通过 SponsorBlock 和 YouTube API，搜集了 300 个真实的 YouTube 视频赞助广告片段，并提取了其标题、频道信息和广告脚本。为避免模型先验知识的干扰，所有品牌和产品名称均被匿名化处理。
 *   **实验设置**：类似于实验2，让 LLM 评估每个赞助视频中推广的产品质量、YouTuber 的可信度以及 YouTuber 从中获得的激励。然后，再次将其判断与理性模型的预测进行比较，以衡量其在自然情境下的警惕性。
 
-# 实验结论
+## 实验结论
 
 ### 实验 1: LLM 具备基础的辨别能力
 *   LLMs 能够成功区分有意图的建议和无意图的观察信息。它们在收到“建议”时，对其答案的调整幅度显著小于收到“窥探”到的答案时，这与人类行为一致，表明 LLM 具备基本的动机警惕性。

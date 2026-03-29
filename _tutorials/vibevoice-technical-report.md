@@ -3,7 +3,6 @@ layout: default
 title: "VibeVoice Technical Report"
 ---
 
-# VibeVoice Technical Report
 
 - **ArXiv URL**: http://arxiv.org/abs/2508.19205v1
 
@@ -13,10 +12,10 @@ title: "VibeVoice Technical Report"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 VibeVoice 的新模型，它通过一个创新的、具有超高压缩率的连续语音tokenizer和一个基于大型语言模型的下一token扩散框架，实现了长达90分钟、多达4人的高质量长篇对话语音合成。
 
-# 关键定义
+## 关键定义
 *   **VibeVoice**: 一个为生成长篇、多说话人语音而设计的创新框架。其核心是利用大型语言模型（Large Language Model, LLM）作为序列处理器，结合一个高效的语音tokenizer和一个token级的扩散解码头，实现了端到端的语音生成。
 
 *   **连续语音 Tokenizer (Continuous Speech Tokenizer)**: 本文提出的一个关键组件，用于将语音信号编码为连续的latent vectors。它包含两个部分：
@@ -25,14 +24,14 @@ title: "VibeVoice Technical Report"
 
 *   **下一Token扩散 (Next-Token Diffusion)**: VibeVoice的生成机制。模型以自回归的方式运行，LLM在每个时间步预测一个隐藏状态 $h\_i$，该状态随后引导一个轻量级的扩散头（Diffusion Head）通过迭代去噪过程，从高斯噪声中生成对应的连续声学特征 $z\_{a,i}$。
 
-# 相关工作
+## 相关工作
 当前的文本到语音（Text-to-Speech, TTS）技术在生成短时、单说话人的高保真语音方面取得了显著成功。然而，对于播客、多人有声书等长篇、多说话人对话音频的合成，仍存在巨大挑战。传统的做法是将单个句子分别合成后拼接，但这难以实现自然的轮流对话和符合上下文的韵律。
 
 近年来，虽然出现了一些针对长对话语音生成的研究，但多数系统要么不开源，要么在生成长度、稳定性和音质方面仍有不足。
 
 本文旨在解决的核心问题是：如何可扩展地、稳定地生成长达90分钟的高质量、多说话人对话音频，并捕捉对话中自然的“氛围感 (vibe)”。
 
-# 本文方法
+## 本文方法
 VibeVoice的核心是一个基于大型语言模型（LLM）的序列模型，它整合了特制的音频编码器和基于扩散的解码模块，以实现可扩展的高保真多说话人语音合成。整体推理架构如下图所示。
 
 <img src="/images/2508.19205v1/x6.jpg" alt="VibeVoice 架构图" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -68,7 +67,7 @@ VibeVoice的核心创新在于其**高效的生成框架和超低帧率的语音
 **实现细节**:
 模型的核心LLM采用了Qwen2.5的1.5B和7B版本。在训练期间，预训练的声学和语义tokenizer保持冻结，仅训练LLM和扩散头参数。训练中使用了课程学习策略，逐步将LLM处理的序列长度从4096增加到65536个token。
 
-# 实验结论
+## 实验结论
 
 ### VibeVoice 播客（长篇对话）
 本文将VibeVoice与多个业界领先的对话语音生成系统进行了主观和客观评测。

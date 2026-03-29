@@ -3,7 +3,6 @@ layout: default
 title: "OpenAssistant Conversations -- Democratizing Large Language Model Alignment"
 ---
 
-# OpenAssistant Conversations -- Democratizing Large Language Model Alignment
 
 - **ArXiv URL**: http://arxiv.org/abs/2304.07327v2
 
@@ -11,10 +10,10 @@ title: "OpenAssistant Conversations -- Democratizing Large Language Model Alignm
 
 ---
 
-# TL;DR
+## TL;DR
 本文发布了一个通过全球众包构建的大规模、多语言、人工标注的对话数据集——OpenAssistant Conversations，旨在通过开放高质量的人类反馈数据，推进大型语言模型对齐技术的研究民主化。
 
-# 关键定义
+## 关键定义
 本文提出或使用的核心概念包括：
 
 1.  **对话树 (Conversation Tree, CT)**：一种核心数据结构，用于表示对话。树的根节点是初始提示（prompt），每个节点代表对话中的一条消息。一个节点可以有多个子节点，代表对该消息的不同回复，从而形成对话的分支。从根节点到任意节点的路径构成一个完整的对话线程。
@@ -23,14 +22,14 @@ title: "OpenAssistant Conversations -- Democratizing Large Language Model Alignm
 
 3.  **消息树状态机 (Message Tree State Machine)**：一个管理对话树在数据收集中进展的系统方法。对话树会经历不同状态，如“初始提示审查”、“生长中”、“已完成”或“因低质量而中止”，以确保数据收集流程的系统性和质量控制。
 
-# 相关工作
+## 相关工作
 当前，最先进的大型语言模型（LLM）对齐技术，如监督微调（SFT）和基于人类反馈的强化学习（RLHF），严重依赖高质量的人类反馈数据。然而，这类数据的创建成本高昂，且通常为少数大型研究机构所私有，并不公开。
 
 虽然存在一些开放获取的指令数据集，但它们大多是利用语言模型自动生成的合成数据，在复杂性、创造性和质量上受到限制。这导致对齐研究的进展被少数能承担大规模数据收集的机构所垄断，阻碍了该领域的包容性和多样化发展。
 
 本文旨在解决这一关键问题：**缺乏一个大规模、高质量、多语言且完全开放的人类生成与标注的对话数据集**，以支持更广泛的社区进行语言模型对齐研究。
 
-# 本文方法
+## 本文方法
 本文的核心贡献是通过一次大规模的全球众包活动，创建并发布了 OpenAssistant Conversations 数据集。
 
 ### 数据格式
@@ -65,7 +64,7 @@ title: "OpenAssistant Conversations -- Democratizing Large Language Model Alignm
 
 <img src="/images/2304.07327v2/page_5_Figure_3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
-# 实验结论
+## 实验结论
 为了验证数据集的有效性，本文基于 Pythia、LLaMA 和 Falcon 等开源模型，使用 OpenAssistant Conversations 数据集进行了监督微调（SFT）和基于人类反馈的强化学习（RLHF）实验。
 
 ### 模型性能

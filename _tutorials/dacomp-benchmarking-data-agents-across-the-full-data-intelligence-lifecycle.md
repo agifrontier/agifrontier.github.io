@@ -3,7 +3,7 @@ layout: default
 title: "DAComp: Benchmarking Data Agents across the Full Data Intelligence Lifecycle"
 ---
 
-# 数据智能体“高考”来了！字节跳动DAComp揭示：顶级模型成功率不足20%
+## 数据智能体“高考”来了！字节跳动DAComp揭示：顶级模型成功率不足20%
 
 <img src="/images/2512.04324v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

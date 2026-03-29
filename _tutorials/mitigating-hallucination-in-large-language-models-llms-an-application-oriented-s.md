@@ -3,7 +3,6 @@ layout: default
 title: "Mitigating Hallucination in Large Language Models (LLMs): An Application-Oriented Survey on RAG, Reasoning, and Agentic Systems"
 ---
 
-# Mitigating Hallucination in Large Language Models (LLMs): An Application-Oriented Survey on RAG, Reasoning, and Agentic Systems
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.24476v1
 
@@ -13,10 +12,10 @@ title: "Mitigating Hallucination in Large Language Models (LLMs): An Application
 
 ---
 
-# TL;DR
+## TL;DR
 本文是一篇以应用为导向的综述，系统性地分析了检索增强生成（RAG）、推理增强以及智能体（Agentic Systems）系统如何通过提升模型能力来缓解大型语言模型（LLM）中的知识型和逻辑型幻觉。
 
-# 分类体系
+## 分类体系
 本文提出了一个面向幻觉缓解策略的分类体系，将幻觉分为两大类：
 
 1.  **知识型幻觉 (Knowledge-based Hallucination)**：指模型生成的内容与事实不符。这通常源于模型内部知识的缺失、过时或错误。
@@ -26,7 +25,7 @@ title: "Mitigating Hallucination in Large Language Models (LLMs): An Application
 
 <img src="/images/2510.24476v1/x1.jpg" alt="LLM响应中的两种幻觉类型" style="width:85%; max-width:600px; margin:auto; display:block;">
 
-# 相关综述回顾
+## 相关综述回顾
 本文首先回顾了以往的相关研究，并将其分为两大类：面向幻觉的综述和面向技术的综述。
 
 *   **面向幻觉的综述**：先前的工作（如 Zhang et al. [2], Huang et al. [1]）系统地总结了幻觉的成因、缓解策略和评估方法，但很少从增强系统能力的角度进行审视，特别是忽略了推理能力对缓解幻觉的影响。这些研究大多将幻觉视为需要被抑制的错误，有时会以牺牲模型的通用性和创造力为代价。
@@ -36,7 +35,7 @@ title: "Mitigating Hallucination in Large Language Models (LLMs): An Application
 
 ![具备代表性模型和基准的幻觉缓解与评估方法概览](images/2510.24476v1/x2.png)
 
-# 背景与关键概念
+## 背景与关键概念
 
 ### 大型语言模型 (LLMs)
 大型语言模型（Large Language Models, LLMs）是基于 Transformer 解码器架构构建的深度学习模型，通过在海量文本语料上进行自回归的下一个词元（token）预测来生成文本。这种基于统计相关性的生成机制赋予了模型强大的生成和泛化能力，但其固有的随机性和不确定性也是幻觉产生的主要根源之一。
@@ -55,7 +54,7 @@ title: "Mitigating Hallucination in Large Language Models (LLMs): An Application
 2.  **工具增强推理 (Tool-augmented Reasoning)**：利用计算器、搜索引擎等外部工具来提高解决问题的准确性。
 3.  **符号推理 (Symbolic Reasoning)**：将自然语言转化为符号表示，以进行可验证的、基于逻辑的计算。
 
-# RAG缓解知识型幻觉
+## RAG缓解知识型幻觉
 知识型幻觉源于模型内部知识的不准确或外部信息的不足。RAG 通过引入外部知识，成为增强事实一致性和可靠性的核心框架。本节围绕 RAG 流程，分析其如何缓解知识型幻觉。
 
 ### RAG 流程与关键技术

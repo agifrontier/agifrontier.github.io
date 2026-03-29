@@ -3,7 +3,6 @@ layout: default
 title: "Bias and Fairness in Large Language Models: A Survey"
 ---
 
-# Bias and Fairness in Large Language Models: A Survey
 
 - **ArXiv URL**: http://arxiv.org/abs/2309.00770v3
 
@@ -13,7 +12,7 @@ title: "Bias and Fairness in Large Language Models: A Survey"
 
 ---
 
-# 1. 引言
+## 1. 引言
 
 大型语言模型 (Large Language Models, LLMs) 的崛起已从根本上改变了语言技术。然而，这些模型在取得巨大成功的同时，也可能会学习、延续并放大有害的社会偏见，这些偏见源于不平衡的社会群体表征、刻板印象、贬损性语言等，不成比例地影响着边缘化社区。
 
@@ -26,7 +25,7 @@ title: "Bias and Fairness in Large Language Models: A Survey"
 
 本综述旨在为研究人员和实践者提供一份清晰的现有文献指南，帮助他们更好地理解和防止LLM中偏见的传播。
 
-# 2. 规范化LLM中的偏见与公平性
+## 2. 规范化LLM中的偏见与公平性
 
 本章节首先介绍LLM的基本定义和符号，然后在LLM的背景下定义“偏见”与“公平性”，并规范化公平性准则。
 

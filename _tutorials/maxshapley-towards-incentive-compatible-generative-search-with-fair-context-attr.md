@@ -3,7 +3,7 @@ layout: default
 title: "MaxShapley: Towards Incentive-compatible Generative Search with Fair Context Attribution"
 ---
 
-# RAG归因成本直降8倍！CMU提出MaxShapley算法，让内容贡献清晰可量
+## RAG归因成本直降8倍！CMU提出MaxShapley算法，让内容贡献清晰可量
 
 <img src="/images/2512.05958v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

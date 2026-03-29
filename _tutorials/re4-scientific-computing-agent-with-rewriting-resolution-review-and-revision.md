@@ -3,7 +3,6 @@ layout: default
 title: "Re4: Scientific Computing Agent with Rewriting, Resolution, Review and Revision"
 ---
 
-# Re4: Scientific Computing Agent with Rewriting, Resolution, Review and Revision
 
 - **ArXiv URL**: http://arxiv.org/abs/2508.20729v1
 
@@ -13,10 +12,10 @@ title: "Re4: Scientific Computing Agent with Rewriting, Resolution, Review and R
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一个名为 Re⁴ 的科学计算智能体 (Agent) 框架，它通过“重写-解决-审查-修订” (Rewriting-Resolution-Review-Revision) 的逻辑链，利用多个大型语言模型 (LLM) 协同工作，显著提升了根据自然语言描述自主生成代码的可靠性和准确性。
 
-# 关键定义
+## 关键定义
 本文的核心是 Re⁴ 框架，其关键概念包括：
 
 *   **Re⁴ 逻辑链**: 指代“重写-解决-审查-修订” (Rewriting-Resolution-Review-Revision) 的四步闭环流程。这是智能体解决科学计算问题的核心思想，模拟了人类专家“草稿-反思-修正”的迭代过程。
@@ -24,7 +23,7 @@ title: "Re4: Scientific Computing Agent with Rewriting, Resolution, Review and R
 *   **程序员 (Programmer)**: 框架中的核心执行模块，由另一个 LLM 驱动。它负责“解决 (Resolution)”阶段，根据顾问模块增强后的任务文本生成并执行代码。同时，它接收审查员的反馈以进行“修订 (Revision)”。
 *   **审查员 (Reviewer)**: 框架中独立的第三方评估模块，由一个独立的 LLM 驱动。它负责“审查 (Review)”阶段，通过评估程序员生成的代码、算法和运行时输出（包括错误、警告和结果）来提供详细的反馈，从而驱动智能体的自我调试和自我改进。
 
-# 相关工作
+## 相关工作
 当前，使用大型语言模型 (LLM) 进行科学计算面临两大核心挑战：
 1.  **自主性问题**：如何让 LLM 在没有人类干预的情况下，为特定问题自主选择和实现合适的数值方法。
 2.  **可靠性问题**：如何确保 LLM 将模糊的自然语言描述准确地转化为无错误的、可执行的代码。
@@ -47,7 +46,7 @@ title: "Re4: Scientific Computing Agent with Rewriting, Resolution, Review and R
 
 <div align="center">表1: 现有用于科学计算的 LLM 智能体框架与本文所提出框架的比较</div>
 
-# 本文方法
+## 本文方法
 本文构建了一个名为 Re⁴ 的新型科学计算智能体框架，其核心是一个由三个协同模块组成的“重写-解决-审查-修订”逻辑链。
 
 <img src="/images/2508.20729v1/schematic_Agent_Ver2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -80,7 +79,7 @@ title: "Re4: Scientific Computing Agent with Rewriting, Resolution, Review and R
 2.  **闭环反馈与自我优化**: 通过“程序员”和“审查员”之间的反馈循环，智能体能够与真实的代码运行结果进行交互。这种基于实际执行反馈的自我调试和自我优化机制，是提升代码质量和解决问题可靠性的核心。
 3.  **知识增强的重写阶段**: 在解决问题之初，顾问模块通过引入领域知识来丰富问题描述，这种“重写”步骤确保智能体在设计算法前能更深刻地理解问题本质，从而做出更优的策略选择。
 
-# 实验结论
+## 实验结论
 本文在三类具有代表性的科学计算任务上对 Re⁴ 框架进行了全面评估：偏微分方程 (PDE) 基准测试、病态希尔伯特 (Hilbert) 线性系统求解、以及基于量纲分析的数据驱动物理分析。
 
 **评估指标**:

@@ -3,7 +3,7 @@ layout: default
 title: "Matrix: Peer-to-Peer Multi-Agent Synthetic Data Generation Framework"
 ---
 
-# 数据生成提速15倍！Meta开源Matrix框架，用P2P架构颠覆多智能体协作
+## 数据生成提速15倍！Meta开源Matrix框架，用P2P架构颠覆多智能体协作
 
 <img src="/images/2511.21686v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
 

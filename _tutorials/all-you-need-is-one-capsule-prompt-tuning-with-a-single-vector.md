@@ -3,7 +3,6 @@ layout: default
 title: "All You Need is One: Capsule Prompt Tuning with a Single Vector"
 ---
 
-# All You Need is One: Capsule Prompt Tuning with a Single Vector
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.16670v1
 
@@ -13,15 +12,15 @@ title: "All You Need is One: Capsule Prompt Tuning with a Single Vector"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为胶囊提示调优（Capsule Prompt Tuning, CaPT）的新型参数高效微调方法，通过将实例感知（instance-aware）信息和任务感知（task-aware）信息创新性地融合到一个单一的“胶囊”提示向量中，解决了传统提示学习方法依赖繁琐的长度搜索且与输入序列交互不足的问题。
 
-# 关键定义
+## 关键定义
 *   **胶囊提示调优 (Capsule Prompt-Tuning, CaPT)**：一种新颖的提示调优框架。它在模型的每一层使用一个单一的可学习“胶囊”向量，该向量与从输入实例中动态提取的均值表示相结合，形成一个既包含任务级指导又包含实例级语义的自适应提示。
 *   **注意力锚点 (Attention Anchor)**：本文发现的一个现象。指将一个蕴含实例信息的Token放置在序列最前端时，该Token能够与输入序列中的关键结构信息（如分隔符、关键词）建立强大的注意力连接，并被输入序列中的其他Token持续关注。这种机制能有效引导模型的注意力，加强指导信号与输入内容的互动。
 *   **胶囊提示 (Capsule Prompt)**：CaPT方法中用于指导模型的核心元素。在模型的第 $$i$$ 层，它由一个可学习的参数向量 $$p^i$$ 和一个从前一层输出（或初始输入）中计算出的实例感知均值表示相加而成。这个单一的向量 $$S^i$$ 既紧凑又信息丰富。
 
-# 相关工作
+## 相关工作
 当前，参数高效微调（Parameter-Efficient Fine-Tuning, PEFT）方法，特别是基于软提示（soft prompts）的提示学习，已成为使大语言模型（LLMs）适应下游任务的主流范式。然而，现有方法存在两大瓶颈：
 
 1.  **缺乏与实例的有效交互**：传统的软提示主要编码任务感知（task-aware）信息，以一种“一刀切”的方式指导模型。本文的初步研究发现，这些提示在注意力机制中主要关注彼此，而与输入序列中的关键结构化信息缺乏有效的互动，这限制了模型对不同输入语义的适应能力。
@@ -29,7 +28,7 @@ title: "All You Need is One: Capsule Prompt Tuning with a Single Vector"
 
 本文旨在解决上述两个问题，即如何设计一种既能有效融入实例感知（instance-aware）信息以增强与输入的互动，又能摆脱对提示长度搜索依赖的高效提示学习方法。
 
-# 本文方法
+## 本文方法
 
 ## 关键发现
 本文的动机源于对现有软提示方法的两个关键洞察：
@@ -97,7 +96,7 @@ CaPT的整体架构如上图(b)所示。具体而言，其工作流程如下：
 *   **消除长度搜索**：由于提示长度固定为1，完全避免了传统提示学习中耗时费力的网格搜索过程。
 *   **强大的上下文关联**：通过构建“注意力锚点”，显著增强了指导信号与输入内容之间的互动，从而改善了模型的上下文理解能力和最终性能。
 
-# 实验结论
+## 实验结论
 
 
 | 模型 | 可调参数 | FT | Head | P-Tuning v2 | XPrompt | CaPT (本文) |

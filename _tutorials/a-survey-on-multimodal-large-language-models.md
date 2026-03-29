@@ -3,7 +3,6 @@ layout: default
 title: "A Survey on Multimodal Large Language Models"
 ---
 
-# A Survey on Multimodal Large Language Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2306.13549v4
 
@@ -13,7 +12,7 @@ title: "A Survey on Multimodal Large Language Models"
 
 ---
 
-# 引言
+## 引言
 
 近年来，大型语言模型 (Large Language Models, LLMs) 取得了显著进展，通过扩大数据和模型规模，展现出指令遵循 (instruction following)、上下文学习 (In-Context Learning, ICL) 和思维链 (Chain of Thought, CoT) 等惊人的涌现能力。然而，LLMs 本质上是“视觉盲区”，只能理解文本。与此同时，大型视觉模型 (Large Vision Models, LVMs) 虽然视觉能力强大，但在推理方面相对落后。
 
@@ -25,7 +24,7 @@ title: "A Survey on Multimodal Large Language Models"
 
 <img src="/images/2306.13549v4/x1.jpg" alt="代表性 MLLM 的时间线。" style="width:85%; max-width:600px; margin:auto; display:block;">
 
-# 2 架构
+## 2 架构
 
 一个典型的 MLLM 可抽象为三个模块：一个预训练的模态编码器 (modality encoder)、一个预训练的 LLM 和一个连接它们的模态接口 (modality interface)。打个比方，模态编码器如同人的眼睛/耳朵，接收并预处理信号；LLM 如同大脑，进行理解和推理；模态接口则负责对齐不同模态。部分 MLLM 还包含一个生成器，用于输出文本以外的其他模态。
 
@@ -79,7 +78,7 @@ title: "A Survey on Multimodal Large Language Models"
 **2. 专家模型 (Expert Model)**
 另一种方式是借助专家模型（如图像字幕模型）将多模态输入直接转换为文本描述，然后将这些描述送入 LLM。这种方法简单直接，但可能在转换过程中丢失信息，灵活性不如可学习连接器。
 
-# 3 训练策略与数据
+## 3 训练策略与数据
 
 一个成熟的 MLLM 通常经历三个训练阶段：预训练 (pre-training)、指令微调 (instruction-tuning) 和对齐微调 (alignment tuning)。每个阶段都有不同的目标和数据需求。
 
@@ -212,7 +211,7 @@ $${% endraw %}
 | VLFeedback | 380K | I + T $\rightarrow$ T | GPT-4V |
 
 
-# 4 评测
+## 4 评测
 
 评测 MLLM 是开发过程的关键环节。与传统多模态模型相比，MLLM 的评测有新特点：(1) MLLM 功能通用，需要全面评测；(2) MLLM 表现出许多需要特别评估的涌现能力。评测方法可根据问题类型分为闭集 (closed-set) 和开集 (open-set) 两类。
 

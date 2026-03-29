@@ -3,7 +3,7 @@ layout: default
 title: "MCP vs RAG vs NLWeb vs HTML: A Comparison of the Effectiveness and Efficiency of Different Agent Interfaces to the Web (Technical Report)"
 ---
 
-# AI Agent上网指南：RAG效率飙升5倍，成本锐减80%，完胜HTML
+## AI Agent上网指南：RAG效率飙升5倍，成本锐减80%，完胜HTML
 
 <img src="/images/2511.23281v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

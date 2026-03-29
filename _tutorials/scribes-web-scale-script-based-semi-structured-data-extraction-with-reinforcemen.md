@@ -3,7 +3,6 @@ layout: default
 title: "SCRIBES: Web-Scale Script-Based Semi-Structured Data Extraction with Reinforcement Learning"
 ---
 
-# SCRIBES: Web-Scale Script-Based Semi-Structured Data Extraction with Reinforcement Learning
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.01832v1
 
@@ -13,10 +12,10 @@ title: "SCRIBES: Web-Scale Script-Based Semi-Structured Data Extraction with Rei
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 SCRIBES 的新型强化学习框架，它通过利用同一网站内网页间的布局相似性作为奖励信号，训练大型语言模型生成可重用的提取脚本，从而实现对网页半结构化数据（如表格和列表）的网络规模、高效率提取。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下几个核心概念：
 
 *   **SCRIBES (Script-Based Semi-Structured Content Extraction at Web-Scale)**：本文提出的核心框架名称。它是一个基于强化学习的系统，旨在训练语言模型生成可跨相似网页重用的提取脚本，以实现网络规模的半结构化数据提取。
@@ -24,14 +23,14 @@ title: "SCRIBES: Web-Scale Script-Based Semi-Structured Data Extraction with Rei
 *   **HTML Deduplication (Dedup)**：本文采用的一种简单而有效的预处理方法。它通过将HTML文档中重复的块折叠成紧凑的表示形式（例如“$n$ more …elements”），显著缩短了输入给模型的上下文长度，从而提升了模型性能。
 *   **跨页泛化奖励 (Cross-Page Generalization Reward)**：SCRIBES框架的核心创新。其奖励机制主要基于一个为特定页面 $p$ 生成的脚本，在同组其他相似页面 $q$ 上的执行效果。这种设计激励模型学习能够捕捉共同布局模式的、具有泛化能力的脚本，而非仅仅适用于单个页面的过拟合规则。
 
-# 相关工作
+## 相关工作
 目前，从网页中提取半结构化数据的方法主要分为两类。传统方法，如包装器归纳 (wrapper induction) 和基于布局的方法，虽然在特定场景下有效，但通常比较“脆弱” (brittle)，难以泛化到未见过的数据或网站结构上。
 
 近年来兴起的基于大型语言模型 (LLM) 的方法，虽然能够产生高质量的提取结果，但其主要瓶颈在于资源消耗巨大。这些方法通常需要为每一个网页单独调用一次LLM进行推理，这在网络规模的应用场景下成本过高且效率低下。此外，它们将每个页面视为独立个体，忽略了同一网站内页面间普遍存在的布局规律性。
 
 因此，本文旨在解决的核心问题是：**如何以一种资源高效且可扩展的方式，从海量网页中准确、可靠地提取结构化信息，同时克服传统方法的泛化难题和LLM方法的成本瓶颈。**
 
-# 本文方法
+## 本文方法
 本文提出了SCRIBES框架，一个通过强化学习（Reinforcement Learning, RL）训练模型生成通用提取脚本的创新方法。
 
 <img src="/images/2510.01832v1/x1.jpg" alt="图1：SCRIBES框架概述" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -70,7 +69,7 @@ $${% endraw %}
 3.  **聚焦失败案例**: 为了避免伪标签的噪声干扰，训练过程并非在所有CC数据上进行。相反，它首先使用在高质量标注数据上训练过的模型进行预测，然后专门挑选出那些模型预测失败（即未提取出任何三元组）的“失败案例” (failure cases) 进行后续的强化学习训练。
 4.  **迭代优化**: 通过在这些具有挑战性的失败案例上进行训练，模型能够在不依赖人工标注的情况下，不断扩展其对多样化网页布局的适应能力。
 
-# 实验结论
+## 实验结论
 
 ### 脚本生成质量
 实验结果表明，经过SCRIBES框架训练的模型在生成可重用提取脚本方面，性能远超各种强大的智能体基线。

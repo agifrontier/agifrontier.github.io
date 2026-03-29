@@ -3,7 +3,6 @@ layout: default
 title: "Spanish Pre-trained BERT Model and Evaluation Data"
 ---
 
-# Spanish Pre-trained BERT Model and Evaluation Data
 
 - **ArXiv URL**: http://arxiv.org/abs/2308.02976v1
 
@@ -13,24 +12,24 @@ title: "Spanish Pre-trained BERT Model and Evaluation Data"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出并开源了第一个完全基于西班牙语料库预训练的BERT模型（BETO），并构建了一个名为GLUES的西班牙语NLP任务评估基准，实验证明该单语模型在多数西班牙语下游任务上的表现优于同等规模的多语言BERT模型。
 
-# 关键定义
+## 关键定义
 本文主要应用和扩展了现有技术，并为西班牙语社区创建了新的资源，关键定义如下：
 
 *   **BETO**: 本文提出的西班牙语BERT模型的名称（源于其GitHub仓库名beto）。它是一个基于BERT-Base架构，但完全使用西班牙语语料进行预训练的语言模型。模型包含12个自注意力层，每层12个注意力头，隐藏层维度为768，总参数量约1.1亿。本文发布了cased（区分大小写）和uncased（不区分大小写）两个版本。
 
 *   **GLUES (GLUE for Spanish)**: 本文整理和汇编的一个用于评估西班牙语NLP模型性能的基准测试集。它仿照了英语领域的GLUE基准，整合了多项西班牙语下游任务，旨在为西班牙语NLP研究提供标准化的评测方案。
 
-# 相关工作
+## 相关工作
 预训练语言模型 (Pre-trained language models) 已成为NLP领域的主流范式，其典型代表是通过自监督学习在海量无标签文本上进行预训练，然后在特定下游任务上进行微调 (fine-tune)。早期的ULM-Fit采用循环神经网络，而BERT则基于强大的Transformer架构和掩码语言模型 (Masked Language Modeling, MLM) 任务，极大地推动了技术发展。
 
 为了支持英语和中文以外的语言，研究人员发布了多语言BERT (mBERT)，它在包含100多种语言的混合语料上进行训练，并在跨语言任务上表现出色。然而，社区发现，针对单一语言（如法语、荷兰语、俄语等）训练的单语BERT模型，通常能在该语言的特定任务上超越mBERT。
 
 尽管西班牙语是世界主要语言之一，但当时NLP社区缺乏一个高质量、公开可用的西班牙语预训练BERT模型和标准化的评估基准。本文旨在填补这一空白，为西班牙语NLP研究提供核心基础资源。
 
-# 本文方法
+## 本文方法
 
 ### 模型架构与词表
 本文提出的西班牙语BERT模型在架构上与$$BERT-Base$$保持一致，包含12个自注意力层 (self-attention layers)，12个注意力头 (attention-heads)，隐藏层维度为768，总参数量约为1.1亿。
@@ -60,7 +59,7 @@ title: "Spanish Pre-trained BERT Model and Evaluation Data"
 *   **依存句法分析 (Dependency Parsing)**: 使用Universal Dependencies (v2.2)，构建句子的语法结构树。
 *   **问答 (Question Answering, QA)**: 使用多个翻译版的SQuAD v1.1数据集，包括MLQA, TAR, 和XQuAD，从给定上下文中提取问题的答案。
 
-# 实验结论
+## 实验结论
 
 ### 结果总结
 本文将训练好的西班牙语BERT模型（分为cased和uncased版本）在GLUES的各项任务上进行了微调，并与文献中报道的最佳mBERT性能进行了对比。

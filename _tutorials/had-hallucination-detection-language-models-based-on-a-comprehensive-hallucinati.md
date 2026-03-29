@@ -3,7 +3,6 @@ layout: default
 title: "HAD: HAllucination Detection Language Models Based on a Comprehensive Hallucination Taxonomy"
 ---
 
-# HAD: HAllucination Detection Language Models Based on a Comprehensive Hallucination Taxonomy
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.19318v1
 
@@ -13,16 +12,16 @@ title: "HAD: HAllucination Detection Language Models Based on a Comprehensive Ha
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一个全面的幻觉分类体系，并基于此构建了一个大规模合成数据集，用以训练 $$HAD$$ 模型，使其能够在一个统一的推理过程中完成幻觉分类、范围识别和内容纠正。
 
-# 关键定义
+## 关键定义
 本文沿用并扩展了现有的关键定义，提出了一个更细致的分类体系。
 *   **幻觉 (Hallucination)**：指模型生成的输出看似可信，但实际上在事实层面不正确或与所提供的上下文不符的现象。
 *   **忠实性幻觉 (Faithfulness Hallucination)**：源于输入内容与生成内容之间的不一致，或生成内容内部的矛盾，其判断不依赖外部事实信息。
 *   **事实性幻觉 (Factuality Hallucination)**：指生成内容包含与外部世界事实不符的不准确、歪曲或捏造的信息。
 
-# 相关工作
+## 相关工作
 当前，针对大型语言模型（LLM）幻觉的研究取得了显著进展，但仍存在明显局限：
 1.  **评估维度单一**：许多研究仅关注事实性（factuality）或忠实性（faithfulness），未能对两者进行综合评估。
 2.  **任务特异性强**：现有方法大多针对特定任务（如问答、摘要），导致其通用性受限。
@@ -30,7 +29,7 @@ title: "HAD: HAllucination Detection Language Models Based on a Comprehensive Ha
 
 本文旨在解决上述问题，通过提出一个更全面、细粒度的幻觉分类体系，并开发一个适用于多种自然语言生成（NLG）任务的通用幻觉检测与修正模型。
 
-# 本文方法
+## 本文方法
 
 ## 幻觉分类体系
 本文提出了一个三层级的幻觉分类体系，包含11个细粒度类别，全面覆盖了忠实性和事实性两个维度。该体系是对现有研究的综合与扩展。
@@ -79,7 +78,7 @@ title: "HAD: HAllucination Detection Language Models Based on a Comprehensive Ha
 *   **训练范式**：采用监督式微调（supervised fine-tuning），将幻觉分类、范围识别和纠正统一到一个生成任务中。模型输入包含任务指令、上下文和待检测的输出，模型需要生成结构化的结果，指明幻觉类型（或无幻觉）、幻觉的具体文本范围以及修正后的文本。
 *   **优点**：与现有方法相比，$$HAD$$模型不仅能判断有无幻觉，还能提供细粒度的类别和精确位置，并给出修正建议，功能更全面。其基于多样化数据集的训练使其具备了跨不同NLG任务的泛化能力。
 
-# 实验结论
+## 实验结论
 
 ## 关键结果
 $$HAD$$模型在域内和域外测试中均表现出色，通常优于现有的基线模型。

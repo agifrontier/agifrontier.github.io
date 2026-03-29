@@ -3,7 +3,7 @@ layout: default
 title: "Causal Reasoning Favors Encoders: On The Limits of Decoder-Only Models"
 ---
 
-# BERT“逆袭”GPT？微软新论文揭示Decoder-only在因果推理中的致命短板
+## BERT“逆袭”GPT？微软新论文揭示Decoder-only在因果推理中的致命短板
 
 <img src="/images/2512.10561v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

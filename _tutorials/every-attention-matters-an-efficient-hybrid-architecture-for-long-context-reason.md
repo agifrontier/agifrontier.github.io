@@ -3,7 +3,6 @@ layout: default
 title: "Every Attention Matters: An Efficient Hybrid Architecture for Long-Context Reasoning"
 ---
 
-# Every Attention Matters: An Efficient Hybrid Architecture for Long-Context Reasoning
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.19338v2
 
@@ -11,15 +10,15 @@ title: "Every Attention Matters: An Efficient Hybrid Architecture for Long-Conte
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 Ring-linear 的高效混合注意力架构，通过将线性注意力（Linear Attention）与标准的 Softmax 注意力相结合，在显著降低长上下文推理的 I/O 和计算成本的同时，保持了强大的模型性能。
 
-# 关键定义
+## 关键定义
 *   **混合线性注意力架构 (Hybrid Linear Attention Architecture)**：本文的核心设计，是一种将两种注意力机制结合的模型结构。它并非完全采用线性注意力或 Softmax 注意力，而是在模型中交替使用多个线性注意力层和一个 Softmax 注意力（具体为 GQA）层，从而在效率和模型表达能力之间取得平衡。
 *   **线性注意力 (Linear Attention)**：一种计算复杂度与序列长度成线性关系 ($O(nd^2)$) 的注意力机制。其关键优势在于，推理过程中所需的键值缓存 (KV cache) 大小是恒定的 ($O(d^2)$)，与序列长度无关，因此在处理长文本时极为高效。
 *   **层组 (Layer Group)**：Ring-linear 模型的基本构建单元。每个层组由 $M$ 个线性注意力模块和一个分组查询注意力（Grouped Query Attention, GQA）模块组成。$M$ 的取值（即线性与 Softmax 注意力的比例）是决定模型效率与性能平衡的关键超参数。
 
-# 相关工作
+## 相关工作
 近年来，通过增加解码Token数量（Test-Time Scaling）来提升大型语言模型（LLM）能力已成为趋势，这使得模型对长上下文的支持变得至关重要，尤其是在智能体（Agent）系统和代码生成等应用中。然而，传统的注意力机制（如 MHA, GQA）存在一个核心瓶颈：其计算复杂度和 KV 缓存大小随序列长度的增长而迅速增加（计算复杂度为 $O(n^2)$），这给长文本处理带来了巨大的 I/O 和计算压力。
 
 为了解决这一问题，研究界提出了多种线性注意力方法（如 Retnet, Mamba 等），它们将计算复杂度降至线性级别 ($O(nd^2)$)，显著提升了效率。然而，这些方法也存在局限性：
@@ -28,7 +27,7 @@ title: "Every Attention Matters: An Efficient Hybrid Architecture for Long-Conte
 
 因此，本文旨在解决的核心问题是：如何设计一个既能利用线性注意力的效率，又能保持 Softmax 注意力强大性能的混合架构，并对其进行深度优化，使其在训练和推理上都经济高效。
 
-# 本文方法
+## 本文方法
 Ring-linear 系列模型的核心在于其创新的混合架构和系统级的计算优化，旨在实现长上下文场景下的高效率与高性能。
 
 ### 基本架构
@@ -105,7 +104,7 @@ $${% endraw %}
 1.  **持续预训练 (Continued Pre-Training)**：从性能强大的 dense 模型（Ling-base-2.0）初始化，将部分注意力层转换为线性注意力，然后进行持续训练以恢复并扩展模型能力，包括将上下文窗口从 4K 逐步扩展到 128K。
 2.  **后训练 (Post-Training)**：包括监督微调（SFT）和强化学习（RL）。特别地，在 RL 阶段，本文发现并解决了**训练与推理框架实现不一致**（如 RMSNorm, RoPE 的细微差别）导致 RL 训练崩溃的问题，通过系统性对齐实现了长期稳定的 RL 训练。
 
-# 实验结论
+## 实验结论
 实验结果有力地证明了 Ring-linear 架构在效率和性能上的双重优势。
 
 ### 训练与推理效率

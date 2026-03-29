@@ -3,7 +3,6 @@ layout: default
 title: "Internalizing World Models via Self-Play Finetuning for Agentic RL"
 ---
 
-# Internalizing World Models via Self-Play Finetuning for Agentic RL
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.15047v1
 
@@ -13,24 +12,24 @@ title: "Internalizing World Models via Self-Play Finetuning for Agentic RL"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 SPA (Self Play Agent) 的智能体强化学习框架，它通过自我博弈（Self-Play）有监督微调（SFT），让大语言模型智能体在策略优化前先内化一个世界模型（World Model），从而显著提升其在分布外（OOD）环境中的学习性能和泛化能力。
 
-# 关键定义
+## 关键定义
 *   **世界模型 (World Model)**: 指智能体对环境底层规则的结构化理解。本文将其分解为两个部分：对当前状态的准确表征（状态估计），以及对行为如何改变状态的理解（转移建模）。
 *   **SPA (Self Play Agent)**: 本文提出的核心框架。它采用一个两阶段流程：首先，通过自我博弈和有监督微调（SFT）进行“冷启动”，让智能体学习环境的世界模型；然后，利用这个预训练好的模型进行后续的强化学习（RL）策略优化。
 *   **状态估计 (State Estimation)**: 世界模型的组成部分之一。指将环境的原始、符号化观测（如纯文本棋盘）转换为结构化的、包含关键信息（如对象坐标）的自然语言描述。此举旨在降低模型理解状态的困惑度（Perplexity），增强其对环境的“接地”（Grounding）能力。
 *   **转移建模 (Transition Modeling)**: 世界模型的另一组成部分。指通过学习状态转移核函数 $p\_{\theta}(s\_{t+1}\mid s\_{t},a\_{t})$ 来预测在当前状态 $s\_t$ 执行动作 $a\_t$ 后，环境将转换到的下一状态 $s\_{t+1}$。本文通过在自我博弈数据上进行 SFT 来实现这一点。
 *   **Pass@k**: 一项关键评估指标，衡量在 $k$ 次采样轨迹中至少有一次成功的概率。它反映了智能体生成多样化成功解法的能力，与仅衡量最高概率路径成功率的 Pass@1 形成对比。
 
-# 相关工作
+## 相关工作
 目前，基于强化学习（RL）的智能体微调已成为优化大型语言模型（LLM）的主流框架，在工具使用、网页搜索等领域取得了成功。
 
 然而，当这些智能体被部署到其预训练数据之外的分布外（Out-of-Distribution, OOD）环境（如 Sokoban、FrozenLake 等）时，其性能会急剧下降。在这些环境中，模型难以将其内部知识与陌生的环境动态相结合。标准的 RL 训练往往会失败，表现为 $$Pass@k$$ 指标在训练过程中不升反降，这揭示了现有方法的根本局限性：智能体仅学会了在一两条狭窄的路径上进行“利用”（Exploitation），提高了 $$Pass@1$$，但未能形成对环境规则的广泛理解，导致探索能力弱，泛化性差。
 
 本文旨在解决的核心问题是：如何让 LLM 智能体在 OOD 环境中，通过自我探索（自我博弈）先构建起对环境动态的“世界知识”，然后利用这些知识来有效行动，从而克服现有 RL 方法的局限性。
 
-# 本文方法
+## 本文方法
 本文提出了 SPA (Self Play Agent) 框架，其核心思想是在进行策略学习之前，先通过一个专门的阶段为 LLM 智能体构建一个内部世界模型。该框架不依赖外部知识或更强的教师模型，完全通过基础模型自身的经验来学习。
 
 <img src="/images/2510.15047v1/x1.jpg" alt="SPA 框架图解" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -91,7 +90,7 @@ $${% endraw %}
 
 <img src="/images/2510.15047v1/val_passk_pass1_side_by_side_SPA_ratio1p25_capV.jpg" alt="Sokoban 和 Frozen Lake 上的验证性能" style="width:90%; max-width:700px; margin:auto; display:block;">
 
-# 实验结论
+## 实验结论
 本文在 Sokoban、FrozenLake 和 Sudoku 等多个 OOD 环境中，使用不同尺寸的模型（从 0.5B到 3B）对 SPA 框架进行了评估。
 
 **主要结果**

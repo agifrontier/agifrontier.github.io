@@ -3,7 +3,6 @@ layout: default
 title: "Higher-order Linear Attention"
 ---
 
-# Higher-order Linear Attention
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.27258v1
 
@@ -13,23 +12,23 @@ title: "Higher-order Linear Attention"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为高阶线性注意力 (Higher-order Linear Attention, HLA) 的新型注意力机制，它通过紧凑的前缀充分统计量 (prefix sufficient statistics) 实现了高阶交互，同时保持了线性时间复杂度和流式计算能力，从而在不牺牲表达能力的情况下解决了标准注意力机制的二次方复杂度瓶颈。
 
-# 关键定义
+## 关键定义
 *   **高阶线性注意力 (Higher-order Linear Attention, HLA)**: 一种泛化线性注意力的机制。它通过引入高阶交互（如二阶张量积）来增强模型的表达能力，同时通过将计算分解为多个低阶矩（例如，键向量外积的和），使其能够在每个时间步以线性时间复杂度和常数大小的状态进行流式计算。
 *   **前缀摘要 (Prefix Summaries)**: 一组在序列处理过程中可以流式更新的统计量，每个时间步的更新成本不依赖于序列长度。对于二阶HLA，核心摘要包括键的二阶矩 $\mathbf{S}\_t^K$, 查询-值累加器 $\mathbf{C}\_t^{QV}$ 和查询质量 $\mathbf{m}\_t^Q$ 等。
 *   **关联扫描 (Associative Scans)**: 一种并行计算技术，用于高效训练HLA模型。通过为HLA的状态更新定义一个满足结合律的二元操作（如幺半群或半直积），可以在数据块上并行执行扫描计算，其结果与串行循环完全相同，从而解决了循环神经网络训练效率低下的问题。
 *   **非对称高阶线性注意力 (Asymmetric Higher-order Linear Attention, AHLA)**: HLA的一个变体，它计算非对称的级联乘积 $\mathbf{AAV}$（其中 $\mathbf{A}=\mathbf{Q}\mathbf{K}^{\top}$），与标准的对称形式 $\mathbf{AA}^{\top}\mathbf{V}$ 互补。AHLA同样支持严格的因果流式计算，并具有不同的计算成本和状态构成。
 
-# 相关工作
+## 相关工作
 现代大语言模型（LLMs）的基础是Transformer架构及其核心组件——缩放点积注意力 (scaled dot-product attention)。然而，其计算和内存复杂度随序列长度 $n$ 呈 $O(n^2)$ 增长，这严重制约了模型在长上下文场景下的应用。
 
 为了解决这一瓶颈，研究领域涌现了多种高效的替代方案，包括线性注意力 (Linear Attention)、现代循环神经网络 (RNNs)、状态空间模型 (State Space Models, SSMs) 等。这些方法通常能实现线性时间复杂度和在推理时 $O(1)$ 的状态更新。然而，它们大多局限于一阶或基于核函数的近似，这可能限制了模型的表达能力。
 
 本文旨在解决的核心问题是：如何设计一种既具备注意力机制那样的数据依赖和高阶交互能力，又能像现代循环架构一样实现高效流式计算和并行训练的机制。
 
-# 本文方法
+## 本文方法
 本文的核心是提出高阶线性注意力（HLA），它通过紧凑的前缀摘要实现了高阶交互的流式计算。
 
 ### 二阶HLA
@@ -130,7 +129,7 @@ $${% endraw %}
 
 其流式输出为 $\mathbf{o}\_{t}^{\textsc{AHLA}} = \mathbf{q}\_{t}^{\top}\mathbf{E}\_{t}$。AHLA的计算成本为 $O(d d\_v)$，在某些情况下比HLA更高效。
 
-# 实验结论
+## 实验结论
 本文主要聚焦于算法结构和理论推导，并未提供具体的实验结果或与其他模型的性能比较。
 
 **总结**

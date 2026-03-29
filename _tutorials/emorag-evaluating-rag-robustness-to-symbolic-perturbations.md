@@ -3,7 +3,7 @@ layout: default
 title: "EmoRAG: Evaluating RAG Robustness to Symbolic Perturbations"
 ---
 
-# EmoRAG：一个表情符号，如何100%“污染”RAG，让大模型更易“中招”？
+## EmoRAG：一个表情符号，如何100%“污染”RAG，让大模型更易“中招”？
 
 <img src="/images/2512.01335v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

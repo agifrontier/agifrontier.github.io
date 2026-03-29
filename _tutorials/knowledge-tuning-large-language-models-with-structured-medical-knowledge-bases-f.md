@@ -3,7 +3,7 @@ layout: default
 title: "Knowledge-tuning Large Language Models with Structured Medical Knowledge Bases for Reliable Response Generation in Chinese"
 ---
 
-# 准确率飙升至86.7%！哈工大发布“知识调优”，专治医疗大模型“一本正经胡说八道”
+## 准确率飙升至86.7%！哈工大发布“知识调优”，专治医疗大模型“一本正经胡说八道”
 
 <img src="/images/2309.04175v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

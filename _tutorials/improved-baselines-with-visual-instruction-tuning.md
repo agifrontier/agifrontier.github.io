@@ -3,7 +3,6 @@ layout: default
 title: "Improved Baselines with Visual Instruction Tuning"
 ---
 
-# Improved Baselines with Visual Instruction Tuning
 
 - **ArXiv URL**: http://arxiv.org/abs/2310.03744v2
 
@@ -13,17 +12,17 @@ title: "Improved Baselines with Visual Instruction Tuning"
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过对LLaVA框架进行简单而有效的改进，即采用MLP视觉-语言连接器、引入带有响应格式化提示的学术VQA数据等，构建了LLaVA-1.5，一个在11个基准上达到SOTA、同时保持极高数据和计算效率的大型多模态模型基线。
 
-# 关键定义
+## 关键定义
 本文主要沿用并优化了现有大型多模态模型（Large Multimodal Models, LMMs）的设计，其中几个关键概念对于理解本文至关重要：
 
 *   **视觉指令微调 (Visual Instruction Tuning)**: 指在经过预训练后，使用包含图像和指令的特定数据集对LMM进行微调的过程。其目标是让模型能理解并遵循多样化的人类指令，完成看图对话、推理、描述等复杂任务。
 *   **视觉-语言连接器 (Vision-Language Connector)**: LMM中连接预训练视觉编码器和大型语言模型（LLM）的关键模块。它的作用是将视觉特征（如图像块Tokens）转换为LLM能够理解的语言嵌入空间中的Tokens。本文证明了简单的MLP连接器比复杂的Q-Former等结构更具数据效率和竞争力。
 *   **响应格式化提示 (Response Format Prompting)**: 本文提出的一种简单而有效的数据处理技巧。通过在VQA等任务的提问指令末尾附加明确的格式要求（如 "Answer the question using a single word or phrase."），来引导模型生成特定格式（如短答案）的回复，从而有效解决了模型在长对话和短问答两种模式间难以平衡的问题。
 
-# 相关工作
+## 相关工作
 当前，大型多模-态模型（LMMs）在视觉指令微调的驱动下取得了显著进展。以LLaVA和InstructBLIP为代表的模型展示了强大的指令遵循和视觉推理能力。然而，现有技术存在明显瓶颈：
 
 *   **能力不均衡**: 不同的模型架构和训练数据导致能力上的偏差。例如，LLaVA擅长开放式对话，但在需要简短、精确答案的传统VQA基准上表现不佳。相反，InstructBLIP在VQA上表现优异，但其对话能力较弱，容易对短答案“过拟合”。
@@ -31,7 +30,7 @@ title: "Improved Baselines with Visual Instruction Tuning"
 
 本文旨在解决上述问题，特别是如何在一个统一的、数据高效的框架内，平衡模型的对话能力和在学术基准上的表现，并建立一个易于复现且性能强大的开源基线。
 
-# 本文方法
+## 本文方法
 本文在初代LLaVA模型的基础上进行了一系列系统性的改进，提出了LLaVA-1.5。其核心思想是，通过简单的架构调整、智能的数据策略和有效的扩展，可以实现比复杂模型更优的性能和更高的数据效率。
 
 <img src="/images/2310.03744v2/architecture.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -76,7 +75,7 @@ title: "Improved Baselines with Visual Instruction Tuning"
 <img src="/images/2310.03744v2/x3.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图：LLaVA-1.5-HD 通过将图像分割成网格并独立编码来扩展到更高分辨率。*
 
-# 实验结论
+## 实验结论
 LLaVA-1.5在一系列共12个基准测试中展现了卓越的性能，其结果证明了本文方法的有效性。
 
 <img src="/images/2310.03744v2/x1.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">

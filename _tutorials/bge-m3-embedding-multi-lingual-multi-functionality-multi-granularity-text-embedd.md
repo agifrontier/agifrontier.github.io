@@ -3,7 +3,6 @@ layout: default
 title: "BGE M3-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation"
 ---
 
-# BGE M3-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation
 
 - **ArXiv URL**: http://arxiv.org/abs/2402.03216v4
 
@@ -13,10 +12,10 @@ title: "BGE M3-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity 
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 M3-Embedding 的通用文本嵌入模型，它通过新颖的自知识蒸馏（Self-Knowledge Distillation）训练框架，在单一模型中同时实现了多语言（Multi-Lingual）、多功能（Multi-Functionality）和多粒度（Multi-Granularity）的卓越能力。
 
-# 关键定义
+## 关键定义
 本文的核心是围绕一个统一的嵌入模型 M3-Embedding 展开的，该模型具备以下关键特性：
 
 1.  **多功能性 (Multi-Functionality)**：模型能够同时支持三种主流的检索范式：
@@ -28,7 +27,7 @@ title: "BGE M3-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity 
 
 3.  **多粒度 (Multi-Granularity)**：模型能够处理从短句到长达8192个token的长文档，这得益于高效的批处理策略和专门针对长文档的训练数据。
 
-# 相关工作
+## 相关工作
 当前的文本嵌入模型虽然取得了巨大进展，但普遍存在以下局限性：
 *   **语言单一**：大多数高质量的嵌入模型主要针对英语设计，缺乏对其他语言的有效支持。
 *   **功能单一**：现有模型通常只为一种特定的检索功能（如密集检索）进行优化，而一个完整的IR系统往往需要多种检索方法的协同工作。
@@ -38,7 +37,7 @@ title: "BGE M3-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity 
 
 <img src="/images/2402.03216v4/x1.jpg" alt="M3-Embedding的特性" style="width:85%; max-width:600px; margin:auto; display:block;">
 
-# 本文方法
+## 本文方法
 M3-Embedding 的实现依赖于精细的数据管理、创新的训练框架和高效的训练策略。
 
 ### 数据管理
@@ -100,7 +99,7 @@ $${% endraw %}
 
 此外，本文还提出了一个简单的推理时策略MCLS (Multi-CLS)，即在长文档中插入多个CLS token，并取其嵌入向量的平均值作为最终表示，这在没有资源进行长文档微调时也能有效提升性能。
 
-# 实验结论
+## 实验结论
 实验结果全面验证了M3-Embedding在多语言、多功能和多粒度上的优越性。
 
 *   **多语言检索 (MIRACL)**：M3-Embedding仅用密集检索就在18种语言上超越了mE5-large、E5-mistral-7b等强大的基线模型。其稀疏检索功能也优于BM25。多种功能的混合使用（Dense+Sparse, All）带来了进一步的性能提升，取得了SOTA结果。

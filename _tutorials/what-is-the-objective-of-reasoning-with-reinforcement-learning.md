@@ -3,7 +3,6 @@ layout: default
 title: "What is the objective of reasoning with reinforcement learning?"
 ---
 
-# What is the objective of reasoning with reinforcement learning?
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.13651v1
 
@@ -13,10 +12,10 @@ title: "What is the objective of reasoning with reinforcement learning?"
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过一个统一的数学框架证明，多种用于大型语言模型的流行强化学习算法（如REINFORCE、拒绝采样和GRPO），在处理二元奖励时，都可以被看作是在给定提示下获得正确答案概率的某个单调变换函数上的随机梯度上升，从而揭示了这些算法内在的深刻关联。
 
-# 关键定义
+## 关键定义
 本文提出了一个统一的分析框架，其核心定义如下：
 
 *   **统一目标函数 (Unified Objective Function)** $J\_h(\theta)$: 本文的核心理论构造，定义为 $J\_{h}(\theta):=\mathbb{E}\_{x\sim Q}\left[h\left(\sum\_{y\in C(x)}\pi\_{\theta}(y\mid x)\right)\right]$。该函数旨在最大化一个单调递增函数 $h$ 应用于模型答对问题概率的期望值。不同算法的差异可以归结为选择了不同的变换函数 $h$。
@@ -25,14 +24,14 @@ title: "What is the objective of reasoning with reinforcement learning?"
 
 *   **样本权重 (Per-sample Weight)** $Z\_i$: 在强化学习文献中通常被称为“优势 (advantages)”。它是在模型参数更新时，应用于每个样本对数概率梯度的权重。更新规则为：$\theta\leftarrow\theta+\eta\frac{1}{M}\sum\_{i=1}^{M}Z\_{i}\nabla\_{\theta}\log\pi\_{\theta}(y\_{i}\mid x)$。本文的核心洞察在于，权重 $Z\_i$ 的不同设计，直接决定了其所优化的统一目标函数中的单调变换 $h$。
 
-# 相关工作
+## 相关工作
 目前，在大型语言模型（Large Language Models, LLMs）的后训练（post-training）阶段，研究人员广泛使用各种强化学习算法来使模型与人类偏好对齐或提升其在特定测试任务上的能力。这些算法通常遵循一个元算法（Meta-Algorithm）：从语料库中采样提示，让模型生成多个回答，然后由外部评估源（如人工标注或自动验证器）将回答标记为“好”或“坏”，最后根据这些三元组（提示、回答、标签）对模型进行微调。
 
 然而，这一领域存在一个关键问题：尽管如 REINFORCE、拒绝采样微调、GRPO 等算法都遵循上述模式，但它们的具体实现和理论动机各不相同，使得人们不清楚它们各自到底在优化什么具体的目标函数。这种缺乏统一视角的情况，阻碍了对不同算法内在联系的理解和直接比较。
 
 本文旨在解决这一问题，通过提供一个统一的数学框架，证明这些看似不同的算法实际上是在优化一族非常相似的目标函数，从而清晰地揭示了它们之间的关系。
 
-# 本文方法
+## 本文方法
 
 ## 统一框架：基于加权的随机梯度上升
 本文首先将现有的大多数针对LLM推理的RL微调算法归纳为一个更具体的算法框架（Algorithm 1）：
@@ -122,7 +121,7 @@ $${% endraw %}
 <img src="/images/2510.13651v1/x3.jpg" alt="GRPO目标函数与反正弦函数的对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 
-# 实验结论
+## 实验结论
 本文是一篇理论分析性质的论文，未包含具体的实验部分。其结论是基于数学推导得出的理论洞见：
 
 1.  **统一的优化目标**: 众多看似不同的RL微调算法，如REINFORCE、拒绝采样和GRPO，实际上都在优化同一个基础目标——最大化正确回答的概率——只不过各自采用了不同的单调函数（如恒等、对数、反正弦）对该概率进行重缩放（rescaling）。

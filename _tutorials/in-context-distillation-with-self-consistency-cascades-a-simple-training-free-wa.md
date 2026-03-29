@@ -3,7 +3,7 @@ layout: default
 title: "In-Context Distillation with Self-Consistency Cascades: A Simple, Training-Free Way to Reduce LLM Agent Costs"
 ---
 
-# Agent推理成本降低2.5倍：斯坦福提出“上下文蒸馏”，免训练让小模型偷师大模型
+## Agent推理成本降低2.5倍：斯坦福提出“上下文蒸馏”，免训练让小模型偷师大模型
 
 <img src="/images/2512.02543v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

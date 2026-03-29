@@ -3,7 +3,6 @@ layout: default
 title: "ForTIFAI: Fending Off Recursive Training Induced Failure for AI Models"
 ---
 
-# ForTIFAI: Fending Off Recursive Training Induced Failure for AI Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.08972v1
 
@@ -13,10 +12,10 @@ title: "ForTIFAI: Fending Off Recursive Training Induced Failure for AI Models"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为截断交叉熵（TCE）的置信度感知损失函数，通过在训练中忽略对高置信度预测的损失贡献，有效缓解了因循环使用合成数据进行训练而导致的模型崩溃现象。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下对理解论文至关重要的核心概念：
 
 *   **模型崩溃 (Model Collapse)**: 指当一个模型持续地使用其自身或前代模型的输出（即合成数据）进行训练时，其性能会随迭代次数增加而逐渐退化，最终导致模型偏离真实数据分布，变得无效。
@@ -39,7 +38,7 @@ title: "ForTIFAI: Fending Off Recursive Training Induced Failure for AI Models"
 *   **失败时间 (Time to failure)**: 在本文的递归训练框架下，衡量模型鲁棒性的一个指标。它定义为模型性能（具体指知识保留测试KR-test的准确率）下降到一个特定阈值（本文设为75%）所经历的合成数据再训练迭代次数。
 *   **知识保留测试 (Knowledge Retention Test, KR-test)**: 本文设计的一种新的评估基准，用于衡量模型对训练数据中事实性知识的记忆程度，而非仅仅评估语言流畅度。它通过比较模型对“事实正确”和“事实错误”两种续写的对数概率来判断模型是否答对了问题。
 
-# 相关工作
+## 相关工作
 当前，生成式AI模型（如LLM）的持续发展依赖于海量且不断更新的训练数据。然而，随着模型生成的内容（即合成数据）在互联网上占比越来越高，用于训练下一代模型的数据集不可避免地会受到污染。
 
 这种在合成数据上进行递归训练的现象会导致“模型崩溃”，即模型性能逐代下降。已有研究表明，即使是少量（如1%）的合成数据也可能引发崩溃，而简单地扩大模型或数据集规模并不能有效解决此问题。
@@ -48,7 +47,7 @@ title: "ForTIFAI: Fending Off Recursive Training Induced Failure for AI Models"
 
 本文旨在解决的核心问题是：如何通过改进训练过程来有效延缓或阻止因递归训练于合成数据而引发的模型崩溃。具体来说，本文将矛头指向了模型对其自身生成的合成数据存在的**过度自信 (overconfidence)** 问题。
 
-# 本文方法
+## 本文方法
 本文提出了一种名为 ForTIFAI 的模型无关框架，其核心思想是通过设计置信度感知的损失函数来缓解模型崩溃。
 
 ### 核心观察
@@ -124,7 +123,7 @@ $${% endraw %}
 
 TCE正是这一思想的推广：通过忽略高置信度的预测，它将训练信号引向低置信度的、通常代表性不足的token，从而缓解分布尾部消失效应和统计误差的递归放大。
 
-# 实验结论
+## 实验结论
 
 ### 实验框架
 本文设计了一个模拟真实世界数据演变的实验框架。该框架从一个纯净的数据集开始，在每一代（stage）训练中，模型都会重新生成前一代的整个数据集，并与一部分新的真实数据混合，作为新一代模型的训练语料。随着迭代的进行，合成数据的比例越来越高。

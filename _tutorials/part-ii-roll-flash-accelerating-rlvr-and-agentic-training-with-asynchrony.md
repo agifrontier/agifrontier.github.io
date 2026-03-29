@@ -3,7 +3,6 @@ layout: default
 title: "Part II: ROLL Flash -- Accelerating RLVR and Agentic Training with Asynchrony"
 ---
 
-# Part II: ROLL Flash -- Accelerating RLVR and Agentic Training with Asynchrony
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.11345v1
 
@@ -13,16 +12,16 @@ title: "Part II: ROLL Flash -- Accelerating RLVR and Agentic Training with Async
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了 ROLL Flash，一个通过引入异步机制来解耦 rollout 和训练阶段的系统，从而显著提升了强化学习后训练（RL Post-Training）的吞吐量和资源可扩展性，同时通过精细化的陈旧度控制确保了模型的最终性能。
 
-# 关键定义
+## 关键定义
 *   **ROLL Flash**: 本文提出的核心系统，它通过引入异步（Asynchrony）架构来增强原有的 ROLL 框架。其设计旨在通过解耦和并行化来加速强化学习价值对齐（RLVR）和智能体（Agent）训练。
 *   **Rollout-训练解耦 (Rollout–Train Decoupling)**: ROLL Flash 的核心设计原则之一。它将 rollout 阶段（数据生成）和训练阶段（模型更新）部署在不同的计算资源上，使其能够并行执行。这消除了两个阶段间的同步等待，从而提升了资源利用率。
 *   **细粒度并行 (Fine-Grained Parallelism)**: ROLL Flash 的另一核心设计原则。它在 rollout 阶段内部实现了样本级别的生命周期控制，允许 LLM 生成、环境交互和奖励计算等子任务重叠执行，进一步减少了因长尾任务造成的 GPU 空闲时间。
 *   **异步率 (Asynchronous Ratio, $\alpha$)**: 一个关键超参数，用于控制异步训练中的样本陈旧度。它定义了生成某个样本的策略版本与当前策略版本之间允许的最大差距。通过限制每个样本的陈-旧度，该机制在提升系统吞吐量的同时，防止了因使用过度陈旧数据而导致的训练不稳定或性能下降。
 
-# 相关工作
+## 相关工作
 当前，在数学、代码生成和工具使用等领域，强化学习（RL）已成为提升大语言模型（LLM）能力的关键后训练技术。标准的强化学习后训练流程包含 rollout（生成响应和奖励）和 training（更新模型权重）两个阶段。
 
 然而，现有的同步训练系统面临两大瓶颈：
@@ -39,7 +38,7 @@ title: "Part II: ROLL Flash -- Accelerating RLVR and Agentic Training with Async
 
 本文旨在设计一个兼具高性能和高可扩展性的异步训练系统（ROLL Flash），并通过系统的设计和算法的结合，解决同步训练的效率瓶颈，同时有效控制异步训练带来的策略陈旧度问题。
 
-# 本文方法
+## 本文方法
 本文提出了 ROLL Flash 系统，它基于两大设计原则实现了高效且稳定的异步后训练：**rollout-训练解耦** 和 **细粒度并行**。
 
 ## 创新点
@@ -62,7 +61,7 @@ ROLL Flash 通过 $$InferenceHub Proxy$$、$$Environment Agent$$ 和 $$RolloutLo
 ## 异步率（$\alpha$）控制
 为了解决异步带来的策略陈旧度问题，ROLL Flash 引入了异步率 $$$\alpha$$$。与以往工作在批次级别控制平均新鲜度不同，ROLL Flash 对**每个样本**进行新鲜度控制。它确保用于训练的任何一个样本，其生成时所用的策略版本与当前训练的策略版本之差不超过 $$$\alpha$$$。如果一个样本的策略版本超过了这个阈值，它将被丢弃或重新生成。这种精细化的控制机制在保证高吞吐量的同时，为训练的稳定性提供了坚实保障。
 
-# 实验结论
+## 实验结论
 本文通过在 LLAMA2-70B 和 Mixtral-8x22B 等模型上的大量实验，从资源可扩展性、资源利用率、异步率影响和训练稳定性四个维度验证了 ROLL Flash 的有效性。
 
 <img src="/images/2510.11345v1/x2.jpg" alt="吞吐量与GPU数量的扩展关系" style="width:85%; max-width:600px; margin:auto; display:block;">

@@ -3,7 +3,6 @@ layout: default
 title: "RollPacker: Mitigating Long-Tail Rollouts for Fast, Synchronous RL Post-Training"
 ---
 
-# RollPacker: Mitigating Long-Tail Rollouts for Fast, Synchronous RL Post-Training
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.21009v1
 
@@ -13,16 +12,16 @@ title: "RollPacker: Mitigating Long-Tail Rollouts for Fast, Synchronous RL Post-
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 RollPacker 的同步强化学习（RL）训练系统，其核心是一种创新的 rollout 调度策略——尾部批处理（tail batching），该策略通过将导致长响应的 prompt 整合到少数专用的 rollout 步骤中，显著减少了因响应长度不均衡导致的 GPU 空闲时间，从而在不牺牲模型准确率的前提下，大幅加速了大型语言模型的同步 RL 训练。
 
-# 关键定义
+## 关键定义
 *   **尾部批处理 (Tail Batching)**：一种新颖的 prompt 调度策略。它将训练样本重新排序，把可能产生长响应的“尾部 prompt”整合到少数专用的“长轮次”中，而让大多数“短轮次”只包含响应长度均衡的短响应。该策略通过投机执行（speculative execution）来识别和推迟长响应，从而在保持整体样本分布不变的情况下，减少 GPU 等待时间。
 *   **长轮次 (Long Rounds) & 短轮次 (Short Rounds)**：由尾部批处理产生的两种 rollout 步骤。短轮次构成了大部分训练步骤，其中系统通过投机执行快速生成一批长度均衡的短响应，以提高效率。长轮次则专门用于处理在短轮次中被推迟的、会产生长响应的 prompt，确保所有样本都能得到训练。
 *   **RollPacker**：本文提出的一个完整的、为实现尾部批处理的优势而设计的系统。它集成了三大优化：用于 rollout 阶段的弹性并行规划器、用于奖励计算阶段的动态资源调度器，以及用于训练阶段的流式训练器，实现了对整个 RL 训练流程的端到端优化。
 *   **流式训练器 (Stream Trainer)**：RollPacker 的一个关键组件，用于减少长轮次中的 GPU 空闲。它会在 rollout 过程中，机会性地将已完成响应的 GPU 重新分配给训练任务，提前开始梯度计算。通过精心设计的梯度缩放和延迟更新机制，它在不破坏同步在策略（on-policy）训练正确性的前提下，实现了 rollout 和训练的细粒度重叠。
 
-# 相关工作
+## 相关工作
 当前，使用强化学习（RL）对大型语言模型（LLM）进行后训练（post-training）是提升其复杂推理能力的关键技术。为了保证最佳的模型性能，业界通常采用同步在策略（synchronous on-policy）的 RL 训练范式，即确保用于生成响应的 actor 模型始终是最新版本。
 
 然而，这种同步机制导致了严重的性能瓶颈。由于输入 prompt 生成的响应长度呈现出明显的“长尾分布”，即少数响应极长，导致在 rollout 阶段，处理短响应的 GPU 必须长时间空闲等待，造成了巨大的资源浪费（即“气泡”）。据统计，rollout 阶段的耗时占整个训练时间的约 70%。
@@ -33,7 +32,7 @@ title: "RollPacker: Mitigating Long-Tail Rollouts for Fast, Synchronous RL Post-
 
 因此，本文旨在解决的核心问题是：**如何在不牺牲同步在策略 RL 训练准确性和稳定性的前提下，有效缓解因响应长度不均衡导致的 GPU 严重利用不足问题，从而加速 LLM 的后训练过程。**
 
-# 本文方法
+## 本文方法
 
 本文的核心方法是 **尾部批处理 (Tail Batching)**，并在此基础上构建了一个名为 **RollPacker** 的高效同步 RL 训练系统，该系统通过对 rollout、奖励（reward）和训练（training）三个阶段的协同优化，最大化了尾部批处理带来的收益。
 
@@ -94,7 +93,7 @@ $${% endraw %}
 *   **流式梯度计算**：一旦 GPU 被成功重分配给训练任务，它便立即开始接收已完成的响应流，并进行梯度计算。这个过程与仍在进行的 rollout 完全并行。
 *   **保持在策略语义**：为了确保与标准在策略训练的数学等价性，流式训练器遵循两个原则：1) 在流式计算期间，只计算并缓存梯度，**不进行任何参数更新**或优化器状态同步。2) 在整个 rollout 阶段结束后，系统会进行一次最终的、全局同步的梯度计算和更新。此时，会根据每个数据并行副本已处理的样本数量对局部梯度进行重新归一化，以确保最终的梯度更新结果完全正确。
 
-# 实验结论
+## 实验结论
 
 本文在多达 128 个 H800 GPU 的集群上，使用 Qwen2.5 系列模型（7B-32B）和真实世界数据集对 RollPacker 进行了评估。
 

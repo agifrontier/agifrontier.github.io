@@ -3,7 +3,7 @@ layout: default
 title: "OmniScientist: Toward a Co-evolving Ecosystem of Human and AI Scientists"
 ---
 
-# OmniScientist：让AI科学家“组建团队”，成果超越NIPS最佳论文
+## OmniScientist：让AI科学家“组建团队”，成果超越NIPS最佳论文
 
 <img src="/images/2511.16931v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

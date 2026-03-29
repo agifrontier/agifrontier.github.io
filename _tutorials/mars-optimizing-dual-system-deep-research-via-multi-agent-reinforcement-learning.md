@@ -3,7 +3,6 @@ layout: default
 title: "MARS: Optimizing Dual-System Deep Research via Multi-Agent Reinforcement Learning"
 ---
 
-# MARS: Optimizing Dual-System Deep Research via Multi-Agent Reinforcement Learning
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.04935v1
 
@@ -13,24 +12,24 @@ title: "MARS: Optimizing Dual-System Deep Research via Multi-Agent Reinforcement
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 MARS 的双系统多智能体强化学习框架，该框架通过模拟人类认知的双系统（系统1的快速直觉与系统2的审慎推理），让两个智能体协同解决需要外部知识的复杂推理任务，显著提升了模型在动态信息环境下的深度研究和推理能力。
 
-# 关键定义
+## 关键定义
 本文的核心是构建一个模拟人类认知双系统的框架，主要沿用并扩展了以下概念：
 *   **双系统框架 (Dual-System Framework)**：受人类认知双重过程理论的启发，本文将大型语言模型（LLM）的功能拆分为两个协同工作的系统。
     *   **系统1 (System 1)**：负责快速、直觉式的思考。在 MARS 框架中，它被专门用于高效处理和总结外部工具（如搜索引擎）返回的大量、可能嘈杂的信息，将其提炼为简洁的要点。
     *   **系统2 (System 2)**：负责缓慢、审慎的推理。在 MARS 框架中，它主导整个推理过程，进行规划、生成复杂的推理步骤，并决定何时、如何调用外部工具来获取信息或执行计算。
 *   **多智能体强化学习 (Multi-Agent Reinforcement Learning, MARL)**：本文将系统1和系统2视为两个独立的智能体，它们在同一个基础LLM上通过不同提示（Prompt）激活。本文采用一种多智能体强化学习方法，对这两个智能体进行协同优化，以最大化它们共同完成任务的最终奖励。
 
-# 相关工作
+## 相关工作
 当前，大型推理模型（Large Reasoning Models, LRMs）在处理复杂问题时表现出色，但解决简单问题时常出现“过度分析”倾向，导致不必要的Token消耗。同时，所有大型语言模型都受限于其预训练数据的截止日期，难以适应快速变化的环境和获取最新知识。
 
 虽然检索增强生成（Retrieval-Augmented Generation, RAG）技术通过引入外部知识源缓解了知识过时的问题，但现有RAG系统面临两大瓶颈：1）在处理多个长篇文档（如完整网页或研究论文）时，容易出现“信息过载”；2）为了避免过载而对信息进行压缩时，又可能丢失关键细节。
 
 本文旨在解决上述问题，即如何在不牺牲推理深度和不造成信息过载的前提下，高效地利用海量、动态的外部信息来增强复杂推理能力。
 
-# 本文方法
+## 本文方法
 本文提出了一个名为MARS（Multi-Agent System for Deep Research）的深度研究多智能体系统。其核心是一个创新的双系统协作框架，并通过专门的多智能体强化学习策略进行端到端优化。
 
 ### 双系统协作框架
@@ -102,7 +101,7 @@ $${% endraw %}
 
 每个系统的损失均遵循GRPO目标函数，该函数包含一个策略损失项和一个KL散度正则化项，以确保在学习新策略的同时不过于偏离原始模型。
 
-# 实验结论
+## 实验结论
 本文在极具挑战性的HLE（Humanity’s Last Exam）基准和7个知识密集型问答任务上进行了广泛实验。
 
 ### 主要结果

@@ -3,7 +3,6 @@ layout: default
 title: "Reflexion: Language Agents with Verbal Reinforcement Learning"
 ---
 
-# Reflexion: Language Agents with Verbal Reinforcement Learning
 
 - **ArXiv URL**: http://arxiv.org/abs/2303.11366v4
 
@@ -13,10 +12,10 @@ title: "Reflexion: Language Agents with Verbal Reinforcement Learning"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出 Reflexion 框架，通过让语言智能体对过去的试错经验进行口头反思（verbal reflection）并形成文本记忆，从而在无需更新模型权重的情况下实现强化学习，显著提升了其在决策、推理和编程等任务上的表现。
 
-# 关键定义
+## 关键定义
 本文的核心是 Reflexion 框架，它由几个关键概念组成：
 
 *   **Reflexion**: 一种新颖的框架，用于通过“口头强化学习 (verbal reinforcement learning)”来增强语言智能体。它不通过更新模型权重，而是通过语言反馈来学习。智能体会对任务的反馈信号进行口头反思，并将这些反思内容保存在一个情节记忆（episodic memory）中，以指导后续的尝试。
@@ -30,7 +29,7 @@ title: "Reflexion: Language Agents with Verbal Reinforcement Learning"
 
 *   **情节记忆 (Episodic Memory)**: 用于存储自我反思模型生成的文本。在每一次新的尝试中，行动者会把这些储存在长期记忆中的反思内容作为额外的上下文，从而借鉴过去的经验教训。
 
-# 相关工作
+## 相关工作
 当前，利用大型语言模型（LLM）作为核心来构建与外部环境（如游戏、编译器、API）交互的自主智能体已成为一个热门研究方向（例如 ReAct, SayCan, Toolformer）。然而，这些语言智能体在通过试错法学习时面临巨大挑战。传统的强化学习（RL）方法通常需要大量的训练样本和昂贵的模型微调（fine-tuning），这对于参数量巨大的LLM来说是不切实际的。现有的方法大多依赖于上下文学习（in-context learning），但缺乏一种高效的、从失败中快速学习的机制。
 
 一些相关工作尝试解决类似问题，但存在局限：
@@ -39,7 +38,7 @@ title: "Reflexion: Language Agents with Verbal Reinforcement Learning"
 
 **本文旨在解决的核心问题是**：如何让语言智能体能够在几次尝试内，像人类一样通过反思过去的失败来高效地学习和改进，而无需进行计算成本高昂的模型权重更新。
 
-# 本文方法
+## 本文方法
 
 <img src="/images/2303.11366v4/x2.jpg" alt="Reflexion 框架示意图与算法流程" style="width:85%; max-width:450px; margin:auto; display:block;">
 *图注：(a) Reflexion示意图。(b) Reflexion强化算法流程*
@@ -79,7 +78,7 @@ Reflexion 包含三个核心模型：
 <img src="/images/2303.11366v4/x1.jpg" alt="Reflexion 在不同任务上的应用" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图注：Reflexion 框架可应用于决策、编程和推理等多种任务。*
 
-# 实验结论
+## 实验结论
 本文在决策、推理和编程三大类任务上验证了 Reflexion 框架的有效性，结果表明 Reflexion 智能体在多个基准测试中均显著优于强大的基线模型。
 
 ### 顺序决策任务 (ALFWorld)

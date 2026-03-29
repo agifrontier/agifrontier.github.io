@@ -3,7 +3,6 @@ layout: default
 title: "Beyond Pipelines: A Survey of the Paradigm Shift toward Model-Native Agentic AI"
 ---
 
-# Beyond Pipelines: A Survey of the Paradigm Shift toward Model-Native Agentic AI
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.16720v1
 
@@ -13,7 +12,7 @@ title: "Beyond Pipelines: A Survey of the Paradigm Shift toward Model-Native Age
 
 ---
 
-# 引言
+## 引言
 
 近年来，AI领域的发展由生成式AI主导，但其本质上仍是被动响应。为了超越被动生成，实现自主行动，研究焦点正转向智能体AI (Agentic AI)，它强调自指导行为、复杂推理和环境交互。智能体AI被广泛视为AI系统演化的下一阶段。
 
@@ -88,7 +87,7 @@ RL通过将学习问题从“模仿如何做”转变为“探索哪些行为能
 
 为解决这些问题，一系列面向结果驱动的RL算法被提出。例如，组相对策略优化 (GRPO) 引入轻量级评估范式，提高了训练稳定性；解耦裁剪和动态采样策略优化 (DAPO) 则通过改进裁剪机制和采样策略，提升了在多轮交互中的性能。这些算法的进步最终形成了一个统一的训练方案：$$$LLM+RL+Task$$$，即基础模型在特定任务环境中通过RL算法得到增强。
 
-# 算法：面向LLM的强化学习
+## 算法：面向LLM的强化学习
 
 ### 必要性：程序化数据的短缺
 

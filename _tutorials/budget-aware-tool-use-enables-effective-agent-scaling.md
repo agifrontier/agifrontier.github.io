@@ -3,7 +3,7 @@ layout: default
 title: "Budget-Aware Tool-Use Enables Effective Agent Scaling"
 ---
 
-# AI Agent只会“挥霍”算力？谷歌BATS框架教它精打细算，成本性能双优化
+## AI Agent只会“挥霍”算力？谷歌BATS框架教它精打细算，成本性能双优化
 
 <img src="/images/2511.17006v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
 

@@ -3,7 +3,6 @@ layout: default
 title: "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters"
 ---
 
-# Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters
 
 - **ArXiv URL**: http://arxiv.org/abs/2408.03314v1
 
@@ -13,10 +12,10 @@ title: "Scaling LLM Test-Time Compute Optimally can be More Effective than Scali
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种“计算最优”扩展策略，即根据问题的难度自适应地分配测试时（test-time）的计算资源，并证明在特定场景下，这种策略比单纯扩展模型参数能更有效地提升大型语言模型（LLM）的性能。
 
-# 关键定义
+## 关键定义
 本文沿用了领域内的一些关键定义，并提出了一个核心策略概念：
 
 *   **测试时计算 (Test-Time Computation)**: 指在模型部署后，针对一个具体输入（prompt），为了生成或改进输出而额外花费的计算资源。这与模型预训练或微调阶段的计算相对应。
@@ -33,14 +32,14 @@ title: "Scaling LLM Test-Time Compute Optimally can be More Effective than Scali
     其中 $q$ 是输入问题，$y^\*(q)$ 是正确答案，$N$ 是计算预算，$\theta$ 是测试时计算策略的超参数。
 *   **问题难度 (Question Difficulty)**: 实现“计算最优策略”的关键指标。本文不采用人工标签，而是根据一个基准模型在某个问题上的成功率（pass@1 rate）来定义其难度。通过将问题划分到不同的难度区间（bins），可以为每个区间选择最优的计算策略。
 
-# 相关工作
+## 相关工作
 当前，利用测试时计算来提升LLM性能的研究结果好坏参半。一方面，自我修正、思维链（Chain-of-Thought）和各类搜索方法在一些任务上取得了成功。但另一方面，在如数学推理等复杂任务上，这些方法的有效性仍然非常有限，性能提升不明显。
 
 领域内缺少一个系统的分析来回答：如何最有效地利用固定的测试时计算预算来提升模型在挑战性问题上的表现？现有方法（如 best-of-N、树搜索）通常是“一刀切”地应用，而没有考虑到不同问题可能需要不同的计算策略。
 
 本文旨在解决的核心问题是：给定一个固定的测试时计算预算，如何为每个具体问题**自适应地、最优地**分配这些计算资源，以最大化性能提升。
 
-# 本文方法
+## 本文方法
 本文提出了一个统一框架和一种“计算最优”的元策略，来有效扩展测试时计算。其核心思想是，测试时计算的效率取决于问题难度，因此应根据难度自适应地选择策略。
 
 ### 统一视角：提议者与验证者
@@ -91,7 +90,7 @@ title: "Scaling LLM Test-Time Compute Optimally can be More Effective than Scali
 ### 创新点
 本文的**核心创新**不在于提出一个全新的算法，而在于提出了一个**元策略 (meta-strategy)**：**根据问题难度自适应地分配测试时计算资源**。它首次系统性地分析并证明了，没有任何一种单一的测试时计算方法是普适最优的，最优策略是动态变化的。通过将此问题框架化为一个优化问题，并提供了一个基于“问题难度”的实用解法，本文显著提升了测试时计算的效率。
 
-# 实验结论
+## 实验结论
 
 <img src="/images/2408.03314v1/x1.jpg" alt="主要结果总结" style="width:90%; max-width:700px; margin:auto; display:block;">
 

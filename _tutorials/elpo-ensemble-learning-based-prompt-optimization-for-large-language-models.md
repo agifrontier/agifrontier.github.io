@@ -3,7 +3,7 @@ layout: default
 title: "ELPO: Ensemble Learning Based Prompt Optimization for Large Language Models"
 ---
 
-# 告别玄学Prompt！字节跳动ELPO框架，F1分数最高提升7.6分
+## 告别玄学Prompt！字节跳动ELPO框架，F1分数最高提升7.6分
 
 <img src="/images/2511.16122v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

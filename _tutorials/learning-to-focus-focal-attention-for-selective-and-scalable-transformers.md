@@ -3,7 +3,7 @@ layout: default
 title: "Learning to Focus: Focal Attention for Selective and Scalable Transformers"
 ---
 
-# 让大模型学会“专注”：AWS发布Focal Attention，参数减42%，长文本性能飙升82%！
+## 让大模型学会“专注”：AWS发布Focal Attention，参数减42%，长文本性能飙升82%！
 
 Transformer模型的能力源泉——注意力机制，有时却像一个眼神不太好的学生。当面对长篇大论时，它会努力关注所有内容，结果却常常“雨露均沾”，把宝贵的注意力浪费在不相关的“噪音”上，导致关键信息被淹没。
 

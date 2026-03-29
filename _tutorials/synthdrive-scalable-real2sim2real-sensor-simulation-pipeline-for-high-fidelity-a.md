@@ -3,7 +3,6 @@ layout: default
 title: "SynthDrive: Scalable Real2Sim2Real Sensor Simulation Pipeline for High-Fidelity Asset Generation and Driving Data Synthesis"
 ---
 
-# SynthDrive: Scalable Real2Sim2Real Sensor Simulation Pipeline for High-Fidelity Asset Generation and Driving Data Synthesis
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.06798v1
 
@@ -13,15 +12,15 @@ title: "SynthDrive: Scalable Real2Sim2Real Sensor Simulation Pipeline for High-F
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了 SynthDrive，一个可扩展的“真实-仿真-真实 (real2sim2real)”数据流，它通过从单张图片自动挖掘并生成高保真度的3D资产，用于合成自动驾驶中的罕见场景（corner-case）数据，以提升感知模型的性能。
 
-# 关键定义
+## 关键定义
 *   **SynthDrive**: 本文提出的一个可扩展的自动化数据生成系统，专为自动驾驶仿真设计，能够自动挖掘罕见物体图像、生成高保真3D资产并合成多样化的驾驶场景数据。
 *   **真实-仿真-真实 (Real2Sim2Real)**: 一种数据生成范式，指从真实世界数据 (Real) 出发（如网络图片），通过仿真 (Sim) 技术创建数字资产和场景，最终生成接近真实世界 (Real) 的合成数据，形成一个闭环流程。
 *   **混合式3D资产生成管线 (Hybrid 3D asset generation pipeline)**: 本文提出的一种从单张图片生成高保真3D模型的核心技术。它结合了基于大型重建模型 (Large Reconstruction Model, LRM) 的粗糙模型初始化、基于法线监督的迭代式网格优化，以及一种增强的纹理融合算法，以实现高精度的几何和纹理。
 
-# 相关工作
+## 相关工作
 当前自动驾驶的传感器仿真数据生成方法主要有两类。第一类是基于计算机图形学 (Computer Graphics, CG) 的平台，如CARLA。这类方法依赖于手动制作的3D资产，虽然能够构建仿真场景，但资产的真实感和多样性不足，难以扩展以覆盖海量的罕见案例，缺乏可扩展性。
 
 <img src="/images/2509.06798v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -31,7 +30,7 @@ title: "SynthDrive: Scalable Real2Sim2Real Sensor Simulation Pipeline for High-F
 
 本文旨在解决上述问题，提出一个成本低、可扩展性强、能从单张图片生成任意类别高保真3D资产的自动化数据合成管线，以满足自动驾驶系统对多样化、高质量罕见场景数据的迫切需求。
 
-# 本文方法
+## 本文方法
 本文提出了SynthDrive，一个自动化的“真实-仿真-真实”数据生成框架，包含资产挖掘、3D资产生成和场景合成三大核心模块。
 
 <img src="/images/2509.06798v1/x2.jpg" alt="Refer tocaption" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -72,7 +71,7 @@ $${% endraw %}
 ### ## 场景合成
 生成的3D资产会被整合到驾驶场景中。首先，通过激光雷达或多视图立体视觉重建路面几何，并利用目标跟踪器确定无碰撞的放置区域。然后，估计场景的HDR环境光照，以确保插入资产的阴影和光照效果的真实性。最后，将渲染后的资产与背景图像进行融合，并通过视频协调器调整色彩、对比度等，使合成效果更加逼真。
 
-# 实验结论
+## 实验结论
 ### ## 3D资产生成评估
 **定性结果**：如下图所示，与InstantMesh、CRM等基线方法相比，本文方法生成的3D模型在几何和纹理质量上均表现出显著优势。无论是时钟的数字、汽车的后视镜等精细结构，还是复杂的纹理细节，本文方法都能高质量地重建。即使是来自互联网、光照和几何复杂的图像，该方法也表现出良好的泛化能力。
 

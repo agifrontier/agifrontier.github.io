@@ -3,7 +3,6 @@ layout: default
 title: "Parameter-Efficient Fine-Tuning for Large Models: A Comprehensive Survey"
 ---
 
-# Parameter-Efficient Fine-Tuning for Large Models: A Comprehensive Survey
 
 - **ArXiv URL**: http://arxiv.org/abs/2403.14608v7
 
@@ -13,14 +12,14 @@ title: "Parameter-Efficient Fine-Tuning for Large Models: A Comprehensive Survey
 
 ---
 
-# 引言
+## 引言
 
 大型模型 (Large Models, LMs) 在自然语言处理 (NLP) 和计算机视觉 (CV) 等多个领域取得了显著进展，但其巨大的规模带来了高昂的计算成本。参数高效微调 (Parameter-Efficient Fine-Tuning, PEFT) 通过在冻结大部分预训练模型参数的同时，仅调整一小部分参数，为将大模型适配到下游特定任务提供了可行的解决方案。本文系统性地回顾和分类了近年来的PEFT算法，探讨了它们在不同场景下的性能、计算开销和系统实现成本，旨在为研究人员提供关于PEFT算法和系统实现的全面概览。
 
 <img src="/images/2403.14608v7/x1.jpg" alt="本综述内容概览" style="width:90%; max-width:700px; margin:auto; display:block;">
 > 图1: 本综述覆盖的内容概览。
 
-# 背景知识
+## 背景知识
 
 ## LLaMA的计算流程
 
@@ -120,7 +119,7 @@ $${% endraw %}
     2.  **微软Azure函数追踪** [29]: 用于模拟LLM系统可能面临的请求到达模式和工作负载强度。
     3.  **Gamma过程** [30]: 一种模拟排队系统中请求到达时间的随机过程，用于生成合成但真实的负载场景，以在受控条件下测试系统性能。
 
-# PEFT分类体系
+## PEFT分类体系
 
 本文将PEFT策略分为四大类：加性PEFT、选择性PEFT、重参数化PEFT和混合PEFT。
 

@@ -3,7 +3,6 @@ layout: default
 title: "Tree of Thoughts: Deliberate Problem Solving with Large Language Models"
 ---
 
-# Tree of Thoughts: Deliberate Problem Solving with Large Language Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2305.10601v2
 
@@ -13,10 +12,10 @@ title: "Tree of Thoughts: Deliberate Problem Solving with Large Language Models"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为“思想树”（Tree of Thoughts, ToT）的新型语言模型推理框架，它通过将问题解决过程建模为对“思想”（连貫的文本单元）树的探索，使大型语言模型能够进行深思熟虑的决策、前瞻和回溯，从而显著提升其在需要规划和搜索的复杂任务上的解决能力。
 
-# 关键定义
+## 关键定义
 本文的核心是“思想树”框架，其中包含以下几个关键概念：
 
 *   **思想树 (Tree of Thoughts, ToT)**：一个通用问题解决框架，它将问题求解过程视为在一棵树上进行搜索。树的节点代表一个包含部分解的状态，而树枝则代表用于修改状态的操作（即生成新的思想）。
@@ -24,7 +23,7 @@ title: "Tree of Thoughts: Deliberate Problem Solving with Large Language Models"
 *   **思想生成器 (Thought Generator)**：给定一个树状态（即部分解），该模块负责生成一组潜在的、用于下一步探索的思想。
 *   **状态评估器 (State Evaluator)**：该模块负责评估不同状态（即不同的“思想”分支）的进展，为搜索算法提供启发式信息，以决定探索哪些状态以及探索的顺序。本文的一个核心创新是让语言模型自身通过深思熟虑的推理来扮演评估器的角色。
 
-# 相关工作
+## 相关工作
 当前，使用大型语言模型（LMs）解决问题的主要方法，如输入-输出（IO）提示和思想链（Chain-of-Thought, CoT），都依赖于自回归的、从左到右的Token生成机制。这种机制类似于人类认知中的“系统1”思维——快速、自动，但缺乏深思熟虑的规划。
 
 这些方法的关键瓶颈在于：
@@ -33,7 +32,7 @@ title: "Tree of Thoughts: Deliberate Problem Solving with Large Language Models"
 
 本文旨在解决上述问题，通过引入一种更接近人类“系统2”思维的 deliberate planning process，允许模型探索、评估和选择不同的推理路径。
 
-# 本文方法
+## 本文方法
 为了克服现有方法的局限性，本文提出了**思想树（Tree of Thoughts, ToT）**框架，将问题求解过程形式化为在一棵树上的搜索。
 
 <img src="/images/2305.10601v2/x1.jpg" alt="不同问题解决方法的示意图" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -86,7 +85,7 @@ ToT方法的核心创新与优点在于：
 *   **显式探索与规划**：与CoT的单一线性路径不同，ToT能主动探索和维护多个推理路径，具备了规划、前瞻和回溯的能力。
 *   **LM驱动的启发式搜索**：最关键的创新是利用LM自身进行有意识的、基于推理的自我评估，从而为搜索过程提供灵活且高效的启发式指导，而无需额外训练或硬编码规则。
 
-# 实验结论
+## 实验结论
 本文在三个专门设计用以挑战现有方法的任务上验证了ToT的有效性，这些任务都需要规划、搜索或创造性思维。
 
 ### 1. 24点游戏 (Game of 24)

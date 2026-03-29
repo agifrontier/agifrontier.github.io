@@ -3,7 +3,7 @@ layout: default
 title: "Larger Datasets Can Be Repeated More: A Theoretical Analysis of Multi-Epoch Scaling in Linear Regression"
 ---
 
-# 数据告急？北大清华发现：数据集越大，重复训练收益越高，价值可达logN倍
+## 数据告急？北大清华发现：数据集越大，重复训练收益越高，价值可达logN倍
 
 <img src="/images/2511.13421v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
 

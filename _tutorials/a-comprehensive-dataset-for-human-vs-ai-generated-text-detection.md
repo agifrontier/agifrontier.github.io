@@ -3,7 +3,6 @@ layout: default
 title: "A Comprehensive Dataset for Human vs. AI Generated Text Detection"
 ---
 
-# A Comprehensive Dataset for Human vs. AI Generated Text Detection
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.22874v1
 
@@ -13,17 +12,17 @@ title: "A Comprehensive Dataset for Human vs. AI Generated Text Detection"
 
 ---
 
-# TL;DR
+## TL;DR
 本文发布了一个包含超过58000条文本的大型数据集，其中包含真实的《纽约时报》文章以及由六种先进大语言模型（LLMs）生成的对应版本，并为区分人类与AI文本以及AI文本模型溯源这两个任务提供了基准性能。
 
-# 关键定义
+## 关键定义
 本文主要沿用并扩展了现有研究中的核心概念，关键定义如下：
 
 1.  **AI生成文本检测 (AI-Generated Text Detection)**: 指识别并区分由人工智能（特别是大语言模型）生成的文本与人类创作的文本的任务。这是本文数据集旨在解决的核心问题。
 2.  **模型溯源 (Model Attribution)**: 一个更细分的任务，旨在不仅检测出文本是AI生成的，还要进一步确定它是由哪个具体的大语言模型（如GPT-4o, LLaMA-8B等）生成的。
 3.  **基于重写的检测 (Rewriting-based Detection)**: 本文基线方法所采用的一种检测策略。其核心假设是：相比于重写人类原创文本，大语言模型在重写由其他AI模型（尤其是其自身）生成的文本时，所做的修改会显著更少。通过衡量这种重写过程中的“编辑距离”差异，可以推断文本的来源。
 
-# 相关工作
+## 相关工作
 当前研究主要集中在AI生成文本检测和虚假新闻检测两个领域，但现有数据集存在明显不足。
 
 在AI生成文本检测方面，虽然已有一些大型数据集（如包含600万样本的[12]和多语言数据集[13]），但它们大多依赖合成提示、学生作文或通用网络内容，缺乏高质量、真实世界的新闻语料。此外，很少有数据集系统性地在受控条件下比较多种顶尖LLM的输出。
@@ -32,7 +31,7 @@ title: "A Comprehensive Dataset for Human vs. AI Generated Text Detection"
 
 本文旨在解决上述缺陷，通过构建一个基于高质量新闻来源（《纽约时报》）的数据集来填补空白。该数据集不仅包含完整的、由人类撰写的文章，还系统地包含了由多种当前最先进的LLM生成的对应文本，从而为开发更鲁棒的检测和溯源方法提供了坚实的基础。
 
-# 本文方法
+## 本文方法
 本文的核心贡献是创建了一个新的数据集，并在此基础上建立了一个基线检测方法。
 
 ## 数据集构建
@@ -96,7 +95,7 @@ title: "A Comprehensive Dataset for Human vs. AI Generated Text Detection"
 
 <img src="/images/2510.22874v1/x1.jpg" alt="[Uncaptioned image]" style="width:90%; max-width:700px; margin:auto; display:block;">
 
-# 实验结论
+## 实验结论
 本文在构建的数据集上定义了两个任务，并使用上述基线方法进行了测试。
 
 *   **任务A：人类 vs. AI生成文本分类**：区分文本是由人类还是AI撰写的。

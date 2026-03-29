@@ -3,7 +3,6 @@ layout: default
 title: "AgentInit: Initializing LLM-based Multi-Agent Systems via Diversity and Expertise Orchestration for Effective and Efficient Collaboration"
 ---
 
-# AgentInit: Initializing LLM-based Multi-Agent Systems via Diversity and Expertise Orchestration for Effective and Efficient Collaboration
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.19236v1
 
@@ -13,10 +12,10 @@ title: "AgentInit: Initializing LLM-based Multi-Agent Systems via Diversity and 
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 AgentInit 的多智能体系统（Multi-Agent System, MAS）初始化方法，该方法通过生成一组多样化的候选智能体，并利用以任务相关性和团队多样性为目标的帕累托最优原则进行团队选择，来优化智能体团队的构成，从而提升协作效率与任务表现。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下对理解论文至关重要的核心概念：
 
 *   **AgentInit**: 本文提出的核心方法，一个用于初始化基于大语言模型（LLM）的多智能体系统的框架。它包含两个关键模块：标准化智能体生成（Standardized Agent Generation）和平衡的团队选择（Balanced Team Selection）。
@@ -25,7 +24,7 @@ title: "AgentInit: Initializing LLM-based Multi-Agent Systems via Diversity and 
 *   **任务相关性 (Task Relevance)**: 用于团队选择的关键指标之一。它通过计算团队中所有智能体描述的嵌入向量与用户查询（query）嵌入向量之间余弦相似度的平均值来量化。
 *   **智能体多样性 (Agent Diversity)**: 用于团队选择的另一个关键指标。它使用 Vendi Score 来度量，该分数基于团队内各智能体描述嵌入向量之间构成的相似度矩阵的特征值计算得出，能有效衡量团队成员之间的差异性。
 
-# 相关工作
+## 相关工作
 当前，基于大语言模型的多智能体系统已成为解决复杂任务的重要范式。许多现有框架（如AutoGen、CAMEL）仍依赖人工设计的角色和交互模式。虽然一些自动化方法（如Agent-Verse、AutoAgents、EvoAgent）尝试自动生成智能体，但它们通常直接通过大语言模型的交互来完成初始化，缺乏对后续协作效果的充分考虑。
 
 这个过程存在以下关键瓶瓶颈：
@@ -34,7 +33,7 @@ title: "AgentInit: Initializing LLM-based Multi-Agent Systems via Diversity and 
 
 因此，本文旨在解决的问题是：如何设计一个更鲁棒的自动化初始化机制，以构建一个既高效又协作良好的智能体团队，从根源上避免因初始化不当导致系统性能下降的问题。
 
-# 本文方法
+## 本文方法
 
 本文提出的 AgentInit 框架旨在通过优化初始团队结构来提升多智能体系统的效率和效果。其核心思想源于现实世界中高效团队的组建原则：成员不仅需要具备专业能力（任务相关性），团队整体也需要具备多样性以应对复杂挑战。AgentInit 通过“标准化智能体生成”和“平衡的团队选择”两个阶段来实现这一目标。
 
@@ -119,7 +118,7 @@ title: "AgentInit: Initializing LLM-based Multi-Agent Systems via Diversity and 
 
 通过这种方式，AgentInit 能够组建出一个专业能力强（高相关性）且成员互补（高多样性）的智能体团队。
 
-# 实验结论
+## 实验结论
 
 ### 核心实验结果
 实验结果表明，AgentInit 在性能和效率上均优于现有方法。

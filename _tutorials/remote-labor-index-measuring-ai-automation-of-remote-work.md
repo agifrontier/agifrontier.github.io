@@ -3,7 +3,6 @@ layout: default
 title: "Remote Labor Index: Measuring AI Automation of Remote Work"
 ---
 
-# Remote Labor Index: Measuring AI Automation of Remote Work
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.26787v1
 
@@ -13,10 +12,10 @@ title: "Remote Labor Index: Measuring AI Automation of Remote Work"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为远程劳动指数（Remote Labor Index, RLI）的新基准，通过评估AI智能体在真实自由职业平台上的端到端项目完成能力，来衡量AI在具有经济价值的实际任务上的自动化水平，从而为追踪AI的经济影响提供了实证基础。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下对理解论文至关重要的核心概念：
 
 1.  **远程劳动指数 (Remote Labor Index, RLI)**：一个由真实的、端到端的远程自由职业项目构成的新型基准。这些项目直接来源于在线自由职业平台，旨在评估AI智能体在实际、有经济价值的工作中的表现，从而衡量其自动化能力。
@@ -24,7 +23,7 @@ title: "Remote Labor Index: Measuring AI Automation of Remote Work"
 3.  **Elo评分 (Elo Score)**：一个用于衡量不同AI智能体之间相对表现的评分系统。它通过对两个AI智能体的交付物进行成对比较（判断哪个更接近成功完成项目或整体质量更高）来计算得出，从而能够捕捉到更细微的能力进步。
 4.  **自动通缩 (Autoflation)**：一个经济影响指标，衡量当每个项目都可以选择成本最低的完成方式（人类或AI）时，完成整个RLI项目组合的总成本降低的百分比。其计算公式为：$$1-\frac{\sum\min\!\big(\texttt{cost}(H),\,\min\_{j}\texttt{cost}(AI\_{j})\big)}{\sum\texttt{cost}(H)}$$
 
-# 相关工作
+## 相关工作
 目前，评估AI智能体的基准主要集中在特定技能领域，如软件工程、基本计算机操作或网页浏览。另一些基准则衡量AI在学术知识或跨多个职业的简单通用任务（如写作、网络搜索）上的表现。
 
 <img src="/images/2510.26787v1/x2.jpg" alt="相关工作图谱" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -33,7 +32,7 @@ title: "Remote Labor Index: Measuring AI Automation of Remote Work"
 
 本文旨在解决这一问题，即缺乏一个标准化的、基于真实经济活动的实证方法来衡量和追踪AI自动化远程工作的能力。通过引入RLI，本文试图为探讨AI的经济影响建立一个坚实的经验基础。
 
-# 本文方法
+## 本文方法
 本文的核心贡献是提出了远程劳动指数（RLI），一个用于衡量AI自动化能力的全新基准。RLI通过模拟真实的远程工作市场，为评估AI智能体提供了更贴近现实的挑战。
 
 ## 数据集描述
@@ -94,7 +93,7 @@ RLI的数据集收集过程严谨，确保了其高质量和代表性。
 ### Elo评估
 Elo评估用于衡量不同AI智能体之间的相对性能。评估员同时看到两个AI的交付物（以人类交付物为参考），并从“完成度”和“整体质量”两个维度进行比较。这使得即使所有智能体的绝对表现都很差，也能衡量出它们之间的细微差距和进步趋势。
 
-# 实验结论
+## 实验结论
 本文对六个前沿AI智能体在RLI基准上进行了评估，揭示了当前AI自动化能力的现状。
 
 ## 实验设置

@@ -3,7 +3,6 @@ layout: default
 title: "InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning"
 ---
 
-# InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning
 
 - **ArXiv URL**: http://arxiv.org/abs/2305.06500v2
 
@@ -13,16 +12,16 @@ title: "InstructBLIP: Towards General-purpose Vision-Language Models with Instru
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了InstructBLIP，一个基于预训练模型BLIP-2的视觉语言指令微调框架，通过引入一个创新的指令感知查询转换器（Q-Former），使模型能根据文本指令提取相应的视觉特征，从而在广泛的未见过的视觉语言任务上实现了最先进的零样本（zero-shot）泛化能力。
 
-# 关键定义
+## 关键定义
 *   **视觉语言指令微调 (Vision-Language Instruction Tuning)**：一种训练范式，通过在大量由自然语言指令描述的、多样化的视觉语言任务上对模型进行微调，使其能够理解并执行任意给定的指令，从而提升对未见任务的泛化能力。
 *   **InstructBLIP**: 本文提出的模型框架，它在BLIP-2的基础上进行指令微调。其核心架构包括一个冻结的图像编码器、一个冻结的大语言模型（LLM），以及一个可训练的、用于连接两者的查询转换器（Q-Former）。
 *   **指令感知的Q-Former (Instruction-aware Q-Former)**：这是InstructBLIP的核心技术创新。与BLIP-2不同，这个Q-Former不仅接收图像特征，还接收任务指令的文本Token作为输入。通过内部的自注意力机制，指令可以引导Q-Former从图像中提取与当前任务最相关的视觉特征，再将这些“指令感知”的特征输入给LLM。
 *   **训练集内/外数据集 (Held-in / Held-out Datasets)**：本文为评估模型的零样本泛化能力而采用的数据划分策略。模型在13个“训练集内”数据集上进行训练，然后在另外13个模型从未见过的“训练集外”数据集上进行零样本评估。这种评估方式能有效检验模型的泛化水平。
 
-# 相关工作
+## 相关工作
 当前构建通用视觉语言模型的尝试主要面临两大挑战：输入（图像）分布的丰富性和任务的多样性。
 
 现有的研究路径可分为两类：
@@ -31,7 +30,7 @@ title: "InstructBLIP: Towards General-purpose Vision-Language Models with Instru
 
 本文旨在解决上述问题，即如何通过指令微tuning来构建一个能够泛化到大量未见过的、多样的视觉语言任务的单一模型。
 
-# 本文方法
+## 本文方法
 InstructBLIP的整体框架建立在BLIP-2之上，但通过引入指令感知机制和优化的训练策略，显著提升了模型的泛化能力。
 
 <img src="/images/2305.06500v2/x3.jpg" alt="InstructBLIP模型架构" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -75,7 +74,7 @@ InstructBLIP对此进行了改进：
 *   **直接生成**：对于图像描述、开放式问答等任务，模型直接生成文本答案。
 *   **词汇表排序 (Vocabulary Ranking)**：对于分类、多项选择问答等任务，模型被限制在候选答案的词汇表中生成，通过计算每个候选答案的对数似然（log-likelihood），选择得分最高的作为最终预测。这提升了在封闭集问题上的准确性。
 
-# 实验结论
+## 实验结论
 InstructBLIP在大量的实验中展示了其卓越的性能，尤其是在零样本泛化方面。
 
 <img src="/images/2305.06500v2/x1.jpg" alt="InstructBLIP效果示例" style="width:80%; max-width:300px; margin:auto; display:block;">

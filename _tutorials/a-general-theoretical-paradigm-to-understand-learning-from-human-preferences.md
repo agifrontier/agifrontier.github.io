@@ -3,7 +3,6 @@ layout: default
 title: "A General Theoretical Paradigm to Understand Learning from Human Preferences"
 ---
 
-# A General Theoretical Paradigm to Understand Learning from Human Preferences
 
 - **ArXiv URL**: http://arxiv.org/abs/2310.12036v2
 
@@ -13,10 +12,10 @@ title: "A General Theoretical Paradigm to Understand Learning from Human Prefere
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一个名为 Ψ-偏好优化 (ΨPO) 的通用理论框架，该框架统一了现有的从人类偏好中学习的方法（如 RLHF 和 DPO），并在此基础上提出了一种名为 IPO 的新方法，它通过直接优化成对偏好而非依赖 Bradley-Terry 模型，有效解决了 DPO 在面对确定性或稀疏偏好数据时容易出现的过拟合问题。
 
-# 关键定义
+## 关键定义
 *   **Ψ-偏好优化 (Ψ-preference optimisation, ΨPO)**：本文提出的一个通用目标函数，用于从人类偏好中学习策略。其核心思想是在最大化一个关于“偏好概率”的非递减函数 $$Ψ(p*)$$ 的期望与最小化策略 $$π$$ 相对于参考策略 $$π_ref$$ 的 KL 散度之间进行权衡。目标函数如下：
     
 
@@ -34,7 +33,7 @@ title: "A General Theoretical Paradigm to Understand Learning from Human Prefere
 
 
 
-# 相关工作
+## 相关工作
 当前，从人类偏好中学习（Learning from Human Preferences）的主流方法是基于人类反馈的强化学习 (Reinforcement Learning from Human Feedback, RLHF) 和直接偏好优化 (Direct Preference Optimisation, DPO)。
 
 *   **研究现状**：RLHF 通过两阶段过程（学习奖励模型 + RL 策略优化）来对齐大型语言模型，取得了巨大成功。DPO 作为一种更简洁的替代方案，通过直接从偏好数据中优化策略，避免了显式的奖励建模，在一些任务上表现出与 RLHF 相当的性能。
@@ -43,7 +42,7 @@ title: "A General Theoretical Paradigm to Understand Learning from Human Prefere
 
 *   **本文目标**：本文旨在弥合理论与实践之间的差距，通过引入一个更通用的理论框架 (ΨPO) 来深入理解 RLHF 和 DPO 的行为机制，识别它们的潜在缺陷，并提出一个更稳健、不易过拟合的新方法 (IPO)。
 
-# 本文方法
+## 本文方法
 ## 通用目标：ΨPO
 本文提出了一个名为 Ψ-偏好优化 (ΨPO) 的通用目标函数，它将从人类偏好中学习的问题形式化为最大化偏好概率的某个函数 $$Ψ(p*)$$ 与 KL 正则化项的权衡。
 
@@ -88,7 +87,7 @@ IPO 的目标是直接最大化策略的期望偏好，同时受 KL 正则化约
 
     其中 $$h_\pi(y_w, y_l) = \log(\frac{\pi(y_w|x)}{\pi(y_l|x)}) - \log(\frac{\pi_{ref}(y_w|x)}{\pi_{ref}(y_l|x)})$$。这个损失函数形式简洁，其实质是将策略对数概率比与参考策略对数概率比的差值，回归到一个由正则化系数 $$τ$$ 控制的常数上。这直观地体现了 IPO 如何通过控制策略的相对变化来避免过拟合。
 
-# 实验结论
+## 实验结论
 
 本文通过一系列简单的 bandit 示例，清晰地展示了 IPO 相对于 DPO 的优势。
 

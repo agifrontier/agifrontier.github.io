@@ -3,7 +3,7 @@ layout: default
 title: "Stabilizing Reinforcement Learning with LLMs: Formulation and Practices"
 ---
 
-# Token级优化为何能对齐序列级奖励？阿里耗费数十万GPU时，揭秘LLM强化学习稳定之道
+## Token级优化为何能对齐序列级奖励？阿里耗费数十万GPU时，揭秘LLM强化学习稳定之道
 
 <img src="/images/2512.01374v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

@@ -3,7 +3,6 @@ layout: default
 title: "The RefinedWeb Dataset for Falcon LLM: Outperforming Curated Corpora with Web Data, and Web Data Only"
 ---
 
-# The RefinedWeb Dataset for Falcon LLM: Outperforming Curated Corpora with Web Data, and Web Data Only
 
 - **ArXiv URL**: http://arxiv.org/abs/2306.01116v1
 
@@ -13,16 +12,16 @@ title: "The RefinedWeb Dataset for Falcon LLM: Outperforming Curated Corpora wit
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种仅使用网页数据，通过大规模精细过滤和严格去重，就能训练出顶尖大语言模型（LLM）的方法，并发布了由此产生的5万亿token数据集RefinedWeb，挑战了LLM预训练必须混合“高质量”精选语料库的传统认知。
 
-# 关键定义
+## 关键定义
 本文提出或使用的核心概念包括：
 
 *   **RefinedWeb**: 本文构建并发布的大规模、高质量、仅包含网页内容的英语预训练数据集。完整版含有5万亿token，其中6000亿token已公开。其核心特点是完全来源于CommonCrawl，但经过了极其严格的过滤和去重处理。
 *   **MDR (MacroData Refinement)**: 本文设计的用于处理海量（万亿token级别）网页数据的数据处理流水线。该流水线遵循“规模优先、严格去重、中性过滤”的设计原则，整合了文档准备、多阶段过滤和多策略去重等一系列步骤，旨在将原始的CommonCrawl数据提炼成高质量的训练语料。
 
-# 相关工作
+## 相关工作
 当前，顶尖的大语言模型（LLMs）通常在一个混合数据集上进行预训练，这个混合数据集包含大规模的网页爬取数据（如C4、OSCAR）和所谓的“高质量”精选语料库（如The Pile，包含书籍、技术论文、社交媒体对话等）。普遍的观点认为，这种数据混合对于模型获得强大的零样本（Zero-shot）泛化能力至关重要。
 
 然而，随着模型规模的增长，遵循新的缩放定律（Scaling Laws），所需的数据量也飙升至数万亿token的级别。这带来了两个关键问题：
@@ -31,7 +30,7 @@ title: "The RefinedWeb Dataset for Falcon LLM: Outperforming Curated Corpora wit
 
 本文旨在解决的核心问题是：**能否仅通过改进对海量网页数据的处理方式，来获得一个质量足够高、规模足够大的数据集，从而训练出性能与使用精选语料库训练的模型相媲美甚至超越的LLM？**
 
-# 本文方法
+## 本文方法
 本文提出了一个名为**MDR (MacroData Refinement)**的数据处理流水线，用以从CommonCrawl网页数据中生成高质量的**RefinedWeb**数据集。MDR流水线的设计原则是**规模优先 (Scale first)**、**严格去重 (Strict deduplication)** 和 **中性过滤 (Neutral filtering)**，避免使用除语言识别外的机器学习模型进行过滤，以减少引入额外偏见。
 
 MDR流水线包含以下三个主要阶段，如下图所示，原始CommonCrawl数据在经过MDR处理后，近90%的文档被移除：
@@ -60,7 +59,7 @@ MDR流水线的详细步骤概括在下表中：
     *   **严格的多级去重策略**：与以往工作相比，本文采用了更为严格和全面的去重方法。它结合了文档级别的**模糊去重**（MinHash）和序列级别的**精确子字符串去重**，去重率远高于之前的数据集（如The Pile的10% vs. RefinedWeb的~50%），这被证明对提升模型质量和减少记忆至关重要。
     *   **精细的过滤流程**：除了常规的文档级过滤，本文还引入了**行级修正**，进一步清理文本中夹杂的噪声，提升了语料的纯净度。
 
-# 实验结论
+## 实验结论
 本文通过一系列实验，验证了仅使用RefinedWeb数据集训练的模型的性能。
 
 *   **核心发现：网页数据足以超越精选语料**

@@ -3,7 +3,6 @@ layout: default
 title: "LLM$\times$MapReduce-V3: Enabling Interactive In-Depth Survey Generation through a MCP-Driven Hierarchically Modular Agent System"
 ---
 
-# LLM$\times$MapReduce-V3: Enabling Interactive In-Depth Survey Generation through a MCP-Driven Hierarchically Modular Agent System
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.10890v1
 
@@ -13,23 +12,23 @@ title: "LLM$\times$MapReduce-V3: Enabling Interactive In-Depth Survey Generation
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 LLM×MapReduce-V3 的分层模块化智能体系统，该系统通过模型-上下文-协议 (MCP) 驱动的动态规划，实现了交互式、可定制的深度综述论文生成。
 
-# 关键定义
+## 关键定义
 *   **LLM×MapReduce-V3**: 一个为生成长篇综述而设计的分层模块化智能体系统。它将核心功能分解为独立的、可组合的 MCP 服务器，并通过一个高级规划器智能体动态协调工作流，同时支持用户深度参与。
 *   **模型-上下文-协议 (Model-Context-Protocol, MCP)**: 一种标准化的函数调用机制和开放标准，它允许将 AI 助手（智能体）连接到不同的工具源。在本文中，MCP 将各个功能模块（如骨架初始化、摘要生成）封装成独立的服务器，实现了系统的模块化和可扩展性。
 *   **分层模块化智能体系统 (Hierarchically Modular Agent System)**: 一种多智能体架构，其中各个功能组件被实现为独立的“原子”服务器。这些原子服务器可以被聚合成更高级别的服务器，形成一个层次化结构，由一个高级规划器智能体进行动态编排。
 *   **Orchestra Server (编排服务器)**: 系统中的一个核心组件，充当基于大语言模型的轻量级规划器。它根据当前任务的中间输出和可用工具的描述，动态生成下一步的指令，从而协调多个模块的协作，实现自适应、非线性的工作流。
 
-# 相关工作
+## 相关工作
 目前，人工智能驱动的自动化研究在信息检索和内容生成方面取得了显著进展，代表性系统有 WebGPT、Self-RAG 和 GPT-Researcher 等。然而，这些系统通常缺乏足够的用户参与和灵活性。在综述生成领域，虽然 AutoSurvey、InteractiveSurvey 等工具出现，但它们往往将用户锁定在僵化、“一站式”的工作流中，缺乏对过程的迭代优化和定制化能力。
 
 同时，模型-上下文-协议 (MCP) 作为一种连接模型与工具的开放标准，已在 Alita、AgentDistill 等工作中展现出构建自适应智能体系统的潜力。
 
 本文旨在解决现有综述生成系统刚性强、定制化能力弱、用户干预不足的问题。通过引入基于 MCP 的分层模块化架构和动态规划器，本文致力于构建一个开放、灵活且支持人机协作的深度综述生成系统。
 
-# 本文方法
+## 本文方法
 
 本文提出的 LLM×MapReduce-V3 是一个采用多智能体范式的生态系统，各个专用智能体在不同阶段处理任务，并通过 MCP 协议与一系列功能服务器进行交互。
 
@@ -89,7 +88,7 @@ $${% endraw %}
 *   **达成共识**: 在初始阶段，系统通过多轮对话与用户互动，共同确定研究范围和核心视角。
 *   **反馈整合**: 在大纲生成后，系统会呈现给用户进行审查和修改。用户可以提出结构调整、内容侧重等建议。用户可在任意阶段评估中间产出，其反馈会影响后续模块的执行。
 
-# 实验结论
+## 实验结论
 本文将 LLM×MapReduce-V3 与其他主流的深度研究和综述生成系统进行了功能对比和人工评估。
 
 **功能对比**

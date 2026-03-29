@@ -3,7 +3,6 @@ layout: default
 title: "Opal: An Operator Algebra View of RLHF"
 ---
 
-# Opal: An Operator Algebra View of RLHF
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.11298v1
 
@@ -13,10 +12,10 @@ title: "Opal: An Operator Algebra View of RLHF"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了Opal，一个用于强化学习从人类反馈（RLHF）的算子代数视图，以及GKPO，一个标准化的交换模式，通过一个当且仅当满足三个核心假设时成立的约简定律，来统一、比较和验证不同的RLHF目标函数，从而整理了该领域繁杂的方法。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下对理解其核心思想至关重要的概念：
 
 1.  **算子阶梯 (Ladder)**：一种将RLHF目标函数形式化的表示方法，它被描述为一系列作用于基础效用函数（base score）$$$u$$$上的原始算子序列。
@@ -28,14 +27,14 @@ title: "Opal: An Operator Algebra View of RLHF"
 4.  **范式 (Normal Form)**：可约简阶梯的最终简化形式，其成对边际（pairwise margin）可以表示为 $$$M = (\Delta f^{\ast} - \Delta\_{\mathrm{ref}}) w^{\ast}$$$，其中$$$f^{\ast}$$$是所有加性惩罚的总和，$$$w^{\ast}$$$是所有乘性权重的总积。
 5.  **GKPO (通用核偏好对象, Generalized Kernel Preference Object)**：一个规范化的JSON模式，用于表示任何成对的RLHF目标。对于可约简类中的方法，GKPO能将其规范化为Opal范式并生成确定性哈希；对于不可约简的方法，它会明确标记出失败的假设并提供“见证”（witness）。
 
-# 相关工作
+## 相关工作
 当前，从人类反馈中进行强化学习（RLHF）的领域充满了各种各样的方法，如PPO-RLHF、直接偏好优化（DPO, Direct Preference Optimization）、基于排序的方法（RRHF）、偏移正则化目标（ORPO）等，形成了一个庞杂的“方法动物园”。
 
 这种方法的激增带来了一个根本性问题：这些看似不同的目标函数在本质上是真的不同，还是仅仅是同一基础算子的不同代数组合？这种混乱使得在不同方法之间进行公平比较、复现结果和理解其根本差异变得异常困难。
 
 本文旨在解决这个问题，通过引入一个统一的算子代数框架（Opal）和一个标准化的表示模式（GKPO），来系统性地分类和比较现有的RLHF目标函数，阐明它们之间的等价关系或本质区别。
 
-# 本文方法
+## 本文方法
 本文的核心贡献是提出了一个名为Opal的算子代数框架，并基于此设计了GKPO，一个用于RLHF目标的标准化交换模式。
 
 ## Opal：算子代数视图
@@ -111,7 +110,7 @@ GKPO的设计具有以下核心优点：
 }
 $$`$$
 
-# 实验结论
+## 实验结论
 本文没有进行大规模的基准测试，而是通过一系列精心设计的“演示”和“压力测试”来验证Opal代数和GKPO模式的有效性。
 
 *   **可行性验证**：通过具体的玩具样本（Toy Examples），成功地将DPO、RRHF等主流方法表示为GKPO实例。例如，将RRHF的排序惩罚表示为GKPO中的 $$penalties$$ 项，展示了其在可约简类中的表达能力。

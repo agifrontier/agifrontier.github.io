@@ -3,7 +3,6 @@ layout: default
 title: "Zero-Shot Performance Prediction for Probabilistic Scaling Laws"
 ---
 
-# Zero-Shot Performance Prediction for Probabilistic Scaling Laws
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.16743v1
 
@@ -13,21 +12,21 @@ title: "Zero-Shot Performance Prediction for Probabilistic Scaling Laws"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出一种新框架，通过将学习曲线（learning curves, LCs）预测问题建模为具有双层层级结构的多任务学习问题，并利用潜变量多输出高斯过程来捕捉任务间的相关性，从而实现对模型性能学习曲线的零样本（zero-shot）预测，进而以更低的计算成本生成概率性的缩放定律（scaling laws）。
 
-# 关键定义
+## 关键定义
 *   **双层层级结构 (Bi-level Hierarchy)**：本文的核心观点，指自然语言处理（NLP）领域的学习曲线数据集内部存在一种层级关系。例如，在模型缩放实验中，可以将嵌入维度作为第一层级（任务），将网络层数作为第二层级（任务内的数据实例），以此来组织和建模不同模型配置下的性能数据。
 *   **潜变量多输出高斯过程 (Latent Variable Multi-output Gaussian Process, Ma)**：本文采用的核心模型。它是一种高斯过程的扩展，通过引入共享的均值函数和任务特定的潜变量，能够同时对多个相关联的输出（即多条学习曲线）进行建模，并有效捕捉它们之间的共享信息与相关性。
 *   **概率性缩放定律 (Probabilistic Scaling Laws)**：非传统的、单一的缩放定律曲线，而是通过蒙特卡洛模拟从模型的后验预测分布中生成的一组缩放定律。这种方法不仅给出了性能预测的期望值，还量化了预测的不确定性，形成一个“定律的分布”。
 *   **学习曲线的零样本预测 (Zero-Shot Prediction of Learning Curves)**：在未见过任何目标模型配置（如一个全新的模型尺寸）的性能数据的情况下，仅根据在其他相关模型配置上训练得到的知识，直接预测出目标模型的完整学习曲线。
 
-# 相关工作
+## 相关工作
 现有研究领域中，学习曲线预测早期依赖于参数化函数（如幂律、指数函数）进行外推。后续在贝叶斯优化等领域，开始采用高斯过程（Gaussian Processes, GPs）、贝叶斯神经网络（Bayesian Neural Networks, BNNs）等代理模型。而缩放定律的推导通常依赖于大规模、高成本的经验性研究，即训练大量不同配置的模型来收集数据，这种方法资源消耗巨大。
 
 本文旨在解决的核心问题是：**如何显著降低推导缩放定律所需的巨大计算成本**。传统方法需要详尽地训练所有模型，而本文试图通过预测未见过的、尤其是更大、更昂贵的模型的学习曲线，来规避这一高昂的训练开销。
 
-# 本文方法
+## 本文方法
 
 ## 创新点
 本文的本质创新在于提出了一种新的**视角和建模框架**，而非发明一种全新的算法。其核心思想是，**将一系列相关的学习曲线数据集（如不同尺寸模型的性能曲线）视为一个具有内在层级结构的多任务问题**。
@@ -87,7 +86,7 @@ $${% endraw %}
 
 <img src="/images/2510.16743v1/x3.jpg" alt="图3: 不同数据集的层级结构定义" style="width:85%; max-width:600px; margin:auto; display:block;">
 
-# 实验结论
+## 实验结论
 
 ## 零样本预测性能
 

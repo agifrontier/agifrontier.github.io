@@ -3,7 +3,6 @@ layout: default
 title: "A Survey of Vibe Coding with Large Language Models"
 ---
 
-# A Survey of Vibe Coding with Large Language Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.12399v1
 
@@ -13,7 +12,7 @@ title: "A Survey of Vibe Coding with Large Language Models"
 
 ---
 
-# 关于使用大型语言模型进行 Vibe Coding 的综述
+## 关于使用大型语言模型进行 Vibe Coding 的综述
 
 ## 引言
 

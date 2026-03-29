@@ -3,7 +3,7 @@ layout: default
 title: "Optimizing Mixture of Block Attention"
 ---
 
-# MIT联手英伟达发布FlashMoBA：稀疏注意力提速14.7倍，长文本处理迎来新篇章
+## MIT联手英伟达发布FlashMoBA：稀疏注意力提速14.7倍，长文本处理迎来新篇章
 
 <img src="/images/2511.11571v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

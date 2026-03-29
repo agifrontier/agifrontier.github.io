@@ -3,7 +3,6 @@ layout: default
 title: "GatePro: Parameter-Free Expert Selection Optimization for Mixture-of-Experts Models"
 ---
 
-# GatePro: Parameter-Free Expert Selection Optimization for Mixture-of-Experts Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.13079v1
 
@@ -13,16 +12,16 @@ title: "GatePro: Parameter-Free Expert Selection Optimization for Mixture-of-Exp
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 GatePro 的新型、无参数的专家选择优化方法，它将 MoE 模型中的专家选择问题构建为一个最优传输问题，无需可学习的门控参数或人工调整的负载均衡损失函数，即可实现高效且稳定的专家分配。
 
-# 关键定义
+## 关键定义
 *   **混合专家模型 (Mixture-of-Experts, MoE)**: 一种稀疏激活模型架构。它由多个“专家”子网络（通常是前馈网络）和一个“门控网络”组成。对于每个输入 Token，门控网络选择一小部分（通常是1或2个）专家来处理它，从而在保持巨大模型参数量的同时，大幅降低单个输入的计算成本。
 *   **门控网络 (Gating Network)**: MoE 中的一个关键组件，其功能是为每个输入 Token 计算分配权重，并据此决定将该 Token 发送给哪些专家进行处理。传统的门控网络通常是一个带可学习参数（如一个线性层）的神经网络。
 *   **负载均衡损失 (Load Balancing Loss)**: 在训练传统 MoE 模型时引入的一项辅助损失函数。由于门控网络可能倾向于将大量 Token 分配给少数几个“受欢迎”的专家，导致负载不均和训练不稳定，该损失函数旨在惩罚不均衡的分配，鼓励所有专家被均匀利用。
 *   **最优传输 (Optimal Transport, OT)**: 一个数学理论，用于寻找从一个概率分布到另一个概率分布的成本最低的“物质”传输方案。在本文中，它被用来建模 Token 到专家的分配问题，其中“成本”与 Token 和专家之间的亲和度相关，“传输方案”则对应于分配决策，同时满足每个专家容量相等的约束。
 
-# 相关工作
+## 相关工作
 当前的混合专家模型（MoE）严重依赖于一个带有可学习参数的门控网络来路由 Token。为了防止专家负载严重不均，训练过程中通常会引入一个带权重的负载均衡辅助损失函数。
 
 然而，这种主流方法存在两个核心问题：
@@ -31,7 +30,7 @@ title: "GatePro: Parameter-Free Expert Selection Optimization for Mixture-of-Exp
 
 本文旨在解决上述问题，提出一个无需可学习参数和辅助损失函数的门控机制，从根本上简化 MoE 的训练，并提供更稳定、更直接的负载均衡保证。
 
-# 本文方法
+## 本文方法
 
 本文的核心创新是提出了 GatePro，一种将专家选择视为最优传输问题的无参数优化算法。GatePro 摒弃了传统的可学习门控网络和辅助损失，通过直接求解一个约束优化问题来完成 Token 到专家的分配。
 
@@ -74,7 +73,7 @@ $${% endraw %}
 *   **直接优化**：与通过软性损失“鼓励”均衡不同，GatePro 将负载均衡作为一个必须满足的“硬约束”，从根本上解决了训练过程中专家负载不均和分配崩溃的问题。
 *   **确定性分配**：在给定的亲和度分数下，分配过程是确定性的，有助于提高训练的稳定性和可复现性。
 
-# 实验结论
+## 实验结论
 本文通过在语言建模和机器翻译等任务上的大量实验，验证了 GatePro 的有效性。
 
 *   **性能相当或更优**：实验结果表明，与使用传统 Top-k 门控和负载均衡损失的基线 MoE 模型（如 Switch Transformer）相比，GatePro 在相当的计算量下，取得了持平甚至略优的性能（例如，更低的困惑度或更高的 BLEU 分数）。

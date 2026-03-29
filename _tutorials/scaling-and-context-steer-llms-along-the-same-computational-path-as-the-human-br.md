@@ -3,7 +3,7 @@ layout: default
 title: "Scaling and context steer LLMs along the same computational path as the human brain"
 ---
 
-# LLM与人脑“神同步”：Meta AI证实模型越大，计算路径越像人
+## LLM与人脑“神同步”：Meta AI证实模型越大，计算路径越像人
 
 <img src="/images/2512.01591v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

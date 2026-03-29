@@ -3,7 +3,6 @@ layout: default
 title: "LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention"
 ---
 
-# LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention
 
 - **ArXiv URL**: http://arxiv.org/abs/2303.16199v3
 
@@ -13,23 +12,23 @@ title: "LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init A
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 LLaMA-Adapter 的高效微调方法，它通过引入一个仅有1.2M可学习参数、带有零初始化注意力的轻量级适配器，在冻结 LLaMA 模型主体的情况下，实现了快速（1小时内）、高效的指令微调，并能轻松扩展到多模态任务。
 
-# 关键定义
+## 关键定义
 *   **LLaMA-Adapter**: 一种为大型语言模型 LLaMA 设计的轻量级适配方法。它通过在模型中插入极少量的可学习参数，实现高效的指令遵循能力微调，而无需改动或训练模型本身的7B参数。
 *   **适配提示 (Adaption Prompts)**: 一组可学习的向量（或称为 soft prompts），作为前缀被拼接到 Transformer 高层网络中的词 token 序列上。这些提示旨在学习和编码指令信息，以引导模型的生成过程。
 *   **零初始化注意力 (Zero-initialized Attention)**: 本文的核心创新机制。它修改了标准自注意力模块，引入一个可学习的门控因子 $$g$$，并将其初始化为零。这个门控因子用于控制“适配提示”在注意力计算中的影响，从而在训练初期保留模型的预训练知识，后续再逐步注入新的指令知识。
 *   **零门控 (Zero Gating)**: 指零初始化注意力机制中那个被初始化为零的可学习门控因子 $$g$$。它的作用是自适应地调节来自适配提示的信息流强度，确保训练初期的稳定性和最终的优越性能。
 
-# 相关工作
+## 相关工作
 当前，通过指令微调（Instruction Tuning）使大型语言模型（LLMs）具备遵循人类指令的能力是研究热点，例如 InstructGPT 和 Stanford Alpaca。Alpaca 通过对 LLaMA 7B 模型的全参数微调取得了巨大成功，但这种方式计算和时间成本高昂，难以快速部署和迁移。
 
 参数高效微调（Parameter-Efficient Fine-Tuning, PEFT）技术，如 Prompt Tuning、LoRA 和 Adapter，旨在通过只训练少量参数来解决这个问题。然而，现有方法在应用于 LLaMA 这类模型的指令微调时，或效率有待提升，或难以扩展到多模态输入（如图像）。
 
 本文旨在解决的核心问题是：**如何以最低的计算成本（最少的可训练参数和最短的训练时间）对 LLaMA 进行指令微调，使其达到与全参数微调相当的性能，并且该方法应具备良好的扩展性，能够处理多模态指令。**
 
-# 本文方法
+## 本文方法
 
 ## 核心架构：适配器提示
 本文提出的 LLaMA-Adapter 方法在冻结整个 LLaMA 预训练模型（7B参数）的基础上，仅引入了少量的可学习模块。
@@ -85,7 +84,7 @@ LLaMA-Adapter 的架构具有很强的灵活性，可以简单地扩展到多模
 
 这种设计使得模型只需训练适配器和少量的投影层，就能高效地具备理解视觉内容并根据其进行推理和生成的能力。
 
-# 实验结论
+## 实验结论
 
 <img src="/images/2303.16199v3/x1.jpg" alt="图1：LLaMA-Adapter的特点" style="width:90%; max-width:700px; margin:auto; display:block;">
 

@@ -3,7 +3,6 @@ layout: default
 title: "RiskPO: Risk-based Policy Optimization via Verifiable Reward for LLM Post-Training"
 ---
 
-# RiskPO: Risk-based Policy Optimization via Verifiable Reward for LLM Post-Training
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.00911v1
 
@@ -13,22 +12,22 @@ title: "RiskPO: Risk-based Policy Optimization via Verifiable Reward for LLM Pos
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出一种名为 RiskPO 的大语言模型训练后优化方法，通过引入一个基于风险度量的目标函数（MVaR），替代传统的均值优化目标，从而将模型优化的重点放在处理困难样本上，有效缓解了熵坍塌问题，并显著提升了模型的推理能力。
 
-# 关键定义
+## 关键定义
 *   **强化学习与可验证奖励 (Reinforcement learning with verifiable reward, RLVR)**: 一种大语言模型（LLM）的训练后范式。在此范式中，模型生成的答案由一个确定的、基于规则的验证器（Verifier）评估，并给予客观的二元（正确/错误）奖励信号，模型通过强化学习来最大化奖励。
 *   **混合风险价值 (Mixed Value-at-Risk, MVaR)**: 本文提出的新型风险敏感优化目标。它结合了对奖励分布不同分位区间的加权关注，特别是加大了对表现最差的一部分（尾部风险）样本的优化权重，从而放大困难样本上的梯度信号。
 *   **问题捆绑 (Bundling Scheme)**: 一种为了丰富奖励信号而设计的方法。由于单个问题的奖励是二元的，信号稀疏，该方法将多个问题（例如B个）组合成一个“捆绑包”，以捆绑包内所有问题回答正确的总数作为奖励。这产生了一个更丰富、更多层次的奖励分布，从而为风险度量提供了更有意义的优化基础，并避免了在所有答案都错误时梯度为零的问题。
 
-# 相关工作
+## 相关工作
 当前，带有可验证奖励的强化学习（RLVR）已成为提升大语言模型（LLM）推理能力的主流后训练技术。其中的代表性方法，如组相对策略优化 (Group Relative Policy Optimization, GRPO)，通过最大化平均奖励来提升模型性能。
 
 然而，这些基于均值优化的方法存在一个核心瓶颈：**熵坍塌 (entropy collapse)**。在训练早期，模型的策略熵会迅速下降，导致模型变得过度自信、过早停止探索，性能提升很快陷入停滞。这种现象限制了模型学习新知识和新推理路径的能力，其性能提升更多体现在对已知答案的高效采样上，而非真正扩展其内在的推理能力边界。
 
 因此，本文旨在解决现有RLVR方法因优化平均性能而导致的熵坍塌和推理能力提升有限的问题。
 
-# 本文方法
+## 本文方法
 本文提出了**基于风险的策略优化 (Risk-based Policy Optimization, RiskPO)** 方法，其核心思想是用风险敏感的目标函数替代传统的均值目标，从而引导模型关注并解决更具挑战性的问题。
 
 <img src="/images/2510.00911v1/x2.jpg" alt="RiskPO框架" style="width:80%; max-width:300px; margin:auto; display:block;">
@@ -97,7 +96,7 @@ $${% endraw %}
 <img src="/images/2510.00911v1/x3.jpg" alt="对数概率与奖励分位水平的关系" style="width:85%; max-width:450px; margin:auto; display:block;">
 这意味着使用MVaR目标的梯度更新步骤对熵的负面影响更小，从而能够有效减缓熵的下降速度，保持模型的探索能力。
 
-# 实验结论
+## 实验结论
 本文在数学推理、代码生成和多模态推理等多个基准测试上进行了广泛实验，验证了RiskPO的有效性。
 
 ### 性能提升

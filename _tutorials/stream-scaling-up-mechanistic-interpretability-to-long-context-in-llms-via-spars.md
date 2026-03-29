@@ -3,7 +3,6 @@ layout: default
 title: "Stream: Scaling up Mechanistic Interpretability to Long Context in LLMs via Sparse Attention"
 ---
 
-# Stream: Scaling up Mechanistic Interpretability to Long Context in LLMs via Sparse Attention
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.19875v1
 
@@ -13,10 +12,10 @@ title: "Stream: Scaling up Mechanistic Interpretability to Long Context in LLMs 
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 Stream 的可解释性框架，通过其具体实现算法 Stream-Attn，利用动态稀疏注意力机制，以近线性的时间（$O(T\log T)$）和线性空间（$O(T)$）复杂度，高效分析大型语言模型在百万级Token长上下文中的注意力模式，从而在消费级GPU上实现了以往难以企及的机理可解释性分析。
 
-# 关键定义
+## 关键定义
 本文沿用了领域内的现有定义，并在此基础上提出了新的框架和算法：
 
 *   **Stream (Scalable Transformer Reasoning and Elicitation via Attention Masks)**: 本文提出的一个机理可解释性算法框架，旨在利用稀疏注意力高效分析长上下文场景下的注意力模式。其核心思想是，通过剪枝掉冗余的注意力连接，既能解决分析的计算瓶颈，又能凸显出关键的信息流。
@@ -24,14 +23,14 @@ title: "Stream: Scaling up Mechanistic Interpretability to Long Context in LLMs 
 *   **思想锚点 (Thought Anchors)**: 指在推理链条中对后续思考过程产生不成比例的巨大影响的关键步骤或句子。本文验证了 Stream-Attn 能够有效地在长上下文中识别出这些锚点。
 *   **接收头 (Receiver Heads)**: 指那些倾向于将注意力集中在上下文中少数几个关键部分（即思想锚点）而不是广泛分散的注意力头。本文通过测量注意力分布的峰度（kurtosis）来识别这类注意力头。
 
-# 相关工作
+## 相关工作
 当前，机理可解释性领域的研究旨在逆向工程神经网络（如大型语言模型），以理解其内部工作机制。然而，传统分析技术（如直接分析注意力矩阵、激活补丁等）在应用于长上下文场景时面临严峻的扩展性挑战。
 
 最关键的瓶颈在于，注意力机制的计算时间和内存使用量都与上下文长度 $T$ 呈二次方（$O(T^2)$）关系。当上下文长度达到十万甚至百万级别时，仅仅为了缓存所有注意力头的注意力模式就需要数TB的内存，这在消费级硬件上是完全不可行的。因此，许多前沿的可解释性研究明确将超过数百Token的长上下文分析推迟到未来的工作中。
 
 本文旨在直接解决这一核心痛点：开发一种可无缝扩展至十万级Token上下文，且能在消费级GPU上运行的可解释性技术，从而推动长上下文机理可解释性研究的普及化。
 
-# 本文方法
+## 本文方法
 ## Stream: 一种新颖的技术框架
 本文引入了 **Stream**，一个利用稀疏注意力（Sparse Attention）来高效分析长上下文场景下注意力模式的机理可解释性技术框架。其核心假设是，注意力计算中的稀疏化方法不仅可以降低推理时的计算复杂度，同样也可以作为一种有效的“过滤器”，帮助可解释性研究识别出模型中与输出最相关的关键部分。传统的注意力分析与模型推理面临着相同的计算瓶颈，而 Stream 框架通过只计算和分析注意力模式中最相关的部分，从根本上解决了这个问题。与需要多次前向或后向传播的复杂技术不同，Stream 在已知稀疏度常数 $k$ 的情况下，仅需一次前向传播即可完成所有组件的分析。
 
@@ -52,7 +51,7 @@ title: "Stream: Scaling up Mechanistic Interpretability to Long Context in LLMs 
 2.  将掩码应用于完整的注意力模式，以识别最相关的注意力连接。
 3.  通过对稀疏度常数 $k$ 进行二分搜索，找到一个最小的 $k$ 值，该值能在剪枝后仍保留模型的原始行为（本文标准为：模型能连续生成两个与原始输出相同的Token）。
 
-# 实验结论
+## 实验结论
 本文通过两个案例研究，在不同的模型和任务上验证了 Stream-Attn 的有效性和可扩展性。
 
 ## 案例一：识别思维链中的“思想锚点”

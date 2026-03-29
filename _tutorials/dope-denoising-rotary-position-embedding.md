@@ -3,7 +3,7 @@ layout: default
 title: "DoPE: Denoising Rotary Position Embedding"
 ---
 
-# LLM长文本“失效”有救了！DoPE：免训练为RoPE降噪，解锁64K超长上下文
+## LLM长文本“失效”有救了！DoPE：免训练为RoPE降噪，解锁64K超长上下文
 
 <img src="/images/2511.09146v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

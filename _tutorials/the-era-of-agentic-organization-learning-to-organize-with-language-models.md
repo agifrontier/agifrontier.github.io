@@ -3,7 +3,6 @@ layout: default
 title: "The Era of Agentic Organization: Learning to Organize with Language Models"
 ---
 
-# The Era of Agentic Organization: Learning to Organize with Language Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.26658v1
 
@@ -13,10 +12,10 @@ title: "The Era of Agentic Organization: Learning to Organize with Language Mode
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 AsyncThink 的新推理范式，它允许大型语言模型通过一种“组织者-工作者”协议，将复杂的思考过程分解为可并发执行的子任务，并通过强化学习自主学会如何优化这种异步协同结构，从而在降低推理延迟的同时提升了解决问题的准确性。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下对理解其核心思想至关重要的概念：
 
 *   **智能体组织 (Agentic Organization)**：指多个智能体（Agents）组成一个协同系统，通过分工合作来解决超出单个智能体能力的复杂问题。本文的目标是实现这种组织形式。
@@ -26,7 +25,7 @@ title: "The Era of Agentic Organization: Learning to Organize with Language Mode
     *   **工作者 (Worker)**：接收组织者分配的子任务（sub-query），独立执行思考，并返回中间知识或结果。
 *   **关键路径延迟 (Critical-Path Latency)**：衡量 AsyncThink 效率的核心指标。它不是简单的所有任务耗时总和，而是考虑了并发执行后，完成整个任务所需的最短时间，即整个思考有向无环图中的最长路径长度。
 
-# 相关工作
+## 相关工作
 当前，大语言模型作为单个智能体已展现出强大的推理能力，但要实现多个智能体协同解决问题的“智能体组织”愿景，仍存在诸多瓶颈。
 
 主流的并行思考（parallel thinking）方法通常是让多个智能体独立生成完整的思考链，最后再汇总结果。这种方法的局限性在于：
@@ -36,7 +35,7 @@ title: "The Era of Agentic Organization: Learning to Organize with Language Mode
 
 因此，本文旨在解决的核心问题是：如何让 AI 系统摆脱固定的、手动设计的协作模式，转而自主地**学习**一种动态、高效的组织策略，以并发的方式协同思考，从而在提升问题解决能力的同时最小化推理延迟。
 
-# 本文方法
+## 本文方法
 为了实现可学习的智能体组织，本文提出了 AsyncThink 范式，其核心是**组织者-工作者协议**以及一个**两阶段学习流程**。
 
 <img src="/images/2510.26658v1/x2.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -90,7 +89,7 @@ title: "The Era of Agentic Organization: Learning to Organize with Language Mode
 
 2.  **策略优化**：采用扩展的组相对策略优化（GRPO）算法。它将组织者和所有相关工作者的思考轨迹视为一个整体单元来计算奖励和优势函数，从而将奖励信号同时传递给组织者和工作者，协同优化整个思考策略。
 
-# 实验结论
+## 实验结论
 本文在多解倒计时（Multi-Solution Countdown）、数学推理和数独等任务上对 AsyncThink 进行了评估。
 
 ### 关键实验结果

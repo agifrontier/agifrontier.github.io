@@ -3,7 +3,6 @@ layout: default
 title: "Seesaw: Accelerating Training by Balancing Learning Rate and Batch Size Scheduling"
 ---
 
-# Seesaw: Accelerating Training by Balancing Learning Rate and Batch Size Scheduling
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.14717v1
 
@@ -13,23 +12,23 @@ title: "Seesaw: Accelerating Training by Balancing Learning Rate and Batch Size 
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 Seesaw 的训练加速方法，它通过将标准学习率调度中的衰减部分转化为批次大小（batch size）的增加，从而在保持模型性能（以 FLOPs 衡量）的同时，显著减少了约 36% 的训练墙钟时间。
 
-# 关键定义
+## 关键定义
 *   **Seesaw**: 本文提出的核心调度算法。其原理是，当一个标准的学习率调度器（如余弦退火）需要将学习率乘以因子 $\alpha$ ($\alpha < 1$) 时，Seesaw 将学习率乘以 $\sqrt{\alpha}$，同时将批次大小（batch size）扩大 $1/\alpha$ 倍。这种转换旨在保持损失动态不变，同时通过增大批次来减少所需的串行训练步数。
 *   **临界批次大小 (Critical Batch Size, CBS)**: 在训练中，超过这个批次大小后，进一步增大批次会降低样本效率（即每处理一个样本带来的模型提升减少），从而限制了训练速度的提升。Seesaw 方法主要在临界批次大小之内有效。
 *   **归一化随机梯度下降 (Normalized SGD, NSGD)**: Adam 优化器的一个简化分析代理。其更新规则为 $\theta\_{t} = \theta\_{t} - \eta \frac{{\mathbf{g}}\_{t}}{\sqrt{\mathbb{E}\ \mid {\mathbf{g}}\_{t}\ \mid ^{2}}}$。本文利用 NSGD 来为 Adam 这类自适应优化器建立学习率与批次大小关系的理论基础。
 *   **方差主导机制 (Variance-dominated regime)**: 本文理论分析的一个核心假设，即在 NSGD 的更新规则中，分母项（梯度的期望平方范数 $\mathbb{E}\ \mid {\mathbf{g}}\_{t}\ \mid ^{2}$）主要由梯度噪声的方差决定，而非梯度的均值。这个方差项与批次大小成反比，因此该假设在批次大小未超过临界批次大小时通常成立。
 
-# 相关工作
+## 相关工作
 当前，大规模语言模型（LLM）的训练通常依赖于巨大的计算资源和漫长的训练时间。一个普遍用于减少墙钟时间的策略是增大训练的批次大小，以利用数据并行带来的加速。然而，当批次大小超过一个“临界批次大小”（CBS）后，单纯增加批次会损害模型的收敛效率。
 
 尽管业界已经在使用“批次渐增”（batch ramp，即在训练过程中逐渐增大学习率）的策略（如 LLaMA、OLMo），但这些方法大多是基于经验的启发式调整，缺乏坚实的理论基础。特别是对于 Adam 这类自适应优化器，学习率衰减和批次大小增加之间的最优权衡关系尚不明确。
 
 本文旨在解决这一问题：为批次大小调度提供一个有原则的、理论驱动的框架，从而系统性地利用批次大小的增加来加速训练，而不仅仅依赖于启发式调整。
 
-# 本文方法
+## 本文方法
 本文提出的 Seesaw 方法，其核心思想是建立学习率衰减和批次大小增加之间的等效关系，从而将原本的学习率衰减操作替换为批次大小的增加，以减少总训练步数。
 
 ### 从 SGD 到 NSGD 的理论推导
@@ -95,7 +94,7 @@ $$``
 
 此外，理论分析还推导出一个稳定性约束：$\alpha\_{\text{衰减}} \geq \sqrt{\beta\_{\text{增加}}}$。Seesaw 采用的策略（$\sqrt{\alpha}, \alpha$）正好位于这个约束的边界上，是理论上最激进且稳定的选择。
 
-# 实验结论
+## 实验结论
 本文通过在 150M、300M 和 600M 参数规模的模型上进行实验，验证了 Seesaw 方法的有效性。所有模型均在 Chinchilla 规模（即数据量 $D=20N$）下进行预训练。
 
 <img src="/images/2510.14717v1/x1.jpg" alt="Seesaw与余弦退火的对比" style="width:85%; max-width:600px; margin:auto; display:block;">

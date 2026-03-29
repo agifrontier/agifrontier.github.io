@@ -3,7 +3,6 @@ layout: default
 title: "Attention Illuminates LLM Reasoning: The Preplan-and-Anchor Rhythm Enables Fine-Grained Policy Optimization"
 ---
 
-# Attention Illuminates LLM Reasoning: The Preplan-and-Anchor Rhythm Enables Fine-Grained Policy Optimization
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.13554v1
 
@@ -13,10 +12,10 @@ title: "Attention Illuminates LLM Reasoning: The Preplan-and-Anchor Rhythm Enabl
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过分析大型语言模型（LLM）在推理任务中的注意力模式，揭示了一种“预规划-锚定”（Preplan-and-Anchor）的内在节奏，并基于此发现提出了一种细粒度策略优化方法，有效解决了传统强化学习方法中奖励稀疏和信用分配不明确的问题，从而显著提升了LLM的复杂推理能力。
 
-# 关键定义
+## 关键定义
 本文的核心贡献建立在对LLM内部工作机制的新洞察之上，并提出了以下关键概念：
 
 *   **预规划-锚定节奏 (Preplan-and-Anchor Rhythm)**：本文发现，在执行多步推理任务时，高效的LLM表现出一种两阶段的注意力模式。
@@ -27,7 +26,7 @@ title: "Attention Illuminates LLM Reasoning: The Preplan-and-Anchor Rhythm Enabl
 
 *   **细粒度策略优化 (Fine-Grained Policy Optimization)**：一种基于“预规划-锚定”洞察的强化学习训练范式。它不再仅仅依赖于最终答案的正确性这一稀疏奖励，而是将奖励信号分解到推理过程的每一个步骤，甚至每一个Token。通过奖励模型展现出健康的“预规划-锚定”行为，该方法为策略网络（LLM）提供了更密集、更精确的监督信号，以优化其推理策略。
 
-# 相关工作
+## 相关工作
 当前，提升大型语言模型（LLM）推理能力的主流方法，如思维链（Chain-of-Thought, CoT）和思维树（Tree-of-Thoughts, ToT），主要通过引导模型生成显式的中间推理步骤来增强其表现。尽管这些方法取得了显著成功，但它们大多将推理过程视为一个整体，并使用最终结果的正确性作为唯一的监督信号。
 
 这种方式带来了两个关键瓶颈：
@@ -36,7 +35,7 @@ title: "Attention Illuminates LLM Reasoning: The Preplan-and-Anchor Rhythm Enabl
 
 本文旨在解决上述问题，通过利用模型自身的注意力模式，为LLM的推理过程提供一种细粒度的、可解释的监督机制，从而实现更高效、更精确的策略优化。
 
-# 本文方法
+## 本文方法
 本文提出了一种创新的方法，其核心是“观察-解释-优化”的闭环。
 
 ### 核心洞察：注意力揭示的推理节奏
@@ -69,7 +68,7 @@ $${% endraw %}
 2.  **可解释的优化过程**：优化的目标（“预规划-锚定”节奏）是可解释的，它直接对应于人类认知中“先有规划、后有细节”的有效思维模式。这使得模型的改进方向更加明确。
 3.  **利用模型内在线索**：该方法巧妙地利用了模型内部状态（注意力权重）作为自我监督的来源，而无需依赖昂贵的人工标注或外部模型来评估中间步骤的质量。
 
-# 实验结论
+## 实验结论
 本文在一系列具有挑战性的推理基准测试上进行了广泛的实验，包括GSM8K（小学数学应用题）和逻辑网格谜题（Logic Grid Puzzles）。
 
 *   **性能提升**：实验结果表明，经过PAn-PPO方法优化的LLM，在上述任务中的准确率显著高于使用标准CoT提示以及传统RL微调（仅使用任务奖励）的基线模型。这证明了细粒度奖励机制在提升复杂推理能力上的有效性。

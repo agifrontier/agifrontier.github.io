@@ -3,7 +3,7 @@ layout: default
 title: "Fourier Neural Operators Explained: A Practical Perspective"
 ---
 
-# NVIDIA万字长文：别再误用FNO了！傅里叶神经算子终极实践指南
+## NVIDIA万字长文：别再误用FNO了！傅里叶神经算子终极实践指南
 
 <img src="/images/2512.01421v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

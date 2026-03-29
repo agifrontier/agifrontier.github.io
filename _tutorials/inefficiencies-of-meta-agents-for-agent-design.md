@@ -3,7 +3,6 @@ layout: default
 title: "Inefficiencies of Meta Agents for Agent Design"
 ---
 
-# Inefficiencies of Meta Agents for Agent Design
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.06711v1
 
@@ -13,10 +12,10 @@ title: "Inefficiencies of Meta Agents for Agent Design"
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过实验揭示了一类流行的元智能体（meta-agent）在自动化智能体设计中存在的三个核心问题：学习效率低下、生成的智能体多样性不足以及经济可行性有限，并发现进化式上下文策展策略可以有效提升性能。
 
-# 关键定义
+## 关键定义
 本文沿用了现有智能体设计的研究设定，并在此框架下提出了以下对理解本文至关重要的核心概念：
 
 *   **元智能体 (Meta-Agent)**: 指一个能够自动化设计、评估和迭代优化其他智能体（agent）的系统。本文聚焦于遵循“采样-评估-迭代”模式的元智能体，它们通过与语言模型交互来生成智能体代码。
@@ -26,7 +25,7 @@ title: "Inefficiencies of Meta Agents for Agent Design"
     2.  **并行式 (Parallel)**: 完全忽略新设计的智能体，每次生成都只使用最初始的智能体库作为上下文。
     3.  **进化式 (Evolutionary)**: 仅选择档案库中迄今为止表现最好的少数几个智能体（“父代”）作为上下文，来生成新的智能体。
 
-# 相关工作
+## 相关工作
 当前，利用语言模型实现复杂任务的智能体系统已成为研究热点。遵循机器学习领域的“惨痛教训 (Bitter Lesson)”，即通用、可扩展的计算方法最终会胜过手动设计，近期研究（如 ADAS, MAS-GPT, AutoFlow 等）开始探索使用元智能体来自动化智能体架构的设计过程。
 
 这些方法大多遵循一个“采样-评估-迭代” (sample–evaluate–iterate) 的范式：元智能体提出新的智能体设计，对其进行评估，然后根据反馈进行下一轮迭代。然而，这种自动化设计范式的实际效率和效益尚未得到充分检验。
@@ -38,7 +37,7 @@ title: "Inefficiencies of Meta Agents for Agent Design"
 
 <img src="/images/2510.06711/Figure0.jpg" alt="元智能体迭代设计流程图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
-# 本文方法
+## 本文方法
 本文的研究方法建立在一个通用的元智能体设计框架之上，该框架遵循“采样-评估-迭代”循环。其核心贡献在于对该框架中的**上下文策展 (Context Curation)** 环节进行了系统性的比较和分析。
 
 ### ## 智能体设计框架
@@ -62,7 +61,7 @@ title: "Inefficiencies of Meta Agents for Agent Design"
 
 通过在数学推理（MGSM）、阅读理解（DROP）、多任务问答（MMLU）和科学问答（GPQA）等多个基准任务上对比这三种策略，本文得以深入剖析元智能体设计的内部机制和效率瓶颈。
 
-# 实验结论
+## 实验结论
 
 ### ## 学习效率
 实验结果表明，简单地将所有历史信息累积起来作为上下文效果不佳。

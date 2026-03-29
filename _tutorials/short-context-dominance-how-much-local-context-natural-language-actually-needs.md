@@ -3,7 +3,7 @@ layout: default
 title: "Short-Context Dominance: How Much Local Context Natural Language Actually Needs?"
 ---
 
-# 80%的预测只需96个Token！DeepMind揭示大模型“短视”的秘密
+## 80%的预测只需96个Token！DeepMind揭示大模型“短视”的秘密
 
 <img src="/images/2512.08082v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

@@ -3,7 +3,6 @@ layout: default
 title: "Behind RoPE: How Does Causal Mask Encode Positional Information?"
 ---
 
-# Behind RoPE: How Does Causal Mask Encode Positional Information?
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.21042v1
 
@@ -13,24 +12,24 @@ title: "Behind RoPE: How Does Causal Mask Encode Positional Information?"
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过理论证明和实验分析，揭示了Transformer解码器中的因果掩码 (Causal Mask) 本身就是一种位置信息来源，它能诱导出偏好邻近token的注意力模式，并且会与RoPE等显式位置编码相互作用，将其相对注意力模式扭曲为非相对模式。
 
-# 关键定义
+## 关键定义
 本文主要对现有概念进行了深入的理论剖析，而非提出全新定义。其核心在于重新定义了对以下概念的理解：
 
 *   **因果掩码 (Causal Mask)**：传统上被视为防止模型看到未来token的机制。本文证明，它还是一种隐式的位置编码机制，通过其不对称的结构，在多层自注意力计算中自然地诱导出与位置相关的注意力模式。
 
 *   **位置相关注意力模式 (Position-dependent Attention Pattern)**：指注意力分数会根据查询（Query）和键（Key）的绝对位置 $$(i, j)$$ 而变化的模式。本文证明，因果掩码独立地（即使没有模型参数或输入依赖）就能产生这种模式，其特征是查询倾向于关注更近的键。
 
-# 相关工作
+## 相关工作
 目前，为Transformer注入位置信息的主流方法是使用显式的位置编码 (Positional Encodings)。这些方法可分为两类：绝对位置编码（如正弦编码）和相对位置编码（如RoPE）。其中，RoPE因其优越的性能和对相对位置的建模能力，在现代大语言模型 (LLM) 中被广泛采用。
 
 然而，近期研究发现，即使没有显式的位置编码，Transformer解码器依然能够处理序列数据，这表明模型中存在其他位置信息来源。研究者们推测因果掩码是关键，但其具体作用机制并不明确。有人假设它通过“计数”前面的token来编码位置，有人证明在特定参数下它可以模拟绝对和相对编码，还有人发现它会改变隐藏状态的方差或相似性。
 
 本文旨在解决的核心问题是：**因果掩码究竟是如何精确地编码位置信息的？** 本文通过数学推导，首次给出了一个清晰的机制解释，并进一步探究了它与RoPE在现代LLM中的相互作用。
 
-# 本文方法
+## 本文方法
 本文的核心贡献在于通过一个简化的、无参数的Transformer模型，从理论上证明了因果掩码的位置编码机制，并分析了其与RoPE的相互作用。
 
 ### 因果掩码如何编码位置信息？
@@ -91,7 +90,7 @@ title: "Behind RoPE: How Does Causal Mask Encode Positional Information?"
 *   **因果掩码破坏了RoPE的相对性**：在Transformer解码器中，第一层的注意力输出混合了不同位置的输入信息。当这个混合后的输出进入第二层并与RoPE结合时，因果掩码引入的绝对位置依赖性会“污染”RoPE的相对位置信号。
 *   **产生非相对模式**：这种相互作用导致最终的注意力模式既不是纯粹的相对模式，也不是纯粹的绝对模式，而是一种混合的、非相对的 (non-relative) 模式。具体表现为，注意力图中靠近序列开头的区域（左侧）会系统性地获得比其他区域更低的注意力分数。这种现象在没有因果掩码的Transformer编码器中不会出现。
 
-# 实验结论
+## 实验结论
 
 ### 无参数Transformer模拟
 

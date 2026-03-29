@@ -3,7 +3,7 @@ layout: default
 title: "ORION: Teaching Language Models to Reason Efficiently in the Language of Thought"
 ---
 
-# 大模型推理太“话痨”？ORION压缩16倍思考路径，成本直降9倍
+## 大模型推理太“话痨”？ORION压缩16倍思考路径，成本直降9倍
 
 <img src="/images/2511.22891v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

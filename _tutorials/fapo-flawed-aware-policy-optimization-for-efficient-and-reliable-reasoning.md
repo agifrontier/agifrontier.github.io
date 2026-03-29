@@ -3,7 +3,6 @@ layout: default
 title: "FAPO: Flawed-Aware Policy Optimization for Efficient and Reliable Reasoning"
 ---
 
-# FAPO: Flawed-Aware Policy Optimization for Efficient and Reliable Reasoning
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.22543v1
 
@@ -13,16 +12,16 @@ title: "FAPO: Flawed-Aware Policy Optimization for Efficient and Reliable Reason
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为缺陷感知策略优化 (FAPO) 的方法，通过训练一个生成式奖励模型（GenRM）来识别并惩罚那些最终答案正确但推理过程有误的“缺陷正样本”，从而在不增加Token预算的情况下，提升大型语言模型在强化学习训练中的推理可靠性、效率和稳定性。
 
-# 关键定义
+## 关键定义
 *   **强化学习与可验证奖励 (Reinforcement Learning with Verifiable Rewards, RLVR)**: 一种增强大型语言模型（LLM）推理能力的方法范式。在该范式中，模型在具有可验证答案（如数学题）的任务上进行训练，通常使用基于最终答案是否正确的二元奖励信号来优化策略。
 *   **缺陷正样本 (Flawed-Positive Rollouts)**: 本文核心概念，指模型生成的一个推理轨迹，其最终答案是正确的，但推理过程中包含逻辑错误，例如答案猜测 (answer-guessing) 或跳跃式推理 (jump-in-reasoning)。
 *   **缺陷感知策略优化 (Flawed-Aware Policy Optimization, FAPO)**: 本文提出的核心算法。它是一种策略优化方法，能识别出“缺陷正样本”，并对其施加一个无需参数调整的奖励惩罚，从而引导模型在训练早期利用它们快速进步，在后期则转向更可靠的推理模式。
 *   **生成式奖励模型 (Generative Reward Model, GenRM)**: 本文为实现FAPO而设计的一个关键组件。它是一个通过强化学习训练的生成模型，能够对推理过程进行细粒度的评估，不仅能判断是否存在缺陷，还能精确定位错误所在的步骤。
 
-# 相关工作
+## 相关工作
 当前，利用可验证奖励的强化学习（RLVR）是提升LLM推理能力的前沿方法。这类方法通常在模型探索得到正确答案的推理路径时给予正向奖励。然而，这一范式存在一个核心瓶颈：它无法区分“完全正确的推理”和“通过错误步骤侥幸得到正确答案的推理”（即“缺陷正样本”）。
 
 由于传统的基于结果的奖励机制对这两种情况给予相同的正向奖励，导致模型会学习并内化这些不可靠、不严谨的推理模式，如猜测答案或逻辑跳跃。这不仅限制了模型推理能力的上限，也损害了其可靠性。
@@ -33,7 +32,7 @@ title: "FAPO: Flawed-Aware Policy Optimization for Efficient and Reliable Reason
 
 <img src="/images/2510.22543v1/x1.jpg" alt="不同模型中缺陷正样本的比例及FAPO与基线的性能对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
-# 本文方法
+## 本文方法
 本文基于对“缺陷正样本”在强化学习中双重作用（早期有益，后期有害）的洞察，提出了缺陷感知策略优化（FAPO）算法。该算法包含两个核心部分：一是通过训练一个高效的生成式奖励模型（GenRM）来准确检测缺陷正样本；二是在策略优化中对这些样本施加自适应的奖励惩罚。
 
 ### 缺陷正样本检测：训练GenRM
@@ -98,7 +97,7 @@ $${% endraw %}
 
 这一机制使得FAPO能够根据模型当前的学习阶段，自动调整对缺陷正样本的利用和抑制，形成一个从“求对”到“求精”的自然演进过程。
 
-# 实验结论
+## 实验结论
 实验在数学推理（AIME24, AIME25）和通用领域推理（GPQA-Diamond）等多个基准上验证了FAPO的有效性。
 
 <img src="/images/2510.22543v1/x4.jpg" alt="FAPO-GenRM与FAPO-Reasoning的训练过程性能" style="width:85%; max-width:600px; margin:auto; display:block;">

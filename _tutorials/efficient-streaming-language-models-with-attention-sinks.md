@@ -3,7 +3,6 @@ layout: default
 title: "Efficient Streaming Language Models with Attention Sinks"
 ---
 
-# Efficient Streaming Language Models with Attention Sinks
 
 - **ArXiv URL**: http://arxiv.org/abs/2309.17453v4
 
@@ -13,14 +12,14 @@ title: "Efficient Streaming Language Models with Attention Sinks"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 StreamingLLM 的高效框架，通过保留少量初始 Token 作为“注意力池 (Attention Sinks)”来稳定注意力分布，从而使预训练好的大语言模型无需微调即可处理无限长的流式输入。
 
-# 关键定义
+## 关键定义
 本文提出了一个核心概念来解释其发现的现象：
 *   **注意力池 (Attention Sink)**：指在自回归语言模型中，一小部分初始位置的 Token 会获得不成比例的大量注意力分数，即使这些 Token 在语义上并不重要。这种现象的产生是因为注意力机制中的 Softmax 操作要求所有注意力分数之和为1，模型倾向于将“多余”的注意力分配给一些固定的位置，而初始 Token 因为在自回归训练中对所有后续 Token 可见，最容易被训练成这样的“池子”，以稳定整个注意力分布。移除这些初始 Token 会导致注意力分布剧烈变化，模型性能崩溃。
 
-# 相关工作
+## 相关工作
 当前在长文本处理领域的研究主要集中在三个方向：长度外推、扩展上下文窗口和提升长文本利用率。
 
 现有方法存在明显的瓶颈：
@@ -29,7 +28,7 @@ title: "Efficient Streaming Language Models with Attention Sinks"
 
 因此，当前没有任何一个主流的 LLM 能够直接且高效地部署在需要处理无限长文本的流式应用中。本文旨在解决这一具体问题，即如何在不牺牲性能和效率的前提下，让预训练LLM能够处理无限长的输入。
 
-# 本文方法
+## 本文方法
 ## 注意力池：窗口注意力的失败根源
 传统的窗口注意力 (Window Attention) 方法虽然高效，但性能很差。本文通过实验发现，其性能崩溃的关键节点在于**初始 Token 的键值（KV）缓存被丢弃时**。
 
@@ -80,7 +79,7 @@ title: "Efficient Streaming Language Models with Attention Sinks"
 
 这一发现为未来训练更适合流式部署的 LLM 提供了明确的指导。
 
-# 实验结论
+## 实验结论
 本文通过在 Llama-2、MPT、Falcon 和 Pythia 等多种模型家族上进行的大量实验，验证了 StreamingLLM 的有效性。
 
 *   **长文本稳定性**：StreamingLLM 能够稳定处理长达400万个 Token 的文本，其困惑度保持稳定，与速度缓慢但性能强大的“滑动窗口重计算”基线相当。而传统的密集注意力和窗口注意力方法则在文本变长后性能崩溃。

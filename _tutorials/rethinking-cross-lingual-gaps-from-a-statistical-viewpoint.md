@@ -3,7 +3,6 @@ layout: default
 title: "Rethinking Cross-lingual Gaps from a Statistical Viewpoint"
 ---
 
-# Rethinking Cross-lingual Gaps from a Statistical Viewpoint
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.15551v1
 
@@ -13,10 +12,10 @@ title: "Rethinking Cross-lingual Gaps from a Statistical Viewpoint"
 
 ---
 
-# TL;DR
+## TL;DR
 本文从统计学视角重新审视了大型语言模型的跨语言知识差距问题，提出这一差距主要源于目标语言（target language）响应的方差增大，而非知识传递失败所导致的偏差（bias），并通过创新的偏差-方差分解框架和一系列实验验证了该假设。
 
-# 关键定义
+## 关键定义
 本文的核心在于引入了一个统计框架来解释跨语言差距。关键概念沿用并重定义了统计学中的术语：
 
 1.  **偏差-方差分解 (Bias-Variance Decomposition)**：本文将模型在源语言和目标语言上的响应误差分解为两个部分。
@@ -45,14 +44,14 @@ title: "Rethinking Cross-lingual Gaps from a Statistical Viewpoint"
 
         其中，$\pi$ 代表了差距由方差主导的概率。当 $\pi \to 1$ 时，差距主要由方差引起（均值与源语言一致但更平坦，方差更大）；当 $\pi \to 0$ 时，差距主要由偏差引起（均值 $\vec{\mu}\_b$ 与源语言 $\vec{\mu}\_s$ 不同）。
 
-# 相关工作
+## 相关工作
 当前，大型语言模型（LLMs）在处理跨语言知识密集型任务时，普遍存在所谓的“跨语言差距”（cross-lingual gap），即当查询语言（目标语言）与知识编码的主要语言（源语言，source language）不同时，模型表现会显著下降。
 
 以往的研究普遍将此问题归因于表征层面的不对齐（representation misalignment）。这种观点认为，由于非英语语料在预训练数据中较为稀疏，同一个实体（例如“纳尔逊·曼德拉”和其印地语“नेल्सन मंडेला”）在不同语言中可能被编码成不同的向量，导致知识无法有效泛化和传递。这种“知识碎片化”或“知识壁垒”的解释，本质上是指模型在目标语言中产生了系统性的偏差（bias）。
 
 本文旨在解决的核心问题是：跨语言差距的根本原因究竟是知识未能传递（偏差），还是知识传递了但信心不足（方差）？作者认为，以往的研究忽视了响应方差在其中扮演的关键角色，而区分这两者对于设计有效的缓解策略至关重要。
 
-# 本文方法
+## 本文方法
 本文的核心创新在于提出了一个新颖的统计学视角，即使用偏差-方差分解框架来形式化和诊断跨语言差距的根源。其核心假设是：差距主要由方差（variance）而非偏差（bias）引起。
 
 ### 创新点：偏差-方差分解框架
@@ -83,7 +82,7 @@ title: "Rethinking Cross-lingual Gaps from a Statistical Viewpoint"
 
 这两个推论也为后续的实验验证提供了方向。
 
-# 实验结论
+## 实验结论
 本文通过在 ECLeKTic 和 MMLU (with mixup) 两个基准数据集上，对五种先进的开源和闭源LLM（如Gemini系列、GPT系列、Deepseek）进行了广泛实验，有力地验证了其核心假设。
 
 ### 跨语言差距主要源于方差

@@ -3,7 +3,7 @@ layout: default
 title: "DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models"
 ---
 
-# 斩获IMO/IOI金牌！DeepSeek-V3.2发布，推理比肩Gemini 3.0 Pro
+## 斩获IMO/IOI金牌！DeepSeek-V3.2发布，推理比肩Gemini 3.0 Pro
 
 <img src="/images/2512.02556v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

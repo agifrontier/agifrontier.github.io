@@ -3,7 +3,6 @@ layout: default
 title: "Think Outside the Policy: In-Context Steered Policy Optimization"
 ---
 
-# Think Outside the Policy: In-Context Steered Policy Optimization
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.26519v1
 
@@ -13,10 +12,10 @@ title: "Think Outside the Policy: In-Context Steered Policy Optimization"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为“上下文引导策略优化” (In-Context Steered Policy Optimization, ICPO) 的新型强化学习框架，该框架利用大推理模型 (Large Reasoning Models, LRM) 固有的上下文学习 (In-Context Learning, ICL) 能力，仅通过现有数据集生成专家指导，从而在不依赖更强专家模型的情况下，有效提升模型的探索范围和推理性能。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下对理解论文至关重要的核心概念：
 
 *   **上下文引导策略优化 (In-Context Steered Policy Optimization, ICPO)**: 本文提出的统一强化学习框架。它通过“隐式专家强制”来利用模型的上下文学习能力，生成高质量的探索轨迹，并结合“专家区域拒绝采样”和“退火专家奖励塑造”技术来稳定训练过程，从而提升大推理模型的性能。
@@ -29,14 +28,14 @@ title: "Think Outside the Policy: In-Context Steered Policy Optimization"
 
 *   **组相对策略优化 (Group Relative Policy Optimization, GRPO)**: 本文方法所基于的一种高效的强化学习优化算法。它通过对一批轨迹（一个组）的奖励进行归一化来计算优势函数，避免了使用额外的价值网络，适用于大语言模型。
 
-# 相关工作
+## 相关工作
 当前，利用可验证奖励的强化学习 (Reinforcement Learning from Verifiable Rewards, RLVR) 在提升大推理模型 (LRM) 的复杂推理能力方面取得了显著进展。其中，基于 GRPO 的方法是主流，但其严重依赖于同策略 (on-policy) 采样，即生成的轨迹局限于当前策略的分布，导致探索范围狭窄，轨迹多样性不足，容易陷入局部最优解。
 
 为了解决这一瓶颈，现有研究尝试将监督微调 (Supervised Fine-Tuning, SFT) 与强化学习 (RL) 相结合。一些方法通过交替进行 SFT 和 RL 更新，或将 SFT 数据作为异策略样本融入 RL 训练，来扩展探索空间。然而，这些方法普遍存在一个关键问题：它们通常依赖于由一个更强的“专家”LRM 生成的 SFT 数据。这种依赖不仅带来了高昂的计算成本，而且这些先进的专家模型往往难以获取。
 
 本文旨在解决上述问题，即如何在不依赖外部专家模型的情况下，有效扩大 LRM 在 RL 训练中的探索范围，以提升其推理能力和训练稳定性。
 
-# 本文方法
+## 本文方法
 
 本文提出了一个名为 **ICPO** 的统一强化学习框架，其核心思想是利用模型自身的上下文学习能力来生成专家指导，从而避免了对外部专家模型的依赖。该框架主要包含三个关键组件：隐式专家强制 (IEF)、专家区域拒绝采样 (ERRS) 和退火专家奖励塑造 (RS)。
 
@@ -136,7 +135,7 @@ ICPO 的完整训练流程如下：
     *   执行梯度下降更新模型参数 $\theta$。
 5.  **更新旧策略**: 将 $\pi\_{\theta\_{\text{old}}}$ 更新为 $\pi\_{\theta}$，为下一轮迭代做准备。
 
-# 实验结论
+## 实验结论
 
 实验在 Qwen3-1.7B 和 Qwen3-8B 模型上进行，并与基线方法 GRPO 和 LUFFY (使用外部专家模型) 进行了比较。
 

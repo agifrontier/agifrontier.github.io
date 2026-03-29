@@ -3,7 +3,6 @@ layout: default
 title: "A Survey on LLM-as-a-Judge"
 ---
 
-# A Survey on LLM-as-a-Judge
 
 - **ArXiv URL**: http://arxiv.org/abs/2411.15594v5
 
@@ -13,7 +12,7 @@ title: "A Survey on LLM-as-a-Judge"
 
 ---
 
-# 引言
+## 引言
 
 在众多领域，准确和一致的评估对决策至关重要，但由于固有的主观性、可变性和规模问题，这仍然是一项艰巨的任务。传统评估方法面临一个两难困境：以专家驱动为代表的主观方法虽然全面，但成本高、难扩展且一致性差；而以自动度量（如BLEU、ROUGE）为代表的客观方法虽然可扩展性与一致性强，但往往只关注表面词汇重叠，无法捕捉深层语义，在故事生成等任务上表现不佳。
 
@@ -26,7 +25,7 @@ title: "A Survey on LLM-as-a-Judge"
 <img src="/images/2411.15594v5/x1.jpg" alt="本文的整体框架" style="width:80%; max-width:300px; margin:auto; display:block;">
 **图1: 本文的整体框架**
 
-# 背景与方法
+## 背景与方法
 
 LLM模拟人类推理并根据预定义规则评估特定输入的能力，为“LLM-as-a-Judge”铺平了道路。LLM作为评判者的核心在于利用其评估对象、行为或决策。它涵盖了多种角色，如评分员 (Graders)、评估员 (Evaluators/Assessors)、批评家 (Critics)、验证者 (Verifiers)、考官 (Examiners) 以及奖励/排序模型 (Reward/Ranking Models) 等。
 
@@ -191,7 +190,7 @@ LLM-as-a-Judge在智能体 (Agent) 中的应用主要有两种形式：
 
 整个过程应包含反复的案例测试和优化，通过对比不同模型或提示来验证改进效果。
 
-# 改进策略
+## 改进策略
 
 直接使用LLM进行评估任务时，其固有的偏见（如长度偏见、位置偏见、具体性偏见）会损害评估结果的可靠性。减轻这些偏见并提升LLM的整体评估性能是应用中的关键挑战。本节介绍三种改进策略，分别针对LLM-as-a-Judge正式定义中的三个关键环节：上下文 $$$\mathcal{C}$$$、LLM自身能力 $$$\mathcal{P}\_{\mathcal{LLM}}$$$ 和获取最终结果的后处理 $$$\mathcal{E}$`。
 

@@ -3,7 +3,6 @@ layout: default
 title: "Predicting Task Performance with Context-aware Scaling Laws"
 ---
 
-# Predicting Task Performance with Context-aware Scaling Laws
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.14919v1
 
@@ -13,10 +12,10 @@ title: "Predicting Task Performance with Context-aware Scaling Laws"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一个简洁、可解释的上下文感知缩放定律 (context-aware scaling law) 框架，该框架通过一个函数联合建模了训练计算量和上下文长度，从而能够准确预测和推断大型语言模型在下游任务中的性能。
 
-# 关键定义
+## 关键定义
 本文的核心是提出了一个新的缩放定律函数形式，并沿用了以下关键领域术语：
 
 *   **训练计算量 (Training Compute, $C$)**: 指用于训练模型的总计算资源，通常以 FLOPs (浮点运算次数) 衡量。本文遵循 Kaplan 等人的估算方法，即 $C \approx 6ND$，其中 $N$ 是模型参数量，$D$ 是训练数据集的Token数量。
@@ -36,7 +35,7 @@ title: "Predicting Task Performance with Context-aware Scaling Laws"
 
     其中 $A, C^{c}, \alpha, B, n\_{\text{pmt}}^{c}, \beta$ 是需要优化的参数，$\sigma$ 是一个 sigmoid 惩罚函数。
 
-# 相关工作
+## 相关工作
 传统的神经缩放定律 (neural scaling laws) 已经成功地揭示了上游指标（如交叉熵损失）与模型规模、数据量和计算量之间的关系，极大地指导了大型语言模型（LLMs）的设计。然而，这些定律存在一个关键瓶颈：它们通常无法准确预测模型在下游实际应用任务中的性能，因为下游任务性能不仅受模型本身能力的影响，还严重依赖于推理时提供的上下文 (context)。
 
 现有的一些预测下游性能的工作，要么方法过于复杂、可解释性差（例如，使用多层感知机或依赖上游损失作为中间媒介的两阶段方法），要么完全忽略了上下文长度这一关键变量，只能预测一个平均性能水平。
@@ -45,7 +44,7 @@ title: "Predicting Task Performance with Context-aware Scaling Laws"
 
 本文旨在解决这一问题，即创建一个简单、直接且可解释的框架，能够联合考虑训练计算量和上下文长度，从而更精确地预测 LLM 在不同上下文条件下的下游任务表现。
 
-# 本文方法
+## 本文方法
 本文提出一个函数框架，将下游任务的总体性能 $\mathcal{P}$ 建模为训练计算量 $C$ 和上下文长度 $n\_{\text{pmt}}$ 的函数，并考虑了模型的上下文限制 $n\_{\text{ctx}}$。
 
 ### ## 方法核心
@@ -83,7 +82,7 @@ title: "Predicting Task Performance with Context-aware Scaling Laws"
 ### ## 拟合过程
 对于每个任务，本文收集了不同模型、不同上下文长度下的性能数据点，然后使用一个两阶段优化程序（全局差分进化 + 局部优化）来拟合前述公式中的参数。
 
-# 实验结论
+## 实验结论
 实验结果表明，本文提出的框架能够高度准确地拟合下游任务的实际性能。
 
 ### ## 拟合精度

@@ -3,7 +3,7 @@ layout: default
 title: "LIME: Making LLM Data More Efficient with Linguistic Metadata Embeddings"
 ---
 
-# LIME：给LLM喂点“语法糖”，训练效率飙升56%，推理能力提升38%！
+## LIME：给LLM喂点“语法糖”，训练效率飙升56%，推理能力提升38%！
 
 <img src="/images/2512.07522v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

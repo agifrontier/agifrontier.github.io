@@ -3,7 +3,6 @@ layout: default
 title: "Virtual Agent Economies"
 ---
 
-# Virtual Agent Economies
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.10147v1
 
@@ -13,9 +12,9 @@ title: "Virtual Agent Economies"
 
 ---
 
-# 虚拟智能体经济
+## 虚拟智能体经济
 
-# 引言
+## 引言
 
 随着自主人工智能（AI）智能体的迅速普及，一个全新的经济层面正在崛起。在这个层面中，智能体以超越人类直接监督的规模和速度进行交易与协作。本文提出了“沙盒经济”（sandbox economy）这一框架来分析这个新兴系统，并从两个关键维度对其进行刻画：其起源（自发涌现 vs. 有意设计）以及其与现有的人类经济的分离程度（可渗透 vs. 不可渗透）。
 

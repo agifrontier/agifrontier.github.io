@@ -3,7 +3,6 @@ layout: default
 title: "Kimi k1.5: Scaling Reinforcement Learning with LLMs"
 ---
 
-# Kimi k1.5: Scaling Reinforcement Learning with LLMs
 
 - **ArXiv URL**: http://arxiv.org/abs/2501.12599v4
 
@@ -11,21 +10,21 @@ title: "Kimi k1.5: Scaling Reinforcement Learning with LLMs"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种通过强化学习（RL）扩展大型语言模型（LLM）能力的方法，其核心是利用长上下文（long context）和改进的策略优化算法，构建了一个无需蒙特卡洛树搜索等复杂技术的简化框架，从而在多项推理基准上取得了顶尖性能。
 
-# 关键定义
+## 关键定义
 *   **长思维链 (Long Chain-of-Thought, Long-CoT)**: 本文的核心概念，指模型在长达128k的上下文窗口中生成非常长的、包含规划、评估、反思和探索等复杂认知过程的推理路径。与传统的思维链（CoT）相比，它不仅是步骤的罗列，更是一种在长文本中模拟搜索和试错的隐式规划过程。
 *   **部分 Rollout (Partial Rollout)**: 一种为长上下文强化学习设计的关键训练优化技术。它将长的生成轨迹（rollout）分解成多个片段，在不同的训练迭代中分步完成。这避免了单次生成过长序列带来的高昂计算成本和资源垄断，使得对超长上下文进行强化学习训练成为可能。
 *   **在线策略镜像下降 (Online Policy Mirror Descent)**: 本文采用的核心策略优化算法。它是一种离策略（off-policy）强化学习算法，通过最大化奖励的同时，用相对熵（KL散度）来约束新策略与旧策略（参考策略）之间的距离，从而保证训练的稳定性。
 *   **长文转短文 (Long2short)**: 一种模型压缩或知识蒸馏技术，旨在将强大的长思维链（Long-CoT）模型所具备的复杂推理能力，迁移到一个在推理时仅使用短思维链（Short-CoT）的高效模型中，从而在保证高性能的同时，降低实际部署成本。
 
-# 相关工作
+## 相关工作
 当前，通过下一词元预测（next token prediction）来预训练语言模型是主流方法，但其效果受限于高质量训练数据的数量。强化学习（RL）为持续提升人工智能开辟了一个新方向，它让模型能够通过奖励信号进行探索性学习，从而摆脱对静态数据集的依赖。
 
 然而，以往将RL应用于LLM的工作尚未取得具有竞争力的结果。本文旨在解决这一问题，即如何设计一个有效且可扩展的RL框架，使其能够充分利用LLM的能力，特别是在复杂推理任务上，并且在框架设计上比依赖蒙特卡洛树搜索（MCTS）、价值函数等传统规划算法的方案更为简洁。
 
-# 本文方法
+## 本文方法
 
 本文提出的Kimi k1.5模型的训练流程包含多个阶段：预训练、常规监督微调（SFT）、长思维链监督微调（Long-CoT SFT）以及核心的强化学习（RL）。报告重点阐述了RL阶段。
 
@@ -103,7 +102,7 @@ $${% endraw %}
 
 *   **训练与推理的混合部署**: 为了极致地利用GPU资源，本文设计了一个混合部署框架。该框架利用Kubernetes Sidecar容器，在同一个Pod中同时部署训练框架（Megatron）和推理框架（vLLM）。在RL的训练阶段，GPU用于Megatron；在rollout（推理）阶段，模型权重通过内存高效传递给vLLM执行，训练进程则暂停。这避免了在On-Policy RL中因等待推理而导致的训练GPU闲置问题。
 
-# 实验结论
+## 实验结论
 
 <img src="/images/2501.12599v4/x1.jpg" alt="Kimi k1.5 long-CoT 结果" style="width:85%; max-width:600px; margin:auto; display:block;">
 

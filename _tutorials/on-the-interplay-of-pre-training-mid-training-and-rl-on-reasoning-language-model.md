@@ -3,7 +3,7 @@ layout: default
 title: "On the Interplay of Pre-Training, Mid-Training, and RL on Reasoning Language Models"
 ---
 
-# CMU揭秘大模型推理训练“三部曲”：性能飙升60%的黄金法则
+## CMU揭秘大模型推理训练“三部曲”：性能飙升60%的黄金法则
 
 <img src="/images/2512.07783v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

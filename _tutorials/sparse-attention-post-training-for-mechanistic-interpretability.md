@@ -3,7 +3,7 @@ layout: default
 title: "Sparse Attention Post-Training for Mechanistic Interpretability"
 ---
 
-# 大模型“瘦身”革命：砍掉99.7%注意力连接，内部电路清晰100倍且性能不降！
+## 大模型“瘦身”革命：砍掉99.7%注意力连接，内部电路清晰100倍且性能不降！
 
 <img src="/images/2512.05865v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

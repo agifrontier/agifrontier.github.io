@@ -3,7 +3,6 @@ layout: default
 title: "A Survey of Large Language Models"
 ---
 
-# A Survey of Large Language Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2303.18223v16
 
@@ -13,7 +12,7 @@ title: "A Survey of Large Language Models"
 
 ---
 
-# A Survey of Large Language Models
+## A Survey of Large Language Models
 
 ## 1 引言
 

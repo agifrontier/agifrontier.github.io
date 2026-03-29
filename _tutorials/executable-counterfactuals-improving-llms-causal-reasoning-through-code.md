@@ -3,7 +3,6 @@ layout: default
 title: "Executable Counterfactuals: Improving LLMs' Causal Reasoning Through Code"
 ---
 
-# Executable Counterfactuals: Improving LLMs' Causal Reasoning Through Code
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.01539v1
 
@@ -13,10 +12,10 @@ title: "Executable Counterfactuals: Improving LLMs' Causal Reasoning Through Cod
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一个名为“可执行反事实 (Executable Counterfactuals)”的框架，通过生成需要溯因、干预和预测三个步骤的编程和数学问题，系统地评估和提升大语言模型的反事实推理能力，并实验证明强化学习（RL）比监督微调（SFT）更能实现这种能力的泛化。
 
-# 关键定义
+## 关键定义
 *   **反事实推理 (Counterfactual Reasoning)**: 本文遵循 Pearl 的定义，将其视为一个包含三个核心认知技能的过程：
     1.  **溯因 (Abduction)**：根据已知的行为和观察到的结果，推断系统中存在的潜在、未被观察到的状态或变量。
     2.  **干预 (Intervention)**：在推断出的潜在状态基础上，对系统中的某个变量进行假设性的修改。
@@ -25,7 +24,7 @@ title: "Executable Counterfactuals: Improving LLMs' Causal Reasoning Through Cod
 *   **可执行反事实 (Executable Counterfactuals)**: 本文提出的核心框架。它利用代码或数学问题作为一种可控、可执行的环境来研究反事实推理。由于代码的输出可以被精确计算，这为评估模型的推理能力和为强化学习提供可验证的奖励信号创造了条件。
 *   **基于可验证奖励的强化学习 (RL from Verifiable Reward, RLVR)**: 本文采用的一种训练方法。它不依赖于详细的推理过程标注，而是仅根据最终输出的正确性（即可验证的奖励信号）来优化模型策略。实验证明，该方法在教授可泛化的反事实推理技能方面非常有效。
 
-# 相关工作
+## 相关工作
 目前，反事实推理被公认为是大型语言模型（LLMs）的一个显著弱点。然而，现有的评估方法存在两大瓶颈：
 1.  **任务过于简化**：许多基准虽然在语言上看似是反事实问题，但实际上由于提供了所有信息（即没有潜在变量），任务被简化为干预推理。模型只需改变输入并进行一次新的前向推理即可解决，无需进行“溯因”这一核心步骤。这导致对模型真实能力的高估。
 2.  **任务脱离实际**：一些基于合成因果图的基准虽然理论上很严谨，但与现实世界的问题solving场景相去甚远，并且可能需要专门的因果推理知识（如do-calculus），使得难以准确定位模型失败的根源。
@@ -34,7 +33,7 @@ title: "Executable Counterfactuals: Improving LLMs' Causal Reasoning Through Cod
 *   **明确区分反事实推理与干预推理**，强制模型必须执行“溯因-干预-预测”的完整认知过程。
 *   **提供可扩展、可验证且复杂度可控的测试环境**，以便对模型的推理能力进行细粒度分析，并为模型改进提供有效的训练数据。
 
-# 本文方法
+## 本文方法
 本文的核心思想是利用可执行的代码和数学问题，构建一个需要完整反事实推理链条才能解决的任务环境。
 
 ### 可执行反事实：代码
@@ -74,7 +73,7 @@ title: "Executable Counterfactuals: Improving LLMs' Causal Reasoning Through Cod
 ### 可执行反事实：数学
 为了测试模型能否将从代码中学到的推理技能泛化到自然语言领域，本文还构建了一个反事实数学问题数据集。这些问题类似于 GSM-8K 风格的应用题，但在问题描述中巧妙地隐藏了一个关键变量（如一笔未言明的服务费、每件商品的额外成本等）。模型必须首先根据题目给出的总数等信息，通过溯因推理找出这个隐藏变量的值，然后才能回答关于假设情境的问题。
 
-# 实验结论
+## 实验结论
 
 ### LLM在反事实推理上表现薄弱
 实验比较了多种先进LLM在本文框架下的反事实任务与其对应的干预任务上的表现。结果显示，即便是推理能力很强的模型（如 Qwen-32B），在能够轻松解决干预任务（已知隐藏变量）的同时，在反事实任务上的表现却大幅下滑（通常下降超过一半）。这证明了当前LLM的瓶颈确实在于“溯因”这一环节。

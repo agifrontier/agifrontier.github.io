@@ -3,7 +3,6 @@ layout: default
 title: "A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning, Hallucination, and Interactivity"
 ---
 
-# A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning, Hallucination, and Interactivity
 
 - **ArXiv URL**: http://arxiv.org/abs/2302.04023v4
 
@@ -13,10 +12,10 @@ title: "A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一个全面的评估框架，对ChatGPT在多任务、多语言、多模态、推理、幻觉和交互性方面进行了系统的量化评估，揭示了其在多数零样本任务上的卓越表现，同时也指出了其在低资源语言、复杂推理和事实性方面的显著局限。
 
-# 关键定义
+## 关键定义
 本文主要沿用现有概念，但为评估框架明确了以下关键分类和定义：
 
 *   **语言资源类别 (Language Resource Categories)**：根据语言在 CommonCrawl 数据集中的占比，将语言分为四类，用于评估多语言能力：
@@ -28,12 +27,12 @@ title: "A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning
 *   **代码作为中间媒介 (Code as Intermediate Medium)**：一种评估纯文本模型多模态能力的方法。通过提示ChatGPT生成可渲染的代码（如SVG），将文本描述转化为视觉图像，从而间接测试其视觉理解和生成能力。
 *   **幻觉 (Hallucination)**：沿用通用定义，指模型生成不基于源文本或不符合事实的信息。本文特别关注两种类型：**内在幻觉 (intrinsic hallucination)**（与源内容矛盾）和**外在幻觉 (extrinsic hallucination)**（无法从源内容验证，可能是事实或非事实）。
 
-# 相关工作
+## 相关工作
 尽管ChatGPT广受欢迎，并展现出强大的能力，但其真实的性能边界和具体局限性在论文发表初期（2023年2月）并不清晰，大多依赖于零散的坊间案例。当时，OpenAI并未发布其官方基准测试结果，而现有的大型语言模型 (Large Language Model, LLM) 已知存在幻觉、在低资源语言上表现不佳、推理能力欠缺等问题。
 
 因此，本文旨在解决**缺乏对ChatGPT进行系统性、量化、第三方评估**这一问题。研究者们提出了一套全面的评估框架，使用公开可用的标准测试集，旨在为学术界和普通用户提供一个关于ChatGPT在各项任务中能做什么、不能做什么的清晰画像。
 
-# 本文方法
+## 本文方法
 本文的核心是一种覆盖多维度能力的综合评估框架。通过在23个公开数据集上进行实验，系统性地探究了ChatGPT的能力边界。
 
 ## 多任务、多语言、多模态评估
@@ -163,7 +162,7 @@ title: "A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning
 *   **多语言能力**：在极低资源语言的识别和机器翻译方面优于ChatGPT。
 *   **推理能力**：常识推理能力与ChatGPT接近，但在归纳、数学、多跳、时序和空间推理方面均有显著提升。
 
-# 实验结论
+## 实验结论
 本文通过一个全面的评估框架，对ChatGPT的能力进行了深入的量化分析，得出了以下核心结论：
 *   **优势**：
     *   **强大的零样本学习器**：在广泛的NLP任务中，其零样本性能优于之前的SOTA LLM，在某些任务上甚至能与完全微调的模型相媲美。

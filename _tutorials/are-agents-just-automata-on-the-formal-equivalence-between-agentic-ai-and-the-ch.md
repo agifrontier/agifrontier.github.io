@@ -3,7 +3,6 @@ layout: default
 title: "Are Agents Just Automata? On the Formal Equivalence Between Agentic AI and the Chomsky Hierarchy"
 ---
 
-# Are Agents Just Automata? On the Formal Equivalence Between Agentic AI and the Chomsky Hierarchy
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.23487v1
 
@@ -13,24 +12,24 @@ title: "Are Agents Just Automata? On the Formal Equivalence Between Agentic AI a
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过将智能体（Agent）的内存架构与乔姆斯基层级（Chomsky hierarchy）中的抽象机进行类比，建立了一套形式化等价框架，指出智能体的计算能力和可验证性由其内存类型（无内存、堆栈、无限读写内存）决定，从而为设计更高效、更安全的智能体系统提供了理论基础和工程指导。
 
-# 关键定义
+## 关键定义
 *   **正则智能体 (Regular Agent)**：一种计算能力等同于有限自动机 (Finite Automaton, FA) 的智能体。它只拥有有限且大小恒定的内存，其行为完全由在一个预定义的、有限状态图中的位置决定。
 *   **上下文无关智能体 (Context-Free Agent)**：一种计算能力等同于下推自动机 (Pushdown Automaton, PDA) 的智能体。它在有限状态控制的基础上，增加了一个堆栈（后进先出 LIFO 内存），使其能够管理和执行层级化的嵌套任务。
 *   **图灵完备智能体 (TC Agent)**：一种计算能力等同于图灵机 (Turing Machine, TM) 的智能体。它能够访问一个无界的、可任意读写的内存（如“草稿纸”），这使其具备通用计算能力。
 *   **适当规模化 (Right-Sizing)**：本文提出的核心工程原则，指在设计智能体时，应选择能够完成任务的、计算能力最弱的架构类别。目的是为了优化效率、降低成本，并尽可能地保留系统的可预测性和可验证性。
 *   **智能体接受 (Agent Acceptance)**：定义当一个智能体的执行轨迹到达某个终结状态时，即认为该轨迹被“接受”。此定义与任务本身的成功与否无关，其目的是为了将智能体的行为形式化为语言接受问题，从而与自动机理论建立联系。
 
-# 相关工作
+## 相关工作
 当前，主流的智能体AI系统，如 ReAct 和 StateFlow，通常围绕一个“感知-规划-行动”(Sense-Plan-Act) 循环构建，并利用大语言模型 (LLM) 作为其决策核心。这些系统本质上是状态转移机器。尽管已有研究将模型检查 (model-checking)、线性时序逻辑 (Linear Temporal Logic, LTL) 等形式化方法应用于AI系统以增强其可靠性，但整个领域仍存在一个关键瓶颈。
 
 目前缺乏一个统一的理论框架，来根据智能体的计算能力对其进行分类。这导致在设计上倾向于采用默认的“一刀切”模式，即赋予智能体图灵完备 (Turing-complete, TC) 的能力，即使任务本身远不需要如此高的复杂度。这种做法不仅导致系统效率低下、成本高昂，更严重的是，由于其理论上的不可判定性 (undecidability)，使得对智能体行为的形式化验证变得极为困难甚至不可能。
 
 本文旨在解决这一问题，通过建立智能体架构与其底层计算模型之间的形式化联系，为智能体设计提供一种更具原则性的方法。
 
-# 本文方法
+## 本文方法
 本文的核心思想是：一个AI智能体的计算能力、可验证性和行为边界，从根本上是由其**内存架构**决定的。基于此，本文通过将不同内存复杂度的智能体映射到乔姆斯基层级中对应的自动机，构建了一个形式化的分类框架。
 
 ### 分类体系
@@ -71,7 +70,7 @@ title: "Are Agents Just Automata? On the Formal Equivalence Between Agentic AI a
 
 ![智能体框架与计算类别的映射](https://github.com/mialun/automata-agents/blob/main/figs/table.png?raw=true)
 
-# 实验结论
+## 实验结论
 本文是一篇理论研究，未包含传统的数值实验，其结论是基于形式化推导和理论分析得出的。
 
 *   **核心结论**：通过将智能体架构与自动机理论联系起来，本文为AI安全和验证领域引入了计算理论中一个清晰的边界：可判定性与不可判定性。

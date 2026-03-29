@@ -3,7 +3,7 @@ layout: default
 title: "Generative Early Stage Ranking"
 ---
 
-# Meta重塑推荐系统：GESR用“混合注意力”打破双塔模型瓶颈，性能大涨延迟仅增10%
+## Meta重塑推荐系统：GESR用“混合注意力”打破双塔模型瓶颈，性能大涨延迟仅增10%
 
 <img src="/images/2511.21095v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
 

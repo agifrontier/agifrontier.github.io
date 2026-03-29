@@ -3,7 +3,7 @@ layout: default
 title: "The Missing Layer of AGI: From Pattern Alchemy to Coordination Physics"
 ---
 
-# 反驳“LLM死路论”！斯坦福提出AGI“缺失层”，用一个公式定义通往AGI之路
+## 反驳“LLM死路论”！斯坦福提出AGI“缺失层”，用一个公式定义通往AGI之路
 
 <img src="/images/2512.05765v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

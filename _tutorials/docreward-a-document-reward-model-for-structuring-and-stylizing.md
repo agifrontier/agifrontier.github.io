@@ -3,7 +3,6 @@ layout: default
 title: "DocReward: A Document Reward Model for Structuring and Stylizing"
 ---
 
-# DocReward: A Document Reward Model for Structuring and Stylizing
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.11391v1
 
@@ -13,10 +12,10 @@ title: "DocReward: A Document Reward Model for Structuring and Stylizing"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 DocReward 的文档奖励模型，它通过在一个包含117K对文档的大规模数据集上学习，专门用于评估文档的结构和风格专业性，并在该任务上显著优于 GPT-5 等强大的基线模型。
 
-# 关键定义
+## 关键定义
 本文提出或使用的核心概念包括：
 
 *   **DocReward**: 本文提出的核心模型，一个文档奖励模型 (Document Reward Model)，专门用于评估文档的结构和风格专业性，而非文本内容的质量。
@@ -26,14 +25,14 @@ title: "DocReward: A Document Reward Model for Structuring and Stylizing"
     *   **结构 (Structure)**: 合理使用空白、适当的页边距、清晰的章节分隔、良好的文本对齐、足够的段落间距、正确的缩进、包含页眉页脚以及内容的逻辑连贯组织。
     *   **风格 (Style)**: 恰当的字体选择（类型、大小、颜色、可读性）、清晰的标题样式、强调（粗体、斜体）的有效使用、项目符号、编号以及格式的一致性。
 
-# 相关工作
+## 相关工作
 目前，在智能体工作流 (agentic workflows) 中，自动化专业文档生成是一个重要方向。然而，现有研究主要集中在提升文本内容的质量上，而忽略了对可读性和专业性至关重要的视觉结构与风格。
 
 领域内的关键瓶颈在于，缺乏一个合适的奖励模型来指导智能体生成在结构和风格上更专业的文档。虽然已有针对图形设计、UI界面或单张图片的美学评估模型，但它们不适用于多页文档；而传统的文档AI模型（如LayoutLM）主要关注从文档中提取信息，而非评估其排版质量。
 
 因此，本文旨在解决的核心问题是：**如何量化评估文档的结构与风格专业性，并创建一个能有效指导文档生成智能体的奖励模型。**
 
-# 本文方法
+## 本文方法
 本文提出了 DocReward，一个专注于评估文档结构与风格专业性的奖励模型。其核心在于构建了一个高质量的偏好数据集 $$DocStruct-117K$$，并基于此训练模型进行评分。
 
 ### 数据集构建 (DocStruct-117K)
@@ -82,7 +81,7 @@ $${% endraw %}
 *   **数据驱动的方法**: 通过构建大规模、内容一致、形式多样的偏好数据集 $$DocStruct-117K$$，使模型能够以数据驱动的方式学习到专业的排版规范，实现了“文本质量无关性”。
 *   **Pointwise评分模型**: 最终训练出的 DocReward 是一个 pointwise 模型，即为单个文档打分。这避免了 pairwise 比较模型中常见的“位置偏见”（即模型倾向于选择呈现在第二个位置的选项）问题，评估结果更稳定可靠。
 
-# 实验结论
+## 实验结论
 本文通过内部和外部评估，全面验证了 DocReward 的有效性。
 
 ### 内部评估：准确性超越强基线

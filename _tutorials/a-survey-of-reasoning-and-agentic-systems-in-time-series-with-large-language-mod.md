@@ -3,7 +3,6 @@ layout: default
 title: "A Survey of Reasoning and Agentic Systems in Time Series with Large Language Models"
 ---
 
-# A Survey of Reasoning and Agentic Systems in Time Series with Large Language Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.11575v1
 
@@ -13,7 +12,7 @@ title: "A Survey of Reasoning and Agentic Systems in Time Series with Large Lang
 
 ---
 
-# 引言
+## 引言
 
 时间序列数据在金融、医疗、能源等领域无处不在，推动了监控、预测和决策等关键应用的发展。然而，许多新兴应用如个性化医疗、自适应风险管理等，要求模型不仅能预测，还能解释其输出、进行因果推理和决策。这突显了时间序列分析对结构化和可靠推理能力的迫切需求。
 
@@ -27,7 +26,7 @@ title: "A Survey of Reasoning and Agentic Systems in Time Series with Large Lang
 
 <img src="/images/2509.11575v1/x1.jpg" alt="论文分类体系概览" style="width:90%; max-width:700px; margin:auto; display:block;">
 
-# 背景与分类体系
+## 背景与分类体系
 
 ### 时间序列推理的定义
 
@@ -130,7 +129,7 @@ title: "A Survey of Reasoning and Agentic Systems in Time Series with Large Lang
 *   **强化或偏好对齐 (Reinforcement or preference alignment)**：使用基于反馈的目标（如RLHF）来调整模型。
 *   **混合方法 (Hybrid approaches)**：结合监督微调和强化/偏好对齐。
 
-# 直接推理
+## 直接推理
 
 直接推理是分类体系中最基本的推理拓扑。在此设置中，模型在单一步骤内将时间序列输入直接映射到输出，而不生成或暴露任何中间推理轨迹。这种方法虽然简单高效，但在可解释性和处理复杂任务方面能力有限。尽管如此，它在近期工作中仍被广泛采用，尤其是在直接的预测、异常检测或描述性问答任务中。
 
@@ -209,7 +208,7 @@ title: "A Survey of Reasoning and Agentic Systems in Time Series with Large Lang
 *   **信息源**: **多模态输入相当普遍**，例如将时间序列与文本、图像或视频结合。知识访问则**几乎不存在**。
 *   **LLM对齐机制**: **仅提示**和**监督微调**都被广泛采用。没有出现仅强化学习或混合对齐的机制。
 
-# 线性链式推理
+## 线性链式推理
 
 线性链式推理表示执行过程遵循一个**单一、有序的步骤序列**，并且在轨迹中没有分支。模型可以显式分解任务、调用一次工具或检索，并可选地执行一次性的验证，但它不会维护多个并发的假设或进行“批判-修正”的迭代循环。这种拓扑结构在保留直接推理大部分简单性的同时，增加了一些温和的结构，可以改善基础和数值稳定性，同时仍然避免了分支结构系统的延迟和复杂性。
 

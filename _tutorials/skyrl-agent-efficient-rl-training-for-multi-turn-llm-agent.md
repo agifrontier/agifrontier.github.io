@@ -3,7 +3,7 @@ layout: default
 title: "SkyRL-Agent: Efficient RL Training for Multi-turn LLM Agent"
 ---
 
-# AI Agent训练成本减半！SkyRL-Agent框架揭秘1.55倍加速秘诀
+## AI Agent训练成本减半！SkyRL-Agent框架揭秘1.55倍加速秘诀
 
 <img src="/images/2511.16108v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

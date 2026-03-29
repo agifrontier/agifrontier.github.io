@@ -3,7 +3,6 @@ layout: default
 title: "Spotlight Attention: Towards Efficient LLM Generation via Non-linear Hashing-based KV Cache Retrieval"
 ---
 
-# Spotlight Attention: Towards Efficient LLM Generation via Non-linear Hashing-based KV Cache Retrieval
 
 - **ArXiv URL**: http://arxiv.org/abs/2508.19740v1
 
@@ -13,15 +12,15 @@ title: "Spotlight Attention: Towards Efficient LLM Generation via Non-linear Has
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出Spotlight Attention，一种通过可学习的非线性哈希函数来高效检索KV缓存（Key-Value Cache）的方法，从而在几乎不损失性能的前提下，显著提升大语言模型（LLM）的推理速度。
 
-# 关键定义
+## 关键定义
 *   **Spotlight Attention**: 本文提出的一种新型注意力机制。它不计算所有token的注意力，而是使用一个基于多层感知机（MLP）的非线性哈SHI函数，将查询（query）和键（key）编码成紧凑的二进制哈希码，通过计算哈希码之间的汉明距离快速检索出最重要的top-k个键值对，仅对这些选中的键值对进行注意力计算，从而大幅提升效率。
 *   **MLP Hashing**: Spotlight Attention的核心技术。它使用一个小型两层MLP替代传统方法中的线性投影，来生成哈希码。这种非线性变换能更好地拟合LLM中查询（Query）和键（Key）在高维空间中独特的“锥形分布”，从而用更短的哈希码实现更高的检索精度。
 *   **Bradley-Terry Ranking Loss**: 一种为优化MLP哈希函数而设计的排序损失函数。其目标并非精确重建原始注意力分数，而是确保基于哈希码估计出的top-k个token与真实注意力分数选出的top-k个token尽可能一致。具体而言，它只惩罚“非top-k”的token得分高于“top-k”的token得分的情况，从而将模型的学习能力集中在区分重要与非重要token上，而非不必要的内部排序。
 
-# 相关工作
+## 相关工作
 当前大型语言模型推理的主要瓶颈在于处理和存取巨大的键值缓存（KV Cache）。为了解决此问题，研究主要分为三类：
 1.  **静态KV缓存剪枝**：在推理前一次性压缩KV缓存。这类方法如FastGen和SnapKV，适用于长提示（prompt）短生成的场景，但无法应对需要持续生成长文本的任务。
 2.  **带永久驱逐的动态剪枝**：在解码过程中动态剪枝，并永久删除被认为不重要的token。这类方法如H2O，虽然灵活，但可能过早丢弃后续步骤中会变得重要的token，导致在长依赖任务中性能下降。
@@ -32,7 +31,7 @@ title: "Spotlight Attention: Towards Efficient LLM Generation via Non-linear Has
 <img src="/images/2508.19740v1/x1.jpg" alt="模型概览" style="width:90%; max-width:700px; margin:auto; display:block;">
 **图1：概览** (左) Spotlight Attention在标准注意力机制基础上，为每一层增加了一个基于哈希码的检索模块。(中) 在问答数据集上，Spotlight Attention实现了最精确的检索，生成了与原始模型最接近的响应。(右) 即使面对任意复杂的注意力模式，本文方法也能很好地估计top-k序列。
 
-# 本文方法
+## 本文方法
 本文方法Spotlight Attention的核心在于用一个经过优化的非线性哈希函数来代替现有方法中的线性哈希，以实现更高效准确的KV缓存检索。
 
 ### 创新点：非线性MLP哈希
@@ -76,7 +75,7 @@ $${% endraw %}
 <img src="/images/2508.19740v1/x6.jpg" alt="优化方法对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 **图3：优化** (左) 重建损失最小化估计与真实注意力得分之间的MSE，但对分数大小敏感且易受离群值影响，并浪费模型容量。(右) 本文提出的排序损失采用Bradley–Terry排序目标，对分数大小和离群值鲁棒，且仅专注于区分top-k和非top-k集合，监督更有效。
 
-# 实验结论
+## 实验结论
 实验在LLaMA、Qwen2.5等多个模型上验证了Spotlight Attention的性能和效率。
 
 ### 关键结果

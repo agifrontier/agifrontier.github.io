@@ -3,7 +3,7 @@ layout: default
 title: "A Systematic Study of Model Merging Techniques in Large Language Models"
 ---
 
-# 大模型融合实测：6种先进方法惨败，竟不敌最简单的“加减法”？
+## 大模型融合实测：6种先进方法惨败，竟不敌最简单的“加减法”？
 
 <img src="/images/2511.21437v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

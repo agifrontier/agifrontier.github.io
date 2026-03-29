@@ -3,7 +3,6 @@ layout: default
 title: "Do Not Step Into the Same River Twice: Learning to Reason from Trial and Error"
 ---
 
-# Do Not Step Into the Same River Twice: Learning to Reason from Trial and Error
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.26109v1
 
@@ -13,22 +12,22 @@ title: "Do Not Step Into the Same River Twice: Learning to Reason from Trial and
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 LTE（Learning to reason from Trial and Error） 的方法，通过利用大语言模型（LLM）自身在推理失败时产生的错误答案作为提示信息，来克服强化学习中的探索停滞问题，从而无需任何外部专家指导即可提升模型的推理能力。
 
-# 关键定义
+## 关键定义
 *   **可验证奖励的强化学习 (Reinforcement Learning with Verifiable Rewards, RLVR)**：一种面向大语言模型后训练的新兴强化学习范式。在该框架下，模型响应的正确性可以被自动、客观地验证，从而自动给予奖励信号，特别适用于数学推理等任务。
 *   **探索停滞 (Exploration Stagnation)**：现有 RLVR 方法的一个核心瓶颈。当模型对于某个难题的所有尝试（rollouts）都失败时，它收到的奖励均为零，导致梯度也为零，从而无法从该样本中学习，其能力被自身的初始水平所限制，无法攻克更难的问题。
 *   **LTE (Learning to reason from Trial and Error)**：本文提出的核心方法。它旨在解决探索停滞问题。对于模型完全无法解决的难题（即所有尝试都失败的样本），LTE 会收集这些失败尝试中产生的错误答案，并将这些错误答案作为“提示”信息融入到新的输入中，引导模型进行额外的尝试，从而提高找到正确解的概率。
 
-# 相关工作
+## 相关工作
 目前，利用可验证奖励的强化学习（RLVR）是提升大语言模型（LLM）推理能力的主流技术。然而，现有的 RLVR 方法大多依赖模型自身的策略进行探索（on-policy），这导致了一个严重的瓶颈：**探索停滞**。具体来说，如果一个训练问题超出了模型当前的能力上限，模型的所有尝试都会失败，从而获得零奖励。在这种情况下，如 GRPO 等标准优化算法的梯度会变为零，模型无法从这些高难度的失败样本中获得任何有效的学习信号，其能力提升因此陷入停滞。
 
 为了打破这一瓶颈，一些研究工作尝试引入外部指导，例如使用人类标注的正确解题步骤或更强模型的输出。但这些方法要么成本高昂、难以扩展，要么在训练顶级模型时（不存在更强的模型）不可行。
 
 本文旨在解决上述探索停滞问题，但其核心目标是**在不依赖任何外部专家（无论是人类还是更强的模型）指导的情况下**，仅凭模型自身的“试错”经验来突破能力上限。
 
-# 本文方法
+## 本文方法
 本文提出的 LTE (Learning to reason from Trial and Error) 框架旨在利用模型自身的失败经验来克服探索停滞。其核心思想是：当模型对一个问题的所有尝试都失败时，不应白白浪费这些计算，而应从中提取信息，以指导后续的探索。
 
 <img src="/images/2510.26109v1/x1.jpg" alt="LTE 框架图" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -101,7 +100,7 @@ $$`$$
 *   **信息利用高效**：将失败的探索从“无用功”转化为有价值的“负向指导”，比简单增加探索次数更有效率。
 *   **兼顾探索与利用**：不仅解决了难题，提高了模型的利用能力（exploitation），实验还证明它能提升模型的探索上界（exploration）。
 
-# 实验结论
+## 实验结论
 本文在 Qwen3-4B-Base 和 Qwen3-8B-Base 模型上，针对六个数学推理基准进行了实验。
 
 ### 核心结果

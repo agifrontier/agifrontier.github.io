@@ -3,7 +3,6 @@ layout: default
 title: "Students' Voices on Generative AI: Perceptions, Benefits, and Challenges in Higher Education"
 ---
 
-# Students' Voices on Generative AI: Perceptions, Benefits, and Challenges in Higher Education
 
 - **ArXiv URL**: http://arxiv.org/abs/2305.00290v1
 
@@ -13,17 +12,17 @@ title: "Students' Voices on Generative AI: Perceptions, Benefits, and Challenges
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过对香港399名大学生的问卷调查，揭示了学生对生成式AI（如ChatGPT）普遍持积极态度，认可其在个性化学习、写作和研究方面的潜力，但同时也对技术的准确性、隐私伦理、对个人能力发展和未来职业的冲击表示了显著担忧。
 
-# 关键定义
+## 关键定义
 本文沿用了领域内的关键定义，并围绕它们展开研究：
 *   **生成式人工智能 (Generative AI, GenAI)**: 一类机器学习算法，旨在生成模仿现有数据集的全新数据样本。GenAI模型利用先进算法学习模式并生成新内容，如文本、图像、声音、视频和代码。
 *   **变分自编码器 (Variational Autoencoder, VAE)**: GenAI的一种基础技术，它是一种神经网络，能够以保持数据本质特征的方式学习对数据进行编码和解码。
 *   **生成对抗网络 (Generative Adversarial Networks, GANs)**: 另一种流行的GenAI方法，由两个相互竞争的神经网络组成，以生成逼真的数据样本。
 *   **3P模型 (3P Model)**: 由John Biggs提出的教学理论模型，包含三个阶段：**前导 (Presage)**、**过程 (Process)** 和 **结果 (Product)**。该模型强调，学生对学习环境的感知（前导因素）会显著影响其学习方法（过程因素），并最终影响学习成果（结果因素）。本文利用此模型来强调理解学生对GenAI感知的重要性。
 
-# 相关工作
+## 相关工作
 领域内已有研究探讨了AI在高等教育中的应用，普遍认可其在提升学习体验、辅助写作和研究方面的潜力，例如作为智能家教、提供即时反馈、综合信息等。然而，这些研究也揭示了一系列挑战，包括AI生成内容的准确性问题、固有的偏见、对学术诚信的威胁（如抄袭）、以及可能削弱学生批判性思维和写作能力等风险。
 
 尽管已有关于通用AI或传统聊天机器人的研究，但专门针对新兴的生成式AI（GenAI）的学生感知研究相对不足。本文旨在填补这一空白，具体解决以下三个研究问题：
@@ -31,7 +30,7 @@ title: "Students' Voices on Generative AI: Perceptions, Benefits, and Challenges
 2.  从学生的视角看，在教与学中使用GenAI存在哪些潜在的好处与挑战？
 3.  如何才能有效地将GenAI整合到高等教育中，以提升教学成果？
 
-# 本文方法
+## 本文方法
 本文采用了一项问卷调查研究，以收集香港大学生关于在教学中使用GenAI的看法和使用情况。
 
 ### 研究设计与数据收集
@@ -67,7 +66,7 @@ title: "Students' Voices on Generative AI: Perceptions, Benefits, and Challenges
 *   **定量分析**：对封闭式问题的回答数据进行了描述性统计分析，以了解学生知识、意愿和担忧的总体分布情况。
 *   **定性分析**：对开放式问题的文本回复采用了主题分析 (thematic analysis) 的方法，以深入挖掘学生愿意或担忧使用GenAI背后的具体原因。
 
-# 实验结论
+## 实验结论
 研究结果揭示了学生对GenAI复杂而矛盾的看法，既有热情也存在担忧。
 
 ### 主要量化发现

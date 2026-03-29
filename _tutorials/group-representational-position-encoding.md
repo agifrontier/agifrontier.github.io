@@ -3,7 +3,7 @@ layout: default
 title: "Group Representational Position Encoding"
 ---
 
-# 群表示位置编码（GRAPE）：统一RoPE与ALiBi的理论框架
+## 群表示位置编码（GRAPE）：统一RoPE与ALiBi的理论框架
 
 <img src="/images/2512.07805v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

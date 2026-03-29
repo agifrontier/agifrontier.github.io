@@ -3,7 +3,6 @@ layout: default
 title: "Generative AI"
 ---
 
-# Generative AI
 
 - **ArXiv URL**: http://arxiv.org/abs/2309.07930v1
 
@@ -13,9 +12,9 @@ title: "Generative AI"
 
 ---
 
-# Generative AI
+## Generative AI
 
-# 概念化
+## 概念化
 
 ## 生成式AI的数学原理
 
@@ -95,7 +94,7 @@ title: "Generative AI"
 *   **混合智能的重构**：生成式AI的共创能力正在改变我们对混合智能（结合人类与AI优势）的理解。需要新的人机交互模型来指导人和AI系统的行为。
 *   **心智理论与人造心智理论**：心理学中的心智理论 (Theory of Mind) 描述了人类理解他人意图和情感的能力。随着AI交互日益自然，人类也需要一个**“人造心智理论” (theory of the artificial mind)**，来解释和预测AI系统的行为逻辑，从而更好地与之协作。
 
-# 当前生成式AI的局限性
+## 当前生成式AI的局限性
 
 本文指出了当前生成式AI在模型层面存在的四个主要技术局限性，这些局限性可能长期存在，并对系统和应用层面产生影响。
 
@@ -107,7 +106,7 @@ title: "Generative AI"
 
 4.  **环境问题 (Environmental concerns)**：训练和运行大规模神经网络（如GPT-3）需要消耗巨大的电力，产生大量的碳足迹。例如，训练GPT-3的碳排放量相当于几十个家庭一年的排放量。这促使AI研究社区寻求更高效的训练算法、模型压缩技术和优化的硬件来减少对环境的影响。
 
-# 对BISE社区的启示与未来方向
+## 对BISE社区的启示与未来方向
 
 生成式AI为商业与信息系统工程 (Business & Information Systems Engineering, BISE) 领域带来了大量研究机遇和挑战。下表列举了部分研究问题。
 

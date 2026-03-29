@@ -3,7 +3,7 @@ layout: default
 title: "AI4X Roadmap: Artificial Intelligence for the advancement of scientific pursuit and its future directions"
 ---
 
-# 诺奖得主领衔！AI4X路线图发布：AI如何重塑8大前沿科学的未来？
+## 诺奖得主领衔！AI4X路线图发布：AI如何重塑8大前沿科学的未来？
 
 当AI的能力已经从理解语言、生成图像，延伸到预测蛋白质结构时，一个更宏大的问题摆在了我们面前：AI能否成为加速所有科学领域发现的通用引擎？
 

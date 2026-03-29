@@ -3,7 +3,6 @@ layout: default
 title: "Agentic Software Engineering: Foundational Pillars and a Research Roadmap"
 ---
 
-# Agentic Software Engineering: Foundational Pillars and a Research Roadmap
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.06216v1
 
@@ -13,9 +12,9 @@ title: "Agentic Software Engineering: Foundational Pillars and a Research Roadma
 
 ---
 
-# 结构化智能体软件工程（SASE）：基本支柱与研究路线图
+## 结构化智能体软件工程（SASE）：基本支柱与研究路线图
 
-# 1. 引言
+## 1. 引言
 
 随着能够编写、测试和提交代码的强大自主智能体（AI teammates）的出现，软件工程（Software Engineering, SE）领域已从AI增强开发时代（SE 2.0）迈入了更强大的**智能体软件工程（Agentic Software Engineering, SE 3.0）**时代。然而，尽管智能体的生产力惊人，但其产出的代码在真正达到“可合并”（merge-ready）的质量标准方面仍存在“速度与信任”的鸿沟，这导致人类开发者在审核环节不堪重负。
 
@@ -31,7 +30,7 @@ title: "Agentic Software Engineering: Foundational Pillars and a Research Roadma
 
 人类与智能体之间的交互不再是临时的聊天，而是通过一系列版本化的、机器可读的结构化产物进行的结构化对话，如人类编写的 $$BriefingScript$$（任务计划）、$$LoopScript$$（工作流手册）和 $$MentorScript$$（最佳实践指南），以及智能体生成的 $$Consultation Request Packs (CRPs)$$（咨询请求包）和 $$Merge-Readiness Packs (MRPs)$$（合并就绪包）。本文旨在提供一个概念框架，激发社区对SE未来的广泛讨论，并最终提出一个研究路线图。
 
-# 2. 从“代理”到“自主”：AI在软件工程中的分层框架
+## 2. 从“代理”到“自主”：AI在软件工程中的分层框架
 
 为了在更广阔的视野中定位SASE，本文提出了一个类似于汽车行业自动驾驶SAE等级的AI能力分层框架。该框架首先区分了两个核心概念：**代理（Agency）**，即系统为实现给定目标而行动和执行计划的能力；以及**自主（Autonomy）**，即系统自我管理并独立制定目标的能力。
 
@@ -67,7 +66,7 @@ title: "Agentic Software Engineering: Foundational Pillars and a Research Roadma
 
 本文提出的SASE愿景专注于成功驾驭SE 3.0（即智能体SE）时代所需的产物、流程和工具，因为这是当前行业面临的最紧迫的挑战。
 
-# 3. 智能体软件工程的兴起
+## 3. 智能体软件工程的兴起
 
 ### 3.1 工业相关性
 软件工程已成为展示生成式AI投资回报率（ROI）的主要试验场。这得益于几个因素的独特融合：
@@ -95,7 +94,7 @@ title: "Agentic Software Engineering: Foundational Pillars and a Research Roadma
 ### 3.4 GitHub数据中的野外智能体解决方案简述
 大规模开源活动分析证实，智能体正重塑开发工作流。GitHub Copilot完成一个拉取请求（pull request）的中位时间仅为13.2分钟。不同智能体在不同任务类型上表现出高接受率。然而，这种超高生产力也带来了严峻挑战：代码审查成为主要瓶颈，超过68%的智能体生成PR面临长时间延迟或无人审查。这凸显了对可扩展审查自动化的迫切需求。
 
-# 4. 激励性示例：智能体软件工程工作流剖析
+## 4. 激励性示例：智能体软件工程工作流剖析
 
 本文通过一个具体例子来展示智能体SE时代的机遇与挑战：一名开发者在1.5小时内通过编写详细的自然语言规范，指导一组智能体异步工作，并行生成28个不同的PR来解决7个问题单。
 
@@ -120,7 +119,7 @@ title: "Agentic Software Engineering: Foundational Pillars and a Research Roadma
 
 2.  **为智能体优化的工作台——AEE**：智能体需要自己的**智能体执行环境（Agent Execution Environment, AEE）**。AEE应配备为智能体而非人类优化的工具，如超强调试器、语义搜索工具和结构化编辑器。它还应具备强大的监控基础设施，自主处理低级问题，只将需要人类战略干预的重大问题上报给ACE。
 
-# 5. SASE的工程活动
+## 5. SASE的工程活动
 
 SASE的愿景通过一系列结构化的工程活动来实现。以下活动是一个初步的概念框架，旨在激发社区对话，而非最终定论。
 

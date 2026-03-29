@@ -3,7 +3,7 @@ layout: default
 title: "AdamHD: Decoupled Huber Decay Regularization for Language Model Pre-Training"
 ---
 
-# AdamW的继任者？AdamHD让LLM训练提速15%，性能提升4.7%，显存再省30%
+## AdamW的继任者？AdamHD让LLM训练提速15%，性能提升4.7%，显存再省30%
 
 <img src="/images/2511.14721v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

@@ -3,7 +3,6 @@ layout: default
 title: "A Practitioner's Guide to Multi-turn Agentic Reinforcement Learning"
 ---
 
-# A Practitioner's Guide to Multi-turn Agentic Reinforcement Learning
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.01132v1
 
@@ -13,11 +12,11 @@ title: "A Practitioner's Guide to Multi-turn Agentic Reinforcement Learning"
 
 ---
 
-# TL;DR
+## TL;DR
 
 本文通过将多轮智能体强化学习（multi-turn agentic reinforcement learning）的设计空间分解为环境、奖励和策略三大支柱，系统性地进行了实证研究，并最终提炼出一套用于训练大型语言模型（LLM）智能体的实用方法配方。
 
-# 关键定义
+## 关键定义
 
 本文主要沿用并适配了现有的强化学习概念，将其应用于多轮智能体场景，核心在于其问题形式化方式：
 
@@ -25,7 +24,7 @@ title: "A Practitioner's Guide to Multi-turn Agentic Reinforcement Learning"
 
 2.  **多轮动作与奖励分配 (Multi-turn Action and Reward Assignment)**：与传统RL不同，这里的动作 $a\_t$ 是一个由模型生成的自然语言指令（即一个 token 序列），直到遇到结束符 $$<eos>$$ (end-of-sequence) 才被环境执行。本文的核心设计之一是将该轮的奖励 $r\_t$ **仅分配给 $$<eos>$$ 这个 token**，而动作序列中的其他 token 奖励为0。这种机制在不改变环境奖励结构的前提下，为基于 token 的策略梯度计算提供了明确的信号。
 
-# 相关工作
+## 相关工作
 
 当前，将强化学习应用于大型语言模型（LLM）的研究主要集中在单轮（single-turn）任务上，例如 Proximal Policy Optimization (PPO)、RLOO等方法已被广泛优化。然而，将这些方法直接应用于多轮智能体场景是十分困难的，主要原因在于：
 
@@ -36,7 +35,7 @@ title: "A Practitioner's Guide to Multi-turn Agentic Reinforcement Learning"
 
 <img src="/images/2510.01132v1/x1.jpg" alt="多轮智能体RL图示及其关键研究问题" style="width:85%; max-width:600px; margin:auto; display:block;">
 
-# 本文方法
+## 本文方法
 
 本文的核心贡献不是提出一个全新的算法，而是构建了一个系统性的**分析框架**和一套经过实证检验的**训练配方**。该框架将多轮智能体RL的设计分解为环境、策略和奖励三个相互关联的支柱，并通过实验揭示了在不同支柱下的最佳实践。
 
@@ -91,7 +90,7 @@ $$`$$
 *   **有效利用现有算法**：通过巧妙的奖励分配和优势函数计算，该框架使得PPO这类成熟的单轮RL算法能够有效应用于多轮场景，而无需对算法本身进行伤筋动骨的修改。
 *   **兼顾理论与实践**：本文不仅提出了形式化的建模方法，还通过大量实验对环境、策略、奖励三大支柱的设计选择进行了深入分析，最终形成了一套可操作的“配方”，对学术研究和工业实践都具有很高的指导价值。
 
-# 实验结论
+## 实验结论
 
 本文在TextWorld、ALFWorld和SWE-Gym三个基准上进行了大量实验，验证了其提出的训练配方的有效性。
 

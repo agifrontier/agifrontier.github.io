@@ -3,7 +3,6 @@ layout: default
 title: "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference"
 ---
 
-# Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference
 
 - **ArXiv URL**: http://arxiv.org/abs/2403.04132v1
 
@@ -13,10 +12,10 @@ title: "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference"
 
 ---
 
-# TL;DR
+## TL;DR
 本文介绍并验证了一个名为 Chatbot Arena 的开放平台，该平台通过众包用户的成对比较和偏好投票，来评估和排名大型语言模型（LLM），并为此设计了一套高效、可靠的统计方法论。
 
-# 关键定义
+## 关键定义
 本文沿用了现有统计学模型，并基于其评估框架提出了一些关键概念：
 *   **Chatbot Arena**: 一个开放的、通过众包方式评估 LLM 的基准测试平台。其核心机制是让用户与两个匿名的 LLM 进行对话“对战”（Battle），然后投票选出更优的回答。这种方式可以收集到反映真实世界使用场景的、鲜活多样的用户提示和人类偏好数据。
 *   **Bradley-Terry (BT) 模型**: 一种用于成对比较数据分析的经典统计模型。本文使用它来估计每个 LLM 的潜在“实力”分数（即 BT 系数，$$ξ$$）。模型假设，模型 $$m$$ 战胜模型 $$m'$$ 的概率可以通过它们实力分数的差异来建模：
@@ -38,7 +37,7 @@ title: "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference"
 
 *   **主动采样 (Active Sampling)**: 为了提高数据收集效率，平台采用的一种非随机的模型配对策略。该策略会优先选择那些对缩小排名置信区间最有效的模型对进行“对战”，从而用更少的投票数据更快地获得稳定的排名结果。
 
-# 相关工作
+## 相关工作
 当前 LLM 的评估基准主要分为四类，由问题来源（静态数据集 vs. 实时来源）和评估指标（基于标准答案 vs. 基于人类偏好）两个维度决定。
 
 <img src="/images/2403.04132v1/x1.jpg" alt="LLM基准测试分类" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -52,7 +51,7 @@ title: "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference"
 
 因此，业界迫切需要一个开放的、实时的、基于人类偏好的评估平台。本文提出的 Chatbot Arena 正是为了解决以上问题，旨在创建一个能更准确反映真实世界使用情况和用户偏好的 LLM 评估生态系统。
 
-# 本文方法
+## 本文方法
 
 ## 平台设计与数据收集
 Chatbot Arena 的核心是一个众包评估网站。
@@ -92,7 +91,7 @@ Chatbot Arena 的核心是一个众包评估网站。
 ### 异常用户检测
 为了保证数据质量，本文还提出了一种检测异常用户（如机器人或恶意用户）的方法。该方法通过比较单个用户投票行为与历史数据分布的差异来计算 p-value，并使用 Fisher's 组合检验来判断用户行为是否异常。
 
-# 实验结论
+## 实验结论
 
 ## 数据质量分析
 *   **提示多样性**：通过对用户提示进行主题建模，发现了超过600个不同的主题聚类，最大的聚类仅占总数的1%，表明用户提示覆盖了极其广泛和长尾的真实世界应用场景。

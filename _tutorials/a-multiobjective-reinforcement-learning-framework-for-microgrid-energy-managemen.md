@@ -3,7 +3,6 @@ layout: default
 title: "A Multiobjective Reinforcement Learning Framework for Microgrid Energy Management"
 ---
 
-# A Multiobjective Reinforcement Learning Framework for Microgrid Energy Management
 
 - **ArXiv URL**: http://arxiv.org/abs/2307.08692v2
 
@@ -13,10 +12,10 @@ title: "A Multiobjective Reinforcement Learning Framework for Microgrid Energy M
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一个结合多目标进化算法与强化学习的新颖框架，用于解决微电网 (Microgrid, MG) 能源管理中的多目标优化问题，实现了在处理成本、排放和热能浪费等冲突目标时的性能提升和策略可解释性。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下对理解其核心方法至关重要的概念：
 
 1.  **多目标强化学习框架 (Multi-Objective Reinforcement Learning, MORL, Framework)**: 本文的核心创新，是一个将多目标进化算法（具体为 Borg MOEA）与强化学习相结合的特定框架。在此框架中，进化算法负责优化强化学习智能体中策略网络的参数，以探索和发现多组代表不同权衡的帕累托最优策略。
@@ -24,7 +23,7 @@ title: "A Multiobjective Reinforcement Learning Framework for Microgrid Energy M
 3.  **状态变量分解 (State Variable Decomposition)**: 本文将系统的状态 $S\_t$ 分解为三个部分：可观测的外部信息 $W\_t$（如天气预报、日前电价）、不可观测的变量 $H\_t$（如实时负荷、可再生能源出力）和前一时刻的可观测行动 $Y\_t$。智能体仅基于可观测部分 $W\_t$ 和 $Y\_t$ 做出决策。
 4.  **时变敏感性分析 (Time-Varying Sensitivity Analysis, TVSA)**: 一种用于解释已训练策略的分析技术。它通过方差分解来量化在每个时间点上，智能体的决策变化在多大程度上是由不同的输入信息（如温度、电价）引起的，从而揭示了策略对外部信息的动态依赖关系。
 
-# 相关工作
+## 相关工作
 微电网的能源管理通常被建模为马尔可夫决策过程 (Markov Decision Process, MDP)，传统上使用动态规划 (Dynamic Programming, DP) 求解。然而，DP方法受困于“维度灾难”，且需要精确的系统模型（状态转移概率），这在复杂的能源系统中难以获得。
 
 为了克服这些问题，强化学习 (Reinforcement Learning, RL) 作为一种无模型 (model-free) 的方法被广泛应用。但现有RL研究大多集中于单一目标（如成本最小化），这无法充分代表不同利益相关方在多个冲突目标（如环境影响、运行可靠性）上的诉求。
@@ -33,7 +32,7 @@ title: "A Multiobjective Reinforcement Learning Framework for Microgrid Energy M
 
 本文旨在解决的核心问题是：如何在不依赖精确系统模型的情况下，有效处理微电网能源管理中存在的多个、相互冲突的、非线性的随机控制目标，并为决策者提供一组多样化的、显式表示目标间权衡的帕re托最优控制策略。
 
-# 本文方法
+## 本文方法
 
 本文提出了一个新颖的无模型多目标强化学习 (MORL) 框架，用于优化含热电联产 (Combined Heat and Power, CHP) 的微电网能源调度问题。该框架的核心是将多目标进化算法 (MOEA) 与基于人工神经网络 (ANN) 的参数化策略相结合，直接在策略空间中进行搜索，以识别出一组帕累托最优的控制策略。
 
@@ -70,7 +69,7 @@ $${% endraw %}
 
 这个分析使得运行人员能够理解策略在一天中不同时段是依据何种信息做出关键决策的，增强了对AI决策的信任和理解。
 
-# 实验结论
+## 实验结论
 
 本文将所提出的 MORL 框架应用于康奈尔大学微电网 (CU-MG) 的实际案例中，该微电网是一个复杂的热电联产系统。实验数据涵盖了冬夏两季，并分别进行了训练和测试。
 

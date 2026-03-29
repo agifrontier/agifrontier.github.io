@@ -3,7 +3,7 @@ layout: default
 title: "Language models as tools for investigating the distinction between possible and impossible natural languages"
 ---
 
-# 斯坦福新观点：让AI挑战“不可能的语言”，4步揭秘人类认知偏好
+## 斯坦福新观点：让AI挑战“不可能的语言”，4步揭秘人类认知偏好
 
 <img src="/images/2512.09394v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

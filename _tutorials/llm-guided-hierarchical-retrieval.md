@@ -3,7 +3,6 @@ layout: default
 title: "LLM-guided Hierarchical Retrieval"
 ---
 
-# LLM-guided Hierarchical Retrieval
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.13217v1
 
@@ -13,10 +12,10 @@ title: "LLM-guided Hierarchical Retrieval"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 LATTICE 的LLM引导分层检索框架，通过将海量文档组织成语义树，并让大型语言模型（LLM）基于创新的校准路径相关性得分进行推理和导航，从而以对数级的搜索复杂度高效解决复杂的推理密集型查询。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下对理解其方法至关重要的核心概念：
 
 *   **LLM引导的分层检索 (LLM-guided Hierarchical Retrieval)**：本文提出的核心框架。它将信息检索任务分为两个阶段：离线构建语料库的语义树，以及在线由一个“搜索LLM”导航该树以找到相关文档。
@@ -25,7 +24,7 @@ title: "LLM-guided Hierarchical Retrieval"
 *   **潜在分数 (Latent Score, $\hat{s}\_{v}$)**：为了解决LLM评分的噪声和上下文依赖性问题，本文引入的一个核心概念。它是一个与评估列表（slate）无关的、潜在的真实相关性分数。该分数通过对所有历史局部评分进行最大似然估计（MLE）来计算，从而校准LLM的原始输出。
 *   **路径相关性分数 (Path Relevance Score, $\hat{p}\_{rel}(v)$)**：用于在整个树中进行全局比较和引导搜索的关键指标。它通过一个指数移动平均公式，结合了从根节点到当前节点 $$v$$ 的路径上所有节点的校准后潜在分数，公式为 $$$\hat{p}\_{rel}(v)=\alpha \cdot \hat{p}\_{rel}(\text{parent}(v))+(1-\alpha) \cdot \hat{s}\_{v}$$$。
 
-# 相关工作
+## 相关工作
 当前基于LLM的信息检索（IR）领域主要存在以下范式及其瓶颈：
 
 *   **检索-重排 (Retrieve-then-Rerank)**：这是目前主流的范式。它首先使用一个低成本的检索器（如BM25或密集检索）召回大量候选文档，然后由一个强大的LLM进行重排序。其主要瓶颈在于，最终效果受限于初始检索阶段的质量。如果关键文档在第一阶段未能被召回，再完美的重排器也无能为力。此外，初始检索通常依赖于浅层语义，难以处理需要多步推理的复杂查询。
@@ -35,7 +34,7 @@ title: "LLM-guided Hierarchical Retrieval"
 
 **本文旨在解决的问题**是：如何结合LLM强大的推理能力和分层结构的高效性，以克服现有范式的局限性。具体而言，本文旨在创建一个既能处理复杂推理查询，又具备高可扩展性和计算效率，同时还能方便地更新知识的新型检索框架。
 
-# 本文方法
+## 本文方法
 
 <img src="/images/2510.13217v1/x3.jpg" alt="框架概览" style="width:90%; max-width:700px; margin:auto; display:block;">
 <p align="center">LATTICE框架概览。左侧为离线阶段，将非结构化语料库组织成语义树；右侧为在线阶段，搜索LLM通过最佳优先遍历和校准后的路径相关性分数来查找与查询相关的文档。</p>
@@ -105,7 +104,7 @@ title: "LLM-guided Hierarchical Retrieval"
 
     *   这个校准后的潜在分数 $\hat{s}\_{v}$ 被用来更新全局可比的 **路径相关性分数** $\hat{p}\_{rel}(v)$，该分数综合了从根到当前节点的整条路径上的信息，以指导搜索向最有希望的方向进行。
 
-# 实验结论
+## 实验结论
 
 实验在专为评估深度推理能力设计的 BRIGHT 基准上进行。LATTICE 方法在严格的零样本（zero-shot）设置下进行评估，即不针对 BRIGHT 任务进行任何微调。
 

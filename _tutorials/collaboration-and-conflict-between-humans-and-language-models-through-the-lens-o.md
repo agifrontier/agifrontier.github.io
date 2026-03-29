@@ -3,7 +3,6 @@ layout: default
 title: "Collaboration and Conflict between Humans and Language Models through the Lens of Game Theory"
 ---
 
-# Collaboration and Conflict between Humans and Language Models through the Lens of Game Theory
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.04847v1
 
@@ -13,10 +12,10 @@ title: "Collaboration and Conflict between Humans and Language Models through th
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过博弈论中的迭代囚徒困境 (Iterated Prisoner’s Dilemma) 框架，系统地研究了语言模型智能体在长期交互中的合作与对抗行为，发现其表现不亚于甚至超越了顶尖的经典策略，并能快速适应对手策略的变化，但与人类相比，其策略更倾向于短期收益最大化而非建立长期互利合作。
 
-# 关键定义
+## 关键定义
 本文主要沿用博弈论中的成熟定义，以下是对理解本文至关重要的几个核心概念：
 
 *   **迭代囚徒困境 (Iterated Prisoner's Dilemma, IPD)**：一种经典的博弈论模型。两名参与者（智能体）在多轮游戏中同时选择“合作”(Cooperate) 或“背叛”(Defect)。双方的收益取决于他们的共同选择。该模型的收益结构激励单方面背叛，但惩罚双方都背叛，为研究合作与冲突的动态演化提供了理想的实验平台。
@@ -27,7 +26,7 @@ title: "Collaboration and Conflict between Humans and Language Models through th
     *   **宽容性 (Forgivingness)**：指策略在对手曾经背叛后，恢复合作的倾向。
     *   **慷慨性 (Generosity)**：指策略在对手背叛后，仍有一定概率选择合作，以避免陷入相互背叛的恶性循环。
 
-# 相关工作
+## 相关工作
 在此之前，已有研究利用博弈论来探究语言模型 (Language Models, LMs) 的社会行为。然而，这些研究存在显著局限性：
 1.  **交互场景受限**：多数研究仅考虑单一的模拟场景，缺乏对人类与模型之间协作的关注。
 2.  **交互周期过短**：游戏通常只进行少数几轮，无法有效研究策略随时间演化的长期行为模式。
@@ -35,7 +34,7 @@ title: "Collaboration and Conflict between Humans and Language Models through th
 
 这些局限性使得深入理解语言模型在真实社会互动环境中的协作行为变得困难。因此，本文旨在解决这一问题，通过一个更系统、长期的实验框架来揭示语言模型在互动环境中的“长期行为”特征。
 
-# 本文方法
+## 本文方法
 本文的核心方法是设计并执行一系列基于迭代囚徒困境的受控实验，以评估语言模型的策略行为和适应能力。
 
 ### 实验框架
@@ -55,7 +54,7 @@ title: "Collaboration and Conflict between Humans and Language Models through th
 
 通过这一系列设计，本文不仅评估了语言模型在静态对抗中的表现，更重要的是揭示了它们在动态、变化环境中的适应性，并将之与人类行为进行直接比较。
 
-# 实验结论
+## 实验结论
 
 ### RQ1: AI 对战经典策略与自我博弈
 *   **性能优越**：实验表明，AI 智能体在与 240 种经典策略的对战中，表现与最强的经典策略（如“一报还一报”）相当，甚至更好。随着游戏回合数的增加，AI 智能体的胜率和得分优势稳步累积。

@@ -3,7 +3,6 @@ layout: default
 title: "Dynamic Affective Memory Management for Personalized LLM Agents"
 ---
 
-# Dynamic Affective Memory Management for Personalized LLM Agents
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.27418v1
 
@@ -13,10 +12,10 @@ title: "Dynamic Affective Memory Management for Personalized LLM Agents"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为DAM-LLM的动态情感记忆管理系统，通过引入基于贝叶斯的更新机制和记忆熵概念，使智能体能够自主维护一个动态更新的记忆数据库，以解决传统静态记忆的冗余、过时和一致性差的问题，从而提供更具个性化的情感交互。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下几个核心概念：
 
 *   **信誉加权记忆单元 (Confidence-Weighted Memory Units)**：本文提出的核心数据结构，用于封装用户对特定实体特定方面的情感。它不记录孤立的事实，而是将用户情感表示为一个动态更新的概率分布（或称置信度分布），通过贝叶斯更新机制整合新的观测证据。
@@ -27,7 +26,7 @@ title: "Dynamic Affective Memory Management for Personalized LLM Agents"
 
 *   **熵驱动压缩 (Entropy-Driven Compression)**：一种旨在对抗记忆膨胀的算法。它在检索过程中通过修剪和合并低价值或过时的观测来最大化记忆库的信息密度。该过程由最小化全局信念熵的目标驱动，包括合并相似记忆和删除高熵、低权重的“噪声”记忆。
 
-# 相关工作
+## 相关工作
 目前，在情感对话领域，主流研究集中于利用强化学习等方法让智能体在实时交互中动态调整情感策略，以实现更好的交互结果。然而，这些工作普遍忽略了如何对用户的长期情感历史进行持久化存储、演化更新和有效利用，未能形成一个连贯的、具有个性化认知的记忆系统。
 
 在智能体记忆管理领域，现有架构大多基于检索增强生成（Retrieval-Augmented Generation, RAG）。尽管有工作通过混合检索、优化检索过程（如Selfmem）或构建外部记忆库（如MemoryBank）来改进，但仍存在两大瓶颈：
@@ -36,7 +35,7 @@ title: "Dynamic Affective Memory Management for Personalized LLM Agents"
 
 本文旨在解决上述问题，特别是如何对长期情感记忆进行动态建模和管理，以克服传统RAG架构在处理情感波动时的局限性，并维持记忆的一致性和效率。
 
-# 本文方法
+## 本文方法
 本文提出了一种用于情感对话的智能体框架DAM-LLM，其核心是动态情感记忆管理。该框架通过最小化全局信念熵来优化记忆系统，将记忆管理从被动存储转变为主动认知过程。
 
 ### 系统架构
@@ -109,7 +108,7 @@ $${% endraw %}
 
 这种“粗筛-精排”的流程将分类任务与内容检索解耦，利用轻量级的元数据进行高效过滤，仅对高度相关的子集进行计算密集的语义匹配，从而确保了检索的准确性和可扩展性。
 
-# 实验结论
+## 实验结论
 
 ### 数据集与实施
 为评估系统在情感场景下的表现，本文构建了一个名为 **DABench** 的多轮对话数据集，专注于用户情感表达和情感变化。该数据集包含2500个观测序列、100个会话（共1000轮）的模拟用户交互以及500个查询-记忆对。实验以Qwen-Max为基础LLM，Text-Embedding-V1为文本嵌入模型。

@@ -3,7 +3,6 @@ layout: default
 title: "ParallelMuse: Agentic Parallel Thinking for Deep Information Seeking"
 ---
 
-# ParallelMuse: Agentic Parallel Thinking for Deep Information Seeking
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.24698v1
 
@@ -13,16 +12,16 @@ title: "ParallelMuse: Agentic Parallel Thinking for Deep Information Seeking"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 ParallelMuse 的两阶段智能体并行思维框架，通过“功能指定的局部展开”策略和“压缩推理聚合”方法，在提升深度信息寻求 (deep information-seeking) 任务效果的同时，显著降低了探索所需的Token成本。
 
-# 关键定义
+## 关键定义
 *   **ParallelMuse**: 本文提出的核心框架，是一个用于深度信息寻求智能体的两阶段并行思维范式。它包含“功能指定的局部展开”和“压缩推理聚合”两个阶段，分别对应并行思考中的探索性采样和答案生成过程。
 *   **功能指定的局部展开 (Functionality-Specified Partial Rollout)**: ParallelMuse 的第一阶段。该方法将智能体生成的序列划分为“推理”和“探索”等功能区域，独立评估各区域的不确定性，并从不确定性高的步骤（即探索潜力大的步骤）进行选择性地分支扩展，同时通过复用上下文（KV Cache）来提升效率。
 *   **压缩推理聚合 (Compressed Reasoning Aggregation)**: ParallelMuse 的第二阶段。该方法将多条完整的推理轨迹压缩成保留核心逻辑的结构化报告，每份报告包含问题分解、工具调用和答案综合等关键信息。最后，模型基于这些浓缩的报告进行综合推理，生成最终答案，从而避免了传统多数投票或置信度选择的弊端。
 *   **功能区域 (Functional Regions)**: 本文将智能体在每个步骤中生成的Token序列划分为两个功能子集：用于内部思考的推理Token ($$reasoning tokens$$, $\mathcal{T}^{r}\_{t}$) 和用于调用工具与环境交互的探索Token ($$exploration tokens$$, $\mathcal{T}^{e}\_{t}$)。这两个区域展现出不同的不确定性模式，是进行针对性局部展开的基础。
 
-# 相关工作
+## 相关工作
 当前，通过与环境持续互动和内部推理，深度信息寻求（IS）智能体已经能够解决复杂问题。在此背景下，并行思考作为一种测试时扩展（test-time scaling）的方法，通过增加并行探索路径的数量来拓宽搜索范围，从而提升性能。
 
 然而，现有的并行思考方法存在两大瓶颈：
@@ -31,7 +30,7 @@ title: "ParallelMuse: Agentic Parallel Thinking for Deep Information Seeking"
 
 本文旨在解决上述问题，提出一个专为深度信息寻求智能体设计的、更高效、更可靠的并行思考框架。
 
-# 本文方法
+## 本文方法
 本文提出的 ParallelMuse 是一个由两个互补部分组成的两阶段智能体并行思维范式：（i）功能指定的局部展开 (Functionality-Specified Partial Rollout) 和（ii）压缩推理聚合 (Compressed Reasoning Aggregation)。这两个部分分别对应并行思考过程中的探索性采样和答案生成阶段。
 
 <img src="/images/2510.24698v1/x4.jpg" alt="ParallelMuse 工作流程" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -80,7 +79,7 @@ $${% endraw %}
 #### 优点
 这种方法能够在有限的上下文中高效地整合更丰富的中间推理信息。通过对推理连贯性的全面评估，它能生成更可靠、更合理的最终答案，同时避免了传统聚合方法的系统性偏差。
 
-# 实验结论
+## 实验结论
 本文在四个具有挑战性的深度信息寻求基准（BrowseComp、BrowseComp-zh、GAIA、HLE）上，针对四种不同参数规模的开源智能体模型（GPT-OSS-20B/120B, DeepSeek-V3.1-T, Tongyi-DR-30B-A3B）进行了全面评估。
 
 *   **总体性能显著提升**：在所有模型和基准上，ParallelMuse 均一致且显著地超越了包括标准推理、多数投票等在内的所有基线方法。尤其在 Tongyi-DR-30B-A3B 模型上应用后，其性能达到甚至超过了部分闭源智能体。实验还证实，基于置信度的聚合方法在智能体任务中因外部信息干扰而表现不佳，而 ParallelMuse 通过其独特的聚合机制有效避免了这一问题。

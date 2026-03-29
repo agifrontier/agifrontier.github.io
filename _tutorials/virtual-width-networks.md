@@ -3,7 +3,7 @@ layout: default
 title: "Virtual Width Networks"
 ---
 
-# 字节跳动VWN：不加算力“拓宽”Transformer，训练提速高达3倍！
+## 字节跳动VWN：不加算力“拓宽”Transformer，训练提速高达3倍！
 
 <img src="/images/2511.11238v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

@@ -3,7 +3,6 @@ layout: default
 title: "Sigmoid Loss for Language Image Pre-Training"
 ---
 
-# Sigmoid Loss for Language Image Pre-Training
 
 - **ArXiv URL**: http://arxiv.org/abs/2303.15343v4
 
@@ -13,16 +12,16 @@ title: "Sigmoid Loss for Language Image Pre-Training"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种用于语言-图像预训练的简单成对 Sigmoid 损失函数 (Sigmoid loss)，它将对比学习任务转化为对图文对的独立二元分类，从而解耦了损失计算与批次大小 (batch size) 的依赖，实现了更高的内存效率和在小批量数据下更优的性能。
 
-# 关键定义
+## 关键定义
 *   **Sigmoid Loss**: 本文提出的核心损失函数。与在整个批次上进行归一化的传统 Softmax 对比损失不同，Sigmoid 损失将每个图文对 $$(image, text)$$ 视为一个独立的二元分类问题。对于匹配的正样本对，其标签为 $$+1$$；对于不匹配的负样本对，其标签为 $$-1$$。损失函数的目标是正确地对这些配对进行分类。
 *   **SigLIP (Sigmoid Language Image Pre-training)**: 将本文提出的 Sigmoid 损失应用于从零开始训练语言-图像模型的框架，类似于 CLIP。
 *   **SigLiT (Sigmoid Locked-image Tuning)**: 将 Sigmoid 损失应用于 LiT 框架，即在预训练过程中锁定 (locked) 图像编码器，仅训练文本编码器。
 *   **可学习的偏置项 (learnable bias $$b$$)**: 在 Sigmoid 损失中引入的一个额外可学习参数。由于一个批次中负样本对的数量远超正样本对 ($$|B|^2 - |B|$$ vs $$|B|$$)，存在严重的类别不平衡。引入偏置项 $$b$$ 能够缓解此问题，确保训练在初始阶段更加稳定，避免因不平衡导致的剧烈梯度更新。
 
-# 相关工作
+## 相关工作
 当前，通过网络爬取的图文对进行对比预训练已成为获取通用计算机视觉骨干网络的主流方法，其代表性工作是 CLIP 和 ALIGN。这些方法通常采用基于 Softmax 的对比损失函数 (InfoNCE loss)。
 
 然而，这种标准的 Softmax 损失存在一些关键问题：
@@ -32,7 +31,7 @@ title: "Sigmoid Loss for Language Image Pre-Training"
 
 本文旨在解决上述问题，提出一种更简单、高效且与批次大小解耦的损失函数，以降低语言-图像预训练的资源门槛。
 
-# 本文方法
+## 本文方法
 本文首先回顾了标准的 Softmax 损失，然后详细介绍了其核心贡献——成对 Sigmoid 损失及其高效实现。
 
 ### Softmax 损失回顾
@@ -93,7 +92,7 @@ Sigmoid 损失的独立性使其能够采用一种内存高效的“分块” (c
 *   **计算高效**: $$D$$ 次独立的 $$permute$$ 操作通常比两次全局的 $$all-gather$$ 操作更快。
 正是这种高效的实现，使得本文能够将批次大小扩展到一百万。
 
-# 实验结论
+## 实验结论
 
 ### Sigmoid 损失与 Softmax 损失的对比
 *   **小批量优势显著**: 在批次大小低于 16k 时，Sigmoid 损失的性能显著优于 Softmax 损失。

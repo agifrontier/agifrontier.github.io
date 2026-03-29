@@ -3,7 +3,7 @@ layout: default
 title: "Intelligence per Watt: Measuring Intelligence Efficiency of Local AI"
 ---
 
-# AI算力新范式：斯坦福提出“每瓦特智能”，本地模型能效两年提升5.3倍！
+## AI算力新范式：斯坦福提出“每瓦特智能”，本地模型能效两年提升5.3倍！
 
 大模型推理需求正以前所未有的速度暴增，云端数据中心压力山大。我们早已习惯将复杂的AI任务交由云端的超级计算机处理。
 

@@ -3,7 +3,7 @@ layout: default
 title: "DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning"
 ---
 
-# 普特南118分超人类！DeepSeekMath-V2：AI如何学会“自我审日志”？
+## 普特南118分超人类！DeepSeekMath-V2：AI如何学会“自我审日志”？
 
 <img src="/images/2511.22570v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

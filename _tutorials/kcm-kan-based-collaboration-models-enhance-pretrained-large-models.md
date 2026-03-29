@@ -3,7 +3,6 @@ layout: default
 title: "KCM: KAN-Based Collaboration Models Enhance Pretrained Large Models"
 ---
 
-# KCM: KAN-Based Collaboration Models Enhance Pretrained Large Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.20278v1
 
@@ -13,10 +12,10 @@ title: "KCM: KAN-Based Collaboration Models Enhance Pretrained Large Models"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 KCM (KAN-Based Collaboration Models) 的大-小模型协同框架，它利用一个基于 Kolmogorov-Arnold Network (KAN) 的小型判断模型，智能地将输入样本分配给高效的小模型或强大的预训练大模型处理，并通过提示修改和知识蒸馏机制实现两个模型间的协同增强，从而在接近大模型性能的同时，显著降低了推理成本。
 
-# 关键定义
+## 关键定义
 *   **KCM (KAN-Based Collaboration Models)**：本文提出的核心方法。一个大-小模型协同框架，通过一个判断模型来动态分配任务。对于判断为“简单”的样本，由小模型直接处理；对于“困难”的样本，则交由大模型处理，同时利用小模型的输出来辅助大模型（提示修改），并利用大模型的输出来反哺小模型（知识蒸馏），形成一个闭环学习系统。
 *   **KAN (Kolmogorov-Arnold Network)**：一种替代传统多层感知机 (MLP) 的神经网络架构。其核心特点是，可学习的激活函数位于网络的“边”（edges）上，而非像 MLP 那样在“节点”（nodes）上使用固定的激活函数。这使得 KAN 能够用更少的参数学习到更复杂的函数，具有更好的可解释性和精度潜力。在 KCM 中，KAN被用于构建核心的“判断小模型”。
 
@@ -25,12 +24,12 @@ title: "KCM: KAN-Based Collaboration Models Enhance Pretrained Large Models"
 
 *   **判断小模型 (Judgment Small Model)**：KCM 框架中的一个关键组件，基于 KAN 构建。它的作用是接收输入样本 $$x$$，并输出一个置信度分数 $$C_x$$，用于判断该样本应该由小模型处理还是大模型处理。高置信度意味着样本适合小模型，低置信度则意味着需要大模型的“介入”。
 
-# 相关工作
+## 相关工作
 当前，为了平衡大模型的强大性能与高昂的计算成本，大-小模型协同成为一个重要的研究方向。现有方法尝试结合两者的优势，但关键的瓶颈在于如何设计一个高效且智能的调度机制，以决定何时以及如何利用每个模型。
 
 本文旨在解决这一具体问题：设计一个通用的、高效的协同框架，它不仅能智能地将任务在大小模型间进行分配以降低成本，还能通过模型间的双向互动（即小模型辅助大模型、大模型指导小模型）来共同提升整个系统的性能。
 
-# 本文方法
+## 本文方法
 KCM 的核心思想是构建一个智能的、自适应的协同系统。其训练和推理过程如下图所示，通过一个判断模型来决定数据流向，并结合提示修改与知识蒸馏，实现两个模型的共同进化。
 
 <img src="/images/2510.20278v1/figure_22.jpg" alt="KCM 协同预训练大模型的训练流程" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -93,7 +92,7 @@ $${% endraw %}
 2.  如果 $C\_x > \epsilon$，直接使用小模型 $F\_s$ 的结果。
 3.  如果 $C\_x \le \epsilon$，则调用大模型 $F\_l$（可能结合了小模型的提示修改）得到最终结果。
 
-# 实验结论
+## 实验结论
 
 实验在语言、视觉和多模态任务上验证了 KCM 框架的有效性和通用性，并将阈值 $\epsilon$ 设为 0.98。
 

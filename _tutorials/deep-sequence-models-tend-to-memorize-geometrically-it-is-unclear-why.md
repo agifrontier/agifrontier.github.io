@@ -3,7 +3,6 @@ layout: default
 title: "Deep sequence models tend to memorize geometrically; it is unclear why"
 ---
 
-# Deep sequence models tend to memorize geometrically; it is unclear why
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.26745v1
 
@@ -13,10 +12,10 @@ title: "Deep sequence models tend to memorize geometrically; it is unclear why"
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过一个精心设计的实验揭示，深度序列模型在记忆事实时并非简单地存储局部关联，而是会自发形成一种“几何式记忆”结构，这种结构编码了实体间（包括训练中未共现的实体）的全局关系，从而将复杂的多步推理任务简化为易于学习的单步几何问题。
 
-# 关键定义
+## 关键定义
 本文的核心在于区分并研究了两种记忆范式，它们对于理解模型如何存储和推理知识至关重要：
 
 1.  **关联式记忆 (Associative Memory)**
@@ -31,14 +30,14 @@ title: "Deep sequence models tend to memorize geometrically; it is unclear why"
 4.  **隐式推理 (Implicit Reasoning)**
     指模型利用存储在权重中的知识进行推理，但并不生成明确的、逐步的“思维链”（chain of thought）。模型直接输出最终答案。
 
-# 相关工作
+## 相关工作
 当前，学术界对神经网络如何记忆原子事实（如名人生日）的主流理解是，模型采用了一种**关联式记忆**的机制。这种机制可以被抽象为一个简单的查找过程，即存储实体间的共现关系。然而，这种观点难以解释近年来观察到的一些现象：深度模型，特别是 Transformer，在没有明确的分步监督或思维链的情况下，表现出了一定程度的隐式推理能力。
 
 关联式记忆视图的**关键瓶颈**在于，它无法有效处理需要多步组合（composition）的推理任务。例如，一个需要 $\ell$ 步推理的任务，在关联式记忆框架下，相当于要组合一个矩阵运算 $\ell$ 次。在没有中间步骤监督的情况下，学习这种 $\ell$ 次组合是一个“大海捞针”式的难题，其学习难度随 $\ell$ 呈指数级增长。
 
 **本文旨在解决的具体问题是**：为什么深度序列模型（如 Transformer 和 Mamba）能够在被设计为极具挑战性的多步推理任务（权重内路径星图任务）上取得成功？本文试图挑战主流的关联式记忆观点，并探究是否存在一种更根本的记忆机制在起作用。
 
-# 本文方法
+## 本文方法
 
 ### 实验设计：权重内路径星图任务
 
@@ -84,7 +83,7 @@ title: "Deep sequence models tend to memorize geometrically; it is unclear why"
 
 从优化的角度看，简单的关联式记忆足以让模型在训练集上达到零错误。几何式记忆在参数效率上并不一定更优越。因此，传统的模型容量、优化压力或监督信号都无法直接解释为何模型会“舍近求远”，选择构建一个全局几何结构。本文将此归因于一种尚不明确的**谱偏置（spectral bias）**，并指出这是一个关于深度序列模型记忆机制的根本性开放问题。
 
-# 实验结论
+## 实验结论
 
 *   **核心实验结果**：
     *   在专为失败设计的“权重内路径星图”任务上，Transformer 和 Mamba 模型均表现出强大的**隐式推理能力**，成功解决了大规模、多跳的路径查找问题。这与它们在“上下文内”版本中的失败形成鲜明对比。

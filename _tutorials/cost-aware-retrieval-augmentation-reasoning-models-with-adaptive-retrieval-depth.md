@@ -3,7 +3,6 @@ layout: default
 title: "Cost-Aware Retrieval-Augmentation Reasoning Models with Adaptive Retrieval Depth"
 ---
 
-# Cost-Aware Retrieval-Augmentation Reasoning Models with Adaptive Retrieval Depth
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.15719v1
 
@@ -13,16 +12,16 @@ title: "Cost-Aware Retrieval-Augmentation Reasoning Models with Adaptive Retriev
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种成本感知的动态检索增强推理模型 Dynamic Search-R1，它通过强化学习动态调整检索文档的数量，在显著降低约16-20%延迟的同时，将精确匹配（Exact Match）准确率平均提升了约5%。
 
-# 关键定义
+## 关键定义
 *   **Dynamic Search-R1**: 本文提出的核心模型，是 Search-R1 的扩展。它允许大语言模型（LLM）与搜索引擎进行更动态的交互，不仅能生成查询，还能通过生成一个特殊的$$<more info>$$ Token来请求获取更多（更深层次）的检索结果，从而实现自适应的检索深度。
 *   **Cost-Aware Advantage Function (成本感知的优势函数)**: 本文在强化学习（RL）框架中提出的核心创新。它修改了标准优势函数，引入一个成本惩罚项。这个函数不仅奖励正确的答案，还惩罚那些导致高计算成本（如过多的Tokens或高延迟）的生成序列。
 *   **Memory-bound Cost (内存约束成本)**: 一种成本计算方式，直接将生成序列的总长度（包括模型生成的Tokens和检索返回的Tokens）作为成本。这种方式旨在最小化占用的GPU内存。
 *   **Latency-bound Cost (延迟约束成本)**: 一种更精细的成本计算方式。它区分了模型“生成”一个Token和“编码”（处理）一个检索来的Token之间的延迟差异，并为它们分配不同的成本权重。实验表明，生成Token的延迟远高于编码Token，因此这种成本函数能更准确地反映模型的实际推理延迟。
 
-# 相关工作
+## 相关工作
 目前，结合了检索的增强生成（Retrieval-Augmented Generation, RAG）模型已成为提升大语言模型（LLM）准确性和事实性的标准技术。现有先进的检索增强推理模型，如 Search-R1，虽然能与搜索引擎交互，但其交互方式有限，即每次查询只能返回固定数量的文档。
 
 这种固定数量的检索存在明显瓶颈：
@@ -31,7 +30,7 @@ title: "Cost-Aware Retrieval-Augmentation Reasoning Models with Adaptive Retriev
 
 本文旨在解决上述问题，通过让模型学习一种**动态且具备成本意识的检索策略**，使其能根据问题的需要自适应地决定检索文档的数量，从而在保证或提升效果的同时，显著提高模型的计算效率。
 
-# 本文方法
+## 本文方法
 
 本文在现有的检索增强推理模型 Search-R1 的基础上，提出了一个名为 **Dynamic Search-R1** 的新框架。其核心思想是赋予模型动态调整检索深度的能力，并通过一种成本感知的强化学习方法来训练模型，使其在效率和效果之间取得更好的平衡。
 
@@ -70,7 +69,7 @@ $${% endraw %}
 1.  **内存约束成本 (Memory-bound Cost)**: 最简单的方式，成本 $c$ 等于总Token数 $ \mid y \mid $。它关注于最小化内存占用。
 2.  **延迟约束成本 (Latency-bound Cost)**: 更精细的方式，公式为：$c\_{i}=\sum\_{t=1}^{ \mid y\_{i} \mid }{I(y\_{i,t})}\cdot c\_{g}+\sum\_{t=1}^{ \mid y\_{i} \mid }{(1-I(y\_{i,t}))}\cdot c\_{e}$。这里，$c\_g$ 是生成一个Token的平均延迟，而 $c\_e$ 是处理（编码）一个输入Token的平均延迟。实验发现，生成Token的延迟比编码Token高出**621%**，因此该成本函数能更真实地反映模型的推理延迟。
 
-# 实验结论
+## 实验结论
 
 本文在7个不同的问答数据集上进行了实验，包括通用QA（如NQ、TriviaQA）和多跳QA（如HotpotQA、Musique）。
 

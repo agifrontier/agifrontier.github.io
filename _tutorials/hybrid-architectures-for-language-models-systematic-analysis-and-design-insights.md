@@ -3,7 +3,6 @@ layout: default
 title: "Hybrid Architectures for Language Models: Systematic Analysis and Design Insights"
 ---
 
-# Hybrid Architectures for Language Models: Systematic Analysis and Design Insights
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.04800v1
 
@@ -13,16 +12,16 @@ title: "Hybrid Architectures for Language Models: Systematic Analysis and Design
 
 ---
 
-# TL;DR
+## TL;DR
 本文系统性地分析和评估了语言模型的混合架构（层间与层内），发现层内混合策略在模型质量与计算效率之间取得了最佳的帕累托前沿 (Pareto-frontier)。
 
-# 关键定义
+## 关键定义
 本文的核心是围绕两种混合语言模型架构展开的，它们都是对现有基础模块（Transformer和Mamba）的组合：
 
 1.  **层间混合模型 (Inter-layer Hybrid Model)**：一种序列化的混合方法。它在模型的不同层之间交替堆叠 Transformer 块和 Mamba 块。其设计的关键在于决定两种模块的比例和排列顺序。
 2.  **层内混合模型 (Intra-layer Hybrid Model)**：一种并行的混合方法。它在单个模型层内部实现两种基础模块的融合。常见做法是“头注意力切分 (head-wise splitting)”，即将一部分注意力头分配给 Transformer 的自注意力机制，另一部分分配给 Mamba 的状态空间模型。
 
-# 相关工作
+## 相关工作
 当前，主流的大语言模型大多基于 Transformer 架构，但其核心的自注意力机制具有与序列长度成二次方关系的计算复杂度，这导致在处理长序列时推理速度慢、内存占用高。
 
 为了解决这一瓶颈，一系列受信号处理启发的结构化状态空间模型 (structured state space models, SSMs)，如 Mamba，应运而生。Mamba 通过将上下文压缩为有限维度的状态，实现了对序列长度的线性扩展，并在语言建模任务上展现出与 Transformer 相当的性能。
@@ -31,7 +30,7 @@ title: "Hybrid Architectures for Language Models: Systematic Analysis and Design
 
 本文旨在解决这一问题，通过全面的评估，为层间和层内两种混合策略提供系统的比较、关键的设计洞见和实用的架构指南。
 
-# 本文方法
+## 本文方法
 本文通过系统性的实验，对层间（串行）和层内（并行）两种混合架构进行了全面的评估和优化，旨在为构建高效能的混合语言模型提供设计准则。
 
 <img src="/images/2510.04800v1/hybrid_overview.jpg" alt="图1：不同架构使用的注意力原语概览" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -49,7 +48,7 @@ title: "Hybrid Architectures for Language Models: Systematic Analysis and Design
 2.  **维度比例**：在混合块内部，分配给 Transformer 和 Mamba 的维度比例如何影响性能？实验表明，增加分配给 Transformer 的维度能持续提升模型质量，这说明 Transformer 部分在混合块中扮演着关键角色。然而，考虑到并行计算的效率瓶颈在于较慢的 Transformer 部分，1:1 的维度比例提供了一个实用且高效的平衡点。
 3.  **模块比例与位置**：与层间混合类似，增加包含 Transformer 的层内混合块的比例也能稳定提升模型质量。将这些混合块**均匀地散布在模型的不同深度**，可以获得最好的性能。
 
-# 实验结论
+## 实验结论
 本文通过在语言建模、长上下文能力、扩展性和效率等多个维度进行综合实验，得出了一系列关于混合架构的关键结论。
 
 <img src="/images/2510.04800v1/pareto_frontier.jpg" alt="图2：不同架构在模型质量与推理吞吐量上的帕累托前沿" style="width:85%; max-width:450px; margin:auto; display:block;">

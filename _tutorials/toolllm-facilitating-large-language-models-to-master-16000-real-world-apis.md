@@ -3,7 +3,6 @@ layout: default
 title: "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs"
 ---
 
-# ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs
 
 - **ArXiv URL**: http://arxiv.org/abs/2307.16789v2
 
@@ -13,17 +12,17 @@ title: "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world 
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一个名为ToolLLM的通用工具使用框架，通过构建一个包含超过16000个真实世界API的大规模指令微调数据集ToolBench，并采用一种新颖的深度优先搜索决策树（DFSDT）方法，成功地将开源大语言模型（LLaMA）的工具使用能力提升至与ChatGPT相当的水平。
 
-# 关键定义
+## 关键定义
 *   **ToolLLM**: 一套通用的工具使用框架，涵盖了为大型语言模型（LLMs）赋能工具使用能力所需的数据构建、模型训练和评估的全过程。
 *   **ToolBench**: 本文构建的一个大规模、高质量的工具使用指令微调数据集。它包含从RapidAPI平台收集的16,464个真实世界RESTful API，以及围绕这些API自动生成的超过12万条指令，覆盖了单工具和多工具使用的复杂场景。
 *   **深度优先搜索决策树 (Depth-First Search-based Decision Tree, DFSDT)**: 本文为增强LLM的规划和推理能力而开发的一种新颖算法。与传统的单路径推理方法不同，DFSDT允许模型构建一个决策树，探索多条可能的推理路径，并能够在遇到错误或死胡同时进行回溯，从而显著提高了解决复杂问题的成功率。
 *   **ToolEval**: 本文开发的一款基于ChatGPT的自动化评估器，用于衡量LLM的工具使用能力。它包含两个关键指标：**通过率 (Pass Rate)**，衡量模型成功完成指令的能力；以及**胜率 (Win Rate)**，通过对比两个模型生成的解决方案来评估其质量。
 *   **ToolLLaMA**: 基于ToolBench数据集对LLaMA模型进行微调后得到的模型。该模型展现出强大的工具执行能力和对未见API的泛化能力。
 
-# 相关工作
+## 相关工作
 目前，开源的大语言模型（LLMs），如LLaMA，尽管在基础语言任务上表现出色，但在使用外部工具（API）来完成复杂指令方面能力显著不足。这与顶尖的闭源模型（如ChatGPT）强大的工具使用能力形成鲜明对比。
 
 现有研究在为工具使用构建指令微调数据方面存在几大瓶颈：
@@ -33,7 +32,7 @@ title: "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world 
 
 因此，本文旨在解决的核心问题是：如何弥补开源LLM与闭源LLM在工具使用能力上的差距，通过构建高质量的数据集和开发更优的推理策略，系统性地提升开源LLM掌握和使用大规模真实世界API的能力。
 
-# 本文方法
+## 本文方法
 本文提出了ToolLLM框架，其核心在于通过高质量的数据、创新的推理方法和系统的训练评估流程，来教会开源LLM使用工具。整个框架由三大部分组成：ToolBench数据集构建、ToolLLaMA模型训练与API检索器，以及ToolEval评估器。
 
 <img src="/images/2307.16789v2/x1.jpg" alt="ToolLLM框架概览" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -81,7 +80,7 @@ DFSDT的优势在于，它极大地扩展了LLM的探索空间，使其能够“
 3.  ToolLLaMA接收指令和候选API，利用从DFSDT学习到的决策能力，进行多轮“思考-调用API”的循环。
 4.  最终，模型整合所有API返回的信息，生成最终答案。
 
-# 实验结论
+## 实验结论
 本文设计了全面的实验来验证ToolLLM框架的有效性，并开发了自动评估器ToolEval来衡量模型表现。
 
 ### 关键组件的有效性

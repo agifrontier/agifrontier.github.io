@@ -3,7 +3,6 @@ layout: default
 title: "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware"
 ---
 
-# Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware
 
 - **ArXiv URL**: http://arxiv.org/abs/2304.13705v1
 
@@ -13,23 +12,23 @@ title: "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一套名为 ALOHA 的低成本开源双臂遥操作硬件系统，并结合一种名为 ACT 的新型模仿学习算法，通过预测动作序列（Action Chunking）而非单步动作，成功地让低成本机器人学会了多种以往需要昂贵设备才能完成的精细操作任务。
 
-# 关键定义
+## 关键定义
 *   **ALOHA (A Low-cost Open-source Hardware System for Bimanual Teleoperation)**：一套作者构建的低成本（<$20k）双臂遥操作硬件。它使用现成的机器人臂（ViperX 和 WidowX）和3D打印组件，通过关节空间映射（joint-space mapping）的方式，让操作员能够直观地控制机器人，以收集高质量、高频率的精细操作演示数据。
 *   **动作分块 (Action Chunking)**：本文提出的核心算法思想。传统方法一次预测一个动作，而动作分块是指策略模型一次性预测未来 $$k$$ 个时间步的动作序列。这种方法将任务的有效时域缩短了 $$k$$ 倍，从而显著缓解了模仿学习中的“误差累积”问题。
 *   **时序集成 (Temporal Ensembling)**：一种在推理阶段使用的技术，用于平滑机器人动作。系统在每个时间步都查询策略模型（而非每 $$k$$ 步），从而产生重叠的动作块。对于任意一个时间步，系统会汇集（加权平均）来自不同次预测中针对该时间步的动作指令，使得最终执行的动作更加平滑连贯。
 *   **ACT (Action Chunking with Transformers)**：本文提出的模仿学习算法全称。该算法使用 Transformer 架构来实现动作分块，并采用条件变分自编码器（Conditional VAE, CVAE）进行训练，以有效建模人类演示数据中固有的多模态和噪声特性。
 
-# 相关工作
+## 相关工作
 当前，精细操作任务（如穿线、装电池）通常依赖于价格昂贵、精度极高的高端机器人和传感器。虽然模仿学习（Imitation Learning）为使用低成本硬件提供了可能，但它存在一个致命弱点：**误差累积 (compounding errors)**。策略在执行过程中产生的微小误差会随时间不断累积，导致机器人进入一个从未在训练数据中见过的陌生状态，最终导致任务失败，这个问题在需要高精度的精细操作中尤为严重。
 
 现有的误差累积缓解方案，或需要繁琐的在线专家干预（如 DAgger），或局限于低维状态空间，不适用于直接从高维像素（图像）学习的场景。
 
 因此，本文旨在解决的核心问题是：**如何让低成本、低精度的机器人硬件，通过直接从图像学习的方式，成功执行高精度的、需要闭环反馈的复杂双臂操作任务？**
 
-# 本文方法
+## 本文方法
 
 本文的贡献包含两个协同工作的部分：一个用于数据收集的低成本遥操作硬件系统 ALOHA，以及一个用于学习的创新算法 ACT。
 
@@ -71,7 +70,7 @@ title: "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware"
 *   **训练 (Algorithm 1)**：从演示数据集 $\mathcal{D}$ 中采样观测 $o\_t$ 和对应的未来 $$k$$ 步动作序列 $a\_{t:t+k}$。通过CVAE框架训练策略网络 $\pi\_{\theta}$ 和编码器 $q\_{\phi}$。
 *   **推理 (Algorithm 2)**：在每个时间步 $$t$$，获取当前观测 $o\_t$，令隐变量 $z=0$，调用策略 $\pi\_{\theta}(\hat{a}\_{t:t+k} \mid o\_t, z)$ 预测未来 $$k$$ 步的动作。将这些预测动作存入缓冲区，并通过时序集成计算出最终要执行的当前动作。
 
-# 实验结论
+## 实验结论
 本文在2个模拟任务和6个真实世界的精细操作任务（如拉开自封袋、安装电池、打开调料杯、穿魔术贴带等）上对ACT进行了评估。
 
 

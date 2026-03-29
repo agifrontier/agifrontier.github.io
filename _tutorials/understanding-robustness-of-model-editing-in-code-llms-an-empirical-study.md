@@ -3,7 +3,6 @@ layout: default
 title: "Understanding Robustness of Model Editing in Code LLMs: An Empirical Study"
 ---
 
-# Understanding Robustness of Model Editing in Code LLMs: An Empirical Study
 
 - **ArXiv URL**: http://arxiv.org/abs/2511.03182v1
 
@@ -13,10 +12,10 @@ title: "Understanding Robustness of Model Editing in Code LLMs: An Empirical Stu
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过一项在受控环境中进行的系统性实证研究发现，现有的模型编辑方法在更新代码大语言模型（code LLMs）以适应API演进时，表现出有限且不稳定的适应能力，普遍导致模型性能显著下降，且多数成功案例依赖变通方案而非真正采纳新API。
 
-# 关键定义
+## 关键定义
 本文为评估模型编辑的鲁棒性，提出并沿用了一套清晰的评估框架和术语，其中核心概念包括：
 
 1.  **即时编辑 (Instant Editing)**：一种评估设定，指对模型进行单次、孤立的API更新，旨在检验模型能否在不受其他编辑干扰的情况下，精确、稳定地集成单个知识变更。
@@ -25,7 +24,7 @@ title: "Understanding Robustness of Model Editing in Code LLMs: An Empirical Stu
 4.  **泛化性子集 (Generalization Subset)**：用于测试模型在未见过的新任务中，能否正确应用已被编辑的API知识，衡量编辑效果的迁移能力。
 5.  **特异性子集 (Specificity Subset)**：包含与编辑目标无关的任务，用于检测编辑操作是否对模型在其他不相关任务上的性能产生负面影响（即回归或意外副作用）。
 
-# 相关工作
+## 相关工作
 当前的软件开发越来越依赖于代码大语言模型（code Large Language Models, LLMs），如CodeLlama、GPT系列等，它们在代码生成、重构和修复等任务中展现了强大的能力。然而，这些模型在预训练后通常是静态的，而编程语言、库和API却在不断快速演进，导致模型生成的代码可能过时或不兼容，从而降低了其可靠性。
 
 完全重新训练模型以跟上这些变化的成本极其高昂。因此，**模型编辑 (model editing)** 作为一种轻量级替代方案应运而生，它旨在通过修改模型的一小部分参数来更新或修正其内部知识，而无需从头开始训练。在自然语言处理领域，模型编辑主要关注事实性知识的修正（例如，“X国的首都是Y”更新为“Z”），并要求这种修改是局部的，不影响模型在其他无关问题上的表现。
@@ -36,7 +35,7 @@ title: "Understanding Robustness of Model Editing in Code LLMs: An Empirical Stu
 
 本文旨在解决这一核心问题：**现有的模型编辑方法在应用于代码LLM以适应不断变化的API时，其鲁棒性、泛化性和稳定性究竟如何？它们是实现了真正的语义适配，还是仅仅进行了表面的、不可靠的修复？**
 
-# 本文方法
+## 本文方法
 
 为系统性地评估代码LLM中模型编辑的鲁棒性，本文设计并执行了一项全面的实证研究。其核心方法论并非提出一种新的编辑算法，而是构建了一个严谨、可控的评测框架，以深入剖析现有方法的表现。
 
@@ -103,7 +102,7 @@ title: "Understanding Robustness of Model Editing in Code LLMs: An Empirical Stu
 *   **多维度的鲁棒性评估**：通过可靠性、泛化性和特异性三个子集，系统地剖析了编辑操作的直接效果、迁移能力和副作用。
 *   **区分真实采纳与变通方案**：深入分析模型输出，区分了真正学会使用新API的情况和绕过新API但碰巧通过测试的情况。
 
-# 实验结论
+## 实验结论
 
 本文通过全面的实验，揭示了当前模型编辑方法在应用于代码LLM时的严重局限性。
 

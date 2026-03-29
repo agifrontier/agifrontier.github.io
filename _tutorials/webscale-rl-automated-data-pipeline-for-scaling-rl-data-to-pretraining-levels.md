@@ -3,7 +3,6 @@ layout: default
 title: "Webscale-RL: Automated Data Pipeline for Scaling RL Data to Pretraining Levels"
 ---
 
-# Webscale-RL: Automated Data Pipeline for Scaling RL Data to Pretraining Levels
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.06499v1
 
@@ -11,10 +10,10 @@ title: "Webscale-RL: Automated Data Pipeline for Scaling RL Data to Pretraining 
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 Webscale-RL 的自动化数据流水线，旨在通过从网络文档中自动挖掘和生成数据，将强化学习（RL）数据的规模扩展到与预训练数据相当的水平，从而显著提升大型语言模型的性能。
 
-# 关键定义
+## 关键定义
 本文的核心是其创新的数据生成流水线，其中包含以下几个关键概念：
 
 *   **Webscale-RL 数据流水线 (Webscale-RL Data Pipeline)**：一个全自动化的系统，用于从海量网络文档中生成高质量、大规模的强化学习训练数据。该流水线涵盖了从源文档中创建上下文、生成指令、产出响应到最终验证的全过程。
@@ -22,12 +21,12 @@ title: "Webscale-RL: Automated Data Pipeline for Scaling RL Data to Pretraining 
 *   **正确性验证 (Correctness Verification)**：流水线中的一个关键质量控制步骤，旨在确保模型生成的答案在事实上是准确的。它通过比对源文档来核实答案的正确性，过滤掉不准确或虚构的内容。
 *   **泄漏预防 (Leakage Prevention)**：流水线中的另一个关键质量控制步骤，用于防止生成的指令或问题直接“泄露”源文档中的关键信息，从而避免模型通过简单的复制粘贴来“作弊”。此举确保了模型需要进行真正的推理才能解决问题。
 
-# 相关工作
+## 相关工作
 当前，大型语言模型的训练主要分为两个阶段：大规模无监督预训练和有监督微调/强化学习对齐。预训练阶段使用了海量的网络文本数据（量级可达数万亿 token），而强化学习（尤其是基于人类反馈的强化学习 RLHF）阶段的数据规模则小得多，通常依赖于昂贵且耗时的人工标注。这种 RL 数据的稀缺性成为了进一步提升模型能力的主要瓶颈。
 
 本文旨在解决的核心问题是：**如何自动化地、大规模地生成高质量、多样化且安全的强化学习训练数据，从而克服当前 RL 数据收集的瓶颈，将 RL 数据的规模提升至预训练级别，以充分释放大型语言模型的潜力。**
 
-# 本文方法
+## 本文方法
 本文提出了一种新颖的自动化数据流水线——Webscale-RL，其核心是实现强化学习数据生产的规模化和高质量。该流水线的设计精巧，通过多个阶段将原始网络文本转化为优质的 RL 训练数据。
 
 <img src="/images/2510.06499v1/pipeline.jpg" alt="Webscale-RL 数据流水线示意图" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -44,7 +43,7 @@ title: "Webscale-RL: Automated Data Pipeline for Scaling RL Data to Pretraining 
 
 通过这一系列自动化步骤，Webscale-RL 能够持续不断地从网络中“提炼”出海量的、具有事实依据和推理挑战的优质 RL 数据。
 
-# 实验结论
+## 实验结论
 本文通过构建大规模数据集和一系列下游任务实验，验证了 Webscale-RL 方法的有效性。
 
 ### 数据集分析

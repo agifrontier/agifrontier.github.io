@@ -3,7 +3,6 @@ layout: default
 title: "Understanding the Role of Training Data in Test-Time Scaling"
 ---
 
-# Understanding the Role of Training Data in Test-Time Scaling
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.03605v1
 
@@ -13,15 +12,15 @@ title: "Understanding the Role of Training Data in Test-Time Scaling"
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过一个可理论分析的线性回归任务，从理论上解释了训练数据的特性如何决定测试时增加计算（即更长的思想链）能否成功提升模型性能，并证明了在多样化、相关且困难的任务上进行训练对测试时扩展（test-time scaling）最为有利。
 
-# 关键定义
+## 关键定义
 *   **测试时扩展 (Test-time scaling)**: 在模型参数固定的情况下，于推理（测试）阶段分配额外的计算资源，例如生成更长的思想链 (Chain-of-Thoughts, CoT)，以解决更复杂的问题。
 *   **上下文权重预测 (In-context weight prediction)**: 本文研究的一种特定的上下文学习 (In-context learning, ICL) 任务。不同于预测单个输出 $$y$$，该任务要求模型直接从给定的上下文 $$(x_i, y_i)$$ 序列中，推断出背后隐藏的线性回归权重向量 $$w$$。
 *   **任务难度 (Task Hardness)**: 本文提出的一个量化指标，定义为 $$Hard(Λ) := tr(Λ) / λ_min(Λ)$$，其中 $$Λ$$ 是任务特征的协方差矩阵，$$tr(Λ)$$ 是其迹，$$λ_min(Λ)$$ 是其最小特征值。该指标衡量了学习任务所需“技能”的多样性和不均衡性，数值越高意味着任务越难。
 
-# 相关工作
+## 相关工作
 领域内的主流方法，如 OpenAI 的 o1 和 DeepSeek R1，已经通过经验证明，在测试时扩展计算（如使用更长的CoT）能够显著增强大型语言模型的推理能力。同时，经验表明在多样化和困难的数据上训练有助于模型获得这种能力。
 
 然而，现有研究主要停留在经验层面，缺乏理论支撑。领域面临的关键问题和瓶瓶颈包括：
@@ -31,7 +30,7 @@ title: "Understanding the Role of Training Data in Test-Time Scaling"
 
 本文旨在通过建立一个可控的理论框架，为上述问题提供严谨的解答，并揭示训练数据属性与测试时扩展性能之间的内在联系。
 
-# 本文方法
+## 本文方法
 
 ## 理论框架：线性回归中的上下文学习
 本文在一个简化的、可分析的环境中研究测试时扩展：针对线性回归任务的上下文权重预测。
@@ -96,7 +95,7 @@ $${% endraw %}
 
 为了便于实际操作，本文还提出了一个简化的凸二次规划问题来求解最优的任务选择概率 $${π_i}$$。
 
-# 实验结论
+## 实验结论
 本文通过在 LSA 模型和更复杂的 GPT-2 模型上进行实验，验证了其理论发现。
 
 1.  **测试计算可换取训练数据**：实验表明，增加测试时的CoT步数 $$k$$，可以在达到相同测试误差的前提下，减少训练时所需的上下文长度 $$n$$。这证实了测试时计算与训练数据量之间存在权衡关系。

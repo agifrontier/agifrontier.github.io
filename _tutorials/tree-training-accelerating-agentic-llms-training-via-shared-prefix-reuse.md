@@ -3,7 +3,6 @@ layout: default
 title: "Tree Training: Accelerating Agentic LLMs Training via Shared Prefix Reuse"
 ---
 
-# Tree Training: Accelerating Agentic LLMs Training via Shared Prefix Reuse
 
 - **ArXiv URL**: http://arxiv.org/abs/2511.00413v1
 
@@ -13,15 +12,15 @@ title: "Tree Training: Accelerating Agentic LLMs Training via Shared Prefix Reus
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 Tree Training 的新训练范式，通过将智能体交互产生的树状轨迹数据进行高效打包和计算复用，在训练的前向和后向传播中对共享的前缀（prefix）只计算一次，从而显著提升了智能体大语言模型（Agentic LLM）的训练效率。
 
-# 关键定义
+## 关键定义
 *   **Tree Training**: 一种全新的训练范式，旨在加速智能体大模型（agentic LLM）的训练。它通过将具有分支结构的交互轨迹数据组织成树形结构，在训练的的正向和反向传播过程中，对共享的token前缀只计算一次，并复用其计算结果，从而大幅提升计算效率。该范式主要包含两个核心组件：Tree Packing 和 Gradient Restoration。
 *   **Tree Packing**: 一种将树状轨迹数据转换成紧凑的填充序列（packed-sequence）表示的方法。其核心目标是在有限的GPU内存预算下，通过优化树的切分和打包方式，最大化共享前缀的计算复用，从而最小化总体训练成本。
 *   **Gradient Restoration (梯度恢复)**: 一种确保在反向传播过程中梯度计算正确性的关键技术。由于不同轨迹共享相同的前缀，但拥有不同的后缀，这导致在反向传播时，前缀部分的梯度会因后缀的不同而产生差异。梯度恢复通过一个形式化的梯度流分析，推导出一个校正算法（主要是通过梯度缩放），确保即使前缀只计算一次，其累积的梯度贡献也与独立计算所有分支时完全等价。
 
-# 相关工作
+## 相关工作
 在智能体大模型的应用场景中，模型的交互过程常常呈现出分支行为。例如，树状规划、并发工具调用或记忆检索等机制都会导致单一任务的token轨迹从线性序列演变成树状结构。
 
 <img src="/images/2511.00413v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -32,7 +31,7 @@ title: "Tree Training: Accelerating Agentic LLMs Training via Shared Prefix Reus
 
 因此，本文旨在解决的核心问题是：**如何设计一种新的训练框架，能够在训练的前向和后向传播中高效地复用树状轨迹中的共享前缀计算，同时保证数学上的完全等价性，从而消除计算冗余，加速智能体模型的训练。**
 
-# 本文方法
+## 本文方法
 
 ## 概述
 为了解决共享前缀在反向传播中因后续序列不同而导致梯度不一致的问题，本文提出了 Tree Training 范式。其核心思想是在一个微批次（micro-batch）内同时处理共享前缀及其所有后续分支。这样，在计算反向梯度时，可以获得计算所需的所有信息，同时确保共享部分的计算只进行一次。
@@ -168,7 +167,7 @@ $${% endraw %}
 
 <img src="/images/2511.00413v1/x6.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
-# 实验结论
+## 实验结论
 本文在多个Qwen3模型和不同数据分布上验证了Tree Training的有效性。
 
 <img src="/images/2511.00413v1/x7.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">

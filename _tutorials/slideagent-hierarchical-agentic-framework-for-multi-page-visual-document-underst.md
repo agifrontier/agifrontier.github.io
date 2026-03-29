@@ -3,7 +3,6 @@ layout: default
 title: "SlideAgent: Hierarchical Agentic Framework for Multi-Page Visual Document Understanding"
 ---
 
-# SlideAgent: Hierarchical Agentic Framework for Multi-Page Visual Document Understanding
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.26615v2
 
@@ -13,10 +12,10 @@ title: "SlideAgent: Hierarchical Agentic Framework for Multi-Page Visual Documen
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 SlideAgent 的分层智能体框架，通过设置全局、页面、元素三个级别的专业智能体，将复杂的多页视觉文档理解任务分解，先构建独立于查询的结构化知识库，再进行针对性推理，从而显著提升了大型语言模型在处理幻灯片等文档时的细粒度理解和推理能力。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下对理解其核心方法至关重要的概念：
 
 1.  **SlideAgent**: 本文提出的核心框架，一个用于理解多模态、多页、多布局文档（尤其是幻灯片）的通用智能体 (Agentic) 框架。
@@ -27,7 +26,7 @@ title: "SlideAgent: Hierarchical Agentic Framework for Multi-Page Visual Documen
 3.  **知识构建 (Knowledge Construction)**: SlideAgent 的第一阶段，一个**与查询无关 (query-agnostic)** 的过程。在此阶段，分层智能体们处理输入文档，自顶向下地构建一个包含全局、页面和元素三个层级的结构化知识库 $$K$$。
 4.  **推理阶段 (Inference Stage)**: SlideAgent 的第二阶段，一个**与查询相关 (query-specific)** 的过程。在此阶段，系统首先对用户查询进行分类，激活相应的智能体，生成子查询以优化检索，然后各智能体基于检索到的知识进行推理，最后综合所有信息生成最终答案。
 
-# 相关工作
+## 相关工作
 当前，多模态大型语言模型 (Multimodal Large Language Models, MLLMs) 在文档理解领域取得了显著进展，但仍面临三大核心瓶颈：
 
 1.  **整体性处理与细粒度缺失**: SOTA 模型一次能处理的图像数量有限，且倾向于将页面作为一个整体进行理解，这导致它们常常忽略用户查询所需的细粒度、元素级别的信息。例如，模型在识别杂乱页面中的图表分段时容易出错，但如果将图表单独裁剪出来，则能正确识别。
@@ -38,7 +37,7 @@ title: "SlideAgent: Hierarchical Agentic Framework for Multi-Page Visual Documen
 
 <img src="/images/2510.26615v2/x1.jpg" alt="img" style="width:85%; max-width:450px; margin:auto; display:block;">
 
-# 本文方法
+## 本文方法
 SlideAgent 的核心是一个分为两个阶段的分层智能体框架：知识构建和推理。其目标是为给定的多页视觉文档 $\mathcal{P}$ 和一个查询 $q$，生成一个自然的答案 $a$。
 
 <img src="/images/2510.26615v2/x2.jpg" alt="img" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -100,7 +99,7 @@ $${% endraw %}
 3.  **显式空间信息融合**: 通过元素智能体和布局解析工具，SlideAgent 显式地捕捉和利用元素的空间位置和结构信息，直接弥补了现有 MLLM 在空间推理能力上的短板。
 4.  **模型无关的框架**: SlideAgent 是一个灵活的框架，可以与各种不同的闭源或开源 LLM/MLLM 模型结合使用，具有很强的通用性。
 
-# 实验结论
+## 实验结论
 
 <img src="/images/2510.26615v2/x3.jpg" alt="img" style="width:85%; max-width:450px; margin:auto; display:block;">
 

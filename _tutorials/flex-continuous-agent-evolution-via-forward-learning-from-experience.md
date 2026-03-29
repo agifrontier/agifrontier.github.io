@@ -3,7 +3,7 @@ layout: default
 title: "FLEX: Continuous Agent Evolution via Forward Learning from Experience"
 ---
 
-# 让AI像人一样“吃一堑长一智”：FLEX框架使Agent性能飙升23%
+## 让AI像人一样“吃一堑长一智”：FLEX框架使Agent性能飙升23%
 
 当前的大模型Agent（智能体）虽然能力强大，但它们都有一个共同的“健忘症”：一旦训练完成，就变成了静态的工具。无论在任务中成功还是失败，它们都无法吸取教训，下次遇到同样的问题还是会犯同样的错。这与人类通过经验不断成长的学习方式相去甚远。
 

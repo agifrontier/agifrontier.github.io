@@ -3,7 +3,6 @@ layout: default
 title: "Prompts Generalize with Low Data: Non-vacuous Generalization Bounds for Optimizing Prompts with More Informative Priors"
 ---
 
-# Prompts Generalize with Low Data: Non-vacuous Generalization Bounds for Optimizing Prompts with More Informative Priors
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.08413v1
 
@@ -13,10 +12,10 @@ title: "Prompts Generalize with Low Data: Non-vacuous Generalization Bounds for 
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种新颖的泛化界理论，通过引入基于困惑度（perplexity）的、信息更丰富的先验（prior），为数据稀疏场景下的提示（prompt）优化提供了非空泛的（non-vacuous）理论保证，并证明了这种方法在实践中能提升提示的泛化能力。
 
-# 关键定义
+## 关键定义
 本文的核心在于将概率近似正确贝叶斯（PAC-Bayes）理论与数据依赖的先验相结合来分析提示的泛化能力。关键概念如下：
 
 *   **泛化界 (Generalization Bound)**：一个数学上的保证，用于衡量在训练集上学习到的模型（或本文中的提示）在未见过的真实数据分布上的预期表现。它通常连接了可观察的经验风险（训练误差）与不可观察的总体风险（真实误差）。
@@ -24,14 +23,14 @@ title: "Prompts Generalize with Low Data: Non-vacuous Generalization Bounds for 
 *   **数据依赖先验 (Data-Dependent Prior)**：在PAC-Bayes框架中，传统的先验分布 $$P$$ 是独立于训练数据的。而数据依赖先验允许利用部分数据（如一个小的验证集或无标签数据）来构造或选择一个更具信息量的先验分布。这有助于在模型空间中更有效地进行正则化，从而得到更紧致的泛化界。
 *   **困惑度 (Perplexity)**：语言模型中的一个标准度量，用于衡量模型对一个文本序列的预测能力有多好。困惑度越低，表示模型认为该序列越“自然”或越符合其内部的语言模式。在本文中，低困惑度的提示被假设为更可能泛化得好，因此困惑度被用作构建信息丰富先验的核心依据。
 
-# 相关工作
+## 相关工作
 当前，指导大型语言模型（LLM）主要通过精心设计的提示（prompt）。提示优化技术，如自动化搜索算法，旨在从巨大的提示空间中找到在训练数据上表现最佳的提示。然而，一个根本性的问题是：这些在少量训练样本上优化出的提示，为何能在未见数据上依然表现良好？
 
 现有的泛化理论，如经典的VC维或应用于模型权重的PAC-Bayes理论，由于LLM的巨大参数量，往往只能得出空泛的（vacuous）结论。最近，Akinwande et al. (2023) 将PAC-Bayes理论应用于离散的提示空间，并在数据充足（data-rich）的场景下获得了非空泛的泛化界。然而，在现实应用中，用户往往只有极少量的数据来优化提示，这使得数据稀疏（data-scarce）场景下的泛化问题尤为突出，而Akinwande等人的工作并未解决这个问题。
 
 本文旨在填补这一空白，具体解决的问题是：**如何在数据稀疏的条件下，为提示优化方法提供有意义的、非空泛的泛化理论保证？** 作者假设，通过利用LLM自身编码的先验知识（通过困惑度来度量），可以构建更有效的先验，从而在小样本情况下也能得到紧致的泛化界。
 
-# 本文方法
+## 本文方法
 本文的核心方法是推导一种新颖的、数据依赖的PAC-Bayes泛化界，该界通过引入基于困惑度的正则化来收紧边界，使其在数据稀疏场景下依然有效。
 
 ### 理论基础：PAC-Bayes与数据依赖先验
@@ -72,7 +71,7 @@ title: "Prompts Generalize with Low Data: Non-vacuous Generalization Bounds for 
 *   **利用LLM固有知识**：该方法巧妙地利用了LLM在预训练阶段学到的海量知识，通过“元提示”和困惑度将其转化为对特定任务有益的先验，有效约束了巨大的提示搜索空间。
 
 
-# 实验结论
+## 实验结论
 本文在ETHOS仇恨言论分类任务上进行了实验，使用Gemini 2.0 Flash模型和APO（自动化提示优化）算法来验证其理论。实验的核心是比较不同先验（空先验、人工设计的“信息性”先验、数据优化的“优化”先验）对泛化界和最终测试性能的影响。
 
 ### 关键实验结果

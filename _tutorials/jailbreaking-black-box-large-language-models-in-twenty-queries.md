@@ -3,7 +3,6 @@ layout: default
 title: "Jailbreaking Black Box Large Language Models in Twenty Queries"
 ---
 
-# Jailbreaking Black Box Large Language Models in Twenty Queries
 
 - **ArXiv URL**: http://arxiv.org/abs/2310.08419v4
 
@@ -13,10 +12,10 @@ title: "Jailbreaking Black Box Large Language Models in Twenty Queries"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 PAIR 的黑盒攻击算法，其利用一个攻击者大语言模型 (LLM)，通过少量（通常少于20次）的查询，以自动化、迭代的方式生成并优化具有语义的提示（Prompt），从而高效地“越狱”目标 LLM。
 
-# 关键定义
+## 关键定义
 本文的核心是围绕一种新型的自动化越狱攻击方法展开的，其关键概念包括：
 
 *   **提示级越狱 (Prompt-level jailbreaks)**：指通过设计具有特定语义、类似社会工程学技巧的、人类可理解的提示，诱导 LLM 绕过其安全护栏，生成不当或有害内容。这与Token级越狱主要在无意义的字符序列上进行优化形成对比。
@@ -25,7 +24,7 @@ title: "Jailbreaking Black Box Large Language Models in Twenty Queries"
 *   **攻击者 LLM (Attacker LLM) 与 目标 LLM (Target LLM)**：PAIR 框架中的两个关键角色。目标 LLM 是需要被越狱的模型。攻击者 LLM 则被赋予特定指令，用于自动生成和迭代优化针对目标 LLM 的越狱提示。
 *   **JUDGE (裁判函数)**：一个用于评估目标 LLM 的响应是否构成“越狱”的函数或模型。它接收提示和响应作为输入，输出一个二元判断结果（是/否越狱）。本文经过评估，最终选用 Llama Guard 作为 JUDGE 函数。
 
-# 相关工作
+## 相关工作
 当前针对大语言模型 (LLM) 的越狱攻击主要分为两类。第一类是**提示级越狱**，它依赖人工设计富有创意、具有语义的提示（如角色扮演、情景假设等）来欺骗模型。这类方法虽然有效，但严重依赖人类的创造力、时间和手工整理的数据集，难以规模化。
 
 <img src="/images/2310.08419v4/token_vs_prompt.jpg" alt="图1：提示级与Token级越狱对比。上方为 GCG 生成的Token级越狱，下方为 PAIR 生成的提示级越狱。" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -34,7 +33,7 @@ title: "Jailbreaking Black Box Large Language Models in Twenty Queries"
 
 现有方法要么过于依赖人工、难以扩展，要么效率低下、不具解释性。本文旨在解决这一问题，提出一种能够**自动化、查询高效且生成可解释提示**的越狱方法。
 
-# 本文方法
+## 本文方法
 
 本文提出了 **PAIR (Prompt Automatic Iterative Refinement)** 框架，旨在完全自动化地生成可解释的提示级越狱。其核心思想是让两个黑盒LLM——一个**攻击者 (Attacker) $A$** 和一个**目标 (Target) $T$**——进行对抗性互动。攻击者 $A$ 的任务是发现能够诱导目标 $T$ 产生不当内容的候选提示。
 
@@ -101,7 +100,7 @@ $$``
 
 结果显示，GPT-4 的一致性最高（88%），但为了保证实验的可复现性并避免误报（即将良性回应误判为越狱），本文最终选择 **Llama Guard** 作为 JUDGE，因为它在开源模型中具有最低的误报率和具竞争力的协议。
 
-# 实验结论
+## 实验结论
 
 本文在 JailbreakBench 数据集上对 PAIR 进行了全面评估，该数据集包含10个类别共100种有害行为。攻击者主要使用 Mixtral，目标模型涵盖了 Vicuna、Llama-2、GPT-3.5/4、Claude 和 Gemini 等七种主流的开源及闭源 LLM。
 

@@ -3,7 +3,6 @@ layout: default
 title: "MoM: Mixtures of Scenario-Aware Document Memories for Retrieval-Augmented Generation Systems"
 ---
 
-# MoM: Mixtures of Scenario-Aware Document Memories for Retrieval-Augmented Generation Systems
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.14252v1
 
@@ -13,10 +12,10 @@ title: "MoM: Mixtures of Scenario-Aware Document Memories for Retrieval-Augmente
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出一个名为MoM（Mixtures of Scenario-aware Document Memories）的框架，通过模拟专家阅读过程，将传统检索增强生成（RAG, Retrieval-Augmented Generation）中的被动文本分块，转变为主动提取结构化的“文档记忆”（包含大纲、核心内容和原子分块），并训练小语言模型（SLM, small language models）掌握此能力，最终通过一个理论支持的三层检索机制提升了知识检索的精度和深度。
 
-# 关键定义
+## 关键定义
 *   **文档记忆 (Document Memory)**：本文提出的核心概念，指对非结构化文本进行深度理解和重构后得到的结构化知识体系。它被定义为一个三元组 $$M_doc = {O, C, A}$$，其中：
     *   **$$O$$ (Outline)**：文档的宏观逻辑结构，由核心主题构成的大纲。
     *   **$$C$$ (Core Content)**：从每个大纲节点对应内容中提炼出的高度浓缩的知识点集合。
@@ -26,14 +25,14 @@ title: "MoM: Mixtures of Scenario-Aware Document Memories for Retrieval-Augmente
 *   **分块清晰度 (Chunk Clarity)**：本文设计的一个评估指标，用于衡量原子分块之间语义边界的清晰程度。清晰度越高，代表分块的逻辑性和独立性越好。
 *   **核心内容完备性 (Core Content Completeness)**：本文设计的另一个评估指标，用于衡量核心内容 $$C$$ 对原始分块 $$A$$ 信息覆盖的有效性和简洁性。
 
-# 相关工作
+## 相关工作
 当前主流的RAG系统在文本预处理阶段严重依赖于被动的、与上下文无关的分块策略，如固定大小或递归分块。这些方法忽略了文档深层的语义和逻辑结构。虽然有部分研究开始探索语义分块，但它们多采用“自下而上”的构建逻辑，缺乏对文档整体架构的宏观把握，导致知识块在组合后可能偏离主题。此外，现有的RAG记忆系统研究严重偏向于对话场景中的短期和长期记忆管理，而对文档本身进行结构化、整体性记忆构建的机制尚处于初级阶段。
 
 本文旨在解决传统RAG范式中的两个核心问题：
 1.  如何让模型能像领域专家一样，主动将非结构化文本转化为语义完整、逻辑连贯的结构化知识（即文档记忆）？
 2.  如何高效地将这种深度理解能力赋予小语言模型（SLM）？
 
-# 本文方法
+## 本文方法
 MoM框架的核心目标是学习一个映射函数 $f\_{\text{MoM}}: \mathcal{D} \to \text{M}\_{\text{doc}}$，将原始文档 $\mathcal{D}$ 转化为结构化的文档记忆 $\text{M}\_{\text{doc}}$。该过程主要包括记忆提取、CoM构建和模型训练。
 
 <img src="/images/2510.14252v1/x1.jpg" alt="MoM框架示意图" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -93,7 +92,7 @@ MoM框架的核心目标是学习一个映射函数 $f\_{\text{MoM}}: \mathcal{D
 **理论证明**：
 本文证明了，在预期相似度上，HMV方法优于SVF方法。对于全局查询，HMV的预期相似度为1，而SVF小于1。局部查询同理。这意味着独立检索再融合（HMV）相比于先融合信息再检索（SVF），能更有效地减少信息损失，实现更精准的知识定位。
 
-# 实验结论
+## 实验结论
 *   **主要成果**：在三个不同领域的问答数据集（CRUD、OmniEval、MultiFieldQA）上的实验表明，MoM框架训练的MemReader模型显著优于所有基线方法。尤其在CRUD新闻数据集上，即使是1.5B和3B参数量级的MemReader也超越了所有对比方法，展示了框架的高效性。在更具挑战性的金融（OmniEval）和多领域（MultiFieldQA）数据集上，MemReader同样展现出强大泛化能力和最佳或次佳的性能。
 
 *   **对评估指标的探索**：实验验证了本文提出的“分块清晰度”指标的有效性。该指标与衡量生成质量的ROUGE-L指标之间表现出强正相关性（相关系数在0.70-0.75之间），证明其可作为评估分块质量的直接、快速的度量。

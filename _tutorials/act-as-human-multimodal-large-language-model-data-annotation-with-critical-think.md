@@ -3,7 +3,7 @@ layout: default
 title: "ACT as Human: Multimodal Large Language Model Data Annotation with Critical Thinking"
 ---
 
-# AI标注成本直降90%！字节ACT框架：让大模型学会「批判性思维」
+## AI标注成本直降90%！字节ACT框架：让大模型学会「批判性思维」
 
 <img src="/images/2511.09833v1/_title.jpg" alt="Title Image" style="width:85%; max-width:600px; margin:auto; display:block;">
 

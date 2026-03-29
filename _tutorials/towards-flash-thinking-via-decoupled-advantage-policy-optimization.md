@@ -3,7 +3,6 @@ layout: default
 title: "Towards Flash Thinking via Decoupled Advantage Policy Optimization"
 ---
 
-# Towards Flash Thinking via Decoupled Advantage Policy Optimization
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.15374v1
 
@@ -13,10 +12,10 @@ title: "Towards Flash Thinking via Decoupled Advantage Policy Optimization"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为DEPO的新型强化学习框架，它通过解耦高效与低效推理片段的优势计算、引入难度感知的长度惩罚和优势裁剪机制，在保持甚至提升模型准确率的同时，显著减少了大型推理模型的无效推理（“过度思考”）和响应长度。
 
-# 关键定义
+## 关键定义
 本文的核心在于对模型生成内容进行了精细的拆分和差异化处理，并为此定义了以下关键术语：
 
 *   **高效推理片段 (Efficient Segment)**: 在模型的思维链（Chain-of-Thought, CoT）中，从开始到首次推导出正确答案的部分。这部分被认为是解决问题的必要路径。
@@ -25,7 +24,7 @@ title: "Towards Flash Thinking via Decoupled Advantage Policy Optimization"
 *   **GRM (Generative Reward Model)**: 一个经过微调的生成式奖励模型。在DEPO框架中，它的核心作用是精准地识别出思维链中首次得出正确答案的位置，从而实现对高效与低效推理片段的自动分割。
 *   **过度思考 (Overthinking)**: 指模型在解决问题时，尤其是在已经找到正确答案后，仍然产生大量冗长、重复或不必要的推理步骤的现象。这导致了推理延迟和计算成本的增加。
 
-# 相关工作
+## 相关工作
 当前，大型推理模型（Large Reasoning Models, LRMs）在数学、编程等复杂任务上取得了显著进展，这主要得益于长思维链（CoT）的应用。然而，一个突出的瓶颈是“过度思考”问题，即模型会生成大量冗长和冗余的推理路径，导致高昂的推理延迟和计算成本。
 
 为了解决这个问题，领域内的现有方法主要分为三类：
@@ -35,7 +34,7 @@ title: "Towards Flash Thinking via Decoupled Advantage Policy Optimization"
 
 本文旨在解决上述方法的局限性，通过显式地将模型回答划分为高效和低效部分，精准地抑制低效片段中的过度思考，同时降低整体回答长度，且无需构建昂贵的偏好数据集。
 
-# 本文方法
+## 本文方法
 本文提出了**DEPO (Decoupled Advantage Policy Optimization)**，一个创新的强化学习算法，旨在通过识别并抑制冗余推理来缓解模型的“过度思考”问题。该方法包含三个核心组件：解耦优势计算、难度感知的长度惩罚和优势裁剪。
 
 <img src="/images/2510.15374v1/intro.jpg" alt="DEPO与传统序列级方法的对比" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -139,7 +138,7 @@ $${% endraw %}
 
 其中 $\hat{A}\_{i}^{\prime}$ 是原始优势值，$\text{min}(\hat{A}\_{\text{pos}}^{\prime})$ 是所有正确回答的原始优势值中的最小值。这种裁剪策略保证了梯度更新方向的正确性。
 
-# 实验结论
+## 实验结论
 
 ### 实验设置
 *   **基础模型**: DeepSeek-R1-Distill-Qwen-7B 和 DeepSeek-R1-Distill-Qwen-1.5B。

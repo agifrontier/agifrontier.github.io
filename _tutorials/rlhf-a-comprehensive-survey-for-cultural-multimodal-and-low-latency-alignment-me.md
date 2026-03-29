@@ -3,7 +3,6 @@ layout: default
 title: "RLHF: A comprehensive Survey for Cultural, Multimodal and Low Latency Alignment Methods"
 ---
 
-# RLHF: A comprehensive Survey for Cultural, Multimodal and Low Latency Alignment Methods
 
 - **ArXiv URL**: http://arxiv.org/abs/2511.03939v1
 
@@ -13,9 +12,9 @@ title: "RLHF: A comprehensive Survey for Cultural, Multimodal and Low Latency Al
 
 ---
 
-# RLHF: A comprehensive Survey for Cultural, Multimodal and Low Latency Alignment Methods
+## RLHF: A comprehensive Survey for Cultural, Multimodal and Low Latency Alignment Methods
 
-# 引言
+## 引言
 
 从人类反馈中强化学习 (Reinforcement Learning from Human Feedback, RLHF) 技术的出现，是人工智能领域的一个关键时刻。它将大型语言模型 (Large Language Models, LLMs) 从简单的文本生成器转变为能够交互的、有帮助的助手。然而，这种“一刀切”的对齐策略也暴露了其局限性，尤其是在多模态对齐、文化公平性和低延迟优化等方面。
 
@@ -163,7 +162,7 @@ sigmoid 函数。
 
 该损失函数直接增加了偏好响应相对于不偏好响应的相对对数概率，从而直接从偏好数据中优化策略，避免了独立的奖励模型和RL的不稳定性。
 
-# 调研方法
+## 调研方法
 
 本综述基于系统性的综述协议，综合了语言模型对齐领域的最新进展。候选论文的选择标准如下：
 
@@ -171,7 +170,7 @@ sigmoid 函数。
 *   纳入的方法必须执行强化学习或超越监督微调的显式偏好优化。排除了仅限于提示工程或静态过滤器的方法，除非它们被集成到RL框架中。
 *   每种纳入的方法都从四个维度进行分析：（1）数据来源（人类、合成或自改进）；（2）优化机制（策略梯度、偏好条件等）；（3）模态；以及（4）目标（单目标 vs. 多目标）。
 
-# 差距分析
+## 差距分析
 
 尽管近期的RLHF综述取得了显著进展，但仍有几个关键维度未得到充分探讨。现有工作主要集中在以奖励模型为中心的流程上，通常假设奖励函数是静态的、用户以英语为中心、且为单模态对齐。本文的分析揭示了以下关键差距：
 
@@ -180,7 +179,7 @@ sigmoid 函数。
 *   **低延迟与多目标优化 (Low-Latency & Multi-Objective Optimisation)**: 这些关键的运营约束通常被忽略或标量化。将它们视为一级的优化目标是一个重要的新兴领域。
 *   **自适应与自改进系统 (Adaptive & Self-Improving Systems)**: 文献忽略了推理时对齐、自改进奖励模型和在线个性化，而这些对于构建更具适应性和更安全的AI助手至关重要。
 
-# 强化学习的新前沿
+## 强化学习的新前沿
 
 ### Align-Pro: 针对冻结LLM的约束性提示强化学习
 
@@ -352,7 +351,7 @@ Panacea将对齐构建为一个向量奖励问题。其策略 $\pi\_{\theta}(y \
 
 **关键洞见**：以偏好向量为条件的策略使其能够动态地遍历竞争目标的完整帕累托前沿，实现了灵活的、可用于生产的对齐。
 
-# 比较综合分析
+## 比较综合分析
 
 前面的部分突出了近期创新如何扩展经典RLHF。为巩固这些见解，下表对所讨论的方法进行了结构化的比较综合。
 
@@ -374,7 +373,7 @@ Panacea将对齐构建为一个向量奖励问题。其策略 $\pi\_{\theta}(y \
 | **GR-DPO** | 文本 | 群体公平性 | 最小-最大化DPO | 人类/合成 | 静态（模型级） |
 | **Panacea** | 文本/代码 | 多目标权衡 | 条件化PPO/DPO | 人类/合成 | 用户级（通过向量） |
 
-# 挑战、初步解决方案与未来方向
+## 挑战、初步解决方案与未来方向
 
 尽管取得了显著进展，规模化对齐仍面临持续挑战。本文强调四个关键前沿，每个都附有初步解决方案和未来研究路径。
 

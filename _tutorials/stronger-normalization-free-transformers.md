@@ -3,7 +3,7 @@ layout: default
 title: "Stronger Normalization-Free Transformers"
 ---
 
-# 告别LayerNorm？CMU提出Derf：仅用简单函数，多模态性能全面超越
+## 告别LayerNorm？CMU提出Derf：仅用简单函数，多模态性能全面超越
 
 <img src="/images/2512.10938v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
 

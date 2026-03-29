@@ -3,7 +3,6 @@ layout: default
 title: "Scaling Beyond Context: A Survey of Multimodal Retrieval-Augmented Generation for Document Understanding"
 ---
 
-# Scaling Beyond Context: A Survey of Multimodal Retrieval-Augmented Generation for Document Understanding
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.15253v1
 
@@ -13,7 +12,7 @@ title: "Scaling Beyond Context: A Survey of Multimodal Retrieval-Augmented Gener
 
 ---
 
-# 引言
+## 引言
 
 <img src="/images/2510.15253v1/x1.jpg" alt="多模态RAG在长文档理解中的应用及相关出版物增长趋势" style="width:80%; max-width:300px; margin:auto; display:block;">
 (a) 在长文档理解任务中，使用与不使用多模态RAG的多模态大语言模型（MLLM）的对比。(b) 2024年至2025年相关出版物的增长情况。
@@ -24,7 +23,7 @@ title: "Scaling Beyond Context: A Survey of Multimodal Retrieval-Augmented Gener
 
 为了解决文本RAG在处理视觉丰富文档时的不足，即无法充分捕捉跨模态线索和结构语义，近期的研究焦点转向了多模态RAG（Multimodal RAG）。这些方法通过更细粒度的建模（如表格、图表）、图结构索引和多智能体框架，实现了对文档的整体检索与推理。尽管关于RAG和文档理解的综述已有很多，但很少有研究将两者明确联系起来。本文旨在填补这一空白，首次对用于文档理解的多模态RAG进行系统性综述，提出了一个基于领域、检索模态、粒度和混合增强方法的分类体系，并整理了相关的数据集、基准和未来挑战，为文档AI的未来发展提供路线图。
 
-# 预备知识
+## 预备知识
 
 在RAG系统中，系统首先检索一组相关的文档页面，然后基于这些证据生成响应。检索可以是*封闭域*（closed-domain，限定于单个源文档）或*开放域*（open-domain，搜索大型语料库）。假设候选池为 $D=\{d\_i\}\_{i=1}^{N}$，每个文档 $d\_i$ 可能包含光栅图像以及OCR文本 $T\_i$。使用特定模态的编码器，将查询和文档映射到共享的嵌入空间。
 
@@ -91,7 +90,7 @@ $${% endraw %}
 
 
 
-# 关键创新与方法论
+## 关键创新与方法论
 
 本文从**领域开放性**、**检索模态**、**检索粒度**、**基于图的集成**和**基于智能体的增强**等维度对多模态RAG方法进行系统性分类和讨论。
 
@@ -139,7 +138,7 @@ RAG系统根据其检索范围分为开放域和封闭域。
 #### 基于智能体的多模态RAG
 该方法部署自主智能体来协调检索-生成过程。这些智能体能动态地制定查询、选择检索策略，并根据任务需求自适应地融合来自多模态的信息。例如，ViDoRAG引入了负责探索、总结和反思的迭代式智能体工作流。HM-RAG设计了一个层级化多智能体架构，包括分解智能体、检索智能体和决策智能体。Patho-AgenticRAG则在医疗领域使用智能体进行任务分解和多轮搜索交互。这些框架展示了专门的智能体设计如何提升多模态RAG系统的细粒度检索和推理能力。
 
-# 数据集与基准
+## 数据集与基准
 
 用于文档理解的多模态RAG研究所使用的数据集和基准通常包含视觉丰富的文档集合。下表对现有数据集和基准进行了总结。
 
@@ -164,7 +163,7 @@ RAG系统根据其检索范围分为开放域和封闭域。
 
 许多现有方法也指出了当前基准的不足，并构建了新的、更多样化的基准。例如，ColPali构建了ViDoRe，一个跨越能源、政府和医疗等领域的综合基准。为了解决现有基准大多侧重于单文档检索的问题，M3DocVQA、VisDoMRAG和VDocRAG分别引入了开放域基准M3DocVQA、VisDoMBench和OpenDocVQA。ViDoRAG则推出了ViDoSeek，一个专为RAG系统设计的视觉丰富文档数据集，支持在真实检索设置下进行严格评估。
 
-# 应用
+## 应用
 
 多模态RAG在金融、科研和调查分析等领域的文档理解中应用日益广泛。
 *   **金融领域**：MultiFinRAG通过联合建模文本、表格和图表来改进财务报告的问答效果。FinRAGBench-V则提供了一个强调视觉引用的基准，以实现证据的可追溯性。
@@ -173,7 +172,7 @@ RAG系统根据其检索范围分为开放域和封闭域。
 
 这些应用共同证明了多模态RAG如何增强跨领域复杂文档的理解和利用能力。
 
-# 挑战与未来方向
+## 挑战与未来方向
 
 尽管多模态RAG在文档理解方面取得了持续进展，但仍存在若干开放性挑战，为未来研究指明了方向。
 

@@ -3,7 +3,6 @@ layout: default
 title: "FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation"
 ---
 
-# FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation
 
 - **ArXiv URL**: http://arxiv.org/abs/2305.14251v2
 
@@ -13,10 +12,10 @@ title: "FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long F
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 FActScore 的新评估指标，通过将长文本分解为一系列原子事实并计算由可靠知识源支持的事实比例，来精细化地衡量语言模型生成内容的事实准确性，同时还开发了一个自动化模型来低成本、大规模地估算此分数。
 
-# 关键定义
+## 关键定义
 本文提出了以下核心概念：
 
 *   **原子事实 (Atomic Fact)**：指一个传达单一信息的简短陈述。它是比句子更基本的评估单位，能够对生成内容进行更细粒度的分析，避免了对混合了正确与错误信息的句子进行模糊的二元判断。
@@ -39,7 +38,7 @@ title: "FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long F
 
     其中 $\mathbb{I}$ 是指示函数。这个定义将事实性与特定的、可验证的知识源绑定，而不是一个抽象的“全局真理”。
 
-# 相关工作
+## 相关工作
 当前，评估大型语言模型（LMs）生成的长文本的事实性面临两大瓶颈：
 1.  **粒度问题**：生成的内容通常混合了真实和虚假信息，甚至在单一句子内也是如此。传统的二元（真/假）判断过于粗糙，无法准确反映内容的整体质量。
 2.  **成本问题**：对每一条信息进行人工核查非常耗时且成本高昂，这限制了大规模、快速评估的可行性。
@@ -48,7 +47,7 @@ title: "FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long F
 
 本文旨在解决这一问题，即如何对语言模型生成的长文本进行精确、可量化且可扩展的事实性评估。
 
-# 本文方法
+## 本文方法
 
 ## FActScore 评估框架
 FActScore 的核心是基于两个关键思想：
@@ -81,7 +80,7 @@ FActScore 的核心是基于两个关键思想：
 *   **可扩展的自动化**：开发的自动化估算器结合了信息检索和强大的语言模型，其评估结果与人类评估高度一致（错误率低于2%），使得对大量模型进行低成本、大规模的事实性评测成为可能。
 *   **务实的事实性定义**：将事实性定义为“可被特定知识源所支持”，而非追求一个普适的、难以验证的“绝对真理”，使评估标准更加明确和可操作。
 
-# 实验结论
+## 实验结论
 
 ## 人工评估发现
 通过对 InstructGPT、ChatGPT 和集成了搜索的 PerplexityAI 进行人工评估，得到了以下发现：

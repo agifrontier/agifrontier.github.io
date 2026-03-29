@@ -3,7 +3,6 @@ layout: default
 title: "QLoRA: Efficient Finetuning of Quantized LLMs"
 ---
 
-# QLoRA: Efficient Finetuning of Quantized LLMs
 
 - **ArXiv URL**: http://arxiv.org/abs/2305.14314v1
 
@@ -13,10 +12,10 @@ title: "QLoRA: Efficient Finetuning of Quantized LLMs"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为QLoRA的高效微调方法，通过将梯度反向传播到冻结的4-bit量化模型中的低秩适配器（LoRA），首次实现了在单个48GB GPU上微调65B参数的大型语言模型，同时保持了与16-bit全量微调相当的性能。
 
-# 关键定义
+## 关键定义
 本文提出或使用了以下几个核心概念：
 
 1.  **QLoRA (Quantized Low-Rank Adaptation)**: 一种高效的微调技术。其核心思想是：将预训练模型的权重冻结并量化为4-bit精度，然后通过这些量化权重反向传播梯度，来仅更新一小组可训练的低秩适配器（LoRA）参数。这种方法在大幅降低显存占用的同时，保留了模型的完整性能。
@@ -27,12 +26,12 @@ title: "QLoRA: Efficient Finetuning of Quantized LLMs"
 
 4.  **分页优化器 (Paged Optimizers)**: 一种利用NVIDIA统一内存（Unified Memory）特性来防止内存峰值导致训练中断的技术。当GPU显存不足时，该技术能自动地将优化器状态（optimizer states）从GPU显存“分页”到CPU内存，并在需要时再调回GPU，从而使大模型在处理长序列时也能稳定训练。
 
-# 相关工作
+## 相关工作
 *   **研究现状与瓶颈**: 微调大型语言模型（LLMs）是提升其性能和特定能力的有效途径。然而，标准的16-bit全精度微调对硬件要求极高，例如，微调一个65B的LLaMA模型需要超过780GB的GPU显存，这对于绝大多数研究者和开发者来说是无法承受的。虽然现有的量化方法可以显著降低模型在**推理（inference）**时的内存占用，但这些方法在**训练（training）**过程中会导致性能严重下降，无法直接应用。
 
 *   **本文旨在解决的问题**: 本文旨在解决大模型微调过程中巨大的显存消耗问题，使得在单张消费级或专业级GPU上微调超大规模的语言模型（如65B）成为可能，并且在效率提升的同时不牺牲模型最终的性能。
 
-# 本文方法
+## 本文方法
 QLoRA的核心思想是将一个预训练的LLM冻结并量化到4-bit，然后通过反向传播梯度到一组外加的、小规模的低秩适配器（LoRA）来进行微调。QLoRA只有一个低精度存储数据类型（通常是4-bit NF4）和一个计算数据类型（通常是BFloat16）。当使用权重时，模型会动态地将4-bit权重反量化到16-bit进行前向和后向传播计算，但梯度只用于更新16-bit的LoRA参数，而冻结的4-bit基础模型权重保持不变。
 
 <img src="/images/2305.14314v1/page_2_Figure_0.jpg" alt="QLoRA 方法概览" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -68,7 +67,7 @@ $${% endraw %}
 梯度检查点（gradient checkpointing）技术虽然能节省显存，但在处理包含长序列的小批量数据时，仍可能出现临时的内存峰值，导致训练因显存溢出（OOM）而中断。
 分页优化器利用NVIDIA的统一内存特性，将优化器状态（如Adam中的动量和方差）分配在“可分页”的CPU内存中。当GPU显存紧张时，这些数据会自动被交换到CPU RAM；当优化器更新步骤需要它们时，再被加载回GPU。这套机制像操作系统中的虚拟内存一样工作，有效避免了因内存峰值导致的训练失败。
 
-# 实验结论
+## 实验结论
 本文通过广泛的实验证明了QLoRA的有效性和优越性。
 
 ## QLoRA与全精度微调的性能对比

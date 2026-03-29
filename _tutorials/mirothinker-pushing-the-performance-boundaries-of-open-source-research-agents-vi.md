@@ -3,7 +3,7 @@ layout: default
 title: "MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling"
 ---
 
-# AI Agent的第三维度：MiroThinker单任务600次工具调用，性能直逼GPT-5
+## AI Agent的第三维度：MiroThinker单任务600次工具调用，性能直逼GPT-5
 
 <img src="/images/2511.11793v2/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
 

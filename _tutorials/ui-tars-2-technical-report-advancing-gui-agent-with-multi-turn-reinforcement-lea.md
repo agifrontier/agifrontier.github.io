@@ -3,7 +3,7 @@ layout: default
 title: "UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn Reinforcement Learning"
 ---
 
-# UI-TARS-2：多轮强化学习炼成！达60%人类水平，AI智能体自主操作电脑
+## UI-TARS-2：多轮强化学习炼成！达60%人类水平，AI智能体自主操作电脑
 
 <img src="/images/2509.02544v2/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

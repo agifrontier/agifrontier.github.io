@@ -3,7 +3,6 @@ layout: default
 title: "Octo: An Open-Source Generalist Robot Policy"
 ---
 
-# Octo: An Open-Source Generalist Robot Policy
 
 - **ArXiv URL**: http://arxiv.org/abs/2405.12213v2
 
@@ -13,10 +12,10 @@ title: "Octo: An Open-Source Generalist Robot Policy"
 
 ---
 
-# TL;DR
+## TL;DR
 本文介绍了一款名为 Octo 的开源通用机器人策略 (generalist robot policy)，它是一个基于 Transformer 的大型策略模型，在迄今为止最大的机器人操作数据集 (Open X-Embodiment) 的 800k 条轨迹上进行预训练，能够通过简单的微调高效适应具有新传感器和动作空间的新机器人平台。
 
-# 关键定义
+## 关键定义
 本文沿用了现有研究中的关键定义，并通过特定的组合与设计加以创新。核心概念包括：
 *   **通用机器人策略 (Generalist Robot Policies, GRPs)**: 指那些能够直接将机器人观测数据映射到动作，并在不同任务、环境和机器人系统间展现零样本或少样本泛化能力的底层视觉-运动控制模型。
 *   **Tokenization (令牌化)**: 将不同模态的输入（如图像、语言、机器人自身状态）转换成统一的、可由 Transformer 处理的离散单元（token）序列的过程。这是模型处理异构输入的关键。
@@ -24,7 +23,7 @@ title: "Octo: An Open-Source Generalist Robot Policy"
 *   **动作分块 (Action Chunks)**: 模型不只预测单个时间步的动作，而是预测未来一小段连续的动作序列。这有助于提高策略的稳定性和远见。
 *   **扩散解码 (Diffusion Decoding)**: 一种用于动作生成的概率模型方法。它通过一个去噪过程从高斯噪声中逐步生成精确的、多模态的连续动作分布，相比均方误差 (MSE) 或离散化动作能更好地建模复杂行为。
 
-# 相关工作
+## 相关工作
 当前机器人学习的主流方法是为特定机器人和任务从零开始训练策略，这需要大量的数据收集工作，且泛化能力有限。近年来，研究界开始探索“通用机器人模型”，旨在通过在多机器人、多任务的大规模数据集上进行预训练，来提升下游任务的泛化能力和学习效率。
 
 然而，现有的通用机器人策略（如 GNM, RoboCat, RT-X）存在一些关键瓶颈：
@@ -34,7 +33,7 @@ title: "Octo: An Open-Source Generalist Robot Policy"
 
 本文旨在解决这些问题，通过设计一个更加灵活、可扩展且完全开源的通用机器人策略系统，使其能广泛适用于多样化的机器人应用场景。
 
-# 本文方法
+## 本文方法
 Octo 的核心设计思想是**灵活性**和**可扩展性**。它是一个基于 Transformer 的策略模型，其架构设计使其能够灵活地处理多样的输入输出，并在大规模数据上进行有效训练。
 
 <img src="/images/2405.12213v2/x1.jpg" alt="模型架构" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -87,7 +86,7 @@ $${% endraw %}
 *   完整的 JAX 预训练和微调代码。
 *   兼容 JAX 和 PyTorch 的 Open X-Embodiment 数据加载器。
 
-# 实验结论
+## 实验结论
 实验在 4 个机构的 9 个真实机器人平台上进行，旨在验证 Octo 在零样本控制、数据高效微调以及关键设计选择上的有效性。
 
 <img src="/images/2405.12213v2/x3.jpg" alt="评估任务" style="width:90%; max-width:700px; margin:auto; display:block;">

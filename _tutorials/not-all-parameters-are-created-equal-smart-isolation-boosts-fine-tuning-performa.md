@@ -3,7 +3,6 @@ layout: default
 title: "Not All Parameters Are Created Equal: Smart Isolation Boosts Fine-Tuning Performance"
 ---
 
-# Not All Parameters Are Created Equal: Smart Isolation Boosts Fine-Tuning Performance
 
 - **ArXiv URL**: http://arxiv.org/abs/2508.21741v1
 
@@ -13,24 +12,24 @@ title: "Not All Parameters Are Created Equal: Smart Isolation Boosts Fine-Tuning
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为“核心参数隔离微调”（CPI-FT）的新框架，通过识别并隔离每个任务的核心参数区域、根据区域重叠度对任务进行分组，并结合参数融合与动态冻结策略进行多阶段微调，从而有效缓解多任务监督微调中的任务冲突和灾难性遗忘问题。
 
-# 关键定义
+## 关键定义
 本文提出了几个核心概念来构建其微调框架：
 *   **参数异质性 (Parameter Heterogeneity)**：本文的核心假设，即大型语言模型（LLM）的不同能力依赖于特定且可能重叠的参数子集。不同任务对模型的参数有不同的依赖性，因此统一更新所有参数是次优的。
 *   **核心参数区域 (Core Parameter Region, $C\_i$)**：指对特定任务 $T\_i$ 最为关键的参数子集。本文通过独立微调模型，并测量每个参数从预训练状态开始的变化幅度来识别这些区域。变化幅度最大的前 $p\%$ 的参数被定义为该任务的核心参数区域。
 *   **核心参数隔离微调 (Core Parameter Isolation Fine-Tuning, CPI-FT)**：本文提出的全新微调框架。它通过一系列阶段化操作（识别核心区域、任务分组、参数融合、多阶段再微调）来解决多任务学习中的“跷跷板效应”和灾难性遗忘问题。
 *   **基于SLERP的参数融合 (SLERP-based Parameter Fusion)**：一种用于合并不同任务模型参数的技术。对于非核心参数区域，本文采用球面线性插值 (Spherical Linear Interpolation, SLERP) 进行平滑融合，以避免参数突变和冲突，保持模型的整体一致性。
 
-# 相关工作
+## 相关工作
 目前，监督式微调 (Supervised fine-tuning, SFT) 是使大型语言模型（LLMs）适应下游任务的关键方法。然而，在处理包含多种异构任务（如数学推理、编码、创意写作等）的场景时，SFT面临着严峻的挑战。
 
 现有方法的主要瓶颈在于“跷跷板效应” (seesaw effect)，即在某个任务上取得的进展往往以牺牲其他任务的性能为代价。传统的联合多任务微调或多阶段微调等方法，通常不加区分地更新所有模型参数，未能考虑到不同任务对参数的依赖性差异。这种统一更新的策略加剧了任务间的梯度冲突和灾难性遗忘 (catastrophic forgetting)，阻碍了模型泛化能力的提升。
 
 本文旨在解决的核心问题是：如何在多任务监督微调中，系统性地缓解任务间的负面干扰和灾难性遗忘。作者认为，问题的根源在于“参数异质性”，即不同任务依赖于模型中不同的参数子集。因此，本文的目标是提出一种能够识别并保护这些任务专属参数区域的微调范式，实现对微调过程更精细的控制。
 
-# 本文方法
+## 本文方法
 本文提出了核心参数隔离微调（CPI-FT）框架，旨在通过系统地识别、隔离和保护任务特定的参数区域，来解决多任务微调中的干扰和遗忘问题。该框架包含以下四个核心阶段：
 
 <img src="/images/2508.21741v1/selective_parameter_xuechao.jpg" alt="CPI-FT框架流程图" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -105,7 +104,7 @@ title: "Not All Parameters Are Created Equal: Smart Isolation Boosts Fine-Tuning
 2.  **采样数据校准**：此阶段不使用全部数据，而是从每个任务中抽取一小部分数据构成平衡的混合训练集，以提高效率并防止过拟合。
 3.  **多阶段训练流程**：按照阶段二确定的顺序，依次在每个任务组 $G\_k$ 的采样数据上进行微调，同时应用动态冻结机制。最终得到的模型 $\theta\_{\text{final}}$ 整合了所有任务的知识，同时有效避免了相互干扰。
 
-# 实验结论
+## 实验结论
 本文通过在多个基准和模型上的广泛实验，验证了CPI-FT框架的有效性。
 
 ### 主要性能对比

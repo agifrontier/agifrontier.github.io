@@ -3,7 +3,7 @@ layout: default
 title: "Better World Models Can Lead to Better Post-Training Performance"
 ---
 
-# AI解魔方新突破：预训练一个“世界模型”，强化学习性能提升40%！
+## AI解魔方新突破：预训练一个“世界模型”，强化学习性能提升40%！
 
 <img src="/images/2512.03400v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

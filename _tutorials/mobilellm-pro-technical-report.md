@@ -3,7 +3,7 @@ layout: default
 title: "MobileLLM-Pro Technical Report"
 ---
 
-# Meta MobileLLM-Pro：10亿参数手机模型称王，四大创新超越Gemma与Llama 3.2
+## Meta MobileLLM-Pro：10亿参数手机模型称王，四大创新超越Gemma与Llama 3.2
 
 当强大的AI模型还在云端服务器上运筹帷幄时，一场变革正在我们的掌上设备中悄然发生。然而，让AI在手机上流畅运行，始终面临一个棘手的难题：大模型太笨重，小模型又不够聪明。
 

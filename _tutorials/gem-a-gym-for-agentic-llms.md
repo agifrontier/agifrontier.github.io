@@ -3,7 +3,6 @@ layout: default
 title: "GEM: A Gym for Agentic LLMs"
 ---
 
-# GEM: A Gym for Agentic LLMs
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.01051v1
 
@@ -13,10 +12,10 @@ title: "GEM: A Gym for Agentic LLMs"
 
 ---
 
-# TL;DR
+## TL;DR
 本文介绍了一个名为GEM（General Experience Maker）的开源环境模拟器，它旨在像传统强化学习领域的OpenAI-Gym一样，为智能体大语言模型（Agentic LLMs）提供一个标准化的训练与评估框架，从而推动研究从静态数据集学习转向基于环境交互的经验学习。
 
-# 关键定义
+## 关键定义
 *   **GEM (General Experience Maker)**: 一个为智能体大语言模型设计的开源环境模拟器。它提供了一个标准化的环境-智能体交互接口、多样化的任务套件、强大的集成工具以及高效的并行执行能力，旨在加速智能体LLM的研究。
 *   **智能体强化学习的三种视角 (Views of Agentic RL)**: 本文探讨了在强化学习中处理LLM与环境交互的三种不同方式：
     1.  **Token级动作**: 将LLM生成的每个token视为一个独立动作。这导致轨迹过长且奖励难以分配。
@@ -24,14 +23,14 @@ title: "GEM: A Gym for Agentic LLMs"
     3.  **交互级动作 (Interaction-level action)**: 将整个多轮交互过程视为单个动作。这虽然能将问题简化为上下文老虎机，从而适用GRPO等算法，但代价是无法使用折扣因子（即$$$\gamma=1$$$）且丧失了逐轮奖励的精细信用分配能力。
 *   **REINFORCE with ReBN (Return Batch Normalization)**: 本文提出的一种简单而有效的基线算法。它在经典REINFORCE算法的基础上，引入了返回批量归一化（ReBN）技术，即在每个批次内对所有时间步的累积奖励（Return）进行归一化。该方法无需学习额外的价值函数，却能稳定策略梯度，并且完全适用于具有逐轮密集奖励和任意折扣因子的通用多轮强化学习场景。
 
-# 相关工作
+## 相关工作
 当前，针对LLM的强化学习（Reinforcement Learning, RL）研究主要集中在单轮任务上，例如数学问题解答或特定数据检索。在此类任务中，诸如GRPO这类基于样本的优势估计算法表现出色。
 
 然而，这种单轮设定极大地简化了真实世界中复杂的、需要多轮交互的任务。直接将GRPO等为单轮任务设计的算法应用于多轮场景时，会遇到根本性的困难，或需要做出重大妥协，例如将整个交互视为单步、固定折扣因子$$$\gamma=1$$$，并仅使用轨迹级别的稀疏奖励。这种妥协牺牲了对智能体行为效率的激励和精细的信用分配能力，阻碍了能够进行长时程规划、试错和迭代优化的智能体LLM的研发。
 
 本文旨在解决这一瓶颈，通过推出GEM框架，为研究社区从单轮任务过渡到复杂的多轮、长时程交互任务提供必要的基础设施。
 
-# 本文方法
+## 本文方法
 本文的核心贡献分为两部分：GEM框架和作为基线算法的REINFORCE with ReBN。
 
 ### GEM框架
@@ -72,7 +71,7 @@ $${% endraw %}
 *   **高效的信用分配**: 通过对整个批次的回报进行归一化（ReBN），该方法有效地稳定了策略梯度的估计，起到了类似优势函数（advantage function）的作用，实现了比原始REINFORCE更稳定、更高效的学习。
 *   **计算开销低**: 相较于需要在每个时间步进行多次采样以估计优势的GRPO或需要训练Critic的PPO，该方法的计算开销更小。
 
-# 实验结论
+## 实验结论
 
 <img src="/images/2510.01051v1/x1.jpg" alt="来自5个不同类别环境的Qwen3智能体的学习曲线" style="width:85%; max-width:600px; margin:auto; display:block;">
 

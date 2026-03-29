@@ -3,7 +3,6 @@ layout: default
 title: "Balanced Actor Initialization: Stable RLHF Training of Distillation-Based Reasoning Models"
 ---
 
-# Balanced Actor Initialization: Stable RLHF Training of Distillation-Based Reasoning Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.00309v1
 
@@ -13,16 +12,16 @@ title: "Balanced Actor Initialization: Stable RLHF Training of Distillation-Base
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为“平衡智能体初始化 (Balanced Actor Initialization, BAI)”的两阶段加权模型合并方法，旨在解决当对经过蒸馏训练的推理模型应用强化学习（RLHF）时出现的训练不稳定问题，从而稳定地结合蒸馏的效率和人类反馈对齐的优势。
 
-# 关键定义
+## 关键定义
 *   **范式三 (Paradigm 3)**：一种结合了两种主流大模型训练方法的混合范式，即在经过“基于蒸馏的推理能力微调（范式二）”的模型之上，再应用“从人类反馈中强化学习（RLHF）进行对齐（范式一）”。
 *   **序列长度坍塌 (Sequence Length Collapse)**：在范式三的早期RLHF训练阶段，模型生成的回复序列长度急剧缩短的一种现象。这削弱了模型进行详细推理的能力。
 *   **奖励曲棍球棒曲线 (Reward Hockey Stick Curve)**：在范式三的早期RLHF训练中，奖励模型评分出现先急剧下降、后缓慢回升的现象，其曲线形状类似于曲棍球棒。
 *   **平衡智能体初始化 (Balanced Actor Initialization, BAI)**：本文提出的核心方法。这是一种两阶段的加权模型合并策略，用于为RLHF的智能体（Actor）模型创建一个鲁棒的初始状态。第一阶段合并指令遵循模型和推理微调模型，第二阶段将合并后的模型与预训练基础模型再次合并。
 
-# 相关工作
+## 相关工作
 目前，提升大语言模型的对齐和推理能力主要有两种成熟的范式：
 1.  **范式一**：指令微调和RLHF对齐范式，通过监督微调（SFT）和RLHF使模型行为与人类偏好对齐。
 2.  **范式二**：基于蒸馏的推理微调范式，通过在由更强大模型生成的高质量推理数据上进行训练，使小模型获得复杂的推理能力。
@@ -38,7 +37,7 @@ title: "Balanced Actor Initialization: Stable RLHF Training of Distillation-Base
 
 这些问题源于蒸馏 SFT 阶段学到的专门推理模式与 RL 优化目标之间的不匹配，阻碍了更强大推理模型的开发。
 
-# 本文方法
+## 本文方法
 为了解决上述训练不稳定性，本文提出了**平衡智能体初始化 (Balanced Actor Initialization, BAI)**，一种在RLHF训练开始前通过模型合并来创建鲁棒智能体初始状态的方法。
 
 ### 创新点
@@ -77,7 +76,7 @@ $${% endraw %}
 2.  **防止灾难性遗忘**：第二阶段通过引入预训练模型，保留了其丰富的世界知识和语言能力，增强了模型的鲁棒性。
 3.  **可解释与可控**：通过调整合并系数 $$$\alpha$$$ 和 $$$\beta$$$，可以精确地控制知识保留和行为适应之间的权衡，具有很强的可解释性和可操作性。
 
-# 实验结论
+## 实验结论
 ### 性能对比
 实验结果表明，BAI方法在多个基准测试中表现出色。
 

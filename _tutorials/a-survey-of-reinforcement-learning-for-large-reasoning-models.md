@@ -3,7 +3,6 @@ layout: default
 title: "A Survey of Reinforcement Learning for Large Reasoning Models"
 ---
 
-# A Survey of Reinforcement Learning for Large Reasoning Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.08827v1
 
@@ -13,13 +12,13 @@ title: "A Survey of Reinforcement Learning for Large Reasoning Models"
 
 ---
 
-# 对用于大型推理模型的强化学习的综述
+## 对用于大型推理模型的强化学习的综述
 
 <img src="/images/2509.08827v1/page_0_Figure_10.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 **图 1** | 本综述概览。本文介绍了用于大型推理模型的强化学习的基础组件，以及开放性问题、训练资源和应用。本综述的核心是关注语言智能体与环境在长期演化过程中的大规模交互。
 
-# 1. 引言
+## 1. 引言
 
 强化学习 (Reinforcement Learning, RL) 已多次证明，通过狭义且明确的奖励信号，可以驱动智能体在复杂任务中达到超人水平。诸如 AlphaGo 和 AlphaZero 等里程碑式的系统，完全通过自我对弈和奖励反馈进行学习，在围棋、象棋、将棋和战略游戏中超越了世界冠军，确立了 RL 作为解决高阶问题的一种实用且有前景的技术。
 
@@ -41,7 +40,7 @@ title: "A Survey of Reinforcement Learning for Large Reasoning Models"
 -   回顾了 RL 在广泛任务中的应用，如编码、智能体任务、多模态任务等。
 -   最后，讨论了语言模型 RL 的未来方向。
 
-# 2. 预备知识
+## 2. 预备知识
 
 ## 2.1. 背景
 
@@ -129,7 +128,7 @@ $${% endraw %}
 
 与以往的综述不同，本文将 RL 置于中心位置，系统性地综合了其在 LLM 训练生命周期中的作用，包括奖励设计、策略优化和采样策略。本文旨在为扩展 LRMs 中的强化学习以迈向 ASI（通用人工智能），尤其是在长期交互和演化方面，指明新的方向。
 
-# 3. 基础组件
+## 3. 基础组件
 
 本节回顾了用于 LRMs 的 RL 的基础组件，包括奖励设计（§ 3.1）、策略优化算法（§ 3.2）和采样策略（§ 3.3）。下图展示了这些基础组件的分类体系。
 

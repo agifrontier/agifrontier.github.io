@@ -3,7 +3,6 @@ layout: default
 title: "Higher Embedding Dimension Creates a Stronger World Model for a Simple Sorting Task"
 ---
 
-# Higher Embedding Dimension Creates a Stronger World Model for a Simple Sorting Task
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.18315v1
 
@@ -13,10 +12,10 @@ title: "Higher Embedding Dimension Creates a Stronger World Model for a Simple S
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过强化学习训练Transformer执行排序任务，发现更高的嵌入维度能促使智能体形成更可靠、更具可解释性的内部世界模型，即便任务准确率早已饱和。
 
-# 关键定义
+## 关键定义
 本文沿用了现有的概念，并在一个简单的排序任务中对其进行了具体化和量化。以下是对理解本文至关重要的核心观察和评估指标：
 
 1.  **全局顺序编码 (Global Order Encoding)**：一个涌现出的机制。Transformer模型在其自注意力权重矩阵的最后一行中，为输入序列的每个Token（代表一个数字）生成一个值。这些值的顺序与Token所代表数字的实际大小顺序单调对应，从而在注意力权重中编码了整个序列的全局顺序。
@@ -28,14 +27,14 @@ title: "Higher Embedding Dimension Creates a Stronger World Model for a Simple S
     *   **顺序一致性 (Ordering Consistency)**：通过计算注意力权重最后一行的值序列与输入数字序列之间的“非逆序对”比例来衡量。值越高，表示模型内部编码的顺序与真实顺序越一致。
     *   **决策匹配度 (Decision Alignment)**：衡量智能体实际选择的交换位置，与其内部“最大差异”预测相符的频率（例如，是否是Top-1或Top-2的预测）。
 
-# 相关工作
+## 相关工作
 当前，研究人员已开始利用Transformer架构在强化学习（Reinforcement Learning, RL）中构建世界模型 (world model)，以提升数据效率和性能。同时，机制可解释性 (mechanistic interpretability) 领域通过分析小型、简化的“玩具”模型（如Othello-GPT）来揭示神经网络内部的算法行为。
 
 然而，现有研究存在一个问题：我们知道模型能够形成内部表征，但对于这些表征的*质量*，以及模型容量（如嵌入维度）如何影响这种质量，尤其是在一个简单、确定的算法任务中，尚缺乏清晰的量化理解。
 
 本文旨在解决的具体问题是：在一个简单的排序任务中，由RL训练的小型Transformer是否会发展出一个可解释的内部世界模型？以及，模型的嵌入维度如何影响这个世界模型的*保真度、一致性和鲁棒性*，这种影响是否超越了单纯的任务准确率提升？
 
-# 本文方法
+## 本文方法
 本文设计了一个受控实验，以探究嵌入维度对Transformer智能体在排序任务中学习内部表征质量的影响。
 
 ### 实验设计
@@ -53,7 +52,7 @@ title: "Higher Embedding Dimension Creates a Stronger World Model for a Simple S
 2.  **全局顺序一致性**：考虑注意力权重矩阵 $W$ 的最后一行 $W\_{\ell}$。计算 $W\_{\ell}$ 中各值的顺序与输入序列 $\pi$ 的真实数字顺序之间的非逆序对比例。该值被归一化到 $$[0, 1]$$ 区间，1表示完美对齐。
 3.  **决策机制匹配度**：对于每个状态，计算 $W\_{\ell}$ 中相邻值的差异，并对其进行排序。然后，检查智能体实际选择的交换位置在该排序列表中的排名。本文主要统计实际选择位于Top-1和Top-2预测的频率。
 
-# 实验结论
+## 实验结论
 实验结果有力地证明，尽管智能体在很低的嵌入维度下就能达到近乎完美的任务准确率，但更高的嵌入维度对于形成一个更一致、更忠实、更鲁棒的内部排序算法至关重要。
 
 ### 核心发现

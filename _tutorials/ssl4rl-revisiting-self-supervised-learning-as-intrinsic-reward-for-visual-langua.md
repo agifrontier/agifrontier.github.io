@@ -3,7 +3,6 @@ layout: default
 title: "SSL4RL: Revisiting Self-supervised Learning as Intrinsic Reward for Visual-Language Reasoning"
 ---
 
-# SSL4RL: Revisiting Self-supervised Learning as Intrinsic Reward for Visual-Language Reasoning
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.16416v1
 
@@ -13,14 +12,14 @@ title: "SSL4RL: Revisiting Self-supervised Learning as Intrinsic Reward for Visu
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 SSL4RL 的新框架，通过将自监督学习（SSL）任务重新定义为可验证的内在奖励，对视觉语言模型（VLM）进行强化学习（RL）微调，从而在无需人工标注或AI评判器的情况下有效提升模型的视觉推理与对齐能力。
 
-# 关键定义
+## 关键定义
 *   **SSL4RL (Self-supervised Learning for Reinforcement Learning)**: 一种新颖的训练框架，其核心思想是将在预训练中用于表征学习的自监督学习（SSL）任务（如预测图像旋转角度、重建被遮蔽的图像块等）转化为强化学习（RL）中的内在奖励信号。通过这种方式，它为大型模型的后训练（post-training）阶段提供了一种可自动验证、可大规模扩展且无需外部监督的奖励机制，用于对齐模型行为。
 *   **可验证奖励 (Verifiable Rewards)**: 指那些可以通过确定性程序或明确的基准答案（ground-truth）自动计算其正确性的奖励信号。在 SSL4RL 框架中，自监督任务的固有目标（如正确的旋转角度、原始的图像块位置）直接提供了这种可验证的奖励，与依赖人类偏好或“LLM-as-a-judge”等模糊、有偏的奖励信号形成鲜明对比。
 
-# 相关工作
+## 相关工作
 当前，视觉语言模型（VLM）虽然强大，但存在系统性缺陷：在处理视觉中心任务时，它们倾向于忽略视觉证据，依赖语言先验知识；在进行多模态推理时，又常常利用文本捷径而非真正基于视觉内容进行推理。
 
 强化学习（RL），特别是基于人类反馈的强化学习（RLHF），已成为对齐大模型行为的主流范式。然而，其成功依赖于高质量的奖励信号。在数学、编程等领域，可以通过程序化验证器（verifier）提供可靠奖励，即所谓的“验证器驱动的RL”。但在更广泛的领域，由于缺乏此类验证器，研究者常退而求其次使用“LLM-as-a-judge”方案，但其奖励信号充满噪声、存在偏见且易被攻击。
@@ -29,7 +28,7 @@ title: "SSL4RL: Revisiting Self-supervised Learning as Intrinsic Reward for Visu
 
 <img src="/images/2510.16416v1/SSL-RL-Image-4.jpg" alt="模型概览图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
-# 本文方法
+## 本文方法
 
 ## SSL4RL框架
 SSL4RL 的核心是将自监督学习（SSL）目标重新诠释为强化学习（RL）的奖励函数，用于模型的后训练。该框架将每个 SSL 任务形式化地定义为一个 RL 问题。
@@ -66,7 +65,7 @@ $${% endraw %}
 *   **无监督对齐**：该方法最大的优点是实现了对 VLM 的有效对齐，而**无需任何人工标注、人类偏好数据或外部验证器/评判器**。它从数据本身挖掘监督信号，具有极高的可扩展性和经济性。
 *   **强化视觉基础**：与传统的 RLHF 倾向于优化语言输出的“风格”和“帮助性”不同，SSL4RL 通过解决视觉谜题（如旋转、定位），直接迫使模型增强其视觉感知、空间理解和细节分辨能力，从而强化了模型的视觉基础（visual grounding）。
 
-# 实验结论
+## 实验结论
 实验在视觉语言推理和纯视觉分类任务上验证了 SSL4RL 的有效性。
 
 ### 视觉语言推理任务

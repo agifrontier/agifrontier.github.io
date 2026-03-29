@@ -3,7 +3,6 @@ layout: default
 title: "Reinforcement Learning Meets Large Language Models: A Survey of Advancements and Applications Across the LLM Lifecycle"
 ---
 
-# Reinforcement Learning Meets Large Language Models: A Survey of Advancements and Applications Across the LLM Lifecycle
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.16679v1
 
@@ -13,7 +12,7 @@ title: "Reinforcement Learning Meets Large Language Models: A Survey of Advancem
 
 ---
 
-# Reinforcement Learning Meets Large Language Models: A Survey of Advancements and Applications Across the LLM Lifecycle
+## Reinforcement Learning Meets Large Language Models: A Survey of Advancements and Applications Across the LLM Lifecycle
 
 ## 引言
 

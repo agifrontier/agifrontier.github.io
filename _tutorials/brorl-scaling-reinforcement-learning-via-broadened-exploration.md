@@ -3,7 +3,6 @@ layout: default
 title: "BroRL: Scaling Reinforcement Learning via Broadened Exploration"
 ---
 
-# BroRL: Scaling Reinforcement Learning via Broadened Exploration
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.01180v1
 
@@ -13,10 +12,10 @@ title: "BroRL: Scaling Reinforcement Learning via Broadened Exploration"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 BroRL 的强化学习扩展范式，它通过显著增加每个样本的探索次数 (rollouts) 来拓宽探索范围，从而有效克服了传统按训练步数扩展方法遭遇的性能瓶颈，实现了持续且高效的模型性能提升。
 
-# 关键定义
+## 关键定义
 本文的核心论证建立在一个原创的理论分析框架之上，并沿用了一些强化学习领域的标准术语。以下是理解本文最关键的概念：
 
 *   **质量平衡方程 (Mass Balance Equation) 分析**: 本文独创的理论分析方法，借鉴了物理学中分析质量传递的思想。该方法用于精确刻画单步强化学习更新过程中，正确和不正确Token的概率质量总和的变化率，从而揭示了不同因素对策略优化的影响。
@@ -24,14 +23,14 @@ title: "BroRL: Scaling Reinforcement Learning via Broadened Exploration"
 *   **概率二阶矩 (Second Moments of Probability)**: 衡量概率分布集中度的指标，如 $$$A\_2, B\_2, U\_{\mathrm{pos},2}, U\_{\mathrm{neg},2}$$$。它们分别代表“已采样正确Token”、“已采样错误Token”、“未采样正确Token”和“未采样错误Token”的概率平方和。这些值在本文的理论公式中用以量化不同Token集合对整体概率质量变化的影响。
 *   **批次情绪 (Batch "Mood" $$S_R$$)**: 定义为 $$$S\_R = R\_c P\_{\mathrm{pos}} + R\_w P\_{\mathrm{neg}}$$$，表示一个批次内所有已采样Token的奖励加权概率总和。$$$S\_R > 0$$$ 表示这是一个“奖励为正”的批次，反之亦然。该值决定了未采样Token的概率质量将如何变化。
 
-# 相关工作
+## 相关工作
 当前，利用带有可验证奖励的强化学习 (Reinforcement Learning with Verifiable Rewards, RLVR) 来提升大语言模型复杂推理能力是一种前沿方法。近期代表性的工作 ProRL 通过增加训练步数来扩展强化学习，在初期取得了显著效果。
 
 然而，这种方法的瓶颈在于，当训练达到数千步后，模型性能会进入平台期，继续增加计算投入以进行更多步数的训练，其回报会急剧下降，甚至出现性能衰退。
 
 本文旨在解决这一核心问题：当通过增加训练步数来扩展强化学习的方法达到饱和时，如何才能继续有效提升模型性能？
 
-# 本文方法
+## 本文方法
 
 ## 理论分析：质量平衡方程
 本文的理论核心是基于一个简化的单步 RLVR 更新模型，通过质量平衡方程来分析正确Token的总概率质量 $$$Q\_{\mathrm{pos}}$$$ 的变化 $$$\Delta Q\_{\mathrm{pos}}$$$。
@@ -66,7 +65,7 @@ $${% endraw %}
 
 BroRL 建立在 ProRLv2 框架之上，采用 PPO 算法，但将每个prompt的rollout数量 $$$N$$$ 从16大幅提升至512。为适应增大的有效批次大小，学习率也根据批次大小的平方根进行了相应调整，以维持训练稳定。
 
-# 实验结论
+## 实验结论
 
 ## 仿真实验
 为验证理论分析的正确性，本文首先构建了一个Token级别的模拟器。实验设置了一个包含128,000个Token的词汇表，其中10,000个为正确Token。

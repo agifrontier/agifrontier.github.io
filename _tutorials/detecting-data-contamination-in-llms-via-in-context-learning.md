@@ -3,7 +3,6 @@ layout: default
 title: "Detecting Data Contamination in LLMs via In-Context Learning"
 ---
 
-# Detecting Data Contamination in LLMs via In-Context Learning
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.27055v1
 
@@ -13,16 +12,16 @@ title: "Detecting Data Contamination in LLMs via In-Context Learning"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 CoDeC 的新方法，通过衡量上下文学习（In-Context Learning）对模型置信度的影响，来有效检测和量化大语言模型中的训练数据污染问题。
 
-# 关键定义
+## 关键定义
 本文主要提出了一个核心概念：
 
 *   **CoDeC (Contamination Detection via Context)**：一种通过上下文进行污染检测的方法。其核心思想是，模型对于在训练中见过的数据（污染数据）和未见过的数据，在面对来自同一分布的上下文示例时，其响应模式存在差异。对于未见过的数据，上下文示例通常能提升模型的预测置信度；而对于已见过的数据，上下文示例反而可能因为破坏了模型的记忆模式而降低其置信度。
 *   **污染分数 (Contamination Score)**：本文定义的一个量化指标，用于衡量数据集的污染程度。其计算方式为：在一个数据集中，因添加了上下文示例而导致模型预测置信度下降的样本所占的百分比。分数越高，代表数据污染的可能性越大。
 
-# 相关工作
+## 相关工作
 目前，检测大语言模型（LLM）中的数据污染对于确保评估的公正性至关重要。现有的方法主要包括：
 *   **基于损失值的方法**：通过设定损失值或困惑度的阈值来判断样本是否被记忆。
 *   **基于参考模型的方法**：使用一个外部的、更小的模型来校准分数，以区分记忆和泛化。
@@ -33,7 +32,7 @@ title: "Detecting Data Contamination in LLMs via In-Context Learning"
 
 本文旨在解决上述问题，提出一种无需访问训练数据、无需参数调优、模型和数据类型无关、可扩展且能提供直观可解释结果的自动化数据污染检测方法。
 
-# 本文方法
+## 本文方法
 
 ## 核心思想
 本文方法 CoDeC 的核心思想基于一个关键观察：大语言模型（LLM）对于是否见过的数据，在接收上下文示例（In-Context Examples）时的反应截然不同。
@@ -70,7 +69,7 @@ CoDeC 的有效性源于几个核心原理：
 2.  **衡量学习潜力**：CoDeC 实际上在衡量模型对于特定数据集还有多少“学习空间”。受污染的模型类似于接近饱和的微调模型，额外信息（上下文）带来的增益极小甚至为负。
 3.  **与过拟合的关联**：污染通常与过拟合相关。过拟合的模型处在损失曲面一个狭窄而陡峭的局部最小值中，容易被上下文等微小扰动破坏稳定性。而未见过的数据对应于更平坦、更稳定的损失区域，上下文信息能引导模型做出更稳健的预测。
 
-# 实验结论
+## 实验结论
 本文通过广泛的实验验证了 CoDeC 方法的有效性、稳定性和实用性。
 
 <img src="/images/2510.27055v1/main_result.jpg" alt="主要验证结果" style="width:90%; max-width:700px; margin:auto; display:block;">

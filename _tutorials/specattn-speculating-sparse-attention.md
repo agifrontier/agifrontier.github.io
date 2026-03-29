@@ -3,7 +3,6 @@ layout: default
 title: "SpecAttn: Speculating Sparse Attention"
 ---
 
-# SpecAttn: Speculating Sparse Attention
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.27641v1
 
@@ -13,17 +12,17 @@ title: "SpecAttn: Speculating Sparse Attention"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 SpecAttn 的免训练方法，该方法将推测解码（speculative decoding）与稀疏注意力相结合，通过利用草稿模型（draft model）已计算出的注意力权重来为目标模型（target model）动态预测并选择重要的 Token，从而在不显著牺牲模型性能的前提下，高效实现稀疏注意力并大幅减少键值缓存（Key-Value Cache）的访问。
 
-# 关键定义
+## 关键定义
 本文主要基于现有的推测解码和稀疏注意力概念，并提出了以下核心技术：
 
 *   **SpecAttn**: 一种新颖的、无需训练的推理加速框架。它巧妙地将在推测解码过程中草稿模型产生的注意力图谱，用于指导更强大的目标模型动态地执行稀疏注意力计算，从而减少计算冗余。
 *   **层级映射（Layer Mapping）**: 一种离线匹配机制。通过计算草稿模型与目标模型各层之间注意力分布的 KL 散度（KL divergence）相似度，为目标模型的每一层找到一个注意力模式最相近的草稿模型层。该映射关系在推理时保持固定。
 *   **免排序 Top-p 核选择（Sorting-Free Top-p Nucleus Selection）**: 一种高效的 Token 选择算法。该算法利用二分搜索来识别出注意力权重累积概率超过阈值 $$p$$ 的最小 Token 集合，避免了传统方法中高开销的排序操作，非常适合在 GPU 上执行。
 
-# 相关工作
+## 相关工作
 当前大型语言模型（LLM）推理的主要瓶颈在于自注意力机制的二次方复杂度。现有优化方案可分为两类：
 
 1.  **系统级优化**: 如 vLLM、FlashAttention 等，通过优化的核函数、内存管理和批处理技术来加速计算，但它们仍然执行完整的稠密注意力计算，当序列变长时，延迟问题依然严峻。
@@ -35,7 +34,7 @@ title: "SpecAttn: Speculating Sparse Attention"
 
 本文旨在解决的问题是：如何将推测解码的免训练优势与稀疏注意力的计算效率相结合，创建一个完全动态的、内容感知的、且无需重新训练的稀疏注意力机制。SpecAttn 通过利用推测解码过程中已有的计算结果（草稿模型的注意力权重），填补了这一空白。
 
-# 本文方法
+## 本文方法
 SpecAttn 框架的核心思想是利用轻量级草稿模型 ($M\_d$) 的注意力模式来近似预测大型验证模型 ($M\_v$) 的重要 Token，从而指导 $M\_v$ 进行稀疏注意力计算。
 
 <img src="/images/2510.27641v1/specattn.jpg" alt="SpecAttn 框架" style="width:85%; max-width:450px; margin:auto; display:block;">
@@ -69,7 +68,7 @@ $${% endraw %}
 ### 稀疏注意力计算
 确定了需要关注的 Token 集合后，本文将生成的稀疏掩码（mask）转换为压缩稀疏行（Compressed Sparse Row, CSR）格式，并调用 Flashinfer 库中的稀疏注意力核函数来执行计算。这只会在选定的键值对之间进行注意力计算，从而大幅减少了计算量和内存访问。
 
-# 实验结论
+## 实验结论
 实验使用 Llama-2-7B 作为验证模型，Llama-2-70M 作为草稿模型，在单个 NVIDIA RTX 4090 GPU 上进行。
 
 <img src="/images/2510.27641v1/aggregated_kl_divergence_with_mapping.jpg" alt="层级间的KL散度热力图" style="width:85%; max-width:450px; margin:auto; display:block;">

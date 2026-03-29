@@ -3,7 +3,6 @@ layout: default
 title: "Efficient Reinforcement Learning for Large Language Models with Intrinsic Exploration"
 ---
 
-# Efficient Reinforcement Learning for Large Language Models with Intrinsic Exploration
 
 - **ArXiv URL**: http://arxiv.org/abs/2511.00794v1
 
@@ -13,23 +12,23 @@ title: "Efficient Reinforcement Learning for Large Language Models with Intrinsi
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为PREPO的高效强化学习方法，通过结合基于提示困惑度（Perplexity）的课程学习调度和基于相对熵（Relative Entropy）的探索性序列加权，在不牺牲模型性能的前提下，将大语言模型在强化学习训练中的数据效率提升了高达3倍。
 
-# 关键定义
+## 关键定义
 *   **带可验证奖励的强化学习 (Reinforcement Learning with Verifiable Rewards, RLVR)**：一种强化学习范式，用于提升大语言模型的推理能力。模型通过生成多个解题路径（rollouts），并根据是否有可验证的正确答案（如数学题的最终结果）来获得奖励，从而优化自身策略。
 *   **困惑度调度在线批选择 (PPL-Schedule Online Batch Selection)**：本文提出的提示（prompt）选择策略。它利用提示的困惑度（Perplexity）作为模型对其理解程度的代理指标，通过一个预设的调度机制，使模型在训练初期专注于“简单”（低困惑度）的提示，然后逐渐过渡到“困难”（高困惑度）的提示，实现一种无监督的课程学习。
 *   **相对熵加权 (Relative-Entropy Weighting)**：本文提出的对生成序列（rollout）进行加权的策略。它计算每个序列的平均熵，并将其与当前批次内所有序列的平均熵进行比较，得出一个相对权重。该权重会放大那些不确定性更高、更具探索性的序列在训练中的影响，从而在优化过程中保持探索性。
 *   **PREPO (Perplexity-Schedule with Relative-Entropy Policy Optimization)**：本文提出的核心方法，是上述两种策略的结合。它在RLVR训练流程中，首先通过PPL调度选择信息量大的提示，然后在策略优化时，通过相对熵加权来优先学习那些探索性强的生成序列。
 
-# 相关工作
+## 相关工作
 当前，通过带可验证奖励的强化学习（RLVR）来优化模型自生成的解题路径，已成为提升大语言模型（LLM）推理能力的主流方法。然而，RLVR的训练成本极高，其主要瓶颈在于生成rollout的过程非常耗时。
 
 一个关键的低效来源是并非所有训练样本都对模型优化有同等贡献。在**提示（prompt）层面**，一些问题对于当前模型来说可能过于简单或过于困难，无法产生有效的学习梯度。在**生成序列（rollout）层面**，即使答案正确，模型生成的路径也存在置信度差异；高置信度（低熵）的回答产生的梯度较小，而高不确定性（高熵）的回答则可能揭示了多样的推理路径，更有利于探索。
 
 现有方法尝试通过参数化模型、重放缓冲区或选择性执行rollout来解决数据效率问题。本文从一个新的角度出发，旨在解决以下具体问题：**如何利用数据内在的、几乎无计算开销的属性（如文本困惑度和生成熵），来智能地筛选训练数据，从而在保证甚至提升模型性能的同时，大幅降低RLVR的训练成本？**
 
-# 本文方法
+## 本文方法
 本文提出了**PREPO (Perplexity-Schedule with Relative-Entropy Policy Optimization)**，该方法整合了两个互补的组件来提升RLVR的数据效率，其核心是利用数据的内在属性来指导训练过程。
 
 ### PPL调度在线批选择
@@ -97,7 +96,7 @@ $${% endraw %}
 
 通过这种方式，PREPO在宏观上（提示层面）遵循从易到难的课程，在微观上（序列层面）则鼓励对不确定路径的探索，从而实现了高效且稳健的学习。
 
-# 实验结论
+## 实验结论
 本文在Qwen和Llama系列多个模型上，针对数学推理任务进行了广泛实验，以验证PREPO方法的有效性。
 
 ### 主要结果

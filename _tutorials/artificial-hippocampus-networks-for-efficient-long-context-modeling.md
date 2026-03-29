@@ -3,7 +3,6 @@ layout: default
 title: "Artificial Hippocampus Networks for Efficient Long-Context Modeling"
 ---
 
-# Artificial Hippocampus Networks for Efficient Long-Context Modeling
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.07318v1
 
@@ -13,23 +12,23 @@ title: "Artificial Hippocampus Networks for Efficient Long-Context Modeling"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为人工海马网络（Artificial Hippocampus Networks, AHN）的框架，通过一个可学习的循环模块将滑窗外的Key-Value缓存压缩为固定大小的长期记忆，从而在显著降低计算和内存成本的同时，高效地处理长序列上下文。
 
-# 关键定义
+## 关键定义
 *   **人工海马网络 (Artificial Hippocampus Network, AHN)**：一个受认知科学中多重存储记忆模型（Multi-Store Model of memory）启发的、可学习的神经网络模块。它的核心功能是循环地将超出注意力滑窗范围的历史信息（即Key-Value对）压缩成一个固定大小的紧凑表示，作为模型的长期记忆。
 *   **双重记忆框架 (Dual-Memory Framework)**：本文提出的结合了两种记忆类型的框架。
     *   **无损短期记忆 (Lossless Short-Term Memory)**：由Transformer的滑动窗口Key-Value缓存构成，保留了近期上下文的全部信息，但容量有限。
     *   **压缩长期记忆 (Compressed Long-Term Memory)**：由AHN生成并维护的固定大小的循环状态（hidden state），它概括了所有滑窗之外的远期上下文信息。
 
-# 相关工作
+## 相关工作
 当前的长序列建模领域存在一个根本性的权衡：
 1.  **RNN类模型**：使用固定大小的隐藏状态作为压缩式记忆。这种方法在处理每一步时具有恒定的计算和内存成本，因此非常高效。然而，将所有历史信息压缩到固定大小的向量中不可避免地会导致信息丢失，特别是在需要精确回忆远距离信息的任务上表现不佳。
 2.  **Transformer类模型**：使用Key-Value (KV)缓存作为无损记忆，能够保留所有历史token的完整信息，保真度高。但其代价是，KV缓存大小随序列长度线性增长，注意力计算成本随序列长度二次方增长，这在处理极长序列时带来了巨大的计算和内存瓶颈。
 
 本文旨在解决上述效率与保真度之间的权衡问题。具体而言，本文的目标是设计一种新的机制，既能像RNN一样高效，又能像Transformer一样更好地保留长距离依赖信息，从而有效处理超长上下文。
 
-# 本文方法
+## 本文方法
 
 本文提出的方法核心是人工海马网络（AHN），它模仿了生物大脑海马体将短期记忆整合为长期记忆的功能，构建了一个高效的双重记忆系统。
 
@@ -101,7 +100,7 @@ $${% endraw %}
 
 这种方法利用了教师模型的强大能力来指导AHN学习如何有效地压缩上下文信息，比从零开始使用标准的下一词预测（Cross-Entropy loss）更加高效和稳定。
 
-# 实验结论
+## 实验结论
 
 实验基于Qwen2.5系列模型（3B, 7B, 14B），并在LV-Eval, InfiniteBench, LongBench等长上下文基准上进行了评估。
 

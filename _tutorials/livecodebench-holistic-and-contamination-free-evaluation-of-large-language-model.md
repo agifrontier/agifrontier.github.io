@@ -3,7 +3,6 @@ layout: default
 title: "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code"
 ---
 
-# LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code
 
 - **ArXiv URL**: http://arxiv.org/abs/2403.07974v2
 
@@ -13,10 +12,10 @@ title: "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Langu
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了 LiveCodeBench，一个通过持续从编程竞赛平台收集新问题来避免数据污染，并从代码生成、自我修复、代码执行、测试输出预测等多个维度来全面评估大型语言模型（LLM）代码能力的动态基准。
 
-# 关键定义
+## 关键定义
 本文的核心是围绕一个新的基准测试 $$LiveCodeBench$$ 及其评估场景展开的。以下是关键定义：
 
 1.  **LiveCodeBench**: 一个为代码能力评估设计的新基准。其核心特性是“实时性” (Live)，即不断从 LeetCode、AtCoder 和 CodeForces 等竞赛平台收集新发布的题目，并为每道题标记发布日期。这使得可以通过只在模型训练截止日期之后发布的问题上进行评估，从而有效避免数据污染 (data contamination)。
@@ -24,7 +23,7 @@ title: "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Langu
 3.  **代码执行 (Code Execution)**: 一项评估模型代码理解能力的场景。模型需在给定一段代码和一个输入的情况下，预测该代码在该输入下的确切输出结果，类似于“人肉编译器”。
 4.  **测试输出预测 (Test Output Prediction)**: 本文引入的一项新任务，旨在评估模型对问题描述的理解和推理能力。模型在只收到问题描述和一个测试输入的情况下，需要直接生成该输入对应的正确输出，而无需生成完整的解题代码。
 
-# 相关工作
+## 相关工作
 当前，评估大语言模型代码能力的主流基准包括 HumanEval、MBPP 和 APPS 等。然而，这些基准存在两大关键瓶颈：
 
 1.  **数据污染与过拟合风险**: 这些静态基准的问题集是固定的，很可能已被包含在现代 LLM 的大规模训练数据中。这导致评估结果虚高，无法真实反映模型在未见过问题上的泛化能力。虽然有去污方法，但很难做到彻底。
@@ -32,7 +31,7 @@ title: "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Langu
 
 本文提出的 LiveCodeBench 旨在通过动态更新和多维度评估，直接解决上述数据污染和评估片面性的问题。
 
-# 本文方法
+## 本文方法
 LiveCodeBench 的设计和构建基于四大原则，旨在创建一个更可靠、全面的代码能力评估框架。
 
 ### 构建原则
@@ -79,7 +78,7 @@ LiveCodeBench 的设计和构建基于四大原则，旨在创建一个更可靠
 
 根据不同的任务场景，这些原始数据被构造成相应的评测实例。例如，对于代码执行任务，本文从 LeetCode 收集了约2000个人类提交的正确解法，并经过筛选，最终构成了包含479个样本的数据集。
 
-# 实验结论
+## 实验结论
 本文对18个基础模型和34个指令微调模型进行了全面评估，得出了几个在以往基准中未能揭示的重要发现。所有比较均在剔除可能受污染的数据后进行（即使用2023年9月之后的问题）。
 
 <img src="/images/2403.07974v2/codegen_performance.jpg" alt="四个场景的模型性能对比" style="width:85%; max-width:450px; margin:auto; display:block;">

@@ -3,7 +3,6 @@ layout: default
 title: "AgentFold: Long-Horizon Web Agents with Proactive Context Management"
 ---
 
-# AgentFold: Long-Horizon Web Agents with Proactive Context Management
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.24699v1
 
@@ -13,10 +12,10 @@ title: "AgentFold: Long-Horizon Web Agents with Proactive Context Management"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 AgentFold 的新型网页智能体，它通过模仿人类主动管理心智暂存区的方式，在执行长时程任务时对上下文进行主动“折叠”和整合，从而在保持上下文简洁性的同时避免关键信息丢失，并以较小的模型规模实现了顶尖的性能。
 
-# 关键定义
+## 关键定义
 本文沿用了现有智能体的基础概念，并引入了以下几个核心定义来构建其方法：
 
 1.  **上下文折叠 (Context Folding)**：AgentFold 的核心机制，指智能体在执行任务过程中主动对历史信息进行总结和压缩。它包含两种操作模式：
@@ -29,7 +28,7 @@ title: "AgentFold: Long-Horizon Web Agents with Proactive Context Management"
 
 4.  **Fold-Generator**: 本文为训练 AgentFold 而专门开发的自动化数据收集流程。由于现有数据集无法满足训练需求，该流程利用强大的大语言模型，通过一系列拒绝采样机制，生成包含高质量上下文管理操作的训练轨迹。
 
-# 相关工作
+## 相关工作
 当前的网页智能体研究主要构建于 ReAct 范式之上，即在一个“推理-行动-观察”的循环中与环境交互。然而，这种模式在处理长时程任务时面临一个关键瓶颈：**上下文管理策略的权衡困境**。
 
 *   **现状与瓶颈**:
@@ -39,7 +38,7 @@ title: "AgentFold: Long-Horizon Web Agents with Proactive Context Management"
 *   **本文旨在解决的问题**:
     本文旨在解决上述“保留冗余噪声”与“冒信息丢失风险”之间的尖锐矛盾。目标是设计一种能够像人类一样主动管理其认知工作区（上下文）的智能体，使其能够在长时程任务中既能保持上下文的重点突出和简洁高效，又能避免关键信息的意外丢失。
 
-# 本文方法
+## 本文方法
 
 ### 概述
 AgentFold 模仿人类的认知过程，其核心设计在于将智能体的上下文定义为一个动态的认知工作区，并赋予智能体主动管理和塑造该工作区作为其核心推理能力的一部分。
@@ -102,7 +101,7 @@ AgentFold 的设计克服了 ReAct 模式（导致上下文饱和）和全历史
 
 这种将上下文管理作为可学习核心动作的设计，使 AgentFold 成为其自身信息工作区的**主动管理者 (active curator)**，实现了在长时程复杂任务中鲁棒性与效率的显著提升。
 
-# 实验结论
+## 实验结论
 
 实验基于 Qwen3-30B-A3B-Instruct-2507 模型进行训练，并在四个基准上进行了评估：BrowseComp、BrowseComp-ZH（评估信息定位能力）、WideSearch（评估广泛搜索能力）和 GAIA（评估通用智能体能力）。
 

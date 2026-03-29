@@ -3,7 +3,7 @@ layout: default
 title: "Kimi Linear: An Expressive, Efficient Attention Architecture"
 ---
 
-# KimiLinear揭秘：首次全面超越全注意力，1M上下文解码提速6倍！
+## KimiLinear揭秘：首次全面超越全注意力，1M上下文解码提速6倍！
 
 在追求更强AI智能体的道路上，长文本处理能力已成为一道绕不开的“性能墙”。传统的Transformer架构因其$O(N^2)$的注意力计算复杂度和线性增长的KV缓存，在处理超长序列时变得力不从心，效率和成本成为巨大瓶颈。
 

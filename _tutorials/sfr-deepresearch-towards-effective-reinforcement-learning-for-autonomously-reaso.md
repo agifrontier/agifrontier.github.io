@@ -3,7 +3,6 @@ layout: default
 title: "SFR-DeepResearch: Towards Effective Reinforcement Learning for Autonomously Reasoning Single Agents"
 ---
 
-# SFR-DeepResearch: Towards Effective Reinforcement Learning for Autonomously Reasoning Single Agents
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.06283v2
 
@@ -13,23 +12,23 @@ title: "SFR-DeepResearch: Towards Effective Reinforcement Learning for Autonomou
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 SFR-DeepResearch 的方法，其核心是使用一套完全由合成数据驱动的强化学习（RL）方法，在保留并增强其原有推理能力的基础上，将专为推理优化的语言模型（如 QwQ, Qwen3）转化为用于深度研究（Deep Research）任务的自主单智能体。
 
-# 关键定义
+## 关键定义
 *   **深度研究 (Deep Research, DR)**: 一类需要智能体对多个信息源进行广泛搜索和复杂推理才能解决的任务，通常涉及网页浏览和代码执行等工具的使用。
 *   **自主单智能体 (Autonomous Single-Agent)**: 指一个单独的大语言模型，它能根据当前上下文动态地、自主地决定下一步行动，而无需在中间步骤接受外部指令或被限定在预设的工作流中。这与多智能体系统中角色固定的智能体形成对比。
 *   **智能体推理脚手架 (Agentic Inference Scaffolding)**: 本文为稳定和优化智能体多步决策过程而设计的一套框架。它包括一个定制化的多轮交互格式（特别是将多轮对话重构为单轮上下文问答）和一个允许智能体自我管理的内存机制，以支持任意长度的交互。
 *   **长度归一化强化学习 (Length-normalized RL)**: 本文对 REINFORCE 算法的一项关键改进。它在计算优势（Advantage）时，用轨迹的长度对奖励信号进行归一化，目的是为了稳定训练过程，防止模型倾向于生成无意义的、过长的工具调用序列。
 
-# 相关工作
+## 相关工作
 当前，用于深度研究（DR）的智能体系统主要分为单智能体和多智能体两类。多智能体系统（如 OpenManus）通过为不同智能体（规划器、研究员、编码器等）分配预定义角色和工作流来协作完成任务，结构固定但可能缺乏泛化能力。单智能体系统（如 OpenAI DeepResearch）则依赖单个模型自主规划和执行，更为灵活。
 
 以往训练智能体的方法多是从基础（base）或指令微调（SFT）模型开始，通过指令微调和强化学习进行训练。然而，这些方法在应用于已经过推理能力优化的“思考型”模型时，面临着独特的挑战，尤其是在长程的、多步骤的智能体任务中，RL 训练过程容易变得不稳定，并且可能损害模型固有的强大推理能力。
 
 本文旨在解决的核心问题是：如何有效地将在单步推理任务上表现出色的模型，转化为能够胜任长程、多轮、需要复杂工具使用的深度研究任务的自主单智能体，同时在训练中保持其推理能力和稳定性。
 
-# 本文方法
+## 本文方法
 本文提出的 SFR-DeepResearch 框架包含两大核心组件：智能体推理脚手架和端到端的强化学习训练配方。
 
 ### 智能体推理脚手架
@@ -81,7 +80,7 @@ $${% endraw %}
 *   **部分 rollout**: 将未完成的 rollout 轨迹作为新的初始状态，从中继续进行蒙特卡洛采样，以增加对长尾中间状态的学习。
 *   **奖励建模**: 使用基座LLM自身作为奖励模型（Verifier），根据任务类型（短问答或长报告）进行评分。
 
-# 实验结论
+## 实验结论
 本文在一系列涵盖网页浏览和复杂推理的基准测试（FRAMES, GAIA, HLE）上对 SFR-DR 智能体进行了评估。
 
 - **主要成果**: 

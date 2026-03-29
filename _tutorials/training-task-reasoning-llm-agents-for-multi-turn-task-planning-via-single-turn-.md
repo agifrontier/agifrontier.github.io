@@ -3,7 +3,6 @@ layout: default
 title: "Training Task Reasoning LLM Agents for Multi-turn Task Planning via Single-turn Reinforcement Learning"
 ---
 
-# Training Task Reasoning LLM Agents for Multi-turn Task Planning via Single-turn Reinforcement Learning
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.20616v1
 
@@ -13,10 +12,10 @@ title: "Training Task Reasoning LLM Agents for Multi-turn Task Planning via Sing
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种新颖的方法，通过将复杂的多轮任务规划问题转化为一系列单轮任务推理问题，并利用基于专家轨迹的单轮强化学习（GRPO）进行优化，成功训练出在长时程规划任务中性能超越大型基线模型的小参数量智能体。
 
-# 关键定义
+## 关键定义
 本文为连接单轮学习与多轮规划，提出或沿用了以下关键定义：
 
 1.  **多轮任务规划马尔可夫决策过程 (Multi-Turn Task Planning MDP)**: 这是一个标准的有限时程MDP，定义为 $\mathcal{M}=(\mathcal{S},\mathcal{A},f,R,\mathcal{T},s\_0)$，用于描述完整的长时程任务。其中，环境状态转移 $f$ 未知，奖励 $R$ 是稀疏的（仅在任务最终完成时为1），这使得直接在该MDP上训练LLM策略变得困难。
@@ -27,7 +26,7 @@ title: "Training Task Reasoning LLM Agents for Multi-turn Task Planning via Sing
 
 4.  **最小步数成功概率 (Success Probability with Minimal Steps)**: 定义为 $P\_t^{\pi}(s\_t)=\mathbb{P}\_{\pi}(R(s\_{t+T^\*(s\_t)},a\_{t+T^\*(s\_t)})=1 \mid s\_t)$，表示在状态 $s\_t$ 下，策略 $\pi$ 能以最短所需步数 $T^\*(s\_t)$ 成功完成任务的概率。这是连接单轮学习效果与多轮任务成功的关键理论桥梁。
 
-# 相关工作
+## 相关工作
 当前，通过强化学习（RL）训练大型语言模型（LLM）智能体进行复杂的多轮任务规划是一个极具前景的方向。然而，现有方法面临三大关键瓶颈：
 1.  **稀疏奖励**：在多轮交互中，只有在任务最终完成时才能获得奖励，导致学习信号极其稀疏。
 2.  **信用分配**：在长时程任务中，很难确定哪一步关键行为对最终的成败做出了贡献。
@@ -37,7 +36,7 @@ title: "Training Task Reasoning LLM Agents for Multi-turn Task Planning via Sing
 
 本文旨在解决的核心问题是：**如何弥合高效的单轮推理训练与复杂的多轮任务规划需求之间的鸿沟**，从而在避免多轮RL挑战的同时，有效提升LLM智能体的长时程规划能力。
 
-# 本文方法
+## 本文方法
 
 ### 核心思想：多轮规划到单轮推理的转化
 本文的核心洞察在于，任何复杂的多轮任务规划都可以被分解为一系列独立的**单轮任务推理问题**。具体来说，基于一条最优的专家轨迹 $\tau^{GT} = [(s\_0^{GT}, a\_0^{GT}), \dots, (s\_n^{GT}, a\_n^{GT})]$，多轮规划问题被转化为：在每个状态 $s\_i^{GT}$，学习一个策略来预测出最优的下一步动作 $a\_i^{GT}$。
@@ -80,7 +79,7 @@ $${% endraw %}
 
 2.  **对子任务的泛化 (Corollary 3.2)**：同样，在更复杂的任务上训练得到的策略，也能提高其在所有内嵌的、更简单的子任务上的成功概率。
 
-# 实验结论
+## 实验结论
 
 实验在一个具有挑战性的烹饪场景任务规划基准上进行，旨在回答两个问题：1) 单轮GRPO训练能否提升多轮任务规划性能？2) 训练出的智能体是否具备向未见任务泛化的能力？
 

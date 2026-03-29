@@ -3,7 +3,6 @@ layout: default
 title: "Mamba: Linear-Time Sequence Modeling with Selective State Spaces"
 ---
 
-# Mamba: Linear-Time Sequence Modeling with Selective State Spaces
 
 - **ArXiv URL**: http://arxiv.org/abs/2312.00752v2
 
@@ -13,10 +12,10 @@ title: "Mamba: Linear-Time Sequence Modeling with Selective State Spaces"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为Mamba的新型序列建模架构，它通过引入选择性状态空间模型（Selective SSM），在保持线性时间复杂度的同时，实现了与Transformer相媲美的性能，尤其在处理长序列任务上表现出色。
 
-# 关键定义
+## 关键定义
 *   **结构化状态空间模型 (Structured State Space Models, SSM/S4)**：一类受经典状态空间模型启发的序列模型，可被视为循环神经网络(RNN)和卷积神经网络(CNN)的结合。它通过参数 $(\Delta, \mathbf{A}, \mathbf{B}, \mathbf{C})$ 将一维输入序列 $x(t)$ 映射到输出 $y(t)$。SSM可以高效地以循环或卷积两种模式进行计算。
 
 *   **线性时不变性 (Linear Time Invariance, LTI)**：这是先前SSM的一个核心特性，意味着其动态参数（如 $\mathbf{A}, \mathbf{B}$）在所有时间步上都是固定的。该特性使得模型可以通过高效的卷积进行并行训练，但也限制了其根据输入内容动态调整行为的能力，使其难以处理需要内容感知（content-aware）的任务。
@@ -27,14 +26,14 @@ title: "Mamba: Linear-Time Sequence Modeling with Selective State Spaces"
 
 *   **硬件感知的并行扫描算法 (Hardware-aware Parallel Scan)**：为解决选择性SSM因打破LTI而无法使用高效卷积计算的问题，本文设计的一种新算法。该算法利用GPU的内存层级结构（HBM和SRAM），通过内核融合(kernel fusion)、并行扫描(parallel scan)和重计算(recomputation)等技术，在循环模式下高效计算模型，避免了在主存中物化巨大的中间状态，从而实现了线性时间复杂度和高吞吐量。
 
-# 相关工作
+## 相关工作
 当前，作为大模型（Foundation Models）支柱的序列模型几乎完全由Transformer架构主导。Transformer的核心自注意力（self-attention）机制能够有效捕捉上下文中的密集信息，但其计算和内存复杂度随序列长度二次方增长 ($O(L^2)$)，这使其在处理长序列时效率低下，并限制了上下文窗口的大小。
 
 为了克服这一瓶颈，研究界提出了许多亚二次方时间复杂度的架构，例如线性注意力、门控卷积以及早期的结构化状态空间模型（SSM）。然而，这些模型在语言等信息密集型模态上的表现始终未能与Transformer相媲美。
 
 本文指出，这些高效模型的一个关键弱点是它们**缺乏基于内容进行推理的能力**。由于它们的线性时不变性（LTI）特性，模型无法根据输入内容选择性地关注或忽略信息。本文旨在解决这一具体问题：**创建一个既能拥有RNN/SSM的线性时间效率，又能达到Transformer强大性能的序列模型**。
 
-# 本文方法
+## 本文方法
 本文方法的核心是设计一个能够进行内容感知的选择性状态空间模型（Selective SSM），并为其开发一种高效的计算实现，最终将其整合到一个简洁而强大的Mamba架构中。
 
 <img src="/images/2312.00752v2/x1.jpg" alt="Mamba概览" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -112,7 +111,7 @@ $${% endraw %}
 
 这种设计比Transformer中交错的注意力块和MLP块更加简单和统一。Mamba块取代了注意力层和前馈网络（FFN）层，形成了一个单一、重复的结构单元。
 
-# 实验结论
+## 实验结论
 
 Mamba在多种模态和任务上都取得了卓越的成果，验证了其作为通用序列模型骨干的潜力。
 

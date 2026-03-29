@@ -3,7 +3,6 @@ layout: default
 title: "Online Process Reward Leanring for Agentic Reinforcement Learning"
 ---
 
-# Online Process Reward Leanring for Agentic Reinforcement Learning
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.19199v2
 
@@ -13,10 +12,10 @@ title: "Online Process Reward Leanring for Agentic Reinforcement Learning"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为在线过程奖励学习 (Online Process Reward Learning, OPRL) 的智能体强化学习信誉分配策略，该策略通过在线交替优化一个过程奖励模型和智能体策略，将轨迹级别的偏好无缝转化为密集的步骤级奖励，从而在不依赖额外数据或步骤标签的情况下，高效稳定地训练长时程大型语言模型（LLM）智能体。
 
-# 关键定义
+## 关键定义
 本文的核心是围绕在线学习得到的隐式步骤奖励来展开的，关键定义如下：
 
 *   **在线过程奖励学习 (Online Process Reward Learning, OPRL)**：一种通用的智能体强化学习（RL）信誉分配策略。它与标准的在线（on-policy）RL算法无缝集成，通过在线训练一个过程奖励模型（PRM），将轨迹级的偏好信号转化为步骤级的密集奖励，用于指导策略更新。
@@ -31,7 +30,7 @@ title: "Online Process Reward Leanring for Agentic Reinforcement Learning"
 
     其中，$\pi\_{\phi}$是当前更新的PRM，$\pi\_{\theta\_{\text{old}}}$是上一轮的策略模型快照。这个奖励衡量了在PRM看来，当前动作相比旧策略有多大的改进，从而为策略学习提供密集的指导信号。
 
-# 相关工作
+## 相关工作
 当前，在动态、交互式环境中训练大型语言模型（LLM）智能体面临巨大挑战，主要瓶颈包括：
 1.  **稀疏奖励和信誉分配**：环境奖励通常在任务结束时才给出，导致难以判断中间步骤的贡献，即存在时序信誉分配（temporal credit assignment）难题。
 2.  **高方差学习**：智能体的轨迹长且复杂，在 token 层面进行奖励分配会引入巨大噪声，导致策略学习的方差过高、训练不稳定。
@@ -45,7 +44,7 @@ title: "Online Process Reward Leanring for Agentic Reinforcement Learning"
 
 本文旨在解决上述问题，提出一个通用的、无需步骤级标签、高效且稳定的信誉分配策略，以适应具有稀疏、延迟甚至不可验证奖励的长时程智能体任务。
 
-# 本文方法
+## 本文方法
 
 本文提出的在线过程奖励学习（OPRL）框架，通过在线学习一个过程奖励模型（PRM），将稀疏的轨迹级结果偏好转化为密集的步骤级奖励信号，从而指导策略的精细化更新。
 
@@ -108,7 +107,7 @@ OPRL的训练过程是一个策略模型 $\pi\_{\theta}$ 和过程奖励模型 $
 *   **势能函数塑形**：证明了累积的隐式步骤奖励 $\sum r\_{\phi}$ 是对真实轨迹效用 $R^{\star}$ 的一种势能函数塑形，这种塑形不会改变原任务的最优策略集合。
 *   **梯度有界性**：证明了策略梯度更新中的奖励项 $ \mid r\_{\phi} \mid $ 是有界的，这保证了随机梯度优化的稳定性，使得PRM和策略的交替更新过程更加稳健。
 
-# 实验结论
+## 实验结论
 
 实验在三个具有挑战性的智能体基准上进行：WebShop（网页购物）、VisualSokoban（视觉推箱子）和SOTOPIA（开放式社交互动）。
 

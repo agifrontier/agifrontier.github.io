@@ -3,7 +3,6 @@ layout: default
 title: "Harnessing Uncertainty: Entropy-Modulated Policy Gradients for Long-Horizon LLM Agents"
 ---
 
-# Harnessing Uncertainty: Entropy-Modulated Policy Gradients for Long-Horizon LLM Agents
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.09265v1
 
@@ -13,10 +12,10 @@ title: "Harnessing Uncertainty: Entropy-Modulated Policy Gradients for Long-Hori
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为熵调制策略梯度 (Entropy-Modulated Policy Gradients, EMPG) 的框架，通过利用智能体在长时程任务中每一步的内在不确定性（熵）来动态调整策略梯度，从而有效解决了稀疏奖励下的信用分配难题，显著提升了大型语言模型（LLM）智能体的学习效率和最终性能。
 
-# 关键定义
+## 关键定义
 本文的核心是围绕利用模型内在不确定性来重塑强化学习信号。关键定义如下：
 
 *   **熵调制策略梯度 (Entropy-Modulated Policy Gradients, EMPG)**：本文提出的核心框架。它不依赖外部的密集奖励信号，而是通过智能体在决策过程中产生的内在不确定性（以策略熵量化）来调制（re-calibrate）策略梯度。该框架包含“自校准梯度缩放”和“未来清晰度奖励”两个关键组件。
@@ -24,7 +23,7 @@ title: "Harnessing Uncertainty: Entropy-Modulated Policy Gradients for Long-Hori
 *   **自校准梯度缩放 (Self-Calibrating Gradient Scaling)**：EMPG的第一个核心组件。它是一个缩放函数，根据当前步骤的熵来调整从最终任务结果分配到的学习信号。其关键作用是：放大高置信度（低熵）步骤的梯度，同时衰减低置信度（高熵）步骤的梯度。
 *   **未来清晰度奖励 (Future Clarity Bonus)**：EMPG的第二个核心组件。这是一种内在奖励（intrinsic motivation），用于鼓励智能体选择那些能够导向更确定、更清晰未来状态（即下一步骤熵更低）的行动。
 
-# 相关工作
+## 相关工作
 目前，基于大型语言模型（LLM）的自主智能体在处理长时程任务时面临一个核心瓶颈：由于奖励信号极其稀疏（通常仅在任务结束时才提供），导致难以准确地为中间的关键步骤进行信用分配。
 
 为了解决这一问题，当前的研究主要分为两个方向：
@@ -35,7 +34,7 @@ title: "Harnessing Uncertainty: Entropy-Modulated Policy Gradients for Long-Hori
 
 本文旨在解决上述方法未能有效处理的**长时程、多步决策任务中的信用分配难题**。具体而言，本文首先从理论上揭示了策略梯度大小与策略熵天然耦合的问题——高熵（不确定）行为产生大梯度，低熵（自信）行为产生小梯度，这导致学习效率低下且不稳定。本文的目标就是直接修正这一内在的梯度动态。
 
-# 本文方法
+## 本文方法
 本文提出了熵调制策略梯度（EMPG）框架，旨在通过重新校准策略梯度的学习动态来解决长时程智能体任务中的信用分配问题。其核心思想是利用智能体内在的、逐级的不确定性来调制学习信号。
 
 ### 理论动机
@@ -104,7 +103,7 @@ EMPG的整体算法流程如下：
 6.  **最终归一化**：对所有 $A\_{\text{mod}}$ 进行批次归一化（零均值），得到最终的优势信号 $A\_{\text{final}}(i,t)$。
 7.  **更新策略**：使用 $A\_{\text{final}}$ 作为优势函数，通过策略梯度方法更新模型参数 $\theta$。
 
-# 实验结论
+## 实验结论
 本文在WebShop、ALFWorld和Deep Search三个具有挑战性的长时程智能体基准任务上进行了广泛实验，结果表明EMPG取得了显著且一致的性能提升。
 
 ### 主要结果

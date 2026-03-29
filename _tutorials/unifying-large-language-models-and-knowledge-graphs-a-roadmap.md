@@ -3,7 +3,6 @@ layout: default
 title: "Unifying Large Language Models and Knowledge Graphs: A Roadmap"
 ---
 
-# Unifying Large Language Models and Knowledge Graphs: A Roadmap
 
 - **ArXiv URL**: http://arxiv.org/abs/2306.08302v3
 
@@ -13,7 +12,7 @@ title: "Unifying Large Language Models and Knowledge Graphs: A Roadmap"
 
 ---
 
-# 引言
+## 引言
 
 大语言模型（Large Language Models, LLMs），例如ChatGPT和GPT-4，因其涌现能力和泛化性，在自然语言处理和人工智能领域引发了新的浪潮。然而，LLMs是黑箱模型，常常难以捕获和访问事实性知识。相比之下，知识图谱（Knowledge Graphs, KGs）是结构化的知识模型，明确地存储了丰富的实体知识。KGs能够通过提供外部知识来增强LLMs的推理能力和可解释性。同时，KGs自身存在构建和演进困难的问题，使得现有方法难以生成新事实和表示未见知识。因此，统一LLMs和KGs，协同利用它们的优势，是互补且必要的。
 
@@ -28,7 +27,7 @@ title: "Unifying Large Language Models and Knowledge Graphs: A Roadmap"
 
 本文回顾并总结了这三个框架下的现有工作，并指出了未来的研究方向。
 
-# 背景
+## 背景
 
 ## 大语言模型 (LLMs)
 
@@ -92,7 +91,7 @@ LLMs和KGs已在多种现实世界应用中得到广泛应用。
 
 *表I: 使用LLMs和KGs的代表性应用。*
 
-# 路线图与分类
+## 路线图与分类
 
 本节提出了一个统一LLMs和KGs的明确路线图，并对相关研究进行分类。
 
@@ -145,7 +144,7 @@ LLMs和KGs已在多种现实世界应用中得到广泛应用。
 ### 协同的LLMs + KGs
 本文从**知识表示**和**推理**两个角度回顾了协同LLMs + KGs的最新尝试。
 
-# 知识图谱增强的大语言模型
+## 知识图谱增强的大语言模型
 
 为解决LLMs缺乏事实知识和易产生事实错误的缺点，研究者提出整合KGs来增强LLMs。下表总结了典型的KG增强LLM方法。
 

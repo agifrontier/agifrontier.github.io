@@ -3,7 +3,6 @@ layout: default
 title: "Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone"
 ---
 
-# Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone
 
 - **ArXiv URL**: http://arxiv.org/abs/2404.14219v4
 
@@ -11,10 +10,10 @@ title: "Phi-3 Technical Report: A Highly Capable Language Model Locally on Your 
 
 ---
 
-# TL;DR
+## TL;DR
 本文介绍了phi-3系列模型，特别是38亿参数的phi-3-mini，它通过在一个精心筛选和合成的高质量数据集上进行训练，实现了与Mixtral 8x7B和GPT-3.5等大模型相媲美的性能，同时其模型尺寸小到可以在手机上本地部署。
 
-# 关键定义
+## 关键定义
 *   **Phi-3 模型家族 (Phi-3 model family)**: 本文发布的一系列语言模型，主要包括：
     *   **phi-3-mini**: 38亿参数，为在资源受限设备（如手机）上高效运行而优化。
     *   **phi-3-small**: 70亿参数，引入了新的块稀疏注意力机制。
@@ -25,14 +24,14 @@ title: "Phi-3 Technical Report: A Highly Capable Language Model Locally on Your 
 
 *   **块稀疏注意力 (Blocksparse Attention)**: 为phi-3-small模型设计的一种新颖注意力模块。它为每个注意力头强制施加不同的稀疏模式，将上下文划分为块，使每个查询Token在不同头上关注不同的键值(KV)缓存块组合（包括局部块和远距离的垂直步进块），从而在减少KV缓存的同时，保证了对全局信息的捕获。
 
-# 相关工作
+## 相关工作
 当前大型语言模型（Large Language Models, LLMs）研究的主流趋势是通过不断增大模型和数据集规模来提升性能，即遵循所谓的“缩放定律” (scaling laws)。然而，这些定律通常假设数据源是固定的。这一假设正被前沿LLM自身的能力所打破，因为它们可以用来创造和筛选更高质量的数据。
 
 此前的phi系列模型（如phi-2）已经证明，通过结合LLM筛选的公共数据和LLM生成的合成数据，小型模型能够达到通常只有大数十倍的模型才能企及的性能水平。然而，如何将这种以数据为中心的方法进一步扩展，创造出一个既能媲美业界顶尖模型（如GPT-3.5），又小到足以在手机等终端设备上运行的模型，仍然是一个具有挑战性的问题。
 
 本文旨在解决这一问题，通过对phi-2使用的数据配方进行大规模升级和改进，探索在“数据最优机制”下，小型语言模型的性能极限。
 
-# 本文方法
+## 本文方法
 本文的核心思想是延续并大规模扩展“教科书级别”高质量数据的训练范式，以突破传统缩放定律的限制，用更小的模型尺寸实现顶尖的性能。
 
 ### 训练方法论
@@ -87,7 +86,7 @@ title: "Phi-3 Technical Report: A Highly Capable Language Model Locally on Your 
 *   **图像处理**: 使用动态裁剪策略处理高分辨率和不同宽高比的图像，将图像分割成块，并将这些块的token拼接起来。
 *   **训练**: 预训练数据包含图文交错文档、图文对、OCR处理的PDF、图表数据和纯文本数据。训练后阶段同样经过SFT和DPO，以增强其在自然图像理解、图表推理、多图比较等多方面的能力。
 
-# 实验结论
+## 实验结论
 实验结果表明，Phi-3系列模型在保持小尺寸的同时，在多个标准基准测试中展现出与更大模型相当甚至更优的性能。
 
 ### 核心实验结果

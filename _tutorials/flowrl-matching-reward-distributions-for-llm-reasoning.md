@@ -3,7 +3,6 @@ layout: default
 title: "FlowRL: Matching Reward Distributions for LLM Reasoning"
 ---
 
-# FlowRL: Matching Reward Distributions for LLM Reasoning
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.15207v1
 
@@ -13,10 +12,10 @@ title: "FlowRL: Matching Reward Distributions for LLM Reasoning"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 FlowRL 的强化学习算法，它通过匹配完整的奖励分布而非简单地最大化奖励，来提升大型语言模型（LLM）的推理能力，从而解决了现有方法容易陷入模式崩溃、探索多样性不足的问题。
 
-# 关键定义
+## 关键定义
 本文的核心是围绕将传统的奖励最大化范式转变为奖励分布匹配范式，关键概念如下：
 
 *   **FlowRL**: 本文提出的核心算法。它是一种策略优化算法，其目标不是像传统强化学习那样找到单一的最优解，而是让模型的输出分布与奖励信号引导的目标分布相匹配。这通过一种受流网络（GFlowNets）启发的流平衡（flow balancing）机制实现，鼓励智能体探索更多样化且有效的推理路径。
@@ -27,14 +26,14 @@ title: "FlowRL: Matching Reward Distributions for LLM Reasoning"
 
 *   **可学习的配分函数 (Learnable Partition Function, $$Z_φ(x)$$)**: 借鉴了能量基模型的思想，本文引入一个可学习的函数 $$Z_φ(x)$$，用于将标量奖励 $$r(x,y)$$ 归一化为一个合法的概率分布。这使得在不知道整个解空间的情况下，也能构建一个有效的目标分布进行匹配。
 
-# 相关工作
+## 相关工作
 当前，应用于大型语言模型推理任务的强化学习（RL）方法，如 REINFORCE、PPO 和 GRPO，已取得显著成功。这些方法构成了该领域的主流技术（SOTA）。
 
 然而，这些方法共同的根本目标是**奖励最大化 (reward-maximizing)**。这一目标导致了一个关键瓶颈：**模式崩溃 (mode collapse)**。具体来说，模型倾向于过度优化那些最常见或最容易获得高分的推理路径（即奖励分布的主导模式），而忽略了其他同样有效但出现频率较低的解法。这种现象极大地限制了生成推理路径的多样性，并损害了模型在面对新问题时的泛化能力。
 
 因此，本文旨在解决的核心问题是：如何在强化学习训练中促进智能体的多样化探索，以防止其过早收敛到少数几个占主导地位的解决方案模式，从而提升模型的泛化推理能力。
 
-# 本文方法
+## 本文方法
 
 <img src="/images/2509.15207v1/x1.jpg" alt="FlowRL的核心思想与传统方法的对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
@@ -106,7 +105,7 @@ $${% endraw %}
 
 通过这个精心设计的优化目标，FlowRL成功地将分布匹配的思想应用于长序列生成任务，同时保持了训练的效率和稳定性。
 
-# 实验结论
+## 实验结论
 
 ### 主要结果
 实验在数学和代码推理两大领域展开，使用了7B和32B参数规模的模型。结果表明，FlowRL在各个基准上均一致且显著地优于所有基于奖励最大化的基线方法（REINFORCE++, PPO, GRPO）。

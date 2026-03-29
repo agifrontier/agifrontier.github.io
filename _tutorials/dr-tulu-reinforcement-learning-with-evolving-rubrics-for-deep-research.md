@@ -3,7 +3,7 @@ layout: default
 title: "DR Tulu: Reinforcement Learning with Evolving Rubrics for Deep Research"
 ---
 
-# AI自己当“考官”：DR Tulu-8B用进化标尺实现顶级研究，成本降低近1000倍
+## AI自己当“考官”：DR Tulu-8B用进化标尺实现顶级研究，成本降低近1000倍
 
 <img src="/images/2511.19399v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

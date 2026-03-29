@@ -3,7 +3,7 @@ layout: default
 title: "How Far Are We from Genuinely Useful Deep Research Agents?"
 ---
 
-# 千份报告揭示AI研究助手致命弱点：OPPO发布FINDER基准与DEFT分类法
+## 千份报告揭示AI研究助手致命弱点：OPPO发布FINDER基准与DEFT分类法
 
 <img src="/images/2512.01948v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

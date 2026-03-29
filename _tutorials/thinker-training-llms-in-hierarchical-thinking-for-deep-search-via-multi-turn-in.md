@@ -3,7 +3,7 @@ layout: default
 title: "Thinker: Training LLMs in Hierarchical Thinking for Deep Search via Multi-Turn Interaction"
 ---
 
-# 只需数百样本，性能反超SOTA！蚂蚁Thinker教LLM如何“分层思考”
+## 只需数百样本，性能反超SOTA！蚂蚁Thinker教LLM如何“分层思考”
 
 <img src="/images/2511.07943v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

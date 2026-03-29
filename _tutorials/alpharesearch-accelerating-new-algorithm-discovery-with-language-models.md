@@ -3,7 +3,7 @@ layout: default
 title: "AlphaResearch: Accelerating New Algorithm Discovery with Language Models"
 ---
 
-# AI当上科学家：字节跳动AlphaResearch，8项难题2次击败人类专家
+## AI当上科学家：字节跳动AlphaResearch，8项难题2次击败人类专家
 
 大型语言模型（LLM）已经能在解题、编程等任务上媲美甚至超越人类，但它们能做的仅限于已有知识的“排列组合”吗？AI能否像人类科学家一样，真正地“发现”前所未有的新知识、新算法？
 

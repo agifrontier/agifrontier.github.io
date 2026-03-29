@@ -3,7 +3,6 @@ layout: default
 title: "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal"
 ---
 
-# HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal
 
 - **ArXiv URL**: http://arxiv.org/abs/2402.04249v2
 
@@ -13,17 +12,17 @@ title: "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了HarmBench，一个用于自动化红队攻防的标准化评估框架，并通过大规模实验揭示了当前攻防方法的局限性，同时提出了一种高效的对抗训练方法R2D2，显著提升了大型语言模型的安全鲁棒性。
 
-# 关键定义
+## 关键定义
 *   **自动化红队评估 (Automated Red Teaming Evaluation)**: 指使用自动化方法生成对抗性测试用例，以发现和评估大型语言模型（LLMs）在安全和对齐方面的漏洞。本文的核心是为这一过程提供标准化的基准。
 *   **鲁棒性拒绝 (Robust Refusal)**: 指模型在面对各种复杂的、对抗性的恶意指令时，能够稳定、可靠地识别并拒绝执行有害行为的能力。这是本文防御方法的核心目标。
 *   **HarmBench**: 本文提出的一个标准化的评估框架，包含一套精心设计的有害行为集合和一个鲁棒的评估流程，旨在实现对自动化红队攻击方法和LLM防御能力的公平、全面比较。
 *   **功能性类别 (Functional Categories)**: HarmBench中对有害行为的一种创新分类方式，根据行为的结构特性（如是否需要上下文、是否涉及多模态信息）将其分为标准行为、版权行为、上下文行为和多模态行为，用以测试模型不同维度的鲁棒性。
 *   **R2D2 (Robust Refusal Dynamic Defense)**: 本文提出的一种新颖、高效的对抗训练方法。它通过维护一个由强攻击方法（如GCG）持续更新的“持久化测试用例池”来训练模型，以实现鲁棒性拒绝。
 
-# 相关工作
+## 相关工作
 目前，大型语言模型的恶意使用风险日益受到关注，自动化红队作为发现和修复模型安全漏洞的关键技术，发展迅速。然而，该领域的研究现状存在明显瓶颈：
 
 *   **缺乏标准化评估**：以往的自动化红队研究各自为战，使用了至少9种不同的评估设置（如表1所示），这些评估在方法、数据集和指标上几乎没有重叠。这导致不同论文提出的攻击方法之间难以进行公平比较，严重阻碍了领域的进展。
@@ -48,7 +47,7 @@ title: "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming
 
 <figcaption>Table 1: 先前的自动化红队研究使用不同的评估流程，导致比较困难。</figcaption>
 
-# 本文方法
+## 本文方法
 
 ## HarmBench框架设计
 为了解决现有评估的缺陷，本文从广度、可比性和鲁棒指标三个维度系统地设计了HarmBench框架。
@@ -140,7 +139,7 @@ end for
 
 return $\theta$
 
-# 实验结论
+## 实验结论
 
 本文使用HarmBench对18种红队攻击方法和33个LLM（及防御）进行了大规模评估，得出了几个关键结论。
 

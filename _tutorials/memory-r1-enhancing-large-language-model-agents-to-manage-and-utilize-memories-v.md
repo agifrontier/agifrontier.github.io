@@ -3,7 +3,6 @@ layout: default
 title: "Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning"
 ---
 
-# Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning
 
 - **ArXiv URL**: http://arxiv.org/abs/2508.19828v1
 
@@ -13,10 +12,10 @@ title: "Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize M
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了Memory-R1框架，通过强化学习（RL）训练两个专门的智能体——一个用于结构化记忆操作的内存管理器和一个用于筛选并推理记忆的回答智能体，从而使大型语言模型（LLM）能够主动、自适应地管理和利用外部记忆，显著提升了其长时程推理能力。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下几个关键概念：
 *   **Memory-R1**: 一个基于强化学习（Reinforcement Learning, RL）的框架，旨在增强LLM的记忆能力。它包含两个核心组件：内存管理器和回答智能体，二者都通过结果驱动的RL进行微调。
 *   **内存管理器 (Memory Manager)**: 一个专门的智能体，经由RL训练后，学习对外部记忆库执行结构化的操作，包括{增加(ADD)、更新(UPDATE)、删除(DELETE)、无操作(NOOP)}，以动态维护和演化记忆内容。
@@ -24,7 +23,7 @@ title: "Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize M
 *   **内存蒸馏 (Memory Distillation)**: 回答智能体采用的一种策略。它不是直接使用所有检索到的记忆，而是先进行一次筛选，过滤掉无关的、嘈杂的记忆条目，仅将最核心、最相关的信息用于后续的推理和答案生成，以此减少干扰，提高准确性。
 *   **结果驱动的强化学习 (Outcome-driven RL)**: 本文采用的核心训练范式。奖励信号不依赖于对每一步操作（如记忆操作或筛选决策）的精细标注，而是直接与最终任务的产出（即答案的正确与否）挂钩。这使得模型能以极少的监督信息（如仅需问答对）学会复杂的、有益于最终目标的行为。
 
-# 相关工作
+## 相关工作
 当前，增强LLM能力的一个主流方向是为其配备外部记忆模块，以克服其固有的无状态性和有限上下文窗口的限制。这些方法大多采用检索增强生成（Retrieval-Augmented Generation, RAG）的范式，即检索相关记忆并附加到模型的输入中。
 
 然而，现有工作存在两大关键瓶颈：
@@ -33,7 +32,7 @@ title: "Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize M
 
 本文旨在解决上述问题，即通过引入强化学习，为LLM的记忆管理和利用过程提供一个自适应的学习机制。目标是让智能体学会**何时**以及**如何**增、删、改记忆，以及**怎样**从检索到的信息中筛选出真正有用的部分进行推理，使其行为与提升最终答案的准确性这一高级目标对齐。
 
-# 本文方法
+## 本文方法
 本文提出了Memory-R1框架，一个通过RL微调、包含两个专门智能体的记忆增强LLM系统。其核心创新在于将记忆管理和利用问题形式化为RL任务，通过结果驱动的奖励来学习最优策略。
 
 <img src="/images/2508.19828v1/figure2_pipeline.jpg" alt="Memory-R1框架概览" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -87,7 +86,7 @@ title: "Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize M
 <img src="/images/2508.19828v1/figure1_usecase.jpg" alt="Vanilla记忆系统与Memory-R1的对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 图注：Memory‑R1与原生LLM记忆系统的对比。（左）在一个多会话对话中，用户在不同会话中分别提到领养了两只狗。（中）原生内存管理器错误地将第二次领养解读为矛盾，并发出DELETE+ADD指令，导致记忆碎片化。（右）经RL训练的内存管理器发出一个UPDATE指令来整合记忆，而回答智能体则应用内存蒸馏：从RAG检索到的60条记忆中，首先筛选出真正有用的记忆（<Memory 1>），然后基于所选条目进行推理，得出正确答案（“2只狗”）。
 
-# 实验结论
+## 实验结论
 
 ### 主要结果
 本文在LOCOMO基准上进行了广泛实验，证明了Memory-R1框架的有效性。

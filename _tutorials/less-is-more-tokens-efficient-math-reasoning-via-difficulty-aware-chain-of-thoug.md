@@ -3,7 +3,6 @@ layout: default
 title: "Less is More Tokens: Efficient Math Reasoning via Difficulty-Aware Chain-of-Thought Distillation"
 ---
 
-# Less is More Tokens: Efficient Math Reasoning via Difficulty-Aware Chain-of-Thought Distillation
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.05226v1
 
@@ -13,22 +12,22 @@ title: "Less is More Tokens: Efficient Math Reasoning via Difficulty-Aware Chain
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种困难度感知的思维链蒸馏框架，通过在与问题难度成比例的思维链（CoT）数据上进行后训练，教会大语言模型根据问题复杂性动态调整推理深度，从而在保持或提升准确率的同时，显著提升推理效率。
 
-# 关键定义
+## 关键定义
 *   **困难度感知推理 (Difficulty-Aware Reasoning)**: 指模型根据输入问题的内在复杂性，动态调整其推理过程的深度和详细程度的能力。对于简单问题，模型应生成简洁的推理步骤；对于复杂问题，则应生成更详尽的推理链。
 *   **困难度感知的思维链蒸馏 (Difficulty-Aware Chain-of-Thought Distillation)**: 本文提出的核心框架。它采用“教师-学生”模式，首先由一个强大的教师模型生成详尽但冗长的思维链，然后根据一个预估的难度分数对这些思维链进行压缩，最后用这些压缩后的、长度与难度匹配的数据来训练（蒸馏）一个学生模型。
 *   **混合训练 (Hybrid Training, SFT + DPO)**: 本文验证的最有效训练策略。它结合了监督微调（Supervised Fine-Tuning, SFT）和直接偏好优化（Direct Preference Optimization, DPO）。SFT首先让模型学习模仿压缩后推理链的结构和风格（简洁性），随后DPO通过对比学习（将压缩的短推理作为偏好项，原始长推理作为拒绝项）进一步提升模型的推理准确率。
 
-# 相关工作
+## 相关工作
 当前，通过思维链（Chain-of-Thought, CoT）提示增强大语言模型（LLM）的多步推理能力已成为主流范式。然而，现有CoT方法的一个关键瓶颈是，无论问题难度如何，模型生成的推理轨迹通常都过于冗长，导致了不必要的“过度思考”（over-thinking），增加了推理延迟和计算成本。
 
 虽然已有研究尝试通过强化学习、固定预算或外部路由机制来控制推理长度，但这些方法未能让模型内在地学会根据任务的复杂性来调整自身的推理策略。
 
 本文旨在解决这一具体问题：如何训练模型，使其能够像人类一样，根据问题的内在难度自适应地分配认知资源，即对简单问题进行最少化推理，对复杂问题进行深入思考，从而实现推理效率和准确性的平衡。
 
-# 本文方法
+## 本文方法
 本文提出了一个通用的困难度感知思维链（CoT）蒸馏框架，旨在让模型能够根据问题难度自适应地调整推理的详细程度。该框架包含数据生成和模型训练两个主要阶段。
 
 ### 数据生成
@@ -85,7 +84,7 @@ $${% endraw %}
 #### 混合训练 (SFT + DPO)
 本文发现，先进行SFT再进行DPO的混合训练课程效果最好。SFT使模型首先掌握与难度相关的推理模式，DPO则通过对比学习进一步优化和提炼这种能力，最终在准确性和效率之间取得了最佳平衡。
 
-# 实验结论
+## 实验结论
 
 ### 主要发现
 *   **SFT学习长度与格式**：单独使用SFT进行训练，模型能有效地学习生成与目标（压缩后的）推理链长度和格式相似的输出，但往往以牺牲最终答案的准确性为代价。

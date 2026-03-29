@@ -3,7 +3,6 @@ layout: default
 title: "Asymmetric Proximal Policy Optimization: mini-critics boost LLM reasoning"
 ---
 
-# Asymmetric Proximal Policy Optimization: mini-critics boost LLM reasoning
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.01656v1
 
@@ -13,10 +12,10 @@ title: "Asymmetric Proximal Policy Optimization: mini-critics boost LLM reasonin
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种非对称近端策略优化（Asymmetric Proximal Policy Optimization, AsyPPO），该框架通过使用一组在非重叠数据上训练的轻量级“迷你评论家”（mini-critics），在保持计算高效的同时恢复了评论家（critic）在大型语言模型（LLM）推理任务中的关键作用，从而显著提升了学习的稳定性和最终性能。
 
-# 关键定义
+## 关键定义
 *   **非对称近端策略优化 (Asymmetric Proximal Policy Optimization, AsyPPO)**：本文提出的核心框架。它采用与大型智能体（actor）模型规模不匹配的、更小、更轻量级的评论家模型（即“非对称”架构），以解决在LLM场景下训练全尺寸评论家带来的巨大计算开销和价值估计不准的问题。
 
 *   **迷你评论家 (Mini-critics)**：指在AsyPPO框架中使用的轻量级评论家模型。它们的参数量远小于智能体模型，通过集成（ensemble）的方式共同为大型智能体提供价值估计。
@@ -27,14 +26,14 @@ title: "Asymmetric Proximal Policy Optimization: mini-critics boost LLM reasonin
 
 *   **基于价值分歧的熵过滤 (Entropy filtering based on value divergence)**：另一种策略优化技巧。当迷你评论家对某个状态的价值估计出现较大分歧（即标准差很高）时，认为该状态可能包含噪声或与推理任务无关的模式。因此，在计算熵正则化项时，会过滤掉这些高分歧状态，以抑制无效探索，促进更安全的策略学习。
 
-# 相关工作
+## 相关工作
 当前，近端策略优化（Proximal Policy Optimization, PPO）已成为提升LLM推理能力的主流强化学习（RL）方法。然而，将传统RL中的对称演员-评论家（actor-critic）架构直接应用于LLM时，面临着严峻的挑战。由于LLM的规模巨大，训练一个与智能体同样大小的评论家模型不仅计算成本高昂，而且在长序列、稀疏奖励的推理任务中，其价值估计往往不准确且难以收敛。
 
 为了应对这些挑战，当前最先进的（SOTA）方法，如GRPO及其变体，大多选择放弃显式的评论家，转而使用平均优势基线（average advantage baselines）等粗粒度方法来估计优势。虽然这种范式转变在实践中取得了成功，但它也舍弃了RL的一个核心优势：通过鲁棒的状态价值估计来稳定训练过程，防止因优势估计偏差导致的策略崩溃。
 
 本文旨在解决上述“评论家瓶颈”问题，即如何设计一种既能提供准确价值估计、又能在LLM尺度上保持计算效率和可扩展性的评论家架构。
 
-# 本文方法
+## 本文方法
 
 本文的核心思想是：利用预训练模型赋予LLM的强大初始表征能力，构建一个非对称的演员-评论家系统，通过一组轻量级的“迷你评论家”来有效指导一个大规模的智能体。该方法主要包含两个层面的创新。
 
@@ -116,7 +115,7 @@ $${% endraw %}
 | 5. 生成优势掩码向量 $$$\mathbb{I}^{A} \leftarrow Low\_{k}(\sigma(O))$$$ 和熵过滤向量 $$$\mathbb{I}^{\mathcal{H}} \leftarrow Top\_{h}(\sigma(O))$$$。 |
 | 6. 使用重构后的PPO损失函数（包含掩码和过滤）更新智能体 $$$\pi_{\theta}`。 |
 
-# 实验结论
+## 实验结论
 本文通过一系列实验，验证了AsyPPO方法的有效性和泛化能力。
 
 #### 主要发现

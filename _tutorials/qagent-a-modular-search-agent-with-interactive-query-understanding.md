@@ -3,7 +3,6 @@ layout: default
 title: "QAgent: A modular Search Agent with Interactive Query Understanding"
 ---
 
-# QAgent: A modular Search Agent with Interactive Query Understanding
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.08383v1
 
@@ -13,17 +12,17 @@ title: "QAgent: A modular Search Agent with Interactive Query Understanding"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了 QAgent，一个统一的智能体 RAG 框架，它通过一个采用两阶段强化学习策略训练的模块化搜索智能体，进行交互式查询理解和自适应检索，从而提高了对复杂问题的检索质量和作为可插拔模块的泛化能力。
 
-# 关键定义
+## 关键定义
 *   **QAgent**: 本文提出的统一智能体 RAG (Agentic RAG) 框架。其核心是一个模块化的搜索智能体，通过多轮交互式推理和检索来优化对复杂查询的理解，旨在作为可插拔模块在复杂系统中部署。
 *   **智能体 RAG (Agentic RAG)**: 传统“检索-阅读”(retrieve-then-read) 范式的拓展。它将搜索过程建模为一个序贯决策问题，其中智能体通过多步动态推理和与环境的交互来决定何时以及检索什么内容。
 *   **端到端强化学习训练 (End-to-End RL Training)**: QAgent 的第一阶段训练策略。在此阶段，智能体的训练目标是最大化基于最终答案正确性的端到端奖励。该方法同时优化了智能体的信息检索与信息利用能力。
 *   **泛化强化学习训练 (Generalized RL Training)**: QAgent 的第二阶段训练策略。为提升智能体作为“子模块”的泛化能力，此阶段使用一个固定的（frozen）生成器来产出答案，并基于该生成器的回答计算奖励。这迫使智能体专注于提升检索信息本身的质量，而非其自身利用信息的能力，从而避免了“奖励黑客”(reward hacking)问题。
 *   **多轮查询优化循环 (Multi-Turn Query Optimation Loop)**: QAgent 智能体的核心工作流程。在一个“计划-搜索-信息整合-反思”(plan-search-information-reflect) 的循环中，智能体自主地生成、执行并评估检索动作，通过多轮交互逐步深化对复杂用户意图的理解，并构建出准确的搜索路径。
 
-# 相关工作
+## 相关工作
 当前，大型语言模型在处理知识密集型任务时，面临知识过时和幻觉等挑战。检索增强生成 (Retrieval-Augmented Generation, RAG) 通过引入外部知识缓解了这些问题，但传统 RAG 的“检索-阅读”工作流过于僵化，难以处理需要多步推理的复杂查询。
 
 为了提升灵活性，近期工作引入了查询优化、规划、反思和迭代检索等方法，形成了智能体 RAG (Agentic RAG) 的雏形。然而，这些方法大多缺乏有效的反馈和持续优化机制。基于强化学习 (Reinforcement Learning, RL) 的搜索智能体（如 Search-R1）虽然展示了强大的自主推理和决策能力，但在实际应用中仍面临两大瓶颈：
@@ -34,7 +33,7 @@ title: "QAgent: A modular Search Agent with Interactive Query Understanding"
 1.  设计一个能够理解和分解复杂查询，以弥合用户意图与检索器能力之间差距的搜索智能体。
 2.  提出一种训练策略，确保智能体在作为可插拔子模块时具备强大的泛化能力，专注于为下游任务提供高质量信息。
 
-# 本文方法
+## 本文方法
 本文提出了一个名为 QAgent 的统一智能体框架，其核心是一个通过多轮交互循环进行推理和检索的搜索智能体，并通过一种创新的两阶段训练策略进行优化。
 
 ![](acl_latex/imgs/framework.png)
@@ -95,7 +94,7 @@ $${% endraw %}
 *   **缓解奖励黑客问题**：通过引入外部固定生成器作为“评判者”，有效避免了智能体在端到端训练中为获取高分而过度优化自身信息利用能力的倾向。
 *   **模块化与实用性**：训练出的 QAgent 是一个轻量级的搜索模块，可以灵活地与不同规模、不同能力的生成器组合，满足现实世界复杂系统的部署需求。
 
-# 实验结论
+## 实验结论
 
 实验在多个开放域问答数据集（包括多跳和单跳）上进行，验证了 QAgent 的性能和泛化能力。
 

@@ -3,7 +3,7 @@ layout: default
 title: "General Agentic Memory Via Deep Research"
 ---
 
-# AI记忆革命GAM：用“即时研究”取代静态压缩，长文本任务准确率超90%！
+## AI记忆革命GAM：用“即时研究”取代静态压缩，长文本任务准确率超90%！
 
 <img src="/images/2511.18423v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

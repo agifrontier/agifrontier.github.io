@@ -3,10 +3,10 @@ layout: default
 title: Attention Is All You Need
 ---
 
-# TL;DR
+## TL;DR
 Transformer 是首个完全基于注意力机制 (attention mechanism) 的序列转导模型，摒弃了循环和卷积结构，在机器翻译等任务上，既显著提升了性能又极大加速了训练流程，推动了自然语言处理进入全新范式。
 
-# 关键定义
+## 关键定义
 
 **1. 注意力机制（Attention Mechanism）**
 一种将 query（查询向量）、key（键向量）与 value（值向量）映射到输出的机制，其中输出是 value 的加权和，权重由 query 与每个 key 的相似度决定。
@@ -18,7 +18,7 @@ Transformer 是首个完全基于注意力机制 (attention mechanism) 的序列
 **3. 位置编码（Positional Encoding）**
 为弥补Transformer无卷积/无循环导致的序列顺序感缺失，提出将正弦和余弦函数编码加到词嵌入（embedding）上，使模型能理解序列中各 token 的位置关系。
 
-# 相关工作
+## 相关工作
 
 当前序列建模（如语言建模、机器翻译）领域主流方法为循环神经网络（RNN）、长短时记忆网络（LSTM）以及门控循环单元（GRU），并普遍采用编码器-解码器架构 (Encoder-Decoder Architecture)。这些方法虽表现优异，但存在两个关键瓶颈：
 1. **计算高度顺序化**：每个位置依赖于前一时刻状态，限制了并行计算和大规模训练效率。
@@ -26,7 +26,7 @@ Transformer 是首个完全基于注意力机制 (attention mechanism) 的序列
 
 注意力机制已经在多种任务中成为关键组件，但过去多与循环网络结合使用，鲜有完全纯粹、独立的自注意力建模。**Transformer**直接瞄准上述瓶颈，提出完全基于注意力的解码架构，实现全序列任意位置互联及高度可并行。
 
-# 本文方法
+## 本文方法
 
 ## 总体架构
 
@@ -78,7 +78,7 @@ Transformer采用经典编码器-解码器结构，但**核心创新点是用堆
 - **结构解释性更强**：注意力权重分布易于可视化和语法/语义结构分析。
 - **泛化性高**：模型本身不依赖前序任务特定结构，对多种序列任务均适用。
 
-# 实验结论
+## 实验结论
 
 ## 1. 机器翻译（Machine Translation）
 - 在WMT 2014英德翻译任务，**Transformer (big)** 模型 BLEU 达28.4，较最好同类模型（含Ensemble）提升2分以上。

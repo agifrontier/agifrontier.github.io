@@ -3,7 +3,6 @@ layout: default
 title: "KTO: Model Alignment as Prospect Theoretic Optimization"
 ---
 
-# KTO: Model Alignment as Prospect Theoretic Optimization
 
 - **ArXiv URL**: http://arxiv.org/abs/2402.01306v4
 
@@ -13,10 +12,10 @@ title: "KTO: Model Alignment as Prospect Theoretic Optimization"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为KTO (Kahneman-Tversky Optimization) 的新型大模型对齐方法，它基于前景理论，仅需“可取”或“不可取”的二元反馈信号，便能在10亿到300亿参数规模的模型上达到甚至超越基于偏好数据的DPO方法的性能。
 
-# 关键定义
+## 关键定义
 本文提出了几个核心概念，用于从认知科学（前景理论）的视角重新审视和构建模型对齐方法：
 
 1.  **前景理论 (Prospect Theory)**: 一个描述人类在不确定情况下如何进行决策的认知科学理论。其核心观点是，人类对价值的感知是相对的（基于一个参考点），并且对损失比对等量收益更敏感（损失厌恶）。
@@ -24,14 +23,14 @@ title: "KTO: Model Alignment as Prospect Theoretic Optimization"
 3.  **隐含奖励 (Implied Reward)**: 定义为 $r\_{\theta}(x,y) = \beta \log[\pi\_{\theta}(y \mid x)/\pi\_{\text{ref}}(y \mid x)]$。它衡量了从参考模型 $\pi\_{\text{ref}}$ 变为当前模型 $\pi\_{\theta}$ 时，生成特定输出 $y$ 的对数概率增益，可以理解为模型认为该输出有多“好”。
 4.  **KTO (Kahneman-Tversky Optimization)**: 本文提出的核心对齐方法。它是一种HALO，其损失函数直接源自Kahneman和Tversky的价值函数模型。与DPO最大化偏好数据的对数似然不同，KTO旨在直接最大化生成结果的（前景理论）效用，且只需要关于单个输出是“可取”还是“不可取”的二元反馈。
 
-# 相关工作
+## 相关工作
 目前，大型语言模型（LLM）的对齐（Alignment）主流方法是基于人类反馈的强化学习（RLHF）。RLHF通常分为两步：首先，训练一个奖励模型来拟合人类的偏好数据（例如，输出$y\_w$优于$y\_l$）；然后，使用PPO等强化学习算法来优化语言模型，使其在最大化奖励的同时，不过分偏离原始的SFT模型（通过KL散度惩罚）。
 
 然而，RLHF流程复杂、训练不稳定。直接偏好优化（Direct Preference Optimization, DPO）作为一种更简单、稳定的替代方案应运而生。DPO通过一个巧妙的推导，将RLHF的目标转化为一个简单的、可以直接在偏好数据上优化的分类损失函数，避免了显式的奖励建模和复杂的RL训练。
 
 **本文旨在解决的关键问题是**：当前最有效的对齐方法（如RLHF和DPO）都严重依赖于成对的偏好数据（$(x, y\_w, y\_l)$），而这类数据在现实世界中收集成本高、速度慢、数量稀缺。本文试图探究是否必须使用偏好数据，并希望开发一种仅依赖更易获取的二元反馈信号（即判断单个输出是“好”还是“坏”）就能实现高效对齐的方法。
 
-# 本文方法
+## 本文方法
 
 ## 前景理论视角与HALOs
 本文首先从认知科学的前景理论出发，为现有对齐方法的成功提供了新的解释。前景理论指出，人类对价值的感知并非线性的，而是具有**参考点依赖**、**损失厌恶**和**风险态度**等特征。
@@ -105,7 +104,7 @@ $${% endraw %}
 | Qwen2.5 3B Instruct | KTO | 5e-6 | 0.50 | 16.63 | 20.41 | 60.35 |
 **表1**: 在UltraFeedback上对齐不同模型的推荐超参数设置。
 
-# 实验结论
+## 实验结论
 本文通过一系列实验，验证了KTO的有效性。
 
 <img src="/images/2402.01306v4/dpo_vs_kto.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">

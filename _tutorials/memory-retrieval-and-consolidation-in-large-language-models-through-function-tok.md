@@ -3,7 +3,6 @@ layout: default
 title: "Memory Retrieval and Consolidation in Large Language Models through Function Tokens"
 ---
 
-# Memory Retrieval and Consolidation in Large Language Models through Function Tokens
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.08203v1
 
@@ -13,10 +12,10 @@ title: "Memory Retrieval and Consolidation in Large Language Models through Func
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了“功能性Token假说” (Function Token Hypothesis)，揭示了语言模型中的一小部分高频Token（功能性Token）在记忆检索和巩固中扮演着核心角色：在推理时激活上下文中的预测性特征，在预训练时驱动模型学习和扩展新特征。
 
-# 关键定义
+## 关键定义
 本文为理解大型语言模型（LLM）的记忆机制，提出或沿用了以下几个核心概念：
 
 1.  **功能性Token (Function Token) 与内容性Token (Content Token)**：本文并未严格遵循语言学定义，而是基于统计频率对Token进行分类。在预训练语料中，累计出现频率占前40%的少数高频Token被划分为功能性Token（如标点、冠词、介词等），其余大部分低频Token则为内容性Token。
@@ -26,7 +25,7 @@ title: "Memory Retrieval and Consolidation in Large Language Models through Func
     *   **推理时（记忆检索）**：功能性Token负责从上下文中激活最具预测性的特征，从而主导下一个Token的预测。
     *   **预训练时（记忆巩固）**：预测功能性Token之后的下一个Token（通常是内容性Token）这一任务，是驱动模型更新参数、学习并扩展其特征库的主要动力。
 
-# 相关工作
+## 相关工作
 当前，对大型语言模型（LLM）的研究通过稀疏自动编码器 (Sparse Autoencoders, SAEs) 等技术，在从神经元激活中分解和解释“特征” (features) 方面取得了显著进展。研究者们发现，模型通过特征的叠加 (superposition) 来存储知识，并且这些特征具有人类可解释的语义。
 
 然而，尽管在理解“特征”是什么上有所突破，但LLM的记忆机制，即知识是如何被存入和取出的，仍然是一个“黑箱”。具体来说，领域内存在两个悬而未决的基本问题：
@@ -35,7 +34,7 @@ title: "Memory Retrieval and Consolidation in Large Language Models through Func
 
 本文旨在通过引入功能性Token和内容性Token的视角，来回答上述两个问题，从而揭开LLM记忆机制的神秘面纱。
 
-# 本文方法
+## 本文方法
 
 本文的核心是一种新的理论假说——功能性Token假说，并通过一系列精心设计的分析实验来验证它。
 
@@ -133,7 +132,7 @@ title: "Memory Retrieval and Consolidation in Large Language Models through Func
 
 上图展示了模型在不同训练阶段的生成演变，从早期只会生成功能性Token，到中期生成连贯短语，再到后期能够处理长距离依赖，这与损失分析的结论一致。
 
-# 实验结论
+## 实验结论
 本文通过一系列广泛的实验，为所提出的“功能性Token假说”提供了强有力的证据。
 
 *   **验证了功能性Token在记忆检索中的核心作用**：

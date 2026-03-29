@@ -3,7 +3,6 @@ layout: default
 title: "LiveThinking: Enabling Real-Time Efficient Reasoning for AI-Powered Livestreaming via Reinforcement Learning"
 ---
 
-# LiveThinking: Enabling Real-Time Efficient Reasoning for AI-Powered Livestreaming via Reinforcement Learning
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.07685v1
 
@@ -13,23 +12,23 @@ title: "LiveThinking: Enabling Real-Time Efficient Reasoning for AI-Powered Live
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 LiveThinking 的两阶段优化框架，旨在解决AI直播等实时场景中推理质量与延迟之间的权衡问题。该框架首先通过知识蒸馏将大型推理模型的能力压缩到轻量级模型中，然后利用强化学习进一步优化推理路径的效率，最终实现了在大幅降低延迟和计算成本的同时，提升响应的正确性与帮助性。
 
-# 关键定义
+## 关键定义
 本文沿用了现有概念，并提出了两个关键的评估指标用于模型优化：
 *   **正确性 (Correctness, C):** 用于衡量模型响应在事實層面是否與提供的产品知识对齐。一个正确的响应，其所有声明都必须能在提供的文档 $$D_t$$ 中得到验证，与对话历史 $$H_t$$ 保持逻辑一致，并且直接回答当前的用户问题 $$Q_t$$。
 *   **帮助性 (Helpfulness, H):** 用于评估模型响应是否能为用户提供超越基础回答的额外价值。一个有帮助的响应，除了正确回答问题外，还应能预判用户的潜在需求，并根据对话上下文 $$H_t$$ 主动提供补充性的相关信息。
 *   **LLM Judge:** 本文使用一个大型语言模型作为裁判，根据上述定义的正确性（Correctness）和帮助性（Helpfulness）标准来自动评估和筛选模型生成的响应。该裁判在第一阶段的拒绝采样微调中用于数据过滤，在第二阶段的强化学习中用于生成奖励信号。
 
-# 相关工作
+## 相关工作
 当前，大型推理模型 (Large Reasoning Models, LRM) 在复杂推理任务上表现出色，能够生成准确且细致的响应。然而，其巨大的参数规模和冗长的推理路径导致了极高的推理延迟，这在需要即时反馈的AI直播等交互式场景中是不可接受的。
 
 现有研究尝试通过强化学习（Reinforcement Learning, RL）来优化语言模型，但常常面临模型产生冗长、计算成本高昂的思维链（Chain-of-Thought, CoT）的“过度思考” (overthinking) 现象。虽然一些工作尝试在奖励函数中加入长度惩罚来鼓励简洁性，但如何系统性地在保证响应质量（如正确性和帮助性）的同时，高效地压缩推理过程，仍然是一个关键瓶颈。
 
 本文旨在解决LRM在部署于实时交互应用时，响应质量与低延迟要求之間的尖锐矛盾。
 
-# 本文方法
+## 本文方法
 本文提出了一个名为 LiveThinking 的两阶段优化框架，以在保证响应质量的同时，实现高效的实时推理。该框架首先通过知识蒸馏来传递能力，然后通过强化学习来优化效率。
 
 <img src="/images/2510.07685/x2.jpg" alt="LiveThinking 框架图" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -147,7 +146,7 @@ title: "LiveThinking: Enabling Real-Time Efficient Reasoning for AI-Powered Live
 
 
 
-# 实验结论
+## 实验结论
 实验结果表明，LiveThinking框架在工业级和公开 benchmarks 上均取得了显著成果。
 
 ### 主要结果

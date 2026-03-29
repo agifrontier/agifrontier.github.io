@@ -3,7 +3,6 @@ layout: default
 title: "Failure Makes the Agent Stronger: Enhancing Accuracy through Structured Reflection for Reliable Tool Interactions"
 ---
 
-# Failure Makes the Agent Stronger: Enhancing Accuracy through Structured Reflection for Reliable Tool Interactions
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.18847v2
 
@@ -13,17 +12,17 @@ title: "Failure Makes the Agent Stronger: Enhancing Accuracy through Structured 
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出一种名为结构化反思 (structured reflection) 的新机制，将工具调用失败后的错误诊断与修复过程，转化为一种可控、可训练的智能体行为，从而显著增强大型语言模型在多轮工具交互中的可靠性和错误恢复能力。
 
-# 关键定义
+## 关键定义
 本文的核心是**结构化反思 (Structured Reflection)**。它是一种显式的、可训练的行为策略，旨在使智能体能够从工具调用的失败中学习和恢复。其核心思想是，当一次工具调用失败后，模型不应盲目重试，而应执行一个两步过程：
 1.  **诊断 (Diagnose)**：智能体首先生成一段反思文本（例如，包裹在 $$<reflect>$$ 标签内），根据上一步的错误反馈和上下文证据，清晰地诊断失败的根本原因。
 2.  **修复 (Repair)**：基于诊断结果，智能体提出一个修正后的、可执行的工具调用请求。
 
 通过将“从错误到修复”的过程变成一个标准化的动作，并围绕它设计训练数据和奖励函数，该能力不再依赖于启发式提示，而是成为模型内在的、可靠的技能。
 
-# 相关工作
+## 相关工作
 目前，增强大型语言模型（LLM）工具使用能力的方法主要有监督微调（SFT）和强化学习（RL），这些方法主要优化单轮的、一次性的工具调用。这导致了以下关键瓶颈：
 1.  **在多轮交互中表现脆弱**：一旦某次工具调用失败，模型往往会重复同样的错误，缺乏有效的错误恢复机制。
 2.  **依赖单向推理**：现有的自我修正方法大多依赖于启发式提示（例如，让模型“多想一想”）或单向的思维链，模型难以准确定位并从根本上纠正错误。
@@ -31,7 +30,7 @@ title: "Failure Makes the Agent Stronger: Enhancing Accuracy through Structured 
 
 本文旨在解决上述问题，特别是如何让智能体在多轮工具交互中，从失败中可靠地恢复，即将自我修正能力从一种不稳定的启发式技巧，转变为一种稳健、可学习的核心能力。
 
-# 本文方法
+## 本文方法
 
 本文的核心方法包含三个部分：一个为训练反思能力而构建的基准数据集 Tool-Reflection-Bench，一套为工具调用场景量身定制的精细化奖励机制，以及一个结合了 DAPO 和 GSPO 优点的强化学习目标函数。
 
@@ -103,7 +102,7 @@ $${% endraw %}
 
 通过这个混合目标函数，模型能够在奖励信号复杂且稀疏的工具调用场景下进行更稳定和高效的学习。
 
-# 实验结论
+## 实验结论
 本文在自建的 Tool-Reflection-Bench 和公开基准 BFCL v3 上进行了实验，验证了所提方法的有效性。
 *   **核心优势验证**：实验结果表明，经过结构化反思训练的模型，在多轮工具调用的成功率和错误恢复能力上取得了显著提升。当面对失败的工具调用时，模型能够更准确地诊断问题并生成正确的修复调用。
 *   **性能表现**：在 BFCL v3 基准测试中，本文方法不仅在多轮交互中表现出色，还减少了不必要的冗余调用，同时保持了与基线模型相当的单轮工具调用性能。这意味着该方法在增强鲁棒性的同时，没有牺牲基础的调用能力。

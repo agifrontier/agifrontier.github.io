@@ -3,7 +3,6 @@ layout: default
 title: "A Comprehensive Survey on World Models for Embodied AI"
 ---
 
-# A Comprehensive Survey on World Models for Embodied AI
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.16732v1
 
@@ -13,7 +12,7 @@ title: "A Comprehensive Survey on World Models for Embodied AI"
 
 ---
 
-# 面向具身智能的世界模型综合综述
+## 面向具身智能的世界模型综合综述
 
 ## 核心概念与数学基础
 

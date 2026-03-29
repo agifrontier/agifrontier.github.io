@@ -3,7 +3,7 @@ layout: default
 title: "LORE: A Large Generative Model for Search Relevance"
 ---
 
-# 阿里LORE：电商搜索相关性暴涨27%！大模型训练心法全公开
+## 阿里LORE：电商搜索相关性暴涨27%！大模型训练心法全公开
 
 <img src="/images/2512.03025v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

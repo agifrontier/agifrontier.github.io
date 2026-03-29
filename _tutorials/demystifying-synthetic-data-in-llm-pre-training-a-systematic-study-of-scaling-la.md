@@ -3,7 +3,6 @@ layout: default
 title: "Demystifying Synthetic Data in LLM Pre-training: A Systematic Study of Scaling Laws, Benefits, and Pitfalls"
 ---
 
-# Demystifying Synthetic Data in LLM Pre-training: A Systematic Study of Scaling Laws, Benefits, and Pitfalls
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.01631v1
 
@@ -13,10 +12,10 @@ title: "Demystifying Synthetic Data in LLM Pre-training: A Systematic Study of S
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过大规模实证研究系统地揭示了，在大型语言模型预训练中战略性地混合约30%的重述（rephrased）合成数据与自然网络文本，可以在大数据量下将达到相同损失所需的训练速度提升5-10倍，但合成数据的最终效果高度依赖其类型、混合比例和生成器模型的能力。
 
-# 关键定义
+## 关键定义
 本文的核心是围绕两种不同范式的合成数据展开的，并未引入全新的理论术语，而是对以下两种合成数据生成方法进行了操作化定义和系统性研究：
 
 1.  **网页重述 (Web Rephrasing)**: 一种利用预训练语言模型（生成器模型）来重写和改进现有网络文档（如来自CommonCrawl的数据）的方法。本文探索了两种具体风格：
@@ -25,7 +24,7 @@ title: "Demystifying Synthetic Data in LLM Pre-training: A Systematic Study of S
 
 2.  **合成教科书 (Synthetic Textbooks, TXBK)**: 一种生成全新内容的范式，旨在模仿教科书或高质量教育材料的结构、风格和信息密度。该方法使用从网络文本中提取的关键词作为种子，提示生成器模型创造出关于特定主题的、包含清晰解释、定义、示例甚至练习的原创“教科书式”文档。
 
-# 相关工作
+## 相关工作
 当前，高质量自然文本数据的稀缺性已成为训练更强大型语言模型（LLM）的瓶颈，使得合成数据成为一个备受关注的解决方案。尽管合成数据在指令微调等后训练阶段已证明其价值，但其在 foundational pre-training（基础预训练）阶段的作用仍不明确，相关研究存在以下问题：
 
 *   **方法论不统一**：现有研究（如Phi系列、WRAP等）大多采用定制化的设置，导致实验结果难以直接比较和泛化。
@@ -34,7 +33,7 @@ title: "Demystifying Synthetic Data in LLM Pre-training: A Systematic Study of S
 
 本文旨在解决上述知识鸿沟，通过统一协议下的大规模系统性实验，明确回答以下问题：合成数据能否以及在何种条件下有效提升LLM预训练性能？不同类型的合成数据及其混合比例如何影响训练动态和扩展行为？
 
-# 本文方法
+## 本文方法
 本文的核心创新并非提出一种全新的算法，而是设计并执行了一项前所未有的大规模、系统性的实证研究，以揭示合成数据在LLM预训练中的作用。研究方法主要包含两种合成数据生成范式。
 
 ### 网页重述
@@ -45,7 +44,7 @@ title: "Demystifying Synthetic Data in LLM Pre-training: A Systematic Study of S
 ### 合成教科书 (TXBK)
 该方法基于一个假设：与零散的网络文本相比，信息密集的教育类内容可能在培养模型的推理、编码和事实性能力方面更具计算效率。其目标是生成全新的、高质量的教育内容。具体流程是，使用从CC中提取的关键词作为主题种子，然后通过结构化提示词引导生成器模型创作出类似教科书章节或教程的文本。这些提示词明确要求包含清晰的解释、定义、代码示例及相关练习，并强调事实准确性和教学结构。
 
-# 实验结论
+## 实验结论
 本文进行了大规模实验，训练了超过1000个LLM变体（模型参数量达3B，训练数据量达200B tokens），旨在系统评估不同类型合成数据及其混合比例对预训练的影响。
 
 ### 扩展定律分析

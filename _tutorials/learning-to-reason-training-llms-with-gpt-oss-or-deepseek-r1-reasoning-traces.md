@@ -3,7 +3,7 @@ layout: default
 title: "Learning to Reason: Training LLMs with GPT-OSS or DeepSeek R1 Reasoning Traces"
 ---
 
-# 推理成本直降75%！英伟达新研究：LLM学会“长话短说”，数学能力还不减
+## 推理成本直降75%！英伟达新研究：LLM学会“长话短说”，数学能力还不减
 
 <img src="/images/2511.19333v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

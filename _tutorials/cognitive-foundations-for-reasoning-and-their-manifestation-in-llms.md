@@ -3,7 +3,7 @@ layout: default
 title: "Cognitive Foundations for Reasoning and Their Manifestation in LLMs"
 ---
 
-# 哈佛解剖LLM大脑：揭示其“浅层思维”缺陷，认知引导让性能飙升60%
+## 哈佛解剖LLM大脑：揭示其“浅层思维”缺陷，认知引导让性能飙升60%
 
 <img src="/images/2511.16660v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

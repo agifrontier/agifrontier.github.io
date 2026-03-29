@@ -3,7 +3,6 @@ layout: default
 title: "CODA: Coordinating the Cerebrum and Cerebellum for a Dual-Brain Computer Use Agent with Decoupled Reinforcement Learning"
 ---
 
-# CODA: Coordinating the Cerebrum and Cerebellum for a Dual-Brain Computer Use Agent with Decoupled Reinforcement Learning
 
 - **ArXiv URL**: http://arxiv.org/abs/2508.20096v1
 
@@ -13,23 +12,23 @@ title: "CODA: Coordinating the Cerebrum and Cerebellum for a Dual-Brain Computer
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 CODA 的可训练组合式智能体框架，它模仿人脑的大脑与小脑功能分离机制，通过解耦的强化学习和两阶段训练流程，协同一个通用规划器（大脑）和一个专用执行器（小脑），以有效解决科学计算等专业领域中长时序规划与精确GUI操作的挑战。
 
-# 关键定义
+## 关键定义
 *   **CODA框架**: 一个受人脑双脑结构启发的、可训练的组合式智能体框架，全称为“为双脑计算机使用智能体协同大脑与小脑”(Coordinating the Cerebrum and Cerebellum for a Dual-Brain Computer Use Agent)。它将智能体的能力解耦为规划和执行两个模块。
 *   **规划器 (Planner / Cerebrum)**: 框架中的“大脑”，由一个大型视觉语言模型（如 Qwen2.5-VL）充当。它负责高层次的战略思考，根据历史交互和当前屏幕截图生成指导下一步行动的“想法”(thought)。
 *   **执行器 (Executor / Cerebellum)**: 框架中的“小脑”，由一个擅长GUI操作的模型（如 UI-TARS-1.5）充当。它负责将规划器生成的抽象想法转化为精确、可执行的底层GUI动作（如 $$pyautogui$$ 命令）。
 *   **解耦强化学习 (Decoupled Reinforcement Learning)**: 一种新颖的训练策略，在训练过程中，保持执行器模型固定不变，仅通过与环境交互产生的奖励信号来更新和优化规划器模型。这种方法能更高效地提升智能体的规划能力，而无需重新训练已经很强大的执行模块。
 
-# 相关工作
+## 相关工作
 当前用于图形用户界面（Graphical User Interfaces, GUIs）的自主智能体在处理科学计算等专业领域任务时面临一个核心困境。一方面，通用型智能体（Generalist agents）虽然具备强大的长时序规划能力，但在需要精确定位的GUI操作上表现不佳。另一方面，专用型智能体（Specialized agents）精于精确执行，但其复杂规划能力有限。
 
 为了解决这一矛盾，研究界开始探索组合式框架，将“规划器”与“执行器”解耦。然而，这些早期的框架大多是静态且不可训练的，通常依赖于强大的闭源模型作为规划核心。这种设计的缺陷是显而易见的：它不仅降低了研究的透明度和可复现性，更关键的是，它使得智能体无法从经验中学习和适应，这在缺乏高质量标注数据的专业软件领域是一个致命的限制。
 
 本文旨在解决上述问题，即如何构建一个**可训练**的、能够从与环境的交互中学习并适应新软件的组合式智能体框架。
 
-# 本文方法
+## 本文方法
 本文提出了CODA框架，该框架受人脑功能分区启发，构建了一个“规划器-执行器”双脑结构，并通过一个创新的两阶段训练流程进行优化。
 
 <img src="/images/2508.20096v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -120,7 +119,7 @@ title: "CODA: Coordinating the Cerebrum and Cerebellum for a Dual-Brain Computer
 
 图3: 用于支持训练的探索流程。
 
-# 实验结论
+## 实验结论
 本文在 ScienceBoard 基准测试中的四个具有挑战性的科学软件应用上验证了 CODA 框架的有效性。
 
 **关键实验结果：**

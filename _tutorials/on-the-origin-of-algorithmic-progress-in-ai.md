@@ -3,7 +3,7 @@ layout: default
 title: "On the Origin of Algorithmic Progress in AI"
 ---
 
-# AI效率万倍增长神话破灭？MIT研究：90%的功劳来自Transformer的规模效应
+## AI效率万倍增长神话破灭？MIT研究：90%的功劳来自Transformer的规模效应
 
 <img src="/images/2511.21622v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

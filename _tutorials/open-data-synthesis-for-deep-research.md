@@ -3,7 +3,6 @@ layout: default
 title: "Open Data Synthesis For Deep Research"
 ---
 
-# Open Data Synthesis For Deep Research
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.00375v1
 
@@ -13,10 +12,10 @@ title: "Open Data Synthesis For Deep Research"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一个名为 InfoSeek 的可扩展数据合成框架，它将复杂的“深度研究”任务形式化为分层约束满足问题（HCSP），并自动生成高质量的训练数据，使一个3B参数量的小模型在复杂的深度研究任务上，性能超越了32B的大模型及部分商业API。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下几个核心概念，对理解其贡献至关重要：
 
 *   **深度研究 (Deep Research)**：指超越简单事实查询的复杂任务，要求智能体能够将复杂问题分解为子问题、协调多步推理，并从多样化的信息源中综合证据。
@@ -24,7 +23,7 @@ title: "Open Data Synthesis For Deep Research"
 *   **研究树 (Research Tree)**：用于构建 HCSP 的底层数据结构。树中的每个顶点（vertex）代表一个知识实体或事实，边（edge）代表它们之间的逻辑关系。该树的层级结构直接映射到 HCSP 的推理层级。
 *   **InfoSeek**: 本文提出的一个创新的、可扩展的数据合成框架。它使用一个双智能体系统，从大规模网页中自动、递归地构建研究树，并将其转化为自然语言问题，旨在解决高质量深度研究训练数据的稀缺问题。
 
-# 相关工作
+## 相关工作
 目前，大型语言模型（LLM）在处理简单问答上表现出色，但面对需要分解问题、多步推理和整合多源信息的“深度研究”任务时仍显不足。已有的研究现状和瓶颈主要体现在：
 
 *   **基准数据集过于简单**：像 Natural Questions (NQ) 和 HotpotQA 这样的经典数据集，主要考察单跳或多跳（multi-hop）的问答，其结构复杂度远低于真实的深度研究场景。
@@ -46,7 +45,7 @@ title: "Open Data Synthesis For Deep Research"
 | WebShaper | 复杂 | Wiki | 500 | – | – |
 | **InfoSeek** | **HCSP** | **Wiki&Web** | **50k+** | **16.5k** | **Open** |
 
-# 本文方法
+## 本文方法
 
 ## 概述
 为了解决深度研究数据稀缺的问题，本文提出了一个两阶段的解决方案：
@@ -104,7 +103,7 @@ InfoSeeker 的工作流程设计巧妙，旨在解决传统智能体在信息检
 1.  **SFT 阶段：拒绝采样 (Rejection Sampling)**：为了得到高质量的训练轨迹，本文首先使用一个强大的教师模型（teacher model）生成大量解题轨迹。然后，通过“拒绝采样”的方法，只保留那些最终答案正确且推理过程无误（如没有走捷径）的“黄金”轨迹，用于监督微调（SFT）。这为模型提供了一个非常好的初始能力。
 2.  **RL 阶段：强化学习**：在 SFT 的基础上，本文使用 GRPO（一种策略梯度算法）进行强化学习。奖励函数设计得非常直接：只有当模型输出的格式正确且最终答案也正确时，才给予奖励1，否则为0。这个阶段进一步强化了模型在复杂推理和精确搜索方面的能力。
 
-# 实验结论
+## 实验结论
 
 <img src="/images/2509.00375v1/x1.jpg" alt="性能对比图" style="width:85%; max-width:600px; margin:auto; display:block;">
 

@@ -3,7 +3,7 @@ layout: default
 title: "Agent0: Unleashing Self-Evolving Agents from Zero Data via Tool-Integrated Reasoning"
 ---
 
-# 零数据也能自我进化：Agent0让8B模型推理能力暴涨24%
+## 零数据也能自我进化：Agent0让8B模型推理能力暴涨24%
 
 <img src="/images/2511.16043v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

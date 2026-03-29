@@ -3,7 +3,7 @@ layout: default
 title: "Prune4Web: DOM Tree Pruning Programming for Web Agent"
 ---
 
-# LLM不读万行代码：Prune4Web让网页元素定位精度飙升至88%！
+## LLM不读万行代码：Prune4Web让网页元素定位精度飙升至88%！
 
 <img src="/images/2511.21398v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

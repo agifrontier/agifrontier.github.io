@@ -3,7 +3,6 @@ layout: default
 title: "Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality"
 ---
 
-# Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality
 
 - **ArXiv URL**: http://arxiv.org/abs/2405.21060v1
 
@@ -13,23 +12,23 @@ title: "Transformers are SSMs: Generalized Models and Efficient Algorithms Throu
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过揭示结构化状态空间模型 (SSM) 与注意力机制在结构化半可分矩阵 (semiseparable matrices) 理论下的对偶关系，提出了一个名为“状态空间对偶 (State Space Duality, SSD)”的统一框架，并基于此设计了一种新的、更高效的语言模型架构 Mamba-2。
 
-# 关键定义
+## 关键定义
 *   **状态空间对偶 (State Space Duality, SSD)**：本文提出的一个理论框架，它通过结构化矩阵的抽象，建立了结构化状态空间模型 (SSM) 与多种注意力变体之间的联系。该框架揭示了模型可以同时拥有类似 SSM 的线性时间复杂度的“循环形式”和类似注意力的二次时间复杂度的“对偶形式”。
 *   **半可分矩阵 (Semiseparable Matrix)**：一种特殊的结构化矩阵。其核心特征是，任何完全位于其主对角线下方（或之上）的子矩阵，其秩 (rank) 不会超过一个常数 N（称为半可分阶）。本文证明了 SSM 的序列转换等价于与一个半可分矩阵的乘法。
 *   **序列半可分表示 (Sequentially Semiseparable Representation, SSS)**：半可分矩阵的一种具体生成式表示。一个下三角矩阵 $M$ 若能表示为 $M\_{ji} = C\_j^{\top} A\_j \cdots A\_{i+1} B\_i$ 的形式，则称其拥有 SSS 表示。本文证明 SSM 的矩阵形式天然就是 SSS 表示。
 *   **结构化掩码注意力 (Structured Masked Attention, SMA)**：本文对线性注意力 (Linear Attention) 的一种推广。其核心思想是，在计算注意力时所用的掩码矩阵 $L$ 不再局限于传统的因果掩码（全1下三角阵），而是可以是任何拥有快速矩阵向量乘法算法的结构化矩阵。
 
-# 相关工作
+## 相关工作
 当前，以 Transformer 为主的解码器模型（如 GPT、Llama）是深度学习在语言建模领域取得成功的核心驱动力。然而，其核心的注意力层在训练时存在序列长度的二次方复杂度伸缩问题，在自回归生成时也需要线性大小的缓存，这限制了其处理长序列的效率。
 
 与此同时，另一类序列模型——结构化状态空间模型 (Structured State Space Models, SSMs)，如 S4 和 Mamba，展现出线性时间复杂度的训练能力和恒定大小的生成状态，并在中等规模上表现出与 Transformer 相当甚至更好的性能。
 
 **本文旨在解决的问题是**：SSM 的发展似乎与主流的 Transformer 改进工作脱节，导致其理论理解、社区生态和系统优化相对滞后。本文的目标是建立 SSM 和注意力之间的深层理论联系，从而将为 Transformer 开发的成熟算法和系统优化技术迁移到 SSM 上，构建出性能优于 Transformer 且对序列长度伸缩性更好的基础模型。
 
-# 本文方法
+## 本文方法
 
 ## 状态空间对偶 (SSD) 框架
 本文的核心贡献是提出了状态空间对偶 (State Space Duality, SSD) 框架，它通过结构化矩阵这一桥梁，统一了状态空间模型 (SSM) 和注意力 (Attention) 这两大看似不同的序列模型家族。
@@ -125,7 +124,7 @@ Mamba-2 是一个基于 SSD 框架设计的新架构。它对原始的 Mamba 模
 
 *上表为对角结构化SSM线性模式计算的张量收缩形式，SSD算法通过块分解对此过程进行了优化。*
 
-# 实验结论
+## 实验结论
 本文通过一系列实验验证了 Mamba-2 的有效性：
 *   **训练效率**：在语言建模任务上，SSD 算法的实现比 Mamba 的选择性扫描快 2-8 倍。与 FlashAttention-2 相比，SSD 在序列长度超过 2K 时开始显现优势，在 16K 长度时速度快 6 倍。
 *   **模型性能 (Chinchilla Scaling Laws)**：在同等计算预算下，Mamba-2 的困惑度 (perplexity) 和训练墙钟时间 (wall-clock time) 均优于 Mamba 和 Transformer++，实现了帕累托最优。

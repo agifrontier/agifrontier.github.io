@@ -3,7 +3,6 @@ layout: default
 title: "Effective context engineering for AI agents"
 ---
 
-# Effective context engineering for AI agents
 
 - **ArXiv URL**: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
 
@@ -11,10 +10,10 @@ title: "Effective context engineering for AI agents"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了“上下文工程” (Context Engineering) 的概念，主张将 AI 智能体开发的重点从编写静态提示词（prompt）转向动态地策划和管理输入给模型的全部信息（即上下文），从而在模型有限的注意力预算下，实现更可靠、更高效的智能体行为。
 
-# 关键定义
+## 关键定义
 本文的核心是围绕“上下文工程”展开的，其关键定义如下：
 
 *   **上下文 (Context)**: 指在从大语言模型（LLM）进行采样时所包含的所有 Token 的集合，包括系统指令、工具、外部数据、消息历史等。
@@ -22,7 +21,7 @@ title: "Effective context engineering for AI agents"
 *   **上下文腐烂 (Context Rot)**: 指随着上下文窗口中 Token 数量的增加，模型准确回忆其中信息的能力随之下降的现象。这使得上下文成为一种边际收益递减的有限资源。
 *   **注意力预算 (Attention Budget)**: 一个形象的比喻，用以描述 LLM 在解析大量上下文时有限的“工作记忆”或“注意力”容量。引入的每一个新 Token 都会消耗一部分预算，因此需要仔细策划上下文内容。
 
-# 相关工作
+## 相关工作
 目前，应用 AI 领域长期关注的焦点是提示工程，即如何为 LLM 编写和组织指令以获得最佳结果。这种方法在处理单轮分类或文本生成等离散任务时非常有效。
 
 然而，随着研究转向开发更强大、能够在更长时间跨度内进行多轮推理的智能体，一个关键瓶颈日益凸显：LLM 的上下文窗口是有限的。当一个智能体在循环中运行时，会产生越来越多可能相关的信息。若将所有信息不加选择地塞入上下文，会导致“上下文腐烂”问题，即模型的性能（如信息检索精度和远距离推理能力）会因上下文过长而下降。这种性能下降源于 Transformer 架构的内在限制（$$$n^2$$$ 的注意力关系）和训练数据中长序列样本较少的事实。
@@ -31,7 +30,7 @@ title: "Effective context engineering for AI agents"
 
 <img src="/images//5764ac3266c7f8c096a9ab6f73ef1b1e9ebdfaf7.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
-# 本文方法
+## 本文方法
 本文将“上下文工程”的核心原则定义为：**找到能够最大化预期结果概率的、最小且信噪比最高的一组 Token**。围绕此原则，本文从静态上下文构成和动态上下文管理两个维度，提出了一套完整的方法论。
 
 ### 静态上下文的构成
@@ -76,7 +75,7 @@ title: "Effective context engineering for AI agents"
 | **子智能体架构 (Multi-agent)** | 主智能体协调多个专注的子智能体。 | 复杂的并行研究和分析任务。 |
 
 
-# 实验结论
+## 实验结论
 本文虽未提供传统的定量实验数据，但通过其在构建实际系统（如 $$Claude Code$$、多智能体研究系统、玩《宝可梦》的智能体）中的应用，验证了上下文工程的有效性。
 
 *   **主要优势验证**：

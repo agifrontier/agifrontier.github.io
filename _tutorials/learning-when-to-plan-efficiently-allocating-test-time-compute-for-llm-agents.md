@@ -3,7 +3,6 @@ layout: default
 title: "Learning When to Plan: Efficiently Allocating Test-Time Compute for LLM Agents"
 ---
 
-# Learning When to Plan: Efficiently Allocating Test-Time Compute for LLM Agents
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.03581v1
 
@@ -13,10 +12,10 @@ title: "Learning When to Plan: Efficiently Allocating Test-Time Compute for LLM 
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种两阶段训练方法（监督微调+强化学习），使大型语言模型（LLM）智能体能够学习在序贯决策任务中动态地决定何时进行规划，从而以更高效的计算成本实现更优的性能和更强的可控性。
 
-# 关键定义
+## 关键定义
 本文提出了一个用于动态规划的 conceptual framework (概念框架)，其核心定义如下：
 
 1.  **动态规划智能体 (Dynamic Planning Agent)**：这是一种能够根据当前状态的需要，灵活决定是否分配测试时计算资源 (test-time compute) 进行规划的智能体。它摒弃了“总是规划”或“从不规划”的固定策略，寻求一种更高效的决策模式。
@@ -50,14 +49,14 @@ title: "Learning When to Plan: Efficiently Allocating Test-Time Compute for LLM 
 
 5.  **计划漂移 (Plan Drift)**：指随着智能体与环境交互，现有计划的有效性随时间推移而衰减的现象。计划的抽象层次、模型的准确性和环境的动态性都会影响漂移速度。这个概念解释了为何智能体需要周期性地重新评估是否需要规划。
 
-# 相关工作
+## 相关工作
 当前，在序贯决策领域，相关工作主要分为两类。一类是经典的规划方法，如蒙特卡洛树搜索 (Monte Carlo Tree Search, MCTS) 和模型预测控制 (Model Predictive Control, MPC)，它们强调在行动前进行显式展望。另一类是大型语言模型（LLM）的推理方法，如 ReAct，它通过提示词引导模型在每一步行动前都进行思考和规划。
 
 然而，现有方法存在一个关键瓶颈：**“总是规划”的策略在计算上是昂贵的，并且在长时序任务中可能因引入行为不稳定性而降低性能；而“从不规划”则限制了智能体解决复杂问题的能力**。目前缺乏一种有效的方法，能让LLM智能体学会在何时分配宝贵的测试时计算资源（即规划）是真正有益的。
 
 本文旨在解决这个具体问题：**如何训练LLM智能体，使其能够在序贯决策任务中学会动态、高效地分配测试时计算资源，即学会“何时应该规划”。**
 
-# 本文方法
+## 本文方法
 本文的核心方法是提出一个概念框架，并基于此设计了一个两阶段训练流程，以教会LLM智能体动态规划。
 
 <img src="/images/2509.03581v1/diagram_v2.jpg" alt="Dynamic Planning Agent Architecture" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -94,7 +93,7 @@ $${% endraw %}
 *   **SFT+RL训练范式**：提出的两阶段训练流程证明了 **SFT预训练**对于教会较小模型掌握复杂动态规划技能的**关键作用**。SFT提供了必要的“规划先验知识”，而RL则在此基础上进行优化和提炼。
 *   **概念与实践结合**：通过引入“不稳定性成本”等概念，为“为何过度规划有害”提供了理论解释，并通过RL目标函数将其与实际训练相结合，使得智能体能够隐式地学习到这种复杂的权衡。
 
-# 实验结论
+## 实验结论
 本文通过在 $$POGS$$ 和 $$Crafter$$ 环境中的一系列实验，验证了动态规划的有效性。
 
 <img src="/images/2509.03581v1/main_figure_v20.jpg" alt="Zero-shot, SFT, and RL results" style="width:85%; max-width:450px; margin:auto; display:block;">

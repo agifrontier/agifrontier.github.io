@@ -3,7 +3,6 @@ layout: default
 title: "Alita-G: Self-Evolving Generative Agent for Agent Generation"
 ---
 
-# Alita-G: Self-Evolving Generative Agent for Agent Generation
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.23601v1
 
@@ -13,20 +12,20 @@ title: "Alita-G: Self-Evolving Generative Agent for Agent Generation"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了Alita-G，一个自进化生成智能体框架，它通过系统性地生成、抽象和管理一系列称为模型上下文协议（Model Context Protocol, MCP）的工具，将一个通用智能体转化为特定领域的专家，从而在提升复杂推理任务准确率的同时降低了计算成本。
 
-# 关键定义
+## 关键定义
 本文的核心是围绕模型上下文协议（Model Context Protocol, MCP）的生成和使用来构建智能体。
 *   **模型上下文协议 (Model Context Protocol, MCP)**: 由 Anthropic 提出的一个标准化框架，用于在 AI 系统和外部工具或数据源之间实现无缝集成。在本文中，MCP 是一个自包含的功能模块，包含可执行代码、功能描述和使用场景，智能体可以在解决任务的过程中生成并调用它。
 *   **MCP Box**: 一个经过提炼和抽象的 MCP 仓库。它汇集了智能体在解决一系列领域任务时从成功轨迹中生成的、并经过泛化处理的 MCP 工具。这个“工具箱”是 Alita-G 实现领域专长的核心。
 
-# 相关工作
+## 相关工作
 当前，尽管自进化智能体取得了快速进展，但仍存在明显瓶颈。现有的进化机制通常范围狭窄，仅针对单一任务进行优化，而无法将一个通用智能体提升为能处理一系列相关任务的领域专家。此外，进化机制也偏于浅层，大多局限于改写提示词（prompt rewriting）或基于错误进行重试，而不是对整个智能体架构进行端到端的、任务导向的深度适应。真正的复杂任务需要规划、分解、工具使用和记忆等多方面能力的协同提升，而不仅仅是孤立的模块优化。
 
 本文旨在解决上述问题，提出一种新的自进化范式：通过任务驱动的、端到端的适应，将一个通用智能体（general-purpose agent）转变为能够高效解决特定领域内一系列任务的领域专家（domain expert）。
 
-# 本文方法
+## 本文方法
 本文提出的 Alita-G 框架通过一个系统化的流程，将通用智能体的能力提炼并固化为可复用的领域专用工具，最终生成一个领域专家智能体。其核心流程包括任务驱动的MCP生成、MCP抽象与盒构建、基于RAG的MCP选择以及特化智能体执行四个阶段。
 
 <img src="/images/2510.23601v1/x1.jpg" alt="Alita-G 整体工作流程" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -79,7 +78,7 @@ $${% endraw %}
 
 在推理时，特化智能体首先分析任务，通过RAG从“MCP Box”中检索出一套定制化的工具集，然后在后续的推理和执行循环中调用这些工具来解决问题，从而实现了从通用能力到领域专长的转化。
 
-# 实验结论
+## 实验结论
 本文在GAIA、PathVQA和Humanity's Last Exam (HLE) 等多个基准上进行了广泛实验，结果证明了Alita-G框架的有效性。
 
 *   **性能显著提升**：Alita-G生成的特化智能体在所有基准上均超越了包括其自身“主智能体”在内的基线模型。特别是在高难度的GAIA基准上，Alita-G (3x) 取得了 **83.03% 的 pass@1** 和 **89.09% 的 pass@3** 准确率，创造了新的SOTA记录。这相对于ODR-smolagents (55.15%) 和Alita-G自身的主智能体 (75.15%) 都是巨大的提升。

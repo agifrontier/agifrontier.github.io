@@ -3,7 +3,6 @@ layout: default
 title: "DAPO: An Open-Source LLM Reinforcement Learning System at Scale"
 ---
 
-# DAPO: An Open-Source LLM Reinforcement Learning System at Scale
 
 - **ArXiv URL**: http://arxiv.org/abs/2503.14476v2
 
@@ -11,10 +10,10 @@ title: "DAPO: An Open-Source LLM Reinforcement Learning System at Scale"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为DAPO的强化学习算法，通过解耦裁剪范围、动态采样、Token级损失计算和超长奖励塑造这四项关键技术，成功解决了大语言模型在长思路链（long-CoT）推理任务中遇到的熵崩溃、训练不稳定和效率低下等问题，并开源了整个大规模强化学习系统。
 
-# 关键定义
+## 关键定义
 本文的核心是DAPO算法及其包含的四项关键技术，旨在优化基于PPO/GRPO的大模型强化学习（Reinforcement Learning, RL）流程。
 
 1.  **DAPO (Decoupled Clip and Dynamic sAmpling Policy Optimization)**: 一种改进的策略优化算法。其目标函数在GRPO的基础上，对PPO的裁剪（Clip）机制进行解耦，并结合了动态采样策略，以增强探索和训练稳定性。其目标函数如下：
@@ -35,14 +34,14 @@ title: "DAPO: An Open-Source LLM Reinforcement Learning System at Scale"
 
 5.  **Overlong Reward Shaping (超长奖励塑造)**: 一种针对超长生成序列的奖励设计机制。它不是对超出最大长度的序列简单施加-1的惩罚，而是引入了一个“软惩罚”区间。当序列长度超过一个预设的软阈值但在硬截断长度之内时，惩罚会随着长度的增加而线性增大。这为模型提供了更平滑的信号来避免过长输出，同时减少了因截断而惩罚合理推理过程所带来的奖励噪声。
 
-# 相关工作
+## 相关工作
 当前，通过测试时扩展（test-time scaling）如思维链（Chain-of-Thought, CoT）来激发大语言模型（LLM）的复杂推理能力已成为前沿范式，其核心驱动技术是大规模强化学习（RL）。诸如OpenAI的o1和DeepSeek的R1等先进推理模型都依赖于此，但在其技术报告中却隐藏了关键的算法和训练细节。
 
 这导致了该领域的关键瓶颈：**社区难以复现SOTA模型的RL训练效果**。研究者在使用现有开源算法（如GRPO）进行大规模长CoT推理任务训练时，普遍遇到了**熵崩溃**（模型过早收敛，探索能力下降）、**奖励噪声**（不准确的奖励信号干扰学习）和**训练不稳定**等严重问题。例如，本文的初步实验表明，在Qwen2.5-32B模型上直接使用GRPO在AIME数学竞赛基准上仅能达到30分，远低于DeepSeek声称的47分。
 
 因此，本文旨在解决的具体问题是：**如何克服大规模LLM强化学习中的关键技术障碍，构建一个可复现、高效且性能领先的开源RL系统，以释放LLM在复杂推理任务上的全部潜力。**
 
-# 本文方法
+## 本文方法
 为了解决上述问题，本文提出了**DAPO（Decoupled Clip and Dynamic sAmpling Policy Optimization）**算法，并围绕它构建了一个完整的、开源的大规模RL系统。DAPO基于GRPO框架，但移除了不适用于长CoT场景的KL散度惩罚项，并采用基于规则的奖励模型（正确为1，错误为-1）。其核心创新在于引入了以下四项关键技术：
 
 <img src="/images/2503.14476v2/x1.jpg" alt="DAPO与基线的AIME 2024分数对比" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -98,7 +97,7 @@ $${% endraw %}
 
 此外，本文还介绍了**数据集转换**工作，将数学问题的答案统一处理为易于程序解析的整数格式，为基于规则的精确奖励计算提供了保障。
 
-# 实验结论
+## 实验结论
 本文在AIME 2024数学竞赛数据集上对DAPO算法进行了全面评估，基座模型为Qwen2.5-32B。
 
 **主要结果**：

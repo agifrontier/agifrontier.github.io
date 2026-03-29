@@ -3,7 +3,6 @@ layout: default
 title: "MeSH: Memory-as-State-Highways for Recursive Transformers"
 ---
 
-# MeSH: Memory-as-State-Highways for Recursive Transformers
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.07739v1
 
@@ -13,10 +12,10 @@ title: "MeSH: Memory-as-State-Highways for Recursive Transformers"
 
 ---
 
-# TL;DR
+## TL;DR
 *   本文提出了一种名为 MeSH (Memory-as-State-Highways) 的新架构，通过引入一个由动态路由器管理的外部存储缓冲区，解决了朴素递归 Transformer 中的计算瓶颈和信息过载问题，从而显著提升了模型的性能和参数效率。
 
-# 关键定义
+## 关键定义
 本文为解决递归 Transformer 的性能瓶颈，提出了以下关键概念：
 
 *   **无差别计算 (Undifferentiated computation)**: 指在朴素递归模型中，由于缺乏关于当前迭代步骤的位置信息，权重共享的核心模块在每一次迭代中都被迫执行相似的计算模式。这导致了计算资源的利用效率低下，具体表现为“计算偏斜”（大部分计算集中在首次迭代）和“表示停滞”（模型陷入不动点，无法有效优化表示）。
@@ -25,7 +24,7 @@ title: "MeSH: Memory-as-State-Highways for Recursive Transformers"
 
 *   **MeSH (Memory-as-State-Highways)**: 本文提出的核心架构。它通过将状态管理外部化到一个显式的多槽存储缓冲区（State Buffer）来解决上述问题。该缓冲区由一系列与迭代步骤相关的、可学习的轻量级读写路由器（Routers）控制，从而将隐式的状态管理挑战转化为一个清晰、可学习的路由问题，实现了持久化记忆与瞬时计算的分离。
 
-# 相关工作
+## 相关工作
 当前，为了应对大模型参数扩展的瓶颈，递归 Transformer (Recursive transformers) 作为一个参数高效的架构受到了越来越多的关注。其核心思想是通过循环复用一个权重共享的核心计算块，来解耦模型的计算深度与参数深度。这使得模型能够根据任务难度动态分配计算资源，并开辟了计算深度这一新的缩放维度。
 
 然而，现有递归模型存在一个关键问题：在计算量相当的情况下，参数较少的递归模型性能往往落后于其非递归的对应版本。本文旨在深入探究并解决这一性能差距背后的根本原因。具体而言，本文诊断出两个主要瓶颈：
@@ -34,7 +33,7 @@ title: "MeSH: Memory-as-State-Highways for Recursive Transformers"
 
 尽管一些现有的启发式方法（如残差连接或锚定连接）试图通过固定的加性连接来缓解信息过载，但它们无法解决无差别计算的问题，并且缺乏适应性。
 
-# 本文方法
+## 本文方法
 为了系统性地解决朴素递归的内在缺陷，本文提出了 MeSH (Memory-as-State-Highways) 框架。
 
 ### 递归 Transformer 架构
@@ -96,7 +95,7 @@ MeSH 的设计直接针对性地解决了递归模型的两大核心病症：
 
 *   **通过状态外部化缓解信息过载**: 外部存储缓冲区 $\mathbf{M}$ 充当了长期信息的高速公路，将隐藏状态 $\mathbf{h}^{(t)}$ 从繁重的记忆任务中解放出来。这使得隐藏状态可以充分利用其全部维度进行复杂的瞬时计算，而关键信息则被安全地保存在缓冲区中并可按需检索，从而避免了维度坍缩，保持了模型全程的表达能力。
 
-# 实验结论
+## 实验结论
 
 ### 内部动态诊断分析
 本文首先通过内部状态探测，验证了 MeSH 对递归模型病症的修复效果。实验基于 Pythia-410M 模型进行。

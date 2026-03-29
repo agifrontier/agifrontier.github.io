@@ -3,7 +3,6 @@ layout: default
 title: "Midtraining Bridges Pretraining and Posttraining Distributions"
 ---
 
-# Midtraining Bridges Pretraining and Posttraining Distributions
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.14865v1
 
@@ -13,10 +12,10 @@ title: "Midtraining Bridges Pretraining and Posttraining Distributions"
 
 ---
 
-# TL;DR
+## TL;DR
 本文系统地研究了“中训练 (Midtraining)”这一新兴实践，发现其通过在通用预训练和特定任务微调之间构建一个分布桥梁，能有效提升模型在数学和代码等领域的下游任务性能，并显著减少灾难性遗忘。
 
-# 关键定义
+## 关键定义
 本文为语言模型训练流程提出了一个基于序列的定义框架，并明确了以下核心概念：
 
 *   **训练序列 (Training Sequence)**: 一个有序的训练阶段集合 $S=\{(D\_{i},\mathcal{L}\_{i},n\_{i})\}\_{i=0}^{N}$，其中每个阶段由数据分布 $D\_i$、损失函数 $\mathcal{L}\_i$ 和训练步数 $n\_i$ 定义，前一阶段的参数作为后一阶段的初始化。
@@ -24,7 +23,7 @@ title: "Midtraining Bridges Pretraining and Posttraining Distributions"
 *   **中训练 (Midtraining)**: 介于预训练和后训练之间的中间阶段 ($0<i<N$)。其特点是在保留部分通用预训练数据的同时，混入代码、数学等更高质量的专业领域数据或指令格式数据。中训练更新所有模型参数，其训练步数通常远少于预训练但多于后训练。
 *   **后训练/微调 (Posttraining/Finetuning)**: 训练序列的最后阶段，通常在小规模、特定任务的数据集上进行，可能采用不同于预训练的目标函数。
 
-# 相关工作
+## 相关工作
 当前，大型语言模型的训练范式通常包括大规模的通用预训练和后续的任务微调。然而，在实践中，许多先进模型在预训练后期引入了一个额外的“中训练”阶段，即混入如代码、数学等高质量或特定领域的数据。尽管这种做法被广泛采用并显示出潜力，但学术界对此缺乏系统的研究和理解。
 
 本文旨在解决以下具体问题：
@@ -33,7 +32,7 @@ title: "Midtraining Bridges Pretraining and Posttraining Distributions"
 3.  什么样的中训练数据最有效？
 4.  中训练的引入时机和数据混合比例对其效果有何影响？
 
-# 本文方法
+## 本文方法
 本文并未提出一个全新的模型，而是设计了一套系统的实验框架来剖析“中训练”这一技术。其核心在于通过受控实验，揭示中训练作为一种领域自适应技术的内在机理。
 
 ### 实验框架
@@ -51,7 +50,7 @@ title: "Midtraining Bridges Pretraining and Posttraining Distributions"
 
 ![数据集间的相似度矩阵示例](x1.png)
 
-# 实验结论
+## 实验结论
 通过在不同模型尺寸、中训练数据、下游任务上的系统性实验，本文得出以下关键结论：
 
 ### 领域相关性显著

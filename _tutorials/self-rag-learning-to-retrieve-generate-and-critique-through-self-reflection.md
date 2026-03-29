@@ -3,7 +3,6 @@ layout: default
 title: "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection"
 ---
 
-# Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection
 
 - **ArXiv URL**: http://arxiv.org/abs/2310.11511v1
 
@@ -13,10 +12,10 @@ title: "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Refl
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为自反思检索增强生成 (Self-Reflective Retrieval-Augmented Generation, Self-RAG) 的新框架，通过训练一个语言模型，使其能按需自适应地进行检索，并利用特殊的“反思”Token (reflection tokens) 对检索到的信息和自身的生成内容进行反思和评价，从而显著提升生成内容的质量、事实性和可控性。
 
-# 关键定义
+## 关键定义
 本文的核心是引入了一种新的 Token 类型，即 **反思 Token (Reflection Tokens)**，它们被集成到语言模型的词汇表中，使模型能够进行自我评估。这些 Token 分为两大类：
 
 1.  **检索 Token (Retrieval Tokens)**: 用于判断在生成过程中是否需要以及何时需要从外部知识源检索信息。它包含三个可能的值：
@@ -40,7 +39,7 @@ title: "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Refl
 
 *表格1：Self-RAG 中使用的四种反思 Token*
 
-# 相关工作
+## 相关工作
 当前的检索增强生成 (Retrieval-Augmented Generation, RAG) 方法虽然能通过引入外部知识减少大型语言模型 (Large Language Models, LLMs) 的事实性错误，但存在明显瓶颈。
 
 主流的 RAG 方法通常不加区分地为每个输入检索固定数量的文档，无论检索是否必要或者文档是否相关。这种“一刀切”的策略可能引入无关或干扰性信息，导致生成质量下降，同时也损害了 LLM 在不需要事实知识的任务（如创意写作）上的通用性。此外，现有模型并未被显式训练来遵循和利用所提供的段落中的事实，因此无法保证生成结果与引用的来源完全一致。
@@ -50,7 +49,7 @@ title: "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Refl
 2.  确保生成内容与检索到的证据高度**一致和可验证**。
 3.  在提升事实性的同时，不损害模型的**通用性**和**创造力**。
 
-# 本文方法
+## 本文方法
 
 本文提出 Self-RAG 框架，通过训练一个语言模型 $\mathcal{M}$，使其不仅能生成文本，还能生成特殊的 "反思 Token" 来控制检索和评估自身输出。其核心思想是将“反思”内化为模型自身的能力，而不是依赖外部模块。
 
@@ -122,7 +121,7 @@ $$`$$
 
     其中，$s\_t^G$ 是某个评价类别（如 $$IsSup$$）中最理想 Token（如 $$fully supported$$）的归一化概率，$w^G$ 是可调整的权重。通过在推理时调整这些权重，可以轻松地改变模型的行为偏好。例如，为了追求最高的事实准确性，可以增大 $$IsSup$$ 的权重 $w^{\text{IsSup}}$。这种方式无需重新训练模型，即可实现灵活控制。
 
-# 实验结论
+## 实验结论
 本文在包括开放域问答、推理、事实核查和长文本生成在内的六个任务上进行了广泛实验。
 
 

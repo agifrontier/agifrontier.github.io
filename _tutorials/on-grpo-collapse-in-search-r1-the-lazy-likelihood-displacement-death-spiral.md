@@ -3,7 +3,7 @@ layout: default
 title: "On GRPO Collapse in Search-R1: The Lazy Likelihood-Displacement Death Spiral"
 ---
 
-# 破解AI智能体训练“死亡螺旋”：LLDS让Qwen2.5性能大涨37.8%
+## 破解AI智能体训练“死亡螺旋”：LLDS让Qwen2.5性能大涨37.8%
 
 <img src="/images/2512.04220v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

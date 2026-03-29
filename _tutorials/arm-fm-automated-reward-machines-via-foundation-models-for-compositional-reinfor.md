@@ -3,7 +3,6 @@ layout: default
 title: "ARM-FM: Automated Reward Machines via Foundation Models for Compositional Reinforcement Learning"
 ---
 
-# ARM-FM: Automated Reward Machines via Foundation Models for Compositional Reinforcement Learning
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.14176v1
 
@@ -13,10 +12,10 @@ title: "ARM-FM: Automated Reward Machines via Foundation Models for Compositiona
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了ARM-FM框架，利用基础模型（Foundation Models, FMs）从自然语言指令中自动生成奖励机（Reward Machines, RMs），为组合式强化学习（Compositional Reinforcement Learning）提供结构化的奖励信号，以解决长时程、稀疏奖励任务并实现泛化。
 
-# 关键定义
+## 关键定义
 本文的核心是提出了一种新型的奖励机，并在此基础上构建了整个框架。
 
 *   **奖励机 (Reward Machines, RMs)**：本文沿用已有的定义。奖励机是一种有限状态自动机，用于编码复杂的、具有时序性的强化学习任务。其形式化定义为元组 $\langle U, u\_I, \Sigma, \delta, R, F, \mathcal{L} \rangle$，其中：
@@ -30,7 +29,7 @@ title: "ARM-FM: Automated Reward Machines via Foundation Models for Compositiona
 
 *   **语言对齐奖励机 (Language-Aligned Reward Machines, LARMs)**：这是本文提出的核心概念。LARM是一种特殊的奖励机，它为每个RM状态 $u$ 额外配备了（1）一段自然语言指令 $l\_u$ 和（2）一个嵌入函数 $\phi(\cdot)$，该函数将语言指令 $l\_u$ 映射到一个嵌入向量 $z\_u = \phi(l\_u)$。这个嵌入向量 $z\_u$ 使得具有相似语义的子任务（如“拿起蓝钥匙”和“拿起红钥匙”）在表示空间中彼此接近，从而为策略的知识共享、技能迁移和零样本泛化提供了机制。
 
-# 相关工作
+## 相关工作
 当前强化学习领域在奖励函数设计上面临核心挑战：
 *   **奖励稀疏**：在许多复杂任务中，智能体（Agent）很难通过随机探索获得有效的学习信号。
 *   **奖励函数设计困难**：手动设计密集的奖励函数不仅耗时耗力，还容易出现漏洞，导致智能体“钻空子”（Reward Hacking）。
@@ -39,7 +38,7 @@ title: "ARM-FM: Automated Reward Machines via Foundation Models for Compositiona
 
 本文旨在解决上述问题，特别是如何将FMs的高级推理能力与RL的低级控制需求相结合，通过自动化构建RMs来弥合这一差距，从而将模糊的人类意图转化为具体、可执行的学习信号。
 
-# 本文方法
+## 本文方法
 
 <img src="/images/2510.14176v1/fig1.jpg" alt="ARM-FM框架概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
@@ -83,7 +82,7 @@ title: "ARM-FM: Automated Reward Machines via Foundation Models for Compositiona
 
 这个过程将稀疏的最终任务奖励分解为一系列密集的、结构化的子任务奖励，极大地简化了学习过程。
 
-# 实验结论
+## 实验结论
 
 本文在一系列具有挑战性的环境中对ARM-FM进行了评估，覆盖了离散和连续控制领域。
 

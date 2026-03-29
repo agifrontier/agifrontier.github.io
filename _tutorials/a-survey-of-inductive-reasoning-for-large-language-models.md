@@ -3,7 +3,6 @@ layout: default
 title: "A Survey of Inductive Reasoning for Large Language Models"
 ---
 
-# A Survey of Inductive Reasoning for Large Language Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.10182v1
 
@@ -13,10 +12,10 @@ title: "A Survey of Inductive Reasoning for Large Language Models"
 
 ---
 
-# TL;DR
+## TL;DR
 *   本文是首篇针对大语言模型（LLMs）归纳推理能力的全面综述，系统性地梳理了增强方法、评测基准和理论分析，为该领域的研究奠定了基础。
 
-# 背景
+## 背景
 
 本节介绍归纳推理的相关概念、应用场景及其重要性。
 
@@ -42,7 +41,7 @@ title: "A Survey of Inductive Reasoning for Large Language Models"
 1.  **知识泛化**：能够从具体案例中推导出普适性结论，覆盖更广泛的应用场景，符合人类的学习过程。
 2.  **适应不确定性**：在复杂和不确定的场景中，归纳推理能产生多种可能的合理解释，而非单一的确定性答案，具有更强的适应性。
 
-# 增强方法
+## 增强方法
 
 本文将增强 LLMs 归纳能力的方法分为三大类：后训练、测试时扩展和数据增强。
 
@@ -80,7 +79,7 @@ title: "A Survey of Inductive Reasoning for Large Language Models"
 *   **外部知识**：包含来自网络、文档、其他语料库或 LLM 自身参数中的知识。例如，LLEGO 将 LLM 的语义先验知识融入遗传编程；也可以直接提示强大的 LLM 为当前任务生成归纳思维链、归纳步骤或归纳规则作为辅助信息。
 *   **结构化信号**：利用子图或上下文信息（如相邻的隐藏状态或嵌入）为 LLM 提供局部隐式信号，帮助其学习归纳偏置。例如，Li et al. (2023b) 检索最近邻嵌入作为上下文示例；REST 部署规则诱导的子图来捕捉局部语义模式。
 
-# 评测
+## 评测
 
 本节介绍用于 LLM 归纳推理的现有基准、评测方法和相应指标。
 
@@ -128,7 +127,7 @@ title: "A Survey of Inductive Reasoning for Large Language Models"
 
 基于此，本文提出了一个更细粒度的指标：**观察覆盖率 (Observation Coverage, OC)**，定义为通过单元测试的观察实例占总观察实例的比例。相比于任务级别的整体 ACC，OC 提供了观察实例级别的监督信号，能更精确地反映模型答案的完备性，并为后续的规则修正和假设探索提供更有信息量的反馈。
 
-# 分析
+## 分析
 
 本节介绍了一些对 LLMs 归纳推理和归纳偏置进行理论分析的探索性工作。
 
@@ -141,6 +140,6 @@ title: "A Survey of Inductive Reasoning for Large Language Models"
 *   **归纳即简单 (Induction means simplicity)**
     早期研究表明，复杂的模型架构和数据实际上可能阻碍归纳泛化，而正则化对于高阶模型形成归纳偏置可能是有害的。简单性对于归纳推理至关重要。寻找简单的归纳偏置、使用简单纯粹的语料库，往往是成功归纳推理的基础。
 
-# 总结
+## 总结
 
 本文首次对大语言模型的归纳推理进行了全面综述。文章将增强方法归纳为后训练、测试时扩展和数据增强三类，并总结了现有的评测基准，提出了一种基于沙箱的统一评测方法及观察覆盖率指标。此外，本文还分析了归纳能力的来源及影响因素，为未来的研究提供了坚实的理论基础和实践指导。

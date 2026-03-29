@@ -3,7 +3,7 @@ layout: default
 title: "LoRA on the Go: Instance-level Dynamic LoRA Selection and Merging"
 ---
 
-# 即插即用LoRA！LoGo实现零成本动态适配，推理性能最高提升3.6%
+## 即插即用LoRA！LoGo实现零成本动态适配，推理性能最高提升3.6%
 
 <img src="/images/2511.07129v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

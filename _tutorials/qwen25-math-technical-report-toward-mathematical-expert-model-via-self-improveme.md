@@ -3,7 +3,6 @@ layout: default
 title: "Qwen2.5-Math Technical Report: Toward Mathematical Expert Model via Self-Improvement"
 ---
 
-# Qwen2.5-Math Technical Report: Toward Mathematical Expert Model via Self-Improvement
 
 - **ArXiv URL**: http://arxiv.org/abs/2409.12122v1
 
@@ -13,10 +12,10 @@ title: "Qwen2.5-Math Technical Report: Toward Mathematical Expert Model via Self
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一系列数学专用大语言模型 Qwen2.5-Math，其核心创新在于将“自我改进”（self-improvement）的理念贯穿于从预训练、后训练到推理的整个模型开发流程，从而在多个数学基准上实现了超越现有开源及闭源模型（如GPT-4o）的顶尖性能。
 
-# 关键定义
+## 关键定义
 *   **自我改进 (Self-Improvement)**：本文的核心哲学，指利用模型自身（或其前代版本）的能力来迭代地增强其学习过程。具体体现在：(1) 在预训练阶段，利用已有模型生成大规模高质量的数学数据；(2) 在后训练阶段，用模型生成的数据训练奖励模型（Reward Model），再用奖励模型反过来指导监督微调（SFT）数据的迭代和强化学习（RL）；(3) 在推理阶段，用奖励模型指导采样以优化输出。
 
 *   **工具集成推理 (Tool-Integrated Reasoning, TIR)**：一种推理模式，允许模型调用外部工具（本文特指 Python 解释器）来执行精确计算、符号操作或复杂的算法任务。这与完全依赖模型内部知识进行逐步推导的“思维链”（Chain-of-Thought, CoT）推理形成互补。
@@ -25,7 +24,7 @@ title: "Qwen2.5-Math Technical Report: Toward Mathematical Expert Model via Self
 
 *   **组相对策略优化 (Group Relative Policy Optimization, GRPO)**：一种用于大语言模型训练的强化学习算法。它通过计算一组采样输出的平均奖励作为基线，来估计每个输出的优势（advantage），从而进行策略优化，该方法无需像 PPO 那样需要一个额外的价值函数。
 
-# 相关工作
+## 相关工作
 当前，通用大语言模型由于在预训练阶段缺乏足够的数学相关数据，其数学推理能力普遍存在不足。尽管先前已有研究（如 Minerva、DeepSeekMath）证明，通过构建大规模的数学专业语料库进行持续预训练是提升模型数学能力的有效途径，但该领域仍面临两大关键瓶ăpadă颈：
 
 1.  **高质量数据的稀缺性**：如何自动且大规模地生成高质量、高可靠性且覆盖多种推理形式（如CoT和TIR）的训练数据，是提升模型能力的核心挑战。
@@ -33,7 +32,7 @@ title: "Qwen2.5-Math Technical Report: Toward Mathematical Expert Model via Self
 
 本文旨在解决上述问题，通过一套系统性的“自我改进”流程，不仅提升模型在英、中文数学问题上的推理能力，尤其是在高难度问题上的表现，同时也探索出一条不完全依赖模型参数规模扩张的性能提升路径。
 
-# 本文方法
+## 本文方法
 本文提出了一套从 Qwen2-Math 演进至 Qwen2.5-Math 的完整开发流程，其核心是“自我改进”理念在预训练和后训练阶段的系统性应用。
 
 <img src="/images/2409.12122v1/qwen2.5-math-pipeline.jpg" alt="Qwen2-Math 和 Qwen2.5-Math 的开发流程图" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -109,7 +108,7 @@ $${% endraw %}
 
 *表格 1：MATH 训练集中与测试集相似而被过滤的样本示例。*
 
-# 实验结论
+## 实验结论
 
 ### 基础模型评估
 在少样本思维链（few-shot CoT）设置下，Qwen2.5-Math 的基础模型表现出色。

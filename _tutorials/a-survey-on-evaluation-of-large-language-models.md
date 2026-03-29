@@ -3,7 +3,6 @@ layout: default
 title: "A Survey on Evaluation of Large Language Models"
 ---
 
-# A Survey on Evaluation of Large Language Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2307.03109v9
 
@@ -13,9 +12,9 @@ title: "A Survey on Evaluation of Large Language Models"
 
 ---
 
-# A Survey on Evaluation of Large Language Models
+## A Survey on Evaluation of Large Language Models
 
-# 引言
+## 引言
 
 理解智能的本质并判断机器是否具备智能，是科学家们面临的一个引人入胜的问题。人工智能（AI）研究人员专注于发展基于机器的智能。在AI领域，图灵测试（Turing Test）长期以来被视为评估智能的黄金标准。AI的发展史也可以看作是智能模型与算法的创造和评估史。每一次新模型或算法的出现，都伴随着对其在真实场景中能力的审视。从早期的感知机（Perceptron）到支持向量机（SVMs）和深度学习，对AI的评估始终是识别系统局限性、指导未来设计的关键工具。
 
@@ -39,7 +38,7 @@ title: "A Survey on Evaluation of Large Language Models"
 
 <img src="/images/2307.03109v9/page_4_Figure_1.jpg" alt="LLM评估论文随时间变化趋势" style="width:85%; max-width:450px; margin:auto; display:block;">
 
-# 背景
+## 背景
 
 ## 大型语言模型 (LLMs)
 
@@ -75,7 +74,7 @@ AI模型评估是衡量模型性能的关键步骤。标准的评估协议包括
 
 随着LLM的规模越来越大、可解释性越来越差，现有的评估协议可能不足以全面评估其真实能力。
 
-# 评估什么 (WHAT TO EVALUATE)
+## 评估什么 (WHAT TO EVALUATE)
 
 为了展示LLM的性能，应该在哪些任务上对其进行评估？本节将现有评估任务分为以下几类：自然语言处理、鲁棒性、伦理、偏见与可信赖性、社会科学、自然科学与工程、医疗应用、智能体应用等。
 

@@ -3,7 +3,6 @@ layout: default
 title: "Repurposing Synthetic Data for Fine-grained Search Agent Supervision"
 ---
 
-# Repurposing Synthetic Data for Fine-grained Search Agent Supervision
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.24694v1
 
@@ -13,17 +12,17 @@ title: "Repurposing Synthetic Data for Fine-grained Search Agent Supervision"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 E-GRPO 的新方法，通过重利用合成数据生成过程中被忽略的实体信息，构建了一个细粒度的实体感知奖励函数，以解决传统强化学习方法中的奖励稀疏和“功亏一篑”（near-miss）问题，从而更有效地训练搜索智能体。
 
-# 关键定义
+## 关键定义
 *   **“功亏一篑”问题 (Near-miss Problem)**：指智能体在推理过程中基本正确（例如，找到了所有关键的中间实体），但最终答案错误。传统的强化学习方法（如GRPO）会将这种“功亏一篑”的尝试与完全错误的尝试同等惩罚，从而忽视了其中有价值的学习信号。
 *   **实体匹配率 (Entity Match Rate, $\gamma\_i$)**: 本文提出的一个度量标准，用于衡量单次推理（rollout）的质量。它被定义为智能体在思考（thought）过程中找到的基准（ground-truth）实体数量与问题所包含的总基准实体数量之比。
 *   **归一化实体匹配率 (Normalized Entity Match Rate, $\hat{\gamma}\_i$)**: 为了在不同问题间进行稳健比较，将单次推理的原始实体匹配率 $\gamma\_i$ 与其所在组内的最大匹配率 $\gamma\_{\max}$ 进行归一化处理。这使得所有推理的匹配率得分能被统一在 0 到 1 的范围内。
 *   **实体感知奖励 (Entity-aware Reward)**：E-GRPO 方法的核心。与 GRPO 的二元奖励（正确为1，错误为0）不同，该奖励函数会为错误的推理分配一个与其归一化实体匹配率 $\hat{\gamma}\_i$ 成正比的奖励值（由超参数 $\alpha$ 控制）。这为训练提供了更密集的奖励信号。
 *   **实体感知组相对策略优化 (Entity-aware Group Relative Policy Optimization, E-GRPO)**：本文提出的新型强化学习框架。它将实体感知奖励整合到 GRPO 的优化目标中，通过区分不同质量的失败轨迹，为搜索智能体的训练提供更精细的监督。
 
-# 相关工作
+## 相关工作
 目前，训练大型语言模型（LLM）驱动的自主智能体的主流范式是，首先通过合成数据生成技术创造大量复杂的问答数据，然后使用强化学习方法，特别是组相对策略优化（Group Relative Policy Optimization, GRPO）进行训练。
 
 然而，这一范式存在关键瓶颈：GRPO 及其变体通常依赖于基于最终结果的奖励机制（即答案正确则奖励为1，错误则为0）。这种稀疏的奖励信号忽略了合成数据时精心嵌入的中间实体信息，导致了“奖励稀疏问题”。对于搜索智能体而言，这意味着模型无法区分“功亏一篑”（推理过程大部分正确但答案错误）和“完全失败”（从一开始就理解错问题）这两种性质截然不同的负样本。由于同等惩罚这两种情况，宝贵的学习信号被浪费，模型被迫重新学习已经掌握的推理步骤。
@@ -35,7 +34,7 @@ title: "Repurposing Synthetic Data for Fine-grained Search Agent Supervision"
 <img src="/images/2510.24694v1/x1.jpg" alt="合成数据生成与实体匹配率分析" style="width:85%; max-width:600px; margin:auto; display:block;">
 左图展示了以实体为中心生成合成数据的示例。右图分析了实体匹配与智能体表现之间的相关性。
 
-# 本文方法
+## 本文方法
 ## 方法动机：实体匹配率与智能体表现的强相关性
 本文的出发点是，在合成数据生成过程中作为事实骨架的实体，可以作为衡量智能体推理质量的指标。为了验证这一假设，本文首先进行了实证分析。
 
@@ -100,7 +99,7 @@ $${% endraw %}
 
 其中 $r\_{i,j}(\theta)$ 是重要性采样率。通过这种方式，E-GRPO 迫使模型不仅要避免错误，更要学习识别和整合关键信息的过程。
 
-# 实验结论
+## 实验结论
 本文在 11 个基准测试上进行了广泛评估，涵盖了问答（QA）和深度研究任务，使用了不同规模的模型（7B, 30B）和两种环境（本地模拟环境 Local、真实网络环境 Web）。
 
 ### 主要结果

@@ -3,7 +3,7 @@ layout: default
 title: "From Experience to Strategy: Empowering LLM Agents with Trainable Graph Memory"
 ---
 
-# 让Agent经验“活”起来：可训练图记忆，助小模型性能飙升25.8%！
+## 让Agent经验“活”起来：可训练图记忆，助小模型性能飙升25.8%！
 
 LLM Agent无疑是当前AI领域最激动人心的方向之一，它们被寄予厚望，希望能在复杂开放的环境中自主解决问题。但现实是，许多Agent在决策时仍然显得“笨拙”：它们会重复犯错，行动效率低下，甚至无法完成任务。
 

@@ -3,7 +3,6 @@ layout: default
 title: "TheMCPCompany: Creating General-purpose Agents with Task-specific Tools"
 ---
 
-# TheMCPCompany: Creating General-purpose Agents with Task-specific Tools
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.19286v1
 
@@ -13,22 +12,22 @@ title: "TheMCPCompany: Creating General-purpose Agents with Task-specific Tools"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一个名为 TheMCPCompany 的大规模工具调用基准（包含超18000个工具），并通过实验证明，利用专门的工具集比通用浏览器能带来更好的性能和更低的成本，但从海量工具中检索并组合正确工具以解决复杂问题仍是当前智能体面临的核心挑战。
 
-# 关键定义
+## 关键定义
 *   **MCP (Model Context Protocol)**: 由 Anthropic 提出的一个标准化协议，旨在让大型语言模型（LLMs）能够与外部工具和服务进行交互和调用。本文基于此协议构建了所有的工具接口。
 *   **TheMCPCompany**: 本文提出的一个新型基准测试，它扩展了现有的 TheAgentCompany 基准。其核心特点是模拟一个拥有超过18,000个通过MCP协议暴露的专用工具的软件公司环境，涵盖了Azure、GitLab等多种真实世界的服务，用于评估智能体在复杂、工具密集型环境中的能力。
 *   **MCPAgent**: 本文提出的基线智能体。其核心设计是，不直接向语言模型提供所有18,000+个工具，而是提供一个带有“工具查找器”（$$tool finder$$）功能的网关。智能体必须使用这个查找器，通过自然语言查询来动态搜索和发现完成任务所需的工具，然后才能调用它们。
 
-# 相关工作
+## 相关工作
 当前，通用的AI智能体主要依赖于浏览器、代码解释器等通用工具与环境交互。虽然已有一些研究开始探索专用工具，但它们普遍存在两个关键问题：
 1.  **智能体研究的局限性**: 现有的通用智能体框架和基准测试虽然模拟了复杂的任务和环境，但通常只集成极少数（几个到几十个）的专用工具。因此，当可用工具数量激增至数千乃至数万时，这些智能体的表现如何，目前尚不明确。
 2.  **工具调用研究的局限性**: 现有的工具调用研究虽然探讨了如何使用大量工具，但它们大多在简单的环境中进行，任务也相对简单（例如，任务描述与工具名称有很高的语义重叠）。这与真实世界的企业级应用场景（如修复一个复杂的云应用）相去甚远，在这些场景中，任务描述与所需工具之间的联系并不直观。
 
 本文旨在解决上述问题，通过创建一个兼具任务复杂性、环境真实性和工具集规模化的新基准 TheMCPCompany，来系统性地研究和评估以大规模专用工具集为主要交互方式的智能体的潜力和挑战。
 
-# 本文方法
+## 本文方法
 本文的核心贡献在于构建了一个新的基准（TheMCPCompany）和一个对应的基线智能体（MCPAgent），以探索在工具极其丰富的企业环境中智能体的能力。
 
 ### TheMCPCompany 基准
@@ -73,7 +72,7 @@ r0.45
 
 ![MCPAgent架构。智能体通过一个网关MCP服务器与包含18000+工具的主服务器交互，使用工具查找器搜索并调用所需工具。](https://github.com/the-mcp-company/the-mcp-company.github.io/raw/main/images/approach.png)
 
-# 实验结论
+## 实验结论
 本文在 TheAgentCompany 适配任务和新的 Azure 任务上，对多种 LLM（包括 GPT-4.1, GPT-5, Opus-4.1 等）进行了评估。
 
 !

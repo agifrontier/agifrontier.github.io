@@ -3,7 +3,6 @@ layout: default
 title: "The Art of Scaling Reinforcement Learning Compute for LLMs"
 ---
 
-# The Art of Scaling Reinforcement Learning Compute for LLMs
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.13786v1
 
@@ -13,10 +12,10 @@ title: "The Art of Scaling Reinforcement Learning Compute for LLMs"
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过大规模系统性研究，首次为大语言模型（LLMs）的强化学习（RL）训练提出了一个可预测的规模化框架，并基于此提出了一套名为 $$ScaleRL$$ 的最佳实践方法，旨在将RL训练的规模化从“艺术”转变为可预测的“科学”。
 
-# 关键定义
+## 关键定义
 本文的核心是建立一个用于预测RL性能的框架，其关键是使用S型（sigmoidal）函数来拟合计算量与性能之间的关系。
 *   **计算-性能S型曲线 (Sigmoidal Compute-Performance Curve)**：本文提出使用以下S型函数来建模在独立同分布（iid）验证集上的预期奖励 $R\_C$ 与训练计算量 $C$ 之间的关系：
     
@@ -34,14 +33,14 @@ title: "The Art of Scaling Reinforcement Learning Compute for LLMs"
 
 <img src="/images/2510.13786v1/interpreting_fit.jpg" alt="图片：S型曲线参数解释" style="width:90%; max-width:700px; margin:auto; display:block;">
 
-# 相关工作
+## 相关工作
 *   **研究现状**: 强化学习（RL）已成为训练前沿大语言模型（LLMs）的核心环节，用于解锁如推理、智能体（Agent）能力等高级功能。随之而来的是，用于RL训练的计算资源预算急剧增加。然而，与已经建立起成熟“规模法则”（scaling laws）的预训练阶段不同，RL领域缺乏一套原则性的方法论来指导如何有效地扩展计算资源。
 
 *   **存在问题**: 当前RL的规模化更像一门“艺术”而非“科学”。相关研究多为针对特定场景的孤立算法或模型训练报告，提供的解决方案缺乏普适性，无法指导如何开发随计算量可预测扩展的RL方法。这导致研究进展严重依赖昂贵的大规模实验，将大多数研究者排除在外。
 
 *   **本文目标**: 本文旨在解决RL规模化过程中“如何扩展”和“扩展什么”这两个基本问题。通过建立一个可预测的分析框架，使得研究者能够通过低计算量的早期实验来评估不同RL方法的可扩展性，从而更经济、高效地推进研究。
 
-# 本文方法
+## 本文方法
 本文的方法论核心分为两部分：首先，通过大规模实证研究，识别出影响RL规模化效率和性能上限的关键设计选择；其次，基于这些发现，整合出一套名为$$ScaleRL$$的最佳实践配方。
 
 ## 大规模实证研究
@@ -92,7 +91,7 @@ $${% endraw %}
 
 <img src="/images/2510.13786v1/100k.jpg" alt="图片：10万GPU小时规模的RL训练预测与实际表现" style="width:85%; max-width:450px; margin:auto; display:block;">
 
-# 实验结论
+## 实验结论
 本文通过一系列精心设计的实验，验证了其提出的规模化框架和 $$ScaleRL$$ 配方的有效性。
 
 ## 关键实验发现

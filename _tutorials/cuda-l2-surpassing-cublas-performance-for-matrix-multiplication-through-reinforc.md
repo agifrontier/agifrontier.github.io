@@ -3,7 +3,7 @@ layout: default
 title: "CUDA-L2: Surpassing cuBLAS Performance for Matrix Multiplication through Reinforcement Learning"
 ---
 
-# AI当上CUDA工程师：性能超NVIDIA官方库26%，CUDA-L2来了！
+## AI当上CUDA工程师：性能超NVIDIA官方库26%，CUDA-L2来了！
 
 <img src="/images/2512.02551v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

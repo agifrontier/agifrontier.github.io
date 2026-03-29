@@ -3,7 +3,6 @@ layout: default
 title: "Graph of Thoughts: Solving Elaborate Problems with Large Language Models"
 ---
 
-# Graph of Thoughts: Solving Elaborate Problems with Large Language Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2308.09687v4
 
@@ -13,10 +12,10 @@ title: "Graph of Thoughts: Solving Elaborate Problems with Large Language Models
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为“思想图谱 (Graph of Thoughts, GoT)”的新型提示框架，通过将大型语言模型 (LLM) 的思维过程建模为任意图结构，其中“思想”是节点，依赖关系是边，从而实现了超越链式或树状思维模式的、更复杂和强大的推理能力，尤其擅长聚合多个推理路径以生成协同的、更高质量的解决方案。
 
-# 关键定义
+## 关键定义
 *   **思想图谱 (Graph of Thoughts, GoT)**：一个将 LLM 推理过程建模为图 $$G = (V, E)$$ 的框架。其中，每个节点 $$v ∈ V$$ 代表一个“思想”（即 LLM 生成的一个完整的解决方案或部分解决方案），每条有向边 $$(u, v) ∈ E$$ 代表思想 $$v$$ 是基于思想 $$u$$ 生成的。这种图结构允许思想之间存在任意复杂的依赖关系，是本文最核心的贡献。
 *   **思想变换 (Thought Transformations)**：指在 GoT 框架中对思想图谱进行修改以推进推理过程的操作。本文定义了三大类图驱动的变换：
     1.  **聚合 (Aggregation)**：将多个并行的思想节点合并成一个新节点，以综合不同推理路径的优点。这是 GoT 区别于以往方法的关键能力。
@@ -25,7 +24,7 @@ title: "Graph of Thoughts: Solving Elaborate Problems with Large Language Models
 *   **思想的操作图 (Graph of Operations, GoO)**：一个静态的数据结构，由用户预先定义，用于规划整个任务的执行流程。它规定了在推理过程中需要执行哪些思想变换（如生成、聚合、评分），以及这些操作的顺序和依赖关系。
 *   **思想的体积 (Volume of a thought)**：本文提出的一个新指标，用于衡量某个思想 $$t$$ 背后潜在的信息量。其定义为在思想图谱中，能够通过有向路径到达思想 $$t$$ 的所有前驱思想的总数。体积越大，代表该思想综合了越多的先前信息。
 
-# 相关工作
+## 相关工作
 当前，提升大型语言模型 (LLM) 推理能力的主流提示工程 (Prompt engineering) 方法包括：
 1.  **思维链 (Chain-of-Thought, CoT)**：通过引导 LLM 生成一系列中间推理步骤来解决复杂问题，但其线性结构限制了探索的广度。
 2.  **自洽性思维链 (Self-Consistency with CoT, CoT-SC)**：通过生成多条独立的思维链并投票选出最佳答案，增加了鲁棒性，但各分支间无法交互。
@@ -35,7 +34,7 @@ title: "Graph of Thoughts: Solving Elaborate Problems with Large Language Models
 
 本文旨在解决这一问题，通过引入图结构，提供一个更通用、更强大的推理范式，以释放 LLM 更复杂的推理潜力。
 
-# 本文方法
+## 本文方法
 本文的核心是提出了 Graph of Thoughts (GoT) 框架，它将 LLM 的推理过程从线性链条或树状结构推广到了通用的图结构，从而实现了更高级的思维操作。
 
 ## GoT 核心思想
@@ -83,7 +82,7 @@ GoT 的图模型催生了新的思想变换能力，超越了以往的方法。
 
 通过这种方式，GoT 将一个 LLM 难以一次性完美解决的复杂任务，转化成了一系列 LLM 可以高质量完成的简单子任务，最后通过聚合操作得到高质量的最终解。
 
-# 实验结论
+## 实验结论
 本文通过在排序、集合交集、关键词计数和文档合并等多个任务上的实验，验证了 GoT 框架的有效性。
 
 ## 实验结果

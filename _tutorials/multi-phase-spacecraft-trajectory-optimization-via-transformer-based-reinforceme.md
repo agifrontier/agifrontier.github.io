@@ -3,7 +3,7 @@ layout: default
 title: "Multi-Phase Spacecraft Trajectory Optimization via Transformer-Based Reinforcement Learning"
 ---
 
-# MIT新突破：Transformer实现火箭全程自主驾驶，成本仅高出最优解3%
+## MIT新突破：Transformer实现火箭全程自主驾驶，成本仅高出最优解3%
 
 <img src="/images/2511.11402v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
 

@@ -3,7 +3,6 @@ layout: default
 title: "BabyBabelLM: A Multilingual Benchmark of Developmentally Plausible Training Data"
 ---
 
-# BabyBabelLM: A Multilingual Benchmark of Developmentally Plausible Training Data
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.10159v1
 
@@ -13,24 +12,24 @@ title: "BabyBabelLM: A Multilingual Benchmark of Developmentally Plausible Train
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了 BabyBabelLM，一个包含45种语言、模拟人类语言习得环境的多语言基准，旨在推动语言模型在数据效率和认知合理性方面的跨语言研究。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下几个关键概念：
 *   **BabyBabelLM**: 本文提出的核心贡献，是一个多语言的基准，包含：(1) 在45种语言中精心策划的、符合发育合理性的训练数据集；(2) 一套覆盖形式能力和功能能力的评测套件；(3) 在这些数据上训练的单语、双语和多语基线模型。
 *   **发育合理性 (Developmental Plausibility)**: 构建数据集的核心指导原则，指预训练数据应尽可能模拟儿童在语言习得过程中实际接触到的语言输入。这包括优先选择儿童导向语音（CDS）、教育材料、儿童读物等，并特意排除了合成数据。
 *   **语言分层 (Language Tiers)**: 为了在不同语言数据资源不均衡的情况下进行公平比较，本文将45种语言根据数据集大小（经过跨语言校准的Token数量）分为三个等级：Tier 1（约1亿等效英语词）、Tier 2（1000万）和 Tier 3（100万）。
 *   **形式能力 (Formal Competence) 与 功能能力 (Functional Competence)**: 评测套件的两个维度。形式能力指对语言规则和模式的掌握（如语法）；功能能力指在真实世界情境中理解和使用语言的能力（如推理、常识）。
 
-# 相关工作
+## 相关工作
 当前语言模型研究的主流趋势是追求规模扩张，这导致了两个关键问题：一是忽视了数据效率，使得模型训练成本高昂；二是模型学习方式与人类语言习得过程的差距越来越大，人类用不到1亿词汇就能掌握母语，而大模型则需要数万亿词汇。
 
 作为应对，BabyLM Challenge 等研究开始关注数据效率和认知合理性，但这些工作绝大多数局限于英语。虽然有一些针对法语、德语、日语等语言的零散研究，但它们缺乏统一、可比的标准和数据集。
 
 本文旨在解决的核心问题是：**当前缺乏一个标准化的、跨越多语言的、符合发育合理性的训练与评测框架**。通过构建 BabyBabelLM，本文为研究数据高效的、更接近人类学习方式的语言模型如何在不同类型语言中习得语言提供了关键基础设施。
 
-# 本文方法
+## 本文方法
 本文的核心贡献是创建了 BabyBabelLM 基准，其构建过程和组成部分如下。
 
 ### 数据集构建
@@ -69,7 +68,7 @@ title: "BabyBabelLM: A Multilingual Benchmark of Developmentally Plausible Train
 *   **双语模型**：为Tier 1语言的数据集加入英语数据进行训练。
 *   **多语模型**：一个111M参数的模型，在所有45种语言的数据上进行训练。
 
-# 实验结论
+## 实验结论
 本文对训练的基线模型进行了评估，主要结论如下：
 
 *   **模型在形式能力上表现良好**：单语模型在语言学基准（如 MultiBLiMP）上取得了不错的成绩，尤其是在数据量充足的 Tier 1 语言上，准确率通常超过80%。这证明即使是小型模型，在接触符合发育合理性的数据后也能掌握核心的语法知识。性能与数据量强相关，Tier 2 和 Tier 3 语言的模型表现相对较差。

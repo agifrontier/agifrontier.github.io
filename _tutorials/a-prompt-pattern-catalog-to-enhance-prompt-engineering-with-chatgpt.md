@@ -3,7 +3,6 @@ layout: default
 title: "A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT"
 ---
 
-# A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT
 
 - **ArXiv URL**: http://arxiv.org/abs/2302.11382v1
 
@@ -13,7 +12,7 @@ title: "A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT"
 
 ---
 
-# 软件模式与提示模式的比较
+## 软件模式与提示模式的比较
 
 本文提出，大型语言模型（LLM）输出的质量直接取决于用户提供提示（Prompt）的质量。提示是一种对LLM进行编程的形式，通过设定上下文、规则和期望的输出形式，可以定制化LLM的行为和输出。因此，本文引入了提示模式（Prompt Patterns）的概念，旨在系统化地记录与LLM交互时，为解决常见问题而设计的成功方法。
 
@@ -29,7 +28,7 @@ title: "A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT"
 
 本文所有示例均在 ChatGPT+ 服务上进行了测试。
 
-# 面向对话式LLM的提示模式目录
+## 面向对话式LLM的提示模式目录
 
 本章节介绍了本文整理的提示模式目录，这些模式已被成功应用于解决与对话式LLM交互及为软件开发任务生成输出时的常见问题。
 

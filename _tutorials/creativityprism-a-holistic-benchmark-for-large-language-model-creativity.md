@@ -3,7 +3,6 @@ layout: default
 title: "CreativityPrism: A Holistic Benchmark for Large Language Model Creativity"
 ---
 
-# CreativityPrism: A Holistic Benchmark for Large Language Model Creativity
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.20091v1
 
@@ -13,10 +12,10 @@ title: "CreativityPrism: A Holistic Benchmark for Large Language Model Creativit
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一个名为 $$CreativityPrism$$ 的整体性评估框架，通过跨越三个领域（发散性思维、创意写作、逻辑推理）的九个任务和二十个指标，从质量、新颖性和多样性三个维度系统地评估大型语言模型的创造力。
 
-# 关键定义
+## 关键定义
 本文的核心是围绕其提出的 $$CreativityPrism$$ 框架展开的，其中对创造力的分解是理解本文的关键。
 
 1.  **CreativityPrism**: 一个用于评估大型语言模型（LLM）创造力的整体性、可扩展的基准。它由三个领域（发散性思维、创意写作、逻辑推理）、九个具体任务和二十个评估指标构成，旨在全面衡量模型的创造力。
@@ -24,14 +23,14 @@ title: "CreativityPrism: A Holistic Benchmark for Large Language Model Creativit
 3.  **新颖性 (Novelty)**: 创造力维度之一，评估生成内容与现有或常见内容相比的原创性或罕见程度。例如，在数学问题中，新颖性指能否提出不同于参考答案的解法；在物品用途测试中，指能否想出非常规的用途。
 4.  **多样性 (Diversity)**: 创造力维度之一，评估模型生成的多个输出之间的差异性。例如，在创意写作中，多样性衡量生成故事的词汇丰富度；在发散性联想任务中，指生成名词之间的语义差异。
 
-# 相关工作
+## 相关工作
 当前对大型语言模型（LLM）创造力的评估存在两大挑战。首先，现有评估方法是**分散和碎片化**的（fragmented），不同领域和任务对创造力的定义和测量方式差异巨大，导致评估结论不一致，难以进行横向比较。例如，一些任务侧重词汇多样性，一些侧重非常规想法，但都只捕捉了创造力的单一侧面。
 
 其次，许多评估方法**难以扩展**（scalable），严重依赖昂贵且耗时的人工评估。随着模型迭代速度加快，急需一种可扩展、自动化的评估方式。
 
 因此，本文旨在解决当前 LLM 创造力评估**缺乏统一、全面框架**的问题。作者的目标是创建一个整体性的、可扩展的评估基准，整合多个任务和维度，以统一的方式衡量和比较不同 LLM 的创造力。
 
-# 本文方法
+## 本文方法
 本文提出了 $$CreativityPrism$$，一个用于评估机器创造力的整体性基准框架。其核心思想是，创造力并非单一概念，而是一个多面体，在不同领域（上下文）下会展现出不同的特质，就像光透过棱镜折射出不同颜色的光谱一样。
 
 <img src="/images/2510.20091v1/x1.jpg" alt="CreativityPrism 框架图" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -77,7 +76,7 @@ $$CreativityPrism$$ 框架包含三个主要部分：
 *   **可扩展性**: 框架主要依赖自动化评估指标（包括经过可靠性验证的 LLM-as-a-Judge），使其比传统的人工评估更高效、更易于扩展，适应了模型快速迭代的需求。
 
 
-# 实验结论
+## 实验结论
 本文对17个先进的闭源和开源 LLM 进行了评估，揭示了它们在创造力方面的表现。
 
 <img src="/images/2510.20091v1/plot-time.jpg" alt="模型发布时间与性能关系" style="width:85%; max-width:450px; margin:auto; display:block;">

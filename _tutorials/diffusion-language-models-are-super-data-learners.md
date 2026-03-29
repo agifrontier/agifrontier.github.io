@@ -3,7 +3,6 @@ layout: default
 title: "Diffusion Language Models are Super Data Learners"
 ---
 
-# Diffusion Language Models are Super Data Learners
 
 - **ArXiv URL**: http://arxiv.org/abs/2511.03276v1
 
@@ -13,10 +12,10 @@ title: "Diffusion Language Models are Super Data Learners"
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过大量实验证明，在训练数据稀缺但计算资源充足的条件下，扩散语言模型（Diffusion Language Models, DLMs）相比同等规模的自回归模型（Autoregressive Models, AR）能从有限数据中学习到更多信息，最终在性能上实现超越，这一现象被称为“智能交叉”（Intelligence Crossover）。
 
-# 关键定义
+## 关键定义
 本文主要沿用并对比了两种核心的语言模型范式：
 
 1.  **自回归语言模型 (Autoregressive Language Models, AR)**: 这是当前主流大语言模型（如GPT系列）采用的范式。它通过链式法则对文本序列的联合概率分布进行建模，即在生成时，每个 token 的预测都依赖于其之前的所有 token。其概率公式为：
@@ -41,14 +40,14 @@ title: "Diffusion Language Models are Super Data Learners"
 
 3.  **智能交叉 (Intelligence Crossover)**: 这是本文发现并命名的核心现象。指在总训练 token 数固定但唯一（unique）数据量有限的情况下，DLM 的性能曲线在训练到某个点后会向上穿越并持续优于 AR 模型的现象。这个交叉点的位置受数据量、数据质量、模型规模等因素影响。
 
-# 相关工作
+## 相关工作
 当前，以自回归（AR）模型为代表的解码器架构（decoder-only Transformers）主导了大型语言模型领域。它们在拥有海量、不断增长的高质量数据和有限计算资源的时代取得了巨大成功。这种模型的成功依赖于其高效的训练方式（teacher forcing）和推理方式（KV-caching）。
 
 然而，研究范式正在发生转变：随着模型规模的持续扩张，高质量、独特的训练数据正逐渐取代计算资源（FLOPs），成为限制模型能力进一步提升的主要瓶瓶颈。
 
 因此，本文旨在解决一个前瞻性的问题：**当数据成为稀缺资源而非计算时，哪一种语言建模范式能够从每个独特的 token 中榨取更多的“智能”？**
 
-# 本文方法
+## 本文方法
 本文的核心贡献并非提出一个全新的模型架构，而是通过严谨的对比实验，发现并系统性分析了在数据受限场景下，DLM 相对于 AR 模型的优越性，即“智能交叉”现象。
 
 ### 核心发现：智能交叉
@@ -65,7 +64,7 @@ title: "Diffusion Language Models are Super Data Learners"
 
 实验证明，尽管为 AR 模型手动加入输入噪声（掩码）或参数噪声（dropout）也能在数据稀缺时提升性能，但其效果远不及 DLM，这表明 DLM 的优势是上述三个因素共同作用的结果，而不仅仅是数据增强。
 
-# 实验结论
+## 实验结论
 本文通过一系列受控实验，系统地验证了“智能交叉”现象，并揭示了其背后的规律。
 
 ### 数据预算决定交叉点

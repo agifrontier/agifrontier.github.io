@@ -3,7 +3,6 @@ layout: default
 title: "Uncovering Scaling Laws for Large Language Models via Inverse Problems"
 ---
 
-# Uncovering Scaling Laws for Large Language Models via Inverse Problems
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.07909v1
 
@@ -13,10 +12,10 @@ title: "Uncovering Scaling Laws for Large Language Models via Inverse Problems"
 
 ---
 
-# TL;DR
+## TL;DR
 本文倡导将大型语言模型（LLM）的开发挑战构建为逆问题（inverse problems），从而以一种系统性的、高成本效益的方式，发现指导LLM构建与优化的底层缩放定律（scaling laws）。
 
-# 关键定义
+## 关键定义
 本文的核心是提出一个概念框架，其关键定义如下：
 
 *   **正向过程 (Forward Process)**：指代构建和评估LLM的标准流程。它包含两个阶段：
@@ -25,7 +24,7 @@ title: "Uncovering Scaling Laws for Large Language Models via Inverse Problems"
 
 *   **逆问题 (Inverse Problem)**：与正向过程相反，逆问题旨在从一个期望的性能结果 $C$ 出发，反向推断出实现该结果所需的最佳或最小输入要素（$\mathcal{T}$ 和 $\mathcal{I}$）。这是一个从“结果”反推“原因”的过程，目的是找到构建高性能、高效率LLM的最优配方，而不是通过昂贵的试错法。
 
-# 相关工作
+## 相关工作
 当前，大型语言模型（LLM）在各个领域取得了巨大成功，这些成功建立在空前的数据和计算规模之上。训练一个顶尖的LLM（如GPT-4）成本高达数亿美元，这使得通过“暴力试错”来改进模型变得不切实际。尽管已有研究揭示了模型性能与数据量、模型大小之间的部分缩放定律，但这些定律主要基于经验观察，且我们对数据、架构、训练和推理等多种要素之间复杂的相互作用仍缺乏深刻理解。
 
 <img src="/images/2509.07909v1/x1.jpg" alt="图1：大型语言模型中的正向过程。正向过程从关键输入要素和组件（数据集、模型架构和训练程序）生成一个LLM。在推理时，其他要素（如提示范例）会影响期望的性能指标C。" style="width:85%; max-width:450px; margin:auto; display:block;">
@@ -42,7 +41,7 @@ title: "Uncovering Scaling Laws for Large Language Models via Inverse Problems"
 
 其中，$\mathcal{T}$ 是训练要素，$\mathcal{I}$ 是推理要素，$C$ 是性能指标。逆问题就是要找到最优的 $\mathcal{T}$ 和 $\mathcal{I}$ 以达到特定的 $C$。
 
-# 本文方法
+## 本文方法
 本文的核心方法论是将LLM研究中的关键挑战重新构建为逆问题。通过固定部分变量，将复杂的端到端问题分解为更易于处理的子问题。本文重点阐述了三个领域的应用：数据选择、推理优化和机器学习遗忘。
 
 ### 数据选择
@@ -78,5 +77,5 @@ title: "Uncovering Scaling Laws for Large Language Models via Inverse Problems"
 
 *   **机器学习遗忘技术**：MU技术本身也是一个逆问题，目标是调整训练要素 $\mathcal{T}$ 或推理要素 $\mathcal{I}$，以达到期望的性能指标 $C$（如：不生成有害内容、在保留数据上性能不下降）。对于黑盒模型，可以在推理时自适应地修改 $\mathcal{I}$ 来抑制有害内容的生成。对于白盒模型，可以设计更易于遗忘的模型架构（如MoE），仅对少数参数进行修改。研究这些技术与遗忘效果、数据大小、计算成本之间的关系，可以揭示指导MU实践的缩放定律。
 
-# 实验结论
+## 实验结论
 本文是一篇立场文件（position paper），旨在提出一个概念框架，并未包含具体的实验验证。其核心结论是，将LLM开发中的挑战（如数据选择、推理优化、机器学习遗忘等）系统地构建为逆问题，是一种极具前景的研究范式。这一方法论有望引导研究从零散的经验性改进转向对底层缩放定律的探索，从而为构建更强大、更高效、更安全的LLM奠定理论基础，并指导实际应用中的资源优化。未来的研究应致力于探索这些缩放定律，并利用优化理论等领域的工具来解决LLM中的逆问题。

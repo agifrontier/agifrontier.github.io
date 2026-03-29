@@ -3,7 +3,6 @@ layout: default
 title: "Every Question Has Its Own Value: Reinforcement Learning with Explicit Human Values"
 ---
 
-# Every Question Has Its Own Value: Reinforcement Learning with Explicit Human Values
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.20187v1
 
@@ -13,10 +12,10 @@ title: "Every Question Has Its Own Value: Reinforcement Learning with Explicit H
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出 RLEV 方法，通过将可验证的正确性奖励与人类定义的显式价值（如题目分数）相结合，直接优化语言模型，使其不仅追求正确性，更优先处理高价值任务，并学会根据任务重要性调整回答的详略程度。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下关键概念：
 
 *   **强化学习与显式人类价值 (Reinforcement Learning with Explicit Human Values, RLEV)**：一种新的训练范式，它扩展了基于可验证奖励的强化学习 (RLVR) 框架。其核心思想是，将代表问题重要性的人类定义价值信号，直接整合到奖励函数中，从而使模型优化与量化的人类优先级对齐。
@@ -24,14 +23,14 @@ title: "Every Question Has Its Own Value: Reinforcement Learning with Explicit H
 *   **归一化价值 (Normalized Value)**：为了在不同任务间（如不同考试）创建一致的价值尺度，本文将原始分数 $s\_{ij}$ （试卷 $i$ 的问题 $j$）通过除以该试卷的总分 $T\_i$ 来进行归一化：$v(x) = \frac{s\_{ij}}{T\_i}$。这使得价值可解释为问题的“相对重要性”。
 *   **RLEV 奖励函数 (RLEV Reward Function)**：为保证训练稳定性而设计的实际奖励函数。其形式为 $r(x,y) = s(x) \cdot \mathbf{1}\_{\text{correct}}(y)$，其中缩放因子 $s(x) = 1 + \min(\alpha \cdot v(x), 1)$。该设计确保任何正确答案的奖励至少为 1，同时为高价值问题提供一个有上限的额外奖励，从而在激励模型的同时防止奖励过大导致训练不稳定。
 
-# 相关工作
+## 相关工作
 当前，大语言模型对齐主要有两种范式：一种是通过人类反馈强化学习（RLHF）从主观偏好中学习隐式的人类效用；另一种是针对具有客观答案的领域，采用基于可验证奖励的强化学习（RLVR），直接使用二元正确性信号（例如，正确为+1，错误为0）进行优化。
 
 RLVR 方法虽然简单直接，但存在一个关键的疏忽：**它将所有问题同等对待**。例如，在一个考试中，正确回答一个10分题和一个2分题获得的奖励是完全相同的。这种设置导致模型被优化为最大化“答对题目的数量”，而非“获得的总分数”，后者才是现实世界中真实的人类目标。
 
 本文旨在解决这一问题，即如何在强化学习框架中引入问题之间的非均匀重要性，使模型能够根据人类定义的显式价值来区分任务的优先级，从而更好地与真实世界的目标对齐。
 
-# 本文方法
+## 本文方法
 
 <img src="/images/2510.20187v1/x1.jpg" alt="RLEV 概述。验证器可以是一个奖励模型或基于规则的函数。" style="width:85%; max-width:600px; margin:auto; display:block;">
 
@@ -96,7 +95,7 @@ $${% endraw %}
 
 当提前结束序列（选择 EOS）比继续生成更有可能得到正确答案时（即 $p\_e > \overline{p}\_{\neg e}$），高价值问题的 $s(x)$ 会更强地推动模型学习提前终止。这解释了 RLEV 模型为何能在低价值问题上生成简洁的答案，在高价值问题上则更详尽，因为它学会了根据任务价值来动态权衡回答的详略和正确率。
 
-# 实验结论
+## 实验结论
 
 ## 核心结果
 实验结果表明，RLEV 在多个 RL 算法（REINFORCE++, RLOO, GRPO）和模型规模（7B, 32B）上均一致优于仅考虑正确性的基线方法。

@@ -3,7 +3,7 @@ layout: default
 title: "Soft Adaptive Policy Optimization"
 ---
 
-# 告别硬裁剪！阿里SAPO算法，用“柔性门控”提升LLM训练稳定性与性能
+## 告别硬裁剪！阿里SAPO算法，用“柔性门控”提升LLM训练稳定性与性能
 
 <img src="/images/2511.20347v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

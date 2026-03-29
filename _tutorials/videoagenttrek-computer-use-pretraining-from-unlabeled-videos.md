@@ -3,7 +3,6 @@ layout: default
 title: "VideoAgentTrek: Computer Use Pretraining from Unlabeled Videos"
 ---
 
-# VideoAgentTrek: Computer Use Pretraining from Unlabeled Videos
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.19488v1
 
@@ -13,15 +12,15 @@ title: "VideoAgentTrek: Computer Use Pretraining from Unlabeled Videos"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 VideoAgentTrek 的可扩展方法，通过一个逆动力学模块（VADM）从未经标注的公开屏幕录制视频中自动挖掘出结构化的训练数据，从而解决了训练计算机使用智能体（Agent）时对大规模手动标注数据的依赖问题。
 
-# 关键定义
+## 关键定义
 *   **VideoAgentTrek**: 一个完整的、可扩展的自动化流程，旨在将无标签的屏幕录制视频转化为可用于训练计算机使用智能体的高质量数据。该流程包含三个主要阶段：视频收集与预处理、通过 VADM 模块提取结构化动作、以及利用所提取数据进行模型预训练和微调。
 *   **VADM (VideoAgentTrek inverse Dynamics Module)**: VideoAgentTrek 的核心组件，一个逆动力学模块，负责从原始视频片段中恢复出结构化的动作信息。它包含两个关键部分：(1) **动作事件检测器**，用于在视频中精准定位（精确到毫秒）各种 GUI 交互行为（如点击、输入）的起止时间点；(2) **动作参数化识别器**，用于从已定位的视频片段中抽取出具体的动作参数（如点击的坐标 $$(x,y)$$、输入的文本内容）。
 *   **GUI-Filter**: 一种轻量级的视频预处理工具。它基于 YOLOv8x 模型构建，通过检测视频帧中是否存在鼠标光标，来高效地过滤和保留仅包含图形用户界面（GUI）交互的视频片段，从而去除无关内容（如演示文稿、真人讲解）。
 
-# 相关工作
+## 相关工作
 当前，获取计算机使用智能体训练数据的方法主要有三种：
 1.  **人工标注**: 通过人工记录操作轨迹，能够生成高质量、高精度的标注数据，但成本极其高昂，难以规模化，且覆盖的应用场景有限。
 2.  **程序化合成**: 在模拟器或脚本化环境中自动生成大量交互数据，虽然规模大、参数精确，但往往缺乏真实世界UI的多样性和复杂性，与现实场景存在偏差。
@@ -29,7 +28,7 @@ title: "VideoAgentTrek: Computer Use Pretraining from Unlabeled Videos"
 
 研究领域的关键瓶颈在于，缺乏一种能够兼顾**规模、多样性和质量**的数据获取方法。本文旨在解决这一核心问题：如何将互联网上大量存在的、非结构化的屏幕录制视频，自动化地转化为可直接用于智能体训练的、带有精确参数的结构化交互轨迹，从而摆脱对昂贵人工标注的依赖。
 
-# 本文方法
+## 本文方法
 本文提出的 VideoAgentTrek 是一个三阶段的自动化流程，能将无标签的网络视频转化为结构化的智能体训练数据。
 
 <img src="/images/2510.19488v1/x1.jpg" alt="VideoAgentTrek 概览" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -98,7 +97,7 @@ $${% endraw %}
 
 这种“先广泛学习，后精细打磨”的策略，旨在充分利用大规模视频数据的广度来构建稳健的底层能力，再利用高质量标注数据的精度来优化上层策略。
 
-# 实验结论
+## 实验结论
 本文在两个主流计算机使用智能体基准上验证了方法的有效性：OSWorld-Verified（在线真实环境）和 AgentNetBench（离线评估）。
 
 <img src="/images/2510.19488v1/x5.jpg" alt="实验结果图" style="width:85%; max-width:600px; margin:auto; display:block;">

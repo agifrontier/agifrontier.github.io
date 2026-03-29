@@ -3,7 +3,6 @@ layout: default
 title: "Process-Supervised Reinforcement Learning for Interactive Multimodal Tool-Use Agents"
 ---
 
-# Process-Supervised Reinforcement Learning for Interactive Multimodal Tool-Use Agents
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.14480v1
 
@@ -13,16 +12,16 @@ title: "Process-Supervised Reinforcement Learning for Interactive Multimodal Too
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为“回合级评审强化学习” (Turn-level Adjudicated Reinforcement Learning, TARL) 的流程监督方法，该方法利用大型语言模型 (LLM) 作为裁判提供细粒度的回合级奖励，并结合混合任务训练策略，以解决长程交互中的信用分配和探索不足问题，从而显著提升了交互式多模态工具使用智能体的任务成功率。
 
-# 关键定义
+## 关键定义
 本文的核心方法和概念建立在一个为强化学习设计的沙盒环境之上。
 *   **沙盒环境 (Sandbox Environment)**：一个专为训练交互式工具使用智能体而设计的模拟环境。它包含一个带API的后端应用、一个模拟真实用户（支持文本和语音）的LLM用户模拟器，以及一个基于规则的验证器，用于评估智能体的行为并提供最终任务奖励。
 *   **回合级评审强化学习 (Turn-level Adjudicated Reinforcement Learning, TARL)**：本文提出的核心方法。它引入一个LLM作为“裁判”，在多回合交互的复杂任务中，对智能体的每一个“回合”（包括推理和工具调用）进行评估并给予即时奖励（-1, 0, 或 1）。这种细粒度的奖励机制旨在解决传统强化学习在长程任务中面临的信用分配难题。
 *   **混合任务训练 (Mixed-Task Training)**：一种训练策略，在工具使用任务的训练过程中穿插中等难度的数学推理问题。其目的是利用数学问题求解中自然产生的自我反思和探索行为，来正则化训练过程，防止智能体在特定任务上过拟合，并维持其探索能力。
 
-# 相关工作
+## 相关工作
 当前，让大型语言模型（LLM）与外部工具和服务交互是AI智能体领域的前沿方向。然而，训练这类智能体，尤其是在需要多回合对话、长上下文管理的交互式场景中，面临巨大挑战。
 
 现有方法大多依赖静态的、预先收集的轨迹数据进行监督学习，但这难以应对真实世界交互的动态性和多变性。强化学习（RL）提供了一种在线学习的范式，让智能体能通过与环境的动态交互来优化策略，但标准RL算法在工具使用这类长程任务中也存在瓶颈：
@@ -31,7 +30,7 @@ title: "Process-Supervised Reinforcement Learning for Interactive Multimodal Too
 
 本文旨在解决上述两个核心问题，即如何在复杂的、多回合的交互式工具使用任务中，实现有效的信用分配和持续的探索，特别是在处理包含文本和语音的多模态交互时。
 
-# 本文方法
+## 本文方法
 本文提出了一套完整的、基于强化学习的训练框架，用于开发交互式多模态工具使用智能体。该框架的核心是创新的训练策略，旨在解决探索不足和信用分配两大难题。
 
 <img src="/images/2509.14480v1/x1.jpg" alt="训练流程图" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -80,7 +79,7 @@ $${% endraw %}
     *   **强调关键错误**：通过对重大错误施加重罚，该方法能有效指导模型避免犯下不可逆转的错误。
     *   **实现简单有效**：相比于复杂的逐个Token奖励或实时干预，这种在轨迹结束后进行整体评估和奖励分配的方式，被证明在训练中更加稳定和高效。
 
-# 实验结论
+## 实验结论
 本文通过在文本和多模态两个场景下的实验，全面验证了所提出方法的有效性。
 
 ### 文本智能体实验

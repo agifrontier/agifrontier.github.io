@@ -3,7 +3,6 @@ layout: default
 title: "Transformer Enhanced Relation Classification: A Comparative Analysis of Contextuality, Data Efficiency and Sequence Complexity"
 ---
 
-# Transformer Enhanced Relation Classification: A Comparative Analysis of Contextuality, Data Efficiency and Sequence Complexity
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.11374v1
 
@@ -13,16 +12,16 @@ title: "Transformer Enhanced Relation Classification: A Comparative Analysis of 
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过系统性的对比实验，证实了基于Transformer的模型在关系分类任务上，无论是在标准性能、长文本处理能力还是数据效率方面，均显著优于传统的非Transformer深度学习模型。
 
-# 关键定义
+## 关键定义
 本文主要沿用并对比了现有模型，其核心在于评估不同模型在特定任务上的表现。理解本文的关键在于以下概念：
 
 *   **关系分类 (Relation Classification, RC)**：信息抽取的子任务，旨在识别文本中给定实体对（entity pair）之间的语义关系。例如，在句子“奥巴马出生在火奴鲁鲁”中，对于实体对（“奥巴马”，“火奴鲁鲁”），RC任务需要将其分类为“出生地城市”关系。
 *   **类型化实体标记 (Typed Entity Marker)**：一种为基于Transformer的模型增强输入表示的技术。它不仅使用特殊符号（如$$@$$和$$#$$）来标记实体在句子中的位置，还显式地加入了实体的类型信息（如$$*subj-type*$$和$$^obj-type^$$），帮助模型更好地理解实体并进行关系分类。
 
-# 相关工作
+## 相关工作
 关系分类（RC）旨在将非结构化文本转化为结构化的（实体1, 关系, 实体2）三元组，是信息抽取的关键环节。
 
 早期的深度学习方法首先采用卷积神经网络（CNNs）来自动学习词汇和句子级别的特征，摆脱了繁琐的人工特征工程。然而，CNN在捕捉长距离依赖方面存在不足。随后，长短期记忆网络（LSTM）等序列模型因其能更好地处理时序特征而受到关注，并通过引入注意力机制和位置感知信息进一步提升了性能。在此基础上，图卷积网络（GCNs）被引入，通过对句子的依存句法树进行编码来捕捉非连续的词语依赖，代表模型如C-GCN。
@@ -35,7 +34,7 @@ title: "Transformer Enhanced Relation Classification: A Comparative Analysis of 
 
 <img src="/images/2509.11374v1/musk1.jpg" alt="关系抽取数据集示例" style="width:90%; max-width:700px; margin:auto; display:block;">
 
-# 本文方法
+## 本文方法
 本文设计了一套系统的实验流程，以实证方式对比了非Transformer模型和基于Transformer的模型在关系分类任务上的性能。
 
 ### 实验设置
@@ -64,7 +63,7 @@ title: "Transformer Enhanced Relation Classification: A Comparative Analysis of 
     *   对于**R-BERT**，使用$$@$$和$$#$$分别标记主语和宾语实体。
     *   对于**BERT**和**RoBERTa**，则进一步引入类型信息，格式为$$@ *subj-type* SUBJECT @ … # ^obj-type^ OBJECT #$$。这种方式明确地将实体的位置和类型信息编码到输入文本中，旨在增强模型对关系的理解能力。
 
-# 实验结论
+## 实验结论
 实验结果系统地揭示了基于Transformer的模型相对于传统深度学习模型在关系分类任务上的显著优势。
 
 ### 整体性能对比

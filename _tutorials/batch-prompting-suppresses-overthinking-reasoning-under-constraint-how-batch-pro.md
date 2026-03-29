@@ -3,7 +3,6 @@ layout: default
 title: "Batch Prompting Suppresses Overthinking Reasoning Under Constraint: How Batch Prompting Suppresses Overthinking in Reasoning Models"
 ---
 
-# Batch Prompting Suppresses Overthinking Reasoning Under Constraint: How Batch Prompting Suppresses Overthinking in Reasoning Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2511.04108v1
 
@@ -13,10 +12,10 @@ title: "Batch Prompting Suppresses Overthinking Reasoning Under Constraint: How 
 
 ---
 
-# TL;DR
+## TL;DR
 本文发现，批处理提示 (Batch Prompting) 不仅能摊销推理成本，还能作为一种有效的推理时正则化器，抑制大型推理模型（LRM）的“过度思考”行为，从而在保持精度的同时大幅减少推理Token消耗。
 
-# 关键定义
+## 关键定义
 本文的核心见解是基于对现有概念的应用和新解释，主要涉及以下术语：
 
 *   **批处理提示 (Batch Prompting)**：一种推理技术，将多个独立的用户查询（问题）组合成一个单一的、更长的提示（Prompt），然后一次性发送给语言模型进行处理，模型会生成一个包含所有查询答案的聚合响应。
@@ -24,7 +23,7 @@ title: "Batch Prompting Suppresses Overthinking Reasoning Under Constraint: How 
 *   **大型推理模型 (Large Reasoning Models, LRMs)**：指那些为执行多步推理任务（如数学、编程、逻辑规划）而优化的语言模型。它们通常通过生成明确的中间推理步骤来换取更高的准确性，但这也导致了“过度思考”的问题。
 *   **软正则化 (Soft Regularization)**：本文提出的核心概念，指批处理提示通过非显式的方式对模型的行为施加约束。当模型在有限的上下文窗口和注意力带宽内同时处理多个问题时，它被迫更有效地分配其“认知资源”，从而自然地抑制了对单个问题的过度分析，效果类似于一种正则化。
 
-# 相关工作
+## 相关工作
 当前，顶尖的大型推理模型（LRMs）通过生成明确的思维链 (Chain-of-Thought, CoT) 在数学、编码和逻辑规划等多步推理任务上取得了SOTA性能。然而，这种详尽的推理方式也带来了一个显著的瓶颈：**过度思考**。模型即使在面对简单问题时也会消耗过多的Token和时间，生成冗长、不必要的推理步骤，这使得它们在对延迟和成本敏感的应用场景中不切实际。
 
 先前的工作主要通过两种方式解决此问题：
@@ -33,7 +32,7 @@ title: "Batch Prompting Suppresses Overthinking Reasoning Under Constraint: How 
 
 这些方法的共同局限性在于，它们需要访问模型的权重或内部激活状态，这对于通过API访问的闭源模型（如OpenAI的模型）是不可行的。因此，本文旨在解决一个关键问题：**能否在不接触模型内部结构、完全在推理时通过黑箱操作来减少模型的“过度思考”？**
 
-# 本文方法
+## 本文方法
 
 本文提出，最初为摊销成本而设计的批处理提示（Batch Prompting）技术，本身就能作为一种隐式的正则化器，有效抑制LRM的过度思考。
 
@@ -95,7 +94,7 @@ $${% endraw %}
 
 值得注意的是，这种约束是“软性”的，模型仍能自适应地为批次内更难的问题分配更多的推理步骤，而在简单问题上保持简洁，从而在效率和性能之间取得平衡。
 
-# 实验结论
+## 实验结论
 本文在13个涵盖算术推理、问答、结构化提取等多种类型的基准上，对DeepSeek-R1和OpenAI-o1两款模型进行了实验。
 
 ### 关键实验结果

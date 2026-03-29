@@ -3,7 +3,7 @@ layout: default
 title: "HaluMem: Evaluating Hallucinations in Memory Systems of Agents"
 ---
 
-# AI Agent记忆也“幻觉”？HaluMem：首个记忆系统“CT扫描”基准，精准定位错误根源
+## AI Agent记忆也“幻觉”？HaluMem：首个记忆系统“CT扫描”基准，精准定位错误根源
 
 当你的AI助手前一秒还记得你喜欢喝拿铁，下一秒却又问你是否偏爱美式咖啡时，你可能会觉得它有点“健忘”。这种现象在AI领域被称为“幻觉”，而当它发生在AI的记忆系统中时，问题就变得尤为棘手。
 

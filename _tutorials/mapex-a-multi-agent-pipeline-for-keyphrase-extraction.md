@@ -3,7 +3,6 @@ layout: default
 title: "MAPEX: A Multi-Agent Pipeline for Keyphrase Extraction"
 ---
 
-# MAPEX: A Multi-Agent Pipeline for Keyphrase Extraction
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.18813v2
 
@@ -13,10 +12,10 @@ title: "MAPEX: A Multi-Agent Pipeline for Keyphrase Extraction"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了MAPEX，一个用于关键词提取的多智能体协作框架，它通过为不同长度的文档设计动态的双路径策略（知识驱动与主题引导），显著提升了大型语言模型（LLM）在零样本场景下的关键词提取性能。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下关键概念：
 *   **多智能体协作 (Multi-Agent Collaboration)**：一种系统设计范式，其中多个独立的智能体（Agents）通过协作完成复杂任务。在本文中，框架由专家招募官、候选词提取器和领域专家三个智能体协同工作。
 *   **双路径策略 (Dual-Path Pipeline Strategy)**：针对不同长度的文档采用不同处理流程的核心机制。
@@ -24,12 +23,12 @@ title: "MAPEX: A Multi-Agent Pipeline for Keyphrase Extraction"
     *   **主题引导提取 (Topic-guided extraction)**：为长文本设计的路径。通过首先识别文档的核心主题，来指导后续的关键词重排序和筛选过程，以应对长文本中的语义稀释问题。
 *   **专家招募 (Expert Recruitment)**：框架中的一个特定模块，由“专家招募官”智能体负责。该智能体分析文档内容，并为“领域专家”智能体动态分配合适的专家角色（如“计算机图形学专家”），从而使提取过程更具领域针对性。
 
-# 相关工作
+## 相关工作
 当前的无监督关键词提取技术主要分为传统方法（统计、图、嵌入）和基于语言模型的提示（prompt-based）方法。随着大型语言模型（LLM）的兴起，基于提示的方法成为主流。然而，现有方法普遍存在一个关键瓶颈：它们大多采用单一、固定的推理流程和提示策略，不区分文档长度或底层LLM模型。这种“一刀切”的设计无法充分发挥LLM在处理多样化场景时的推理和生成潜力，限制了其在关键词提取任务上的泛化能力。
 
 本文旨在解决上述问题，即如何设计一个更灵活、更强大的框架，以充分利用LLM的能力，特别是应对不同长度文档带来的挑战，从而提升零样本关键词提取的准确性和鲁棒性。
 
-# 本文方法
+## 本文方法
 本文提出了一个名为MAPEX（Multi-Agent Pipeline for Keyphrase Extraction）的多智能体流水线框架。该框架通过三个智能体和一个根据文档长度动态选择的双路径策略来协同工作。
 
 <img src="/images/2509.18813v1/x1.jpg" alt="MAPEX框架图" style="width:85%; max-width:450px; margin:auto; display:block;">
@@ -74,7 +73,7 @@ MAPEX框架包含三个协同工作的智能体，其行为通过精心设计的
 *   **鲁棒性**：通过通用候选词提取与专家筛选相结合，扩大了候选范围并保证了最终质量。
 *   **高保真度**：后处理步骤有效抑制了LLM的“幻觉”现象，确保了关键词的准确性和来源可靠性。
 
-# 实验结论
+## 实验结论
 
 ### 整体性能
 实验在Inspec、SemEval-2010等六个基准数据集上进行，并使用了Mistral-7B、Qwen2-7B等三种不同的LLM作为底层模型。

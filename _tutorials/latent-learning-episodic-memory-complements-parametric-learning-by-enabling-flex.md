@@ -3,7 +3,6 @@ layout: default
 title: "Latent learning: episodic memory complements parametric learning by enabling flexible reuse of experiences"
 ---
 
-# Latent learning: episodic memory complements parametric learning by enabling flexible reuse of experiences
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.16189v1
 
@@ -13,10 +12,10 @@ title: "Latent learning: episodic memory complements parametric learning by enab
 
 ---
 
-# TL;DR
+## TL;DR
 *   本文认为当前AI系统的一个核心泛化缺陷是无法进行“潜在学习”（即学习与当前任务无关但可能对未来有用的信息），并证明了通过模拟情景记忆的检索机制可以弥补这一缺陷，使模型能更灵活地重用过往经验。
 
-# 关键定义
+## 关键定义
 本文的核心论点建立在对认知科学概念的借鉴和对机器学习泛化能力的重新审视之上。以下是理解本文至关重要的核心概念：
 
 *   **潜在学习 (Latent Learning)**: 指系统学习那些与当前任务没有直接关系，但可能在未来不同任务中有用的信息的能力。例如，一个智能体在不饿的时候探索迷宫，虽然没有寻找食物的动机，但它记住了食物的位置，以便在未来饥饿时能快速找到。本文认为，现有AI系统在大多数情况下缺乏这种能力，它们只学习与当前任务相关的信息。
@@ -25,12 +24,12 @@ title: "Latent learning: episodic memory complements parametric learning by enab
 
 *   **潜在学习的形式化表述**: 本文将潜在学习问题形式化。假设模型处理一个输入序列 $x=[x\_{0},...,x\_{k}]$ 和一个任务提示 $t$，并学习输出 $f(x,t)$。如果存在另一个与 $t$ 不同的任务 $t'$，模型虽然拥有在上下文中解决任务 $t'$ 的能力（即给定 $x$ 和 $t'$，能输出 $f(x,t')$），但在训练时只见过 $[x,t,f(x,t)]$，那么仅靠参数化学习通常无法泛化到在没有上下文 $x$ 的情况下解决任务 $t'$（即无法解决 $[x', t', f(x',t')]$，其中 $x'$ 是空上下文）。情景记忆通过在需要时将原始上下文 $x$ 检索回来，将困难的无上下文泛化问题转化为简单的有上下文学习问题。
 
-# 相关工作
+## 相关工作
 *   **研究现状与瓶颈**：当前的AI系统，特别是深度学习模型如语言模型（LMs），虽然在许多任务上表现出强大的泛化能力，但也存在一些令人困惑的失败案例。例如，“逆转诅咒”（Reversal Curse），即模型从“A是B的父亲”学习后，无法推断出“B是A的儿子”。这些失败表明，模型的参数化学习（parametric learning）过程高度依赖于训练数据的表面形式和任务目标，难以学习和灵活应用数据中“潜在”的逻辑关系或信息。系统只在信息被当前任务明确或关联地提示时，才会应用它。
 
 *   **本文待解决的问题**：本文旨在识别并解决AI系统与自然智能在泛化能力上的一个关键差距——缺乏**潜在学习**能力。具体来说，本文要阐明为什么AI系统无法将在一个任务中获得的特定信息灵活地应用到另一个足够不同的新任务中，并探索如何通过借鉴认知科学中的**情景记忆**概念来弥补这一差距。
 
-# 本文方法
+## 本文方法
 
 ## 创新点
 本文的核心创新并非提出一个全新的模型架构，而是提供了一个新的理论视角来解释现有AI系统的泛化缺陷，并验证了一个受认知科学启发的解决方案。
@@ -57,7 +56,7 @@ title: "Latent learning: episodic memory complements parametric learning by enab
 <img src="/images/2509.16189v1/x3.jpg" alt="Figure 3: 各种任务中的潜在学习挑战" style="width:85%; max-width:600px; margin:auto; display:block;">
 *本文通过一系列基准测试（从代码使用到迷宫导航）来展示潜在学习的挑战以及检索的优势。*
 
-# 实验结论
+## 实验结论
 
 本文设计了四大类基准测试（Benchmarks）来系统地验证其核心假设。这些测试环境覆盖了从简单的语言事实推理到复杂的智能体导航任务。
 

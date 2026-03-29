@@ -3,7 +3,6 @@ layout: default
 title: "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?"
 ---
 
-# Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?
 
 - **ArXiv URL**: http://arxiv.org/abs/2504.13837v2
 
@@ -13,21 +12,21 @@ title: "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLM
 
 ---
 
-# TL;DR
+## TL;DR
 通过系统性地使用大$$k$$值的$$pass@k$$指标进行评估，本文发现当前的带可验证奖励的强化学习（RLVR）方法并未赋予大语言模型超越其基础模型的新推理能力，而仅仅是提升了对基础模型已有能力的采样效率，甚至可能缩小了模型的推理范围。
 
-# 关键定义
+## 关键定义
 *   **带可验证奖励的强化学习 (Reinforcement Learning with Verifiable Rewards, RLVR):** 一种训练语言模型的方法，其中模型根据自动计算的奖励信号进行优化。这些奖励是确定性的、可验证的（例如，数学题答案是否正确，代码是否通过单元测试），从而允许在没有人工标注的情况下进行大规模的强化学习训练。
 *   **pass@k:** 一种评估模型能力的指标。针对一个问题，从模型中采样 $$k$$ 个输出。如果其中至少有一个输出是正确的，则认为模型“通过”了该问题（$$pass@k$$值为1），否则为0。在本文中，大 $$k$$ 值的 $$pass@k$$ 被用来评估模型推理能力的**边界 (boundary)** 或上限，即模型在足够多的尝试下能解决的问题范围。
 *   **推理能力边界 (Reasoning Capability Boundary):** 指一个模型在理想情况下（如通过大量采样）能够解决的问题集合的范围。本文使用大 $$k$$ 值的 $$pass@k$$ 作为衡量这一边界的代理指标。
 *   **采样效率差距 ($\Delta\_{SE}$):** 本文提出的一个度量指标，定义为RLVR训练后模型的 $$pass@1$$ 与其基础模型在大 $$k$$ 值下的 $$pass@k$$ (本文用k=256) 之间的差异。该指标用于量化RL算法在多大程度上利用了基础模型所设定的能力上限。
 
-# 相关工作
+## 相关工作
 当前，以带可验证奖励的强化学习（RLVR）为核心的技术，如OpenAI-o1和DeepSeek-R1，在提升大语言模型（LLM）的数学和编程等复杂推理能力方面取得了巨大成功。学界和业界普遍认为，RLVR能够像传统强化学习在游戏（如AlphaGo）中一样，通过自我探索和改进，帮助LLM发现全新的推理模式，从而超越其原始基础模型的能力。
 
 然而，这种信念缺乏严格的实证检验。当前RLVR方法的真正效果仍不清晰。本文旨在解决一个根本性问题：**当前的RLVR方法究竟是真正地激发了模型学习到全新的推理能力，还是仅仅优化了对基础模型中已存在的推理路径的利用效率？**
 
-# 本文方法
+## 本文方法
 本文并未提出一个新的模型，而是设计了一套严谨的**分析框架**来深入剖斥现有RLVR方法对LLM推理能力的影响。其核心是通过对比RLVR训练后的模型与其对应的基础模型在推理能力边界上的差异，来回答引言中提出的核心问题。
 
 ### 核心评估框架：以大k值的pass@k衡量推理边界
@@ -51,7 +50,7 @@ title: "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLM
 *   **通用性**：可广泛应用于不同模型、不同任务和不同RL算法的评估，本文的实验覆盖了数学、编码和视觉推理三大领域，证明了其通用性。
 *   **启发性**：研究结果为未来RL方法的发展指明了方向——即需要关注如何真正扩展模型的能力边界，而非仅仅在现有能力上进行优化。
 
-# 实验结论
+## 实验结论
 
 本文通过在数学、代码生成和视觉推理三大领域的广泛实验，系统地评估了RLVR对LLM推理能力边界的影响。实验设置总览如下表所示。
 

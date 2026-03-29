@@ -3,7 +3,7 @@ layout: default
 title: "Remember Me, Refine Me: A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution"
 ---
 
-# 记忆即算力？阿里ReMe让8B模型超越14B，揭秘动态记忆进化论
+## 记忆即算力？阿里ReMe让8B模型超越14B，揭秘动态记忆进化论
 
 <img src="/images/2512.10696v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

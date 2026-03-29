@@ -3,7 +3,7 @@ layout: default
 title: "Mathematical Framing for Different Agent Strategies"
 ---
 
-# 告别炼丹玄学：谷歌用概率统一AI Agent，提出“自由度”新思路
+## 告别炼丹玄学：谷歌用概率统一AI Agent，提出“自由度”新思路
 
 <img src="/images/2512.04469v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

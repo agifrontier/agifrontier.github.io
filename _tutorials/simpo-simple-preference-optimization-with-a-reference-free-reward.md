@@ -3,7 +3,6 @@ layout: default
 title: "SimPO: Simple Preference Optimization with a Reference-Free Reward"
 ---
 
-# SimPO: Simple Preference Optimization with a Reference-Free Reward
 
 - **ArXiv URL**: http://arxiv.org/abs/2405.14734v3
 
@@ -13,10 +12,10 @@ title: "SimPO: Simple Preference Optimization with a Reference-Free Reward"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 SimPO 的简单偏好优化算法，它通过使用一个无需参考模型、与生成过程对齐的长度归一化奖励，在提升模型性能的同时，显著提高了训练的计算和内存效率。
 
-# 关键定义
+## 关键定义
 本文的核心创新在于对奖励函数和优化目标的重新设计，关键定义如下：
 1.  **长度归一化的无参考奖励 (Length-normalized Reference-Free Reward)**：这是 SimPO 的核心。它将隐式奖励函数定义为模型自身生成序列的平均对数概率，公式为 $$$$r_{\text{SimPO}}(x,y)=\frac{\beta}{|y|}\log\pi_{\theta}(y\mid x)$$$$。这个定义有两个关键点：
     *   **无参考 (Reference-Free)**：与 DPO 不同，该奖励的计算仅依赖于当前策略模型 $$$\pi\_{\theta}$$$，无需加载并维护一个额外的参考模型 $$$\pi\_{\text{ref}}$$$，因此更简单、高效。
@@ -24,14 +23,14 @@ title: "SimPO: Simple Preference Optimization with a Reference-Free Reward"
 
 2.  **目标奖励边际 (Target Reward Margin, $\gamma$)**：SimPO 在标准的 Bradley-Terry 偏好模型中引入了一个正的边际项 $$$\gamma$$$。新的偏好概率公式为 $$$$p(y_{w}\succ y_{l}\mid x)=\sigma\left(r(x,y_{w})-r(x,y_{l})-\gamma\right)$$$$。这个边际项的作用是激励模型学习出一个更大的决策边界，使得偏好回复（winning response）$$$y\_w$$$的奖励不仅要高于不偏好回复（losing response）$$$y\_l$$$，而且要高出至少 $$$\gamma$$$，从而增强模型的泛化能力。
 
-# 相关工作
+## 相关工作
 当前，利用人类反馈进行强化学习（Reinforcement Learning from Human Feedback, RLHF）是使大语言模型与人类意图对齐的关键技术。传统的RLHF流程（如PPO）包含训练奖励模型和策略优化两个阶段，过程复杂且优化不稳定。
 
 为了简化这一流程，直接偏好优化（Direct Preference Optimization, DPO）被提出。DPO通过重参数化技巧，将奖励函数用策略模型和参考模型之间的对数概率比来表示，从而可以直接从偏好数据中优化策略模型，无需显式训练奖励模型。DPO因其简单和稳定而得到广泛应用。
 
 然而，DPO存在一个关键问题：其隐式奖励函数 $$$\beta\log\frac{\pi\_{\theta}(y\mid x)}{\pi\_{\text{ref}}(y\mid x)}$$$ 与模型在生成时实际优化的度量（近似为平均对数似然 $$$\frac{1}{ \mid y \mid }\log\pi\_{\theta}(y\mid x)$$$）之间存在**不一致性**。这意味着，即使在训练中满足了DPO的奖励排序 $$$r(x,y\_w) > r(x,y\_l)$$$，也不保证模型在生成时会认为 $$$y\_w$$$ 的似然度高于 $$$y\_l$$$。本文旨在解决这一训练与推理之间的不一致性，并进一步简化优化过程，提出一个更有效且高效的偏好学习算法。
 
-# 本文方法
+## 本文方法
 
 ## DPO的局限性与SimPO的设计动机
 DPO的隐式奖励依赖于策略模型 $$$\pi\_{\theta}$$$ 和参考模型 $$$\pi\_{\text{ref}}$$$ 的概率比值，这带来了两个问题：
@@ -87,7 +86,7 @@ $${% endraw %}
 2.  使用覆盖领域和任务广泛的偏好数据集。
 3.  大语言模型本身具有一定的鲁棒性，能够在学习新知识的同时不遗忘先验知识。
 
-# 实验结论
+## 实验结论
 
 ## 性能对比
 本文在多种模型（Mistral-7B, Llama-3-8B, Gemma-2-9B）和两种训练设置（Base 和 Instruct）下，将 SimPO 与 DPO 及其多种变体（如 IPO, ORPO, CPO 等）进行了广泛比较。

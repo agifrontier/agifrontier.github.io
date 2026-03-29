@@ -3,7 +3,6 @@ layout: default
 title: "Large Language Monkeys: Scaling Inference Compute with Repeated Sampling"
 ---
 
-# Large Language Monkeys: Scaling Inference Compute with Repeated Sampling
 
 - **ArXiv URL**: http://arxiv.org/abs/2407.21787v3
 
@@ -13,16 +12,16 @@ title: "Large Language Monkeys: Scaling Inference Compute with Repeated Sampling
 
 ---
 
-# TL;DR
+## TL;DR
 本文系统地研究了通过重复采样来扩展推理计算（Inference Compute）的方法，发现其能显著提升模型在代码和数学等任务上的覆盖率（即解决问题的能力），其扩展性甚至遵循类似缩放定律的规律，并使得小模型在成本效益更高的情况下超越大模型的单次推理表现。
 
-# 关键定义
+## 关键定义
 *   **重复采样 (Repeated Sampling)**：本文的核心技术，指针对一个问题，通过设置正温度（positive temperature）从一个语言模型中独立、多次地生成候选解决方案。
 *   **覆盖率 (Coverage)**：本文核心度量指标，指在生成的所有样本中，至少有一个样本能正确解决问题的比例。在有完美验证器的理想情况下，覆盖率即为模型的最终性能上限。对于编码任务，这等同于 $$pass@k$$ 指标。
 *   **精度 (Precision)**：与覆盖率相辅相成的概念，指从生成的众多样本中成功识别出正确答案的能力。这取决于验证器（Verifier）的有效性。
 *   **验证器 (Verifier)**：用于判断一个候选方案是否正确的工具或方法。分为两类：一是**自动验证器**，如用于代码的单元测试和用于形式化数学的证明检查器；二是在缺乏自动工具时使用的其他方法，如**多数投票 (majority voting)**和**奖励模型 (reward models)**。
 
-# 相关工作
+## 相关工作
 当前大型语言模型（LLM）能力的提升主要依赖于扩展训练计算资源（更大的模型、更多的数据）。然而，在推理阶段，模型通常被限制只对问题进行一次尝试，这成为了一个性能瓶瓶颈。现有工作虽然在数学、编码等领域展示了重复采样的潜力，但缺乏系统性的研究。
 
 本文旨在系统地解决以下问题：
@@ -30,7 +29,7 @@ title: "Large Language Monkeys: Scaling Inference Compute with Repeated Sampling
 2.  这种方法的有效性是否能跨越不同的任务、模型尺寸和模型家族？
 3.  在没有完美自动验证器的场景下，现有选择方法（如多数投票）的性能表现如何？
 
-# 本文方法
+## 本文方法
 
 本文的核心方法是**重复采样**，其流程非常简洁：
 1.  **生成**：针对一个给定的问题，通过从一个LLM（设置温度 $$T>0$$ 以确保多样性）中独立采样，生成 $$k$$ 个候选解决方案。
@@ -68,7 +67,7 @@ title: "Large Language Monkeys: Scaling Inference Compute with Repeated Sampling
     <img src="/images/2407.21787v3/x6.jpg" alt="模型族内曲线相似性" style="width:90%; max-width:700px; margin:auto; display:block;">
     > 图6：通过水平移动（在对数尺度上）将同一家族不同模型的覆盖率曲线对齐。这种对齐后的曲线相似性表明，在同一模型家族内，覆盖率的扩展遵循相似的形状。
 
-# 实验结论
+## 实验结论
 ### 关键实验结果
 本文的实验有力地验证了重复采样的优势和局限性。
 

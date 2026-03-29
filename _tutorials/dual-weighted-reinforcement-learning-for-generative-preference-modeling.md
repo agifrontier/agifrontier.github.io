@@ -3,7 +3,6 @@ layout: default
 title: "Dual-Weighted Reinforcement Learning for Generative Preference Modeling"
 ---
 
-# Dual-Weighted Reinforcement Learning for Generative Preference Modeling
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.15242v1
 
@@ -13,10 +12,10 @@ title: "Dual-Weighted Reinforcement Learning for Generative Preference Modeling"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为双重加权强化学习（Dual-Weighted Reinforcement Learning, DWRL）的新框架，该框架通过一个保留了偏好建模归纳偏置的双重加权强化学习目标，将思维链（CoT）推理与Bradley-Terry（BT）模型相结合，从而在不依赖可验证奖励的通用任务上有效提升了生成式偏好模型的性能。
 
-# 关键定义
+## 关键定义
 本文的核心是围绕为生成式偏好模型（GPM）设计一个更优的训练框架，提出了以下关键概念：
 
 1.  **生成式偏好模型 (Generative Preference Models, GPMs)**：一种扩展传统标量偏好模型的方法。GPMs 不直接输出偏好分数，而是先生成一段“思考”或“评判”（即思维链），然后再基于这段思考给出最终的偏好判断（如分数或选择）。
@@ -25,14 +24,14 @@ title: "Dual-Weighted Reinforcement Learning for Generative Preference Modeling"
 4.  **实例级错位权重 (Instance-wise Misalignment Weight)**：DWRL中的第一个权重。该权重在实例（即每个偏好对）级别上计算，用于强调那些模型预测与人类偏好不一致的、训练不足的样本对，其值等于模型预测错误偏好的概率。
 5.  **群组级（自归一化）条件偏好得分 (Group-wise (Self-normalized) Conditional Preference Score)**：DWRL中的第二个权重。该权重作为强化学习中的奖励信号，用于鼓励模型生成能够导出正确偏好判断的“思考”。它通过对一组采样思考的条件偏好得分进行自归一化得到。
 
-# 相关工作
+## 相关工作
 当前，对于具有可验证答案的任务（如数学、编程），研究者们通过**从可验证奖励中进行强化学习 (Reinforcement Learning from Verifiable Rewards, RLVR)** 成功地扩展了大型语言模型的思维链（Chain-of-Thought, CoT）训练。然而，将这种方法推广到答案无法自动验证的通用任务（其数据通常是成对的人类偏好）仍然是一个挑战。
 
 这类任务通常采用**Bradley-Terry (BT) 模型**来学习一个偏好模型，该模型为偏好度更高的回答赋予更高的分数。受CoT的启发，近期的工作提出了**生成式偏好模型 (GPMs)**，让模型在打分前先生成一段评判性思考。早期的GPMs依赖于从更强模型蒸馏出的高质量思考数据进行监督训练，适用性有限。后续工作尝试将GPMs视为纯粹的生成任务，并应用RLVR进行优化，但这种方法往往会舍弃BT模型中宝贵的**偏好建模归纳偏置 (preference-modeling inductive bias)**，导致性能甚至不如简单的BT模型。
 
 本文旨在解决的核心问题是：如何在不依赖外部监督思考数据的情况下，设计一个训练框架，能够有效地将CoT推理的优势与偏好建模的内在结构（归纳偏置）相结合，从而在通用偏好数据上训练出更强大的GPM。
 
-# 本文方法
+## 本文方法
 
 本文的核心方法是双重加权强化学习（DWRL），它建立在一种新颖的对话式GPM结构之上，旨在将强化学习的探索能力与传统偏好建模的结构优势结合起来。
 
@@ -93,7 +92,7 @@ $${% endraw %}
 2.  **更新权重**：使用更新后的模型重新计算错位权重和条件偏好得分。
 3.  **优化思考生成**：将更新后的条件偏好得分作为优势函数（advantage），使用类似PPO的裁剪目标函数（Equation 15）来优化思考生成策略，鼓励模型产生能获得高奖励的思考。
 
-# 实验结论
+## 实验结论
 
 本文在三个偏好数据集（HH-RLHF子集、一个内部指令遵循数据集、一个数学推理数据集）和多种模型规模（Llama3和Qwen2.5）上进行了广泛实验。
 

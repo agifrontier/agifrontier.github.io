@@ -3,7 +3,7 @@ layout: default
 title: "PPTArena: A Benchmark for Agentic PowerPoint Editing"
 ---
 
-# PPT炼狱场来了！新Agent PPTPilot精准编辑，性能超越专有模型10%
+## PPT炼狱场来了！新Agent PPTPilot精准编辑，性能超越专有模型10%
 
 <img src="/images/2512.03042v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
 

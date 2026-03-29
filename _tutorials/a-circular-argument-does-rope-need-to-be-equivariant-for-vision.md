@@ -5,7 +5,7 @@ date: 2025-12-11
 toc: true
 ---
 
-# 颠覆RoPE核心信仰：等变性不再神圣？Spherical RoPE性能持平甚至反超
+## 颠覆RoPE核心信仰：等变性不再神圣？Spherical RoPE性能持平甚至反超
 
 大模型时代，**旋转位置编码** (**Rotary Positional Encodings, RoPE**) 无疑是Transformer架构中的明星技术。从LLaMA到DeepSeek，几乎所有顶尖语言模型都依赖它来感知Token的顺序。
 

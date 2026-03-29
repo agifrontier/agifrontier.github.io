@@ -3,7 +3,6 @@ layout: default
 title: "Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond"
 ---
 
-# Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond
 
 - **ArXiv URL**: http://arxiv.org/abs/2304.13712v2
 
@@ -13,10 +12,10 @@ title: "Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond
 
 ---
 
-# TL;DR
+## TL;DR
 本文是一份面向实践者和终端用户的综合性实践指南，围绕模型、数据和下游任务三个维度，深入探讨了如何有效利用大型语言模型（LLMs）解决自然语言处理（NLP）问题，并详细剖析了不同场景下选择LLMs或微调模型的利弊。
 
-# 模型实用指南
+## 模型实用指南
 本节首先对现代语言模型的发展历程进行了概述和观察，然后将其主要分为两大类：BERT风格（编码器-解码器或仅编码器）和GPT风格（仅解码器）。
 
 <img src="/images/2304.13712v2/page_2_Figure_1.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
@@ -49,7 +48,7 @@ e) **编码器-解码器模型仍有潜力**：尽管仅解码器模型因其灵
 ### GPT风格语言模型：仅解码器
 这类模型通常是自回归语言模型（Autoregressive Language Models），其训练方式是根据前面的词序列来预测下一个词。研究发现，大幅扩展这类模型的规模能显著提升其在少样本（few-shot）甚至零样本（zero-shot）场景下的性能。以GPT-3为代表的模型通过提示（prompting）和上下文学习（in-context learning）展现了卓越的少样本/零样本能力。近期的突破是ChatGPT，它在GPT-3的基础上针对对话任务进行了优化，实现了更具交互性、连贯性和上下文感知能力的对话。
 
-# 数据实用指南
+## 数据实用指南
 数据在模型选择和性能中扮演着至关重要的角色，其影响贯穿预训练、微调和推理（inference）的全过程。
 
 > **核心观点 1**
@@ -74,7 +73,7 @@ e) **编码器-解码器模型仍有潜力**：尽管仅解码器模型因其灵
 ### 测试/用户数据
 在实际部署中，测试数据与训练数据之间常存在分布差异，如领域偏移（domain shifts）、分布外变异（out-of-distribution variations）或对抗性样本（adversarial examples）。精调模型由于拟合了特定数据分布，在面对这些挑战时泛化能力较差。而LLMs因其未经过显式的拟合过程，表现出更强的鲁棒性。特别是经过人类反馈强化学习（Reinforcement Learning from Human Feedback, RLHF）训练的LLMs（如InstructGPT和ChatGPT），其泛化能力得到显著增强，在多数对抗性和OOD任务上表现优越。
 
-# NLP 任务实用指南
+## NLP 任务实用指南
 本节详细探讨LLMs在各类NLP下游任务中的适用与不适用场景。下图提供了一个决策流程，可作为快速选择模型的参考。
 
 <img src="/images/2304.13712v2/page_6_Figure_1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -190,5 +189,5 @@ e) **编码器-解码器模型仍有潜力**：尽管仅解码器模型因其灵
 
 LLMs因其在多样化数据上的训练，具备更强的开放域响应能力和对模糊、噪声输入的处理能力，因此比专门针对特定任务的微调模型更适合应对这些挑战。指令微调（instruction tuning）和人类对齐微调（human alignment tuning）等技术进一步增强了LLMs理解和遵循用户指令的能力。评估模型在真实世界中的有效性非常困难，主要依赖昂贵的人工评估，这也是一个重要的研究方向。
 
-# 其他考量因素
+## 其他考量因素
 尽管LLMs在各种下游任务中表现强大，但在实际应用中还需考虑其他因素，如效率、成本和延迟等。

@@ -3,7 +3,6 @@ layout: default
 title: "A Survey on LLM Mid-training"
 ---
 
-# A Survey on LLM Mid-training
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.23081v1
 
@@ -13,7 +12,7 @@ title: "A Survey on LLM Mid-training"
 
 ---
 
-# LLM 中间训练综述
+## LLM 中间训练综述
 
 ## 概览
 

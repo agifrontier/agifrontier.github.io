@@ -3,7 +3,6 @@ layout: default
 title: "CogGuide: Human-Like Guidance for Zero-Shot Omni-Modal Reasoning"
 ---
 
-# CogGuide: Human-Like Guidance for Zero-Shot Omni-Modal Reasoning
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.06641v1
 
@@ -13,10 +12,10 @@ title: "CogGuide: Human-Like Guidance for Zero-Shot Omni-Modal Reasoning"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 CogGuide 的零样本全模态推理组件，它通过模拟人类“理解-规划-选择”的认知过程，生成并筛选“意图简图”(intent sketch)策略来指导多模态大模型，从而在无需微调的情况下提升复杂推理任务的性能并抑制“捷径”推理。
 
-# 关键定义
+## 关键定义
 *   **意图简图 (Intent Sketch)**：本文的核心概念，指一种为解决复杂问题而生成的高度浓缩、非详尽的推理策略或思路草稿。它不包含最终答案，而是提供一个高层指导，帮助模型规划如何组织多模态证据和推理步骤。
 *   **“理解–规划–选择”认知过程 (understand–plan–select cognitive process)**：本文方法模拟的人类解决问题的思维流程。这一过程被显式地建模为三个独立的模块：意图感知器（理解）、策略生成器（规划）、策略选择器（选择）。
 *   **三模块流水线 (Three-module pipeline)**：CogGuide 组件的具体实现架构，由三个即插即用的模块串联而成：
@@ -24,14 +23,14 @@ title: "CogGuide: Human-Like Guidance for Zero-Shot Omni-Modal Reasoning"
     2.  **策略生成器 (Strategy Generator)**：基于意图表示和问题，生成多个不同的候选“意图简图”策略。
     3.  **策略选择器 (Strategy Selector)**：评估所有候选策略，并选出最适合当前问题的最佳策略，用于指导最终的推理。
 
-# 相关工作
+## 相关工作
 当前，多模态大语言模型（Multimodal Large Language Models, MLLMs）正朝着全模态理解的方向发展，但在复杂推理任务中仍存在显著瓶颈。现有模型即便参数量巨大，也常暴露出“捷径”推理（shortcut reasoning）和对全局上下文理解不足的问题，倾向于过度依赖局部或单一模态的线索，导致输出偏离用户真实意图。
 
 研究者们尝试通过引入显式意图标签、指令微调、构建意图驱动的检索-推理流水线等方式来解决这些问题。然而，这些方法通常依赖于密集的任务数据标注和模型训练，难以实现零样本泛化；或者将意图视为静态标签，无法动态生成、评估和选择最佳策略，因此不能稳定地抑制模型的“捷径”推理和局部偏差。
 
 本文旨在解决多模态大模型在复杂推理场景下的“捷径”推理和上下文理解不充分的问题，提出一种无需模型微调、即插即用的零样本推理增强组件，以更可靠、更符合人类认知的方式引导模型进行推理。
 
-# 本文方法
+## 本文方法
 本文提出一个模拟人类认知过程的“意图简图”推理组件，该组件由意图感知器、策略生成器和策略选择器三个串联的模块构成。其核心思想是通过显式地规划和筛选推理策略，来引导模型进行更深层次、更准确的推理，从而避免“捷径”学习。整个过程无需微调模型参数，完全通过上下文工程（in-context engineering）实现。
 
 <img src="/images/2509.06641v1/fig2.jpg" alt="[Uncaptioned image]" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -72,7 +71,7 @@ $${% endraw %}
 ### 统一的信息论框架
 整个三步流程可以被看作一个系统性的不确定性消减过程。每一步都通过引入新的条件变量（意图 $Z\_{IP}$、最优策略 $S^\*$）来逐步降低最终答案的条件熵 $H(Y \mid X)$。根据Fano不等式，更低的条件熵意味着更低的错误率下界，从而从理论上解释了该方法为何能提升推理准确率。
 
-# 实验结论
+## 实验结论
 本文在三个人类意图理解和音视频协同分析的多模态推理基准（IntentBench, WorldSense, Daily-Omni）上进行了零样本实验，验证了所提方法的有效性和通用性。
 
 ### 实验设置

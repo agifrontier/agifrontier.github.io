@@ -3,7 +3,7 @@ layout: default
 title: "Supervised learning pays attention"
 ---
 
-# 性能媲美XGBoost，解释性堪比Lasso：斯坦福新作“注意力Lasso”详解
+## 性能媲美XGBoost，解释性堪比Lasso：斯坦福新作“注意力Lasso”详解
 
 <img src="/images/2512.09912v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

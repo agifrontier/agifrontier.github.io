@@ -3,7 +3,6 @@ layout: default
 title: "OnePiece: Bringing Context Engineering and Reasoning to Industrial Cascade Ranking System"
 ---
 
-# OnePiece: Bringing Context Engineering and Reasoning to Industrial Cascade Ranking System
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.18091v1
 
@@ -13,17 +12,17 @@ title: "OnePiece: Bringing Context Engineering and Reasoning to Industrial Casca
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了 OnePiece，一个统一的框架，它将大型语言模型（LLM）风格的上下文工程和多步推理机制成功地集成到工业级级联排序系统的召回和排序阶段，并取得了显著的离线和在线效果提升。
 
-# 关键定义
+## 关键定义
 *   **结构化上下文工程 (Structured Context Engineering)**: 一种输入构建方法，它不仅仅使用原始的用户交互序列，还通过融合**偏好锚点**和**情景描述符**来丰富上下文，最终将这些异构信号统一成一个结构化的 token 输入序列。
 *   **块级潜在推理 (Block-wise Latent Reasoning)**: 一种多步推理机制，模型通过多个推理块（block）逐步优化其内部的隐状态表示。与传递单个隐状态相比，该方法通过调整块的大小来扩展推理带宽，从而在信息压缩与保留之间取得更好的平衡。
 *   **渐进式多任务训练 (Progressive Multi-task Training)**: 一种监督学习策略，它利用用户行为反馈链（如曝光 → 点击 → 加购 → 下单）作为分阶段的监督信号。每个推理步骤（块）都由一个特定复杂度的任务来指导，从而为多步推理过程提供了显式的过程化监督。
 *   **偏好锚点 (Preference Anchors)**: 根据领域知识构建的辅助物品序列（例如，在当前查询下点击次数最多的物品），用作高质量的参考点，为模型提供超越原始交互历史的、与特定情景相关的用户意图信号。
 *   **分组集合式排序 (Grouped Setwise Ranking)**: 在排序阶段采用的一种策略，将候选集随机划分为小分组（例如，每组12个），并在组内进行集合式（setwise）打分。该策略在计算效率和模型表达能力（捕捉候选物之间的交叉互动）之间取得了很好的平衡。
 
-# 相关工作
+## 相关工作
 当前的工业级排序系统（如搜索和推荐系统）大多致力于将 Transformer 架构移植到现有模型中。然而，尽管这些努力带来了一些效果，但相比于已经很强大的深度学习推荐模型 (Deep Learning Recommendation Models, DLRMs)，其提升往往是增量式的，因为注意力等核心机制早已被深度集成。
 
 LLM 的突破不仅仅来自其架构，更得益于两个关键机制：一是**上下文工程 (context engineering)**，通过丰富原始查询来激发模型能力；二是**多步推理 (multi-step reasoning)**，通过中间步骤迭代式地优化预测。然而，这两个机制在排序系统领域尚未得到充分探索。直接移植它们面临两大挑战：
@@ -34,7 +33,7 @@ LLM 的突破不仅仅来自其架构，更得益于两个关键机制：一是*
 
 <img src="/images/2509.18091v1/x1.jpg" alt="OnePiece 级联排序系统概览" style="width:90%; max-width:700px; margin:auto; display:block;">
 
-# 本文方法
+## 本文方法
 
 本文提出了 OnePiece，一个统一的框架，将 LLM 风格的上下文工程和推理机制引入工业级级联排序系统。
 
@@ -116,7 +115,7 @@ OnePiece 框架的核心由三部分构成：
     2.  **集合式对比学习损失 (Setwise Contrastive Learning, SCL)**: 在候选组内，让正样本的得分高于所有其他负样本。
     总损失为：$$$\mathcal{L}^{\mathrm{ranking}}=\sum\_{k=1}^{K}\left(\mathcal{L}^{\mathrm{BCE}}\_{k}+\mathcal{L}^{\mathrm{SCL}}\_{k}\right)$$$
 
-# 实验结论
+## 实验结论
 本文基于 Shopee 平台 30 天的真实日志数据进行了广泛的离线实验和在线 A/B 测试。
 
 ### 整体性能

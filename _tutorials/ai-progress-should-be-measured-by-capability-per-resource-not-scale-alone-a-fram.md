@@ -3,7 +3,6 @@ layout: default
 title: "AI Progress Should Be Measured by Capability-Per-Resource, Not Scale Alone: A Framework for Gradient-Guided Resource Allocation in LLMs"
 ---
 
-# AI Progress Should Be Measured by Capability-Per-Resource, Not Scale Alone: A Framework for Gradient-Guided Resource Allocation in LLMs
 
 - **ArXiv URL**: http://arxiv.org/abs/2511.01077v1
 
@@ -13,23 +12,23 @@ title: "AI Progress Should Be Measured by Capability-Per-Resource, Not Scale Alo
 
 ---
 
-# TL;DR
+## TL;DR
 本文主张用“单位资源能力”而非单纯的规模来衡量AI进展，并提出了一个基于梯度指导资源分配的理论框架，通过识别和优先利用高影响力的参数和数据，来显著提升大语言模型（LLM）生命周期中的效率。
 
-# 关键定义
+## 关键定义
 *   **单位资源能力 (Capability-Per-Resource)**：本文提出的核心评估指标，衡量每单位资源（如GPU小时、能耗）投入所带来的性能提升，即 $\Delta\Psi/\Delta\Gamma$。该指标旨在将AI发展的目标从追求绝对性能转向追求资源效率。
 *   **梯度蓝图 (Gradient Blueprints)**：与模型权重一同发布的元数据，它记录了模型在代表性任务上各个子模块（submodule）的梯度范数等统计信息。其目的是为下游用户揭示哪些模型组件对特定任务最“有影响力”，从而指导他们进行高效的参数选择和微调。
 *   **规模原教旨主义 (Scaling Fundamentalism)**：本文用来描述当前AI研究领域中一种主流趋势，即认为仅通过不断增大模型规模和计算投入就能带来能力提升，而往往忽略了资源效率和可持续性。
 *   **部分更新优势 (Partial-Update Advantage)**：本文提出的一个理论概念，指在梯度呈重尾分布（heavy-tailed distribution）的现实情况下，仅更新一小部分高影响力的参数，在“单位资源能力”这一指标上，其效率严格优于对所有参数进行完整微调。
 
-# 相关工作
+## 相关工作
 当前AI领域，尤其是大语言模型的发展，被“规模原教旨主义”所主导。研究遵循“Chinchilla”等伸缩法則 (scaling laws)，追求更大的模型和更多的数据，这带来了巨大的成功，但也导致了高昂的环境成本和资源鸿沟，形成了少数资源雄厚的机构开发基础模型，而广大研究社区在资源受限下进行适配的“计算寡头”局面。
 
 为应对资源限制，研究界开发了多种效率提升技术。**参数高效微调 (Parameter-Efficient Fine-Tuning, PEFT)** 方法如LoRA、QLoRA和Adapters通过只更新一小部分参数来降低内存和计算开销。**模型压缩**技术如剪枝 (pruning) 和注意力头移除在训练后削减模型冗余部分。**数据效率**方面的研究则包括重要性采样和课程学习等。
 
 **本文旨在解决的 конкретно问题是**：尽管存在上述各种效率提升方法，但它们大多被视为资源不足时的“权宜之计”或“工程技巧”，缺乏一个统一的理论框架来解释其有效性。此外，参数效率和数据效率的研究常常彼此独立，并且缺乏一种将基础模型开发者（拥有资源）的洞察系统性地传递给下游模型适配者（资源受限）的机制。本文的目标就是建立这样一个理论框架，将选择性更新从“技巧”提升为“原则”，并提出“梯度蓝图”作为实现这一目标的实用工具。
 
-# 本文方法
+## 本文方法
 
 本文提出了一个以资源意识为核心的LLM开发和评估框架，其核心思想是最大化“单位资源能力” ($\Delta\Psi/\Delta\Gamma$)。该框架分为两个层面：一个适用于基础模型开发者和下游适配者的两阶段范式，以及支撑该范式的理论基础。
 
@@ -78,7 +77,7 @@ $${% endraw %}
 
 本文更进一步提出了**交叉影响力 (cross-influence)** 的概念，定义为张量 $T\_{i,j}=\left \mid \frac{\partial L(z\_j;\theta)}{\partial\theta\_i}\right \mid $，它描述了数据样本 $z\_j$ 对参数 $\theta\_i$ 的具体影响。当同时选择高影响力的参数和高影响力的数据进行更新时，资源效率的提升是**乘法级**的。例如，如果保留20%的参数能达到80%的性能，保留30%的数据能达到90%的性能，两者结合可能用 $20\% \times 30\% = 6\%$ 的资源达到 $80\% \times 90\% = 72\%$ 的性能，实现超过10倍的单位资源效率提升。
 
-# 实验结论
+## 实验结论
 本文是一篇立场与理论框架论文，其主要贡献在于提出了一个全新的评估与开发范式，并为其提供了数学基础。因此，文章的结论主要源于理论分析，而非大规模的实证实验。文章末尾提到的具体案例研究（如生物医学适配）未能完整展示。
 
 本文的核心结论如下：

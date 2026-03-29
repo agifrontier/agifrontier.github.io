@@ -3,7 +3,6 @@ layout: default
 title: "Beyond Turn Limits: Training Deep Search Agents with Dynamic Context Window"
 ---
 
-# Beyond Turn Limits: Training Deep Search Agents with Dynamic Context Window
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.08276v1
 
@@ -13,15 +12,15 @@ title: "Beyond Turn Limits: Training Deep Search Agents with Dynamic Context Win
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了DeepMiner框架，通过构造高难度训练任务和设计动态上下文窗口策略，显著提升了大型语言模型在多轮长程交互中作为深度搜索智能体的推理与执行能力。
 
-# 关键定义
+## 关键定义
 *   **DeepMiner**: 本文提出的一个新颖训练框架，旨在通过（1）生成高难度的训练任务和（2）引入动态上下文窗口管理机制，来激发和训练多轮长程交互智能体的深度推理能力。
 *   **逆向构建方法 (Reverse Construction Method)**: 本文设计的一种用于生成复杂但可验证的问答（QA）对的方法。该方法从真实的网页信息源出发，通过实体驱动的信息收集、跨多源信息的问题生成以及严格的多阶段过滤，确保训练数据的挑战性和可靠性。
 *   **动态上下文管理 / 滑动窗口策略 (Dynamic Context Management / Sliding Window Strategy)**: 一种为解决长程交互中上下文长度限制而设计的策略。它通过一个滑动窗口，选择性地将旧的工具调用（tool call）输出替换为占位符，同时完整保留智能体自身的思考链（assistant reasoning traces），从而在有限的上下文中支持更长的交互轮次。
 
-# 相关工作
+## 相关工作
 当前，通过可验证奖励的强化学习（Reinforcement Learning with Verifiable Rewards, RLVR）在单轮推理任务（如数学、编程）中已取得显著成功，使模型展现出自我检验、回溯等复杂认知行为。然而，将这种能力扩展到需要几十甚至上百轮交互的多轮长程任务（如深度研究）时，现有开源方法遇到了两大瓶颈：
 
 1.  **训练数据难度不足**：现有的问答数据集（如HotpotQA）大多基于结构化的维基百科，任务模式相对简单，模型可以通过浅层信息检索轻易完成，无法激发其进行深度探索、验证和策略规划等高级认知能力。
@@ -29,7 +28,7 @@ title: "Beyond Turn Limits: Training Deep Search Agents with Dynamic Context Win
 
 本文旨在解决上述两个问题，即如何通过构建真正具有挑战性的训练数据和设计高效的上下文管理策略，来训练能够在长程交互中执行深度推理的搜索智能体。
 
-# 本文方法
+## 本文方法
 本文提出了DeepMiner框架，其核心由两部分构成：复杂问题的逆向构建方法和带动态上下文窗口的强化学习策略。
 
 ### 复杂问题构建
@@ -76,7 +75,7 @@ $${% endraw %}
 
     本文的**核心改动**在于优势传播：计算出的轨迹级别优势 $\hat{A}\_i$ 会被传播到由该轨迹分解出的所有训练序列上。这保证了即使在动态变化的上下文序列中进行训练，策略学习的信号仍然是一致和有效的。
 
-# 实验结论
+## 实验结论
 
 ### 主要结果
 本文基于Qwen3-32B模型训练了DeepMiner-32B，并在多个深度研究基准上进行了评测。

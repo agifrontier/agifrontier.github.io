@@ -3,7 +3,7 @@ layout: default
 title: "HunyuanVideo 1.5 Technical Report"
 ---
 
-# 83亿参数新SOTA！混元Video 1.5开源，推理加速87%，RTX 4090轻松跑
+## 83亿参数新SOTA！混元Video 1.5开源，推理加速87%，RTX 4090轻松跑
 
 <img src="/images/2511.18870v2/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

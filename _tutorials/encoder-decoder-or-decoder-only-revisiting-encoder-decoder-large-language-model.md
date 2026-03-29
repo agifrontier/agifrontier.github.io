@@ -3,7 +3,6 @@ layout: default
 title: "Encoder-Decoder or Decoder-Only? Revisiting Encoder-Decoder Large Language Model"
 ---
 
-# Encoder-Decoder or Decoder-Only? Revisiting Encoder-Decoder Large Language Model
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.26622v1
 
@@ -13,24 +12,24 @@ title: "Encoder-Decoder or Decoder-Only? Revisiting Encoder-Decoder Large Langua
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过为编码器-解码器架构（RedLLM）集成现代LLM技术（如旋转位置编码），并在约1.5亿至80亿参数规模上与主流的解码器-仅架构（DecLLM）进行系统性对比，发现RedLLM在指令微调后，能以显著更高的推理效率达到甚至超越DecLLM的性能，证明了该被忽视架构的巨大潜力。
 
-# 关键定义
+## 关键定义
 本文为进行严谨的比较，定义了两种模型架构：
 
 *   **RedLLM (Revisited Encoder-Decoder LLM)**: 指本文中经过现代化改造的**编码器-解码器架构**大语言模型。它吸收了当前主流的解码器-仅模型的先进技术，例如使用SwiGLU激活函数、RMSNorm、旋转位置编码 (Rotary Positional Embedding, RoPE) 等。其核心特点是在编码器自注意力、解码器自注意力和交叉注意力中均使用RoPE，并采用连续位置编码，同时为了训练稳定，在注意力输出上额外增加了一个归一化层。预训练目标为前缀语言模型 (Prefix LM)。
 
 *   **DecLLM (Decoder-Only LLM)**: 指本文中作为基准的**解码器-仅架构**大语言模型，代表了当前LLM的主流范式（如LLaMA、GPT系列）。它采用标准配置，包括SwiGLU激活函数、RMSNorm、RoPE，并使用因果语言模型 (Causal LM) 作为预训练目标。
 
-# 相关工作
+## 相关工作
 当前，大语言模型领域的研究范式已从早期的编码器-解码器 (Encoder-Decoder) 架构（如T5、BART）显著转向了解码器-仅 (Decoder-Only) 架构（如GPT系列、LLaMA）。然而，这一快速的转变主要源于GPT系列模型的巨大成功，而非基于对两种架构在同等现代技术和大规模数据下严格的比较分析。
 
 以往一些研究虽然表明编码器-解码器模型具有很强的潜力，但它们的比较通常局限于特定规模，缺乏对扩展性 (Scaling Property) 的系统性考察——而这在现代LLM中是至关重要的因素。因此，当前研究存在一个关键空白：在LLM时代，编码器-解码器架构的真实潜力和扩展能力是否被低估了？
 
 本文旨在填补这一空白，通过系统性的实验，从扩展性的视角重新评估编码器-解码器架构，并回答它与解码器-仅架构相比的优劣势。
 
-# 本文方法
+## 本文方法
 本文的核心方法论是构建一个公平且现代化的比较框架，通过精心设计RedLLM和DecLLM，并在不同模型规模下进行系统的预训练和微调实验，以分析它们的扩展性和性能权衡。
 
 <img src="/images/2510.26622v1/encdec_vis.jpg" alt="RedLLM 架构图" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -105,7 +104,7 @@ title: "Encoder-Decoder or Decoder-Only? Revisiting Encoder-Decoder Large Langua
 | Z-Loss | 0.0001 | N/A |
 | 精度 | bfloat16 | 同左 |
 
-# 实验结论
+## 实验结论
 
 ### 预训练发现
 *   **相似的扩展率，不同的效率**: RedLLM和DecLLM在困惑度 (Perplexity, PPL) 随计算量（FLOPs）和模型参数量（N）的增加而下降时，表现出非常相似的扩展指数。DecLLM的参数效率更高（同参数下PPL更低），但RedLLM的计算效率更高（达到相似PPL所需的训练FLOPs更少）。当以训练计算量为基准时，两者的扩展曲线几乎重合。

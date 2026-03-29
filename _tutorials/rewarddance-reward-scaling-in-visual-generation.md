@@ -3,7 +3,6 @@ layout: default
 title: "RewardDance: Reward Scaling in Visual Generation"
 ---
 
-# RewardDance: Reward Scaling in Visual Generation
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.08826v1
 
@@ -13,15 +12,15 @@ title: "RewardDance: Reward Scaling in Visual Generation"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了RewardDance，一个基于生成式范式的可扩展视觉奖励模型框架，它通过将奖励预测重构为“是/否”Token预测任务，实现了对模型尺寸和上下文信息的有效扩展，从而显著提升了视觉生成模型的质量和对齐效果。
 
-# 关键定义
+## 关键定义
 *   **生成式奖励范式 (Generative Reward Paradigm)**：一种新颖的奖励建模方法，它将奖励评分任务从传统的回归预测（输出一个分数）转变为一个生成任务。在该范式下，视觉语言模型 (Vision-Language Model, VLM) 被训练来预测在比较两个样本时，输出“是”（表示第一个更优）或“否”的Token，奖励值即为“是”Token的概率。
 *   **上下文扩展 (Context Scaling)**：一种增强奖励模型输入信息丰富度的方法。它不仅使用传统的图像-文本对，还额外融入了任务感知指令 (task-aware instructions)、参考样本 (reference examples) 以及链式思维 (Chain-of-Thought, CoT) 推理过程，使奖励模型的判断更加准确和鲁棒。
 *   **模型扩展 (Model Scaling)**：一种通过系统性地增加奖励模型参数量来提升其性能的策略。本文中，作者将奖励模型的规模从10亿 (1B) 参数扩展到260亿 (26B) 参数，并验证了更大的模型能带来更优的生成效果。
 
-# 相关工作
+## 相关工作
 当前的视觉生成领域由扩散模型主导，其性能通过奖励模型 (Reward Model, RM) 和强化学习等范式得到增强。然而，现有奖励模型的设计存在明显瓶瓶颈。
 
 早期的奖励模型基于CLIP架构，其可扩展性差且泛化能力有限。后续基于VLM的模型虽然探索了新范式，但进展分散：一些工作实现了大规模模型，却局限于易受“奖励黑客”（Reward Hacking）攻击的回归式范式；另一些工作采用了更强大的生成式范式，但未能有效进行模型扩展。这种回归式范式与VLM的自回归、下一Token预测的内在机制存在根本性的“范式不匹配” (paradigm mismatch)，限制了VLM预训练知识的充分利用。
@@ -30,7 +29,7 @@ title: "RewardDance: Reward Scaling in Visual Generation"
 
 <img src="/images/2509.08826v1/x2.jpg" alt="插图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
-# 本文方法
+## 本文方法
 本文提出了RewardDance，一个专为可扩展视觉奖励建模设计的框架。它通过引入新颖的生成式奖励范式，解决了传统回归式范式的局限性，并系统地从上下文和模型尺寸两个维度进行扩展。
 
 <img src="/images/2509.08826v1/x3.jpg" alt="插图" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -73,7 +72,7 @@ RewardDance通过融入三种关键信息来扩展奖励模型的上下文：
 1.  **奖励微调 (Reward Finetuning)**：采用ReFL算法进行强化学习微调。由于RewardDance是比较模型，它首先通过Best-of-N (BoN) 采样策略从N个候选中选出最优质的图像作为后续微调的参考基准。
 2.  **推理时扩展 (Inference-Time Scaling)**：采用“路径搜索” (Search over Paths) 策略在推理时优化生成。该策略在生成过程中动态剪枝，选择最有前景的生成轨迹。为了效率，此阶段使用了一个轻量级的、无需参考图像的“逐点” (pointwise) 生成式奖励模型变体作为验证器。
 
-# 实验结论
+## 实验结论
 本文通过在文生图、文生视频和图生视频等多个任务上的大量实验，验证了RewardDance框架的有效性。
 
 ### 奖励模型扩展的效果

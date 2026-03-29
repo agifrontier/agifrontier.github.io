@@ -3,7 +3,6 @@ layout: default
 title: "Putting on the Thinking Hats: A Survey on Chain of Thought Fine-tuning from the Perspective of Human Reasoning Mechanism"
 ---
 
-# Putting on the Thinking Hats: A Survey on Chain of Thought Fine-tuning from the Perspective of Human Reasoning Mechanism
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.13170v1
 
@@ -13,10 +12,10 @@ title: "Putting on the Thinking Hats: A Survey on Chain of Thought Fine-tuning f
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出一个新颖的视角，即从人类的“六顶思考帽”思维模型出发，对思维链（Chain of Thought, CoT）微调技术进行系统性的梳理、分类和展望，为理解和发展更类人的大语言模型推理能力提供了全新的框架。
 
-# 关键定义
+## 关键定义
 本文的核心在于创造性地运用了“六顶思考帽”模型来构建其分类体系，而非提出全新的技术术语。文中的关键概念均建立在对现有术语的重新组织和解读之上：
 
 1.  **思维链 (Chain of Thought, CoT)**：一种促使大语言模型通过生成一系列中间推理步骤来解决复杂问题的方法。它模仿了人类解决问题时逐步思考的过程，从而提升了模型在算术、常识和符号推理等任务上的表现。
@@ -33,7 +32,7 @@ title: "Putting on the Thinking Hats: A Survey on Chain of Thought Fine-tuning f
 
     本文以此框架来对现有的CoT微调方法进行归类，分析它们分别模拟了哪种人类思维模式。
 
-# 背景
+## 背景
 大语言模型（LLMs）在自然语言处理任务中取得了巨大成功，但其推理能力，特别是面对需要多步逻辑的问题时，仍是一个挑战。思维链（CoT）提示（Prompting）作为一种简单有效的方法，显著提升了LLMs的推理表现。然而，对于大多数开源或较小的模型而言，直接进行CoT提示的效果并不理想。
 
 为了解决这个问题，研究界转向了**CoT微调**，即通过监督学习，将预先存在的、高质量的思维链数据“教”给模型。这种方法使得较小的模型也能获得强大的推理能力，降低了高性能推理模型的部署门槛。
@@ -42,7 +41,7 @@ title: "Putting on the Thinking Hats: A Survey on Chain of Thought Fine-tuning f
 
 **本文旨在解决的核心问题是**：如何从一个更根本的、与人类认知机制对齐的视角来理解和组织各种CoT微调方法？作者认为，通过引入“六顶思考帽”模型，可以为现有工作提供一个清晰的分类体系，并指明未来的发展方向。
 
-# CoT微调的分类体系：戴上思考帽
+## CoT微调的分类体系：戴上思考帽
 本文的核心贡献在于提出了一个以“六顶思考帽”为核心的CoT微调方法分类体系。这个框架将不同的研究工作映射到特定的人类思维模式上，揭示了它们在模拟人类推理方面的侧重点。
 
 ![](images/taxonomy_overview.png)
@@ -94,7 +93,7 @@ title: "Putting on the Thinking Hats: A Survey on Chain of Thought Fine-tuning f
 | **绿帽** | 创造性、发散思维 | 探索新解法、强化学习优化路径 | 发现超越训练数据的更优策略 |
 | **红帽** | 直觉、情感判断 | (未来方向) 启发式剪枝、快速判断 | 实现更高效、更类人的直觉式推理 |
 
-# 挑战与未来方向
+## 挑战与未来方向
 基于上述分类框架，本文识别出现有CoT微调研究面临的主要挑战，并指出了未来值得探索的方向。
 
 ### 主要挑战
@@ -109,7 +108,7 @@ title: "Putting on the Thinking Hats: A Survey on Chain of Thought Fine-tuning f
 3.  **无监督或弱监督的CoT能力获取**：为了摆脱对昂贵标注数据的依赖，研究如何从无标签文本中自动学习推理链，或利用更弱的监督信号（如仅有最终答案）进行微调，将是至关重要的方向。
 4.  **发展更先进的推理评估体系**：需要开发能够细粒度评估推理链每一步的逻辑性、事实性和一致性的自动化工具和基准，以更好地指导模型训练。
 
-# 总结
+## 总结
 本文创新地提出了一种以人类“六顶思考帽”思维模型为理论基础的CoT微调技术分类框架。该框架不仅清晰地梳理了现有工作，将它们分别归类为模拟元认知（蓝帽）、事实推理（白帽）、多路径探索（黄帽）、批判性修正（黑帽）和创造性发现（绿帽）的尝试，而且深刻地揭示了当前研究在模拟人类全面智能方面的现状和缺失（如直觉推理的红帽）。
 
 通过这一独特的视角，本文为CoT微调领域提供了一个超越传统技术分类的、更具认知科学意义的路线图，并明确指出了构建集成多种思维模式的“全脑”推理智能体等前沿研究方向。这对于推动大语言模型从单纯的“计算器”向真正的“思考者”演进具有重要的启发意义。

@@ -3,7 +3,6 @@ layout: default
 title: "Autonomous Agents for Scientific Discovery: Orchestrating Scientists, Language, Code, and Physics"
 ---
 
-# Autonomous Agents for Scientific Discovery: Orchestrating Scientists, Language, Code, and Physics
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.09901v1
 
@@ -13,10 +12,10 @@ title: "Autonomous Agents for Scientific Discovery: Orchestrating Scientists, La
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出一个信息论框架来分析和构建用于科学发现的自主智能体(Autonomous Agents)，通过对信息熵、可验证性和耗散的分析，建立了一套信息流转的分类体系，并在此基础上提出了一个衡量智能体自主能力的五级模型。
 
-# 引言
+## 引言
 科学发现正从传统的人类驱动模式，转向由大型语言模型（LLMs）驱动的自主系统（即智能体）加速的范式。尽管现有计算方法在特定领域取得了成功，但它们通常缺乏适应性和通用性，难以应对科学探索的广度和灵活性需求。LLMs的出现，以其强大的推理、规划和多模态处理能力，为构建统一、灵活的科学工作流提供了可能。
 
 与现有的综述不同，本文旨在系统性地剖析LLM-based智能体在科学发现全周期（假设发现、实验设计与执行、结果分析与提炼）中的作用。本文的核心贡献在于：
@@ -24,7 +23,7 @@ title: "Autonomous Agents for Scientific Discovery: Orchestrating Scientists, La
 2.  提出一个信息转化的分类体系（Taxonomy），以及一个评估科学智能体自主能力的五级模型。
 3.  识别现有方法的成就与局限，并展望未来方向。
 
-# 面向科学发现的自主智能体概述
+## 面向科学发现的自主智能体概述
 
 ## 科学发现概述
 科学发现是一个系统性地追求新知识或验证假设的过程。本文将其抽象为三个核心阶段：

@@ -3,7 +3,7 @@ layout: default
 title: "DataSage: Multi-agent Collaboration for Insight Discovery with External Knowledge Retrieval, Multi-role Debating, and Multi-path Reasoning"
 ---
 
-# AI分析师天团来了！字节DataSage引入辩论机制，洞察力飙升13.9%
+## AI分析师天团来了！字节DataSage引入辩论机制，洞察力飙升13.9%
 
 <img src="/images/2511.14299v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

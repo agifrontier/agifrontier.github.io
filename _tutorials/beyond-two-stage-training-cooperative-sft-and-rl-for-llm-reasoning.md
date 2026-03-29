@@ -3,7 +3,6 @@ layout: default
 title: "Beyond Two-Stage Training: Cooperative SFT and RL for LLM Reasoning"
 ---
 
-# Beyond Two-Stage Training: Cooperative SFT and RL for LLM Reasoning
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.06948v1
 
@@ -13,16 +12,16 @@ title: "Beyond Two-Stage Training: Cooperative SFT and RL for LLM Reasoning"
 
 ---
 
-# TL;DR
+## TL;DR
 *   本文提出了一种名为 BRIDGE 的新型训练框架，它通过双层优化 (bilevel optimization) 将监督微调 (SFT) 和强化学习 (RL) 紧密结合，从而超越传统的两阶段训练范式，更高效、更有效地提升大语言模型的推理能力。
 
-# 关键定义
+## 关键定义
 本文的核心是提出了一种新的训练框架，其关键概念根植于双层优化理论：
 *   **双层优化框架 (Bilevel Optimization Framework)**：本文将SFT和RL的结合问题建模为一个领导者-跟随者博弈。SFT作为上层问题（领导者），RL作为下层问题（跟随者）。上层的SFT目标以最优的下层RL策略为条件，从而使SFT能够“元学习”如何指导RL的优化过程。
 *   **增强模型架构 (Augmented Model Architecture)**：为了实现双层优化，模型参数被分解为两个部分：基础模型参数 $$$\theta$$$ 和低秩适应 (Low-Rank Adaptation, LoRA) 参数 $$$w$$$。下层RL优化基础参数 $$$\theta$$$，而上层SFT则优化LoRA参数 $$$w$$$。
 *   **协作增益 (Cooperative Gain)**：这是上层优化目标的核心部分，定义为联合SFT-RL训练相对于单独RL训练的性能优势。通过在上层优化中显式地最大化这一增益，BRIDGE确保了SFT的指导对RL总是有益的，从而保证了协作的有效性。
 
-# 相关工作
+## 相关工作
 当前，提升大语言模型推理能力的主流方法包括监督微调 (Supervised Fine-Tuning, SFT) 和基于规则的强化学习 (Reinforcement Learning, RL)。SFT通过模仿专家数据快速学习推理模式，但泛化能力较差；RL通过试错探索获得更高性能，但训练效率低下。
 
 实践中，最常见的做法是“冷启动” (Cold-Start) 的两阶段训练：先用SFT进行预热，再用RL进行微调。这种方法的关键瓶颈在于**阶段解耦**：
@@ -31,7 +30,7 @@ title: "Beyond Two-Stage Training: Cooperative SFT and RL for LLM Reasoning"
 
 本文旨在解决上述问题，设计一个统一的训练框架，让SFT和RL能够真正地协同作用，实现$$1+1>2$$的效果，并保证其性能优于单独使用RL。
 
-# 本文方法
+## 本文方法
 
 本文提出了BRIDGE，一个基于双层优化的协作式元学习框架，以实现SFT和RL的深度融合。
 
@@ -88,7 +87,7 @@ $${% endraw %}
 
 <img src="/images/2509.06948v1/comparison_methods.jpg" alt="训练方法对比" style="width:85%; max-width:450px; margin:auto; display:block;">
 
-# 实验结论
+## 实验结论
 本文在三个大语言模型（Qwen2.5-3B, Llama-3.2-3B, Qwen2-8B）和五个数学推理基准上进行了广泛实验。
 
 ### 核心发现

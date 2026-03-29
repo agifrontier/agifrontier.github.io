@@ -3,7 +3,6 @@ layout: default
 title: "DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model"
 ---
 
-# DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model
 
 - **ArXiv URL**: http://arxiv.org/abs/2405.04434v5
 
@@ -11,23 +10,23 @@ title: "DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Lang
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为DeepSeek-V2的强混合专家（MoE）语言模型，该模型通过创新的多头潜在注意力（MLA）和DeepSeekMoE架构，在实现顶尖性能的同时，显著降低了训练成本并提升了推理效率。
 
-# 关键定义
+## 关键定义
 *   **混合专家模型 (Mixture-of-Experts, MoE)**：一种神经网络架构，其中包含多个“专家”子网络。对于每个输入token，一个路由网络会选择一小部分（通常是2个或更多）专家来处理它。这使得模型总参数量可以非常大，但每个token的计算成本（激活参数量）却很低。
 *   **多头潜在注意力 (Multi-head Latent Attention, MLA)**：本文提出的一种创新的注意力机制。其核心思想是通过低秩键值联合压缩（low-rank key-value joint compression），将大量的Key和Value信息压缩到一个低维的“潜在向量”中，从而在推理时大幅减少KV缓存，提升生成速度和吞吐量。
 *   **DeepSeekMoE**：本文采用的一种MoE架构。它通过“细粒度专家分割”（将专家切分得更小）和“共享专家隔离”（引入所有token都使用的共享专家）来提升专家特化能力和减少知识冗余，从而以更经济的成本训练出性能更强的模型。
 *   **解耦的旋转位置嵌入 (Decoupled Rotary Position Embedding, RoPE)**：为解决标准RoPE与MLA的低秩压缩不兼容的问题，本文提出的一种策略。它使用额外的多头查询和共享的键来专门承载RoPE，从而使位置信息能够被正确编码，同时不破坏MLA的推理效率优势。
 
-# 相关工作
+## 相关工作
 大语言模型（LLMs）的智能水平通常随参数量增加而提升，但这带来了巨大的训练计算成本和推理效率瓶颈，阻碍了其广泛应用。
 
 为了提升推理效率，研究人员探索了多种减少注意力机制中键值（Key-Value, KV）缓存的方法，例如分组查询注意力（Grouped-Query Attention, GQA）和多查询注意力（Multi-Query Attention, MQA）。然而，这些方法在减少KV缓存的同时，往往会带来模型性能的损失。在模型训练成本方面，传统的稠密（Dense）模型训练成本高昂，而MoE模型虽然能降低计算量，但其路由策略、负载均衡和通信开销是需要解决的关键挑战。
 
 本文旨在解决这一核心矛盾：**如何在不牺牲模型性能的前提下，同时实现经济的训练成本和高效的推理效率。**
 
-# 本文方法
+## 本文方法
 DeepSeek-V2的整体架构仍是Transformer，但其在注意力和前馈网络（FFN）两个核心模块上进行了根本性创新，分别引入了MLA和DeepSeekMoE。
 
 <img src="/images/2405.04434v5/x3.jpg" alt="DeepSeek-V2架构图" style="width:85%; max-width:450px; margin:auto; display:block;">
@@ -130,7 +129,7 @@ $${% endraw %}
     *   $$$\mathcal{L}\_{\mathrm{CommBal}}$$$：通信级损失，确保设备间的通信数据量均衡。
 3.  **Token丢弃策略 (Token-Dropping Strategy)**：在训练时，对于超出设备计算容量的token，会根据其与专家的亲和度分数（affinity score）丢弃分数最低的token，以进一步缓解负载不均导致的计算资源浪费。
 
-# 实验结论
+## 实验结论
 
 ## 预训练与效率
 *   **模型性能**：DeepSeek-V2（236B总参数，21B激活参数）在广泛的中英文基准测试中，性能全面超越了之前的DeepSeek 67B模型，并在开源模型中达到顶尖水平。

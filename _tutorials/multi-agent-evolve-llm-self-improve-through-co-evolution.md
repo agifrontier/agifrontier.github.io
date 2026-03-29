@@ -3,7 +3,6 @@ layout: default
 title: "Multi-Agent Evolve: LLM Self-Improve through Co-evolution"
 ---
 
-# Multi-Agent Evolve: LLM Self-Improve through Co-evolution
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.23595v3
 
@@ -13,22 +12,22 @@ title: "Multi-Agent Evolve: LLM Self-Improve through Co-evolution"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为“多智能体进化 (Multi-Agent Evolve, MAE)”的框架，通过让单个大语言模型扮演提问者 (Proposer)、解答者 (Solver) 和裁判 (Judge) 三个协同进化的角色，利用强化学习在无需人工标注数据的情况下实现通用推理能力的自我提升。
 
-# 关键定义
+## 关键定义
 *   **多智能体进化 (Multi-Agent Evolve, MAE)**：一个多智能体自我进化框架。它从单个基础LLM中实例化出三个协同但又相互竞争的角色（Proposer, Solver, Judge），通过强化学习进行联合训练，形成一个闭环的自我完善系统，以提升模型在数学、推理和通用问答等多样化任务上的能力。
 *   **Proposer (提问者)**：MAE框架中的智能体之一，负责生成新的问题。其目标是提出既可解又有挑战性的问题，以驱动Solver智能体能力的进化。
 *   **Solver (解答者)**：MAE框架中的核心智能体，负责解答Proposer提出的问题。整个框架的主要目标就是提升Solver解决问题的能力。
 *   **Judge (裁判)**：MAE框架中的评估智能体，采用“LLM即裁判 (LLM-as-a-Judge)”范式。它负责评估Proposer生成问题的质量和Solver生成答案的正确性，并为它们提供奖励信号，从而引导整个系统的进化方向。
 *   **协同进化 (Co-evolution)**：指Proposer和Solver在训练过程中相互促进、共同发展的过程。Proposer学习提出对当前Solver更具挑战性的问题，而Solver则通过解决这些难题来提升自身能力，形成一个良性循环。
 
-# 相关工作
+## 相关工作
 当前，使用强化学习 (Reinforcement Learning, RL) 提升大语言模型 (LLM) 推理能力的方法显示出巨大潜力，但严重依赖人工标注的数据集和可验证的奖励函数。这限制了方法的可扩展性和通用性。虽然一些自博弈 (Self-Play) 方法借鉴了其在棋类游戏中的成功经验，实现了无监督的自我提升，但它们大多依赖于有特定反馈的“落地环境” (grounded environment)，如代码解释器或游戏引擎，难以推广到自然语言推理等开放域。
 
 本文旨在解决的核心问题是：如何构建一个有效的强化学习框架，使LLM能够在通用领域（如数学、常识推理等）中，**在不依赖人工标注和特定“落地环境”的情况下实现自我提升**。
 
-# 本文方法
+## 本文方法
 本文提出了多智能体进化 (Multi-Agent Evolve, MAE) 框架。该框架的核心思想是让一个共享的LLM扮演三个不同的角色：提问者 (Proposer)、解答者 (Solver) 和裁判 (Judge)，通过它们之间的互动与协同进化来提升LLM自身解决问题的能力。
 
 <img src="/images/2510.23595v3/x1.jpg" alt="MAE框架图" style="width:85%; max-width:450px; margin:auto; display:block;">
@@ -92,7 +91,7 @@ MAE的训练流程如下（见算法1）：
 *   **领域无关的奖励设计**：设计了基于内部Judge评估的质量奖励、难度奖励和格式奖励，摆脱了对人工标注的“标准答案”的依赖，使框架能够适用于任意领域。
 *   **稳定的训练机制**：集成了质量过滤和格式奖励等机制，确保了在长期自博弈训练过程中的稳定性和数据质量，避免了以往方法中常见的模型能力退化或崩溃问题。
 
-# 实验结论
+## 实验结论
 
 本文在 Qwen2.5-3B-Instruct 模型上进行了实验，以验证MAE框架的有效性。实验分为使用参考问题和不使用参考问题两种设定。
 

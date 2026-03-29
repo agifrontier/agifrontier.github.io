@@ -3,7 +3,6 @@ layout: default
 title: "Learning on the Job: An Experience-Driven Self-Evolving Agent for Long-Horizon Tasks"
 ---
 
-# Learning on the Job: An Experience-Driven Self-Evolving Agent for Long-Horizon Tasks
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.08002v1
 
@@ -13,10 +12,10 @@ title: "Learning on the Job: An Experience-Driven Self-Evolving Agent for Long-H
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了MUSE，一个经验驱动的自进化智能体 (Agent) 框架，通过一个分层的记忆模块和“计划-执行-反思-记忆”的闭环系统，使智能体能够在执行长时程任务中持续学习、积累经验并实现自我进化。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下对理解其核心思想至关重要的概念：
 
 *   **MUSE (Memory-Utilizing and Self-Evolving)**：一个新颖的智能体框架，其核心是一个经验驱动的闭环系统。它使智能体能够通过与环境的交互动态积累经验，从而超越预训练模型的静态能力，实现持续学习和自我进化。
@@ -27,14 +26,14 @@ title: "Learning on the Job: An Experience-Driven Self-Evolving Agent for Long-H
 *   **计划-执行智能体 (Planning-Execution Agent, PE Agent)**：负责将复杂任务分解为一系列子任务，并使用增强的ReAct循环来执行这些子任务。它能够根据记忆模块中的知识进行决策，并通过与环境的交互完成具体操作。
 *   **反思智能体 (Reflect Agent)**：作为独立的监督者，在每个子任务执行后进行自主评估。它通过验证事实、交付物和数据保真度来判断任务成功与否，并将成功的轨迹提炼为新的记忆，或在失败时生成分析报告以指导PE智能体重新规划。
 
-# 相关工作
+## 相关工作
 目前，大型语言模型 (LLM) 驱动的智能体在问答、数学推理等特定领域取得了显著进展，但将它们应用于现实世界的长时程任务时仍面临严峻挑战。现有的评估环境（如OSWorld、WebArena）大多关注单一平台内的短时程任务，无法充分体现真实世界任务的复杂性，这些任务通常需要跨越多个应用、涉及上百个步骤。
 
 最关键的瓶颈是，现有的大多数智能体在测试时是**静态的 (test-time static)**。它们的能力在模型训练完成后即被固定，无法从过去的成功或失败中学习，每次执行任务都像一个“失忆的执行者”。这种“一次性”的交互模式严重限制了它们在复杂动态环境中的表现，无法实现真正的“在职学习 (learning on the job)”。
 
 本文旨在解决这一核心问题：如何让智能体摆脱静态限制，构建一个能够通过经验积累实现持续学习和自我进化的系统，以有效处理现实世界中的长时程、跨应用生产力任务。
 
-# 本文方法
+## 本文方法
 ## 框架概述
 本文提出了MUSE框架，旨在通过在测试时学习 (test-time learning) 来解决长时程生产力任务 ($\mathcal{T}\_{\text{prod}}$)，而无需微调LLM。MUSE的核心是一个“**计划-执行-反思-记忆 (Plan-Execute-Reflect-Memorize)**”的迭代闭环。其架构包含三个关键组件：记忆模块 ($\mathcal{M}$)、计划-执行智能体 (PE Agent) 和反思智能体 (Reflect Agent)。
 
@@ -73,7 +72,7 @@ PE智能体负责管理和执行复杂的生产力任务。
 
 <img src="/images/2510.08002/teaser.jpg" alt="MUSE在任务中持续学习和进化" style="width:85%; max-width:450px; margin:auto; display:block;">
 
-# 实验结论
+## 实验结论
 本文在专为长时程生产力任务设计的TheAgentCompany (TAC) 基准上对MUSE框架进行了评估。该基准包含175个任务，模拟了真实企业环境，需要智能体在操作系统内使用多种应用完成复杂操作。
 
 #### 连续学习实验

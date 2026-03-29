@@ -3,7 +3,6 @@ layout: default
 title: "Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution"
 ---
 
-# Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution
 
 - **ArXiv URL**: http://arxiv.org/abs/2409.12191v2
 
@@ -13,17 +12,17 @@ title: "Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at A
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了Qwen2-VL系列多模态模型，通过创新的原生动态分辨率机制和多模态旋转位置编码（M-RoPE），使模型能像人一样处理任意分辨率的图像和视频，并在广泛的多模态基准测试中展现出与GPT-4o等顶尖模型相媲美的性能。
 
-# 关键定义
+## 关键定义
 本文提出了两个核心技术创新，以增强模型的视觉感知能力：
 
 1.  **原生动态分辨率 (Naive Dynamic Resolution)**：一种使模型能够处理任意分辨率图像的机制。与传统方法将图像缩放到固定尺寸不同，该机制动态地将不同分辨率的输入图像转换为数量可变的视觉Token。这是通过在视觉变换器（ViT）中引入二维旋转位置编码（2D-RoPE）替代固定的绝对位置编码实现的，从而让模型能够灵活捕捉不同尺度和长宽比图像中的细节信息。
 
 2.  **多模态旋转位置编码 (Multimodal Rotary Position Embedding, M-RoPE)**：一种在大型语言模型（LLM）中统一处理文本、图像和视频位置信息的创新编码方式。它将传统的一维旋转位置编码分解为时间（temporal）、高度（height）和宽度（width）三个部分。对于文本，三者ID相同；对于图像，时间ID恒定，高度和宽度ID随位置变化；对于视频，时间ID随帧递增。这种设计不仅能更精确地建模多模态数据的位置关系，还有助于模型在推理时外推到更长的序列。
 
-# 相关工作
+## 相关工作
 当前的大型视觉语言模型 (Large Vision-Language Models, LVLMs) 通常遵循“视觉编码器→跨模态连接器→大型语言模型”的架构，在处理图文数据方面取得了巨大进步。然而，它们面临着几个关键瓶颈：
 
 1.  **固定的输入分辨率**：大多数模型要求输入图像具有固定的分辨率（如 224x224），这通常通过缩放或填充实现。这种“一刀切”的策略限制了模型捕捉不同尺度信息的能力，尤其会导致高分辨率图像中大量细节的丢失。
@@ -32,7 +31,7 @@ title: "Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at A
 
 本文旨在解决上述问题，通过引入动态分辨率和更强的多模态位置编码，使模型能够更自然、更精确地感知视觉世界，同时探索LVLM在模型和数据规模上的扩展规律。
 
-# 本文方法
+## 本文方法
 
 Qwen2-VL沿用了Qwen-VL的“ViT编码器+LLM”基础框架，并在此之上进行了多项关键升级，以提升模型对任意分辨率视觉信息的感知、理解与推理能力。
 
@@ -104,7 +103,7 @@ Qwen2-VL采用统一的范式处理图像和视频，增强了模型的动态视
 
 <img src="/images/2409.12191v2/qwen2_vl_example.jpg" alt="Qwen2-VL能力展示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
-# 实验结论
+## 实验结论
 
 本文通过在大量公开基准上的广泛评测，验证了Qwen2-VL系列模型的强大性能，并在多个任务上刷新了SOTA记录。
 

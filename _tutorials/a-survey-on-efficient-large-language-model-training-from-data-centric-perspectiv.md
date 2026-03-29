@@ -3,7 +3,6 @@ layout: default
 title: "A Survey on Efficient Large Language Model Training: From Data-centric Perspectives"
 ---
 
-# A Survey on Efficient Large Language Model Training: From Data-centric Perspectives
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.25817v1
 
@@ -13,7 +12,7 @@ title: "A Survey on Efficient Large Language Model Training: From Data-centric P
 
 ---
 
-# 引言
+## 引言
 
 大型语言模型 (Large Language Models, LLMs) 的后训练 (post-training) 已成为释放其领域适应能力和任务泛化潜力的关键阶段。这一阶段有效增强了模型在长上下文推理、人类对齐、指令微调和领域专用适应等方面的能力。
 
@@ -25,7 +24,7 @@ title: "A Survey on Efficient Large Language Model Training: From Data-centric P
 
 **与先前综述的区别**：虽然已有综述探讨了LLM后训练的某些方面，如数据选择、合成数据生成、模型自反馈、自进化、可信赖性及时间效率，但这些研究主要关注单一环节而非一个整体视角。本综述通过数据效率的镜头系统性地审视了这些方法，填补了空白，并为最大化数据价值提取提供了关键洞见。
 
-# 分类体系
+## 分类体系
 
 本节将数据高效的LLM后训练方法分为五大核心类别：
 
@@ -48,7 +47,7 @@ title: "A Survey on Efficient Large Language Model Training: From Data-centric P
 
 这五个维度相辅相成：选择过滤高质量数据，增强提高数据效用，生成扩大数据覆盖面，蒸馏浓缩知识，而自进化则实现持续改进。它们共同追求以最小化的数据需求实现模型性能最大化的目标。
 
-# 数据选择
+## 数据选择
 
 数据选择通过识别高价值数据子集，对提升LLM后训练效率至关重要。如下图所示，本文将现有方法分为四个维度：(1) 基于数据固有属性的静态过滤，(2) 训练过程中自适应的动态选择，(3) 使用协作机制的智能体策略，以及 (4) 通过人机协作实现的标注效率。
 
@@ -87,7 +86,7 @@ title: "A Survey on Efficient Large Language Model Training: From Data-centric P
 
 当前的数据选择方法在将静态指标与动态模型需求对齐、管理优化过程中的计算复杂性以及实现跨领域泛化方面面临挑战。未来的研究方向指向基于元学习的选择框架、用于样本分析的因果推断以及考虑硬件约束的效率感知优化。
 
-# 数据质量增强
+## 数据质量增强
 
 如下图所示，提升数据质量对于最大化LLM后训练的效果至关重要。通过语义精炼、毒性控制和分布稳定化，研究人员旨在提高训练数据的知识性、安全性和鲁棒性。本文将现有方法归为三个方向。
 
@@ -121,7 +120,7 @@ title: "A Survey on Efficient Large Language Model Training: From Data-centric P
 
 语义重写、毒性控制和分布稳定是提升LLM后训练数据质量的关键策略。未来的工作应将这些方法整合到统一的框架中，以最大化数据多样性和模型性能，同时降低成本。
 
-# 合成数据生成
+## 合成数据生成
 
 生成合成训练数据是克服数据稀缺和增强LLM后训练鲁棒性的强大策略。如下图所示，合成数据生成方法可分为三类：**指令驱动生成**、**知识引导生成**和**对抗性生成**。
 
@@ -147,7 +146,7 @@ title: "A Survey on Efficient Large Language Model Training: From Data-centric P
 
 每种方法都有其权衡：指令驱动方法可快速扩展但有语义漂移的风险；知识引导方法通过结构化约束保持保真度；对抗性生成则通过暴露漏洞来增强鲁棒性。未来的工作应结合这些方法的优势，并持续关注优化生成成本和发展理论基础。
 
-# 数据蒸馏与压缩
+## 数据蒸馏与压缩
 
 数据蒸馏与压缩技术通过降低数据复杂性同时保持性能，来提升LLM后训练的效率。如下图所示，这包括三种互补的方法：用于知识迁移的**模型蒸馏**，用于数据集压缩的**数据蒸馏**，以及用于统一优化的**联合压缩**。
 
@@ -169,7 +168,7 @@ title: "A Survey on Efficient Large Language Model Training: From Data-centric P
 
 这三种方法为提升LLM效率提供了互补的优势：模型蒸馏优化架构，数据蒸馏精选高影响力样本，联合压缩则统一了模型与数据的优化。未来的研究应聚焦于整合这些方法，特别是在边缘AI和低资源应用场景。
 
-# 自进化数据生态系统
+## 自进化数据生态系统
 
 自进化数据生态系统通过自主数据生成、实时反馈和持续学习，策略性地优化LLM后训练。如下图所示，该生态系统形成了一个生成、评估和自适应训练的闭环。本文讨论其三个关键组成部分：自迭代优化、动态评估反馈和LLM即评判者。
 
@@ -203,7 +202,7 @@ title: "A Survey on Efficient Large Language Model Training: From Data-centric P
 
 自迭代优化、动态评估反馈和LLM即评判者的结合，为LLM的自主改进创造了一个强大的框架。尽管这些方法在减少人工干预方面显示出巨大潜力，但未来的工作应侧重于将它们统一到可扩展的框架中，并使其能泛化到不同任务。
 
-# 挑战与未来方向
+## 挑战与未来方向
 
 *   **领域驱动的数据合成与精炼**
     尽管通用模型常用于数据生成，但领域专用模型能更好地捕捉专业知识。未来的工作应探索使用领域专用的预训练模型来生成专业化数据，并结合精炼技术来优化数据质量，同时降低标注成本。

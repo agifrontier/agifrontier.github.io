@@ -3,7 +3,6 @@ layout: default
 title: "Capabilities of GPT-4 on Medical Challenge Problems"
 ---
 
-# Capabilities of GPT-4 on Medical Challenge Problems
 
 - **ArXiv URL**: http://arxiv.org/abs/2303.13375v2
 
@@ -13,10 +12,10 @@ title: "Capabilities of GPT-4 on Medical Challenge Problems"
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过对美国行医执照考试（USMLE）等权威医学基准的全面评测，表明通用的GPT-4模型在未经任何领域专业化微调的情况下，其医学知识水平和推理能力已远超之前的通用模型（GPT-3.5）和医学专用模型（Med-PaLM），并以高分通过考试，同时展现出更优的概率校准能力和强大的交互式解释潜力。
 
-# 关键定义
+## 关键定义
 本文主要沿用现有概念，但其评估框架和分析中应用或提出了以下关键术语：
 
 *   **美国行医执照考试 (United States Medical Licensing Examination, USMLE)**: 在美国用于评估临床能力和授予行医执照的三步式标准化考试。本文将其作为衡量模型高级医学能力的核心基准，因其权威性和难度而具有重要意义。
@@ -24,14 +23,14 @@ title: "Capabilities of GPT-4 on Medical Challenge Problems"
 *   **校准度 (Calibration)**: 衡量模型预测的概率（置信度）与其实际正确率之间一致性的指标。在医学等高风险领域，良好的校准度至关重要，因为它意味着模型的置信度是可靠的。
 *   **MELD (Memorization Effects Levenshtein Detector)**: 本文作者设计的一种启发式算法，通过探测模型能否以高相似度复现数据样本，来判断基准数据是否可能被模型在训练阶段“记忆”而非“理解”。
 
-# 相关工作
+## 相关工作
 长期以来，人工智能在医学领域的探索历经了从概率方法、专家系统到监督学习和深度学习的演进。近年来，大语言模型（LLMs）因其强大的自然语言处理能力，开始在医学领域展现潜力。
 
 在本文之前，SOTA（State-of-the-Art）模型如Google的Flan-PaLM 540B，以及在其基础上针对医学领域进行提示调优的Med-PaLM，在MultiMedQA等医学问答基准上取得了领先成绩。然而，这些模型的优异表现通常依赖于复杂的提示工程（如思维链）或领域特定的微调。同时，研究界普遍存在一个关键问题：最前沿的通用大模型（如GPT-4）的原始能力究竟达到了何种水平？它们是否仅凭其巨大的规模和通用的预训练，就足以在专业的医学领域达到甚至超越经过专门优化的模型？
 
 本文旨在解决这一具体问题：**通过一套严格、全面的评估，确定GPT-4在不依赖复杂提示技巧或任何医学专业微调的情况下，在解决高难度医学挑战问题上的基线能力**，并与之前的通用模型和专用模型进行直接比较。
 
-# 本文方法
+## 本文方法
 本文的核心是一种针对GPT-4医学能力的综合评估框架，而非提出一个全新的模型架构。其方法论的创新体现在评估的广度、深度和严谨性上。
 
 ### 评估对象与基准
@@ -62,7 +61,7 @@ title: "Capabilities of GPT-4 on Medical Challenge Problems"
     *   **元认知 (Metacognition)**: 推断学生可能出现的错误思路。
     *   **反事实推理**: 根据要求修改病例，创造新的学习场景。
 
-# 实验结论
+## 实验结论
 实验结果有力地证明了GPT-4在医学能力上的巨大飞跃。
 
 ### 在USMLE上的表现

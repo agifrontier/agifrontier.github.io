@@ -3,7 +3,6 @@ layout: default
 title: "Empowering Real-World: A Survey on the Technology, Practice, and Evaluation of LLM-driven Industry Agents"
 ---
 
-# Empowering Real-World: A Survey on the Technology, Practice, and Evaluation of LLM-driven Industry Agents
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.17491v1
 
@@ -17,7 +16,7 @@ title: "Empowering Real-World: A Survey on the Technology, Practice, and Evaluat
 
 ---
 
-# 赋能真实世界：LLM驱动的行业智能体技术、实践与评估综述
+## 赋能真实世界：LLM驱动的行业智能体技术、实践与评估综述
 
 本文系统性地回顾了基于大型语言模型（LLM）的行业智能体 (Industry Agents) 的技术、应用和评估方法，旨在为理解和构建下一代行业智能体提供清晰的路线图和理论基础。
 

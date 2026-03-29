@@ -3,7 +3,7 @@ layout: default
 title: "Incorporating Self-Rewriting into Large Language Model Reasoning Reinforcement"
 ---
 
-# 告别思维混乱：自重写技术让LLM推理长度锐减46%，质量反而更高
+## 告别思维混乱：自重写技术让LLM推理长度锐减46%，质量反而更高
 
 <img src="/images/2511.16331v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

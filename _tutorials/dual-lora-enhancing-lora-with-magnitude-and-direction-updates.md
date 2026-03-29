@@ -3,7 +3,7 @@ layout: default
 title: "Dual LoRA: Enhancing LoRA with Magnitude and Direction Updates"
 ---
 
-# AMD力作Dual LoRA：性能最高提升1.8%！将参数更新分解为“幅值”与“方向”
+## AMD力作Dual LoRA：性能最高提升1.8%！将参数更新分解为“幅值”与“方向”
 
 <img src="/images/2512.03402v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

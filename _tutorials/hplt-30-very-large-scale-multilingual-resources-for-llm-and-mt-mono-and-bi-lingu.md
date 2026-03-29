@@ -3,7 +3,6 @@ layout: default
 title: "HPLT 3.0: Very Large-Scale Multilingual Resources for LLM and MT. Mono- and Bi-lingual Data, Multilingual Evaluation, and Pre-Trained Models"
 ---
 
-# HPLT 3.0: Very Large-Scale Multilingual Resources for LLM and MT. Mono- and Bi-lingual Data, Multilingual Evaluation, and Pre-Trained Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2511.01066v2
 
@@ -13,20 +12,20 @@ title: "HPLT 3.0: Very Large-Scale Multilingual Resources for LLM and MT. Mono- 
 
 ---
 
-# TL;DR
+## TL;DR
 本文发布了HPLT 3.0，一个包含近200种语言、总量达30万亿token的开源、大规模、高质量多语言文本数据集，并提供了完整的开源数据处理流程、多语言评估框架及预训练模型，旨在推动LLM和MT研究的普及化。
 
-# 关键定义
+## 关键定义
 *   **HPLT 3.0**: 本文发布的核心资源，是一个大规模（30万亿token）、高质量、多语言（近200种语言）的文本数据集，专为大型语言模型（LLM）的预训练而设计。它源自网络爬虫数据，并经过精细处理、标注和过滤。
 *   **WDS (Web Docs Scorer) Levels**: 一种对文档质量进行综合评分的机制。该分数整合了文本长度、语言分布、非常见信号等多种启发式规则，用于衡量文档的质量。在HPLT 3.0中，文档根据WDS分数被分箱（binning），以便用户可以根据质量需求进行灵活的数据采样。
 *   **HPLT-E**: 本文开发的一个自动化、大规模的多语言评估框架。它旨在系统性地比较和优化不同数据准备策略对模型性能的影响，覆盖9种语言、127项任务，并通过多提示（multi-prompt）设计来减轻模型对提示的敏感性。
 
-# 相关工作
+## 相关工作
 当前，用于预训练大型语言模型（LLM）的海量文本数据集是人工智能时代的“原油”。然而，从原始网络数据中“提炼”高质量数据集的过程通常需要巨大的计算资源和技术实力，这导致该领域多由大型企业主导，且成果往往集中于英语。虽然已有如C4、FineWeb、MADLAD-400等公开数据集，但高质量、超大规模且覆盖广泛语言的开放资源仍然稀缺。
 
 本文旨在解决这一瓶颈问题，通过发布迄今为止可能是最大的公开多语言预训练数据集HPLT 3.0，以及完全开源的数据处理流程、评估工具和预训练模型，致力于“民主化”当前的LLM和机器翻译（Machine Translation, MT）研究格局，特别关注对非英语语言的支持。
 
-# 本文方法
+## 本文方法
 
 本文的核心贡献是构建并发布了HPLT 3.0数据集及其一系列配套资源。整个方法论涵盖了从原始数据收集到最终模型评估的全过程。
 
@@ -97,7 +96,7 @@ title: "HPLT 3.0: Very Large-Scale Multilingual Resources for LLM and MT. Mono- 
 | **乌克兰语** | [0.1, 2.9] | [22.4, 33] | [8.1, 16.3] | [0.1, 2.9] |
 | *23种语言均值* | *[0.4, 2.3]* | *[14.9, 21.1]* | *[6.9, 11.2]* | *[4.5, 8.8]* |
 
-# 实验结论
+## 实验结论
 
 本文通过训练和评估一系列语言模型，验证了 HPLT 3.0 数据集的质量和有效性。
 

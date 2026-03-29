@@ -3,7 +3,7 @@ layout: default
 title: "Qwen3-VL Technical Report"
 ---
 
-# Qwen3-VL重磅发布：256K上下文，三大架构升级打造全能多模态
+## Qwen3-VL重磅发布：256K上下文，三大架构升级打造全能多模态
 
 <img src="/images/2511.21631v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

@@ -3,7 +3,6 @@ layout: default
 title: "WizardCoder: Empowering Code Large Language Models with Evol-Instruct"
 ---
 
-# WizardCoder: Empowering Code Large Language Models with Evol-Instruct
 
 - **ArXiv URL**: http://arxiv.org/abs/2306.08568v2
 
@@ -13,22 +12,22 @@ title: "WizardCoder: Empowering Code Large Language Models with Evol-Instruct"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为 $$Code Evol-Instruct$$ 的方法，通过自动进化和增强编程指令的复杂性，来精调（fine-tune）代码大语言模型，从而创造出在多个基准测试中性能卓越的 $$WizardCoder$$ 模型系列。
 
-# 关键定义
+## 关键定义
 本文的核心是围绕 $$Code Evol-Instruct$$ 这一新方法展开的，并由此产生了 $$WizardCoder$$ 模型。
 
 *   **Code Evol-Instruct**: 一种为代码领域专门设计的指令进化（instruction-evolution）方法。它借鉴了通用领域 $$Evol-Instruct$$ 的思想，但针对编程任务的特点进行了深度定制。该方法利用一个强大的“进化执行模型”（如 GPT-3.5），根据一套精心设计的启发式规则，自动地将一个简单的初始代码指令（例如，一个编程问题）重写成一个更复杂、更有深度、更具挑战性的版本。
 
 *   **WizardCoder**: 指通过 $$Code Evol-Instruct$$ 方法生成的高复杂度指令数据集，对现有开源代码大语言模型（如 StarCoder, CodeLlama）进行指令精调后得到的新模型系列。本文发布的模型包括 $$WizardCoder-15B$$ 和 $$WizardCoder-34B$$ 等。
 
-# 相关工作
+## 相关工作
 *   **研究现状**: 当前，大型代码语言模型（Code Large Language Models, Code LLMs），如 StarCoder 和 CodeLlama，已在代码理解和生成任务中取得显著成就。然而，与通用大语言模型（LLMs）相比，在代码领域的指令精调技术仍未得到充分研究。这导致了现有最强的开源代码模型在性能上依然显著落后于顶尖的闭源模型（如 GPT-4, Claude）。
 
 *   **待解决问题**: 本文旨在解决一个核心问题：如何通过指令精调有效提升开源代码大语言模型的性能，以缩小其与闭源模型之间的差距。作者认为，现有指令数据集（如 Code Alpaca）的指令复杂度不足，未能充分挖掘基础模型的潜力。因此，本文的目标是创建一种能够自动生成更复杂、更多样化代码指令的方法，从而更有效地训练代码模型。
 
-# 本文方法
+## 本文方法
 本文的核心贡献是 $$Code Evol-Instruct$$ 方法，它通过迭代进化来提升代码指令的质量，并用此数据训练出 $$WizardCoder$$ 模型。
 
 <img src="/images/2306.08568v2/x2.jpg" alt="方法概览" style="width:85%; max-width:600px; margin:auto; display:block;">
@@ -71,7 +70,7 @@ $$`$$
 <img src="/images/2306.08568v2/x3.jpg" alt="多语言性能对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 _图注：WizardCoder-34B 在多种编程语言上相较于当时的开源SOTA模型（CodeLlama-34B系列）展现出显著优势。_
 
-# 实验结论
+## 实验结论
 本文在 HumanEval、HumanEval+、MBPP、DS-1000 和 MultiPL-E 五大代码生成基准上进行了全面评估，实验结果充分验证了 $$WizardCoder$$ 的卓越性能。
 
 ### 核心实验结果

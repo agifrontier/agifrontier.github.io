@@ -3,7 +3,6 @@ layout: default
 title: "Quagmires in SFT-RL Post-Training: When High SFT Scores Mislead and What to Use Instead"
 ---
 
-# Quagmires in SFT-RL Post-Training: When High SFT Scores Mislead and What to Use Instead
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.01624v1
 
@@ -13,23 +12,23 @@ title: "Quagmires in SFT-RL Post-Training: When High SFT Scores Mislead and What
 
 ---
 
-# TL;DR
+## TL;DR
 本文挑战了“高SFT分数能带来更好RL效果”的普遍假设，通过实验证明SFT分数具有误导性，并提出使用“泛化损失”和“Pass@large k”作为更可靠的RL后性能预测指标。
 
-# 关键定义
+## 关键定义
 本文沿用了领域内的一些关键定义，并在此基础上提出了新的评估思路。
 1.  **SFT-then-RL 范式**: 指一种主流的大语言模型（LLM）推理能力后训练（Post-training）流程。该流程分为两个独立阶段：首先进行监督微调（Supervised Fine-Tuning, SFT），然后使用带可验证奖励的强化学习（Reinforcement Learning with Verifiable Rewards, RLVR 或简称 RL）进行优化。SFT作为“冷启动”阶段，为模型提供高质量的推理链示例；RL则进一步探索解空间，提升模型的推理和解决问题的能力。
 2.  **泛化损失 (Generalization Loss)**: 本文提出的关键预测指标之一。它指 SFT 训练后，模型在未见过的、留出的验证推理样本集上的损失值。本文发现，该损失值的变化趋势（尤其是在过拟合时）能有效预测模型在后续 RL 阶段的性能潜力。
 3.  **Pass@k**: 一种评估指标，衡量模型在生成 $k$ 个独立的解决方案中，至少有一个是正确的概率。本文特别关注大 $k$ 值下的 Pass@k 性能（Pass@large k），认为它能更精细地捕捉模型的内在解题能力和探索潜力，从而更好地预测 RL 后的最终性能。
 
-# 相关工作
+## 相关工作
 当前，针对推理大模型的后训练，主流实践是采用SFT和RL的序贯流程（SFT-then-RL）。研究界普遍认为，SFT对于后续的RL是必要的，并且在SFT阶段表现更好的模型，在RL后也会取得更强的性能。因此，大量研究工作聚焦于如何通过更复杂的数据筛选和策划策略（如筛选复杂度、多样性、生成合成数据等）来最大化SFT阶段的评估分数。
 
 然而，这一领域的认知存在不一致甚至矛盾之处，例如有观点认为“过度SFT会限制RL效果”，甚至“无SFT的RL效果更好”。这种对后训练动态，特别是SFT作用的不确定性，构成了研究和应用的主要障碍。
 
 本文旨在解决的核心问题是：**SFT阶段的性能指标（如准确率）与最终RL阶段后的模型性能之间缺乏可靠的预测性**。这种脱节导致SFT的优化目标与模型的最终目标不一致，使得SFT团队可能为RL阶段提供了次优的模型，不仅阻碍了整个后训练流程的优化，也降低了开发效率。本文的目标是提供新的评估工具，以更准确地预测RL结果，从而优化SFT-then-RL流程。
 
-# 本文方法
+## 本文方法
 本文的核心方法论分为两部分：首先，通过实验揭示当前依赖SFT分数进行评估的“指标陷阱”；然后，提出并验证了两个新的、更可靠的预测指标。
 
 ### SFT指标陷阱
@@ -76,7 +75,7 @@ $${% endraw %}
 
 在实践中，可以评估不同SFT候选模型的Pass@large k（如Pass@64），并选择该指标最高的模型进行后续的RL训练。
 
-# 实验结论
+## 实验结论
 本文通过在Llama3、Mistral-Nemo、Qwen3等多种模型上进行的大规模SFT-RL后训练实验（总计消耗超过100万GPU小时），并在7个数学基准测试上进行了广泛评估，验证了所提指标的有效性。
 
 **实验设置**：

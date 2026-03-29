@@ -3,7 +3,6 @@ layout: default
 title: "Compress to Impress: Efficient LLM Adaptation Using a Single Gradient Step on 100 Samples"
 ---
 
-# Compress to Impress: Efficient LLM Adaptation Using a Single Gradient Step on 100 Samples
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.20800v1
 
@@ -13,10 +12,10 @@ title: "Compress to Impress: Efficient LLM Adaptation Using a Single Gradient St
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为"Compress to Impress"的高效LLM自适应方法，仅需在100个样本上进行单次梯度计算，并结合多子空间矩阵分解，即可在无需任何微调的情况下，快速提升模型在下游任务上的性能。
 
-# 关键定义
+## 关键定义
 本文的核心是围绕对现有方法 LASER 进行效率和效果上的改进，提出了以下关键概念：
 
 *   **奇异值梯度 (Singular-value gradients)**: 本文提出的一个核心指标，用于快速识别哪些权重矩阵最适合进行低秩压缩。它通过计算损失函数对矩阵每个奇异值的梯度（$\frac{\partial L}{\partial\sigma\_{i}} = u\_{i}^{\top}G\,v\_{i}$）来判断该奇异值对应的方向对任务是有益还是有害。负梯度表示该方向应被削减，从而指导压缩过程，避免了LASER方法中耗时的逐层暴力搜索。
@@ -25,14 +24,14 @@ title: "Compress to Impress: Efficient LLM Adaptation Using a Single Gradient St
 
 *   **LASER (LAyer-SElective-Rank reduction)**: 本文工作所基于的先前方法。LASER 证明了通过对预训练模型中特定选择的权重矩阵进行低秩压缩（即剪枝高阶奇异值成分），可以在不进行任何基于梯度的微调的情况下提升下游任务的准确率。但其主要瓶颈是需要对模型每一层进行详尽的搜索评估，计算成本高昂。
 
-# 相关工作
+## 相关工作
 当前，将大型预训练模型适应到特定领域或任务是一项昂贵的工作。标准的完全微调（full supervised fine-tuning）需要巨大的计算资源。尽管出现了参数高效微调方法，如 LoRA、Adapter 和 Prompt-Tuning，它们在减少训练参数量的同时，仍然存在不可忽视的计算和存储开销。
 
 最近，一种无需梯度优化的后训练干预方法 **LASER** 显示出了潜力：通过对精心挑选的权重矩阵进行降秩，可以提升下游任务的准确率。然而，LASER 方法存在一个致命的瓶颈：它需要对模型中的每个矩阵进行详尽的搜索，每次搜索都需要在整个数据集上进行前向传播，这使得它在需要快速部署的场景下不切实际。
 
 本文旨在解决 LASER 方法的效率低下问题，提出一种既快速又有效的LLM自适应算法，使其能够在单个GPU上以分钟级的速度完成，且无需任何微调。
 
-# 本文方法
+## 本文方法
 本文提出了一种全新的、无需微调的LLM自适应流程，通过三个核心洞见极大地提升了效率和效果。该方法首先通过一次梯度计算快速定位需要压缩的关键层，然后运用多子空间分解技术进行更精细的去噪，并且整个过程仅需少量样本即可完成。
 
 <img src="/images/2510.20800v1/x1.jpg" alt="方法流程图" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -81,7 +80,7 @@ $${% endraw %}
 
 这种方法允许每个块拥有自己独立的子空间，从而更灵活地适应局部结构，分散并隔离噪声。实践证明，这种方法能够发现更高质量的、噪声更少的分解方案，从而在提升效率的同时进一步提高模型准确率。
 
-# 实验结论
+## 实验结论
 本文在一系列数据集上对GPT-J和Roberta模型进行了实验，验证了所提方法的有效性。实验的核心配置包括：
 *   **CL-100G-SE**：结合了多子空间分解（Clustering），使用100个样本计算梯度（100 Gradients），并使用标准数据量（20%数据）进行评估（Standard Evaluation）。
 *   **CL-100G-100E**：结合了多子空间分解，使用100个样本计算梯度，并仅使用100个样本进行评估（100-Point Evaluation）。

@@ -3,7 +3,6 @@ layout: default
 title: "Train for Truth, Keep the Skills: Binary Retrieval-Augmented Reward Mitigates Hallucinations"
 ---
 
-# Train for Truth, Keep the Skills: Binary Retrieval-Augmented Reward Mitigates Hallucinations
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.17733v1
 
@@ -13,15 +12,15 @@ title: "Train for Truth, Keep the Skills: Binary Retrieval-Augmented Reward Miti
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为“二元检索增强奖励 (Binary Retrieval-Augmented Reward, Binary RAR)”的在线强化学习方法，通过一个简单的二元（事实完全正确为1，否则为0）奖励信号，在不损害模型通用能力的前提下，显著减少了语言模型的幻觉。
 
-# 关键定义
+## 关键定义
 *   **外在幻觉 (Extrinsic Hallucination)**：指模型生成的输出内容无法通过其训练数据进行验证，即看似合理但事实错误的信息。本文主要关注并旨在缓解此类幻觉。
 *   **二元检索增强奖励 (Binary Retrieval-Augmented Reward, Binary RAR)**：本文提出的核心奖励机制。它是一个二元信号 $r \in \{0, 1\}$，仅当模型的全部输出内容与检索到的文档证据完全一致、无任何矛盾时，奖励 $r=1$；否则，只要存在任何事实不符之处，奖励即为 $r=0$。
 *   **幻觉-效用权衡 (Hallucination-Utility Tradeoff)**：指在缓解模型幻觉的过程中，常常会牺牲其通用能力（效用），例如生成内容的丰富性、遵循指令的能力、推理或编码能力等。本文的核心目标就是解决这一权衡问题。
 
-# 相关工作
+## 相关工作
 当前，领域内缓解模型幻觉的后训练 (post-training) 方法主要包括：
 1.  **监督微调 (SFT)**：在精心筛选的、事实正确的数据集上对模型进行微调。
 2.  **直接偏好优化 (DPO)**：利用基于事实准确性的偏好对（例如，更真实的回答优于不真实的回答）来训练模型。
@@ -31,7 +30,7 @@ title: "Train for Truth, Keep the Skills: Binary Retrieval-Augmented Reward Miti
 
 本文旨在解决的具体问题是：如何在对一个已经完成训练的语言模型进行持续后训练时，有效减少其外在幻觉，同时不损害其在指令遵循、知识记忆、推理和编码等多样化任务上的通用能力。
 
-# 本文方法
+## 本文方法
 
 本文提出了一种基于在线强化学习 (online RL) 和新颖的 **二元检索增强奖励 (Binary RAR)** 的方法来解决幻觉-效用权衡问题。其核心框架如下图所示。
 
@@ -72,7 +71,7 @@ $${% endraw %}
 *   **信号清晰且统一**：该奖励信号简洁明了，没有噪声，并且能统一应用于长篇生成和短问答两种不同类型的任务。
 *   **自然鼓励合理拒答**：在强化学习框架下，错误的回答会得到0奖励，其生成概率被压制。这间接提升了模型在不确定时选择“我不知道”等拒答行为的概率，而这种行为是从基座模型继承而来的。
 
-# 实验结论
+## 实验结论
 
 本文在Qwen3-4B和Qwen3-8B模型上进行了广泛实验，覆盖了4个幻觉评测基准和10个通用能力评测基准。
 

@@ -3,7 +3,7 @@ layout: default
 title: "Scaling Environments for LLM Agents in the Era of Learning from Interaction: A Survey"
 ---
 
-# Agent智能进化论：阿里港科大万字综述，揭秘GEF三步循环
+## Agent智能进化论：阿里港科大万字综述，揭秘GEF三步循环
 
 <img src="/images/2511.09586v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

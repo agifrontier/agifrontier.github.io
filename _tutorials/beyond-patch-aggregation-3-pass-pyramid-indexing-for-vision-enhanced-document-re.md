@@ -3,7 +3,7 @@ layout: default
 title: "Beyond Patch Aggregation: 3-Pass Pyramid Indexing for Vision-Enhanced Document Retrieval"
 ---
 
-# RAG新革命：VisionRAG告别OCR，每页17个向量实现SOTA文档检索
+## RAG新革命：VisionRAG告别OCR，每页17个向量实现SOTA文档检索
 
 <img src="/images/2511.21121v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

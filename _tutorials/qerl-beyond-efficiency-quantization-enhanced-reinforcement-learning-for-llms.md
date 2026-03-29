@@ -3,7 +3,6 @@ layout: default
 title: "QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning for LLMs"
 ---
 
-# QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning for LLMs
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.11696v1
 
@@ -13,15 +12,15 @@ title: "QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning 
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了QeRL，一个量化增强的强化学习框架，它通过利用量化噪声来提升策略探索，在显著加速大模型强化学习（RL）训练、降低显存占用的同时，实现了超越16位基线方法的性能。
 
-# 关键定义
+## 关键定义
 *   **QeRL (Quantization-enhanced Reinforcement Learning)**：一种为大语言模型设计的、结合了量化与强化学习的训练框架。它通过将高效的4位量化格式（如NVFP4）与低秩适应（Low-Rank Adaptation, LoRA）相结合，不仅提升了RL训练的效率，还创新性地利用量化引入的噪声来增加策略熵，从而促进模型在训练初期进行更广泛的探索。
 *   **AQN (Adaptive Quantization Noise)**：自适应量化噪声。这是QeRL中提出的一个核心机制，旨在将静态的、确定性的量化噪声转变为动态的、可控的探索工具。它通过在训练过程中注入可调整的随机噪声，并使用指数衰减调度器动态控制噪声强度，从而在探索（高噪声）和利用（低噪声）之间取得平衡。
 *   **NVFP4**：一种先进的4位浮点量化格式。它采用一个全局FP32缩放因子和一组块级FP8（E4M3格式）缩放因子，支持在现代GPU（如NVIDIA Hopper和Blackwell架构）上进行硬件加速，其推理速度远超常用于QLoRA的NF4格式。
 
-# 相关工作
+## 相关工作
 当前，通过强化学习（RL）提升大语言模型（LLM）的复杂推理能力是研究热点，但面临严峻的资源挑战。RL训练过程（尤其是其中的 rollout 阶段）需要巨大的GPU显存和漫长的计算时间。
 
 现有的优化方法存在以下瓶颈：
@@ -35,7 +34,7 @@ title: "QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning 
 
 上图展示了QeRL与其他方法的对比。(a) LoRA减少了可训练参数，但未解决rollout瓶颈。(b) QLoRA（NF4+LoRA）虽然实现了量化，但速度较慢。(c) QeRL（NVFP4+LoRA）结合了自适应量化噪声（AQN），在降低显存和加速RL的同时，通过动态调整噪声增强探索，达到了与全参数微调相当的性能。
 
-# 本文方法
+## 本文方法
 
 ### 核心思想：化噪声为优势
 本文的核心洞察在于，量化过程中产生的误差（即量化噪声）并非纯粹的负面影响，反而可以被利用来促进RL中的探索。传统观点认为量化会损害模型性能，但在RL场景下，这种噪声增加了策略的熵 (entropy)，使输出的概率分布更平滑，从而鼓励模型探索更多样的动作（即Token），避免过早陷入局部最优。
@@ -100,7 +99,7 @@ $${% endraw %}
 
 上图展示了AQN的部署方案，噪声向量 $$Z_noise$$ 被整合到每个Transformer块的层归一化（如RMSNorm）中。
 
-# 实验结论
+## 实验结论
 
 ### 效率与性能
 实验结果表明，QeRL在效率和性能上均取得了显著优势。

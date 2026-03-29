@@ -3,7 +3,7 @@ layout: default
 title: "Weight-sparse transformers have interpretable circuits"
 ---
 
-# OpenAI重磅发现：让Transformer“瘦身”99.9%，电路可解释性暴增16倍！
+## OpenAI重磅发现：让Transformer“瘦身”99.9%，电路可解释性暴增16倍！
 
 <img src="/images/2511.13653v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

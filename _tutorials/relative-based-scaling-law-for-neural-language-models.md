@@ -3,7 +3,6 @@ layout: default
 title: "Relative-Based Scaling Law for Neural Language Models"
 ---
 
-# Relative-Based Scaling Law for Neural Language Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.20387v1
 
@@ -13,10 +12,10 @@ title: "Relative-Based Scaling Law for Neural Language Models"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种基于相对排序的新指标——相对概率（RBP），并据此建立了相对标度律（Relative-Based Scaling Law），该定律揭示了模型将正确答案排在靠前位置的能力如何随模型规模的增大而遵循幂律提升，为理解大语言模型提供了补充交叉熵的全新视角。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下关键概念：
 
 1.  **相对概率 (Relative-Based Probability, RBP)**：本文提出的核心新指标，用于衡量模型将真实标签Token排在预测结果前列的能力。具体而言，$\text{RBP}\_{k}$ 定义为真实标签Token的预测排名 $$R$$ 小于等于 $$k$$ 的概率，即 $\text{RBP}\_{k}=\Pr(R\leq k)$。它关注的是预测的相对顺序，而非绝对概率值。
@@ -25,7 +24,7 @@ title: "Relative-Based Scaling Law for Neural Language Models"
 
 3.  **绝对概率指标 (Absolute-Based Metric)**：指现有研究中广泛使用的以交叉熵损失为代表的评估指标。这类指标主要衡量模型为真实标签Token分配的绝对概率值，例如交叉熵 $\mathcal{L}\_{\text{CE}}=\mathbb{E}[-\log{\rm p\_{A}}(t)]$，其中 $$t$$ 是真实标签Token。本文指出这类指标忽略了预测的相对排序信息。
 
-# 相关工作
+## 相关工作
 当前，神经网络语言模型的标度律（Scaling laws）研究几乎完全依赖于交叉熵（cross-entropy）作为核心评估指标。交叉熵是一种**绝对概率指标**，它衡量模型赋予正确Token的绝对概率值。这些基于交叉熵的标度律已成功指导了许多大模型的训练，并为理解模型机理提供了重要洞见。
 
 然而，仅依赖交叉熵存在一个关键瓶颈：它无法捕捉预测结果的**相对排序信息**。如下图所示，即使正确Token的绝对概率相同，其在所有候选Token中的排名可能截然不同。这个排名信息对于贪心解码（greedy decoding）或top-k采样等实际应用至关重要。因此，现有标度律与模型在真实世界中的生成表现之间存在显著差距。
@@ -34,7 +33,7 @@ title: "Relative-Based Scaling Law for Neural Language Models"
 
 <img src="/images/2510.20387v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
-# 本文方法
+## 本文方法
 
 ## 相对概率指标 (RBP)
 为了弥补绝对概率指标的不足，本文提出了一种新的**相对概率指标**，即相对概率（Relative-based Probability, RBP）。
@@ -100,7 +99,7 @@ $${% endraw %}
 <img src="/images/2510.20387v1/x7.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 <img src="/images/2510.20387v1/x8.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
-# 实验结论
+## 实验结论
 本文通过两个应用展示了相对标度律的价值，这些应用也构成了方法的关键实验验证和结论。
 
 ## 解释涌现现象

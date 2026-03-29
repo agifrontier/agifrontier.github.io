@@ -3,7 +3,6 @@ layout: default
 title: "Reinforcement Learning Fine-Tuning Enhances Activation Intensity and Diversity in the Internal Circuitry of LLMs"
 ---
 
-# Reinforcement Learning Fine-Tuning Enhances Activation Intensity and Diversity in the Internal Circuitry of LLMs
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.21044v1
 
@@ -13,10 +12,10 @@ title: "Reinforcement Learning Fine-Tuning Enhances Activation Intensity and Div
 
 ---
 
-# TL;DR
+## TL;DR
 本文通过边缘归因修补（EAP）方法分析发现，在线强化学习（RL）微调能系统性地增强大语言模型（LLM）内部回路的激活强度和模式多样性，从而提升模型能力，而直接偏好优化（DPO）则不具备此效应。
 
-# 关键定义
+## 关键定义
 本文沿用了现有定义，并提出了几个关键分析指标，对理解其核心贡献至关重要：
 
 1.  **Transformer的图视角 (Graph View of Transformer)**：本文将 Transformer 模型抽象为一个有向无环图（DAG）。图中的**节点**对应于模型中的计算子模块（如多头注意力块和前馈网络块），而**边**则代表了通过残差连接（residual connections）实现的信息流路径。这个视角是进行内部回路分析的基础。
@@ -29,14 +28,14 @@ title: "Reinforcement Learning Fine-Tuning Enhances Activation Intensity and Div
 
 5.  **分布峰度 (Distribution Kurtosis)**：用于衡量每个样本的边权重分布形态的指标。通过计算每个样本内边权重分布的峰度，并求所有样本的平均值，来评估激活模式的集中程度。峰度降低通常意味着分布更平坦，激活模式更分散、更多样。
 
-# 相关工作
+## 相关工作
 当前对大语言模型（LLM）的研究存在两条平行的主线。第一条主线关注模型后训练（post-training）方法，大量实证研究表明，基于强化学习（Reinforcement Learning, RL）的微调（如PPO、GRPO）相比单独使用监督微调（Supervised Fine-Tuning, SFT）能够更显著地提升模型在推理、编码等复杂任务上的能力。然而，这些研究大多停留在外部行为的评估上，对于RL为何能带来这些性能提升的内部机制缺乏深入探索。
 
 第二条主线是LLM的可解释性研究，旨在探究模型内部的工作机理。研究者们发展了如自动电路发现（ACDC）、边缘归因修补（EAP）等方法，通过分析神经元、注意力头和信息通路来理解模型的决策过程。但这些分析往往针对给定的、已经训练好的模型，并未将其内部机制的变化与获得该模型的RL训练过程联系起来。
 
 因此，当前研究存在一个明显的**断层**：一方面我们知道RL能提升模型表现，另一方面我们有工具分析模型内部，但缺乏将两者结合的研究。本文旨在解决这一具体问题：**系统性地揭示RL微调是如何通过改变LLM的内部信息流（或称“内部回路”）来提升其能力的**。
 
-# 本文方法
+## 本文方法
 本文提出了一套系统的分析框架，以探究强化学习微调对LLM内部回路的影响。该方法的核心是适配并应用了**边缘归因修补（EAP）**框架。
 
 ### ## 方法框架
@@ -65,7 +64,7 @@ title: "Reinforcement Learning Fine-Tuning Enhances Activation Intensity and Div
 ### ## 优点
 该方法的主要优点是**高效和通用**。通过采用基于梯度的EAP，使得对拥有数十亿参数的大模型进行细粒度的回路分析在计算上成为可能。此外，该分析框架不依赖于特定的模型架构或任务，可广泛应用于研究不同后训练方法对各类LLM内部机理的影响。
 
-# 实验结论
+## 实验结论
 本文通过对四组不同模型家族（Deepseek-Math、Mistral、Distilled-Qwen、Qwen2.5）在数学推理任务上的对比实验，系统地验证了在线强化学习微调对LLM内部回路的系统性影响。
 
 <img src="/images/2509.21044v1/x1.jpg" alt="Schematic of a two-layer simplified LLM. (a) Residual perspective, (b) graph perspective, and (c) edge importance estimation: above the dashed line, ACDC-style methods measure the loss change after edge ablation ($②-①$); below, EAP-style methods approximate this via backpropagated gradients ($-③\approx②-①$)." style="width:90%; max-width:700px; margin:auto; display:block;">

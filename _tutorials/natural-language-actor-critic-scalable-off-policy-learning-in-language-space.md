@@ -3,7 +3,7 @@ layout: default
 title: "Natural Language Actor-Critic: Scalable Off-Policy Learning in Language Space"
 ---
 
-# Agent训练告别数值奖励：字节跳動NLAC让AI用“人话”指导，性能最高提升24%
+## Agent训练告别数值奖励：字节跳動NLAC让AI用“人话”指导，性能最高提升24%
 
 <img src="/images/2512.04601v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

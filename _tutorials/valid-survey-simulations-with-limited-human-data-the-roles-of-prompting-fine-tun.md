@@ -3,7 +3,6 @@ layout: default
 title: "Valid Survey Simulations with Limited Human Data: The Roles of Prompting, Fine-Tuning, and Rectification"
 ---
 
-# Valid Survey Simulations with Limited Human Data: The Roles of Prompting, Fine-Tuning, and Rectification
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.11408v1
 
@@ -13,10 +12,10 @@ title: "Valid Survey Simulations with Limited Human Data: The Roles of Prompting
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种将大型语言模型（LLM）用于调查问卷模拟的有效框架，其核心思想是：不应将所有宝贵的人类数据用于微调模型，而应将大部分数据用于对LLM生成的大量合成数据进行统计校正（Rectification），从而在有限的人类数据下获得低偏倚、高效率的群体估计。
 
-# 关键定义
+## 关键定义
 本文的核心在于结合以下两种方法，并探讨了它们之间的数据分配策略：
 
 1.  **合成 (Synthesis)**：指使用大型语言模型（LLM）来生成调查问卷的响应。本文中，合成策略主要分为两类：
@@ -27,7 +26,7 @@ title: "Valid Survey Simulations with Limited Human Data: The Roles of Prompting
 
 3.  **有效样本量增益 (Effective Sample Size, ESS Gain)**：一个衡量方法效率的指标，用于量化校正方法相比于仅使用人类小样本进行估计所带来的方差缩减程度。例如，50%的ESS增益意味着该方法的估计精度等同于多收集了50%的人类样本。
 
-# 相关工作
+## 相关工作
 当前，使用LLM作为人类受访者的代理来进行调查模拟是一种新兴的研究方向，它有望解决传统调查成本高、周期长的问题。然而，现有方法存在显著瓶颈：
 
 *   **现状**：领域内的适应方法主要分为三类：
@@ -37,7 +36,7 @@ title: "Valid Survey Simulations with Limited Human Data: The Roles of Prompting
 
 *   **待解决的问题**：目前尚不清楚上述三类方法（训练时、推理时、后处理）在调查模拟中的综合效果如何，它们之间是否存在相互作用。更重要的是，在人类数据资源有限的情况下，如何将这些宝贵的数据在**合成（如微调）**和**校正**之间进行**最佳分配**，以实现最有效的群体估计，这是一个悬而未决的关键问题。
 
-# 本文方法
+## 本文方法
 本文将调查模拟构建为一个两阶段的框架：**合成-校正 (Synthesis-Rectification)**。其目标是利用少量人类数据和一个仅包含人口统计信息的大规模数据集，准确估计目标群体的统计参数（如均值）。
 
 <img src="/images/2510.11408v1/x1.jpg" alt="框架图" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -97,7 +96,7 @@ $${% endraw %}
 
     当模型精度足够高（即误差方差 $\operatorname{Var}(y-\lambda\haty)$ 较小）且合成样本量 $N$ 足够大时，该方法的总方差可以远小于仅依赖 $n$ 个人类样本的估计方差（$\frac{\operatorname{Var}(y)}{n}$），从而实现有效样本量（ESS）的显著增益。
 
-# 实验结论
+## 实验结论
 本文在两个大型纵向调查（NHANES关于营养摄入，ATP关于政治经济观点）上进行了广泛实验，涵盖了开放式和多项选择题两种格式。
 
 ### 不同方法的偏倚和效率

@@ -3,7 +3,6 @@ layout: default
 title: "UNIFORM: Unifying Knowledge from Large-scale and Diverse Pre-trained Models"
 ---
 
-# UNIFORM: Unifying Knowledge from Large-scale and Diverse Pre-trained Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2508.19498v1
 
@@ -13,17 +12,17 @@ title: "UNIFORM: Unifying Knowledge from Large-scale and Diverse Pre-trained Mod
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一个名为 UNIFORM 的统一知识迁移框架，旨在从大量异构（不同架构、不同训练数据）的预训练模型中，通过新颖的特征投票和Logit投票机制，解决知识冲突问题，从而高效地将共识知识迁移到一个学生模型中，且无需任何手动标注。
 
-# 关键定义
+## 关键定义
 *   **UNIFORM**: 本文提出的核心框架，全称为 Unifying Knowledge from Large-scale and Diverse Pre-trained Models。它是一个统一的知识迁移框架，能够从大量、多样化的现成模型中学习，对教师模型的架构或训练数据几乎没有限制。
 *   **预测型教师 (Predictive Teachers)**: 指那些在与目标任务一致的标签空间上训练的模型。这类教师能够直接为目标类别提供预测分数（Logits），例如领域自适应中的源模型或开放词汇分类器。
 *   **描述型教师 (Descriptive Teachers)**: 指那些虽然没有在目标类别上训练，但能提供信息丰富的通用视觉特征表示的模型。这类教师在任意标签空间上学习的视觉表示都可以被利用。
 *   **特征投票 (Features Voting)**: UNIFORM中用于处理特征层面知识冲突的核心机制。它首先将所有教师的特征映射到统一的潜在空间，然后通过计算特征符号的共识方向，过滤掉与大多数教师不一致的“噪声”特征维度，最后聚合得到一个更可靠的、经过去噪的特征表示用于指导学生模型学习。
 *   **Logit投票 (Logits Voting)**: UNIFORM中用于处理预测层面知识冲突的核心机制。它通过在所有预测型教师的预测结果中进行投票，确定一个最可信的伪标签（pseudo-class）。在进行知识蒸馏时，该机制会特别强调这个伪标签，从而减轻因不同教师预测不一致而对学生模型造成的干扰。
 
-# 相关工作
+## 相关工作
 目前，利用多个预训练模型知识的方法主要有模型合并（Model Merging）、专家混合（Mixture-of-Experts, MoE）和知识蒸馏（Knowledge Distillation, KD）。
 
 *   **现状与瓶颈**:
@@ -34,7 +33,7 @@ title: "UNIFORM: Unifying Knowledge from Large-scale and Diverse Pre-trained Mod
 *   **本文要解决的问题**:
     如何设计一个统一的框架，能够有效地从大量、多样化（包括不同架构、不同训练数据）的公开预训练模型中整合并迁移知识，以训练一个强大的、无需人工标注数据的目标识别模型，同时克服现有方法在处理异构性方面的局限性。
 
-# 本文方法
+## 本文方法
 本文提出了UNIFORM框架，旨在从一个由$$$N^p$$$个预测型教师和$$$N^d$$$个描述型教师组成的庞大模型集合中，为一个在无标签数据上训练的学生模型提供监督信号。其核心在于设计了两个创新的投票机制来解决来自不同教师的知识冲突。
 
 <img src="/images/2508.19498v1/x1.jpg" alt="UNIFORM框架概述" style="width:85%; max-width:450px; margin:auto; display:block;">
@@ -105,7 +104,7 @@ $${% endraw %}
 
 训练完成后，所有教师模型和辅助的编解码器都会被丢弃，只保留轻量的学生模型用于推理。
 
-# 实验结论
+## 实验结论
 本文在多达11个基准数据集上进行了广泛实验，使用了超过100个不同架构（ResNet, ViT, Swin, ConvNeXt）和训练数据的公开模型作为教师。
 
 ### 核心结果

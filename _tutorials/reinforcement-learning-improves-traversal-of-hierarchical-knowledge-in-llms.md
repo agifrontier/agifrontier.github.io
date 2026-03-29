@@ -3,7 +3,7 @@ layout: default
 title: "Reinforcement Learning Improves Traversal of Hierarchical Knowledge in LLMs"
 ---
 
-# 告别“对齐税”！Meta新研究：RL将LLM变身知识导航员，分层知识检索飙升24%
+## 告别“对齐税”！Meta新研究：RL将LLM变身知识导航员，分层知识检索飙升24%
 
 <img src="/images/2511.05933v1/A__title.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
 

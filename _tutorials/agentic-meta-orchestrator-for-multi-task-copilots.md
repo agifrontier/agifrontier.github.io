@@ -3,7 +3,6 @@ layout: default
 title: "Agentic Meta-Orchestrator for Multi-task Copilots"
 ---
 
-# Agentic Meta-Orchestrator for Multi-task Copilots
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.22781v1
 
@@ -13,16 +12,16 @@ title: "Agentic Meta-Orchestrator for Multi-task Copilots"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为“智能体元编排器” (Agentic Meta-Orchestrator, AMO) 的新架构，用于构建可扩展的多任务Copilot服务，该架构通过学习排序模型进行智能体路由，利用LoRA臂实现高效多任务推理，并通过元学习决策树来动态规划推理路径。
 
-# 关键定义
+## 关键定义
 *   **智能体元编排器 (Agentic Meta-Orchestrator, AMO)**：本文提出的核心架构，旨在管理和协调多任务Copilot中的多个智能体。它集成了智能体编排、多任务推理和推理规划三大功能，以应对动态增加的智能体和复杂的任务需求。
 *   **智能体编排器 (Agentic Orchestrator)**：AMO的关键组件之一，负责将用户请求路由到最合适的智能体。它创新地将此问题建模为学习排序 (learning-to-rank) 任务，而非传统的多分类任务。通过对智能体的自然语言描述进行排序，该方法在新增智能体时具有很强的可扩展性。
 *   **LoRA臂 (LoRA Arms)**：一种为实现高效多任务推理而设计的内存优化框架。它让多个任务共享同一个基础大语言模型，但为每个任务独立训练和加载特定的低秩适应 (Low-Rank Adaptation, LoRA) 权重（即“臂”）。在推理时，这些“臂”可以同时应用，从而在显著节省内存的同时处理多个任务。
 *   **元学习决策树 (Meta-learning Decision Tree)**：AMO的规划组件，是一个经过训练的决策模型，用于为给定的用户提示选择最优的推理路径（即智能体/模型的组合与调用顺序）。与基于启发式规则或LLM实时规划的方法不同，该决策树通过学习历史数据来生成确定性、可操作的行动计划，其中每个节点代表一个智能体或模型。
 
-# 相关工作
+## 相关工作
 当前，构建强大的多智能体（multi-agent）系统面临着诸多挑战。一方面，像ChatGPT这样的大语言模型（LLM）虽然功能强大，但在处理特定领域任务时，常因知识过时或缺乏定制化而表现不佳。例如，它们无法提供最新的产品价格或根据用户上下文给出特定建议。
 
 为了解决这一问题，业界开始采用领域智能体来扩展LLM的能力，但这引入了新的瓶颈：
@@ -32,7 +31,7 @@ title: "Agentic Meta-Orchestrator for Multi-task Copilots"
 
 本文旨在解决以上三大核心问题：如何实现可扩展的智能体编排、高效的多任务模型部署以及自动化的最优推理规划。
 
-# 本文方法
+## 本文方法
 本文提出的 Agentic Meta-Orchestrator (AMO) 架构由三个核心创新组件构成，分别应对编排、效率和规划的挑战。
 
 ### 智能体编排器：基于学习排序的可扩展路由
@@ -79,7 +78,7 @@ title: "Agentic Meta-Orchestrator for Multi-task Copilots"
 
 <img src="/images/2510.22781v1/Meta-Learner.jpg" alt="A Meta-learning Decision Tree Model" style="width:90%; max-width:700px; margin:auto; display:block;">
 
-# 实验结论
+## 实验结论
 本文通过在两个真实的生产级Copilot服务——M365电子商务Copilot和代码合规性Copilot——上的实验，验证了AMO架构的有效性。
 
 *   **智能体编排性能**：实验表明，随着智能体数量的增加，本文提出的基于学习排序的编排器性能保持稳定。相比之下，传统的BERT分类模型在智能体从9个增加到13个时，F-1分数显著下降。这证明了该方法在可扩展性方面的巨大优势。

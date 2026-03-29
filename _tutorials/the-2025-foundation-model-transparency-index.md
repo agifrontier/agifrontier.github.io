@@ -3,7 +3,7 @@ layout: default
 title: "The 2025 Foundation Model Transparency Index"
 ---
 
-# 2025 AI透明度大倒退：均分跌至40，IBM夺冠，xAI与Midjourney垫底
+## 2025 AI透明度大倒退：均分跌至40，IBM夺冠，xAI与Midjourney垫底
 
 <img src="/images/2512.10169v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
 

@@ -3,7 +3,6 @@ layout: default
 title: "Large Language Model Sourcing: A Survey"
 ---
 
-# Large Language Model Sourcing: A Survey
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.10161v1
 
@@ -13,7 +12,7 @@ title: "Large Language Model Sourcing: A Survey"
 
 ---
 
-# 大语言模型溯源：一篇综述
+## 大语言模型溯源：一篇综述
 
 ## 引言
 

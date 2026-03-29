@@ -3,7 +3,6 @@ layout: default
 title: "AgentGym-RL: Training LLM Agents for Long-Horizon Decision Making through Multi-Turn Reinforcement Learning"
 ---
 
-# AgentGym-RL: Training LLM Agents for Long-Horizon Decision Making through Multi-Turn Reinforcement Learning
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.08755v1
 
@@ -13,24 +12,24 @@ title: "AgentGym-RL: Training LLM Agents for Long-Horizon Decision Making throug
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一个名为 AgentGym-RL 的强化学习框架和一个名为 ScalingInter-RL 的渐进式训练方法，旨在通过多轮交互式决策，从零开始（无需监督微调）训练大型语言模型（LLM）智能体，以解决长时程复杂任务。
 
-# 关键定义
+## 关键定义
 本文提出或沿用了以下对理解论文至关重要的核心概念：
 
 *   **AgentGym-RL**: 一个专为 LLM 智能体设计的新型强化学习（Reinforcement Learning, RL）训练框架。它具备模块化、解耦的架构，支持多种真实世界场景和主流 RL 算法，旨在通过智能体与环境的多轮交互进行端到端的策略优化。
 *   **ScalingInter-RL**: 一种渐进式交互缩放（Progressive Scaling Interaction）的训练方法。其核心思想是在 RL 训练过程中动态调整智能体与环境的最大交互轮数。训练初期使用较少的交互轮数以“利用”（exploitation）已有知识快速掌握基础技能；随着训练进行，逐步增加交互轮数以鼓励“探索”（exploration），从而学习更复杂的策略，最终达到稳定优化与性能提升的目的。
 *   **部分可观测马尔可夫决策过程 (Partially Observable Markov Decision Process, POMDP)**: 本文沿用此经典模型来对智能体任务进行数学形式化。一个 POMDP 由元组 $(\mathcal{U}, \mathcal{S}, \mathcal{A}, \mathcal{O}, \mathcal{T} , r)$ 定义，分别代表指令空间、状态空间、动作空间、观测空间、状态转移函数和奖励函数。智能体的目标是在此框架下学习一个策略 $\pi\_\theta$ 来最大化累积奖励。
 
-# 相关工作
+## 相关工作
 当前，大型语言模型（LLM）正从聊天机器人向能够处理真实世界长时程任务的自主智能体演进。通过与环境的探索和交互来学习是智能体发展的理想模式，因此强化学习（RL）成为一种自然的技术路径。
 
 尽管已有研究将 RL 应用于 LLM 领域，但多数工作局限于单轮推理任务，未能解决智能体在复杂环境中进行多轮交互决策的问题。少数尝试训练多轮交互智能体的研究，在任务复杂性、环境多样性以及优化稳定性方面存在局限，导致性能不佳。
 
 本文旨在解决的核心问题是：当前社区缺乏一个统一、有效、端到端的交互式多轮 RL 框架，该框架需要能够支持在多样化的真实环境中，从零开始（不依赖监督微调作为预备步骤）训练 LLM 智能体，并确保训练过程的稳定性和高效性。
 
-# 本文方法
+## 本文方法
 
 ## 框架：AgentGym-RL
 AgentGym-RL 是一个为训练多轮交互 LLM 智能体而设计的全新强化学习框架。它基于 AgentGym 构建，但在环境多样性、算法支持和工程优化方面进行了大幅扩展。
@@ -47,8 +46,8 @@ AgentGym-RL 是一个为训练多轮交互 LLM 智能体而设计的全新强化
 **图 2**: AgentGym-RL 框架概览。它具有解耦、灵活和可扩展的架构，包括环境、智能体和训练三个主要模块，支持多样的场景、环境和算法。
 
 ``$$python
-# 伪代码示例
-# 第1阶段：生成响应
+## 伪代码示例
+## 第1阶段：生成响应
 task_ids = expand(task_ids, sample_num)
 envs = create_env_clients(task_ids, "webarena", base_url)
 并行执行:
@@ -69,12 +68,12 @@ for i in range(max_rounds)
        h.add_user_message(res.state)
        h.score = res.score
    if all_done(handlers): break
-# 第2阶段：准备经验
+## 第2阶段：准备经验
 batch = gen_batch_from_rollout_handlers(handlers)
 batch = actor.compute_log_prob(batch)
 batch = reference.compute_ref_log_prob(batch)
 batch = compute_advantages(batch, method="grpo")
-# 第3阶段：Actor训练
+## 第3阶段：Actor训练
 actor.update_actor(batch)
 $$``
 **图 3**: 框架使用示例的伪代码（橙色标记为提供的API），以及智能体-环境交互与训练流程的简化理论图。
@@ -135,7 +134,7 @@ $${% endraw %}
 <img src="/images/2509.08755v1/page_7_Figure_0.jpg" alt="ScalingInter-RL方法图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 **图 5**: ScalingInter-RL 方法图示。它让智能体分阶段适应：初期限制交互轮数以优先利用、掌握基础技能；后期逐渐增加交互以促进探索、优化行为并解决更难的问题。
 
-# 实验结论
+## 实验结论
 本文通过在五个不同场景下的广泛实验，验证了 AgentGym-RL 框架和 ScalingInter-RL 方法的稳定性和有效性。
 
 ### 关键结果与洞察

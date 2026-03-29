@@ -3,7 +3,6 @@ layout: default
 title: "Connecting Jensen-Shannon and Kullback-Leibler Divergences: A New Bound for Representation Learning"
 ---
 
-# Connecting Jensen-Shannon and Kullback-Leibler Divergences: A New Bound for Representation Learning
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.20644v1
 
@@ -13,10 +12,10 @@ title: "Connecting Jensen-Shannon and Kullback-Leibler Divergences: A New Bound 
 
 ---
 
-# TL;DR
+## TL;DR
 本文推导出了一个连接Kullback-Leibler散度（KLD）和Jensen-Shannon散度（JSD）的新的、紧致的下界，从而在理论上证明了最大化基于JSD的判别器目标函数等同于最大化互信息（MI）的一个可靠下界，为表示学习中广泛使用的判别式方法提供了坚实的理论基础。
 
-# 关键定义
+## 关键定义
 本文的核心是建立JSD和KLD之间的数学联系。关键定义如下：
 
 1.  **互信息 (Mutual Information, MI)**：衡量两个随机变量 $U$ 和 $V$ 之间统计依赖性的基本指标。它被定义为联合分布 $p\_{UV}$ 与边缘分布乘积 $p\_U \otimes p\_V$ 之间的KL散度。
@@ -48,7 +47,7 @@ title: "Connecting Jensen-Shannon and Kullback-Leibler Divergences: A New Bound 
 
 4.  **$f$-散度的联合范围 (Joint range of $f$-divergences)**：一个理论工具，指对于一对$f$-散度 $(D\_f, D\_g)$，所有可能的散度值对 $(D\_f(p\ \mid q), D\_g(p\ \mid q))$ 构成的集合。本文利用KLD和JSD的联合范围，特别是其下边界，来推导出 KLD 关于 JSD 的最紧下界。一个关键性质是，该范围仅通过分析二元分布（伯努利分布）即可完全刻画。
 
-# 相关工作
+## 相关工作
 互信息（MI）的最大化是许多表示学习框架的核心，但直接估计和优化MI，尤其是在高维连续空间中，是极其困难的。
 
 早期的非参数方法，如$k$-近邻法，难以扩展到高维数据。现代方法转向使用深度神经网络来优化MI的变分下界 (Variational Lower Bounds, VLBs)。例如，MINE和NWJ利用了KLD的不同变分表示，但这些方法存在估计方差大、训练不稳定的问题。后续的SMILE等方法尝试通过修正目标函数来降低方差，但优化VLBs并不总能保证准确估计MI的下界。
@@ -59,7 +58,7 @@ title: "Connecting Jensen-Shannon and Kullback-Leibler Divergences: A New Bound 
 
 本文旨在解决这一核心问题：为“最大化JSD等价于提升MI”这一经验观察提供严谨的理论证明，从而连接判别式学习目标与信息论中的互信息最大化原则。
 
-# 本文方法
+## 本文方法
 本文的核心思想是构建一个从易于优化的判别器损失到互信息下界的完整数学链条。该方法可分为两个关键步骤，最终将它们连接起来。
 
 ### 创新点1：KLD关于JSD的新下界
@@ -125,7 +124,7 @@ $${% endraw %}
 
 这为Deep InfoMax等方法的成功提供了坚实的理论解释，并提出了一个全新的、有理论依据的MI变分下界估计器 $I\_{CE}$。此外，训练好的判别器还可以通过Logit变换直接用于估计MI值本身，这与GAN-DIME等方法一致。
 
-# 实验结论
+## 实验结论
 本文通过一系列实验，从理论和实践两方面验证了所提方法的有效性。
 
 ### 下界的紧致性验证

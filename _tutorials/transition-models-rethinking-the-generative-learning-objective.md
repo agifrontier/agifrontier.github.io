@@ -3,7 +3,6 @@ layout: default
 title: "Transition Models: Rethinking the Generative Learning Objective"
 ---
 
-# Transition Models: Rethinking the Generative Learning Objective
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.04394v1
 
@@ -13,10 +12,10 @@ title: "Transition Models: Rethinking the Generative Learning Objective"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种名为过渡模型 (Transition Models, TiM) 的新型生成范式，它通过学习一个能够在任意时间间隔 $$$\Delta t$$$ 上进行状态转换的精确动力学方程，成功统一了高效的少步生成与高质量的多步精炼，解决了现有生成模型中普遍存在的“速度-质量”权衡困境。
 
-# 关键定义
+## 关键定义
 本文的核心是围绕一个新的生成学习目标展开的，其关键概念如下：
 
 *   **过渡模型 (Transition Models, TiM)**: 一种新型的生成模型，其训练目标并非像传统扩散模型那样学习瞬时的 PF-ODE 向量场，也不是像一致性模型那样学习固定的终点映射，而是直接学习在任意时间点 $$t$$ 的状态 $$$\mathbf{x}\_t$$$ 到任意先前时间点 $$$t-\Delta t$$$ 的状态 $$$\mathbf{x}\_{t-\Delta t}$$$ 之间的转换。这使得单个模型就能适应从单步跳跃到多步精细化采样的任意步长策略。
@@ -25,7 +24,7 @@ title: "Transition Models: Rethinking the Generative Learning Objective"
 
 *   **微分推导方程 (Differential Derivation Equation, DDE)**: 一种用于高效计算网络时间导数 $$$\frac{\mathrm{d}\mathbf{f}\_{\theta}}{\mathrm{d}t}$$$ 的有限差分近似方法。与计算密集且与分布式训练框架（如 FSDP）不兼容的雅可比向量积 (Jacobian-Vector Product, JVP) 不同，DDE 仅需前向传播，速度快约2倍且具有良好的可扩展性，使得对十亿级参数的大模型进行从头训练成为可能。
 
-# 相关工作
+## 相关工作
 当前视觉内容生成领域由扩散模型主导，但面临一个根本性的困境：
 *   **多步模型（如扩散模型）**：通过对概率流常微分方程 (Probability-Flow Ordinary Differential Equation, PF-ODE) 进行迭代数值积分来生成高质量图像。这种方法保真度高，但需要大量的函数评估次数 (Number of Function Evaluations, NFE)，导致推理延迟大、计算成本高。当采样步长 $$$\Delta t$$$ 增大时，离散化误差会急剧增加，导致性能下降。
 *   **少步模型（如一致性模型、FlowMap）**：通过学习从噪声到数据的直接映射或轨迹上的“捷径”来减少采样步数。这类模型在少步生成上效率很高，但存在一个难以逾越的“质量天花板”。由于它们在训练中丢弃了精细的局部动态信息，增加采样步数通常不会带来性能提升，甚至可能导致质量下降。
@@ -35,7 +34,7 @@ title: "Transition Models: Rethinking the Generative Learning Objective"
 <img src="/images/2509.04394v1/x2.jpg" alt="不同生成范式图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 图 2: 不同生成范式图示。传统扩散模型学习局部向量场，少步模型学习固定的终点映射（单个大步），而本文的过渡模型 (TiM) 训练用于掌握任意状态间的转换。这种方法使 TiM 能够学习生成过程的整个解流形，统一了少步和多步生成机制。
 
-# 本文方法
+## 本文方法
 本文首先分析了传统PF-ODE监督的局限性，然后推导出一个适用于任意时间间隔的状态转换恒等式，并基于此构建了一个可扩展且稳定的学习目标。最后，提出了针对性的架构改进。
 
 ### PF-ODE监督的局限性
@@ -153,7 +152,7 @@ $${% endraw %}
 <img src="/images/2509.04394v1/x1.jpg" alt="TiM across different NFEs, resolutions, and aspect ratios" style="width:80%; max-width:300px; margin:auto; display:block;">
 图 1: TiM 在不同 NFE、分辨率和宽高比下的卓越性能。
 
-# 实验结论
+## 实验结论
 
 ### 关键实验结果
 TiM 在各类文生图基准测试中展现了最先进的性能、效率和灵活性。

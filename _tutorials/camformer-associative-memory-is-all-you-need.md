@@ -3,7 +3,7 @@ layout: default
 title: "CAMformer: Associative Memory is All You Need"
 ---
 
-# CAMformer横空出世：Attention能效飙升10倍，用联想记忆取代矩阵乘法
+## CAMformer横空出世：Attention能效飙升10倍，用联想记忆取代矩阵乘法
 
 <img src="/images/2511.19740v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 

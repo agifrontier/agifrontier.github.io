@@ -3,7 +3,7 @@ layout: default
 title: "How Does RL Post-training Induce Skill Composition? A Case Study on Countdown"
 ---
 
-# RL训练的秘密：LLM学会了举一反三，为何却被“先易后难”的结构卡住？
+## RL训练的秘密：LLM学会了举一反三，为何却被“先易后难”的结构卡住？
 
 <img src="/images/2512.01775v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

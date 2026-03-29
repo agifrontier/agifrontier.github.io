@@ -21,12 +21,17 @@
     {% include header.liquid %}
 
     <!-- Content -->
+    {% assign rendered_content = content %}
+    {% if page.collection == 'tutorials' %}
+      {% assign rendered_content = content | ensure_single_h1: page.title %}
+    {% endif %}
+
     <div class="container mt-5" role="main">
       {% if page.toc and page.toc.sidebar %}
         {% if page.toc.sidebar == 'right' %}
           <div class="row">
             <!-- main content area -->
-            <div class="col-sm-9">{{ content }}</div>
+            <div class="col-sm-9">{{ rendered_content }}</div>
             <!-- sidebar, which will move to the top on a small screen -->
             <div class="col-sm-3">
               <nav id="toc-sidebar" class="sticky-top"></nav>
@@ -39,11 +44,11 @@
               <nav id="toc-sidebar" class="sticky-top"></nav>
             </div>
             <!-- main content area -->
-            <div class="col-sm-9">{{ content }}</div>
+            <div class="col-sm-9">{{ rendered_content }}</div>
           </div>
         {% endif %}
       {% else %}
-        {{ content }}
+        {{ rendered_content }}
       {% endif %}
     </div>
 

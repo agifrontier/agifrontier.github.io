@@ -3,7 +3,6 @@ layout: default
 title: "Retrieval Augmented Generation (RAG) for Fintech: Agentic Design and Evaluation"
 ---
 
-# Retrieval Augmented Generation (RAG) for Fintech: Agentic Design and Evaluation
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.25518v1
 
@@ -13,16 +12,16 @@ title: "Retrieval Augmented Generation (RAG) for Fintech: Agentic Design and Eva
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种专为金融科技（Fintech）领域设计的智能体化检索增强生成（Agentic Retrieval-Augmented Generation, A-RAG）架构，通过一个由专业智能体组成的模块化、迭代式流水线，有效解决了领域内术语密集、缩写混杂和知识碎片化等挑战，显著提升了检索精度和答案相关性。
 
-# 关键定义
+## 关键定义
 本文的核心是提出一种新的智能体化RAG架构，并与基线进行对比。关键定义如下：
 *   **基线RAG (Baseline RAG, B-RAG)**: 一个标准的、线性的RAG流程，依次执行查询重构、单次向量检索和答案生成。该系统架构简单，但无法处理复杂查询、领域术语和知识碎片化问题。
 *   **智能体RAG (Agentic RAG, A-RAG)**: 本文提出的高级RAG架构。它由一个**协调器智能体 (Orchestrator Agent)** 负责调度多个**专业智能体 (specialised agents)**，通过迭代式的检索、评估和精炼循环来处理用户查询。其设计旨在通过模块化和任务分解来应对金融科技领域的复杂性。
 *   **语义准确度 (Semantic Accuracy)**: 本文使用的一种评估指标，通过一个作为“法官”的语言模型（LLM-as-a-judge）来评估生成答案与标准答案在语义上的等价性，而非仅仅是词汇上的重叠。评分范围为1-10分。
 
-# 相关工作
+## 相关工作
 当前，检索增强生成（RAG）系统在通用领域取得了显著成功，但在金融科技（Fintech）等高度专业化和严格监管的领域部署时面临巨大挑战。
 
 研究现状的瓶颈主要包括：
@@ -32,7 +31,7 @@ title: "Retrieval Augmented Generation (RAG) for Fintech: Agentic Design and Eva
 
 因此，本文旨在解决的核心问题是：如何设计一个能够在企业内部署、适应金融科技领域复杂性（术语、缩写、信息碎片化）的RAG系统，并建立一套安全、可复现的评估方法。
 
-# 本文方法
+## 本文方法
 本文首先实现了一个标准的基线RAG系统（B-RAG）作为对比，然后设计并实现了一个更先进的智能体RAG系统（A-RAG）。
 
 ### 基线方法 (B-RAG)
@@ -73,7 +72,7 @@ A-RAG的本质创新在于从**线性、单次的检索**转变为**动态、迭
 4.  **迭代精炼（如果需要）**：如果分数低于阈值，系统将触发精炼流程。$$Sub-Query Generator$$ 会生成更具针对性的子查询（如“CVaR formula”），再次检索，并通过 $$Re-ranker$$ 优化结果排序，然后重新生成答案。
 5.  **最终输出**：如果经过迭代后能生成高置信度的答案，则返回该答案；否则，系统会向用户明确表示无法找到确切答案，保证了透明度。
 
-# 实验结论
+## 实验结论
 本文通过在一个真实的金融科技企业内部知识库上进行实验，对B-RAG和A-RAG的性能进行了定量和定性评估。
 
 ### 知识库与评估集

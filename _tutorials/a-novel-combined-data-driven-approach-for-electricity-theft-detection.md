@@ -3,7 +3,6 @@ layout: default
 title: "A Novel Combined Data-Driven Approach for Electricity Theft Detection"
 ---
 
-# A Novel Combined Data-Driven Approach for Electricity Theft Detection
 
 - **ArXiv URL**: http://arxiv.org/abs/2411.06649v1
 
@@ -13,16 +12,16 @@ title: "A Novel Combined Data-Driven Approach for Electricity Theft Detection"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出了一种结合最大信息系数(MIC)和快速搜索密度峰值聚类(CFSFDP)的数据驱动方法，以无监督的方式，仅需少量额外信息（区域总电表数据），即可高效、准确地检测出形态各异的电力盗窃行为。
 
-# 关键定义
+## 关键定义
 *   **非技术性损失 (Non-technical loss, NTL)**：指由计量篡改、窃电等非技术原因造成的电网供售电量差额。本文中，NTL通过区域总电表读数减去该区域内所有用户智能电表读数之和来计算，是检测窃电行为的关键信号。
 *   **最大信息系数 (Maximum Information Coefficient, MIC)**：一种用于衡量两个变量之间关联强度的统计方法。它不仅能捕捉线性关系，还能有效发现复杂的非线性关系。本文用MIC来度量区域NTL与单个用户用电曲线之间的关联性。
 *   **快速搜索与发现密度峰值的聚类 (Clustering by fast search and find of density peaks, CFSFDP)**：一种基于密度的无监督聚类算法。它通过计算每个数据点的局部密度（$$ρ$$）和与更高密度点的最小距离（$$δ$$）来识别簇中心和异常点。本文用它来识别用电形状异常的用户。
 *   **异常度 (Degree of abnormality, $$ζ_p$$)**：本文基于CFSFDP提出的一个度量指标，定义为 $\zeta\_{p}=\frac{\delta\_{p}}{\rho\_{p}+1}$。异常点的特征是局部密度$$ρ$$小，而距离$$δ$$大，因此$$ζ_p$$值较高的用户负载曲线被视为形状异常。
 
-# 相关工作
+## 相关工作
 电力盗窃检测方法主要分为三类：基于人工智能（AI）的方法、基于状态（state-based）的方法和基于博弈论的方法。
 
 *   **研究现状与瓶颈**：
@@ -36,7 +35,7 @@ title: "A Novel Combined Data-Driven Approach for Electricity Theft Detection"
     3.  **检测范围广**：能同时应对改变用电模式（形状异常）和保持模式（仅量值改变）的多种窃电类型。
     4.  **准确率高**：结合不同方法的优势，提升整体检测性能。
 
-# 本文方法
+## 本文方法
 
 本文提出一个结合了两种互补数据挖掘技术的组合检测框架，分别从“幅度-相关性”和“形状-相似性”两个维度量化用户的窃电嫌疑。
 
@@ -125,7 +124,7 @@ title: "A Novel Combined Data-Driven Approach for Electricity Theft Detection"
 
 综合排名高的用户被认为是重点怀疑对象。
 
-# 实验结论
+## 实验结论
 
 实验在包含5000多用户的爱尔兰智能电表数据集上进行，模拟了6种不同的虚假数据注入（FDI）类型来代表窃电行为。
 

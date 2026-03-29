@@ -3,7 +3,6 @@ layout: default
 title: "DeepAgent: A General Reasoning Agent with Scalable Toolsets"
 ---
 
-# DeepAgent: A General Reasoning Agent with Scalable Toolsets
 
 - **ArXiv URL**: http://arxiv.org/abs/2510.21618v1
 
@@ -13,16 +12,16 @@ title: "DeepAgent: A General Reasoning Agent with Scalable Toolsets"
 
 ---
 
-# TL;DR
+## TL;DR
 本文提出DeepAgent，一个通用的端到端深度推理智能体（Agent），它将思考、动态工具发现和动作执行统一在单个连贯的推理流中，并通过自主记忆折叠机制和专门的强化学习方法ToolPO，使其能够高效利用规模可变的工具集解决复杂真实世界任务。
 
-# 关键定义
+## 关键定义
 *   **DeepAgent**: 本文提出的核心智能体框架。它是一个端到端的深度推理智能体，其特点是在单一、连续的推理过程中自主地完成思考、按需搜索工具和执行动作，摆脱了传统智能体固定的“思考-行动”循环模式。
 *   **自主记忆折叠 (Autonomous Memory Folding)**: 一种让智能体在长交互过程中“喘口气”的机制。智能体可以通过生成特定指令 $$<fold-memory>$$，调用一个辅助模型将之前的交互历史压缩成结构化的记忆，从而节省上下文长度、提高效率，并有机会重新审视策略以摆脱错误的探索路径。
 *   **脑启发记忆模式 (Brain-Inspired Memory Schema)**: 为支持记忆折叠而设计的结构化记忆格式。它将记忆分为三个并行的部分：**情景记忆 (Episodic Memory)** 记录任务关键事件和决策点；**工作记忆 (Working Memory)** 存储当前子目标和近期计划；**工具记忆 (Tool Memory)** 整合所有工具的使用记录和效果。这种基于JSON的模式确保了记忆的稳定性和可用性。
 *   **ToolPO (Tool Policy Optimization)**: 本文为通用工具使用场景设计的端到端强化学习训练方法。其核心在于通过**工具模拟器 (Tool Simulator)** 解决训练中的API调用不稳定问题，并采用**全局与工具调用优势归因 (Global and Tool-Call Advantage Attribution)** 机制，将奖励精确分配给导致最终成功的全局轨迹和正确的中间工具调用动作，从而实现更高效、精准的策略学习。
 
-# 相关工作
+## 相关工作
 目前，由大型语言模型驱动的智能体主要依赖于预定义的工作流，如ReAct和Plan-and-Solve等方法，它们遵循固定的“推理-行动-观察”循环。这些方法的关键瓶颈在于：
 1.  **缺乏自主性**: 执行步骤和整体流程僵化，无法充分发挥大型推理模型(LRM)的自主决策能力。
 2.  **工具集受限**: 无法在任务执行过程中动态发现新工具，通常依赖于一小组预定义的工具（如网络搜索、代码执行），限制了其在多样化真实场景中的应用。
@@ -31,7 +30,7 @@ title: "DeepAgent: A General Reasoning Agent with Scalable Toolsets"
 
 本文旨在解决上述问题，创建一个能够从大规模工具集中动态发现并调用工具的通用推理智能体，以应对更广泛、更复杂的真实世界任务。
 
-# 本文方法
+## 本文方法
 
 本文提出的DeepAgent框架旨在打破传统智能体僵化的工作流，通过一个统一的推理过程实现任务的端到端解决。
 
@@ -127,7 +126,7 @@ $${% endraw %}
 
 其中 $\rho\_i(\theta)$ 是新旧策略下生成Token $y\_i$ 的概率比。该目标函数鼓励模型提升那些同时带来高全局收益和正确中间行为的动作的概率，从而确保策略更新的稳定性和有效性。
 
-# 实验结论
+## 实验结论
 
 本文在涵盖通用工具使用和下游应用的八个基准测试上进行了广泛实验，结果表明DeepAgent在所有场景中均表现出卓越的性能。
 

@@ -3,7 +3,7 @@ layout: default
 title: "On the Fundamental Limits of LLMs at Scale"
 ---
 
-# LLM越大越强？谷歌DeepMind等雄文揭示其5大“理论天花板”
+## LLM越大越强？谷歌DeepMind等雄文揭示其5大“理论天花板”
 
 <img src="/images/2511.12869v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 

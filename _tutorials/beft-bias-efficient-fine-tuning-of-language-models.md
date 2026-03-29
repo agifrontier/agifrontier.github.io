@@ -3,7 +3,6 @@ layout: default
 title: "BEFT: Bias-Efficient Fine-Tuning of Language Models"
 ---
 
-# BEFT: Bias-Efficient Fine-Tuning of Language Models
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.15974v1
 
@@ -13,11 +12,11 @@ title: "BEFT: Bias-Efficient Fine-Tuning of Language Models"
 
 ---
 
-# TL;DR
+## TL;DR
 
 本文提出了一种偏置高效微调方法 (Bias-Efficient Fine-Tuning, BEFT)，其核心是一种通过计算微调前后偏置向量的投影比率来评估重要性的新方法，从而能够更精确地选择出对下游任务最关键的偏置项（如Q/K/V投影中的偏置）进行微调，以极低的参数量实现卓越性能。
 
-# 关键定义
+## 关键定义
 
 本文的核心创新在于提出了一种新的重要性评分方法来选择最优的偏置项。
 
@@ -31,7 +30,7 @@ title: "BEFT: Bias-Efficient Fine-Tuning of Language Models"
 
     其中，$\boldsymbol{b}^{(l),pre}\_{\mathcal{T}}$ 和 $\boldsymbol{b}^{(l),post}\_{\mathcal{T}}$ 分别表示第 $l$ 层微调前后的偏置向量。得分越高，表示该偏置项变化越大，越重要。
 
-# 相关工作
+## 相关工作
 
 目前，参数高效微调 (Parameter-Efficient Fine-Tuning, PEFT) 技术旨在减少微调大型语言模型时的计算开销。其中，仅微调偏置项 (bias-only fine-tuning) 是一种极具潜力的方法，它无需额外模块，在低数据场景下表现优异。
 
@@ -39,7 +38,7 @@ title: "BEFT: Bias-Efficient Fine-Tuning of Language Models"
 
 本文旨在解决这个具体问题：**如何精确地选择一个特定的偏置项进行微调，以实现最高的参数效率和性能。**
 
-# 本文方法
+## 本文方法
 
 ## 创新点
 
@@ -73,7 +72,7 @@ $${% endraw %}
 
 
 
-# 实验结论
+## 实验结论
 
 本文通过在编码器（BERT、RoBERTa）和解码器（OPT-1.3B、OPT-6.7B）等多种模型和任务上进行广泛实验，验证了所提方法的有效性。
 

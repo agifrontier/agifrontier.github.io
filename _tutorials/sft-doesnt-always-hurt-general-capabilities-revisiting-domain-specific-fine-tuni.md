@@ -3,7 +3,6 @@ layout: default
 title: "SFT Doesn't Always Hurt General Capabilities: Revisiting Domain-Specific Fine-Tuning in LLMs"
 ---
 
-# SFT Doesn't Always Hurt General Capabilities: Revisiting Domain-Specific Fine-Tuning in LLMs
 
 - **ArXiv URL**: http://arxiv.org/abs/2509.20758v1
 
@@ -13,10 +12,10 @@ title: "SFT Doesn't Always Hurt General Capabilities: Revisiting Domain-Specific
 
 ---
 
-# TL;DR
+## TL;DR
 本文挑战了领域特定监督微调（SFT）必然损害大语言模型（LLM）通用能力的普遍观念，指出使用小学习率可以显著缓解性能下降，并提出了一种名为“令牌自适应损失重加权”（TALR）的新方法，以更有效地平衡领域知识注入与通用能力保持。
 
-# 关键定义
+## 关键定义
 本文沿用了现有研究中的核心概念，并为理论分析引入了新的形式化定义：
 
 *   **领域特定微调 (Domain-Specific Fine-Tuning - SFT)**：使用特定领域（如医疗、电商）的数据集对预训练好的通用大语言模型进行额外训练，以增强其在该领域的专业能力。
@@ -25,7 +24,7 @@ title: "SFT Doesn't Always Hurt General Capabilities: Revisiting Domain-Specific
 *   **令牌树 (Token Tree)**：为理论分析引入的结构。一个深度为 $$n$$ 的树，其中每个节点代表一个令牌，从根到叶节点的路径构成一个长度为 $$n$$ 的令牌序列。用于形式化 LLM 的生成过程。
 *   **LLM 压缩协议 (LLM Compression Protocol)**：一种理论视角，将 LLM 视为数据压缩器。LLM 使用算术编码根据其预测的概率分布来编码令牌序列，训练效果通过编码长度的变化来衡量。
 
-# 相关工作
+## 相关工作
 当前，为了让 LLM 适应特定领域，监督微调（SFT）是标准做法。然而，大量研究表明，这种微调常常导致模型在数学、代码等通用任务上的“灾难性遗忘”（catastrophic forgetting），即通用能力显著下降。
 
 领域内的主流研究可归入持续学习（continual learning）的范畴，特别是**数据遗忘（data-oblivious）**方法，即在不访问原始预训练数据的情况下保留已有知识。现有策略包括：
@@ -38,7 +37,7 @@ title: "SFT Doesn't Always Hurt General Capabilities: Revisiting Domain-Specific
 
 本文旨在解决的核心问题是：**领域特定 SFT 是否必然导致严重的通用能力下降？以及如何设计更有效的策略来平衡领域适应和通用能力保持？**
 
-# 本文方法
+## 本文方法
 
 ## 学习率的关键作用
 
@@ -91,7 +90,7 @@ title: "SFT Doesn't Always Hurt General Capabilities: Revisiting Domain-Specific
 
 通过这种方式，TALR 在学习新领域知识的同时，温和地处理那些可能对模型已有通用知识造成剧烈冲击的“难令牌”，从而实现更好的平衡。
 
-# 实验结论
+## 实验结论
 
 ## 关键结果
 
