@@ -1,0 +1,20 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% assign tutorial_collection = site.collections | where_exp:'collection','collection.label == "tutorials"' | first %}
+  {% if tutorial_collection %}
+    {% assign docs = tutorial_collection.docs | where_exp:'doc','doc.sitemap != false' %}
+    {% for doc in docs %}
+      <url>
+        <loc>{{ doc.url | replace:'/index.html','/' | absolute_url | xml_escape }}</loc>
+        {% if doc.seo_lastmod %}
+          <lastmod>{{ doc.seo_lastmod | date_to_xmlschema }}</lastmod>
+        {% endif %}
+      </url>
+    {% endfor %}
+  {% endif %}
+</urlset>
