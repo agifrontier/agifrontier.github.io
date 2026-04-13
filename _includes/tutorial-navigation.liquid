@@ -18,70 +18,40 @@
   {% endif %}
 {% endfor %}
 
-{% assign latest_count = 0 %}
+{% if newer_tutorial or older_tutorial %}
+  <div class="tutorial-navigation mt-5" aria-label="教程相邻导航">
+    <div class="tutorial-navigation__grid">
+      {% if newer_tutorial %}
+        {% assign newer_title = newer_tutorial.title | replace: '$', '' | strip_html %}
+        <a class="tutorial-navigation__card" href="{{ newer_tutorial.url | relative_url }}" title="{{ newer_title }}">
+          <span class="tutorial-navigation__label">上一篇</span>
+          <span class="tutorial-navigation__title">{{ newer_title }}</span>
+          {% if newer_tutorial.seo_lastmod %}
+            <span class="tutorial-navigation__meta">{{ newer_tutorial.seo_lastmod | date: "%Y-%m-%d" }}</span>
+          {% endif %}
+        </a>
+      {% else %}
+        <div class="tutorial-navigation__card tutorial-navigation__card--empty">
+          <span class="tutorial-navigation__label">上一篇</span>
+          <span class="tutorial-navigation__title">已经是最早的一篇</span>
+        </div>
+      {% endif %}
 
-<div class="tutorial-navigation mt-5">
-  <div class="tutorial-navigation__grid">
-    <section class="tutorial-navigation__panel">
-      <div class="tutorial-navigation__panel-header">
-        <span class="tutorial-navigation__eyebrow">继续阅读</span>
-        <h2>顺着当前话题继续看</h2>
-        <p>给当前教程补上相邻入口，减少读完就断开的情况。</p>
-      </div>
-
-      <div class="tutorial-navigation__adjacent">
-        {% if newer_tutorial %}
-          {% assign newer_title = newer_tutorial.title | replace: '$', '' | strip_html %}
-          <a class="tutorial-navigation__story" href="{{ newer_tutorial.url | relative_url }}" title="{{ newer_title }}">
-            <span class="tutorial-navigation__story-label">上一篇</span>
-            <span class="tutorial-navigation__story-title">{{ newer_title }}</span>
-            {% if newer_tutorial.seo_lastmod %}
-              <span class="tutorial-navigation__story-meta">{{ newer_tutorial.seo_lastmod | date: "%Y-%m-%d" }}</span>
-            {% endif %}
-          </a>
-        {% endif %}
-        {% if older_tutorial %}
-          {% assign older_title = older_tutorial.title | replace: '$', '' | strip_html %}
-          <a class="tutorial-navigation__story" href="{{ older_tutorial.url | relative_url }}" title="{{ older_title }}">
-            <span class="tutorial-navigation__story-label">下一篇</span>
-            <span class="tutorial-navigation__story-title">{{ older_title }}</span>
-            {% if older_tutorial.seo_lastmod %}
-              <span class="tutorial-navigation__story-meta">{{ older_tutorial.seo_lastmod | date: "%Y-%m-%d" }}</span>
-            {% endif %}
-          </a>
-        {% endif %}
-        {% unless newer_tutorial or older_tutorial %}
-          <div class="tutorial-navigation__empty">暂无相邻教程</div>
-        {% endunless %}
-      </div>
-    </section>
-
-    <section class="tutorial-navigation__panel tutorial-navigation__panel--compact">
-      <div class="tutorial-navigation__panel-header">
-        <span class="tutorial-navigation__eyebrow">最新教程</span>
-        <h2>最近更新</h2>
-        <p>保留一组高频入口，帮助新文章持续被发现。</p>
-      </div>
-
-      <div class="tutorial-navigation__latest-list">
-        {% for item in sorted_tutorials %}
-          {% unless item.url == page.url %}
-            {% assign item_title = item.title | replace: '$', '' | strip_html %}
-            <a class="tutorial-navigation__latest-item" href="{{ item.url | relative_url }}" title="{{ item_title }}">
-              {% if item.seo_lastmod %}
-                <span class="tutorial-navigation__latest-date">{{ item.seo_lastmod | date: "%m-%d" }}</span>
-              {% else %}
-                <span class="tutorial-navigation__latest-date">--</span>
-              {% endif %}
-              <span class="tutorial-navigation__latest-title">{{ item_title }}</span>
-            </a>
-            {% assign latest_count = latest_count | plus: 1 %}
-            {% if latest_count >= 6 %}
-              {% break %}
-            {% endif %}
-          {% endunless %}
-        {% endfor %}
-      </div>
-    </section>
+      {% if older_tutorial %}
+        {% assign older_title = older_tutorial.title | replace: '$', '' | strip_html %}
+        <a class="tutorial-navigation__card" href="{{ older_tutorial.url | relative_url }}" title="{{ older_title }}">
+          <span class="tutorial-navigation__label">下一篇</span>
+          <span class="tutorial-navigation__title">{{ older_title }}</span>
+          {% if older_tutorial.seo_lastmod %}
+            <span class="tutorial-navigation__meta">{{ older_tutorial.seo_lastmod | date: "%Y-%m-%d" }}</span>
+          {% endif %}
+        </a>
+      {% else %}
+        <div class="tutorial-navigation__card tutorial-navigation__card--empty">
+          <span class="tutorial-navigation__label">下一篇</span>
+          <span class="tutorial-navigation__title">已经是最新的一篇</span>
+        </div>
+      {% endif %}
+    </div>
   </div>
-</div>
+{% endif %}
