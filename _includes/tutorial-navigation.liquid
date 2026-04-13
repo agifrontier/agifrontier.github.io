@@ -1,0 +1,67 @@
+{% assign sorted_tutorials = site.tutorials | where_exp: 'item', 'item.sitemap != false' | sort: 'seo_lastmod' | reverse %}
+{% assign newer_tutorial = nil %}
+{% assign older_tutorial = nil %}
+{% assign previous_item = nil %}
+{% assign found_current = false %}
+
+{% for item in sorted_tutorials %}
+  {% if found_current and older_tutorial == nil %}
+    {% assign older_tutorial = item %}
+    {% break %}
+  {% endif %}
+
+  {% if item.url == page.url %}
+    {% assign newer_tutorial = previous_item %}
+    {% assign found_current = true %}
+  {% else %}
+    {% assign previous_item = item %}
+  {% endif %}
+{% endfor %}
+
+{% assign latest_count = 0 %}
+
+<div class="tutorial-navigation mt-5">
+  <hr>
+  <div class="row">
+    <div class="col-lg-6 mb-4">
+      <h2 class="h4">继续阅读</h2>
+      <div class="list-group">
+        {% if newer_tutorial %}
+          <a class="list-group-item list-group-item-action" href="{{ newer_tutorial.url | relative_url }}">
+            <div class="small text-muted">上一篇</div>
+            <div>{{ newer_tutorial.title }}</div>
+          </a>
+        {% endif %}
+        {% if older_tutorial %}
+          <a class="list-group-item list-group-item-action" href="{{ older_tutorial.url | relative_url }}">
+            <div class="small text-muted">下一篇</div>
+            <div>{{ older_tutorial.title }}</div>
+          </a>
+        {% endif %}
+        {% unless newer_tutorial or older_tutorial %}
+          <div class="list-group-item text-muted">暂无相邻教程</div>
+        {% endunless %}
+      </div>
+    </div>
+
+    <div class="col-lg-6 mb-4">
+      <h2 class="h4">最新教程</h2>
+      <div class="list-group">
+        {% for item in sorted_tutorials %}
+          {% unless item.url == page.url %}
+            <a class="list-group-item list-group-item-action" href="{{ item.url | relative_url }}">
+              <div>{{ item.title }}</div>
+              {% if item.seo_lastmod %}
+                <div class="small text-muted">{{ item.seo_lastmod | date: "%Y-%m-%d" }}</div>
+              {% endif %}
+            </a>
+            {% assign latest_count = latest_count | plus: 1 %}
+            {% if latest_count >= 6 %}
+              {% break %}
+            {% endif %}
+          {% endunless %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

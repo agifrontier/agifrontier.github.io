@@ -50,6 +50,10 @@
       {% else %}
         {{ rendered_content }}
       {% endif %}
+
+      {% if page.collection == 'tutorials' %}
+        {% include tutorial-navigation.liquid %}
+      {% endif %}
     </div>
 
     <!-- Footer -->
