@@ -9,7 +9,7 @@ pagination:
   collection: tutorials
   permalink: /page/:num/
   per_page: 50
-  sort_field: date
+  sort_field: seo_lastmod
   sort_reverse: true
   trail:
     before: 1 # The number of links before the current page
@@ -50,7 +50,7 @@ pagination:
   </div>
   {% endif %}
 
-{% assign featured_tutorials = site.tutorials | where: "featured", "true" %}
+{% assign featured_tutorials = site.tutorials | where: "featured", "true" | sort: "seo_lastmod" | reverse %}
 {% if featured_tutorials.size > 0 %}
 <br>
 
@@ -75,7 +75,8 @@ pagination:
                     {% else %}
                       {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
                     {% endif %}
-                    {% assign year = post.date | date: "%Y" %}
+                    {% assign display_date = post.seo_lastmod | default: post.date %}
+                    {% assign year = display_date | date: "%Y" %}
 
                     <p class="post-meta">
                       {{ read_time }} min read &nbsp; &middot; &nbsp;
@@ -100,7 +101,7 @@ pagination:
     {% if page.pagination.enabled %}
       {% assign postlist = paginator.posts %}
     {% else %}
-      {% assign postlist = site.tutorials %}
+      {% assign postlist = site.tutorials | sort: "seo_lastmod" | reverse %}
     {% endif %}
 
     {% for post in postlist %}
@@ -110,7 +111,8 @@ pagination:
     {% else %}
       {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
     {% endif %}
-    {% assign year = post.date | date: "%Y" %}
+    {% assign display_date = post.seo_lastmod | default: post.date %}
+    {% assign year = display_date | date: "%Y" %}
     {% assign tags = post.tags | join: "" %}
     {% assign categories = post.categories | join: "" %}
 
@@ -136,7 +138,7 @@ pagination:
       <p>{{ post.description }}</p>
       <p class="post-meta">
         {{ read_time }} min read &nbsp; &middot; &nbsp;
-        {{ post.date | date: '%B %d, %Y' }}
+        {{ display_date | date: '%B %d, %Y' }}
         {% if post.external_source %}
         &nbsp; &middot; &nbsp; {{ post.external_source }}
         {% endif %}
