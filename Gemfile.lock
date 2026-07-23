@@ -7,7 +7,7 @@ GIT
       terser (>= 1.0.0)
 
 GEM
-  remote: https://gems.ruby-china.com/
+  remote: https://rubygems.org/
   specs:
     activesupport (7.1.6)
       base64
