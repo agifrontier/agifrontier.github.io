@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Batch Prompting Suppresses Overthinking Reasoning Under Constraint: How Batch Prompting Suppresses Overthinking in Reasoning Models"
+description: "本文发现，批处理提示 (Batch Prompting) 不仅能摊销推理成本，还能作为一种有效的推理时正则化器，抑制大型推理模型（LRM）的“过度思考”行为，从而在保持精度的同时大幅减少推理Token消耗。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "how-and-why-llms-generalize-a-fine-grained-analysis-of-llm-reasoning-from-cognit"
+  - "prompt-r1-collaborative-automatic-prompting-framework-via-end-to-end-reinforceme"
+  - "a-multitask-multilingual-multimodal-evaluation-of-chatgpt-on-reasoning-hallucina"
+  - "a-survey-of-inductive-reasoning-for-large-language-models"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2511.04108v1
+- **ArXiv URL**: https://arxiv.org/abs/2511.04108v1
 
 - **作者**: Saurabh Srivastava; Wenmo Qiu
 

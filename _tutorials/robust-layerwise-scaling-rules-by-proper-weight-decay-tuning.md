@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Robust Layerwise Scaling Rules by Proper Weight Decay Tuning"
+description: "本文提出了一种针对矩阵类参数的权重衰减缩放规则 ( )，通过在AdamW训练的稳态下保持子层增益在不同模型宽度下的不变性，从而扩展了最大更新参数化( P)框架，实现了学习率和权重衰减超参数的零样本迁移。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "scaling-test-time-compute-to-achieve-ioi-gold-medal-with-open-weight-models"
+  - "an-information-theoretic-framework-for-robust-large-language-model-editing"
+  - "a-survey-of-weight-space-learning-understanding-representation-and-generation"
+  - "all-you-need-is-one-capsule-prompt-tuning-with-a-single-vector"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.15262v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.15262v1
 
 - **作者**: Quanquan Gu; Zhiyuan Fan; Qingyue Zhao; Yifeng Liu
 
@@ -49,9 +57,9 @@ title: "Robust Layerwise Scaling Rules by Proper Weight Decay Tuning"
 
 *   **固定宽度下的谱缩放**：在模型宽度 $d$ 固定时，参数矩阵奇异值谱的**整体幅度**与 $\sqrt{\eta/\lambda}$ 成正比，而其**形状**几乎保持不变。这意味着可以通过调整 $\eta/\lambda$ 的比值来直接控制权重矩阵的尺度，进而控制子层增益。
 
-<img src="/images/2510.15262v1/x1.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
-<img src="/images/2510.15262v1/x2.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2510.15262v1/x3.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.15262v1/x1.jpg" alt="1. 经验观察与规则推导 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.15262v1/x2.jpg" alt="1. 经验观察与规则推导 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.15262v1/x3.jpg" alt="1. 经验观察与规则推导 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 <center>图1：固定宽度下， FFN权重矩阵的统计数据。子层增益（左）和奇异值谱（中、右）的幅度均与 $\sqrt{\eta/\lambda}$ 成正比。</center>
 
 *   **跨宽度的谱缩放**：当模型宽度 $d$ 变化时，作者发现为了保持矩阵类参数的顶部奇异值大小不变，需要满足以下经验性关系：
@@ -99,9 +107,9 @@ $${% endraw %}
 
 此外，本文还提供了一个简单的诊断方法：**通过检查不同宽度模型下权重矩阵的顶部奇异值是否对齐，可以验证子层增益是否保持了不变性**。
 
-<img src="/images/2510.15262v1/x4.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
-<img src="/images/2510.15262v1/x5.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2510.15262v1/x6.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.15262v1/x4.jpg" alt="3. 完整的层级缩放方案 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.15262v1/x5.jpg" alt="3. 完整的层级缩放方案 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.15262v1/x6.jpg" alt="3. 完整的层级缩放方案 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 <center>图2：在不同权重衰减缩放规则 ($\lambda\_2$)下，FFN权重矩阵的统计数据。当 $\lambda\_2 \propto \sqrt{d}$ 时，不同宽度模型（$d=256, 512, 1024$）的子层增益（左）和奇异值谱（中、右）表现出最佳的对齐。</center>
 
 ## 实验结论
@@ -109,8 +117,8 @@ $${% endraw %}
 
 *   **验证了超参数迁移的有效性**：实验核心结果表明，当使用本文提出的缩放方案（即向量类参数 $\eta\_1 \propto 1, \lambda\_1=0$；矩阵类参数 $\eta\_2 \propto d^{-1}, \lambda\_2 \propto \sqrt{d}$）时，在小型代理模型（proxy model）上找到的**最优基础学习率**和**最优基础权重衰减**，可以被直接、无缝地迁移到宽度大数倍的目标模型上。如下图所示，不同宽度模型的损失曲面（loss landscape）在根据缩放规则调整后，其最小值点高度对齐，证明了“零样本”迁移的成功。
 
-<img src="/images/2510.15262v1/x7.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2510.15262v1/x8.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.15262v1/x7.jpg" alt="实验结论 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.15262v1/x8.jpg" alt="实验结论 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 <center>图3：最优学习率和权重衰减在不同宽度模型间的迁移。经过本文提出的规则缩放后，不同宽度模型（$d=256$ 至 $d=2048$）的损失曲面最小值点（最优超参点）高度对齐。</center>
 
 *   **方法的优势领域**：本文方法在需要跨越较大模型宽度进行超参数迁移的场景下表现出众，尤其适用于类似LLM预训练的、进入优化器稳态的长时间训练任务。它显著优于仅使用$\mu$P学习率规则或采用其他启发式权重衰减规则（如固定或线性缩放）的策略，后者在跨宽度迁移时会导致性能下降。

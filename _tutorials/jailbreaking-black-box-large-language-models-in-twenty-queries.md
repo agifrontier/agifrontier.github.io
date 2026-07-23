@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Jailbreaking Black Box Large Language Models in Twenty Queries"
+description: "本文提出了一种名为 PAIR 的黑盒攻击算法，其利用一个攻击者大语言模型 (LLM)，通过少量（通常少于20次）的查询，以自动化、迭代的方式生成并优化具有语义的提示（Prompt），从而高效地“越狱”目标 LLM。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "beyond-the-black-box-theory-and-mechanism-of-large-language-models"
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "a-concise-review-of-hallucinations-in-llms-and-their-mitigation"
+  - "a-definition-of-agi"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2310.08419v4
+- **ArXiv URL**: https://arxiv.org/abs/2310.08419v4
 
 - **作者**: Hamed Hassani; Patrick Chao; Edgar Dobriban; George J. Pappas; Alexander Robey; Eric Wong
 

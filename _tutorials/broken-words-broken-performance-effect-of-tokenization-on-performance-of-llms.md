@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Broken Words, Broken Performance: Effect of Tokenization on Performance of LLMs"
+description: "单词破碎，性能崩塌？揭秘Tokenization如何悄悄“降智”大模型。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "not-all-parameters-are-created-equal-smart-isolation-boosts-fine-tuning-performa"
+  - "predicting-task-performance-with-context-aware-scaling-laws"
+  - "zero-shot-performance-prediction-for-probabilistic-scaling-laws"
+  - "better-world-models-can-lead-to-better-post-training-performance"
 ---
 
 ## 单词破碎，性能崩塌？揭秘Tokenization如何悄悄“降智”大模型
 
-<img src="/images/2512.21933v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.21933v1/A__title.jpg" alt="单词破碎，性能崩塌？揭秘Tokenization如何悄悄“降智”大模型 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在训练大语言模型（LLM）的万里长征中，第一步往往最容易被忽视，却可能埋下致命的隐患。
 
-> ArXiv URL：http://arxiv.org/abs/2512.21933v1
+> ArXiv URL：https://arxiv.org/abs/2512.21933v1
 
 你是否遇到过这种情况：明明是一个很简单的单词，模型却给出了莫名其妙的回答？或者只是把输入文本中的某个词换了个同义词，模型的智商瞬间就“上线”了？
 

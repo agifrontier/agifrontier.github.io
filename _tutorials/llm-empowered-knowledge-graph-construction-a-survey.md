@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "LLM-empowered knowledge graph construction: A survey"
+description: "本文系统性地综述了大型语言模型（LLM）如何重塑知识图谱（KG）构建的全流程，通过分析本体工程、知识抽取和知识融合三个核心阶段的新兴范式，揭示了从传统方法向语言驱动、生成式框架的转变。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "citation-grounded-code-comprehension-preventing-llm-hallucination-through-hybrid"
+  - "from-experience-to-strategy-empowering-llm-agents-with-trainable-graph-memory"
+  - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
+  - "bge-m3-embedding-multi-lingual-multi-functionality-multi-granularity-text-embedd"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.20345v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.20345v1
 
 - **作者**: 
 

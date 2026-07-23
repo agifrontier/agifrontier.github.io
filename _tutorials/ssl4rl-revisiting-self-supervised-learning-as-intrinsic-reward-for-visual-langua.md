@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "SSL4RL: Revisiting Self-supervised Learning as Intrinsic Reward for Visual-Language Reasoning"
+description: "本文提出了一种名为 SSL4RL 的新框架，通过将自监督学习（SSL）任务重新定义为可验证的内在奖励，对视觉语言模型（VLM）进行强化学习（RL）微调，从而在无需人工标注或AI评判器的情况下有效提升模型的视觉推理与对齐能力。"
+topics:
+  - "多模态与视觉"
+  - "推理与强化学习"
+related_tutorials:
+  - "cogflow-bridging-perception-and-reasoning-through-knowledge-internalization-for-"
+  - "mathvista-evaluating-mathematical-reasoning-of-foundation-models-in-visual-conte"
+  - "enhancing-llm-planning-capabilities-through-intrinsic-self-critique"
+  - "rewarddance-reward-scaling-in-visual-generation"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.16416v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.16416v1
 
 - **作者**: Yifei Wang; Qi Zhang; Wei Lin; Xiaohan Wang; Stefanie Jegelka; Yisen Wang; Chenheng Zhang; Jiajun Chai; Guojun Yin; Xiaojun Guo
 

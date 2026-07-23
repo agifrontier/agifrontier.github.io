@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Efficient Streaming Language Models with Attention Sinks"
+description: "本文提出了一种名为 StreamingLLM 的高效框架，通过保留少量初始 Token 作为“注意力池 (Attention Sinks)”来稳定注意力分布，从而使预训练好的大语言模型无需微调即可处理无限长的流式输入。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "every-attention-matters-an-efficient-hybrid-architecture-for-long-context-reason"
+  - "kimi-linear-an-expressive-efficient-attention-architecture"
+  - "llama-adapter-efficient-fine-tuning-of-language-models-with-zero-init-attention"
+  - "mesh-attention-a-new-communication-efficient-distributed-attention-with-improved"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2309.17453v4
+- **ArXiv URL**: https://arxiv.org/abs/2309.17453v4
 
 - **作者**: Yuandong Tian; Guangxuan Xiao; Beidi Chen; Mike Lewis; Song Han
 

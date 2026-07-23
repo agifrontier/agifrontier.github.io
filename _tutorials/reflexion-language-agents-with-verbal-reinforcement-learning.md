@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Reflexion: Language Agents with Verbal Reinforcement Learning"
+description: "本文提出 Reflexion 框架，通过让语言智能体对过去的试错经验进行口头反思（verbal reflection）并形成文本记忆，从而在无需更新模型权重的情况下实现强化学习，显著提升了其在决策、推理和编程等任务上的表现。"
+topics:
+  - "AI Agent"
+  - "推理与强化学习"
+related_tutorials:
+  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
+  - "reinforcement-learning-for-machine-learning-engineering-agents"
+  - "sfr-deepresearch-towards-effective-reinforcement-learning-for-autonomously-reaso"
+  - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2303.11366v4
+- **ArXiv URL**: https://arxiv.org/abs/2303.11366v4
 
 - **作者**: Karthik Narasimhan; Shunyu Yao; Federico Cassano; Beck Labash; A. Gopinath; Noah Shinn
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Deep Delta Learning"
+description: "超越ResNet！普林斯顿Deep Delta Learning：让神经网络学会“遗忘”与“反思”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "delta-decoupling-long-tailed-online-continual-learning"
+  - "nested-learning-the-illusion-of-deep-learning-architectures"
+  - "deep-sequence-models-tend-to-memorize-geometrically-it-is-unclear-why"
+  - "geometric-and-dynamic-scaling-in-deep-transformers"
 ---
 
 ## 超越ResNet！普林斯顿Deep Delta Learning：让神经网络学会“遗忘”与“反思”
 
-<img src="/images/2601.00417v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.00417v1/A__title.jpg" alt="超越ResNet！普林斯顿Deep Delta Learning：让神经网络学会“遗忘”与“反思” 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在深度学习的殿堂里，ResNet（残差网络）无疑是那根最坚固的“承重柱”。
 
-> ArXiv URL：http://arxiv.org/abs/2601.00417v1
+> ArXiv URL：https://arxiv.org/abs/2601.00417v1
 
 自从何恺明大神提出 $x + F(x)$ 这一神来之笔后，几乎所有现代深层网络都建立在这个简单的加法公式之上。它像一条高速公路，让梯度畅通无阻，解决了深层网络难以训练的顽疾。
 

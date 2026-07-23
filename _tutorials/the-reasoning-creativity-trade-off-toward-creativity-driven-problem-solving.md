@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "The Reasoning-Creativity Trade-off: Toward Creativity-Driven Problem Solving"
+description: "剑桥重磅：直击LLM“创造力坍缩”，DCR框架如何打破推理单一化僵局？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "cogflow-bridging-perception-and-reasoning-through-knowledge-internalization-for-"
+  - "tree-of-thoughts-deliberate-problem-solving-with-large-language-models"
+  - "data-efficient-rlvr-via-off-policy-influence-guidance"
+  - "the-path-not-taken-rlvr-provably-learns-off-the-principals"
 ---
 
 ## 剑桥重磅：直击LLM“创造力坍缩”，DCR框架如何打破推理单一化僵局？
 
-<img src="/images/2601.00747v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.00747v1/A__title.jpg" alt="剑桥重磅：直击LLM“创造力坍缩”，DCR框架如何打破推理单一化僵局？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在追求大语言模型（LLM）推理能力的过程中，整个社区似乎陷入了一个怪圈：为了提升准确率，我们不断强化模型生成“高分”答案的能力，结果却导致模型变得越来越“无聊”。
 
-> ArXiv URL：http://arxiv.org/abs/2601.00747v1
+> ArXiv URL：https://arxiv.org/abs/2601.00747v1
 
 这种现象被称为**创造力坍缩**（**Creative Collapse**）或**推理单一化**（**Reasoning Monoculture**）。当模型经过 RLHF（人类反馈强化学习）或 DPO（直接偏好优化）等后训练阶段后，虽然解题的准确率（Pass@1）上升了，但其输出的语义熵却急剧下降。模型倾向于反复使用少数几种固定的推理模板，失去了探索多样化解题路径的能力。
 

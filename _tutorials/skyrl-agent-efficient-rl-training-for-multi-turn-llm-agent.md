@@ -1,16 +1,25 @@
 ---
 layout: default
 title: "SkyRL-Agent: Efficient RL Training for Multi-turn LLM Agent"
+description: "AI Agent训练成本减半！SkyRL-Agent框架揭秘1.55倍加速秘诀。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+  - "模型训练与优化"
+related_tutorials:
+  - "scaling-up-multi-turn-off-policy-rl-and-multi-agent-tree-search-for-llm-step-pro"
+  - "ui-tars-2-technical-report-advancing-gui-agent-with-multi-turn-reinforcement-lea"
+  - "beyond-turn-limits-training-deep-search-agents-with-dynamic-context-window"
+  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
 ---
 
 ## AI Agent训练成本减半！SkyRL-Agent框架揭秘1.55倍加速秘诀
 
-<img src="/images/2511.16108v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.16108v1/A__title.jpg" alt="AI Agent训练成本减半！SkyRL-Agent框架揭秘1.55倍加速秘诀 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 AI Agent无疑是当下最火热的技术浪潮，但要训练一个能在复杂、多步骤任务中稳定发挥的Agent，其背后高昂的算力成本和漫长的训练周期，正成为许多团队难以逾越的障碍。如果训练成本能直接减半，效率还能提升超过50%，会带来怎样的改变？
 
 > **论文标题**：SkyRL-Agent: Efficient RL Training for Multi-turn LLM Agent
-> **ArXiv URL**：http://arxiv.org/abs/2511.16108v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.16108v1
 
 来自加州大学伯克利分校和Anyscale的研究者们给出了答案。他们推出了**SkyRL-Agent**，一个专为多轮、长周期的AI Agent打造的高效强化学习（RL）训练与评估框架。基于该框架，他们仅用纯粹的强化学习，就将一个开源模型在软件工程基准测试SWE-Bench上的通过率从24.4%提升至39.4%，而训练成本仅为同类先进模型的一半不到！
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "CRoPE: Efficient Parametrization of Rotary Positional Embedding"
+description: "RoPE“瘦身”术：砍掉Attention层50%参数，性能却几乎无损。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "dope-denoising-rotary-position-embedding"
+  - "bge-m3-embedding-multi-lingual-multi-functionality-multi-granularity-text-embedd"
+  - "higher-embedding-dimension-creates-a-stronger-world-model-for-a-simple-sorting-t"
+  - "imagebind-one-embedding-space-to-bind-them-all"
 ---
 
 ## RoPE“瘦身”术：砍掉Attention层50%参数，性能却几乎无损
 
-<img src="/images/2601.02728v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.02728v1/A__title.jpg" alt="RoPE“瘦身”术：砍掉Attention层50%参数，性能却几乎无损 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 Transformer 架构如今已是大语言模型的绝对基石，而 **旋转位置编码**（**Rotary Positional Embedding, RoPE**） 更是其中的“标配”。从 LLaMA 到 DeepSeek，几乎所有主流开源模型都采用了 RoPE 来处理序列的位置信息。
 
-> ArXiv URL：http://arxiv.org/abs/2601.02728v1
+> ArXiv URL：https://arxiv.org/abs/2601.02728v1
 
 然而，来自斯坦福大学和 d-Matrix 的研究人员最近提出了一个颠覆性的观点：**我们目前对 RoPE 的实现方式，可能存在巨大的参数浪费。**
 

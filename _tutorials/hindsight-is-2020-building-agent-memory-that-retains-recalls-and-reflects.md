@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "Hindsight is 20/20: Building Agent Memory that Retains, Recalls, and Reflects"
+description: "准确率飙升至91%！Hindsight：让20B模型记忆力超越GPT-4o。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "AI Agent"
+related_tutorials:
+  - "memevolve-meta-evolution-of-agent-memory-systems"
+  - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"
+  - "metaclaw-just-talk-an-agent-that-meta-learns-and-evolves-in-the-wild"
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
 ---
 
 ## 准确率飙升至91%！Hindsight：让20B模型记忆力超越GPT-4o
 
-<img src="/images/2512.12818v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.12818v1/A__title.jpg" alt="准确率飙升至91%！Hindsight：让20B模型记忆力超越GPT-4o 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 目前的AI Agent（智能体）记忆系统存在一个致命缺陷：它们大多只是简单的“搬运工”。现有的架构通常将记忆视为一个外部的向量数据库，通过**检索增强生成**（**Retrieval-Augmented Generation, RAG**）提取片段塞进Prompt里。这种做法虽然能缓解“健忘”问题，但Agent无法区分“客观事实”与“主观推论”，难以在长周期内组织信息，更无法像人类一样随着经历改变观点。
 
-> ArXiv URL：http://arxiv.org/abs/2512.12818v1
+> ArXiv URL：https://arxiv.org/abs/2512.12818v1
 
 针对这一痛点，一项名为 **Hindsight** 的全新记忆架构横空出世。它不再把记忆仅仅当作外挂硬盘，而是将其构建为一个结构化的、支持推理的一等公民。在LongMemEval基准测试中，搭载Hindsight的开源20B模型将准确率从39%惊人地提升到了83.6%，甚至在长窗口任务上击败了全上下文的GPT-4o。
 

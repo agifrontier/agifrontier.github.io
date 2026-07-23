@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Prefill vs. Decode Bottlenecks: SRAM-Frequency Tradeoffs and the Memory-Bandwidth Ceiling"
+description: "打破LLM能效瓶颈：32KB缓存+1.4GHz高频竟是最佳硬件甜点？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+  - "ai-meets-brain-memory-systems-from-cognitive-neuroscience-to-autonomous-agents"
+  - "camformer-associative-memory-is-all-you-need"
+  - "cogmem-a-cognitive-memory-architecture-for-sustained-multi-turn-reasoning-in-lar"
 ---
 
 ## 打破LLM能效瓶颈：32KB缓存+1.4GHz高频竟是最佳硬件甜点？
 
-<img src="/images/2512.22066v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.22066v1/A__title.jpg" alt="打破LLM能效瓶颈：32KB缓存+1.4GHz高频竟是最佳硬件甜点？ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在当今的AI时代，数据中心的电力消耗正成为一个巨大的隐忧。据估计，2024年全球数据中心消耗了约415太瓦时（TWh）的电力，而随着大语言模型（LLM）的普及，这一数字预计到2030年将翻倍。
 
-> ArXiv URL：http://arxiv.org/abs/2512.22066v1
+> ArXiv URL：https://arxiv.org/abs/2512.22066v1
 
 这就引出了一个价值百万美元的问题：**我们该如何设计芯片架构，才能在保证LLM推理速度的同时，最大限度地降低能耗？**
 

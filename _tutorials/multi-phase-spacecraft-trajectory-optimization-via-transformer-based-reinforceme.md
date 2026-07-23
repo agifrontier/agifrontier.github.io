@@ -1,17 +1,26 @@
 ---
 layout: default
 title: "Multi-Phase Spacecraft Trajectory Optimization via Transformer-Based Reinforcement Learning"
+description: "MIT新突破：Transformer实现火箭全程自主驾驶，成本仅高出最优解3%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+  - "模型训练与优化"
+related_tutorials:
+  - "stackelberg-learning-from-human-feedback-preference-optimization-as-a-sequential"
+  - "qerl-beyond-efficiency-quantization-enhanced-reinforcement-learning-for-llms"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
 ---
 
 ## MIT新突破：Transformer实现火箭全程自主驾驶，成本仅高出最优解3%
 
-<img src="/images/2511.11402v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.11402v1/A__title.jpg" alt="MIT新突破：Transformer实现火箭全程自主驾驶，成本仅高出最优解3% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 火箭发射、级间分离、最终入轨……这些惊心动魄的阶段，传统上需要多个独立的控制器接力完成。这就像一场F1比赛，赛车每次进站都要换一个新车手，不仅操作复杂，而且任何交接失误都可能导致灾难性的后果。现在，来自麻省理工学院（MIT）的一项研究，让Transformer化身“全能舵手”，仅用一个AI模型就搞定了从地面到太空的全程轨迹优化。
 
 > **论文标题**：Multi-Phase Spacecraft Trajectory Optimization via Transformer-Based Reinforcement Learning
 
-> **ArXiv URL**：http://arxiv.org/abs/2511.11402v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.11402v1
 
 这项工作引入了一个基于Transformer的强化学习框架，用单一、统一的策略，无缝衔接了航天器飞行的多个动态迥异的阶段，为未来的自主太空任务规划奠定了坚实的基础。
 

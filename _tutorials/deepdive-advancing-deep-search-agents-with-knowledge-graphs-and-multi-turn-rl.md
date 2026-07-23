@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "DeepDive: Advancing Deep Search Agents with Knowledge Graphs and Multi-Turn RL"
+description: "本文提出了 DeepDive 方法，通过从知识图谱自动合成高难度问题，并采用端到端多轮强化学习进行训练，旨在提升大型语言模型（LLM）作为深度搜索智能体所需的长时序推理和信息检索能力。"
+topics:
+  - "AI Agent"
+  - "行业应用"
+related_tutorials:
+  - "thinker-training-llms-in-hierarchical-thinking-for-deep-search-via-multi-turn-in"
+  - "beyond-turn-limits-training-deep-search-agents-with-dynamic-context-window"
+  - "scaling-up-multi-turn-off-policy-rl-and-multi-agent-tree-search-for-llm-step-pro"
+  - "ui-tars-2-technical-report-advancing-gui-agent-with-multi-turn-reinforcement-lea"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.10446v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.10446v1
 
 - **作者**: Jie Tang; Zhenyu Hou; Hanchen Zhang; Xiao Liu; Yujiang Li; Shi Feng; Rui Lu; Yuxiao Dong; Zihan Wang
 

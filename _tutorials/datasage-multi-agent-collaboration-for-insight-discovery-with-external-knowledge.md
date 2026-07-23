@@ -1,16 +1,25 @@
 ---
 layout: default
 title: "DataSage: Multi-agent Collaboration for Insight Discovery with External Knowledge Retrieval, Multi-role Debating, and Multi-path Reasoning"
+description: "AI分析师天团来了！字节DataSage引入辩论机制，洞察力飙升13.9%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "AI Agent"
+related_tutorials:
+  - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"
+  - "agentinit-initializing-llm-based-multi-agent-systems-via-diversity-and-expertise"
+  - "retrieval-reasoning-processes-for-multi-hop-question-answering-a-four-axis-desig"
+  - "unlocking-the-power-of-multi-agent-llm-for-reasoning-from-lazy-agents-to-deliber"
 ---
 
 ## AI分析师天团来了！字节DataSage引入辩论机制，洞察力飙升13.9%
 
-<img src="/images/2511.14299v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.14299v1/A__title.jpg" alt="AI分析师天团来了！字节DataSage引入辩论机制，洞察力飙升13.9% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 AI数据分析师听起来很酷，但实际用起来却常常让人头疼。它们要么缺乏特定领域的背景知识，闹出“春节期间销量下降是随机波动”的笑话；要么只会提一些无关痛痒的表面问题，分析深度堪忧；更别提动不动就写出跑不通的bug代码了。
 
 > **论文标题**：DataSage: Multi-agent Collaboration for Insight Discovery with External Knowledge Retrieval, Multi-role Debating, and Multi-path Reasoning
-> **ArXiv URL**：http://arxiv.org/abs/2511.14299v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.14299v1
 
 面对这些窘境，我们不禁要问：难道AI就只能做个“实习生”水平的分析师吗？
 

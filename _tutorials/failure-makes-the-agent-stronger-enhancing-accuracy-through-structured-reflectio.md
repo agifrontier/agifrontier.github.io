@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Failure Makes the Agent Stronger: Enhancing Accuracy through Structured Reflection for Reliable Tool Interactions"
+description: "本文提出一种名为结构化反思 (structured reflection) 的新机制，将工具调用失败后的错误诊断与修复过程，转化为一种可控、可训练的智能体行为，从而显著增强大型语言模型在多轮工具交互中的可靠性和错误恢复能力。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "budget-aware-tool-use-enables-effective-agent-scaling"
+  - "llmtimesmapreduce-v3-enabling-interactive-in-depth-survey-generation-through-a-m"
+  - "multi-agent-evolve-llm-self-improve-through-co-evolution"
+  - "knowledge-tuning-large-language-models-with-structured-medical-knowledge-bases-f"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.18847v2
+- **ArXiv URL**: https://arxiv.org/abs/2509.18847v2
 
 - **作者**: Hengyu Shi; Tianyang Han; Junfeng Luo; Junhao Su; Junwei Yang
 

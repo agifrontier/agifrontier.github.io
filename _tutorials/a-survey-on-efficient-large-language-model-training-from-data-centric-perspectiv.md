@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "A Survey on Efficient Large Language Model Training: From Data-centric Perspectives"
+description: "大型语言模型 (Large Language Models, LLMs) 的后训练 (post-training) 已成为释放其领域适应能力和任务泛化潜力的关键阶段。这一阶段有效增强了模型在长上下文推理、人类对齐、指令微调和领域专用适应等方面的能力。"
+topics:
+  - "模型训练与优化"
+  - "数据与AI工程"
+related_tutorials:
+  - "mesh-attention-a-new-communication-efficient-distributed-attention-with-improved"
+  - "demystifying-synthetic-data-in-llm-pre-training-a-systematic-study-of-scaling-la"
+  - "language-self-play-for-data-free-training"
+  - "reusing-pre-training-data-at-test-time-is-a-compute-multiplier"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.25817v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.25817v1
 
 - **作者**: Jingyang Yuan; Rong-Cheng Tu; Yiqiao Jin; Wei Ju; Yifan Wang; Xiao Luo; Ming Zhang; Nan Yin; Zhiping Xiao; Bohan Wu; 等11人
 

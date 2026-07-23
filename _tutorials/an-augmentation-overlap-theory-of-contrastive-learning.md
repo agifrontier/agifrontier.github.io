@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "An Augmentation Overlap Theory of Contrastive Learning"
+description: "本文提出了一个“增强重叠”（Augmentation Overlap）理论，通过揭示同一类别的不同样本在数据增强下会产生重叠的视图，解释了实例级别的对比学习为何能学习到具有类别区分性的表示，并基于此推导出了更紧密的下游任务性能界。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "algorithmic-thinking-theory"
+  - "beyond-the-black-box-theory-and-mechanism-of-large-language-models"
+  - "collaboration-and-conflict-between-humans-and-language-models-through-the-lens-o"
+  - "a-general-theoretical-paradigm-to-understand-learning-from-human-preferences"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2511.03114v1
+- **ArXiv URL**: https://arxiv.org/abs/2511.03114v1
 
 - **作者**: Yifei Wang; Qi Zhang; Yisen Wang
 

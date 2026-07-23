@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Encoder-Decoder or Decoder-Only? Revisiting Encoder-Decoder Large Language Model"
+description: "本文通过为编码器-解码器架构（RedLLM）集成现代LLM技术（如旋转位置编码），并在约1.5亿至80亿参数规模上与主流的解码器-仅架构（DecLLM）进行系统性对比，发现RedLLM在指令微调后，能以显著更高的推理效率达到甚至超越DecLLM的性能，证明了该被忽视架构的巨大潜力。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "causal-reasoning-favors-encoders-on-the-limits-of-decoder-only-models"
+  - "beyond-gemini-3-pro-revisiting-llm-routing-and-aggregation-at-scale"
+  - "sft-doesnt-always-hurt-general-capabilities-revisiting-domain-specific-fine-tuni"
+  - "the-refinedweb-dataset-for-falcon-llm-outperforming-curated-corpora-with-web-dat"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.26622v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.26622v1
 
 - **作者**: Yong Cheng; Xinyi Wang; Orhan Firat; Siamak Shakeri; Min Ma; Biao Zhang
 

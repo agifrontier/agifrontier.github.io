@@ -1,6 +1,14 @@
 ---
 layout: default
 title: "Kimi Linear: An Expressive, Efficient Attention Architecture"
+description: "KimiLinear揭秘：首次全面超越全注意力，1M上下文解码提速6倍！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "every-attention-matters-an-efficient-hybrid-architecture-for-long-context-reason"
+  - "spotlight-attention-towards-efficient-llm-generation-via-non-linear-hashing-base"
+  - "trainable-log-linear-sparse-attention-for-efficient-diffusion-transformers"
+  - "higher-order-linear-attention"
 ---
 
 ## KimiLinear揭秘：首次全面超越全注意力，1M上下文解码提速6倍！
@@ -8,7 +16,7 @@ title: "Kimi Linear: An Expressive, Efficient Attention Architecture"
 在追求更强AI智能体的道路上，长文本处理能力已成为一道绕不开的“性能墙”。传统的Transformer架构因其$O(N^2)$的注意力计算复杂度和线性增长的KV缓存，在处理超长序列时变得力不从心，效率和成本成为巨大瓶颈。
 
 > **论文标题**：Kimi Linear: An Expressive, Efficient Attention Architecture
-> **ArXiv URL**：http://arxiv.org/abs/2510.26692v2
+> **ArXiv URL**：https://arxiv.org/abs/2510.26692v2
 
 人们曾寄望于线性注意力来解决这一难题，但它们往往以牺牲模型性能为代价，尤其在短文本任务上表现不佳。这似乎是一个无法两全的困境：性能和效率，你只能选一个。
 

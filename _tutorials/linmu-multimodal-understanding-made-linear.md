@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "LinMU: Multimodal Understanding Made Linear"
+description: "告别 ！LinMU让多模态大模型实现线性复杂度，推理提速9倍。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "多模态与视觉"
+related_tutorials:
+  - "nextflow-unified-sequential-modeling-activates-multimodal-understanding-and-gene"
+  - "scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-generation-for"
+  - "trainable-log-linear-sparse-attention-for-efficient-diffusion-transformers"
+  - "a-multitask-multilingual-multimodal-evaluation-of-chatgpt-on-reasoning-hallucina"
 ---
 
 ## 告别$O(N^2)$！LinMU让多模态大模型实现线性复杂度，推理提速9倍
 
-<img src="/images/2601.01322v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01322v1/A__title.jpg" alt="告别 ！LinMU让多模态大模型实现线性复杂度，推理提速9倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当前最先进的多模态大模型（VLMs）虽然在理解图像和视频方面表现惊人，但它们都有一个共同的“阿喀琉斯之踵”：基于Transformer的自注意力机制带来的二次方计算复杂度（$O(N^2)$）。这意味着，随着输入视频变长或图像分辨率变高，计算成本会呈爆炸式增长。
 
-> ArXiv URL：http://arxiv.org/abs/2601.01322v1
+> ArXiv URL：https://arxiv.org/abs/2601.01322v1
 
 普林斯顿大学的研究团队近日提出了一种名为 **LinMU** 的全新架构，试图打破这一瓶颈。LinMU 成功将多模态理解的复杂度降低到了线性水平（$O(N)$），在保持与顶级教师模型（如 NVILA-8B, Qwen2.5-VL）性能相当的同时，将长视频的推理吞吐量提升了最高 9 倍。
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Fourier Neural Operators Explained: A Practical Perspective"
+description: "NVIDIA万字长文：别再误用FNO了！傅里叶神经算子终极实践指南。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "caveagent-transforming-llms-into-stateful-runtime-operators"
+  - "relative-based-scaling-law-for-neural-language-models"
+  - "who-said-neural-networks-arent-linear"
+  - "gemma-2-improving-open-language-models-at-a-practical-size"
 ---
 
 ## NVIDIA万字长文：别再误用FNO了！傅里叶神经算子终极实践指南
 
-<img src="/images/2512.01421v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.01421v1/A__title.jpg" alt="NVIDIA万字长文：别再误用FNO了！傅里叶神经算子终极实践指南 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当流体力学、天气预报、电磁场模拟这些复杂的科学计算任务摆在面前时，我们往往会想到一个词：慢。求解这些由偏微分方程（PDEs）描述的系统，需要极高的计算资源和漫长的时间。但如果有一种方法，能让AI直接学习物理规律，将模拟速度提升数个量级呢？
 
-> ArXiv URL：http://arxiv.org/abs/2512.01421v1
+> ArXiv URL：https://arxiv.org/abs/2512.01421v1
 
 这正是**傅里叶神经算子**（**Fourier Neural Operator, FNO**）大放异彩的地方。由加州理工学院和NVIDIA等机构的研究者们共同推动，FNO已经成为AI for Science领域中最具影响力的架构之一。它不仅速度快，而且设计优雅，能够直接在函数空间中学习，摆脱了传统网格分辨率的束缚。
 

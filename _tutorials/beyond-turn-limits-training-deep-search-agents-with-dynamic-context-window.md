@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Beyond Turn Limits: Training Deep Search Agents with Dynamic Context Window"
+description: "本文提出了DeepMiner框架，通过构造高难度训练任务和设计动态上下文窗口策略，显著提升了大型语言模型在多轮长程交互中作为深度搜索智能体的推理与执行能力。"
+topics:
+  - "AI Agent"
+  - "模型训练与优化"
+related_tutorials:
+  - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
+  - "thinker-training-llms-in-hierarchical-thinking-for-deep-search-via-multi-turn-in"
+  - "from-static-templates-to-dynamic-runtime-graphs-a-survey-of-workflow-optimizatio"
+  - "skyrl-agent-efficient-rl-training-for-multi-turn-llm-agent"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.08276v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.08276v1
 
 - **作者**: Qiaoyu Tang; Yaojie Lu; Xianpei Han; Zhenru Zhang; Le Yu; Shixuan Liu; Hao Xiang; Hongyu Lin; Bowen Yu; Pengbo Wang; 等13人
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "A Survey of Inductive Reasoning for Large Language Models"
+description: "本节介绍归纳推理的相关概念、应用场景及其重要性。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "a-survey-of-reasoning-and-agentic-systems-in-time-series-with-large-language-mod"
+  - "a-survey-of-reasoning-in-autonomous-driving-systems-open-challenges-and-emerging"
+  - "a-survey-of-reinforcement-learning-for-large-reasoning-models"
+  - "a-survey-on-parallel-reasoning"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.10182v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.10182v1
 
 - **作者**: Biqing Qi; Liang He; Siyu Yan; Qipeng Guo; Qin Chen; Yinqi Zhang; Jie Zhou; Xiaoming Shi; Yaoting Wang; Wei Zhang; 等14人
 
@@ -45,8 +53,8 @@ title: "A Survey of Inductive Reasoning for Large Language Models"
 
 本文将增强 LLMs 归纳能力的方法分为三大类：后训练、测试时扩展和数据增强。
 
-<img src="/images/2510.10182v1/x2.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2510.10182v1/x3.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.10182v1/x2.jpg" alt="增强方法 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.10182v1/x3.jpg" alt="增强方法 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 *归纳推理的后训练方法示意图*
 
 ### 后训练
@@ -55,9 +63,9 @@ title: "A Survey of Inductive Reasoning for Large Language Models"
 *   **合成数据**：为解决自然数据难以获取或组织的局限，研究者常人工构建数据来训练模型。例如，LingR 构建“语言学规则指令集”；ItD 利用 LLMs 的演绎能力生成数据以优化归纳能力；CodeSeq 构建训练集让 LLM 推理数列通项公式。
 *   **IRL风格的优化**：传统奖励模型 (Reward Models, RMs) 难以监督答案不唯一的归纳任务。因此，逆强化学习 (Inverse RL, IRL) 成为一种有潜力的替代方案，它能从反馈中推断潜在的奖励函数。在 LLMs 的 RLHF 流程中，通过设计合适的奖励模型可以增强其归纳能力。例如，Prompt-OIRL 利用历史经验训练奖励模型，提升模型的归纳探索能力。
 
-<img src="/images/2510.10182v1/x4.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2510.10182v1/x5.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2510.10182v1/x6.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.10182v1/x4.jpg" alt="后训练 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.10182v1/x5.jpg" alt="后训练 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.10182v1/x6.jpg" alt="后训练 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 *归纳推理的测试时扩展方法示意图*
 
 ### 测试时扩展
@@ -67,9 +75,9 @@ title: "A Survey of Inductive Reasoning for Large Language Models"
 *   **假设迭代**：对候选假设进行迭代优化，直到它能满足所有观察实例。例如，Qiu et al. (2024) 提出三步迭代式假设修正方法，模拟人类的归纳过程；SSR 通过执行反馈来迭代优化规则。
 *   **假设演化**：通过生成、筛选和组合多个假设来扩展、多样化或演化假设空间，以形成能捕捉更复杂模式的最终假设。例如，IncSchema 通过分阶段查询 LLM 来逐步归纳通用模式；PRIMO 引入渐进式多阶段开放规则归纳方法，以推导多跳规则。
 
-<img src="/images/2510.10182v1/x7.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2510.10182v1/x8.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2510.10182v1/x9.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.10182v1/x7.jpg" alt="测试时扩展 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.10182v1/x8.jpg" alt="测试时扩展 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.10182v1/x9.jpg" alt="测试时扩展 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 *归纳推理的数据增强方法示意图*
 
 ### 数据增强
@@ -122,7 +130,7 @@ title: "A Survey of Inductive Reasoning for Large Language Models"
 
 该方法将 LLM 生成的归纳规则封装为代码、工具或提供给“LLM作为裁判”的提示，然后在受控的沙箱环境中，用每个观察实例作为测试用例，验证其是否符合该规则。
 
-<img src="/images/2510.10182v1/x10.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.10182v1/x10.jpg" alt="基于沙箱的评测 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 *LLM归纳推理的沙箱单元测试示意图*
 
 基于此，本文提出了一个更细粒度的指标：**观察覆盖率 (Observation Coverage, OC)**，定义为通过单元测试的观察实例占总观察实例的比例。相比于任务级别的整体 ACC，OC 提供了观察实例级别的监督信号，能更精确地反映模型答案的完备性，并为后续的规则修正和假设探索提供更有信息量的反馈。

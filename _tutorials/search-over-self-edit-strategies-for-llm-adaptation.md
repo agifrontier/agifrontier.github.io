@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Search over Self-Edit Strategies for LLM Adaptation"
+description: "CMU新作：让AI自主设计“自我修正”策略，带存档机制逼近人类专家水平。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "行业应用"
+related_tutorials:
+  - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
+  - "fine-tuning-small-language-models-as-efficient-enterprise-search-relevance-label"
+  - "llm-erm-sample-efficient-program-learning-via-llm-guided-search"
+  - "lore-a-large-generative-model-for-search-relevance"
 ---
 
 ## CMU新作：让AI自主设计“自我修正”策略，带存档机制逼近人类专家水平
 
-<img src="/images/2601.14532v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.14532v1/A__title.jpg" alt="CMU新作：让AI自主设计“自我修正”策略，带存档机制逼近人类专家水平 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在通往通用人工智能（AGI）的道路上，**开放式搜索**（Open-Ended Search）一直被视为一种极具潜力的范式：让AI系统通过不断生成、评估和改进解决方案，实现自主进化。然而，目前的许多系统存在一个明显的瓶颈——负责提出改进建议的基础模型（Foundation Model）通常是被“冻结”的。
 
-> ArXiv URL：http://arxiv.org/abs/2601.14532v1
+> ArXiv URL：https://arxiv.org/abs/2601.14532v1
 
 这意味着，虽然系统生成的解决方案可能在变好，但模型本身“提出建议的能力”并没有提升。最近虽然有研究开始尝试在测试时更新模型权重，但这些更新策略（比如用什么数据微调、用什么学习率）通常还是由人类硬编码的。
 

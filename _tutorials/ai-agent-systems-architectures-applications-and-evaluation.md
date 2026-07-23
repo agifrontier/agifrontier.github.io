@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "AI Agent Systems: Architectures, Applications, and Evaluation"
+description: "JACM重磅综述：拆解AI Agent三大核心架构与“Agent Transformer”新范式。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+  - "AI安全与评测"
+related_tutorials:
+  - "agentic-ai-a-comprehensive-survey-of-architectures-applications-and-future-direc"
+  - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
+  - "agentinit-initializing-llm-based-multi-agent-systems-via-diversity-and-expertise"
+  - "evoroute-experience-driven-self-routing-llm-agent-systems"
 ---
 
 ## JACM重磅综述：拆解AI Agent三大核心架构与“Agent Transformer”新范式
 
-<img src="/images/2601.01743v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.01743v1/A__title.jpg" alt="JACM重磅综述：拆解AI Agent三大核心架构与“Agent Transformer”新范式 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 大模型（LLM）的出现让自然语言成为了计算的通用接口，但我们面临的一个尴尬现实是：大多数现实世界的任务并非简单的单轮问答。无论是处理复杂的企业工作流、编写并运行代码，还是操作浏览器完成购物，仅靠“生成文本”是远远不够的。
 
-> ArXiv URL：http://arxiv.org/abs/2601.01743v1
+> ArXiv URL：https://arxiv.org/abs/2601.01743v1
 
 如何将一个只会“说话”的模型，进化为一个能“做事”的智能体？
 

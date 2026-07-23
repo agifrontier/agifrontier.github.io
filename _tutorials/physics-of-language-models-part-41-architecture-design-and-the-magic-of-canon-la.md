@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Physics of Language Models: Part 4.1, Architecture Design and the Magic of Canon Layers"
+description: "Meta新作Canon Layers：仅增0.5%参数，推理深度暴涨4倍的“魔法”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "the-missing-layer-of-agi-from-pattern-alchemy-to-coordination-physics"
+  - "hybrid-architectures-for-language-models-systematic-analysis-and-design-insights"
+  - "part-ii-roll-flash-accelerating-rlvr-and-agentic-training-with-asynchrony"
+  - "autonomous-agents-for-scientific-discovery-orchestrating-scientists-language-cod"
 ---
 
 ## Meta新作Canon Layers：仅增0.5%参数，推理深度暴涨4倍的“魔法”
 
-<img src="/images/2512.17351v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.17351v1/A__title.jpg" alt="Meta新作Canon Layers：仅增0.5%参数，推理深度暴涨4倍的“魔法” 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在大模型“炼丹”盛行的今天，我们往往面临一个尴尬的局面：当我们在数万亿 Token 上训练一个 7B 或更大的模型时，究竟是哪个架构设计起了作用？是 RoPE 位置编码？是 Mamba 的状态空间？还是纯粹的数据量堆砌？
 
-> ArXiv URL：http://arxiv.org/abs/2512.17351v1
+> ArXiv URL：https://arxiv.org/abs/2512.17351v1
 
 由于真实数据的噪声和训练的随机性，搞清楚这些“配方”的真实功效，往往比登天还难。为了打破这种“盲人摸象”的困局，Meta 的研究团队在“语言模型物理学（Physics of Language Models）”系列的最新篇章中，提出了一个颠覆性的概念——**Canon Layers**（卡农层）。
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Read As Human: Compressing Context via Parallelizable Close Reading and Skimming"
+description: "像人一样“精读+略读”：RAM长文本压缩框架实现12倍加速。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "scaling-and-context-steer-llms-along-the-same-computational-path-as-the-human-br"
+  - "t5gemma-2-seeing-reading-and-understanding-longer"
+  - "a-general-theoretical-paradigm-to-understand-learning-from-human-preferences"
+  - "alpacafarm-a-simulation-framework-for-methods-that-learn-from-human-feedback"
 ---
 
 ## 像人一样“精读+略读”：RAM长文本压缩框架实现12倍加速
 
-<img src="/images/2602.01840v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2602.01840v1/A__title.jpg" alt="像人一样“精读+略读”：RAM长文本压缩框架实现12倍加速 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 面对动辄几万字的超长文档，人类是如何阅读的？我们通常不会逐字逐句地读完每一个字，而是会快速**略读**（Skimming）背景信息，一旦发现与目标相关的关键段落，就会立刻切换到**精读**（Close Reading）模式。
 
-> ArXiv URL：http://arxiv.org/abs/2602.01840v1
+> ArXiv URL：https://arxiv.org/abs/2602.01840v1
 
 然而，现有的大语言模型（LLM）在处理长文本时却显得有些“死板”。无论是RAG（检索增强生成）还是长上下文窗口模型，它们往往需要处理海量的冗余信息，这不仅导致了巨大的计算开销，还会因为“迷失在中间”效应而降低回答准确率。
 

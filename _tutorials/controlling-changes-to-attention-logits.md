@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Controlling changes to attention logits"
+description: "Mistral AI新作QuacK：不靠归一化，动态学习率让Transformer训练提速10%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
+  - "efficient-streaming-language-models-with-attention-sinks"
+  - "every-attention-matters-an-efficient-hybrid-architecture-for-long-context-reason"
+  - "fast-attention-mechanisms-a-tale-of-parallelism"
 ---
 
 ## Mistral AI新作QuacK：不靠归一化，动态学习率让Transformer训练提速10%
 
-<img src="/images/2511.21377v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.21377v1/A__title.jpg" alt="Mistral AI新作QuacK：不靠归一化，动态学习率让Transformer训练提速10% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 Transformer模型的训练过程，有时就像驾驶一辆狂野的赛车，稍有不慎就可能“翻车”——训练过程突然崩溃，损失函数（Loss）直接飙升到无穷大。为了驯服这头性能猛兽，研究者们想出了各种办法，其中最著名的当属**QK Norm**。然而，这个“稳定器”并非万能，在一些更高效的注意力机制（如MLA）中会“水土不服”。
 
-> ArXiv URL：http://arxiv.org/abs/2511.21377v1
+> ArXiv URL：https://arxiv.org/abs/2511.21377v1
 
 现在，来自Mistral AI和布里斯托大学的研究者们提出了一种全新的思路：与其强行限制注意力得分的大小，不如去控制它的“变化速度”！
 

@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Autonomous Agents for Scientific Discovery: Orchestrating Scientists, Language, Code, and Physics"
+description: "本文提出一个信息论框架来分析和构建用于科学发现的自主智能体(Autonomous Agents)，通过对信息熵、可验证性和耗散的分析，建立了一套信息流转的分类体系，并在此基础上提出了一个衡量智能体自主能力的五级模型。"
+topics:
+  - "AI Agent"
+  - "行业应用"
+related_tutorials:
+  - "re4-scientific-computing-agent-with-rewriting-resolution-review-and-revision"
+  - "a-survey-on-large-language-model-based-autonomous-agents"
+  - "ai-meets-brain-memory-systems-from-cognitive-neuroscience-to-autonomous-agents"
+  - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.09901v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.09901v1
 
 - **作者**: Hongyi Ling; Yepeng Huang; Xiusi Chen; Junkai Zhang; Michael Sun; Xingyu Su; Xiaoxuan Wang; Xiner Li; Heng Ji; Wei Wang; 等15人
 

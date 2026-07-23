@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "RiskPO: Risk-based Policy Optimization via Verifiable Reward for LLM Post-Training"
+description: "本文提出一种名为 RiskPO 的大语言模型训练后优化方法，通过引入一个基于风险度量的目标函数（MVaR），替代传统的均值优化目标，从而将模型优化的重点放在处理困难样本上，有效缓解了熵坍塌问题，并显著提升了模型的推理能力。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "gdpo-group-reward-decoupled-normalization-policy-optimization-for-multi-reward-r"
+  - "asymmetric-proximal-policy-optimization-mini-critics-boost-llm-reasoning"
+  - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
+  - "fapo-flawed-aware-policy-optimization-for-efficient-and-reliable-reasoning"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.00911v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.00911v1
 
 - **作者**: Jinyang Jiang; Zishi Zhang; Qinghao Wang; Wan Tian; Guanghao Li; Hui Shao; Hui Yang; Tao Ren; Minhao Zou; Rui Tao; 等13人
 

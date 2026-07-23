@@ -1,6 +1,14 @@
 ---
 layout: default
 title: "AlphaResearch: Accelerating New Algorithm Discovery with Language Models"
+description: "AI当上科学家：字节跳动AlphaResearch，8项难题2次击败人类专家。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "connecting-jensen-shannon-and-kullback-leibler-divergences-a-new-bound-for-repre"
+  - "unifying-tree-search-algorithm-and-reward-design-for-llm-reasoning-a-survey"
+  - "autonomous-agents-for-scientific-discovery-orchestrating-scientists-language-cod"
+  - "datasage-multi-agent-collaboration-for-insight-discovery-with-external-knowledge"
 ---
 
 ## AI当上科学家：字节跳动AlphaResearch，8项难题2次击败人类专家
@@ -8,7 +16,7 @@ title: "AlphaResearch: Accelerating New Algorithm Discovery with Language Models
 大型语言模型（LLM）已经能在解题、编程等任务上媲美甚至超越人类，但它们能做的仅限于已有知识的“排列组合”吗？AI能否像人类科学家一样，真正地“发现”前所未有的新知识、新算法？
 
 > **论文标题**：AlphaResearch: Accelerating New Algorithm Discovery with Language Models
-> **ArXiv URL**：http://arxiv.org/abs/2511.08522v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.08522v1
 
 来自字节跳动、纽约大学等机构的最新研究 **AlphaResearch**，朝着这个终极问题迈出了关键一步。它构建了一个自主研究智能体（Agent），在与人类专家的8场算法发现竞赛中，取得了2场胜利！尤其在“圆形装箱”问题上，它发现的算法超越了所有已知的最好结果。
 

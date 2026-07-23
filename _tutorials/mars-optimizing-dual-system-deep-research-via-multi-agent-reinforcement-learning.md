@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "MARS: Optimizing Dual-System Deep Research via Multi-Agent Reinforcement Learning"
+description: "本文提出了一种名为 MARS 的双系统多智能体强化学习框架，该框架通过模拟人类认知的双系统（系统1的快速直觉与系统2的审慎推理），让两个智能体协同解决需要外部知识的复杂推理任务，显著提升了模型在动态信息环境下的深度研究和推理能力。"
+topics:
+  - "AI Agent"
+  - "推理与强化学习"
+related_tutorials:
+  - "coda-coordinating-the-cerebrum-and-cerebellum-for-a-dual-brain-computer-use-agen"
+  - "mixture-of-minds-multi-agent-reinforcement-learning-for-table-understanding"
+  - "ui-tars-2-technical-report-advancing-gui-agent-with-multi-turn-reinforcement-lea"
+  - "dr-tulu-reinforcement-learning-with-evolving-rubrics-for-deep-research"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.04935v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.04935v1
 
 - **作者**: Yong Jiang; Xuanzhong Chen; Hao Sun; Wayne Xin Zhao; Minpeng Liao; Donglei Yu; Wenqing Wang; Fei Huang; Kai Fan; Zile Qiao; 等12人
 

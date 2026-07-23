@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "CaveAgent: Transforming LLMs into Stateful Runtime Operators"
+description: "告别上下文遗忘！CaveAgent引入“双流架构”，数据密集任务Token暴降59%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "fourier-neural-operators-explained-a-practical-perspective"
+  - "autoregressive-language-models-are-secretly-energy-based-models-insights-into-th"
+  - "do-not-step-into-the-same-river-twice-learning-to-reason-from-trial-and-error"
+  - "a-multi-agent-framework-for-stateful-inference-time-search"
 ---
 
 ## 告别上下文遗忘！CaveAgent引入“双流架构”，数据密集任务Token暴降59%
 
-<img src="/images/2601.01569v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01569v1/A__title.jpg" alt="告别上下文遗忘！CaveAgent引入“双流架构”，数据密集任务Token暴降59% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 你是否遇到过这样的尴尬：让AI Agent处理一个复杂任务，几轮对话后它竟然把之前的关键变量“忘了”，或者因为上下文窗口爆炸而不得不截断信息？目前的Agent大多依赖JSON格式进行函数调用，这种“文本进、文本出”的模式不仅效率低下，而且极易在多轮交互中丢失状态。
 
-> ArXiv URL：http://arxiv.org/abs/2601.01569v1
+> ArXiv URL：https://arxiv.org/abs/2601.01569v1
 
 如果Agent能像程序员操作Jupyter Notebook一样，拥有一个“持久化”的内存环境，不再需要反复把数据转成文本塞给模型，会发生什么？
 

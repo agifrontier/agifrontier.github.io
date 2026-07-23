@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "MeSH: Memory-as-State-Highways for Recursive Transformers"
+description: "本文为解决递归 Transformer 的性能瓶颈，提出了以下关键概念。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "rmaat-astrocyte-inspired-memory-compression-and-replay-for-efficient-long-contex"
+  - "improving-recursive-transformers-with-mixture-of-loras"
+  - "transformers-are-ssms-generalized-models-and-efficient-algorithms-through-struct"
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.07739v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.07739v1
 
 - **作者**: Yizhen Zhang; Yadao Wang; Wenbo Su; Rujiao Long; Xiaobo Shu; Yuchi Xu; Haoyi Wu; Chengting Yu; Ziheng Chen; Bo Zheng; 等11人
 

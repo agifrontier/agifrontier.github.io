@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Let's (not) just put things in Context: Test-Time Training for Long-Context LLMs"
+description: "别再堆Thinking Tokens了！qTTT让长文本性能暴涨14%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "end-to-end-test-time-training-for-long-context"
+  - "reusing-pre-training-data-at-test-time-is-a-compute-multiplier"
+  - "understanding-the-role-of-training-data-in-test-time-scaling"
+  - "every-attention-matters-an-efficient-hybrid-architecture-for-long-context-reason"
 ---
 
 ## 别再堆Thinking Tokens了！qTTT让长文本性能暴涨14%
 
-<img src="/images/2512.13898v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.13898v1/A__title.jpg" alt="别再堆Thinking Tokens了！qTTT让长文本性能暴涨14% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 长文本（Long Context）已经成为大模型竞赛的必争之地，百万级 Token 的上下文窗口似乎已成标配。然而，也就是在我们将海量文档塞给模型时，一个尴尬的现实浮出水面：**模型“读得进去”，但未必“找得出来”。**
 
-> ArXiv URL：http://arxiv.org/abs/2512.13898v1
+> ArXiv URL：https://arxiv.org/abs/2512.13898v1
 
 为了解决长文本推理难题，业界普遍的做法是让模型“多思考一会儿”——即生成**思维链**（**Chain-of-Thought**）或“Thinking Tokens”。但这真的是最优解吗？
 

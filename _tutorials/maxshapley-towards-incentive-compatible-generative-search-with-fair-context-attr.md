@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "MaxShapley: Towards Incentive-compatible Generative Search with Fair Context Attribution"
+description: "RAG归因成本直降8倍！CMU提出MaxShapley算法，让内容贡献清晰可量。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "行业应用"
+related_tutorials:
+  - "lore-a-large-generative-model-for-search-relevance"
+  - "students-voices-on-generative-ai-perceptions-benefits-and-challenges-in-higher-e"
+  - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
+  - "fine-tuning-small-language-models-as-efficient-enterprise-search-relevance-label"
 ---
 
 ## RAG归因成本直降8倍！CMU提出MaxShapley算法，让内容贡献清晰可量
 
-<img src="/images/2512.05958v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.05958v1/A__title.jpg" alt="RAG归因成本直降8倍！CMU提出MaxShapley算法，让内容贡献清晰可量 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当你在使用 Perplexity AI 或 Google Gemini 这类生成式搜索引擎时，是否曾想过，它们那份凝聚了多个信息源、看起来完美无瑕的回答，背后隐藏着怎样的利益博弈？对于用户来说，这是前所未有的便捷；但对于那些提供原创内容的网站和博客来说，这却可能是一场“灭绝级事件”。当流量不再，广告收入枯竭，谁还愿意创造优质内容呢？
 
-> ArXiv URL：http://arxiv.org/abs/2512.05958v1
+> ArXiv URL：https://arxiv.org/abs/2512.05958v1
 
 为了维系整个信息生态的健康，一个核心问题亟待解决：我们如何公平、量化地评估并补偿每个内容源对AI生成答案的贡献？卡内基梅隆大学（CMU）与香港科技大学（HKUST）的研究者们给出了一个漂亮的答案：**MaxShapley**。这是一种全新的归因算法，它不仅在理论上做到了公平，更在实践中实现了惊人的效率。
 

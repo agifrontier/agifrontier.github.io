@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Dataset Growth"
+description: "本文提出了一种名为 InfoGrowth 的高效在线算法，通过实时评估数据流中每个数据点的噪声和冗余度，动态地清洗和选择信息量高的数据，以实现高质量数据集的持续、高效增长。"
+topics:
+  - "数据与AI工程"
+related_tutorials:
+  - "a-comprehensive-dataset-for-human-vs-ai-generated-text-detection"
+  - "bridgedata-v2-a-dataset-for-robot-learning-at-scale"
+  - "latent-traits-and-cross-task-transfer-deconstructing-dataset-interactions-in-llm"
+  - "the-refinedweb-dataset-for-falcon-llm-outperforming-curated-corpora-with-web-dat"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2405.18347v2
+- **ArXiv URL**: https://arxiv.org/abs/2405.18347v2
 
 - **作者**: Wrick Talukdar; Anjanava Biswas
 

@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "Memoria: A Scalable Agentic Memory Framework for Personalized Conversational AI"
+description: "告别AI“健忘症”：Memoria利用加权知识图谱打造可扩展的个性化记忆。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "AI Agent"
+related_tutorials:
+  - "dynamic-affective-memory-management-for-personalized-llm-agents"
+  - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+  - "general-agentic-memory-via-deep-research"
 ---
 
 ## 告别AI“健忘症”：Memoria利用加权知识图谱打造可扩展的个性化记忆
 
-<img src="/images/2512.12686v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.12686v1/A__title.jpg" alt="告别AI“健忘症”：Memoria利用加权知识图谱打造可扩展的个性化记忆 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 目前的LLM（大语言模型）聊天机器人往往像是一个患有严重“健忘症”的过客：无论你们之前的对话多么深入，一旦开启新会话，它就会把你忘得一干二净。这种“无状态”的特性，使得AI难以建立长期的用户画像，也无法提供真正连贯的个性化体验。
 
-> ArXiv URL：http://arxiv.org/abs/2512.12686v1
+> ArXiv URL：https://arxiv.org/abs/2512.12686v1
 
 为了解决这一痛点，来自贝莱德（BlackRock）的研究团队推出了 **Memoria**。这是一个模块化的记忆框架，旨在通过引入**代理记忆**（**Agentic Memory**），让LLM拥有像人类一样的持久记忆能力。Memoria不仅能记住对话内容，还能通过构建**知识图谱**（**Knowledge Graph, KG**）来理解用户的偏好与特质，从而在长周期的交互中提供精准的个性化服务。
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning"
+description: "普特南118分超人类！DeepSeekMath-V2：AI如何学会“自我审日志”？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "deepseekmath-pushing-the-limits-of-mathematical-reasoning-in-open-language-model"
+  - "cogflow-bridging-perception-and-reasoning-through-knowledge-internalization-for-"
+  - "mathvista-evaluating-mathematical-reasoning-of-foundation-models-in-visual-conte"
+  - "reasoning-over-mathematical-objects-on-policy-reward-modeling-and-test-time-aggr"
 ---
 
 ## 普特南118分超人类！DeepSeekMath-V2：AI如何学会“自我审日志”？
 
-<img src="/images/2511.22570v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.22570v1/A__title.jpg" alt="普特南118分超人类！DeepSeekMath-V2：AI如何学会“自我审日志”？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 AI在数学竞赛中再次技惊四座！这一次，DeepSeek-AI推出的DeepSeekMath-V2在顶级的大学生数学竞赛普特南（Putnam）2024中取得了118/120的近乎满分的成绩，远超人类最高分90分。
 
-> ArXiv URL：http://arxiv.org/abs/2511.22570v1
+> ArXiv URL：https://arxiv.org/abs/2511.22570v1
 
 更令人瞩目的是，它还在IMO 2025和CMO 2024这两个顶尖高中数学竞赛中达到了金牌水平。
 

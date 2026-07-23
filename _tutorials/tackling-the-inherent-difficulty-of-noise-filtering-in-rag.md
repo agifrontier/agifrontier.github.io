@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Tackling the Inherent Difficulty of Noise Filtering in RAG"
+description: "RAG去噪为何这么难？人大清华揭秘“三元困境”，非线性微调让LLM自带“过滤器”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "hifi-rag-hierarchical-content-filtering-and-two-pass-generation-for-open-domain-"
+  - "emorag-evaluating-rag-robustness-to-symbolic-perturbations"
+  - "less-llm-more-documents-searching-for-improved-rag"
+  - "mcp-vs-rag-vs-nlweb-vs-html-a-comparison-of-the-effectiveness-and-efficiency-of-"
 ---
 
 ## RAG去噪为何这么难？人大清华揭秘“三元困境”，非线性微调让LLM自带“过滤器”
 
-<img src="/images/2601.01896v2/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01896v2/A__title.jpg" alt="RAG去噪为何这么难？人大清华揭秘“三元困境”，非线性微调让LLM自带“过滤器” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在构建 **检索增强生成**（**Retrieval-Augmented Generation, RAG**）系统时，我们往往面临一个令人头秃的现实：无论检索器（Retriever）优化得多么好，总会有“噪声文档”混入上下文。这些无关信息不仅浪费了宝贵的上下文窗口，更糟糕的是，它们会误导大模型，导致严重的幻觉问题。
 
-> ArXiv URL：http://arxiv.org/abs/2601.01896v2
+> ArXiv URL：https://arxiv.org/abs/2601.01896v2
 
 你可能会想：“这有什么难的？直接对LLM进行微调，让它学会‘忽略’这些噪声不就行了吗？”
 

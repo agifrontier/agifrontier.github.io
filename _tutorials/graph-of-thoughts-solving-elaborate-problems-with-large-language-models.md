@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Graph of Thoughts: Solving Elaborate Problems with Large Language Models"
+description: "本文提出了一种名为“思想图谱 (Graph of Thoughts, GoT)”的新型提示框架，通过将大型语言模型 (LLM) 的思维过程建模为任意图结构，其中“思想”是节点，依赖关系是边，从而实现了超越链式或树状思维模式的、更复杂和强大的推理能力，尤其擅长聚合多个推理路径以生成协同的、更高质量的解决方案。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "tree-of-thoughts-deliberate-problem-solving-with-large-language-models"
+  - "llms-encode-how-difficult-problems-are"
+  - "loong-synthesize-long-chain-of-thoughts-at-scale-through-verifiers"
+  - "modeling-language-as-a-sequence-of-thoughts"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2308.09687v4
+- **ArXiv URL**: https://arxiv.org/abs/2308.09687v4
 
 - **作者**: Maciej Besta; Michal Podstawski; H. Niewiadomski; Aleš Kubíček; Torsten Hoefler; Robert Gerstenberger; P. Nyczyk; Lukas Gianinazzi; Joanna Gajda; Tomasz Lehmann; 等1人
 

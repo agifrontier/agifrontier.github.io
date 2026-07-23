@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Step-GUI Technical Report"
+description: "成本暴降100倍！Step-GUI刷新SOTA，打造手机端最强“操作员”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "step-deepresearch-technical-report"
+  - "mai-ui-technical-report-real-world-centric-foundation-gui-agents"
+  - "ui-tars-2-technical-report-advancing-gui-agent-with-multi-turn-reinforcement-lea"
+  - "deepseek-v3-technical-report"
 ---
 
 ## 成本暴降100倍！Step-GUI刷新SOTA，打造手机端最强“操作员”
 
-<img src="/images/2512.15431v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.15431v1/A__title.jpg" alt="成本暴降100倍！Step-GUI刷新SOTA，打造手机端最强“操作员” 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 多模态大模型（MLLM）虽然已经能“看懂”屏幕，但要让它们像人类一样流畅操作手机或电脑，依然面临巨大的鸿沟。核心痛点在于：高质量的GUI（图形用户界面）训练数据极其稀缺且昂贵，而传统的标注方法往往充满噪音。
 
-> ArXiv URL：http://arxiv.org/abs/2512.15431v1
+> ArXiv URL：https://arxiv.org/abs/2512.15431v1
 
 最近，**阶跃星辰**（StepFun）团队发布了一份重磅技术报告，推出了 **Step-GUI** 系列模型。这项研究不仅在 AndroidWorld 等权威榜单上以 **80.2%** 的成功率刷新了SOTA，更重要的是，它提出了一套自我进化的数据生成管线，将数据标注成本降低了 **10-100倍**，同时保持了超过 **90%** 的标注精度。
 

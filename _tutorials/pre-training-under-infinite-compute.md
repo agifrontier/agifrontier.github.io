@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Pre-training under infinite compute"
+description: "本文提出，在数据受限而计算资源无限的未来场景下，通过深度优化正则化、模型集成和知识蒸馏等经典算法，可以显著提升语言模型预训练的数据效率，其效果远超单纯增加训练轮次或模型参数的传统方法。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "reusing-pre-training-data-at-test-time-is-a-compute-multiplier"
+  - "adamhd-decoupled-huber-decay-regularization-for-language-model-pre-training"
+  - "demystifying-synthetic-data-in-llm-pre-training-a-systematic-study-of-scaling-la"
+  - "on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language-model"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.14786v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.14786v1
 
 - **作者**: Percy Liang; Tatsunori Hashimoto; Konwoo Kim; Suhas Kotha
 

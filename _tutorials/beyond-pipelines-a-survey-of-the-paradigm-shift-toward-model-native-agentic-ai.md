@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Beyond Pipelines: A Survey of the Paradigm Shift toward Model-Native Agentic AI"
+description: "近年来，AI领域的发展由生成式AI主导，但其本质上仍是被动响应。为了超越被动生成，实现自主行动，研究焦点正转向智能体AI (Agentic AI)，它强调自指导行为、复杂推理和环境交互。智能体AI被广泛视为AI系统演化的下一阶段。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "a-survey-of-data-agents-emerging-paradigm-or-overstated-hype"
+  - "youtu-llm-unlocking-the-native-agentic-potential-for-lightweight-large-language-"
+  - "inter-agent-trust-models-a-comparative-study-of-brief-claim-proof-stake-reputati"
+  - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.16720v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.16720v1
 
 - **作者**: Jitao Sang; Jinlin Xiao; Yuhang Wang; Jilin Chen; Xiaoyi Chen; Shuyu Wei
 

@@ -1,17 +1,25 @@
 ---
 layout: default
 title: "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift"
+description: "批量归一化（Batch Normalization）：深度学习的“稳定器”与“加速器”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "seesaw-accelerating-training-by-balancing-learning-rate-and-batch-size-schedulin"
+  - "sortedrl-accelerating-rl-training-for-llms-through-online-length-aware-schedulin"
+  - "tree-training-accelerating-agentic-llms-training-via-shared-prefix-reuse"
+  - "beyond-turn-limits-training-deep-search-agents-with-dynamic-context-window"
 ---
 
 ## 批量归一化（Batch Normalization）：深度学习的“稳定器”与“加速器”
 
-<img src="/images/1502.03167v3/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/1502.03167v3/A__title.jpg" alt="批量归一化（Batch Normalization）：深度学习的“稳定器”与“加速器” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在深度神经网络的训练过程中，研究者和工程师们面临着一个棘手而普遍的难题：训练过程极其缓慢且不稳定。模型需要精细的参数初始化、小心翼翼设置的低学习率，并且对某些类型的激活函数（如 Sigmoid）非常不友好。这背后的一个核心元凶，被2015年一篇来自Google的开创性论文精准地识别并命名为**内部协变量偏移**（**Internal Covariate Shift**）。
 
 > **论文标题**：Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift
 
-> **ArXiv URL**：http://arxiv.org/abs/1502.03167v3
+> **ArXiv URL**：https://arxiv.org/abs/1502.03167v3
 
 为了解决这一问题，该研究提出了一种优雅而强大的技术——**批量归一化**（**Batch Normalization, BN**），它不仅从根本上缓解了训练不稳定的问题，还像一个“加速器”，极大地缩短了模型的训练时间，并顺带起到了正则化的效果。这项技术一经提出，便迅速成为深度学习领域的标准配置，深刻地改变了神经网络的设计与训练范式。
 

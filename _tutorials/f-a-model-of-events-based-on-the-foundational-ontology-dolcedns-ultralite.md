@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "F -- A Model of Events based on the Foundational Ontology DOLCE+DnS Ultralite"
+description: "本文提出了一种名为 Event-Model-F (F) 的事件形式化模型，该模型基于 foundational ontology (基础本体) DOLCE+DnS Ultralite (DUL)，通过一种模式驱动的方法，全面地表示事件中的时间、空间、参与对象、结构关系（部分-整体、因果、相关）以及对同一事件。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "agentic-software-engineering-foundational-pillars-and-a-research-roadmap"
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "a-concise-review-of-hallucinations-in-llms-and-their-mitigation"
+  - "a-definition-of-agi"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2411.16609v1
+- **ArXiv URL**: https://arxiv.org/abs/2411.16609v1
 
 - **作者**: Steffen Staab; C. Saathoff; Thomas Franz; A. Scherp
 

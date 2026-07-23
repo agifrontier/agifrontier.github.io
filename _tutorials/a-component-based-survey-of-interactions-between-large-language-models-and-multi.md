@@ -1,13 +1,21 @@
 ---
 layout: default
 title: "A Component-Based Survey of Interactions between Large Language Models and Multi-Armed Bandits"
+description: "LLM遇上多臂老虎机：首篇组件级综述揭秘“双向增强”决策智能。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "collaboration-and-conflict-between-humans-and-language-models-through-the-lens-o"
+  - "epistemological-fault-lines-between-human-and-artificial-intelligence"
+  - "language-models-as-tools-for-investigating-the-distinction-between-possible-and-"
+  - "larger-datasets-can-be-repeated-more-a-theoretical-analysis-of-multi-epoch-scali"
 ---
 
 ## LLM遇上多臂老虎机：首篇组件级综述揭秘“双向增强”决策智能
 
 大语言模型（LLM）已经证明了自己是通晓人类知识的“百科全书”，但当它们走出聊天框，试图在复杂、动态的真实世界中解决问题时，往往会面临一个核心挑战：**如何在不确定性中做出最优决策？**
 
-> ArXiv URL：http://arxiv.org/abs/2601.12945v2
+> ArXiv URL：https://arxiv.org/abs/2601.12945v2
 
 传统的LLM通常是静态的，而现实任务往往需要动态试错与反馈。这正是**多臂老虎机**（**Multi-Armed Bandit, MAB**）算法大显身手的地方。作为强化学习的一个经典子集，MAB以其轻量级、样本高效的“探索与利用”（Exploration-Exploitation）机制著称。
 

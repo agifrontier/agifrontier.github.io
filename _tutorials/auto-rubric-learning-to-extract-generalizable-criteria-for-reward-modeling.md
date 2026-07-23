@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Auto-Rubric: Learning to Extract Generalizable Criteria for Reward Modeling"
+description: "本文提出了一种名为 Auto-Rubric 的无训练框架，通过一个两阶段（查询特定的准则生成与查询无关的准则聚合）过程，仅用极少量偏好数据即可自动提取出可解释、可泛化且高效的奖励模型评估准则（Rubric）集。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "excess-description-length-of-learning-generalizable-predictors"
+  - "reasoning-over-mathematical-objects-on-policy-reward-modeling-and-test-time-aggr"
+  - "artificial-hippocampus-networks-for-efficient-long-context-modeling"
+  - "flex-language-modeling-with-few-shot-language-explanations"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.17314v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.17314v1
 
 - **作者**: Yunpeng Zhai; Zhaoyang Liu; Haoran Chen; Anni Zou; Haoyuan Hu; Sen Huang; Bolin Ding; Boyin Liu; Zhuo Zhang
 

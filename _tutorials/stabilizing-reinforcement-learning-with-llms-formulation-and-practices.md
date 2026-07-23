@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Stabilizing Reinforcement Learning with LLMs: Formulation and Practices"
+description: "Token级优化为何能对齐序列级奖励？阿里耗费数十万GPU时，揭秘LLM强化学习稳定之道。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "a-multiobjective-reinforcement-learning-framework-for-microgrid-energy-managemen"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "a-survey-of-reinforcement-learning-for-large-reasoning-models"
+  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
 ---
 
 ## Token级优化为何能对齐序列级奖励？阿里耗费数十万GPU时，揭秘LLM强化学习稳定之道
 
-<img src="/images/2512.01374v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.01374v1/A__title.jpg" alt="Token级优化为何能对齐序列级奖励？阿里耗费数十万GPU时，揭秘LLM强化学习稳定之道 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 用强化学习（RL）来“调教”大模型，使其在复杂任务上表现更佳，已是行业共识。但一个棘手的问题始终困扰着研究者们：训练过程极其不稳定，常常像坐过山车。
 
-> ArXiv URL：http://arxiv.org/abs/2512.01374v1
+> ArXiv URL：https://arxiv.org/abs/2512.01374v1
 
 这背后隐藏着一个根本矛盾：我们通常基于模型生成的**完整序列**（如一个完整的答案）给予奖励，但在优化时，却是在**逐个Token**的粒度上调整模型。
 

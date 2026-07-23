@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Retaining by Doing: The Role of On-Policy Data in Mitigating Forgetting"
+description: "本文通过系统性比较发现，强化学习（RL）在后训练中比监督微调（SFT）更能有效缓解灾难性遗忘，其根本原因在于RL利用在线策略（on-policy）数据所产生的“模式寻求”（mode-seeking）特性，能够在学习新任务的同时更好地保留模型的已有知识模式。"
+topics:
+  - "数据与AI工程"
+related_tutorials:
+  - "understanding-the-role-of-training-data-in-test-time-scaling"
+  - "data-efficient-rlvr-via-off-policy-influence-guidance"
+  - "a-novel-combined-data-driven-approach-for-electricity-theft-detection"
+  - "a-survey-of-data-agents-emerging-paradigm-or-overstated-hype"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.18874v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.18874v1
 
 - **作者**: Karthik Narasimhan; Danqi Chen; Noam Razin; Howard Chen
 

@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory"
+description: "告别微调！MemRL：用“记忆RL”让Agent在运行时实现自我进化。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "AI Agent"
+related_tutorials:
+  - "memory-r1-enhancing-large-language-model-agents-to-manage-and-utilize-memories-v"
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+  - "latent-learning-episodic-memory-complements-parametric-learning-by-enabling-flex"
+  - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
 ---
 
 ## 告别微调！MemRL：用“记忆RL”让Agent在运行时实现自我进化
 
-<img src="/images/2601.03192v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.03192v1/A__title.jpg" alt="告别微调！MemRL：用“记忆RL”让Agent在运行时实现自我进化 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大模型（LLM）看似无所不知，但它们往往面临一个尴尬的困境：一旦训练完成，它们就停止了“学习”。
 
-> ArXiv URL：http://arxiv.org/abs/2601.03192v1
+> ArXiv URL：https://arxiv.org/abs/2601.03192v1
 
 为了让 Agent 在部署后继续变强，传统的做法通常是微调（Fine-tuning）。但这不仅昂贵，还容易导致**灾难性遗忘**（Catastrophic Forgetting）——为了学会新技能，模型可能把旧知识忘得一干二净。另一种主流方案是 **检索增强生成**（**Retrieval-Augmented Generation, RAG**），它通过外挂知识库来补充信息。然而，RAG 往往是被动的：它只看检索内容和查询“像不像”（语义相似度），却不管这些内容到底“有没有用”。
 

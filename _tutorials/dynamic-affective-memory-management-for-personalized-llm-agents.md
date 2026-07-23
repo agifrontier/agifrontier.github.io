@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Dynamic Affective Memory Management for Personalized LLM Agents"
+description: "本文提出了一种名为DAM-LLM的动态情感记忆管理系统，通过引入基于贝叶斯的更新机制和记忆熵概念，使智能体能够自主维护一个动态更新的记忆数据库，以解决传统静态记忆的冗余、过时和一致性差的问题，从而提供更具个性化的情感交互。"
+topics:
+  - "RAG与知识系统"
+  - "AI Agent"
+related_tutorials:
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+  - "memoria-a-scalable-agentic-memory-framework-for-personalized-conversational-ai"
+  - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"
+  - "ai-meets-brain-memory-systems-from-cognitive-neuroscience-to-autonomous-agents"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.27418v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.27418v1
 
 - **作者**: Yueyan Li
 

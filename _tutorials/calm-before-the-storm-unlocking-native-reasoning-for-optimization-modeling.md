@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "CALM Before the STORM: Unlocking Native Reasoning for Optimization Modeling"
+description: "本文提出 CALM 框架，通过专家智能体注入轻量级提示来修正大型推理模型 (LRM) 的原生推理缺陷，从而生成高质量数据，并通过监督微调和强化学习两阶段训练，打造出在优化建模任务上达到业界顶尖水平且参数高效的模型 STORM。"
+topics:
+  - "推理与强化学习"
+  - "模型训练与优化"
+related_tutorials:
+  - "asymmetric-proximal-policy-optimization-mini-critics-boost-llm-reasoning"
+  - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
+  - "fapo-flawed-aware-policy-optimization-for-efficient-and-reliable-reasoning"
+  - "unlocking-the-power-of-multi-agent-llm-for-reasoning-from-lazy-agents-to-deliber"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.04204v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.04204v1
 
 - **作者**: Hongyuan Zha; Zihan Ye; Guanhua Chen; Zizhuo Wang; Chengpeng Li; Ming Yan; Chenyu Huang; Xuhan Huang; Dayiheng Liu; Sihang Li; 等12人
 

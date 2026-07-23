@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Phi-3 Technical Report: A Highly Capable Language Model Locally on Your Phone"
+description: "本文介绍了phi-3系列模型，特别是38亿参数的phi-3-mini，它通过在一个精心筛选和合成的高质量数据集上进行训练，实现了与Mixtral 8x7B和GPT-3.5等大模型相媲美的性能，同时其模型尺寸小到可以在手机上本地部署。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "deepseek-v3-technical-report"
+  - "gpt-4-technical-report"
+  - "hunyuanvideo-15-technical-report"
+  - "kling-omni-technical-report"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2404.14219v4
+- **ArXiv URL**: https://arxiv.org/abs/2404.14219v4
 
 - **作者**: Young Jin Kim; Michael Santacroce; Hardik Modi; Anh Nguyen; Ahmed Awadallah; Nikos Karampatziakis; Mahoud Khademi; Ning Shang; J. Aneja; P. Witte; 等78人
 

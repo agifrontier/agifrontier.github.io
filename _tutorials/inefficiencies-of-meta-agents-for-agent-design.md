@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Inefficiencies of Meta Agents for Agent Design"
+description: "本文通过实验揭示了一类流行的元智能体（meta-agent）在自动化智能体设计中存在的三个核心问题：学习效率低下、生成的智能体多样性不足以及经济可行性有限，并发现进化式上下文策展策略可以有效提升性能。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "memevolve-meta-evolution-of-agent-memory-systems"
+  - "metaclaw-just-talk-an-agent-that-meta-learns-and-evolves-in-the-wild"
+  - "inter-agent-trust-models-a-comparative-study-of-brief-claim-proof-stake-reputati"
+  - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.06711v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.06711v1
 
 - **作者**: Mert Yuksekgonul; James Zou; Batu El
 

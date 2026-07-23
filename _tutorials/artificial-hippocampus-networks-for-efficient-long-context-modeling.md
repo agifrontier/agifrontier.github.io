@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Artificial Hippocampus Networks for Efficient Long-Context Modeling"
+description: "本文提出了一种名为人工海马网络（Artificial Hippocampus Networks, AHN）的框架，通过一个可学习的循环模块将滑窗外的Key-Value缓存压缩为固定大小的长期记忆，从而在显著降低计算和内存成本的同时，高效地处理长序列上下文。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "comet-collaborative-memory-transformer-for-efficient-long-context-modeling"
+  - "every-token-counts-generalizing-16m-ultra-long-context-in-large-language-models"
+  - "sentence-anchored-gist-compression-for-long-context-llms"
+  - "every-attention-matters-an-efficient-hybrid-architecture-for-long-context-reason"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.07318v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.07318v1
 
 - **作者**: Weihao Yu; Xuehan Xiong; Yunhao Fang; Shu Zhong; Lai Wei; Qinghao Ye
 

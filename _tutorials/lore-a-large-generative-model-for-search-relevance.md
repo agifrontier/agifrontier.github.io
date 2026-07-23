@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "LORE: A Large Generative Model for Search Relevance"
+description: "阿里LORE：电商搜索相关性暴涨27%！大模型训练心法全公开。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "行业应用"
+related_tutorials:
+  - "fine-tuning-small-language-models-as-efficient-enterprise-search-relevance-label"
+  - "maxshapley-towards-incentive-compatible-generative-search-with-fair-context-attr"
+  - "students-voices-on-generative-ai-perceptions-benefits-and-challenges-in-higher-e"
+  - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
 ---
 
 ## 阿里LORE：电商搜索相关性暴涨27%！大模型训练心法全公开
 
-<img src="/images/2512.03025v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.03025v1/A__title.jpg" alt="阿里LORE：电商搜索相关性暴涨27%！大模型训练心法全公开 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在淘宝、京东上搜索商品，你是否也曾被那些毫不相关的结果搞得一头雾水？明明想买“晨C晚A”的护肤品，出来的却是维生素C片。这种体验的背后，是电商搜索领域一个核心且棘手的难题：**相关性判断**。
 
-> ArXiv URL：http://arxiv.org/abs/2512.03025v1
+> ArXiv URL：https://arxiv.org/abs/2512.03025v1
 
 现在，阿里巴巴给出了一个惊艳的答案。
 

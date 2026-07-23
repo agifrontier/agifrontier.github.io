@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Kascade: A Practical Sparse Attention Method for Long-Context LLM Inference"
+description: "微软Kascade：无需训练，H100上长文本推理提速4.1倍！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "stream-scaling-up-mechanistic-interpretability-to-long-context-in-llms-via-spars"
+  - "every-attention-matters-an-efficient-hybrid-architecture-for-long-context-reason"
+  - "sparse-attention-post-training-for-mechanistic-interpretability"
+  - "specattn-speculating-sparse-attention"
 ---
 
 ## 微软Kascade：无需训练，H100上长文本推理提速4.1倍！
 
-<img src="/images/2512.16391v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.16391v1/A__title.jpg" alt="微软Kascade：无需训练，H100上长文本推理提速4.1倍！ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在当今的大模型应用中，长上下文（Long-Context）能力已成为“兵家必争之地”。无论是RAG（检索增强生成）、代码助手，还是复杂的Agent推理，都依赖于模型处理海量Token的能力。然而，随着上下文长度的增加，推理延迟和显存占用呈指数级增长，尤其是Attention机制带来的 $O(n^2)$ 复杂度，成为了制约长文本落地的最大瓶颈。
 
-> ArXiv URL：http://arxiv.org/abs/2512.16391v1
+> ArXiv URL：https://arxiv.org/abs/2512.16391v1
 
 为了解决这一难题，来自微软研究院（Microsoft Research India）的团队提出了一种名为 **Kascade** 的全新稀疏注意力方法。它无需对模型进行任何重新训练，就能在H100 GPU上实现 **4.1倍的Decode加速** 和 **2.2倍的Prefill加速**，同时在LongBench和AIME-24等高难度基准测试中，精度几乎无损。
 

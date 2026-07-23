@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Jailbroken: How Does LLM Safety Training Fail?"
+description: "本文提出并验证了大型语言模型（LLM）安全训练的两种核心失败模式——“竞争性目标”与“泛化不匹配”，并基于此设计出能成功“越狱”（Jailbreak）GPT-4和Claude等顶尖模型的新型攻击方法。"
+topics:
+  - "AI安全与评测"
+  - "模型训练与优化"
+related_tutorials:
+  - "how-does-rl-post-training-induce-skill-composition-a-case-study-on-countdown"
+  - "the-alignment-waltz-jointly-training-agents-to-collaborate-for-safety"
+  - "what-does-loss-optimization-actually-teach-if-anything-knowledge-dynamics-in-con"
+  - "babybabellm-a-multilingual-benchmark-of-developmentally-plausible-training-data"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2307.02483v1
+- **ArXiv URL**: https://arxiv.org/abs/2307.02483v1
 
 - **作者**: J. Steinhardt; Nika Haghtalab; Alexander Wei
 
@@ -33,7 +42,7 @@ title: "Jailbroken: How Does LLM Safety Training Fail?"
 ## 本文方法
 本文的核心贡献是提出了两个理论上的失败模式，并以此为指导原则设计了一系列新型的越狱攻击。
 
-<img src="/images/2307.02483v1/page_1_Figure_0.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2307.02483v1/page_1_Figure_0.jpg" alt="本文方法 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 图1：(a) 利用“竞争性目标”的越狱示例。(b) 利用“泛化不匹配”的越狱示例。
 
 ## 失败模式一：竞争性目标
@@ -48,7 +57,7 @@ title: "Jailbroken: How Does LLM Safety Training Fail?"
 
 *   **Base64编码攻击**: 这是一个典型的例子。攻击者将有害提示用Base64编码。像GPT-4这样的模型在预训练阶段已经学会了理解并执行Base64编码的指令。然而，安全训练数据中很可能不包含这种编码形式的有害内容，导致模型的安全机制在此类输入上“失明”，从而直接执行编码后的恶意指令。
 
-<img src="/images/2307.02483v1/page_5_Figure_1.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2307.02483v1/page_5_Figure_1.jpg" alt="失败模式二：泛化不匹配 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *   **其他泛化攻击方式**：此原理可扩展到多种形式，包括：
     *   **其他混淆技术**：如ROT13密码、Leet语（用数字和符号替换字母）、摩斯电码等。
@@ -100,7 +109,7 @@ title: "Jailbroken: How Does LLM Safety Training Fail?"
 
 *   **模型规模扩大引入新漏洞**：对比GPT-3.5 Turbo和GPT-4发现，一些复杂的攻击（如Base64）对GPT-3.5 Turbo无效，因为它不具备理解这些复杂指令的能力。然而，GPT-4在规模扩大后获得了这种能力，但其安全训练却没有跟上，反而导致了新的攻击面。
 
-<img src="/images/2307.02483v1/page_8_Figure_1.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2307.02483v1/page_8_Figure_1.jpg" alt="关键实验结果 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 图2：对于相同的Base64编码提示，GPT-3.5 Turbo表示无法理解，而GPT-4则提供了详细的有害回应，展示了随模型规模扩大而出现的新漏洞。
 
 ## 最终结论

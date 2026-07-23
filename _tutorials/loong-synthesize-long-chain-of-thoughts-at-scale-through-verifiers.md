@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Loong: Synthesize Long Chain-of-Thoughts at Scale through Verifiers"
+description: "本文提出了Loong项目，一个旨在通过人工审查的种子数据集（LoongBench）和模块化的合成环境（LoongEnv），大规模生成跨多个推理领域、可自动验证的长链思维（Chain-of-Thoughts）数据，以解决高质量训练数据稀缺的问题，并为基于可验证奖励的强化学习（RLVR）提供支持。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "graph-of-thoughts-solving-elaborate-problems-with-large-language-models"
+  - "modeling-language-as-a-sequence-of-thoughts"
+  - "tree-of-thoughts-deliberate-problem-solving-with-large-language-models"
+  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.03059v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.03059v1
 
 - **作者**: Zhaowei Wang; Bowen Li; Ziyang Wang; Bernard Ghanem; Yifan Wu; Guohao Li; Jinhe Bi; Fangru Lin; Hao Sun; Yunpu Ma; 等38人
 

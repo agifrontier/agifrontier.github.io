@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "mHC: Manifold-Constrained Hyper-Connections"
+description: "DeepSeek魔改残差连接：mHC仅增6.7%开销，完美驯服大模型训练不稳定性。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "a-concise-review-of-hallucinations-in-llms-and-their-mitigation"
+  - "a-definition-of-agi"
+  - "a-general-theoretical-paradigm-to-understand-learning-from-human-preferences"
 ---
 
 ## DeepSeek魔改残差连接：mHC仅增6.7%开销，完美驯服大模型训练不稳定性
 
-<img src="/images/2512.24880v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.24880v1/A__title.jpg" alt="DeepSeek魔改残差连接：mHC仅增6.7%开销，完美驯服大模型训练不稳定性 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在过去十年里，深度学习架构的每一次飞跃，几乎都离不开一个核心组件——**残差连接**（**Residual Connection**）。从ResNet到Transformer，再到如今的LLM（如Llama、DeepSeek-V3），公式 $\mathbf{x} + \mathcal{F}(\mathbf{x})$ 简直就是现代AI的“地基”。
 
-> ArXiv URL：http://arxiv.org/abs/2512.24880v1
+> ArXiv URL：https://arxiv.org/abs/2512.24880v1
 
 但是，这个地基真的完美无缺吗？
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "On-line Policy Improvement using Monte-Carlo Search"
+description: "本文提出了一种在线策略改进算法，该算法通过蒙特卡洛搜索（Monte-Carlo search）实时评估当前状态下所有可能动作的长期期望回报，并选择最优动作，从而显著提升一个已有“基础策略”的表现。"
+topics:
+  - "行业应用"
+related_tutorials:
+  - "scaling-up-multi-turn-off-policy-rl-and-multi-agent-tree-search-for-llm-step-pro"
+  - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
+  - "fine-tuning-small-language-models-as-efficient-enterprise-search-relevance-label"
+  - "llm-erm-sample-efficient-program-learning-via-llm-guided-search"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2501.05407v1
+- **ArXiv URL**: https://arxiv.org/abs/2501.05407v1
 
 - **作者**: Gregory R. Galperin; G. Tesauro
 

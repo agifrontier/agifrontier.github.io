@@ -1,6 +1,14 @@
 ---
 layout: default
 title: "Effective context engineering for AI agents"
+description: "本文提出了“上下文工程” (Context Engineering) 的概念，主张将 AI 智能体开发的重点从编写静态提示词（prompt）转向动态地策划和管理输入给模型的全部信息（即上下文），从而在模型有限的注意力预算下，实现更可靠、更高效的智能体行为。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
+  - "reinforcement-learning-for-machine-learning-engineering-agents"
+  - "sfr-deepresearch-towards-effective-reinforcement-learning-for-autonomously-reaso"
+  - "agentfold-long-horizon-web-agents-with-proactive-context-management"
 ---
 
 
@@ -28,7 +36,7 @@ title: "Effective context engineering for AI agents"
 
 因此，本文旨在解决的核心问题是：**如何有效地管理和策划不断演变的信息，从中挑选出最有价值的部分放入有限的上下文窗口，以构建能够在长时程任务中保持连贯性和高效性的 AI 智能体？**
 
-<img src="/images//5764ac3266c7f8c096a9ab6f73ef1b1e9ebdfaf7.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images//5764ac3266c7f8c096a9ab6f73ef1b1e9ebdfaf7.jpg" alt="相关工作 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ## 本文方法
 本文将“上下文工程”的核心原则定义为：**找到能够最大化预期结果概率的、最小且信噪比最高的一组 Token**。围绕此原则，本文从静态上下文构成和动态上下文管理两个维度，提出了一套完整的方法论。
@@ -38,7 +46,7 @@ title: "Effective context engineering for AI agents"
 
 *   **系统提示 (System Prompts)**：应使用清晰、简单、直接的语言。关键在于找到“合适的高度” (right altitude)：既要避免过于具体、逻辑僵化的硬编码指令（这会使系统脆弱且难以维护），也要避免过于模糊、缺乏具体指导的空泛描述。推荐使用 XML 标签或 Markdown 标题（如 $$<instructions>$$, $$## Tool guidance$$）将提示词划分为不同部分，以增强结构性。目标是提供能够充分勾勒预期行为的最小信息集。
 
-<img src="/images//6b84f0db5320765c720cc172766b64c60976a8c9.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images//6b84f0db5320765c720cc172766b64c60976a8c9.jpg" alt="静态上下文的构成 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *   **工具 (Tools)**：工具定义了智能体与环境交互的契约。好的工具设计应促进效率，包括返回 Token 高效的信息和鼓励智能体采取高效的行为。工具应像设计良好的代码库中的函数一样，功能自洽、鲁棒且用途明确。一个常见的失败模式是工具集功能臃肿或存在功能重叠，导致智能体在决策时产生混淆。
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "A Comedy of Estimators: On KL Regularization in RL Training of LLMs"
+description: "RL微调避坑指南：揭秘KL正则化的“梯度陷阱”与性能真相。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "adamhd-decoupled-huber-decay-regularization-for-language-model-pre-training"
+  - "a-survey-on-efficient-large-language-model-training-from-data-centric-perspectiv"
+  - "a-survey-on-llm-mid-training"
+  - "babybabellm-a-multilingual-benchmark-of-developmentally-plausible-training-data"
 ---
 
 ## RL微调避坑指南：揭秘KL正则化的“梯度陷阱”与性能真相
 
-<img src="/images/2512.21852v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.21852v1/A__title.jpg" alt="RL微调避坑指南：揭秘KL正则化的“梯度陷阱”与性能真相 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 随着 DeepSeek-R1 等模型的爆火，**强化学习**（**Reinforcement Learning, RL**）在提升大模型推理能力方面的潜力再次成为焦点。现在的开发者们都在忙着复现 GRPO、PPO，试图让自己的模型在数学和代码任务上“顿悟”。
 
-> ArXiv URL：http://arxiv.org/abs/2512.21852v1
+> ArXiv URL：https://arxiv.org/abs/2512.21852v1
 
 但在你按下训练开始键之前，有没有想过一个看似微不足道的细节——**KL 散度（KL Divergence）**——可能正是决定你训练成败的关键？
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "HunyuanVideo 1.5 Technical Report"
+description: "83亿参数新SOTA！混元Video 1.5开源，推理加速87%，RTX 4090轻松跑。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "deepseek-v3-technical-report"
+  - "gpt-4-technical-report"
+  - "kling-omni-technical-report"
+  - "mimo-v2-flash-technical-report"
 ---
 
 ## 83亿参数新SOTA！混元Video 1.5开源，推理加速87%，RTX 4090轻松跑
 
-<img src="/images/2511.18870v2/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.18870v2/A__title.jpg" alt="83亿参数新SOTA！混元Video 1.5开源，推理加速87%，RTX 4090轻松跑 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当Kling、Veo、Sora等闭源模型不断刷新视频生成的上限时，开源社区却在性能与效率的平衡木上艰难前行。要么模型太大难以部署，要么效果不尽人意。
 
-> ArXiv URL：http://arxiv.org/abs/2511.18870v2
+> ArXiv URL：https://arxiv.org/abs/2511.18870v2
 
 这个困局，现在被打破了。
 
@@ -25,7 +33,6 @@ HunyuanVideo 1.5的核心是一个巧妙的两阶段生成管线。
 
 第二阶段，一个专用的**视频超分网络**（**Video Super-Resolution, VSR**）接力，将视频分辨率提升至惊人的1080p，同时锐化细节、修正伪影，让最终画面质感大幅提升。
 
-![级联视频超分模型管线](imagese/2511.18870v2/x3.jpg)
 
 ### 稀疏注意力SSTA：为长视频推理加速
 

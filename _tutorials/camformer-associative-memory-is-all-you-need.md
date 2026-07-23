@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "CAMformer: Associative Memory is All You Need"
+description: "CAMformer横空出世：Attention能效飙升10倍，用联想记忆取代矩阵乘法。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "all-you-need-is-one-capsule-prompt-tuning-with-a-single-vector"
+  - "increasing-the-thinking-budget-is-not-all-you-need"
+  - "llm-router-prefill-is-all-you-need"
+  - "you-need-better-attention-priors"
 ---
 
 ## CAMformer横空出世：Attention能效飙升10倍，用联想记忆取代矩阵乘法
 
-<img src="/images/2511.19740v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.19740v1/A__title.jpg" alt="CAMformer横空出世：Attention能效飙升10倍，用联想记忆取代矩阵乘法 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 Transformer模型几乎主宰了整个AI领域，但其核心的自注意力（Self-Attention）机制始终存在一个“阿喀琉斯之踵”：计算和内存开销会随序列长度呈二次方增长。这意味着处理长文本、高分辨率图像或长视频时，成本会急剧飙升。
 
-> ArXiv URL：http://arxiv.org/abs/2511.19740v1
+> ArXiv URL：https://arxiv.org/abs/2511.19740v1
 
 有没有可能彻底绕开这个瓶颈？来自亚利桑那州立大学、杜克大学和斯坦福大学的研究者们给出了一个颠覆性的答案：**CAMformer**。它不再将Attention视为复杂的矩阵乘法，而是回归其本质——一种基于内容的搜索。通过这种新范式，CAMformer实现了惊人的性能：**能效提升超过10倍，吞吐量最高提升4倍，芯片面积却缩小了6-8倍**，同时几乎没有精度损失。
 

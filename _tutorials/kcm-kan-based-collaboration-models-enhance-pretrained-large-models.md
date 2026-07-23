@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "KCM: KAN-Based Collaboration Models Enhance Pretrained Large Models"
+description: "本文提出了一种名为 KCM (KAN-Based Collaboration Models) 的大-小模型协同框架，它利用一个基于 Kolmogorov-Arnold Network (KAN) 的小型判断模型，智能地将输入样本分配给高效的小模型或强大的预训练大模型处理，并通过提示修改和知识蒸馏机制实现两个。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "a-prompt-pattern-catalog-to-enhance-prompt-engineering-with-chatgpt"
+  - "kan-kolmogorov-arnold-networks"
+  - "collaboration-and-conflict-between-humans-and-language-models-through-the-lens-o"
+  - "thought-communication-in-multiagent-collaboration"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.20278v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.20278v1
 
 - **作者**: Siliang Tang; Guangyu Dai; Yueting Zhuang
 

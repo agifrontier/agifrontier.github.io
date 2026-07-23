@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "MCP vs RAG vs NLWeb vs HTML: A Comparison of the Effectiveness and Efficiency of Different Agent Interfaces to the Web (Technical Report)"
+description: "AI Agent上网指南：RAG效率飙升5倍，成本锐减80%，完胜HTML。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "AI Agent"
+related_tutorials:
+  - "ui-tars-2-technical-report-advancing-gui-agent-with-multi-turn-reinforcement-lea"
+  - "mathematical-framing-for-different-agent-strategies"
+  - "llmtimesmapreduce-v3-enabling-interactive-in-depth-survey-generation-through-a-m"
+  - "mitigating-hallucination-in-large-language-models-llms-an-application-oriented-s"
 ---
 
 ## AI Agent上网指南：RAG效率飙升5倍，成本锐减80%，完胜HTML
 
-<img src="/images/2511.23281v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.23281v1/A__title.jpg" alt="AI Agent上网指南：RAG效率飙升5倍，成本锐减80%，完胜HTML 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当我们在谈论AI Agent时，我们总会幻想它能像一个不知疲倦的数字助理，帮我们处理网络上的各种杂事。但你是否想过，这个“助理”究竟是如何“看”懂并“操作”网页的？是像我们一样浏览，还是有更聪明的捷径？
 
-> ArXiv URL：http://arxiv.org/abs/2511.23281v1
+> ArXiv URL：https://arxiv.org/abs/2511.23281v1
 
 最近，德国曼海姆大学的一项研究给出了答案。他们发现，Agent与网络交互的方式，对其性能有着决定性的影响。选择正确的“上网姿势”，可以让Agent的效率飙升5倍，成本锐减80%！
 

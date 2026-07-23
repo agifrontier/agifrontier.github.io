@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Stronger Normalization-Free Transformers"
+description: "告别LayerNorm？CMU提出Derf：仅用简单函数，多模态性能全面超越。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "context-free-recognition-with-transformers"
+  - "a-model-of-errors-in-transformers"
+  - "allocation-of-parameters-in-transformers"
+  - "geometric-and-dynamic-scaling-in-deep-transformers"
 ---
 
 ## 告别LayerNorm？CMU提出Derf：仅用简单函数，多模态性能全面超越
 
-<img src="/images/2512.10938v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.10938v1/A__title.jpg" alt="告别LayerNorm？CMU提出Derf：仅用简单函数，多模态性能全面超越 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在深度学习的殿堂里，**归一化层**（**Normalization Layers**）如 LayerNorm 和 RMSNorm 长期以来被视为不可或缺的“承重墙”。它们通过调整激活值的分布，稳定了训练过程，加速了模型收敛。
 
-> ArXiv URL：http://arxiv.org/abs/2512.10938v1
+> ArXiv URL：https://arxiv.org/abs/2512.10938v1
 
 然而，这堵墙真的坚不可摧吗？
 

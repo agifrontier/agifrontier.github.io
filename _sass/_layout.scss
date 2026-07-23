@@ -2,6 +2,11 @@
  * Content
  ******************************************************************************/
 
+html,
+body {
+  overflow-x: clip;
+}
+
 body {
   padding-bottom: 70px;
   color: var(--global-text-color);

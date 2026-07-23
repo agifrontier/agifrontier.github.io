@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Internalizing World Models via Self-Play Finetuning for Agentic RL"
+description: "本文提出了一种名为 SPA (Self Play Agent) 的智能体强化学习框架，它通过自我博弈（Self-Play）有监督微调（SFT），让大语言模型智能体在策略优化前先内化一个世界模型（World Model），从而显著提升其在分布外（OOD）环境中的学习性能和泛化能力。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "toucan-synthesizing-15m-tool-agentic-data-from-real-world-mcp-environments"
+  - "language-self-play-for-data-free-training"
+  - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"
+  - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.15047v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.15047v1
 
 - **作者**: Zian Wang; Tongyao Zhu; Shiqi Chen; Junxian He; Siyang Gao; Yee Whye Teh; Kangrui Wang; Manling Li; Teng Xiao; Jinghan Zhang
 

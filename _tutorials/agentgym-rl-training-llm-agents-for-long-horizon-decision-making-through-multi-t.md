@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "AgentGym-RL: Training LLM Agents for Long-Horizon Decision Making through Multi-Turn Reinforcement Learning"
+description: "本文提出了一个名为 AgentGym-RL 的强化学习框架和一个名为 ScalingInter-RL 的渐进式训练方法，旨在通过多轮交互式决策，从零开始（无需监督微调）训练大型语言模型（LLM）智能体，以解决长时程复杂任务。"
+topics:
+  - "AI Agent"
+  - "推理与强化学习"
+related_tutorials:
+  - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "ui-tars-2-technical-report-advancing-gui-agent-with-multi-turn-reinforcement-lea"
+  - "mars-optimizing-dual-system-deep-research-via-multi-agent-reinforcement-learning"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.08755v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.08755v1
 
 - **作者**: Qi Zhang; Yu-Gang Jiang; Rui Zheng; Wenxiang Chen; Xuesong Yao; Tao Gui; Zhengyin Du; Jiecao Chen; Jiazheng Zhang; Yufei Xu; 等22人
 

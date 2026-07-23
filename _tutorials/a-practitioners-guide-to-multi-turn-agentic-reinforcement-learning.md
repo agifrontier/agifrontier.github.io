@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "A Practitioner's Guide to Multi-turn Agentic Reinforcement Learning"
+description: "本文通过将多轮智能体强化学习（multi-turn agentic reinforcement learning）的设计空间分解为环境、奖励和策略三大支柱，系统性地进行了实证研究，并最终提炼出一套用于训练大型语言模型（LLM）智能体的实用方法配方。"
+topics:
+  - "AI Agent"
+  - "推理与强化学习"
+related_tutorials:
+  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
+  - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
+  - "ui-tars-2-technical-report-advancing-gui-agent-with-multi-turn-reinforcement-lea"
+  - "mars-optimizing-dual-system-deep-research-via-multi-agent-reinforcement-learning"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.01132v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.01132v1
 
 - **作者**: Prithviraj Ammanabrolu; Ruiyi Wang
 

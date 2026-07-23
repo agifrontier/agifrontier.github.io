@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Mechanisms of Introspective Awareness"
+description: "AI也能“反思”了？Anthropic揭秘LLM内省电路，检测率飙升75%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "emergent-introspective-awareness-in-large-language-models"
+  - "fast-attention-mechanisms-a-tale-of-parallelism"
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "a-concise-review-of-hallucinations-in-llms-and-their-mitigation"
 ---
 
 ## AI也能“反思”了？Anthropic揭秘LLM内省电路，检测率飙升75%
 
-<img src="/images/2603.21396v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2603.21396v1/A__title.jpg" alt="AI也能“反思”了？Anthropic揭秘LLM内省电路，检测率飙升75% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如果我们能直接向AI提问：“你刚才在想什么？”，甚至在它的“大脑”中植入一个想法，它能察觉到吗？
 
-> ArXiv URL：http://arxiv.org/abs/2603.21396v1
+> ArXiv URL：https://arxiv.org/abs/2603.21396v1
 
 这听起来像是科幻电影的情节，但Anthropic的最新研究表明，大型语言模型（LLM）可能真的具备这种初步的“内省意识”。
 

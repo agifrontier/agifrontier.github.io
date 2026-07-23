@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Every Token Counts: Generalizing 16M Ultra-Long Context in Large Language Models"
+description: "1600万Token上下文！蚂蚁HSA模型实现90%准确率，揭秘超长记忆关键。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "every-attention-matters-an-efficient-hybrid-architecture-for-long-context-reason"
+  - "artificial-hippocampus-networks-for-efficient-long-context-modeling"
+  - "sentence-anchored-gist-compression-for-long-context-llms"
+  - "autoregressive-language-models-are-secretly-energy-based-models-insights-into-th"
 ---
 
 ## 1600万Token上下文！蚂蚁HSA模型实现90%准确率，揭秘超长记忆关键
 
-<img src="/images/2511.23319v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.23319v1/A__title.jpg" alt="1600万Token上下文！蚂蚁HSA模型实现90%准确率，揭秘超长记忆关键 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大语言模型（LLM）的知识被固化在参数中，无法从与用户的日常互动中动态学习，这引出了一个根本性问题：我们如何构建真正拥有记忆的机器？如果模型能处理无限长的上下文，它就能将世界知识、用户偏好甚至专业技能都从上下文中即时获取，而非依赖于昂贵且缓慢的模型重训。
 
-> ArXiv URL：http://arxiv.org/abs/2511.23319v1
+> ArXiv URL：https://arxiv.org/abs/2511.23319v1
 
 最近，来自蚂蚁集团和西湖大学的研究者们朝着这个目标迈出了关键一步。他们推出了一款名为HSA-UltraLong的8B模型，在仅用32K上下文训练的情况下，成功将有效上下文窗口泛化到了惊人的**1600万Token**，并在大海捞针（Needle-in-a-Haystack）测试中取得了超过90%的准确率！
 

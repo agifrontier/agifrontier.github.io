@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models"
+description: "斩获IMO/IOI金牌！DeepSeek-V3.2发布，推理比肩Gemini 3.0 Pro。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "deepseekmath-pushing-the-limits-of-mathematical-reasoning-in-open-language-model"
+  - "mirothinker-pushing-the-performance-boundaries-of-open-source-research-agents-vi"
+  - "deepseek-v2-a-strong-economical-and-efficient-mixture-of-experts-language-model"
+  - "deepseek-v3-technical-report"
 ---
 
 ## 斩获IMO/IOI金牌！DeepSeek-V3.2发布，推理比肩Gemini 3.0 Pro
 
-<img src="/images/2512.02556v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.02556v1/A__title.jpg" alt="斩获IMO/IOI金牌！DeepSeek-V3.2发布，推理比肩Gemini 3.0 Pro 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 开源大模型的世界，刚刚迎来了一位重量级选手！就在人们感叹开源与闭源模型的差距似乎越拉越大时，深度求索（DeepSeek）发布了最新的 **DeepSeek-V3.2** 模型。它不仅在国际数学奥林匹克（IMO）和国际信息学奥林匹克（IOI）竞赛中取得了金牌级表现，其推理能力更是直接对标顶尖的闭源模型 Gemini 3.0 Pro。
 
-> ArXiv URL：http://arxiv.org/abs/2512.02556v1
+> ArXiv URL：https://arxiv.org/abs/2512.02556v1
 
 这究竟是如何做到的？DeepSeek-V3.2 凭借三大技术法宝，成功突破了开源模型面临的效率、性能和Agent能力三大瓶颈，向世界展示了开源力量的巨大潜力。
 

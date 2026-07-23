@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Mistral 7B"
+description: "本文介绍了一个名为 Mistral 7B 的70亿参数语言模型，它通过利用分组查询注意力（GQA）和滑动窗口注意力（SWA）机制，在保持高效率的同时，实现了在各项基准测试中超越更大参数模型（如 Llama 2 13B）的卓越性能。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "a-concise-review-of-hallucinations-in-llms-and-their-mitigation"
+  - "a-definition-of-agi"
+  - "a-general-theoretical-paradigm-to-understand-learning-from-human-preferences"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2310.06825v1
+- **ArXiv URL**: https://arxiv.org/abs/2310.06825v1
 
 - **作者**: Alexandre Sablayrolles; Lucile Saulnier; Timothée Lacroix; Devendra Singh Chaplot; L'elio Renard Lavaud; Guillaume Lample; Albert Qiaochu Jiang; A. Mensch; Chris Bamford; Florian Bressand; 等8人
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Shrinking the Variance: Shrinkage Baselines for Reinforcement Learning with Verifiable Rewards"
+description: "本文提出了一种基于收缩估计 (shrinkage estimators) 的新型基线 (baseline) 方法，通过在统计上更优地结合单个提示 (per-prompt) 和跨提示批次 (across-prompt) 的奖励均值，来显著降低策略梯度估计的方差，从而为大型推理模型的强化学习训练带来更强的稳定性。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "a-multiobjective-reinforcement-learning-framework-for-microgrid-energy-managemen"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "a-survey-of-reinforcement-learning-for-large-reasoning-models"
+  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2511.03710v1
+- **ArXiv URL**: https://arxiv.org/abs/2511.03710v1
 
 - **作者**: Andrea Zanette; Zhaoyi Zhou; Guanning Zeng; Daman Arora
 

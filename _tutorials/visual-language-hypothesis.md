@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Visual Language Hypothesis"
+description: "字节跳动硬核推导：视觉理解的本质是“纤维丛”？揭秘Expand-and-Snap背后的拓扑真相。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "多模态与视觉"
+related_tutorials:
+  - "cogflow-bridging-perception-and-reasoning-through-knowledge-internalization-for-"
+  - "improved-baselines-with-visual-instruction-tuning"
+  - "kimi-k25-visual-agentic-intelligence"
+  - "mathvista-evaluating-mathematical-reasoning-of-foundation-models-in-visual-conte"
 ---
 
 ## 字节跳动硬核推导：视觉理解的本质是“纤维丛”？揭秘Expand-and-Snap背后的拓扑真相
 
-<img src="/images/2512.23335v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.23335v1/A__title.jpg" alt="字节跳动硬核推导：视觉理解的本质是“纤维丛”？揭秘Expand-and-Snap背后的拓扑真相 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在大模型时代，我们习惯了通过堆砌算力和数据来换取智能的涌现。然而，一个根本性的问题始终悬而未决：仅仅通过重构像素或保持局部一致性，真的能让模型获得“语义理解”吗？
 
-> ArXiv URL：http://arxiv.org/abs/2512.23335v1
+> ArXiv URL：https://arxiv.org/abs/2512.23335v1
 
 字节跳动（Bytedance）的一项最新理论研究给出了否定的答案。这篇论文没有提出新的SOTA刷榜模型，而是从拓扑学和群论的视角，提出了一个震耳发聋的观点：**视觉理解的前提是存在一种“视觉语义语言”，而这种语言的形成，必须经历一次拓扑结构的剧烈“坍缩”。**
 

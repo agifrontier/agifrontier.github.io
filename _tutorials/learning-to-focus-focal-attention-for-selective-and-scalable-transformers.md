@@ -1,6 +1,14 @@
 ---
 layout: default
 title: "Learning to Focus: Focal Attention for Selective and Scalable Transformers"
+description: "让大模型学会“专注”：AWS发布Focal Attention，参数减42%，长文本性能飙升82%！"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "trainable-log-linear-sparse-attention-for-efficient-diffusion-transformers"
+  - "vision-transformers-are-circulant-attention-learners"
+  - "supervised-learning-pays-attention"
+  - "weight-sparse-transformers-have-interpretable-circuits"
 ---
 
 ## 让大模型学会“专注”：AWS发布Focal Attention，参数减42%，长文本性能飙升82%！
@@ -8,7 +16,7 @@ title: "Learning to Focus: Focal Attention for Selective and Scalable Transforme
 Transformer模型的能力源泉——注意力机制，有时却像一个眼神不太好的学生。当面对长篇大论时，它会努力关注所有内容，结果却常常“雨露均沾”，把宝贵的注意力浪费在不相关的“噪音”上，导致关键信息被淹没。
 
 > **论文标题**：Learning to Focus: Focal Attention for Selective and Scalable Transformers
-> **ArXiv URL**：http://arxiv.org/abs/2511.06818v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.06818v1
 
 来自**亚马逊人工智能实验室**（**AWS AI Labs**）的一篇新论文直击痛点，提出了一种名为**Focal Attention**的机制。它不做复杂的结构手术，只通过一个极其简单的改动，就让大模型学会了“**专注**”，实现了惊人的效率和性能飞跃。
 

@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Balanced Actor Initialization: Stable RLHF Training of Distillation-Based Reasoning Models"
+description: "本文提出了一种名为“平衡智能体初始化 (Balanced Actor Initialization, BAI)”的两阶段加权模型合并方法，旨在解决当对经过蒸馏训练的推理模型应用强化学习（RLHF）时出现的训练不稳定问题，从而稳定地结合蒸馏的效率和人类反馈对齐的优势。"
+topics:
+  - "推理与强化学习"
+  - "模型训练与优化"
+related_tutorials:
+  - "less-is-more-tokens-efficient-math-reasoning-via-difficulty-aware-chain-of-thoug"
+  - "beyond-two-stage-training-cooperative-sft-and-rl-for-llm-reasoning"
+  - "learning-to-reason-training-llms-with-gpt-oss-or-deepseek-r1-reasoning-traces"
+  - "on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language-model"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.00309v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.00309v1
 
 - **作者**: Siyuan Qiao; Xin Liu; Yuxin Song; Liang Xiang; Yuan Yang; Xun Zhou; Deyi Liu; Cheng Ren; Yonghui Wu; Chen Zheng; 等14人
 

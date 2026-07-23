@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "A model of errors in transformers"
+description: "DeepMind重磅：仅需2个参数，精准预测LLM错误率！物理学“有效场论”立大功。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "allocation-of-parameters-in-transformers"
+  - "context-free-recognition-with-transformers"
+  - "geometric-and-dynamic-scaling-in-deep-transformers"
+  - "improving-recursive-transformers-with-mixture-of-loras"
 ---
 
 ## DeepMind重磅：仅需2个参数，精准预测LLM错误率！物理学“有效场论”立大功
 
-<img src="/images/2601.14175v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.14175v1/A__title.jpg" alt="DeepMind重磅：仅需2个参数，精准预测LLM错误率！物理学“有效场论”立大功 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 你是否遇到过这种情况：一个在写诗、编程上表现惊人的大模型，却在做简单的多位数加法、或者玩“汉诺塔”游戏时，随着步骤变长而突然“智商掉线”？
 
-> ArXiv URL：http://arxiv.org/abs/2601.14175v1
+> ArXiv URL：https://arxiv.org/abs/2601.14175v1
 
 通常，我们会把这种现象归结为“推理崩溃”（Reasoning Collapse）或者模型缺乏“组合泛化能力”。但 Google DeepMind 和塔塔基础研究院的一项最新研究提出了一个颠覆性的观点：**这可能只是简单的“噪声累积”罢了。**
 

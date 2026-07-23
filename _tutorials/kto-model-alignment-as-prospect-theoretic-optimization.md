@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "KTO: Model Alignment as Prospect Theoretic Optimization"
+description: "本文提出了一种名为KTO (Kahneman-Tversky Optimization) 的新型大模型对齐方法，它基于前景理论，仅需“可取”或“不可取”的二元反馈信号，便能在10亿到300亿参数规模的模型上达到甚至超越基于偏好数据的DPO方法的性能。"
+topics:
+  - "AI安全与评测"
+  - "模型训练与优化"
+related_tutorials:
+  - "extracting-alignment-data-in-open-models"
+  - "openassistant-conversations-democratizing-large-language-model-alignment"
+  - "rlhf-a-comprehensive-survey-for-cultural-multimodal-and-low-latency-alignment-me"
+  - "the-alignment-waltz-jointly-training-agents-to-collaborate-for-safety"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2402.01306v4
+- **ArXiv URL**: https://arxiv.org/abs/2402.01306v4
 
 - **作者**: Kawin Ethayarajh; Douwe Kiela; Winnie Xu; Dan Jurafsky; Niklas Muennighoff
 
@@ -37,7 +46,7 @@ title: "KTO: Model Alignment as Prospect Theoretic Optimization"
 
 作者发现，像DPO和PPO-Clip这类成功的对齐方法，其损失函数在数学形式上隐式地体现了这些人类认知偏差。例如，它们都包含一个非线性的价值函数，并且对负向奖励（损失）的惩罚斜率与正向奖励（收益）不同。
 
-<img src="/images/2402.01306v4/utility.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2402.01306v4/utility.jpg" alt="前景理论视角与HALOs 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 **图1**：不同人类感知损失（HALOs）所隐含的人类从随机变量结果中获得的效用函数。注意，这些隐含的价值函数与前景理论中的典型人类价值函数共享诸如“损失厌恶”等特性。
 
 基于此洞察，本文正式定义了**人类感知损失函数 (HALOs)** 这一概念。一个损失函数如果可以被表示为对某个价值函数 $v$ 的期望，其中 $v$ 作用于“隐含奖励”与一个“参考点”的差值上，那么它就是HALO。
@@ -53,7 +62,7 @@ $${% endraw %}
 
 作者证明了DPO和PPO-Clip都属于HALOs。实验也初步表明，属于HALO的方法（DPO、一种离线PPO变体）在性能上普遍优于非HALO方法（如CSFT、SLiC），尤其是在大模型上，这说明损失函数本身的设计（其蕴含的归纳偏置）对对齐效果至关重要。
 
-<img src="/images/2402.01306v4/halos_vs_nonhalos.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2402.01306v4/halos_vs_nonhalos.jpg" alt="前景理论视角与HALOs 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 **图2**：HALOs（DPO，离线PPO变体）在GPT-4评测中胜率优于非HALOs（SLiC，CSFT）。
 
 ## KTO：方法推导与创新
@@ -107,7 +116,7 @@ $${% endraw %}
 ## 实验结论
 本文通过一系列实验，验证了KTO的有效性。
 
-<img src="/images/2402.01306v4/dpo_vs_kto.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2402.01306v4/dpo_vs_kto.jpg" alt="实验结论 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 **图3**: GPT-4评测的胜率表明，KTO在所有模型规模上表现与DPO相当或更优。对于Llama系列模型，单独使用KTO的效果甚至能媲美SFT+DPO。
 
 1.  **性能优越**: 在10亿到300亿参数规模的Pythia和Llama系列模型上，将偏好数据拆分为二元数据后，SFT+KTO的性能与SFT+DPO相当甚至更优。在GSM8K等特定任务上，KTO带来的提升尤为显著（见下表）。
@@ -127,14 +136,14 @@ $${% endraw %}
 
 2.  **可跳过SFT**: 对于足够大的模型（如Llama-13B/30B），直接在预训练模型上进行KTO对齐，其性能可以媲美先进行SFT再进行KTO的版本。而DPO如果跳过SFT，则会出现生成内容冗长、胡言乱语等问题。
 
-<img src="/images/2402.01306v4/lengths.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2402.01306v4/lengths.jpg" alt="实验结论 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 **图4**: 未经SFT直接对齐时，DPO模型倾向于生成过长的回答，而KTO则没有这个问题。
 
 3.  **数据鲁棒性**: 实验证明KTO的优异表现并非“窃取”了偏好数据的配对信息。
     *   即使在数据极度不平衡（例如，丢弃90%的可取样本，使好/坏样本比例为1:10）的情况下，KTO通过调整$\lambda$权重，依然能超过DPO的性能。
     *   在使用非配对的、每个输入只有一个输出的数据集上，KTO（one-$y$-per-$x$）即便数据量减半，性能依旧优于在完整配对数据上训练的DPO。
 
-<img src="/images/2402.01306v4/full_comp.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2402.01306v4/full_comp.jpg" alt="实验结论 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 **图5**: 即使可取样本极少（例如，好坏样本比例为1:10），KTO对齐的Llama-7B模型性能仍能匹敌或超过DPO。
 
 4.  **设计合理性**: 对KTO损失函数的消融实验表明，其关键设计（如参考点 $z\_0$、对称的价值函数曲线）对于最终性能至关重要。移除这些组件会导致性能显著下降。

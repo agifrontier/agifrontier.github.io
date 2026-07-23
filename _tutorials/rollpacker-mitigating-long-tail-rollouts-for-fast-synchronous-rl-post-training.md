@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "RollPacker: Mitigating Long-Tail Rollouts for Fast, Synchronous RL Post-Training"
+description: "本文提出了一种名为 RollPacker 的同步强化学习（RL）训练系统，其核心是一种创新的 rollout 调度策略——尾部批处理（tail batching），该策略通过将导致长响应的 prompt 整合到少数专用的 rollout 步骤中，显著减少了因响应长度不均衡导致的 GPU 空闲时间，从而在不牺。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "qwenlong-l15-post-training-recipe-for-long-context-reasoning-and-memory-manageme"
+  - "better-world-models-can-lead-to-better-post-training-performance"
+  - "how-does-rl-post-training-induce-skill-composition-a-case-study-on-countdown"
+  - "imbalanced-gradients-in-rl-post-training-of-multi-task-llms"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.21009v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.21009v1
 
 - **作者**: Yuheng Zhao; Wenbo Su; Weixun Wang; Siran Yang; Ju Huang; Tianyuan Wu; Wei Wang; Bo Zheng; Jiamang Wang; Shaopan Xiong; 等12人
 

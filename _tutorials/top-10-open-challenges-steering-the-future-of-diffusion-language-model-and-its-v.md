@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Top 10 Open Challenges Steering the Future of Diffusion Language Model and Its Variants"
+description: "扩散模型能否颠覆GPT？华为诺亚详解阻碍DLM爆发的十大核心挑战。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "多模态与视觉"
+related_tutorials:
+  - "ai4x-roadmap-artificial-intelligence-for-the-advancement-of-scientific-pursuit-a"
+  - "statistical-reinforcement-learning-in-the-real-world-a-survey-of-challenges-and-"
+  - "a-survey-of-reasoning-in-autonomous-driving-systems-open-challenges-and-emerging"
+  - "diffusion-language-models-are-super-data-learners"
 ---
 
 ## 扩散模型能否颠覆GPT？华为诺亚详解阻碍DLM爆发的十大核心挑战
 
-<img src="/images/2601.14041v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.14041v1/A__title.jpg" alt="扩散模型能否颠覆GPT？华为诺亚详解阻碍DLM爆发的十大核心挑战 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 当下的 AI 领域，**大语言模型**（**Large Language Models, LLMs**）几乎等同于**自回归**（**Auto-Regressive, AR**）架构。无论是 GPT-4 还是 DeepSeek，它们生成文本的方式就像泥瓦匠砌墙——“一块砖接一块砖”地按顺序堆砌。虽然这种模式取得了巨大成功，但它天生存在一个缺陷：缺乏全局视野，一旦“砌歪了”很难回头修改。
 
-> ArXiv URL：http://arxiv.org/abs/2601.14041v1
+> ArXiv URL：https://arxiv.org/abs/2601.14041v1
 
 **扩散语言模型**（**Diffusion Language Models, DLMs**）提供了一种极具诱惑力的替代方案：它将文本生成视为一个全局的、双向的去噪过程，就像雕塑家在一块璞玉上通过反复打磨，最终呈现出完美的艺术品。
 

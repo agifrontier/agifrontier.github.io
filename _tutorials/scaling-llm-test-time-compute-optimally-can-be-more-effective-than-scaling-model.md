@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters"
+description: "本文提出了一种“计算最优”扩展策略，即根据问题的难度自适应地分配测试时（test-time）的计算资源，并证明在特定场景下，这种策略比单纯扩展模型参数能更有效地提升大型语言模型（LLM）的性能。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "scaling-test-time-compute-to-achieve-ioi-gold-medal-with-open-weight-models"
+  - "larger-datasets-can-be-repeated-more-a-theoretical-analysis-of-multi-epoch-scali"
+  - "s1-simple-test-time-scaling"
+  - "learning-when-to-plan-efficiently-allocating-test-time-compute-for-llm-agents"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2408.03314v1
+- **ArXiv URL**: https://arxiv.org/abs/2408.03314v1
 
 - **作者**: Aviral Kumar; Kelvin Xu; C. Snell; Jaehoon Lee
 

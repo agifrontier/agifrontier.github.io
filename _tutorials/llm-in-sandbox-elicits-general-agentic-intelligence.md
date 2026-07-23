@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "LLM-in-Sandbox Elicits General Agentic Intelligence"
+description: "给大模型配台“电脑”：通用智能涌现，长文本Token消耗暴降8倍。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "kimi-k25-visual-agentic-intelligence"
+  - "general-agentic-memory-via-deep-research"
+  - "dacomp-benchmarking-data-agents-across-the-full-data-intelligence-lifecycle"
+  - "deepagent-a-general-reasoning-agent-with-scalable-toolsets"
 ---
 
 ## 给大模型配台“电脑”：通用智能涌现，长文本Token消耗暴降8倍
 
-<img src="/images/2601.16206v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.16206v1/A__title.jpg" alt="给大模型配台“电脑”：通用智能涌现，长文本Token消耗暴降8倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如果说大模型（LLM）是拥有超级大脑的智者，那么现在的 Agent 框架往往像是给这位智者配备了特定的“拐杖”——专门的计算器、专门的搜索工具。但如果直接给它一台功能完整的“虚拟电脑”，让它自己去探索如何使用，会发生什么？
 
-> ArXiv URL：http://arxiv.org/abs/2601.16206v1
+> ArXiv URL：https://arxiv.org/abs/2601.16206v1
 
 微软研究院联合中国人民大学、清华大学带来的最新研究 **LLM-in-Sandbox** 给出了惊人的答案：**不需要额外的训练，强大的大模型就能自发地利用代码沙箱解决数学、物理、化学甚至生物医学等非代码领域的难题。** 更令人兴奋的是，这种方法能将长文本任务的 Token 消耗量减少高达 $8\times$，并且通过一种巧妙的强化学习方法，还能反向提升模型原本的对话能力。
 

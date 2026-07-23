@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "A Comprehensive Dataset for Human vs. AI Generated Text Detection"
+description: "本文发布了一个包含超过58000条文本的大型数据集，其中包含真实的《纽约时报》文章以及由六种先进大语言模型（LLMs）生成的对应版本，并为区分人类与AI文本以及AI文本模型溯源这两个任务提供了基准性能。"
+topics:
+  - "数据与AI工程"
+related_tutorials:
+  - "had-hallucination-detection-language-models-based-on-a-comprehensive-hallucinati"
+  - "gui-360-a-comprehensive-dataset-and-benchmark-for-computer-using-agents"
+  - "a-novel-combined-data-driven-approach-for-electricity-theft-detection"
+  - "bridgedata-v2-a-dataset-for-robot-learning-at-scale"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.22874v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.22874v1
 
 - **作者**: Gurpreet Singh; Ritvik Garimella; Subhankar Ghosh; Aman Chadha; Shreyas Dixit; Vipula Rawte; Shwetangshu Biswas; Shashwat Bajpai; Amit Sheth; Nasrin Imanpour; 等16人
 

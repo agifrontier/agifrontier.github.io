@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "TreeWriter: AI-Assisted Hierarchical Planning and Writing for Long-Form Documents"
+description: "TreeWriter来了：打破线性束缚，用“树状结构”让AI长文写作更可控。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "factscore-fine-grained-atomic-evaluation-of-factual-precision-in-long-form-text-"
+  - "dynamic-speculative-agent-planning"
+  - "enhancing-llm-planning-capabilities-through-intrinsic-self-critique"
+  - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
 ---
 
 ## TreeWriter来了：打破线性束缚，用“树状结构”让AI长文写作更可控
 
-<img src="/images/2601.12740v1/A__title.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2601.12740v1/A__title.jpg" alt="TreeWriter来了：打破线性束缚，用“树状结构”让AI长文写作更可控 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 写过长篇论文、项目标书或技术文档的人都知道，这简直是一场“记忆力灾难”。
 
-> ArXiv URL：http://arxiv.org/abs/2601.12740v1
+> ArXiv URL：https://arxiv.org/abs/2601.12740v1
 
 当你面对几十页的文档时，大脑的内存往往不够用：前文的术语定义是什么？这段论证和第三章的逻辑冲突了吗？现有的AI助手（如ChatGPT或Notion AI）虽然能帮你润色段落，但它们通常是“线性”的——它们擅长处理局部文本，却很难理解你宏大的篇章结构。
 

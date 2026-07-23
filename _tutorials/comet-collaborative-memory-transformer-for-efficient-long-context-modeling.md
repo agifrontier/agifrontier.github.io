@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "CoMeT: Collaborative Memory Transformer for Efficient Long Context Modeling"
+description: "阿里CoMeT：32k训练解锁100万长文，显存恒定，告别KV Cache爆炸。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "rmaat-astrocyte-inspired-memory-compression-and-replay-for-efficient-long-contex"
+  - "artificial-hippocampus-networks-for-efficient-long-context-modeling"
+  - "qwenlong-l15-post-training-recipe-for-long-context-reasoning-and-memory-manageme"
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
 ---
 
 ## 阿里CoMeT：32k训练解锁100万长文，显存恒定，告别KV Cache爆炸
 
-<img src="/images/2602.01766v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2602.01766v1/A__title.jpg" alt="阿里CoMeT：32k训练解锁100万长文，显存恒定，告别KV Cache爆炸 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型（LLM）的竞赛中，“长文本能力”一直是兵家必争之地。然而，现有的Transformer架构面临着一个物理定律般的诅咒：随着上下文长度增加，计算复杂度呈二次方爆炸，KV Cache更是像无底洞一样吞噬显存。
 
-> ArXiv URL：http://arxiv.org/abs/2602.01766v1
+> ArXiv URL：https://arxiv.org/abs/2602.01766v1
 
 虽然市面上有各种“上下文压缩”技术，但它们往往以牺牲精度为代价。**有没有一种方法，既能保持线性时间复杂度，又能让显存占用恒定不变，还能精准找回100万字之前的细节？**
 

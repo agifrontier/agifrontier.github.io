@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Monitoring Monitorability"
+description: "OpenAI意外曝光GPT-5 Thinking：思维链越长越安全？深度解析CoT监控新基准。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "a-concise-review-of-hallucinations-in-llms-and-their-mitigation"
+  - "a-definition-of-agi"
+  - "a-general-theoretical-paradigm-to-understand-learning-from-human-preferences"
 ---
 
 ## OpenAI意外曝光GPT-5 Thinking：思维链越长越安全？深度解析CoT监控新基准
 
-<img src="/images/2512.18311v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.18311v1/A__title.jpg" alt="OpenAI意外曝光GPT-5 Thinking：思维链越长越安全？深度解析CoT监控新基准 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 OpenAI 最近悄悄发布了一篇看似硬核的AI安全论文，却在社区里炸开了锅。原因无他——在论文的图表中，赫然出现了 **GPT-5 Thinking** 的身影！
 
-> ArXiv URL：http://arxiv.org/abs/2512.18311v1
+> ArXiv URL：https://arxiv.org/abs/2512.18311v1
 
 但这篇名为《Monitoring Monitorability》的论文，价值远不止于一次“意外泄露”。随着 o1、o3 等推理模型的崛起，我们面临一个全新的核心问题：**当AI变得越来越聪明，甚至开始拥有“隐秘心思”时，我们还能通过查看它的“思维链”（Chain-of-Thought, CoT）来判断它是否安全吗？**
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Improved Baselines with Visual Instruction Tuning"
+description: "本文通过对LLaVA框架进行简单而有效的改进，即采用MLP视觉-语言连接器、引入带有响应格式化提示的学术VQA数据等，构建了LLaVA-1.5，一个在11个基准上达到SOTA、同时保持极高数据和计算效率的大型多模态模型基线。"
+topics:
+  - "多模态与视觉"
+related_tutorials:
+  - "instructblip-towards-general-purpose-vision-language-models-with-instruction-tun"
+  - "rethinking-supervised-fine-tuning-emphasizing-key-answer-tokens-for-improved-llm"
+  - "cogflow-bridging-perception-and-reasoning-through-knowledge-internalization-for-"
+  - "kimi-k25-visual-agentic-intelligence"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2310.03744v2
+- **ArXiv URL**: https://arxiv.org/abs/2310.03744v2
 
 - **作者**: Yuheng Li; Haotian Liu; Chunyuan Li; Yong Jae Lee
 
@@ -33,7 +41,7 @@ title: "Improved Baselines with Visual Instruction Tuning"
 ## 本文方法
 本文在初代LLaVA模型的基础上进行了一系列系统性的改进，提出了LLaVA-1.5。其核心思想是，通过简单的架构调整、智能的数据策略和有效的扩展，可以实现比复杂模型更优的性能和更高的数据效率。
 
-<img src="/images/2310.03744v2/architecture.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2310.03744v2/architecture.jpg" alt="本文方法 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 *图：LLaVA-1.5 对 LLaVA 的简单修改：一个MLP连接器和包含带有响应格式提示的学术任务导向数据。*
 
 ### 摆脱复杂设计的束缚
@@ -72,13 +80,13 @@ title: "Improved Baselines with Visual Instruction Tuning"
 
 这种策略使得模型可以处理任意分辨率的输入，同时保持了LLaVA-1.5的数据效率，并有效地提升了对图像细节的感知能力。
 
-<img src="/images/2310.03744v2/x3.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2310.03744v2/x3.jpg" alt="扩展到更高分辨率 (LLaVA-1.5-HD) 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图：LLaVA-1.5-HD 通过将图像分割成网格并独立编码来扩展到更高分辨率。*
 
 ## 实验结论
 LLaVA-1.5在一系列共12个基准测试中展现了卓越的性能，其结果证明了本文方法的有效性。
 
-<img src="/images/2310.03744v2/x1.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2310.03744v2/x1.jpg" alt="实验结论 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 *图：LLaVA-1.5在11个任务上达到SOTA，并展示了高训练样本效率。*
 
 ### 关键实验结果

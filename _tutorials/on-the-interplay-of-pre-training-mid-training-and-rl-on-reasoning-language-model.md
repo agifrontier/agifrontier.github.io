@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "On the Interplay of Pre-Training, Mid-Training, and RL on Reasoning Language Models"
+description: "CMU揭秘大模型推理训练“三部曲”：性能飙升60%的黄金法则。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+  - "模型训练与优化"
+related_tutorials:
+  - "balanced-actor-initialization-stable-rlhf-training-of-distillation-based-reasoni"
+  - "beyond-two-stage-training-cooperative-sft-and-rl-for-llm-reasoning"
+  - "learning-to-reason-training-llms-with-gpt-oss-or-deepseek-r1-reasoning-traces"
+  - "parrot-a-training-pipeline-enhances-both-program-cot-and-natural-language-cot-fo"
 ---
 
 ## CMU揭秘大模型推理训练“三部曲”：性能飙升60%的黄金法则
 
-<img src="/images/2512.07783v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.07783v1/A__title.jpg" alt="CMU揭秘大模型推理训练“三部曲”：性能飙升60%的黄金法则 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 强化学习（RL）真的能教会大模型新的推理能力，还是仅仅在“抛光”它已有的知识？尽管像DeepSeek和OpenAI的o1这样的模型通过RL在推理上取得了惊人进展，但这个根本问题一直悬而未决。
 
-> ArXiv URL：http://arxiv.org/abs/2512.07783v1
+> ArXiv URL：https://arxiv.org/abs/2512.07783v1
 
 其中的一大挑战是，现代大模型的训练过程就像一个“黑箱”。我们不清楚海量的预训练数据里到底包含了什么，这使得我们很难判断，模型推理能力的提升究竟是RL的功劳，还是仅仅激活了预训练时就已学会的潜能。
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Towards Execution-Grounded Automated AI Research"
+description: "斯坦福自动化AI科研：10轮进化准确率飙升21%，RL反而“变笨”？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "a-survey-of-ai-scientists-surveying-the-automatic-scientists-and-research"
+  - "webweaver-structuring-web-scale-evidence-with-dynamic-outlines-for-open-ended-de"
+  - "citation-grounded-code-comprehension-preventing-llm-hallucination-through-hybrid"
+  - "arm-fm-automated-reward-machines-via-foundation-models-for-compositional-reinfor"
 ---
 
 ## 斯坦福自动化AI科研：10轮进化准确率飙升21%，RL反而“变笨”？
 
-<img src="/images/2601.14525v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.14525v1/A__title.jpg" alt="斯坦福自动化AI科研：10轮进化准确率飙升21%，RL反而“变笨”？ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如果AI不仅能写代码，还能自己提出科研Idea、自己跑实验、自己看结果，甚至还能根据实验反馈自我进化，那会是怎样一番景象？
 
-> ArXiv URL：http://arxiv.org/abs/2601.14525v1
+> ArXiv URL：https://arxiv.org/abs/2601.14525v1
 
 这并不是科幻小说，而是斯坦福大学最新的一项研究成果。虽然我们已经见过像Sakana AI这样的“AI科学家”概念，但现有的LLM往往还是“纸上谈兵”——提出的Idea看起来头头是道，一跑代码全是Bug或者效果极差。
 

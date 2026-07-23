@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Evaluating Parameter Efficient Methods for RLVR"
+description: "LoRA并非最优解？DeepSeek-R1实测揭秘：DoRA在RLVR推理任务中全面反超。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "data-efficient-rlvr-via-off-policy-influence-guidance"
+  - "parameter-efficient-fine-tuning-for-large-models-a-comprehensive-survey"
+  - "revffn-memory-efficient-full-parameter-fine-tuning-of-mixture-of-experts-llms-wi"
+  - "exploration-vs-exploitation-rethinking-rlvr-through-clipping-entropy-and-spuriou"
 ---
 
 ## LoRA并非最优解？DeepSeek-R1实测揭秘：DoRA在RLVR推理任务中全面反超
 
-<img src="/images/2512.23165v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.23165v1/A__title.jpg" alt="LoRA并非最优解？DeepSeek-R1实测揭秘：DoRA在RLVR推理任务中全面反超 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在后DeepSeek-R1时代，大模型的“推理能力”成为了新的皇冠上的明珠。为了让模型学会复杂的数学推导和逻辑思考，**带验证奖励的强化学习**（**Reinforcement Learning with Verifiable Rewards, RLVR**）成为了主流范式。
 
-> ArXiv URL：http://arxiv.org/abs/2512.23165v1
+> ArXiv URL：https://arxiv.org/abs/2512.23165v1
 
 但在资源有限的现实面前，全参数微调（Full Fine-Tuning）往往显得过于奢侈。于是，大家习惯性地掏出了“瑞士军刀”——**LoRA**。
 

@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "Citation-Grounded Code Comprehension: Preventing LLM Hallucination Through Hybrid Retrieval and Graph-Augmented Context"
+description: "告别代码幻觉：混合检索+图增强，实现92%引用准确率与零错误。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "AI安全与评测"
+related_tutorials:
+  - "rethinking-retrieval-augmented-generation-for-medicine-a-large-scale-systematic-"
+  - "improving-context-fidelity-via-native-retrieval-augmented-reasoning"
+  - "scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-generation-for"
+  - "mom-mixtures-of-scenario-aware-document-memories-for-retrieval-augmented-generat"
 ---
 
 ## 告别代码幻觉：混合检索+图增强，实现92%引用准确率与零错误
 
-<img src="/images/2512.12117v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.12117v1/A__title.jpg" alt="告别代码幻觉：混合检索+图增强，实现92%引用准确率与零错误 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当你在深夜调试代码，询问 AI 助手某个函数的定义位置时，它自信满满地给出了一个文件路径和行号。你兴奋地打开编辑器，却发现那个文件根本不存在，或者那几行代码完全是风马牛不相及。这种“一本正经胡说八道”的幻觉（Hallucination），是目前大模型在代码理解任务中最大的痛点。
 
-> ArXiv URL：http://arxiv.org/abs/2512.12117v1
+> ArXiv URL：https://arxiv.org/abs/2512.12117v1
 
 为了解决这个问题，来自奥本大学的研究团队提出了一种全新的**基于引用的代码理解**（**Citation-Grounded Code Comprehension**）框架。该研究并未止步于传统的 RAG（检索增强生成），而是引入了**混合检索**（**Hybrid Retrieval**）和**图增强上下文**（**Graph-Augmented Context**），在 30 个 Python 仓库的实测中，实现了惊人的 **92% 引用准确率**，并且通过机械验证机制实现了**零幻觉**。
 

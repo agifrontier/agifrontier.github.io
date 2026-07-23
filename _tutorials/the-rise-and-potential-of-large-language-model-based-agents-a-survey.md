@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "The Rise and Potential of Large Language Model Based Agents: A Survey"
+description: "The Rise and Potential of Large Language Model Based Agents: A Survey。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "a-survey-of-data-agents-emerging-paradigm-or-overstated-hype"
+  - "a-survey-on-large-language-model-based-autonomous-agents"
+  - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
+  - "from-static-templates-to-dynamic-runtime-graphs-a-survey-of-workflow-optimizatio"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2309.07864v3
+- **ArXiv URL**: https://arxiv.org/abs/2309.07864v3
 
 - **作者**: Xiao Wang; Yicheng Zou; Yuhao Zhou; Yongyan Zheng; Wenjuan Qin; Rui Zheng; Ming Zhang; Wenxiang Chen; Senjie Jin; Wensen Cheng; 等20人
 

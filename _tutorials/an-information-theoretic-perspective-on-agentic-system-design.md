@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "An Information Theoretic Perspective on Agentic System Design"
+description: "斯坦福Agent新解：3B模型压缩上下文，99%性能仅需26%成本。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "deepwidesearch-benchmarking-depth-and-width-in-agentic-information-seeking"
+  - "parallelmuse-agentic-parallel-thinking-for-deep-information-seeking"
+  - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
+  - "inter-agent-trust-models-a-comparative-study-of-brief-claim-proof-stake-reputati"
 ---
 
 ## 斯坦福Agent新解：3B模型压缩上下文，99%性能仅需26%成本
 
-<img src="/images/2512.21720v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.21720v1/A__title.jpg" alt="斯坦福Agent新解：3B模型压缩上下文，99%性能仅需26%成本 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 像 "Deep Research" 和 "Claude Code" 这样的现代 AI 应用正在重塑我们的工作流。在这些光鲜亮丽的系统背后，往往隐藏着一种通用的架构模式：**多模型协作**。
 
-> ArXiv URL：http://arxiv.org/abs/2512.21720v1
+> ArXiv URL：https://arxiv.org/abs/2512.21720v1
 
 通常，系统会先用一个较小的、甚至可以在本地运行的“**压缩器**”（Compressor）模型，将海量的原始上下文（如几十篇论文、数万行代码）提炼成精简的文本，然后再将这些精华喂给更强大的“**预测器**”（Predictor）模型进行最终的推理和回答。
 

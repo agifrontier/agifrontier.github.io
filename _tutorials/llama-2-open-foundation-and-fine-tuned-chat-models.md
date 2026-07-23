@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Llama 2: Open Foundation and Fine-Tuned Chat Models"
+description: "本文发布了 Llama 2，一个包含从7B到70B参数的开源预训练和微调大型语言模型系列，其为对话优化的版本 Llama 2-Chat 在多个基准测试中表现优于现有开源模型，并通过详细阐述其微调和安全对齐方法，旨在推动社区对负责任的大型语言模型进行建设和发展。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "llama-adapter-efficient-fine-tuning-of-language-models-with-zero-init-attention"
+  - "llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations"
+  - "the-llama-3-herd-of-models"
+  - "the-2025-foundation-model-transparency-index"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2307.09288v2
+- **ArXiv URL**: https://arxiv.org/abs/2307.09288v2
 
 - **作者**: Aur'elien Rodriguez; Diana Liskovich; Todor Mihaylov; Eric Michael Smith; Andrew Poulton; Viktor Kerkez; Alan Schelten; Isabel M. Kloumann; Soumya Batra; Iliyan Zarov; 等58人
 
@@ -33,7 +41,7 @@ title: "Llama 2: Open Foundation and Fine-Tuned Chat Models"
 
 本文的方法可以分为两个主要阶段：首先是训练强大的 **Llama 2** 基础模型，其次是通过一个多阶段的对齐流程微调出 **Llama 2-Chat** 对话模型。
 
-<img src="/images/2307.09288v2/page_4_Figure_0.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2307.09288v2/page_4_Figure_0.jpg" alt="本文方法 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 *图：Llama 2-Chat 的训练流程。该流程始于 Llama 2 的预训练，之后通过监督微调（SFT）创建 Llama 2-Chat 的初始版本，最后使用带人类反馈的强化学习（RLHF）方法（具体为拒绝采样和PPO）进行迭代优化。*
 
 ### 预训练 Llama 2
@@ -125,7 +133,7 @@ SFT 是对齐的第一步，目标是让模型学会如何响应指令。
     2.  **微调**: 在这个增强后的数据集上微调模型。通过这种方式，模型在训练的每一步都被提醒要遵循这个指令，从而学会将该指令“内化”。
 *   **效果**: 实验表明，经过GAtt微调后，模型即使在多轮对话后也能很好地记住并遵循最初的系统指令，显著提高了对话的一致性。
 
-<img src="/images/2307.09288v2/page_15_Figure_0.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2307.09288v2/page_15_Figure_0.jpg" alt="幻影注意力 (Ghost Attention, GAtt) 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 *图9：GAtt的效果。左图：没有GAtt，模型几轮后就忘记了指令。右图：使用GAtt后，模型在多轮对话中仍能保持一致。*
 
 ## 实验结论
@@ -162,10 +170,10 @@ SFT 是对齐的第一步，目标是让模型学会如何响应指令。
 *   **奖励模型性能**: 本文训练的Helpfulness和Safety奖励模型在内部测试集上均取得了SOTA性能，其准确率超过了包括GPT-4在内的其他所有基线模型。并且，奖励模型的性能随着模型尺寸和数据量的增加而持续提升，并未饱和，预示着未来还有提升空间。
 *   **RLHF有效性**: 模型的性能随着RLHF的迭代（V1→V5）而稳步提升，证明了迭代式微调方法的有效性。
 
-<img src="/images/2307.09288v2/page_2_Figure_1.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2307.09288v2/page_2_Figure_1.jpg" alt="对话模型 (Llama 2-Chat) 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 *图1：有用性人工评估。Llama 2-Chat 70B 与 ChatGPT (gpt-3.5-0301) 的胜率不相上下。*
 
-<img src="/images/2307.09288v2/page_3_Figure_0.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2307.09288v2/page_3_Figure_0.jpg" alt="对话模型 (Llama 2-Chat) 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 *图3：安全性人工评估。Llama 2-Chat 模型的安全违规率远低于其他模型。*
 
 ### 总结

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Beyond Gemini-3-Pro: Revisiting LLM Routing and Aggregation at Scale"
+description: "超越Gemini-3-Pro：开源模型“组团”打怪，成本仅47%！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "beyond-patch-aggregation-3-pass-pyramid-indexing-for-vision-enhanced-document-re"
+  - "mobilellm-pro-technical-report"
+  - "encoder-decoder-or-decoder-only-revisiting-encoder-decoder-large-language-model"
+  - "sft-doesnt-always-hurt-general-capabilities-revisiting-domain-specific-fine-tuni"
 ---
 
 ## 超越Gemini-3-Pro：开源模型“组团”打怪，成本仅47%！
 
-<img src="/images/2601.01330v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01330v1/A__title.jpg" alt="超越Gemini-3-Pro：开源模型“组团”打怪，成本仅47%！ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 开篇：单体模型真的越大越好吗？
 
-> ArXiv URL：http://arxiv.org/abs/2601.01330v1
+> ArXiv URL：https://arxiv.org/abs/2601.01330v1
 
 在通往AGI（通用人工智能）的道路上，我们似乎陷入了一种“军备竞赛”：模型参数越来越大，训练数据越来越多。Google 最新的 **Gemini-3-Pro** 刚刚树立了性能新标杆，仿佛在告诉大家：“大，就是正义。”
 

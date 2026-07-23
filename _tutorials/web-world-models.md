@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Web World Models"
+description: "Web World Model：用普通代码构建“物理法则”，让LLM只负责“想象”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "webweaver-structuring-web-scale-evidence-with-dynamic-outlines-for-open-ended-de"
+  - "digital-twin-ai-opportunities-and-challenges-from-large-language-models-to-world"
+  - "swe-bench-can-language-models-resolve-real-world-github-issues"
+  - "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis"
 ---
 
 ## Web World Model：用普通代码构建“物理法则”，让LLM只负责“想象”
 
-<img src="/images/2512.23676v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.23676v1/A__title.jpg" alt="Web World Model：用普通代码构建“物理法则”，让LLM只负责“想象” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 **如果说传统的Web应用像是在逛博物馆（只能看固定的展品），而完全生成的AI世界像是在做梦（光怪陆离但容易失控），那么今天介绍的这项研究，就是试图在“现实”与“梦境”之间搭建一座桥梁。**
 
-> ArXiv URL：http://arxiv.org/abs/2512.23676v1
+> ArXiv URL：https://arxiv.org/abs/2512.23676v1
 
 我们是否需要一个既有无限可能，又像现实世界一样逻辑严密的数字宇宙？普林斯顿大学等机构的研究者们给出了肯定的答案，并提出了一种全新的架构——**Web World Model (WWM)**。
 

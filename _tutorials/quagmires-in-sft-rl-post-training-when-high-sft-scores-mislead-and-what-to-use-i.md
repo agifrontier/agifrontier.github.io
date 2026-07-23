@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Quagmires in SFT-RL Post-Training: When High SFT Scores Mislead and What to Use Instead"
+description: "本文挑战了“高SFT分数能带来更好RL效果”的普遍假设，通过实验证明SFT分数具有误导性，并提出使用“泛化损失”和“Pass@large k”作为更可靠的RL后性能预测指标。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "beyond-two-stage-training-cooperative-sft-and-rl-for-llm-reasoning"
+  - "what-does-loss-optimization-actually-teach-if-anything-knowledge-dynamics-in-con"
+  - "what-makes-low-bit-quantization-aware-training-work-for-reasoning-llms-a-systema"
+  - "better-world-models-can-lead-to-better-post-training-performance"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.01624v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.01624v1
 
 - **作者**: Carole-Jean Wu; Ruoxi Jia; Feiyang Kang; Marin Vlastelica; Karthik Padthe; Michael Kuchnik; Newsha Ardalani
 

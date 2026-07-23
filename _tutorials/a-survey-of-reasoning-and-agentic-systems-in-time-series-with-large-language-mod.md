@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "A Survey of Reasoning and Agentic Systems in Time Series with Large Language Models"
+description: "时间序列数据在金融、医疗、能源等领域无处不在，推动了监控、预测和决策等关键应用的发展。然而，许多新兴应用如个性化医疗、自适应风险管理等，要求模型不仅能预测，还能解释其输出、进行因果推理和决策。这突显了时间序列分析对结构化和可靠推理能力的迫切需求。"
+topics:
+  - "AI Agent"
+  - "推理与强化学习"
+related_tutorials:
+  - "mitigating-hallucination-in-large-language-models-llms-an-application-oriented-s"
+  - "a-survey-of-reasoning-in-autonomous-driving-systems-open-challenges-and-emerging"
+  - "the-landscape-of-agentic-reinforcement-learning-for-llms-a-survey"
+  - "what-limits-agentic-systems-efficiency"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.11575v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.11575v1
 
 - **作者**: Wen-Chih Peng; Tien-Fu Chen; Defu Cao; Haixin Wang; Jeehyun Hwang; Yan Liu; Yidan Shi; Ching Chang; Wei Yang; Wei Wang
 

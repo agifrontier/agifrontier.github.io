@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "ELLA: Efficient Lifelong Learning for Adapters in Large Language Models"
+description: "内存仅需1/35！亚马逊ELLA：无需回放的大模型终身学习新SOTA。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "simplemem-efficient-lifelong-memory-for-llm-agents"
+  - "artificial-hippocampus-networks-for-efficient-long-context-modeling"
+  - "beft-bias-efficient-fine-tuning-of-language-models"
+  - "compress-to-impress-efficient-llm-adaptation-using-a-single-gradient-step-on-100"
 ---
 
 ## 内存仅需1/35！亚马逊ELLA：无需回放的大模型终身学习新SOTA
 
-<img src="/images/2601.02232v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.02232v1/A__title.jpg" alt="内存仅需1/35！亚马逊ELLA：无需回放的大模型终身学习新SOTA 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型（LLM）虽然在预训练中展现了惊人的能力，但它们往往像是一个“记性不好”的学生：一旦开始学习新任务，就会迅速遗忘之前学过的知识。这就是著名的**灾难性遗忘**（**Catastrophic Forgetting**）。
 
-> ArXiv URL：http://arxiv.org/abs/2601.02232v1
+> ArXiv URL：https://arxiv.org/abs/2601.02232v1
 
 为了解决这个问题，传统的**终身学习**（**Continual Learning, CL**）方法要么依赖“数据回放”（需要保存旧数据，涉及隐私和存储问题），要么采用严格的“正交投影”（强行让新旧知识互不干扰，却扼杀了知识迁移的可能性）。
 

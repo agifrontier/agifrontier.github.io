@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Incorporating Self-Rewriting into Large Language Model Reasoning Reinforcement"
+description: "告别思维混乱：自重写技术让LLM推理长度锐减46%，质量反而更高。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
+  - "deep-self-evolving-reasoning"
+  - "deepseekmath-v2-towards-self-verifiable-mathematical-reasoning"
+  - "rest-rl-achieving-accurate-code-reasoning-of-llms-with-optimized-self-training-a"
 ---
 
 ## 告别思维混乱：自重写技术让LLM推理长度锐减46%，质量反而更高
 
-<img src="/images/2511.16331v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.16331v1/A__title.jpg" alt="告别思维混乱：自重写技术让LLM推理长度锐减46%，质量反而更高 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型在解决复杂问题时，其推理过程常常显得冗长、混乱，甚至充满无效思考。你是否也曾被它绕来绕去的“思维过程”搞得头大？这不仅消耗了大量计算资源，也降低了我们对模型决策的信任度。
 
-> ArXiv URL：http://arxiv.org/abs/2511.16331v1
+> ArXiv URL：https://arxiv.org/abs/2511.16331v1
 
 最近，来自字节跳动、北理和浙大的研究者提出了一种名为**自我重写**（**Self-Rewriting**）的全新框架。它通过让大模型自己“批改”和“重写”自己的推理过程，实现了惊人的效果：在推理长度大幅缩短46%的同时，准确率反而提升了0.6%，推理质量评分更是飙升7.2分！
 

@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Empowering Real-World: A Survey on the Technology, Practice, and Evaluation of LLM-driven Industry Agents"
+description: "好的，我已判断这是一篇 [综述] 论文。我将严格遵循综述报告的模板，以原文结构为基础，重点剖析其提出的分类体系，并提炼核心内容。"
+topics:
+  - "AI Agent"
+  - "AI安全与评测"
+related_tutorials:
+  - "mai-ui-technical-report-real-world-centric-foundation-gui-agents"
+  - "toucan-synthesizing-15m-tool-agentic-data-from-real-world-mcp-environments"
+  - "from-experience-to-strategy-empowering-llm-agents-with-trainable-graph-memory"
+  - "statistical-reinforcement-learning-in-the-real-world-a-survey-of-challenges-and-"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.17491v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.17491v1
 
 - **作者**: Mingming Zhao; Yihong Tang; Min Zhang; Shixiong Kai; Xiaoguang Li; Lifeng Shang; Xingshan Zeng; Kaiyang Guo; Kehai Chen; Yuyang Zhang
 

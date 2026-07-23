@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Better World Models Can Lead to Better Post-Training Performance"
+description: "AI解魔方新突破：预训练一个“世界模型”，强化学习性能提升40%！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "how-does-rl-post-training-induce-skill-composition-a-case-study-on-countdown"
+  - "imbalanced-gradients-in-rl-post-training-of-multi-task-llms"
+  - "quagmires-in-sft-rl-post-training-when-high-sft-scores-mislead-and-what-to-use-i"
+  - "riskpo-risk-based-policy-optimization-via-verifiable-reward-for-llm-post-trainin"
 ---
 
 ## AI解魔方新突破：预训练一个“世界模型”，强化学习性能提升40%！
 
-<img src="/images/2512.03400v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.03400v1/A__title.jpg" alt="AI解魔方新突破：预训练一个“世界模型”，强化学习性能提升40%！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大型语言模型在预训练、微调和强化学习等一系列“修炼”后，展现出惊人的能力。但我们是否想过，这些训练阶段是如何塑造模型内部的“世界观”的？一个更清晰、更准确的内部世界模型，又能否让AI在后续的学习中如虎添翼？
 
-> ArXiv URL：http://arxiv.org/abs/2512.03400v1
+> ArXiv URL：https://arxiv.org/abs/2512.03400v1
 
 最近，来自哈佛、普林斯顿等顶尖高校的研究者们，通过一个精巧的二阶魔方实验，为我们揭示了答案。研究发现，先让模型显式地学习“世界规则”，能显著提升其后期强化学习的效果，在最难的任务上性能提升高达40%！
 

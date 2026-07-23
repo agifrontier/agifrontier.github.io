@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "The Curse and Blessing of Mean Bias in FP4-Quantized LLM Training"
+description: "FP4训练的诅咒与祝福：简单“减均值”，性能直追BF16。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "a-comedy-of-estimators-on-kl-regularization-in-rl-training-of-llms"
+  - "a-survey-on-efficient-large-language-model-training-from-data-centric-perspectiv"
+  - "a-survey-on-llm-mid-training"
+  - "adamhd-decoupled-huber-decay-regularization-for-language-model-pre-training"
 ---
 
 ## FP4训练的诅咒与祝福：简单“减均值”，性能直追BF16
 
-<img src="/images/2603.10444v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.10444v1/A__title.jpg" alt="FP4训练的诅咒与祝福：简单“减均值”，性能直追BF16 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 想要训练更经济、更高效的大语言模型（LLM）吗？4比特（FP4）量化训练听起来像个完美的答案，但它却像一匹难以驾驭的野马，常常伴随着训练崩溃的风险。
 
-> ArXiv URL：http://arxiv.org/abs/2603.10444v1
+> ArXiv URL：https://arxiv.org/abs/2603.10444v1
 
 过去，研究者们认为问题出在模型激活值的“尖峰”上，并试图用奇异值分解（SVD）等复杂且昂贵的“屠龙之术”来驯服它。
 

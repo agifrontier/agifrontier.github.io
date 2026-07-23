@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "A Survey of Data Agents: Emerging Paradigm or Overstated Hype?"
+description: "随着大型语言模型 (Large Language Models, LLMs) 的兴起，一种新的范式——数据智能体 (Data Agents)——应运而生。数据智能体被定义为一个综合性的、由LLM驱动的架构，它能自主协调数据与AI生态系统，以处理复杂的数据相关任务。"
+topics:
+  - "AI Agent"
+  - "数据与AI工程"
+related_tutorials:
+  - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
+  - "agentfrontier-expanding-the-capability-frontier-of-llm-agents-with-zpd-guided-da"
+  - "dacomp-benchmarking-data-agents-across-the-full-data-intelligence-lifecycle"
+  - "whats-the-next-frontier-for-data-centric-ai-data-savvy-agents"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.23587v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.23587v1
 
 - **作者**: Wei Zhou; Liangwei Wang; Xinyu Liu; Yuyu Luo; Yu Li; Shimin Di; Guoliang Li; Ji Sun; Xuanhe Zhou; Yizhang Zhu; 等23人
 

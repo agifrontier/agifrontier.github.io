@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Recursive Language Models"
+description: "打破上下文诅咒：递归语言模型（RLM）让GPT-5处理无限长文本。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "improving-recursive-transformers-with-mixture-of-loras"
+  - "fortifai-fending-off-recursive-training-induced-failure-for-ai-models"
+  - "mesh-memory-as-state-highways-for-recursive-transformers"
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
 ---
 
 ## **打破上下文诅咒：递归语言模型（RLM）让GPT-5处理无限长文本**
 
-<img src="/images/2512.24601v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.24601v1/A__title.jpg" alt="打破上下文诅咒：递归语言模型（RLM）让GPT-5处理无限长文本 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 **想象一下，如果你的大脑内存只有几秒钟，你该如何阅读一本百万字的小说？**
 
-> ArXiv URL：http://arxiv.org/abs/2512.24601v1
+> ArXiv URL：https://arxiv.org/abs/2512.24601v1
 
 你会怎么做？你肯定不会试图把整本书背下来。相反，你会拿出一个笔记本，读一段，记一段，遇到不懂的再翻回去查阅，甚至把复杂的任务拆分成几个小问题逐个击破。
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Understanding Robustness of Model Editing in Code LLMs: An Empirical Study"
+description: "本文通过一项在受控环境中进行的系统性实证研究发现，现有的模型编辑方法在更新代码大语言模型（code LLMs）以适应API演进时，表现出有限且不稳定的适应能力，普遍导致模型性能显著下降，且多数成功案例依赖变通方案而非真正采纳新API。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "an-empirical-study-of-sft-dpo-interaction-and-parameterization-in-small-language"
+  - "an-empirical-study-on-noisy-data-and-llm-pretraining-loss-divergence"
+  - "an-information-theoretic-framework-for-robust-large-language-model-editing"
+  - "wizardcoder-empowering-code-large-language-models-with-evol-instruct"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2511.03182v1
+- **ArXiv URL**: https://arxiv.org/abs/2511.03182v1
 
 - **作者**: Umar Farooq; Vinaik Chhetri
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "A Subgoal-driven Framework for Improving Long-Horizon LLM Agents"
+description: "成功率飙升6倍超GPT-4o！DeepMind发布MiRA，用“里程碑”根治AI智能体“迷路”顽疾。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "learning-on-the-job-an-experience-driven-self-evolving-agent-for-long-horizon-ta"
+  - "agentfold-long-horizon-web-agents-with-proactive-context-management"
+  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
+  - "harnessing-uncertainty-entropy-modulated-policy-gradients-for-long-horizon-llm-a"
 ---
 
 ## 成功率飙升6倍超GPT-4o！DeepMind发布MiRA，用“里程碑”根治AI智能体“迷路”顽疾
 
-<img src="/images/2603.19685v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2603.19685v1/A__title.jpg" alt="成功率飙升6倍超GPT-4o！DeepMind发布MiRA，用“里程碑”根治AI智能体“迷路”顽疾 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 AI智能体（Agent）正被赋予越来越复杂艰巨的任务，从自动操作手机到浏览网页完成预订。然而，当任务流程变长、步骤变多时，即使是最先进的大模型也常常会“迷路”——陷入无效循环，或在任务中途“卡住”不知所措。
 
-> ArXiv URL：http://arxiv.org/abs/2603.19685v1
+> ArXiv URL：https://arxiv.org/abs/2603.19685v1
 
 这个问题该如何解决？
 

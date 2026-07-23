@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "BGE M3-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation"
+description: "本文提出了一种名为 M3-Embedding 的通用文本嵌入模型，它通过新颖的自知识蒸馏（Self-Knowledge Distillation）训练框架，在单一模型中同时实现了多语言（Multi-Lingual）、多功能（Multi-Functionality）和多粒度（Multi-Granularity。"
+topics:
+  - "RAG与知识系统"
+  - "模型训练与优化"
+related_tutorials:
+  - "memorization-dynamics-in-knowledge-distillation-for-language-models"
+  - "in-context-distillation-with-self-consistency-cascades-a-simple-training-free-wa"
+  - "self-rag-learning-to-retrieve-generate-and-critique-through-self-reflection"
+  - "datasage-multi-agent-collaboration-for-insight-discovery-with-external-knowledge"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2402.03216v4
+- **ArXiv URL**: https://arxiv.org/abs/2402.03216v4
 
 - **作者**: Zheng Liu; Shitao Xiao; Kun Luo; Jianlv Chen; Defu Lian; Peitian Zhang
 

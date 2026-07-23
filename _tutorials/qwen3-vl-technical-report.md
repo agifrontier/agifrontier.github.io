@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Qwen3-VL Technical Report"
+description: "Qwen3-VL重磅发布：256K上下文，三大架构升级打造全能多模态。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "deepseek-v3-technical-report"
+  - "gpt-4-technical-report"
+  - "hunyuanvideo-15-technical-report"
+  - "kling-omni-technical-report"
 ---
 
 ## Qwen3-VL重磅发布：256K上下文，三大架构升级打造全能多模态
 
-<img src="/images/2511.21631v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.21631v1/A__title.jpg" alt="Qwen3-VL重磅发布：256K上下文，三大架构升级打造全能多模态 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 多模态大模型早已不是“看图说话”那么简单了。如今，它们必须能消化长篇图文报告，理解视频内容，甚至完成复杂的数理推理。
 
-> ArXiv URL：http://arxiv.org/abs/2511.21631v1
+> ArXiv URL：https://arxiv.org/abs/2511.21631v1
 
 就在最近，Qwen系列迎来了迄今最强的多模态模型——Qwen3-VL。它不仅在纯文本理解上超越了同类文本模型，更原生支持高达256K Token的图文视频混合输入，在长文档和视频理解上表现惊人。
 

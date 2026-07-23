@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Structured Hints for Sample-Efficient Lean Theorem Proving"
+description: "DeepSeek-Prover潜力释放：仅需简单“骨架”提示，性能飙升43%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "seed-prover-15-mastering-undergraduate-level-theorem-proving-via-learning-from-e"
+  - "transformers-are-ssms-generalized-models-and-efficient-algorithms-through-struct"
+  - "llm-erm-sample-efficient-program-learning-via-llm-guided-search"
+  - "artificial-hippocampus-networks-for-efficient-long-context-modeling"
 ---
 
 ## DeepSeek-Prover潜力释放：仅需简单“骨架”提示，性能飙升43%
 
-<img src="/images/2601.16172v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.16172v1/A__title.jpg" alt="DeepSeek-Prover潜力释放：仅需简单“骨架”提示，性能飙升43% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在AI数学定理证明的赛道上，大家似乎陷入了一种“暴力美学”的军备竞赛：更强的**强化学习**（**Reinforcement Learning, RL**）、更庞大的搜索树、成千上万次的采样（$k=1024$ 甚至更多）。
 
-> ArXiv URL：http://arxiv.org/abs/2601.16172v1
+> ArXiv URL：https://arxiv.org/abs/2601.16172v1
 
 但麻省理工学院（MIT）的一项最新研究提出了一个反直觉的问题：**如果不拼算力，而是给模型一点点“结构化”的提示，会发生什么？**
 

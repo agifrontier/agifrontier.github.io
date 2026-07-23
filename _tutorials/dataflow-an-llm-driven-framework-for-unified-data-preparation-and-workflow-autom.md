@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "DataFlow: An LLM-Driven Framework for Unified Data Preparation and Workflow Automation in the Era of Data-Centric AI"
+description: "1万条顶100万条！北大DataFlow：像写PyTorch一样搞定大模型数据。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "数据与AI工程"
+related_tutorials:
+  - "a-survey-on-efficient-large-language-model-training-from-data-centric-perspectiv"
+  - "whats-the-next-frontier-for-data-centric-ai-data-savvy-agents"
+  - "generative-models-for-synthetic-data-transforming-data-mining-in-the-genai-era"
+  - "a-novel-combined-data-driven-approach-for-electricity-theft-detection"
 ---
 
 ## 1万条顶100万条！北大DataFlow：像写PyTorch一样搞定大模型数据
 
-<img src="/images/2512.16676v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.16676v1/A__title.jpg" alt="1万条顶100万条！北大DataFlow：像写PyTorch一样搞定大模型数据 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在大模型（LLM）开发的狂热浪潮中，我们往往沉迷于模型架构的微调或参数规模的扩展，却忽略了一个残酷的现实：**数据工程依然处于“手工作坊”时代。**
 
-> ArXiv URL：http://arxiv.org/abs/2512.16676v1
+> ArXiv URL：https://arxiv.org/abs/2512.16676v1
 
 当模型训练代码已经通过 PyTorch 或 TensorFlow 实现了高度标准化和模块化时，数据准备工作却依然充斥着大量临时编写的 Ad-hoc 脚本、难以复现的清洗流程以及缺乏统一标准的“胶水代码”。这不仅效率低下，更让“以数据为中心（Data-Centric AI）”的愿景难以落地。
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "ARM-FM: Automated Reward Machines via Foundation Models for Compositional Reinforcement Learning"
+description: "本文提出了ARM-FM框架，利用基础模型（Foundation Models, FMs）从自然语言指令中自动生成奖励机（Reward Machines, RMs），为组合式强化学习（Compositional Reinforcement Learning）提供结构化的奖励信号，以解决长时程、稀疏奖励任务并实。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "online-process-reward-leanring-for-agentic-reinforcement-learning"
+  - "ssl4rl-revisiting-self-supervised-learning-as-intrinsic-reward-for-visual-langua"
+  - "a-multiobjective-reinforcement-learning-framework-for-microgrid-energy-managemen"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.14176v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.14176v1
 
 - **作者**: Pablo Samuel Castro; Glen Berseth; Roger Creus Castanyer; Faisal Mohamed; Cyrus Neary
 
@@ -93,8 +101,6 @@ title: "ARM-FM: Automated Reward Machines via Foundation Models for Compositiona
 在MiniGrid环境套件中，这些任务因奖励稀疏而极具挑战性。
 *   **结果**：在DoorKey任务中，无论地图是固定的还是程序化生成的，ARM-FM（DQN+RM）都稳定地超越了所有基线方法（DQN, DQN+ICM, LLM-as-agent）。在更难的KeyCorridor等长时程任务中，ARM-FM是唯一能够解决所有任务并获得近乎完美奖励的方法，而其他基线则完全无法取得进展。
 
-![DoorKey任务结果](figures/minigrid_doorkeys_300k.png)
-![MiniGrid困难任务结果](figures/minigrid_hard_300k.png)
 
 ### 复杂3D环境扩展
 
@@ -108,7 +114,6 @@ title: "ARM-FM: Automated Reward Machines via Foundation Models for Compositiona
 *   **结果**：ARM-FM无需手动设计低级奖励信号，通过生成的RM提供了比稀疏奖励更丰富的学习信号，使得SAC智能体取得了更高的成功率。
 *   **意义**：这证明了ARM-FM框架同样适用于连续控制领域。
 
-![Meta-World任务结果](figures/metaworld_results.png)
 
 ### 通过语言嵌入实现泛化
 

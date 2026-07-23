@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Agentic Meta-Orchestrator for Multi-task Copilots"
+description: "本文提出了一种名为“智能体元编排器” (Agentic Meta-Orchestrator, AMO) 的新架构，用于构建可扩展的多任务Copilot服务，该架构通过学习排序模型进行智能体路由，利用LoRA臂实现高效多任务推理，并通过元学习决策树来动态规划推理路径。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "slideagent-hierarchical-agentic-framework-for-multi-page-visual-document-underst"
+  - "inefficiencies-of-meta-agents-for-agent-design"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.22781v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.22781v1
 
 - **作者**: Xiaofeng Zhu
 

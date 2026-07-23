@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Improving Online Algorithms via ML Predictions"
+description: "本文提出了一种利用机器学习（ML）预测来改进在线算法性能的理论框架，设计的算法在预测准确时性能接近最优（一致性），在预测错误时性能也不会大幅下降，可优雅地退化到经典在线算法的水平（鲁棒性）。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "transformers-are-ssms-generalized-models-and-efficient-algorithms-through-struct"
+  - "delta-decoupling-long-tailed-online-continual-learning"
+  - "gemma-2-improving-open-language-models-at-a-practical-size"
+  - "improving-recursive-transformers-with-mixture-of-loras"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2407.17712v1
+- **ArXiv URL**: https://arxiv.org/abs/2407.17712v1
 
 - **作者**: Manish Purohit; Ravi Kumar; Zoya Svitkina
 

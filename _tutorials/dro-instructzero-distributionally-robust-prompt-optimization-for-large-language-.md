@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "DRO-InstructZero: Distributionally Robust Prompt Optimization for Large Language Models"
+description: "本文提出了一种名为 DRO-InstructZero 的方法，它将分布式鲁棒优化（Distributionally Robust Optimization, DRO）与贝叶斯优化（Bayesian Optimization, BO）相结合，用于搜索在数据分布发生变化时仍能保持高性能的、具有鲁棒性的语言模型指。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "elpo-ensemble-learning-based-prompt-optimization-for-large-language-models"
+  - "modular-prompt-optimization-optimizing-structured-prompts-with-section-local-tex"
+  - "a-systematic-survey-on-large-language-models-for-evolutionary-optimization-from-"
+  - "asymmetric-proximal-policy-optimization-mini-critics-boost-llm-reasoning"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.15260v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.15260v1
 
 - **作者**: Yangyang Li
 

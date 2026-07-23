@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "UNIFORM: Unifying Knowledge from Large-scale and Diverse Pre-trained Models"
+description: "本文提出了一个名为 UNIFORM 的统一知识迁移框架，旨在从大量异构（不同架构、不同训练数据）的预训练模型中，通过新颖的特征投票和Logit投票机制，解决知识冲突问题，从而高效地将共识知识迁移到一个学生模型中，且无需任何手动标注。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "plum-adapting-pre-trained-language-models-for-industrial-scale-generative-recomm"
+  - "hplt-30-very-large-scale-multilingual-resources-for-llm-and-mt-mono-and-bi-lingu"
+  - "unifying-large-language-models-and-knowledge-graphs-a-roadmap"
+  - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2508.19498v1
+- **ArXiv URL**: https://arxiv.org/abs/2508.19498v1
 
 - **作者**: Chen Chen; Jingtao Li; Jiabo Huang; Weiming Zhuang; Lingjuan Lyu; Yimu Wang
 

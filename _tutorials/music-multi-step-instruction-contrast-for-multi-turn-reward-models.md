@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "MUSIC: MUlti-Step Instruction Contrast for Multi-Turn Reward Models"
+description: "别只看最后一句话！DeepMind新作MUSIC：合成数据攻克多轮对话评估难题。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "scaling-up-multi-turn-off-policy-rl-and-multi-agent-tree-search-for-llm-step-pro"
+  - "compress-to-impress-efficient-llm-adaptation-using-a-single-gradient-step-on-100"
+  - "do-not-step-into-the-same-river-twice-learning-to-reason-from-trial-and-error"
+  - "lets-verify-step-by-step"
 ---
 
 ## 别只看最后一句话！DeepMind新作MUSIC：合成数据攻克多轮对话评估难题
 
-<img src="/images/2512.24693v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.24693v1/A__title.jpg" alt="别只看最后一句话！DeepMind新作MUSIC：合成数据攻克多轮对话评估难题 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 大模型（LLM）如今已经能写出漂亮的诗歌或代码片段，但你是否发现，一旦和它多聊几轮，它的逻辑就开始“掉链子”？
 
-> ArXiv URL：http://arxiv.org/abs/2512.24693v1
+> ArXiv URL：https://arxiv.org/abs/2512.24693v1
 
 这背后的核心痛点在于：**我们很难教会模型什么是“好的多轮对话”。** 现有的评估数据大多只盯着对话的“最后一句话”看，就像评价一部电影只看最后五分钟，完全忽略了中间的情节是否连贯。
 

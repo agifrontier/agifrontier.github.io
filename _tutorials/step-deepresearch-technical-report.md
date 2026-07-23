@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Step-DeepResearch Technical Report"
+description: "32B模型媲美OpenAI？Step-DeepResearch揭秘：低成本实现专家级深度研究。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "tongyi-deepresearch-technical-report"
+  - "step-gui-technical-report"
+  - "deepseek-v3-technical-report"
+  - "gpt-4-technical-report"
 ---
 
 ## 32B模型媲美OpenAI？Step-DeepResearch揭秘：低成本实现专家级深度研究
 
-<img src="/images/2512.20491v2/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.20491v2/A__title.jpg" alt="32B模型媲美OpenAI？Step-DeepResearch揭秘：低成本实现专家级深度研究 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型向**自主智能体**（**Autonomous Agents**）演进的浪潮中，我们经常混淆两个概念：“搜索”与“研究”。搜索通常是针对明确问题的单次查询，而**深度研究**（**Deep Research**）则是一个漫长的迭代过程——它需要意图识别、长程规划、跨源验证以及撰写结构化的报告。
 
-> ArXiv URL：http://arxiv.org/abs/2512.20491v2
+> ArXiv URL：https://arxiv.org/abs/2512.20491v2
 
 目前的学术基准（如 BrowseComp）往往只关注多跳问答，这导致许多 Agent 实际上更像是一个高效的“网络爬虫”，而非真正的“研究员”。为了填补这一空白，StepFun（阶跃星辰）团队发布了 **Step-DeepResearch** 技术报告。这项研究最令人兴奋的点在于：它证明了通过精细的数据合成策略和训练流程，一个仅有 **32B 参数**的中等规模模型，不仅能在中文领域填补评估空白，更能在成本极低的情况下，在深度研究能力上媲美 OpenAI o3-mini 和 Gemini 1.5 Pro 等顶尖闭源模型。
 

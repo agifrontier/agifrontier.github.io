@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "The human biological advantage over AI"
+description: "本文提出，人类相较于人工智能（AI）的核心优势在于我们基于生物学的中央神经系统（Central Nervous System, CNS），它使我们能够沉浸式地与物理现实融为一体，体验真实的情感，从而发展出植根于经验、有意义且可持续的伦理体系，这是任何非生物的AI都无法复制的。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "think-right-learning-to-mitigate-under-over-thinking-via-adaptive-attentive-comp"
+  - "a-general-theoretical-paradigm-to-understand-learning-from-human-preferences"
+  - "alpacafarm-a-simulation-framework-for-methods-that-learn-from-human-feedback"
+  - "epistemological-fault-lines-between-human-and-artificial-intelligence"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.04130v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.04130v1
 
 - **作者**: 
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Generative AI"
+description: "Generative AI。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "generative-early-stage-ranking"
+  - "plum-adapting-pre-trained-language-models-for-industrial-scale-generative-recomm"
+  - "transition-models-rethinking-the-generative-learning-objective"
+  - "alita-g-self-evolving-generative-agent-for-agent-generation"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2309.07930v1
+- **ArXiv URL**: https://arxiv.org/abs/2309.07930v1
 
 - **作者**: Jochen Hartmann; Patrick Zschech; Stefan Feuerriegel; Christian Janiesch
 

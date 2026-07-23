@@ -1,6 +1,15 @@
 ---
 layout: default
 title: "HaluMem: Evaluating Hallucinations in Memory Systems of Agents"
+description: "AI Agent记忆也“幻觉”？HaluMem：首个记忆系统“CT扫描”基准，精准定位错误根源。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "AI Agent"
+related_tutorials:
+  - "ai-meets-brain-memory-systems-from-cognitive-neuroscience-to-autonomous-agents"
+  - "memevolve-meta-evolution-of-agent-memory-systems"
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+  - "dynamic-affective-memory-management-for-personalized-llm-agents"
 ---
 
 ## AI Agent记忆也“幻觉”？HaluMem：首个记忆系统“CT扫描”基准，精准定位错误根源
@@ -8,7 +17,7 @@ title: "HaluMem: Evaluating Hallucinations in Memory Systems of Agents"
 当你的AI助手前一秒还记得你喜欢喝拿铁，下一秒却又问你是否偏爱美式咖啡时，你可能会觉得它有点“健忘”。这种现象在AI领域被称为“幻觉”，而当它发生在AI的记忆系统中时，问题就变得尤为棘手。
 
 > **论文标题**：HaluMem: Evaluating Hallucinations in Memory Systems of Agents
-> **ArXiv URL**：http://arxiv.org/abs/2511.03506v2
+> **ArXiv URL**：https://arxiv.org/abs/2511.03506v2
 
 AI Agent要实现真正的长期交互和个性化，一个可靠的记忆系统是不可或缺的。然而，在记忆的存入、更新和提取过程中，AI常常会凭空捏造、记错、遗忘甚至自相矛盾。
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Accelerate Speculative Decoding with Sparse Computation in Verification"
+description: "打破投机采样瓶颈：美团提出“稀疏验证”框架，Attention与MoE全面瘦身。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "rest-rl-achieving-accurate-code-reasoning-of-llms-with-optimized-self-training-a"
+  - "continual-learning-via-sparse-memory-finetuning"
+  - "gallop-gradient-based-sparse-learning-on-low-magnitude-parameters"
+  - "kascade-a-practical-sparse-attention-method-for-long-context-llm-inference"
 ---
 
 ## 打破投机采样瓶颈：美团提出“稀疏验证”框架，Attention与MoE全面瘦身
 
-<img src="/images/2512.21911v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.21911v1/A__title.jpg" alt="打破投机采样瓶颈：美团提出“稀疏验证”框架，Attention与MoE全面瘦身 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型推理加速的赛道上，**投机采样**（**Speculative Decoding**）无疑是近年来最耀眼的明星技术之一。它通过一个小巧的“草稿模型”快速生成多个候选 Token，再由大模型（目标模型）一次性并行验证，从而在不损失精度的情况下显著提升推理速度。
 
-> ArXiv URL：http://arxiv.org/abs/2512.21911v1
+> ArXiv URL：https://arxiv.org/abs/2512.21911v1
 
 然而，随着上下文长度的不断增加以及 **混合专家模型**（**MoE**）的普及，一个新的瓶颈浮出水面：**验证阶段（Verification Stage）太慢了**。
 

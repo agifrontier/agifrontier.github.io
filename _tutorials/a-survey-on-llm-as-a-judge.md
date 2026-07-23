@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "A Survey on LLM-as-a-Judge"
+description: "在众多领域，准确和一致的评估对决策至关重要，但由于固有的主观性、可变性和规模问题，这仍然是一项艰巨的任务。传统评估方法面临一个两难困境：以专家驱动为代表的主观方法虽然全面，但成本高、难扩展且一致性差；而以自动度量（如BLEU、ROUGE）为代表的客观方法虽然可扩展性与一致性强，但往往只关注表面词汇重叠，无法。"
+topics:
+  - "AI安全与评测"
+related_tutorials:
+  - "judging-llm-as-a-judge-with-mt-bench-and-chatbot-arena"
+  - "llm-as-a-judge-toward-world-models-for-slate-recommendation-systems"
+  - "a-survey-on-evaluation-of-large-language-models"
+  - "a-survey-on-large-language-model-llm-security-and-privacy-the-good-the-bad-and-t"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2411.15594v5
+- **ArXiv URL**: https://arxiv.org/abs/2411.15594v5
 
 - **作者**: Hexiang Tan; Xuhui Jiang; Chengjin Xu; Jian Guo; Wei Li; Honghao Liu; Jiawei Gu; Yinghan Shen; Zhichao Shi; Shengjie Ma; 等2人
 

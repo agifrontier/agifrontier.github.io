@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Understanding the Role of Training Data in Test-Time Scaling"
+description: "本文通过一个可理论分析的线性回归任务，从理论上解释了训练数据的特性如何决定测试时增加计算（即更长的思想链）能否成功提升模型性能，并证明了在多样化、相关且困难的任务上进行训练对测试时扩展（test-time scaling）最为有利。"
+topics:
+  - "模型训练与优化"
+  - "数据与AI工程"
+related_tutorials:
+  - "reusing-pre-training-data-at-test-time-is-a-compute-multiplier"
+  - "demystifying-synthetic-data-in-llm-pre-training-a-systematic-study-of-scaling-la"
+  - "end-to-end-test-time-training-for-long-context"
+  - "lets-not-just-put-things-in-context-test-time-training-for-long-context-llms"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.03605v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.03605v1
 
 - **作者**: Baharan Mirzasoleiman; Adel Javanmard
 

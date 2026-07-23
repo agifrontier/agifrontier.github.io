@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "GPT-4 Technical Report"
+description: "本文介绍了一个大规模、多模态模型GPT-4，它能够接收图像和文本输入并生成文本输出，在多项专业和学术基准上展现出与人类相当的性能，并通过可预测的扩展方法实现了其性能的精准预测。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "deepseek-v3-technical-report"
+  - "hunyuanvideo-15-technical-report"
+  - "kling-omni-technical-report"
+  - "mimo-v2-flash-technical-report"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2303.08774v6
+- **ArXiv URL**: https://arxiv.org/abs/2303.08774v6
 
 - **作者**: Kendra Rimbach; Paul McMillan; Andrea Vallone; Mira Murati; Jeremiah Currier; Rachel Lim; Kevin Button; Irwan Bello; Mike Heaton; Evan Morikawa; 等269人
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "An Empirical Study of SFT-DPO Interaction and Parameterization in Small Language Models"
+description: "DPO收益甚微，LoRA竟被反超？斯坦福揭秘小模型微调的“最优解”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "an-empirical-study-on-noisy-data-and-llm-pretraining-loss-divergence"
+  - "understanding-robustness-of-model-editing-in-code-llms-an-empirical-study"
+  - "aligning-perception-reasoning-modeling-and-interaction-a-survey-on-physical-ai"
+  - "beyond-two-stage-training-cooperative-sft-and-rl-for-llm-reasoning"
 ---
 
 ## DPO收益甚微，LoRA竟被反超？斯坦福揭秘小模型微调的“最优解”
 
-<img src="/images/2603.20100v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2603.20100v1/A__title.jpg" alt="DPO收益甚微，LoRA竟被反超？斯坦福揭秘小模型微调的“最优解” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当前，**直接偏好优化**（**Direct Preference Optimization, DPO**）和**低秩适配**（**Low-Rank Adaptation, LoRA**）几乎已成为大模型对齐与微调的“标准动作”。我们似乎默认，先用SFT做监督微调，再用DPO对齐偏好，同时用LoRA来节省资源，就是一套黄金组合拳。
 
-> ArXiv URL：http://arxiv.org/abs/2603.20100v1
+> ArXiv URL：https://arxiv.org/abs/2603.20100v1
 
 但如果你的模型没那么“大”，数据也没那么“多”呢？这套组合拳还灵吗？
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Dual LoRA: Enhancing LoRA with Magnitude and Direction Updates"
+description: "AMD力作Dual LoRA：性能最高提升1.8%！将参数更新分解为“幅值”与“方向”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "gallop-gradient-based-sparse-learning-on-low-magnitude-parameters"
+  - "bi-lora-efficient-sharpness-aware-minimization-for-fine-tuning-large-scale-model"
+  - "lora-on-the-go-instance-level-dynamic-lora-selection-and-merging"
+  - "on-the-convergence-rate-of-lora-gradient-descent"
 ---
 
 ## AMD力作Dual LoRA：性能最高提升1.8%！将参数更新分解为“幅值”与“方向”
 
-<img src="/images/2512.03402v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.03402v1/A__title.jpg" alt="AMD力作Dual LoRA：性能最高提升1.8%！将参数更新分解为“幅值”与“方向” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型微调技术LoRA已经无处不在，但你是否想过，它为何总是与全量微调（FFT）存在性能差距？现在，来自AMD的研究团队给出了一个全新的答案，并带来了一个优雅而强大的解决方案——Dual LoRA。
 
-> ArXiv URL：http://arxiv.org/abs/2512.03402v1
+> ArXiv URL：https://arxiv.org/abs/2512.03402v1
 
 这项研究不搞复杂的结构，而是回归本源，通过一个简单的“拆分”思想，让LoRA的性能在同等参数量下稳定超越了DoRA等一众SOTA变体，在部分任务上甚至取得了高达1.8%的性能提升！
 

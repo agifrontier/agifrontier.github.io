@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "A Survey of Reinforcement Learning for Large Reasoning Models"
+description: "对用于大型推理模型的强化学习的综述。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "reinforcement-learning-meets-large-language-models-a-survey-of-advancements-and-"
+  - "statistical-reinforcement-learning-in-the-real-world-a-survey-of-challenges-and-"
+  - "the-landscape-of-agentic-reinforcement-learning-for-llms-a-survey"
+  - "deepseek-r1-incentivizing-reasoning-capability-in-llms-via-reinforcement-learnin"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.08827v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.08827v1
 
 - **作者**: Ning Ding; Xiang Xu; Biqing Qi; Xiaoye Qu; Shang Qu; Zhiyuan Ma; Kaiyan Zhang; Yihao Liu; Junqi Gao; Huayu Chen; 等37人
 
@@ -14,7 +22,7 @@ title: "A Survey of Reinforcement Learning for Large Reasoning Models"
 
 ## 对用于大型推理模型的强化学习的综述
 
-<img src="/images/2509.08827v1/page_0_Figure_10.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2509.08827v1/page_0_Figure_10.jpg" alt="对用于大型推理模型的强化学习的综述 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 **图 1** | 本综述概览。本文介绍了用于大型推理模型的强化学习的基础组件，以及开放性问题、训练资源和应用。本综述的核心是关注语言智能体与环境在长期演化过程中的大规模交互。
 
@@ -28,7 +36,7 @@ title: "A Survey of Reinforcement Learning for Large Reasoning Models"
 
 与此同时，为 LRMs 进一步扩展 RL 带来了新的制约，不仅涉及计算资源，还涉及算法设计、训练数据和基础设施。如何以及在何处扩展用于 LRMs 的 RL 以实现高水平智能并创造现实世界价值，仍是悬而未决的问题。因此，本文认为，现在是时候回顾这一领域的发展，并探索提升 RL 可扩展性以迈向通用人工智能 (Artificial SuperIntelligence, ASI) 的策略。
 
-<img src="/images/2509.08827v1/page_4_Figure_1.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2509.08827v1/page_4_Figure_1.jpg" alt="1. 引言 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 **图 2** | 近年来，RLHF 和 DPO 已成为人类对齐的两种主流 RL 方法。相比之下，RLVR 代表了用于 LRMs 的 RL 的一个新兴趋势，它显著增强了模型解决复杂任务的能力。LLM 的 RL 下一阶段扩展仍然是一个开放问题，而开放式 RL 则是一个特别具有挑战性和前景的方向。
 
@@ -46,7 +54,7 @@ title: "A Survey of Reinforcement Learning for Large Reasoning Models"
 
 本节介绍了 RL 的基本组件，并描述了如何将语言模型配置为 RL 框架中的智能体。如图 3 所示，RL 为序贯决策提供了一个通用框架，其中智能体通过采取行动与环境交互，以最大化累积奖励。
 
-<img src="/images/2509.08827v1/page_5_Figure_1.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2509.08827v1/page_5_Figure_1.jpg" alt="2.1. 背景 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 **图 3** | RL 的基本组件和作为智能体的语言模型（LM）。智能体选择动作，而环境在每个回合提供状态和奖励。在 LM 的上下文中，生成的 Token 被视为动作，与上下文连接形成状态。奖励通常在整个响应的层级上分配。
 
@@ -83,7 +91,7 @@ $${% endraw %}
 
 多模态是推理模型广泛应用的关键组成部分。大多数前沿专有模型（如 GPT-5、o3、Claude、Gemini）都是原生多模态的。开源方面，Kimi 1.5、QVQ、Skywork R1V2、InternVL 系列（InternVL3, InternVL3.5）、Intern-S1、Step3 和 GLM-4.5V 等模型也在多模态推理方面取得了显著进展，它们通过不同的方法（如混合 RL、级联 RL 框架、混合奖励设计）来平衡推理能力和通用能力，或专注于特定领域（如科学推理）。
 
-<img src="/images/2509.08827v1/page_7_Figure_1.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2509.08827v1/page_7_Figure_1.jpg" alt="2.2. 前沿模型 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 **图 4** | 使用 RL 训练的代表性开源和闭源推理模型的时间线，包括语言模型、多模态模型和智能体模型。
 
@@ -132,9 +140,9 @@ $${% endraw %}
 
 本节回顾了用于 LRMs 的 RL 的基础组件，包括奖励设计（§ 3.1）、策略优化算法（§ 3.2）和采样策略（§ 3.3）。下图展示了这些基础组件的分类体系。
 
-<img src="/images/2509.08827v1/page_10_Figure_1.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2509.08827v1/page_10_Figure_1.jpg" alt="3. 基础组件 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
-<img src="/images/2509.08827v1/page_10_Figure_2.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2509.08827v1/page_10_Figure_2.jpg" alt="3. 基础组件 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ## 3.1. 奖励设计
 

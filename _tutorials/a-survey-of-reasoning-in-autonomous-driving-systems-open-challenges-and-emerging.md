@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "A Survey of Reasoning in Autonomous Driving Systems: Open Challenges and Emerging Paradigms"
+description: "自动驾驶的“认知”革命：大模型如何攻克7大核心推理挑战？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "具身智能与机器人"
+  - "推理与强化学习"
+related_tutorials:
+  - "a-survey-of-reasoning-and-agentic-systems-in-time-series-with-large-language-mod"
+  - "statistical-reinforcement-learning-in-the-real-world-a-survey-of-challenges-and-"
+  - "deepseekmath-pushing-the-limits-of-mathematical-reasoning-in-open-language-model"
+  - "mitigating-hallucination-in-large-language-models-llms-an-application-oriented-s"
 ---
 
 ## 自动驾驶的“认知”革命：大模型如何攻克7大核心推理挑战？
 
-<img src="/images/2603.11093v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.11093v1/A__title.jpg" alt="自动驾驶的“认知”革命：大模型如何攻克7大核心推理挑战？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 自动驾驶汽车已经从科幻驶入现实，但为何它们在面对人类司机看来“常识性”的复杂路况时，仍会显得犹豫甚至犯错？当感知能力不再是唯一瓶颈，真正的挑战已经悄然转向一个更深层次的问题：**推理能力的缺失**。
 
-> ArXiv URL：http://arxiv.org/abs/2603.11093v1
+> ArXiv URL：https://arxiv.org/abs/2603.11093v1
 
 最近，来自华东师范大学、香港大学和清华大学的学者联合发表了一篇综述，系统性地探讨了自动驾驶领域的这一核心难题。该研究旗帜鲜明地指出，我们不应再将推理视为一个独立的模块，而应将其提升为整个自动驾驶系统的**认知核心**。更令人兴奋的是，以LLM和MLLM为代表的大模型，正为这场“认知”革命带来了前所未有的机遇。
 

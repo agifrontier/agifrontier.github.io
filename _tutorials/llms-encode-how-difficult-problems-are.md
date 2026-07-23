@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "LLMs Encode How Difficult Problems Are"
+description: "本文通过一系列实验发现，大型语言模型（LLMs）的内部激活向量中，确实以线性的方式编码了问题的难度，但这种编码与人类判断的对齐程度远高于与其它LLM性能评估的对齐程度；并且，在强化学习训练过程中，与人类判断一致的难度表征会得到加强，而与LLM性能相关的难度表征则会退化。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "behind-rope-how-does-causal-mask-encode-positional-information"
+  - "graph-of-thoughts-solving-elaborate-problems-with-large-language-models"
+  - "uncovering-scaling-laws-for-large-language-models-via-inverse-problems"
+  - "short-context-dominance-how-much-local-context-natural-language-actually-needs"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.18147v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.18147v1
 
 - **作者**: Chris Russell
 

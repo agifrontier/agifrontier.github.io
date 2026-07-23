@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Reinforcement Learning Fine-Tuning Enhances Activation Intensity and Diversity in the Internal Circuitry of LLMs"
+description: "本文通过边缘归因修补（EAP）方法分析发现，在线强化学习（RL）微调能系统性地增强大语言模型（LLM）内部回路的激活强度和模式多样性，从而提升模型能力，而直接偏好优化（DPO）则不具备此效应。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "putting-on-the-thinking-hats-a-survey-on-chain-of-thought-fine-tuning-from-the-p"
+  - "a-multiobjective-reinforcement-learning-framework-for-microgrid-energy-managemen"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "a-survey-of-reinforcement-learning-for-large-reasoning-models"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.21044v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.21044v1
 
 - **作者**: Qianyue Hao; Yong Li; Fengli Xu
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "A Survey on Parallel Reasoning"
+description: "现代大型语言模型 (Large Language Models, LLMs) 通过扩展参数和训练数据，获得了强大的基础能力。随后的研究探索了推理时扩展，如扩展思维链 (Chain-of-Thought, CoT)，显著提升了推理性能。在此基础上，本文探讨了一种正交的方法：并行推理 (Parallel Rea。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "pacore-learning-to-scale-test-time-compute-with-parallel-coordinated-reasoning"
+  - "a-survey-of-inductive-reasoning-for-large-language-models"
+  - "a-survey-of-reasoning-and-agentic-systems-in-time-series-with-large-language-mod"
+  - "a-survey-of-reasoning-in-autonomous-driving-systems-open-challenges-and-emerging"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.12164v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.12164v1
 
 - **作者**: Boye Niu; Haifeng Wang; Linghui Meng; Chen Zhu; Yilong Chen; Enhong Chen; Zhi Zheng; Jing Liu; Zhongli Li; Tong Xu; 等12人
 

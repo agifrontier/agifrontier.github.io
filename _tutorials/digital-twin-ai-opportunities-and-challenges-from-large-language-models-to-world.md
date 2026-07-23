@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Digital Twin AI: Opportunities and Challenges from Large Language Models to World Models"
+description: "数字孪生迎“智变”：大模型与世界模型驱动的4阶段进化全景。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "statistical-reinforcement-learning-in-the-real-world-a-survey-of-challenges-and-"
+  - "object-recognition-datasets-and-challenges-a-review"
+  - "swe-bench-can-language-models-resolve-real-world-github-issues"
+  - "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis"
 ---
 
 ## 数字孪生迎“智变”：大模型与世界模型驱动的4阶段进化全景
 
-<img src="/images/2601.01321v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.01321v1/A__title.jpg" alt="数字孪生迎“智变”：大模型与世界模型驱动的4阶段进化全景 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 理查德·费曼曾说过：“我无法创造的东西，我就无法理解。”
 
-> ArXiv URL：http://arxiv.org/abs/2601.01321v1
+> ArXiv URL：https://arxiv.org/abs/2601.01321v1
 
 数字孪生（Digital Twin）正是这一哲学的极致体现。从最初仅仅作为物理系统的“被动镜像”，到如今能够实时预测、甚至自主决策的“智能体”，数字孪生技术正在经历一场前所未有的蜕变。
 

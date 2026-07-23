@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "GoAgent: Group-of-Agents Communication Topology Generation for LLM-based Multi-Agent Systems"
+description: "GoAgent：让AI Agent学会“抱团”，准确率93.8%，Token成本降低17%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "agentinit-initializing-llm-based-multi-agent-systems-via-diversity-and-expertise"
+  - "matrix-peer-to-peer-multi-agent-synthetic-data-generation-framework"
+  - "unlocking-the-power-of-multi-agent-llm-for-reasoning-from-lazy-agents-to-deliber"
+  - "ai-agent-systems-architectures-applications-and-evaluation"
 ---
 
 ## GoAgent：让AI Agent学会“抱团”，准确率93.8%，Token成本降低17%
 
-<img src="/images/2603.19677v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2603.19677v1/A__title.jpg" alt="GoAgent：让AI Agent学会“抱团”，准确率93.8%，Token成本降低17% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 单个AI Agent的能力再强，也难解复杂任务。于是，**多智能体系统**（**Multi-Agent Systems, MAS**）应运而生，通过让多个Agent协作来解决问题。但一个核心挑战随之而来：如何组织这些Agent才能最高效？
 
-> ArXiv URL：http://arxiv.org/abs/2603.19677v1
+> ArXiv URL：https://arxiv.org/abs/2603.19677v1
 
 目前的多数方法都像是在一个个地拉人入伙，再逐一确定谁跟谁对话。这种“以节点为中心”的模式，往往导致协作流程混乱、沟通成本高昂。
 

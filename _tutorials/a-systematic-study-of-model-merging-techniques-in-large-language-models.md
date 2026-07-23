@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "A Systematic Study of Model Merging Techniques in Large Language Models"
+description: "大模型融合实测：6种先进方法惨败，竟不敌最简单的“加减法”？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "demystifying-synthetic-data-in-llm-pre-training-a-systematic-study-of-scaling-la"
+  - "what-makes-low-bit-quantization-aware-training-work-for-reasoning-llms-a-systema"
+  - "lora-on-the-go-instance-level-dynamic-lora-selection-and-merging"
+  - "a-systematic-survey-on-large-language-models-for-evolutionary-optimization-from-"
 ---
 
 ## 大模型融合实测：6种先进方法惨败，竟不敌最简单的“加减法”？
 
-<img src="/images/2511.21437v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.21437v1/A__title.jpg" alt="大模型融合实测：6种先进方法惨败，竟不敌最简单的“加减法”？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 想不想把多个“偏科”的AI模型融合成一个全能的“六边形战士”，还不用花钱重新训练？
 
-> ArXiv URL：http://arxiv.org/abs/2511.21437v1
+> ArXiv URL：https://arxiv.org/abs/2511.21437v1
 
 模型融合（Model Merging）技术就承诺了这样一个美好的未来。它旨在将多个针对特定任务微调过的模型检查点（checkpoints）合并成一个单一的、更强大的模型。
 

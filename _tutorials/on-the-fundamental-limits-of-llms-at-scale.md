@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "On the Fundamental Limits of LLMs at Scale"
+description: "LLM越大越强？谷歌DeepMind等雄文揭示其5大“理论天花板”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "ai-progress-should-be-measured-by-capability-per-resource-not-scale-alone-a-fram"
+  - "beyond-gemini-3-pro-revisiting-llm-routing-and-aggregation-at-scale"
+  - "loong-synthesize-long-chain-of-thoughts-at-scale-through-verifiers"
+  - "plum-adapting-pre-trained-language-models-for-industrial-scale-generative-recomm"
 ---
 
 ## LLM越大越强？谷歌DeepMind等雄文揭示其5大“理论天花板”
 
-<img src="/images/2511.12869v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.12869v1/A__title.jpg" alt="LLM越大越强？谷歌DeepMind等雄文揭示其5大“理论天花板” 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 “大力出奇迹”——这似乎已成为AI领域的黄金法则。从GPT-1的1.17亿参数到GPT-4的万亿级别，模型规模的指数级增长带来了惊人的能力涌现。我们似乎相信，只要数据够多、参数够大，一切问题都能被“暴力”解决。
 
-> ArXiv URL：http://arxiv.org/abs/2511.12869v1
+> ArXiv URL：https://arxiv.org/abs/2511.12869v1
 
 然而，一篇由谷歌DeepMind、Meta、斯坦福等多家顶尖机构联合发表的论文，为这股狂热的“规模崇拜”踩下了理论的刹车。研究指出，LLM的性能提升并非无限，而是受制于五个根本性的“理论天花板”。
 

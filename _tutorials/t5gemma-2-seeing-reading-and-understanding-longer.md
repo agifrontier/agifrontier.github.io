@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "T5Gemma 2: Seeing, Reading, and Understanding Longer"
+description: "Google DeepMind重磅发布T5Gemma 2：让Encoder-Decoder架构在长文本与多模态中强势回归。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "read-as-human-compressing-context-via-parallelizable-close-reading-and-skimming"
+  - "a-survey-of-weight-space-learning-understanding-representation-and-generation"
+  - "the-two-stage-decision-sampling-hypothesis-understanding-the-emergence-of-self-r"
+  - "understanding-robustness-of-model-editing-in-code-llms-an-empirical-study"
 ---
 
 ## Google DeepMind重磅发布T5Gemma 2：让Encoder-Decoder架构在长文本与多模态中强势回归
 
-<img src="/images/2512.14856v1/A__title.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.14856v1/A__title.jpg" alt="Google DeepMind重磅发布T5Gemma 2：让Encoder-Decoder架构在长文本与多模态中强势回归 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 在Decoder-only架构（如GPT、Llama）几乎统治大语言模型江山的今天，你是否想过：经典的Encoder-Decoder架构真的过气了吗？
 
-> ArXiv URL：http://arxiv.org/abs/2512.14856v1
+> ArXiv URL：https://arxiv.org/abs/2512.14856v1
 
 Google DeepMind给出的答案是：**绝对没有**。
 

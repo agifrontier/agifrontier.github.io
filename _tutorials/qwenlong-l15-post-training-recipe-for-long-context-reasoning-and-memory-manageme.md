@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "QwenLong-L1.5: Post-Training Recipe for Long-Context Reasoning and Memory Management"
+description: "QwenLong-L1.5：挑战GPT-5，揭秘400万字长文本推理的“后训练”秘籍。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "推理与强化学习"
+related_tutorials:
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+  - "comet-collaborative-memory-transformer-for-efficient-long-context-modeling"
+  - "rmaat-astrocyte-inspired-memory-compression-and-replay-for-efficient-long-contex"
+  - "every-attention-matters-an-efficient-hybrid-architecture-for-long-context-reason"
 ---
 
 ## QwenLong-L1.5：挑战GPT-5，揭秘400万字长文本推理的“后训练”秘籍
 
-<img src="/images/2512.12967v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.12967v1/A__title.jpg" alt="QwenLong-L1.5：挑战GPT-5，揭秘400万字长文本推理的“后训练”秘籍 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 长文本模型仅仅意味着“读得更多”吗？
 
-> ArXiv URL：http://arxiv.org/abs/2512.12967v1
+> ArXiv URL：https://arxiv.org/abs/2512.12967v1
 
 在当今的大模型竞赛中，将上下文窗口扩展到百万级Token已非难事，但真正的瓶颈在于：当模型面对海量信息时，能否不仅仅是进行简单的“大海捞针”式检索，而是像人类专家一样，跨越数万字甚至数百万字的跨度，进行复杂的逻辑推理和多跳论证？
 

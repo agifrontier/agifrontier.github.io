@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Model Compression using Progressive Channel Pruning"
+description: "本文提出了一种名为渐进式通道剪枝 (Progressive Channel Pruning, PCP) 的迭代式剪枝框架，该框架通过在每次迭代中执行“尝试-选择-剪枝”三步流水线，从多个最优选择的层中逐步移除少量通道，从而自动确定压缩后网络的最优结构，并成功将其应用于监督学习和迁移学习场景。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "sentence-anchored-gist-compression-for-long-context-llms"
+  - "think-right-learning-to-mitigate-under-over-thinking-via-adaptive-attentive-comp"
+  - "compress-to-impress-efficient-llm-adaptation-using-a-single-gradient-step-on-100"
+  - "towards-unbiased-calibration-using-meta-regularization"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2507.04792v1
+- **ArXiv URL**: https://arxiv.org/abs/2507.04792v1
 
 - **作者**: Wanli Ouyang; Jinyang Guo; Dong Xu; Weichen Zhang
 
@@ -48,7 +56,7 @@ PCP的核心思想是通过一个迭代式的“尝试-选择-剪枝”三步流
 
 3.  **剪枝 (Pruning) 步骤**: 仅对 $\mathbf{S}\_{t}$ 中的层进行永久性剪枝。系统会按照从浅到深的顺序，依次对每个选中的层求解 LASSO 问题以确定最终剪枝的通道，并用最小二乘法更新权重。这种顺序更新使得深层网络可以适应浅层剪枝带来的输入特征变化。未被选中的层在此次迭代中保持不变。
 
-<img src="/images/2507.04792v1/x2.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2507.04792v1/x2.jpg" alt="创新点 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 该迭代过程（如算法1所示）不断重复，模型被逐步压缩。每轮迭代结束后的模型都可以被保存下来，从而自然地获得一系列不同压缩率的压缩模型，适用于可伸缩应用。
 
@@ -57,7 +65,7 @@ PCP的核心思想是通过一个迭代式的“尝试-选择-剪枝”三步流
 *   **剪枝残差块的第一个卷积层**: 为避免破坏残差连接的加法操作（要求特征图维度一致），本文引入一个“通道采样器”（channel sampler）来对输入特征图进行降维，而不是直接修改输入。
 *   **剪枝残差块的最后一个卷积层**: 为了补偿因剪枝累积的误差，优化目标被修改，以同时考虑主分支和捷径分支的输出，减少误差累积。
 
-<img src="/images/2507.04792v1/x1.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2507.04792v1/x1.jpg" alt="对残差结构的处理 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在整个剪枝流程结束后，最终得到的压缩模型会通过在所有训练数据上进行标准的**微调 (Fine-tuning)** 来恢复性能。
 

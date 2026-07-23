@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "You Need Better Attention Priors"
+description: "斯坦福GOAT：重构注意力底层数学，显存降36%，长文本性能全面超越RoPE。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "all-you-need-is-one-capsule-prompt-tuning-with-a-single-vector"
+  - "camformer-associative-memory-is-all-you-need"
+  - "increasing-the-thinking-budget-is-not-all-you-need"
+  - "llm-router-prefill-is-all-you-need"
 ---
 
 ## 斯坦福GOAT：重构注意力底层数学，显存降36%，长文本性能全面超越RoPE
 
-<img src="/images/2601.15380v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.15380v1/A__title.jpg" alt="斯坦福GOAT：重构注意力底层数学，显存降36%，长文本性能全面超越RoPE 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 Transformer 架构统治 AI 领域已久，但你是否想过，其核心组件——缩放点积注意力（Scaled Dot-Product Attention），可能建立在一个“天真”的假设之上？
 
-> ArXiv URL：http://arxiv.org/abs/2601.15380v1
+> ArXiv URL：https://arxiv.org/abs/2601.15380v1
 
 长期以来，我们将 Softmax 视为一种平滑的 Argmax 近似，将点积视为相似度度量。然而，斯坦福大学的一项最新研究指出，这种直觉式的理解掩盖了数学本质。该研究通过**熵最优传输**（**Entropic Optimal Transport, EOT**）的视角重新审视注意力机制，揭示了一个惊人的事实：标准的注意力机制其实隐含了一个“均匀分布先验”。换句话说，模型默认假设所有 Token 在初始状态下是等价的，这限制了模型的表达能力和长文本外推能力。
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "BroRL: Scaling Reinforcement Learning via Broadened Exploration"
+description: "本文提出了一种名为 BroRL 的强化学习扩展范式，它通过显著增加每个样本的探索次数 (rollouts) 来拓宽探索范围，从而有效克服了传统按训练步数扩展方法遭遇的性能瓶颈，实现了持续且高效的模型性能提升。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "efficient-reinforcement-learning-for-large-language-models-with-intrinsic-explor"
+  - "kimi-k15-scaling-reinforcement-learning-with-llms"
+  - "scaling-reinforcement-learning-for-content-moderation-with-large-language-models"
+  - "the-art-of-scaling-reinforcement-learning-compute-for-llms"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.01180v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.01180v1
 
 - **作者**: Fang Wu; Jian Hu; Jan Kautz; Ximing Lu; Pavlo Molchanov; Yejin Choi; Zaid Harchaoui; Yi Dong; Mingjie Liu; Shizhe Diao; 等11人
 

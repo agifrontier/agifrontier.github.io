@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "StarCoder: may the source be with you!"
+description: "本文发布了StarCoder，一个拥有155亿参数、支持8K上下文长度和代码填充能力的开源代码大语言模型；该模型在经过精心筛选和隐私信息处理的 permissively licensed 代码数据集上进行训练，其性能超越了所有现存的多语言开源代码模型，并达到了与闭源模型相当的水平。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "all-you-need-is-one-capsule-prompt-tuning-with-a-single-vector"
+  - "increasing-the-thinking-budget-is-not-all-you-need"
+  - "llm-router-prefill-is-all-you-need"
+  - "dapo-an-open-source-llm-reinforcement-learning-system-at-scale"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2305.06161v2
+- **ArXiv URL**: https://arxiv.org/abs/2305.06161v2
 
 - **作者**: Swayam Singh; Olivier Dehaene; Qian Liu; Thomas Wolf; Manuel Romero; Daniel Fried; M. Kunakov; Terry Yue Zhuo; N. Fahmy; L. V. Werra; 等57人
 

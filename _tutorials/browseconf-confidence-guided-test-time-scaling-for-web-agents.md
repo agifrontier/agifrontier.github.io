@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "BrowseConf: Confidence-Guided Test-Time Scaling for Web Agents"
+description: "本文提出了一种名为 BrowseConf 的测试时扩展 (Test-Time Scaling, TTS) 方法，它通过利用大语言模型智能体对其回答的“口头表述置信度” (Verbalized Confidence)，来动态决定是否需要进行额外的计算尝试，从而在保证任务性能的同时，显著提升了网络信息获取任务的。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "learning-when-to-plan-efficiently-allocating-test-time-compute-for-llm-agents"
+  - "s1-simple-test-time-scaling"
+  - "scaling-llm-test-time-compute-optimally-can-be-more-effective-than-scaling-model"
+  - "scaling-test-time-compute-to-achieve-ioi-gold-medal-with-open-weight-models"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.23458v2
+- **ArXiv URL**: https://arxiv.org/abs/2510.23458v2
 
 - **作者**: Yong Jiang; Pengjun Xie; Xixi Wu; Litu Ou; Rui Ye; Huifeng Yin; Jingren Zhou; Kuan Li; Zhongwang Zhang; Zile Qiao; 等11人
 

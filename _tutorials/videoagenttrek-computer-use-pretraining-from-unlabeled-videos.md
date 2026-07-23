@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "VideoAgentTrek: Computer Use Pretraining from Unlabeled Videos"
+description: "本文提出了一种名为 VideoAgentTrek 的可扩展方法，通过一个逆动力学模块（VADM）从未经标注的公开屏幕录制视频中自动挖掘出结构化的训练数据，从而解决了训练计算机使用智能体（Agent）时对大规模手动标注数据的依赖问题。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "coda-coordinating-the-cerebrum-and-cerebellum-for-a-dual-brain-computer-use-agen"
+  - "gui-360-a-comprehensive-dataset-and-benchmark-for-computer-using-agents"
+  - "budget-aware-tool-use-enables-effective-agent-scaling"
+  - "process-supervised-reinforcement-learning-for-interactive-multimodal-tool-use-ag"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.19488v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.19488v1
 
 - **作者**: Hongjin Su; Zekun Wang; Tao Yu; Binyuan Hui; Xinyuan Wang; Haoyuan Wu; Junda Chen; Jingren Zhou; Junli Wang; Jixuan Chen; 等14人
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Scaling Reinforcement Learning for Content Moderation with Large Language Models"
+description: "数据效率暴涨100倍！Meta AI揭秘强化学习在内容审核中的Scaling Law。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "brorl-scaling-reinforcement-learning-via-broadened-exploration"
+  - "kimi-k15-scaling-reinforcement-learning-with-llms"
+  - "the-art-of-scaling-reinforcement-learning-compute-for-llms"
+  - "a-multiobjective-reinforcement-learning-framework-for-microgrid-energy-managemen"
 ---
 
 ## 数据效率暴涨100倍！Meta AI揭秘强化学习在内容审核中的Scaling Law
 
-<img src="/images/2512.20061v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.20061v1/A__title.jpg" alt="数据效率暴涨100倍！Meta AI揭秘强化学习在内容审核中的Scaling Law 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在当今的数字生态系统中，内容审核（Content Moderation）就像是一场永无止境的猫鼠游戏。面对数十亿条用户生成和AI生成的推文、图片和视频，传统的审核系统往往力不从心。虽然大语言模型（LLM）展现出了惊人的潜力，但要让它们达到“专家级”的审核水平，通常需要极其昂贵且耗时的人工标注数据。
 
-> ArXiv URL：http://arxiv.org/abs/2512.20061v1
+> ArXiv URL：https://arxiv.org/abs/2512.20061v1
 
 **如果告诉你，只要几百个样本，就能训练出比肩数万样本微调模型的审核AI，你敢相信吗？**
 

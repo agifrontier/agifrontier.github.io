@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "MiMo-V2-Flash Technical Report"
+description: "仅15B激活参数硬刚DeepSeek！MiMo-V2-Flash揭秘：混合注意力与多教师蒸馏的极致效率。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "deepseek-v3-technical-report"
+  - "gpt-4-technical-report"
+  - "hunyuanvideo-15-technical-report"
+  - "kling-omni-technical-report"
 ---
 
 ## 仅15B激活参数硬刚DeepSeek！MiMo-V2-Flash揭秘：混合注意力与多教师蒸馏的极致效率
 
-<img src="/images/2601.02780v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.02780v1/A__title.jpg" alt="仅15B激活参数硬刚DeepSeek！MiMo-V2-Flash揭秘：混合注意力与多教师蒸馏的极致效率 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在通往AGI的赛道上，推理能力（Reasoning）和智能体（Agent）工作流已成为两大核心驱动力。然而，构建能够处理超长上下文、同时保持极快响应速度的模型，始终是一个巨大的挑战。通常情况下，高性能意味着巨大的参数量和昂贵的推理成本。
 
-> ArXiv URL：http://arxiv.org/abs/2601.02780v1
+> ArXiv URL：https://arxiv.org/abs/2601.02780v1
 
 **MiMo-V2-Flash** 的出现打破了这一僵局。这款由小米团队推出的新模型，虽然拥有309B的总参数量，但每次推理仅激活 **15B参数**。更令人惊讶的是，它在推理和智能体能力上竟能与DeepSeek-V3.2和Kimi-K2等顶级开源模型分庭抗礼，而参数量仅为它们的1/2甚至1/3。本文将深入剖析其背后的三大技术杀手锏：混合注意力机制、多Token预测以及创新的多教师蒸馏范式。
 

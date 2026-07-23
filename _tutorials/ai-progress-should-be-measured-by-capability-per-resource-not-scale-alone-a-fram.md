@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "AI Progress Should Be Measured by Capability-Per-Resource, Not Scale Alone: A Framework for Gradient-Guided Resource Allocation in LLMs"
+description: "本文主张用“单位资源能力”而非单纯的规模来衡量AI进展，并提出了一个基于梯度指导资源分配的理论框架，通过识别和优先利用高影响力的参数和数据，来显著提升大语言模型（LLM）生命周期中的效率。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "agentfrontier-expanding-the-capability-frontier-of-llm-agents-with-zpd-guided-da"
+  - "allocation-of-parameters-in-transformers"
+  - "on-the-origin-of-algorithmic-progress-in-ai"
+  - "intelligence-per-watt-measuring-intelligence-efficiency-of-local-ai"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2511.01077v1
+- **ArXiv URL**: https://arxiv.org/abs/2511.01077v1
 
 - **作者**: Yulun Wu; David McCoy
 

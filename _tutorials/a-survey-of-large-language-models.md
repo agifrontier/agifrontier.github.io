@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "A Survey of Large Language Models"
+description: "A Survey of Large Language Models。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "a-survey-of-ai-scientists-surveying-the-automatic-scientists-and-research"
+  - "a-survey-of-vibe-coding-with-large-language-models"
+  - "a-survey-of-weight-space-learning-understanding-representation-and-generation"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2303.18223v16
+- **ArXiv URL**: https://arxiv.org/abs/2303.18223v16
 
 - **作者**: Ji-rong Wen; Yifan Li; Z. Chen; J. Nie; Xiaolei Wang; Wayne Xin Zhao; Beichen Zhang; Xinyu Tang; Zican Dong; Kun Zhou; 等12人
 

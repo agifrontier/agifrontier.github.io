@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "Trainable Log-linear Sparse Attention for Efficient Diffusion Transformers"
+description: "LLSA：让Diffusion Transformer提速28倍的“对数级”稀疏注意力机制。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "多模态与视觉"
+  - "模型训练与优化"
+related_tutorials:
+  - "kimi-linear-an-expressive-efficient-attention-architecture"
+  - "spotlight-attention-towards-efficient-llm-generation-via-non-linear-hashing-base"
+  - "vision-transformers-are-circulant-attention-learners"
+  - "inpainting-guided-policy-optimization-for-diffusion-large-language-models"
 ---
 
 ## LLSA：让Diffusion Transformer提速28倍的“对数级”稀疏注意力机制
 
-<img src="/images/2512.16615v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.16615v1/A__title.jpg" alt="LLSA：让Diffusion Transformer提速28倍的“对数级”稀疏注意力机制 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 你是否曾被Diffusion Transformer（DiT）那令人惊叹的高清图像生成能力所折服？从Sora到FLUX，这些模型正在重塑视觉生成的边界。
 
-> ArXiv URL：http://arxiv.org/abs/2512.16615v1
+> ArXiv URL：https://arxiv.org/abs/2512.16615v1
 
 但在这光鲜亮丽的背后，隐藏着一个巨大的痛点：**随着图像分辨率的提升，计算成本呈爆炸式增长。**
 

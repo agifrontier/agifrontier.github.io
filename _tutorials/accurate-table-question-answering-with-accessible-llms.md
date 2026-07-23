@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Accurate Table Question Answering with Accessible LLMs"
+description: "Qwen-14B逼近GPT-4！Orchestra多智能体架构让开源模型制霸表格问答。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "retrieval-reasoning-processes-for-multi-hop-question-answering-a-four-axis-desig"
+  - "mixture-of-minds-multi-agent-reinforcement-learning-for-table-understanding"
+  - "rest-rl-achieving-accurate-code-reasoning-of-llms-with-optimized-self-training-a"
+  - "every-question-has-its-own-value-reinforcement-learning-with-explicit-human-valu"
 ---
 
 ## Qwen-14B逼近GPT-4！Orchestra多智能体架构让开源模型制霸表格问答
 
-<img src="/images/2601.03137v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.03137v1/A__title.jpg" alt="Qwen-14B逼近GPT-4！Orchestra多智能体架构让开源模型制霸表格问答 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 表格问答（Table Question Answering, TQA）一直是企业级AI应用中的“硬骨头”。虽然GPT-4等闭源巨型模型在这一领域表现出色，但昂贵的API成本和数据隐私隐患让许多中小企业望而却步。当我们试图转向更轻量级的开源模型（如Llama-7B或Qwen-14B）时，往往会发现效果惨不忍睹——模型经常因为上下文过长或指令太复杂而“大脑宕机”。
 
-> ArXiv URL：http://arxiv.org/abs/2601.03137v1
+> ArXiv URL：https://arxiv.org/abs/2601.03137v1
 
 难道低成本和高性能真的不可兼得吗？
 

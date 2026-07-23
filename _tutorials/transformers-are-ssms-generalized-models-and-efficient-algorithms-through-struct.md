@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality"
+description: "本文通过揭示结构化状态空间模型 (SSM) 与注意力机制在结构化半可分矩阵 (semiseparable matrices) 理论下的对偶关系，提出了一个名为“状态空间对偶 (State Space Duality, SSD)”的统一框架，并基于此设计了一种新的、更高效的语言模型架构 Mamba-2。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "vision-mamba-efficient-visual-representation-learning-with-bidirectional-state-s"
+  - "structured-hints-for-sample-efficient-lean-theorem-proving"
+  - "improving-online-algorithms-via-ml-predictions"
+  - "mesh-memory-as-state-highways-for-recursive-transformers"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2405.21060v1
+- **ArXiv URL**: https://arxiv.org/abs/2405.21060v1
 
 - **作者**: Tri Dao; Albert Gu
 

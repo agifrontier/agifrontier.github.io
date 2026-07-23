@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Relative-Based Scaling Law for Neural Language Models"
+description: "本文提出了一种基于相对排序的新指标——相对概率（RBP），并据此建立了相对标度律（Relative-Based Scaling Law），该定律揭示了模型将正确答案排在靠前位置的能力如何随模型规模的增大而遵循幂律提升，为理解大语言模型提供了补充交叉熵的全新视角。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "relative-scaling-laws-for-llms"
+  - "fourier-neural-operators-explained-a-practical-perspective"
+  - "who-said-neural-networks-arent-linear"
+  - "geometric-and-dynamic-scaling-in-deep-transformers"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.20387v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.20387v1
 
 - **作者**: Zixi Wei; Yiqun Liu; Jinyuan Zhou; Qingyao Ai; Baoqing Yue; Jingtao Zhan
 

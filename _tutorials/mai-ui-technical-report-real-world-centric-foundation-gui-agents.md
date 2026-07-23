@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "MAI-UI Technical Report: Real-World Centric Foundation GUI Agents"
+description: "超越Gemini！阿里MAI-UI发布：全尺寸GUI Agent与端云协同新范式。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "ui-tars-2-technical-report-advancing-gui-agent-with-multi-turn-reinforcement-lea"
+  - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
+  - "step-gui-technical-report"
+  - "toucan-synthesizing-15m-tool-agentic-data-from-real-world-mcp-environments"
 ---
 
 ## 超越Gemini！阿里MAI-UI发布：全尺寸GUI Agent与端云协同新范式
 
-<img src="/images/2512.22047v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.22047v1/A__title.jpg" alt="超越Gemini！阿里MAI-UI发布：全尺寸GUI Agent与端云协同新范式 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 我们距离真正的“贾维斯”还有多远？
 
-> ArXiv URL：http://arxiv.org/abs/2512.22047v1
+> ArXiv URL：https://arxiv.org/abs/2512.22047v1
 
 尽管GUI Agent（图形用户界面智能体）被视为下一代人机交互的革命性技术，但现实往往是骨感的：它们要么在复杂的动态网页中迷路，要么在面对模糊指令时不知所措，更别提在手机端运行时那令人担忧的隐私和延迟问题了。
 

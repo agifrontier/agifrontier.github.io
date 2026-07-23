@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Hybrid Architectures for Language Models: Systematic Analysis and Design Insights"
+description: "本文系统性地分析和评估了语言模型的混合架构（层间与层内），发现层内混合策略在模型质量与计算效率之间取得了最佳的帕累托前沿 (Pareto-frontier)。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "rethinking-retrieval-augmented-generation-for-medicine-a-large-scale-systematic-"
+  - "autoregressive-language-models-are-secretly-energy-based-models-insights-into-th"
+  - "nested-learning-the-illusion-of-deep-learning-architectures"
+  - "do-depth-grown-models-overcome-the-curse-of-depth-an-in-depth-analysis"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.04800v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.04800v1
 
 - **作者**: Junjie Wang; Chien-Yu Lin; Carole-Jean Wu; Haroun Habeeb; Seungyeon Kim; Bilge Acun; Sangmin Bae; Liang Luo
 

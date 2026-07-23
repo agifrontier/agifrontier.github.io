@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "Beyond Patch Aggregation: 3-Pass Pyramid Indexing for Vision-Enhanced Document Retrieval"
+description: "RAG新革命：VisionRAG告别OCR，每页17个向量实现SOTA文档检索。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "多模态与视觉"
+  - "RAG与知识系统"
+related_tutorials:
+  - "scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-generation-for"
+  - "mom-mixtures-of-scenario-aware-document-memories-for-retrieval-augmented-generat"
+  - "beyond-gemini-3-pro-revisiting-llm-routing-and-aggregation-at-scale"
+  - "qerl-beyond-efficiency-quantization-enhanced-reinforcement-learning-for-llms"
 ---
 
 ## RAG新革命：VisionRAG告别OCR，每页17个向量实现SOTA文档检索
 
-<img src="/images/2511.21121v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.21121v1/A__title.jpg" alt="RAG新革命：VisionRAG告别OCR，每页17个向量实现SOTA文档检索 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 还在为RAG系统处理PDF、财报时丢失表格和布局信息而头疼吗？传统的**光学字符识别**（**Optical Character Recognition, OCR**）方法会把复杂的文档“拍平”成纯文本，丢失关键的视觉结构。而新兴的视觉检索模型（如ColPali）虽然强大，但每页动辄上千个向量的存储和计算开销，让大规模部署成为奢望。
 
-> ArXiv URL：http://arxiv.org/abs/2511.21121v1
+> ArXiv URL：https://arxiv.org/abs/2511.21121v1
 
 现在，来自Inception AI的研究者们提出了一个两全其美的方案：**VisionRAG**。它完全抛弃了OCR，直接将文档页面当做图像处理，每页仅需存储17-27个向量，便在金融文档检索任务上取得了顶尖性能。这究竟是如何做到的？
 

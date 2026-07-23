@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Introduction to Machine Learning"
+description: "本文是一部综合性的教科书或讲义，旨在介绍机器学习领域的数学基础和核心技术。其内容组织体现了对该领域的系统性分类。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "reinforcement-learning-for-machine-learning-engineering-agents"
+  - "a-general-theoretical-paradigm-to-understand-learning-from-human-preferences"
+  - "a-survey-of-weight-space-learning-understanding-representation-and-generation"
+  - "an-augmentation-overlap-theory-of-contrastive-learning"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2409.02668v2
+- **ArXiv URL**: https://arxiv.org/abs/2409.02668v2
 
 - **作者**: Ethem Alpaydin
 

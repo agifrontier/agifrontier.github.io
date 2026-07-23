@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "The Llama 3 Herd of Models"
+description: "本文介绍了 Llama 3 模型家族，其中旗舰模型是一个拥有 405B 参数的密集型 Transformer，通过在 15T 多语言 token 上进行大规模预训练，并采用稳定可扩展的架构和训练方法，使其在多项基准测试中达到了与 GPT-4 等顶级模型相当的性能水平。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "llama-2-open-foundation-and-fine-tuned-chat-models"
+  - "llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations"
+  - "llama-adapter-efficient-fine-tuning-of-language-models-with-zero-init-attention"
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2407.21783v3
+- **ArXiv URL**: https://arxiv.org/abs/2407.21783v3
 
 - **作者**: Natascha Parks; Corinne Wong; Brian Gamido; Jeff Marcus; Bo Wu; Filip Radenovic; Sa-hana Chennabasappa; Feng Tian; Raghu Nayani; Aur'elien Rodriguez; 等489人
 

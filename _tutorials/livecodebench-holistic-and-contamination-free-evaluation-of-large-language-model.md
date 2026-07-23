@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code"
+description: "本文提出了 LiveCodeBench，一个通过持续从编程竞赛平台收集新问题来避免数据污染，并从代码生成、自我修复、代码执行、测试输出预测等多个维度来全面评估大型语言模型（LLM）代码能力的动态基准。"
+topics:
+  - "AI安全与评测"
+related_tutorials:
+  - "is-your-code-generated-by-chatgpt-really-correct-rigorous-evaluation-of-large-la"
+  - "creativityprism-a-holistic-benchmark-for-large-language-model-creativity"
+  - "citation-grounded-code-comprehension-preventing-llm-hallucination-through-hybrid"
+  - "a-survey-on-evaluation-of-large-language-models"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2403.07974v2
+- **ArXiv URL**: https://arxiv.org/abs/2403.07974v2
 
 - **作者**: Wen-Ding Li; Ion Stoica; King Han; Fanjia Yan; Armando Solar-Lezama; Sida Wang; Tianjun Zhang; Naman Jain; Alex Gu; Koushik Sen
 

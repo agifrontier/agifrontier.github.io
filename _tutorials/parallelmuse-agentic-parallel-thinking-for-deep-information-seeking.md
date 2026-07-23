@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "ParallelMuse: Agentic Parallel Thinking for Deep Information Seeking"
+description: "本文提出了一种名为 ParallelMuse 的两阶段智能体并行思维框架，通过“功能指定的局部展开”策略和“压缩推理聚合”方法，在提升深度信息寻求 (deep information-seeking) 任务效果的同时，显著降低了探索所需的Token成本。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "deepwidesearch-benchmarking-depth-and-width-in-agentic-information-seeking"
+  - "an-information-theoretic-perspective-on-agentic-system-design"
+  - "general-agentic-memory-via-deep-research"
+  - "thinker-training-llms-in-hierarchical-thinking-for-deep-search-via-multi-turn-in"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.24698v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.24698v1
 
 - **作者**: Zhengwei Tao; Yong Jiang; Pengjun Xie; Runnan Fang; Jingren Zhou; Haiyang Shen; Jialong Wu; Yida Zhao; Baixuan Li; Wenbiao Yin; 等11人
 

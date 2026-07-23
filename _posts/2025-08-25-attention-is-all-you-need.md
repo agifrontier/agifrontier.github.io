@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: post
 title: Attention Is All You Need
+description: Transformer 论文深度解读：梳理自注意力、多头注意力与位置编码的核心方法，并总结其训练效率、机器翻译实验结果和对大模型架构的长期影响。
 ---
 
 ## TL;DR

@@ -1,16 +1,24 @@
 ---
 layout: default
 title: "Cognitive Foundations for Reasoning and Their Manifestation in LLMs"
+description: "哈佛解剖LLM大脑：揭示其“浅层思维”缺陷，认知引导让性能飙升60%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "cogmem-a-cognitive-memory-architecture-for-sustained-multi-turn-reasoning-in-lar"
+  - "how-and-why-llms-generalize-a-fine-grained-analysis-of-llm-reasoning-from-cognit"
+  - "understanding-and-steering-the-cognitive-behaviors-of-reasoning-models-at-test-t"
+  - "a-multitask-multilingual-multimodal-evaluation-of-chatgpt-on-reasoning-hallucina"
 ---
 
 ## 哈佛解剖LLM大脑：揭示其“浅层思维”缺陷，认知引导让性能飙升60%
 
-<img src="/images/2511.16660v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.16660v1/A__title.jpg" alt="哈佛解剖LLM大脑：揭示其“浅层思维”缺陷，认知引导让性能飙升60% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大语言模型（LLM）时常展现出一种令人费解的“认知失调”：它们能解决极其复杂的问题，却在一些看似更简单的变体上栽跟头。这是否意味着，LLM的“推理”与人类真正的思考过程，有着本质的不同？
 
 > **论文标题**：Cognitive Foundations for Reasoning and Their Manifestation in LLMs
-> **ArXiv URL**：http://arxiv.org/abs/2511.16660v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.16660v1
 
 来自哈佛大学、普林斯顿大学等顶尖机构的一项最新研究，首次系统地回答了这个问题。研究者们不再仅仅关注答案的对错，而是深入“解剖”了模型思考的每一步。
 

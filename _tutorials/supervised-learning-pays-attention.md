@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Supervised learning pays attention"
+description: "性能媲美XGBoost，解释性堪比Lasso：斯坦福新作“注意力Lasso”详解。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "learning-to-focus-focal-attention-for-selective-and-scalable-transformers"
+  - "process-supervised-reinforcement-learning-for-interactive-multimodal-tool-use-ag"
+  - "ssl4rl-revisiting-self-supervised-learning-as-intrinsic-reward-for-visual-langua"
+  - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
 ---
 
 ## 性能媲美XGBoost，解释性堪比Lasso：斯坦福新作“注意力Lasso”详解
 
-<img src="/images/2512.09912v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.09912v1/A__title.jpg" alt="性能媲美XGBoost，解释性堪比Lasso：斯坦福新作“注意力Lasso”详解 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在机器学习领域，我们长期面临一个两难的选择：是选择像 **Lasso** 这样简单、透明但往往欠拟合的线性模型，还是选择像 **XGBoost** 或神经网络这样性能强大但如同“黑盒”般的复杂模型？
 
-> ArXiv URL：http://arxiv.org/abs/2512.09912v1
+> ArXiv URL：https://arxiv.org/abs/2512.09912v1
 
 如果我告诉你，我们可以鱼与熊掌兼得呢？
 

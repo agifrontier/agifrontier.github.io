@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Imbalanced Gradients in RL Post-Training of Multi-Task LLMs"
+description: "本文通过实验证明，在大型语言模型 (LLM) 的多任务强化学习 (RL) 后训练中，不同任务会产生幅度差异悬殊的梯度，并且大梯度并不意味着大的学习增益，这种梯度不平衡现象会导致优化过程偏向特定任务，从而损害整体性能。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
+  - "better-world-models-can-lead-to-better-post-training-performance"
+  - "how-does-rl-post-training-induce-skill-composition-a-case-study-on-countdown"
+  - "quagmires-in-sft-rl-post-training-when-high-sft-scores-mislead-and-what-to-use-i"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.19178v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.19178v1
 
 - **作者**: Jeongyeol Kwon; Ankur Samanta; Scott Fujimoto; Kaveh Hassani; Yonathan Efroni; Ben Kretzu; Ayush Jain; Runzhe Wu
 

@@ -1,13 +1,21 @@
 ---
 layout: default
 title: "Large language models and the entropy of English"
+description: "挑战香农极限：LLM揭示10^4字符长程依赖与“涌现确定性”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "exploration-vs-exploitation-rethinking-rlvr-through-clipping-entropy-and-spuriou"
+  - "harnessing-uncertainty-entropy-modulated-policy-gradients-for-long-horizon-llm-a"
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "a-concise-review-of-hallucinations-in-llms-and-their-mitigation"
 ---
 
 ## 挑战香农极限：LLM揭示10^4字符长程依赖与“涌现确定性”
 
 早在1951年，信息论之父克劳德·香农（Claude Shannon）曾通过一个著名的“猜字游戏”来估算英语的熵：给定前 $N$ 个字母，人类受试者能多准确地猜出下一个字母？香农当时推测，随着上下文长度 $N$ 的增加，每个字符的条件熵会在 $N \approx 100$ 时趋于一个平稳的常数（Plateau）。
 
-> ArXiv URL：http://arxiv.org/abs/2512.24969v1
+> ArXiv URL：https://arxiv.org/abs/2512.24969v1
 
 但如果这个“猜谜者”不是人类，而是阅读过海量文本的**大语言模型**（**Large Language Models, LLMs**）呢？如果上下文长度不是100，而是10,000甚至更多呢？
 

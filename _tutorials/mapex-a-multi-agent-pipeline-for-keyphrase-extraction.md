@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "MAPEX: A Multi-Agent Pipeline for Keyphrase Extraction"
+description: "本文提出了MAPEX，一个用于关键词提取的多智能体协作框架，它通过为不同长度的文档设计动态的双路径策略（知识驱动与主题引导），显著提升了大型语言模型（LLM）在零样本场景下的关键词提取性能。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "a-multi-agent-framework-for-stateful-inference-time-search"
+  - "agentinit-initializing-llm-based-multi-agent-systems-via-diversity-and-expertise"
+  - "datasage-multi-agent-collaboration-for-insight-discovery-with-external-knowledge"
+  - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.18813v2
+- **ArXiv URL**: https://arxiv.org/abs/2509.18813v2
 
 - **作者**: Qicheng Li; Shiwan Zhao; Aobo Kong
 

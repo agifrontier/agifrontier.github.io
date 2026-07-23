@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Learning on the Job: An Experience-Driven Self-Evolving Agent for Long-Horizon Tasks"
+description: "本文提出了MUSE，一个经验驱动的自进化智能体 (Agent) 框架，通过一个分层的记忆模块和“计划-执行-反思-记忆”的闭环系统，使智能体能够在执行长时程任务中持续学习、积累经验并实现自我进化。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "evoroute-experience-driven-self-routing-llm-agent-systems"
+  - "a-subgoal-driven-framework-for-improving-long-horizon-llm-agents"
+  - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"
+  - "alita-g-self-evolving-generative-agent-for-agent-generation"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.08002v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.08002v1
 
 - **作者**: Daocheng Fu; Pinlong Cai; Licheng Wen; Haifeng Li; Yufan Shen; Xuemeng Yang; Yu Qiao; Jianbiao Mei; Rong Wu; Cheng Yang; 等12人
 

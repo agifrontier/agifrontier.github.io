@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "When Less is More: 8-bit Quantization Improves Continual Learning in Large Language Models"
+description: "少即是多？8-bit量化竟让大模型持续学习能力暴涨15%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "what-makes-low-bit-quantization-aware-training-work-for-reasoning-llms-a-systema"
+  - "less-is-more-tokens-efficient-math-reasoning-via-difficulty-aware-chain-of-thoug"
+  - "continual-learning-via-sparse-memory-finetuning"
+  - "qerl-beyond-efficiency-quantization-enhanced-reinforcement-learning-for-llms"
 ---
 
 ## 少即是多？8-bit量化竟让大模型持续学习能力暴涨15%
 
-<img src="/images/2512.18934v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.18934v1/A__title.jpg" alt="少即是多？8-bit量化竟让大模型持续学习能力暴涨15% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在人工智能领域，我们通常认为“精度即正义”：模型参数的精度越高（如FP16），性能就越好；而量化（Quantization）通常被视为一种为了节省计算资源而不得不做出的妥协，往往伴随着性能的损失。
 
-> ArXiv URL：http://arxiv.org/abs/2512.18934v1
+> ArXiv URL：https://arxiv.org/abs/2512.18934v1
 
 但如果我告诉你，在**持续学习**（Continual Learning）的场景下，这个常识被彻底颠覆了呢？
 

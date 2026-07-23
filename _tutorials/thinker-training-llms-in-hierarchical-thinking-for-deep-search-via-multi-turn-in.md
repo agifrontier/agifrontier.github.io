@@ -1,17 +1,26 @@
 ---
 layout: default
 title: "Thinker: Training LLMs in Hierarchical Thinking for Deep Search via Multi-Turn Interaction"
+description: "只需数百样本，性能反超SOTA！蚂蚁Thinker教LLM如何“分层思考”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+  - "行业应用"
+related_tutorials:
+  - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
+  - "beyond-turn-limits-training-deep-search-agents-with-dynamic-context-window"
+  - "scaling-up-multi-turn-off-policy-rl-and-multi-agent-tree-search-for-llm-step-pro"
+  - "skyrl-agent-efficient-rl-training-for-multi-turn-llm-agent"
 ---
 
 ## 只需数百样本，性能反超SOTA！蚂蚁Thinker教LLM如何“分层思考”
 
-<img src="/images/2511.07943v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.07943v1/A__title.jpg" alt="只需数百样本，性能反超SOTA！蚂蚁Thinker教LLM如何“分层思考” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型在应对复杂问题时，常常像一个知识渊博但思维混乱的学生。它们在需要深度搜索和多步推理的任务面前，要么逻辑跳跃，要么效率低下，甚至自信地“一本正经胡说八道”。
 
 > **论文标题**：Thinker: Training LLMs in Hierarchical Thinking for Deep Search via Multi-Turn Interaction
 
-> **ArXiv URL**：http://arxiv.org/abs/2511.07943v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.07943v1
 
 许多研究尝试通过强化学习（RL）来训练模型进行深度搜索，但这就像让学生“自由发挥”，整个解题过程难以监督，逻辑严谨性也无从保证。
 

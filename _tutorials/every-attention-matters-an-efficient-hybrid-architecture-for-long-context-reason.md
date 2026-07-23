@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Every Attention Matters: An Efficient Hybrid Architecture for Long-Context Reasoning"
+description: "本文提出了一种名为 Ring-linear 的高效混合注意力架构，通过将线性注意力（Linear Attention）与标准的 Softmax 注意力相结合，在显著降低长上下文推理的 I/O 和计算成本的同时，保持了强大的模型性能。"
+topics:
+  - "推理与强化学习"
+  - "模型训练与优化"
+related_tutorials:
+  - "kimi-linear-an-expressive-efficient-attention-architecture"
+  - "kascade-a-practical-sparse-attention-method-for-long-context-llm-inference"
+  - "stream-scaling-up-mechanistic-interpretability-to-long-context-in-llms-via-spars"
+  - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.19338v2
+- **ArXiv URL**: https://arxiv.org/abs/2510.19338v2
 
 - **作者**: Chen Liang; Feng Zhu; Yibo Cao; Peng Jiao; Jingyu Hu; Mingyang Zhang; Yixuan Sun; Yankun Ren; Jun Zhou; Yao Zhao; 等26人
 

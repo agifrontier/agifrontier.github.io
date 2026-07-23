@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Multimodal Deep Learning"
+description: "本文是一份关于多模态深度学习的综合性技术手册，系统性地梳理了该领域从基础的单模态技术到前沿的多模态架构，核心在于根据模态间的交互方式对多模态模型进行了清晰的分类，并展望了未来的发展趋势。"
+topics:
+  - "多模态与视觉"
+related_tutorials:
+  - "process-supervised-reinforcement-learning-for-interactive-multimodal-tool-use-ag"
+  - "a-multitask-multilingual-multimodal-evaluation-of-chatgpt-on-reasoning-hallucina"
+  - "a-survey-on-agentic-multimodal-large-language-models"
+  - "a-survey-on-multimodal-large-language-models"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2301.04856v1
+- **ArXiv URL**: https://arxiv.org/abs/2301.04856v1
 
 - **作者**: A. Khosla; Juhan Nam; Honglak Lee; Jiquan Ngiam; A. Ng; Mingyu Kim
 

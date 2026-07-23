@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Less LLM, More Documents: Searching for Improved RAG"
+description: "本文通过系统性实验证明，在检索增强生成（Retrieval-Augmented Generation, RAG）系统中，扩大检索语料库的规模可以作为一种有效的替代方案来弥补使用较小语言模型（LLM）所带来的性能差距，为构建更高效、更易于部署的RAG系统提供了新的权衡思路。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "less-is-more-tokens-efficient-math-reasoning-via-difficulty-aware-chain-of-thoug"
+  - "limi-less-is-more-for-agency"
+  - "limo-less-is-more-for-reasoning"
+  - "when-less-is-more-8-bit-quantization-improves-continual-learning-in-large-langua"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.02657v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.02657v1
 
 - **作者**: Jamie Callan; Yibo Kong
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "All You Need is One: Capsule Prompt Tuning with a Single Vector"
+description: "本文提出了一种名为胶囊提示调优（Capsule Prompt Tuning, CaPT）的新型参数高效微调方法，通过将实例感知（instance-aware）信息和任务感知（task-aware）信息创新性地融合到一个单一的“胶囊”提示向量中，解决了传统提示学习方法依赖繁琐的长度搜索且与输入序列交互不足的问。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "increasing-the-thinking-budget-is-not-all-you-need"
+  - "llm-router-prefill-is-all-you-need"
+  - "camformer-associative-memory-is-all-you-need"
+  - "not-all-parameters-are-created-equal-smart-isolation-boosts-fine-tuning-performa"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.16670v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.16670v1
 
 - **作者**: Yiming Cui; Cheng Han; Wenhao Yang; Heng Fan; Qifan Wang; Lifu Huang; Xiaotian Han; Dongfang Liu; Yiyang Liu
 

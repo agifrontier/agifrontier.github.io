@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Reconstructing KV Caches with Cross-layer Fusion For Enhanced Transformers"
+description: "KV缓存减半，性能反超！阿里FusedKV揭示K/V不对称共享新范式。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "the-missing-layer-of-agi-from-pattern-alchemy-to-coordination-physics"
+  - "rethinking-cross-lingual-gaps-from-a-statistical-viewpoint"
+  - "a-model-of-errors-in-transformers"
+  - "allocation-of-parameters-in-transformers"
 ---
 
 ## KV缓存减半，性能反超！阿里FusedKV揭示K/V不对称共享新范式
 
-<img src="/images/2512.03870v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.03870v1/A__title.jpg" alt="KV缓存减半，性能反超！阿里FusedKV揭示K/V不对称共享新范式 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型处理长文本的能力越来越强，但一个幽灵始终在数据中心徘徊——那就是庞大的**键值缓存**（**Key-Value Cache, KV Cache**）。它像一个无底洞，吞噬着宝贵的显存，让长文本推理的成本居高不下。
 
-> ArXiv URL：http://arxiv.org/abs/2512.03870v1
+> ArXiv URL：https://arxiv.org/abs/2512.03870v1
 
 人们想了各种办法给KV缓存“瘦身”，比如**分组查询注意力**（**Group-Query Attention, GQA**）或者跨层共享缓存。但这些方法往往有个“潜规则”：用性能换效率。
 

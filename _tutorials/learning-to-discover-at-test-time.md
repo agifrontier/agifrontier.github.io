@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Learning to Discover at Test Time"
+description: "TTT-Discover：开源模型+测试时训练，仅需数百美元刷新多领域SOTA。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "s1-simple-test-time-scaling"
+  - "scaling-llm-test-time-compute-optimally-can-be-more-effective-than-scaling-model"
+  - "scaling-test-time-compute-to-achieve-ioi-gold-medal-with-open-weight-models"
+  - "learning-when-to-plan-efficiently-allocating-test-time-compute-for-llm-agents"
 ---
 
 ## TTT-Discover：开源模型+测试时训练，仅需数百美元刷新多领域SOTA
 
-<img src="/images/2601.16175v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.16175v1/A__title.jpg" alt="TTT-Discover：开源模型+测试时训练，仅需数百美元刷新多领域SOTA 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当面对一个从未见过的科学难题时，人类专家通常不会只依赖“既有知识”去猜测答案，而是会通过不断的尝试、失败、总结经验，在解决问题的过程中“现场学习”。
 
-> ArXiv URL：http://arxiv.org/abs/2601.16175v1
+> ArXiv URL：https://arxiv.org/abs/2601.16175v1
 
 然而，目前的AI范式——即便是最强的推理模型（如o1系列）——在测试时（Test Time）通常也是“大脑冻结”的。它们可以通过思维链（CoT）或搜索策略（如Best-of-N）来探索解空间，但模型本身的权重是固定的。这就好比一个学生在考试时只能靠回忆，而不能从刚才做错的草稿中通过学习变得更聪明。
 

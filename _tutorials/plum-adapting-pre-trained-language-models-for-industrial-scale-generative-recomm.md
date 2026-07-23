@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "PLUM: Adapting Pre-trained Language Models for Industrial-scale Generative Recommendations"
+description: "本文提出了一个名为 PLUM 的框架，旨在将预训练语言模型（LLM）应用于工业级生成式推荐任务，该框架通过语义ID（Semantic IDs）、领域持续预训练（CPT）和生成式微调三个阶段，实现了超越传统大规模嵌入模型的推荐效果和样本效率。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "uniform-unifying-knowledge-from-large-scale-and-diverse-pre-trained-models"
+  - "hplt-30-very-large-scale-multilingual-resources-for-llm-and-mt-mono-and-bi-lingu"
+  - "spanish-pre-trained-bert-model-and-evaluation-data"
+  - "the-two-stage-decision-sampling-hypothesis-understanding-the-emergence-of-self-r"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.07784v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.07784v1
 
 - **作者**: Lexi Baugher; Lichan Hong; Cristos Goodrow; Xinyang Yi; Su-Lin Wu; Nikhil Mehta; Ningren Han; Yilin Zheng; Ruining He; Yueqi Wang; 等14人
 

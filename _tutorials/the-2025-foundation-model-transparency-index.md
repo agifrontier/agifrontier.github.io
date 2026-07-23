@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "The 2025 Foundation Model Transparency Index"
+description: "2025 AI透明度大倒退：均分跌至40，IBM夺冠，xAI与Midjourney垫底。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "remote-labor-index-measuring-ai-automation-of-remote-work"
+  - "llama-2-open-foundation-and-fine-tuned-chat-models"
+  - "semiparametric-preference-optimization-your-language-model-is-secretly-a-single-"
+  - "arm-fm-automated-reward-machines-via-foundation-models-for-compositional-reinfor"
 ---
 
 ## 2025 AI透明度大倒退：均分跌至40，IBM夺冠，xAI与Midjourney垫底
 
-<img src="/images/2512.10169v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.10169v1/A__title.jpg" alt="2025 AI透明度大倒退：均分跌至40，IBM夺冠，xAI与Midjourney垫底 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 随着AI模型的能力以惊人的速度进化，我们对这些“黑盒”背后的运作机制却似乎知之甚少。斯坦福大学等机构最新发布的 **2025年基础模型透明度指数**（**Foundation Model Transparency Index, FMTI**）揭示了一个令人担忧的趋势：尽管AI技术在飞速发展，但行业整体的透明度却在大幅倒退。
 
-> ArXiv URL：http://arxiv.org/abs/2512.10169v1
+> ArXiv URL：https://arxiv.org/abs/2512.10169v1
 
 这份年度重磅报告不仅对OpenAI、Google等老牌巨头进行了“体检”，还首次将阿里巴巴、DeepSeek等中国公司纳入评测范围。结果令人咋舌：平均分从去年的58分暴跌至40分，甚至低于2023年的水平。
 

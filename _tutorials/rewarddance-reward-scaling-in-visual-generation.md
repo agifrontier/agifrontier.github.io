@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "RewardDance: Reward Scaling in Visual Generation"
+description: "本文提出了RewardDance，一个基于生成式范式的可扩展视觉奖励模型框架，它通过将奖励预测重构为“是/否”Token预测任务，实现了对模型尺寸和上下文信息的有效扩展，从而显著提升了视觉生成模型的质量和对齐效果。"
+topics:
+  - "多模态与视觉"
+related_tutorials:
+  - "ssl4rl-revisiting-self-supervised-learning-as-intrinsic-reward-for-visual-langua"
+  - "seedance-15-pro-a-native-audio-visual-joint-generation-foundation-model"
+  - "scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-generation-for"
+  - "cogflow-bridging-perception-and-reasoning-through-knowledge-internalization-for-"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.08826v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.08826v1
 
 - **作者**: Jie Wu; Yu Gao; Zeyue Xue; Wei Liu; Hanzhong Guo; Ming Li; Xiaoxia Hou; Jie Liu; Yan Zeng; Zilyu Ye; 等12人
 

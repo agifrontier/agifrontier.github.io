@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "CogFlow: Bridging Perception and Reasoning through Knowledge Internalization for Visual Mathematical Problem Solving"
+description: "拒绝“看对算错”！CogFlow首创知识内化机制，7B模型视觉数学推理SOTA。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "多模态与视觉"
+  - "推理与强化学习"
+related_tutorials:
+  - "mathvista-evaluating-mathematical-reasoning-of-foundation-models-in-visual-conte"
+  - "the-reasoning-creativity-trade-off-toward-creativity-driven-problem-solving"
+  - "ssl4rl-revisiting-self-supervised-learning-as-intrinsic-reward-for-visual-langua"
+  - "aligning-perception-reasoning-modeling-and-interaction-a-survey-on-physical-ai"
 ---
 
 ## 拒绝“看对算错”！CogFlow首创知识内化机制，7B模型视觉数学推理SOTA
 
-<img src="/images/2601.01874v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.01874v1/A__title.jpg" alt="拒绝“看对算错”！CogFlow首创知识内化机制，7B模型视觉数学推理SOTA 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 多模态大模型（MLLM）在处理视觉数学问题时，经常会出现一种令人啼笑皆非的现象：模型明明准确识别出了图中的几何元素（比如识别出是一个直角三角形），但在随后的推理计算中，却完全无视这些视觉证据，开始“一本正经地胡说八道”。
 
-> ArXiv URL：http://arxiv.org/abs/2601.01874v1
+> ArXiv URL：https://arxiv.org/abs/2601.01874v1
 
 这种现象被称为**推理漂移**（**Reasoning Drift**）。现有的模型要么胡子眉毛一把抓（一步式推理），要么将感知与推理完全割裂（解耦式推理），导致“眼睛”和“大脑”各干各的。
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "DeepWideSearch: Benchmarking Depth and Width in Agentic Information Seeking"
+description: "现有用于评估智能体的基准测试主要沿着两个维度发展：搜索宽度与搜索深度。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "parallelmuse-agentic-parallel-thinking-for-deep-information-seeking"
+  - "an-information-theoretic-perspective-on-agentic-system-design"
+  - "dacomp-benchmarking-data-agents-across-the-full-data-intelligence-lifecycle"
+  - "llmtimesmapreduce-v3-enabling-interactive-in-depth-survey-generation-through-a-m"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.20168v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.20168v1
 
 - **作者**: Weihua Luo; Longyue Wang; Haijun Li; Bin Zhu; Zhao Xu; Kaifu Zhang; Tian Lan; Junyang Ren; Qianghuai Jia
 

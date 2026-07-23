@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "HiFi-RAG: Hierarchical Content Filtering and Two-Pass Generation for Open-Domain RAG"
+description: "NeurIPS 2025冠军：Google HiFi-RAG如何用分层过滤让RAG性能暴涨19%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "tackling-the-inherent-difficulty-of-noise-filtering-in-rag"
+  - "retrieval-augmented-generation-rag-for-fintech-agentic-design-and-evaluation"
+  - "beyond-patch-aggregation-3-pass-pyramid-indexing-for-vision-enhanced-document-re"
+  - "llm-guided-hierarchical-retrieval"
 ---
 
 ## NeurIPS 2025冠军：Google HiFi-RAG如何用分层过滤让RAG性能暴涨19%
 
-<img src="/images/2512.22442v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.22442v1/A__title.jpg" alt="NeurIPS 2025冠军：Google HiFi-RAG如何用分层过滤让RAG性能暴涨19% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在**检索增强生成**（**Retrieval-Augmented Generation, RAG**）的落地实践中，开发者们往往面临一个棘手的两难困境：检索回来的文档太多，充满了无关噪声，导致模型产生幻觉（即“Garbage-in, Garbage-out”）；而如果检索太少，又会遗漏关键信息。
 
-> ArXiv URL：http://arxiv.org/abs/2512.22442v1
+> ArXiv URL：https://arxiv.org/abs/2512.22442v1
 
 如何在海量的互联网信息中精准提取出那“万分之一”的有效上下文？
 

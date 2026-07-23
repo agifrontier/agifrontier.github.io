@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Behind RoPE: How Does Causal Mask Encode Positional Information?"
+description: "本文通过理论证明和实验分析，揭示了Transformer解码器中的因果掩码 (Causal Mask) 本身就是一种位置信息来源，它能诱导出偏好邻近token的注意力模式，并且会与RoPE等显式位置编码相互作用，将其相对注意力模式扭曲为非相对模式。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "llms-encode-how-difficult-problems-are"
+  - "a-circular-argument-does-rope-need-to-be-equivariant-for-vision"
+  - "how-does-rl-post-training-induce-skill-composition-a-case-study-on-countdown"
+  - "jailbroken-how-does-llm-safety-training-fail"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.21042v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.21042v1
 
 - **作者**: Lei Ji; Xiao Liu; Edward Choi; Yeyun Gong; Junu Kim; Zhenghao Lin
 

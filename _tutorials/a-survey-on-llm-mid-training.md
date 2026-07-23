@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "A Survey on LLM Mid-training"
+description: "当代大型语言模型 (LLM) 的开发已从单一的预训练模式演变为复杂的多阶段优化框架。预训练通过接触大规模多样化语料库为模型奠定基础能力，而后续的优化阶段则系统性地增强特定能力。中间训练 (mid-training) 作为连接预训练和后训练的关键桥梁，其重要性日益凸显。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "mid-training-of-large-language-models-a-survey"
+  - "on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language-model"
+  - "a-survey-on-efficient-large-language-model-training-from-data-centric-perspectiv"
+  - "a-systematic-survey-on-large-language-models-for-evolutionary-optimization-from-"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.23081v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.23081v1
 
 - **作者**: Yang Bai; Xuemiao Zhang; Rongxiang Weng; Hongfei Yan; Rumei Li; Chen Zhang; Xunliang Cai; Jingang Wang
 

@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Voyager: An Open-Ended Embodied Agent with Large Language Models"
+description: "本文提出了一种名为 Voyager 的具身智能体，它首次利用大型语言模型（LLM）实现了在《我的世界》(Minecraft) 开放世界中的无干预终身学习，通过自动课程、可不断增长的技能库和迭代提示机制，持续探索、获取技能并做出新发现。"
+topics:
+  - "具身智能与机器人"
+  - "AI Agent"
+related_tutorials:
+  - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"
+  - "webweaver-structuring-web-scale-evidence-with-dynamic-outlines-for-open-ended-de"
+  - "a-comprehensive-survey-on-world-models-for-embodied-ai"
+  - "palm-e-an-embodied-multimodal-language-model"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2305.16291v2
+- **ArXiv URL**: https://arxiv.org/abs/2305.16291v2
 
 - **作者**: Yuke Zhu; Guanzhi Wang; Yunfan Jiang; Chaowei Xiao; Yuqi Xie; Anima Anandkumar; Linxi (Jim) Fan; Ajay Mandlekar
 

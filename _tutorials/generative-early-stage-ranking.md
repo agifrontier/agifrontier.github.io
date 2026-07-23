@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Generative Early Stage Ranking"
+description: "Meta重塑推荐系统：GESR用“混合注意力”打破双塔模型瓶颈，性能大涨延迟仅增10%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "beam-brainwave-empathy-assessment-model-for-early-childhood"
+  - "the-two-stage-decision-sampling-hypothesis-understanding-the-emergence-of-self-r"
+  - "generative-ai"
+  - "plum-adapting-pre-trained-language-models-for-industrial-scale-generative-recomm"
 ---
 
 ## Meta重塑推荐系统：GESR用“混合注意力”打破双塔模型瓶颈，性能大涨延迟仅增10%
 
-<img src="/images/2511.21095v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.21095v1/A__title.jpg" alt="Meta重塑推荐系统：GESR用“混合注意力”打破双塔模型瓶颈，性能大涨延迟仅增10% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 你的信息流App背后，藏着一场效率与效果的持续博弈。经典的“双塔模型”因其高效而称霸多年，但它真的懂你吗？
 
-> ArXiv URL：http://arxiv.org/abs/2511.21095v1
+> ArXiv URL：https://arxiv.org/abs/2511.21095v1
 
 最近，Meta的研究者们给出了一个颠覆性的答案：**生成式早期排序**（**Generative Early Stage Ranking, GESR**）。
 

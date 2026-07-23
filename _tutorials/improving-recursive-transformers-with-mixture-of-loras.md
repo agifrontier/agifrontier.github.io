@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Improving Recursive Transformers with Mixture of LoRAs"
+description: "小模型逆袭：MoL让1.2亿参数ModernALBERT超越全参数基线。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "mesh-memory-as-state-highways-for-recursive-transformers"
+  - "recursive-language-models"
+  - "gemma-2-improving-open-language-models-at-a-practical-size"
+  - "improving-online-algorithms-via-ml-predictions"
 ---
 
 ## 小模型逆袭：MoL让1.2亿参数ModernALBERT超越全参数基线
 
-<img src="/images/2512.12880v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.12880v1/A__title.jpg" alt="小模型逆袭：MoL让1.2亿参数ModernALBERT超越全参数基线 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在追求大模型极致性能的今天，如何让小模型兼具“轻量级”与“高智商”一直是业界的痛点。经典的ALBERT模型通过极其激进的**参数共享**（**Parameter Sharing**）策略大幅降低了显存占用，但代价是模型表达能力的显著下降——这就好比让一个学生用同一套解题思路去应对语文、数学和英语考试，效果自然大打折扣。
 
-> ArXiv URL：http://arxiv.org/abs/2512.12880v1
+> ArXiv URL：https://arxiv.org/abs/2512.12880v1
 
 为了解决这一难题，来自牛津大学和苏黎世大学的研究团队提出了一种名为**混合LoRA**（**Mixture of LoRAs, MoL**）的全新机制，并基于此构建了**ModernALBERT**。令人惊讶的是，仅有1.2亿参数的ModernALBERT在多项基准测试中不仅击败了同量级的紧凑模型，甚至超越了参数量更大的全参数模型（如ModernBERT）。它是如何做到的？
 

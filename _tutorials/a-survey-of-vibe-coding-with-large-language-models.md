@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "A Survey of Vibe Coding with Large Language Models"
+description: "关于使用大型语言模型进行 Vibe Coding 的综述。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "a-survey-of-ai-scientists-surveying-the-automatic-scientists-and-research"
+  - "a-survey-of-large-language-models"
+  - "a-survey-of-weight-space-learning-understanding-representation-and-generation"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.12399v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.12399v1
 
 - **作者**: Lingrui Mei; Xueqi Cheng; Yuyao Ge; Yujun Cai; Shenghua Liu; Tianyu Liu; Jiafeng Guo; Jiayu Yao; Yujia Zheng; Tianhao Li; 等14人
 

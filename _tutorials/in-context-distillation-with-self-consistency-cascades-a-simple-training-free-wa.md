@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "In-Context Distillation with Self-Consistency Cascades: A Simple, Training-Free Way to Reduce LLM Agent Costs"
+description: "Agent推理成本降低2.5倍：斯坦福提出“上下文蒸馏”，免训练让小模型偷师大模型。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+  - "模型训练与优化"
+related_tutorials:
+  - "language-self-play-for-data-free-training"
+  - "beyond-turn-limits-training-deep-search-agents-with-dynamic-context-window"
+  - "simpo-simple-preference-optimization-with-a-reference-free-reward"
+  - "skyrl-agent-efficient-rl-training-for-multi-turn-llm-agent"
 ---
 
 ## Agent推理成本降低2.5倍：斯坦福提出“上下文蒸馏”，免训练让小模型偷师大模型
 
-<img src="/images/2512.02543v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.02543v1/A__title.jpg" alt="Agent推理成本降低2.5倍：斯坦福提出“上下文蒸馏”，免训练让小模型偷师大模型 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 构建强大的LLM Agent是当下的热门趋势，但一个残酷的现实摆在所有开发者面前：使用GPT-4或Claude这类顶级模型的推理成本实在太高了！这不仅阻碍了大规模部署，也让快速原型验证变得异常昂贵。有没有一种方法，既能享受顶级模型的智慧，又不必承受其高昂的账单呢？
 
-> ArXiv URL：http://arxiv.org/abs/2512.02543v1
+> ArXiv URL：https://arxiv.org/abs/2512.02543v1
 
 来自斯坦福大学等机构的研究者给出了一份惊艳的答卷。他们提出了一种极其简单却高效的免训练方法，在保持与顶级模型相当的准确率下，将Agent的推理成本降低了整整**2.5倍**！其核心秘诀就是“上下文蒸馏”与“自洽级联”的巧妙结合。
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Octo: An Open-Source Generalist Robot Policy"
+description: "本文介绍了一款名为 Octo 的开源通用机器人策略 (generalist robot policy)，它是一个基于 Transformer 的大型策略模型，在迄今为止最大的机器人操作数据集 (Open X-Embodiment) 的 800k 条轨迹上进行预训练，能够通过简单的微调高效适应具有新传感器和动。"
+topics:
+  - "具身智能与机器人"
+related_tutorials:
+  - "openvla-an-open-source-vision-language-action-model"
+  - "bridgedata-v2-a-dataset-for-robot-learning-at-scale"
+  - "π_0-a-vision-language-action-flow-model-for-general-robot-control"
+  - "dapo-an-open-source-llm-reinforcement-learning-system-at-scale"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2405.12213v2
+- **ArXiv URL**: https://arxiv.org/abs/2405.12213v2
 
 - **作者**: H. Walke; Dibya Ghosh; Quan Vuong; Kevin Black; Chelsea Finn; Oier Mees; Tobias Kreiman; Jianlan Luo; Dorsa Sadigh; Sergey Levine; 等8人
 

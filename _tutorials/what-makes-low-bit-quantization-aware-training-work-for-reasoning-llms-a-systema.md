@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "What Makes Low-Bit Quantization-Aware Training Work for Reasoning LLMs? A Systematic Study"
+description: "推理模型“瘦身”奇迹：2-bit量化下数学能力暴涨44%的技术解密。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+  - "模型训练与优化"
+related_tutorials:
+  - "demystifying-synthetic-data-in-llm-pre-training-a-systematic-study-of-scaling-la"
+  - "power-of-two-quantization-aware-training-pot-qat-in-large-language-models-llms"
+  - "when-less-is-more-8-bit-quantization-improves-continual-learning-in-large-langua"
+  - "fapo-flawed-aware-policy-optimization-for-efficient-and-reliable-reasoning"
 ---
 
 ## 推理模型“瘦身”奇迹：2-bit量化下数学能力暴涨44%的技术解密
 
-<img src="/images/2601.14888v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.14888v1/A__title.jpg" alt="推理模型“瘦身”奇迹：2-bit量化下数学能力暴涨44%的技术解密 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 随着 DeepSeek-R1、OpenAI o1 等具备强大推理能力的模型相继问世，我们在惊叹于其解决复杂数学和代码问题能力的同时，也不得不面对一个尴尬的现实：**推理模型太慢、太贵了。**
 
-> ArXiv URL：http://arxiv.org/abs/2601.14888v1
+> ArXiv URL：https://arxiv.org/abs/2601.14888v1
 
 这些模型通常依赖于长思维链（Chain-of-Thought），导致推理过程极其消耗 Token，部署成本居高不下。量化（Quantization）本是解决这一问题的“银弹”，但在极低比特（如 2-bit 或 3-bit）设置下，传统的**训练后量化**（**Post-Training Quantization, PTQ**）往往会让推理模型的智商“断崖式下跌”。
 

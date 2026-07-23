@@ -1,13 +1,21 @@
 ---
 layout: default
 title: "Transformers learn factored representations"
+description: "Transformer的世界观：自动将指数级复杂世界拆解为线性正交因子。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "alpacafarm-a-simulation-framework-for-methods-that-learn-from-human-feedback"
+  - "a-model-of-errors-in-transformers"
+  - "allocation-of-parameters-in-transformers"
+  - "context-free-recognition-with-transformers"
 ---
 
 ## Transformer的世界观：自动将指数级复杂世界拆解为线性正交因子
 
 人类观察世界的方式是结构化的：我们看到的不是一堆杂乱无章的像素或原子，而是桌子、杯子、行人等一个个独立的“部件”。这种将世界分解为独立因子的能力，是我们理解复杂环境的基石。
 
-> ArXiv URL：http://arxiv.org/abs/2602.02385v1
+> ArXiv URL：https://arxiv.org/abs/2602.02385v1
 
 那么，仅通过“预测下一个Token”训练出来的 Transformer，是否也具备这种能力？
 

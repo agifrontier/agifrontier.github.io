@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning"
+description: "本文通过大规模强化学习（无论是纯粹应用于基础模型还是结合少量冷启动数据），成功地激发并显著增强了大型语言模型的推理能力，推出了DeepSeek-R1系列模型，并验证了可以将这种高级推理能力通过蒸馏有效地迁移到更小的模型中。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "dler-doing-length-penalty-right-incentivizing-more-intelligence-per-token-via-re"
+  - "learning-to-reason-training-llms-with-gpt-oss-or-deepseek-r1-reasoning-traces"
+  - "a-survey-of-reinforcement-learning-for-large-reasoning-models"
+  - "does-reinforcement-learning-really-incentivize-reasoning-capacity-in-llms-beyond"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2501.12948v1
+- **ArXiv URL**: https://arxiv.org/abs/2501.12948v1
 
 - **作者**: K. Yu; Bei Feng; Yuting Yan; Yanping Huang; Shiyu Wang; Jingchang Chen; Xiaodong Liu; Yu-Wei Luo; Jingyang Yuan; Zhean Xu; 等196人
 

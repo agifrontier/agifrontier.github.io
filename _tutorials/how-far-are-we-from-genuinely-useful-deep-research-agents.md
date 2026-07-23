@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "How Far Are We from Genuinely Useful Deep Research Agents?"
+description: "千份报告揭示AI研究助手致命弱点：OPPO发布FINDER基准与DEFT分类法。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "general-agentic-memory-via-deep-research"
+  - "mars-optimizing-dual-system-deep-research-via-multi-agent-reinforcement-learning"
+  - "mirothinker-pushing-the-performance-boundaries-of-open-source-research-agents-vi"
+  - "paper2agent-reimagining-research-papers-as-interactive-and-reliable-ai-agents"
 ---
 
 ## 千份报告揭示AI研究助手致命弱点：OPPO发布FINDER基准与DEFT分类法
 
-<img src="/images/2512.01948v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.01948v1/A__title.jpg" alt="千份报告揭示AI研究助手致命弱点：OPPO发布FINDER基准与DEFT分类法 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 AI研究助手（Deep Research Agents, DRA）正火，号称能自动检索、分析并撰写出分析师级别的深度报告。但它们真的靠谱吗？
 
-> ArXiv URL：http://arxiv.org/abs/2512.01948v1
+> ArXiv URL：https://arxiv.org/abs/2512.01948v1
 
 一份基于近千份AI报告的深度剖析揭示了残酷真相：即使是顶级模型，也常在关键环节“翻车”。
 

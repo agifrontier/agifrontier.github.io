@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "MoEBlaze: Breaking the Memory Wall for Efficient MoE Training on Modern GPUs"
+description: "MoEBlaze：打破显存墙！Meta提出MoE训练新框架，速度飙升4倍。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "模型训练与优化"
+related_tutorials:
+  - "continual-learning-via-sparse-memory-finetuning"
+  - "spotlight-attention-towards-efficient-llm-generation-via-non-linear-hashing-base"
+  - "comet-collaborative-memory-transformer-for-efficient-long-context-modeling"
+  - "efficient-memory-management-for-large-language-model-serving-with-pagedattention"
 ---
 
 ## MoEBlaze：打破显存墙！Meta提出MoE训练新框架，速度飙升4倍
 
-<img src="/images/2601.05296v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.05296v1/A__title.jpg" alt="MoEBlaze：打破显存墙！Meta提出MoE训练新框架，速度飙升4倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在当今的大模型时代，**混合专家模型（Mixture-of-Experts, MoE）** 已经成为了扩展模型参数量的首选架构。从 Mixtral 8x7B 到 DeepSeek-V3，MoE 凭借其“稀疏激活”的特性，让我们能在不显著增加推理成本的前提下，训练出万亿参数级别的巨兽。
 
-> ArXiv URL：http://arxiv.org/abs/2601.05296v1
+> ArXiv URL：https://arxiv.org/abs/2601.05296v1
 
 但 MoE 的训练并非一帆风顺。你是否想过，为什么即使拥有 H100 这样强大的 GPU，MoE 的训练依然经常卡在“显存不足”（OOM）上？
 

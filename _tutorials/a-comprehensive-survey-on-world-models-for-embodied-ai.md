@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "A Comprehensive Survey on World Models for Embodied AI"
+description: "面向具身智能的世界模型综合综述。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "具身智能与机器人"
+related_tutorials:
+  - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"
+  - "palm-e-an-embodied-multimodal-language-model"
+  - "voyager-an-open-ended-embodied-agent-with-large-language-models"
+  - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.16732v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.16732v1
 
 - **作者**: Yun Liu; Le Zhang; Xinqing Li; Xin He
 

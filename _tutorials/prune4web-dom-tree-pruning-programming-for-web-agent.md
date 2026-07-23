@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Prune4Web: DOM Tree Pruning Programming for Web Agent"
+description: "LLM不读万行代码：Prune4Web让网页元素定位精度飙升至88%！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "scaling-up-multi-turn-off-policy-rl-and-multi-agent-tree-search-for-llm-step-pro"
+  - "tree-search-for-llm-agent-reinforcement-learning"
+  - "inter-agent-trust-models-a-comparative-study-of-brief-claim-proof-stake-reputati"
+  - "mcp-vs-rag-vs-nlweb-vs-html-a-comparison-of-the-effectiveness-and-efficiency-of-"
 ---
 
 ## LLM不读万行代码：Prune4Web让网页元素定位精度飙升至88%！
 
-<img src="/images/2511.21398v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.21398v1/A__title.jpg" alt="LLM不读万行代码：Prune4Web让网页元素定位精度飙升至88%！ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当AI Agent试图帮我们在复杂的网页上预订机票或在线购物时，它们常常会“迷失”在由成千上万行代码组成的文档对象模型（DOM）中。这就像让一个人在一部万页电话簿里找一个没有具体地址的名字，效率低下且错误频出。传统的解决方法要么是粗暴地截断信息，要么是依赖低效的启发式方法。
 
-> ArXiv URL：http://arxiv.org/abs/2511.21398v1
+> ArXiv URL：https://arxiv.org/abs/2511.21398v1
 
 有没有一种更聪明的方式？来自北航的研究者给出了答案：**Prune4Web**。它提出了一种颠覆性的范式——不再强迫大模型（LLM）去“阅读”整个庞杂的DOM，而是让LLM“编写”一个轻量级的Python程序，来精准地“捕捞”出我们需要的网页元素。这一转变，直接将候选元素数量减少了25到50倍，并将底层定位精度从46.8%戏剧性地提升到了88.28%！
 

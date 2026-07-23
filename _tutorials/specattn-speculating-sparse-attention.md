@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "SpecAttn: Speculating Sparse Attention"
+description: "本文提出了一种名为 SpecAttn 的免训练方法，该方法将推测解码（speculative decoding）与稀疏注意力相结合，通过利用草稿模型（draft model）已计算出的注意力权重来为目标模型（target model）动态预测并选择重要的 Token，从而在不显著牺牲模型性能的前提下，高效实。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "kascade-a-practical-sparse-attention-method-for-long-context-llm-inference"
+  - "sparse-attention-post-training-for-mechanistic-interpretability"
+  - "stream-scaling-up-mechanistic-interpretability-to-long-context-in-llms-via-spars"
+  - "trainable-log-linear-sparse-attention-for-efficient-diffusion-transformers"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.27641v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.27641v1
 
 - **作者**: Harsh Shah
 

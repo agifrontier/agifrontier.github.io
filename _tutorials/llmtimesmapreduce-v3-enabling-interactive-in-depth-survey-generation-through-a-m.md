@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "LLM$\times$MapReduce-V3: Enabling Interactive In-Depth Survey Generation through a MCP-Driven Hierarchically Modular Agent System"
+description: "本文提出了一种名为 LLM×MapReduce-V3 的分层模块化智能体系统，该系统通过模型-上下文-协议 (MCP) 驱动的动态规划，实现了交互式、可定制的深度综述论文生成。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "qagent-a-modular-search-agent-with-interactive-query-understanding"
+  - "mcp-vs-rag-vs-nlweb-vs-html-a-comparison-of-the-effectiveness-and-efficiency-of-"
+  - "mars-optimizing-dual-system-deep-research-via-multi-agent-reinforcement-learning"
+  - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.10890v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.10890v1
 
 - **作者**: Haoyu Wang; Shuo Wang; Siyu Lin; Jie Zhou; Zhu Zhang; Zihan Zhou; Maosong Sun; Zhiyuan Liu; Yu Chao
 

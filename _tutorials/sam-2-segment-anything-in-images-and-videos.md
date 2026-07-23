@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "SAM 2: Segment Anything in Images and Videos"
+description: "本文提出了SAM 2，一个统一处理图像和视频中可提示分割任务的基础模型，它通过引入流式记忆架构和构建大规模视频分割数据集SA-V，在显著提升分割精度和交互效率的同时，性能超越了现有方法。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "videoagenttrek-computer-use-pretraining-from-unlabeled-videos"
+  - "what-does-loss-optimization-actually-teach-if-anything-knowledge-dynamics-in-con"
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "a-concise-review-of-hallucinations-in-llms-and-their-mitigation"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2408.00714v2
+- **ArXiv URL**: https://arxiv.org/abs/2408.00714v2
 
 - **作者**: Christoph Feichtenhofer; Chao-Yuan Wu; Ronghang Hu; Piotr Doll'ar; Laura Gustafson; Chloé Rolland; Haitham Khedr; Junting Pan; Roman Rädle; Nikhila Ravi; 等8人
 

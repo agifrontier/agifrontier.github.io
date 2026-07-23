@@ -1,17 +1,25 @@
 ---
 layout: default
 title: "Reinforcement Learning Improves Traversal of Hierarchical Knowledge in LLMs"
+description: "告别“对齐税”！Meta新研究：RL将LLM变身知识导航员，分层知识检索飙升24%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "a-multiobjective-reinforcement-learning-framework-for-microgrid-energy-managemen"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "a-survey-of-reinforcement-learning-for-large-reasoning-models"
+  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
 ---
 
 ## 告别“对齐税”！Meta新研究：RL将LLM变身知识导航员，分层知识检索飙升24%
 
-<img src="/images/2511.05933v1/A__title.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2511.05933v1/A__title.jpg" alt="告别“对齐税”！Meta新研究：RL将LLM变身知识导航员，分层知识检索飙升24% 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 长期以来，AI社区一直流传着一个“魔咒”：用**强化学习**（**Reinforcement Learning, RL**）对大模型进行对齐，虽然能提升其推理和遵循指令的能力，但往往会损害模型在预训练阶段学到的海量知识，这被称作“对齐税”（Alignment Tax）。
 
 > **论文标题**：Reinforcement Learning Improves Traversal of Hierarchical Knowledge in LLMs
 
-> **ArXiv URL**：http://arxiv.org/abs/2511.05933v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.05933v1
 
 然而，来自苏黎世联邦理工学院、Meta和西蒙弗雷泽大学的最新研究，对这一传统观念发起了颠覆性质疑。
 

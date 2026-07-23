@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "What Does Loss Optimization Actually Teach, If Anything? Knowledge Dynamics in Continual Pre-training of LLMs"
+description: "Loss一直降，模型却没学会？揭秘LLM持续预训练的“学习假象”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "sigmoid-loss-for-language-image-pre-training"
+  - "memorization-dynamics-in-knowledge-distillation-for-language-models"
+  - "sampling-and-loss-weights-in-multi-domain-training"
+  - "how-does-rl-post-training-induce-skill-composition-a-case-study-on-countdown"
 ---
 
 ## Loss一直降，模型却没学会？揭秘LLM持续预训练的“学习假象”
 
-<img src="/images/2601.03858v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.03858v1/A__title.jpg" alt="Loss一直降，模型却没学会？揭秘LLM持续预训练的“学习假象” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型训练的常识中，有一个根深蒂固的信仰：**Loss（损失函数）是真理**。我们默认只要 Loss 曲线平滑下降，模型就在稳步变强，新的知识就在被“吸收”。
 
-> ArXiv URL：http://arxiv.org/abs/2601.03858v1
+> ArXiv URL：https://arxiv.org/abs/2601.03858v1
 
 但如果我告诉你，这可能是一个巨大的错觉呢？
 

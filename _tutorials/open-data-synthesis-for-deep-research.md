@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Open Data Synthesis For Deep Research"
+description: "本文提出了一个名为 InfoSeek 的可扩展数据合成框架，它将复杂的“深度研究”任务形式化为分层约束满足问题（HCSP），并自动生成高质量的训练数据，使一个3B参数量的小模型在复杂的深度研究任务上，性能超越了32B的大模型及部分商业API。"
+topics:
+  - "数据与AI工程"
+related_tutorials:
+  - "webweaver-structuring-web-scale-evidence-with-dynamic-outlines-for-open-ended-de"
+  - "agentfrontier-expanding-the-capability-frontier-of-llm-agents-with-zpd-guided-da"
+  - "synthdrive-scalable-real2sim2real-sensor-simulation-pipeline-for-high-fidelity-a"
+  - "extracting-alignment-data-in-open-models"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.00375v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.00375v1
 
 - **作者**: Hongjin Qian; Ziyi Xia; Zheng Liu; Kun Luo
 

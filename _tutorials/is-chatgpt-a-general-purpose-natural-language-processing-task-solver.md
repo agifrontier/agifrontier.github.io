@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Is ChatGPT a General-Purpose Natural Language Processing Task Solver?"
+description: "本文通过在覆盖7大类任务的20个NLP数据集上进行全面的零样本（zero-shot）评估，系统性地剖析了ChatGPT作为通用自然语言处理任务解决器的能力，发现其在推理密集型任务上表现出色，但在序列标注等特定任务上仍面临挑战，且综合性能通常不及为特定任务微调的模型。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "themcpcompany-creating-general-purpose-agents-with-task-specific-tools"
+  - "instructblip-towards-general-purpose-vision-language-models-with-instruction-tun"
+  - "a-prompt-pattern-catalog-to-enhance-prompt-engineering-with-chatgpt"
+  - "harnessing-the-power-of-llms-in-practice-a-survey-on-chatgpt-and-beyond"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2302.06476v3
+- **ArXiv URL**: https://arxiv.org/abs/2302.06476v3
 
 - **作者**: Jiaao Chen; Diyi Yang; Michihiro Yasunaga; Aston Zhang; Zhuosheng Zhang; Chengwei Qin
 

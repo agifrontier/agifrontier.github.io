@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "The FM Agent"
+description: "本文提出一个名为FM Agent的通用多智能体框架，该框架创新性地结合了大型语言模型（LLM）的推理能力和大规模进化搜索，以自动化方式在运筹优化、机器学习、GPU内核优化和数学问题等多个领域解决复杂的现实世界挑战，并取得了最先进（SOTA）的成果。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "a-multi-agent-framework-for-stateful-inference-time-search"
+  - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
+  - "agentinit-initializing-llm-based-multi-agent-systems-via-diversity-and-expertise"
+  - "ai-agent-systems-architectures-applications-and-evaluation"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.26144v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.26144v1
 
 - **作者**: Dou Shen; Haobo Zhang; Annan Li; Dawei Yin; Chufan Wu; Jianmin Wu; Quan Sun; Yingying Sun; Rui Yang; Mengmeng Zhang
 

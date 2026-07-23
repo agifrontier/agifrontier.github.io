@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Learning When to Plan: Efficiently Allocating Test-Time Compute for LLM Agents"
+description: "本文提出了一种两阶段训练方法（监督微调+强化学习），使大型语言模型（LLM）智能体能够学习在序贯决策任务中动态地决定何时进行规划，从而以更高效的计算成本实现更优的性能和更强的可控性。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "pacore-learning-to-scale-test-time-compute-with-parallel-coordinated-reasoning"
+  - "browseconf-confidence-guided-test-time-scaling-for-web-agents"
+  - "reusing-pre-training-data-at-test-time-is-a-compute-multiplier"
+  - "scaling-llm-test-time-compute-optimally-can-be-more-effective-than-scaling-model"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.03581v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.03581v1
 
 - **作者**: Jack Parker-Holder; Edward Grefenstette; Jonathan Cook; Tim Rocktäschel; Jens Tuyls; Bartłomiej Cupiał; Ulyana Piterbarg; Davide Paglieri
 

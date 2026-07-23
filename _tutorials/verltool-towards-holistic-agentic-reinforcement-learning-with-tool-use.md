@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "VerlTool: Towards Holistic Agentic Reinforcement Learning with Tool Use"
+description: "本文提出了 VerlTool，一个统一、模块化且高效的框架，旨在解决智能体强化学习与工具使用 (Agentic Reinforcement Learning with Tool use, ARLT) 领域的系统碎片化、执行效率低下和扩展性差等核心问题。"
+topics:
+  - "AI Agent"
+  - "推理与强化学习"
+related_tutorials:
+  - "process-supervised-reinforcement-learning-for-interactive-multimodal-tool-use-ag"
+  - "coda-coordinating-the-cerebrum-and-cerebellum-for-a-dual-brain-computer-use-agen"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "online-process-reward-leanring-for-agentic-reinforcement-learning"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.01055v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.01055v1
 
 - **作者**: Zhuofeng Li; Kai Zou; Yi Lu; Zhiheng Lyu; Ping Nie; Hui Chen; Wenhu Chen; Chao Du; Tianyu Pang; Dongfu Jiang; 等12人
 

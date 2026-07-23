@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "A Survey of Weight Space Learning: Understanding, Representation, and Generation"
+description: "模型即数据！英伟达领衔，三大维度解读AI新前沿：权重空间学习。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "vision-mamba-efficient-visual-representation-learning-with-bidirectional-state-s"
+  - "connecting-jensen-shannon-and-kullback-leibler-divergences-a-new-bound-for-repre"
+  - "scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-generation-for"
+  - "natural-language-actor-critic-scalable-off-policy-learning-in-language-space"
 ---
 
 ## 模型即数据！英伟达领衔，三大维度解读AI新前沿：权重空间学习
 
-<img src="/images/2603.10090v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.10090v1/A__title.jpg" alt="模型即数据！英伟达领衔，三大维度解读AI新前沿：权重空间学习 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当今的AI世界，我们仿佛置身于一个由海量预训练模型构成的“模型动物园”（Model Zoo）。从GPT系列到Stable Diffusion，无数强大的模型被创造和分享。
 
-> ArXiv URL：http://arxiv.org/abs/2603.10090v1
+> ArXiv URL：https://arxiv.org/abs/2603.10090v1
 
 我们通常将这些模型的权重（weights）视为训练的终点。但你是否想过，如果把视角颠倒一下会怎样？
 

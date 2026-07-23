@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Direct Preference Optimization: Your Language Model is Secretly a Reward Model"
+description: "本文提出了一种名为直接偏好优化（DPO）的新算法，它通过一个解析性的映射关系，将传统强化学习中带约束的奖励最大化问题，巧妙地转化为一个简单的分类损失函数，从而无需显式训练奖励模型或进行复杂的强化学习，就能高效地使语言模型与人类偏好对齐。"
+topics:
+  - "推理与强化学习"
+  - "模型训练与优化"
+related_tutorials:
+  - "semiparametric-preference-optimization-your-language-model-is-secretly-a-single-"
+  - "simpo-simple-preference-optimization-with-a-reference-free-reward"
+  - "stackelberg-learning-from-human-feedback-preference-optimization-as-a-sequential"
+  - "gdpo-group-reward-decoupled-normalization-policy-optimization-for-multi-reward-r"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2305.18290v3
+- **ArXiv URL**: https://arxiv.org/abs/2305.18290v3
 
 - **作者**: Archit Sharma; E. Mitchell; Rafael Rafailov; Chelsea Finn; Christopher D. Manning; Stefano Ermon
 

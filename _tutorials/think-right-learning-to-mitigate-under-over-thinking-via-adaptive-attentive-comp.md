@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Think Right: Learning to Mitigate Under-Over Thinking via Adaptive, Attentive Compression"
+description: "本文提出了一种名为 TRAC 的在线强化学习后训练方法，利用模型自身的自注意力机制来识别并压缩冗余的推理步骤，并根据动态评估的任务难度自适应地调整压缩程度，从而有效缓解大模型在简单任务上“过度思考”和在困难任务上“思考不足”的问题。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "model-compression-using-progressive-channel-pruning"
+  - "sentence-anchored-gist-compression-for-long-context-llms"
+  - "sigmoid-head-for-quality-estimation-under-language-ambiguity"
+  - "the-human-biological-advantage-over-ai"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.01581v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.01581v1
 
 - **作者**: Akshay Nambi; Archiki Prasad; Elias Stengel-Eskin; Mohit Bansal; Justin Chih-Yao Chen; Joykirat Singh
 

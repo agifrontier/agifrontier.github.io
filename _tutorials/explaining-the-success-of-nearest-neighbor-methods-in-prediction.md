@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Explaining the Success of Nearest Neighbor Methods in Prediction"
+description: "解释预测中最近邻方法的成功。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "autoregressive-language-models-are-secretly-energy-based-models-insights-into-th"
+  - "zero-shot-performance-prediction-for-probabilistic-scaling-laws"
+  - "alpacafarm-a-simulation-framework-for-methods-that-learn-from-human-feedback"
+  - "evaluating-parameter-efficient-methods-for-rlvr"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2502.15900v1
+- **ArXiv URL**: https://arxiv.org/abs/2502.15900v1
 
 - **作者**: George H. Chen; Devavrat Shah
 

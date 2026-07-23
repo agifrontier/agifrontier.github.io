@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Rethinking Supervised Fine-Tuning: Emphasizing Key Answer Tokens for Improved LLM Accuracy"
+description: "SFTKey：别让CoT喧宾夺主！两阶段微调让大模型准确率提升超5%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "beft-bias-efficient-fine-tuning-of-language-models"
+  - "not-all-parameters-are-created-equal-smart-isolation-boosts-fine-tuning-performa"
+  - "parameter-efficient-fine-tuning-for-large-models-a-comprehensive-survey"
+  - "sft-doesnt-always-hurt-general-capabilities-revisiting-domain-specific-fine-tuni"
 ---
 
 ## SFTKey：别让CoT喧宾夺主！两阶段微调让大模型准确率提升超5%
 
-<img src="/images/2512.21017v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.21017v1/A__title.jpg" alt="SFTKey：别让CoT喧宾夺主！两阶段微调让大模型准确率提升超5% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型微调的江湖里，**思维链**（**Chain-of-Thought, CoT**）几乎成了提升推理能力的“标配”。然而，你是否想过，过长的推理过程可能会产生副作用？当模型在训练中花费大量精力去学习冗长的推理步骤时，它往往会忽视那个虽然短小但至关重要的部分——**最终答案**。
 
-> ArXiv URL：http://arxiv.org/abs/2512.21017v1
+> ArXiv URL：https://arxiv.org/abs/2512.21017v1
 
 这种“重过程、轻结果”的现象，正是当前监督微调（SFT）面临的一大隐痛。为了解决这个问题，来自北京智源人工智能研究院和北京交通大学的研究者们提出了一种名为 **SFTKey** 的新策略。这项研究不仅揭示了传统 SFT 的弊端，更通过一个简单而巧妙的“两阶段”训练法，在不牺牲格式正确性的前提下，将模型的平均准确率提升了超过 5%。
 

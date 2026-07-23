@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Action Language BC+"
+description: "本文提出了一种名为 BC+ 的新动作语言，通过将其语义建立在通用的稳定模型（Stable Model）之上，成功地统一并扩展了多种现有动作语言（如 , , , ），并自然地集成了现代答案集规划（Answer Set Programming, ASP）中的高级构造（如选择规则和聚合）。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "openvla-an-open-source-vision-language-action-model"
+  - "π_0-a-vision-language-action-flow-model-for-general-robot-control"
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "a-concise-review-of-hallucinations-in-llms-and-their-mitigation"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2506.18044v1
+- **ArXiv URL**: https://arxiv.org/abs/2506.18044v1
 
 - **作者**: Joohyung Lee
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "A General Theoretical Paradigm to Understand Learning from Human Preferences"
+description: "本文提出了一个名为 Ψ-偏好优化 (ΨPO) 的通用理论框架，该框架统一了现有的从人类偏好中学习的方法（如 RLHF 和 DPO），并在此基础上提出了一种名为 IPO 的新方法，它通过直接优化成对偏好而非依赖 Bradley-Terry 模型，有效解决了 DPO 在面对确定性或稀疏偏好数据时容易出现的过拟合。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "larger-datasets-can-be-repeated-more-a-theoretical-analysis-of-multi-epoch-scali"
+  - "is-chatgpt-a-general-purpose-natural-language-processing-task-solver"
+  - "sft-doesnt-always-hurt-general-capabilities-revisiting-domain-specific-fine-tuni"
+  - "alpacafarm-a-simulation-framework-for-methods-that-learn-from-human-feedback"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2310.12036v2
+- **ArXiv URL**: https://arxiv.org/abs/2310.12036v2
 
 - **作者**: Michal Valko; Mark Rowland; Bilal Piot; Rémi Munos; M. G. Azar; Daniele Calandriello; Daniel Guo
 

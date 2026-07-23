@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "$ΔL$ Normalization: Rethink Loss Aggregation in RLVR"
+description: "本文提出了一种名为 的新型损失聚合方法，通过构建一个无偏且方差最小的策略梯度估计器，有效解决了在带可验证奖励的强化学习（RLVR）中因响应长度变化巨大导致的高梯度方差和训练不稳定问题。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "reasoning-over-mathematical-objects-on-policy-reward-modeling-and-test-time-aggr"
+  - "data-efficient-rlvr-via-off-policy-influence-guidance"
+  - "evaluating-parameter-efficient-methods-for-rlvr"
+  - "exploration-vs-exploitation-rethinking-rlvr-through-clipping-entropy-and-spuriou"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.07558v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.07558v1
 
 - **作者**: Xufang Luo; Yike Zhang; Lili Qiu; Yuqing Yang; Zhiyuan He
 

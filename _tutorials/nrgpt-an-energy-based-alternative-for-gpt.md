@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "NRGPT: An Energy-based Alternative for GPT"
+description: "NRGPT重构GPT底层逻辑：推理即能量下降，抗过拟合能力显著提升。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "autoregressive-language-models-are-secretly-energy-based-models-insights-into-th"
+  - "gpt-4-technical-report"
+  - "gpt-4o-system-card"
+  - "a-multiobjective-reinforcement-learning-framework-for-microgrid-energy-managemen"
 ---
 
 ## NRGPT重构GPT底层逻辑：推理即能量下降，抗过拟合能力显著提升
 
-<img src="/images/2512.16762v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.16762v1/A__title.jpg" alt="NRGPT重构GPT底层逻辑：推理即能量下降，抗过拟合能力显著提升 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大语言模型（LLM）的统治时代，Transformer 架构几乎成为了唯一的真理。无论是 GPT-4 还是 Llama，本质上都是在做同一件事：将输入序列通过层层映射，预测下一个 Token。
 
-> ArXiv URL：http://arxiv.org/abs/2512.16762v1
+> ArXiv URL：https://arxiv.org/abs/2512.16762v1
 
 但如果我们将视角切换一下：**如果推理过程不是简单的函数映射，而是一个物理系统寻找“最低能量状态”的动力学过程，会发生什么？**
 

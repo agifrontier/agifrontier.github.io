@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "A Survey on Large Language Model based Autonomous Agents"
+description: "LLM Agent全面爆发：人大重磅综述，一套统一架构读懂通往AGI的未来。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "ai-meets-brain-memory-systems-from-cognitive-neuroscience-to-autonomous-agents"
+  - "autonomous-agents-for-scientific-discovery-orchestrating-scientists-language-cod"
+  - "a-survey-of-data-agents-emerging-paradigm-or-overstated-hype"
+  - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
 ---
 
 ## LLM Agent全面爆发：人大重磅综述，一套统一架构读懂通往AGI的未来
 
-<img src="/images/2308.11432v7/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2308.11432v7/A__title.jpg" alt="LLM Agent全面爆发：人大重磅综述，一套统一架构读懂通往AGI的未来 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 从AutoGPT的横空出世到斯坦福“西部世界”的惊艳亮相，**自主智能体**（**Autonomous Agents**）正以惊人的速度重塑我们对AI的认知。如果说ChatGPT只是一个博学的“大脑”，那么Agent就是给这个大脑装上了手脚和感官，让它真正具备了像人一样在物理或数字世界中行动的能力。
 
-> ArXiv URL：http://arxiv.org/abs/2308.11432v7
+> ArXiv URL：https://arxiv.org/abs/2308.11432v7
 
 然而，面对每天如雨后春笋般涌现的新论文和新架构，你是否感到眼花缭乱？究竟什么样的系统才能被称为Agent？它们是如何记忆、规划并执行任务的？
 

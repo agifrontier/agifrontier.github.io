@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Geometric and Dynamic Scaling in Deep Transformers"
+description: "Transformer 越深越“傻”？几何视角揭秘百层大模型坍塌之谜。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "webweaver-structuring-web-scale-evidence-with-dynamic-outlines-for-open-ended-de"
+  - "beyond-turn-limits-training-deep-search-agents-with-dynamic-context-window"
+  - "can-llms-track-their-output-length-a-dynamic-feedback-mechanism-for-precise-leng"
+  - "a-model-of-errors-in-transformers"
 ---
 
 ## Transformer 越深越“傻”？几何视角揭秘百层大模型坍塌之谜
 
-<img src="/images/2601.01014v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01014v1/A__title.jpg" alt="Transformer 越深越“傻”？几何视角揭秘百层大模型坍塌之谜 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在深度学习的殿堂里，我们一直信奉“更深即更强”。然而，当你试图将 Transformer 堆叠到 100 层甚至更深时，一个诡异的现象出现了：模型不仅没有变聪明，反而开始“坍塌”——特征变得越来越雷同，表达能力急剧下降。
 
-> ArXiv URL：http://arxiv.org/abs/2601.01014v1
+> ArXiv URL：https://arxiv.org/abs/2601.01014v1
 
 这仅仅是因为梯度消失吗？还是我们的优化器不够好？
 
@@ -67,7 +75,6 @@ title: "Geometric and Dynamic Scaling in Deep Transformers"
 
 两者结合，构成了 MGT 的核心逻辑：**在正确的几何流形上，灵活地进行读写操作。**
 
-![Architecture of the Manifold-Geometric Transformer (MGT) Block](https://arxiv.org/html/2501.00895v1/extracted/6106660/figures/arch_diagram.png)
 
 *图1：MGT 模块架构图。清晰地展示了特征生成、通过 mHC 进行几何矫正（蓝/紫线），以及通过 DDL 进行动态擦除（橙线）的过程。*
 

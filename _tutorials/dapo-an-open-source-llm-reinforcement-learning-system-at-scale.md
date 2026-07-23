@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "DAPO: An Open-Source LLM Reinforcement Learning System at Scale"
+description: "本文提出了一种名为DAPO的强化学习算法，通过解耦裁剪范围、动态采样、Token级损失计算和超长奖励塑造这四项关键技术，成功解决了大语言模型在长思路链（long-CoT）推理任务中遇到的熵崩溃、训练不稳定和效率低下等问题，并开源了整个大规模强化学习系统。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "mars-optimizing-dual-system-deep-research-via-multi-agent-reinforcement-learning"
+  - "scribes-web-scale-script-based-semi-structured-data-extraction-with-reinforcemen"
+  - "pacore-learning-to-scale-test-time-compute-with-parallel-coordinated-reasoning"
+  - "a-multiobjective-reinforcement-learning-framework-for-microgrid-energy-managemen"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2503.14476v2
+- **ArXiv URL**: https://arxiv.org/abs/2503.14476v2
 
 - **作者**: Haodong Zhou; Honglin Yu; Mu Qiao; Xin Liu; Gaohong Liu; Haibin Lin; Lingjun Liu; Xiaochen Zuo; Yuxuan Song; Zhiqi Lin; 等25人
 

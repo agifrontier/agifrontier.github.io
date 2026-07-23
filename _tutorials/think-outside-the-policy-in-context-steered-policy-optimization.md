@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Think Outside the Policy: In-Context Steered Policy Optimization"
+description: "本文提出了一种名为“上下文引导策略优化” (In-Context Steered Policy Optimization, ICPO) 的新型强化学习框架，该框架利用大推理模型 (Large Reasoning Models, LRM) 固有的上下文学习 (In-Context Learning, ICL)。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "asymmetric-proximal-policy-optimization-mini-critics-boost-llm-reasoning"
+  - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
+  - "fapo-flawed-aware-policy-optimization-for-efficient-and-reliable-reasoning"
+  - "gdpo-group-reward-decoupled-normalization-policy-optimization-for-multi-reward-r"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.26519v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.26519v1
 
 - **作者**: Yunfang Wu; Saiyong Yang; Chenming Tang; Hsiu-Yuan Huang; Weijie Liu
 

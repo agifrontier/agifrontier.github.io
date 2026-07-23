@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Scaling Test-Time Compute to Achieve IOI Gold Medal with Open-Weight Models"
+description: "本文证明，通过将大规模测试时搜索算法（test-time search）应用于开源代码大语言模型（如 Code Llama-70B），可以在国际信息学奥林匹克（IOI）竞赛级别的算法问题上达到金牌水平，这一成就先前被认为只有顶级的专有模型才能实现。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "scaling-llm-test-time-compute-optimally-can-be-more-effective-than-scaling-model"
+  - "s1-simple-test-time-scaling"
+  - "learning-when-to-plan-efficiently-allocating-test-time-compute-for-llm-agents"
+  - "pacore-learning-to-scale-test-time-compute-with-parallel-coordinated-reasoning"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.14232v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.14232v1
 
 - **作者**: Mehrzad Samadi; Aleksander Ficek; Boris Ginsburg; Sean Narenthiran; Somshubra Majumdar; Wasi Uddin Ahmad; Siddhartha Jain
 

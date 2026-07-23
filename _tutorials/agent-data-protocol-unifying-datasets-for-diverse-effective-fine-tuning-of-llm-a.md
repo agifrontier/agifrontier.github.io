@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Agent Data Protocol: Unifying Datasets for Diverse, Effective Fine-tuning of LLM Agents"
+description: "本文提出了一种名为智能体数据协议 (Agent Data Protocol, ADP) 的轻量级表示语言，它通过将来自不同来源、格式各异的智能体训练数据统一为标准模式，解决了数据碎片化问题，从而实现了对大型语言模型智能体进行大规模、多样化且高效的监督式微调。"
+topics:
+  - "AI Agent"
+  - "数据与AI工程"
+related_tutorials:
+  - "repurposing-synthetic-data-for-fine-grained-search-agent-supervision"
+  - "train-on-validation-tov-fast-data-selection-with-applications-to-fine-tuning"
+  - "valid-survey-simulations-with-limited-human-data-the-roles-of-prompting-fine-tun"
+  - "matrix-peer-to-peer-multi-agent-synthetic-data-generation-framework"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.24702v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.24702v1
 
 - **作者**: Tianbao Xie; Tao Yu; Zhihao Yuan; Xiang Yue; Graham Neubig; Xingyao Wang; Shuyan Zhou; Huan Sun; Tianyue Ou; Ziru Chen; 等19人
 

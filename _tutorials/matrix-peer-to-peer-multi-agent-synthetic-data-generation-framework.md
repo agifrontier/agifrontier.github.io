@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "Matrix: Peer-to-Peer Multi-Agent Synthetic Data Generation Framework"
+description: "数据生成提速15倍！Meta开源Matrix框架，用P2P架构颠覆多智能体协作。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+  - "数据与AI工程"
+related_tutorials:
+  - "repurposing-synthetic-data-for-fine-grained-search-agent-supervision"
+  - "a-multi-agent-framework-for-stateful-inference-time-search"
+  - "goagent-group-of-agents-communication-topology-generation-for-llm-based-multi-ag"
+  - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
 ---
 
 ## 数据生成提速15倍！Meta开源Matrix框架，用P2P架构颠覆多智能体协作
 
-<img src="/images/2511.21686v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.21686v1/A__title.jpg" alt="数据生成提速15倍！Meta开源Matrix框架，用P2P架构颠覆多智能体协作 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 大模型训练越来越依赖高质量的合成数据，而让多个AI智能体（Agent）协作生成数据，正成为前沿趋势。但当成千上万个智能体工作流同时运行时，传统的中心化“总指挥”模式很快就会不堪重负，成为效率瓶瓶颈。
 
-> ArXiv URL：http://arxiv.org/abs/2511.21686v1
+> ArXiv URL：https://arxiv.org/abs/2511.21686v1
 
 现在，Meta AI提出了一个全新的解决方案：**Matrix**框架。它彻底抛弃了中心协调器，引入了**对等网络**（**Peer-to-Peer, P2P**）架构，让智能体之间直接通信、协同工作。结果如何？在相同硬件下，数据生成吞吐量直接飙升了 **2到15倍**！
 

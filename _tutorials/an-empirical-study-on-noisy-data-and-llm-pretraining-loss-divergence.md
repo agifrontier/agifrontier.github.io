@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "An Empirical Study on Noisy Data and LLM Pretraining Loss Divergence"
+description: "Meta/牛津重磅：噪声数据引爆LLM训练崩溃！深度比宽度更致命，诊断新法公开。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "数据与AI工程"
+related_tutorials:
+  - "webscale-rl-automated-data-pipeline-for-scaling-rl-data-to-pretraining-levels"
+  - "demystifying-synthetic-data-in-llm-pre-training-a-systematic-study-of-scaling-la"
+  - "an-empirical-study-of-sft-dpo-interaction-and-parameterization-in-small-language"
+  - "understanding-robustness-of-model-editing-in-code-llms-an-empirical-study"
 ---
 
 ## Meta/牛津重磅：噪声数据引爆LLM训练崩溃！深度比宽度更致命，诊断新法公开
 
-<img src="/images/2602.02400v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2602.02400v1/A__title.jpg" alt="Meta/牛津重磅：噪声数据引爆LLM训练崩溃！深度比宽度更致命，诊断新法公开 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 动辄花费数百万美元训练的大模型，最怕遇到什么？除了硬件故障，最令人心惊肉跳的莫过于看着Loss曲线突然“起飞”，然后一去不复返——也就是所谓的**损失发散**（**Loss Divergence**）。
 
-> ArXiv URL：http://arxiv.org/abs/2602.02400v1
+> ArXiv URL：https://arxiv.org/abs/2602.02400v1
 
 长期以来，工程师们往往将训练不稳定归咎于学习率（Learning Rate）过高或架构设计问题。然而，Meta和牛津大学的一项最新联合研究揭示了一个常被忽视却致命的元凶：**数据噪声**。
 

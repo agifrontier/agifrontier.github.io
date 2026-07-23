@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "DR Tulu: Reinforcement Learning with Evolving Rubrics for Deep Research"
+description: "AI自己当“考官”：DR Tulu-8B用进化标尺实现顶级研究，成本降低近1000倍。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "mars-optimizing-dual-system-deep-research-via-multi-agent-reinforcement-learning"
+  - "deep-self-evolving-reasoning"
+  - "memrl-self-evolving-agents-via-runtime-reinforcement-learning-on-episodic-memory"
+  - "a-multiobjective-reinforcement-learning-framework-for-microgrid-energy-managemen"
 ---
 
 ## AI自己当“考官”：DR Tulu-8B用进化标尺实现顶级研究，成本降低近1000倍
 
-<img src="/images/2511.19399v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.19399v1/A__title.jpg" alt="AI自己当“考官”：DR Tulu-8B用进化标尺实现顶级研究，成本降低近1000倍 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当AI Agent被要求撰写一篇深度研究报告时，它不仅要规划、搜索、综合信息，还要给出可靠的引用。这正是“深度研究”（Deep Research）任务的难点所在。目前，多数开源模型难以胜任，而强大的闭源系统不仅是黑箱，而且成本高昂。
 
-> ArXiv URL：http://arxiv.org/abs/2511.19399v1
+> ArXiv URL：https://arxiv.org/abs/2511.19399v1
 
 现在，来自艾伦人工智能研究所（AI2）等顶尖机构的研究者们，推出了**DR Tulu-8B**。这是一个仅有80亿参数的开源模型，却在多项深度研究基准测试中，其表现不仅远超更大的开源模型，甚至媲美乃至超越了昂贵的专有系统，而每次查询成本降低了近1000倍！
 

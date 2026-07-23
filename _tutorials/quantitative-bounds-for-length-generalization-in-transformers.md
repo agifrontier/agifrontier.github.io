@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Quantitative Bounds for Length Generalization in Transformers"
+description: "本文首次为Transformer的长度泛化（length generalization）能力提供了定量的边界，通过引入一种“模拟论证”方法，证明了当训练序列足够长，能够“模拟”更长序列上的内部行为时，模型便能实现长度泛化，并给出了所需训练长度与模型参数、任务复杂度之间关系的具体数学刻画。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "prompts-generalize-with-low-data-non-vacuous-generalization-bounds-for-optimizin"
+  - "can-llms-track-their-output-length-a-dynamic-feedback-mechanism-for-precise-leng"
+  - "excess-description-length-of-learning-generalizable-predictors"
+  - "a-model-of-errors-in-transformers"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.27015v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.27015v1
 
 - **作者**: Zachary Izzo; Eshaan Nichani; Jason D. Lee
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Multi-Agent Evolve: LLM Self-Improve through Co-evolution"
+description: "本文提出了一种名为“多智能体进化 (Multi-Agent Evolve, MAE)”的框架，通过让单个大语言模型扮演提问者 (Proposer)、解答者 (Solver) 和裁判 (Judge) 三个协同进化的角色，利用强化学习在无需人工标注数据的情况下实现通用推理能力的自我提升。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "flex-continuous-agent-evolution-via-forward-learning-from-experience"
+  - "memevolve-meta-evolution-of-agent-memory-systems"
+  - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"
+  - "bge-m3-embedding-multi-lingual-multi-functionality-multi-granularity-text-embedd"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.23595v3
+- **ArXiv URL**: https://arxiv.org/abs/2510.23595v3
 
 - **作者**: Muhan Zhang; Siqi Zhu; Yiding Wang; Haofei Yu; Jiaxuan You; Yixing Chen; Tao Feng
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Train for Truth, Keep the Skills: Binary Retrieval-Augmented Reward Mitigates Hallucinations"
+description: "本文提出了一种名为“二元检索增强奖励 (Binary Retrieval-Augmented Reward, Binary RAR)”的在线强化学习方法，通过一个简单的二元（事实完全正确为1，否则为0）奖励信号，在不损害模型通用能力的前提下，显著减少了语言模型的幻觉。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "citation-grounded-code-comprehension-preventing-llm-hallucination-through-hybrid"
+  - "improving-context-fidelity-via-native-retrieval-augmented-reasoning"
+  - "mom-mixtures-of-scenario-aware-document-memories-for-retrieval-augmented-generat"
+  - "rethinking-retrieval-augmented-generation-for-medicine-a-large-scale-systematic-"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.17733v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.17733v1
 
 - **作者**: Akari Asai; Faeze Brahman; Luke Zettlemoyer; Tong Chen; Hannaneh Hajishirzi
 

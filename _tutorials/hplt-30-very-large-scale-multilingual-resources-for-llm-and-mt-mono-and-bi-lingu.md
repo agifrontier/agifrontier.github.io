@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "HPLT 3.0: Very Large-Scale Multilingual Resources for LLM and MT. Mono- and Bi-lingual Data, Multilingual Evaluation, and Pre-Trained Models"
+description: "本文发布了HPLT 3.0，一个包含近200种语言、总量达30万亿token的开源、大规模、高质量多语言文本数据集，并提供了完整的开源数据处理流程、多语言评估框架及预训练模型，旨在推动LLM和MT研究的普及化。"
+topics:
+  - "AI安全与评测"
+  - "数据与AI工程"
+related_tutorials:
+  - "spanish-pre-trained-bert-model-and-evaluation-data"
+  - "plum-adapting-pre-trained-language-models-for-industrial-scale-generative-recomm"
+  - "uniform-unifying-knowledge-from-large-scale-and-diverse-pre-trained-models"
+  - "babybabellm-a-multilingual-benchmark-of-developmentally-plausible-training-data"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2511.01066v2
+- **ArXiv URL**: https://arxiv.org/abs/2511.01066v2
 
 - **作者**: Veronika Laippala; Jörg Tiedemann; Bhavitvya Malik; Laurie Burchell; Barry Haddow; Mikko Aulamo; Andrey Kutuzov; Sampo Pyysalo; Vladislav Mikhailov; Risto Luukkonen; 等22人
 

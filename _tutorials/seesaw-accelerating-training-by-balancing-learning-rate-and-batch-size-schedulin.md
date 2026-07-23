@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Seesaw: Accelerating Training by Balancing Learning Rate and Batch Size Scheduling"
+description: "本文提出了一种名为 Seesaw 的训练加速方法，它通过将标准学习率调度中的衰减部分转化为批次大小（batch size）的增加，从而在保持模型性能（以 FLOPs 衡量）的同时，显著减少了约 36% 的训练墙钟时间。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "sortedrl-accelerating-rl-training-for-llms-through-online-length-aware-schedulin"
+  - "batch-normalization-accelerating-deep-network-training-by-reducing-internal-cova"
+  - "tree-training-accelerating-agentic-llms-training-via-shared-prefix-reuse"
+  - "on-the-convergence-rate-of-lora-gradient-descent"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.14717v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.14717v1
 
 - **作者**: Cengiz Pehlevan; Costin-Andrei Oncescu; Depen Morwani; Jingfeng Wu; Alexandru Meterez
 

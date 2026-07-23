@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "A Survey on Multimodal Large Language Models"
+description: "近年来，大型语言模型 (Large Language Models, LLMs) 取得了显著进展，通过扩大数据和模型规模，展现出指令遵循 (instruction following)、上下文学习 (In-Context Learning, ICL) 和思维链 (Chain of Thought, CoT)。"
+topics:
+  - "多模态与视觉"
+related_tutorials:
+  - "a-survey-on-agentic-multimodal-large-language-models"
+  - "rlhf-a-comprehensive-survey-for-cultural-multimodal-and-low-latency-alignment-me"
+  - "scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-generation-for"
+  - "a-multitask-multilingual-multimodal-evaluation-of-chatgpt-on-reasoning-hallucina"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2306.13549v4
+- **ArXiv URL**: https://arxiv.org/abs/2306.13549v4
 
 - **作者**: Chaoyou Fu; Sirui Zhao; Enhong Chen; Ke Li; Shukang Yin; Tong Xu; Xing Sun
 

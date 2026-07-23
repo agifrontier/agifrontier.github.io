@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Do Depth-Grown Models Overcome the Curse of Depth? An In-Depth Analysis"
+description: "告别“深度诅咒”：谷歌新方法LIDAS让LLM动态生长，训练提速29%！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "what-affects-the-effective-depth-of-large-language-models"
+  - "hybrid-architectures-for-language-models-systematic-analysis-and-design-insights"
+  - "larger-datasets-can-be-repeated-more-a-theoretical-analysis-of-multi-epoch-scali"
+  - "the-curse-and-blessing-of-mean-bias-in-fp4-quantized-llm-training"
 ---
 
 ## 告别“深度诅咒”：谷歌新方法LIDAS让LLM动态生长，训练提速29%！
 
-<img src="/images/2512.08819v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.08819v1/A__title.jpg" alt="告别“深度诅咒”：谷歌新方法LIDAS让LLM动态生长，训练提速29%！ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 你是否想过，当我们费尽心力将语言模型（LLM）堆叠到数百上千层时，这些层真的都在“努力工作”吗？一个残酷的现实是，许多Transformer模型的深层网络贡献甚微，甚至有些“懒惰”，这种现象被称为**深度诅咒**（**Curse of Depth**）。这不仅造成了巨大的计算资源浪费，也限制了模型潜力的完全释放。
 
-> ArXiv URL：http://arxiv.org/abs/2512.08819v1
+> ArXiv URL：https://arxiv.org/abs/2512.08819v1
 
 现在，来自谷歌和亥姆霍兹AI的一项新研究，为我们揭示了一种破解“深度诅咒”的迷人方法：让模型在训练中“动态生长”。该研究不仅深入剖析了为何这种方法有效，还提出了一种更优的生长策略LIDAS，在提升推理能力的同时，实现了高达1.29倍的训练加速！
 

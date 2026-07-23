@@ -1,11 +1,20 @@
 ---
 layout: default
 title: "Rethinking Retrieval-Augmented Generation for Medicine: A Large-Scale, Systematic Expert Evaluation and Practical Insights"
+description: "Rethinking Retrieval-Augmented Generation for Medicine: A Large-Scale, Systematic Expert Evaluation and Practical Insights。"
+topics:
+  - "RAG与知识系统"
+  - "AI安全与评测"
+related_tutorials:
+  - "retrieval-augmented-generation-rag-for-fintech-agentic-design-and-evaluation"
+  - "mom-mixtures-of-scenario-aware-document-memories-for-retrieval-augmented-generat"
+  - "retrieval-augmented-generation-for-large-language-models-a-survey"
+  - "scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-generation-for"
 ---
 
 ## Rethinking Retrieval-Augmented Generation for Medicine: A Large-Scale, Systematic Expert Evaluation and Practical Insights
 
-- **ArXiv URL**: http://arxiv.org/abs/2511.06738v1
+- **ArXiv URL**: https://arxiv.org/abs/2511.06738v1
 
 ## TL;DR
 本文通过大规模专家评估，系统性地揭示了标准检索增强生成 (Retrieval-Augmented Generation, RAG) 在医学领域非但不能稳定提升性能，反而常因证据检索和选择不佳而降低响应的真实性和完整性，并证明通过证据过滤和查询重构等简单策略可显著改善此问题。

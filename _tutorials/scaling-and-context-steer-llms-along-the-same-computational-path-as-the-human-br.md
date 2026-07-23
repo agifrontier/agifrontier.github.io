@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Scaling and context steer LLMs along the same computational path as the human brain"
+description: "LLM与人脑“神同步”：Meta AI证实模型越大，计算路径越像人。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "read-as-human-compressing-context-via-parallelizable-close-reading-and-skimming"
+  - "predicting-task-performance-with-context-aware-scaling-laws"
+  - "do-not-step-into-the-same-river-twice-learning-to-reason-from-trial-and-error"
+  - "a-general-theoretical-paradigm-to-understand-learning-from-human-preferences"
 ---
 
 ## LLM与人脑“神同步”：Meta AI证实模型越大，计算路径越像人
 
-<img src="/images/2512.01591v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.01591v1/A__title.jpg" alt="LLM与人脑“神同步”：Meta AI证实模型越大，计算路径越像人 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大型语言模型（LLM）和人类大脑，一个由硅基芯片驱动，一个由碳基神经元构成，它们的思考方式会有共同点吗？
 
-> ArXiv URL：http://arxiv.org/abs/2512.01591v1
+> ArXiv URL：https://arxiv.org/abs/2512.01591v1
 
 来自Meta AI、PSL大学等机构的最新研究给出了一个惊人答案：不仅有，而且它们的计算路径还高度同步！
 

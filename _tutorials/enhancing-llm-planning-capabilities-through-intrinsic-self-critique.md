@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Enhancing LLM Planning Capabilities through Intrinsic Self-Critique"
+description: "DeepMind力证LLM能自我纠错：无需外部验证，规划准确率飙升至89%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "self-rag-learning-to-retrieve-generate-and-critique-through-self-reflection"
+  - "ssl4rl-revisiting-self-supervised-learning-as-intrinsic-reward-for-visual-langua"
+  - "efficient-reinforcement-learning-for-large-language-models-with-intrinsic-explor"
+  - "failure-makes-the-agent-stronger-enhancing-accuracy-through-structured-reflectio"
 ---
 
 ## DeepMind力证LLM能自我纠错：无需外部验证，规划准确率飙升至89%
 
-<img src="/images/2512.24103v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.24103v1/A__title.jpg" alt="DeepMind力证LLM能自我纠错：无需外部验证，规划准确率飙升至89% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 长期以来，学术界对大语言模型（LLM）的规划能力一直存在争议。早期的研究普遍认为“语言模型无法进行规划（Plan）”，甚至断言LLM在没有外部验证器（Verifier）帮助的情况下，其**自我批评**（**Self-Critique**）能力是无效的。然而，Google DeepMind的一项最新研究打破了这一固有印象。
 
-> ArXiv URL：http://arxiv.org/abs/2512.24103v1
+> ArXiv URL：https://arxiv.org/abs/2512.24103v1
 
 该研究提出了一种**内在自我批评**（**Intrinsic Self-Critique**）方法，证明了LLM完全可以在不依赖外部Oracle（如代码解释器或PDDL验证器）的情况下，通过自我反思显著提升规划任务的表现。在经典的Blocksworld基准测试中，该方法将Gemini 1.5 Pro的准确率从49.8%惊人地提升到了**89.3%**，确立了新的SOTA。
 

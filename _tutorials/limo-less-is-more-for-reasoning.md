@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "LIMO: Less is More for Reasoning"
+description: "本文提出并验证了LIMO假说：对于在预训练中已编码了丰富领域知识的基础模型，仅需极少量（本文为817个）精心策划的认知过程范例（高质量的推理链），便能有效激发其复杂的数学推理能力，从而以不到1%的训练数据量，在多个高难度基准上超越了依赖大规模数据微调的SOTA模型。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "less-is-more-tokens-efficient-math-reasoning-via-difficulty-aware-chain-of-thoug"
+  - "less-llm-more-documents-searching-for-improved-rag"
+  - "limi-less-is-more-for-agency"
+  - "when-less-is-more-8-bit-quantization-improves-continual-learning-in-large-langua"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2502.03387v1
+- **ArXiv URL**: https://arxiv.org/abs/2502.03387v1
 
 - **作者**: Yixin Ye; Yang Xiao; Ethan Chern; Zhen Huang; Shijie Xia; Pengfei Liu
 

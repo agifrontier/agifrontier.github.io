@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Towards Automated Kernel Generation in the Era of LLMs"
+description: "告别手写CUDA噩梦：LLM+Agent自动生成高性能Kernel技术全景。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "数据与AI工程"
+related_tutorials:
+  - "dataflow-an-llm-driven-framework-for-unified-data-preparation-and-workflow-autom"
+  - "generative-models-for-synthetic-data-transforming-data-mining-in-the-genai-era"
+  - "webscale-rl-automated-data-pipeline-for-scaling-rl-data-to-pretraining-levels"
+  - "matrix-peer-to-peer-multi-agent-synthetic-data-generation-framework"
 ---
 
 ## 告别手写CUDA噩梦：LLM+Agent自动生成高性能Kernel技术全景
 
-<img src="/images/2601.15727v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.15727v1/A__title.jpg" alt="告别手写CUDA噩梦：LLM+Agent自动生成高性能Kernel技术全景 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在当今的AI大模型时代，算力就是黄金。但你是否知道，昂贵的GPU集群往往并没有被“吃干抹净”？
 
-> ArXiv URL：http://arxiv.org/abs/2601.15727v1
+> ArXiv URL：https://arxiv.org/abs/2601.15727v1
 
 现代AI系统的性能瓶颈，很大程度上不再取决于硬件的峰值算力，而在于底层的**算子**（**Kernel**）质量。将高层的算法逻辑（如矩阵乘法、Attention）翻译成底层硬件能理解的高效指令，是一项被称为“黑色艺术”的工程挑战。它要求工程师既懂算法，又精通硬件架构（内存层级、并行度、指令集）。正因如此，高性能Kernel的开发往往周期长、门槛高，且难以跨硬件迁移。
 

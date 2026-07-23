@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "KAN: Kolmogorov-Arnold Networks"
+description: "本文提出了一种名为科尔莫戈罗夫-阿诺德网络（Kolmogorov-Arnold Networks, KANs）的新型神经网络架构，其将可学习的激活函数置于网络边缘（“权重”）而非节点上，从而在函数拟合等任务中，相比于传统的多层感知机（MLPs），展现出更高的精度和可解释性。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "kcm-kan-based-collaboration-models-enhance-pretrained-large-models"
+  - "artificial-hippocampus-networks-for-efficient-long-context-modeling"
+  - "virtual-width-networks"
+  - "who-said-neural-networks-arent-linear"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2404.19756v5
+- **ArXiv URL**: https://arxiv.org/abs/2404.19756v5
 
 - **作者**: Max Tegmark; James Halverson; Thomas Y. Hou; Ziming Liu; Yixuan Wang; Sachin Vaidya; Fabian Ruehle; Marin Soljacic
 

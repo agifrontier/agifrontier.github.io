@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Every Question Has Its Own Value: Reinforcement Learning with Explicit Human Values"
+description: "本文提出 RLEV 方法，通过将可验证的正确性奖励与人类定义的显式价值（如题目分数）相结合，直接优化语言模型，使其不仅追求正确性，更优先处理高价值任务，并学会根据任务重要性调整回答的详略程度。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "stackelberg-learning-from-human-feedback-preference-optimization-as-a-sequential"
+  - "a-multiobjective-reinforcement-learning-framework-for-microgrid-energy-managemen"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "a-survey-of-reinforcement-learning-for-large-reasoning-models"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.20187v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.20187v1
 
 - **作者**: Dong Yu; Haitao Mi; Kishan Panaganti; Yulai Zhao; Linfeng Song; Dian Yu
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Latent learning: episodic memory complements parametric learning by enabling flexible reuse of experiences"
+description: "本文的核心论点建立在对认知科学概念的借鉴和对机器学习泛化能力的重新审视之上。以下是理解本文至关重要的核心概念。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "memrl-self-evolving-agents-via-runtime-reinforcement-learning-on-episodic-memory"
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+  - "continual-learning-via-sparse-memory-finetuning"
+  - "memory-r1-enhancing-large-language-model-agents-to-manage-and-utilize-memories-v"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.16189v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.16189v1
 
 - **作者**: Martin Engelcke; James L. McClelland; Arslan Chaudhry; Andrew Kyle Lampinen; Yuxuan Li
 

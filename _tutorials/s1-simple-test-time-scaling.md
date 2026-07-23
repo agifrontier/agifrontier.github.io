@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "s1: Simple test-time scaling"
+description: "本文提出了一种极其简单且高效的方法，通过在精心筛选的1000个样本（s1K）上进行监督微调，并结合一种名为“预算强制”（budget forcing）的测试时干预技术，成功构建了一个具备强大推理能力和可控测试时扩展（test-time scaling）行为的语言模型（s1-32B）。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "scaling-llm-test-time-compute-optimally-can-be-more-effective-than-scaling-model"
+  - "scaling-test-time-compute-to-achieve-ioi-gold-medal-with-open-weight-models"
+  - "learning-to-discover-at-test-time"
+  - "browseconf-confidence-guided-test-time-scaling-for-web-agents"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2501.19393v3
+- **ArXiv URL**: https://arxiv.org/abs/2501.19393v3
 
 - **作者**: Zitong Yang; Fei-Fei Li; Weijia Shi; Luke S. Zettlemoyer; Percy Liang; Emmanuel J. Candes; Xiang Lisa Li; Hanna Hajishirzi; Tatsunori Hashimoto; Niklas Muennighoff
 

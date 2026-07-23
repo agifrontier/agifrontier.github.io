@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "The Alignment Waltz: Jointly Training Agents to Collaborate for Safety"
+description: "本文提出了一种名为 的多智能体强化学习框架，该框架通过训练一个对话智能体和一个反馈智能体进行协作，将安全对齐问题转化为一个正和博弈，从而同时减少大型语言模型（LLM）的不安全响应和过度拒绝现象，提升了模型在有益性（helpfulness）和无害性（harmlessness）之间的帕累托前沿。"
+topics:
+  - "AI Agent"
+  - "AI安全与评测"
+related_tutorials:
+  - "jailbroken-how-does-llm-safety-training-fail"
+  - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
+  - "gui-360-a-comprehensive-dataset-and-benchmark-for-computer-using-agents"
+  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.08240v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.08240v1
 
 - **作者**: Eric Michael Smith; Sid Wang; Jason Weston; Mahesh Pasupuleti; Amr Sharaf; Daniel Khashabi; Benjamin Van Durme; Jingyu Zhang; Hongyuan Zhan; Haozhu Wang
 

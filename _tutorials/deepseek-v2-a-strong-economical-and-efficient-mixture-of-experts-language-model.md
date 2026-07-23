@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model"
+description: "本文提出了一种名为DeepSeek-V2的强混合专家（MoE）语言模型，该模型通过创新的多头潜在注意力（MLA）和DeepSeekMoE架构，在实现顶尖性能的同时，显著降低了训练成本并提升了推理效率。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "revffn-memory-efficient-full-parameter-fine-tuning-of-mixture-of-experts-llms-wi"
+  - "gatepro-parameter-free-expert-selection-optimization-for-mixture-of-experts-mode"
+  - "mixtral-of-experts"
+  - "deepseek-v3-technical-report"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2405.04434v5
+- **ArXiv URL**: https://arxiv.org/abs/2405.04434v5
 
 - **作者**: Zhihong Shao; Damai Dai; Bo Liu (Benjamin Liu); Huajian Xin; Zihan Wang; Daya Guo
 

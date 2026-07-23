@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Not All Parameters Are Created Equal: Smart Isolation Boosts Fine-Tuning Performance"
+description: "本文提出了一种名为“核心参数隔离微调”（CPI-FT）的新框架，通过识别并隔离每个任务的核心参数区域、根据区域重叠度对任务进行分组，并结合参数融合与动态冻结策略进行多阶段微调，从而有效缓解多任务监督微调中的任务冲突和灾难性遗忘问题。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "expand-neurons-not-parameters"
+  - "increasing-the-thinking-budget-is-not-all-you-need"
+  - "all-you-need-is-one-capsule-prompt-tuning-with-a-single-vector"
+  - "beft-bias-efficient-fine-tuning-of-language-models"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2508.21741v1
+- **ArXiv URL**: https://arxiv.org/abs/2508.21741v1
 
 - **作者**: Minlong Peng; Yao Wang; Di Liang
 

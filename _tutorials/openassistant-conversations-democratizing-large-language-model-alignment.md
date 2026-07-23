@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "OpenAssistant Conversations -- Democratizing Large Language Model Alignment"
+description: "本文发布了一个通过全球众包构建的大规模、多语言、人工标注的对话数据集——OpenAssistant Conversations，旨在通过开放高质量的人类反馈数据，推进大型语言模型对齐技术的研究民主化。"
+topics:
+  - "AI安全与评测"
+related_tutorials:
+  - "extracting-alignment-data-in-open-models"
+  - "kto-model-alignment-as-prospect-theoretic-optimization"
+  - "rlhf-a-comprehensive-survey-for-cultural-multimodal-and-low-latency-alignment-me"
+  - "the-alignment-waltz-jointly-training-agents-to-collaborate-for-safety"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2304.07327v2
+- **ArXiv URL**: https://arxiv.org/abs/2304.07327v2
 
 - **作者**: Christoph Schuhmann; Abdullah Barhoum; Sotiris Anagnostidis; Huu Nguyen; A. Mattick; K. Stevens; Yannic Kilcher; David Glushkov; Dimitri von Rutte; Nguyen Minh Duc; 等8人
 

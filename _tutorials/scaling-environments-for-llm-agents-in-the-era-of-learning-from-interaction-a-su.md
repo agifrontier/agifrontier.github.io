@@ -1,17 +1,25 @@
 ---
 layout: default
 title: "Scaling Environments for LLM Agents in the Era of Learning from Interaction: A Survey"
+description: "Agent智能进化论：阿里港科大万字综述，揭秘GEF三步循环。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "the-era-of-agentic-organization-learning-to-organize-with-language-models"
+  - "browseconf-confidence-guided-test-time-scaling-for-web-agents"
+  - "mirothinker-pushing-the-performance-boundaries-of-open-source-research-agents-vi"
+  - "a-survey-of-data-agents-emerging-paradigm-or-overstated-hype"
 ---
 
 ## Agent智能进化论：阿里港科大万字综述，揭秘GEF三步循环
 
-<img src="/images/2511.09586v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.09586v1/A__title.jpg" alt="Agent智能进化论：阿里港科大万字综述，揭秘GEF三步循环 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型Agent正以前所未有的速度发展，但一个巨大的瓶颈也随之浮现：静态数据集已经喂不饱它们了！
 
 > **论文标题**：Scaling Environments for LLM Agents in the Era of Learning from Interaction: A Survey
 
-> **ArXiv URL**：http://arxiv.org/abs/2511.09586v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.09586v1
 
 依赖人工标注、知识水平受限于人类的数据集，不仅成本高昂，更缺乏真实世界的动态性。如何培养Agent的自适应行为和长期决策能力，让它们超越人类水平？
 

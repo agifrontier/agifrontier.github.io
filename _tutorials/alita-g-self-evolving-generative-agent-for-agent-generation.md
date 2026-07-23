@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Alita-G: Self-Evolving Generative Agent for Agent Generation"
+description: "本文提出了Alita-G，一个自进化生成智能体框架，它通过系统性地生成、抽象和管理一系列称为模型上下文协议（Model Context Protocol, MCP）的工具，将一个通用智能体转化为特定领域的专家，从而在提升复杂推理任务准确率的同时降低了计算成本。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "learning-on-the-job-an-experience-driven-self-evolving-agent-for-long-horizon-ta"
+  - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
+  - "memrl-self-evolving-agents-via-runtime-reinforcement-learning-on-episodic-memory"
+  - "evoroute-experience-driven-self-routing-llm-agent-systems"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.23601v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.23601v1
 
 - **作者**: Jiacheng Guo; Xinzhe Juan; Mengdi Wang; Hongru Wang; Jiayi Geng; Yimin Wang; Jingzhe Shi; Peihang Li; Xuan Qi; Jiahao Qiu; 等12人
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "NVIDIA Nemotron 3: Efficient and Open Intelligence"
+description: "英伟达Nemotron 3发布：Mamba+MoE混合架构，百万上下文与NVFP4训练揭秘。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "epistemological-fault-lines-between-human-and-artificial-intelligence"
+  - "intelligence-per-watt-measuring-intelligence-efficiency-of-local-ai"
+  - "deepseek-v32-pushing-the-frontier-of-open-large-language-models"
+  - "gemma-2-improving-open-language-models-at-a-practical-size"
 ---
 
 ## 英伟达Nemotron 3发布：Mamba+MoE混合架构，百万上下文与NVFP4训练揭秘
 
-<img src="/images/2512.20856v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.20856v1/A__title.jpg" alt="英伟达Nemotron 3发布：Mamba+MoE混合架构，百万上下文与NVFP4训练揭秘 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型领域，"堆算力"似乎已成常态，但英伟达（NVIDIA）刚刚发布的研究展示了另一条路径：通过架构创新实现极致效率。NVIDIA Nemotron 3 系列模型（Nano, Super, Ultra）横空出世，它不仅是一个新的模型家族，更是对当前主流架构的一次大胆挑战——它抛弃了纯Transformer结构，转而采用了 **混合Mamba-Transformer架构**。
 
-> ArXiv URL：http://arxiv.org/abs/2512.20856v1
+> ArXiv URL：https://arxiv.org/abs/2512.20856v1
 
 这一系列模型不仅支持高达 **100万Token** 的上下文窗口，更在推理吞吐量和准确性之间取得了惊人的平衡。特别是Super和Ultra版本，更是引入了 **NVFP4训练** 和 **LatentMoE** 等前沿技术。本文将带你深入解读Nemotron 3背后的硬核技术。
 

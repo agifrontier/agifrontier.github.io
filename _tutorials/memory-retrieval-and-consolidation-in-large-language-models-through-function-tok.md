@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Memory Retrieval and Consolidation in Large Language Models through Function Tokens"
+description: "本文提出了“功能性Token假说” (Function Token Hypothesis)，揭示了语言模型中的一小部分高频Token（功能性Token）在记忆检索和巩固中扮演着核心角色：在推理时激活上下文中的预测性特征，在预训练时驱动模型学习和扩展新特征。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "citation-grounded-code-comprehension-preventing-llm-hallucination-through-hybrid"
+  - "bge-m3-embedding-multi-lingual-multi-functionality-multi-granularity-text-embedd"
+  - "self-rag-learning-to-retrieve-generate-and-critique-through-self-reflection"
+  - "beyond-patch-aggregation-3-pass-pyramid-indexing-for-vision-enhanced-document-re"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.08203v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.08203v1
 
 - **作者**: Shaohua Zhang; Hang Li; Yuan Lin
 
@@ -42,13 +50,13 @@ title: "Memory Retrieval and Consolidation in Large Language Models through Func
 
 本文首先基于Token在语料库中的出现频率来近似地区分功能性与内容性Token。自然语言中的词频遵循齐夫定律 (Zipf's law)，即少数词语（功能性词语）被高频使用，而大量词语（内容性词语）则使用频率很低。
 
-<img src="/images/2510.08203/fig1_zipf_law.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.08203/fig1_zipf_law.jpg" alt="功能性Token与内容性Token的划分 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 作者使用LLaMA-3.1分词器对SlimPajama-627B语料库进行处理，将累计出现次数占总数40%的最常见的122个Token定义为**功能性Token**，其余的为**内容性Token**。这些功能性Token主要包括标点符号、冠词、介词、连词等，它们在几乎所有文档中都均匀出现；而内容性Token则通常集中出现在少数相关主题的文档中。
 
-<img src="/images/2510.08203/token_distribution_of.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2510.08203/token_distribution_Tokyo.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2510.08203/document_coverage.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.08203/token_distribution_of.jpg" alt="功能性Token与内容性Token的划分 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.08203/token_distribution_Tokyo.jpg" alt="功能性Token与内容性Token的划分 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.08203/document_coverage.jpg" alt="功能性Token与内容性Token的划分 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 记忆检索：功能性Token激活预测性特征
 
@@ -61,13 +69,13 @@ title: "Memory Retrieval and Consolidation in Large Language Models through Func
 2.  **特征分解**：使用预先训练好的SAE将每个Token的激活值分解为稀疏的、可解释的特征组合。
 3.  **构建图**：如果一个Token在任何上下文中激活了某个特征，就在该Token和特征之间连接一条边。
 
-<img src="/images/2510.08203/x3.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.08203/x3.jpg" alt="创新点1：Token-特征二部图分析 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 分析结果显示，极少数功能性Token激活了模型中绝大多数的特征。如下图所示，Token激活的特征数量（度）与其频率高度相关。
 
-<img src="/images/2510.08203/gemma-9b-5M-token_degree_9.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2510.08203/gemma-9b-5M-token_degree_20.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2510.08203/gemma-9b-5M-token_degree_31.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.08203/gemma-9b-5M-token_degree_9.jpg" alt="创新点1：Token-特征二部图分析 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.08203/gemma-9b-5M-token_degree_20.jpg" alt="创新点1：Token-特征二部图分析 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.08203/gemma-9b-5M-token_degree_31.jpg" alt="创新点1：Token-特征二部图分析 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 下表的数据进一步证实，仅仅排名前10的功能性Token，在中层（第20层，通常被认为语义信息最丰富）就激活了超过70%的特征，表明功能性Token对模型的特征空间具有普遍的访问权限。
 
@@ -92,11 +100,11 @@ title: "Memory Retrieval and Consolidation in Large Language Models through Func
 
 在一个案例中，对于两个仅有一个词不同的Prompt（$$...capital of Russia?$$ vs $$...capital of UK?$$），模型中的内容性Token "Russia" 和 "UK" 分别激活了“俄罗斯”和“英国”相关特征。随后的**同一个**功能性Token（如$$:$$或$$\n$$），则会根据上文内容，选择性地再激活并传递这些不同的特征，最终引导模型生成不同的答案（莫斯科 vs 伦敦）。这表明功能性Token本身没有固定语义，而是扮演着一个动态的“路由器”角色。
 
-<img src="/images/2510.08203/x4.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2510.08203/x4.jpg" alt="创新点2：特征再激活与干预实验 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 进一步地，作者通过**特征干预** (steering) 实验证明了这种因果关系。在Prompt的最后一个功能性Token（如$$\n$$）处，人为激活特定特征（如“说中文”或“俄罗斯”），可以直接改变模型的输出内容和语言。例如，对于问题“富士山在哪里？”，在$$\n$$处激活“说中文”特征，模型回答会从“Japan”变为中文“日本”。这证明了功能性Token是控制后续内容生成的关键节点。
 
-<img src="/images/2510.08203/x5.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.08203/x5.jpg" alt="创新点2：特征再激活与干预实验 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 记忆巩固：功能性Token驱动特征学习
 
@@ -106,11 +114,11 @@ title: "Memory Retrieval and Consolidation in Large Language Models through Func
 
 通过在训练过程中的不同检查点（早期、中期、晚期）上训练SAE，作者发现模型的**特征数量随训练步数增加而显著增长**。这直观地展示了“记忆巩固”是一个特征不断扩张的过程。
 
-<img src="/images/2510.08203/sae_learned_features.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.08203/sae_learned_features.jpg" alt="创新点1：追踪特征扩张过程 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 同时，对不同阶段的Token-特征图分析显示，虽然总特征数在增加，但功能性Token始终是激活绝大多数特征的主力，且这种主导地位随着训练的深入而愈发明显。
 
-<img src="/images/2510.08203/token_degree_by_ckpts_plot.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.08203/token_degree_by_ckpts_plot.jpg" alt="创新点1：追踪特征扩张过程 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 #### 创新点2：损失函数动态分析
 
@@ -121,14 +129,14 @@ title: "Memory Retrieval and Consolidation in Large Language Models through Func
 4.  $$content→content$$ (内→内)
 
 通过追踪这四类任务的损失 (loss) 变化，发现了几个关键现象：
-<img src="/images/2510.08203/1.5b_token_group_loss.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2510.08203/8b_token_group_loss.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.08203/1.5b_token_group_loss.jpg" alt="创新点2：损失函数动态分析 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.08203/8b_token_group_loss.jpg" alt="创新点2：损失函数动态分析 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *   **$$function→content$$的损失最高**：在整个训练过程中，预测功能性Token之后的$$内容性Token$$是**最困难**的任务，其损失值远高于其他三类。这意味着模型优化的主要压力来自于此。为了降低这个损失，模型被迫让功能性Token学会从上下文中提取和激活最有效的预测性特征。这正是功能性Token强大能力习得的根源。
 *   **模型先学会预测功能性Token**：在训练早期，预测功能性Token（$$→function$$）的损失下降最快并迅速收敛到很低的水平。这表明模型首先掌握了语言的语法结构和基本流。
 *   **模型规模主要提升内容预测能力**：从1.5B扩展到8B模型，对预测功能性Token的提升有限，但对预测内容性Token（尤其是$$function→content$$）的损失降低幅度最大。这说明增加模型参数主要用于增强其表达和预测复杂语义内容的能力。
 
-<img src="/images/2510.08203/x6.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.08203/x6.jpg" alt="创新点2：损失函数动态分析 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 上图展示了模型在不同训练阶段的生成演变，从早期只会生成功能性Token，到中期生成连贯短语，再到后期能够处理长距离依赖，这与损失分析的结论一致。
 

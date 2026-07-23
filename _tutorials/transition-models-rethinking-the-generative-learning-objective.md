@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Transition Models: Rethinking the Generative Learning Objective"
+description: "本文提出了一种名为过渡模型 (Transition Models, TiM) 的新型生成范式，它通过学习一个能够在任意时间间隔 上进行状态转换的精确动力学方程，成功统一了高效的少步生成与高质量的多步精炼，解决了现有生成模型中普遍存在的“速度-质量”权衡困境。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "rethinking-cross-lingual-gaps-from-a-statistical-viewpoint"
+  - "rethinking-supervised-fine-tuning-emphasizing-key-answer-tokens-for-improved-llm"
+  - "what-is-the-objective-of-reasoning-with-reinforcement-learning"
+  - "generative-ai"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.04394v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.04394v1
 
 - **作者**: Yiyuan Zhang; Xiaoyu Yue; Wanli Ouyang; Yangguang Li; Xiangyu Yue; Zidong Wang; Lei Bai
 

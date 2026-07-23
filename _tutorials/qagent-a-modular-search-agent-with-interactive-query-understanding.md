@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "QAgent: A modular Search Agent with Interactive Query Understanding"
+description: "本文提出了 QAgent，一个统一的智能体 RAG 框架，它通过一个采用两阶段强化学习策略训练的模块化搜索智能体，进行交互式查询理解和自适应检索，从而提高了对复杂问题的检索质量和作为可插拔模块的泛化能力。"
+topics:
+  - "AI Agent"
+  - "行业应用"
+related_tutorials:
+  - "llmtimesmapreduce-v3-enabling-interactive-in-depth-survey-generation-through-a-m"
+  - "scaling-up-multi-turn-off-policy-rl-and-multi-agent-tree-search-for-llm-step-pro"
+  - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
+  - "mixture-of-minds-multi-agent-reinforcement-learning-for-table-understanding"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.08383v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.08383v1
 
 - **作者**: Wenbo Su; Lei Shen; Bo Zheng; Sendong Zhao; Yi Jiang
 
@@ -36,14 +45,12 @@ title: "QAgent: A modular Search Agent with Interactive Query Understanding"
 ## 本文方法
 本文提出了一个名为 QAgent 的统一智能体框架，其核心是一个通过多轮交互循环进行推理和检索的搜索智能体，并通过一种创新的两阶段训练策略进行优化。
 
-![](acl_latex/imgs/framework.png)
 
 ### 创新点
 本文方法的核心创新在于其**为提升泛化能力而设计的两阶段训练策略**，它将搜索智能体显式地定位为一个专注于“信息检索”的独立模块，而非一个端到端的问答系统。
 
 #### 多轮查询优化循环
 QAgent 的工作流程被建模为一个序贯决策过程，智能体在一个循环中与检索系统进行多轮交互。
-![](acl_latex/imgs/query.png)
 
 在每一轮 $t$，智能体遵循以下步骤：
 1.  **计划 ($I^{pre}\_{t}$)**: 基于历史信息和原始查询 $q$ 进行规划。
@@ -69,7 +76,6 @@ $${% endraw %}
 
 其中 $A^\*$ 是标准答案，$\mathrm{EM\_s}$ 代表严格精确匹配。这种方式能同时提升智能体的信息检索和信息利用能力。然而，本文分析发现，训练后期模型会倾向于通过提升自身的“信息利用”能力来“hacking”奖励，而不是继续优化“信息检索”能力，这会损害其作为通用检索模块的泛化性。
 
-![](acl_latex/imgs/case_SearchR1.png)
 
 
 **第二阶段：泛化强化学习训练**
@@ -155,11 +161,9 @@ $${% endraw %}
 <br>
 
 *   **组合增益分析**：实验表明，QAgent通过智能体的多轮查询优化，能够获得超越传统 RAG 范式（即使增加检索文档数量）的“组合增益”，有效突破了单个检索器能力的上限。
-![](acl_latex/imgs/upper_gain_v3.png)
 
 
 *   **信息利用能力分析**：验证了本文的核心动机。经过端到端训练的模型具有最强的信息利用能力，但在经过泛化训练后，该能力有所下降。这恰恰说明泛化训练成功地将模型的优化目标从“利用信息”转移到了“检索信息”，从而提升了其作为检索模块的泛化性。
-![](acl_latex/imgs/info.png)
 
 ### 总结
 实验结果充分证明，QAgent 通过其创新的两阶段训练策略，成功地训练出一个在复杂问答任务中表现优异、且具有强大泛化能力的模块化搜索智能体。它不仅在端到端任务上取得了领先，更重要的是，它能作为即插即用的组件高效地集成到大型系统中，为现实世界的 RAG 应用提供了可靠的解决方案。

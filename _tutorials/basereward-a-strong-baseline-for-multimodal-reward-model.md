@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "BaseReward: A Strong Baseline for Multimodal Reward Model"
+description: "本文通过一系列详尽的实验，系统性地探究了构建高性能多模态奖励模型的关键要素，总结出一套清晰的“配方”，并基于此提出了一款名为 BaseReward 的强大基线模型，在多个主流基准测试中达到了新的SOTA水平。"
+topics:
+  - "多模态与视觉"
+  - "推理与强化学习"
+related_tutorials:
+  - "a-multitask-multilingual-multimodal-evaluation-of-chatgpt-on-reasoning-hallucina"
+  - "ssl4rl-revisiting-self-supervised-learning-as-intrinsic-reward-for-visual-langua"
+  - "a-survey-on-agentic-multimodal-large-language-models"
+  - "a-survey-on-multimodal-large-language-models"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.16127v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.16127v1
 
 - **作者**: Haotian Wang; Chaoyou Fu; Xu Wang; Bo Cui; Kai Wu; Haochen Tian; Yang Shi; Zezhou Chen; Liang Wang; Haihua Yang; 等13人
 

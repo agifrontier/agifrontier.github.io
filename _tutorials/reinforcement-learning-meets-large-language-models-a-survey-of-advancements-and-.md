@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Reinforcement Learning Meets Large Language Models: A Survey of Advancements and Applications Across the LLM Lifecycle"
+description: "Reinforcement Learning Meets Large Language Models: A Survey of Advancements and Applications Across the LLM Lifecycle。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "a-survey-of-reinforcement-learning-for-large-reasoning-models"
+  - "statistical-reinforcement-learning-in-the-real-world-a-survey-of-challenges-and-"
+  - "the-landscape-of-agentic-reinforcement-learning-for-llms-a-survey"
+  - "dacomp-benchmarking-data-agents-across-the-full-data-intelligence-lifecycle"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.16679v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.16679v1
 
 - **作者**: Dingkang Yang; Yuchi Wang; Ziyun Qian; Jun Liu; Peng Zhai; Hongsheng Li; Weijie Yin; Yang Liu; Lihua Zhang
 
@@ -61,7 +69,6 @@ title: "Reinforcement Learning Meets Large Language Models: A Survey of Advancem
 4.  **数据集与基准 (Datasets & Benchmarks)**：用于训练和评估RL微调模型的相关资源。
 5.  **开源框架 (Open-source Frameworks)**：支持大规模RL训练的工具。
 
-![RL增强LLM分类体系](https://s2.loli.net/2024/09/20/ChYxXz3pU9Jqf5T.png)
 
 ## 强化学习基础
 

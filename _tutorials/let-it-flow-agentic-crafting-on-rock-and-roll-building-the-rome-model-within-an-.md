@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Let It Flow: Agentic Crafting on Rock and Roll, Building the ROME Model within an Open Agentic Learning Ecosystem"
+description: "阿里开源ROME：SWE-bench胜率57%，揭秘打造顶尖Agent的“罗马”基建。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "part-ii-roll-flash-accelerating-rlvr-and-agentic-training-with-asynchrony"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+  - "online-process-reward-leanring-for-agentic-reinforcement-learning"
 ---
 
 ## 阿里开源ROME：SWE-bench胜率57%，揭秘打造顶尖Agent的“罗马”基建
 
-<img src="/images/2512.24873v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.24873v1/A__title.jpg" alt="阿里开源ROME：SWE-bench胜率57%，揭秘打造顶尖Agent的“罗马”基建 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型的发展正在经历一场从“对话者”到“行动者”的深刻变革。
 
-> ArXiv URL：http://arxiv.org/abs/2512.24873v1
+> ArXiv URL：https://arxiv.org/abs/2512.24873v1
 
 过去，我们习惯于给模型一个Prompt，然后期待它吐出一个完美的答案。但在真实的软件工程或复杂任务中，这种“一锤子买卖”往往行不通。真正的**智能体构建**（**Agentic Crafting**）需要模型像人类工程师一样：规划方案、编写代码、观察报错、自我修正，并在多次交互中最终解决问题。
 

@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts"
+description: "本文提出了 MathVista，一个全面的基准测试，旨在系统性地评估基础模型在视觉情境下的数学推理能力，并揭示了即便是最先进的 GPT-4V 模型，其性能也与人类水平存在显著差距。"
+topics:
+  - "多模态与视觉"
+  - "推理与强化学习"
+related_tutorials:
+  - "cogflow-bridging-perception-and-reasoning-through-knowledge-internalization-for-"
+  - "ssl4rl-revisiting-self-supervised-learning-as-intrinsic-reward-for-visual-langua"
+  - "seedance-15-pro-a-native-audio-visual-joint-generation-foundation-model"
+  - "deepseekmath-pushing-the-limits-of-mathematical-reasoning-in-open-language-model"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2310.02255v3
+- **ArXiv URL**: https://arxiv.org/abs/2310.02255v3
 
 - **作者**: Michel Galley; Hritik Bansal; Kai-Wei Chang; Jiacheng Liu; Hao Cheng; Tony Xia; Chun-yue Li; Hannaneh Hajishirzi; Jianfeng Gao; Pan Lu
 

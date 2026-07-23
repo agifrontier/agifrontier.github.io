@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Causal Reasoning Favors Encoders: On The Limits of Decoder-Only Models"
+description: "BERT“逆袭”GPT？微软新论文揭示Decoder-only在因果推理中的致命短板。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "executable-counterfactuals-improving-llms-causal-reasoning-through-code"
+  - "deepseekmath-pushing-the-limits-of-mathematical-reasoning-in-open-language-model"
+  - "encoder-decoder-or-decoder-only-revisiting-encoder-decoder-large-language-model"
+  - "a-multitask-multilingual-multimodal-evaluation-of-chatgpt-on-reasoning-hallucina"
 ---
 
 ## BERT“逆袭”GPT？微软新论文揭示Decoder-only在因果推理中的致命短板
 
-<img src="/images/2512.10561v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.10561v1/A__title.jpg" alt="BERT“逆袭”GPT？微软新论文揭示Decoder-only在因果推理中的致命短板 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在如今的大模型时代，“Decoder-only is all you need”似乎已成为某种不成文的铁律。从GPT系列到Llama，再到Qwen，生成式架构统治了几乎所有榜单。然而，当我们剥离掉华丽的语言外壳，直面最纯粹、最严苛的**因果推理**（**Causal Reasoning**）任务时，这些庞然大物是否依然无懈可击？
 
-> ArXiv URL：http://arxiv.org/abs/2512.10561v1
+> ArXiv URL：https://arxiv.org/abs/2512.10561v1
 
 来自IIIT Hyderabad、微软、IIT Delhi等机构的一项最新研究给出了令人意外的答案：**在因果推理任务上，Decoder-only 模型可能并不是最优解，甚至在某些方面完败给“过气”的 Encoder 架构（如 BERT）。**
 

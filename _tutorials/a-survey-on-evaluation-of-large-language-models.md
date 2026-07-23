@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "A Survey on Evaluation of Large Language Models"
+description: "A Survey on Evaluation of Large Language Models。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI安全与评测"
+related_tutorials:
+  - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
+  - "ai-agent-systems-architectures-applications-and-evaluation"
+  - "factscore-fine-grained-atomic-evaluation-of-factual-precision-in-long-form-text-"
+  - "harmbench-a-standardized-evaluation-framework-for-automated-red-teaming-and-robu"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2307.03109v9
+- **ArXiv URL**: https://arxiv.org/abs/2307.03109v9
 
 - **作者**: Yue Zhang; Cunxiang Wang; Xu Wang; Hao Chen; Yi Chang; Kaijie Zhu; Yidong Wang; Xiaoyuan Yi; Linyi Yang; Yuan Wu; 等6人
 

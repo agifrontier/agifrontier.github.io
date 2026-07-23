@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "ELPO: Ensemble Learning Based Prompt Optimization for Large Language Models"
+description: "告别玄学Prompt！字节跳动ELPO框架，F1分数最高提升7.6分。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "dro-instructzero-distributionally-robust-prompt-optimization-for-large-language-"
+  - "modular-prompt-optimization-optimizing-structured-prompts-with-section-local-tex"
+  - "multi-phase-spacecraft-trajectory-optimization-via-transformer-based-reinforceme"
+  - "stackelberg-learning-from-human-feedback-preference-optimization-as-a-sequential"
 ---
 
 ## 告别玄学Prompt！字节跳动ELPO框架，F1分数最高提升7.6分
 
-<img src="/images/2511.16122v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.16122v1/A__title.jpg" alt="告别玄学Prompt！字节跳动ELPO框架，F1分数最高提升7.6分 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 与大语言模型（LLM）打交道时，我们总会遇到一个头疼的问题：模型表现对提示词（Prompt）极其敏感。
 
-> ArXiv URL：http://arxiv.org/abs/2511.16122v1
+> ArXiv URL：https://arxiv.org/abs/2511.16122v1
 
 换个同义词，调整下语序，结果可能天差地别。这催生了“提示词工程”这门手艺，但也让无数开发者陷入了反复试错的泥潭。
 
@@ -88,7 +96,6 @@ ELPO的“组合拳”效果如何？实验结果给出了响亮的答案。
 
 研究者在6个涵盖是非题、生成题和选择题的数据集上进行了广泛测试，模型方面则使用了豆包-pro和GPT-4o。
 
-![](https://image.uc.cn/s/wemedia/s/upload/2024/762c95e54d3d75865a7f9202534f37fa.png)
 
 结果显示，ELPO在所有任务上都一致性地超越了包括APE、OPRO、Promptbreeder在内的所有SOTA方法。
 

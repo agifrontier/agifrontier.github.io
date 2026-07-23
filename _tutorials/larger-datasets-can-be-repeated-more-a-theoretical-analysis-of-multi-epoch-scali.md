@@ -1,17 +1,25 @@
 ---
 layout: default
 title: "Larger Datasets Can Be Repeated More: A Theoretical Analysis of Multi-Epoch Scaling in Linear Regression"
+description: "数据告急？北大清华发现：数据集越大，重复训练收益越高，价值可达logN倍。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "scaling-llm-test-time-compute-optimally-can-be-more-effective-than-scaling-model"
+  - "large-language-monkeys-scaling-inference-compute-with-repeated-sampling"
+  - "a-general-theoretical-paradigm-to-understand-learning-from-human-preferences"
+  - "object-recognition-datasets-and-challenges-a-review"
 ---
 
 ## 数据告急？北大清华发现：数据集越大，重复训练收益越高，价值可达logN倍
 
-<img src="/images/2511.13421v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.13421v1/A__title.jpg" alt="数据告急？北大清华发现：数据集越大，重复训练收益越高，价值可达logN倍 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 AI的飞速发展正以前所未有的速度消耗着全球的高质量数据，甚至有预测称我们将在2028年耗尽公开可用的数据。面对日益严峻的数据荒，一个看似直接的办法摆在所有研究者面前：在有限的数据集上进行多轮次（multi-epoch）重复训练。
 
 > **论文标题**：Larger Datasets Can Be Repeated More: A Theoretical Analysis of Multi-Epoch Scaling in Linear Regression
 
-> **ArXiv URL**：http://arxiv.org/abs/2511.13421v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.13421v1
 
 但这引出了一个核心问题：重复“刷题”究竟能在多大程度上替代“新题”？在1TB的数据集上训练4轮，和在全新的4TB数据集上训练1轮，效果一样吗？
 

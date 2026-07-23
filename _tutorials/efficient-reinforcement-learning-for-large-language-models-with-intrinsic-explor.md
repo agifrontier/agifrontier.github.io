@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Efficient Reinforcement Learning for Large Language Models with Intrinsic Exploration"
+description: "本文提出了一种名为PREPO的高效强化学习方法，通过结合基于提示困惑度（Perplexity）的课程学习调度和基于相对熵（Relative Entropy）的探索性序列加权，在不牺牲模型性能的前提下，将大语言模型在强化学习训练中的数据效率提升了高达3倍。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "brorl-scaling-reinforcement-learning-via-broadened-exploration"
+  - "livethinking-enabling-real-time-efficient-reasoning-for-ai-powered-livestreaming"
+  - "ssl4rl-revisiting-self-supervised-learning-as-intrinsic-reward-for-visual-langua"
+  - "a-multiobjective-reinforcement-learning-framework-for-microgrid-energy-managemen"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2511.00794v1
+- **ArXiv URL**: https://arxiv.org/abs/2511.00794v1
 
 - **作者**: Zihao Wang; Stanley Kok; Jia Guo; Zujie Wen; Yan Sun; Zhiqiang Zhang
 

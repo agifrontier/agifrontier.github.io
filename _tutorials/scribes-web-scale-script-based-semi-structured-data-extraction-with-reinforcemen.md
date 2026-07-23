@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "SCRIBES: Web-Scale Script-Based Semi-Structured Data Extraction with Reinforcement Learning"
+description: "本文提出了一种名为 SCRIBES 的新型强化学习框架，它通过利用同一网站内网页间的布局相似性作为奖励信号，训练大型语言模型生成可重用的提取脚本，从而实现对网页半结构化数据（如表格和列表）的网络规模、高效率提取。"
+topics:
+  - "推理与强化学习"
+  - "数据与AI工程"
+related_tutorials:
+  - "dapo-an-open-source-llm-reinforcement-learning-system-at-scale"
+  - "cuda-l2-surpassing-cublas-performance-for-matrix-multiplication-through-reinforc"
+  - "the-refinedweb-dataset-for-falcon-llm-outperforming-curated-corpora-with-web-dat"
+  - "hplt-30-very-large-scale-multilingual-resources-for-llm-and-mt-mono-and-bi-lingu"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.01832v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.01832v1
 
 - **作者**: Zhaojiang Lin; Wen-tau Yih; Lisheng Fu; Kai Sun; Shicheng Liu; Yue Liu; Xin Luna Dong; Rulin Shao; Xinyuan Zhang; Xilun Chen; 等11人
 

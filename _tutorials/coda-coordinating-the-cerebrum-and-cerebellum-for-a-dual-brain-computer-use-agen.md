@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "CODA: Coordinating the Cerebrum and Cerebellum for a Dual-Brain Computer Use Agent with Decoupled Reinforcement Learning"
+description: "本文提出了一种名为 CODA 的可训练组合式智能体框架，它模仿人脑的大脑与小脑功能分离机制，通过解耦的强化学习和两阶段训练流程，协同一个通用规划器（大脑）和一个专用执行器（小脑），以有效解决科学计算等专业领域中长时序规划与精确GUI操作的挑战。"
+topics:
+  - "AI Agent"
+  - "推理与强化学习"
+related_tutorials:
+  - "mars-optimizing-dual-system-deep-research-via-multi-agent-reinforcement-learning"
+  - "verltool-towards-holistic-agentic-reinforcement-learning-with-tool-use"
+  - "mixture-of-minds-multi-agent-reinforcement-learning-for-table-understanding"
+  - "tree-search-for-llm-agent-reinforcement-learning"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2508.20096v1
+- **ArXiv URL**: https://arxiv.org/abs/2508.20096v1
 
 - **作者**: Jiaqi Wang; Qiushi Sun; Dahua Lin; Ziyu Liu; Yuhang Cao; Zeyi Sun; Zhixiong Zhang; Xiaoyi Dong; Yuhang Zang; Kai Chen
 

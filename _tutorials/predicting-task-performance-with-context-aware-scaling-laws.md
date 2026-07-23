@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Predicting Task Performance with Context-aware Scaling Laws"
+description: "本文提出了一个简洁、可解释的上下文感知缩放定律 (context-aware scaling law) 框架，该框架通过一个函数联合建模了训练计算量和上下文长度，从而能够准确预测和推断大型语言模型在下游任务中的性能。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "zero-shot-performance-prediction-for-probabilistic-scaling-laws"
+  - "relative-scaling-laws-for-llms"
+  - "uncovering-scaling-laws-for-large-language-models-via-inverse-problems"
+  - "mirothinker-pushing-the-performance-boundaries-of-open-source-research-agents-vi"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.14919v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.14919v1
 
 - **作者**: Chenguang Wang; Michael Bendersky; David Park; Beliz Gunel; Dawn Song; Kyle Montgomery; Jianhong Tu
 

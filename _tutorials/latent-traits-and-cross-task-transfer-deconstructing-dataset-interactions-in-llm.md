@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Latent Traits and Cross-Task Transfer: Deconstructing Dataset Interactions in LLM Fine-tuning"
+description: "本文提出了一个基于性能矩阵和主成分分析(PCA)的分析框架，旨在系统性地解构大语言模型(LLM)微调过程中的跨任务迁移学习效应，并发现任务性能更多地受源数据集中隐藏的统计特征（如输出长度、类别分布）和特定语言特征的影响，而非表面上的领域相似性。"
+topics:
+  - "数据与AI工程"
+related_tutorials:
+  - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
+  - "train-on-validation-tov-fast-data-selection-with-applications-to-fine-tuning"
+  - "valid-survey-simulations-with-limited-human-data-the-roles-of-prompting-fine-tun"
+  - "a-comprehensive-dataset-for-human-vs-ai-generated-text-detection"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.13624v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.13624v1
 
 - **作者**: Taesung Lee; Shambhavi Krishna; Haw-Shiuan Chang; Atharva Naik
 

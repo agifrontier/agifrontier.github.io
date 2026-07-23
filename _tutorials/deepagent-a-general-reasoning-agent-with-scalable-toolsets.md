@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "DeepAgent: A General Reasoning Agent with Scalable Toolsets"
+description: "本文提出DeepAgent，一个通用的端到端深度推理智能体（Agent），它将思考、动态工具发现和动作执行统一在单个连贯的推理流中，并通过自主记忆折叠机制和专门的强化学习方法ToolPO，使其能够高效利用规模可变的工具集解决复杂真实世界任务。"
+topics:
+  - "AI Agent"
+  - "推理与强化学习"
+related_tutorials:
+  - "unlocking-the-power-of-multi-agent-llm-for-reasoning-from-lazy-agents-to-deliber"
+  - "coda-coordinating-the-cerebrum-and-cerebellum-for-a-dual-brain-computer-use-agen"
+  - "dynamic-speculative-agent-planning"
+  - "mars-optimizing-dual-system-deep-research-via-multi-agent-reinforcement-learning"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.21618v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.21618v1
 
 - **作者**: Zhicheng Dou; Ji-Rong Wen; Guanting Dong; Yinuo Wang; Yuan Lu; Wenxiang Jiao; Jiajie Jin; Jiarui Jin; Yutao Zhu; Xiaoxi Li; 等11人
 

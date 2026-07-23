@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Higher-order Linear Attention"
+description: "本文提出了一种名为高阶线性注意力 (Higher-order Linear Attention, HLA) 的新型注意力机制，它通过紧凑的前缀充分统计量 (prefix sufficient statistics) 实现了高阶交互，同时保持了线性时间复杂度和流式计算能力，从而在不牺牲表达能力的情况下解决了标。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "kimi-linear-an-expressive-efficient-attention-architecture"
+  - "spotlight-attention-towards-efficient-llm-generation-via-non-linear-hashing-base"
+  - "trainable-log-linear-sparse-attention-for-efficient-diffusion-transformers"
+  - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.27258v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.27258v1
 
 - **作者**: Zhen Qin; Quanquan Gu; Yifan Zhang
 
@@ -120,7 +128,6 @@ $${% endraw %}
 
 该方法可以对序列分块，在块内和块间并行执行扫描，得到的激活值与串行循环完全相同，从而实现了高效且精确的并行训练。该框架同样可以扩展到带有指数衰减 $\gamma$ 的情况。
 
-![Masked (Second Order) HLA with Within-Chunk Scan](https://raw.githubusercontent.com/wylAImoreira/img-bed/main/202405231718919.png)
 
 ### 非对称高阶线性注意力 (AHLA)
 本文还提出了一种互补的变体，称为AHLA。它计算的是左级联积 $\mathbf{Q}(\mathbf{K}^\top\mathbf{Q})(\mathbf{K}^\top\mathbf{V})$，而不是HLA中的对称形式。AHLA同样支持流式计算和因果遮蔽，但使用了不同的前缀摘要，例如：

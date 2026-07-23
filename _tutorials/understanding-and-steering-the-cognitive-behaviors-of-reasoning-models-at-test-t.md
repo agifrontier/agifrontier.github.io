@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Understanding and Steering the Cognitive Behaviors of Reasoning Models at Test-Time"
+description: "拒绝“过度思考”！CREST让大模型推理提速37.6%，精度暴涨17.5%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "how-and-why-llms-generalize-a-fine-grained-analysis-of-llm-reasoning-from-cognit"
+  - "pacore-learning-to-scale-test-time-compute-with-parallel-coordinated-reasoning"
+  - "reasoning-over-mathematical-objects-on-policy-reward-modeling-and-test-time-aggr"
+  - "understanding-the-role-of-training-data-in-test-time-scaling"
 ---
 
 ## 拒绝“过度思考”！CREST让大模型推理提速37.6%，精度暴涨17.5%
 
-<img src="/images/2512.24574v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.24574v1/A__title.jpg" alt="拒绝“过度思考”！CREST让大模型推理提速37.6%，精度暴涨17.5% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大模型（LLM）的**思维链**（**Chain-of-Thought, CoT**）技术虽然强大，但你是否发现，模型有时候像个啰嗦的老学究？它经常陷入“过度思考”（Overthinking）的泥潭，生成大量冗余的验证步骤，或者在简单问题上反复纠结，导致推理速度极慢，计算成本飙升。
 
-> ArXiv URL：http://arxiv.org/abs/2512.24574v1
+> ArXiv URL：https://arxiv.org/abs/2512.24574v1
 
 如果我们可以像外科手术一样，精准地切除模型大脑中那些“犹豫不决”和“无效反思”的区域，会发生什么？
 

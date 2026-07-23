@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "SparseGPT: Massive Language Models Can Be Accurately Pruned in One-Shot"
+description: "本文提出了一种名为 SparseGPT 的新颖剪枝方法，能够对超大规模语言模型（如 OPT-175B）进行一次性（One-Shot）剪枝，在不进行任何重新训练的情况下，达到50%-60%的稀疏度，同时保持极低的准确率损失。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "all-you-need-is-one-capsule-prompt-tuning-with-a-single-vector"
+  - "flex-language-modeling-with-few-shot-language-explanations"
+  - "zero-shot-performance-prediction-for-probabilistic-scaling-laws"
+  - "can-llms-track-their-output-length-a-dynamic-feedback-mechanism-for-precise-leng"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2301.00774v3
+- **ArXiv URL**: https://arxiv.org/abs/2301.00774v3
 
 - **作者**: Elias Frantar; Dan Alistarh
 

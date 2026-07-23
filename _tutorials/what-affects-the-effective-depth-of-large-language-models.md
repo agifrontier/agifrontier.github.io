@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "What Affects the Effective Depth of Large Language Models?"
+description: "MIT新发现：大模型半数层在“划水”，R1推理变强竟不靠深度？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "do-depth-grown-models-overcome-the-curse-of-depth-an-in-depth-analysis"
+  - "itransformer-inverted-transformers-are-effective-for-time-series-forecasting"
+  - "scaling-llm-test-time-compute-optimally-can-be-more-effective-than-scaling-model"
+  - "cost-aware-retrieval-augmentation-reasoning-models-with-adaptive-retrieval-depth"
 ---
 
 ## MIT新发现：大模型半数层在“划水”，R1推理变强竟不靠深度？
 
-<img src="/images/2512.14064v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.14064v1/A__title.jpg" alt="MIT新发现：大模型半数层在“划水”，R1推理变强竟不靠深度？ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型（LLM）的Scaling Law竞赛中，我们似乎达成了一个共识：模型越深，能力越强。为了追求更高的智能，模型层数从几十层堆叠到上百层。然而，来自麻省理工学院（MIT）和北京大学的一项最新研究却给这股“堆层数”的热潮泼了一盆冷水。
 
-> ArXiv URL：http://arxiv.org/abs/2512.14064v1
+> ArXiv URL：https://arxiv.org/abs/2512.14064v1
 
 这项研究提出了一个直击灵魂的问题：**那些动辄上百层的庞然大物，真的每一层都在进行复杂的计算吗？还是说，它们只是在机械地重复劳动？**
 

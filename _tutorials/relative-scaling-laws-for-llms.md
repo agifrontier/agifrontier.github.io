@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Relative Scaling Laws for LLMs"
+description: "本文提出了一种名为“相对缩放定律 (Relative Scaling Laws)”的新框架，用于量化随着计算规模的增加，不同数据分布上的性能差距如何演变，揭示了规模增长并非普适的均衡器，其影响因领域而异。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "relative-based-scaling-law-for-neural-language-models"
+  - "predicting-task-performance-with-context-aware-scaling-laws"
+  - "uncovering-scaling-laws-for-large-language-models-via-inverse-problems"
+  - "zero-shot-performance-prediction-for-probabilistic-scaling-laws"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.24626v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.24626v1
 
 - **作者**: Percy Liang; William Held; David Hall; Diyi Yang
 

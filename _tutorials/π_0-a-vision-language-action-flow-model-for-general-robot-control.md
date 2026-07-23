@@ -1,11 +1,20 @@
 ---
 layout: default
 title: "$π_0$: A Vision-Language-Action Flow Model for General Robot Control"
+description: "A Vision-Language-Action Flow Model for General Robot Control。"
+topics:
+  - "具身智能与机器人"
+  - "多模态与视觉"
+related_tutorials:
+  - "openvla-an-open-source-vision-language-action-model"
+  - "instructblip-towards-general-purpose-vision-language-models-with-instruction-tun"
+  - "bridgedata-v2-a-dataset-for-robot-learning-at-scale"
+  - "octo-an-open-source-generalist-robot-policy"
 ---
 
 ## $π\_0$: A Vision-Language-Action Flow Model for General Robot Control
 
-- **ArXiv URL**: http://arxiv.org/abs/2410.24164v3
+- **ArXiv URL**: https://arxiv.org/abs/2410.24164v3
 
 - **作者**: Karol Hausman; Liyiming Ke; Tim Jones; Quan Vuong; Kevin Black; Chelsea Finn; Michael Equi; L. X. Shi; Haohuan Wang; Anna Walling; 等14人
 

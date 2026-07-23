@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Let's Verify Step by Step"
+description: "本文通过在极具挑战性的MATH数学数据集上进行实验，证明了过程监督 (Process Supervision) 在训练奖励模型方面显著优于结果监督 (Outcome Supervision)，其训练出的模型能更可靠地解决复杂的多步推理问题。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "compress-to-impress-efficient-llm-adaptation-using-a-single-gradient-step-on-100"
+  - "do-not-step-into-the-same-river-twice-learning-to-reason-from-trial-and-error"
+  - "music-multi-step-instruction-contrast-for-multi-turn-reward-models"
+  - "step-deepresearch-technical-report"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2305.20050v1
+- **ArXiv URL**: https://arxiv.org/abs/2305.20050v1
 
 - **作者**: Teddy Lee; Harrison Edwards; Hunter Lightman; I. Sutskever; Yura Burda; K. Cobbe; Jan Leike; John Schulman; Bowen Baker; Vineet Kosaraju
 

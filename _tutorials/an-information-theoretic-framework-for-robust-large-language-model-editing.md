@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "An Information-Theoretic Framework for Robust Large Language Model Editing"
+description: "阿里IBKE：用“信息瓶颈”给大模型做脑部微创，知识编辑SOTA。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "an-information-theoretic-perspective-on-agentic-system-design"
+  - "harmbench-a-standardized-evaluation-framework-for-automated-red-teaming-and-robu"
+  - "understanding-robustness-of-model-editing-in-code-llms-an-empirical-study"
+  - "robust-layerwise-scaling-rules-by-proper-weight-decay-tuning"
 ---
 
 ## 阿里IBKE：用“信息瓶颈”给大模型做脑部微创，知识编辑SOTA
 
-<img src="/images/2512.16227v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.16227v1/A__title.jpg" alt="阿里IBKE：用“信息瓶颈”给大模型做脑部微创，知识编辑SOTA 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型（LLM）虽然博学，但它们也有一个致命弱点：**知识会过时，且容易产生幻觉**。当我们需要修正模型中的错误（例如“现任英国首相是谁”）时，重新训练整个模型无异于为了换个灯泡而重建整栋大楼——成本高昂且效率低下。
 
-> ArXiv URL：http://arxiv.org/abs/2512.16227v1
+> ArXiv URL：https://arxiv.org/abs/2512.16227v1
 
 因此，**模型编辑**（Model Editing）技术应运而生，它旨在像手术刀一样精准地修改模型内部的特定知识，而不影响其他无关能力。然而，现有的编辑技术往往陷入两难：要么“改得太死”，无法泛化（只改了“A是B”，却回答不出“B是什么”）；要么“改得太宽”，破坏了模型的其他知识（**灾难性遗忘**）。
 

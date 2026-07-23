@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Architecting Resilient LLM Agents: A Guide to Secure Plan-then-Execute Implementations"
+description: "本文提出了一种名为“规划-执行” (Plan-then-Execute, P-t-E) 的弹性LLM智能体架构指南，该架构通过解耦战略规划与战术执行来建立控制流完整性，从而天然地抵御间接提示注入攻击，并为在LangChain、CrewAI和AutoGen等主流框架中实现该架构提供了详细的安全蓝图。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "learning-when-to-plan-efficiently-allocating-test-time-compute-for-llm-agents"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "a-subgoal-driven-framework-for-improving-long-horizon-llm-agents"
+  - "a-survey-of-data-agents-emerging-paradigm-or-overstated-hype"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.08646v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.08646v1
 
 - **作者**: 
 
@@ -36,7 +44,7 @@ title: "Architecting Resilient LLM Agents: A Guide to Secure Plan-then-Execute I
 ## 本文方法
 本文的核心贡献是系统性地阐述了“规划-执行”（P-t-E）架构，并提供了一套以安全为核心的设计原则和实现指南。这不仅是一种算法，更是一套构建弹性LLM智能体的架构蓝图。
 
-<img src="/images/2509.08646v1/page_1_Figure_0.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2509.08646v1/page_1_Figure_0.jpg" alt="本文方法 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### P-t-E 架构的核心与优势
 P-t-E模式通过将智能体的工作流分解为两个核心组件来运作：
@@ -68,7 +76,7 @@ P-t-E模式本身提供了强大的安全基础，但需要与一系列纵深防
 本文没有传统的定量实验，而是通过分析如何在三个主流智能体框架中实现安全的P-t-E架构，来验证其设计原则的有效性和实用性。
 
 ### LangChain & LangGraph 实现
-<img src="/images/2509.08646v1/page_8_Figure_0.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2509.08646v1/page_8_Figure_0.jpg" alt="LangChain & LangGraph 实现 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *   **实现方式**：现代LangChain通过**LangGraph**库实现P-t-E，将工作流建模为一个**状态机 (State Machine)**。规划器、执行器等被定义为图中的节点，控制流通过边（尤其是条件边）来管理。
 *   **关键优势**：LangGraph的图结构天然支持**循环和重新规划 (Re-planning)**。通过一个条件边，在执行某一步失败后，可以将控制流导向一个“重新规划”节点，让智能体根据失败的上下文生成新的计划，极大地增强了系统的鲁棒性和适应性。

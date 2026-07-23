@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "On the Convergence Rate of LoRA Gradient Descent"
+description: "LoRA收敛性之谜破解：首个 非渐进收敛速率证明。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "seesaw-accelerating-training-by-balancing-learning-rate-and-batch-size-schedulin"
+  - "bi-lora-efficient-sharpness-aware-minimization-for-fine-tuning-large-scale-model"
+  - "dual-lora-enhancing-lora-with-magnitude-and-direction-updates"
+  - "gallop-gradient-based-sparse-learning-on-low-magnitude-parameters"
 ---
 
 ## LoRA收敛性之谜破解：首个$O(1/\log T)$非渐进收敛速率证明
 
-<img src="/images/2512.18248v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.18248v1/A__title.jpg" alt="LoRA收敛性之谜破解：首个 非渐进收敛速率证明 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型微调的江湖中，**低秩适配**（**Low-Rank Adaptation, LoRA**）无疑是当之无愧的“顶流”。它以极低的计算成本和显存占用，实现了与全量微调相媲美的效果。然而，在LoRA大行其道的背后，一直存在一个理论上的“幽灵”：**我们其实并不完全理解它为什么能收敛。**
 
-> ArXiv URL：http://arxiv.org/abs/2512.18248v1
+> ArXiv URL：https://arxiv.org/abs/2512.18248v1
 
 传统的梯度下降理论依赖于损失函数的“Lipschitz平滑性”，但LoRA引入的矩阵乘法破坏了这一性质。以往的理论研究要么只讨论渐进均值（即$T \to \infty$），要么强行引入“权重有界”的人工假设来凑出平滑性。
 

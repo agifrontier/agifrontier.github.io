@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Allocation of Parameters in Transformers"
+description: "本文通过数学分析 Transformer 模型中参数分配的效率，从理论上揭示了对于信息提取任务，早期层中的注意力头数量与头维度之间存在权衡关系，并证明了 Softmax 激活函数存在饱和效应，这为后期层减少参数提供了理论依据，最终提出了跨层优化参数（注意力和头维度）分配的原则性策略。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "ai-progress-should-be-measured-by-capability-per-resource-not-scale-alone-a-fram"
+  - "expand-neurons-not-parameters"
+  - "not-all-parameters-are-created-equal-smart-isolation-boosts-fine-tuning-performa"
+  - "scaling-llm-test-time-compute-optimally-can-be-more-effective-than-scaling-model"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.03784v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.03784v1
 
 - **作者**: Ruoxi Yu; Zhong Li; Jingpu Cheng; Qianxiao Li; Haotian Jiang
 

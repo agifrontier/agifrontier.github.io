@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Sparse Attention Post-Training for Mechanistic Interpretability"
+description: "大模型“瘦身”革命：砍掉99.7%注意力连接，内部电路清晰100倍且性能不降！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "stream-scaling-up-mechanistic-interpretability-to-long-context-in-llms-via-spars"
+  - "kascade-a-practical-sparse-attention-method-for-long-context-llm-inference"
+  - "specattn-speculating-sparse-attention"
+  - "trainable-log-linear-sparse-attention-for-efficient-diffusion-transformers"
 ---
 
 ## 大模型“瘦身”革命：砍掉99.7%注意力连接，内部电路清晰100倍且性能不降！
 
-<img src="/images/2512.05865v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.05865v1/A__title.jpg" alt="大模型“瘦身”革命：砍掉99.7%注意力连接，内部电路清晰100倍且性能不降！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大型语言模型（LLM）的能力日益强大，但其内部工作机制却像一个难以捉摸的“黑箱”，这极大地限制了我们对它的信任和进一步优化。如果我们能有一种方法，像做手术一样精确“清理”一个已经训练好的大模型，让它的逻辑变得清晰可见，同时又不损失任何性能，那会怎样？
 
-> ArXiv URL：http://arxiv.org/abs/2512.05865v1
+> ArXiv URL：https://arxiv.org/abs/2512.05865v1
 
 来自苏黎世联邦理工学院（ETH Zürich）等顶尖机构的一项新研究，就实现了这个看似不可能的目标。他们提出了一种简单的后训练（post-training）方法，能将Transformer模型中高达99.7%的注意力连接“剪掉”，同时保持原有的性能。
 

@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "CUDA-L2: Surpassing cuBLAS Performance for Matrix Multiplication through Reinforcement Learning"
+description: "AI当上CUDA工程师：性能超NVIDIA官方库26%，CUDA-L2来了！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+  - "数据与AI工程"
+related_tutorials:
+  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
+  - "scribes-web-scale-script-based-semi-structured-data-extraction-with-reinforcemen"
+  - "a-multiobjective-reinforcement-learning-framework-for-microgrid-energy-managemen"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
 ---
 
 ## AI当上CUDA工程师：性能超NVIDIA官方库26%，CUDA-L2来了！
 
-<img src="/images/2512.02551v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.02551v1/A__title.jpg" alt="AI当上CUDA工程师：性能超NVIDIA官方库26%，CUDA-L2来了！ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在AI的世界里，从大模型训练到推理，几乎所有计算的核心都离不开一个基础操作：矩阵乘法。为了榨干GPU的每一滴性能，NVIDIA的工程师们用数十年经验打造了像cuBLAS这样神级的官方优化库。大家普遍认为，这已经是人类优化的天花板。但如果说，一个AI系统现在能自动写出比cuBLAS更快的代码，你敢信吗？
 
-> ArXiv URL：http://arxiv.org/abs/2512.02551v1
+> ArXiv URL：https://arxiv.org/abs/2512.02551v1
 
 这正是DeepReinforce团队最新研究CUDA-L2所实现的目标。该研究表明，通过结合大语言模型（LLM）和强化学习（RL），AI不仅能编写CUDA代码，甚至能在最关键的矩阵乘法任务上，系统性地超越NVIDIA官方高度优化的闭源库，在某些场景下性能提升高达26%！
 

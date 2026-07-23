@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "SimpleMem: Efficient Lifelong Memory for LLM Agents"
+description: "SimpleMem：让Agent记忆成本暴降30倍！F1提升26.4%的“语义无损压缩”新架构。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "AI Agent"
+related_tutorials:
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+  - "ai-meets-brain-memory-systems-from-cognitive-neuroscience-to-autonomous-agents"
+  - "dynamic-affective-memory-management-for-personalized-llm-agents"
+  - "forgetful-but-faithful-a-cognitive-memory-architecture-and-benchmark-for-privacy"
 ---
 
 ## SimpleMem：让Agent记忆成本暴降30倍！F1提升26.4%的“语义无损压缩”新架构
 
-<img src="/images/2601.02553v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.02553v1/A__title.jpg" alt="SimpleMem：让Agent记忆成本暴降30倍！F1提升26.4%的“语义无损压缩”新架构 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型（LLM）Agent 的长期交互中，开发者往往面临一个两难的“记忆困境”：如果保留全部对话历史，不仅 Token 成本爆炸，还会因为大量无意义的闲聊（Context Inflation）导致模型注意力分散，产生“迷失中间”现象；如果试图通过推理来压缩记忆，反复的调用又会带来极高的延迟和计算开销。
 
-> ArXiv URL：http://arxiv.org/abs/2601.02553v1
+> ArXiv URL：https://arxiv.org/abs/2601.02553v1
 
 如何在不丢失关键信息的前提下，让 Agent 拥有高效、廉价且精准的长期记忆？
 

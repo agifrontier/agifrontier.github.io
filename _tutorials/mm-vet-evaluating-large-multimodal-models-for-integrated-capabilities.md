@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "MM-Vet: Evaluating Large Multimodal Models for Integrated Capabilities"
+description: "本文提出了一个名为 MM-Vet 的新基准，旨在通过评估大型多模态模型（LMMs）在整合多种核心视觉语言（VL）能力以解决复杂任务时的表现，来系统性地衡量其综合智能水平，并为此设计了一个基于大型语言模型（LLM）的自动化评估器。"
+topics:
+  - "多模态与视觉"
+related_tutorials:
+  - "mathvista-evaluating-mathematical-reasoning-of-foundation-models-in-visual-conte"
+  - "a-multitask-multilingual-multimodal-evaluation-of-chatgpt-on-reasoning-hallucina"
+  - "a-survey-on-agentic-multimodal-large-language-models"
+  - "a-survey-on-multimodal-large-language-models"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2308.02490v4
+- **ArXiv URL**: https://arxiv.org/abs/2308.02490v4
 
 - **作者**: Zicheng Liu; Weihao Yu; Kevin Lin; Jianfeng Wang; Linjie Li; Zhengyuan Yang; Lijuan Wang; Xinchao Wang
 

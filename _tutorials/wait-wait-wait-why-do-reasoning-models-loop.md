@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Wait, Wait, Wait... Why Do Reasoning Models Loop?"
+description: "DeepSeek-R1变“复读机”？MIT揭秘：蒸馏导致死循环暴增，调高温度治标不治本。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "how-and-why-llms-generalize-a-fine-grained-analysis-of-llm-reasoning-from-cognit"
+  - "a-multitask-multilingual-multimodal-evaluation-of-chatgpt-on-reasoning-hallucina"
+  - "a-survey-of-inductive-reasoning-for-large-language-models"
+  - "a-survey-of-reasoning-and-agentic-systems-in-time-series-with-large-language-mod"
 ---
 
 ## DeepSeek-R1变“复读机”？MIT揭秘：蒸馏导致死循环暴增，调高温度治标不治本
 
-<img src="/images/2512.12895v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.12895v1/A__title.jpg" alt="DeepSeek-R1变“复读机”？MIT揭秘：蒸馏导致死循环暴增，调高温度治标不治本 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当你在使用 DeepSeek-R1 或 OpenThinker 等最新的推理模型解决复杂的数学问题时，是否遇到过这样的情况：模型开始输出长长的思维链（Chain of Thought），一切看起来都很顺利，直到它突然陷入了某种怪圈——不断重复同一段话，或者在两个步骤之间反复横跳，直到耗尽 Token 上限。
 
-> ArXiv URL：http://arxiv.org/abs/2512.12895v1
+> ArXiv URL：https://arxiv.org/abs/2512.12895v1
 
 这种“死循环”（Looping）现象并非个例，而是当前长思维链推理模型面临的一个普遍顽疾。虽然大多数开发者建议通过调高“温度”（Temperature）参数来缓解这一问题，但这真的触及病灶了吗？
 

@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Supporting Our AI Overlords: Redesigning Data Systems to be Agent-First"
+description: "本文指出，未来的数据系统将主要服务于由大型语言模型（LLM）驱动的智能体，并提出了一种“智能体优先”（agent-first）的数据系统新架构，以高效处理智能体工作负载中普遍存在的高吞吐量、异构、冗余和可引导的“智能体推测”（agentic speculation）过程。"
+topics:
+  - "AI Agent"
+  - "数据与AI工程"
+related_tutorials:
+  - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
+  - "matrix-peer-to-peer-multi-agent-synthetic-data-generation-framework"
+  - "repurposing-synthetic-data-for-fine-grained-search-agent-supervision"
+  - "agentinit-initializing-llm-based-multi-agent-systems-via-diversity-and-expertise"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.00997v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.00997v1
 
 - **作者**: Matei Zaharia; Shubham Agarwal; Alan Zhu; Ion Stoica; Aditya G. Parameswaran; Joseph E. Gonzalez; Ruiqi Chen; Alvin Cheung; Shreya Shankar; Shu Liu; 等12人
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?"
+description: "通过系统性地使用大 值的 指标进行评估，本文发现当前的带可验证奖励的强化学习（RLVR）方法并未赋予大语言模型超越其基础模型的新推理能力，而仅仅是提升了对基础模型已有能力的采样效率，甚至可能缩小了模型的推理范围。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "qerl-beyond-efficiency-quantization-enhanced-reinforcement-learning-for-llms"
+  - "a-survey-of-reinforcement-learning-for-large-reasoning-models"
+  - "deepseek-r1-incentivizing-reasoning-capability-in-llms-via-reinforcement-learnin"
+  - "livethinking-enabling-real-time-efficient-reasoning-for-ai-powered-livestreaming"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2504.13837v2
+- **ArXiv URL**: https://arxiv.org/abs/2504.13837v2
 
 - **作者**: Zhiqi Chen; Andrew Zhao; Yang Yue; Gao Huang; Rui Lu; Shiji Song; Zhaokai Wang
 

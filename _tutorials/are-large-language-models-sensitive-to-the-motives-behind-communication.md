@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Are Large Language Models Sensitive to the Motives Behind Communication?"
+description: "本文通过借鉴认知科学的理性模型，系统性地研究了大型语言模型（LLMs）是否能像人类一样识别和评估沟通背后的动机（即“动机警惕性”），发现它们在受控实验中表现出类似人类的能力，但在复杂的现实世界场景中表现不佳，不过简单的引导提示可以改善其表现。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "behind-rope-how-does-causal-mask-encode-positional-information"
+  - "thought-communication-in-multiagent-collaboration"
+  - "goagent-group-of-agents-communication-topology-generation-for-llm-based-multi-ag"
+  - "mesh-attention-a-new-communication-efficient-distributed-attention-with-improved"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.19687v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.19687v1
 
 - **作者**: Kerem Oktar; Addison J. Wu; Ryan Liu; Thomas L. Griffiths
 

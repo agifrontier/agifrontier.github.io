@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "Agent0: Unleashing Self-Evolving Agents from Zero Data via Tool-Integrated Reasoning"
+description: "零数据也能自我进化：Agent0让8B模型推理能力暴涨24%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+  - "推理与强化学习"
+related_tutorials:
+  - "memrl-self-evolving-agents-via-runtime-reinforcement-learning-on-episodic-memory"
+  - "deep-self-evolving-reasoning"
+  - "sfr-deepresearch-towards-effective-reinforcement-learning-for-autonomously-reaso"
+  - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
 ---
 
 ## 零数据也能自我进化：Agent0让8B模型推理能力暴涨24%
 
-<img src="/images/2511.16043v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.16043v1/A__title.jpg" alt="零数据也能自我进化：Agent0让8B模型推理能力暴涨24% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在没有一条人工标注数据的前提下，只靠“自己出题、自己做题”，还能把一个普通的8B Base模型的数学推理拉高18%、通用推理拉高24%，这听上去像是 AI 圈的“永动机”。
 
-> ArXiv URL：http://arxiv.org/abs/2511.16043v1
+> ArXiv URL：https://arxiv.org/abs/2511.16043v1
 
 **Agent0** 这篇工作，就是在严肃尝试这件事。
 

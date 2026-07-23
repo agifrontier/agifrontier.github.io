@@ -1,16 +1,24 @@
 ---
 layout: default
 title: "OmniScientist: Toward a Co-evolving Ecosystem of Human and AI Scientists"
+description: "OmniScientist：让AI科学家“组建团队”，成果超越NIPS最佳论文。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "a-survey-of-ai-scientists-surveying-the-automatic-scientists-and-research"
+  - "a-general-theoretical-paradigm-to-understand-learning-from-human-preferences"
+  - "alpacafarm-a-simulation-framework-for-methods-that-learn-from-human-feedback"
+  - "epistemological-fault-lines-between-human-and-artificial-intelligence"
 ---
 
 ## OmniScientist：让AI科学家“组建团队”，成果超越NIPS最佳论文
 
-<img src="/images/2511.16931v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.16931v1/A__title.jpg" alt="OmniScientist：让AI科学家“组建团队”，成果超越NIPS最佳论文 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当前的AI Agent能写代码、做分析，甚至开始涉足科学研究，人们称之为“AI科学家”。但它们更像是孤军奋战的天才，缺乏一个关键要素：科学研究本质上是社会性与协作性的活动。
 
 > **论文标题**：OmniScientist: Toward a Co-evolving Ecosystem of Human and AI Scientists
-> **ArXiv URL**：http://arxiv.org/abs/2511.16931v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.16931v1
 
 如果AI科学家也能像人类一样，组建研究团队、进行同行评审、在庞大的知识网络中寻找灵感，并与人类科学家无缝协作，科学发现的范式是否会被彻底颠覆？
 

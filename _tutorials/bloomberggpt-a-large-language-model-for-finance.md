@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "BloombergGPT: A Large Language Model for Finance"
+description: "本文提出了一种为金融领域专门打造的500亿参数大型语言模型——BloombergGPT，它通过在一个包含大量高质量金融数据和通用数据的混合数据集上进行训练，在金融领域的任务上取得了远超现有模型的性能，同时在通用LLM基准测试中保持了强大的竞争力。"
+topics:
+  - "行业应用"
+related_tutorials:
+  - "ai4x-roadmap-artificial-intelligence-for-the-advancement-of-scientific-pursuit-a"
+  - "autonomous-agents-for-scientific-discovery-orchestrating-scientists-language-cod"
+  - "capabilities-of-gpt-4-on-medical-challenge-problems"
+  - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2303.17564v3
+- **ArXiv URL**: https://arxiv.org/abs/2303.17564v3
 
 - **作者**: Steven Lu; Sebastian Gehrmann; Vadim Dabravolski; Ozan Irsoy; Shijie Wu; Mark Dredze; D. Rosenberg; Gideon Mann; P. Kambadur
 

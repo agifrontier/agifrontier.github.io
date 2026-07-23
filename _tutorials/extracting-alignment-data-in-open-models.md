@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Extracting alignment data in open models"
+description: "本文提出了一种新方法，通过利用聊天模板（chat template）作为前缀诱导模型生成内容，并结合神经嵌入（neural embeddings）来度量语义相似度，从而可以从开放权重的语言模型中高效提取出大量有价值的对齐训练数据。"
+topics:
+  - "AI安全与评测"
+  - "数据与AI工程"
+related_tutorials:
+  - "open-data-synthesis-for-deep-research"
+  - "hplt-30-very-large-scale-multilingual-resources-for-llm-and-mt-mono-and-bi-lingu"
+  - "spanish-pre-trained-bert-model-and-evaluation-data"
+  - "kto-model-alignment-as-prospect-theoretic-optimization"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.18554v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.18554v1
 
 - **作者**: Chawin Sitawarin; Christopher A. Choquette-Choo; Xiangming Gu; Ilia Shumailov; Itay Yona; Matthew Jagielski; Federico Barbero; Jamie Hayes
 

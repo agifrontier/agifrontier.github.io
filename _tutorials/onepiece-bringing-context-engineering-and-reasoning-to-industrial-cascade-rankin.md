@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "OnePiece: Bringing Context Engineering and Reasoning to Industrial Cascade Ranking System"
+description: "本文提出了 OnePiece，一个统一的框架，它将大型语言模型（LLM）风格的上下文工程和多步推理机制成功地集成到工业级级联排序系统的召回和排序阶段，并取得了显著的离线和在线效果提升。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "every-attention-matters-an-efficient-hybrid-architecture-for-long-context-reason"
+  - "improving-context-fidelity-via-native-retrieval-augmented-reasoning"
+  - "qwenlong-l15-post-training-recipe-for-long-context-reasoning-and-memory-manageme"
+  - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.18091v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.18091v1
 
 - **作者**: See-Kiong Ng; Sunhao Dai; Yu Zhao; Kangle Wu; Xu Chen; Jiahua Wu; Kun Wang; Yuxuan Zhu; Jiakai Tang; Anxiang Zeng; 等14人
 

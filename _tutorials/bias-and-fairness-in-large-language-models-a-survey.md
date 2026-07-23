@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Bias and Fairness in Large Language Models: A Survey"
+description: "大型语言模型 (Large Language Models, LLMs) 的崛起已从根本上改变了语言技术。然而，这些模型在取得巨大成功的同时，也可能会学习、延续并放大有害的社会偏见，这些偏见源于不平衡的社会群体表征、刻板印象、贬损性语言等，不成比例地影响着边缘化社区。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "beft-bias-efficient-fine-tuning-of-language-models"
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "a-survey-of-ai-scientists-surveying-the-automatic-scientists-and-research"
+  - "a-survey-of-large-language-models"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2309.00770v3
+- **ArXiv URL**: https://arxiv.org/abs/2309.00770v3
 
 - **作者**: Joe Barrow; Sungchul Kim; Ryan A. Rossi; Ruiyi Zhang; Franck Dernoncourt; Isabel O. Gallegos; Tong Yu; Nesreen Ahmed; Md. Mehrab Tanjim
 

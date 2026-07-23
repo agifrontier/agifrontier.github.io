@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Fast-weight Product Key Memory"
+description: "Sakana AI新作：赋予模型“即时记忆”，4K训练竟能泛化至128K长文。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+  - "ai-meets-brain-memory-systems-from-cognitive-neuroscience-to-autonomous-agents"
+  - "camformer-associative-memory-is-all-you-need"
+  - "cogmem-a-cognitive-memory-architecture-for-sustained-multi-turn-reasoning-in-lar"
 ---
 
 ## Sakana AI新作：赋予模型“即时记忆”，4K训练竟能泛化至128K长文
 
-<img src="/images/2601.00671v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.00671v1/A__title.jpg" alt="Sakana AI新作：赋予模型“即时记忆”，4K训练竟能泛化至128K长文 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 如果大模型像人类一样阅读一本书，目前的架构往往面临一个两难的选择：要么像 Transformer 那样拥有“过目不忘”的能力，但随着书本变厚，脑容量（显存和计算量）呈平方级爆炸；要么像线性注意力（Linear Attention）那样读得飞快，但“读了后页忘前页”，受限于固定的记忆容量。
 
-> ArXiv URL：http://arxiv.org/abs/2601.00671v1
+> ArXiv URL：https://arxiv.org/abs/2601.00671v1
 
 **有没有一种架构，既能保持线性的高效率，又能像人脑一样灵活地进行“情景记忆”？**
 

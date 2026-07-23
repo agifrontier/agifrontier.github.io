@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Agentic AI: A Comprehensive Survey of Architectures, Applications, and Future Directions"
+description: "本文对智能体AI（Agentic AI）领域进行了全面的综述，提出了一个核心的分析框架以解决现有文献中的概念混乱。作者认为，当前的智能体AI系统并非单一演化的产物，而是源于两个截然不同但有时会交汇的谱系：符号/经典谱系（Symbolic/Classical lineage）和神经/生成谱系（Neural/G。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
+  - "ai-agent-systems-architectures-applications-and-evaluation"
+  - "statistical-reinforcement-learning-in-the-real-world-a-survey-of-challenges-and-"
+  - "ai4x-roadmap-artificial-intelligence-for-the-advancement-of-scientific-pursuit-a"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.25445v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.25445v1
 
 - **作者**: Fadi Dornaika
 

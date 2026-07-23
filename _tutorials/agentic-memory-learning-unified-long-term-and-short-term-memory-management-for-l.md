@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents"
+description: "Agentic Memory：让LLM像人类一样“自主管理”记忆，长程推理能力暴涨49%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "AI Agent"
+related_tutorials:
+  - "dynamic-affective-memory-management-for-personalized-llm-agents"
+  - "memory-r1-enhancing-large-language-model-agents-to-manage-and-utilize-memories-v"
+  - "memrl-self-evolving-agents-via-runtime-reinforcement-learning-on-episodic-memory"
+  - "qwenlong-l15-post-training-recipe-for-long-context-reasoning-and-memory-manageme"
 ---
 
 ## **Agentic Memory：让LLM像人类一样“自主管理”记忆，长程推理能力暴涨49%**
 
-<img src="/images/2601.01885v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01885v1/A__title.jpg" alt="Agentic Memory：让LLM像人类一样“自主管理”记忆，长程推理能力暴涨49% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在人工智能的浩瀚星空中，大语言模型（LLM）无疑是最耀眼的那颗星。然而，这颗“星”一直有一个挥之不去的阴影——**记忆力**。
 
-> ArXiv URL：http://arxiv.org/abs/2601.01885v1
+> ArXiv URL：https://arxiv.org/abs/2601.01885v1
 
 你是否遇到过这样的情况：和AI聊久了，它就“忘了”前面的设定；或者在处理超长任务时，它因为上下文窗口（Context Window）爆满而开始胡言乱语？现有的解决方案，无论是RAG（检索增强生成）还是各种外挂记忆库，往往都是“硬塞”给模型：要么是机械地检索，要么是基于死板的规则触发。
 

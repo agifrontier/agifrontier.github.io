@@ -1,17 +1,25 @@
 ---
 layout: default
 title: "Optimizing Mixture of Block Attention"
+description: "MIT联手英伟达发布FlashMoBA：稀疏注意力提速14.7倍，长文本处理迎来新篇章。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "mixture-of-depths-attention"
+  - "modular-prompt-optimization-optimizing-structured-prompts-with-section-local-tex"
+  - "gatepro-parameter-free-expert-selection-optimization-for-mixture-of-experts-mode"
+  - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
 ---
 
 ## MIT联手英伟达发布FlashMoBA：稀疏注意力提速14.7倍，长文本处理迎来新篇章
 
-<img src="/images/2511.11571v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.11571v1/A__title.jpg" alt="MIT联手英伟达发布FlashMoBA：稀疏注意力提速14.7倍，长文本处理迎来新篇章 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当大语言模型（LLM）试图理解长视频、分析海量文档时，一个巨大的瓶颈便显现出来：自注意力机制的计算成本会随序列长度二次方增长。为了解决这个问题，稀疏注意力应运而生，而**混合块注意力**（**Mixture of Block Attention, MoBA**）是其中的佼佼者。它通过一个智能“路由器”，让每个查询只关注少数几个关键信息块，从而大大降低计算量。
 
 > **论文标题**：Optimizing Mixture of Block Attention
 
-> **ArXiv URL**：http://arxiv.org/abs/2511.11571v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.11571v1
 
 然而，MoBA虽好，却面临两大难题：它的工作原理像个黑箱，没人说得清如何设计才最优；同时，它缺乏高效的GPU实现，导致理论上的优势在实践中大打折扣。
 

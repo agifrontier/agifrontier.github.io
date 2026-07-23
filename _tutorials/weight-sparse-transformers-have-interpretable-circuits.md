@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Weight-sparse transformers have interpretable circuits"
+description: "OpenAI重磅发现：让Transformer“瘦身”99.9%，电路可解释性暴增16倍！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "trainable-log-linear-sparse-attention-for-efficient-diffusion-transformers"
+  - "accelerate-speculative-decoding-with-sparse-computation-in-verification"
+  - "continual-learning-via-sparse-memory-finetuning"
+  - "gallop-gradient-based-sparse-learning-on-low-magnitude-parameters"
 ---
 
 ## OpenAI重磅发现：让Transformer“瘦身”99.9%，电路可解释性暴增16倍！
 
-<img src="/images/2511.13653v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.13653v1/A__title.jpg" alt="OpenAI重磅发现：让Transformer“瘦身”99.9%，电路可解释性暴增16倍！ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大语言模型（LLM）的能力日益强大，但其内部工作机制却像一个难以捉摸的“黑箱”，这让无数研究者头疼不已。我们真的能彻底理解Transformer内部的算法吗？最近，OpenAI的一项研究为我们带来了曙光。他们没有选择在复杂的密集模型上“事后”解释，而是另辟蹊径：从头训练一个绝大部分权重都为零的“稀疏”模型。结果惊人：这些模型不仅性能不俗，其内部形成的**神经回路**（circuits）更是小到可以被人类完全理解，为我们打开了窥探AI心智的全新窗口。
 
-> ArXiv URL：http://arxiv.org/abs/2511.13653v1
+> ArXiv URL：https://arxiv.org/abs/2511.13653v1
 
 ### 核心思想：用权重稀疏换取可解释性
 

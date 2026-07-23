@@ -1,17 +1,25 @@
 ---
 layout: default
 title: "MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling"
+description: "AI Agent的第三维度：MiroThinker单任务600次工具调用，性能直逼GPT-5。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "paper2agent-reimagining-research-papers-as-interactive-and-reliable-ai-agents"
+  - "predicting-task-performance-with-context-aware-scaling-laws"
+  - "process-supervised-reinforcement-learning-for-interactive-multimodal-tool-use-ag"
+  - "how-far-are-we-from-genuinely-useful-deep-research-agents"
 ---
 
 ## AI Agent的第三维度：MiroThinker单任务600次工具调用，性能直逼GPT-5
 
-<img src="/images/2511.11793v2/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.11793v2/A__title.jpg" alt="AI Agent的第三维度：MiroThinker单任务600次工具调用，性能直逼GPT-5 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 当整个AI领域还在疯狂“卷”模型参数和上下文长度时，一个新的性能提升维度已经悄然出现。如果一个AI Agent在执行单个任务时，能与外部工具交互多达600次，它的研究和推理能力会达到何种恐怖的水平？
 
 > **论文标题**：MiroThinker: Pushing the Performance Boundaries of Open-Source Research Agents via Model, Context, and Interactive Scaling
 
-> **ArXiv URL**：http://arxiv.org/abs/2511.11793v2
+> **ArXiv URL**：https://arxiv.org/abs/2511.11793v2
 
 这就是最新开源的研究型Agent——**MiroThinker**，为我们揭示的答案。它不仅仅是一个更大的模型或更长的上下文窗口，而是开创性地提出了**交互缩放**（**Interaction Scaling**）作为性能提升的“第三维度”，在多个基准测试中超越了所有现有开源Agent，性能直逼GPT-5等顶级闭源模型。
 

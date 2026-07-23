@@ -1,17 +1,25 @@
 ---
 layout: default
 title: "LoRA on the Go: Instance-level Dynamic LoRA Selection and Merging"
+description: "即插即用LoRA！LoGo实现零成本动态适配，推理性能最高提升3.6%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "a-systematic-study-of-model-merging-techniques-in-large-language-models"
+  - "bi-lora-efficient-sharpness-aware-minimization-for-fine-tuning-large-scale-model"
+  - "dual-lora-enhancing-lora-with-magnitude-and-direction-updates"
+  - "gatepro-parameter-free-expert-selection-optimization-for-mixture-of-experts-mode"
 ---
 
 ## 即插即用LoRA！LoGo实现零成本动态适配，推理性能最高提升3.6%
 
-<img src="/images/2511.07129v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.07129v1/A__title.jpg" alt="即插即用LoRA！LoGo实现零成本动态适配，推理性能最高提升3.6% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当下的AI社区，**低秩适应**（**Low-Rank Adaptation, LoRA**）无疑是最火的**参数高效微调**（**Parameter-Efficient Fine-Tuning, PEFT**）技术。每个人都在训练自己专属的LoRA模型，从代码助手到小说家，LoRA模型库正以前所未有的速度扩张。
 
 > **论文标题**：LoRA on the Go: Instance-level Dynamic LoRA Selection and Merging
 
-> **ArXiv URL**：http://arxiv.org/abs/2511.07129v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.07129v1
 
 但这带来了一个棘手的问题：当用户向AI助手提出一个随机问题时，模型该如何从成百上千个LoRA“专家”中，挑出最合适的那一个或几个来回答？
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Modeling Language as a Sequence of Thoughts"
+description: "拒绝Token流水账！斯坦福新作Thought Gestalt：让AI像人类一样“思考”，参数效率暴涨40%。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "mamba-linear-time-sequence-modeling-with-selective-state-spaces"
+  - "deep-sequence-models-tend-to-memorize-geometrically-it-is-unclear-why"
+  - "graph-of-thoughts-solving-elaborate-problems-with-large-language-models"
+  - "loong-synthesize-long-chain-of-thoughts-at-scale-through-verifiers"
 ---
 
 ## 拒绝Token流水账！斯坦福新作Thought Gestalt：让AI像人类一样“思考”，参数效率暴涨40%
 
-<img src="/images/2512.25026v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.25026v1/A__title.jpg" alt="拒绝Token流水账！斯坦福新作Thought Gestalt：让AI像人类一样“思考”，参数效率暴涨40% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当前的语言模型（LLM）虽然能写出流畅的诗歌和代码，但它们本质上更像是高明的“统计学家”而非“思考者”。它们通过预测下一个Token来生成文本，过度依赖表层的共现统计，却往往缺乏对实体和事件的全局一致性理解。
 
-> ArXiv URL：http://arxiv.org/abs/2512.25026v1
+> ArXiv URL：https://arxiv.org/abs/2512.25026v1
 
 这就是为什么你的ChatGPT有时会犯“逆转诅咒”（Reversal Curse）的错误——它知道“A的父亲是B”，却无法反推出“B的儿子是A”。因为在它的“脑海”里，这只是两串不同的概率序列，而不是一个统一的语义事实。
 

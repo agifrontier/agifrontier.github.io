@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Agentic Software Engineering: Foundational Pillars and a Research Roadmap"
+description: "结构化智能体软件工程（SASE）：基本支柱与研究路线图。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+  - "数据与AI工程"
+related_tutorials:
+  - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
+  - "general-agentic-memory-via-deep-research"
+  - "toucan-synthesizing-15m-tool-agentic-data-from-real-world-mcp-environments"
+  - "evoclaw-evaluating-ai-agents-on-continuous-software-evolution"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.06216v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.06216v1
 
 - **作者**: Bram Adams; Dayi Lin; Ahmed E. Hassan; Hao Li; Tse-Hsun Chen
 

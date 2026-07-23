@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "The Two-Stage Decision-Sampling Hypothesis: Understanding the Emergence of Self-Reflection in RL-Trained LLMs"
+description: "RL为何能让大模型“学会自省”？双阶段决策采样假说揭秘SFT的死穴。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "beyond-two-stage-training-cooperative-sft-and-rl-for-llm-reasoning"
+  - "self-rag-learning-to-retrieve-generate-and-critique-through-self-reflection"
+  - "generative-early-stage-ranking"
+  - "plum-adapting-pre-trained-language-models-for-industrial-scale-generative-recomm"
 ---
 
 ## RL为何能让大模型“学会自省”？双阶段决策采样假说揭秘SFT的死穴
 
-<img src="/images/2601.01580v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.01580v1/A__title.jpg" alt="RL为何能让大模型“学会自省”？双阶段决策采样假说揭秘SFT的死穴 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在大模型领域，一个令人困惑的现象长期存在：为什么经过强化学习（RL）训练的模型（如DeepSeek-R1、OpenAI o1）能够涌现出“自省”和“自我修正”的能力，而传统的监督微调（SFT）即使使用了包含大量思维链（CoT）的数据，却往往只是在模仿“思考的语气”，很难真正学会发现错误并改正？
 
-> ArXiv URL：http://arxiv.org/abs/2601.01580v1
+> ArXiv URL：https://arxiv.org/abs/2601.01580v1
 
 亚利桑那州立大学、上海人工智能实验室和上海科技大学的研究团队提出了一项极具洞察力的理论——**双阶段决策采样**（**Two-Stage Decision-Sampling, DS**）假说。该研究从梯度的视角，一针见血地指出了SFT在培养“思考模型”时的致命缺陷，并解释了为何RL才是通向真正智能的必经之路。
 

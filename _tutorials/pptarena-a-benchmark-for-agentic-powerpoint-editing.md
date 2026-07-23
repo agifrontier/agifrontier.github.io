@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "PPTArena: A Benchmark for Agentic PowerPoint Editing"
+description: "PPT炼狱场来了！新Agent PPTPilot精准编辑，性能超越专有模型10%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+  - "AI安全与评测"
+related_tutorials:
+  - "gui-360-a-comprehensive-dataset-and-benchmark-for-computer-using-agents"
+  - "rex-mle-the-autonomous-agent-benchmark-for-medical-imaging-challenges"
+  - "babybabellm-a-multilingual-benchmark-of-developmentally-plausible-training-data"
+  - "creativityprism-a-holistic-benchmark-for-large-language-model-creativity"
 ---
 
 ## PPT炼狱场来了！新Agent PPTPilot精准编辑，性能超越专有模型10%
 
-<img src="/images/2512.03042v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.03042v1/A__title.jpg" alt="PPT炼狱场来了！新Agent PPTPilot精准编辑，性能超越专有模型10% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 让AI帮你改PPT，这个梦想离我们还有多远？
 
-> ArXiv URL：http://arxiv.org/abs/2512.03042v1
+> ArXiv URL：https://arxiv.org/abs/2512.03042v1
 
 你可能试过让大模型生成几页内容，但如果想让它精准修改一份现有的、包含复杂图表和母版样式的几十页PPT，结果往往惨不忍睹。格式错乱、对齐奔放、图文不符……这些都是家常便饭。
 
@@ -31,7 +40,6 @@ title: "PPTArena: A Benchmark for Agentic PowerPoint Editing"
 
 为了解决上述问题，PPTArena应运而生。它不是一个简单的生成任务合集，而是一个专为**代理式PPT编辑**（**Agentic PowerPoint Editing**）设计的严苛考场。
 
-![](https://ppt-arena.onrender.com/static/images/teaser.png)
 
 它的核心特点包括：
 
@@ -55,7 +63,7 @@ title: "PPTArena: A Benchmark for Agentic PowerPoint Editing"
 
 基于此，PPTPilot的架构设计非常巧妙：
 
-![](images/page_5_Figure_8.jpg)
+![PPTPilot：结构感知的编辑智能体 图示](images/page_5_Figure_8.jpg)
 
 其工作流程可以概括为“**规划-编辑-验证**”的迭代循环：
 

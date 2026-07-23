@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "GaLLoP: Gradient-based Sparse Learning on Low-Magnitude Parameters"
+description: "本文提出了一种名为 GaLLoP 的稀疏微调新方法，它通过优先选择在下游任务上梯度最大、且在预训练模型中权重绝对值最小的参数进行微调，从而在提升任务性能的同时有效保留预训练知识，实现了卓越的分布内（ID）和分布外（OOD）泛化能力。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "continual-learning-via-sparse-memory-finetuning"
+  - "dual-lora-enhancing-lora-with-magnitude-and-direction-updates"
+  - "on-the-convergence-rate-of-lora-gradient-descent"
+  - "staircase-streaming-for-low-latency-multi-agent-inference"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.19778v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.19778v1
 
 - **作者**: Antoine Bosselut; Lukas Mauch; Fabien Cardinaux
 

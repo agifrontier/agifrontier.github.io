@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "A Multiobjective Reinforcement Learning Framework for Microgrid Energy Management"
+description: "本文提出了一个结合多目标进化算法与强化学习的新颖框架，用于解决微电网 (Microgrid, MG) 能源管理中的多目标优化问题，实现了在处理成本、排放和热能浪费等冲突目标时的性能提升和策略可解释性。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "prompt-r1-collaborative-automatic-prompting-framework-via-end-to-end-reinforceme"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "a-survey-of-reinforcement-learning-for-large-reasoning-models"
+  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2307.08692v2
+- **ArXiv URL**: https://arxiv.org/abs/2307.08692v2
 
 - **作者**: Tri Dao
 

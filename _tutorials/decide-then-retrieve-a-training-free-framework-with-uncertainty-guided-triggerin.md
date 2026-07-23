@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "Decide Then Retrieve: A Training-Free Framework with Uncertainty-Guided Triggering and Dual-Path Retrieval"
+description: "告别“无脑”检索：无需训练，DTR框架利用不确定性让RAG性能全面提升。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "模型训练与优化"
+related_tutorials:
+  - "datasage-multi-agent-collaboration-for-insight-discovery-with-external-knowledge"
+  - "llm-guided-hierarchical-retrieval"
+  - "retrieval-reasoning-processes-for-multi-hop-question-answering-a-four-axis-desig"
+  - "in-context-distillation-with-self-consistency-cascades-a-simple-training-free-wa"
 ---
 
 ## 告别“无脑”检索：无需训练，DTR框架利用不确定性让RAG性能全面提升
 
-<img src="/images/2601.03908v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.03908v1/A__title.jpg" alt="告别“无脑”检索：无需训练，DTR框架利用不确定性让RAG性能全面提升 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 现有的检索增强生成（RAG）系统往往患有一种“强迫症”：无论用户的问题是简单如“1+1等于几”，还是复杂如“量子纠缠的原理”，它们都会机械地触发检索流程。这种“无脑”检索不仅浪费计算资源，引入的无关文档噪声甚至会扰乱大模型原本正确的判断，导致“幻觉”产生。
 
-> ArXiv URL：http://arxiv.org/abs/2601.03908v1
+> ArXiv URL：https://arxiv.org/abs/2601.03908v1
 
 为了解决这一痛点，来自百度、香港大学和北京大学的研究团队提出了一种全新的**无需训练**（Training-Free）的框架——**Decide Then Retrieve**（**DTR**）。该框架赋予了RAG系统“三思而后行”的能力：它能根据生成的不确定性自动判断是否需要检索，并通过双路机制精准捕获关键信息。
 

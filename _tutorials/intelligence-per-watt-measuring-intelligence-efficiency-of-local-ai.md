@@ -1,6 +1,14 @@
 ---
 layout: default
 title: "Intelligence per Watt: Measuring Intelligence Efficiency of Local AI"
+description: "AI算力新范式：斯坦福提出“每瓦特智能”，本地模型能效两年提升5.3倍！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "dler-doing-length-penalty-right-incentivizing-more-intelligence-per-token-via-re"
+  - "remote-labor-index-measuring-ai-automation-of-remote-work"
+  - "ai-progress-should-be-measured-by-capability-per-resource-not-scale-alone-a-fram"
+  - "short-context-dominance-how-much-local-context-natural-language-actually-needs"
 ---
 
 ## AI算力新范式：斯坦福提出“每瓦特智能”，本地模型能效两年提升5.3倍！
@@ -8,7 +16,7 @@ title: "Intelligence per Watt: Measuring Intelligence Efficiency of Local AI"
 大模型推理需求正以前所未有的速度暴增，云端数据中心压力山大。我们早已习惯将复杂的AI任务交由云端的超级计算机处理。
 
 > **论文标题**：Intelligence per Watt: Measuring Intelligence Efficiency of Local AI
-> **ArXiv URL**：http://arxiv.org/abs/2511.07885v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.07885v1
 
 但如果你的笔记本电脑就能高效处理大部分AI请求，情况会怎样？
 

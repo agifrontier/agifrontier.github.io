@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Scaling up Multi-Turn Off-Policy RL and Multi-Agent Tree Search for LLM Step-Provers"
+description: "本文介绍了BFS-Prover-V2，一个通过创新的训练与推理扩展技术来提升大型语言模型（LLM）定理证明能力的系统，它结合了克服性能瓶颈的多阶段强化学习框架和用于分层推理的规划器增强型多智能体搜索架构，从而在多个数学基准测试中取得了当前最优性能。"
+topics:
+  - "AI Agent"
+  - "行业应用"
+related_tutorials:
+  - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
+  - "tree-search-for-llm-agent-reinforcement-learning"
+  - "thinker-training-llms-in-hierarchical-thinking-for-deep-search-via-multi-turn-in"
+  - "skyrl-agent-efficient-rl-training-for-multi-turn-llm-agent"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.06493v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.06493v1
 
 - **作者**: Zeyu Zheng; Ran Xin; Xia Xiao; Kun Yuan
 

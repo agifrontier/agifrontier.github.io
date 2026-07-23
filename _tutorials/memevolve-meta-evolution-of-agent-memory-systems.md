@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "MemEvolve: Meta-Evolution of Agent Memory Systems"
+description: "让Agent自己“进化”大脑？MemEvolve实现17%性能跃升与跨模型泛化。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "AI Agent"
+related_tutorials:
+  - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"
+  - "ai-meets-brain-memory-systems-from-cognitive-neuroscience-to-autonomous-agents"
+  - "halumem-evaluating-hallucinations-in-memory-systems-of-agents"
+  - "hindsight-is-2020-building-agent-memory-that-retains-recalls-and-reflects"
 ---
 
 ## 让Agent自己“进化”大脑？MemEvolve实现17%性能跃升与跨模型泛化
 
-<img src="/images/2512.18746v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.18746v1/A__title.jpg" alt="让Agent自己“进化”大脑？MemEvolve实现17%性能跃升与跨模型泛化 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 **如果说现在的AI Agent像是一个勤奋的学生，那么它的“记忆系统”就是它的笔记本。**
 
-> ArXiv URL：http://arxiv.org/abs/2512.18746v1
+> ArXiv URL：https://arxiv.org/abs/2512.18746v1
 
 目前的Agent虽然能把做过的题（轨迹）、学到的技巧（经验）记在笔记本上，但无论遇到数学题还是语文题，它都死板地用同一种格式记笔记。这显然不够聪明——真正的学霸，会根据科目不同，调整记笔记的策略：数学题整理公式模板，语文题摘抄金句。
 

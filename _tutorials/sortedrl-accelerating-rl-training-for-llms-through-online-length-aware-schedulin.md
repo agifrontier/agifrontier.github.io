@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "SortedRL: Accelerating RL Training for LLMs through Online Length-Aware Scheduling"
+description: "SortedRL：简单排个序，LLM强化学习训练吞吐量提升近40%，性能最高涨18%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "seesaw-accelerating-training-by-balancing-learning-rate-and-batch-size-schedulin"
+  - "sonicmoe-accelerating-moe-with-io-and-tile-aware-optimizations"
+  - "batch-normalization-accelerating-deep-network-training-by-reducing-internal-cova"
+  - "tree-training-accelerating-agentic-llms-training-via-shared-prefix-reuse"
 ---
 
 ## SortedRL：简单排个序，LLM强化学习训练吞吐量提升近40%，性能最高涨18%
 
-<img src="/images/2603.23414v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.23414v1/A__title.jpg" alt="SortedRL：简单排个序，LLM强化学习训练吞吐量提升近40%，性能最高涨18% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当今的大模型（LLM）要变得更会推理，尤其是解决复杂的数学和逻辑问题时，强化学习（RL）已成为一把不可或缺的利器。然而，这条路并不平坦。一个巨大的瓶颈正拖慢整个进程：RL训练中高达70%的时间，都可能消耗在漫长的文本生成（Rollout）阶段。
 
-> ArXiv URL：http://arxiv.org/abs/2603.23414v1
+> ArXiv URL：https://arxiv.org/abs/2603.23414v1
 
 想象一下，GPU集群正在全力运转，但因为一批任务中总有几个“慢郎中”（需要生成超长文本），导致大部分算力只能“干瞪眼”等着，这就是所谓的计算“气泡”。最近，来自微软亚洲研究院等机构的一项研究 **SortedRL**，提出了一种极为巧妙的策略，仅通过在线“排个序”，就几乎完美地解决了这个难题。
 

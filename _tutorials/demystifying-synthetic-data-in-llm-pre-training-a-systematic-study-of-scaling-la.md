@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Demystifying Synthetic Data in LLM Pre-training: A Systematic Study of Scaling Laws, Benefits, and Pitfalls"
+description: "本文通过大规模实证研究系统地揭示了，在大型语言模型预训练中战略性地混合约30%的重述（rephrased）合成数据与自然网络文本，可以在大数据量下将达到相同损失所需的训练速度提升5-10倍，但合成数据的最终效果高度依赖其类型、混合比例和生成器模型的能力。"
+topics:
+  - "模型训练与优化"
+  - "数据与AI工程"
+related_tutorials:
+  - "reusing-pre-training-data-at-test-time-is-a-compute-multiplier"
+  - "understanding-the-role-of-training-data-in-test-time-scaling"
+  - "what-makes-low-bit-quantization-aware-training-work-for-reasoning-llms-a-systema"
+  - "a-survey-on-efficient-large-language-model-training-from-data-centric-perspectiv"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.01631v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.01631v1
 
 - **作者**: Mostafa Elhoushi; Carole-Jean Wu; Ruoxi Jia; Ramya Raghavendra; Feiyang Kang; Shang-Wen Li; Michael Kuchnik; Newsha Ardalani
 

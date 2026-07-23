@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Large Language Monkeys: Scaling Inference Compute with Repeated Sampling"
+description: "本文系统地研究了通过重复采样来扩展推理计算（Inference Compute）的方法，发现其能显著提升模型在代码和数学等任务上的覆盖率（即解决问题的能力），其扩展性甚至遵循类似缩放定律的规律，并使得小模型在成本效益更高的情况下超越大模型的单次推理表现。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "larger-datasets-can-be-repeated-more-a-theoretical-analysis-of-multi-epoch-scali"
+  - "sampling-and-loss-weights-in-multi-domain-training"
+  - "a-multi-agent-framework-for-stateful-inference-time-search"
+  - "defeating-the-training-inference-mismatch-via-fp16"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2407.21787v3
+- **ArXiv URL**: https://arxiv.org/abs/2407.21787v3
 
 - **作者**: Quoc V. Le; Ronald Clark; Christopher R'e; Jordan Juravsky; Bradley Brown; Azalia Mirhoseini; Ryan Ehrlich
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Context-Free Recognition with Transformers"
+description: "Transformer 突破理论极限： 循环层解锁 CFL 语法识别。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "stronger-normalization-free-transformers"
+  - "object-recognition-datasets-and-challenges-a-review"
+  - "in-context-distillation-with-self-consistency-cascades-a-simple-training-free-wa"
+  - "a-model-of-errors-in-transformers"
 ---
 
 ## Transformer 突破理论极限：$\log n$ 循环层解锁 CFL 语法识别
 
-<img src="/images/2601.01754v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01754v1/A__title.jpg" alt="Transformer 突破理论极限： 循环层解锁 CFL 语法识别 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 尽管 Transformer 在自然语言处理和代码生成任务上表现出了惊人的统治力，但在理论计算机科学的视角下，它一直存在一个尴尬的“阿喀琉斯之踵”：**标准的、固定深度的 Transformer 甚至被认为无法识别上下文无关语言（Context-Free Languages, CFLs）**。
 
-> ArXiv URL：http://arxiv.org/abs/2601.01754v1
+> ArXiv URL：https://arxiv.org/abs/2601.01754v1
 
 这意味着，虽然 GPT-4 能写出优美的诗歌，但从计算复杂度的严格证明来看，它可能连最基本的、具有严格嵌套结构的语法（如编程语言中的括号匹配）都无法完美处理。这构成了 AI 经验主义成功与理论局限之间巨大的鸿沟。
 

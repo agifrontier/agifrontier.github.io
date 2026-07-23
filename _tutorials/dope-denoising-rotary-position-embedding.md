@@ -1,17 +1,25 @@
 ---
 layout: default
 title: "DoPE: Denoising Rotary Position Embedding"
+description: "LLM长文本“失效”有救了！DoPE：免训练为RoPE降噪，解锁64K超长上下文。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "crope-efficient-parametrization-of-rotary-positional-embedding"
+  - "bge-m3-embedding-multi-lingual-multi-functionality-multi-granularity-text-embedd"
+  - "higher-embedding-dimension-creates-a-stronger-world-model-for-a-simple-sorting-t"
+  - "imagebind-one-embedding-space-to-bind-them-all"
 ---
 
 ## LLM长文本“失效”有救了！DoPE：免训练为RoPE降噪，解锁64K超长上下文
 
-<img src="/images/2511.09146v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.09146v1/A__title.jpg" alt="LLM长文本“失效”有救了！DoPE：免训练为RoPE降噪，解锁64K超长上下文 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当大语言模型（LLM）处理的文本越来越长，我们常常会发现一个令人沮丧的现象：模型好像“忘记”了开头的内容，注意力过度集中在最近的文本上。这就是所谓的“注意力沉没”（Attention Sink）问题。即使是像**旋转位置编码**（**Rotary Position Embedding, RoPE**）这样先进的技术，也难以幸免。
 
 > **论文标题**：DoPE: Denoising Rotary Position Embedding
 
-> **ArXiv URL**：http://arxiv.org/abs/2511.09146v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.09146v1
 
 现在，一篇来自中科院、港大等机构的论文提出了一个无需训练、即插即用的解决方案——**DoPE**（**Denoising Rotary Position Embedding**）。它通过给位置编码“降噪”，显著提升了模型在长达64K上下文任务中的表现。
 

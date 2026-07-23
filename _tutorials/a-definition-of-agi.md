@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "A Definition of AGI"
+description: "本文提出了一个可量化的框架来定义和衡量通用人工智能（AGI），即将其定义为在认知通用性（versatility）和熟练度（proficiency）上与受过良好教育的成年人相匹配的系统，并通过借鉴人类心理测量学中的CH-C认知能力理论，将通用智能分解为十个核心认知域进行评估。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "the-missing-layer-of-agi-from-pattern-alchemy-to-coordination-physics"
+  - "a-unified-definition-of-hallucination-or-its-the-world-model-stupid"
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "a-concise-review-of-hallucinations-in-llms-and-their-mitigation"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.18212v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.18212v1
 
 - **作者**: Ziwei Liu; Long Phan; Max Tegmark; Andy Zou; Eric Schmidt; Yarin Gal; Matthias Hein; Alexander Pan; Cihang Xie; Erik Brynjolfsson; 等28人
 

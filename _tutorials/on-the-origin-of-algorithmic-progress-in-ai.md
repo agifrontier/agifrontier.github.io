@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "On the Origin of Algorithmic Progress in AI"
+description: "AI效率万倍增长神话破灭？MIT研究：90%的功劳来自Transformer的规模效应。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "ai-progress-should-be-measured-by-capability-per-resource-not-scale-alone-a-fram"
+  - "algorithmic-thinking-theory"
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "a-concise-review-of-hallucinations-in-llms-and-their-mitigation"
 ---
 
 ## AI效率万倍增长神话破灭？MIT研究：90%的功劳来自Transformer的规模效应
 
-<img src="/images/2511.21622v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.21622v1/A__title.jpg" alt="AI效率万倍增长神话破灭？MIT研究：90%的功劳来自Transformer的规模效应 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 过去十年，人工智能的训练效率据称飙升了惊人的22000倍！这听起来像是无数算法天才夜以继日、不断堆砌微小创新共同铸就的奇迹。但事实果真如此吗？
 
-> ArXiv URL：http://arxiv.org/abs/2511.21622v1
+> ArXiv URL：https://arxiv.org/abs/2511.21622v1
 
 来自MIT和Olin学院的一项最新研究，对这个“算法进步神话”提出了颠覆性的挑战。他们的结论可能会让你大吃一惊：所谓的万倍效率提升，绝大部分并非源于那些零敲碎打的优化，而是几乎完全归功于一个关键的、且极其依赖“暴力计算”的架构变革。
 

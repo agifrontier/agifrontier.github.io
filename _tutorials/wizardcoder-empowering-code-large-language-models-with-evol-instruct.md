@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "WizardCoder: Empowering Code Large Language Models with Evol-Instruct"
+description: "本文提出了一种名为 的方法，通过自动进化和增强编程指令的复杂性，来精调（fine-tune）代码大语言模型，从而创造出在多个基准测试中性能卓越的 模型系列。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "understanding-robustness-of-model-editing-in-code-llms-an-empirical-study"
+  - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
+  - "from-experience-to-strategy-empowering-llm-agents-with-trainable-graph-memory"
+  - "autonomous-agents-for-scientific-discovery-orchestrating-scientists-language-cod"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2306.08568v2
+- **ArXiv URL**: https://arxiv.org/abs/2306.08568v2
 
 - **作者**: Daxin Jiang; Ziyang Luo; Can Xu; Wenxiang Hu; Qingwei Lin; Jing Ma; Qingfeng Sun; Pu Zhao; Chongyang Tao; Xiubo Geng
 

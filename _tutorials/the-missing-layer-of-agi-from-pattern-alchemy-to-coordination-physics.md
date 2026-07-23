@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "The Missing Layer of AGI: From Pattern Alchemy to Coordination Physics"
+description: "反驳“LLM死路论”！斯坦福提出AGI“缺失层”，用一个公式定义通往AGI之路。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "a-definition-of-agi"
+  - "a-prompt-pattern-catalog-to-enhance-prompt-engineering-with-chatgpt"
+  - "reconstructing-kv-caches-with-cross-layer-fusion-for-enhanced-transformers"
+  - "physics-of-language-models-part-41-architecture-design-and-the-magic-of-canon-la"
 ---
 
 ## 反驳“LLM死路论”！斯坦福提出AGI“缺失层”，用一个公式定义通往AGI之路
 
-<img src="/images/2512.05765v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.05765v1/A__title.jpg" alt="反驳“LLM死路论”！斯坦福提出AGI“缺失层”，用一个公式定义通往AGI之路 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 关于大型语言模型（LLM）的未来，AI领域正上演一场激烈的辩论。一派认为，只要不断扩大模型规模，AGI（通用人工智能）的曙光就在眼前；而另一派，以LeCun等巨擘为代表，则尖锐地指出：LLM不过是“模式匹配器”，结构上无法实现真正的推理和规划，是通往AGI的一条死路。
 
-> ArXiv URL：http://arxiv.org/abs/2512.05765v1
+> ArXiv URL：https://arxiv.org/abs/2512.05765v1
 
 这场争论的核心究竟是什么？斯坦福大学的一篇重磅论文《The Missing Layer of AGI》给出了一个振聋发聩的答案：我们可能都搞错了重点。LLM不是死路，而是通往AGI不可或缺的基石。我们缺少的，是驾驭这股强大力量的“协调层”。
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Beyond the Black Box: Theory and Mechanism of Large Language Models"
+description: "告别“黑盒”炼丹：人大&厦大联合发布，LLM全生命周期理论图谱。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "jailbreaking-black-box-large-language-models-in-twenty-queries"
+  - "can-llms-track-their-output-length-a-dynamic-feedback-mechanism-for-precise-leng"
+  - "algorithmic-thinking-theory"
+  - "an-augmentation-overlap-theory-of-contrastive-learning"
 ---
 
 ## 告别“黑盒”炼丹：人大&厦大联合发布，LLM全生命周期理论图谱
 
-<img src="/images/2601.02907v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.02907v1/A__title.jpg" alt="告别“黑盒”炼丹：人大&厦大联合发布，LLM全生命周期理论图谱 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当 DeepSeek、ChatGPT 和 Claude 这样的模型在我们的屏幕上流畅地生成代码、撰写诗歌甚至进行复杂推理时，我们往往会惊叹于人工智能的“魔力”。但作为一个技术从业者，你是否曾在某个深夜看着训练 Loss 曲线发呆，心中涌起一种深深的无力感：**我们真的理解这些庞然大物内部发生了什么吗？**
 
-> ArXiv URL：http://arxiv.org/abs/2601.02907v1
+> ArXiv URL：https://arxiv.org/abs/2601.02907v1
 
 目前的 AI 领域存在一个巨大的悖论：**工程上的成功是史诗级的，但理论上的理解却处于婴儿期。** 我们知道 *怎么* 调整参数能让模型变强，却很难从数学上解释 *为什么*。这种“知其然不知其所以然”的状态，让 LLM 的开发常常被戏称为“炼丹”。
 

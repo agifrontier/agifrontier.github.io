@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Paper2Agent: Reimagining Research Papers As Interactive and Reliable AI Agents"
+description: "本文提出了 Paper2Agent，一个自动化框架，它能将研究论文及其代码库转化为交互式、可靠的AI智能体，让用户能通过自然语言使用论文中的方法，从而加速科学知识的传播和应用。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "mirothinker-pushing-the-performance-boundaries-of-open-source-research-agents-vi"
+  - "process-supervised-reinforcement-learning-for-interactive-multimodal-tool-use-ag"
+  - "how-far-are-we-from-genuinely-useful-deep-research-agents"
+  - "failure-makes-the-agent-stronger-enhancing-accuracy-through-structured-reflectio"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.06917v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.06917v1
 
 - **作者**: Jiacheng Miao; James Zou
 

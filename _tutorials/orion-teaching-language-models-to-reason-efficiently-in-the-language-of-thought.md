@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "ORION: Teaching Language Models to Reason Efficiently in the Language of Thought"
+description: "大模型推理太“话痨”？ORION压缩16倍思考路径，成本直降9倍。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "do-not-step-into-the-same-river-twice-learning-to-reason-from-trial-and-error"
+  - "thought-communication-in-multiagent-collaboration"
+  - "learning-when-to-plan-efficiently-allocating-test-time-compute-for-llm-agents"
+  - "learning-to-reason-training-llms-with-gpt-oss-or-deepseek-r1-reasoning-traces"
 ---
 
 ## 大模型推理太“话痨”？ORION压缩16倍思考路径，成本直降9倍
 
-<img src="/images/2511.22891v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.22891v1/A__title.jpg" alt="大模型推理太“话痨”？ORION压缩16倍思考路径，成本直降9倍 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大模型在数学、编码等复杂推理任务上越来越强，但你是否注意到，它们为了得到正确答案，往往需要生成一段极其冗长的“思考过程”？这种“话痨式”推理不仅导致高昂的计算成本和延迟，还常常引入冗余甚至矛盾的步骤。
 
-> ArXiv URL：http://arxiv.org/abs/2511.22891v1
+> ArXiv URL：https://arxiv.org/abs/2511.22891v1
 
 最近，来自哈佛、MIT和Hippocratic AI的研究者们给出了一个全新的解决方案——ORION。受人类“思维语言假说”的启发，该研究让大模型学会用一种极其压缩的符号语言进行思考，推理路径缩短**4-16倍**，推理延迟降低**5倍**，训练成本更是锐减**7-9倍**！最惊人的是，在如此高效的同时，它依然保持了原模型90-98%的准确率，甚至在部分数学基准上超越了GPT-4o和Claude 3.5 Sonnet。
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Agentic Inequality"
+description: "本文提出并探讨了“智能体不平等”（agentic inequality）这一新概念，即因AI智能体的接入和能力差异而导致的权力、机会与结果上的不平等，并构建了一个包含可用性、质量和数量三个维度的分析框架，以系统性地分析和应对这一挑战。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "a-survey-of-reasoning-and-agentic-systems-in-time-series-with-large-language-mod"
+  - "a-survey-on-agentic-multimodal-large-language-models"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.16853v2
+- **ArXiv URL**: https://arxiv.org/abs/2510.16853v2
 
 - **作者**: Iason Gabriel; Lewis Hammond
 

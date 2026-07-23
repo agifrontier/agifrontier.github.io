@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "AlpacaFarm: A Simulation Framework for Methods that Learn from Human Feedback"
+description: "本文提出了AlpacaFarm，这是一个旨在使用大型语言模型（LLM）模拟人类反馈，从而以低成本、高效率地研究、开发和评估人类反馈学习方法的仿真框架。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "stackelberg-learning-from-human-feedback-preference-optimization-as-a-sequential"
+  - "transformers-learn-factored-representations"
+  - "can-llms-track-their-output-length-a-dynamic-feedback-mechanism-for-precise-leng"
+  - "explaining-the-success-of-nearest-neighbor-methods-in-prediction"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2305.14387v4
+- **ArXiv URL**: https://arxiv.org/abs/2305.14387v4
 
 - **作者**: Carlos Guestrin; Percy Liang; Jimmy Ba; Ishaan Gulrajani; Tatsunori Hashimoto; Tianyi Zhang; Xuechen Li; Yann Dubois; Rohan Taori
 

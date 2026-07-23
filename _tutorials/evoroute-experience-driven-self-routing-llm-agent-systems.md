@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "EvoRoute: Experience-Driven Self-Routing LLM Agent Systems"
+description: "破解Agent“不可能三角”：EvoRoute实现成本降80%、速度提升3倍。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "learning-on-the-job-an-experience-driven-self-evolving-agent-for-long-horizon-ta"
+  - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"
+  - "flex-continuous-agent-evolution-via-forward-learning-from-experience"
+  - "llmtimesmapreduce-v3-enabling-interactive-in-depth-survey-generation-through-a-m"
 ---
 
 ## 破解Agent“不可能三角”：EvoRoute实现成本降80%、速度提升3倍
 
-<img src="/images/2601.02695v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.02695v1/A__title.jpg" alt="破解Agent“不可能三角”：EvoRoute实现成本降80%、速度提升3倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当我们在惊叹于 AgentOrchestra 或 Devin 等顶尖 AI Agent 处理复杂任务的能力时，往往忽略了一个尴尬的现实：这些系统正在疯狂地“烧钱”。
 
-> ArXiv URL：http://arxiv.org/abs/2601.02695v1
+> ArXiv URL：https://arxiv.org/abs/2601.02695v1
 
 为了追求极致的性能，现有的 Agent 系统通常会无脑调用最昂贵的模型（如 GPT-4 或 Claude-3.5-Sonnet）。这就导致了一个严峻的问题：虽然任务完成了，但单次执行成本可能高达数美元，且等待时间极长。这便是本文要探讨的核心痛点——**代理系统不可能三角**（**Agent System Trilemma**）。
 

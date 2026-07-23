@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "AdamHD: Decoupled Huber Decay Regularization for Language Model Pre-Training"
+description: "AdamW的继任者？AdamHD让LLM训练提速15%，性能提升4.7%，显存再省30%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "a-comedy-of-estimators-on-kl-regularization-in-rl-training-of-llms"
+  - "demystifying-synthetic-data-in-llm-pre-training-a-systematic-study-of-scaling-la"
+  - "on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language-model"
+  - "pre-training-under-infinite-compute"
 ---
 
 ## AdamW的继任者？AdamHD让LLM训练提速15%，性能提升4.7%，显存再省30%
 
-<img src="/images/2511.14721v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.14721v1/A__title.jpg" alt="AdamW的继任者？AdamHD让LLM训练提速15%，性能提升4.7%，显存再省30% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在训练大语言模型（LLM）时，我们常常聚焦于模型架构、数据质量和训练规模，但一个“幕后英雄”同样至关重要——优化器。多年来，**AdamW** 一直是训练Transformer模型的黄金标准。但它真的完美无缺吗？
 
-> ArXiv URL：http://arxiv.org/abs/2511.14721v1
+> ArXiv URL：https://arxiv.org/abs/2511.14721v1
 
 来自哈佛和斯坦福大学的一项新研究指出，AdamW存在一个关键缺陷：**过度衰减**（**over-decay**）。这会导致模型训练后期性能不佳。为了解决这个问题，研究者们提出了AdamHD，一个AdamW的即插即用替代品，效果惊人！
 

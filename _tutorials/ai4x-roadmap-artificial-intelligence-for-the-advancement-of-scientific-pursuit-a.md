@@ -1,13 +1,21 @@
 ---
 layout: default
 title: "AI4X Roadmap: Artificial Intelligence for the advancement of scientific pursuit and its future directions"
+description: "诺奖得主领衔！AI4X路线图发布：AI如何重塑8大前沿科学的未来？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "行业应用"
+related_tutorials:
+  - "agentic-ai-a-comprehensive-survey-of-architectures-applications-and-future-direc"
+  - "statistical-reinforcement-learning-in-the-real-world-a-survey-of-challenges-and-"
+  - "top-10-open-challenges-steering-the-future-of-diffusion-language-model-and-its-v"
+  - "epistemological-fault-lines-between-human-and-artificial-intelligence"
 ---
 
 ## 诺奖得主领衔！AI4X路线图发布：AI如何重塑8大前沿科学的未来？
 
 当AI的能力已经从理解语言、生成图像，延伸到预测蛋白质结构时，一个更宏大的问题摆在了我们面前：AI能否成为加速所有科学领域发现的通用引擎？
 
-> ArXiv URL：http://arxiv.org/abs/2511.20976v1
+> ArXiv URL：https://arxiv.org/abs/2511.20976v1
 
 最近，一篇名为《AI4X Roadmap》的重磅综述在科学界引起了广泛关注。这篇由诺贝尔物理学奖得主康斯坦丁·诺沃肖洛夫（Konstantin Novoselov）等全球顶尖机构的数十位学者共同撰写的论文，并非一份简单的研究报告，而是一份雄心勃勃的未来蓝图。它系统性地描绘了AI在生物、化学、气候、数学、材料、物理等8大核心科学领域的现状、挑战与未来方向。
 

@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "Forgetful but Faithful: A Cognitive Memory Architecture and Benchmark for Privacy-Aware Generative Agents"
+description: "给 AI 装上“橡皮擦”：MaRS 架构如何用“遗忘”换取 0.911 的高分表现？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "AI Agent"
+related_tutorials:
+  - "ai-meets-brain-memory-systems-from-cognitive-neuroscience-to-autonomous-agents"
+  - "cogmem-a-cognitive-memory-architecture-for-sustained-multi-turn-reasoning-in-lar"
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+  - "dynamic-affective-memory-management-for-personalized-llm-agents"
 ---
 
 ## 给 AI 装上“橡皮擦”：MaRS 架构如何用“遗忘”换取 0.911 的高分表现？
 
-<img src="/images/2512.12856v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.12856v1/A__title.jpg" alt="给 AI 装上“橡皮擦”：MaRS 架构如何用“遗忘”换取 0.911 的高分表现？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在大模型（LLM）领域，“长文本”似乎成了唯一的军备竞赛方向。从 128k 到 100万甚至更多 Token 的上下文窗口，我们似乎默认了一个逻辑：AI 记得越多越好。然而，当智能体（Agent）真正进入长周期的交互场景时，这种“只进不出”的记忆策略却成了噩梦——推理成本呈二次方爆炸，隐私泄露风险激增，甚至过多的噪音还会干扰 AI 的决策。
 
-> ArXiv URL：http://arxiv.org/abs/2512.12856v1
+> ArXiv URL：https://arxiv.org/abs/2512.12856v1
 
 如果让 AI 学会像人类一样“遗忘”，会发生什么？
 

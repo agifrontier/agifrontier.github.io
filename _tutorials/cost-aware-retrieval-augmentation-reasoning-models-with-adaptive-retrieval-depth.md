@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Cost-Aware Retrieval-Augmentation Reasoning Models with Adaptive Retrieval Depth"
+description: "本文提出了一种成本感知的动态检索增强推理模型 Dynamic Search-R1，它通过强化学习动态调整检索文档的数量，在显著降低约16-20%延迟的同时，将精确匹配（Exact Match）准确率平均提升了约5%。"
+topics:
+  - "RAG与知识系统"
+  - "推理与强化学习"
+related_tutorials:
+  - "improving-context-fidelity-via-native-retrieval-augmented-reasoning"
+  - "retrieval-reasoning-processes-for-multi-hop-question-answering-a-four-axis-desig"
+  - "mom-mixtures-of-scenario-aware-document-memories-for-retrieval-augmented-generat"
+  - "fapo-flawed-aware-policy-optimization-for-efficient-and-reliable-reasoning"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.15719v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.15719v1
 
 - **作者**: Helia Hashemi; Victor Rühle; Saravan Rajmohan
 

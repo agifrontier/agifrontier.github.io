@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "On GRPO Collapse in Search-R1: The Lazy Likelihood-Displacement Death Spiral"
+description: "破解AI智能体训练“死亡螺旋”：LLDS让Qwen2.5性能大涨37.8%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+  - "行业应用"
+related_tutorials:
+  - "unifying-tree-search-algorithm-and-reward-design-for-llm-reasoning-a-survey"
+  - "treegrpo-tree-advantage-grpo-for-online-rl-post-training-of-diffusion-models"
+  - "unlocking-the-power-of-multi-agent-llm-for-reasoning-from-lazy-agents-to-deliber"
+  - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
 ---
 
 ## 破解AI智能体训练“死亡螺旋”：LLDS让Qwen2.5性能大涨37.8%
 
-<img src="/images/2512.04220v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.04220v1/A__title.jpg" alt="破解AI智能体训练“死亡螺旋”：LLDS让Qwen2.5性能大涨37.8% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当AI智能体（Agent）学会使用搜索引擎等外部工具时，它们解决复杂问题的能力将发生质的飞跃。然而，一条“捷径”式的训练方法——**组相对策略优化**（**Group Relative Policy Optimization, GRPO**）却隐藏着一个致命缺陷：模型在训练中常常毫无征兆地“突然死亡”，性能一落千丈。
 
-> ArXiv URL：http://arxiv.org/abs/2512.04220v1
+> ArXiv URL：https://arxiv.org/abs/2512.04220v1
 
 这究竟是为什么？最近，来自UBC、UC Berkeley等顶尖机构的研究者们，终于揪出了导致这场“悲剧”的幕后黑手，并提出了一种极其简单有效的“解药”，不仅稳定了训练过程，还让Qwen2.5系列模型在多项问答任务上性能飙升，最高提升达**37.8%**！
 

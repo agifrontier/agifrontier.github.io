@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Soft Adaptive Policy Optimization"
+description: "告别硬裁剪！阿里SAPO算法，用“柔性门控”提升LLM训练稳定性与性能。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "asymmetric-proximal-policy-optimization-mini-critics-boost-llm-reasoning"
+  - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
+  - "fapo-flawed-aware-policy-optimization-for-efficient-and-reliable-reasoning"
+  - "gdpo-group-reward-decoupled-normalization-policy-optimization-for-multi-reward-r"
 ---
 
 ## 告别硬裁剪！阿里SAPO算法，用“柔性门控”提升LLM训练稳定性与性能
 
-<img src="/images/2511.20347v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.20347v1/A__title.jpg" alt="告别硬裁剪！阿里SAPO算法，用“柔性门控”提升LLM训练稳定性与性能 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 用强化学习（RL）来提升大语言模型（LLM）的推理能力，已是业界共识。但这条路并不好走，训练过程常常像坐过山车，极不稳定。一个核心痛点在于，现有的优化算法，如GRPO和GSPO，普遍采用“硬裁剪”（Hard Clipping）策略来控制更新幅度，这种方法虽然能防止模型跑偏，但也像一把“一刀切”的剪刀，常常错杀有用的学习信号，导致训练效率和最终性能难以两全。
 
-> ArXiv URL：http://arxiv.org/abs/2511.20347v1
+> ArXiv URL：https://arxiv.org/abs/2511.20347v1
 
 有没有一种更优雅、更智能的方式来驯服这头“性能猛兽”呢？
 

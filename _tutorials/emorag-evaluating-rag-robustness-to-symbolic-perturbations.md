@@ -1,21 +1,28 @@
 ---
 layout: default
 title: "EmoRAG: Evaluating RAG Robustness to Symbolic Perturbations"
+description: "EmoRAG：一个表情符号，如何100%“污染”RAG，让大模型更易“中招”？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "halumem-evaluating-hallucinations-in-memory-systems-of-agents"
+  - "hifi-rag-hierarchical-content-filtering-and-two-pass-generation-for-open-domain-"
+  - "less-llm-more-documents-searching-for-improved-rag"
+  - "mcp-vs-rag-vs-nlweb-vs-html-a-comparison-of-the-effectiveness-and-efficiency-of-"
 ---
 
 ## EmoRAG：一个表情符号，如何100%“污染”RAG，让大模型更易“中招”？
 
-<img src="/images/2512.01335v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.01335v1/A__title.jpg" alt="EmoRAG：一个表情符号，如何100%“污染”RAG，让大模型更易“中招”？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 **检索增强生成**（**Retrieval-Augmented Generation, RAG**）技术，通过外挂知识库，极大地提升了大型语言模型（LLM）的准确性和时效性，被誉为解决模型“幻觉”的利器。
 
-> ArXiv URL：http://arxiv.org/abs/2512.01335v1
+> ArXiv URL：https://arxiv.org/abs/2512.01335v1
 
 但如果说，一个看似无害的表情符号，比如$$(@_@)$$，就能让这套精心设计的系统瞬间“失忆”，检索出毫不相干的内容，你敢相信吗？
 
 这不是危言耸un，而是一项最新研究揭示的惊人发现。这篇名为 **EmoRAG** 的论文，系统性地揭示了当前 RAG 系统一个被严重忽视的致命弱点：对符号扰动的极端敏感性。
 
-![EmoRAG攻击原理图](imagese/2512.01335v1/x1.jpg)
 
 *图1：表情符号“劫持”RAG系统流程图*
 

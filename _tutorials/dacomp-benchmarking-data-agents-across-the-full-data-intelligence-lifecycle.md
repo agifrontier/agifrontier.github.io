@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "DAComp: Benchmarking Data Agents across the Full Data Intelligence Lifecycle"
+description: "数据智能体“高考”来了！字节跳动DAComp揭示：顶级模型成功率不足20%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+  - "数据与AI工程"
+related_tutorials:
+  - "a-survey-of-data-agents-emerging-paradigm-or-overstated-hype"
+  - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
+  - "agentfrontier-expanding-the-capability-frontier-of-llm-agents-with-zpd-guided-da"
+  - "whats-the-next-frontier-for-data-centric-ai-data-savvy-agents"
 ---
 
 ## 数据智能体“高考”来了！字节跳动DAComp揭示：顶级模型成功率不足20%
 
-<img src="/images/2512.04324v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.04324v1/A__title.jpg" alt="数据智能体“高考”来了！字节跳动DAComp揭示：顶级模型成功率不足20% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 AI Agent正以前所未有的速度渗透到各个领域，尤其是在数据处理方面，人们期待它能像资深专家一样，自动完成从原始数据到商业洞察的全过程。但它们真的准备好了吗？最近，一份来自字节跳动、中国科学院等机构联合发布的“数据智能体高考卷”——DAComp，给所有顶尖大模型泼了一盆冷水。测试结果显示，即使是GPT-4/5级别的先进模型，在模拟真实企业级数据任务时也步履维艰，在最复杂的数据工程任务上，端到端成功率竟不足20%！
 
-> ArXiv URL：http://arxiv.org/abs/2512.04324v1
+> ArXiv URL：https://arxiv.org/abs/2512.04324v1
 
 这究竟是一份怎样的“魔鬼考卷”？它又揭示了当前AI Agent发展的哪些核心瓶颈？
 

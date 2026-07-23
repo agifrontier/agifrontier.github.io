@@ -1,6 +1,14 @@
 ---
 layout: post
 title: "A Circular Argument : Does RoPE need to be Equivariant for Vision?"
+description: "颠覆RoPE核心信仰：等变性不再神圣？Spherical RoPE性能持平甚至反超。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "多模态与视觉"
+related_tutorials:
+  - "behind-rope-how-does-causal-mask-encode-positional-information"
+  - "beyond-patch-aggregation-3-pass-pyramid-indexing-for-vision-enhanced-document-re"
+  - "instructblip-towards-general-purpose-vision-language-models-with-instruction-tun"
+  - "openvla-an-open-source-vision-language-action-model"
 date: 2025-12-11
 toc: true
 ---
@@ -10,7 +18,7 @@ toc: true
 大模型时代，**旋转位置编码** (**Rotary Positional Encodings, RoPE**) 无疑是Transformer架构中的明星技术。从LLaMA到DeepSeek，几乎所有顶尖语言模型都依赖它来感知Token的顺序。
 
 > **论文标题**：A Circular Argument : Does RoPE need to be Equivariant for Vision?
-> **ArXiv URL**：http://arxiv.org/abs/2511.08368v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.08368v1
 
 人们普遍认为，RoPE的成功秘诀在于其优雅的“相对位置”特性，即**位移等变性**（shift-equivariance）。这意味着模型关注的是Token间的相对距离，而非其绝对位置。
 

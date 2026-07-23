@@ -1,6 +1,14 @@
 ---
 layout: default
 title: "The Path Not Taken: RLVR Provably Learns Off the Principals"
+description: "强化学习“另辟蹊径”：避开90%关键参数，模型推理能力竟能大幅提升。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "data-efficient-rlvr-via-off-policy-influence-guidance"
+  - "evaluating-parameter-efficient-methods-for-rlvr"
+  - "exploration-vs-exploitation-rethinking-rlvr-through-clipping-entropy-and-spuriou"
+  - "part-ii-roll-flash-accelerating-rlvr-and-agentic-training-with-asynchrony"
 ---
 
 ## 强化学习“另辟蹊径”：避开90%关键参数，模型推理能力竟能大幅提升
@@ -8,7 +16,7 @@ title: "The Path Not Taken: RLVR Provably Learns Off the Principals"
 当一个AI模型在数学和编程等复杂推理任务上取得巨大进步时，我们通常会认为它的内部参数发生了翻天覆地的变化。然而，一个令人困惑的现象出现了：通过强化学习（RL）微调的模型，其参数改动极少，有时高达92%的权重都纹丝不动。
 
 > **论文标题**：The Path Not Taken: RLVR Provably Learns Off the Principals
-> **ArXiv URL**：http://arxiv.org/abs/2511.08567v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.08567v1
 
 这就像一位顶尖高手，仅靠微调几个发力点，武功就精进了一大截。
 

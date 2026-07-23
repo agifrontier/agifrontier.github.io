@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "A Multi-Agent Framework for Stateful Inference-Time Search"
+description: "本文提出了 ，一个无需训练的多智能体框架，它通过结合持久化推理时状态、对抗性变异和进化式搜索，显著提升了单元测试中边缘案例 (edge cases) 的生成能力和代码覆盖率。"
+topics:
+  - "AI Agent"
+  - "模型训练与优化"
+related_tutorials:
+  - "staircase-streaming-for-low-latency-multi-agent-inference"
+  - "matrix-peer-to-peer-multi-agent-synthetic-data-generation-framework"
+  - "scaling-up-multi-turn-off-policy-rl-and-multi-agent-tree-search-for-llm-step-pro"
+  - "skyrl-agent-efficient-rl-training-for-multi-turn-llm-agent"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.07147v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.07147v1
 
 - **作者**: Arshika Lalan; Rajat Ghosh; Debojyoti Dutta
 
@@ -41,7 +50,7 @@ title: "A Multi-Agent Framework for Stateful Inference-Time Search"
 ### 总体架构
 $$MA<binary data, 2 bytes>S$$ 将单元测试生成分解为两个阶段：首先通过一个有状态的多智能体进化式搜索过程生成边缘案例，然后将这些高质量的边缘案例转换为最终的单元测试文件。其核心是边缘案例的生成过程，由控制器协调四个智能体（Actor, Executor, Adversary, Critic）在 N 个阶段中迭代进行。
 
-<img src="/images/2510.07147/x1.jpg" alt="$$MA<binary data, 2 bytes>S$$ 架构图" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.07147/x1.jpg" alt="$$MA<binary data, 2 bytes alt="总体架构 图示">S$$ 架构图" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 上图展示了 $$MA<binary data, 2 bytes>S$$ 的整体架构。蓝色框内是核心的进化式搜索循环，品红色线条突出显示了贯穿 N 个阶段的持久化状态流。
 

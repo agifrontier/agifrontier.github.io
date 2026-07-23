@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "Memory in the Age of AI Agents"
+description: "Agent记忆≠RAG！复旦/NUS重磅综述：3大维度全景拆解智能体“大脑”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "AI Agent"
+related_tutorials:
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+  - "ai-meets-brain-memory-systems-from-cognitive-neuroscience-to-autonomous-agents"
+  - "dynamic-affective-memory-management-for-personalized-llm-agents"
+  - "forgetful-but-faithful-a-cognitive-memory-architecture-and-benchmark-for-privacy"
 ---
 
 ## Agent记忆≠RAG！复旦/NUS重磅综述：3大维度全景拆解智能体“大脑”
 
-<img src="/images/2512.13564v1/A__title.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.13564v1/A__title.jpg" alt="Agent记忆≠RAG！复旦/NUS重磅综述：3大维度全景拆解智能体“大脑” 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 从Kimi的长文本到Devin的自主编程，过去两年见证了LLM向**AI智能体**（**AI Agents**）的惊人进化。但你是否发现，目前的智能体大多还是“健忘”的？一旦对话结束或窗口重置，它们就变回了那个初出茅庐的“小白”。
 
-> ArXiv URL：http://arxiv.org/abs/2512.13564v1
+> ArXiv URL：https://arxiv.org/abs/2512.13564v1
 
 要让智能体从“被动的问答机器”进化为“能积累经验的超级助手”，**记忆（Memory）** 是最关键的拼图。然而，现在的学术界和工业界对“记忆”的定义乱成一锅粥：有人把RAG叫记忆，有人把KV Cache叫记忆，还有人把Context Engineering也混为一谈。
 
@@ -48,7 +57,7 @@ title: "Memory in the Age of AI Agents"
 
 3.  **动态（Dynamics）**：记忆如何运作？（形成、演变与检索）
 
-![](images/page_1_Figure_0.jpg)
+![核心分类学：形式、功能与动态 图示](images/page_1_Figure_0.jpg)
 
 其中，**“形式”** 是大家在工程实现中最关心的部分。论文将现有的记忆实现方式归纳为三大类：**Token级记忆**、**参数化记忆**和**隐式记忆**。
 
@@ -76,7 +85,7 @@ title: "Memory in the Age of AI Agents"
 
     *   **典型应用**：像Generative Agents（斯坦福小镇）那样，从日常琐事中提炼出“反思”，再从反思中提炼出“性格”。这种结构让智能体既能回忆起“昨天吃了什么”，也能回答“我是一个什么样的人”。
 
-![](images/page_11_Figure_0.jpg)
+![形式一：Token级记忆 (Token-level Memory) 图示](images/page_11_Figure_0.jpg)
 
 ### 形式二：参数化记忆 (Parametric Memory)
 
@@ -90,7 +99,7 @@ title: "Memory in the Age of AI Agents"
 
 这是最硬核的一类。记忆既不是文本，也不是模型权重，而是模型推理过程中的**中间状态**（如KV Cache、Activations）。
 
-![](images/page_22_Figure_0.jpg)
+![形式三：隐式记忆 (Latent Memory) 图示](images/page_22_Figure_0.jpg)
 
 论文将隐式记忆的处理方式分为三类：
 

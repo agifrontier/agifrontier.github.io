@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "The Era of Agentic Organization: Learning to Organize with Language Models"
+description: "本文提出了一种名为 AsyncThink 的新推理范式，它允许大型语言模型通过一种“组织者-工作者”协议，将复杂的思考过程分解为可并发执行的子任务，并通过强化学习自主学会如何优化这种异步协同结构，从而在降低推理延迟的同时提升了解决问题的准确性。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "scaling-environments-for-llm-agents-in-the-era-of-learning-from-interaction-a-su"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+  - "let-it-flow-agentic-crafting-on-rock-and-roll-building-the-rome-model-within-an-"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.26658v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.26658v1
 
 - **作者**: Qingxiu Dong; Furu Wei; Li Dong; Shaohan Huang; Xun Wu; Zewen Chi
 
@@ -38,7 +46,7 @@ title: "The Era of Agentic Organization: Learning to Organize with Language Mode
 ## 本文方法
 为了实现可学习的智能体组织，本文提出了 AsyncThink 范式，其核心是**组织者-工作者协议**以及一个**两阶段学习流程**。
 
-<img src="/images/2510.26658v1/x2.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.26658v1/x2.jpg" alt="本文方法 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 组织者-工作者协议
 该协议定义了模型内部的协作方式，同一个 LLM 骨干网络同时扮演组织者和工作者两种角色，通过纯文本的动作标签进行交互。
@@ -58,7 +66,7 @@ title: "The Era of Agentic Organization: Learning to Organize with Language Mode
 ### 学习组织能力
 本文设计了一个两阶段的训练流程来教会模型如何使用 AsyncThink。
 
-<img src="/images/2510.26658v1/x3.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2510.26658v1/x3.jpg" alt="学习组织能力 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 #### 阶段一：冷启动格式微调 (Cold-Start Format Fine-Tuning)
 由于缺少现成的异步思考语料，此阶段的目标是让模型先学会协议的**语法**。
@@ -120,7 +128,7 @@ title: "The Era of Agentic Organization: Learning to Organize with Language Mode
 *   **学习动态**：在强化学习过程中，模型的准确率和并发率稳步提升，而关键路径延迟则先增后减，最终稳定在较低水平。这表明模型从最初倾向于“多想一会儿”，逐渐学会了如何“聪明地并发想”，从而优化了效率。
 *   **准确率-延迟边界**：实验结果表明，AsyncThink 在准确率和延迟之间取得了更优的权衡（Pareto-optimal frontier），能够在更低的延迟下达到与基线方法相当甚至更高的准确率。
 
-<img src="/images/2510.26658v1/x7.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2510.26658v1/x7.jpg" alt="消融研究与分析 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 ### 总结
 实验结果有力地证明，AsyncThink 是一种成功的推理范式。通过让模型学习如何动态地组织其内部思考过程，AsyncThink 不仅能有效提升复杂推理任务的准确率，还能显著降低推理延迟，并表现出强大的泛化能力。这为实现更高效、更智能的 AI 协作系统（即“智能体组织”）开辟了新的道路。

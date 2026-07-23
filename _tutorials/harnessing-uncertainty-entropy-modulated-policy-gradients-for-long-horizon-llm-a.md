@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Harnessing Uncertainty: Entropy-Modulated Policy Gradients for Long-Horizon LLM Agents"
+description: "本文提出了一种名为熵调制策略梯度 (Entropy-Modulated Policy Gradients, EMPG) 的框架，通过利用智能体在长时程任务中每一步的内在不确定性（熵）来动态调整策略梯度，从而有效解决了稀疏奖励下的信用分配难题，显著提升了大型语言模型（LLM）智能体的学习效率和最终性能。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "a-subgoal-driven-framework-for-improving-long-horizon-llm-agents"
+  - "agentfold-long-horizon-web-agents-with-proactive-context-management"
+  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
+  - "learning-on-the-job-an-experience-driven-self-evolving-agent-for-long-horizon-ta"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.09265v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.09265v1
 
 - **作者**: Jiacai Liu; Yuqian Fu; Yingru Li; Ke Wang; Yu Yue; Xintao Wang; Yuan Lin; Yang Wang; Jiawei Wang; Lin Zhang
 

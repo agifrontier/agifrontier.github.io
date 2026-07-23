@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "LLaMA-Adapter: Efficient Fine-tuning of Language Models with Zero-init Attention"
+description: "本文提出了一种名为 LLaMA-Adapter 的高效微调方法，它通过引入一个仅有1.2M可学习参数、带有零初始化注意力的轻量级适配器，在冻结 LLaMA 模型主体的情况下，实现了快速（1小时内）、高效的指令微调，并能轻松扩展到多模态任务。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "bi-lora-efficient-sharpness-aware-minimization-for-fine-tuning-large-scale-model"
+  - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
+  - "beft-bias-efficient-fine-tuning-of-language-models"
+  - "fine-tuning-small-language-models-as-efficient-enterprise-search-relevance-label"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2303.16199v3
+- **ArXiv URL**: https://arxiv.org/abs/2303.16199v3
 
 - **作者**: Aojun Zhou; Shilin Yan; Xiangfei Hu; Y. Qiao; Hongsheng Li; Jiaming Han; Pan Lu; Renrui Zhang; Peng Gao
 

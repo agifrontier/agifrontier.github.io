@@ -1,13 +1,21 @@
 ---
 layout: default
 title: "Youtu-LLM: Unlocking the Native Agentic Potential for Lightweight Large Language Models"
+description: "腾讯Youtu-LLM重磅发布：1.96B小模型解锁原生Agent能力，128k长文本与11T数据揭秘。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "beyond-pipelines-a-survey-of-the-paradigm-shift-toward-model-native-agentic-ai"
+  - "calm-before-the-storm-unlocking-native-reasoning-for-optimization-modeling"
+  - "the-rise-and-potential-of-large-language-model-based-agents-a-survey"
+  - "unlocking-the-power-of-multi-agent-llm-for-reasoning-from-lazy-agents-to-deliber"
 ---
 
 ## 腾讯Youtu-LLM重磅发布：1.96B小模型解锁原生Agent能力，128k长文本与11T数据揭秘
 
 在当今的大模型竞赛中，人们往往默认“智能涌现”是千亿参数巨型模型的专利。对于运行在端侧的小于20亿参数（sub-2B）的模型，业界的普遍做法是“蒸馏”——让小模型模仿大模型的输出。但这种方法往往只学到了皮毛，却难以获得真正的推理和规划能力。
 
-> ArXiv URL：http://arxiv.org/abs/2512.24618v1
+> ArXiv URL：https://arxiv.org/abs/2512.24618v1
 
 **如果一个小模型从出生开始，就是为了成为Agent而设计的呢？**
 

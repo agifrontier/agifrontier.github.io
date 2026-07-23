@@ -1,16 +1,24 @@
 ---
 layout: default
 title: "Budget-Aware Tool-Use Enables Effective Agent Scaling"
+description: "AI Agent只会“挥霍”算力？谷歌BATS框架教它精打细算，成本性能双优化。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "process-supervised-reinforcement-learning-for-interactive-multimodal-tool-use-ag"
+  - "verltool-towards-holistic-agentic-reinforcement-learning-with-tool-use"
+  - "coda-coordinating-the-cerebrum-and-cerebellum-for-a-dual-brain-computer-use-agen"
+  - "failure-makes-the-agent-stronger-enhancing-accuracy-through-structured-reflectio"
 ---
 
 ## AI Agent只会“挥霍”算力？谷歌BATS框架教它精打细算，成本性能双优化
 
-<img src="/images/2511.17006v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.17006v1/A__title.jpg" alt="AI Agent只会“挥霍”算力？谷歌BATS框架教它精打细算，成本性能双优化 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 当今的AI Agent越来越强大，我们习惯性地认为：给它更多的计算资源、更多的工具调用次数，它就应该表现得更好。但现实果真如此吗？谷歌的最新研究发现了一个反直觉的现象：简单地给Agent增加预算，其性能很快就会触及“天花板”，不再提升。问题出在哪？原来，这些Agent缺少一种关键能力——**预算意识**（budget awareness）。它们就像一个没有预算概念的员工，即使资源充足，也不知道如何深度挖掘或调整策略。
 
 > **论文标题**：Budget-Aware Tool-Use Enables Effective Agent Scaling
-> **ArXiv URL**：http://arxiv.org/abs/2511.17006v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.17006v1
 
 为了解决这个难题，谷歌DeepMind等机构推出了一个全新的智能框架BATS，教会Agent如何“精打细算”，在有限的预算内最大化性能。
 

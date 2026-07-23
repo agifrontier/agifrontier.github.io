@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Short-Context Dominance: How Much Local Context Natural Language Actually Needs?"
+description: "80%的预测只需96个Token！DeepMind揭示大模型“短视”的秘密。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "intelligence-per-watt-measuring-intelligence-efficiency-of-local-ai"
+  - "is-chatgpt-a-general-purpose-natural-language-processing-task-solver"
+  - "language-models-as-tools-for-investigating-the-distinction-between-possible-and-"
+  - "natural-language-actor-critic-scalable-off-policy-learning-in-language-space"
 ---
 
 ## 80%的预测只需96个Token！DeepMind揭示大模型“短视”的秘密
 
-<img src="/images/2512.08082v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.08082v1/A__title.jpg" alt="80%的预测只需96个Token！DeepMind揭示大模型“短视”的秘密 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当整个AI界都在为百万、千万级长上下文窗口欢呼时，你是否想过一个反直觉的问题：在大多数情况下，大语言模型真的需要那么长的上下文吗？
 
-> ArXiv URL：http://arxiv.org/abs/2512.08082v1
+> ArXiv URL：https://arxiv.org/abs/2512.08082v1
 
 最近，Google DeepMind的一项研究给出了一个惊人的答案。他们发现，对于高达7000 Token的序列，**75-80%的预测任务，模型其实只需要最后96个Token就足够了**！
 

@@ -1,6 +1,14 @@
 ---
 layout: default
 title: "MobileLLM-Pro Technical Report"
+description: "Meta MobileLLM-Pro：10亿参数手机模型称王，四大创新超越Gemma与Llama 3.2。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "deepseek-v3-technical-report"
+  - "gpt-4-technical-report"
+  - "hunyuanvideo-15-technical-report"
+  - "kling-omni-technical-report"
 ---
 
 ## Meta MobileLLM-Pro：10亿参数手机模型称王，四大创新超越Gemma与Llama 3.2
@@ -8,7 +16,7 @@ title: "MobileLLM-Pro Technical Report"
 当强大的AI模型还在云端服务器上运筹帷幄时，一场变革正在我们的掌上设备中悄然发生。然而，让AI在手机上流畅运行，始终面临一个棘手的难题：大模型太笨重，小模型又不够聪明。
 
 > **论文标题**：MobileLLM-Pro Technical Report
-> **ArXiv URL**：http://arxiv.org/abs/2511.06719v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.06719v1
 
 Meta Reality Labs最新的研究成果 **MobileLLM-Pro**，正是为了打破这一僵局而来。它是一个仅有10亿参数的轻量级语言模型，却在11项标准基准测试中，显著超越了Google的Gemma 3-1B和Meta自家的Llama 3.2-1B。
 

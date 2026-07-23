@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "HAD: HAllucination Detection Language Models Based on a Comprehensive Hallucination Taxonomy"
+description: "本文提出了一个全面的幻觉分类体系，并基于此构建了一个大规模合成数据集，用以训练 模型，使其能够在一个统一的推理过程中完成幻觉分类、范围识别和内容纠正。"
+topics:
+  - "AI安全与评测"
+related_tutorials:
+  - "a-comprehensive-dataset-for-human-vs-ai-generated-text-detection"
+  - "a-unified-definition-of-hallucination-or-its-the-world-model-stupid"
+  - "citation-grounded-code-comprehension-preventing-llm-hallucination-through-hybrid"
+  - "gui-360-a-comprehensive-dataset-and-benchmark-for-computer-using-agents"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.19318v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.19318v1
 
 - **作者**: Wei Zhou; Fan Xu; Xiaojun Wan; Zhenghan Yu; Xinyu Hu; Jinjie Gu; Li Lin; Xu Zhang; Yang Zhang
 

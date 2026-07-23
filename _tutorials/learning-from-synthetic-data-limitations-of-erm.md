@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Learning from Synthetic Data: Limitations of ERM"
+description: "谷歌揭秘合成数据陷阱：ERM不再万能，新算法破解“模型崩溃”危机。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "数据与AI工程"
+related_tutorials:
+  - "demystifying-synthetic-data-in-llm-pre-training-a-systematic-study-of-scaling-la"
+  - "generative-models-for-synthetic-data-transforming-data-mining-in-the-genai-era"
+  - "matrix-peer-to-peer-multi-agent-synthetic-data-generation-framework"
+  - "repurposing-synthetic-data-for-fine-grained-search-agent-supervision"
 ---
 
 ## 谷歌揭秘合成数据陷阱：ERM不再万能，新算法破解“模型崩溃”危机
 
-<img src="/images/2601.15468v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.15468v1/A__title.jpg" alt="谷歌揭秘合成数据陷阱：ERM不再万能，新算法破解“模型崩溃”危机 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 随着大语言模型（LLM）的爆发，互联网正在被AI生成的内容淹没。从在线评论到法庭文件，“自然”数据正在被那些看起来很像人写、实际上却是AI生成的“合成数据”所污染。
 
-> ArXiv URL：http://arxiv.org/abs/2601.15468v1
+> ArXiv URL：https://arxiv.org/abs/2601.15468v1
 
 对于机器学习从业者来说，这带来了一个令人不安的问题：**当我们用包含AI生成内容的混合数据去训练下一代AI时，传统的训练方法还管用吗？**
 

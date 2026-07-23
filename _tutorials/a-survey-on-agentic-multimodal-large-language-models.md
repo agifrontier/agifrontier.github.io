@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "A Survey on Agentic Multimodal Large Language Models"
+description: "关于Agentic多模态大语言模型的综述。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "多模态与视觉"
+  - "AI Agent"
+related_tutorials:
+  - "process-supervised-reinforcement-learning-for-interactive-multimodal-tool-use-ag"
+  - "a-survey-on-multimodal-large-language-models"
+  - "rlhf-a-comprehensive-survey-for-cultural-multimodal-and-low-latency-alignment-me"
+  - "scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-generation-for"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.10991v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.10991v1
 
 - **作者**: Guanbin Li; Dacheng Tao; Yongcheng Jing; Bo Fang; Ruifei Zhang; Huanjin Yao; Jingyi Zhang; Yibo Wang; Shunyu Liu; Jiaxing Huang
 

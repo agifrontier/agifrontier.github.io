@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "Kimi K2.5: Visual Agentic Intelligence"
+description: "Kimi K2.5重磅开源：多模态联合增强，Agent推理提速4.5倍。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "多模态与视觉"
+  - "AI Agent"
+related_tutorials:
+  - "slideagent-hierarchical-agentic-framework-for-multi-page-visual-document-underst"
+  - "llm-in-sandbox-elicits-general-agentic-intelligence"
+  - "a-survey-on-agentic-multimodal-large-language-models"
+  - "dacomp-benchmarking-data-agents-across-the-full-data-intelligence-lifecycle"
 ---
 
 ## Kimi K2.5重磅开源：多模态联合增强，Agent推理提速4.5倍
 
-<img src="/images/2602.02276v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2602.02276v1/A__title.jpg" alt="Kimi K2.5重磅开源：多模态联合增强，Agent推理提速4.5倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 月之暗面（Moonshot AI）刚刚投下了一枚重磅炸弹：**Kimi K2.5** 正式开源。这不仅仅是一个简单的模型升级，而是一次向**通用智能体**（**General Agentic Intelligence**）迈进的重要探索。
 
-> ArXiv URL：http://arxiv.org/abs/2602.02276v1
+> ArXiv URL：https://arxiv.org/abs/2602.02276v1
 
 Kimi K2.5 最大的亮点在于它打破了以往多模态模型“文本强、视觉弱”或者“视觉强、文本弱”的魔咒，通过文本与视觉的联合优化实现了双向增强。更令人兴奋的是，它引入了 **Agent Swarm** 框架，让智能体学会了“分身术”，将推理延迟大幅降低了 $4.5\times$。
 

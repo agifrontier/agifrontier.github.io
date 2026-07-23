@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "OpenVLA: An Open-Source Vision-Language-Action Model"
+description: "本文介绍并开源了一款名为OpenVLA的7B参数视觉-语言-动作（Vision-Language-Action, VLA）模型，该模型通过在包含970k真实世界机器人演示的大规模多样化数据集上进行训练，其通用操作能力不仅超越了参数量大7倍的闭源模型RT-2-X，并且首次系统地展示了如何利用参数高效微调（Lo。"
+topics:
+  - "具身智能与机器人"
+  - "多模态与视觉"
+related_tutorials:
+  - "π_0-a-vision-language-action-flow-model-for-general-robot-control"
+  - "octo-an-open-source-generalist-robot-policy"
+  - "dapo-an-open-source-llm-reinforcement-learning-system-at-scale"
+  - "mirothinker-pushing-the-performance-boundaries-of-open-source-research-agents-vi"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2406.09246v3
+- **ArXiv URL**: https://arxiv.org/abs/2406.09246v3
 
 - **作者**: Chelsea Finn; Quan Vuong; A. Balakrishna; Moo Jin Kim; Ethan Foster; Thomas Kollar; Rafael Rafailov; Benjamin Burchfiel; Dorsa Sadigh; Siddharth Karamcheti; 等8人
 

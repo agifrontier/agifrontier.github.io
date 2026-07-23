@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "SynthDrive: Scalable Real2Sim2Real Sensor Simulation Pipeline for High-Fidelity Asset Generation and Driving Data Synthesis"
+description: "本文提出了 SynthDrive，一个可扩展的“真实-仿真-真实 (real2sim2real)”数据流，它通过从单张图片自动挖掘并生成高保真度的3D资产，用于合成自动驾驶中的罕见场景（corner-case）数据，以提升感知模型的性能。"
+topics:
+  - "数据与AI工程"
+related_tutorials:
+  - "agentfrontier-expanding-the-capability-frontier-of-llm-agents-with-zpd-guided-da"
+  - "open-data-synthesis-for-deep-research"
+  - "webscale-rl-automated-data-pipeline-for-scaling-rl-data-to-pretraining-levels"
+  - "matrix-peer-to-peer-multi-agent-synthetic-data-generation-framework"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.06798v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.06798v1
 
 - **作者**: Yubin Hu; Qian Zhang; Wei Yin; Ruohong Mei; Weiqiang Ren; Xiaoyang Guo
 

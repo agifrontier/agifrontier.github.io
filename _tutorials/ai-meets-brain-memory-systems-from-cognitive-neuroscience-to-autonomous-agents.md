@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "AI Meets Brain: Memory Systems from Cognitive Neuroscience to Autonomous Agents"
+description: "AI记忆系统的“脑科学”革命：复旦哈工大万字综述，揭秘智能体进化的核心。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "AI Agent"
+related_tutorials:
+  - "forgetful-but-faithful-a-cognitive-memory-architecture-and-benchmark-for-privacy"
+  - "halumem-evaluating-hallucinations-in-memory-systems-of-agents"
+  - "memevolve-meta-evolution-of-agent-memory-systems"
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
 ---
 
 ## AI记忆系统的“脑科学”革命：复旦哈工大万字综述，揭秘智能体进化的核心
 
-<img src="/images/2512.23343v1/A__title.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.23343v1/A__title.jpg" alt="AI记忆系统的“脑科学”革命：复旦哈工大万字综述，揭秘智能体进化的核心 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 大语言模型（LLMs）虽然在推理能力上突飞猛进，但它们本质上有着一种致命的缺陷：**原生无状态**（**Natively Stateless**）。每一次对话对于模型来说都是全新的开始，这种“金鱼记忆”严重限制了AI处理长期复杂任务的能力。尽管我们可以无限拉长上下文窗口，但高昂的计算成本和“迷失中间”现象依然是难以逾越的物理瓶颈。
 
-> ArXiv URL：http://arxiv.org/abs/2512.23343v1
+> ArXiv URL：https://arxiv.org/abs/2512.23343v1
 
 如何打破这一僵局？复旦大学、哈尔滨工业大学等机构的联合研究团队给出了一份重磅答案。该研究并未局限于计算机科学的单一视角，而是跨越学科壁垒，深入认知神经科学，系统性地梳理了从人脑记忆机制到**自主智能体**（**Autonomous Agents**）记忆系统的演进之路。这不仅仅是一篇综述，更是一张指导AI如何像人类一样“记住过去、规划未来”的技术蓝图。
 

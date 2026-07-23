@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "SonicMoE: Accelerating MoE with IO and Tile-aware Optimizations"
+description: "SonicMoE：64张H100顶96张用，MoE训练显存暴降45%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "sortedrl-accelerating-rl-training-for-llms-through-online-length-aware-schedulin"
+  - "moeblaze-breaking-the-memory-wall-for-efficient-moe-training-on-modern-gpus"
+  - "batch-normalization-accelerating-deep-network-training-by-reducing-internal-cova"
+  - "seesaw-accelerating-training-by-balancing-learning-rate-and-batch-size-schedulin"
 ---
 
 ## SonicMoE：64张H100顶96张用，MoE训练显存暴降45%
 
-<img src="/images/2512.14080v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.14080v1/A__title.jpg" alt="SonicMoE：64张H100顶96张用，MoE训练显存暴降45% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 DeepSeek V3、Qwen2.5-MoE 等模型的爆火，让 **混合专家模型**（**Mixture of Experts, MoE**）成为了大模型扩展的“版本答案”。大家都在追求更细粒度的专家（Fine-grained Experts）和更高的稀疏度，试图在不增加计算量的前提下榨干模型性能。
 
-> ArXiv URL：http://arxiv.org/abs/2512.14080v1
+> ArXiv URL：https://arxiv.org/abs/2512.14080v1
 
 然而，天下没有免费的午餐。当专家变得越来越小、越来越碎时，GPU 却开始“叫苦连天”：显存占用飙升，IO 瓶颈卡死计算单元，原本高效的 GEMM 运算因为数据填充（Padding）浪费了大量算力。
 

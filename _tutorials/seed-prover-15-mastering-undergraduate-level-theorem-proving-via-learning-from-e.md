@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Seed-Prover 1.5: Mastering Undergraduate-Level Theorem Proving via Learning from Experience"
+description: "9小时攻克11道Putnam难题！Seed-Prover 1.5重塑AI形式化证明。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "structured-hints-for-sample-efficient-lean-theorem-proving"
+  - "flex-continuous-agent-evolution-via-forward-learning-from-experience"
+  - "learning-on-the-job-an-experience-driven-self-evolving-agent-for-long-horizon-ta"
+  - "a-general-theoretical-paradigm-to-understand-learning-from-human-preferences"
 ---
 
 ## 9小时攻克11道Putnam难题！Seed-Prover 1.5重塑AI形式化证明
 
-<img src="/images/2512.17260v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.17260v1/A__title.jpg" alt="9小时攻克11道Putnam难题！Seed-Prover 1.5重塑AI形式化证明 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在AI数学推理领域，我们正处于一个有趣的十字路口。一方面，DeepSeek-Math、GPT-4o等模型在自然语言解题上高歌猛进；另一方面，使用Lean等形式化语言进行**严格定理证明**（**Formal Theorem Proving**）却依然步履维艰——它不仅门槛高，而且计算成本极其昂贵。
 
-> ArXiv URL：http://arxiv.org/abs/2512.17260v1
+> ArXiv URL：https://arxiv.org/abs/2512.17260v1
 
 这就引出了一个灵魂拷问：如果大模型已经能用自然语言给出高准确率的答案，我们还有必要死磕昂贵的形式化证明吗？
 

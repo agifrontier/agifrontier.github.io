@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Re4: Scientific Computing Agent with Rewriting, Resolution, Review and Revision"
+description: "本文提出了一个名为 Re⁴ 的科学计算智能体 (Agent) 框架，它通过“重写-解决-审查-修订” (Rewriting-Resolution-Review-Revision) 的逻辑链，利用多个大型语言模型 (LLM) 协同工作，显著提升了根据自然语言描述自主生成代码的可靠性和准确性。"
+topics:
+  - "AI Agent"
+  - "行业应用"
+related_tutorials:
+  - "autonomous-agents-for-scientific-discovery-orchestrating-scientists-language-cod"
+  - "qagent-a-modular-search-agent-with-interactive-query-understanding"
+  - "scaling-up-multi-turn-off-policy-rl-and-multi-agent-tree-search-for-llm-step-pro"
+  - "ai4x-roadmap-artificial-intelligence-for-the-advancement-of-scientific-pursuit-a"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2508.20729v1
+- **ArXiv URL**: https://arxiv.org/abs/2508.20729v1
 
 - **作者**: Lei Zhang; Ao Cheng; Guowei He
 

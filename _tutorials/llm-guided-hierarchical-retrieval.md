@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "LLM-guided Hierarchical Retrieval"
+description: "本文提出了一种名为 LATTICE 的LLM引导分层检索框架，通过将海量文档组织成语义树，并让大型语言模型（LLM）基于创新的校准路径相关性得分进行推理和导航，从而以对数级的搜索复杂度高效解决复杂的推理密集型查询。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "decide-then-retrieve-a-training-free-framework-with-uncertainty-guided-triggerin"
+  - "hifi-rag-hierarchical-content-filtering-and-two-pass-generation-for-open-domain-"
+  - "beyond-patch-aggregation-3-pass-pyramid-indexing-for-vision-enhanced-document-re"
+  - "citation-grounded-code-comprehension-preventing-llm-hallucination-through-hybrid"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.13217v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.13217v1
 
 - **作者**: Nilesh Gupta; Inderjit S. Dhillon; Wei-Cheng Chang; Cho-Jui Hsieh
 

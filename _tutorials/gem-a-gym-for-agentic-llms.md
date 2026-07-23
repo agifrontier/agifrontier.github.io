@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "GEM: A Gym for Agentic LLMs"
+description: "本文介绍了一个名为GEM（General Experience Maker）的开源环境模拟器，它旨在像传统强化学习领域的OpenAI-Gym一样，为智能体大语言模型（Agentic LLMs）提供一个标准化的训练与评估框架，从而推动研究从静态数据集学习转向基于环境交互的经验学习。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "a-survey-of-reasoning-and-agentic-systems-in-time-series-with-large-language-mod"
+  - "a-survey-on-agentic-multimodal-large-language-models"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.01051v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.01051v1
 
 - **作者**: Chenmien Tan; Bo Liu; Michael Shieh; Hao Zhu; Haotian Xu; Zichen Liu; Xiangxin Zhou; Changyu Chen; Anya Sims; Yee Whye Teh; 等18人
 

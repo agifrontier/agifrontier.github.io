@@ -1,17 +1,25 @@
 ---
 layout: default
 title: "Virtual Width Networks"
+description: "字节跳动VWN：不加算力“拓宽”Transformer，训练提速高达3倍！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "large-language-models-meet-virtual-cell-a-survey"
+  - "artificial-hippocampus-networks-for-efficient-long-context-modeling"
+  - "kan-kolmogorov-arnold-networks"
+  - "who-said-neural-networks-arent-linear"
 ---
 
 ## 字节跳动VWN：不加算力“拓宽”Transformer，训练提速高达3倍！
 
-<img src="/images/2511.11238v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.11238v1/A__title.jpg" alt="字节跳动VWN：不加算力“拓宽”Transformer，训练提速高达3倍！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 想让大模型更强，最直接的方法就是“加宽”——增加其隐藏层维度。但这会导致计算成本呈二次方爆炸式增长，成为一个难以逾越的瓶颈。
 
 > **论文标题**：Virtual Width Networks
 
-> **ArXiv URL**：http://arxiv.org/abs/2511.11238v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.11238v1
 
 有没有办法只享受“变宽”的好处，却不付出昂贵的代价？
 

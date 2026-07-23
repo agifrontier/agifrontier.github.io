@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Mixture-of-Depths Attention"
+description: "LLM越深越“健忘”？字节MoDA架构：性能+2.11%，开销仅3.7%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "optimizing-mixture-of-block-attention"
+  - "gatepro-parameter-free-expert-selection-optimization-for-mixture-of-experts-mode"
+  - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
+  - "controlling-changes-to-attention-logits"
 ---
 
 ## LLM越深越“健忘”？字节MoDA架构：性能+2.11%，开销仅3.7%
 
-<img src="/images/2603.15619v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2603.15619v1/A__title.jpg" alt="LLM越深越“健忘”？字节MoDA架构：性能+2.11%，开销仅3.7% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 大模型（LLM）的竞赛似乎很简单：堆更多的层，模型就会更强大。但现实却给了我们一记重拳——模型越深，反而越容易“忘记”浅层学到的关键信息。这种现象被称为**信号衰减**（signal degradation）。
 
-> ArXiv URL：http://arxiv.org/abs/2603.15619v1
+> ArXiv URL：https://arxiv.org/abs/2603.15619v1
 
 每一层网络都在努力学习，但随着层层堆叠，有价值的特征信号在反复的残差更新中被稀释，导致深层网络难以有效利用浅层信息。
 

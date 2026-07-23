@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "General Agentic Memory Via Deep Research"
+description: "AI记忆革命GAM：用“即时研究”取代静态压缩，长文本任务准确率超90%！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "AI Agent"
+related_tutorials:
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+  - "memoria-a-scalable-agentic-memory-framework-for-personalized-conversational-ai"
+  - "how-far-are-we-from-genuinely-useful-deep-research-agents"
+  - "mars-optimizing-dual-system-deep-research-via-multi-agent-reinforcement-learning"
 ---
 
 ## AI记忆革命GAM：用“即时研究”取代静态压缩，长文本任务准确率超90%！
 
-<img src="/images/2511.18423v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.18423v1/A__title.jpg" alt="AI记忆革命GAM：用“即时研究”取代静态压缩，长文本任务准确率超90%！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 AI Agent的记忆力，正在成为其智能的瓶颈。
 
-> ArXiv URL：http://arxiv.org/abs/2511.18423v1
+> ArXiv URL：https://arxiv.org/abs/2511.18423v1
 
 传统的记忆方法就像考前死记硬背，试图把所有知识都压缩进一个“小抄”里。这种方式不可避免地会丢失大量细节，导致AI在处理复杂任务时“失忆”。
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "A Concise Review of Hallucinations in LLMs and their Mitigation"
+description: "终结AI幻觉：全面剖析大模型“胡说八道”的根源与应对策略。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "can-llms-track-their-output-length-a-dynamic-feedback-mechanism-for-precise-leng"
+  - "object-recognition-datasets-and-challenges-a-review"
+  - "cognitive-foundations-for-reasoning-and-their-manifestation-in-llms"
+  - "halumem-evaluating-hallucinations-in-memory-systems-of-agents"
 ---
 
 ## 终结AI幻觉：全面剖析大模型“胡说八道”的根源与应对策略
 
-<img src="/images/2512.02527v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.02527v1/A__title.jpg" alt="终结AI幻觉：全面剖析大模型“胡说八道”的根源与应对策略 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 你是否曾被AI一本正经的胡说八道给惊到？当它为你生成一篇看似完美的文章，却在关键事实上张冠李戴；或者在回答问题时，自信满满地编造出一个不存在的概念。这种现象，正是当前大型语言模型（LLM）面临的最大挑战之一——**幻觉**（**Hallucination**）。
 
-> ArXiv URL：http://arxiv.org/abs/2512.02527v1
+> ArXiv URL：https://arxiv.org/abs/2512.02527v1
 
 它如同一片阴影，笼罩在人工智能的光环之上，严重影响了模型的可靠性。那么，AI幻觉究竟从何而来？我们又该如何应对？今天，就让我们跟随一篇最新的综述论文，一探究竟。
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Are Agents Just Automata? On the Formal Equivalence Between Agentic AI and the Chomsky Hierarchy"
+description: "本文通过将智能体（Agent）的内存架构与乔姆斯基层级（Chomsky hierarchy）中的抽象机进行类比，建立了一套形式化等价框架，指出智能体的计算能力和可验证性由其内存类型（无内存、堆栈、无限读写内存）决定，从而为设计更高效、更安全的智能体系统提供了理论基础和工程指导。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+  - "metaclaw-just-talk-an-agent-that-meta-learns-and-evolves-in-the-wild"
+  - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.23487v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.23487v1
 
 - **作者**: Maliheh Izadi; Anton Podkopaev; Roham Koohestani
 

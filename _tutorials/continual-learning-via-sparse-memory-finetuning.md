@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Continual Learning via Sparse Memory Finetuning"
+description: "本文提出了一种名为稀疏内存微调（sparse memory finetuning）的方法，通过仅更新与新知识高度相关的、利用TF-IDF筛选出的极少数内存槽位，使大型语言模型在学习新知识的同时，显著减少了灾难性遗忘。"
+topics:
+  - "RAG与知识系统"
+  - "模型训练与优化"
+related_tutorials:
+  - "when-less-is-more-8-bit-quantization-improves-continual-learning-in-large-langua"
+  - "moeblaze-breaking-the-memory-wall-for-efficient-moe-training-on-modern-gpus"
+  - "gallop-gradient-based-sparse-learning-on-low-magnitude-parameters"
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.15103v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.15103v1
 
 - **作者**: Gargi Ghosh; Jessy Lin; Luke Zettlemoyer; Barlas Oğuz; Vincent-Pierre Berges
 

@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on Reasoning, Hallucination, and Interactivity"
+description: "本文提出了一个全面的评估框架，对ChatGPT在多任务、多语言、多模态、推理、幻觉和交互性方面进行了系统的量化评估，揭示了其在多数零样本任务上的卓越表现，同时也指出了其在低资源语言、复杂推理和事实性方面的显著局限。"
+topics:
+  - "多模态与视觉"
+  - "推理与强化学习"
+related_tutorials:
+  - "basereward-a-strong-baseline-for-multimodal-reward-model"
+  - "cogflow-bridging-perception-and-reasoning-through-knowledge-internalization-for-"
+  - "mathvista-evaluating-mathematical-reasoning-of-foundation-models-in-visual-conte"
+  - "ssl4rl-revisiting-self-supervised-learning-as-intrinsic-reward-for-visual-langua"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2302.04023v4
+- **ArXiv URL**: https://arxiv.org/abs/2302.04023v4
 
 - **作者**: Yan Xu; Dan Su; Pascale Fung; Willy Chung; Tiezheng Yu; Yejin Bang; Nayeon Lee; Quyet V. Do; Holy Lovenia; Ziwei Ji; 等3人
 

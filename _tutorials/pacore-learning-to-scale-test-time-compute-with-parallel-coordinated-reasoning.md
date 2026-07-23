@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "PaCoRe: Learning to Scale Test-Time Compute with Parallel Coordinated Reasoning"
+description: "8B模型超越GPT-5！PaCoRe：解锁200万Token推理算力的新范式。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "learning-when-to-plan-efficiently-allocating-test-time-compute-for-llm-agents"
+  - "reasoning-over-mathematical-objects-on-policy-reward-modeling-and-test-time-aggr"
+  - "understanding-and-steering-the-cognitive-behaviors-of-reasoning-models-at-test-t"
+  - "livethinking-enabling-real-time-efficient-reasoning-for-ai-powered-livestreaming"
 ---
 
 ## 8B模型超越GPT-5！PaCoRe：解锁200万Token推理算力的新范式
 
-<img src="/images/2601.05593v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.05593v1/A__title.jpg" alt="8B模型超越GPT-5！PaCoRe：解锁200万Token推理算力的新范式 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当前的大语言模型（LLM）存在一个显著的短板：**推理能力被死死地限制在了上下文窗口（Context Window）里**。一旦思维链（Chain-of-Thought）的长度填满了窗口，推理就必须停止。
 
-> ArXiv URL：http://arxiv.org/abs/2601.05593v1
+> ArXiv URL：https://arxiv.org/abs/2601.05593v1
 
 但如果我们可以打破这个限制呢？
 

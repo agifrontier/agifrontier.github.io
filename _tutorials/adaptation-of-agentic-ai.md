@@ -1,13 +1,21 @@
 ---
 layout: default
 title: "Adaptation of Agentic AI"
+description: "13所顶尖名校联手：Agentic AI 适配的 4 大核心范式与未来路线图。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "a-survey-of-reasoning-and-agentic-systems-in-time-series-with-large-language-mod"
+  - "a-survey-on-agentic-multimodal-large-language-models"
 ---
 
 ## 13所顶尖名校联手：Agentic AI 适配的 4 大核心范式与未来路线图
 
 当前的 AI Agent（智能体）开发正处于一个尴尬的“青春期”：虽然基于 GPT-4 或 Claude 3.5 等基础模型构建的 Agent 展现出了惊人的潜力，但在面对复杂的现实任务时，它们依然经常“掉链子”——工具调用错误、规划路径迷失、甚至在特定领域一本正经地胡说八道。
 
-> ArXiv URL：http://arxiv.org/abs/2512.16301v1
+> ArXiv URL：https://arxiv.org/abs/2512.16301v1
 
 核心症结在于：**通用的基础模型（Foundation Models）并不等同于专业的智能体系统。**
 

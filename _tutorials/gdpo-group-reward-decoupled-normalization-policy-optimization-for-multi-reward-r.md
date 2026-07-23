@@ -1,13 +1,21 @@
 ---
 layout: default
 title: "GDPO: Group reward-Decoupled Normalization Policy Optimization for Multi-reward RL Optimization"
+description: "GRPO多奖励训练“失效”？GDPO解耦归一化：AIME准确率提升6.3%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "towards-flash-thinking-via-decoupled-advantage-policy-optimization"
+  - "riskpo-risk-based-policy-optimization-via-verifiable-reward-for-llm-post-trainin"
+  - "asymmetric-proximal-policy-optimization-mini-critics-boost-llm-reasoning"
+  - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
 ---
 
 ## GRPO多奖励训练“失效”？GDPO解耦归一化：AIME准确率提升6.3%
 
 随着 DeepSeek-R1 等模型的爆火，**组相对策略优化**（**Group Relative Policy Optimization, GRPO**）几乎成了强化学习（RL）微调的标配。大家都在用它来提升模型的推理能力。
 
-> ArXiv URL：http://arxiv.org/abs/2601.05242v1
+> ArXiv URL：https://arxiv.org/abs/2601.05242v1
 
 但是，当你的需求不再单一，而是希望模型“既要准确，又要简练，还要格式规范”时，直接套用 GRPO 真的没问题吗？
 

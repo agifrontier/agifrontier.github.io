@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "Mesh-Attention: A New Communication-Efficient Distributed Attention with Improved Data Locality"
+description: "挑战Ring-Attention霸主地位：Mesh-Attention实现3.4倍加速，通信暴降85%。"
+topics:
+  - "模型训练与优化"
+  - "数据与AI工程"
+related_tutorials:
+  - "a-survey-on-efficient-large-language-model-training-from-data-centric-perspectiv"
+  - "efficient-streaming-language-models-with-attention-sinks"
+  - "every-attention-matters-an-efficient-hybrid-architecture-for-long-context-reason"
+  - "kimi-linear-an-expressive-efficient-attention-architecture"
 ---
 
 ## 挑战Ring-Attention霸主地位：Mesh-Attention实现3.4倍加速，通信暴降85%
 
-<img src="/images/2512.20968v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.20968v1/A__title.jpg" alt="挑战Ring-Attention霸主地位：Mesh-Attention实现3.4倍加速，通信暴降85% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型（LLM）的“军备竞赛”中，上下文窗口（Context Window）的长度已经成为各大厂商争夺的制高点。从Gemini的100万token到Llama 4 Scout号称的1000万token，我们对模型处理超长文本、视频的需求似乎永无止境。
 
-> ArXiv URL：http://arxiv.org/abs/2512.20968v1
+> ArXiv URL：https://arxiv.org/abs/2512.20968v1
 
 然而，理想很丰满，现实很骨感。随着上下文长度的增加，Attention（注意力机制）的计算量和显存需求呈二次方爆炸式增长。为了解决这个问题，**分布式注意力（Distributed Attention）**技术应运而生，其中最著名的莫过于 **Ring-Attention**。
 

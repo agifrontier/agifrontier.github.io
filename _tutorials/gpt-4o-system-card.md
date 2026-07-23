@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "GPT-4o System Card"
+description: "本文发布了GPT-4o，一个端到端训练的原生多模态（omni）模型，该模型能够统一处理和生成文本、音频、图像的任意组合，并详细介绍了其在新能力（特别是实时语音交互）下的安全评估体系、风险缓解措施及其潜在的社会影响。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "gpt-4-technical-report"
+  - "nrgpt-an-energy-based-alternative-for-gpt"
+  - "capabilities-of-gpt-4-on-medical-challenge-problems"
+  - "learning-to-reason-training-llms-with-gpt-oss-or-deepseek-r1-reasoning-traces"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2410.21276v1
+- **ArXiv URL**: https://arxiv.org/abs/2410.21276v1
 
 - **作者**: Kendra Rimbach; R. Leike; Cary Bassin; Paul McMillan; Andrea Vallone; Shuaiqi Xia; Yuchen Zhang; Tom Stasi; Edmund Wong; Vlad Fomenko; 等403人
 

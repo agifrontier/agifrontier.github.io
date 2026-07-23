@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Expand Neurons, Not Parameters"
+description: "本文提出了一种名为“固定参数扩展”（Fixed Parameter Expansion, FPE）的方法，通过在不增加非零参数总数的情况下增加网络中的神经元数量，来减少由特征叠加（superposition）引起的干扰，从而提升模型性能。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "not-all-parameters-are-created-equal-smart-isolation-boosts-fine-tuning-performa"
+  - "allocation-of-parameters-in-transformers"
+  - "scaling-llm-test-time-compute-optimally-can-be-more-effective-than-scaling-model"
+  - "ai-progress-should-be-measured-by-capability-per-resource-not-scale-alone-a-fram"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.04500v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.04500v1
 
 - **作者**: Nir Shavit; Micah Adler; Linghao Kong; Dan Alistarh; Yonadav Shavit
 
@@ -36,7 +44,7 @@ title: "Expand Neurons, Not Parameters"
 2.  **分裂神经元与划分权重**：对于原始网络中的每一个神经元 $$n_i$$，在新的网络中创建 $$α$$ 个子神经元。然后，将父神经元 $$n_i$$ 的输入权重 $$w_i$$ 划分为 $$α$$ 个互不相交的子集。每个子神经元继承其中一个权重子集，从而形成一个新的、更宽但稀疏的输入层权重矩阵 $$W'_1$$。这一步确保了原本共享一个父神经元的输入特征现在被分配到不同的子神经元上。
 3.  **调整输出层**：为了匹配变宽的隐藏层，输出层的权重矩阵 $$W_2$$ 也相应地被扩展。为了保持总参数量不变，会对新生成的权重矩阵 $$W'_1$$ 和 $$W'_2$$ 中绝对值最小的一部分权重进行剪枝。
 
-<img src="/images/2510.04500v1/overview.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2510.04500v1/overview.jpg" alt="FPE的程序 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 *不同参数效率范式的对比。本文提出的路径（右下）直接将一个小型稠密网络转化为一个大型稀疏网络，旨在通过增加神经元来减少特征干扰，同时保持参数数量不变。*
 
 ### 创新点

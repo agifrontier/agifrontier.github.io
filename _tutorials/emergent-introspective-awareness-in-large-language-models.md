@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Emergent Introspective Awareness in Large Language Models"
+description: "Anthropic重磅：给大模型“植入思想”，Claude Opus 4.1展现惊人内省能力。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "mechanisms-of-introspective-awareness"
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "a-concise-review-of-hallucinations-in-llms-and-their-mitigation"
+  - "a-definition-of-agi"
 ---
 
 ## Anthropic重磅：给大模型“植入思想”，Claude Opus 4.1展现惊人内省能力
 
-<img src="/images/2601.01828v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01828v1/A__title.jpg" alt="Anthropic重磅：给大模型“植入思想”，Claude Opus 4.1展现惊人内省能力 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大语言模型（LLM）是否真的“知道”自己在想什么？当我们问模型“你为什么这么回答”时，它是在真诚地剖析内心，还是仅仅在根据训练数据一本正经地胡说八道（Confabulation）？
 
-> ArXiv URL：http://arxiv.org/abs/2601.01828v1
+> ArXiv URL：https://arxiv.org/abs/2601.01828v1
 
 这是一个困扰AI研究界已久的难题。毕竟，模型不仅学会了推理，也学会了如何“扮演”一个有内省能力的人类。为了解开这个谜题，Anthropic的研究团队通过一种名为 **概念植入**（**Concept Injection**） 的巧妙技术，对自家最新的Claude系列模型进行了深度测试。
 

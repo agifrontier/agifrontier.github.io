@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Midtraining Bridges Pretraining and Posttraining Distributions"
+description: "本文系统地研究了“中训练 (Midtraining)”这一新兴实践，发现其通过在通用预训练和特定任务微调之间构建一个分布桥梁，能有效提升模型在数学和代码等领域的下游任务性能，并显著减少灾难性遗忘。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "flowrl-matching-reward-distributions-for-llm-reasoning"
+  - "an-empirical-study-on-noisy-data-and-llm-pretraining-loss-divergence"
+  - "videoagenttrek-computer-use-pretraining-from-unlabeled-videos"
+  - "webscale-rl-automated-data-pipeline-for-scaling-rl-data-to-pretraining-levels"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.14865v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.14865v1
 
 - **作者**: Emmy Liu; Graham Neubig; Chenyan Xiong
 
@@ -48,7 +56,6 @@ title: "Midtraining Bridges Pretraining and Posttraining Distributions"
 
 2.  **邻近度优势 (Proximity Advantage) 的量化**：为了验证“桥接假说”，本文引入了一个简单的量化指标。通过计算不同数据集之间的词元分布相似度 (token-distributional similarity)，定义了“邻近度优势”，即： $$dist(C4, SFT) - dist(midtrain, SFT)$$。这个值衡量了与原始的 C4 数据相比，中训练数据在多大程度上拉近了与最终微调任务（SFT）数据的分布距离。实验证明，更高的邻近度优势与更好的下游任务性能显著相关。
 
-![数据集间的相似度矩阵示例](x1.png)
 
 ## 实验结论
 通过在不同模型尺寸、中训练数据、下游任务上的系统性实验，本文得出以下关键结论：

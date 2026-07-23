@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Autoregressive Language Models are Secretly Energy-Based Models: Insights into the Lookahead Capabilities of Next-Token Prediction"
+description: "DeepMind重磅：自回归模型竟是EBM？揭秘Next-Token预测的“全局规划”能力。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "every-token-counts-generalizing-16m-ultra-long-context-in-large-language-models"
+  - "explaining-the-success-of-nearest-neighbor-methods-in-prediction"
+  - "hybrid-architectures-for-language-models-systematic-analysis-and-design-insights"
+  - "nrgpt-an-energy-based-alternative-for-gpt"
 ---
 
 ## DeepMind重磅：自回归模型竟是EBM？揭秘Next-Token预测的“全局规划”能力
 
-<img src="/images/2512.15605v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.15605v1/A__title.jpg" alt="DeepMind重磅：自回归模型竟是EBM？揭秘Next-Token预测的“全局规划”能力 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 长期以来，大语言模型（LLM）圈子里存在一种普遍的质疑：基于 **Next-Token Prediction**（下一词预测）的自回归模型，真的具备逻辑推理和规划能力吗？还是说它们仅仅是依靠概率惯性滑行的“随机鹦鹉”？
 
-> ArXiv URL：http://arxiv.org/abs/2512.15605v1
+> ArXiv URL：https://arxiv.org/abs/2512.15605v1
 
 毕竟，自回归模型（ARMs）看起来非常短视——它们只盯着下一个词。而另一种被称为 **基于能量的模型**（**Energy-Based Models, EBMs**），虽然能从全局视角评估整个序列的优劣，拥有天然的“上帝视角”，但因为计算极其困难，一直未能成为主流。
 

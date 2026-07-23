@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Large Language Models Meet Virtual Cell: A Survey"
+description: "本文全面综述了大型语言模型（LLM）在构建“虚拟细胞”（virtual cell）——一个能够表示、预测和推理细胞状态与行为的计算系统——中的应用，并提出了一个将现有方法分为“作为预言机的LLM”（LLMs as Oracles）和“作为智能体的LLM”（LLMs as Agents）两大范式的统一分类体系。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "virtual-width-networks"
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "a-survey-of-ai-scientists-surveying-the-automatic-scientists-and-research"
+  - "a-survey-of-large-language-models"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.07706v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.07706v1
 
 - **作者**: Yuanjie Zou; Zheng Hui; Guang Yang; Zhonghao Zhan; Weiye Bao
 

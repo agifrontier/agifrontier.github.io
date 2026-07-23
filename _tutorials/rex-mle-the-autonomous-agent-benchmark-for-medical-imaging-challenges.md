@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "ReX-MLE: The Autonomous Agent Benchmark for Medical Imaging Challenges"
+description: "GPT-5也排0%分位？ReX-MLE揭秘：顶尖AI智能体为何搞不定医学影像。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+  - "AI安全与评测"
+related_tutorials:
+  - "gui-360-a-comprehensive-dataset-and-benchmark-for-computer-using-agents"
+  - "pptarena-a-benchmark-for-agentic-powerpoint-editing"
+  - "ai-agent-systems-architectures-applications-and-evaluation"
+  - "a-survey-of-reasoning-in-autonomous-driving-systems-open-challenges-and-emerging"
 ---
 
 ## GPT-5也排0%分位？ReX-MLE揭秘：顶尖AI智能体为何搞不定医学影像
 
-<img src="/images/2512.17838v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.17838v1/A__title.jpg" alt="GPT-5也排0%分位？ReX-MLE揭秘：顶尖AI智能体为何搞不定医学影像 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当我们在惊叹 AI 智能体（Agents）能够像熟练工一样写代码、修 Bug 甚至开发小型游戏时，一个残酷的现实正在被忽视：一旦离开通用的软件工程舒适区，进入复杂的科学领域，这些“全能助手”可能瞬间变成“小白”。
 
-> ArXiv URL：http://arxiv.org/abs/2512.17838v1
+> ArXiv URL：https://arxiv.org/abs/2512.17838v1
 
 哈佛医学院等机构的最新研究给 AI 泼了一盆冷水。他们推出了一个名为 **ReX-MLE** 的全新基准测试，专门评估 AI 智能体在医学影像挑战中的表现。结果令人大跌眼镜：即便是搭载了 GPT-5、Claude 3.5 Sonnet 这样顶尖模型的 SOTA 智能体，在面对真实的医学影像竞赛时，绝大多数成绩竟然排在人类选手的 **0% 分位**。
 

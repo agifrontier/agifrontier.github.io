@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "FAPO: Flawed-Aware Policy Optimization for Efficient and Reliable Reasoning"
+description: "本文提出了一种名为缺陷感知策略优化 (FAPO) 的方法，通过训练一个生成式奖励模型（GenRM）来识别并惩罚那些最终答案正确但推理过程有误的“缺陷正样本”，从而在不增加Token预算的情况下，提升大型语言模型在强化学习训练中的推理可靠性、效率和稳定性。"
+topics:
+  - "推理与强化学习"
+  - "模型训练与优化"
+related_tutorials:
+  - "asymmetric-proximal-policy-optimization-mini-critics-boost-llm-reasoning"
+  - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
+  - "less-is-more-tokens-efficient-math-reasoning-via-difficulty-aware-chain-of-thoug"
+  - "what-makes-low-bit-quantization-aware-training-work-for-reasoning-llms-a-systema"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.22543v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.22543v1
 
 - **作者**: Xin Liu; Min Zhang; Haibin Lin; Juntao Li; Chi Zhang; Yuyang Ding
 

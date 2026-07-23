@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "AgentInit: Initializing LLM-based Multi-Agent Systems via Diversity and Expertise Orchestration for Effective and Efficient Collaboration"
+description: "本文提出了一种名为 AgentInit 的多智能体系统（Multi-Agent System, MAS）初始化方法，该方法通过生成一组多样化的候选智能体，并利用以任务相关性和团队多样性为目标的帕累托最优原则进行团队选择，来优化智能体团队的构成，从而提升协作效率与任务表现。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "datasage-multi-agent-collaboration-for-insight-discovery-with-external-knowledge"
+  - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"
+  - "goagent-group-of-agents-communication-topology-generation-for-llm-based-multi-ag"
+  - "skyrl-agent-efficient-rl-training-for-multi-turn-llm-agent"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.19236v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.19236v1
 
 - **作者**: Min Zhang; Liang Ding; Yutong Wang; Xuebo Liu; Miao Zhang
 
@@ -37,9 +45,9 @@ title: "AgentInit: Initializing LLM-based Multi-Agent Systems via Diversity and 
 
 本文提出的 AgentInit 框架旨在通过优化初始团队结构来提升多智能体系统的效率和效果。其核心思想源于现实世界中高效团队的组建原则：成员不仅需要具备专业能力（任务相关性），团队整体也需要具备多样性以应对复杂挑战。AgentInit 通过“标准化智能体生成”和“平衡的团队选择”两个阶段来实现这一目标。
 
-<img src="/images/2509.19236v1/page_0_Figure_10.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2509.19236v1/page_0_Figure_10.jpg" alt="本文方法 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
-<img src="/images/2509.19236v1/page_2_Figure_0.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2509.19236v1/page_2_Figure_0.jpg" alt="本文方法 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 标准化智能体生成 (Standardized Agent Generation)
 
@@ -169,7 +177,7 @@ title: "AgentInit: Initializing LLM-based Multi-Agent Systems via Diversity and 
     *   **选择策略**：与不进行选择、随机选择等策略相比，AgentInit 的帕累托最优选择策略显著更优，证明了性能提升来源于其合理且有针对性的选择过程。
 
 *   **目标与性能关系分析**：
-    <img src="/images/2509.19236v1/page_8_Figure_2.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+    <img src="/images/2509.19236v1/page_8_Figure_2.jpg" alt="核心机制验证 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
     如图所示，最佳性能并非出现在相关性或多样性最高的地方，而是集中在两者取得平衡的中间区域。这直观地证明了单纯最大化任一指标都无法保证最优性能，而 AgentInit 的平衡策略是有效的。
 
 *   **其他关键发现**：

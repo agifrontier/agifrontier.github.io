@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Process-Supervised Reinforcement Learning for Interactive Multimodal Tool-Use Agents"
+description: "本文提出了一种名为“回合级评审强化学习” (Turn-level Adjudicated Reinforcement Learning, TARL) 的流程监督方法，该方法利用大型语言模型 (LLM) 作为裁判提供细粒度的回合级奖励，并结合混合任务训练策略，以解决长程交互中的信用分配和探索不足问题，从而显著。"
+topics:
+  - "多模态与视觉"
+  - "AI Agent"
+related_tutorials:
+  - "verltool-towards-holistic-agentic-reinforcement-learning-with-tool-use"
+  - "online-process-reward-leanring-for-agentic-reinforcement-learning"
+  - "coda-coordinating-the-cerebrum-and-cerebellum-for-a-dual-brain-computer-use-agen"
+  - "budget-aware-tool-use-enables-effective-agent-scaling"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.14480v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.14480v1
 
 - **作者**: Philipp Koehn; Weiting Tan; Xinghua Qu; Meng Ge; Ming Tu; Andy T. Liu; Lu Lu
 

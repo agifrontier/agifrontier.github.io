@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Prompt Repetition Improves Non-Reasoning LLMs"
+description: "谷歌新发现：简单重复Prompt，大模型准确率暴涨且零额外延迟。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "reinforcement-learning-improves-traversal-of-hierarchical-knowledge-in-llms"
+  - "prompt-r1-collaborative-automatic-prompting-framework-via-end-to-end-reinforceme"
+  - "a-multitask-multilingual-multimodal-evaluation-of-chatgpt-on-reasoning-hallucina"
+  - "a-survey-of-inductive-reasoning-for-large-language-models"
 ---
 
 ## 谷歌新发现：简单重复Prompt，大模型准确率暴涨且零额外延迟
 
-<img src="/images/2512.14982v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.14982v1/A__title.jpg" alt="谷歌新发现：简单重复Prompt，大模型准确率暴涨且零额外延迟 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 你有没有想过，提升大模型效果的最简单方法，可能不是精心设计复杂的“思维链”（CoT）提示词，也不是进行昂贵的微调，而是直接把你的Prompt“复制粘贴”一遍？
 
-> ArXiv URL：http://arxiv.org/abs/2512.14982v1
+> ArXiv URL：https://arxiv.org/abs/2512.14982v1
 
 这听起来像是一个“愚人节玩笑”，或者某种玄学，但来自 **Google Research** 的最新研究表明：这不仅有效，而且效果惊人。这篇名为《Prompt Repetition Improves Non-Reasoning LLMs》的论文揭示了一个反直觉的现象：**在不使用推理模式的情况下，简单地重复输入Prompt，可以显著提升Gemini、GPT、Claude和DeepSeek等主流模型的性能，而且几乎不增加生成延迟。**
 

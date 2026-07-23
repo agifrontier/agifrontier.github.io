@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "TOUCAN: Synthesizing 1.5M Tool-Agentic Data from Real-World MCP Environments"
+description: "本文介绍了一个名为 TOUCAN 的大规模工具智能体数据集，包含 150 万条从近 500 个真实世界 MCP 环境中合成的轨迹，旨在通过提供多样、真实且复杂的训练数据，显著提升开源大型语言模型（LLM）的工具调用和智能体能力。"
+topics:
+  - "AI Agent"
+  - "数据与AI工程"
+related_tutorials:
+  - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
+  - "mai-ui-technical-report-real-world-centric-foundation-gui-agents"
+  - "verltool-towards-holistic-agentic-reinforcement-learning-with-tool-use"
+  - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.01179v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.01179v1
 
 - **作者**: Zhangchen Xu; Anurag Roy; Radha Poovendran; Adriana Meza Soria; Rameswar Panda; Shawn Tan
 

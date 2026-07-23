@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "LIMI: Less is More for Agency"
+description: "本文提出 LIMI 方法，证明通过极少量（仅78个）精心策划的高质量训练样本，即可训练出在智能体任务上超越使用海量数据训练的模型的强大AI智能体，从而确立了智能体开发的“少即是多”原则。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "less-is-more-tokens-efficient-math-reasoning-via-difficulty-aware-chain-of-thoug"
+  - "less-llm-more-documents-searching-for-improved-rag"
+  - "limo-less-is-more-for-reasoning"
+  - "when-less-is-more-8-bit-quantization-improves-continual-learning-in-large-langua"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.17567v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.17567v1
 
 - **作者**: Xiaojie Cai; Liming Liu; Jie Sun; Mohan Jiang; Jifan Lin; Wenjie Li; Dequan Wang; Jinlong Hou; Shijie Xia; Yang Xiao; 等17人
 

@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "Vision Transformers are Circulant Attention Learners"
+description: "ViT暗藏“循环”玄机？清华新作：用FFT将注意力复杂度降至。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "多模态与视觉"
+  - "模型训练与优化"
+related_tutorials:
+  - "trainable-log-linear-sparse-attention-for-efficient-diffusion-transformers"
+  - "learning-to-focus-focal-attention-for-selective-and-scalable-transformers"
+  - "diffusion-language-models-are-super-data-learners"
+  - "a-circular-argument-does-rope-need-to-be-equivariant-for-vision"
 ---
 
 ## ViT暗藏“循环”玄机？清华新作：用FFT将注意力复杂度降至$O(N\log N)$
 
-<img src="/images/2512.21542v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.21542v1/A__title.jpg" alt="ViT暗藏“循环”玄机？清华新作：用FFT将注意力复杂度降至 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 Vision Transformer (ViT) 自从问世以来，凭借其强大的全局建模能力，在计算机视觉的各个领域攻城略地。然而，这种强大的能力并非没有代价——标准自注意力机制（Self-Attention）的计算复杂度是 $O(N^2)$。这意味着，随着图像分辨率的提升，计算量呈爆炸式增长，这成为了ViT在高分辨率任务（如分割、检测）中落地的最大拦路虎。
 
-> ArXiv URL：http://arxiv.org/abs/2512.21542v1
+> ArXiv URL：https://arxiv.org/abs/2512.21542v1
 
 为了解决这个问题，过去的研究者们想出了各种“手工”招数：有的把注意力限制在局部窗口（如 Swin Transformer），有的引入稀疏采样（如 PVT）。虽然这些方法降低了计算量，但也牺牲了ViT最引以为傲的“全局视野”。
 

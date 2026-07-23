@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "Learning to Reason: Training LLMs with GPT-OSS or DeepSeek R1 Reasoning Traces"
+description: "推理成本直降75%！英伟达新研究：LLM学会“长话短说”，数学能力还不减。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+  - "模型训练与优化"
+related_tutorials:
+  - "deepseek-r1-incentivizing-reasoning-capability-in-llms-via-reinforcement-learnin"
+  - "balanced-actor-initialization-stable-rlhf-training-of-distillation-based-reasoni"
+  - "beyond-two-stage-training-cooperative-sft-and-rl-for-llm-reasoning"
+  - "on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language-model"
 ---
 
 ## 推理成本直降75%！英伟达新研究：LLM学会“长话短说”，数学能力还不减
 
-<img src="/images/2511.19333v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.19333v1/A__title.jpg" alt="推理成本直降75%！英伟达新研究：LLM学会“长话短说”，数学能力还不减 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 让大模型（LLM）学会像人一样思考和推理，是AI领域的一大难题。但更强的推理能力，往往意味着更长的“思考”过程和更高的计算成本。
 
-> ArXiv URL：http://arxiv.org/abs/2511.19333v1
+> ArXiv URL：https://arxiv.org/abs/2511.19333v1
 
 有没有办法让模型既聪明又高效？
 

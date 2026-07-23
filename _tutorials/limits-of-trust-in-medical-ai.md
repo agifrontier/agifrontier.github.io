@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Limits of trust in medical AI"
+description: "本文论证了医疗人工智能（AI）系统仅能被依赖（be relied upon），而不能被信任（be trusted），因为真正的信任需要善意、动机和道德责任等人类特有的能动性（agency）要素，而AI的广泛应用可能通过取代人类医生的认知权威，导致医疗实践中人际信任关系的缺失。"
+topics:
+  - "行业应用"
+related_tutorials:
+  - "capabilities-of-gpt-4-on-medical-challenge-problems"
+  - "knowledge-tuning-large-language-models-with-structured-medical-knowledge-bases-f"
+  - "inter-agent-trust-models-a-comparative-study-of-brief-claim-proof-stake-reputati"
+  - "rex-mle-the-autonomous-agent-benchmark-for-medical-imaging-challenges"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2503.16692v2
+- **ArXiv URL**: https://arxiv.org/abs/2503.16692v2
 
 - **作者**: Joshua Hatherley
 

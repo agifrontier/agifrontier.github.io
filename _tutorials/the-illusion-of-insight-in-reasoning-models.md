@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "The Illusion of Insight in Reasoning Models"
+description: "普林斯顿揭秘：模型“顿悟”竟是幻觉？百万推理轨迹拆解“自我修正”真相。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "datasage-multi-agent-collaboration-for-insight-discovery-with-external-knowledge"
+  - "a-multitask-multilingual-multimodal-evaluation-of-chatgpt-on-reasoning-hallucina"
+  - "a-survey-of-inductive-reasoning-for-large-language-models"
+  - "a-survey-of-reasoning-and-agentic-systems-in-time-series-with-large-language-mod"
 ---
 
 ## 普林斯顿揭秘：模型“顿悟”竟是幻觉？百万推理轨迹拆解“自我修正”真相
 
-<img src="/images/2601.00514v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.00514v1/A__title.jpg" alt="普林斯顿揭秘：模型“顿悟”竟是幻觉？百万推理轨迹拆解“自我修正”真相 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 DeepSeek-R1-Zero 的横空出世，让一种现象备受瞩目：模型在推理过程中突然输出一句“Wait... let’s re-evaluate”（等等，让我们重新评估一下），然后神奇地修正了之前的错误。这种类似人类“顿悟”（Aha! Moment）的行为，被广泛认为是模型具备**内在自我修正**（**Intrinsic Self-Correction**）能力的铁证。
 
-> ArXiv URL：http://arxiv.org/abs/2601.00514v1
+> ArXiv URL：https://arxiv.org/abs/2601.00514v1
 
 但这真的是模型“灵光一现”的智慧涌现吗？
 

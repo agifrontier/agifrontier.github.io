@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Tree Search for LLM Agent Reinforcement Learning"
+description: "本文提出了一种名为 Tree-GRPO (Tree-based Group Relative Policy Optimization) 的方法，通过将传统强化学习中独立的链式轨迹采样替换为树搜索采样，从而在有限的 rollout 预算下为多轮智能体任务生成更多、更高质量的轨迹，并利用树结构从稀疏的结果奖励中。"
+topics:
+  - "AI Agent"
+  - "推理与强化学习"
+related_tutorials:
+  - "coda-coordinating-the-cerebrum-and-cerebellum-for-a-dual-brain-computer-use-agen"
+  - "mars-optimizing-dual-system-deep-research-via-multi-agent-reinforcement-learning"
+  - "mixture-of-minds-multi-agent-reinforcement-learning-for-table-understanding"
+  - "ui-tars-2-technical-report-advancing-gui-agent-with-multi-turn-reinforcement-lea"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.21240v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.21240v1
 
 - **作者**: Guanhua Chen; Xiangxiang Chu; Yong Wang; Ziyu Ma; Yuxiang Ji; Liaoni Wu
 
@@ -28,19 +37,19 @@ title: "Tree Search for LLM Agent Reinforcement Learning"
 
 本文旨在解决的核心问题是：在有限的 rollout 预算下，如何仅利用最终的 outcome reward，为智能体强化学习构建更细粒度的过程监督信号，以提升学习效率和性能。
 
-<img src="/images/2509.21240v1/page_0_Figure_6.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2509.21240v1/page_0_Figure_6.jpg" alt="相关工作 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 图1: 链式与树式采样在LLM多轮智能体RL中的对比。树结构带来两大优势：(i) 更少的 rollout 预算（Token和工具调用）；(ii) 更高的性能。
 
 ## 本文方法
 为了应对上述挑战，本文提出了 Tree-GRPO，其核心是使用树搜索代替传统的链式采样，并在此基础上设计了独特的优势估计方法。
 
-<img src="/images/2509.21240v1/page_3_Figure_1.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2509.21240v1/page_3_Figure_1.jpg" alt="本文方法 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 图3: Tree-GRPO 训练流程概览。Rollout 以树搜索方式进行，每个节点对应一个完整的“思考-动作-观察”步骤。分组相对优势在树内和树间两个层面上进行估计，从而以更少的 rollout 预算构建步骤级过程监督信号。
 
 ### Rollout策略：基于智能体步骤的树搜索
 与在 Token 或句子层面进行搜索不同，Tree-GRPO 将一个完整的智能体交互步骤 $$(τ, α, o)$$ 定义为树的一个节点。这种设计与智能体任务的内在结构完美契合。
 
-<img src="/images/2509.21240v1/page_1_Figure_1.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2509.21240v1/page_1_Figure_1.jpg" alt="Rollout策略：基于智能体步骤的树搜索 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 图2: 链式与树式 rollout 在不同层面的对比。左：链式 rollout。中：节点为 Token/句子的树搜索。右（本文方法）：节点为完整智能体步骤的树搜索。
 
 其采样过程如下：
@@ -58,7 +67,7 @@ title: "Tree Search for LLM Agent Reinforcement Learning"
 *   **优点2：隐式过程监督**
    树的结构天然地提供了过程监督的视角。在树的每个分叉点，不同子分支最终导向了不同的结果。通过回溯（back-propagate）这些分支叶子节点的 outcome rewards，可以在分叉点形成自然的偏好对比。例如，一个分支获得了高分，另一个分支失败了，这为模型在这一步的决策提供了明确的偏好信号（preference signal），相当于实现了步骤级的 Direct Preference Optimization (DPO)。
 
-<img src="/images/2509.21240v1/page_4_Figure_5.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2509.21240v1/page_4_Figure_5.jpg" alt="创新点 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 图4: 链式与树式 rollout 的对比。树结构天然地在分叉点（branching point）提供了过程信号。
 
 ### 优势估计：树内与树间的结合
@@ -121,7 +130,7 @@ $${% endraw %}
 
 *   **智能体行为**：除了分数提升，Tree-GRPO 还**鼓励智能体进行更长的交互**，即进行更多轮的工具调用（平均从2.4次增加到3.0次）。这表明模型学会了通过更复杂的探索来解决问题，而不是寻求不合理的捷径，这对于解决长时序复杂任务至关重要。
 
-<img src="/images/2509.21240v1/page_8_Figure_1.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2509.21240v1/page_8_Figure_1.jpg" alt="定量分析 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 图5: 树式与链式RL在奖励和动作数上的对比。树式方法获得了更高的奖励，并鼓励了更多的动作（工具调用）。
 
 *   **优势函数消融**：实验验证了结合树内和树间优势的必要性。仅使用树内优势（$\hat{A}\_{intra-tree}$）会导致训练不稳定甚至崩溃；而两者的结合，既引入了步骤级偏好学习，又保证了稳定性。

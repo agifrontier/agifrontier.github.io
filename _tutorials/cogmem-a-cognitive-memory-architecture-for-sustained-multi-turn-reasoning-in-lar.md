@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "CogMem: A Cognitive Memory Architecture for Sustained Multi-Turn Reasoning in Large Language Models"
+description: "给大模型装上“类脑记忆”：CogMem三层架构破解长对话遗忘难题，多轮推理更像人。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "推理与强化学习"
+related_tutorials:
+  - "forgetful-but-faithful-a-cognitive-memory-architecture-and-benchmark-for-privacy"
+  - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
+  - "qwenlong-l15-post-training-recipe-for-long-context-reasoning-and-memory-manageme"
+  - "retrieval-reasoning-processes-for-multi-hop-question-answering-a-four-axis-desig"
 ---
 
 ## 给大模型装上“类脑记忆”：CogMem三层架构破解长对话遗忘难题，多轮推理更像人
 
-<img src="/images/2512.14118v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.14118v1/A__title.jpg" alt="给大模型装上“类脑记忆”：CogMem三层架构破解长对话遗忘难题，多轮推理更像人 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大语言模型（LLM）往往是“短跑冠军”却也是“马拉松低手”。在单轮对话中，它们能展现出惊人的推理能力，但一旦进入漫长的多轮交互，随着上下文的拉长，模型往往会陷入“失忆”、幻觉频发、逻辑前后矛盾的泥潭。现有的解决方案通常是简单粗暴地将所有历史对话塞进上下文窗口，这不仅导致计算成本飙升，还会因为噪音过多干扰模型的判断。
 
-> ArXiv URL：http://arxiv.org/abs/2512.14118v1
+> ArXiv URL：https://arxiv.org/abs/2512.14118v1
 
 为了解决这一痛点，来自麦考瑞大学（Macquarie University）的研究人员提出了一种名为 **CogMem** 的认知记忆架构。该架构不再依赖单纯的上下文堆砌，而是模仿人类的认知机制，通过构建分层的、持久化的记忆系统，让大模型在长对话中也能保持清醒的头脑和连贯的逻辑。
 

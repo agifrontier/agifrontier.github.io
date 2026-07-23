@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Diffusion Language Models are Super Data Learners"
+description: "本文通过大量实验证明，在训练数据稀缺但计算资源充足的条件下，扩散语言模型（Diffusion Language Models, DLMs）相比同等规模的自回归模型（Autoregressive Models, AR）能从有限数据中学习到更多信息，最终在性能上实现超越，这一现象被称为“智能交叉”（Intell。"
+topics:
+  - "多模态与视觉"
+  - "数据与AI工程"
+related_tutorials:
+  - "act-as-human-multimodal-large-language-model-data-annotation-with-critical-think"
+  - "vision-transformers-are-circulant-attention-learners"
+  - "inpainting-guided-policy-optimization-for-diffusion-large-language-models"
+  - "top-10-open-challenges-steering-the-future-of-diffusion-language-model-and-its-v"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2511.03276v1
+- **ArXiv URL**: https://arxiv.org/abs/2511.03276v1
 
 - **作者**: Qian Liu; Chao Du; Tianyu Pang; Longxu Dou; Zili Wang; Hang Yan; Jinjie Ni
 

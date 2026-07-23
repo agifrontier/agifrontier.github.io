@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Natural Language Actor-Critic: Scalable Off-Policy Learning in Language Space"
+description: "Agent训练告别数值奖励：字节跳動NLAC让AI用“人话”指导，性能最高提升24%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "a-survey-of-weight-space-learning-understanding-representation-and-generation"
+  - "data-efficient-rlvr-via-off-policy-influence-guidance"
+  - "scaling-up-multi-turn-off-policy-rl-and-multi-agent-tree-search-for-llm-step-pro"
+  - "is-chatgpt-a-general-purpose-natural-language-processing-task-solver"
 ---
 
 ## Agent训练告别数值奖励：字节跳動NLAC让AI用“人话”指导，性能最高提升24%
 
-<img src="/images/2512.04601v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.04601v1/A__title.jpg" alt="Agent训练告别数值奖励：字节跳動NLAC让AI用“人话”指导，性能最高提升24% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当今，我们正目睹 **LLM Agent**（大语言模型智能体）的浪潮，它们被寄予厚望，以期能自主处理网页浏览、工具使用甚至与人对话等复杂任务。但一个棘手的问题始终摆在面前：如何高效地训练这些Agent？传统方法就像一位沉默的考官，只给最终得分，却从不解释错在哪里，导致训练过程既不稳定又极其耗费数据。
 
-> ArXiv URL：http://arxiv.org/abs/2512.04601v1
+> ArXiv URL：https://arxiv.org/abs/2512.04601v1
 
 现在，来自字节跳动和加州大学伯克利分校的一项研究，或许将彻底改变这一现状。他们提出了**自然语言行动者-评论家**（**Natural Language Actor-Critic, NLAC**）算法。其核心思想石破天惊：让作为“评论家”的LLM不再输出冰冷的数值分数，而是直接生成自然语言的“批评”和“指导”。这相当于为Agent配备了一位能开口说话、循循善诱的专属教练。
 

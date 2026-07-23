@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "CogGuide: Human-Like Guidance for Zero-Shot Omni-Modal Reasoning"
+description: "本文提出了一种名为 CogGuide 的零样本全模态推理组件，它通过模拟人类“理解-规划-选择”的认知过程，生成并筛选“意图简图”(intent sketch)策略来指导多模态大模型，从而在无需微调的情况下提升复杂推理任务的性能并抑制“捷径”推理。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
+  - "putting-on-the-thinking-hats-a-survey-on-chain-of-thought-fine-tuning-from-the-p"
+  - "the-universal-landscape-of-human-reasoning"
+  - "rags-to-riches-rag-like-few-shot-learning-for-large-language-model-role-playing"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.06641v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.06641v1
 
 - **作者**: Fang Wang
 

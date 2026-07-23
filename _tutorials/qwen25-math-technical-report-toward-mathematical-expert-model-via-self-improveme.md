@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Qwen2.5-Math Technical Report: Toward Mathematical Expert Model via Self-Improvement"
+description: "本文提出了一系列数学专用大语言模型 Qwen2.5-Math，其核心创新在于将“自我改进”（self-improvement）的理念贯穿于从预训练、后训练到推理的整个模型开发流程，从而在多个数学基准上实现了超越现有开源及闭源模型（如GPT-4o）的顶尖性能。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "qwen2-technical-report"
+  - "deepseek-v3-technical-report"
+  - "gpt-4-technical-report"
+  - "hunyuanvideo-15-technical-report"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2409.12122v1
+- **ArXiv URL**: https://arxiv.org/abs/2409.12122v1
 
 - **作者**: Jianhong Tu; Runji Lin; Mingfeng Xue; Bofei Gao; Chengpeng Li; Tianyu Liu; Beichen Zhang; Binyuan Hui; Dayiheng Liu; Xingzhang Ren; 等6人
 

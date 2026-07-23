@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "VibeVoice Technical Report"
+description: "本文提出了一种名为 VibeVoice 的新模型，它通过一个创新的、具有超高压缩率的连续语音tokenizer和一个基于大型语言模型的下一token扩散框架，实现了长达90分钟、多达4人的高质量长篇对话语音合成。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "deepseek-v3-technical-report"
+  - "gpt-4-technical-report"
+  - "hunyuanvideo-15-technical-report"
+  - "kling-omni-technical-report"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2508.19205v1
+- **ArXiv URL**: https://arxiv.org/abs/2508.19205v1
 
 - **作者**: Weijiang Xu; Yutao Sun; Yan Xia; Yaoyao Chang; Hangbo Bao; Furu Wei; Li Dong; Shaohan Huang; Wenhui Wang; Zhiliang Peng; 等3人
 

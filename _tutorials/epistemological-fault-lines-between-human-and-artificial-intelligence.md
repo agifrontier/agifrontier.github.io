@@ -1,13 +1,21 @@
 ---
 layout: default
 title: "Epistemological Fault Lines Between Human and Artificial Intelligence"
+description: "大模型只是“概率填空”：揭秘AI与人类认知的7道“认识论断层”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "ai4x-roadmap-artificial-intelligence-for-the-advancement-of-scientific-pursuit-a"
+  - "artificial-hippocampus-networks-for-efficient-long-context-modeling"
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "collaboration-and-conflict-between-humans-and-language-models-through-the-lens-o"
 ---
 
 ## 大模型只是“概率填空”：揭秘AI与人类认知的7道“认识论断层”
 
 当我们在惊叹 GPT-4 或 Claude 能够生成流畅、自信且看似逻辑严密的文本时，我们往往忽略了一个最本质的问题：**“听起来像真的”是否等同于“知道是真的”？**
 
-> ArXiv URL：http://arxiv.org/abs/2512.19466v1
+> ArXiv URL：https://arxiv.org/abs/2512.19466v1
 
 这篇来自多国联合研究团队的论文 *Epistemological Fault Lines Between Human and Artificial Intelligence* 给出了一个发人深省的答案。该研究指出，尽管大语言模型（LLMs）在表面输出上与人类高度对齐，但在生成判断的深层机制上，二者存在着根本性的结构错配。
 

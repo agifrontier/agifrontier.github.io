@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Attention Illuminates LLM Reasoning: The Preplan-and-Anchor Rhythm Enables Fine-Grained Policy Optimization"
+description: "本文通过分析大型语言模型（LLM）在推理任务中的注意力模式，揭示了一种“预规划-锚定”（Preplan-and-Anchor）的内在节奏，并基于此发现提出了一种细粒度策略优化方法，有效解决了传统强化学习方法中奖励稀疏和信用分配不明确的问题，从而显著提升了LLM的复杂推理能力。"
+topics:
+  - "推理与强化学习"
+  - "模型训练与优化"
+related_tutorials:
+  - "asymmetric-proximal-policy-optimization-mini-critics-boost-llm-reasoning"
+  - "fapo-flawed-aware-policy-optimization-for-efficient-and-reliable-reasoning"
+  - "how-and-why-llms-generalize-a-fine-grained-analysis-of-llm-reasoning-from-cognit"
+  - "every-attention-matters-an-efficient-hybrid-architecture-for-long-context-reason"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.13554v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.13554v1
 
 - **作者**: Yijia Luo; Zhichen Dong; Yang Li; Yuhan Sun; Wenbo Su; Jiashun Liu; Weixun Wang; Han Lu; Junchi Yan; Bo Zheng; 等12人
 

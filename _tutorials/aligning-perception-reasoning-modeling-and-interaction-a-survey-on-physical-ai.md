@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Aligning Perception, Reasoning, Modeling and Interaction: A Survey on Physical AI"
+description: "教给AI理解物理世界是现代AI研究中最根本的挑战之一。尽管人类自幼就能直观地预测物体动态并理解复杂的物理交互，但目前的AI模型在掌握幼儿轻松掌握的基础物理推理方面仍然存在困难。随着AI系统被部署到自动驾驶、机器人操控等真实世界场景中，这种能力差距变得越来越关键。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "cogflow-bridging-perception-and-reasoning-through-knowledge-internalization-for-"
+  - "calm-before-the-storm-unlocking-native-reasoning-for-optimization-modeling"
+  - "reasoning-over-mathematical-objects-on-policy-reward-modeling-and-test-time-aggr"
+  - "a-survey-of-inductive-reasoning-for-large-language-models"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.04978v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.04978v1
 
 - **作者**: Hanhui Li; Yinya Huang; Youpeng Wen; Xiaodan Liang; Zirong Liu; Ruizhe Zhou; Jianhua Han; Kun Xiang; Hang Xu; Xiuwei Chen; 等12人
 

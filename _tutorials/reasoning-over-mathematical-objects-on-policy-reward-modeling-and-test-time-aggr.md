@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Reasoning over mathematical objects: on-policy reward modeling and test time aggregation"
+description: "AI数学推理不再“偏科”：Principia让大模型精通复杂公式，性能提升18%！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "pacore-learning-to-scale-test-time-compute-with-parallel-coordinated-reasoning"
+  - "understanding-and-steering-the-cognitive-behaviors-of-reasoning-models-at-test-t"
+  - "cogflow-bridging-perception-and-reasoning-through-knowledge-internalization-for-"
+  - "deepseekmath-pushing-the-limits-of-mathematical-reasoning-in-open-language-model"
 ---
 
 ## AI数学推理不再“偏科”：Principia让大模型精通复杂公式，性能提升18%！
 
-<img src="/images/2603.18886v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.18886v1/A__title.jpg" alt="AI数学推理不再“偏科”：Principia让大模型精通复杂公式，性能提升18%！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大模型在数学竞赛中摘金夺银，但你有没有发现，它们给出的答案通常只是一个孤零零的数字或选择题选项？当面对真正需要推导矩阵、方程组或分段函数等复杂“数学对象”的科学问题时，即便是最前沿的模型也常常束手无策。
 
-> ArXiv URL：http://arxiv.org/abs/2603.18886v1
+> ArXiv URL：https://arxiv.org/abs/2603.18886v1
 
 这正是当前大模型数学推理能力的一大短板。
 

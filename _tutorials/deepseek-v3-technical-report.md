@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "DeepSeek-V3 Technical Report"
+description: "本文提出了一种名为 DeepSeek-V3 的671B参数的强混合专家(MoE)模型，它通过创新的无辅助损失负载均衡策略、多Token预测训练目标以及高效的MLA和DeepSeekMoE架构，以极高的训练效率和经济成本，实现了与顶级闭源模型相媲美的性能。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "gpt-4-technical-report"
+  - "hunyuanvideo-15-technical-report"
+  - "kling-omni-technical-report"
+  - "mimo-v2-flash-technical-report"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2412.19437v2
+- **ArXiv URL**: https://arxiv.org/abs/2412.19437v2
 
 - **作者**: K. Yu; Bei Feng; Yuting Yan; Yanping Huang; Shiyu Wang; Jingchang Chen; Xiaodong Liu; Yu-Wei Luo; Jingyang Yuan; Zhean Xu; 等186人
 

@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Staircase Streaming for Low-Latency Multi-Agent Inference"
+description: "本文提出了一种名为“阶梯式流式传输 (Staircase Streaming)”的方法，通过让多智能体系统中的后续智能体（如聚合器）在接收到前序智能体（如提议者）的部分输出块（chunks）后便开始生成，而非等待其完整输出，从而将序贯依赖转变为流水线并行处理，显著降低了多智能体推理的首Token时间 (TT。"
+topics:
+  - "AI Agent"
+  - "模型训练与优化"
+related_tutorials:
+  - "a-multi-agent-framework-for-stateful-inference-time-search"
+  - "skyrl-agent-efficient-rl-training-for-multi-turn-llm-agent"
+  - "in-context-distillation-with-self-consistency-cascades-a-simple-training-free-wa"
+  - "rlhf-a-comprehensive-survey-for-cultural-multimodal-and-low-latency-alignment-me"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.05059v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.05059v1
 
 - **作者**: Xu; Ben Athiwaratkun; Jue Wang; Bhuwan Dhingra; Junlin Wang; James Zou; Ce Zhang
 

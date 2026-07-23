@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Training Task Reasoning LLM Agents for Multi-turn Task Planning via Single-turn Reinforcement Learning"
+description: "本文提出了一种新颖的方法，通过将复杂的多轮任务规划问题转化为一系列单轮任务推理问题，并利用基于专家轨迹的单轮强化学习（GRPO）进行优化，成功训练出在长时程规划任务中性能超越大型基线模型的小参数量智能体。"
+topics:
+  - "AI Agent"
+  - "推理与强化学习"
+related_tutorials:
+  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
+  - "sfr-deepresearch-towards-effective-reinforcement-learning-for-autonomously-reaso"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "ui-tars-2-technical-report-advancing-gui-agent-with-multi-turn-reinforcement-lea"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.20616v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.20616v1
 
 - **作者**: Changliu Liu; Na Li; Hanjiang Hu; Yebin Wang
 

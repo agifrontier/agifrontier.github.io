@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Mixtral of Experts"
+description: "本文提出了一种名为 Mixtral 8x7B 的稀疏专家混合 (Sparse Mixture of Experts, SMoE) 模型，该模型在推理时仅激活一小部分参数（13B），却在性能上超越了参数量大得多的密集模型（如 Llama 2 70B），显著提升了模型的计算效率和性能。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "deepseek-v2-a-strong-economical-and-efficient-mixture-of-experts-language-model"
+  - "gatepro-parameter-free-expert-selection-optimization-for-mixture-of-experts-mode"
+  - "revffn-memory-efficient-full-parameter-fine-tuning-of-mixture-of-experts-llms-wi"
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2401.04088v1
+- **ArXiv URL**: https://arxiv.org/abs/2401.04088v1
 
 - **作者**: Alexandre Sablayrolles; Lucile Saulnier; Timothée Lacroix; Devendra Singh Chaplot; Blanche Savary; L'elio Renard Lavaud; Guillaume Lample; A. Mensch; Guillaume Bour; Chris Bamford; 等16人
 

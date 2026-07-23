@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "A Systematic Survey on Large Language Models for Evolutionary Optimization: From Modeling to Solving"
+description: "优化技术已成为解决工程设计、经济规划和科学发现等领域复杂问题的关键。实践中，优化算法分为精确方法和近似方法，但没有任何一种算法能普适于所有问题（“没有免费的午餐”定理），这使得算法的选择、配置和设计高度依赖专家知识。机器学习，特别是强化学习（RL），虽被用于降低这种复杂性，但其泛化能力有限。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "calm-before-the-storm-unlocking-native-reasoning-for-optimization-modeling"
+  - "from-static-templates-to-dynamic-runtime-graphs-a-survey-of-workflow-optimizatio"
+  - "a-systematic-study-of-model-merging-techniques-in-large-language-models"
+  - "demystifying-synthetic-data-in-llm-pre-training-a-systematic-study-of-scaling-la"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.08269v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.08269v1
 
 - **作者**: Kay Chen Tan; Ran Cheng
 

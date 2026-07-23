@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Language models as tools for investigating the distinction between possible and impossible natural languages"
+description: "斯坦福新观点：让AI挑战“不可能的语言”，4步揭秘人类认知偏好。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "collaboration-and-conflict-between-humans-and-language-models-through-the-lens-o"
+  - "epistemological-fault-lines-between-human-and-artificial-intelligence"
+  - "is-chatgpt-a-general-purpose-natural-language-processing-task-solver"
 ---
 
 ## 斯坦福新观点：让AI挑战“不可能的语言”，4步揭秘人类认知偏好
 
-<img src="/images/2512.09394v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.09394v1/A__title.jpg" alt="斯坦福新观点：让AI挑战“不可能的语言”，4步揭秘人类认知偏好 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 人类为何能轻松学会复杂的自然语言，却很难掌握某些看似简单的人造规则？这背后隐藏着人类大脑独特的**归纳偏置**（**Inductive Biases**）。长期以来，语言学家和认知科学家一直苦于缺乏完美的实验工具来探究这一奥秘——毕竟，我们不能为了实验，把儿童关在房间里只教他们一种违反自然规律的“不可能的语言”。
 
-> ArXiv URL：http://arxiv.org/abs/2512.09394v1
+> ArXiv URL：https://arxiv.org/abs/2512.09394v1
 
 然而，斯坦福大学的研究团队提出了一种全新的视角：**语言模型（LMs）或许就是我们一直在寻找的“数字替身”。**
 

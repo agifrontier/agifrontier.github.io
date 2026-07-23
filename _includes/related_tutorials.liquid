@@ -1,0 +1,19 @@
+{% if page.related_tutorials and page.related_tutorials.size > 0 %}
+  <section class="related-tutorials" aria-labelledby="related-tutorials-title">
+    <h2 id="related-tutorials-title">相关文章</h2>
+    <ul class="related-tutorials__list">
+      {% for related_slug in page.related_tutorials %}
+        {% assign related_path = '_tutorials/' | append: related_slug | append: '.md' %}
+        {% assign related = site.tutorials | where: 'path', related_path | first %}
+        {% if related %}
+          <li>
+            <a href="{{ related.url | relative_url }}">{{ related.title | replace: '$', '' | strip_html }}</a>
+            {% if related.topics and related.topics.size > 0 %}
+              <span>{{ related.topics | join: ' · ' }}</span>
+            {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}

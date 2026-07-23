@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Stream: Scaling up Mechanistic Interpretability to Long Context in LLMs via Sparse Attention"
+description: "本文提出了一种名为 Stream 的可解释性框架，通过其具体实现算法 Stream-Attn，利用动态稀疏注意力机制，以近线性的时间（ ）和线性空间（ ）复杂度，高效分析大型语言模型在百万级Token长上下文中的注意力模式，从而在消费级GPU上实现了以往难以企及的机理可解释性分析。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "sparse-attention-post-training-for-mechanistic-interpretability"
+  - "kascade-a-practical-sparse-attention-method-for-long-context-llm-inference"
+  - "every-attention-matters-an-efficient-hybrid-architecture-for-long-context-reason"
+  - "specattn-speculating-sparse-attention"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.19875v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.19875v1
 
 - **作者**: Hugues Bouchard; Konstantina Palla; Gustavo Penha
 

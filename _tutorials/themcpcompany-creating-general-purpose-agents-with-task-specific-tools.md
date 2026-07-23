@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "TheMCPCompany: Creating General-purpose Agents with Task-specific Tools"
+description: "本文提出了一个名为 TheMCPCompany 的大规模工具调用基准（包含超18000个工具），并通过实验证明，利用专门的工具集比通用浏览器能带来更好的性能和更低的成本，但从海量工具中检索并组合正确工具以解决复杂问题仍是当前智能体面临的核心挑战。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "is-chatgpt-a-general-purpose-natural-language-processing-task-solver"
+  - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
+  - "sft-doesnt-always-hurt-general-capabilities-revisiting-domain-specific-fine-tuni"
+  - "instructblip-towards-general-purpose-vision-language-models-with-instruction-tun"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.19286v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.19286v1
 
 - **作者**: Vishwas Suryanarayanan; Stephen H. Bach; Vishal Chowdhary; Reza Esfandiarpoor
 

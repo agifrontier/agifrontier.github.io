@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Inter-Agent Trust Models: A Comparative Study of Brief, Claim, Proof, Stake, Reputation and Constraint in Agentic Web Protocol Design-A2A, AP2, ERC-8004, and Beyond"
+description: "智能体间信任模型：Brief、Claim、Proof、Stake、Reputation 和 Constraint 在智能体网络协议设计中的比较研究。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
+  - "an-information-theoretic-perspective-on-agentic-system-design"
+  - "retrieval-augmented-generation-rag-for-fintech-agentic-design-and-evaluation"
+  - "inefficiencies-of-meta-agents-for-agent-design"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2511.03434v1
+- **ArXiv URL**: https://arxiv.org/abs/2511.03434v1
 
 - **作者**: Helena Rong
 

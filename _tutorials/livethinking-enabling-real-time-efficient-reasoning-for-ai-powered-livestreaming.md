@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "LiveThinking: Enabling Real-Time Efficient Reasoning for AI-Powered Livestreaming via Reinforcement Learning"
+description: "本文提出了一种名为 LiveThinking 的两阶段优化框架，旨在解决AI直播等实时场景中推理质量与延迟之间的权衡问题。该框架首先通过知识蒸馏将大型推理模型的能力压缩到轻量级模型中，然后利用强化学习进一步优化推理路径的效率，最终实现了在大幅降低延迟和计算成本的同时，提升响应的正确性与帮助性。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "statistical-reinforcement-learning-in-the-real-world-a-survey-of-challenges-and-"
+  - "pacore-learning-to-scale-test-time-compute-with-parallel-coordinated-reasoning"
+  - "efficient-reinforcement-learning-for-large-language-models-with-intrinsic-explor"
+  - "a-survey-of-reinforcement-learning-for-large-reasoning-models"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.07685v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.07685v1
 
 - **作者**: Wanqing Cui; Yuhan Sun; Meiguang Jin; Zhiwei Huang; Shaopan Xiong
 

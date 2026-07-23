@@ -7,14 +7,14 @@ first_name: Agi
 middle_name:
 last_name: Frontier
 contact_note: >
-  每日AI最新进展分享。
+  持续整理 AI 论文、工程实践与前沿趋势。
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  每日AI最新进展分享。
+  面向 AI 工程师与研究者的前沿论文解读，持续整理大模型、AI Agent、RAG、推理优化、多模态与具身智能的核心方法、实验结论和实践启示。
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website, ai, llm # add your own keywords or leave empty
+keywords: AI论文解读, AI Agent, 大模型, RAG, 推理优化, 多模态, 具身智能
 lang: zh-CN # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -63,9 +63,9 @@ max_width: 700px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: /assets/img/og-default.png # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -84,7 +84,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: AI前沿分享 # blog_name will be displayed in your blog page
-blog_description: 每日AI最新进展分享。
+blog_description: AI 论文解读、工程实践与前沿趋势。
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 

@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "Semiparametric Preference Optimization: Your Language Model is Secretly a Single-Index Model"
+description: "DPO假设失效？康奈尔联合Netflix提出SPO：大模型对齐的“单指标”革命。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+  - "模型训练与优化"
+related_tutorials:
+  - "direct-preference-optimization-your-language-model-is-secretly-a-reward-model"
+  - "simpo-simple-preference-optimization-with-a-reference-free-reward"
+  - "stackelberg-learning-from-human-feedback-preference-optimization-as-a-sequential"
+  - "asymmetric-proximal-policy-optimization-mini-critics-boost-llm-reasoning"
 ---
 
 ## DPO假设失效？康奈尔联合Netflix提出SPO：大模型对齐的“单指标”革命
 
-<img src="/images/2512.21917v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.21917v1/A__title.jpg" alt="DPO假设失效？康奈尔联合Netflix提出SPO：大模型对齐的“单指标”革命 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在当今的大模型对齐（Alignment）领域，**直接偏好优化**（**Direct Preference Optimization, DPO**）几乎成为了事实上的标准。它优雅地绕过了显式的奖励模型训练，直接优化策略。然而，DPO 以及大多数 RLHF 方法都建立在一个极其强且难以验证的假设之上：人类的偏好遵循 **Bradley-Terry (BT)** 模型。
 
-> ArXiv URL：http://arxiv.org/abs/2512.21917v1
+> ArXiv URL：https://arxiv.org/abs/2512.21917v1
 
 换句话说，我们默认偏好概率与奖励差值之间存在一个固定的 Logistic 关系（即 Sigmoid 函数）。但如果这个假设是错的呢？如果人类偏好的产生机制比 Sigmoid 函数更复杂、更不可知呢？
 

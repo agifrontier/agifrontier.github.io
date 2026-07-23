@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Retrieval Augmented Generation (RAG) for Fintech: Agentic Design and Evaluation"
+description: "本文提出了一种专为金融科技（Fintech）领域设计的智能体化检索增强生成（Agentic Retrieval-Augmented Generation, A-RAG）架构，通过一个由专业智能体组成的模块化、迭代式流水线，有效解决了领域内术语密集、缩写混杂和知识碎片化等挑战，显著提升了检索精度和答案相关性。"
+topics:
+  - "RAG与知识系统"
+  - "AI Agent"
+related_tutorials:
+  - "rethinking-retrieval-augmented-generation-for-medicine-a-large-scale-systematic-"
+  - "mom-mixtures-of-scenario-aware-document-memories-for-retrieval-augmented-generat"
+  - "retrieval-augmented-generation-for-large-language-models-a-survey"
+  - "scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-generation-for"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.25518v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.25518v1
 
 - **作者**: Maraim Masoud; Koustav Ghosal; Thomas Cook
 

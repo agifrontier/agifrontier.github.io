@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Monadic Context Engineering"
+description: "告别“面条代码”：普林斯顿用Monad重塑AI Agent架构，健壮性狂飙。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "a-prompt-pattern-catalog-to-enhance-prompt-engineering-with-chatgpt"
+  - "the-prompt-engineering-report-distilled-quick-start-guide-for-life-sciences"
+  - "effective-context-engineering-for-ai-agents"
+  - "onepiece-bringing-context-engineering-and-reasoning-to-industrial-cascade-rankin"
 ---
 
 ## 告别“面条代码”：普林斯顿用Monad重塑AI Agent架构，健壮性狂飙
 
-<img src="/images/2512.22431v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.22431v1/A__title.jpg" alt="告别“面条代码”：普林斯顿用Monad重塑AI Agent架构，健壮性狂飙 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 你是否经历过这样的崩溃时刻：写一个简单的 **AI Agent** demo 只需要一下午，但要把它变成一个在生产环境中稳定运行的系统，却像是在修补一座摇摇欲坠的危楼？
 
-> ArXiv URL：http://arxiv.org/abs/2512.22431v1
+> ArXiv URL：https://arxiv.org/abs/2512.22431v1
 
 状态管理混乱、错误处理代码满天飞、并发控制让人头秃……现有的 Agent 开发往往充斥着命令式的“面条代码”。一旦某个 API 超时或者模型输出格式错误，整个系统可能就会陷入未知的瘫痪状态。
 

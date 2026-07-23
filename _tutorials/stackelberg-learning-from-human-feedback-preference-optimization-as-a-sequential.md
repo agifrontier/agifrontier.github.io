@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "Stackelberg Learning from Human Feedback: Preference Optimization as a Sequential Game"
+description: "ETH新作SLHF：用“领导者-跟随者”博弈重塑对齐，推理性能零样本提升。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+  - "模型训练与优化"
+related_tutorials:
+  - "direct-preference-optimization-your-language-model-is-secretly-a-reward-model"
+  - "semiparametric-preference-optimization-your-language-model-is-secretly-a-single-"
+  - "simpo-simple-preference-optimization-with-a-reference-free-reward"
+  - "multi-phase-spacecraft-trajectory-optimization-via-transformer-based-reinforceme"
 ---
 
 ## ETH新作SLHF：用“领导者-跟随者”博弈重塑对齐，推理性能零样本提升
 
-<img src="/images/2512.16626v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.16626v1/A__title.jpg" alt="ETH新作SLHF：用“领导者-跟随者”博弈重塑对齐，推理性能零样本提升 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在大模型对齐（Alignment）的战场上，**人类反馈强化学习**（**Reinforcement Learning from Human Feedback, RLHF**）无疑是当前的霸主。然而，你是否想过，RLHF 赖以生存的“奖励模型”可能从根本上就是一种过度简化？
 
-> ArXiv URL：http://arxiv.org/abs/2512.16626v1
+> ArXiv URL：https://arxiv.org/abs/2512.16626v1
 
 现实中的人类偏好往往充满了“石头剪刀布”式的循环（A 优于 B，B 优于 C，但 C 却优于 A），这种非传递性（Intransitive）的偏好结构，是传统的标量奖励函数无法捕捉的。为了解决这一难题，来自苏黎世联邦理工学院（ETH Zürich）的研究团队提出了一种全新的框架——**Stackelberg人类反馈学习**（**Stackelberg Learning from Human Feedback, SLHF**）。
 
@@ -68,7 +77,6 @@ SLHF 最具吸引力的特性在于其天然支持**推理时修正**（**Infere
 
 为了在大模型上高效实现 SLHF，研究者设计了一种巧妙的 Prompt 模板，使得领导者和跟随者可以共享同一个模型参数（通过 LoRA 等技术），只是输入提示不同。
 
-![Prompt templates used to train a single-model for both Leader and Follower completions.](https://arxiv.org/html/2502.02985/x1.png)
 
 实验结果表明：
 

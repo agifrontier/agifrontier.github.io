@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Kimi k1.5: Scaling Reinforcement Learning with LLMs"
+description: "本文提出了一种通过强化学习（RL）扩展大型语言模型（LLM）能力的方法，其核心是利用长上下文（long context）和改进的策略优化算法，构建了一个无需蒙特卡洛树搜索等复杂技术的简化框架，从而在多项推理基准上取得了顶尖性能。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "brorl-scaling-reinforcement-learning-via-broadened-exploration"
+  - "scaling-reinforcement-learning-for-content-moderation-with-large-language-models"
+  - "the-art-of-scaling-reinforcement-learning-compute-for-llms"
+  - "a-multiobjective-reinforcement-learning-framework-for-microgrid-energy-managemen"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2501.12599v4
+- **ArXiv URL**: https://arxiv.org/abs/2501.12599v4
 
 - **作者**: Huabin Zheng; Haochen Ding; Xingzhe Wu; Han Zhu; Weiran He; Jin Zhang; Yibo Liu; Y. Charles; Zhengxin Zhu; Yingbo Yang; 等84人
 

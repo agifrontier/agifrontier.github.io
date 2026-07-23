@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "How and Why LLMs Generalize: A Fine-Grained Analysis of LLM Reasoning from Cognitive Behaviors to Low-Level Patterns"
+description: "SFT正在“毁掉”泛化能力？5大原子技能揭示RL为何是推理的未来。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "understanding-and-steering-the-cognitive-behaviors-of-reasoning-models-at-test-t"
+  - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
+  - "why-low-precision-transformer-training-fails-an-analysis-on-flash-attention"
+  - "learning-fine-grained-bimanual-manipulation-with-low-cost-hardware"
 ---
 
 ## SFT正在“毁掉”泛化能力？5大原子技能揭示RL为何是推理的未来
 
-<img src="/images/2512.24063v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.24063v1/A__title.jpg" alt="SFT正在“毁掉”泛化能力？5大原子技能揭示RL为何是推理的未来 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 DeepSeek-R1 和 OpenAI-o1 的横空出世，让整个 AI 社区达成了一个新共识：**强化学习（Reinforcement Learning, RL）** 才是通往高阶推理的必经之路。
 
-> ArXiv URL：http://arxiv.org/abs/2512.24063v1
+> ArXiv URL：https://arxiv.org/abs/2512.24063v1
 
 但你是否思考过这样一个反直觉的现象：为什么经过海量数据“喂养”的 **监督微调（Supervised Fine-Tuning, SFT）** 模型，往往在特定任务上表现出色，但一换个场景（比如从数学题换到物理题）就“智商掉线”？而 RL 调优后的模型，却似乎拥有更强的“举一反三”能力？
 

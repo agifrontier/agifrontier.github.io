@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "LLM Router: Prefill is All You Need"
+description: "英伟达亮剑LLM路由：成本锐减74%，性能直追理论最优！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "all-you-need-is-one-capsule-prompt-tuning-with-a-single-vector"
+  - "increasing-the-thinking-budget-is-not-all-you-need"
+  - "camformer-associative-memory-is-all-you-need"
+  - "you-need-better-attention-priors"
 ---
 
 ## 英伟达亮剑LLM路由：成本锐减74%，性能直追理论最优！
 
-<img src="/images/2603.20895v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.20895v1/A__title.jpg" alt="英伟达亮剑LLM路由：成本锐减74%，性能直追理论最优！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当面对一个复杂任务时，我们应该用GPT-4、Claude 3还是Llama 3？这是一个价值千金的问题。每个顶尖大模型都有自己的“绝活”，但在某些任务上也会“翻车”。如果有一个智能调度员，能为每个问题自动选择最擅长且最经济的模型，那该多好？
 
-> ArXiv URL：http://arxiv.org/abs/2603.20895v1
+> ArXiv URL：https://arxiv.org/abs/2603.20895v1
 
 过去，人们尝试通过分析问题的“语义”来实现这一点，但这就像只看书名就判断一本书的好坏，往往不靠谱。现在，英伟达（NVIDIA）的研究人员提出了一个全新的思路：与其猜测，不如直接“偷看”模型的大脑！他们发现，决胜的关键信号，就隐藏在模型开始生成答案前的“预填充”（Prefill）阶段。
 

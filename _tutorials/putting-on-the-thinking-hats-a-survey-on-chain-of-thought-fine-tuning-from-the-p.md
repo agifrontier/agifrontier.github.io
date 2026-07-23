@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Putting on the Thinking Hats: A Survey on Chain of Thought Fine-tuning from the Perspective of Human Reasoning Mechanism"
+description: "本文提出一个新颖的视角，即从人类的“六顶思考帽”思维模型出发，对思维链（Chain of Thought, CoT）微调技术进行系统性的梳理、分类和展望，为理解和发展更类人的大语言模型推理能力提供了全新的框架。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "less-is-more-tokens-efficient-math-reasoning-via-difficulty-aware-chain-of-thoug"
+  - "valid-survey-simulations-with-limited-human-data-the-roles-of-prompting-fine-tun"
+  - "reinforcement-learning-fine-tuning-enhances-activation-intensity-and-diversity-i"
+  - "parameter-efficient-fine-tuning-for-large-models-a-comprehensive-survey"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.13170v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.13170v1
 
 - **作者**: Xiaoyu Sun; Xinwang Liu; Xiaoshu Chen; Duanyang Yuan; Sihang Zhou; Haoyuan Chen; Ke Liang
 
@@ -44,7 +52,7 @@ title: "Putting on the Thinking Hats: A Survey on Chain of Thought Fine-tuning f
 ## CoT微调的分类体系：戴上思考帽
 本文的核心贡献在于提出了一个以“六顶思考帽”为核心的CoT微调方法分类体系。这个框架将不同的研究工作映射到特定的人类思维模式上，揭示了它们在模拟人类推理方面的侧重点。
 
-![](images/taxonomy_overview.png)
+![CoT微调的分类体系：戴上思考帽 图示](images/taxonomy_overview.png)
 
 ### 蓝帽：元认知与过程控制
 蓝帽思维代表着“思考的思考”，即**元认知 (Metacognition)**。在CoT微调的语境下，它对应于那些试图规划、组织和管理整个推理过程的方法。这类方法不直接解决问题，而是先制定一个策略或分解任务，然后再调用其他模块来执行。

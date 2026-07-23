@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Mixture of Contexts for Long Video Generation"
+description: "本文提出了一种名为上下文混合（MoC）的可学习稀疏注意力路由模块，将长视频生成问题重构为一个内部信息检索任务，从而在大幅降低计算成本的同时，实现了分钟级视频的长期记忆和一致性。"
+topics:
+  - "多模态与视觉"
+related_tutorials:
+  - "mathvista-evaluating-mathematical-reasoning-of-foundation-models-in-visual-conte"
+  - "factscore-fine-grained-atomic-evaluation-of-factual-precision-in-long-form-text-"
+  - "nextflow-unified-sequential-modeling-activates-multimodal-understanding-and-gene"
+  - "rewarddance-reward-scaling-in-visual-generation"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2508.21058v1
+- **ArXiv URL**: https://arxiv.org/abs/2508.21058v1
 
 - **作者**: Junfei Xiao; Alan Yuille; Maneesh Agrawala; Zhenheng Yang; Yinghao Xu; Lu Jiang; Yuwei Guo; Gordon Wetzstein; Ziyan Yang; Lvmin Zhang; 等3人
 

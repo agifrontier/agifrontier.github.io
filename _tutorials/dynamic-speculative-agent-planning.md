@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Dynamic Speculative Agent Planning"
+description: "本文提出动态推测规划 (Dynamic Speculative Planning, DSP)，一个通过在线强化学习自适应调整推测步骤（speculation step）的智能体规划框架，旨在实现无损加速的同时显著降低成本，并允许用户控制延迟与成本之间的权衡。"
+topics:
+  - "AI Agent"
+  - "推理与强化学习"
+related_tutorials:
+  - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
+  - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"
+  - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"
+  - "coda-coordinating-the-cerebrum-and-cerebellum-for-a-dual-brain-computer-use-agen"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.01920v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.01920v1
 
 - **作者**: William Yang Wang; Wenyue Hua; Devang Acharya; Sun Fei; Qingfeng Lan; Chi Wang; Dujian Ding
 
@@ -52,7 +61,7 @@ title: "Dynamic Speculative Agent Planning"
 
 本文的核心思想是：**与其猜测一个固定的 $$k$$，不如在系统运行时在线学习预测它**。DSP框架通过一个轻量级预测器，在每个规划片段开始时，根据当前的状态（即已有的规划轨迹）来预测接下来能成功推测的步数 $$k$$。
 
-![](https://github.com/guanyilin428/Dynamic-Speculative-Planning/raw/main/./assets/main_figure.png)
+![DSP框架：用在线强化学习动态预测 图示](https://github.com/guanyilin428/Dynamic-Speculative-Planning/raw/main/./assets/main_figure.png)
 
 上图展示了DSP的工作流程：
 1.  **预测**: $$Predictor$$根据当前状态 $$s_i$$ 预测推测步数 $$k$$。

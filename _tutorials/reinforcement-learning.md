@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Reinforcement learning"
+description: "强化学习 (Reinforcement Learning, RL)，在深度神经网络的推动下，已在多个学科取得重大突破，例如在计算机游戏、棋类对弈、机器人技术以及矩阵乘法和排序等高效算法开发中都展现了卓越能力。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "a-multiobjective-reinforcement-learning-framework-for-microgrid-energy-managemen"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "a-survey-of-reinforcement-learning-for-large-reasoning-models"
+  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2405.10369v1
+- **ArXiv URL**: https://arxiv.org/abs/2405.10369v1
 
 - **作者**: B. Porr; F. Wörgötter
 

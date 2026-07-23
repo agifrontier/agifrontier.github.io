@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Llama Guard: LLM-based Input-Output Safeguard for Human-AI Conversations"
+description: "本文提出 Llama Guard，一个基于 Llama2-7b 的开源模型，通过将其构建为一种遵循指令的分类器，为人类与AI的对话提供可定制的、高效的输入-输出内容安全防护。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "can-llms-track-their-output-length-a-dynamic-feedback-mechanism-for-precise-leng"
+  - "llama-2-open-foundation-and-fine-tuned-chat-models"
+  - "the-llama-3-herd-of-models"
+  - "a-general-theoretical-paradigm-to-understand-learning-from-human-preferences"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2312.06674v1
+- **ArXiv URL**: https://arxiv.org/abs/2312.06674v1
 
 - **作者**: Qing Hu; Michael Tontchev; K. Upasani; Davide Testuggine; Yuning Mao; Krithika Iyer; Hakan Inan; Brian Fuller; Madian Khabsa; Jianfeng Chi; 等1人
 

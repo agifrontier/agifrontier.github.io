@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Collaboration and Conflict between Humans and Language Models through the Lens of Game Theory"
+description: "本文通过博弈论中的迭代囚徒困境 (Iterated Prisoner’s Dilemma) 框架，系统地研究了语言模型智能体在长期交互中的合作与对抗行为，发现其表现不亚于甚至超越了顶尖的经典策略，并能快速适应对手策略的变化，但与人类相比，其策略更倾向于短期收益最大化而非建立长期互利合作。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "algorithmic-thinking-theory"
+  - "an-augmentation-overlap-theory-of-contrastive-learning"
+  - "beyond-the-black-box-theory-and-mechanism-of-large-language-models"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.04847v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.04847v1
 
 - **作者**: Arjun Radhakrishna; Mukul Singh; Sumit Gulwani
 
@@ -61,20 +69,16 @@ title: "Collaboration and Conflict between Humans and Language Models through th
 *   **行为特征**：行为分析显示，成功的 AI 智能体展现出了与优秀合作策略相似的关键特征：**善良**（倾向于先合作）、**可激怒**（对背叛会立即报复）和**慷慨**（会原谅对手以跳出死循环）。
 *   **策略灵活性**：面对高度合作的对手，AI 很快学会了相互合作以获取高分；而面对充满恶意的对手，AI 也会迅速转向背叛策略以减少损失。
 
-![模型胜率和得分差异随回合数的变化](latex/Figures/model_performance_over_rounds.pdf)
 *图1：模型胜率和得分差异随回合数的变化。可以看出，模型的胜率和得分优势都随时间增加。*
 
-![AI模型对战不同策略时的合作率](latex/Figures/cooperation_rates_all_strategies.pdf)
 *图2：AI模型在对战不同策略时，合作率随回合数的变化。*
 
 ### RQ2: 对策略突变的适应能力
 *   **快速适应**：“策略切换”实验表明，AI 智能体能够迅速检测到对手策略的变化并调整自身行为，通常在几个回合内就能做出反应。
 *   **适应模式**：当对手从合作突然转向背叛时，AI 的合作率先是急剧下降，然后缓慢恢复，这反映了一个从“被背叛”到重新试探和调整的过程。而当对手切换到一个更复杂的竞争策略时，AI 的行为会变得更加振荡，反映了其在应对不确定性时的谨慎和试探。
 
-![策略切换后AI模型的恢复曲线](latex/Figures/recovery_curves_all_strategies.pdf)
 *图3：显示策略切换后AI模型的恢复率。*
 
-![多条件下策略变化对合作率和收益的影响](latex/Figures/multiple_condition_overlay.pdf)
 *图4：多种策略切换情景下的合作率与收益变化。实线代表合作率，虚线代表收益变化。*
 
 ### RQ3: 人类与 AI 适应性对比

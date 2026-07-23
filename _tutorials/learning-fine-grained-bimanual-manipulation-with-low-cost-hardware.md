@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware"
+description: "本文提出了一套名为 ALOHA 的低成本开源双臂遥操作硬件系统，并结合一种名为 ACT 的新型模仿学习算法，通过预测动作序列（Action Chunking）而非单步动作，成功地让低成本机器人学会了多种以往需要昂贵设备才能完成的精细操作任务。"
+topics:
+  - "具身智能与机器人"
+related_tutorials:
+  - "how-and-why-llms-generalize-a-fine-grained-analysis-of-llm-reasoning-from-cognit"
+  - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
+  - "factscore-fine-grained-atomic-evaluation-of-factual-precision-in-long-form-text-"
+  - "repurposing-synthetic-data-for-fine-grained-search-agent-supervision"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2304.13705v1
+- **ArXiv URL**: https://arxiv.org/abs/2304.13705v1
 
 - **作者**: Tony Zhao; Chelsea Finn; Vikash Kumar; S. Levine
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Enhancing Large Language Model Reasoning with Reward Models: An Analytical Survey"
+description: "本文系统性地介绍了奖励模型（Reward Models, RMs）的基础概念、分类体系和主流应用，并深入分析了它们在提升大型语言模型（LLM）推理能力中的关键作用，最后探讨了该领域面临的核心挑战与未来方向。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "unifying-tree-search-algorithm-and-reward-design-for-llm-reasoning-a-survey"
+  - "flowrl-matching-reward-distributions-for-llm-reasoning"
+  - "reasoning-over-mathematical-objects-on-policy-reward-modeling-and-test-time-aggr"
+  - "ssl4rl-revisiting-self-supervised-learning-as-intrinsic-reward-for-visual-langua"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.01925v2
+- **ArXiv URL**: https://arxiv.org/abs/2510.01925v2
 
 - **作者**: Qiyuan Liu; Yee Whye Teh; Ning Miao; Hao Xu; Wei Chen
 

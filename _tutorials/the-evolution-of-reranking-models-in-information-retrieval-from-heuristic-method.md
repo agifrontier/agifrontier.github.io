@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "The Evolution of Reranking Models in Information Retrieval: From Heuristic Methods to Large Language Models"
+description: "RAG效果提升神器：重排序模型从BERT到LLM的硬核进化史。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "memevolve-meta-evolution-of-agent-memory-systems"
+  - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"
+  - "beyond-patch-aggregation-3-pass-pyramid-indexing-for-vision-enhanced-document-re"
+  - "citation-grounded-code-comprehension-preventing-llm-hallucination-through-hybrid"
 ---
 
 ## RAG效果提升神器：重排序模型从BERT到LLM的硬核进化史
 
-<img src="/images/2512.16236v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.16236v1/A__title.jpg" alt="RAG效果提升神器：重排序模型从BERT到LLM的硬核进化史 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在构建 **检索增强生成**（**Retrieval Augmented Generation, RAG**）应用时，你是否遇到过这样的尴尬场景：明明知识库里有正确答案，但检索系统捞出来的Top-K文档里，关键信息却被淹没在无关噪音中，导致大模型（LLM）最终胡说八道？
 
-> ArXiv URL：http://arxiv.org/abs/2512.16236v1
+> ArXiv URL：https://arxiv.org/abs/2512.16236v1
 
 这往往不是LLM的问题，而是检索精度的“最后一公里”出了岔子。解决这个问题的关键技术，就是 **重排序**（**Reranking**）。
 

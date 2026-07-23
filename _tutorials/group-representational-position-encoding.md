@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Group Representational Position Encoding"
+description: "群表示位置编码（GRAPE）：统一RoPE与ALiBi的理论框架。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "dope-denoising-rotary-position-embedding"
+  - "gdpo-group-reward-decoupled-normalization-policy-optimization-for-multi-reward-r"
+  - "goagent-group-of-agents-communication-topology-generation-for-llm-based-multi-ag"
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
 ---
 
 ## 群表示位置编码（GRAPE）：统一RoPE与ALiBi的理论框架
 
-<img src="/images/2512.07805v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.07805v1/A__title.jpg" alt="群表示位置编码（GRAPE）：统一RoPE与ALiBi的理论框架 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 Transformer架构的核心是自注意力机制，但它本身无法感知序列中Token的顺序，即具有**置换不变性**（Permutation-Invariance）。为了让模型理解“词语A在词语B之前”，必须引入位置信息。这就是**位置编码**（Positional Encoding）的作用。
 
-> ArXiv URL：http://arxiv.org/abs/2512.07805v1
+> ArXiv URL：https://arxiv.org/abs/2512.07805v1
 
 位置编码技术经历了多次演进。最初的方法是为每个位置分配一个固定的或可学习的**绝对位置编码**（Absolute Positional Encoding）。后来，研究者发现**相对位置编码**（Relative Positional Encoding）更为有效，因为它只关注Token之间的相对距离，而不是它们的绝对位置。
 

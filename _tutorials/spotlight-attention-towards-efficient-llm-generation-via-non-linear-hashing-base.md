@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Spotlight Attention: Towards Efficient LLM Generation via Non-linear Hashing-based KV Cache Retrieval"
+description: "本文提出Spotlight Attention，一种通过可学习的非线性哈希函数来高效检索KV缓存（Key-Value Cache）的方法，从而在几乎不损失性能的前提下，显著提升大语言模型（LLM）的推理速度。"
+topics:
+  - "RAG与知识系统"
+  - "模型训练与优化"
+related_tutorials:
+  - "kimi-linear-an-expressive-efficient-attention-architecture"
+  - "trainable-log-linear-sparse-attention-for-efficient-diffusion-transformers"
+  - "higher-order-linear-attention"
+  - "mom-mixtures-of-scenario-aware-document-memories-for-retrieval-augmented-generat"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2508.19740v1
+- **ArXiv URL**: https://arxiv.org/abs/2508.19740v1
 
 - **作者**: Ziyang Gong; Fei Chao; Wenhao Li; Gen Luo; Rongrong Ji; Yuxin Zhang
 
@@ -53,7 +62,6 @@ $${% endraw %}
 
 该设计的核心动机是：先前研究发现LLM中的Query和Key向量在高维空间中分别聚集在两个狭窄的、近乎正交的锥形区域内。传统的线性哈希使用超平面来划分空间，难以有效分割这种倾斜的、非均匀的分布，导致编码效率低下。而MLP能够学习到非线性的决策边界（弯曲的表面），可以更灵活、更紧凑地对数据空间进行划分，从而用更短的哈希码（本文使用128位）承载更多信息，提升检索的准确性。
 
-![方法动机](imagese/2508.19740v1/x2.png)
 **图2：动机** (a) 实验表明，将哈希函数从线性升级到MLP可带来巨大提升。(b) 这是因为Query和Key通常分布在空间中的两个小锥体内。(c) 在这种情况下，线性边界难以均匀地划分空间。(d) 而使用MLP哈希函数可以很好地解决这个问题。
 
 ### 核心贡献：高效的训练框架与排序损失
@@ -102,7 +110,6 @@ _表1: KV检索精度对比（IoU越高越好，PPL越低越好）。训练对ML
 
 *   **推理效率**：通过专门的CUDA-kernel优化，哈希检索过程（512K tokens）耗时低于100μs。在端到端测试中，对于32K和128K序列长度，Spotlight Attention相比标准解码（vanilla decoding）实现了高达**3倍**的吞吐量提升。
 
-![效率对比](imagese/2508.19740v1/x9.png)
 **图6: 效率**。(左) Spotlight Attention在不同批处理大小和上下文长度下均带来显著的吞吐量提升。(右) Spotlight哈希码尺寸远小于MagicPIG，且核心操作（位打包和相似度搜索）的延迟极低。
 
 ### 总结

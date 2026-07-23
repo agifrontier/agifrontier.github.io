@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Beyond Two-Stage Training: Cooperative SFT and RL for LLM Reasoning"
+description: "本文的核心是提出了一种新的训练框架，其关键概念根植于双层优化理论。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+  - "模型训练与优化"
+related_tutorials:
+  - "balanced-actor-initialization-stable-rlhf-training-of-distillation-based-reasoni"
+  - "learning-to-reason-training-llms-with-gpt-oss-or-deepseek-r1-reasoning-traces"
+  - "on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language-model"
+  - "parrot-a-training-pipeline-enhances-both-program-cot-and-natural-language-cot-fo"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.06948v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.06948v1
 
 - **作者**: Xueting Han; Li Shen; Jing Bai; Kam-Fai Wong; Liang Chen
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Fine-tuning Small Language Models as Efficient Enterprise Search Relevance Labelers"
+description: "速度飙升17倍，成本仅1/19：微软亚马逊用小模型“蒸馏”搞定企业搜索标注。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "行业应用"
+related_tutorials:
+  - "lore-a-large-generative-model-for-search-relevance"
+  - "beft-bias-efficient-fine-tuning-of-language-models"
+  - "bi-lora-efficient-sharpness-aware-minimization-for-fine-tuning-large-scale-model"
+  - "llama-adapter-efficient-fine-tuning-of-language-models-with-zero-init-attention"
 ---
 
 ## 速度飙升17倍，成本仅1/19：微软亚马逊用小模型“蒸馏”搞定企业搜索标注
 
-<img src="/images/2601.03211v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.03211v1/A__title.jpg" alt="速度飙升17倍，成本仅1/19：微软亚马逊用小模型“蒸馏”搞定企业搜索标注 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在企业级搜索领域，由于数据隐私和专业性的限制，构建高质量的标注数据集一直是一个令人头疼的难题。虽然利用 GPT-4 这样的**大语言模型**（**Large Language Models, LLMs**）进行自动标注已成为一种流行方案，但其昂贵的推理成本和缓慢的吞吐量，使其难以在生产环境中大规模应用。
 
-> ArXiv URL：http://arxiv.org/abs/2601.03211v1
+> ArXiv URL：https://arxiv.org/abs/2601.03211v1
 
 这就引出了一个核心问题：**我们能否用一个“小巧玲珑”的模型，通过“蒸馏”大模型的智慧，在保持高精度的同时，实现极致的效率和低成本？**
 

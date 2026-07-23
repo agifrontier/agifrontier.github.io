@@ -1,11 +1,19 @@
 ---
 layout: default
 title: "Sampling and Loss Weights in Multi-Domain Training"
+description: "Sampling and Loss Weights in Multi-Domain Training。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "sigmoid-loss-for-language-image-pre-training"
+  - "what-does-loss-optimization-actually-teach-if-anything-knowledge-dynamics-in-con"
+  - "imbalanced-gradients-in-rl-post-training-of-multi-task-llms"
+  - "skyrl-agent-efficient-rl-training-for-multi-turn-llm-agent"
 ---
 
 ## Sampling and Loss Weights in Multi-Domain Training
 
-- **ArXiv URL**: http://arxiv.org/abs/2511.06913v1
+- **ArXiv URL**: https://arxiv.org/abs/2511.06913v1
 
 ## TL;DR
 本文提出，在多领域训练中，应将传统的单域权重分解为两个互补的角色：用于提升泛化能力的**损失权重 (loss weights)**和用于降低梯度方差、加速优化的**采样权重 (sampling weights)**，并为它们分别设计了估计算法。
@@ -83,13 +91,13 @@ title: "Sampling and Loss Weights in Multi-Domain Training"
 实验通过人工方式构建了多个领域，这些领域在数据协方差 ($$C_i$$)、标签噪声 ($$p_i$$ 或 $$σ_i^2$$) 等方面存在差异，以模拟真实世界的多领域异构性。
 
 ### 关键结果
-<img src="/images/2511.06913v1/x1.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.06913v1/x1.jpg" alt="关键结果 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 **图1：线性回归实验结果**。上排 $$(C1, C2) = (100, 1)$$，下排 $$(C1, C2) = (1, 100)$$。可以看到 One-shot FGLS（损失权重）和 VA（采样权重）都比基线方法（Uniform）收敛得更快，误差更低。
 
-<img src="/images/2511.06913v1/x2.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.06913v1/x2.jpg" alt="关键结果 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 **图2：逻辑回归实验结果**。与线性回归类似，ERMA（损失权重）和 VA（采样权重）均展现出优势，并且它们的组合（ERMA+VA）通常能取得最佳或接近最佳的性能，证明了它们的互补性。
 
-<img src="/images/2511.06913v1/x3.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.06913v1/x3.jpg" alt="关键结果 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 **图3：神经网络（MNIST）实验结果**。在此设置下，ERMA（损失权重）取得了最佳效果，显著优于均匀加权。然而，VA（采样权重）几乎没有带来改善。作者推测，这是因为在该任务中，干净领域和噪声领域的数据输入高度相似，导致它们之间的梯度方差差异不显著，VA 无法发挥作用。
 
 ### 最终结论

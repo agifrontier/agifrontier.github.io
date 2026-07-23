@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "NextFlow: Unified Sequential Modeling Activates Multimodal Understanding and Generation"
+description: "NextFlow横空出世：6万亿Token打造统一自回归，5秒生成1024高清图。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "多模态与视觉"
+related_tutorials:
+  - "scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-generation-for"
+  - "linmu-multimodal-understanding-made-linear"
+  - "a-survey-of-weight-space-learning-understanding-representation-and-generation"
+  - "a-multitask-multilingual-multimodal-evaluation-of-chatgpt-on-reasoning-hallucina"
 ---
 
 ## NextFlow横空出世：6万亿Token打造统一自回归，5秒生成1024高清图
 
-<img src="/images/2601.02204v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.02204v1/A__title.jpg" alt="NextFlow横空出世：6万亿Token打造统一自回归，5秒生成1024高清图 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 长期以来，AI 领域存在着一道“隐形柏林墙”：大语言模型（LLMs）在逻辑推理和文本理解上独步天下，而扩散模型（Diffusion Models）则统治着视觉生成的像素世界。虽然我们一直梦想着一个“大一统”的模型能同时精通这两者，但现实往往很骨感——要么是拼接缝合的怪胎，要么是虽然统一了架构但在生成速度上慢如蜗牛。
 
-> ArXiv URL：http://arxiv.org/abs/2601.02204v1
+> ArXiv URL：https://arxiv.org/abs/2601.02204v1
 
 特别是对于纯自回归（Autoregressive, AR）模型来说，生成高分辨率图像简直是噩梦。传统的“光栅扫描”式（Raster-scan）预测，就像老式打印机一样逐个Token生成，生成一张 $1024 \times 1024$ 的图可能需要几分钟，这在实际应用中几乎不可接受。
 

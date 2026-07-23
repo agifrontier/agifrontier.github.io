@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "From Static Templates to Dynamic Runtime Graphs: A Survey of Workflow Optimization for LLM Agents"
+description: "告别“写死”的工作流：IBM万字综述，定义Agent动态进化新范式。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+  - "模型训练与优化"
+related_tutorials:
+  - "beyond-turn-limits-training-deep-search-agents-with-dynamic-context-window"
+  - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
+  - "memrl-self-evolving-agents-via-runtime-reinforcement-learning-on-episodic-memory"
+  - "dynamic-affective-memory-management-for-personalized-llm-agents"
 ---
 
 ## 告别“写死”的工作流：IBM万字综述，定义Agent动态进化新范式
 
-<img src="/images/2603.22386v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.22386v1/A__title.jpg" alt="告别“写死”的工作流：IBM万字综述，定义Agent动态进化新范式 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 LLM Agent正以前所未有的速度涌现，但驱动它们解决复杂任务的工作流设计，却常常像一个“手工作坊”：结构固定、难以优化、复用性差。当任务稍有变化，写死的脚本可能就立刻失灵。
 
-> ArXiv URL：http://arxiv.org/abs/2603.22386v1
+> ArXiv URL：https://arxiv.org/abs/2603.22386v1
 
 你的Agent还在依赖这种静态工作流吗？
 

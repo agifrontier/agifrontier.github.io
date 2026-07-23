@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn Reinforcement Learning"
+description: "UI-TARS-2：多轮强化学习炼成！达60%人类水平，AI智能体自主操作电脑。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+  - "推理与强化学习"
+related_tutorials:
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
+  - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
+  - "mars-optimizing-dual-system-deep-research-via-multi-agent-reinforcement-learning"
 ---
 
 ## UI-TARS-2：多轮强化学习炼成！达60%人类水平，AI智能体自主操作电脑
 
-<img src="/images/2509.02544v2/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2509.02544v2/A__title.jpg" alt="UI-TARS-2：多轮强化学习炼成！达60%人类水平，AI智能体自主操作电脑 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 让AI像我们一样熟练地操作电脑，无论是浏览网页、处理文件还是玩游戏，这无疑是通用人工智能（AGI）最激动人心的目标之一。然而，现实却骨感得多：去哪里找海量的操作数据？如何让模型在漫长而复杂的任务中稳定学习？
 
-> ArXiv URL：http://arxiv.org/abs/2509.02544v2
+> ArXiv URL：https://arxiv.org/abs/2509.02544v2
 
 今天，一篇名为 UI-TARS-2 的技术报告为我们带来了突破性的答案。它不仅在多个主流GUI（图形用户界面）基准测试中超越了Claude和OpenAI的智能体，更是在游戏测试中达到了接近60%的人类水平！这背后，是一套系统化的训练方法论，解决了GUI智能体面临的核心难题。
 

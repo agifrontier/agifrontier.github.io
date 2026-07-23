@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "MetaClaw: Just Talk -- An Agent That Meta-Learns and Evolves in the Wild"
+description: "MetaClaw：AI Agent的在职进化论，准确率从21.4%飙升至40.6%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "hindsight-is-2020-building-agent-memory-that-retains-recalls-and-reflects"
+  - "inefficiencies-of-meta-agents-for-agent-design"
+  - "memevolve-meta-evolution-of-agent-memory-systems"
+  - "are-agents-just-automata-on-the-formal-equivalence-between-agentic-ai-and-the-ch"
 ---
 
 ## MetaClaw：AI Agent的在职进化论，准确率从21.4%飙升至40.6%
 
-<img src="/images/2603.17187v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2603.17187v1/A__title.jpg" alt="MetaClaw：AI Agent的在职进化论，准确率从21.4%飙升至40.6% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 你是否曾感到沮丧，你的AI助手虽然聪明，却似乎从不吸取教训？今天你纠正了它的一个错误，明天它可能在同样的地方再次跌倒。这种“静态智能”是当前AI Agent在处理复杂、多变任务时的一大瓶颈。
 
-> ArXiv URL：http://arxiv.org/abs/2603.17187v1
+> ArXiv URL：https://arxiv.org/abs/2603.17187v1
 
 但如果，一个Agent可以在为你工作的同时，不断学习、自我进化，甚至不需要停机更新呢？
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Students' Voices on Generative AI: Perceptions, Benefits, and Challenges in Higher Education"
+description: "本文通过对香港399名大学生的问卷调查，揭示了学生对生成式AI（如ChatGPT）普遍持积极态度，认可其在个性化学习、写作和研究方面的潜力，但同时也对技术的准确性、隐私伦理、对个人能力发展和未来职业的冲击表示了显著担忧。"
+topics:
+  - "行业应用"
+related_tutorials:
+  - "lore-a-large-generative-model-for-search-relevance"
+  - "maxshapley-towards-incentive-compatible-generative-search-with-fair-context-attr"
+  - "demystifying-synthetic-data-in-llm-pre-training-a-systematic-study-of-scaling-la"
+  - "higher-embedding-dimension-creates-a-stronger-world-model-for-a-simple-sorting-t"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2305.00290v1
+- **ArXiv URL**: https://arxiv.org/abs/2305.00290v1
 
 - **作者**: Wenjie Hu; C. Chan
 

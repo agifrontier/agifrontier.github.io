@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Mathematical Framing for Different Agent Strategies"
+description: "告别炼丹玄学：谷歌用概率统一AI Agent，提出“自由度”新思路。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "mcp-vs-rag-vs-nlweb-vs-html-a-comparison-of-the-effectiveness-and-efficiency-of-"
+  - "a-multi-agent-framework-for-stateful-inference-time-search"
+  - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
+  - "agentinit-initializing-llm-based-multi-agent-systems-via-diversity-and-expertise"
 ---
 
 ## 告别炼丹玄学：谷歌用概率统一AI Agent，提出“自由度”新思路
 
-<img src="/images/2512.04469v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.04469v1/A__title.jpg" alt="告别炼丹玄学：谷歌用概率统一AI Agent，提出“自由度”新思路 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 AI Agent的浪潮正席卷而来，从能自主思考和使用工具的ReAct，到分工协作的多智能体（Multi-Agent）系统，各种新架构层出不穷。然而，这个繁荣的背后也隐藏着一个巨大的挑战：我们如何科学地比较这些设计？一个ReAct Agent和一个多智能体系统，哪个更优？我们是该优化提示词，还是该引入更复杂的控制流程？
 
-> ArXiv URL：http://arxiv.org/abs/2512.04469v1
+> ArXiv URL：https://arxiv.org/abs/2512.04469v1
 
 过去，Agent的设计更像一门“炼丹玄学”，依赖直觉和大量的经验试错。现在，来自Google Cloud的研究者们提出了一套统一的数学框架，试图将这门艺术转变为一门严谨的工程科学。他们认为，无论Agent的架构多么复杂，其本质都可以被描述为一个**概率过程**。
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Statistical Reinforcement Learning in the Real World: A Survey of Challenges and Future Directions"
+description: "RL不该只会打游戏：哈佛联合帝国理工发布“现实世界落地”三步走指南。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "livethinking-enabling-real-time-efficient-reasoning-for-ai-powered-livestreaming"
+  - "agentic-ai-a-comprehensive-survey-of-architectures-applications-and-future-direc"
+  - "a-survey-of-reinforcement-learning-for-large-reasoning-models"
+  - "reinforcement-learning-meets-large-language-models-a-survey-of-advancements-and-"
 ---
 
 ## RL不该只会打游戏：哈佛联合帝国理工发布“现实世界落地”三步走指南
 
-<img src="/images/2601.15353v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.15353v1/A__title.jpg" alt="RL不该只会打游戏：哈佛联合帝国理工发布“现实世界落地”三步走指南 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当DeepMind的AI在围棋盘上碾压人类，或者在《GT赛车》中跑出超人类的圈速时，我们很容易产生一种错觉：强化学习（RL）已经无所不能了。但当你转过头，试图将同样的算法应用到医疗健康、在线教育或公共政策时，现实往往会给你一记响亮的耳光。
 
-> ArXiv URL：http://arxiv.org/abs/2601.15353v1
+> ArXiv URL：https://arxiv.org/abs/2601.15353v1
 
 为什么在模拟器里大杀四方的RL，一到现实世界就“水土不服”？
 

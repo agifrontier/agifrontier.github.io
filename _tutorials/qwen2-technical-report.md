@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Qwen2 Technical Report"
+description: "本文介绍了Qwen2系列大型语言模型，通过改进模型架构、扩大并优化多语言和代码数学预训练数据、采用可扩展的对齐技术，在0.5B到72B的多个尺寸上全面超越了现有开源模型，并在各项基准测试中展现出与顶尖闭源模型相当的竞争力。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "qwen25-math-technical-report-toward-mathematical-expert-model-via-self-improveme"
+  - "deepseek-v3-technical-report"
+  - "gpt-4-technical-report"
+  - "hunyuanvideo-15-technical-report"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2407.10671v4
+- **ArXiv URL**: https://arxiv.org/abs/2407.10671v4
 
 - **作者**: Tianhang Zhu; Huan Lin; Zhi-Wei Fan; Kai Dang; Runji Lin; Binyuan Hui; Yang Yao; Baosong Yang; Jinzheng He; Xiaohuan Zhou; 等48人
 

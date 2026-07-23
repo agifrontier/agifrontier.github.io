@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Detecting Data Contamination in LLMs via In-Context Learning"
+description: "本文提出了一种名为 CoDeC 的新方法，通过衡量上下文学习（In-Context Learning）对模型置信度的影响，来有效检测和量化大语言模型中的训练数据污染问题。"
+topics:
+  - "数据与AI工程"
+related_tutorials:
+  - "educational-data-mining-and-learning-analytics-an-updated-survey"
+  - "learning-from-synthetic-data-limitations-of-erm"
+  - "scribes-web-scale-script-based-semi-structured-data-extraction-with-reinforcemen"
+  - "a-novel-combined-data-driven-approach-for-electricity-theft-detection"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.27055v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.27055v1
 
 - **作者**: Meriem Boubdir; Michał Zawalski; Besmira Nushi; Klaudia Bałazy
 

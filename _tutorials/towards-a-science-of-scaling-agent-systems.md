@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Towards a Science of Scaling Agent Systems"
+description: "AI Agent协作双刃剑：性能提升81%，错误放大17倍！DeepMind发布首个量化法则。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "agentinit-initializing-llm-based-multi-agent-systems-via-diversity-and-expertise"
+  - "ai-agent-systems-architectures-applications-and-evaluation"
+  - "evoroute-experience-driven-self-routing-llm-agent-systems"
+  - "goagent-group-of-agents-communication-topology-generation-for-llm-based-multi-ag"
 ---
 
 ## AI Agent协作双刃剑：性能提升81%，错误放大17倍！DeepMind发布首个量化法则
 
-<img src="/images/2512.08296v1/A__title.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.08296v1/A__title.jpg" alt="AI Agent协作双刃剑：性能提升81%，错误放大17倍！DeepMind发布首个量化法则 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 “三个臭皮匠，顶个诸葛亮”，在AI Agent领域，这句古老的谚语似乎也成了金科玉律。许多人相信，通过“群聊”式的多Agent协作，就能解决更复杂的问题。
 
-> ArXiv URL：http://arxiv.org/abs/2512.08296v1
+> ArXiv URL：https://arxiv.org/abs/2512.08296v1
 
 然而，事实果真如此吗？
 

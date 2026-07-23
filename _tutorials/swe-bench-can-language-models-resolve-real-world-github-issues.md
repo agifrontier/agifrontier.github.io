@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?"
+description: "本文提出了一个名为 SWE-bench 的大规模、真实世界的软件工程基准，通过要求语言模型（Language Models, LMs）解决来自12个流行Python仓库的真实GitHub问题，发现即使是最先进的模型也难以完成这些复杂的代码编辑任务，揭示了当前模型能力的巨大局限性。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis"
+  - "better-world-models-can-lead-to-better-post-training-performance"
+  - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
+  - "mai-ui-technical-report-real-world-centric-foundation-gui-agents"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2310.06770v3
+- **ArXiv URL**: https://arxiv.org/abs/2310.06770v3
 
 - **作者**: Karthik Narasimhan; Alexander Wettig; Ofir Press; John Yang; Kexin Pei; Carlos E. Jimenez; Shunyu Yao
 

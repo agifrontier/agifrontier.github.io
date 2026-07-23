@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "A Survey of AI Scientists: Surveying the automatic Scientists and Research"
+description: "本文首次对新兴的 AI 科学家 (AI Scientist) 领域进行了系统性综述，提出了一个统一的六阶段科学工作流框架，并基于此框架梳理了从 2022 年到 2025 年的关键研究，揭示了该领域从基础模块化、闭环集成到追求可扩展性、影响力与人机协作的清晰三阶段演进脉络。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "omniscientist-toward-a-co-evolving-ecosystem-of-human-and-ai-scientists"
+  - "towards-execution-grounded-automated-ai-research"
+  - "webweaver-structuring-web-scale-evidence-with-dynamic-outlines-for-open-ended-de"
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.23045v2
+- **ArXiv URL**: https://arxiv.org/abs/2510.23045v2
 
 - **作者**: Pan Zhou; Guiyao Tie; Lichao Sun
 

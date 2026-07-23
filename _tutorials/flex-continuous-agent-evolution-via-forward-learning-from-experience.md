@@ -1,6 +1,14 @@
 ---
 layout: default
 title: "FLEX: Continuous Agent Evolution via Forward Learning from Experience"
+description: "让AI像人一样“吃一堑长一智”：FLEX框架使Agent性能飙升23%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"
+  - "learning-on-the-job-an-experience-driven-self-evolving-agent-for-long-horizon-ta"
+  - "evoclaw-evaluating-ai-agents-on-continuous-software-evolution"
+  - "evoroute-experience-driven-self-routing-llm-agent-systems"
 ---
 
 ## 让AI像人一样“吃一堑长一智”：FLEX框架使Agent性能飙升23%
@@ -9,7 +17,7 @@ title: "FLEX: Continuous Agent Evolution via Forward Learning from Experience"
 
 > **论文标题**：FLEX: Continuous Agent Evolution via Forward Learning from Experience
 
-> **ArXiv URL**：http://arxiv.org/abs/2511.06449v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.06449v1
 
 现在，来自字节跳动和清华大学等机构的研究者们，提出了一种全新的学习范式——**FLEX**（**Forward Learning with EXperience**）。
 

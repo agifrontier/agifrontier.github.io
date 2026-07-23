@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Nested Learning: The Illusion of Deep Learning Architectures"
+description: "打破深度学习“幻觉”：哥大&谷歌提出Nested Learning，重构大模型记忆与进化。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "deep-delta-learning"
+  - "hybrid-architectures-for-language-models-systematic-analysis-and-design-insights"
+  - "deep-sequence-models-tend-to-memorize-geometrically-it-is-unclear-why"
+  - "geometric-and-dynamic-scaling-in-deep-transformers"
 ---
 
 ## 打破深度学习“幻觉”：哥大&谷歌提出Nested Learning，重构大模型记忆与进化
 
-<img src="/images/2512.24695v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.24695v1/A__title.jpg" alt="打破深度学习“幻觉”：哥大&谷歌提出Nested Learning，重构大模型记忆与进化 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 你是否意识到，当今最强大的大语言模型（LLM），本质上都患有一种神经学上的疾病——**顺行性遗忘症**（**Anterograde Amnesia**）？
 
-> ArXiv URL：http://arxiv.org/abs/2512.24695v1
+> ArXiv URL：https://arxiv.org/abs/2512.24695v1
 
 一旦预训练结束，它们的“长期记忆”就此冻结。无论我们在对话框中输入多少新知识，一旦窗口关闭或上下文溢出，这些模型就会瞬间“失忆”，永远活在“永远崭新的当下”。这不仅是上下文窗口大小的问题，更是底层学习范式的根本局限。
 

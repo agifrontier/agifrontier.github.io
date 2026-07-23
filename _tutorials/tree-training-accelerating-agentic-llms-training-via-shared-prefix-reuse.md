@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Tree Training: Accelerating Agentic LLMs Training via Shared Prefix Reuse"
+description: "本文提出了一种名为 Tree Training 的新训练范式，通过将智能体交互产生的树状轨迹数据进行高效打包和计算复用，在训练的前向和后向传播中对共享的前缀（prefix）只计算一次，从而显著提升了智能体大语言模型（Agentic LLM）的训练效率。"
+topics:
+  - "AI Agent"
+  - "模型训练与优化"
+related_tutorials:
+  - "part-ii-roll-flash-accelerating-rlvr-and-agentic-training-with-asynchrony"
+  - "batch-normalization-accelerating-deep-network-training-by-reducing-internal-cova"
+  - "seesaw-accelerating-training-by-balancing-learning-rate-and-batch-size-schedulin"
+  - "sortedrl-accelerating-rl-training-for-llms-through-online-length-aware-schedulin"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2511.00413v1
+- **ArXiv URL**: https://arxiv.org/abs/2511.00413v1
 
 - **作者**: Yinghan Cui; Shaojie Wang; Liang Huang; Li Wan; Bin Chen; Xuxing Chen; Jinghui Wang; Haotian Zhang; Junyi Peng; Chao Wang; 等11人
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models"
+description: "本文介绍了DeepSeekMath，一个通过在精心构建的120B数学语料上进行持续预训练，并采用一种名为GRPO的新型高效强化学习算法，从而将开源模型的数学推理能力推向接近GPT-4水平的7B语言模型。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "deepseekmath-v2-towards-self-verifiable-mathematical-reasoning"
+  - "causal-reasoning-favors-encoders-on-the-limits-of-decoder-only-models"
+  - "cogflow-bridging-perception-and-reasoning-through-knowledge-internalization-for-"
+  - "mathvista-evaluating-mathematical-reasoning-of-foundation-models-in-visual-conte"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2402.03300v3
+- **ArXiv URL**: https://arxiv.org/abs/2402.03300v3
 
 - **作者**: Mingchuan Zhang; R. Xu; Zhihong Shao; Jun-Mei Song; Qihao Zhu; Y. K. Li; Peiyi Wang; Yu Wu; Daya Guo
 

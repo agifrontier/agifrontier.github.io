@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "What's the next frontier for Data-centric AI? Data Savvy Agents"
+description: "近期，能够自主交流、与人类协作并使用多种工具的AI智能体 (agents) 的兴起，为各种真实世界场景解锁了巨大的机遇。然而，尽管这些基于大型语言模型 (LLM) 的智能体在自然语言理解和问题解决方面取得了显著进展，它们大多仍局限于具有预定义数据和结构化任务的受控环境中。"
+topics:
+  - "AI Agent"
+  - "数据与AI工程"
+related_tutorials:
+  - "agentfrontier-expanding-the-capability-frontier-of-llm-agents-with-zpd-guided-da"
+  - "a-survey-of-data-agents-emerging-paradigm-or-overstated-hype"
+  - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
+  - "dacomp-benchmarking-data-agents-across-the-full-data-intelligence-lifecycle"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2511.01015v1
+- **ArXiv URL**: https://arxiv.org/abs/2511.01015v1
 
 - **作者**: Mihaela van der Schaar; Jiashuo Liu; Nabeel Seedat
 

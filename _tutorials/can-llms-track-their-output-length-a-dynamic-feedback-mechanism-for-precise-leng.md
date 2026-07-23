@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Can LLMs Track Their Output Length? A Dynamic Feedback Mechanism for Precise Length Regulation"
+description: "LLM数不清字数？阿里新法让模型“边写边看”，训练效率升4倍。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations"
+  - "a-concise-review-of-hallucinations-in-llms-and-their-mitigation"
+  - "alpacafarm-a-simulation-framework-for-methods-that-learn-from-human-feedback"
+  - "beyond-the-black-box-theory-and-mechanism-of-large-language-models"
 ---
 
 ## LLM数不清字数？阿里新法让模型“边写边看”，训练效率升4倍
 
-<img src="/images/2601.01768v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01768v1/A__title.jpg" alt="LLM数不清字数？阿里新法让模型“边写边看”，训练效率升4倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 “请写一篇500字的文章。”
 
-> ArXiv URL：http://arxiv.org/abs/2601.01768v1
+> ArXiv URL：https://arxiv.org/abs/2601.01768v1
 
 当你把这个简单的指令发给 ChatGPT 或 LLaMA 时，结果往往令人抓狂：它要么洋洋洒洒写了800字，要么草草收尾只写了300字。尽管大语言模型（LLM）在指令遵循上已经登峰造极，但在“精准控制字数”这件小事上，它们却表现得像个刚学会写字的小学生。
 

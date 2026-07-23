@@ -1,6 +1,15 @@
 ---
 layout: default
 title: "From Experience to Strategy: Empowering LLM Agents with Trainable Graph Memory"
+description: "让Agent经验“活”起来：可训练图记忆，助小模型性能飙升25.8%！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "AI Agent"
+related_tutorials:
+  - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+  - "ai-meets-brain-memory-systems-from-cognitive-neuroscience-to-autonomous-agents"
+  - "dynamic-affective-memory-management-for-personalized-llm-agents"
 ---
 
 ## 让Agent经验“活”起来：可训练图记忆，助小模型性能飙升25.8%！
@@ -8,7 +17,7 @@ title: "From Experience to Strategy: Empowering LLM Agents with Trainable Graph 
 LLM Agent无疑是当前AI领域最激动人心的方向之一，它们被寄予厚望，希望能在复杂开放的环境中自主解决问题。但现实是，许多Agent在决策时仍然显得“笨拙”：它们会重复犯错，行动效率低下，甚至无法完成任务。
 
 > **论文标题**：From Experience to Strategy: Empowering LLM Agents with Trainable Graph Memory
-> **ArXiv URL**：http://arxiv.org/abs/2511.07800v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.07800v1
 
 究其原因，核心在于Agent没能有效地从过去的成败经验中学习。
 

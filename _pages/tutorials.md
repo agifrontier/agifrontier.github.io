@@ -2,6 +2,8 @@
 layout: default
 permalink: /
 title: Tutorials
+seo_title: AI前沿分享：AI论文解读与前沿技术指南
+description: 聚合大模型、AI Agent、RAG、推理优化、多模态与具身智能论文解读，提炼核心方法、实验结果与工程实践启示。
 nav: true
 nav_order: 1
 pagination:
@@ -20,7 +22,8 @@ pagination:
 
   <div class="header-bar">
     <h1>Tutorials</h1>
-    <h2>每日AI最新进展分享。</h2>
+    <h2>AI 论文解读、工程实践与前沿趋势</h2>
+    <p><a href="{{ '/topics/' | relative_url }}">按主题浏览全部内容</a></p>
   </div>
 
 {% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
@@ -28,9 +31,7 @@ pagination:
   <div class="tag-category-list">
     <ul class="p-0 m-0">
       {% for tag in site.display_tags %}
-        <li>
-          <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/tutorials/tag/' | relative_url }}">{{ tag }}</a>
-        </li>
+        <li><i class="fa-solid fa-hashtag fa-sm"></i> <span>{{ tag }}</span></li>
         {% unless forloop.last %}
           <p>&bull;</p>
         {% endunless %}
@@ -39,9 +40,7 @@ pagination:
         <p>&bull;</p>
       {% endif %}
       {% for category in site.display_categories %}
-        <li>
-          <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/tutorials/category/' | relative_url }}">{{ category }}</a>
-        </li>
+        <li><i class="fa-solid fa-tag fa-sm"></i> <span>{{ category }}</span></li>
         {% unless forloop.last %}
           <p>&bull;</p>
         {% endunless %}
@@ -80,8 +79,7 @@ pagination:
 
                     <p class="post-meta">
                       {{ read_time }} min read &nbsp; &middot; &nbsp;
-                      <a href="{{ year | prepend: '/tutorials/' | relative_url }}">
-                        <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
+                      <span><i class="fa-solid fa-calendar fa-sm"></i> {{ year }}</span>
                     </p>
                   </div>
                 </div>
@@ -144,14 +142,12 @@ pagination:
         {% endif %}
       </p>
       <p class="post-tags">
-        <a href="{{ year | prepend: '/tutorials/' | relative_url }}">
-          <i class="fa-solid fa-calendar fa-sm"></i> {{ year }} </a>
+        <span><i class="fa-solid fa-calendar fa-sm"></i> {{ year }}</span>
 
           {% if tags != "" %}
           &nbsp; &middot; &nbsp;
             {% for tag in post.tags %}
-            <a href="{{ tag | slugify | prepend: '/tutorials/tag/' | relative_url }}">
-              <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a>
+            <span><i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</span>
               {% unless forloop.last %}
                 &nbsp;
               {% endunless %}
@@ -161,8 +157,7 @@ pagination:
           {% if categories != "" %}
           &nbsp; &middot; &nbsp;
             {% for category in post.categories %}
-            <a href="{{ category | slugify | prepend: '/tutorials/category/' | relative_url }}">
-              <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a>
+            <span><i class="fa-solid fa-tag fa-sm"></i> {{ category }}</span>
               {% unless forloop.last %}
                 &nbsp;
               {% endunless %}

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Towards a Unified View of Large Language Model Post-Training"
+description: "本文提出了一个统一的策略梯度估计器（UPGE），将监督微调（SFT）和强化学习（RL）两种后训练范式归纳到单一的优化目标下，并基于此设计了一种名为混合后训练（HPT）的新算法，该算法能根据模型的实时表现动态地在SFT和RL之间切换，从而有效提升模型的推理能力。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "better-world-models-can-lead-to-better-post-training-performance"
+  - "how-does-rl-post-training-induce-skill-composition-a-case-study-on-countdown"
+  - "imbalanced-gradients-in-rl-post-training-of-multi-task-llms"
+  - "quagmires-in-sft-rl-post-training-when-high-sft-scores-mislead-and-what-to-use-i"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.04419v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.04419v1
 
 - **作者**: Ning Ding; Kaiyan Zhang; Hongyi Liu; Bowen Zhou; Xuekai Zhu; Zhekai Chen; Yuxin Zuo; Bingning Wang; Xingtai Lv; Youbang Sun
 

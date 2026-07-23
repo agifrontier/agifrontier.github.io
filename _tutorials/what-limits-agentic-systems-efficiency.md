@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "What Limits Agentic Systems Efficiency?"
+description: "本文对基于网络交互的智能体系统效率瓶颈进行了实证研究，并提出一个名为 SpecCache 的缓存框架，该框架利用推测性执行（speculative execution）来重叠模型推理与网络环境交互，从而在不降低任务性能的前提下，显著减少系统延迟。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "a-survey-of-reasoning-and-agentic-systems-in-time-series-with-large-language-mod"
+  - "mitigating-hallucination-in-large-language-models-llms-an-application-oriented-s"
+  - "mcp-vs-rag-vs-nlweb-vs-html-a-comparison-of-the-effectiveness-and-efficiency-of-"
+  - "beyond-turn-limits-training-deep-search-agents-with-dynamic-context-window"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.16276v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.16276v1
 
 - **作者**: Song Bian; Anand Jayarajan; Gennady Pekhimenko; Shivaram Venkataraman; Minghao Yan
 

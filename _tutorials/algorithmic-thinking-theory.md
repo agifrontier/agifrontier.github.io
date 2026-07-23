@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Algorithmic Thinking Theory"
+description: "LLM推理的“系统2”觉醒：谷歌、斯坦福联手揭秘“算法思维”理论。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "on-the-origin-of-algorithmic-progress-in-ai"
+  - "an-augmentation-overlap-theory-of-contrastive-learning"
+  - "beyond-the-black-box-theory-and-mechanism-of-large-language-models"
+  - "collaboration-and-conflict-between-humans-and-language-models-through-the-lens-o"
 ---
 
 ## LLM推理的“系统2”觉醒：谷歌、斯坦福联手揭秘“算法思维”理论
 
-<img src="/images/2512.04923v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.04923v1/A__title.jpg" alt="LLM推理的“系统2”觉醒：谷歌、斯坦福联手揭秘“算法思维”理论 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大语言模型（LLM）在解决复杂推理任务上已展现出惊人能力，但一个有趣的悖论也随之浮现：即使是顶尖模型，在面对国际数学奥林匹克（IMO）这类顶级难题时，一次性给出正确答案（$pass@1$）的概率极低。然而，如果允许它进行多次尝试，其在$k$次尝试中至少有一次成功的概率（$pass@k$）会显著提高。
 
-> ArXiv URL：http://arxiv.org/abs/2512.04923v1
+> ArXiv URL：https://arxiv.org/abs/2512.04923v1
 
 这是否意味着我们只需“多抽几次卡”就能解决问题？事实并非如此。
 

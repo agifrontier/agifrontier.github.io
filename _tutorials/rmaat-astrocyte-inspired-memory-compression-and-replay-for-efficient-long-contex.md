@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "RMAAT: Astrocyte-Inspired Memory Compression and Replay for Efficient Long-Context Transformers"
+description: "模拟大脑“胶质细胞”！RMAAT解锁线性注意力，长序列训练显存效率暴涨。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "comet-collaborative-memory-transformer-for-efficient-long-context-modeling"
+  - "qwenlong-l15-post-training-recipe-for-long-context-reasoning-and-memory-manageme"
+  - "sentence-anchored-gist-compression-for-long-context-llms"
+  - "mesh-memory-as-state-highways-for-recursive-transformers"
 ---
 
 ## 模拟大脑“胶质细胞”！RMAAT解锁线性注意力，长序列训练显存效率暴涨
 
-<img src="/images/2601.00426v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.00426v1/A__title.jpg" alt="模拟大脑“胶质细胞”！RMAAT解锁线性注意力，长序列训练显存效率暴涨 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 Transformer 架构虽然统治了自然语言处理领域，但它一直背负着一个沉重的“包袱”：自注意力机制的二次方复杂度（$O(N^2)$）。这使得处理超长序列变得极其昂贵，甚至在硬件上不可行。为了解决这个问题，研究人员尝试了稀疏注意力、线性近似等各种魔改，但往往要在性能和效率之间做艰难的取舍。
 
-> ArXiv URL：http://arxiv.org/abs/2601.00426v1
+> ArXiv URL：https://arxiv.org/abs/2601.00426v1
 
 如果我们的灵感来源——大脑，其实还有一半的计算潜力没被挖掘呢？
 

@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "Retrieval--Reasoning Processes for Multi-hop Question Answering: A Four-Axis Design Framework and Empirical Trends"
+description: "RAG系统的“黑盒”困境：谷歌提出多跳QA的四轴设计框架。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "推理与强化学习"
+related_tutorials:
+  - "cost-aware-retrieval-augmentation-reasoning-models-with-adaptive-retrieval-depth"
+  - "improving-context-fidelity-via-native-retrieval-augmented-reasoning"
+  - "datasage-multi-agent-collaboration-for-insight-discovery-with-external-knowledge"
+  - "cogmem-a-cognitive-memory-architecture-for-sustained-multi-turn-reasoning-in-lar"
 ---
 
 ## RAG系统的“黑盒”困境：谷歌提出多跳QA的四轴设计框架
 
-<img src="/images/2601.00536v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.00536v1/A__title.jpg" alt="RAG系统的“黑盒”困境：谷歌提出多跳QA的四轴设计框架 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在构建复杂的问答系统时，我们常常陷入一种“黑盒”焦虑：RAG（检索增强生成）和Agent（智能体）虽然效果不错，但它们内部的检索与推理究竟是如何交互的？为什么有的模型在简单问题上表现完美，遇到多跳（Multi-hop）复杂问题就“幻觉”频出？
 
-> ArXiv URL：http://arxiv.org/abs/2601.00536v1
+> ArXiv URL：https://arxiv.org/abs/2601.00536v1
 
 最近，来自 **Google Cloud** 和 **匹兹堡大学** 的研究团队深入剖析了这一痛点。他们指出，现有的文献往往只关注架构创新，却忽略了**执行过程（Execution Procedure）**本身。为了解开这个黑盒，研究团队提出了一套全新的**“四轴设计框架”**，将多跳QA系统拆解为可比较、可量化的四个核心维度。
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Towards Unbiased Calibration using Meta-Regularization"
+description: "本文提出了一种名为元正则化 (Meta-Regularization) 的新方法，通过一个元学习框架来学习无偏的、校准良好的深度学习模型。该方法包含两个核心组件：一个能为Focal Loss学习样本级连续 值的 -Net ，以及一个作为无偏、可微校准目标的平滑期望校准误差 (SECE)。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "compress-to-impress-efficient-llm-adaptation-using-a-single-gradient-step-on-100"
+  - "model-compression-using-progressive-channel-pruning"
+  - "a-comedy-of-estimators-on-kl-regularization-in-rl-training-of-llms"
+  - "adamhd-decoupled-huber-decay-regularization-for-language-model-pre-training"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2303.15057v3
+- **ArXiv URL**: https://arxiv.org/abs/2303.15057v3
 
 - **作者**: F. Gilardi; M. Kubli; Meysam Alizadeh
 

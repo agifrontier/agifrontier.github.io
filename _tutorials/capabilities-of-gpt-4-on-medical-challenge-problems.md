@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Capabilities of GPT-4 on Medical Challenge Problems"
+description: "本文通过对美国行医执照考试（USMLE）等权威医学基准的全面评测，表明通用的GPT-4模型在未经任何领域专业化微调的情况下，其医学知识水平和推理能力已远超之前的通用模型（GPT-3.5）和医学专用模型（Med-PaLM），并以高分通过考试，同时展现出更优的概率校准能力和强大的交互式解释潜力。"
+topics:
+  - "行业应用"
+related_tutorials:
+  - "knowledge-tuning-large-language-models-with-structured-medical-knowledge-bases-f"
+  - "limits-of-trust-in-medical-ai"
+  - "graph-of-thoughts-solving-elaborate-problems-with-large-language-models"
+  - "llms-encode-how-difficult-problems-are"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2303.13375v2
+- **ArXiv URL**: https://arxiv.org/abs/2303.13375v2
 
 - **作者**: S. McKinney; Harsha Nori; Nicholas King; E. Horvitz; Dean Carignan
 

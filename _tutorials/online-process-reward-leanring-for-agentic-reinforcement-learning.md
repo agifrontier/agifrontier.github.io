@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Online Process Reward Leanring for Agentic Reinforcement Learning"
+description: "本文提出了一种名为在线过程奖励学习 (Online Process Reward Learning, OPRL) 的智能体强化学习信誉分配策略，该策略通过在线交替优化一个过程奖励模型和智能体策略，将轨迹级别的偏好无缝转化为密集的步骤级奖励，从而在不依赖额外数据或步骤标签的情况下，高效稳定地训练长时程大型语言。"
+topics:
+  - "AI Agent"
+  - "推理与强化学习"
+related_tutorials:
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "the-landscape-of-agentic-reinforcement-learning-for-llms-a-survey"
+  - "verltool-towards-holistic-agentic-reinforcement-learning-with-tool-use"
+  - "process-supervised-reinforcement-learning-for-interactive-multimodal-tool-use-ag"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.19199v2
+- **ArXiv URL**: https://arxiv.org/abs/2509.19199v2
 
 - **作者**: Jianbin Jiao; Ke Wang; Fei Huang; Xiaoqian Liu; Yongbin Li; Junge Zhang; Yuchuan Wu
 

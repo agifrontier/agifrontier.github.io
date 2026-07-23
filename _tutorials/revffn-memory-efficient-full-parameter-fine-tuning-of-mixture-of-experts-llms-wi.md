@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "RevFFN: Memory-Efficient Full-Parameter Fine-Tuning of Mixture-of-Experts LLMs with Reversible Blocks"
+description: "单卡全量微调MoE大模型？RevFFN让显存占用减半，性能超越LoRA。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "parameter-efficient-fine-tuning-for-large-models-a-comprehensive-survey"
+  - "gatepro-parameter-free-expert-selection-optimization-for-mixture-of-experts-mode"
+  - "deepseek-v2-a-strong-economical-and-efficient-mixture-of-experts-language-model"
+  - "beft-bias-efficient-fine-tuning-of-language-models"
 ---
 
 ## 单卡全量微调MoE大模型？RevFFN让显存占用减半，性能超越LoRA
 
-<img src="/images/2512.20920v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.20920v1/A__title.jpg" alt="单卡全量微调MoE大模型？RevFFN让显存占用减半，性能超越LoRA 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在当今的大模型（LLM）时代，**全量微调（Full Fine-Tuning）** 依然是让模型适应下游任务的“黄金标准”。相比于只更新少量参数的 LoRA 等方法，全量微调往往能带来更强悍的性能表现。
 
-> ArXiv URL：http://arxiv.org/abs/2512.20920v1
+> ArXiv URL：https://arxiv.org/abs/2512.20920v1
 
 但现实是残酷的：全量微调对显存的需求简直是“无底洞”。尤其是对于现在流行的 **混合专家模型（MoE）**，动辄几十亿甚至上千亿的参数，想要在单张消费级甚至服务器级 GPU 上进行全量微调，几乎是不可能的任务。
 

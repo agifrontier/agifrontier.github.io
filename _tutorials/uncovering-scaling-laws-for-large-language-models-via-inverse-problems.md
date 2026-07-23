@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Uncovering Scaling Laws for Large Language Models via Inverse Problems"
+description: "本文倡导将大型语言模型（LLM）的开发挑战构建为逆问题（inverse problems），从而以一种系统性的、高成本效益的方式，发现指导LLM构建与优化的底层缩放定律（scaling laws）。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "predicting-task-performance-with-context-aware-scaling-laws"
+  - "relative-scaling-laws-for-llms"
+  - "zero-shot-performance-prediction-for-probabilistic-scaling-laws"
+  - "graph-of-thoughts-solving-elaborate-problems-with-large-language-models"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.07909v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.07909v1
 
 - **作者**: Bryan Kian Hsiang Low; Xinyuan Niu; Rui Qiao; See-Kiong Ng; Nhung Bui; Zi-Yu Khoo; Zitong Zhao; Jingtan Wang; Xiaoqiang Lin; Xinyi Xu; 等18人
 

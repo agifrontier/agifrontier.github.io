@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Unifying Large Language Models and Knowledge Graphs: A Roadmap"
+description: "大语言模型（Large Language Models, LLMs），例如ChatGPT和GPT-4，因其涌现能力和泛化性，在自然语言处理和人工智能领域引发了新的浪潮。然而，LLMs是黑箱模型，常常难以捕获和访问事实性知识。相比之下，知识图谱（Knowledge Graphs, KGs）是结构化的知识模型。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "uniform-unifying-knowledge-from-large-scale-and-diverse-pre-trained-models"
+  - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
+  - "agentic-software-engineering-foundational-pillars-and-a-research-roadmap"
+  - "ai4x-roadmap-artificial-intelligence-for-the-advancement-of-scientific-pursuit-a"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2306.08302v3
+- **ArXiv URL**: https://arxiv.org/abs/2306.08302v3
 
 - **作者**: Linhao Luo; Jiapu Wang; Chen Chen; Xindong Wu; Shirui Pan; Yufei Wang
 

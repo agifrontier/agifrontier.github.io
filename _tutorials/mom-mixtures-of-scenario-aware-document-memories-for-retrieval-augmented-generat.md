@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "MoM: Mixtures of Scenario-Aware Document Memories for Retrieval-Augmented Generation Systems"
+description: "本文提出一个名为MoM（Mixtures of Scenario-aware Document Memories）的框架，通过模拟专家阅读过程，将传统检索增强生成（RAG, Retrieval-Augmented Generation）中的被动文本分块，转变为主动提取结构化的“文档记忆”（包含大纲、核心内容。"
+topics:
+  - "RAG与知识系统"
+related_tutorials:
+  - "scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-generation-for"
+  - "rethinking-retrieval-augmented-generation-for-medicine-a-large-scale-systematic-"
+  - "retrieval-augmented-generation-for-large-language-models-a-survey"
+  - "retrieval-augmented-generation-rag-for-fintech-agentic-design-and-evaluation"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.14252v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.14252v1
 
 - **作者**: Simin Niu; Zhiyu Li; Hanyu Wang; Feiyu Xiong; Zhiyuan Ji; Jihao Zhao
 

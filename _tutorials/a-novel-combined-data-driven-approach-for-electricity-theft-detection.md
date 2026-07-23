@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "A Novel Combined Data-Driven Approach for Electricity Theft Detection"
+description: "本文提出了一种结合最大信息系数(MIC)和快速搜索密度峰值聚类(CFSFDP)的数据驱动方法，以无监督的方式，仅需少量额外信息（区域总电表数据），即可高效、准确地检测出形态各异的电力盗窃行为。"
+topics:
+  - "数据与AI工程"
+related_tutorials:
+  - "convergewriter-data-driven-bottom-up-article-construction"
+  - "dataflow-an-llm-driven-framework-for-unified-data-preparation-and-workflow-autom"
+  - "a-comprehensive-dataset-for-human-vs-ai-generated-text-detection"
+  - "a-survey-of-data-agents-emerging-paradigm-or-overstated-hype"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2411.06649v1
+- **ArXiv URL**: https://arxiv.org/abs/2411.06649v1
 
 - **作者**: Kedi Zheng; Yi Wang; C. Kang; Q. Xia; Qixin Chen
 
@@ -39,7 +47,7 @@ title: "A Novel Combined Data-Driven Approach for Electricity Theft Detection"
 
 本文提出一个结合了两种互补数据挖掘技术的组合检测框架，分别从“幅度-相关性”和“形状-相似性”两个维度量化用户的窃电嫌疑。
 
-<img src="/images/2411.06649v1/x6.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2411.06649v1/x6.jpg" alt="本文方法 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 *图：MIC-CFSFDP组合检测框架*
 
 ## 创新点
@@ -85,10 +93,10 @@ title: "A Novel Combined Data-Driven Approach for Electricity Theft Detection"
 
 2.  **识别异常点**：异常点通常远离数据密集的区域，表现为**低密度 $\rho\_{p}$** 和**高距离 $\delta\_{p}$**。
 
-    <img src="/images/2411.06649v1/x4.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
+    <img src="/images/2411.06649v1/x4.jpg" alt="基于CFSFDP的无监督异常检测 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
     *图：数据点分布示例，#26~28为异常点*
 
-    <img src="/images/2411.06649v1/x5.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
+    <img src="/images/2411.06649v1/x5.jpg" alt="基于CFSFDP的无监督异常检测 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
     *图：示例数据点的(ρ, δ)散点图*
 
 3.  **计算异常度**：本文定义了一个“异常度”指标 $\zeta\_{p}$ 来量化每个负载曲线的异常程度：
@@ -128,7 +136,7 @@ title: "A Novel Combined Data-Driven Approach for Electricity Theft Detection"
 
 实验在包含5000多用户的爱尔兰智能电表数据集上进行，模拟了6种不同的虚假数据注入（FDI）类型来代表窃电行为。
 
-<img src="/images/2411.06649v1/x2.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2411.06649v1/x2.jpg" alt="实验结论 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 *图：6种FDI窃电类型示例*
 
 

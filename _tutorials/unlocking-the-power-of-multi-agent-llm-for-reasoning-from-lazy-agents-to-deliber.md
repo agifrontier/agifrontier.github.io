@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Unlocking the Power of Multi-Agent LLM for Reasoning: From Lazy Agents to Deliberation"
+description: "本文识别并解决了多智能体 LLM 推理框架中的“懒惰智能体”问题，通过理论分析揭示其源于现有强化学习目标的内在偏差，并提出了一种名为 Dr. MAMR 的新框架，该框架利用夏普利启发的因果影响测量和一种可验证的深思熟虑（deliberation）奖励机制，以促进智能体之间更均衡、更有效的协作。"
+topics:
+  - "AI Agent"
+  - "推理与强化学习"
+related_tutorials:
+  - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
+  - "mars-optimizing-dual-system-deep-research-via-multi-agent-reinforcement-learning"
+  - "mixture-of-minds-multi-agent-reinforcement-learning-for-table-understanding"
+  - "ui-tars-2-technical-report-advancing-gui-agent-with-multi-turn-reinforcement-lea"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2511.02303v1
+- **ArXiv URL**: https://arxiv.org/abs/2511.02303v1
 
 - **作者**: Yudi Lin; Qi He; Fali Wang; Xianfeng Tang; Suhang Wang; Ramraj Chandradevan; Hui Liu; Zhiwei Zhang; Xiaomin Li
 

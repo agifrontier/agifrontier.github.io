@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Power-of-Two Quantization-Aware-Training (PoT-QAT) in Large Language Models (LLMs)"
+description: "移位代替乘法！LLM推理提速10倍、内存节省87.5%的PoT-QAT技术。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "what-makes-low-bit-quantization-aware-training-work-for-reasoning-llms-a-systema"
+  - "beyond-two-stage-training-cooperative-sft-and-rl-for-llm-reasoning"
+  - "sortedrl-accelerating-rl-training-for-llms-through-online-length-aware-schedulin"
+  - "qerl-beyond-efficiency-quantization-enhanced-reinforcement-learning-for-llms"
 ---
 
 ## 移位代替乘法！LLM推理提速10倍、内存节省87.5%的PoT-QAT技术
 
-<img src="/images/2601.02298v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.02298v1/A__title.jpg" alt="移位代替乘法！LLM推理提速10倍、内存节省87.5%的PoT-QAT技术 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 随着GPT-4、Llama 3等模型的参数量从几十亿一路狂飙到万亿级别，将这些庞然大物部署在手机、IoT设备等边缘端（Edge Devices）似乎成了一个不可能完成的任务。云端算力虽强，但高昂的成本和网络延迟始终是痛点。
 
-> ArXiv URL：http://arxiv.org/abs/2601.02298v1
+> ArXiv URL：https://arxiv.org/abs/2601.02298v1
 
 如何在资源受限的设备上跑通大模型？斯坦福大学的研究团队提出了一项极具创意的解决方案：**Power-of-Two Quantization-Aware-Training**（**PoT-QAT**）。这项技术的核心思路非常极客——强行让神经网络的权重变成“2的幂次”（比如 $2^1, 2^{-3}$），从而将昂贵的乘法运算转化为极低成本的“位移”运算。
 

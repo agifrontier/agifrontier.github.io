@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Modular Prompt Optimization: Optimizing Structured Prompts with Section-Local Textual Gradients"
+description: "像搭积木一样优化Prompt：CMU新作MPO，分块微调击败TextGrad。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "dro-instructzero-distributionally-robust-prompt-optimization-for-large-language-"
+  - "elpo-ensemble-learning-based-prompt-optimization-for-large-language-models"
+  - "prompts-generalize-with-low-data-non-vacuous-generalization-bounds-for-optimizin"
+  - "imbalanced-gradients-in-rl-post-training-of-multi-task-llms"
 ---
 
 ## 像搭积木一样优化Prompt：CMU新作MPO，分块微调击败TextGrad
 
-<img src="/images/2601.04055v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.04055v1/A__title.jpg" alt="像搭积木一样优化Prompt：CMU新作MPO，分块微调击败TextGrad 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 你是否经历过这样的绝望时刻：为了让大模型输出理想的结果，你小心翼翼地修改Prompt（提示词）中的一个词，结果整个回答的逻辑却完全崩塌了？
 
-> ArXiv URL：http://arxiv.org/abs/2601.04055v1
+> ArXiv URL：https://arxiv.org/abs/2601.04055v1
 
 对于许多开发者而言，Prompt Engineering（提示工程）更像是一门玄学而非科学。现有的自动提示优化方法（如TextGrad）往往将Prompt视为一整块不可分割的文本进行“全局手术”。这种粗放的方式不仅容易导致Prompt越改越长（出现“Prompt臃肿”），还经常引发指令冲突——修复了一个Bug，却引入了两个新Bug。
 

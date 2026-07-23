@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Outcome-based Exploration for LLM Reasoning"
+description: "本文提出了一种“基于结果的探索”（Outcome-based Exploration）方法，通过在强化学习训练中根据最终答案（而非整个推理过程）给予探索奖励，有效提升了大型语言模型在推理任务上的准确率，同时缓解了传统RL训练导致的生成多样性下降问题。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "brorl-scaling-reinforcement-learning-via-broadened-exploration"
+  - "efficient-reinforcement-learning-for-large-language-models-with-intrinsic-explor"
+  - "exploration-vs-exploitation-rethinking-rlvr-through-clipping-entropy-and-spuriou"
+  - "a-multitask-multilingual-multimodal-evaluation-of-chatgpt-on-reasoning-hallucina"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.06941v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.06941v1
 
 - **作者**: Yuda Song; Julia Kempe
 

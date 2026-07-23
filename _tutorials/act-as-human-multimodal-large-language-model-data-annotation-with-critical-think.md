@@ -1,6 +1,15 @@
 ---
 layout: default
 title: "ACT as Human: Multimodal Large Language Model Data Annotation with Critical Thinking"
+description: "AI标注成本直降90%！字节ACT框架：让大模型学会「批判性思维」。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "多模态与视觉"
+  - "数据与AI工程"
+related_tutorials:
+  - "valid-survey-simulations-with-limited-human-data-the-roles-of-prompting-fine-tun"
+  - "diffusion-language-models-are-super-data-learners"
+  - "putting-on-the-thinking-hats-a-survey-on-chain-of-thought-fine-tuning-from-the-p"
+  - "a-multitask-multilingual-multimodal-evaluation-of-chatgpt-on-reasoning-hallucina"
 ---
 
 ## AI标注成本直降90%！字节ACT框架：让大模型学会「批判性思维」
@@ -11,7 +20,7 @@ title: "ACT as Human: Multimodal Large Language Model Data Annotation with Criti
 
 > **论文标题**：ACT as Human: Multimodal Large Language Model Data Annotation with Critical Thinking
 
-> **ArXiv URL**：http://arxiv.org/abs/2511.09833v1
+> **ArXiv URL**：https://arxiv.org/abs/2511.09833v1
 
 那么，有没有一种方法，既能享受LLM的效率，又能保证接近人工标注的质量？答案来了！字节跳动、理研AIP等机构联合提出了一套名为 **ACT**（**Annotation with Critical Thinking**）的数据流水线，让AI自己标注、自己批判，再由人类专家精准介入。实验证明，这套方法能在将模型性能差距缩小到2%以内的同时，节省高达90%的人力成本！
 

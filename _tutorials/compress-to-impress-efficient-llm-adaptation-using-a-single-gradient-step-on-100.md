@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Compress to Impress: Efficient LLM Adaptation Using a Single Gradient Step on 100 Samples"
+description: "本文提出了一种名为\"Compress to Impress\"的高效LLM自适应方法，仅需在100个样本上进行单次梯度计算，并结合多子空间矩阵分解，即可在无需任何微调的情况下，快速提升模型在下游任务上的性能。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "ai-progress-should-be-measured-by-capability-per-resource-not-scale-alone-a-fram"
+  - "all-you-need-is-one-capsule-prompt-tuning-with-a-single-vector"
+  - "model-compression-using-progressive-channel-pruning"
+  - "towards-unbiased-calibration-using-meta-regularization"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.20800v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.20800v1
 
 - **作者**: Shiva Sreeram; Pratyusha Sharma; Alaa Maalouf; Daniela Rus
 

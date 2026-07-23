@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Kling-Omni Technical Report"
+description: "10步推理生成电影级视频：快手Kling-Omni全能架构揭秘。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "deepseek-v3-technical-report"
+  - "gpt-4-technical-report"
+  - "hunyuanvideo-15-technical-report"
+  - "mimo-v2-flash-technical-report"
 ---
 
 ## 10步推理生成电影级视频：快手Kling-Omni全能架构揭秘
 
-<img src="/images/2512.16776v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.16776v1/A__title.jpg" alt="10步推理生成电影级视频：快手Kling-Omni全能架构揭秘 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 视频生成领域长期存在着一种“割裂感”：有的模型擅长文生视频，有的专精于视频编辑，而有的则需要借助外部工具才能理解复杂的视觉指令。这种“流水线式”的拼凑方案，不仅效率低下，更难以捕捉用户细腻的创作意图。
 
-> ArXiv URL：http://arxiv.org/abs/2512.16776v1
+> ArXiv URL：https://arxiv.org/abs/2512.16776v1
 
 快手团队最新发布的 **Kling-Omni** 技术报告，正是为了终结这种割裂。作为一款端到端的全能生成框架，Kling-Omni 不仅打破了视频生成、编辑与推理之间的壁垒，更通过高效的蒸馏技术将推理步数压缩至惊人的 10 步。这不仅仅是一个内容创作工具，更是向着能够感知、推理并模拟物理世界的“多模态世界模拟器”迈出的关键一步。
 

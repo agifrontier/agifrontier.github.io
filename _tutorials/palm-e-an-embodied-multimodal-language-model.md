@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "PaLM-E: An Embodied Multimodal Language Model"
+description: "本文提出了一种具身多模态语言模型 PaLM-E，通过将图像等连续的真实世界传感器数据直接注入到预训练语言模型的词嵌入空间，从而在一个统一的模型中实现了机器人规划、视觉问答和语言理解等多种任务，并证明了跨领域联合训练带来的正向知识迁移效应。"
+topics:
+  - "具身智能与机器人"
+  - "多模态与视觉"
+related_tutorials:
+  - "a-comprehensive-survey-on-world-models-for-embodied-ai"
+  - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"
+  - "voyager-an-open-ended-embodied-agent-with-large-language-models"
+  - "a-multitask-multilingual-multimodal-evaluation-of-chatgpt-on-reasoning-hallucina"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2303.03378v1
+- **ArXiv URL**: https://arxiv.org/abs/2303.03378v1
 
 - **作者**: Karol Hausman; Peter R. Florence; Igor Mordatch; Mehdi S. M. Sajjadi; Tianhe Yu; Q. Vuong; Daniel Duckworth; Corey Lynch; P. Sermanet; Vincent Vanhoucke; 等12人
 
@@ -17,7 +26,7 @@ title: "PaLM-E: An Embodied Multimodal Language Model"
 
 ## 关键定义
 *   **具身语言模型 (Embodied Language Models)**：本文提出的核心概念，指一类直接将来自真实世界的连续传感器模态（如图像、机器人状态）整合到语言模型中的模型。这使得语言模型能够建立词语与感知之间的联系，从而进行更具“接地气”（grounded）的推理。
-*   **多模态语句 (Multimodal Sentences)**：PaLM-E 的核心输入形式。它是一种特殊的 Token 序列，其中来自不同模态（如图像、状态）的输入被编码成向量，并与文本 Token 的向量交错排列，形成一个统一的输入序列供语言模型处理。例如，$$Q: What happened between <img 1> and <img 2>?$$
+*   **多模态语句 (Multimodal Sentences)**：PaLM-E 的核心输入形式。它是一种特殊的 Token 序列，其中来自不同模态（如图像、状态）的输入被编码成向量，并与文本 Token 的向量交错排列，形成一个统一的输入序列供语言模型处理。例如，$$Q: What happened between <img 1 alt="关键定义 图示"> and <img 2 alt="关键定义 图示">?$$
 *   **实体指代 (Entity Referrals)**：一种针对物体中心（object-centric）表征的专门技术。在输入提示中，通过 $$Object 1 is <obj 1>$$ 这样的文本为场景中的每个物体分配一个唯一的标签。这使得模型在生成的计划中可以使用如 $$obj 1$$ 这样的特殊 Token 来明确指代特定物体，解决了当多个物体属性相似时难以用自然语言区分的问题。
 
 ## 相关工作

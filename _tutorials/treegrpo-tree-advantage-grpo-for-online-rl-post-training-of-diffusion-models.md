@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "TreeGRPO: Tree-Advantage GRPO for Online RL Post-Training of Diffusion Models"
+description: "训练加速2.4倍！TreeGRPO用“决策树”革新AI绘画模型对齐。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "多模态与视觉"
+  - "推理与强化学习"
+related_tutorials:
+  - "qwenlong-l15-post-training-recipe-for-long-context-reasoning-and-memory-manageme"
+  - "on-grpo-collapse-in-search-r1-the-lazy-likelihood-displacement-death-spiral"
+  - "diffusion-language-models-are-super-data-learners"
+  - "inpainting-guided-policy-optimization-for-diffusion-large-language-models"
 ---
 
 ## 训练加速2.4倍！TreeGRPO用“决策树”革新AI绘画模型对齐
 
-<img src="/images/2512.08153v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.08153v1/A__title.jpg" alt="训练加速2.4倍！TreeGRPO用“决策树”革新AI绘画模型对齐 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 让AI画出更符合我们心意的作品，是生成模型发展的关键一步。
 
-> ArXiv URL：http://arxiv.org/abs/2512.08153v1
+> ArXiv URL：https://arxiv.org/abs/2512.08153v1
 
 但这背后的人类偏好对齐，往往需要消耗巨大的计算资源。
 

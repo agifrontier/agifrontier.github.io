@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "EvoClaw: Evaluating AI Agents on Continuous Software Evolution"
+description: "AI Agent的“金鱼记忆”：EvoClaw揭示其长期编码性能从80%暴跌至38%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "flex-continuous-agent-evolution-via-forward-learning-from-experience"
+  - "halumem-evaluating-hallucinations-in-memory-systems-of-agents"
+  - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
+  - "agentic-software-engineering-foundational-pillars-and-a-research-roadmap"
 ---
 
 ## AI Agent的“金鱼记忆”：EvoClaw揭示其长期编码性能从80%暴跌至38%
 
-<img src="/images/2603.13428v1/A__title.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2603.13428v1/A__title.jpg" alt="AI Agent的“金鱼记忆”：EvoClaw揭示其长期编码性能从80%暴跌至38% 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 近来，从Devin到Claude，AI编程智能体（Agent）的能力似乎正在以惊人的速度进化，它们能独立完成复杂的编码任务，甚至解决GitHub上的真实问题。然而，这些光鲜的成功案例，是否掩盖了一个更深层次的挑战？
 
-> ArXiv URL：http://arxiv.org/abs/2603.13428v1
+> ArXiv URL：https://arxiv.org/abs/2603.13428v1
 
 如果让AI Agent不是完成一次性的“冲刺”，而是参与一场持续数月的软件开发“马拉松”，它还能保持高效和稳定吗？
 

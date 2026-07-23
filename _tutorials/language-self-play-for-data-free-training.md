@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Language Self-Play For Data-Free Training"
+description: "本文提出了一种名为语言自博弈（Language Self-Play, LSP）的无数据训练方法，通过构建一个强化学习框架，让大型语言模型在“挑战者”（生成难题）和“解答者”（解答问题）两种角色间自我对抗，从而在无需外部训练数据的情况下实现持续自我提升。"
+topics:
+  - "模型训练与优化"
+  - "数据与AI工程"
+related_tutorials:
+  - "in-context-distillation-with-self-consistency-cascades-a-simple-training-free-wa"
+  - "a-survey-on-efficient-large-language-model-training-from-data-centric-perspectiv"
+  - "demystifying-synthetic-data-in-llm-pre-training-a-systematic-study-of-scaling-la"
+  - "reusing-pre-training-data-at-test-time-is-a-compute-multiplier"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2509.07414v1
+- **ArXiv URL**: https://arxiv.org/abs/2509.07414v1
 
 - **作者**: Qi Ma; Vijai Mohan; Yuandong Tian
 
@@ -33,7 +42,7 @@ title: "Language Self-Play For Data-Free Training"
 
 本文提出了一种名为语言自博弈（LSP）的算法，其核心思想是将LLM的持续学习过程建模为一个双人竞争游戏，并通过自博弈（self-play）的方式，让单个模型驱动这个过程，从而实现无数据训练。
 
-<img src="/images/2509.07414v1/page_1_Figure_0.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2509.07414v1/page_1_Figure_0.jpg" alt="本文方法 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 Figure 1: 语言自博弈智能体在两种模式下运行：挑战者和解答者。挑战者生成指令，解答者遵循指令。解答者学习改进对提示的响应，而挑战者则学习使提示变得更困难。两种模式由同一个模型实例化，从而能够在不断提高质量的自生成数据上进行永久训练。
 
@@ -129,7 +138,7 @@ $${% endraw %}
 *   **结果**: 尽管完全没有使用任何外部训练数据，LSP 和 LSP-Zero 达到的性能与数据驱动的 GRPO 基线相当。这证明了无数据自博弈训练的可行性。
 *   **对比**: LSP 的整体表现优于 LSP-Zero，证实了“质量自奖励”在稳定训练中的重要作用。特别是在 Vicuna 等开放式对话任务上，LSP 方法的性能显著优于 GRPO，这可能是因为“挑战者”生成的查询本身就具有这种探索性和开放性。
 
-<img src="/images/2509.07414v1/page_5_Figure_4.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2509.07414v1/page_5_Figure_4.jpg" alt="1. 从基础模型开始训练 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 **Figure 2**: 在AlpacaEval基准上，使用RL（GRPO，有数据支持，黄色条）和LSP-Zero & LSP（无数据，分别为红色和蓝色条）训练的模型与基础模型（Llama-3.2-3B-Instruct）的胜率对比。所有算法都在整体基准上优于基础模型。GRPO, LSP-Zero和LSP的总体胜率分别为 40.9%, 40.1%和40.6%。
 
@@ -139,7 +148,7 @@ $${% endraw %}
 *   **结果**: 在 GRPO 模型的基础上继续进行 LSP 训练，模型的整体胜率得到了显著提升（从 40.9% 提升到 43.1%）。这表明 LSP 不仅可以从零开始训练，还可以作为一种有效的“后处理”步骤，进一步增强已调优模型的能。
 *   **表现**: 同样地，最大的性能增益出现在 Vicuna 数据集上。
 
-<img src="/images/2509.07414v1/page_6_Figure_3.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2509.07414v1/page_6_Figure_3.jpg" alt="2. 作为已有模型的后续训练阶段 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 **Figure 3**: 在AlpacaEval基准上，使用LSP-Zero和LSP（无数据，红色和蓝色条）训练的模型与其初始模型——用GRPO（有数据支持，黄色条）训练的模型——的胜率对比。LSP在整体上和在Vicuna数据集上的表现均优于GRPO。具体胜率分别为GRPO 40.9%，LSP-Zero 40.0%，LSP 43.1%。
 

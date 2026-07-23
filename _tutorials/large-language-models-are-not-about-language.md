@@ -1,13 +1,21 @@
 ---
 layout: default
 title: "Large language models are not about language"
+description: "剑桥等名校联合檄文：LLM根本不懂语言！70MW能耗下的概率游戏。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "ai-progress-should-be-measured-by-capability-per-resource-not-scale-alone-a-fram"
+  - "do-not-step-into-the-same-river-twice-learning-to-reason-from-trial-and-error"
+  - "expand-neurons-not-parameters"
+  - "increasing-the-thinking-budget-is-not-all-you-need"
 ---
 
 ## 剑桥等名校联合檄文：LLM根本不懂语言！70MW能耗下的概率游戏
 
 当全世界都在为 **大语言模型** (**Large Language Models, LLMs**) 的流畅对话和惊人能力欢呼时，来自剑桥大学、麦考瑞大学等顶尖学府的语言学家们却泼下了一盆冷水。
 
-> ArXiv URL：http://arxiv.org/abs/2512.13441v1
+> ArXiv URL：https://arxiv.org/abs/2512.13441v1
 
 他们在一篇最新的评论文章中直言不讳地指出：**对于语言学研究而言，LLM 几乎是“无用”的。**
 

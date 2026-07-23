@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "SkillRouter: Retrieve-and-Rerank Skill Selection for LLM Agents at Scale"
+description: "颠覆常识！阿里SkillRouter：Agent选对工具，代码比描述重要44%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "AI Agent"
+related_tutorials:
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+  - "ai-meets-brain-memory-systems-from-cognitive-neuroscience-to-autonomous-agents"
+  - "dynamic-affective-memory-management-for-personalized-llm-agents"
+  - "forgetful-but-faithful-a-cognitive-memory-architecture-and-benchmark-for-privacy"
 ---
 
 ## 颠覆常识！阿里SkillRouter：Agent选对工具，代码比描述重要44%
 
-<img src="/images/2603.22455v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.22455v1/A__title.jpg" alt="颠覆常识！阿里SkillRouter：Agent选对工具，代码比描述重要44% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当下的AI Agent正变得越来越“全能”，它们的背后是一个庞大且不断增长的技能（Skill）生态系统。从代码生成到API集成，成千上万的工具和插件让Agent的能力边界不断拓宽。
 
-> ArXiv URL：http://arxiv.org/abs/2603.22455v1
+> ArXiv URL：https://arxiv.org/abs/2603.22455v1
 
 但这带来了一个棘手的问题：Agent的上下文窗口有限，不可能一次性“看到”所有可用的几万个技能。如何在海量技能库中，为用户的特定任务精准地“导航”到最合适的那个？
 

@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Prompt-R1: Collaborative Automatic Prompting Framework via End-to-end Reinforcement Learning"
+description: "本文提出了一种名为 Prompt-R1 的端到端强化学习框架，该框架通过训练一个小型语言模型（作为智能体）以多轮交互的方式生成并优化提示，从而与一个大型语言模型（作为环境）协作，以更低的成本和更高的效率解决复杂问题。"
+topics:
+  - "推理与强化学习"
+related_tutorials:
+  - "a-multiobjective-reinforcement-learning-framework-for-microgrid-energy-managemen"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "a-survey-of-reinforcement-learning-for-large-reasoning-models"
+  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2511.01016v1
+- **ArXiv URL**: https://arxiv.org/abs/2511.01016v1
 
 - **作者**: Jiapu Wang; Haoming Liu; Xueyuan Lin; Haoran Luo; Rui Mao; Erik Cambria
 

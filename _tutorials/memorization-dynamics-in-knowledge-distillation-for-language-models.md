@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Memorization Dynamics in Knowledge Distillation for Language Models"
+description: "蒸馏即遗忘？大模型记忆率暴跌50%，揭秘知识蒸馏的“隐私红利”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "what-does-loss-optimization-actually-teach-if-anything-knowledge-dynamics-in-con"
+  - "bge-m3-embedding-multi-lingual-multi-functionality-multi-granularity-text-embedd"
+  - "balanced-actor-initialization-stable-rlhf-training-of-distillation-based-reasoni"
+  - "in-context-distillation-with-self-consistency-cascades-a-simple-training-free-wa"
 ---
 
 ## 蒸馏即遗忘？大模型记忆率暴跌50%，揭秘知识蒸馏的“隐私红利”
 
-<img src="/images/2601.15394v1/A__title.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2601.15394v1/A__title.jpg" alt="蒸馏即遗忘？大模型记忆率暴跌50%，揭秘知识蒸馏的“隐私红利” 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 在当今的大模型（LLM）时代，**知识蒸馏**（**Knowledge Distillation, KD**）已经成为一种标准的“降本增效”手段。无论是 DeepSeek-R1 的蒸馏系列，还是各大厂商推出的端侧小模型，本质上都是为了把千亿参数巨兽的能力迁移到更轻量级的模型上。
 
-> ArXiv URL：http://arxiv.org/abs/2601.15394v1
+> ArXiv URL：https://arxiv.org/abs/2601.15394v1
 
 通常我们认为，蒸馏只是为了让小模型“变强”。但你是否想过，蒸馏过程本身可能也是一种极佳的“隐私防火墙”？
 

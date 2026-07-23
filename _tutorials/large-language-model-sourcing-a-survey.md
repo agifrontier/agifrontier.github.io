@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "Large Language Model Sourcing: A Survey"
+description: "大语言模型溯源：一篇综述。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+  - "a-survey-of-ai-scientists-surveying-the-automatic-scientists-and-research"
+  - "a-survey-of-large-language-models"
+  - "a-survey-of-vibe-coding-with-large-language-models"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.10161v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.10161v1
 
 - **作者**: Xueqi Cheng; Huawei Shen; Sunhao Dai; Jia Gu; Zihao Wei; Zhiyi Yin; Xiang Li; Zenghao Duan; Liang Pang; Kangxi Wu; 等11人
 

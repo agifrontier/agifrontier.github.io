@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "How Does RL Post-training Induce Skill Composition? A Case Study on Countdown"
+description: "RL训练的秘密：LLM学会了举一反三，为何却被“先易后难”的结构卡住？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "jailbroken-how-does-llm-safety-training-fail"
+  - "what-does-loss-optimization-actually-teach-if-anything-knowledge-dynamics-in-con"
+  - "demystifying-synthetic-data-in-llm-pre-training-a-systematic-study-of-scaling-la"
+  - "what-makes-low-bit-quantization-aware-training-work-for-reasoning-llms-a-systema"
 ---
 
 ## RL训练的秘密：LLM学会了举一反三，为何却被“先易后难”的结构卡住？
 
-<img src="/images/2512.01775v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.01775v1/A__title.jpg" alt="RL训练的秘密：LLM学会了举一反三，为何却被“先易后难”的结构卡住？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 我们都知道，强化学习（RL）是提升大模型推理能力的一剂“猛药”。但它究竟是如何起作用的？仅仅是让模型能处理更长、更复杂的任务序列吗？还是说，它教会了模型一种更根本的能力——像搭乐高一样，将已知的小技能组合成全新的解决方案？
 
-> ArXiv URL：http://arxiv.org/abs/2512.01775v1
+> ArXiv URL：https://arxiv.org/abs/2512.01775v1
 
 最近，普林斯顿大学的一项研究深入“解剖”了RL训练过程，试图揭开这个谜团。研究发现，RL不仅能让模型处理更长的问题，更重要的是，它确实能引导模型学会**组合泛化**（**compositional generalization**）。
 

@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "FLEx: Language Modeling with Few-shot Language Explanations"
+description: "仅需4-11个纠错案例！FLEx：消除大模型83%顽固错误，无需参数微调。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "rags-to-riches-rag-like-few-shot-learning-for-large-language-model-role-playing"
+  - "sparsegpt-massive-language-models-can-be-accurately-pruned-in-one-shot"
+  - "zero-shot-performance-prediction-for-probabilistic-scaling-laws"
+  - "artificial-hippocampus-networks-for-efficient-long-context-modeling"
 ---
 
 ## 仅需4-11个纠错案例！FLEx：消除大模型83%顽固错误，无需参数微调
 
-<img src="/images/2601.04157v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.04157v1/A__title.jpg" alt="仅需4-11个纠错案例！FLEx：消除大模型83%顽固错误，无需参数微调 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型（LLM）虽然在数学解题和开放问答上表现出色，但它们有一个令人头疼的毛病：**死性不改**。如果模型在一个特定的逻辑陷阱上跌倒，它往往会在类似的查询中反复跌倒。
 
-> ArXiv URL：http://arxiv.org/abs/2601.04157v1
+> ArXiv URL：https://arxiv.org/abs/2601.04157v1
 
 通常，我们想到的解决办法要么是昂贵的微调（Fine-tuning），要么是复杂的检索增强生成（RAG）。但有没有一种更轻量级的方法，能像人类老师一样，总结几个典型错题，就能让模型“举一反三”？
 

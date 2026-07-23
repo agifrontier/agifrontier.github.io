@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Increasing the Thinking Budget is Not All You Need"
+description: "思考预算并非万能：揭秘让大模型更聪明的“性价比”策略。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "all-you-need-is-one-capsule-prompt-tuning-with-a-single-vector"
+  - "llm-router-prefill-is-all-you-need"
+  - "camformer-associative-memory-is-all-you-need"
+  - "not-all-parameters-are-created-equal-smart-isolation-boosts-fine-tuning-performa"
 ---
 
 ## 思考预算并非万能：揭秘让大模型更聪明的“性价比”策略
 
-<img src="/images/2512.19585v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.19585v1/A__title.jpg" alt="思考预算并非万能：揭秘让大模型更聪明的“性价比”策略 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在AI大模型（LLM）的竞赛中，OpenAI的o1和DeepSeek-R1等“思考型”模型（Thinking-Capable Models）掀起了一股新浪潮。大家似乎达成了一个共识：让模型“想”得越久，答案就越准确。
 
-> ArXiv URL：http://arxiv.org/abs/2512.19585v1
+> ArXiv URL：https://arxiv.org/abs/2512.19585v1
 
 但事实真的如此吗？只要无脑堆砌推理时间，模型就能无限变强吗？
 

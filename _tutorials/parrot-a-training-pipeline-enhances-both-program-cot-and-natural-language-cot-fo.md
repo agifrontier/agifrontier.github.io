@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Parrot: A Training Pipeline Enhances Both Program CoT and Natural Language CoT for Reasoning"
+description: "本文提出了一种名为 Parrot 的新颖训练流水线，旨在通过三个专门设计的子任务和混合训练策略，相互增强程序思维链（P-CoT）和自然语言思维链（N-CoT）的性能，从而同时提升两种范式下的数学推理能力。"
+topics:
+  - "推理与强化学习"
+  - "模型训练与优化"
+related_tutorials:
+  - "balanced-actor-initialization-stable-rlhf-training-of-distillation-based-reasoni"
+  - "beyond-two-stage-training-cooperative-sft-and-rl-for-llm-reasoning"
+  - "learning-to-reason-training-llms-with-gpt-oss-or-deepseek-r1-reasoning-traces"
+  - "on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language-model"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.25310v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.25310v1
 
 - **作者**: Qi Zhang; Senjie Jin; Yuhui Wang; Tao Gui; Xinbo Zhang; Hong Lu; Sirui Song; Zhiheng Xi; Yuhao Zhou; Peng Sun; 等12人
 

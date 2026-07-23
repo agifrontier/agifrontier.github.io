@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "A Survey on Large Language Model (LLM) Security and Privacy: The Good, the Bad, and the Ugly"
+description: "大型语言模型（LLM）安全与隐私综述：善、恶与丑。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "AI安全与评测"
+related_tutorials:
+  - "a-survey-on-evaluation-of-large-language-models"
+  - "a-survey-on-llm-as-a-judge"
+  - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
+  - "rlhf-a-comprehensive-survey-for-cultural-multimodal-and-low-latency-alignment-me"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2312.02003v3
+- **ArXiv URL**: https://arxiv.org/abs/2312.02003v3
 
 - **作者**: Yue Zhang; Eric Sun; Yifan Yao; Yuanfang Cai; Kaidi Xu; Jinhao Duan
 

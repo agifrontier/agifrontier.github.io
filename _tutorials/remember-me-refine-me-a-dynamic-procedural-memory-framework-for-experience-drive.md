@@ -1,15 +1,24 @@
 ---
 layout: default
 title: "Remember Me, Refine Me: A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution"
+description: "记忆即算力？阿里ReMe让8B模型超越14B，揭秘动态记忆进化论。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "RAG与知识系统"
+  - "AI Agent"
+related_tutorials:
+  - "memevolve-meta-evolution-of-agent-memory-systems"
+  - "flex-continuous-agent-evolution-via-forward-learning-from-experience"
+  - "evoroute-experience-driven-self-routing-llm-agent-systems"
+  - "learning-on-the-job-an-experience-driven-self-evolving-agent-for-long-horizon-ta"
 ---
 
 ## 记忆即算力？阿里ReMe让8B模型超越14B，揭秘动态记忆进化论
 
-<img src="/images/2512.10696v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.10696v1/A__title.jpg" alt="记忆即算力？阿里ReMe让8B模型超越14B，揭秘动态记忆进化论 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在这个“大力出奇迹”的时代，我们习惯了认为模型参数越大，能力越强。但阿里巴巴和上海交通大学的一项最新研究给出了一个反直觉的结论：**一个拥有“聪明大脑”的小模型，完全可以战胜一个“健忘”的大模型。**
 
-> ArXiv URL：http://arxiv.org/abs/2512.10696v1
+> ArXiv URL：https://arxiv.org/abs/2512.10696v1
 
 这项名为 **ReMe**（**Remember Me, Refine Me**）的研究提出了一种全新的动态程序记忆框架。最令人震惊的实验结果是：搭载了 ReMe 的 **Qwen3-8B** 模型，在复杂任务上的表现竟然超越了没有记忆加持的 **Qwen3-14B**。
 

@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "Mixture-of-Minds: Multi-Agent Reinforcement Learning for Table Understanding"
+description: "本文提出了一种名为 Mixture-of-Minds (MoM) 的多智能体框架，它将表格理解任务分解为规划、编码和回答三个专门的角色，并引入一个基于蒙特卡洛树搜索（MCTS）和强化学习（RL）的自提升训练框架，从而显著提升了模型的表格推理能力。"
+topics:
+  - "AI Agent"
+  - "推理与强化学习"
+related_tutorials:
+  - "mars-optimizing-dual-system-deep-research-via-multi-agent-reinforcement-learning"
+  - "ui-tars-2-technical-report-advancing-gui-agent-with-multi-turn-reinforcement-lea"
+  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
+  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.20176v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.20176v1
 
 - **作者**: Jiayi Liu; Lizhu Zhang; Yuhang Zhou; Fei Liu; Ke Li; Mingyi Wang; Abhishek Kumar; Serena Li; Mingrui Zhang; Zhuokai Zhao; 等13人
 

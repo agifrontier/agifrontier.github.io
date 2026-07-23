@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Excess Description Length of Learning Generalizable Predictors"
+description: "微调是“唤醒”还是“注入”？Anthropic提出EDL：量化模型泛化能力的标尺。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "基础模型与理论"
+related_tutorials:
+  - "auto-rubric-learning-to-extract-generalizable-criteria-for-reward-modeling"
+  - "can-llms-track-their-output-length-a-dynamic-feedback-mechanism-for-precise-leng"
+  - "quantitative-bounds-for-length-generalization-in-transformers"
+  - "dler-doing-length-penalty-right-incentivizing-more-intelligence-per-token-via-re"
 ---
 
 ## 微调是“唤醒”还是“注入”？Anthropic提出EDL：量化模型泛化能力的标尺
 
-<img src="/images/2601.04728v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.04728v1/A__title.jpg" alt="微调是“唤醒”还是“注入”？Anthropic提出EDL：量化模型泛化能力的标尺 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当我们对大语言模型（LLM）进行微调时，一个核心但往往被忽视的问题是：**模型变强了，到底是因为它学会了全新的知识（Teaching），还是仅仅被“唤醒”了沉睡在预训练参数中的潜在能力（Elicitation）？**
 
-> ArXiv URL：http://arxiv.org/abs/2601.04728v1
+> ArXiv URL：https://arxiv.org/abs/2601.04728v1
 
 这不仅仅是一个学术问题，它关乎模型安全与评估。如果是“唤醒”，那么哪怕只有几条数据，恶意行为者也可能解锁模型的危险能力；如果是“教学”，则门槛要高得多。然而，传统的准确率（Accuracy）或损失曲线（Loss Curve）无法区分这两者——因为在这两种情况下，指标都会上升。
 

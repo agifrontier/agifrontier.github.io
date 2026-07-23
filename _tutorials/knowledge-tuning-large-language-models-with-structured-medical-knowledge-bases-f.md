@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "Knowledge-tuning Large Language Models with Structured Medical Knowledge Bases for Reliable Response Generation in Chinese"
+description: "准确率飙升至86.7%！哈工大发布“知识调优”，专治医疗大模型“一本正经胡说八道”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "行业应用"
+related_tutorials:
+  - "failure-makes-the-agent-stronger-enhancing-accuracy-through-structured-reflectio"
+  - "capabilities-of-gpt-4-on-medical-challenge-problems"
+  - "limits-of-trust-in-medical-ai"
+  - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
 ---
 
 ## 准确率飙升至86.7%！哈工大发布“知识调优”，专治医疗大模型“一本正经胡说八道”
 
-<img src="/images/2309.04175v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2309.04175v1/A__title.jpg" alt="准确率飙升至86.7%！哈工大发布“知识调优”，专治医疗大模型“一本正经胡说八道” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当AI大模型被问到“肝胆管结石”的治疗药物时，它却推荐了治疗结核病的“利福平”。这个真实案例暴露了一个致命问题：通用大模型在专业领域，尤其是在人命关天的医疗领域，可能会产生严重“幻觉”。
 
-> ArXiv URL：http://arxiv.org/abs/2309.04175v1
+> ArXiv URL：https://arxiv.org/abs/2309.04175v1
 
 如何让AI医生变得既博学又可靠？
 

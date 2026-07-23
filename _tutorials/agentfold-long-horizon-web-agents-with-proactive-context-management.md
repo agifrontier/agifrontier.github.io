@@ -1,10 +1,18 @@
 ---
 layout: default
 title: "AgentFold: Long-Horizon Web Agents with Proactive Context Management"
+description: "本文提出了一种名为 AgentFold 的新型网页智能体，它通过模仿人类主动管理心智暂存区的方式，在执行长时程任务时对上下文进行主动“折叠”和整合，从而在保持上下文简洁性的同时避免关键信息丢失，并以较小的模型规模实现了顶尖的性能。"
+topics:
+  - "AI Agent"
+related_tutorials:
+  - "a-subgoal-driven-framework-for-improving-long-horizon-llm-agents"
+  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
+  - "harnessing-uncertainty-entropy-modulated-policy-gradients-for-long-horizon-llm-a"
+  - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2510.24699v1
+- **ArXiv URL**: https://arxiv.org/abs/2510.24699v1
 
 - **作者**: Zhengwei Tao; Yong Jiang; Pengjun Xie; Rui Ye; Huifeng Yin; Jingren Zhou; Kuan Li; Siheng Chen; Zhongwang Zhang; Fei Huang; 等15人
 

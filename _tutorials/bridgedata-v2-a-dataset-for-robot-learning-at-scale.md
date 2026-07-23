@@ -1,10 +1,19 @@
 ---
 layout: default
 title: "BridgeData V2: A Dataset for Robot Learning at Scale"
+description: "本文介绍了 BridgeData V2，一个大规模、多样化的机器人操作行为数据集，旨在推动可扩展机器人学习的研究。该数据集包含在24个环境中、使用一个公开可用的低成本机器人收集的超过6万条轨迹，并证明了其能够支持多种主流学习算法训练出可泛化到新任务、新环境甚至新机构的策略。"
+topics:
+  - "具身智能与机器人"
+  - "数据与AI工程"
+related_tutorials:
+  - "scribes-web-scale-script-based-semi-structured-data-extraction-with-reinforcemen"
+  - "octo-an-open-source-generalist-robot-policy"
+  - "π_0-a-vision-language-action-flow-model-for-general-robot-control"
+  - "a-comprehensive-dataset-for-human-vs-ai-generated-text-detection"
 ---
 
 
-- **ArXiv URL**: http://arxiv.org/abs/2308.12952v3
+- **ArXiv URL**: https://arxiv.org/abs/2308.12952v3
 
 - **作者**: Manish P Bhatt; I. Evtimov; Xiaoqing Tan; Jonas Gehring; Tal Remez; J. Rapin; Gabriel Synnaeve; F. Azhar; Itai Gat; Louis Martin; 等15人
 

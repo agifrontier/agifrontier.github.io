@@ -1,15 +1,23 @@
 ---
 layout: default
 title: "End-to-End Test-Time Training for Long Context"
+description: "128k长文本推理提速2.7倍：TTT-E2E让模型学会“边读边学”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
+topics:
+  - "模型训练与优化"
+related_tutorials:
+  - "lets-not-just-put-things-in-context-test-time-training-for-long-context-llms"
+  - "reusing-pre-training-data-at-test-time-is-a-compute-multiplier"
+  - "understanding-the-role-of-training-data-in-test-time-scaling"
+  - "every-attention-matters-an-efficient-hybrid-architecture-for-long-context-reason"
 ---
 
 ## 128k长文本推理提速2.7倍：TTT-E2E让模型学会“边读边学”
 
-<img src="/images/2512.23675v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.23675v1/A__title.jpg" alt="128k长文本推理提速2.7倍：TTT-E2E让模型学会“边读边学” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 人类的记忆机制非常奇妙：当你听完一场长达两小时的讲座，你可能无法逐字逐句复述讲师的每一句话，但你的大脑已经通过这场“训练”更新了认知，掌握了核心直觉。这种“边听边学、压缩信息”的能力，正是当前大模型领域最渴望突破的瓶颈。
 
-> ArXiv URL：http://arxiv.org/abs/2512.23675v1
+> ArXiv URL：https://arxiv.org/abs/2512.23675v1
 
 目前的**大语言模型**（**LLM**）主要面临两难选择：**Transformer** 的全注意力机制（Full Attention）能完美回忆所有细节，但计算成本随长度呈平方级增长，长文本推理慢如蜗牛；而像 **Mamba** 这样的 **RNN** 类架构虽然推理速度快（恒定成本），但在处理超长上下文时，性能往往不如人意，容易“遗忘”关键信息。
 
