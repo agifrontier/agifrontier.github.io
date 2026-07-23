@@ -142,7 +142,7 @@ BN最直接的好处就是让训练过程更加稳定，从而可以使用更高
 
 实验表明，BN允许学习率提高几个数量级，从而极大地缩短了达到相同精度所需的训练步数。在ImageNet分类任务上，一个加入了BN的Inception网络仅用原模型 **7%** 的训练步数就达到了相同的准确率。
 
-![BN Training Steps Comparison](images/page_6_Figure_0.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/1502.03167v3)
 
 **图：训练步数对比。** 在ImageNet上，标准的Inception模型（藍色）需要约1400万步达到72.2%的准确率，而BN-Inception（红色）仅需100万步就达到了73.0%的准确率。
 

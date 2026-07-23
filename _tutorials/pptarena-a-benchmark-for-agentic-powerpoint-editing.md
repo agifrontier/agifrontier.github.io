@@ -63,7 +63,7 @@ related_tutorials:
 
 基于此，PPTPilot的架构设计非常巧妙：
 
-![PPTPilot：结构感知的编辑智能体 图示](images/page_5_Figure_8.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2512.03042v1)
 
 其工作流程可以概括为“**规划-编辑-验证**”的迭代循环：
 

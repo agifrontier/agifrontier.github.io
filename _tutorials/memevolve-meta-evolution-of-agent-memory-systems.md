@@ -86,7 +86,7 @@ MemEvolve的效果如何？作者在GAIA、WebWalkerQA等四个高难度Benchmar
 
     - **跨框架**：在一种Agent框架上进化出的记忆，迁移到另一种截然不同的框架上同样有效。
 
-![MemEvolve Performance](images/page_1_Figure_0.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2512.18746v1)
 
 *图：MemEvolve与几种流行的自进化Agent记忆系统在不同基准上的对比。可以看到MemEvolve（红色）在各项指标上均处于领先地位。*
 

@@ -31,7 +31,7 @@ related_tutorials:
 
 3.  **ParaGator推理策略**：一种在测试时聚合多个并行解法的技巧，进一步提升最终答案的准确性。
 
-![Principia概览](images/page_2_Figure_1.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2603.18886v1)
 
 ### Principia：为复杂数学推理量身打造的“健身房”
 
@@ -43,7 +43,7 @@ related_tutorials:
 
 **Principia Collection**：一个包含24.8万个合成问题的海量训练数据集。这些问题源自数学和物理学的研究生级别分类体系，答案覆盖了方程、不等式、矩阵、分段函数等六种复杂的数学对象类型。
 
-![Principiacollection中的问题示例](images/page_11_Figure_0.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2603.18886v1)
 
 通过在这个“健身房”中进行强化学习训练，多个基础模型在PrincipiaBench上的平均性能提升了7.22%到18.35%之多！
 
@@ -57,7 +57,7 @@ related_tutorials:
 
 为了验证“模型裁判”的可靠性，他们还创建了 **Principia VerifyBench**。结果显示，强大的模型裁判在判断复杂数学对象等价性方面，远胜于传统的规则验证器。
 
-![模型裁判在训练中的重要性](images/page_16_Figure_2.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2603.18886v1)
 
 如上图所示，当训练数据（Principia Collection）包含复杂数学对象时，使用强大的模型裁判（GPT-OSS-120B）进行训练，模型性能从13.31飙升至31.80。而使用规则验证器（math-verify）的提升则非常有限，一个稍有偏差的验证器甚至会导致性能下降。
 
@@ -67,7 +67,7 @@ related_tutorials:
 
 为了更有效地训练模型，研究团队提出了**RLLM**（**Reinforcement Learning with a strong LM as a Reward Model**），即使用一个强大的语言模型作为奖励模型进行强化学习。
 
-![RLLM框架图](images/page_20_Figure_1.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2603.18886v1)
 
 这与传统的RLHF（依赖人类偏好）和RLVR（依赖规则验证）不同。RLLM的核心思想是，这个作为奖励模型的语言模型（LM-as-RM）本身也是通过强化学习训练出来的，并且是“在策略”（on-policy）训练的。
 
@@ -85,7 +85,7 @@ related_tutorials:
 
 例如，下面这个问题要求推导出一个包含复数求和的表达式，这显然不是一个简单的数值答案能概括的。
 
-![image](images/page_2_Figure_1.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2603.18886v1)
 
 为了填补这一空白，该研究推出了Principia，它包含三个核心部分，旨在系统性地提升和评估LLM的复杂数学推理能力。
 
@@ -103,13 +103,13 @@ related_tutorials:
 
 为了让模型学会这项新技能，研究者们构建了一个包含24.8万个合成问题的训练数据集——Principia Collection。这些问题覆盖了数学和物理学的研究生级别主题，答案均为六种复杂的数学对象：方程、不等式、区间、集合、矩阵和分段函数。
 
-![image](images/page_11_Figure_0.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2603.18886v1)
 
 *Principia Collection中的问题示例*
 
 实验结果令人振奋。在多个基础模型（如Qwen2.5-7B、OctoThinker-8B）上使用Principia Collection进行训练后，模型在PrincipiaBench上的平均性能提升了7.22%至18.35%！
 
-![image](images/page_14_Figure_0.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2603.18886v1)
 
 *在PrincipiaBench上，使用Principia Collection训练的模型（绿色）显著优于基线模型（蓝色）和其他方法。*
 
@@ -121,7 +121,7 @@ related_tutorials:
 
 实验表明，一个强大的模型裁判（如GPT-OSS-120B）在判断复杂数学对象等价性时至关重要。使用不够精确的验证器进行强化学习训练，甚至可能导致模型性能下降。
 
-![image](images/page_16_Figure_2.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2603.18886v1)
 
 *在Principia Collection上训练时，使用强大的模型裁判（Model-based (GPT-OSS-120B)）带来的性能提升远超规则裁判（Rule-based）。*
 
@@ -137,13 +137,13 @@ related_tutorials:
 
 RLLM则另辟蹊径，它使用一个强大的语言模型本身作为**奖励模型**（**LM-as-RM**），并且这个奖励模型是**在线策略**（**on-policy**）训练的。
 
-![image](images/page_20_Figure_1.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2603.18886v1)
 
 *RLLM框架示意图*
 
 简单来说，这意味着“裁判”模型（LM-as-RM）会根据“学生”模型（策略模型）在训练中生成的实时输出来不断调整自己的判断标准。这就像一位经验丰富的导师，能够针对学生的具体错误进行动态指导，而不是始终依赖一本固定的参考答案。
 
-![image](images/page_21_Figure_2.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2603.18886v1)
 
 *RLLM在可验证任务和不可验证任务上均优于传统RLHF和RLVR方法。*
 

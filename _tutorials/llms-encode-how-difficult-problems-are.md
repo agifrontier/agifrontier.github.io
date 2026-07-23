@@ -121,9 +121,9 @@ related_tutorials:
 
 本文的GRPO训练成功提升了模型的数学性能。在训练过程中：
 
-![Qwen2.5-Math-1.5B linear Probe performance across layers and training steps for the last three token positions.](images/2510.18147v1g/Probe_step_comparison_Qwen_2.5_Math_AMC.png)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2510.18147v1)
 
-![Qwen2.5-Math-1.5B linear Probe performance across layers and training steps for the last three token positions.](images/2510.18147v1g/Probe_step_comparison_Qwen_2.5_Math_GSM8K.png)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2510.18147v1)
 
 *   **人类难度表征得到加强**：如图中上半部分（AMC probes）所示，随着训练步骤的增加，探测人类难度的探针性能保持稳定甚至有所提升。
 *   **LLM难度表征发生退化**：如图中下半部分（GSM8K probes）所示，探测LLM难度的探针性能在模型的早、中层普遍下降，说明GRPO训练过程会系统性地“覆写”掉这个不稳定的信号。

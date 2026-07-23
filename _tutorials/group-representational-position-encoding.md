@@ -29,7 +29,7 @@ Transformer架构的核心是自注意力机制，但它本身无法感知序列
 
 GRAPE的核心思想是，位置信息可以通过**群作用**（Group Action）来表示。具体来说，位置 $n$ 对应于一个群元素 $G(n)$，这个元素是一个矩阵，作用于词向量上。这个群元素是通过**矩阵指数**（Matrix Exponential）从一个更基础的**生成元**（Generator）$L$ 导出的：$G(n) = \exp(n\omega L)$。
 
-![图：GRAPE框架概览](images/page_1_Figure_0.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2512.07805v1)
 
 图：GRAPE框架概览。左侧的乘法GRAPE通过特殊正交群SO(d)中的旋转操作，统一了RoPE等方法。右侧的加法GRAPE通过一般线性群GL中的单能（unipotent）变换，统一了ALiBi和FoX等方法。
 
@@ -187,7 +187,7 @@ GRAPE框架还引入了**路径积分加法GRAPE**（**Path Integral Additive GR
 实验对比了GRAPE与RoPE、ALiBi、FoX等基线方法的性能。
 
 
-| ![图：中等规模模型（355M）在FineWeb-Edu数据集上的训练和验证损失曲线](images/page_10_Figure_2.jpg) | ![图：中等规模模型（355M）在FineWeb-Edu数据集上的训练和验证损失曲线](images/page_10_Figure_4.jpg) |
+| [图示资源待恢复，请查看原论文](https://arxiv.org/abs/2512.07805v1) | [图示资源待恢复，请查看原论文](https://arxiv.org/abs/2512.07805v1) |
 | :---: | :---: |
 | 图：中等规模模型（355M）在FineWeb-Edu数据集上的训练和验证损失曲线 |
 

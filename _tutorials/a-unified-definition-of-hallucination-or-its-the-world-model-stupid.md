@@ -49,7 +49,7 @@ related_tutorials:
 
 论文作者认为，所有这些定义其实都是同一个东西的不同侧面。为了统一它们，作者引入了一个核心概念：**参考世界模型**（**Reference World Model**）。
 
-![Refer to caption](images/2512.21577v1/core_defn.jpeg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2512.21577v1)
 
 #### 核心定义
 
@@ -127,7 +127,7 @@ related_tutorials:
 
 *   **任务：** 让模型描述棋盘状态或预测走法。
 
-![Refer to caption](images/2512.21577v1/chess_overview.jpeg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2512.21577v1)
 
 在这种环境下，我们可以通过程序精确计算出 $T\_{W,P}(x,c)$。如果模型说“我的皇后在d4”，但实际上不在，我们不需要GPT-4来判断，几行代码就能确凿地判定这是幻觉。
 

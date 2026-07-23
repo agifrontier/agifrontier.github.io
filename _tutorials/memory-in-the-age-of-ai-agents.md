@@ -57,7 +57,7 @@ related_tutorials:
 
 3.  **动态（Dynamics）**：记忆如何运作？（形成、演变与检索）
 
-![核心分类学：形式、功能与动态 图示](images/page_1_Figure_0.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2512.13564v1)
 
 其中，**“形式”** 是大家在工程实现中最关心的部分。论文将现有的记忆实现方式归纳为三大类：**Token级记忆**、**参数化记忆**和**隐式记忆**。
 
@@ -85,7 +85,7 @@ related_tutorials:
 
     *   **典型应用**：像Generative Agents（斯坦福小镇）那样，从日常琐事中提炼出“反思”，再从反思中提炼出“性格”。这种结构让智能体既能回忆起“昨天吃了什么”，也能回答“我是一个什么样的人”。
 
-![形式一：Token级记忆 (Token-level Memory) 图示](images/page_11_Figure_0.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2512.13564v1)
 
 ### 形式二：参数化记忆 (Parametric Memory)
 
@@ -99,7 +99,7 @@ related_tutorials:
 
 这是最硬核的一类。记忆既不是文本，也不是模型权重，而是模型推理过程中的**中间状态**（如KV Cache、Activations）。
 
-![形式三：隐式记忆 (Latent Memory) 图示](images/page_22_Figure_0.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2512.13564v1)
 
 论文将隐式记忆的处理方式分为三类：
 

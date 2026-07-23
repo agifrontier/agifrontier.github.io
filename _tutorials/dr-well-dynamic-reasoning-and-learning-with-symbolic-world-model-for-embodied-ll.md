@@ -131,9 +131,9 @@ DR. WELL框架下的智能体通过共享的世界模型和协商协议进行协
 
 <table>
     <tr>
-        <td align="center"> <img src="images/2511.04646v1/universe_graph_E1.png" alt="Episode 1" width="300"/> <br> 回合 1 </td>
-        <td align="center"> <img src="images/2511.04646v1/universe_graph_E5.png" alt="Episode 5" width="300"/> <br> 回合 5 </td>
-        <td align="center"> <img src="images/2511.04646v1/universe_graph_E10.png" alt="Episode 10" width="300"/> <br> 回合 10 </td>
+        <td align="center"> <a href="https://arxiv.org/abs/2511.04646v1">图示资源待恢复，请查看原论文</a> <br> 回合 1 </td>
+        <td align="center"> <a href="https://arxiv.org/abs/2511.04646v1">图示资源待恢复，请查看原论文</a> <br> 回合 5 </td>
+        <td align="center"> <a href="https://arxiv.org/abs/2511.04646v1">图示资源待恢复，请查看原论文</a> <br> 回合 10 </td>
     </tr>
 </table>
 

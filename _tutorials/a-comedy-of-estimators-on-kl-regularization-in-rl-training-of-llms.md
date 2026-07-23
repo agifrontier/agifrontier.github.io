@@ -104,7 +104,7 @@ related_tutorials:
 
 如下图所示，当试图将 K1 估计器直接放入 Loss 函数时（红色和橙色线），随着 KL 系数 $\beta$ 的增加，训练迅速崩溃，Pass@1 准确率跌至谷底。而将 K1 放入 Reward 中（蓝色线）则非常稳定。
 
-![Figure 2: Training Instabilities when using K1 in loss.](images/page_7_Figure_3.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2512.21852v1)
 
 #### 2. 性能对比：无偏梯度带来更好的泛化
 
@@ -112,13 +112,13 @@ related_tutorials:
 
 更重要的是，无偏梯度在**域外任务（Out-of-Distribution）**上的表现也更好。这意味着模型不仅仅是学会了做数学题，而是真正保留了通用的推理能力，没有被错误的梯度带偏。
 
-![Figure 4: Pass@1 performance on MATH test set with K3-in-loss vs K1-in-reward](images/page_8_Figure_3.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2512.21852v1)
 
 #### 3. 异步训练中的表现
 
 在工业界常用的异步训练（Asynchronous RL）设置下，数据的 Off-policy 程度更高。实验表明，**K1-in-Reward** 和 **K3-in-Loss** 是唯二能保持稳定的配置，而 K1-in-Reward 依然保持了微弱的优势。
 
-![Figure 7: Comparison of different KL configurations in asynchronous RL setting](images/page_10_Figure_1.jpg)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2512.21852v1)
 
 ### 总结与建议
 

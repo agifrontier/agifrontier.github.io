@@ -168,7 +168,7 @@ $${% endraw %}
 这个传递性意味着，我们只需要在反向传播链的起始处进行一次梯度校正，这个校正效果就会自动传播到整个模型。
 
 ### 实现
-![Refer to caption](images/2511.00413v1/x5.png)
+[图示资源待恢复，请查看原论文](https://arxiv.org/abs/2511.00413v1)
 
 1.  **共享前缀注意力掩码 (Shared Prefix Attention Mask)**: 在前向传播中，使用一个定制的注意力掩码，确保不同分支的token不会注意到彼此，从而安全地共享前缀表示。本文基于FlashAttention V3实现了高性能的GPU内核。
 2.  **位置嵌入 (Position Embedding)**: Tree Packing改变了token的物理位置，因此需要一个机制来恢复每个token在原始轨迹中的位置ID，以确保像RoPE这类位置敏感操作的正确性。
