@@ -25,6 +25,17 @@ nav_order: 2
             <li><a href="{{ tutorial.url | relative_url }}">{{ tutorial.title | replace: '$', '' | strip_html }}</a></li>
           {% endfor %}
         </ul>
+        {% if topic_tutorials.size > 12 %}
+          {% assign remaining_count = topic_tutorials.size | minus: 12 %}
+          <details class="topic-directory__more">
+            <summary>查看其余 {{ remaining_count }} 篇</summary>
+            <ul>
+              {% for tutorial in topic_tutorials offset: 12 %}
+                <li><a href="{{ tutorial.url | relative_url }}">{{ tutorial.title | replace: '$', '' | strip_html }}</a></li>
+              {% endfor %}
+            </ul>
+          </details>
+        {% endif %}
       </section>
     {% endif %}
   {% endfor %}

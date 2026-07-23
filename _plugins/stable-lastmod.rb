@@ -9,15 +9,20 @@ module Jekyll
     priority :low
 
     def generate(site)
-      git_lastmod_index = build_git_lastmod_index(site)
+      git_dates = build_git_date_indexes(site)
 
       site_items(site).each do |item|
         lastmod = manual_lastmod(item)
-        lastmod ||= git_lastmod(item, git_lastmod_index)
+        lastmod ||= git_date(item, git_dates[:latest])
         lastmod ||= file_mtime(item, site.source)
         lastmod ||= explicit_date(item)
 
         item.data['seo_lastmod'] = lastmod if lastmod
+
+        published = manual_published(item)
+        published ||= git_date(item, git_dates[:earliest])
+        item.data['seo_published'] = published if published
+        item.data['date'] = published if tutorial?(item) && !item.data.key?('date') && published
       end
     end
 
@@ -27,12 +32,12 @@ module Jekyll
       site.pages + site.collections.values.flat_map(&:docs)
     end
 
-    def build_git_lastmod_index(site)
+    def build_git_date_indexes(site)
       relative_paths = site_items(site)
         .filter_map { |item| relative_path_for(item) if source_file?(item, site.source) }
         .uniq
 
-      return {} if relative_paths.empty?
+      return empty_git_dates if relative_paths.empty?
 
       stdout, status = Open3.capture2(
         'git',
@@ -47,7 +52,7 @@ module Jekyll
 
       unless status.success?
         Jekyll.logger.warn('stable-lastmod:', 'failed to read git history, falling back to file mtimes')
-        return {}
+        return empty_git_dates
       end
 
       parse_git_log(stdout)
@@ -55,7 +60,8 @@ module Jekyll
 
     def parse_git_log(output)
       current_timestamp = nil
-      index = {}
+      latest = {}
+      earliest = {}
 
       output.each_line do |line|
         value = line.strip
@@ -66,10 +72,17 @@ module Jekyll
           next
         end
 
-        index[value] ||= current_timestamp if current_timestamp
+        next unless current_timestamp
+
+        latest[value] ||= current_timestamp
+        earliest[value] = current_timestamp
       end
 
-      index
+      { latest: latest, earliest: earliest }
+    end
+
+    def empty_git_dates
+      { latest: {}, earliest: {} }
     end
 
     def manual_lastmod(item)
@@ -78,11 +91,21 @@ module Jekyll
         parse_time(item.data['last_updated'])
     end
 
-    def git_lastmod(item, git_lastmod_index)
+    def manual_published(item)
+      parse_time(item.data['published_at']) ||
+        parse_time(item.data['published']) ||
+        explicit_date(item)
+    end
+
+    def git_date(item, index)
       relative_path = relative_path_for(item)
       return unless relative_path
 
-      git_lastmod_index[relative_path]
+      index[relative_path]
+    end
+
+    def tutorial?(item)
+      item.respond_to?(:collection) && item.collection&.label == 'tutorials'
     end
 
     def file_mtime(item, site_source)

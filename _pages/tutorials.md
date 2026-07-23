@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /
-title: Tutorials
+title: 首页
 seo_title: AI前沿分享：AI论文解读与前沿技术指南
 description: 聚合大模型、AI Agent、RAG、推理优化、多模态与具身智能论文解读，提炼核心方法、实验结果与工程实践启示。
 nav: true
@@ -21,7 +21,7 @@ pagination:
 <div class="post">
 
   <div class="header-bar">
-    <h1>Tutorials</h1>
+    <h1>AI前沿分享</h1>
     <h2>AI 论文解读、工程实践与前沿趋势</h2>
     <p><a href="{{ '/topics/' | relative_url }}">按主题浏览全部内容</a></p>
   </div>

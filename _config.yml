@@ -6,6 +6,9 @@ title: AI前沿分享 # the website title (if blank, full name will be used inst
 first_name: Agi
 middle_name:
 last_name: Frontier
+author:
+  name: AGI Frontier
+  uri: https://agifrontier.github.io/
 contact_note: >
   持续整理 AI 论文、工程实践与前沿趋势。
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -41,6 +44,12 @@ repo_trophies:
 # -----------------------------------------------------------------------------
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
+feed:
+  path: /feed/posts.xml
+  posts_limit: 20
+  collections:
+    tutorials:
+      path: /feed.xml
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -329,7 +338,7 @@ enable_publication_thumbnails: true
 # These are the defaults
 external_links:
   enabled: true
-  rel: external nofollow noopener
+  rel: external noopener
   target: _blank
   exclude:
 

@@ -96,7 +96,7 @@ related_tutorials:
 
 *   **困惑度(Perplexity)分析**：通过计算RLVR模型生成的推理路径在基础模型下的困惑度，发现这些路径的困惑度非常低，与基础模型自身高频生成的路径分布一致。这说明RLVR模型“发现”的推理路径，实际上是基础模型本就倾向于生成的路径。
 
-<img src="/images/2504.13837v2/x8.jpg" alt="Refer to "Figure 6: Perplexity distribution of responses. The conditioning problem $x$ is omitted in the figure."" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2504.13837v2/x8.jpg" alt="响应的困惑度分布" style="width:85%; max-width:450px; margin:auto; display:block;">
 **图6**：响应的困惑度分布。$$Base(RL)$$表示用基础模型评估RL模型生成的响应。其分布与基础模型自身生成的高概率响应（$$Base(Base)$$的左侧部分）高度重合，表明RL模型的输出在基础模型的分布之内。
 
 ### RLVR与蒸馏的本质区别

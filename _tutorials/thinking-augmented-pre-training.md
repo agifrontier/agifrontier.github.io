@@ -25,7 +25,7 @@ related_tutorials:
 
 <img src="/images/2509.20186v1/x1.jpg" alt="训练token总数与GSM8k和MATH数据集平均少样本准确率得分的关系。两个模型均为8B参数，从零开始预训练。一个采用传统的下一个token预测目标，另一个采用思维增强预训练。" style="width:80%; max-width:300px; margin:auto; display:block;">
 
-<img src="/images/2509.20186v1/x2.jpg" alt="一个思维增强数据样本的图示。红色的token "890"既正确又有价值，但直接学习起来很困难。" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2509.20186v1/x2.jpg" alt="思维增强数据样本，其中红色 token 890 正确且有价值，但难以直接学习" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ## 关键定义
 本文主要提出了以下核心概念：

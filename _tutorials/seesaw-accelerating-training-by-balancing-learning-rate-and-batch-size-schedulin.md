@@ -26,7 +26,7 @@ related_tutorials:
 ## 关键定义
 *   **Seesaw**: 本文提出的核心调度算法。其原理是，当一个标准的学习率调度器（如余弦退火）需要将学习率乘以因子 $\alpha$ ($\alpha < 1$) 时，Seesaw 将学习率乘以 $\sqrt{\alpha}$，同时将批次大小（batch size）扩大 $1/\alpha$ 倍。这种转换旨在保持损失动态不变，同时通过增大批次来减少所需的串行训练步数。
 *   **临界批次大小 (Critical Batch Size, CBS)**: 在训练中，超过这个批次大小后，进一步增大批次会降低样本效率（即每处理一个样本带来的模型提升减少），从而限制了训练速度的提升。Seesaw 方法主要在临界批次大小之内有效。
-*   **归一化随机梯度下降 (Normalized SGD, NSGD)**: Adam 优化器的一个简化分析代理。其更新规则为 $\theta\_{t} = \theta\_{t} - \eta \frac{{\mathbf{g}}\_{t}}{\sqrt{\mathbb{E}\ \mid {\mathbf{g}}\_{t}\ \mid ^{2}}}$。本文利用 NSGD 来为 Adam 这类自适应优化器建立学习率与批次大小关系的理论基础。
+*   **归一化随机梯度下降 (Normalized SGD, NSGD)**: Adam 优化器的一个简化分析代理。其更新规则为 $\theta\_{t} = \theta\_{t} - \eta \frac{\mathbf{g}\_{t}}{\sqrt{\mathbb{E}\ \mid \mathbf{g}\_{t}\ \mid ^{2}}}$。本文利用 NSGD 来为 Adam 这类自适应优化器建立学习率与批次大小关系的理论基础。
 *   **方差主导机制 (Variance-dominated regime)**: 本文理论分析的一个核心假设，即在 NSGD 的更新规则中，分母项（梯度的期望平方范数 $\mathbb{E}\ \mid {\mathbf{g}}\_{t}\ \mid ^{2}$）主要由梯度噪声的方差决定，而非梯度的均值。这个方差项与批次大小成反比，因此该假设在批次大小未超过临界批次大小时通常成立。
 
 ## 相关工作
@@ -51,7 +51,7 @@ related_tutorials:
 \begin{aligned}
 {\mathbf{m}}_{t} &= \beta_{1}{\mathbf{m}}_{t-1} + (1-\beta_{1}){\mathbf{g}}_{t} \\
 {\mathbf{v}}_{t} &= \beta_{2}{\mathbf{v}}_{t-1} + (1-\beta_{2}){\mathbf{g}}_{t}^{2} \\
-\theta_{t} &= \theta_{t} - \eta\frac{{\mathbf{m}}_{t}}{\sqrt{{\mathbf{v}}_{t}}+{\epsilon}}
+\theta_{t} &= \theta_{t} - \eta\frac{\mathbf{m}_{t}}{\sqrt{\mathbf{v}_{t}}+{\epsilon}}
 \end{aligned}
 $${% endraw %}
 
@@ -63,7 +63,7 @@ $${% endraw %}
 
 
 {% raw %}$$
-\theta_{t} = \theta_{t} - \eta\frac{{\mathbf{g}}_{t}}{\sqrt{\mathbb{E}\ \mid {\mathbf{g}}_{t}\ \mid ^{2}}}
+\theta_{t} = \theta_{t} - \eta\frac{\mathbf{g}_{t}}{\sqrt{\mathbb{E}\ \mid \mathbf{g}_{t}\ \mid ^{2}}}
 $${% endraw %}
 
 
@@ -71,7 +71,7 @@ $${% endraw %}
 ### 创新点
 本文的**核心创新**在于，在“方差主导”的假设下，为 NSGD (以及 Adam) 建立了新的学习率-批次大小等效关系。
 
-该假设认为，更新规则的分母 $\mathbb{E}\ \mid {\mathbf{g}}\_{t}\ \mid ^{2}$ 主要由与批次大小成反比的方差项贡献。即 $\mathbb{E}\ \mid {\mathbf{g}}\_{t}\ \mid ^{2} \approx \text{variance} \propto 1/B$。在此条件下，NSGD 的更新步长近似于 $\eta \frac{{\mathbf{g}}\_{t}}{\sqrt{C/B}} \propto (\eta\sqrt{B}) {\mathbf{g}}\_{t}$。这表明有效学习率与 $\eta\sqrt{B}$ 成正比。
+该假设认为，更新规则的分母 $\mathbb{E}\ \mid \mathbf{g}\_{t}\ \mid ^{2}$ 主要由与批次大小成反比的方差项贡献。即 $\mathbb{E}\ \mid \mathbf{g}\_{t}\ \mid ^{2} \approx \text{variance} \propto 1/B$。在此条件下，NSGD 的更新步长近似于 $\eta \frac{\mathbf{g}\_{t}}{\sqrt{C/B}} \propto (\eta\sqrt{B}) \mathbf{g}\_{t}$。这表明有效学习率与 $\eta\sqrt{B}$ 成正比。
 
 为了保持训练动态不变，必须维持 $\eta\sqrt{B}$ 为常数。因此，如果一个标准调度器将学习率从 $\eta$ 降低到 $\eta' = \eta / \alpha\_c$，为了找到一个等效的批次大小 $B'$，需要满足 $\eta\sqrt{B} = (\eta/\alpha\_c) \sqrt{B'}$，解得 $B' = B \cdot \alpha\_c^2$。
 

@@ -74,6 +74,17 @@ strong {
     margin-bottom: 0.55rem;
     overflow-wrap: anywhere;
   }
+
+  .topic-directory__more {
+    margin-top: 0.75rem;
+
+    summary {
+      color: var(--global-theme-color);
+      cursor: pointer;
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+    }
+  }
 }
 
 @media (max-width: 576px) {

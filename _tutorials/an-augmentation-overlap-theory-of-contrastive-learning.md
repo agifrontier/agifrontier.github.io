@@ -51,15 +51,15 @@ related_tutorials:
 
 *   **创新点：负样本的蒙特卡洛视角**
     与以往将负样本视为“类别碰撞/覆盖”的视角不同，本文创新地指出，InfoNCE损失中的负样本项可以被看作是下游监督损失（mCE loss）负样本项的一个蒙特卡洛（Monte Carlo）估计。
-    具体来说，通过应用琴生不等式（Jensen's inequality），可以证明对比损失的负样本部分 $\bar{{\mathcal{L}}}\_{\rm contr}^{-}(f)$ 是下游损失负样本部分 $\bar{{\mathcal{L}}}\_{\rm mCE}^{-}(f)$ 的一个蒙特卡洛估计 $\bar{{\mathcal{L}}}\_{\rm MC}(f)$ 的下界：
+    具体来说，通过应用琴生不等式（Jensen's inequality），可以证明对比损失的负样本部分 $\bar{\mathcal{L}}\_{\rm contr}^{-}(f)$ 是下游损失负样本部分 $\bar{\mathcal{L}}\_{\rm mCE}^{-}(f)$ 的一个蒙特卡洛估计 $\bar{\mathcal{L}}\_{\rm MC}(f)$ 的下界：
     
 
     {% raw %}$$
-    \bar{{\mathcal{L}}}\_{\rm contr}^{-}(f) \geq \mathbb{E}\_{\Pi\_{i}p(y^{-}\_{i})}\log\frac{1}{M}\sum\_{i=1}^{M}\exp(f(x)^{\top}\mu\_{y^{-}\_{i}})=\bar{{\mathcal{L}}}\_{\rm MC}(f)
+    \bar{\mathcal{L}}\_{\rm contr}^{-}(f) \geq \mathbb{E}\_{\Pi\_{i}p(y^{-}\_{i})}\log\frac{1}{M}\sum\_{i=1}^{M}\exp(f(x)^{\top}\mu\_{y^{-}\_{i}})=\bar{\mathcal{L}}\_{\rm MC}(f)
     $${% endraw %}
 
 
-    这个估计的误差会随着负样本数量 $M$ 的增加而减小，其误差界为 $ \mid \bar{{\mathcal{L}}}\_{\rm MC}(f)-\bar{{\mathcal{L}}}\_{\rm mCE}^{-}(f) \mid \leq\frac{e}{\sqrt{M}}$。
+    这个估计的误差会随着负样本数量 $M$ 的增加而减小，其误差界为 $ \mid \bar{\mathcal{L}}\_{\rm MC}(f)-\bar{\mathcal{L}}\_{\rm mCE}^{-}(f) \mid \leq\frac{e}{\sqrt{M}}$。
 
 *   **更紧密的界 (Theorem 4.3)**
     基于上述分析，本文推导出了新的下游性能上下界：

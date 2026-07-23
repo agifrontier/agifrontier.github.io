@@ -42,21 +42,7 @@
 
       <div class="collapse navbar-collapse text-right" id="navbarNav">
         <ul class="navbar-nav ml-auto flex-nowrap">
-          {% for page in site.pages %}
-            {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
-          {% endfor %}
-
-          <!-- About -->
-          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}">
-              {{- about_title }}
-              {% if page.permalink == '/' %}
-                <span class="sr-only">(current)</span>
-              {% endif %}
-            </a>
-          </li>
-
-          <!-- Other pages -->
+          <!-- Navigation pages -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
           {% for p in sorted_pages %}
             {% if p.nav and p.autogen == null %}
@@ -99,9 +85,17 @@
                 </li>
               {% else %}
                 {% assign parent_link = p.permalink | remove: 'index.html' %}
-                <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
+                {% assign is_active = false %}
+                {% if parent_link == '/' and page.url == '/index.html' %}
+                  {% assign is_active = true %}
+                {% elsif parent_link != '/' and page.url contains parent_link %}
+                  {% assign is_active = true %}
+                {% endif %}
+                <li class="nav-item {% if is_active %}active{% endif %}">
                   {%- if p.permalink contains '://' -%}
                     {%- assign url = p.permalink -%}
+                  {%- elsif parent_link == '/' -%}
+                    {%- assign url = '/' -%}
                   {%- elsif p.permalink contains '/blog/' -%}
                     {%- assign url = '/blog/' -%}
                   {%- else -%}
@@ -109,7 +103,7 @@
                   {%- endif %}
                   <a class="nav-link" href="{{ url | relative_url }}">
                     {{- p.title }}
-                    {% if page.url contains p.url %}
+                    {% if is_active %}
                       <span class="sr-only">(current)</span>
                     {% endif %}
                   </a>

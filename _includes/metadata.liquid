@@ -46,6 +46,7 @@
 <title>{{ seo_title | escape }}</title>
 <meta name="author" content="{{ author_name | escape }}">
 <meta name="description" content="{{ seo_description | escape }}">
+<link rel="alternate" type="application/atom+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | absolute_url }}">
 {% if page.keywords or site.keywords %}
   <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | join: ', ' | escape }}{% else %}{{ site.keywords | escape }}{% endif %}">
 {% endif %}
@@ -235,7 +236,8 @@
   {% elsif is_tutorial %}
     {% assign schema_type = 'TechArticle' %}
   {% endif %}
-  {% assign article_date = page.seo_lastmod | default: page.last_updated | default: page.date %}
+  {% assign published_date = page.seo_published | default: page.published_at | default: page.date %}
+  {% assign article_date = page.seo_lastmod | default: page.last_updated | default: published_date %}
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -256,7 +258,8 @@
       "author": {
         "@type": "Person",
         "name": {{ author_name | jsonify }}
-      }{% if article_date %},
+      }{% if published_date %},
+      "datePublished": {{ published_date | date_to_xmlschema | jsonify }}{% endif %}{% if article_date %},
       "dateModified": {{ article_date | date_to_xmlschema | jsonify }}{% endif %}{% if og_image_url %},
       "image": {{ og_image_url | jsonify }}{% endif %}{% endif %}{% if sameaslinks != blank %},
       "sameAs": {{ sameaslinks | jsonify }}{% endif %}
