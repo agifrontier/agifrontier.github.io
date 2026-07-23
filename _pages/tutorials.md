@@ -26,21 +26,15 @@ pagination:
     <p><a href="{{ '/topics/' | relative_url }}">按主题浏览全部内容</a></p>
   </div>
 
-{% if site.display_tags and site.display_tags.size > 0 or site.display_categories and site.display_categories.size > 0 %}
+{% if site.tutorial_topics and site.tutorial_topics.size > 0 %}
 
   <div class="tag-category-list">
     <ul class="p-0 m-0">
-      {% for tag in site.display_tags %}
-        <li><i class="fa-solid fa-hashtag fa-sm"></i> <span>{{ tag }}</span></li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
-      {% endfor %}
-      {% if site.display_categories.size > 0 and site.display_tags.size > 0 %}
-        <p>&bull;</p>
-      {% endif %}
-      {% for category in site.display_categories %}
-        <li><i class="fa-solid fa-tag fa-sm"></i> <span>{{ category }}</span></li>
+      {% for topic in site.tutorial_topics %}
+        <li>
+          <i class="fa-solid fa-hashtag fa-sm"></i>
+          <a href="{{ '/topics/' | relative_url }}#{{ topic.slug }}">{{ topic.name }}</a>
+        </li>
         {% unless forloop.last %}
           <p>&bull;</p>
         {% endunless %}

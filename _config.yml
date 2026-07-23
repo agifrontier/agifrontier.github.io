@@ -229,8 +229,27 @@ jekyll-archives:
       tags: "/blog/:type/:name/"
       categories: "/blog/:type/:name/"
 
-display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
-display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
+tutorial_topics:
+  - name: AI Agent
+    slug: ai-agent
+  - name: RAG与知识系统
+    slug: rag-knowledge
+  - name: 推理与强化学习
+    slug: reasoning-rl
+  - name: 模型训练与优化
+    slug: model-training
+  - name: 多模态与视觉
+    slug: multimodal-vision
+  - name: 具身智能与机器人
+    slug: embodied-robotics
+  - name: AI安全与评测
+    slug: ai-safety-evaluation
+  - name: 数据与AI工程
+    slug: data-ai-engineering
+  - name: 行业应用
+    slug: industry-applications
+  - name: 基础模型与理论
+    slug: foundation-models
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

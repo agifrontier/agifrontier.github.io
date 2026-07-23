@@ -14,12 +14,12 @@ nav_order: 2
     <p>按研究方向浏览论文解读，快速进入相关主题与延伸阅读。</p>
   </header>
 
-  {% assign topic_names = "AI Agent|RAG与知识系统|推理与强化学习|模型训练与优化|多模态与视觉|具身智能与机器人|AI安全与评测|数据与AI工程|行业应用|基础模型与理论" | split: "|" %}
-  {% for topic in topic_names %}
-    {% assign topic_tutorials = site.tutorials | where_exp: "tutorial", "tutorial.topics contains topic" | sort: "seo_lastmod" | reverse %}
+  {% for topic in site.tutorial_topics %}
+    {% assign topic_name = topic.name %}
+    {% assign topic_tutorials = site.tutorials | where_exp: "tutorial", "tutorial.topics contains topic_name" | sort: "seo_lastmod" | reverse %}
     {% if topic_tutorials.size > 0 %}
-      <section class="topic-directory__section" id="{{ topic | slugify }}">
-        <h2>{{ topic }} <small>{{ topic_tutorials.size }} 篇</small></h2>
+      <section class="topic-directory__section" id="{{ topic.slug }}">
+        <h2>{{ topic.name }} <small>{{ topic_tutorials.size }} 篇</small></h2>
         <ul>
           {% for tutorial in topic_tutorials limit: 12 %}
             <li><a href="{{ tutorial.url | relative_url }}">{{ tutorial.title | replace: '$', '' | strip_html }}</a></li>
