@@ -5,7 +5,7 @@ title: AI 主题导航
 seo_title: AI 主题导航：Agent、RAG、推理与多模态论文
 description: 按 AI Agent、RAG 与知识系统、推理与强化学习、多模态视觉、具身智能、模型训练优化等主题浏览 AI 前沿论文解读。
 nav: true
-nav_order: 3
+nav_order: 2
 ---
 
 <div class="post topic-directory">
