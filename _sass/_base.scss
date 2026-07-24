@@ -42,16 +42,20 @@ strong {
     padding-left: 0.75rem;
   }
 
-  a,
-  span {
+  > li > a,
+  .related-tutorials__topics {
     display: block;
     overflow-wrap: anywhere;
   }
 
-  span {
+  .related-tutorials__topics {
     color: var(--global-text-color-light);
     font-size: 0.85rem;
     margin-top: 0.2rem;
+
+    a {
+      display: inline;
+    }
   }
 }
 

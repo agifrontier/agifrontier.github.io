@@ -24,7 +24,6 @@ class SeoParser(HTMLParser):
         self.h1_count = 0
         self.images_missing_alt = 0
         self.images_empty_alt = 0
-        self.related_depth = 0
         self.related_links = 0
 
     def handle_starttag(self, tag: str, attrs_list: list[tuple[str, str | None]]) -> None:
@@ -47,11 +46,7 @@ class SeoParser(HTMLParser):
             elif not attrs["alt"].strip():
                 self.images_empty_alt += 1
 
-        if "related-tutorials" in classes:
-            self.related_depth = 1
-        elif self.related_depth:
-            self.related_depth += 1
-        if tag == "a" and self.related_depth:
+        if tag == "a" and "related-tutorials__article" in classes:
             self.related_links += 1
 
     def handle_endtag(self, tag: str) -> None:
@@ -60,8 +55,6 @@ class SeoParser(HTMLParser):
         elif tag == "script" and self.in_json_ld:
             self.in_json_ld = False
             self.json_ld_blocks.append("".join(self.json_ld_parts).strip())
-        if self.related_depth:
-            self.related_depth -= 1
 
     def handle_data(self, data: str) -> None:
         if self.in_title:

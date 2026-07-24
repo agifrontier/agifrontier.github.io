@@ -7,9 +7,21 @@
         {% assign related = site.tutorials | where: 'path', related_path | first %}
         {% if related %}
           <li>
-            <a href="{{ related.url | relative_url }}">{{ related.title | replace: '$', '' | strip_html }}</a>
+            <a class="related-tutorials__article" href="{{ related.url | relative_url }}">
+              {{- related.title | replace: '$', '' | strip_html -}}
+            </a>
             {% if related.topics and related.topics.size > 0 %}
-              <span>{{ related.topics | join: ' · ' }}</span>
+              <span class="related-tutorials__topics">
+                {% for related_topic in related.topics %}
+                  {% assign topic_config = site.tutorial_topics | where: 'name', related_topic | first %}
+                  {% if topic_config %}
+                    <a href="{{ '/topics/' | relative_url }}#{{ topic_config.slug }}">{{ related_topic }}</a>
+                  {% else %}
+                    {{ related_topic }}
+                  {% endif %}
+                  {% unless forloop.last %} · {% endunless %}
+                {% endfor %}
+              </span>
             {% endif %}
           </li>
         {% endif %}
