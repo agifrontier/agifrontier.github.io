@@ -1,0 +1,147 @@
+{
+  "generated_at": "2026-07-24T16:30:35.569035+00:00",
+  "managed_files": [
+    "agent-evals.md",
+    "ai-agents.md",
+    "ai-browsers.md",
+    "ai-infra.md",
+    "ai-safety.md",
+    "claude-code.md",
+    "coding-agents.md",
+    "context-engineering.md",
+    "inference-serving.md",
+    "jason-liu.md",
+    "mcp.md",
+    "open-models.md",
+    "qwen.md",
+    "simon-willison.md"
+  ],
+  "pages": [
+    {
+      "key": "agent-evals",
+      "kind": "topic",
+      "title": "Agent Evals and Harnesses",
+      "description": "Agent evals measure long-running AI systems through tasks, environments, harnesses, traces, and failure analysis。",
+      "materials_count": 16,
+      "generated_at": "2026-07-24T16:30:35.569035+00:00",
+      "source_url": "http://agifrontier.duckdns.org:1684/ai-wiki/topic/agent-evals"
+    },
+    {
+      "key": "ai-agents",
+      "kind": "topic",
+      "title": "AI Agents",
+      "description": "AI agents are model-driven systems that plan, call tools, use memory, and iterate across multi-step tasks。",
+      "materials_count": 16,
+      "generated_at": "2026-07-24T16:30:35.569035+00:00",
+      "source_url": "http://agifrontier.duckdns.org:1684/ai-wiki/topic/ai-agents"
+    },
+    {
+      "key": "ai-browsers",
+      "kind": "topic",
+      "title": "AI Browsers and Computer Use",
+      "description": "AI browsers and computer-use agents operate web pages, desktop apps, and visual interfaces through model-guided actions。",
+      "materials_count": 16,
+      "generated_at": "2026-07-24T16:30:35.569035+00:00",
+      "source_url": "http://agifrontier.duckdns.org:1684/ai-wiki/topic/ai-browsers"
+    },
+    {
+      "key": "ai-infra",
+      "kind": "topic",
+      "title": "AI Infrastructure",
+      "description": "AI infrastructure covers inference, serving, routing, evaluation, observability, RAG, and hardware/data-center dependencies。",
+      "materials_count": 16,
+      "generated_at": "2026-07-24T16:30:35.569035+00:00",
+      "source_url": "http://agifrontier.duckdns.org:1684/ai-wiki/topic/ai-infra"
+    },
+    {
+      "key": "ai-safety",
+      "kind": "topic",
+      "title": "AI Safety, Risk, and Governance",
+      "description": "AI safety and governance covers frontier risk, monitoring, evaluation, policy, and risk management frameworks。",
+      "materials_count": 16,
+      "generated_at": "2026-07-24T16:30:35.569035+00:00",
+      "source_url": "http://agifrontier.duckdns.org:1684/ai-wiki/topic/ai-safety"
+    },
+    {
+      "key": "claude-code",
+      "kind": "topic",
+      "title": "Claude Code and Coding Agents",
+      "description": "A product and workflow page for Claude Code, Codex, and adjacent coding-agent systems。",
+      "materials_count": 16,
+      "generated_at": "2026-07-24T16:30:35.569035+00:00",
+      "source_url": "http://agifrontier.duckdns.org:1684/ai-wiki/topic/claude-code"
+    },
+    {
+      "key": "coding-agents",
+      "kind": "topic",
+      "title": "Coding Agents",
+      "description": "Coding agents inspect repositories, edit files, run commands, call tools, and iterate toward software changes。",
+      "materials_count": 16,
+      "generated_at": "2026-07-24T16:30:35.569035+00:00",
+      "source_url": "http://agifrontier.duckdns.org:1684/ai-wiki/topic/coding-agents"
+    },
+    {
+      "key": "context-engineering",
+      "kind": "topic",
+      "title": "Context Engineering",
+      "description": "Context engineering is the practice of designing the information, tools, memory, and state an AI system receives。",
+      "materials_count": 16,
+      "generated_at": "2026-07-24T16:30:35.569035+00:00",
+      "source_url": "http://agifrontier.duckdns.org:1684/ai-wiki/topic/context-engineering"
+    },
+    {
+      "key": "inference-serving",
+      "kind": "topic",
+      "title": "Inference Serving",
+      "description": "Inference serving covers latency, throughput, batching, KV cache, routing, quantization, and cost for running models in production。",
+      "materials_count": 16,
+      "generated_at": "2026-07-24T16:30:35.569035+00:00",
+      "source_url": "http://agifrontier.duckdns.org:1684/ai-wiki/topic/inference-serving"
+    },
+    {
+      "key": "jason-liu",
+      "kind": "topic",
+      "title": "Jason Liu: AI Engineering and Consulting",
+      "description": "A people and opinions page for Jason Liu writing on context engineering, RAG, structured outputs, and AI consulting。",
+      "materials_count": 16,
+      "generated_at": "2026-07-24T16:30:35.569035+00:00",
+      "source_url": "http://agifrontier.duckdns.org:1684/ai-wiki/topic/jason-liu"
+    },
+    {
+      "key": "mcp",
+      "kind": "topic",
+      "title": "Model Context Protocol (MCP)",
+      "description": "MCP connects models, tools, data sources, and clients as a protocol layer for agentic systems。",
+      "materials_count": 16,
+      "generated_at": "2026-07-24T16:30:35.569035+00:00",
+      "source_url": "http://agifrontier.duckdns.org:1684/ai-wiki/topic/mcp"
+    },
+    {
+      "key": "open-models",
+      "kind": "topic",
+      "title": "Open Models Watch",
+      "description": "A tracking page for open-weight and open-source model releases, benchmarks, and ecosystem dynamics。",
+      "materials_count": 16,
+      "generated_at": "2026-07-24T16:30:35.569035+00:00",
+      "source_url": "http://agifrontier.duckdns.org:1684/ai-wiki/topic/open-models"
+    },
+    {
+      "key": "qwen",
+      "kind": "topic",
+      "title": "Qwen Model Updates",
+      "description": "A topic page for Qwen model releases across language, image, translation, safety, and post-training updates。",
+      "materials_count": 16,
+      "generated_at": "2026-07-24T16:30:35.569035+00:00",
+      "source_url": "http://agifrontier.duckdns.org:1684/ai-wiki/topic/qwen"
+    },
+    {
+      "key": "simon-willison",
+      "kind": "topic",
+      "title": "Simon Willison: AI Engineering Notes",
+      "description": "A people and opinions page collecting Simon Willison notes on models, tools, agents, and developer workflows。",
+      "materials_count": 16,
+      "generated_at": "2026-07-24T16:30:35.569035+00:00",
+      "source_url": "http://agifrontier.duckdns.org:1684/ai-wiki/topic/simon-willison"
+    }
+  ]
+}

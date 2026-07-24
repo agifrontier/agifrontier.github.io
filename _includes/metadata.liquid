@@ -26,8 +26,12 @@
 {% if page.collection == 'tutorials' %}
   {% assign is_tutorial = true %}
 {% endif %}
+{% assign is_wiki = false %}
+{% if page.collection == 'wiki' %}
+  {% assign is_wiki = true %}
+{% endif %}
 {% assign is_article = false %}
-{% if is_blog_post or is_tutorial %}
+{% if is_blog_post or is_tutorial or is_wiki %}
   {% assign is_article = true %}
 {% endif %}
 {% assign page_seo_title = page.seo_title | default: page.title | default: site.title | strip_html | strip_newlines | strip %}
@@ -233,7 +237,7 @@
   {% assign schema_type = 'WebSite' %}
   {% if is_blog_post %}
     {% assign schema_type = 'BlogPosting' %}
-  {% elsif is_tutorial %}
+  {% elsif is_tutorial or is_wiki %}
     {% assign schema_type = 'TechArticle' %}
   {% endif %}
   {% assign published_date = page.seo_published | default: page.published_at | default: page.date %}

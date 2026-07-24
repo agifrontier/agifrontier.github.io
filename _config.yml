@@ -129,6 +129,9 @@ collections:
   tutorials:
     output: true
     permalink: /tutorials/:path/
+  wiki:
+    output: true
+    permalink: /wiki/:path/
   news:
     defaults:
       layout: post
