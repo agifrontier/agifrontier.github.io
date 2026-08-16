@@ -31,6 +31,9 @@
   {% assign is_article = true %}
 {% endif %}
 {% assign page_seo_title = page.seo_title | default: page.title | default: site.title | strip_html | strip_newlines | strip %}
+{% if paginator and paginator.page > 1 %}
+  {% capture page_seo_title %}{{ page_seo_title }} - 第{{ paginator.page }}页{% endcapture %}
+{% endif %}
 {% assign seo_title = page_seo_title | truncate: 60 %}
 {% assign seo_description = page.description | default: site.description | strip_html | strip_newlines | normalize_whitespace | truncate: 160 %}
 {% assign canonical_url = page.url | absolute_url | remove_first: 'index.html' %}

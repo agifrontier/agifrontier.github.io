@@ -6,11 +6,12 @@ seo_title: AI前沿分享：AI论文解读与前沿技术指南
 description: 聚合大模型、AI Agent、RAG、推理优化、多模态与具身智能论文解读，提炼核心方法、实验结果与工程实践启示。
 nav: true
 nav_order: 1
+wide: true
 pagination:
   enabled: true
   collection: tutorials
   permalink: /page/:num/
-  per_page: 50
+  per_page: 24
   sort_field: seo_published
   sort_reverse: true
   trail:
@@ -18,207 +19,192 @@ pagination:
     after: 3 # The number of links after the current page
 ---
 
-<div class="post">
+<div class="post homepage">
+  <header class="homepage-intro">
+    <div>
+      <p class="homepage-intro__eyebrow">AGI FRONTIER</p>
+      <h1>AI前沿分享{% if paginator.page and paginator.page > 1 %}<span>第{{ paginator.page }}页</span>{% endif %}</h1>
+      <p class="homepage-intro__description">深度解读 AI 论文，追踪 Agent、推理、多模态与具身智能的最新进展。</p>
+    </div>
+    <a class="homepage-intro__link" href="{{ '/topics/' | relative_url }}">按主题浏览全部内容</a>
+  </header>
 
-  <div class="header-bar">
-    <h1>AI前沿分享</h1>
-    <h2>AI 论文解读、工程实践与前沿趋势</h2>
-    <p><a href="{{ '/topics/' | relative_url }}">按主题浏览全部内容</a></p>
-  </div>
+  {% if page.pagination.enabled %}
+    {% assign postlist = paginator.posts %}
+  {% else %}
+    {% assign postlist = site.tutorials | sort: "seo_published" | reverse %}
+  {% endif %}
 
-{% assign homepage_latest_limit = 8 %}
-{% if page.pagination.enabled %}
-  {% if paginator.page == 1 %}
-  <section class="homepage-latest" aria-labelledby="homepage-latest-title">
-    <div class="homepage-latest__header">
-      <div>
-        <h2 id="homepage-latest-title">最新发布</h2>
+  {% if paginator.page == 1 or page.pagination.enabled == false %}
+    {% assign hero_post = postlist[0] %}
+    {% assign hero_date = hero_post.seo_published | default: hero_post.date %}
+    {% assign hero_text_length = hero_post.content | strip_html | size %}
+    {% assign hero_read_time = hero_text_length | divided_by: 500 | plus: 1 %}
+    {% assign hero_image = hero_post.thumbnail %}
+    {% if hero_image == blank %}
+      {% assign hero_image_parts = hero_post.content | split: '<img src="' %}
+      {% if hero_image_parts.size > 1 %}
+        {% assign hero_image_src = hero_image_parts[1] | split: '"' %}
+        {% assign hero_image = hero_image_src[0] %}
+      {% endif %}
+    {% endif %}
+
+    <section class="homepage-lead" aria-label="最新论文解读">
+      <article class="homepage-featured">
+        <a class="homepage-featured__link" href="{{ hero_post.url | relative_url }}">
+          <div class="homepage-featured__media">
+            {% if hero_image != blank %}
+              <img
+                src="{% if hero_image contains '://' %}{{ hero_image }}{% else %}{{ hero_image | relative_url }}{% endif %}"
+                alt="{{ hero_post.title | escape }}"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              >
+            {% else %}
+              <img
+                src="{{ '/assets/img/homepage-default-cover.svg' | relative_url }}"
+                alt="{{ hero_post.title | escape }}"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              >
+            {% endif %}
+          </div>
+          <div class="homepage-featured__body">
+            <p class="homepage-card__label">最新发布</p>
+            <h2>{{ hero_post.title }}</h2>
+            <p class="homepage-card__meta">{{ hero_date | date: "%Y年%m月%d日" }} · {{ hero_read_time }} 分钟阅读</p>
+            <p class="homepage-featured__description">{{ hero_post.description | strip_html | truncate: 180 }}</p>
+            {% if hero_post.topics and hero_post.topics.size > 0 %}
+              <div class="homepage-card__topics">
+                {% for topic in hero_post.topics limit: 2 %}<span>{{ topic }}</span>{% endfor %}
+              </div>
+            {% endif %}
+          </div>
+        </a>
+      </article>
+
+      <div class="homepage-lead__side">
+        {% for post in postlist offset: 1 limit: 2 %}
+          {% assign published_date = post.seo_published | default: post.date %}
+          {% assign text_length = post.content | strip_html | size %}
+          {% assign read_time = text_length | divided_by: 500 | plus: 1 %}
+          {% assign card_image = post.thumbnail %}
+          {% if card_image == blank %}
+            {% assign card_image_parts = post.content | split: '<img src="' %}
+            {% if card_image_parts.size > 1 %}
+              {% assign card_image_src = card_image_parts[1] | split: '"' %}
+              {% assign card_image = card_image_src[0] %}
+            {% endif %}
+          {% endif %}
+
+          <article class="homepage-card homepage-card--lead">
+            <a class="homepage-card__link" href="{{ post.url | relative_url }}">
+              <div class="homepage-card__media">
+                {% if card_image != blank %}
+                  <img
+                    src="{% if card_image contains '://' %}{{ card_image }}{% else %}{{ card_image | relative_url }}{% endif %}"
+                    alt="{{ post.title | escape }}"
+                    loading="eager"
+                    decoding="async"
+                  >
+                {% else %}
+                  <img
+                    src="{{ '/assets/img/homepage-default-cover.svg' | relative_url }}"
+                    alt="{{ post.title | escape }}"
+                    loading="eager"
+                    decoding="async"
+                  >
+                {% endif %}
+              </div>
+              <div class="homepage-card__body">
+                {% if post.topics and post.topics.size > 0 %}
+                  <p class="homepage-card__label">{{ post.topics[0] }}</p>
+                {% endif %}
+                <h2>{{ post.title }}</h2>
+                <p class="homepage-card__description">{{ post.description | strip_html | truncate: 86 }}</p>
+                <p class="homepage-card__meta">{{ published_date | date: "%Y年%m月%d日" }} · {{ read_time }} 分钟阅读</p>
+              </div>
+            </a>
+          </article>
+        {% endfor %}
       </div>
-      <a href="{{ '/topics/' | relative_url }}">浏览全部主题</a>
+    </section>
+  {% endif %}
+
+  {% if site.tutorial_topics and site.tutorial_topics.size > 0 %}
+    <nav class="homepage-topics" aria-label="AI主题导航">
+      {% for topic in site.tutorial_topics %}
+        <a href="{{ '/topics/' | relative_url }}#{{ topic.slug }}">{{ topic.name }}</a>
+      {% endfor %}
+    </nav>
+  {% endif %}
+
+  <section class="homepage-feed" aria-labelledby="homepage-feed-title">
+    <div class="homepage-section-heading homepage-section-heading--feed">
+      <div>
+        <p class="homepage-card__label">PAPER INSIGHTS</p>
+        <h2 id="homepage-feed-title">{% if paginator.page and paginator.page > 1 %}更多论文解读{% else %}最新解读{% endif %}</h2>
+      </div>
+      {% if paginator.page and paginator.page > 1 %}<a href="{{ '/' | relative_url }}">返回最新发布</a>{% endif %}
     </div>
 
-    <div class="row">
-      {% for post in paginator.posts limit: homepage_latest_limit %}
+    {% assign postlist_offset = 0 %}
+    {% if paginator.page == 1 or page.pagination.enabled == false %}
+      {% assign postlist_offset = 3 %}
+    {% endif %}
+
+    <div class="homepage-card-grid">
+      {% for post in postlist offset: postlist_offset %}
         {% assign published_date = post.seo_published | default: post.date %}
-        <div class="col-12 col-md-6 mb-4">
-          <article class="card hoverable homepage-latest__card">
-            <div class="card-body">
-              <p class="homepage-latest__date">{{ published_date | date: "%Y年%m月%d日" }}</p>
-              <h3 class="card-title">
-                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              </h3>
-              <p class="card-text">{{ post.description | strip_html | truncate: 120 }}</p>
-              {% if post.topics and post.topics.size > 0 %}
-                <p class="homepage-latest__topics">
-                  {% for topic in post.topics limit: 2 %}
-                    <span>{{ topic }}</span>
-                  {% endfor %}
-                </p>
+        {% assign text_length = post.content | strip_html | size %}
+        {% assign read_time = text_length | divided_by: 500 | plus: 1 %}
+        {% assign card_image = post.thumbnail %}
+        {% if card_image == blank %}
+          {% assign card_image_parts = post.content | split: '<img src="' %}
+          {% if card_image_parts.size > 1 %}
+            {% assign card_image_src = card_image_parts[1] | split: '"' %}
+            {% assign card_image = card_image_src[0] %}
+          {% endif %}
+        {% endif %}
+
+        <article class="homepage-card">
+          <a class="homepage-card__link" href="{{ post.url | relative_url }}">
+            <div class="homepage-card__media">
+              {% if card_image != blank %}
+                <img
+                  src="{% if card_image contains '://' %}{{ card_image }}{% else %}{{ card_image | relative_url }}{% endif %}"
+                  alt="{{ post.title | escape }}"
+                  loading="lazy"
+                  decoding="async"
+                >
+              {% else %}
+                <img
+                  src="{{ '/assets/img/homepage-default-cover.svg' | relative_url }}"
+                  alt="{{ post.title | escape }}"
+                  loading="lazy"
+                  decoding="async"
+                >
               {% endif %}
             </div>
-          </article>
-        </div>
+            <div class="homepage-card__body">
+              <p class="homepage-card__meta">{{ published_date | date: "%Y年%m月%d日" }} · {{ read_time }} 分钟阅读</p>
+              <h3>{{ post.title }}</h3>
+              <p class="homepage-card__description">{{ post.description | strip_html | truncate: 112 }}</p>
+              {% if post.topics and post.topics.size > 0 %}
+                <div class="homepage-card__topics">
+                  {% for topic in post.topics limit: 2 %}<span>{{ topic }}</span>{% endfor %}
+                </div>
+              {% endif %}
+            </div>
+          </a>
+        </article>
       {% endfor %}
     </div>
   </section>
+
+  {% if page.pagination.enabled %}
+    {% include pagination.liquid %}
   {% endif %}
-{% endif %}
-
-{% if site.tutorial_topics and site.tutorial_topics.size > 0 %}
-
-  <div class="tag-category-list">
-    <ul class="p-0 m-0">
-      {% for topic in site.tutorial_topics %}
-        <li>
-          <i class="fa-solid fa-hashtag fa-sm"></i>
-          <a href="{{ '/topics/' | relative_url }}#{{ topic.slug }}">{{ topic.name }}</a>
-        </li>
-        {% unless forloop.last %}
-          <p>&bull;</p>
-        {% endunless %}
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
-
-{% assign featured_tutorials = site.tutorials | where: "featured", "true" | sort: "seo_lastmod" | reverse %}
-{% if featured_tutorials.size > 0 %}
-<br>
-
-<div class="container featured-posts">
-{% assign is_even = featured_tutorials.size | modulo: 2 %}
-<div class="row row-cols-{% if featured_tutorials.size <= 2 or is_even == 0 %}2{% else %}3{% endif %}">
-{% for post in featured_tutorials %}
-<div class="col mb-4">
-<a href="{{ post.url | relative_url }}">
-<div class="card hoverable">
-<div class="row g-0">
-<div class="col-md-12">
-<div class="card-body">
-<div class="float-right">
-<i class="fa-solid fa-thumbtack fa-xs"></i>
-</div>
-<h3 class="card-title text-lowercase">{{ post.title }}</h3>
-<p class="card-text">{{ post.description }}</p>
-
-                    {% if post.external_source == blank %}
-                      {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
-                    {% else %}
-                      {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
-                    {% endif %}
-                    {% assign display_date = post.seo_lastmod | default: post.date %}
-                    {% assign year = display_date | date: "%Y" %}
-
-                    <p class="post-meta">
-                      {{ read_time }} min read &nbsp; &middot; &nbsp;
-                      <span><i class="fa-solid fa-calendar fa-sm"></i> {{ year }}</span>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      {% endfor %}
-      </div>
-    </div>
-    <hr>
-
-{% endif %}
-
-  <ul class="post-list">
-
-    {% if page.pagination.enabled %}
-      {% assign postlist = paginator.posts %}
-      {% assign postlist_offset = 0 %}
-      {% if paginator.page == 1 %}
-        {% assign postlist_offset = homepage_latest_limit %}
-      {% endif %}
-    {% else %}
-      {% assign postlist = site.tutorials | sort: "seo_published" | reverse %}
-      {% assign postlist_offset = 0 %}
-    {% endif %}
-
-    {% for post in postlist offset: postlist_offset %}
-
-    {% if post.external_source == blank %}
-      {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}
-    {% else %}
-      {% assign read_time = post.feed_content | strip_html | number_of_words | divided_by: 180 | plus: 1 %}
-    {% endif %}
-    {% assign display_date = post.seo_lastmod | default: post.date %}
-    {% assign year = display_date | date: "%Y" %}
-    {% assign tags = post.tags | join: "" %}
-    {% assign categories = post.categories | join: "" %}
-
-    <li>
-
-{% if post.thumbnail %}
-
-<div class="row">
-          <div class="col-sm-9">
-{% endif %}
-        <h3>
-        {% if post.redirect == blank %}
-          <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        {% elsif post.redirect contains '://' %}
-          <a class="post-title" href="{{ post.redirect }}" target="_blank">{{ post.title }}</a>
-          <svg width="2rem" height="2rem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-            <path d="M17 13.5v6H5v-12h6m3-3h6v6m0-6-9 9" class="icon_svg-stroke" stroke="#999" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        {% else %}
-          <a class="post-title" href="{{ post.redirect | relative_url }}">{{ post.title }}</a>
-        {% endif %}
-      </h3>
-      <p>{{ post.description }}</p>
-      <p class="post-meta">
-        {{ read_time }} min read &nbsp; &middot; &nbsp;
-        {{ display_date | date: '%B %d, %Y' }}
-        {% if post.external_source %}
-        &nbsp; &middot; &nbsp; {{ post.external_source }}
-        {% endif %}
-      </p>
-      <p class="post-tags">
-        <span><i class="fa-solid fa-calendar fa-sm"></i> {{ year }}</span>
-
-          {% if tags != "" %}
-          &nbsp; &middot; &nbsp;
-            {% for tag in post.tags %}
-            <span><i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</span>
-              {% unless forloop.last %}
-                &nbsp;
-              {% endunless %}
-              {% endfor %}
-          {% endif %}
-
-          {% if categories != "" %}
-          &nbsp; &middot; &nbsp;
-            {% for category in post.categories %}
-            <span><i class="fa-solid fa-tag fa-sm"></i> {{ category }}</span>
-              {% unless forloop.last %}
-                &nbsp;
-              {% endunless %}
-              {% endfor %}
-          {% endif %}
-    </p>
-
-{% if post.thumbnail %}
-
-</div>
-
-  <div class="col-sm-3">
-    <img class="card-img" src="{{ post.thumbnail | relative_url }}" style="object-fit: cover; height: 90%" alt="image">
-  </div>
-</div>
-{% endif %}
-    </li>
-
-    {% endfor %}
-
-  </ul>
-
-{% if page.pagination.enabled %}
-{% include pagination.liquid %}
-{% endif %}
-
 </div>

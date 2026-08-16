@@ -26,7 +26,7 @@
       {% assign rendered_content = content | ensure_single_h1: page.title %}
     {% endif %}
 
-    <div class="container mt-5" role="main">
+    <div class="container{% if page.wide %} container--wide{% endif %} mt-5" role="main">
       {% if page.toc and page.toc.sidebar %}
         {% if page.toc.sidebar == 'right' %}
           <div class="row">

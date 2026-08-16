@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title description">
+  <title id="title">AI Frontier default article cover</title>
+  <desc id="description">Abstract neural network nodes on a violet and blue gradient.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#171327"/>
+      <stop offset="0.48" stop-color="#382052"/>
+      <stop offset="1" stop-color="#132a44"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.32" cy="0.28" r="0.72">
+      <stop offset="0" stop-color="#df35d3" stop-opacity="0.88"/>
+      <stop offset="0.5" stop-color="#a22eb9" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#18243c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#background)"/>
+  <rect width="1200" height="675" fill="url(#glow)"/>
+  <g fill="none" stroke="#dba7ee" stroke-opacity="0.32" stroke-width="2">
+    <path d="M88 504 280 390 448 472 618 286 816 356 1088 180"/>
+    <path d="M92 196 300 282 478 170 668 248 864 142 1094 274"/>
+    <path d="M280 390 300 282M448 472 478 170M618 286 668 248M816 356 864 142"/>
+  </g>
+  <g fill="#f7e9ff" stroke="#d939cf" stroke-width="5">
+    <circle cx="88" cy="504" r="12"/>
+    <circle cx="280" cy="390" r="16"/>
+    <circle cx="448" cy="472" r="12"/>
+    <circle cx="618" cy="286" r="22"/>
+    <circle cx="816" cy="356" r="13"/>
+    <circle cx="1088" cy="180" r="16"/>
+    <circle cx="92" cy="196" r="12"/>
+    <circle cx="300" cy="282" r="14"/>
+    <circle cx="478" cy="170" r="11"/>
+    <circle cx="668" cy="248" r="13"/>
+    <circle cx="864" cy="142" r="16"/>
+    <circle cx="1094" cy="274" r="12"/>
+  </g>
+  <g fill="#fff" font-family="Arial, Helvetica, sans-serif">
+    <text x="82" y="590" font-size="34" font-weight="700" letter-spacing="8">AGI FRONTIER</text>
+    <text x="84" y="628" fill="#d9cde4" font-size="20" letter-spacing="3">AI PAPER INSIGHTS</text>
+  </g>
+</svg>
