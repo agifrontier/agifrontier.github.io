@@ -33,7 +33,6 @@ pagination:
     <div class="homepage-latest__header">
       <div>
         <h2 id="homepage-latest-title">最新发布</h2>
-        <p>按网站上线时间排序，优先展示刚发布的论文解读。</p>
       </div>
       <a href="{{ '/topics/' | relative_url }}">浏览全部主题</a>
     </div>
