@@ -11,7 +11,7 @@ pagination:
   collection: tutorials
   permalink: /page/:num/
   per_page: 50
-  sort_field: seo_lastmod
+  sort_field: seo_published
   sort_reverse: true
   trail:
     before: 1 # The number of links before the current page
@@ -25,6 +25,45 @@ pagination:
     <h2>AI 论文解读、工程实践与前沿趋势</h2>
     <p><a href="{{ '/topics/' | relative_url }}">按主题浏览全部内容</a></p>
   </div>
+
+{% assign homepage_latest_limit = 8 %}
+{% if page.pagination.enabled %}
+  {% if paginator.page == 1 %}
+  <section class="homepage-latest" aria-labelledby="homepage-latest-title">
+    <div class="homepage-latest__header">
+      <div>
+        <h2 id="homepage-latest-title">最新发布</h2>
+        <p>按网站上线时间排序，优先展示刚发布的论文解读。</p>
+      </div>
+      <a href="{{ '/topics/' | relative_url }}">浏览全部主题</a>
+    </div>
+
+    <div class="row">
+      {% for post in paginator.posts limit: homepage_latest_limit %}
+        {% assign published_date = post.seo_published | default: post.date %}
+        <div class="col-12 col-md-6 mb-4">
+          <article class="card hoverable homepage-latest__card">
+            <div class="card-body">
+              <p class="homepage-latest__date">{{ published_date | date: "%Y年%m月%d日" }}</p>
+              <h3 class="card-title">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </h3>
+              <p class="card-text">{{ post.description | strip_html | truncate: 120 }}</p>
+              {% if post.topics and post.topics.size > 0 %}
+                <p class="homepage-latest__topics">
+                  {% for topic in post.topics limit: 2 %}
+                    <span>{{ topic }}</span>
+                  {% endfor %}
+                </p>
+              {% endif %}
+            </div>
+          </article>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+{% endif %}
 
 {% if site.tutorial_topics and site.tutorial_topics.size > 0 %}
 
@@ -92,11 +131,16 @@ pagination:
 
     {% if page.pagination.enabled %}
       {% assign postlist = paginator.posts %}
+      {% assign postlist_offset = 0 %}
+      {% if paginator.page == 1 %}
+        {% assign postlist_offset = homepage_latest_limit %}
+      {% endif %}
     {% else %}
-      {% assign postlist = site.tutorials | sort: "seo_lastmod" | reverse %}
+      {% assign postlist = site.tutorials | sort: "seo_published" | reverse %}
+      {% assign postlist_offset = 0 %}
     {% endif %}
 
-    {% for post in postlist %}
+    {% for post in postlist offset: postlist_offset %}
 
     {% if post.external_source == blank %}
       {% assign read_time = post.content | number_of_words | divided_by: 180 | plus: 1 %}

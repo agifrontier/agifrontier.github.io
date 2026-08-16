@@ -43,6 +43,8 @@ module Jekyll
         'git',
         '-C',
         site.source,
+        '-c',
+        'core.quotepath=false',
         'log',
         '--format=%cI',
         '--name-only',
