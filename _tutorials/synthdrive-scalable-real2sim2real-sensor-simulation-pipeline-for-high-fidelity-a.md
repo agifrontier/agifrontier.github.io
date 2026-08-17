@@ -84,8 +84,7 @@ $${% endraw %}
 **定性结果**：如下图所示，与InstantMesh、CRM等基线方法相比，本文方法生成的3D模型在几何和纹理质量上均表现出显著优势。无论是时钟的数字、汽车的后视镜等精细结构，还是复杂的纹理细节，本文方法都能高质量地重建。即使是来自互联网、光照和几何复杂的图像，该方法也表现出良好的泛化能力。
 
 
-| Ours | CRM | InsMesh | Wonder3D | Ours | CRM | InsMesh | Wonder3D |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+**对比方法（从左至右）**：Ours、CRM、InsMesh、Wonder3D、Ours、CRM、InsMesh、Wonder3D。
 
 <img src="/images/2509.06798v1/x4.jpg" alt="Qualitative Comparison" style="width:85%; max-width:450px; margin:auto; display:block;">
 图4：不同方法的定性比较。(a)-(f)为输入。本文的网格显示出更优的几何和纹理质量。

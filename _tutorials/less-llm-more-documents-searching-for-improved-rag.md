@@ -104,6 +104,7 @@ related_tutorials:
 | 4$\times$ | 48.7 | 34.4 | 53.6 | 39.1 | 56.6 | 42.2 | 58.0 | 43.1 | 58.7 | 43.7 |
 | 5$\times$ | 49.3 | 35.1 | -- | -- | -- | -- | -- | -- | -- | -- |
 | 10$\times$| 50.8 | 36.3 | 55.1 | 40.5 | 58.1 | 43.4 | 59.4 | 44.4 | 60.1 | 44.9 |
+
 *<p align="center">NQ数据集上的F1/EM得分。阴影单元格表示较小模型首次超越下一级别模型在1x语料库下的性能点（$n^{\star}$）。</p>*
 
 <img src="/images/2510.02657v1/nq_f1_marked.jpg" alt="NQ数据集上F1得分随语料库规模的变化" style="width:85%; max-width:450px; margin:auto; display:block;">

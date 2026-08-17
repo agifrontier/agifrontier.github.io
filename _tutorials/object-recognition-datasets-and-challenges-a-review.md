@@ -148,6 +148,7 @@ related_tutorials:
 | ImageNet | 21,841 | 14,197,122 | 3 | 2009 |
 | Microsoft COCO | 91 | 328,000 | 7.7 | 2014 |
 | Open Images | 600 | 9,178,275 | 8.1 | 2017 |
+
 *Table 1: PASCAL VOC, ImageNet, MS COCO, 和 Open Images 的数据集统计*
 
 <img src="/images/2507.22361v1/Untitled.jpg" alt="主要挑战赛中获胜算法的准确率提升" style="width:90%; max-width:700px; margin:auto; display:block;">
@@ -178,6 +179,7 @@ related_tutorials:
 | **Open Images** | 物体检测 | 500 | 1,743,042 | 12,421,955 | 2018 - 至今 | 基于层次结构的边界框检测 | mAP |
 | | 实例分割 | 300 | 848,000 | 2,148,896 | 2018 - 至今 | 对物体类别进行实例分割；包含负标签以优化训练 | mAP (IoU > 0.5) |
 | | 视觉关系检测 | 57 | 1,743,042 | 380,000关系三元组 | 2018 - 至今 | 用关系三元组标记图像 | mAP和召回率的加权和 |
+
 *Table 2: PASCAL VOC, ILSVRC, MS COCO, 和 Open Images 的挑战赛描述*
 
 *   **分类**：主要在PASCAL VOC和ILSVRC中出现，后者采用Top-5错误率作为标准。
@@ -202,6 +204,7 @@ related_tutorials:
 | Visual Genome [126] | 108,000 | 76,340 | 4,102,818 | 2016 |
 | YouTube BB [197] | 5.6 m | 23 | 5.6 m | 2017 |
 | Objects 365 [211] | 638,000 | 365 | 10.1 m | 2019 |
+
 *Table 3: 通用物体检测数据集（不含3.1节中已介绍的）*
 
 ### 物体分割数据集
@@ -218,6 +221,7 @@ related_tutorials:
 | YouTube-VOS [260] | 4,453 | 94 | 7,755 | 2018 | 是 | 从短视频片段（3-6秒）收集的视频物体分割数据集 |
 | LVIS [94] | 164,000 | 1000 | 2 m | 2019 | 是 | 针对长尾分布类别的实例分割标注，这些类别样本很少 |
 | LabelMe[207] | 62,197 | 182 | 250,250 | 2005 | 否 | 实例级分割；部分背景类别也被标注 |
+
 *Table 4: 物体分割数据集*
 
 ## 场景理解数据集中的物体识别
