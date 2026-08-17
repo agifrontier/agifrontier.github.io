@@ -45,3 +45,51 @@ Inspect the built DOM before finalizing layout-scoped selectors and cover both p
 ### Metadata
 - Reproducible: yes
 - Related Files: _sass/_base.scss, _layouts/default.liquid, _layouts/post.liquid
+
+## [ERR-20260817-002] zsh-readonly-status-variable
+
+**Logged**: 2026-08-17T21:24:00+08:00
+**Priority**: low
+**Status**: resolved
+**Area**: tests
+
+### Summary
+Using `status` as a temporary exit-code variable breaks verification commands under zsh.
+
+### Error
+`zsh: read-only variable: status`
+
+### Context
+- Command captured a validator exit code with `status=$?`.
+- Repository commands run under zsh, where `status` is a special read-only parameter.
+
+### Suggested Fix
+Use a neutral name such as `exit_code=$?` when preserving command exit status.
+
+### Metadata
+- Reproducible: yes
+- Related Files: scripts/check_built_site.py
+
+## [ERR-20260817-003] parallel-command-directory-race
+
+**Logged**: 2026-08-17T21:37:00+08:00
+**Priority**: low
+**Status**: resolved
+**Area**: tests
+
+### Summary
+Commands that create and consume the same directory cannot run in one parallel batch.
+
+### Error
+`Failed to create unified exec process: No such file or directory`
+
+### Context
+- One command created the Playwright artifact directory.
+- A parallel command used that directory as its working directory before creation completed.
+
+### Suggested Fix
+Create required directories first, then run independent browser commands in parallel only after the prerequisite succeeds.
+
+### Metadata
+- Reproducible: yes
+- Related Files: none

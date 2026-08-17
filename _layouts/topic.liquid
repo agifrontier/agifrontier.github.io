@@ -2,31 +2,69 @@
 layout: default
 ---
 
-{% assign topic_tutorials = site.tutorials | where_exp: "tutorial", "tutorial.topics contains page.topic_name" | sort: "seo_published" | reverse %}
+{% assign topic_tutorials = page.topic_tutorials %}
 
 <div class="post topic-page">
   <nav class="topic-page__breadcrumb" aria-label="面包屑导航">
     <a href="{{ '/topics/' | relative_url }}">AI 主题导航</a>
     <span aria-hidden="true">/</span>
     <span>{{ page.topic_name }}</span>
+    {% if page.topic_page_number > 1 %}
+      <span aria-hidden="true">/</span>
+      <span>第{{ page.topic_page_number }}页</span>
+    {% endif %}
   </nav>
 
   <header class="post-header topic-page__header">
-    <h1 class="post-title">{{ page.topic_name }}</h1>
+    <h1 class="post-title">
+      {{ page.topic_name }}
+      {% if page.topic_page_number > 1 %}<small>第{{ page.topic_page_number }}页</small>{% endif %}
+    </h1>
   </header>
 
-  <section aria-label="{{ page.topic_name }}文章">
+  <section
+    aria-label="{{ page.topic_name }}文章"
+    data-topic-page="{{ page.topic_page_number }}"
+    data-topic-total-pages="{{ page.topic_total_pages }}"
+    data-topic-total-items="{{ page.topic_total_items }}"
+  >
     <div class="topic-page__articles">
       {% for tutorial in topic_tutorials %}
         {% assign published_date = tutorial.seo_published | default: tutorial.date %}
         <article class="topic-page__article">
-          <h3><a href="{{ tutorial.url | relative_url }}">{{ tutorial.title | replace: '$', '' | strip_html }}</a></h3>
+          <h2><a href="{{ tutorial.url | relative_url }}">{{ tutorial.title | replace: '$', '' | strip_html }}</a></h2>
           {% if published_date %}<p class="topic-page__meta"><time class="topic-page__published" datetime="{{ published_date | date_to_xmlschema }}">{{ published_date | date: "%Y年%m月%d日" }}</time></p>{% endif %}
           {% if tutorial.description %}<p>{{ tutorial.description | strip_html | truncate: 150 }}</p>{% endif %}
         </article>
       {% endfor %}
     </div>
   </section>
+
+  {% if page.topic_total_pages > 1 %}
+    <nav class="topic-page__pagination" aria-label="{{ page.topic_name }}分页">
+      {% if page.topic_previous_path %}
+        <a class="topic-page__pagination-direction" href="{{ page.topic_previous_path | relative_url }}" rel="prev">上一页</a>
+      {% else %}
+        <span class="topic-page__pagination-direction is-disabled" aria-disabled="true">上一页</span>
+      {% endif %}
+      <ol>
+        {% for item in page.topic_page_links %}
+          <li>
+            {% if item.number == page.topic_page_number %}
+              <span aria-current="page">{{ item.number }}</span>
+            {% else %}
+              <a href="{{ item.path | relative_url }}">{{ item.number }}</a>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ol>
+      {% if page.topic_next_path %}
+        <a class="topic-page__pagination-direction" href="{{ page.topic_next_path | relative_url }}" rel="next">下一页</a>
+      {% else %}
+        <span class="topic-page__pagination-direction is-disabled" aria-disabled="true">下一页</span>
+      {% endif %}
+    </nav>
+  {% endif %}
 
   <nav class="topic-page__siblings" aria-label="其他AI主题">
     <h2>浏览其他主题</h2>
@@ -45,12 +83,13 @@ layout: default
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": {{ page.title | jsonify }},
-  "numberOfItems": {{ topic_tutorials.size }},
+  "numberOfItems": {{ page.topic_total_items }},
+  "itemListOrder": "https://schema.org/ItemListOrderDescending",
   "itemListElement": [
     {% for tutorial in topic_tutorials %}
       {
         "@type": "ListItem",
-        "position": {{ forloop.index }},
+        "position": {{ page.topic_first_position | plus: forloop.index0 }},
         "url": {{ tutorial.url | absolute_url | jsonify }},
         "name": {{ tutorial.title | replace: '$', '' | strip_html | jsonify }}
       }{% unless forloop.last %},{% endunless %}

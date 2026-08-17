@@ -168,7 +168,11 @@ def main() -> int:
         if schema.get("@type") != expected_schema:
             add_error(errors, path, f"schema type {schema.get('@type')!r}")
 
-    topic_pages = sorted((build_dir / "topics").glob("*/index.html"))
+    topic_pages = sorted(
+        path
+        for path in (build_dir / "topics").rglob("index.html")
+        if path != build_dir / "topics/index.html"
+    )
     for path in topic_pages:
         page = parse(path)
         description = page.meta_content(name="description") or ""

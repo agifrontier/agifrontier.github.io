@@ -61,10 +61,16 @@ class PageParser(HTMLParser):
         self.references: list[tuple[str, str]] = []
         self.json_ld_parts: list[list[str]] = []
         self.topic_published_dates: list[str] = []
+        self.topic_article_links: list[str] = []
+        self.topic_page_number: int | None = None
+        self.topic_total_pages: int | None = None
+        self.topic_total_items: int | None = None
+        self.pagination_relations: list[tuple[str, str]] = []
         self._current_h1: list[str] | None = None
         self._current_heading: list[str] | None = None
         self._current_pre: list[str] | None = None
         self._current_json_ld: list[str] | None = None
+        self._in_topic_article = False
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         tag = tag.lower()
@@ -84,7 +90,13 @@ class PageParser(HTMLParser):
             if attributes.get("src"):
                 self.references.append(("image", attributes["src"]))
         elif tag == "a" and attributes.get("href"):
-            self.references.append(("link", attributes["href"]))
+            href = attributes["href"]
+            self.references.append(("link", href))
+            if self._in_topic_article:
+                self.topic_article_links.append(href)
+            for relation in attributes.get("rel", "").lower().split():
+                if relation in {"prev", "next"}:
+                    self.pagination_relations.append((relation, href))
         elif tag == "script":
             if attributes.get("src"):
                 self.references.append(("script", attributes["src"]))
@@ -98,6 +110,17 @@ class PageParser(HTMLParser):
             self._current_pre = []
         elif tag == "time" and "topic-page__published" in attributes.get("class", "").split():
             self.topic_published_dates.append(attributes.get("datetime", "").strip())
+        elif tag == "article" and "topic-page__article" in attributes.get("class", "").split():
+            self._in_topic_article = True
+        elif tag == "section" and attributes.get("data-topic-page"):
+            try:
+                self.topic_page_number = int(attributes["data-topic-page"])
+                self.topic_total_pages = int(attributes["data-topic-total-pages"])
+                self.topic_total_items = int(attributes["data-topic-total-items"])
+            except (KeyError, ValueError):
+                self.topic_page_number = None
+                self.topic_total_pages = None
+                self.topic_total_items = None
 
     def handle_startendtag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         self.handle_starttag(tag, attrs)
@@ -117,6 +140,8 @@ class PageParser(HTMLParser):
         elif tag == "script" and self._current_json_ld is not None:
             self.json_ld_parts.append(self._current_json_ld)
             self._current_json_ld = None
+        elif tag == "article" and self._in_topic_article:
+            self._in_topic_article = False
         for index in range(len(self.stack) - 1, -1, -1):
             if self.stack[index] == tag:
                 del self.stack[index:]
@@ -182,6 +207,7 @@ def main() -> int:
     titles: dict[str, list[str]] = defaultdict(list)
     descriptions: dict[str, list[str]] = defaultdict(list)
     checked_pages = 0
+    topic_pages: dict[str, list[tuple[int, str, PageParser, list[dt.datetime]]]] = defaultdict(list)
 
     for html_path in sorted(site.rglob("*.html")):
         relative_path = html_path.relative_to(site).as_posix()
@@ -267,7 +293,10 @@ def main() -> int:
             except json.JSONDecodeError as exc:
                 issues.append(f"{relative_path}: invalid JSON-LD: {exc}")
 
-        if re.fullmatch(r"topics/[^/]+/index\.html", relative_path):
+        topic_match = re.fullmatch(r"topics/([^/]+)(?:/page/(\d+))?/index\.html", relative_path)
+        if topic_match:
+            topic_slug = topic_match.group(1)
+            topic_page_number = int(topic_match.group(2) or "1")
             parsed_dates: list[dt.datetime] = []
             if not page.topic_published_dates:
                 issues.append(f"{relative_path}: missing topic article published dates")
@@ -285,12 +314,82 @@ def main() -> int:
             if "ItemList" not in schema_types:
                 issues.append(f"{relative_path}: missing ItemList JSON-LD")
 
+            if page.topic_page_number != topic_page_number:
+                issues.append(
+                    f"{relative_path}: data topic page {page.topic_page_number!r} != path page {topic_page_number}"
+                )
+            if page.topic_total_pages is None or page.topic_total_pages < 1:
+                issues.append(f"{relative_path}: missing valid topic total pages")
+            if page.topic_total_items is None or page.topic_total_items < len(page.topic_article_links):
+                issues.append(f"{relative_path}: missing valid topic total items")
+            if len(page.topic_article_links) != len(set(page.topic_article_links)):
+                issues.append(f"{relative_path}: duplicate article link within topic page")
+            topic_pages[topic_slug].append(
+                (topic_page_number, relative_path, page, parsed_dates)
+            )
+
     for title, pages in titles.items():
         if len(pages) > 1:
             issues.append(f"duplicate title {title!r}: {pages}")
     for description, pages in descriptions.items():
         if len(pages) > 1:
             issues.append(f"duplicate description across {len(pages)} pages: {pages}")
+
+    sitemap_paths = sorted(site.glob("sitemap*.xml"))
+    sitemap = "\n".join(
+        path.read_text(encoding="utf-8", errors="replace") for path in sitemap_paths
+    )
+    if not sitemap:
+        issues.append("sitemap.xml: missing or empty sitemap set")
+
+    for topic_slug, records in sorted(topic_pages.items()):
+        records.sort(key=lambda item: item[0])
+        total_pages_values = {record[2].topic_total_pages for record in records}
+        total_items_values = {record[2].topic_total_items for record in records}
+        expected_total_pages = records[0][2].topic_total_pages
+        expected_total_items = records[0][2].topic_total_items
+        page_numbers = [record[0] for record in records]
+        if len(total_pages_values) != 1 or expected_total_pages is None:
+            issues.append(f"topics/{topic_slug}: inconsistent total page metadata: {total_pages_values}")
+            continue
+        if len(total_items_values) != 1 or expected_total_items is None:
+            issues.append(f"topics/{topic_slug}: inconsistent total item metadata: {total_items_values}")
+            continue
+        expected_page_numbers = list(range(1, expected_total_pages + 1))
+        if page_numbers != expected_page_numbers:
+            issues.append(f"topics/{topic_slug}: page sequence {page_numbers} != {expected_page_numbers}")
+
+        all_links = [link for record in records for link in record[2].topic_article_links]
+        if len(all_links) != expected_total_items:
+            issues.append(
+                f"topics/{topic_slug}: rendered {len(all_links)} article links != total {expected_total_items}"
+            )
+        if len(all_links) != len(set(all_links)):
+            issues.append(f"topics/{topic_slug}: duplicate article links across pagination")
+
+        all_dates = [date for record in records for date in record[3]]
+        if all_dates != sorted(all_dates, reverse=True):
+            issues.append(f"topics/{topic_slug}: articles are not globally sorted by published date descending")
+
+        for page_number, relative_path, page, _dates in records:
+            expected_relations: set[tuple[str, str]] = set()
+            if page_number > 1:
+                previous_path = (
+                    f"/topics/{topic_slug}/"
+                    if page_number == 2
+                    else f"/topics/{topic_slug}/page/{page_number - 1}/"
+                )
+                expected_relations.add(("prev", previous_path))
+            if page_number < expected_total_pages:
+                expected_relations.add(("next", f"/topics/{topic_slug}/page/{page_number + 1}/"))
+            if set(page.pagination_relations) != expected_relations:
+                issues.append(
+                    f"{relative_path}: pagination relations {page.pagination_relations} != {sorted(expected_relations)}"
+                )
+
+            rendered_url = SITE_ORIGIN + page_url(relative_path)
+            if rendered_url not in sitemap:
+                issues.append(f"{relative_path}: missing from sitemap.xml")
 
     if checked_pages == 0:
         issues.append(f"no user pages found under built site directory: {site}")

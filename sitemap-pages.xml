@@ -7,7 +7,13 @@ layout: null
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% assign pages = site.html_pages | where_exp:'doc','doc.sitemap != false' | where_exp:'doc','doc.url != "/404.html"' %}
   {% for page in pages %}
-    {% unless page.url contains '/page/' %}
+    {% assign exclude_paginated_page = false %}
+    {% if page.url contains '/page/' %}
+      {% unless page.url contains '/topics/' %}
+        {% assign exclude_paginated_page = true %}
+      {% endunless %}
+    {% endif %}
+    {% unless exclude_paginated_page %}
       {% unless page.path contains 'backup' or page.path contains 'sitemap' %}
         <url>
           <loc>{{ page.url | replace:'/index.html','/' | absolute_url | xml_escape }}</loc>

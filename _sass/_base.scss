@@ -112,6 +112,13 @@ strong {
   border-bottom: 1px solid var(--global-divider-color);
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
+
+  small {
+    color: var(--global-text-color-light);
+    font-size: 0.5em;
+    font-weight: 400;
+    margin-left: 0.4rem;
+  }
 }
 
 .topic-page__meta {
@@ -128,7 +135,7 @@ strong {
   border-bottom: 1px solid var(--global-divider-color);
   padding: 0 0 1rem;
 
-  h3 {
+  h2 {
     font-size: 1.15rem;
     line-height: 1.45;
     margin-bottom: 0.35rem;
@@ -137,6 +144,48 @@ strong {
   p {
     font-size: 0.95rem;
     margin-bottom: 0.35rem;
+  }
+}
+
+.topic-page__pagination {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  a,
+  span {
+    align-items: center;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.35rem;
+    display: inline-flex;
+    justify-content: center;
+    min-height: 2.25rem;
+    min-width: 2.25rem;
+    padding: 0.35rem 0.65rem;
+  }
+
+  [aria-current="page"] {
+    background: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    color: var(--global-card-bg-color);
+    font-weight: 600;
+  }
+
+  .is-disabled {
+    color: var(--global-text-color-light);
+    opacity: 0.55;
   }
 }
 
@@ -167,6 +216,15 @@ strong {
   .related-tutorials__list,
   .topic-directory__grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .topic-page__pagination {
+    align-items: stretch;
+    flex-direction: column;
+
+    .topic-page__pagination-direction {
+      width: 100%;
+    }
   }
 }
 
