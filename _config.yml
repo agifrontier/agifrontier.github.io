@@ -241,44 +241,76 @@ jekyll-archives:
 tutorial_topics:
   - name: AI Agent
     slug: ai-agent
+    seo_title: AI Agent论文解读：智能体架构、工具调用与评测
+    description: 聚合AI Agent论文解读，覆盖智能体架构、工具调用、规划记忆、多智能体协作、Agent Harness与基准评测等前沿研究。
   - name: RAG
     slug: rag
     legacy_slug: rag-knowledge
+    seo_title: RAG论文解读：检索增强生成、知识库与最新研究
+    description: 聚合RAG论文解读，覆盖检索增强生成、向量检索、知识库构建、长文本问答、GraphRAG及企业知识应用等研究进展。
   - name: 知识系统
     slug: knowledge-systems
+    seo_title: 知识系统论文解读：知识图谱、记忆与信息检索
+    description: 聚合AI知识系统论文解读，覆盖知识图谱、长期记忆、信息检索、知识组织、知识更新与可信问答等核心方法。
   - name: 推理
     slug: reasoning
     legacy_slug: reasoning-rl
+    seo_title: 大模型推理论文解读：思维链、搜索与测试时计算
+    description: 聚合大模型推理论文解读，覆盖思维链、搜索规划、数学推理、测试时计算、过程监督与复杂问题求解等研究方向。
   - name: 强化学习
     slug: reinforcement-learning
+    seo_title: 强化学习论文解读：RLHF、策略优化与智能体训练
+    description: 聚合强化学习论文解读，覆盖RLHF、策略优化、奖励建模、离线强化学习、智能体训练与大模型后训练等最新研究。
   - name: 模型训练
     slug: model-training
+    seo_title: 大模型训练论文解读：预训练、微调与数据配方
+    description: 聚合大模型训练论文解读，覆盖预训练、指令微调、数据配方、分布式训练、持续学习与高效训练系统等关键技术。
   - name: 模型优化
     slug: model-optimization
+    seo_title: 模型优化论文解读：压缩、量化与推理加速
+    description: 聚合模型优化论文解读，覆盖模型压缩、量化、剪枝、蒸馏、稀疏化、推理加速、低成本部署与硬件协同优化等工程方法。
   - name: "多模态&视觉"
     slug: multimodal
     legacy_slugs:
       - multimodal-vision
       - computer-vision
+    seo_title: 多模态&视觉论文解读：视觉语言模型与生成技术
+    description: 聚合多模态与计算机视觉论文解读，覆盖视觉语言模型、图像理解、视频生成、视觉表征、跨模态对齐与统一建模。
   - name: 具身智能
     slug: embodied-ai
     legacy_slug: embodied-robotics
+    seo_title: 具身智能论文解读：机器人、VLA与世界模型
+    description: 聚合具身智能论文解读，覆盖机器人学习、视觉语言动作模型、世界模型、操作导航、仿真训练与真实环境部署。
   - name: AI安全
     slug: ai-safety
     legacy_slug: ai-safety-evaluation
+    seo_title: AI安全论文解读：对齐、可控性与风险治理
+    description: 聚合AI安全论文解读，覆盖模型对齐、越狱防御、可控生成、红队测试、隐私安全、风险识别、治理机制与可信部署实践。
   - name: AI评测
     slug: ai-evaluation
+    seo_title: AI评测论文解读：基准测试、LLM裁判与能力测量
+    description: 聚合AI评测论文解读，覆盖基准测试、LLM-as-a-Judge、能力测量、可靠性评估、Agent评测与数据污染检测。
   - name: 数据工程
     slug: data-engineering
     legacy_slug: data-ai-engineering
+    seo_title: AI数据工程论文解读：数据治理、合成与质量优化
+    description: 聚合AI数据工程论文解读，覆盖数据清洗、数据合成、质量评估、数据选择、数据治理、大模型数据流水线与生产实践。
   - name: AI工程
     slug: ai-engineering
+    seo_title: AI工程论文解读：大模型系统、部署与基础设施
+    description: 聚合AI工程论文解读，覆盖大模型服务、推理系统、Agent基础设施、可观测性、成本优化与生产环境部署实践。
   - name: 行业应用
     slug: industry-applications
+    seo_title: AI行业应用论文解读：医疗、金融、教育与科研
+    description: 聚合AI行业应用论文解读，覆盖医疗、金融、教育、科研、工业与软件工程等领域的模型方法、评测和落地经验。
   - name: 基础模型
     slug: foundation-models
+    seo_title: 基础模型论文解读：LLM架构、能力与扩展规律
+    description: 聚合基础模型论文解读，覆盖大语言模型架构、扩展规律、涌现能力、预训练机制、模型分析与下一代基础模型。
   - name: AI理论
     slug: ai-theory
+    seo_title: AI理论论文解读：学习理论、机制分析与能力边界
+    description: 聚合AI理论论文解读，覆盖学习理论、泛化机制、表示能力、可解释性、复杂性分析、人工智能能力边界与前沿理论问题。
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

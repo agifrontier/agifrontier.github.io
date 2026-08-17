@@ -15,7 +15,7 @@
                 {% for related_topic in related.topics %}
                   {% assign topic_config = site.tutorial_topics | where: 'name', related_topic | first %}
                   {% if topic_config %}
-                    <a href="{{ '/topics/' | relative_url }}#{{ topic_config.slug }}">{{ related_topic }}</a>
+                    <a href="{{ '/topics/' | append: topic_config.slug | append: '/' | relative_url }}">{{ related_topic }}</a>
                   {% else %}
                     {{ related_topic }}
                   {% endif %}

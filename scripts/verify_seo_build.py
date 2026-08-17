@@ -168,8 +168,37 @@ def main() -> int:
         if schema.get("@type") != expected_schema:
             add_error(errors, path, f"schema type {schema.get('@type')!r}")
 
+    topic_pages = sorted((build_dir / "topics").glob("*/index.html"))
+    for path in topic_pages:
+        page = parse(path)
+        description = page.meta_content(name="description") or ""
+        relative_url = "/" + str(path.relative_to(build_dir).parent) + "/"
+        expected_canonical = f"https://agifrontier.github.io{quote(relative_url, safe='/-._~')}"
+        if page.h1_count != 1:
+            add_error(errors, path, f"h1 count {page.h1_count}")
+        if not 10 <= len(page.title) <= 60:
+            add_error(errors, path, f"title length {len(page.title)}")
+        if not 50 <= len(description) <= 160:
+            add_error(errors, path, f"description length {len(description)}")
+        if page.canonical != expected_canonical:
+            add_error(errors, path, f"canonical {page.canonical!r}")
+
+        topic_schema_types: set[str] = set()
+        for block in page.json_ld_blocks:
+            try:
+                schema = json.loads(block)
+            except json.JSONDecodeError as exc:
+                add_error(errors, path, f"invalid JSON-LD: {exc}")
+                continue
+            topic_schema_types.add(str(schema.get("@type", "")))
+        if "CollectionPage" not in topic_schema_types:
+            add_error(errors, path, "missing CollectionPage schema")
+        if "ItemList" not in topic_schema_types:
+            add_error(errors, path, "missing ItemList schema")
+
     report = {
         "tutorial_pages": len(tutorial_pages),
+        "topic_pages": len(topic_pages),
         "unique_descriptions": len(set(descriptions)),
         "schema_types": dict(schema_types),
         "errors": errors,

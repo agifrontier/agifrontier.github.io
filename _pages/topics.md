@@ -11,34 +11,24 @@ nav_order: 2
 <div class="post topic-directory">
   <header class="post-header">
     <h1 class="post-title">AI 主题导航</h1>
-    <p>按研究方向浏览论文解读，快速进入相关主题与延伸阅读。</p>
+    <p>每个研究方向均拥有独立主题页，集中展示相关论文解读、核心方法与最新进展。</p>
   </header>
 
-  {% for topic in site.tutorial_topics %}
-    {% assign topic_name = topic.name %}
-    {% assign topic_tutorials = site.tutorials | where_exp: "tutorial", "tutorial.topics contains topic_name" | sort: "seo_lastmod" | reverse %}
-    {% if topic_tutorials.size > 0 %}
-      {% if topic.legacy_slug %}<span class="topic-directory__legacy-anchor" id="{{ topic.legacy_slug }}" aria-hidden="true"></span>{% endif %}
-      {% for legacy_slug in topic.legacy_slugs %}<span class="topic-directory__legacy-anchor" id="{{ legacy_slug }}" aria-hidden="true"></span>{% endfor %}
-      <section class="topic-directory__section" id="{{ topic.slug }}">
-        <h2>{{ topic.name }} <small>{{ topic_tutorials.size }} 篇</small></h2>
-        <ul>
-          {% for tutorial in topic_tutorials limit: 12 %}
-            <li><a href="{{ tutorial.url | relative_url }}">{{ tutorial.title | replace: '$', '' | strip_html }}</a></li>
-          {% endfor %}
-        </ul>
-        {% if topic_tutorials.size > 12 %}
-          {% assign remaining_count = topic_tutorials.size | minus: 12 %}
-          <details class="topic-directory__more">
-            <summary>查看其余 {{ remaining_count }} 篇</summary>
-            <ul>
-              {% for tutorial in topic_tutorials offset: 12 %}
-                <li><a href="{{ tutorial.url | relative_url }}">{{ tutorial.title | replace: '$', '' | strip_html }}</a></li>
-              {% endfor %}
-            </ul>
-          </details>
-        {% endif %}
-      </section>
-    {% endif %}
-  {% endfor %}
+  <div class="topic-directory__grid">
+    {% for topic in site.tutorial_topics %}
+      {% assign topic_name = topic.name %}
+      {% assign topic_tutorials = site.tutorials | where_exp: "tutorial", "tutorial.topics contains topic_name" %}
+      {% if topic_tutorials.size > 0 %}
+        {% if topic.legacy_slug %}<span class="topic-directory__legacy-anchor" id="{{ topic.legacy_slug }}" aria-hidden="true"></span>{% endif %}
+        {% for legacy_slug in topic.legacy_slugs %}<span class="topic-directory__legacy-anchor" id="{{ legacy_slug }}" aria-hidden="true"></span>{% endfor %}
+        <section class="topic-directory__section" id="{{ topic.slug }}">
+          <h2><a href="{{ '/topics/' | append: topic.slug | append: '/' | relative_url }}">{{ topic.name }}</a></h2>
+          <p>{{ topic.description }}</p>
+          <a class="topic-directory__link" href="{{ '/topics/' | append: topic.slug | append: '/' | relative_url }}">
+            查看 {{ topic_tutorials.size }} 篇论文解读 <span aria-hidden="true">→</span>
+          </a>
+        </section>
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>

@@ -239,7 +239,7 @@
     {% endcase %}
   {% endfor %}
 
-  {% assign schema_type = 'WebSite' %}
+  {% assign schema_type = page.schema_type | default: 'WebSite' %}
   {% if is_blog_post %}
     {% assign schema_type = 'BlogPosting' %}
   {% elsif is_tutorial %}

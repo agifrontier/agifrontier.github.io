@@ -244,17 +244,31 @@ def main() -> int:
                 issues.append(f"{relative_path}: local image lacks width/height: {source}")
 
         for reference_kind, raw_url in page.references:
+            absolute_reference = urljoin(SITE_ORIGIN + page_url(relative_path), raw_url)
+            parsed_reference = urlparse(absolute_reference)
+            if parsed_reference.path.rstrip("/") == "/topics" and parsed_reference.fragment:
+                issues.append(f"{relative_path}: topic link must use an independent page: {raw_url}")
             target = local_target(site, relative_path, raw_url)
             if target is not None and not target.exists():
                 issues.append(f"{relative_path}: missing local {reference_kind}: {raw_url}")
 
+        parsed_schemas: list[dict[str, object]] = []
         if not page.json_ld_parts:
             issues.append(f"{relative_path}: missing JSON-LD")
         for json_parts in page.json_ld_parts:
             try:
-                json.loads("".join(json_parts))
+                schema = json.loads("".join(json_parts))
+                if isinstance(schema, dict):
+                    parsed_schemas.append(schema)
             except json.JSONDecodeError as exc:
                 issues.append(f"{relative_path}: invalid JSON-LD: {exc}")
+
+        if re.fullmatch(r"topics/[^/]+/index\.html", relative_path):
+            schema_types = {schema.get("@type") for schema in parsed_schemas}
+            if "CollectionPage" not in schema_types:
+                issues.append(f"{relative_path}: missing CollectionPage JSON-LD")
+            if "ItemList" not in schema_types:
+                issues.append(f"{relative_path}: missing ItemList JSON-LD")
 
     for title, pages in titles.items():
         if len(pages) > 1:

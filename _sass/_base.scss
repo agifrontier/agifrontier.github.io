@@ -59,35 +59,36 @@ strong {
   }
 }
 
+.topic-directory__grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 2rem;
+}
+
 .topic-directory__section {
-  border-top: 1px solid var(--global-divider-color);
-  padding: 1.5rem 0;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
   scroll-margin-top: 5rem;
 
   h2 {
     font-size: 1.35rem;
+    margin-bottom: 0.75rem;
   }
 
-  small {
+  p {
     color: var(--global-text-color-light);
-    font-size: 0.85rem;
-    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 1.65;
   }
 
-  li {
-    margin-bottom: 0.55rem;
-    overflow-wrap: anywhere;
-  }
-
-  .topic-directory__more {
-    margin-top: 0.75rem;
-
-    summary {
-      color: var(--global-theme-color);
-      cursor: pointer;
-      font-weight: 500;
-      margin-bottom: 0.75rem;
-    }
+  .topic-directory__link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: auto;
   }
 }
 
@@ -98,8 +99,81 @@ strong {
   scroll-margin-top: 5rem;
 }
 
+.topic-page__breadcrumb {
+  align-items: center;
+  color: var(--global-text-color-light);
+  display: flex;
+  font-size: 0.85rem;
+  gap: 0.45rem;
+  margin-bottom: 1.5rem;
+}
+
+.topic-page__header {
+  border-bottom: 1px solid var(--global-divider-color);
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.topic-page__eyebrow,
+.topic-page__count,
+.topic-page__meta {
+  color: var(--global-text-color-light);
+  font-size: 0.85rem;
+}
+
+.topic-page__eyebrow {
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+.topic-page__articles {
+  display: grid;
+  gap: 1rem;
+}
+
+.topic-page__article {
+  border-bottom: 1px solid var(--global-divider-color);
+  padding: 0 0 1rem;
+
+  h3 {
+    font-size: 1.15rem;
+    line-height: 1.45;
+    margin-bottom: 0.35rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+    margin-bottom: 0.35rem;
+  }
+}
+
+.topic-page__siblings {
+  border-top: 1px solid var(--global-divider-color);
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  a {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 999px;
+    font-size: 0.85rem;
+    padding: 0.35rem 0.7rem;
+  }
+}
+
 @media (max-width: 576px) {
-  .related-tutorials__list {
+  .related-tutorials__list,
+  .topic-directory__grid {
     grid-template-columns: minmax(0, 1fr);
   }
 }

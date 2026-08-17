@@ -65,6 +65,8 @@ jobs:
           JEKYLL_ENV: production
       - name: Validate built site
         run: python3 scripts/check_built_site.py _site
+      - name: Validate SEO metadata
+        run: python3 scripts/verify_seo_build.py _site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

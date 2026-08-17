@@ -169,7 +169,7 @@ pagination:
   {% if site.tutorial_topics and site.tutorial_topics.size > 0 %}
     <nav class="homepage-topics" aria-label="AI主题导航">
       {% for topic in site.tutorial_topics %}
-        <a href="{{ '/topics/' | relative_url }}#{{ topic.slug }}">{{ topic.name }}</a>
+        <a href="{{ '/topics/' | append: topic.slug | append: '/' | relative_url }}">{{ topic.name }}</a>
       {% endfor %}
     </nav>
   {% endif %}
