@@ -56,11 +56,15 @@ jobs:
         run: python3 scripts/check_markdown_fences.py _tutorials _posts
       - name: Generate homepage thumbnails
         run: python3 scripts/generate_homepage_thumbnails.py
+      - name: Generate article image metadata
+        run: python3 scripts/generate_image_metadata.py
       - name: Build with Jekyll
         # Runs the build command defined in the Rakefile
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
+      - name: Validate built site
+        run: python3 scripts/check_built_site.py _site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -148,7 +148,7 @@ g_i ← mean(cosine-distance(d_feature, Neighbors))
 **3. 组件和鲁棒性分析**
 *   **组件有效性**：消融实验表明，清洗器（recaption）和基于增益的采样（sampling）模块对最终性能都有显著贡献，两者结合效果最佳。
 *   **噪声抵抗能力**：即使在数据集中人为引入高达 25% 的噪声（标签随机打乱），InfoGrowth 依然能够有效去噪，并取得合理的性能，远超直接在噪声数据上训练的结果。
-*   **可视化分析**：可视化结果直观展示了 InfoGrowth 如何识别冗余样本（如下图左）以及如何通过 $$Cleaner` 提升噪声样本的质量（如下图右）。
+*   **可视化分析**：可视化结果直观展示了 InfoGrowth 如何识别冗余样本（如下图左）以及如何通过 `Cleaner` 提升噪声样本的质量（如下图右）。
   <img src="/images/2405.18347v2/x7.jpg" alt="CC3M 中检测到的冗余样本及其余弦相似度" style="width:90%; max-width:700px; margin:auto; display:block;">
   <img src="/images/2405.18347v2/x8.jpg" alt="Cleaner提高数据质量。灰色词是低质量部分，蓝色词是高质量描述。" style="width:85%; max-width:600px; margin:auto; display:block;">
 

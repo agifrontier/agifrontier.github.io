@@ -55,7 +55,7 @@ TheMCPCompany 是对现有基准 TheAgentCompany 的一次重大扩展，旨在�
     *   约21.5%的工具需要复杂的参数类型（如数组或对象），给调用带来了挑战。
     *   存在命名相似但功能迥异的工具，也存在功能相似但命名不同的工具。
 
-![TheMCPCompany基准测试中的复杂Azure任务的正确解决路径示例。](https://github.com/the-mcp-company/the-mcp-company.github.io/raw/main/images/azure_example.png)
+![TheMCPCompany基准测试中的复杂Azure任务的正确解决路径示例。](/images/2510.19286v1/azure-example.webp)
 
 r0.45
 
@@ -78,7 +78,7 @@ r0.45
 
 *   **优点**: 这种架构将一个巨大的、静态的工具集问题，转化为一个动态的、迭代的“搜索-使用”问题。它允许智能体根据任务进展灵活地探索不同的解决方案，并动态地选择所需工具，从而在处理海量工具集时保持了可行性和高效性。
 
-![MCPAgent架构。智能体通过一个网关MCP服务器与包含18000+工具的主服务器交互，使用工具查找器搜索并调用所需工具。](https://github.com/the-mcp-company/the-mcp-company.github.io/raw/main/images/approach.png)
+![MCPAgent架构。智能体通过一个网关MCP服务器与包含18000+工具的主服务器交互，使用工具查找器搜索并调用所需工具。](/images/2510.19286v1/approach.webp)
 
 ## 实验结论
 本文在 TheAgentCompany 适配任务和新的 Azure 任务上，对多种 LLM（包括 GPT-4.1, GPT-5, Opus-4.1 等）进行了评估。

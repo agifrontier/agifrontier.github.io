@@ -200,7 +200,7 @@ LLM-as-a-Judge在智能体 (Agent) 中的应用主要有两种形式：
 
 ## 改进策略
 
-直接使用LLM进行评估任务时，其固有的偏见（如长度偏见、位置偏见、具体性偏见）会损害评估结果的可靠性。减轻这些偏见并提升LLM的整体评估性能是应用中的关键挑战。本节介绍三种改进策略，分别针对LLM-as-a-Judge正式定义中的三个关键环节：上下文 $$$\mathcal{C}$$$、LLM自身能力 $$$\mathcal{P}\_{\mathcal{LLM}}$$$ 和获取最终结果的后处理 $$$\mathcal{E}$`。
+直接使用LLM进行评估任务时，其固有的偏见（如长度偏见、位置偏见、具体性偏见）会损害评估结果的可靠性。减轻这些偏见并提升LLM的整体评估性能是应用中的关键挑战。本节介绍三种改进策略，分别针对LLM-as-a-Judge正式定义中的三个关键环节：上下文 $$$\mathcal{C}$$$、LLM自身能力 $$$\mathcal{P}\_{\mathcal{LLM}}$$$ 和获取最终结果的后处理 $$$\mathcal{E}$$$。
 
 <img src="/images/2411.15594v5/x8.jpg" alt="改进策略分类图" style="width:90%; max-width:700px; margin:auto; display:block;">
 **图12: 改进策略分类图**

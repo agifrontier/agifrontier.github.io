@@ -61,7 +61,7 @@ EDM和LA领域分别由两个独立的国际会议（IEDM和LAK）推动发展�
 
 自2006年第一本相关著作出版以来，该领域的书籍数量不断增加，尤其在近年，“学习分析”成为书名中最常用的术语。其中，两本里程碑式的著作是《教育数据挖掘手册》和《学习分析手册》。
 
-<details>
+<details markdown="1">
 <summary>表2. 已出版的EDM/LA相关书籍（部分）</summary>
 
 
@@ -90,7 +90,7 @@ EDM和LA领域分别由两个独立的国际会议（IEDM和LAK）推动发展�
 
 该领域的研究成果主要发表在《Journal of Learning Analytics》和《Journal of Educational Data Mining》等专业期刊上。
 
-<details>
+<details markdown="1">
 <summary>表3. EDM/LA领域顶级相关期刊</summary>
 
 
@@ -116,7 +116,7 @@ EDM和LA领域分别由两个独立的国际会议（IEDM和LAK）推动发展�
 
 高被引论文（见下表）中，综述类文章占比较高，表明对该领域进行系统性梳理和总结的需求十分重要。
 
-<details>
+<details markdown="1">
 <summary>表4. EDM/LA领域Top-10高被引论文</summary>
 
 
@@ -280,7 +280,7 @@ EDM/LA领域采用的方法多种多样，本文根据其核心目标和关键�
 ### 3. 按当前热点应用主题分类
 除了上述分类，本文还列举了当前EDM/LA研究社群中一些最受关注的热点话题和应用方向。
 
-<details>
+<details markdown="1">
 <summary>表11. EDM/LA研究的当前热点应用或主题</summary>
 
 

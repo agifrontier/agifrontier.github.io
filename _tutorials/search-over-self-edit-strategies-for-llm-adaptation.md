@@ -41,7 +41,7 @@ CMU的研究者认为，这限制了模型探索更优更新策略的空间。�
 
 如**Figure 1**所示，传统的 SEAL 流程（左侧）是人类定模板，模型填内容；而新的流程（右侧）则是模型既定模板，又填内容，甚至还可以参考过去的经验（Archive）。
 
-![Figure 1: Fixed-template (SEAL [14]) vs. learned-template self-editing pipeline. Steps 2–3 are shared; the difference is whether the template is fixed or generated (optionally with an archive), and what the outer-loop update trains the model to produce.](https://arxiv.org/html/2502.06798/x1.png)
+![Figure 1: Fixed-template (SEAL [14]) vs. learned-template self-editing pipeline. Steps 2–3 are shared; the difference is whether the template is fixed or generated (optionally with an archive), and what the outer-loop update trains the model to produce.](/images/2502.06798/x1.webp)
 
 ### 两种探索路径：无存档 vs. 带存档
 
@@ -65,7 +65,7 @@ CMU的研究者认为，这限制了模型探索更优更新策略的空间。�
 
 一旦引入了存档机制，情况发生了显著变化。如**Figure 2**所示，带存档的变体（蓝线）在经历了初期的波动后，性能迅速攀升，超越了弱基线，并在第2次迭代时逼近了最强的人类设计基线（Rewrite，红线）。
 
-![Figure 2: 95% confidence intervals for QA accuracy (%) on the 50-passage training subset of SQuAD after self-edits were applied. Appendix [A.8] contains the details of how these metrics were derived.](https://arxiv.org/html/2502.06798/x2.png)
+![Figure 2: 95% confidence intervals for QA accuracy (%) on the 50-passage training subset of SQuAD after self-edits were applied. Appendix [A.8] contains the details of how these metrics were derived.](/images/2502.06798/x2.webp)
 
 **3. 模式坍塌与同质化**
 

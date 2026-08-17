@@ -31,11 +31,17 @@
   {% assign is_article = true %}
 {% endif %}
 {% assign page_seo_title = page.seo_title | default: page.title | default: site.title | strip_html | strip_newlines | strip %}
+{% assign page_seo_description = page.description | default: site.description | strip_html | strip_newlines | normalize_whitespace %}
+{% if page.type == 'year' %}
+  {% capture page_seo_title %}{{ page.date | date: '%Y' }}年 AI论文归档 | {{ site.title }}{% endcapture %}
+  {% capture page_seo_description %}汇总{{ page.date | date: '%Y' }}年发布的AI论文解读，覆盖大模型、AI Agent、RAG、推理、多模态与具身智能的核心进展与实践启示。{% endcapture %}
+{% endif %}
 {% if paginator and paginator.page > 1 %}
   {% capture page_seo_title %}{{ page_seo_title }} - 第{{ paginator.page }}页{% endcapture %}
+  {% capture page_seo_description %}{{ page_seo_description }} 当前为第{{ paginator.page }}页。{% endcapture %}
 {% endif %}
 {% assign seo_title = page_seo_title | truncate: 60 %}
-{% assign seo_description = page.description | default: site.description | strip_html | strip_newlines | normalize_whitespace | truncate: 160 %}
+{% assign seo_description = page_seo_description | truncate: 160 %}
 {% assign canonical_url = page.url | absolute_url | remove_first: 'index.html' %}
 {% assign og_image = page.og_image | default: site.og_image %}
 {% if og_image %}

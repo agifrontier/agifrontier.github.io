@@ -79,7 +79,7 @@ $${% endraw %}
 
 本文沿着三个核心维度对世界模型进行分类，为后续分析奠定基础。
 
-![论文结构图](https://github.com/Li-Zn-H/AwesomeWorldModels/raw/main/figs/Framework.jpg)
+[查看原始论文中的世界模型分类框架](https://arxiv.org/abs/2510.16732v1)
 
 **1. 功能决策耦合 (Decision Coupling)**：区分**决策耦合 (Decision-Coupled)** 和 **通用目的 (General-Purpose)** 模型。
     *   **决策耦合模型**是任务特定的，其学习的动态模型是为了优化某个特定的决策任务。

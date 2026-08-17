@@ -115,7 +115,7 @@ PagedAttention 的设计天然支持高效的内存共享，这是其相比现�
 
 **关键实验结果总结如下：**
 
-1.  **吞吐量显著提升**：vLLM 的吞吐量相比 FasterTransformer และ Orca 提升了 2-4 倍。在相同的延迟水平下，vLLM 能够承受比 Orca（Oracle，理论上限）高 1.7-2.7 倍的请求速率，比 FasterTransformer 高出最多 22 倍。
+1.  **吞吐量显著提升**：vLLM 的吞吐量相比 FasterTransformer 和 Orca 提升了 2-4 倍。在相同的延迟水平下，vLLM 能够承受比 Orca（Oracle，理论上限）高 1.7-2.7 倍的请求速率，比 FasterTransformer 高出最多 22 倍。
 
     <img src="/images/2309.06180v1/page_9_Figure_2.jpg" alt="在 ShareGPT 和 Alpaca 数据集上的单序列生成性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
     <center>图 12. 在 ShareGPT 和 Alpaca 数据集上的单序列生成性能对比</center>

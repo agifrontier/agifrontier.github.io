@@ -23,7 +23,7 @@ HTML_IMAGE_RE = re.compile(
     re.IGNORECASE | re.DOTALL,
 )
 MARKDOWN_IMAGE_RE = re.compile(
-    r"!\[[^\]]*\]\(\s*<?(?P<src>[^\s)>]+)>?(?:\s+['\"][^'\"]*['\"])?\s*\)",
+    r"!\[[^\n]*?\]\(\s*<?(?P<src>[^\s)>]+)>?(?:\s+['\"][^'\"]*['\"])?\s*\)",
     re.IGNORECASE,
 )
 FRONT_MATTER_VALUE_RE = re.compile(
@@ -128,7 +128,9 @@ def inspect_tutorial(root: Path, tutorial_path: Path) -> TutorialImage:
 
 
 def safe_output_stem(slug: str) -> str:
-    safe_slug = re.sub(r"[^a-zA-Z0-9._-]+", "-", slug).strip("-.") or "tutorial"
+    # Jekyll excludes files whose basename starts with an underscore. Strip all
+    # special leading characters after transliterating unsupported characters.
+    safe_slug = re.sub(r"[^a-zA-Z0-9._-]+", "-", slug).strip("._-") or "tutorial"
     digest = hashlib.sha256(slug.encode("utf-8")).hexdigest()[:10]
     return f"{safe_slug[:120]}-{digest}"
 

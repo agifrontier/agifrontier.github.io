@@ -50,13 +50,13 @@ related_tutorials:
 
 为了严苛验证这一改变的成效，研究团队使用专为人类设计的专业语言水平考试进行了零样本评估。测试标准对标欧洲共同语言参考标准（CEFR）的最高精通级别（C2级别）。
 
-<img src="/images/2305.10403v3/page_3_Figure_0.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2305.10403v3/page_3_Figure_0.jpg" alt="PaLM 2在多语言专业水平考试中的零样本表现" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 如上图实验结果所示，该模型在所有受评估的语种中均取得了及格以上的优异成绩。其中最令人震撼的是其日语能力的飞跃：相较于前代模型仅仅获得 F 级的惨淡表现，新模型直接跃升至特 A 级（Level A / Special A），在法语上也达到了 C1 级别。这种程度的精通，已经足以满足高阶专业交流甚至教学需求。
 
 同时，在跨文化理解上，模型展现出了远超字面翻译的本土化能力。例如，当被要求解释波斯谚语“没有痛苦就没有收获”时，模型不仅能用波斯语精准释义，还能在未给出示例的情况下，直接输出对应的中文成语或谚语，体现了极强的跨语言语义映射能力。
 
-<img src="/images/2305.10403v3/page_6_Figure_0.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2305.10403v3/page_6_Figure_0.jpg" alt="PaLM 2跨语言语义理解与谚语解释示例" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 逻辑推理与极低延迟的代码演进
 
@@ -64,7 +64,7 @@ related_tutorials:
 
 考虑到开发者工作流对低延迟、高吞吐量的极致要求，研究团队通过在富含多语言代码的混合语料上继续训练基础小模型，专门打造了一个轻量级的代码变体（PaLM 2-S*）。
 
-<img src="/images/2305.10403v3/page_15_Figure_1.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2305.10403v3/page_15_Figure_1.jpg" alt="PaLM 2-S代码模型在多种编程语言上的性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 令人瞩目的是，这个体积更小的代码专属模型不仅在 Python、Java 等主流语言上表现卓越，甚至在 Julia 和 Haskell 等极度低资源的偏门语言上，也实现了相较于前代巨型代码模型 4.7 倍至 6.3 倍的性能暴增。这再次印证了高质量垂类数据与充足训练步数带来的巨大红利。
 

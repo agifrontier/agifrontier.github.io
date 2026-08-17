@@ -38,12 +38,12 @@ related_tutorials:
 2.  **奖励模型训练（Reward Modeling）**：用深度学习拟合人类的打分偏好，训练出一个奖励模型。这就像是公司人力资源部门根据老板的喜好，**制定了一套自动化的KPI考核系统**。
 3.  **策略优化（Policy Optimization）**：使用强化学习算法（如PPO），让大模型去最大化奖励模型的得分。这就像是**员工（大模型）开始拼命钻研如何提高自己的KPI得分**。
 
-<img src="/images/2307.15217v2/page_4_Figure_1.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2307.15217v2/page_4_Figure_1.jpg" alt="基于二元偏好反馈微调聊天机器人的RLHF流程" style="width:90%; max-width:700px; margin:auto; display:block;">
 *(图：基于二元偏好反馈微调聊天机器人的RLHF流程示例)*
 
 这个机制看似闭环，但论文指出，在这三个环节中，潜藏着许多难以逾越的技术鸿沟。研究团队将这些挑战明确划分为两类：一类是**可解决的挑战**（通过改进工程方法可以缓解），另一类则是**根本性局限**（RLHF框架本身自带的理论死胡同，无法通过修补RLHF来彻底解决）。
 
-<img src="/images/2307.15217v2/page_2_Figure_2.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2307.15217v2/page_2_Figure_2.jpg" alt="RLHF挑战分类体系：人类反馈、奖励模型与策略优化" style="width:90%; max-width:700px; margin:auto; display:block;">
 *(图：RLHF挑战的分类体系，分为人类反馈、奖励模型、策略优化三大类)*
 
 下面，我们沿着这个“企业管理系统”的隐喻，深入剖析这三大环节的缺陷。
@@ -105,7 +105,7 @@ RLHF并不能使模型免疫对抗性攻击。无论是研究人员设计的特�
 
 除了技术层面的解剖，论文在最后大声疾呼了针对RLHF的监管与透明度标准。由于RLHF主导了当前最强模型的诞生，科技巨头们往往将RLHF的微调细节视为最高商业机密。
 
-<img src="/images/2307.15217v2/page_16_Figure_1.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2307.15217v2/page_16_Figure_1.jpg" alt="高风险AI系统采用RLHF时应向审计机构披露的核心信息" style="width:90%; max-width:700px; margin:auto; display:block;">
 *(图：为了降低风险，使用RLHF开发高风险AI系统的公司应向审计机构披露的核心细节清单)*
 
 研究团队呼吁，从事大模型开发的企业应在合理的范围内公开以下信息，以便社会和学术界进行审计：

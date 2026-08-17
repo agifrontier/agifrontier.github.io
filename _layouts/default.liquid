@@ -25,6 +25,9 @@
     {% if page.collection == 'tutorials' %}
       {% assign rendered_content = content | ensure_single_h1: page.title %}
     {% endif %}
+    {% if page.collection == 'tutorials' or page.layout == 'post' %}
+      {% assign rendered_content = rendered_content | optimize_article_images: site.data.image_metadata, page.title %}
+    {% endif %}
 
     <div class="container{% if page.wide %} container--wide{% endif %} mt-5" role="main">
       {% if page.toc and page.toc.sidebar %}

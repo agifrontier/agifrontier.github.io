@@ -15,7 +15,7 @@ related_tutorials:
 
 ## AI标注成本直降90%！字节ACT框架：让大模型学会「批判性思维」
 
-<img src="/images/2511.09833v1/_title.jpg" alt="Title Image" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.09833v1/title.jpg" alt="Act-as-Human多模态数据标注方法概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 还在为高昂的数据标注成本发愁吗？众所周知，高质量的标注数据是监督学习的燃料，但人工标注既烧钱又费时。虽然让大语言模型（LLM）代劳看似是个捷径，但其产出的标签质量却常常不尽人意。
 

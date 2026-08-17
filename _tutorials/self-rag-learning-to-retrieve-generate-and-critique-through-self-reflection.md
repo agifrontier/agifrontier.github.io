@@ -160,7 +160,7 @@ Algorithm 1: Self-RAG Inference
 *(a)消融研究，显示了移除训练或测试中关键组件后的性能下降。*
 
 <img src="/images/2310.11511v1/x4.jpg" alt="实验结论 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
-*(b)可定制性，展示了调整 $$IsSup` Token 的权重可以在流畅性(Mauve)和引用精度之间进行权衡。*
+*(b) 可定制性，展示了调整 `IsSup` Token 的权重可以在流畅性（Mauve）和引用精度之间进行权衡。*
 
 **最终结论**:
 Self-RAG 框架成功地训练了一个语言模型，使其具备内在的自我反思能力。通过按需检索和对生成内容进行细粒度的自我评价，Self-RAG 不仅显著提升了生成内容的质量和事实准确性，还提供了强大的推理时可控性。实验结果证明，该方法在多种任务上均优于现有的 LLMs 和 RAG 方法，为构建更可靠、更智能的生成式AI系统提供了新的方向。

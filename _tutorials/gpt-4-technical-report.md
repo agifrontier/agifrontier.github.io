@@ -73,7 +73,7 @@ GPT-4能够接受由文本和图像任意交错组成的提示，并生成文本
 
 | GPT-4视觉输入示例 | |
 | :--- | :--- |
-| **用户** | 这张图片好笑在哪里？请一页一页地描述。 ![VGA转Lightning接口的搞笑图片](https://www.reddit.com/r/hmmm/comments/ubab5v/hmmm/) |
+| **用户** | 这张图片好笑在哪里？请一页一页地描述。[查看VGA转Lightning接口的原始示例图片](https://www.reddit.com/r/hmmm/comments/ubab5v/hmmm/) |
 | **GPT-4** | 这张图片展示了一个“Lightning Cable”适配器的包装，分为三部分。第一部分：一个智能手机，其充电口插着一个VGA接口（一种通常用于电脑显示器的大型蓝色15针接口）。第二部分：这个“Lightning Cable”适配器的包装，上面印着一个VGA接口的图片。第三部分：VGA接口的特写，末端是一个小小的Lightning接口（用于为iPhone等苹果设备充电）。这张图片的幽默之处在于，将一个巨大、过时的VGA接口插入一个小型、现代的智能手机充电口的荒谬感。 |
 
 

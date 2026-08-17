@@ -72,11 +72,11 @@ related_tutorials:
 
 为了指导实践，本文提供了一个决策流程图来帮助开发者选择合适的智能体架构。
 
-![决策流程图](https://github.com/mialun/automata-agents/blob/main/figs/flowchart.png?raw=true)
+[查看原始论文中的智能体架构决策流程](https://arxiv.org/abs/2510.23487v1)
 
 同时，本文还将当前流行的智能体框架映射到了这个分类体系中。
 
-![智能体框架与计算类别的映射](https://github.com/mialun/automata-agents/blob/main/figs/table.png?raw=true)
+[查看原始论文中的智能体框架与计算类别映射](https://arxiv.org/abs/2510.23487v1)
 
 ## 实验结论
 本文是一篇理论研究，未包含传统的数值实验，其结论是基于形式化推导和理论分析得出的。

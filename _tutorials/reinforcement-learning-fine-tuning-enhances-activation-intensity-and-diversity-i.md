@@ -46,7 +46,7 @@ related_tutorials:
 ## 本文方法
 本文提出了一套系统的分析框架，以探究强化学习微调对LLM内部回路的影响。该方法的核心是适配并应用了**边缘归因修补（EAP）**框架。
 
-### ## 方法框架
+### 方法框架
 该分析框架主要包含以下几个步骤：
 
 1.  **模型图化表示**：首先，将Transformer模型视为一个有向无环图（DAG）。模型中的每个注意力（Attention）子模块和前馈网络（FFN）子模块被看作图中的**节点**。由于残差连接的存在，任何一个子模块的输入都是其前面所有子模块输出的总和，这些信息流动路径构成了图的**边**。
@@ -66,10 +66,10 @@ related_tutorials:
     *   **长度控制**：过滤掉答案过长或过短的样本，并确保同一问题下，SFT和RL模型生成的答案长度相近，以消除长度偏差。
     *   **截断与损失计算**：对筛选后的生成序列进行部分截断，并使用模型对自身截断后输出的交叉熵（自熵）作为损失函数 $\mathcal{L}$ 来计算梯度，从而进行EAP分析。
 
-### ## 创新点
+### 创新点
 本文的**核心创新**在于**系统性地应用EAP来对比分析LLM在RL微调前后的内部回路变化**，从而架起了RL性能提升（外部表现）与其内部机理变化（内部解释）之间的桥梁。它首次揭示了不同RL算法（在线RL vs. DPO）对模型内部信息流产生的系统性差异。
 
-### ## 优点
+### 优点
 该方法的主要优点是**高效和通用**。通过采用基于梯度的EAP，使得对拥有数十亿参数的大模型进行细粒度的回路分析在计算上成为可能。此外，该分析框架不依赖于特定的模型架构或任务，可广泛应用于研究不同后训练方法对各类LLM内部机理的影响。
 
 ## 实验结论
@@ -77,7 +77,7 @@ related_tutorials:
 
 <img src="/images/2509.21044v1/x1.jpg" alt="Schematic of a two-layer simplified LLM. (a) Residual perspective, (b) graph perspective, and (c) edge importance estimation: above the dashed line, ACDC-style methods measure the loss change after edge ablation ($②-①$); below, EAP-style methods approximate this via backpropagated gradients ($-③\approx②-①$)." style="width:90%; max-width:700px; margin:auto; display:block;">
 
-### ## 关键实验结果
+### 关键实验结果
 实验通过三个核心指标——激活强度、信息复杂度和分布峰度——量化了RL微调前后的内部变化。
 
 
@@ -107,7 +107,7 @@ _上图展示了Mistral模型经过PPO微调后，内部边激活强度的相对
 <img src="/images/2509.21044v1/x3.jpg" alt="Comparison before and after RL fine-tuning: (a) diversity of activation patterns across inference samples, (b) entropy of output edge patterns per node." style="width:85%; max-width:450px; margin:auto; display:block;">
 _上图(a)和(b)分别从样本间和节点输出两个维度展示了RL微调后激活模式多样性的提升。_
 
-### ## 结论
+### 结论
 本文的最终结论是：
 
 1.  **在线RL微调通过重塑LLM的内部信息流来提升其泛化能力**。具体而言，它使得信息流变得**更冗余**（激活强度更高）和**更灵活**（激活模式更多样），这可能是其在复杂任务上超越SFT的根本原因。

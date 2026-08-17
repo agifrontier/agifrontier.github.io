@@ -50,7 +50,7 @@ related_tutorials:
 ### 生成过程
 1.  **摘要作为提示 (Abstract as Prompt)**: 提取每篇NYT文章的官方摘要，作为生成AI文本的统一提示（Prompt）。这确保了AI生成的内容与原始人类文章主题一致，具有可比性。
 2.  **提取人类文本**: 通过文章的URL获取完整的人类撰写的叙事文本，称为“human story”。
-3.  **生成AI文本**: 使用文章摘要作为提示，调用六种当前先进的LLM生成对应的文本。这些模型包括：Gemma-2-9b, Mistral-7B, Qwen-2-72B, LLaMA-8B, Yi-Large, และ GPT-4-o。
+3.  **生成AI文本**: 使用文章摘要作为提示，调用六种当前先进的LLM生成对应的文本。这些模型包括：Gemma-2-9b、Mistral-7B、Qwen-2-72B、LLaMA-8B、Yi-Large 和 GPT-4-o。
 
 ### 数据集结构与统计
 最终的数据集以表格形式组织，包含原始摘要、人类撰写的全文以及由上述六个LLM分别生成的文本。

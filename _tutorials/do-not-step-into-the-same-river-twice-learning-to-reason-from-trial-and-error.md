@@ -147,7 +147,7 @@ return π_θ
 *   **有效缓解探索停滞**：训练过程分析表明，标准 GRPO 方法在训练后期无法解决更多难题（$$all-fail$$ 样本数量不再下降），而 LTE 能持续降低 $$all-fail$$ 样本的数量，直接证明其成功缓解了探索停滞问题。
     <img src="/images/2510.26109v1/x6.jpg" alt="训练中 all-fail 样本数量变化" style="width:80%; max-width:300px; margin:auto; display:block;">
 
-*   **提升探索与学习效率**：LTE 在训练中保持了较高比例的“可学习样本”（$$some-pass$$ 样本，即有成功也有失败的样本，提供最有效的学习信号），同时降低了“过度自信样本”（$$all-pass` 样本）的比例。这表明 LTE 维持了更高的探索水平，避免了过早收敛。
+*   **提升探索与学习效率**：LTE 在训练中保持了较高比例的“可学习样本”（`some-pass` 样本，即有成功也有失败的样本，提供最有效的学习信号），同时降低了“过度自信样本”（`all-pass` 样本）的比例。这表明 LTE 维持了更高的探索水平，避免了过早收敛。
     <img src="/images/2510.26109v1/x7.jpg" alt="some-pass 样本数量" style="width:80%; max-width:300px; margin:auto; display:block;"> <img src="/images/2510.26109v1/x8.jpg" alt="all-pass 样本数量" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 *   **激发深度思考与探索**：训练动态分析显示，相比于基线方法，LTE 不仅在验证集上取得了持续的性能提升，还显著增加了模型生成答案的长度。这表明 LTE 隐式地鼓励了模型进行更深入的“测试时深度思考”（test-time deep thinking），花费更多 token 进行探索，最终形成了一个更具探索性的策略。
