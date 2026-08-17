@@ -3,3 +3,5 @@ backup/*
 backup0829/*
 vendor/bundle/*
 .env
+assets/img/homepage-thumbnails/
+_data/homepage_thumbnails.json

@@ -40,6 +40,7 @@ pagination:
     {% assign hero_date = hero_post.seo_published | default: hero_post.date %}
     {% assign hero_text_length = hero_post.content | strip_html | size %}
     {% assign hero_read_time = hero_text_length | divided_by: 500 | plus: 1 %}
+    {% assign hero_thumbnail = site.data.homepage_thumbnails[hero_post.slug] %}
     {% assign hero_image = hero_post.thumbnail %}
     {% if hero_image == blank %}
       {% assign hero_image_parts = hero_post.content | split: '<img src="' %}
@@ -53,9 +54,23 @@ pagination:
       <article class="homepage-featured">
         <a class="homepage-featured__link" href="{{ hero_post.url | relative_url }}">
           <div class="homepage-featured__media">
-            {% if hero_image != blank %}
+            {% if hero_thumbnail %}
+              <img
+                src="{{ hero_thumbnail.large | relative_url }}"
+                srcset="{{ hero_thumbnail.small | relative_url }} 320w, {{ hero_thumbnail.large | relative_url }} 640w"
+                sizes="(max-width: 767px) 320px, (max-width: 1100px) 66vw, 760px"
+                width="640"
+                height="360"
+                alt="{{ hero_post.title | escape }}"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              >
+            {% elsif hero_image != blank %}
               <img
                 src="{% if hero_image contains '://' %}{{ hero_image }}{% else %}{{ hero_image | relative_url }}{% endif %}"
+                width="640"
+                height="360"
                 alt="{{ hero_post.title | escape }}"
                 loading="eager"
                 fetchpriority="high"
@@ -64,6 +79,8 @@ pagination:
             {% else %}
               <img
                 src="{{ '/assets/img/homepage-default-cover.svg' | relative_url }}"
+                width="640"
+                height="360"
                 alt="{{ hero_post.title | escape }}"
                 loading="eager"
                 fetchpriority="high"
@@ -90,6 +107,7 @@ pagination:
           {% assign published_date = post.seo_published | default: post.date %}
           {% assign text_length = post.content | strip_html | size %}
           {% assign read_time = text_length | divided_by: 500 | plus: 1 %}
+          {% assign card_thumbnail = site.data.homepage_thumbnails[post.slug] %}
           {% assign card_image = post.thumbnail %}
           {% if card_image == blank %}
             {% assign card_image_parts = post.content | split: '<img src="' %}
@@ -102,9 +120,22 @@ pagination:
           <article class="homepage-card homepage-card--lead">
             <a class="homepage-card__link" href="{{ post.url | relative_url }}">
               <div class="homepage-card__media">
-                {% if card_image != blank %}
+                {% if card_thumbnail %}
+                  <img
+                    src="{{ card_thumbnail.large | relative_url }}"
+                    srcset="{{ card_thumbnail.small | relative_url }} 320w, {{ card_thumbnail.large | relative_url }} 640w"
+                    sizes="(max-width: 767px) 320px, (max-width: 1100px) 45vw, 360px"
+                    width="640"
+                    height="360"
+                    alt="{{ post.title | escape }}"
+                    loading="eager"
+                    decoding="async"
+                  >
+                {% elsif card_image != blank %}
                   <img
                     src="{% if card_image contains '://' %}{{ card_image }}{% else %}{{ card_image | relative_url }}{% endif %}"
+                    width="640"
+                    height="360"
                     alt="{{ post.title | escape }}"
                     loading="eager"
                     decoding="async"
@@ -112,6 +143,8 @@ pagination:
                 {% else %}
                   <img
                     src="{{ '/assets/img/homepage-default-cover.svg' | relative_url }}"
+                    width="640"
+                    height="360"
                     alt="{{ post.title | escape }}"
                     loading="eager"
                     decoding="async"
@@ -160,6 +193,7 @@ pagination:
         {% assign published_date = post.seo_published | default: post.date %}
         {% assign text_length = post.content | strip_html | size %}
         {% assign read_time = text_length | divided_by: 500 | plus: 1 %}
+        {% assign card_thumbnail = site.data.homepage_thumbnails[post.slug] %}
         {% assign card_image = post.thumbnail %}
         {% if card_image == blank %}
           {% assign card_image_parts = post.content | split: '<img src="' %}
@@ -172,9 +206,22 @@ pagination:
         <article class="homepage-card">
           <a class="homepage-card__link" href="{{ post.url | relative_url }}">
             <div class="homepage-card__media">
-              {% if card_image != blank %}
+              {% if card_thumbnail %}
+                <img
+                  src="{{ card_thumbnail.large | relative_url }}"
+                  srcset="{{ card_thumbnail.small | relative_url }} 320w, {{ card_thumbnail.large | relative_url }} 640w"
+                  sizes="(max-width: 767px) 320px, (max-width: 1100px) 45vw, 360px"
+                  width="640"
+                  height="360"
+                  alt="{{ post.title | escape }}"
+                  loading="lazy"
+                  decoding="async"
+                >
+              {% elsif card_image != blank %}
                 <img
                   src="{% if card_image contains '://' %}{{ card_image }}{% else %}{{ card_image | relative_url }}{% endif %}"
+                  width="640"
+                  height="360"
                   alt="{{ post.title | escape }}"
                   loading="lazy"
                   decoding="async"
@@ -182,6 +229,8 @@ pagination:
               {% else %}
                 <img
                   src="{{ '/assets/img/homepage-default-cover.svg' | relative_url }}"
+                  width="640"
+                  height="360"
                   alt="{{ post.title | escape }}"
                   loading="lazy"
                   decoding="async"
