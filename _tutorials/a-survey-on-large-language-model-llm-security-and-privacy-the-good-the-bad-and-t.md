@@ -3,7 +3,7 @@ layout: default
 title: "A Survey on Large Language Model (LLM) Security and Privacy: The Good, the Bad, and the Ugly"
 description: "大型语言模型（LLM）安全与隐私综述：善、恶与丑。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "AI安全与评测"
+  - "AI安全"
 related_tutorials:
   - "a-survey-on-evaluation-of-large-language-models"
   - "a-survey-on-llm-as-a-judge"

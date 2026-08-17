@@ -3,7 +3,7 @@ layout: default
 title: "Read As Human: Compressing Context via Parallelizable Close Reading and Skimming"
 description: "像人一样“精读+略读”：RAM长文本压缩框架实现12倍加速。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "scaling-and-context-steer-llms-along-the-same-computational-path-as-the-human-br"
   - "t5gemma-2-seeing-reading-and-understanding-longer"

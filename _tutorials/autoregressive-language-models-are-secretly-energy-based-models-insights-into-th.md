@@ -3,7 +3,7 @@ layout: default
 title: "Autoregressive Language Models are Secretly Energy-Based Models: Insights into the Lookahead Capabilities of Next-Token Prediction"
 description: "DeepMind重磅：自回归模型竟是EBM？揭秘Next-Token预测的“全局规划”能力。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "every-token-counts-generalizing-16m-ultra-long-context-in-large-language-models"
   - "explaining-the-success-of-nearest-neighbor-methods-in-prediction"

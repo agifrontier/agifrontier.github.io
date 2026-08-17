@@ -3,7 +3,7 @@ layout: default
 title: "Bi-LoRA: Efficient Sharpness-Aware Minimization for Fine-Tuning Large-Scale Models"
 description: "本文提出了一种名为 Bi-LoRA 的高效微调框架，它通过引入一个独立的辅助 LoRA 模块来模拟锐度感知最小化（SAM）的对抗性扰动，从而在不增加额外计算成本（仅需一次反向传播）的情况下，有效提升大模型微调的泛化能力。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "llama-adapter-efficient-fine-tuning-of-language-models-with-zero-init-attention"
   - "fapo-flawed-aware-policy-optimization-for-efficient-and-reliable-reasoning"

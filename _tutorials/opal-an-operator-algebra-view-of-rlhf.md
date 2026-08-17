@@ -3,7 +3,7 @@ layout: default
 title: "Opal: An Operator Algebra View of RLHF"
 description: "本文提出了Opal，一个用于强化学习从人类反馈（RLHF）的算子代数视图，以及GKPO，一个标准化的交换模式，通过一个当且仅当满足三个核心假设时成立的约简定律，来统一、比较和验证不同的RLHF目标函数，从而整理了该领域繁杂的方法。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "towards-a-unified-view-of-large-language-model-post-training"
   - "balanced-actor-initialization-stable-rlhf-training-of-distillation-based-reasoni"

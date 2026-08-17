@@ -3,7 +3,7 @@ layout: default
 title: "GatePro: Parameter-Free Expert Selection Optimization for Mixture-of-Experts Models"
 description: "本文提出了一种名为 GatePro 的新型、无参数的专家选择优化方法，它将 MoE 模型中的专家选择问题构建为一个最优传输问题，无需可学习的门控参数或人工调整的负载均衡损失函数，即可实现高效且稳定的专家分配。"
 topics:
-  - "模型训练与优化"
+  - "模型优化"
 related_tutorials:
   - "revffn-memory-efficient-full-parameter-fine-tuning-of-mixture-of-experts-llms-wi"
   - "simpo-simple-preference-optimization-with-a-reference-free-reward"

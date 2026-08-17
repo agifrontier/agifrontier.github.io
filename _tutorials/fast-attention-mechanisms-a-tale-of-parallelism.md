@@ -3,7 +3,7 @@ layout: default
 title: "Fast attention mechanisms: a tale of parallelism"
 description: "本文提出了一种名为“近似最近邻注意力”（ANNA）的高效注意力机制，其时间复杂度为亚二次方，并从理论上证明了它在保持与大规模并行计算（MPC）模型等价的强大表达能力的同时，能够高效解决关键推理任务，且其能力可涵盖低秩注意力机制。"
 topics:
-  - "模型训练与优化"
+  - "模型优化"
 related_tutorials:
   - "rollpacker-mitigating-long-tail-rollouts-for-fast-synchronous-rl-post-training"
   - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"

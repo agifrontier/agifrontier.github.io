@@ -5,7 +5,7 @@ description: "当用户要求手机上的智能助手“帮我核对上个月的
 arxiv_id: "2604.13822"
 topics:
   - "AI Agent"
-  - "RAG与知识系统"
+  - "RAG"
 tags:
   - "MLLM-based GUI agents"
   - "MemGUI-Bench"

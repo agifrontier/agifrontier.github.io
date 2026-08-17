@@ -3,7 +3,7 @@ layout: default
 title: "Better World Models Can Lead to Better Post-Training Performance"
 description: "AI解魔方新突破：预训练一个“世界模型”，强化学习性能提升40%！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "how-does-rl-post-training-induce-skill-composition-a-case-study-on-countdown"
   - "imbalanced-gradients-in-rl-post-training-of-multi-task-llms"

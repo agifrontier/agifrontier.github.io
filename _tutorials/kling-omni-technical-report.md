@@ -3,7 +3,7 @@ layout: default
 title: "Kling-Omni Technical Report"
 description: "10步推理生成电影级视频：快手Kling-Omni全能架构揭秘。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "deepseek-v3-technical-report"
   - "gpt-4-technical-report"

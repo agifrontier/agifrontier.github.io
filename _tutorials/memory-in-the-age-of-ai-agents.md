@@ -3,7 +3,7 @@ layout: default
 title: "Memory in the Age of AI Agents"
 description: "Agent记忆≠RAG！复旦/NUS重磅综述：3大维度全景拆解智能体“大脑”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "RAG"
   - "AI Agent"
 related_tutorials:
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"

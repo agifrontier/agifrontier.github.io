@@ -5,7 +5,7 @@ description: "当前的大模型智能体（Agent）普遍存在一个极大的�
 arxiv_id: "2605.06614"
 topics:
   - "AI Agent"
-  - "推理与强化学习"
+  - "推理"
 tags:
   - "LLM-based agents"
   - "SkillOS"

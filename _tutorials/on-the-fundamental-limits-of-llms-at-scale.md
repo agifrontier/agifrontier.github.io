@@ -3,7 +3,7 @@ layout: default
 title: "On the Fundamental Limits of LLMs at Scale"
 description: "LLM越大越强？谷歌DeepMind等雄文揭示其5大“理论天花板”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "AI理论"
 related_tutorials:
   - "ai-progress-should-be-measured-by-capability-per-resource-not-scale-alone-a-fram"
   - "beyond-gemini-3-pro-revisiting-llm-routing-and-aggregation-at-scale"

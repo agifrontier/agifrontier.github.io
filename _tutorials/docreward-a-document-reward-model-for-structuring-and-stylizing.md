@@ -3,7 +3,7 @@ layout: default
 title: "DocReward: A Document Reward Model for Structuring and Stylizing"
 description: "本文提出了一种名为 DocReward 的文档奖励模型，它通过在一个包含117K对文档的大规模数据集上学习，专门用于评估文档的结构和风格专业性，并在该任务上显著优于 GPT-5 等强大的基线模型。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "arm-fm-automated-reward-machines-via-foundation-models-for-compositional-reinfor"
   - "basereward-a-strong-baseline-for-multimodal-reward-model"

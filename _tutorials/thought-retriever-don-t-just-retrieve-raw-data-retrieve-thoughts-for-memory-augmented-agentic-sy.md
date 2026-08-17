@@ -5,7 +5,7 @@ description: "面对百万字的海量专业文档，当下的AI助手往往力�
 arxiv_id: "2604.12231"
 topics:
   - "AI Agent"
-  - "RAG与知识系统"
+  - "RAG"
 tags:
   - "AcademicEval"
   - "Thought-Retriever"

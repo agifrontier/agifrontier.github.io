@@ -4,7 +4,7 @@ title: "Beyond Turn Limits: Training Deep Search Agents with Dynamic Context Win
 description: "本文提出了DeepMiner框架，通过构造高难度训练任务和设计动态上下文窗口策略，显著提升了大型语言模型在多轮长程交互中作为深度搜索智能体的推理与执行能力。"
 topics:
   - "AI Agent"
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
   - "thinker-training-llms-in-hierarchical-thinking-for-deep-search-via-multi-turn-in"

@@ -4,7 +4,7 @@ title: "A Survey of Reasoning and Agentic Systems in Time Series with Large Lang
 description: "时间序列数据在金融、医疗、能源等领域无处不在，推动了监控、预测和决策等关键应用的发展。然而，许多新兴应用如个性化医疗、自适应风险管理等，要求模型不仅能预测，还能解释其输出、进行因果推理和决策。这突显了时间序列分析对结构化和可靠推理能力的迫切需求。"
 topics:
   - "AI Agent"
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "mitigating-hallucination-in-large-language-models-llms-an-application-oriented-s"
   - "a-survey-of-reasoning-in-autonomous-driving-systems-open-challenges-and-emerging"

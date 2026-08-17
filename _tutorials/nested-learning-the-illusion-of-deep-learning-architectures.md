@@ -3,7 +3,7 @@ layout: default
 title: "Nested Learning: The Illusion of Deep Learning Architectures"
 description: "打破深度学习“幻觉”：哥大&谷歌提出Nested Learning，重构大模型记忆与进化。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "deep-delta-learning"
   - "hybrid-architectures-for-language-models-systematic-analysis-and-design-insights"

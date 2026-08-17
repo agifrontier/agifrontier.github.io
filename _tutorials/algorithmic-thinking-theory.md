@@ -3,7 +3,7 @@ layout: default
 title: "Algorithmic Thinking Theory"
 description: "LLM推理的“系统2”觉醒：谷歌、斯坦福联手揭秘“算法思维”理论。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "AI理论"
 related_tutorials:
   - "on-the-origin-of-algorithmic-progress-in-ai"
   - "an-augmentation-overlap-theory-of-contrastive-learning"

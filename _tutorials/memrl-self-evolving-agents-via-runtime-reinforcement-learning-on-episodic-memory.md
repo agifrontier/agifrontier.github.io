@@ -3,7 +3,7 @@ layout: default
 title: "MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory"
 description: "告别微调！MemRL：用“记忆RL”让Agent在运行时实现自我进化。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "知识系统"
   - "AI Agent"
 related_tutorials:
   - "memory-r1-enhancing-large-language-model-agents-to-manage-and-utilize-memories-v"

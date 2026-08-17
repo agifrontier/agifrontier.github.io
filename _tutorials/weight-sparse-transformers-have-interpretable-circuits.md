@@ -3,7 +3,7 @@ layout: default
 title: "Weight-sparse transformers have interpretable circuits"
 description: "OpenAI重磅发现：让Transformer“瘦身”99.9%，电路可解释性暴增16倍！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型优化"
 related_tutorials:
   - "trainable-log-linear-sparse-attention-for-efficient-diffusion-transformers"
   - "accelerate-speculative-decoding-with-sparse-computation-in-verification"

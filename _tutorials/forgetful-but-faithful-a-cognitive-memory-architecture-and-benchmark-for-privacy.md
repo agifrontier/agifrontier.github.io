@@ -3,7 +3,7 @@ layout: default
 title: "Forgetful but Faithful: A Cognitive Memory Architecture and Benchmark for Privacy-Aware Generative Agents"
 description: "给 AI 装上“橡皮擦”：MaRS 架构如何用“遗忘”换取 0.911 的高分表现？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "知识系统"
   - "AI Agent"
 related_tutorials:
   - "ai-meets-brain-memory-systems-from-cognitive-neuroscience-to-autonomous-agents"

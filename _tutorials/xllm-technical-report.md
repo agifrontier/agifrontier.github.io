@@ -3,7 +3,7 @@ layout: default
 title: "xLLM Technical Report"
 description: "本文提出了一种名为 xLLM 的智能高效的大语言模型推理框架，其采用创新的服务-引擎解耦架构，通过智能调度与系统级协同优化，专为高性能、大规模的企业级服务而设计，解决了混合负载、资源利用率低和硬件适配性差等核心挑战。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "deepseek-v3-technical-report"
   - "gpt-4-technical-report"

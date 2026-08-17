@@ -3,7 +3,7 @@ layout: default
 title: "Sampling and Loss Weights in Multi-Domain Training"
 description: "Sampling and Loss Weights in Multi-Domain Training。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "sigmoid-loss-for-language-image-pre-training"
   - "what-does-loss-optimization-actually-teach-if-anything-knowledge-dynamics-in-con"

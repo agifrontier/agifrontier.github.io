@@ -3,7 +3,7 @@ layout: default
 title: "Modeling Language as a Sequence of Thoughts"
 description: "拒绝Token流水账！斯坦福新作Thought Gestalt：让AI像人类一样“思考”，参数效率暴涨40%。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "mamba-linear-time-sequence-modeling-with-selective-state-spaces"
   - "deep-sequence-models-tend-to-memorize-geometrically-it-is-unclear-why"

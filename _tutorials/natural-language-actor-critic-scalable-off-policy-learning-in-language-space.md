@@ -3,7 +3,7 @@ layout: default
 title: "Natural Language Actor-Critic: Scalable Off-Policy Learning in Language Space"
 description: "Agent训练告别数值奖励：字节跳動NLAC让AI用“人话”指导，性能最高提升24%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "a-survey-of-weight-space-learning-understanding-representation-and-generation"
   - "data-efficient-rlvr-via-off-policy-influence-guidance"

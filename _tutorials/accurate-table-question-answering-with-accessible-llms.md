@@ -3,7 +3,7 @@ layout: default
 title: "Accurate Table Question Answering with Accessible LLMs"
 description: "Qwen-14B逼近GPT-4！Orchestra多智能体架构让开源模型制霸表格问答。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "retrieval-reasoning-processes-for-multi-hop-question-answering-a-four-axis-desig"
   - "mixture-of-minds-multi-agent-reinforcement-learning-for-table-understanding"

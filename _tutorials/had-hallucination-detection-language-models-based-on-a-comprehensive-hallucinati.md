@@ -3,7 +3,7 @@ layout: default
 title: "HAD: HAllucination Detection Language Models Based on a Comprehensive Hallucination Taxonomy"
 description: "本文提出了一个全面的幻觉分类体系，并基于此构建了一个大规模合成数据集，用以训练 模型，使其能够在一个统一的推理过程中完成幻觉分类、范围识别和内容纠正。"
 topics:
-  - "AI安全与评测"
+  - "AI安全"
 related_tutorials:
   - "a-comprehensive-dataset-for-human-vs-ai-generated-text-detection"
   - "a-unified-definition-of-hallucination-or-its-the-world-model-stupid"

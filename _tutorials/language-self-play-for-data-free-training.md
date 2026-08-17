@@ -3,8 +3,8 @@ layout: default
 title: "Language Self-Play For Data-Free Training"
 description: "本文提出了一种名为语言自博弈（Language Self-Play, LSP）的无数据训练方法，通过构建一个强化学习框架，让大型语言模型在“挑战者”（生成难题）和“解答者”（解答问题）两种角色间自我对抗，从而在无需外部训练数据的情况下实现持续自我提升。"
 topics:
-  - "模型训练与优化"
-  - "数据与AI工程"
+  - "模型训练"
+  - "数据工程"
 related_tutorials:
   - "in-context-distillation-with-self-consistency-cascades-a-simple-training-free-wa"
   - "a-survey-on-efficient-large-language-model-training-from-data-centric-perspectiv"

@@ -3,7 +3,7 @@ layout: default
 title: "A Survey on Evaluation of Large Language Models"
 description: "A Survey on Evaluation of Large Language Models。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "AI安全与评测"
+  - "AI评测"
 related_tutorials:
   - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
   - "ai-agent-systems-architectures-applications-and-evaluation"

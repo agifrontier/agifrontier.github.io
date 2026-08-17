@@ -3,7 +3,7 @@ layout: default
 title: "Thinker: Training LLMs in Hierarchical Thinking for Deep Search via Multi-Turn Interaction"
 description: "只需数百样本，性能反超SOTA！蚂蚁Thinker教LLM如何“分层思考”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
   - "行业应用"
 related_tutorials:
   - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"

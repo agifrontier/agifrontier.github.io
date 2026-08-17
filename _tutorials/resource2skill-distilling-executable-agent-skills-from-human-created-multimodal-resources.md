@@ -5,7 +5,7 @@ description: "当前的大模型（LLM）不仅需要能言善辩，正越来越
 arxiv_id: "2606.29538"
 topics:
   - "AI Agent"
-  - "多模态与视觉"
+  - "多模态"
 tags:
   - "RESOURCE2SKILL"
   - "Skill Wiki"

@@ -3,7 +3,7 @@ layout: default
 title: "A Unified Definition of Hallucination, Or: It's the World Model, Stupid"
 description: "幻觉研究迎来“大一统”：CMU等机构揭示本质，错在世界模型！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "AI安全与评测"
+  - "AI安全"
 related_tutorials:
   - "citation-grounded-code-comprehension-preventing-llm-hallucination-through-hybrid"
   - "had-hallucination-detection-language-models-based-on-a-comprehensive-hallucinati"

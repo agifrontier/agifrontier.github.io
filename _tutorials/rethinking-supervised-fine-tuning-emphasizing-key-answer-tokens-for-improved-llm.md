@@ -3,7 +3,7 @@ layout: default
 title: "Rethinking Supervised Fine-Tuning: Emphasizing Key Answer Tokens for Improved LLM Accuracy"
 description: "SFTKey：别让CoT喧宾夺主！两阶段微调让大模型准确率提升超5%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "beft-bias-efficient-fine-tuning-of-language-models"
   - "not-all-parameters-are-created-equal-smart-isolation-boosts-fine-tuning-performa"

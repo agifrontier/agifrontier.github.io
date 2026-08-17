@@ -3,7 +3,7 @@ layout: default
 title: "Tackling the Inherent Difficulty of Noise Filtering in RAG"
 description: "RAG去噪为何这么难？人大清华揭秘“三元困境”，非线性微调让LLM自带“过滤器”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "RAG"
 related_tutorials:
   - "hifi-rag-hierarchical-content-filtering-and-two-pass-generation-for-open-domain-"
   - "emorag-evaluating-rag-robustness-to-symbolic-perturbations"

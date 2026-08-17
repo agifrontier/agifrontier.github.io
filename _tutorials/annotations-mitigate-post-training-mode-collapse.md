@@ -4,7 +4,7 @@ title: "拒绝大模型SFT后“千篇一律”：注释锚定训练将语义崩
 description: "毫无疑问，经过监督微调（SupervisedFine-Tuning,SFT）的大语言模型变得更加听话和好用了。它们学会了遵循指令，掌握了安全边界，也习惯了人类喜欢的对话格式。但你是否发现，当你让模型进行创意写作或开放式问答时，它们的回答套路越来越“千篇一律”？"
 arxiv_id: "2605.09995"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
 tags:
   - "SFT"
   - "annotation distribution"

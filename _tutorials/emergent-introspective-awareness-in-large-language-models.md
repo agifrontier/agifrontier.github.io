@@ -3,7 +3,7 @@ layout: default
 title: "Emergent Introspective Awareness in Large Language Models"
 description: "Anthropic重磅：给大模型“植入思想”，Claude Opus 4.1展现惊人内省能力。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "mechanisms-of-introspective-awareness"
   - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"

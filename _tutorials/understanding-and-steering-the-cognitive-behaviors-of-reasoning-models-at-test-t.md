@@ -3,7 +3,7 @@ layout: default
 title: "Understanding and Steering the Cognitive Behaviors of Reasoning Models at Test-Time"
 description: "拒绝“过度思考”！CREST让大模型推理提速37.6%，精度暴涨17.5%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "how-and-why-llms-generalize-a-fine-grained-analysis-of-llm-reasoning-from-cognit"
   - "pacore-learning-to-scale-test-time-compute-with-parallel-coordinated-reasoning"

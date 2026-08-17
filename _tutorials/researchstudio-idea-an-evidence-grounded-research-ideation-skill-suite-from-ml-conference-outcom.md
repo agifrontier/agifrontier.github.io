@@ -5,7 +5,7 @@ description: "当前的大语言模型在科研头脑风暴中似乎无所不能
 arxiv_id: "2607.04439"
 topics:
   - "AI Agent"
-  - "RAG与知识系统"
+  - "RAG"
 tags:
   - "ICLR/ICML/NeurIPS"
   - "IdeaSpark"

@@ -3,7 +3,7 @@ layout: default
 title: "Higher Embedding Dimension Creates a Stronger World Model for a Simple Sorting Task"
 description: "本文通过强化学习训练Transformer执行排序任务，发现更高的嵌入维度能促使智能体形成更可靠、更具可解释性的内部世界模型，即便任务准确率早已饱和。"
 topics:
-  - "RAG与知识系统"
+  - "RAG"
 related_tutorials:
   - "bge-m3-embedding-multi-lingual-multi-functionality-multi-granularity-text-embedd"
   - "crope-efficient-parametrization-of-rotary-positional-embedding"

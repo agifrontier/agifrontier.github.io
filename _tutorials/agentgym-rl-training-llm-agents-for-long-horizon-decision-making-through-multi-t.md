@@ -4,7 +4,7 @@ title: "AgentGym-RL: Training LLM Agents for Long-Horizon Decision Making throug
 description: "本文提出了一个名为 AgentGym-RL 的强化学习框架和一个名为 ScalingInter-RL 的渐进式训练方法，旨在通过多轮交互式决策，从零开始（无需监督微调）训练大型语言模型（LLM）智能体，以解决长时程复杂任务。"
 topics:
   - "AI Agent"
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
   - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"

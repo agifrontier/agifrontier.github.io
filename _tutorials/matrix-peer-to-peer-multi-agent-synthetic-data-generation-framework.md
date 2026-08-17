@@ -4,7 +4,7 @@ title: "Matrix: Peer-to-Peer Multi-Agent Synthetic Data Generation Framework"
 description: "数据生成提速15倍！Meta开源Matrix框架，用P2P架构颠覆多智能体协作。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
   - "AI Agent"
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "repurposing-synthetic-data-for-fine-grained-search-agent-supervision"
   - "a-multi-agent-framework-for-stateful-inference-time-search"

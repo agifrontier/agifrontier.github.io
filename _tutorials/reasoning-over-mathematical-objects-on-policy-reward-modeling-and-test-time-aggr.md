@@ -3,7 +3,7 @@ layout: default
 title: "Reasoning over mathematical objects: on-policy reward modeling and test time aggregation"
 description: "AI数学推理不再“偏科”：Principia让大模型精通复杂公式，性能提升18%！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "pacore-learning-to-scale-test-time-compute-with-parallel-coordinated-reasoning"
   - "understanding-and-steering-the-cognitive-behaviors-of-reasoning-models-at-test-t"

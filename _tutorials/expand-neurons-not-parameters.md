@@ -3,7 +3,7 @@ layout: default
 title: "Expand Neurons, Not Parameters"
 description: "本文提出了一种名为“固定参数扩展”（Fixed Parameter Expansion, FPE）的方法，通过在不增加非零参数总数的情况下增加网络中的神经元数量，来减少由特征叠加（superposition）引起的干扰，从而提升模型性能。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "not-all-parameters-are-created-equal-smart-isolation-boosts-fine-tuning-performa"
   - "allocation-of-parameters-in-transformers"

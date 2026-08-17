@@ -3,7 +3,7 @@ layout: default
 title: "Fast-weight Product Key Memory"
 description: "Sakana AI新作：赋予模型“即时记忆”，4K训练竟能泛化至128K长文。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "知识系统"
 related_tutorials:
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
   - "ai-meets-brain-memory-systems-from-cognitive-neuroscience-to-autonomous-agents"

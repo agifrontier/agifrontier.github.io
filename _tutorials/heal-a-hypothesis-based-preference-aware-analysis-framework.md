@@ -3,7 +3,7 @@ layout: default
 title: "HEAL: A Hypothesis-Based Preference-Aware Analysis Framework"
 description: "本文提出了一个名为HEAL的新型评估框架，它将大语言模型的偏好对齐问题重新定义为在“假设空间”内的重排序过程，并通过排序准确性和偏好强度相关性两个新指标，更全面地分析现有偏好学习方法。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "chatbot-arena-an-open-platform-for-evaluating-llms-by-human-preference"
   - "direct-preference-optimization-your-language-model-is-secretly-a-reward-model"

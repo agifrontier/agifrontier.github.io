@@ -4,7 +4,7 @@ title: "Kimi K2重磅开源：万亿参数与MuonClip重塑Agent智能"
 description: "大语言模型正经历从静态模仿向主动交互的深刻变革。这标志着智能体（AgenticIntelligence）时代的全面开启。在此范式下，模型必须学会在复杂多变的环境中自主感知、规划、推理并采取行动。然而，打造极致的智能体能力，意味着要在预训练与后训练阶段跨越两座大山。"
 arxiv_id: "2507.20534"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
   - "AI Agent"
 tags:
   - "Kimi K2"

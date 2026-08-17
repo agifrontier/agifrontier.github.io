@@ -3,7 +3,7 @@ layout: default
 title: "Tongyi DeepResearch Technical Report"
 description: "本文介绍了通义深搜（Tongyi DeepResearch），一个开源的AI研究智能体，它通过创新的“智能体中训练”与“智能体后训练”两阶段训练框架，结合可扩展的合成数据引擎，实现了领先的深度研究能力。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "step-deepresearch-technical-report"
   - "deepseek-v3-technical-report"

@@ -3,8 +3,8 @@ layout: default
 title: "Scaling Beyond Context: A Survey of Multimodal Retrieval-Augmented Generation for Document Understanding"
 description: "(a) 在长文档理解任务中，使用与不使用多模态RAG的多模态大语言模型（MLLM）的对比。(b) 2024年至2025年相关出版物的增长情况。"
 topics:
-  - "多模态与视觉"
-  - "RAG与知识系统"
+  - "多模态"
+  - "RAG"
 related_tutorials:
   - "mom-mixtures-of-scenario-aware-document-memories-for-retrieval-augmented-generat"
   - "beyond-patch-aggregation-3-pass-pyramid-indexing-for-vision-enhanced-document-re"

@@ -3,7 +3,7 @@ layout: default
 title: "Rethinking Cross-lingual Gaps from a Statistical Viewpoint"
 description: "本文从统计学视角重新审视了大型语言模型的跨语言知识差距问题，提出这一差距主要源于目标语言（target language）响应的方差增大，而非知识传递失败所导致的偏差（bias），并通过创新的偏差-方差分解框架和一系列实验验证了该假设。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "reconstructing-kv-caches-with-cross-layer-fusion-for-enhanced-transformers"
   - "rethinking-supervised-fine-tuning-emphasizing-key-answer-tokens-for-improved-llm"

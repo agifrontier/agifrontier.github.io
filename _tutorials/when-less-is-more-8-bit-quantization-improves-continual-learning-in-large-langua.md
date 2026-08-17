@@ -3,7 +3,7 @@ layout: default
 title: "When Less is More: 8-bit Quantization Improves Continual Learning in Large Language Models"
 description: "少即是多？8-bit量化竟让大模型持续学习能力暴涨15%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型优化"
 related_tutorials:
   - "what-makes-low-bit-quantization-aware-training-work-for-reasoning-llms-a-systema"
   - "less-is-more-tokens-efficient-math-reasoning-via-difficulty-aware-chain-of-thoug"

@@ -3,7 +3,7 @@ layout: default
 title: "The Prompt Engineering Report Distilled: Quick Start Guide for Life Sciences"
 description: "本文为生命科学领域的研究人员提炼了一份提示工程（Prompt Engineering）快速入门指南，重点介绍了六种核心技术（零样本、少样本、思维生成、集成、自我批评和分解），并提供了具体的用例、最佳实践和常见陷阱，旨在帮助研究人员从机会主义的提问方式转变为系统、高效的实践。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "a-prompt-pattern-catalog-to-enhance-prompt-engineering-with-chatgpt"
   - "all-you-need-is-one-capsule-prompt-tuning-with-a-single-vector"

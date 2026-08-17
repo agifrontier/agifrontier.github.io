@@ -3,7 +3,7 @@ layout: default
 title: "Sentence-Anchored Gist Compression for Long-Context LLMs"
 description: "LLM长文本“瘦身”8倍：新方法让模型按“句”读取，性能几乎无损。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "rmaat-astrocyte-inspired-memory-compression-and-replay-for-efficient-long-contex"
   - "artificial-hippocampus-networks-for-efficient-long-context-modeling"

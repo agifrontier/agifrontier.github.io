@@ -3,7 +3,7 @@ layout: default
 title: "LoRA on the Go: Instance-level Dynamic LoRA Selection and Merging"
 description: "即插即用LoRA！LoGo实现零成本动态适配，推理性能最高提升3.6%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "a-systematic-study-of-model-merging-techniques-in-large-language-models"
   - "bi-lora-efficient-sharpness-aware-minimization-for-fine-tuning-large-scale-model"

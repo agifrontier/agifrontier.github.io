@@ -5,7 +5,7 @@ description: "当前的大语言模型智能体在执行各类复杂任务时，
 arxiv_id: "2606.19911"
 topics:
   - "AI Agent"
-  - "RAG与知识系统"
+  - "RAG"
 tags:
   - "ALFWorld"
   - "LLM agents"

@@ -3,7 +3,7 @@ layout: default
 title: "HunyuanVideo 1.5 Technical Report"
 description: "83亿参数新SOTA！混元Video 1.5开源，推理加速87%，RTX 4090轻松跑。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "deepseek-v3-technical-report"
   - "gpt-4-technical-report"

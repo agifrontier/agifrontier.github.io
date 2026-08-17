@@ -3,7 +3,7 @@ layout: default
 title: "AI Meets Brain: Memory Systems from Cognitive Neuroscience to Autonomous Agents"
 description: "AI记忆系统的“脑科学”革命：复旦哈工大万字综述，揭秘智能体进化的核心。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "知识系统"
   - "AI Agent"
 related_tutorials:
   - "forgetful-but-faithful-a-cognitive-memory-architecture-and-benchmark-for-privacy"

@@ -4,7 +4,7 @@ title: "SkyRL-Agent: Efficient RL Training for Multi-turn LLM Agent"
 description: "AI Agent训练成本减半！SkyRL-Agent框架揭秘1.55倍加速秘诀。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
   - "AI Agent"
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "scaling-up-multi-turn-off-policy-rl-and-multi-agent-tree-search-for-llm-step-pro"
   - "ui-tars-2-technical-report-advancing-gui-agent-with-multi-turn-reinforcement-lea"

@@ -3,7 +3,7 @@ layout: default
 title: "LLM-as-a-Judge: Toward World Models for Slate Recommendation Systems"
 description: "本文解读《LLM-as-a-Judge: Toward World Models for Slate Recommendation Systems》，梳理核心方法、关键实验结果与工程实践启示。"
 topics:
-  - "AI安全与评测"
+  - "AI评测"
   - "行业应用"
 related_tutorials:
   - "a-survey-on-llm-as-a-judge"

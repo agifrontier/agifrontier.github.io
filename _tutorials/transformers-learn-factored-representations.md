@@ -3,7 +3,7 @@ layout: default
 title: "Transformers learn factored representations"
 description: "Transformer的世界观：自动将指数级复杂世界拆解为线性正交因子。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "alpacafarm-a-simulation-framework-for-methods-that-learn-from-human-feedback"
   - "a-model-of-errors-in-transformers"

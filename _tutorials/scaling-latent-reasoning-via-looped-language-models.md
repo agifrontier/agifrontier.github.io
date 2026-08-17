@@ -3,7 +3,7 @@ layout: default
 title: "Scaling Latent Reasoning via Looped Language Models"
 description: "好的，我将以世界顶级AI研究科学家的身份，遵循您的指示，撰写这份论文笔记。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "brorl-scaling-reinforcement-learning-via-broadened-exploration"
   - "kimi-k15-scaling-reinforcement-learning-with-llms"

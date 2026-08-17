@@ -3,7 +3,7 @@ layout: default
 title: "Hybrid Architectures for Language Models: Systematic Analysis and Design Insights"
 description: "本文系统性地分析和评估了语言模型的混合架构（层间与层内），发现层内混合策略在模型质量与计算效率之间取得了最佳的帕累托前沿 (Pareto-frontier)。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "rethinking-retrieval-augmented-generation-for-medicine-a-large-scale-systematic-"
   - "autoregressive-language-models-are-secretly-energy-based-models-insights-into-th"

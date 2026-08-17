@@ -3,7 +3,7 @@ layout: default
 title: "Digital Twin AI: Opportunities and Challenges from Large Language Models to World Models"
 description: "数字孪生迎“智变”：大模型与世界模型驱动的4阶段进化全景。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "statistical-reinforcement-learning-in-the-real-world-a-survey-of-challenges-and-"
   - "object-recognition-datasets-and-challenges-a-review"

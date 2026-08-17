@@ -3,8 +3,8 @@ layout: default
 title: "CUDA-L2: Surpassing cuBLAS Performance for Matrix Multiplication through Reinforcement Learning"
 description: "AI当上CUDA工程师：性能超NVIDIA官方库26%，CUDA-L2来了！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
-  - "数据与AI工程"
+  - "强化学习"
+  - "AI工程"
 related_tutorials:
   - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
   - "scribes-web-scale-script-based-semi-structured-data-extraction-with-reinforcemen"

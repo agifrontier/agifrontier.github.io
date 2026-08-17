@@ -3,7 +3,7 @@ layout: default
 title: "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena"
 description: "本文提出使用强大的大语言模型（如GPT-4）作为裁判（LLM-as-a-Judge）来评估聊天机器人，并通过新提出的基准 MT-Bench 和 Chatbot Arena 的实验证明，该方法的评判结果与人类偏好具有超过80%的一致性，达到了人类之间的一致性水平，为自动化评估提供了一种可扩展且可解释的方案。"
 topics:
-  - "AI安全与评测"
+  - "AI评测"
 related_tutorials:
   - "chatbot-arena-an-open-platform-for-evaluating-llms-by-human-preference"
   - "a-survey-on-llm-as-a-judge"

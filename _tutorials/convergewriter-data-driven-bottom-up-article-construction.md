@@ -3,7 +3,7 @@ layout: default
 title: "ConvergeWriter: Data-Driven Bottom-Up Article Construction"
 description: "本文提出了一种名为 ConvergeWriter 的“自下而上”长文生成框架，它通过“先检索知识，后聚类定结构”的策略，确保文章的规划和生成完全由可用的知识数据驱动，从而根本上解决了传统“自上而下”方法中规划与知识脱节导致的幻觉问题。"
 topics:
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "a-novel-combined-data-driven-approach-for-electricity-theft-detection"
   - "dataflow-an-llm-driven-framework-for-unified-data-preparation-and-workflow-autom"

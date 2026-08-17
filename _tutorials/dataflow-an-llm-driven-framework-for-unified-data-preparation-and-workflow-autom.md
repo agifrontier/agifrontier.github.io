@@ -3,7 +3,7 @@ layout: default
 title: "DataFlow: An LLM-Driven Framework for Unified Data Preparation and Workflow Automation in the Era of Data-Centric AI"
 description: "1万条顶100万条！北大DataFlow：像写PyTorch一样搞定大模型数据。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "a-survey-on-efficient-large-language-model-training-from-data-centric-perspectiv"
   - "whats-the-next-frontier-for-data-centric-ai-data-savvy-agents"

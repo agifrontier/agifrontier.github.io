@@ -4,7 +4,7 @@ title: "赋予Agent“变通”智慧：PAVE架构让AI火灾违规逃生率达8
 description: "当一辆由大语言模型控制的自动驾驶汽车遇到严重火灾，而正前方却亮着红灯时，它该怎么做？是违规闯红灯以求生存，还是死板地遵守交通规则等待救援？传统的生成式智能体（GenerativeAgents）在模拟人类合作行为时表现优异。但在面临生存与规则冲突的复杂决策时，它们往往显得异常死板。"
 arxiv_id: "2605.19351"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 tags:
   - "PAVE"
   - "Perception-Assessment-Verdict-Emulation"

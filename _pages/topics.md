@@ -2,8 +2,8 @@
 layout: default
 permalink: /topics/
 title: AI 主题导航
-seo_title: AI 主题导航：Agent、RAG、推理与多模态论文
-description: 按 AI Agent、RAG 与知识系统、推理与强化学习、多模态视觉、具身智能、模型训练优化等主题浏览 AI 前沿论文解读。
+seo_title: AI 主题导航：Agent、RAG、推理、多模态论文
+description: 按 AI Agent、RAG、知识系统、推理、强化学习、多模态、具身智能等独立主题浏览 AI 前沿论文解读。
 nav: true
 nav_order: 2
 ---
@@ -18,6 +18,7 @@ nav_order: 2
     {% assign topic_name = topic.name %}
     {% assign topic_tutorials = site.tutorials | where_exp: "tutorial", "tutorial.topics contains topic_name" | sort: "seo_lastmod" | reverse %}
     {% if topic_tutorials.size > 0 %}
+      {% if topic.legacy_slug %}<span class="topic-directory__legacy-anchor" id="{{ topic.legacy_slug }}" aria-hidden="true"></span>{% endif %}
       <section class="topic-directory__section" id="{{ topic.slug }}">
         <h2>{{ topic.name }} <small>{{ topic_tutorials.size }} 篇</small></h2>
         <ul>

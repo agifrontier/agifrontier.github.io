@@ -4,7 +4,7 @@ title: "Repurposing Synthetic Data for Fine-grained Search Agent Supervision"
 description: "本文提出了一种名为 E-GRPO 的新方法，通过重利用合成数据生成过程中被忽略的实体信息，构建了一个细粒度的实体感知奖励函数，以解决传统强化学习方法中的奖励稀疏和“功亏一篑”（near-miss）问题，从而更有效地训练搜索智能体。"
 topics:
   - "AI Agent"
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "matrix-peer-to-peer-multi-agent-synthetic-data-generation-framework"
   - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"

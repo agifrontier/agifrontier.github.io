@@ -3,7 +3,7 @@ layout: default
 title: "MobileLLM-Pro Technical Report"
 description: "Meta MobileLLM-Pro：10亿参数手机模型称王，四大创新超越Gemma与Llama 3.2。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "deepseek-v3-technical-report"
   - "gpt-4-technical-report"

@@ -3,7 +3,7 @@ layout: default
 title: "A Component-Based Survey of Interactions between Large Language Models and Multi-Armed Bandits"
 description: "LLM遇上多臂老虎机：首篇组件级综述揭秘“双向增强”决策智能。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "collaboration-and-conflict-between-humans-and-language-models-through-the-lens-o"
   - "epistemological-fault-lines-between-human-and-artificial-intelligence"

@@ -3,7 +3,7 @@ layout: default
 title: "EmoRAG: Evaluating RAG Robustness to Symbolic Perturbations"
 description: "EmoRAG：一个表情符号，如何100%“污染”RAG，让大模型更易“中招”？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "RAG"
 related_tutorials:
   - "halumem-evaluating-hallucinations-in-memory-systems-of-agents"
   - "hifi-rag-hierarchical-content-filtering-and-two-pass-generation-for-open-domain-"

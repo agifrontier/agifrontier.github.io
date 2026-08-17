@@ -5,7 +5,7 @@ description: "当大语言模型从简单的对话助手，逐步深入并接管
 arxiv_id: "2607.10113"
 topics:
   - "AI Agent"
-  - "RAG与知识系统"
+  - "RAG"
 tags:
   - "Dynamic Agent Skills"
   - "SKILL.md"

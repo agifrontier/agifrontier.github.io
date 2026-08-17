@@ -4,7 +4,7 @@ title: "Empowering Real-World: A Survey on the Technology, Practice, and Evaluat
 description: "好的，我已判断这是一篇 [综述] 论文。我将严格遵循综述报告的模板，以原文结构为基础，重点剖析其提出的分类体系，并提炼核心内容。"
 topics:
   - "AI Agent"
-  - "AI安全与评测"
+  - "AI评测"
 related_tutorials:
   - "mai-ui-technical-report-real-world-centric-foundation-gui-agents"
   - "toucan-synthesizing-15m-tool-agentic-data-from-real-world-mcp-environments"

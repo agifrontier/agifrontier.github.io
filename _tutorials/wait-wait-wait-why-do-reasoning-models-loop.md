@@ -3,7 +3,7 @@ layout: default
 title: "Wait, Wait, Wait... Why Do Reasoning Models Loop?"
 description: "DeepSeek-R1变“复读机”？MIT揭秘：蒸馏导致死循环暴增，调高温度治标不治本。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "how-and-why-llms-generalize-a-fine-grained-analysis-of-llm-reasoning-from-cognit"
   - "a-multitask-multilingual-multimodal-evaluation-of-chatgpt-on-reasoning-hallucina"

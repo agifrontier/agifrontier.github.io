@@ -3,7 +3,7 @@ layout: default
 title: "Stabilizing Reinforcement Learning with LLMs: Formulation and Practices"
 description: "Token级优化为何能对齐序列级奖励？阿里耗费数十万GPU时，揭秘LLM强化学习稳定之道。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "a-multiobjective-reinforcement-learning-framework-for-microgrid-energy-managemen"
   - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"

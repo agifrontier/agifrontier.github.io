@@ -3,7 +3,7 @@ layout: default
 title: "ARM-FM: Automated Reward Machines via Foundation Models for Compositional Reinforcement Learning"
 description: "本文提出了ARM-FM框架，利用基础模型（Foundation Models, FMs）从自然语言指令中自动生成奖励机（Reward Machines, RMs），为组合式强化学习（Compositional Reinforcement Learning）提供结构化的奖励信号，以解决长时程、稀疏奖励任务并实。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "online-process-reward-leanring-for-agentic-reinforcement-learning"
   - "ssl4rl-revisiting-self-supervised-learning-as-intrinsic-reward-for-visual-langua"

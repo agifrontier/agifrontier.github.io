@@ -3,7 +3,7 @@ layout: default
 title: "Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning"
 description: "本文提出了Memory-R1框架，通过强化学习（RL）训练两个专门的智能体——一个用于结构化记忆操作的内存管理器和一个用于筛选并推理记忆的回答智能体，从而使大型语言模型（LLM）能够主动、自适应地管理和利用外部记忆，显著提升了其长时程推理能力。"
 topics:
-  - "RAG与知识系统"
+  - "知识系统"
   - "AI Agent"
 related_tutorials:
   - "memrl-self-evolving-agents-via-runtime-reinforcement-learning-on-episodic-memory"

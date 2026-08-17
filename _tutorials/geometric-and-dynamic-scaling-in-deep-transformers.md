@@ -3,7 +3,7 @@ layout: default
 title: "Geometric and Dynamic Scaling in Deep Transformers"
 description: "Transformer 越深越“傻”？几何视角揭秘百层大模型坍塌之谜。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "webweaver-structuring-web-scale-evidence-with-dynamic-outlines-for-open-ended-de"
   - "beyond-turn-limits-training-deep-search-agents-with-dynamic-context-window"

@@ -3,7 +3,7 @@ layout: default
 title: "DELTA: Decoupling Long-Tailed Online Continual Learning"
 description: "本文提出了一种名为 DELTA 的解耦学习框架，通过两阶段训练策略（监督对比学习 + 均衡损失）有效解决了长尾在线持续学习（Long-Tailed Online Continual Learning, LTOCL）中的灾难性遗忘和类别不平衡问题。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "deep-delta-learning"
   - "improving-online-algorithms-via-ml-predictions"

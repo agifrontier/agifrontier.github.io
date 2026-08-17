@@ -3,7 +3,7 @@ layout: default
 title: "Why Less is More (Sometimes): A Theory of Data Curation"
 description: "本文建立了一个理论框架，通过推导精确的缩放定律，揭示了在何时以及为何精心筛选（curate）一小部分数据进行训练，会比使用全部数据获得更好的性能，从而解决了“少即是多”与“多即是多”的矛盾。"
 topics:
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "lime-making-llm-data-more-efficient-with-linguistic-metadata-embeddings"
   - "prompts-generalize-with-low-data-non-vacuous-generalization-bounds-for-optimizin"

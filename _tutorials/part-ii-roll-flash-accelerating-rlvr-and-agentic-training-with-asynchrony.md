@@ -4,7 +4,7 @@ title: "Part II: ROLL Flash -- Accelerating RLVR and Agentic Training with Async
 description: "本文提出了 ROLL Flash，一个通过引入异步机制来解耦 rollout 和训练阶段的系统，从而显著提升了强化学习后训练（RL Post-Training）的吞吐量和资源可扩展性，同时通过精细化的陈旧度控制确保了模型的最终性能。"
 topics:
   - "AI Agent"
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "tree-training-accelerating-agentic-llms-training-via-shared-prefix-reuse"
   - "let-it-flow-agentic-crafting-on-rock-and-roll-building-the-rome-model-within-an-"

@@ -3,7 +3,7 @@ layout: default
 title: "mHC: Manifold-Constrained Hyper-Connections"
 description: "DeepSeek魔改残差连接：mHC仅增6.7%开销，完美驯服大模型训练不稳定性。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
   - "a-concise-review-of-hallucinations-in-llms-and-their-mitigation"

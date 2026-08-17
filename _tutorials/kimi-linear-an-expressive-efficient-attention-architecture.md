@@ -3,7 +3,7 @@ layout: default
 title: "Kimi Linear: An Expressive, Efficient Attention Architecture"
 description: "KimiLinear揭秘：首次全面超越全注意力，1M上下文解码提速6倍！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型优化"
 related_tutorials:
   - "every-attention-matters-an-efficient-hybrid-architecture-for-long-context-reason"
   - "spotlight-attention-towards-efficient-llm-generation-via-non-linear-hashing-base"

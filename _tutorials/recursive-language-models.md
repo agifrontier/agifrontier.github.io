@@ -3,7 +3,7 @@ layout: default
 title: "Recursive Language Models"
 description: "打破上下文诅咒：递归语言模型（RLM）让GPT-5处理无限长文本。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "improving-recursive-transformers-with-mixture-of-loras"
   - "fortifai-fending-off-recursive-training-induced-failure-for-ai-models"

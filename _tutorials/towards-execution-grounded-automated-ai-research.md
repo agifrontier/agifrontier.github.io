@@ -3,7 +3,7 @@ layout: default
 title: "Towards Execution-Grounded Automated AI Research"
 description: "斯坦福自动化AI科研：10轮进化准确率飙升21%，RL反而“变笨”？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "a-survey-of-ai-scientists-surveying-the-automatic-scientists-and-research"
   - "webweaver-structuring-web-scale-evidence-with-dynamic-outlines-for-open-ended-de"

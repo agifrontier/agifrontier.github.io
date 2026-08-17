@@ -3,7 +3,7 @@ layout: default
 title: "Epistemological Fault Lines Between Human and Artificial Intelligence"
 description: "大模型只是“概率填空”：揭秘AI与人类认知的7道“认识论断层”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "ai4x-roadmap-artificial-intelligence-for-the-advancement-of-scientific-pursuit-a"
   - "artificial-hippocampus-networks-for-efficient-long-context-modeling"

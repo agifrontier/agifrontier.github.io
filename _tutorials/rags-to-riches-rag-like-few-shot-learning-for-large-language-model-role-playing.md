@@ -3,7 +3,7 @@ layout: default
 title: "RAGs to Riches: RAG-like Few-shot Learning for Large Language Model Role-playing"
 description: "本文提出了一种名为 RAGs-to-Riches 的新颖提示框架，它将大语言模型（LLM）的角色扮演问题重构为一个类似检索增强生成（RAG）的文本检索任务，通过使用精心策划的、源于训练数据之外的参考范例，显著增强了模型在面对敌对用户时保持角色一致性的能力。"
 topics:
-  - "RAG与知识系统"
+  - "RAG"
 related_tutorials:
   - "self-rag-learning-to-retrieve-generate-and-critique-through-self-reflection"
   - "flex-language-modeling-with-few-shot-language-explanations"

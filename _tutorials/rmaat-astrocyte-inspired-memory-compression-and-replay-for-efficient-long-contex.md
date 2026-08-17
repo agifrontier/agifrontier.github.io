@@ -3,7 +3,7 @@ layout: default
 title: "RMAAT: Astrocyte-Inspired Memory Compression and Replay for Efficient Long-Context Transformers"
 description: "模拟大脑“胶质细胞”！RMAAT解锁线性注意力，长序列训练显存效率暴涨。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "知识系统"
 related_tutorials:
   - "comet-collaborative-memory-transformer-for-efficient-long-context-modeling"
   - "qwenlong-l15-post-training-recipe-for-long-context-reasoning-and-memory-manageme"

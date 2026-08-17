@@ -3,7 +3,7 @@ layout: default
 title: "Incorporating Self-Rewriting into Large Language Model Reasoning Reinforcement"
 description: "告别思维混乱：自重写技术让LLM推理长度锐减46%，质量反而更高。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
   - "deep-self-evolving-reasoning"

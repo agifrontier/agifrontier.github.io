@@ -3,7 +3,7 @@ layout: default
 title: "DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models"
 description: "斩获IMO/IOI金牌！DeepSeek-V3.2发布，推理比肩Gemini 3.0 Pro。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "deepseekmath-pushing-the-limits-of-mathematical-reasoning-in-open-language-model"
   - "mirothinker-pushing-the-performance-boundaries-of-open-source-research-agents-vi"

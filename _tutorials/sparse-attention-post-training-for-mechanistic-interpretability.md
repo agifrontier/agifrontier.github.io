@@ -3,7 +3,8 @@ layout: default
 title: "Sparse Attention Post-Training for Mechanistic Interpretability"
 description: "大模型“瘦身”革命：砍掉99.7%注意力连接，内部电路清晰100倍且性能不降！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
+  - "模型优化"
 related_tutorials:
   - "stream-scaling-up-mechanistic-interpretability-to-long-context-in-llms-via-spars"
   - "kascade-a-practical-sparse-attention-method-for-long-context-llm-inference"

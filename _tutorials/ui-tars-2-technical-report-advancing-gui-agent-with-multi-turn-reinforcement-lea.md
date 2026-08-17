@@ -4,7 +4,7 @@ title: "UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn Reinforc
 description: "UI-TARS-2：多轮强化学习炼成！达60%人类水平，AI智能体自主操作电脑。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
   - "AI Agent"
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
   - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"

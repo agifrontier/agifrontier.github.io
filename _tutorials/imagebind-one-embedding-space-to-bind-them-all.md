@@ -3,7 +3,7 @@ layout: default
 title: "ImageBind: One Embedding Space To Bind Them All"
 description: "本文提出 ImageBind，一种仅通过将图像与其他多种模态（文本、音频、深度、热成像、IMU）的数据进行配对，就能学习到一个统一的多模态联合嵌入空间，并由此涌现出跨模态对齐与组合等新能力的方法。"
 topics:
-  - "RAG与知识系统"
+  - "RAG"
 related_tutorials:
   - "all-you-need-is-one-capsule-prompt-tuning-with-a-single-vector"
   - "bge-m3-embedding-multi-lingual-multi-functionality-multi-granularity-text-embedd"

@@ -3,7 +3,7 @@ layout: default
 title: "First Try Matters: Revisiting the Role of Reflection in Reasoning Models"
 description: "本文通过大规模量化分析揭示，当前推理模型中的“反思”步骤主要起确认作用而非纠错，其性能提升源于首次尝试正确率的提高，并基于此发现提出了一种可大幅提升推理效率的提前终止策略。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "every-attention-matters-an-efficient-hybrid-architecture-for-long-context-reason"
   - "ssl4rl-revisiting-self-supervised-learning-as-intrinsic-reward-for-visual-langua"

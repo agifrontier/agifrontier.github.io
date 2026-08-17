@@ -3,7 +3,7 @@ layout: default
 title: "Web World Models"
 description: "Web World Model：用普通代码构建“物理法则”，让LLM只负责“想象”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "webweaver-structuring-web-scale-evidence-with-dynamic-outlines-for-open-ended-de"
   - "digital-twin-ai-opportunities-and-challenges-from-large-language-models-to-world"

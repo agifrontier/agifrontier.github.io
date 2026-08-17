@@ -3,7 +3,7 @@ layout: default
 title: "Mid-Training of Large Language Models: A Survey"
 description: "本文首次将大语言模型（LLMs）的中期训练（mid-training）概念化为一个统一的范式，并提出了一个涵盖数据分布、学习率调度和长上下文扩展的分类体系，旨在系统性地梳理这一介于大规模预训练和任务微调之间的关键阶段。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "a-survey-on-llm-mid-training"
   - "on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language-model"

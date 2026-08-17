@@ -4,7 +4,7 @@ title: "SFR-DeepResearch: Towards Effective Reinforcement Learning for Autonomou
 description: "本文提出了一种名为 SFR-DeepResearch 的方法，其核心是使用一套完全由合成数据驱动的强化学习（RL）方法，在保留并增强其原有推理能力的基础上，将专为推理优化的语言模型（如 QwQ, Qwen3）转化为用于深度研究（Deep Research）任务的自主单智能体。"
 topics:
   - "AI Agent"
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
   - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"

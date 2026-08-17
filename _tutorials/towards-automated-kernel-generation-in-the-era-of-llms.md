@@ -3,7 +3,7 @@ layout: default
 title: "Towards Automated Kernel Generation in the Era of LLMs"
 description: "告别手写CUDA噩梦：LLM+Agent自动生成高性能Kernel技术全景。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "数据与AI工程"
+  - "AI工程"
 related_tutorials:
   - "dataflow-an-llm-driven-framework-for-unified-data-preparation-and-workflow-autom"
   - "generative-models-for-synthetic-data-transforming-data-mining-in-the-genai-era"

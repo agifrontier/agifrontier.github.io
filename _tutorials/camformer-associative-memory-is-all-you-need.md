@@ -3,7 +3,7 @@ layout: default
 title: "CAMformer: Associative Memory is All You Need"
 description: "CAMformer横空出世：Attention能效飙升10倍，用联想记忆取代矩阵乘法。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "知识系统"
 related_tutorials:
   - "all-you-need-is-one-capsule-prompt-tuning-with-a-single-vector"
   - "increasing-the-thinking-budget-is-not-all-you-need"

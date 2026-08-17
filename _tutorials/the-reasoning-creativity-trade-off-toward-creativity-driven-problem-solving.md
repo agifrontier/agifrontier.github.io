@@ -3,7 +3,7 @@ layout: default
 title: "The Reasoning-Creativity Trade-off: Toward Creativity-Driven Problem Solving"
 description: "剑桥重磅：直击LLM“创造力坍缩”，DCR框架如何打破推理单一化僵局？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "cogflow-bridging-perception-and-reasoning-through-knowledge-internalization-for-"
   - "tree-of-thoughts-deliberate-problem-solving-with-large-language-models"

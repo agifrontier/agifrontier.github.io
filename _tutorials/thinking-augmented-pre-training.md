@@ -3,7 +3,7 @@ layout: default
 title: "Thinking Augmented Pre-training"
 description: "本文提出了一种名为“思维增强预训练”（Thinking Augmented Pre-training, TPT）的简单且可扩展的方法，通过使用现有LLM为预训练数据自动生成“思维轨迹”（thinking trajectories），从而显著提升了语言模型训练的数据效率和推理能力。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "thinker-training-llms-in-hierarchical-thinking-for-deep-search-via-multi-turn-in"
   - "adamhd-decoupled-huber-decay-regularization-for-language-model-pre-training"

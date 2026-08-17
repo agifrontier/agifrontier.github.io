@@ -4,8 +4,8 @@ title: "ACT as Human: Multimodal Large Language Model Data Annotation with Criti
 description: "AI标注成本直降90%！字节ACT框架：让大模型学会「批判性思维」。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 thumbnail: "/images/2511.09833v1/x1.jpg"
 topics:
-  - "多模态与视觉"
-  - "数据与AI工程"
+  - "多模态"
+  - "数据工程"
 related_tutorials:
   - "valid-survey-simulations-with-limited-human-data-the-roles-of-prompting-fine-tun"
   - "diffusion-language-models-are-super-data-learners"

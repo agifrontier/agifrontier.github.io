@@ -3,7 +3,7 @@ layout: default
 title: "Do Depth-Grown Models Overcome the Curse of Depth? An In-Depth Analysis"
 description: "告别“深度诅咒”：谷歌新方法LIDAS让LLM动态生长，训练提速29%！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "what-affects-the-effective-depth-of-large-language-models"
   - "hybrid-architectures-for-language-models-systematic-analysis-and-design-insights"

@@ -3,7 +3,7 @@ layout: default
 title: "The 2025 Foundation Model Transparency Index"
 description: "2025 AI透明度大倒退：均分跌至40，IBM夺冠，xAI与Midjourney垫底。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "remote-labor-index-measuring-ai-automation-of-remote-work"
   - "llama-2-open-foundation-and-fine-tuned-chat-models"

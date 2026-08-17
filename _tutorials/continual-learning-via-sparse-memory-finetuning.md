@@ -3,8 +3,8 @@ layout: default
 title: "Continual Learning via Sparse Memory Finetuning"
 description: "本文提出了一种名为稀疏内存微调（sparse memory finetuning）的方法，通过仅更新与新知识高度相关的、利用TF-IDF筛选出的极少数内存槽位，使大型语言模型在学习新知识的同时，显著减少了灾难性遗忘。"
 topics:
-  - "RAG与知识系统"
-  - "模型训练与优化"
+  - "知识系统"
+  - "模型训练"
 related_tutorials:
   - "when-less-is-more-8-bit-quantization-improves-continual-learning-in-large-langua"
   - "moeblaze-breaking-the-memory-wall-for-efficient-moe-training-on-modern-gpus"

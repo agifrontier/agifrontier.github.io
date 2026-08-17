@@ -3,8 +3,8 @@ layout: default
 title: "Inpainting-Guided Policy Optimization for Diffusion Large Language Models"
 description: "本文提出了一种名为 IGPO (Inpainting-Guided Policy Optimization) 的强化学习框架，它利用扩散大语言模型 (dLLM) 独特的“填补” (inpainting) 能力，通过在探索过程中策略性地注入部分真实推理线索，从而有效解决强化学习中的探索效率低下和零优势困境问题。"
 topics:
-  - "多模态与视觉"
-  - "模型训练与优化"
+  - "计算机视觉"
+  - "模型优化"
 related_tutorials:
   - "trainable-log-linear-sparse-attention-for-efficient-diffusion-transformers"
   - "asymmetric-proximal-policy-optimization-mini-critics-boost-llm-reasoning"

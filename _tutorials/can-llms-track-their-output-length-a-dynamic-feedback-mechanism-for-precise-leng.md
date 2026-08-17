@@ -3,7 +3,7 @@ layout: default
 title: "Can LLMs Track Their Output Length? A Dynamic Feedback Mechanism for Precise Length Regulation"
 description: "LLM数不清字数？阿里新法让模型“边写边看”，训练效率升4倍。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations"
   - "a-concise-review-of-hallucinations-in-llms-and-their-mitigation"

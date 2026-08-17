@@ -3,7 +3,8 @@ layout: default
 title: "Kascade: A Practical Sparse Attention Method for Long-Context LLM Inference"
 description: "微软Kascade：无需训练，H100上长文本推理提速4.1倍！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
+  - "模型优化"
 related_tutorials:
   - "stream-scaling-up-mechanistic-interpretability-to-long-context-in-llms-via-spars"
   - "every-attention-matters-an-efficient-hybrid-architecture-for-long-context-reason"

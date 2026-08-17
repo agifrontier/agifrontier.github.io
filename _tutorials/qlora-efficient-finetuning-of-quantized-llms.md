@@ -3,7 +3,7 @@ layout: default
 title: "QLoRA: Efficient Finetuning of Quantized LLMs"
 description: "本文提出了一种名为QLoRA的高效微调方法，通过将梯度反向传播到冻结的4-bit量化模型中的低秩适配器（LoRA），首次实现了在单个48GB GPU上微调65B参数的大型语言模型，同时保持了与16-bit全量微调相当的性能。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "artificial-hippocampus-networks-for-efficient-long-context-modeling"
   - "beft-bias-efficient-fine-tuning-of-language-models"

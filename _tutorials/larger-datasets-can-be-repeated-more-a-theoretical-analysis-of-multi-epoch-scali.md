@@ -3,7 +3,7 @@ layout: default
 title: "Larger Datasets Can Be Repeated More: A Theoretical Analysis of Multi-Epoch Scaling in Linear Regression"
 description: "数据告急？北大清华发现：数据集越大，重复训练收益越高，价值可达logN倍。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "AI理论"
 related_tutorials:
   - "scaling-llm-test-time-compute-optimally-can-be-more-effective-than-scaling-model"
   - "large-language-monkeys-scaling-inference-compute-with-repeated-sampling"

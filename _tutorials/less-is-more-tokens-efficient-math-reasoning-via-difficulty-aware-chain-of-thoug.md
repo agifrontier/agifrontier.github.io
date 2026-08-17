@@ -3,8 +3,8 @@ layout: default
 title: "Less is More Tokens: Efficient Math Reasoning via Difficulty-Aware Chain-of-Thought Distillation"
 description: "本文提出了一种困难度感知的思维链蒸馏框架，通过在与问题难度成比例的思维链（CoT）数据上进行后训练，教会大语言模型根据问题复杂性动态调整推理深度，从而在保持或提升准确率的同时，显著提升推理效率。"
 topics:
-  - "推理与强化学习"
-  - "模型训练与优化"
+  - "推理"
+  - "模型训练"
 related_tutorials:
   - "fapo-flawed-aware-policy-optimization-for-efficient-and-reliable-reasoning"
   - "putting-on-the-thinking-hats-a-survey-on-chain-of-thought-fine-tuning-from-the-p"

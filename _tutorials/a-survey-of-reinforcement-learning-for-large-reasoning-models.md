@@ -3,7 +3,8 @@ layout: default
 title: "A Survey of Reinforcement Learning for Large Reasoning Models"
 description: "对用于大型推理模型的强化学习的综述。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
+  - "推理"
 related_tutorials:
   - "reinforcement-learning-meets-large-language-models-a-survey-of-advancements-and-"
   - "statistical-reinforcement-learning-in-the-real-world-a-survey-of-challenges-and-"

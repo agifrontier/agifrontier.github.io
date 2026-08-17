@@ -5,7 +5,7 @@ description: "在实际的业务落地中，大型语言模型面对复杂任务
 arxiv_id: "2605.07180"
 topics:
   - "AI Agent"
-  - "RAG与知识系统"
+  - "知识系统"
 tags:
   - "BoundaryRouter"
   - "LLM agents"

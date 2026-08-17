@@ -3,7 +3,7 @@ layout: default
 title: "Excess Description Length of Learning Generalizable Predictors"
 description: "微调是“唤醒”还是“注入”？Anthropic提出EDL：量化模型泛化能力的标尺。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "auto-rubric-learning-to-extract-generalizable-criteria-for-reward-modeling"
   - "can-llms-track-their-output-length-a-dynamic-feedback-mechanism-for-precise-leng"

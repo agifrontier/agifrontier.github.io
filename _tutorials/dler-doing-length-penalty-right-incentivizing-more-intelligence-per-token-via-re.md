@@ -3,7 +3,7 @@ layout: default
 title: "DLER: Doing Length pEnalty Right - Incentivizing More Intelligence per Token via Reinforcement Learning"
 description: "本文提出了一种名为 DLER 的强化学习训练配方，通过改进优化技术（而非设计复杂的长度惩罚函数）来解决模型输出过长的问题，在将响应长度缩短超过70%的同时，还能超越基线模型的准确率，实现了顶尖的准确率-效率权衡。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "deepseek-r1-incentivizing-reasoning-capability-in-llms-via-reinforcement-learnin"
   - "intelligence-per-watt-measuring-intelligence-efficiency-of-local-ai"

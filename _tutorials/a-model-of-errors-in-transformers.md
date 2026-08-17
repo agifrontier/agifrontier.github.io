@@ -3,7 +3,7 @@ layout: default
 title: "A model of errors in transformers"
 description: "DeepMind重磅：仅需2个参数，精准预测LLM错误率！物理学“有效场论”立大功。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "allocation-of-parameters-in-transformers"
   - "context-free-recognition-with-transformers"

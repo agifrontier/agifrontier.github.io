@@ -3,7 +3,7 @@ layout: default
 title: "Connecting Jensen-Shannon and Kullback-Leibler Divergences: A New Bound for Representation Learning"
 description: "本文推导出了一个连接Kullback-Leibler散度（KLD）和Jensen-Shannon散度（JSD）的新的、紧致的下界，从而在理论上证明了最大化基于JSD的判别器目标函数等同于最大化互信息（MI）的一个可靠下界，为表示学习中广泛使用的判别式方法提供了坚实的理论基础。"
 topics:
-  - "基础模型与理论"
+  - "AI理论"
 related_tutorials:
   - "a-survey-of-weight-space-learning-understanding-representation-and-generation"
   - "alpharesearch-accelerating-new-algorithm-discovery-with-language-models"

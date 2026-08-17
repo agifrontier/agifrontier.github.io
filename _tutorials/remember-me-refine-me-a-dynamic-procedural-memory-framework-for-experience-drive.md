@@ -3,7 +3,7 @@ layout: default
 title: "Remember Me, Refine Me: A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution"
 description: "记忆即算力？阿里ReMe让8B模型超越14B，揭秘动态记忆进化论。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "知识系统"
   - "AI Agent"
 related_tutorials:
   - "memevolve-meta-evolution-of-agent-memory-systems"

@@ -3,7 +3,7 @@ layout: default
 title: "CreativityPrism: A Holistic Benchmark for Large Language Model Creativity"
 description: "本文提出了一个名为 的整体性评估框架，通过跨越三个领域（发散性思维、创意写作、逻辑推理）的九个任务和二十个指标，从质量、新颖性和多样性三个维度系统地评估大型语言模型的创造力。"
 topics:
-  - "AI安全与评测"
+  - "AI评测"
 related_tutorials:
   - "livecodebench-holistic-and-contamination-free-evaluation-of-large-language-model"
   - "babybabellm-a-multilingual-benchmark-of-developmentally-plausible-training-data"

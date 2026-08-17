@@ -3,7 +3,8 @@ layout: default
 title: "FlowRL: Matching Reward Distributions for LLM Reasoning"
 description: "本文提出了一种名为 FlowRL 的强化学习算法，它通过匹配完整的奖励分布而非简单地最大化奖励，来提升大型语言模型（LLM）的推理能力，从而解决了现有方法容易陷入模式崩溃、探索多样性不足的问题。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
+  - "推理"
 related_tutorials:
   - "enhancing-large-language-model-reasoning-with-reward-models-an-analytical-survey"
   - "reasoning-over-mathematical-objects-on-policy-reward-modeling-and-test-time-aggr"

@@ -3,7 +3,8 @@ layout: default
 title: "The Path Not Taken: RLVR Provably Learns Off the Principals"
 description: "强化学习“另辟蹊径”：避开90%关键参数，模型推理能力竟能大幅提升。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
+  - "推理"
 related_tutorials:
   - "data-efficient-rlvr-via-off-policy-influence-guidance"
   - "evaluating-parameter-efficient-methods-for-rlvr"

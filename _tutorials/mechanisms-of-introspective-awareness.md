@@ -3,7 +3,7 @@ layout: default
 title: "Mechanisms of Introspective Awareness"
 description: "AI也能“反思”了？Anthropic揭秘LLM内省电路，检测率飙升75%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "emergent-introspective-awareness-in-large-language-models"
   - "fast-attention-mechanisms-a-tale-of-parallelism"

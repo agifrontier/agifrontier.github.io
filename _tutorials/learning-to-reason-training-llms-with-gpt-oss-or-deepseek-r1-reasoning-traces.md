@@ -3,8 +3,8 @@ layout: default
 title: "Learning to Reason: Training LLMs with GPT-OSS or DeepSeek R1 Reasoning Traces"
 description: "推理成本直降75%！英伟达新研究：LLM学会“长话短说”，数学能力还不减。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
-  - "模型训练与优化"
+  - "推理"
+  - "模型训练"
 related_tutorials:
   - "deepseek-r1-incentivizing-reasoning-capability-in-llms-via-reinforcement-learnin"
   - "balanced-actor-initialization-stable-rlhf-training-of-distillation-based-reasoni"

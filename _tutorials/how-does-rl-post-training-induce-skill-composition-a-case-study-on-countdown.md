@@ -3,7 +3,7 @@ layout: default
 title: "How Does RL Post-training Induce Skill Composition? A Case Study on Countdown"
 description: "RL训练的秘密：LLM学会了举一反三，为何却被“先易后难”的结构卡住？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "jailbroken-how-does-llm-safety-training-fail"
   - "what-does-loss-optimization-actually-teach-if-anything-knowledge-dynamics-in-con"

@@ -3,8 +3,8 @@ layout: default
 title: "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference"
 description: "本文介绍并验证了一个名为 Chatbot Arena 的开放平台，该平台通过众包用户的成对比较和偏好投票，来评估和排名大型语言模型（LLM），并为此设计了一套高效、可靠的统计方法论。"
 topics:
-  - "推理与强化学习"
-  - "数据与AI工程"
+  - "推理"
+  - "AI工程"
 related_tutorials:
   - "stackelberg-learning-from-human-feedback-preference-optimization-as-a-sequential"
   - "judging-llm-as-a-judge-with-mt-bench-and-chatbot-arena"

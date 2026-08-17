@@ -3,7 +3,7 @@ layout: default
 title: "Detecting Data Contamination in LLMs via In-Context Learning"
 description: "本文提出了一种名为 CoDeC 的新方法，通过衡量上下文学习（In-Context Learning）对模型置信度的影响，来有效检测和量化大语言模型中的训练数据污染问题。"
 topics:
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "educational-data-mining-and-learning-analytics-an-updated-survey"
   - "learning-from-synthetic-data-limitations-of-erm"

@@ -3,8 +3,8 @@ layout: default
 title: "Multi-Phase Spacecraft Trajectory Optimization via Transformer-Based Reinforcement Learning"
 description: "MIT新突破：Transformer实现火箭全程自主驾驶，成本仅高出最优解3%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
-  - "模型训练与优化"
+  - "强化学习"
+  - "模型优化"
 related_tutorials:
   - "stackelberg-learning-from-human-feedback-preference-optimization-as-a-sequential"
   - "qerl-beyond-efficiency-quantization-enhanced-reinforcement-learning-for-llms"

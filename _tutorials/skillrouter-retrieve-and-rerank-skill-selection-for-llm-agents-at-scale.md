@@ -3,7 +3,7 @@ layout: default
 title: "SkillRouter: Retrieve-and-Rerank Skill Selection for LLM Agents at Scale"
 description: "颠覆常识！阿里SkillRouter：Agent选对工具，代码比描述重要44%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "RAG"
   - "AI Agent"
 related_tutorials:
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"

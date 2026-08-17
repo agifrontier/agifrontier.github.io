@@ -3,7 +3,7 @@ layout: default
 title: "Educational data mining and learning analytics: An updated survey"
 description: "本文是一篇关于教育数据挖掘（EDM）和学习分析（LA）领域的更新版综述，系统性地回顾了该领域的关键术语、发展历程、知识发现流程、主要应用环境、方法论、工具集以及未来发展趋势，旨在为研究人员和实践者提供一份全面的最新知识图谱。"
 topics:
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "generative-models-for-synthetic-data-transforming-data-mining-in-the-genai-era"
   - "a-survey-of-data-agents-emerging-paradigm-or-overstated-hype"

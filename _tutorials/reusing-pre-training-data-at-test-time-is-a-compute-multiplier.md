@@ -3,8 +3,8 @@ layout: default
 title: "Reusing Pre-Training Data at Test Time is a Compute Multiplier"
 description: "本文提出，在测试时通过检索增强的方式重用模型的预训练数据，可以显著提升大语言模型的性能，这种方法相当于一种高效的“计算倍增器”，证明了当前预训练方法并未充分利用数据中的信息。"
 topics:
-  - "模型训练与优化"
-  - "数据与AI工程"
+  - "模型训练"
+  - "数据工程"
 related_tutorials:
   - "understanding-the-role-of-training-data-in-test-time-scaling"
   - "demystifying-synthetic-data-in-llm-pre-training-a-systematic-study-of-scaling-la"

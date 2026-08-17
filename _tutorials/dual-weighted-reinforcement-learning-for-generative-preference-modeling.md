@@ -3,7 +3,8 @@ layout: default
 title: "Dual-Weighted Reinforcement Learning for Generative Preference Modeling"
 description: "本文提出了一种名为双重加权强化学习（Dual-Weighted Reinforcement Learning, DWRL）的新框架，该框架通过一个保留了偏好建模归纳偏置的双重加权强化学习目标，将思维链（CoT）推理与Bradley-Terry（BT）模型相结合，从而在不依赖可验证奖励的通用任务上有效提升了生。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
+  - "推理"
 related_tutorials:
   - "coda-coordinating-the-cerebrum-and-cerebellum-for-a-dual-brain-computer-use-agen"
   - "mars-optimizing-dual-system-deep-research-via-multi-agent-reinforcement-learning"

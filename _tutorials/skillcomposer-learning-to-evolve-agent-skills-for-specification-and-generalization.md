@@ -5,7 +5,7 @@ description: "在当前的智能体（Agent）开发中，开发者常常陷入�
 arxiv_id: "2606.06079"
 topics:
   - "AI Agent"
-  - "基础模型与理论"
+  - "基础模型"
 tags:
   - "AppWorld"
   - "LiveCodeBench v6"

@@ -4,8 +4,8 @@ title: "告别纯反应式VLA：全面解析机器人世界模型进化密码"
 description: "当前具身智能与机器人学习正经历一场深度的范式革命。以往大放异彩的视觉-语言-动作模型（Vision-Language-Action,VLA）正逐渐暴露出其在物理世界中的局限性。以直接将多模态观察映射为底层动作为核心，这些模型本质上仍是“纯反应式”的系统。"
 arxiv_id: "2605.00080"
 topics:
-  - "具身智能与机器人"
-  - "推理与强化学习"
+  - "具身智能"
+  - "强化学习"
 tags:
   - "Autonomous driving"
   - "Embodied agents"

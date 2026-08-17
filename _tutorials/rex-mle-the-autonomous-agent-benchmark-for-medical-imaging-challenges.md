@@ -4,7 +4,7 @@ title: "ReX-MLE: The Autonomous Agent Benchmark for Medical Imaging Challenges"
 description: "GPT-5也排0%分位？ReX-MLE揭秘：顶尖AI智能体为何搞不定医学影像。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
   - "AI Agent"
-  - "AI安全与评测"
+  - "AI评测"
 related_tutorials:
   - "gui-360-a-comprehensive-dataset-and-benchmark-for-computer-using-agents"
   - "pptarena-a-benchmark-for-agentic-powerpoint-editing"

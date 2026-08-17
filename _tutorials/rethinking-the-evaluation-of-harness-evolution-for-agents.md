@@ -5,7 +5,7 @@ description: "当前，让大语言模型自己优化其工具和提示词（即
 arxiv_id: "2607.12227"
 topics:
   - "AI Agent"
-  - "AI安全与评测"
+  - "AI评测"
 tags:
   - "Automatic harness evolution"
   - "Claude Opus 4.6"

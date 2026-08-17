@@ -3,7 +3,7 @@ layout: default
 title: "A Survey on LLM-as-a-Judge"
 description: "在众多领域，准确和一致的评估对决策至关重要，但由于固有的主观性、可变性和规模问题，这仍然是一项艰巨的任务。传统评估方法面临一个两难困境：以专家驱动为代表的主观方法虽然全面，但成本高、难扩展且一致性差；而以自动度量（如BLEU、ROUGE）为代表的客观方法虽然可扩展性与一致性强，但往往只关注表面词汇重叠，无法。"
 topics:
-  - "AI安全与评测"
+  - "AI评测"
 related_tutorials:
   - "judging-llm-as-a-judge-with-mt-bench-and-chatbot-arena"
   - "llm-as-a-judge-toward-world-models-for-slate-recommendation-systems"

@@ -5,7 +5,7 @@ description: "当非玩家角色能够滔滔不绝地与你自由对话，或者
 arxiv_id: "2607.00527"
 topics:
   - "AI Agent"
-  - "多模态与视觉"
+  - "多模态"
 tags:
   - "AI-as-mechanic design"
   - "AI-native games"

@@ -3,7 +3,7 @@ layout: default
 title: "NVIDIA Nemotron 3: Efficient and Open Intelligence"
 description: "英伟达Nemotron 3发布：Mamba+MoE混合架构，百万上下文与NVFP4训练揭秘。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "epistemological-fault-lines-between-human-and-artificial-intelligence"
   - "intelligence-per-watt-measuring-intelligence-efficiency-of-local-ai"

@@ -3,7 +3,7 @@ layout: default
 title: "Unifying Tree Search Algorithm and Reward Design for LLM Reasoning: A Survey"
 description: "随着大型语言模型 (LLM) 的扩展定律进入回报递减的阶段，研究前沿正从数据和参数的暴力增长转向算法效率和新的推理形式。在此背景下，两个相互关联的范式成为核心：深思熟虑的推理时搜索 (deliberative Test-Time Search, TTS)，即在推理时分配自适应的辅助计算来解决难题；以及自我提。"
 topics:
-  - "推理与强化学习"
+  - "推理"
   - "行业应用"
 related_tutorials:
   - "enhancing-large-language-model-reasoning-with-reward-models-an-analytical-survey"

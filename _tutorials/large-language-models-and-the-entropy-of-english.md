@@ -3,7 +3,7 @@ layout: default
 title: "Large language models and the entropy of English"
 description: "挑战香农极限：LLM揭示10^4字符长程依赖与“涌现确定性”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "exploration-vs-exploitation-rethinking-rlvr-through-clipping-entropy-and-spuriou"
   - "harnessing-uncertainty-entropy-modulated-policy-gradients-for-long-horizon-llm-a"

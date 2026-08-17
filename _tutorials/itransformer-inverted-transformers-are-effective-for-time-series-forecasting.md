@@ -3,7 +3,7 @@ layout: default
 title: "iTransformer: Inverted Transformers Are Effective for Time Series Forecasting"
 description: "本文提出iTransformer，通过将Transformer的输入维度进行“反转”，即视每个单独的时间序列变量为一个独立的Token，从而使自注意力机制能够有效捕捉多变量间的相关性，而前馈网络则用于学习每个序列的非线性表示，最终显著提升了时间序列预测的性能和泛化能力。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "scaling-llm-test-time-compute-optimally-can-be-more-effective-than-scaling-model"
   - "a-survey-of-reasoning-and-agentic-systems-in-time-series-with-large-language-mod"

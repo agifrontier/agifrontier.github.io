@@ -3,7 +3,8 @@ layout: default
 title: "Soft Adaptive Policy Optimization"
 description: "告别硬裁剪！阿里SAPO算法，用“柔性门控”提升LLM训练稳定性与性能。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
+  - "模型优化"
 related_tutorials:
   - "asymmetric-proximal-policy-optimization-mini-critics-boost-llm-reasoning"
   - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"

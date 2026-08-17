@@ -3,7 +3,7 @@ layout: default
 title: "RevFFN: Memory-Efficient Full-Parameter Fine-Tuning of Mixture-of-Experts LLMs with Reversible Blocks"
 description: "单卡全量微调MoE大模型？RevFFN让显存占用减半，性能超越LoRA。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "知识系统"
 related_tutorials:
   - "parameter-efficient-fine-tuning-for-large-models-a-comprehensive-survey"
   - "gatepro-parameter-free-expert-selection-optimization-for-mixture-of-experts-mode"

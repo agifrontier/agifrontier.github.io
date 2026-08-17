@@ -5,7 +5,7 @@ description: "长期以来，创造力被普遍视为人类智能的“终极前
 arxiv_id: "2605.17885"
 topics:
   - "AI Agent"
-  - "基础模型与理论"
+  - "基础模型"
 tags:
   - "Conversational dynamics"
   - "Discussion structure"

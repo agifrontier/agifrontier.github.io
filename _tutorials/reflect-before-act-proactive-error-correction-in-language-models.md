@@ -3,7 +3,7 @@ layout: default
 title: "Reflect before Act: Proactive Error Correction in Language Models"
 description: "本文提出了一种名为 REBACT 的新方法，在大型语言模型 (LLM) 执行下一步行动前增加了一个“反思”步骤，通过主动纠正先前动作中的错误，从而显著提升了其在交互式决策任务中的性能和计算效率。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "do-not-step-into-the-same-river-twice-learning-to-reason-from-trial-and-error"
   - "act-as-human-multimodal-large-language-model-data-annotation-with-critical-think"

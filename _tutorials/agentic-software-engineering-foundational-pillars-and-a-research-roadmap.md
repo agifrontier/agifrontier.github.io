@@ -4,7 +4,7 @@ title: "Agentic Software Engineering: Foundational Pillars and a Research Roadma
 description: "结构化智能体软件工程（SASE）：基本支柱与研究路线图。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
   - "AI Agent"
-  - "数据与AI工程"
+  - "AI工程"
 related_tutorials:
   - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
   - "general-agentic-memory-via-deep-research"

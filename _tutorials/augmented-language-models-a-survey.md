@@ -5,7 +5,7 @@ description: "尽管以大语言模型为核心的技术已深入数百万人的
 arxiv_id: "2302.07842"
 topics:
   - "AI Agent"
-  - "RAG与知识系统"
+  - "RAG"
 tags:
   - "ALMs"
   - "Augmented Language Models"

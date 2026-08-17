@@ -3,7 +3,7 @@ layout: default
 title: "On the Origin of Algorithmic Progress in AI"
 description: "AI效率万倍增长神话破灭？MIT研究：90%的功劳来自Transformer的规模效应。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "ai-progress-should-be-measured-by-capability-per-resource-not-scale-alone-a-fram"
   - "algorithmic-thinking-theory"

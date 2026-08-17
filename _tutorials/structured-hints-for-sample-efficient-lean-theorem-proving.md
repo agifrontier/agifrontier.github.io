@@ -3,7 +3,7 @@ layout: default
 title: "Structured Hints for Sample-Efficient Lean Theorem Proving"
 description: "DeepSeek-Prover潜力释放：仅需简单“骨架”提示，性能飙升43%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "AI理论"
 related_tutorials:
   - "seed-prover-15-mastering-undergraduate-level-theorem-proving-via-learning-from-e"
   - "transformers-are-ssms-generalized-models-and-efficient-algorithms-through-struct"

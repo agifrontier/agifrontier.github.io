@@ -3,7 +3,7 @@ layout: default
 title: "On GRPO Collapse in Search-R1: The Lazy Likelihood-Displacement Death Spiral"
 description: "破解AI智能体训练“死亡螺旋”：LLDS让Qwen2.5性能大涨37.8%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
   - "行业应用"
 related_tutorials:
   - "unifying-tree-search-algorithm-and-reward-design-for-llm-reasoning-a-survey"

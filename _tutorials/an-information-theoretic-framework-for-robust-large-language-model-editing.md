@@ -3,7 +3,7 @@ layout: default
 title: "An Information-Theoretic Framework for Robust Large Language Model Editing"
 description: "阿里IBKE：用“信息瓶颈”给大模型做脑部微创，知识编辑SOTA。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "an-information-theoretic-perspective-on-agentic-system-design"
   - "harmbench-a-standardized-evaluation-framework-for-automated-red-teaming-and-robu"

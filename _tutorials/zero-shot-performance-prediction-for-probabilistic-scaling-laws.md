@@ -3,7 +3,7 @@ layout: default
 title: "Zero-Shot Performance Prediction for Probabilistic Scaling Laws"
 description: "本文提出一种新框架，通过将学习曲线（learning curves, LCs）预测问题建模为具有双层层级结构的多任务学习问题，并利用潜变量多输出高斯过程来捕捉任务间的相关性，从而实现对模型性能学习曲线的零样本（zero-shot）预测，进而以更低的计算成本生成概率性的缩放定律（scaling laws）。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "predicting-task-performance-with-context-aware-scaling-laws"
   - "relative-scaling-laws-for-llms"

@@ -3,7 +3,7 @@ layout: default
 title: "ORION: Teaching Language Models to Reason Efficiently in the Language of Thought"
 description: "大模型推理太“话痨”？ORION压缩16倍思考路径，成本直降9倍。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "do-not-step-into-the-same-river-twice-learning-to-reason-from-trial-and-error"
   - "thought-communication-in-multiagent-collaboration"

@@ -3,7 +3,7 @@ layout: default
 title: "Do Not Step Into the Same River Twice: Learning to Reason from Trial and Error"
 description: "本文提出了一种名为 LTE（Learning to reason from Trial and Error） 的方法，通过利用大语言模型（LLM）自身在推理失败时产生的错误答案作为提示信息，来克服强化学习中的探索停滞问题，从而无需任何外部专家指导即可提升模型的推理能力。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "reflect-before-act-proactive-error-correction-in-language-models"
   - "scaling-and-context-steer-llms-along-the-same-computational-path-as-the-human-br"

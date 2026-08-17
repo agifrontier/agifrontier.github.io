@@ -4,7 +4,7 @@ title: "Dynamic Speculative Agent Planning"
 description: "本文提出动态推测规划 (Dynamic Speculative Planning, DSP)，一个通过在线强化学习自适应调整推测步骤（speculation step）的智能体规划框架，旨在实现无损加速的同时显著降低成本，并允许用户控制延迟与成本之间的权衡。"
 topics:
   - "AI Agent"
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
   - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"

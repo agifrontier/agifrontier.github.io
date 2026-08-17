@@ -3,7 +3,7 @@ layout: default
 title: "Reconstructing KV Caches with Cross-layer Fusion For Enhanced Transformers"
 description: "KV缓存减半，性能反超！阿里FusedKV揭示K/V不对称共享新范式。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "the-missing-layer-of-agi-from-pattern-alchemy-to-coordination-physics"
   - "rethinking-cross-lingual-gaps-from-a-statistical-viewpoint"

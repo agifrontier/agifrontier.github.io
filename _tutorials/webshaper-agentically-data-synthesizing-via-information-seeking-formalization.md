@@ -5,7 +5,7 @@ description: "OpenAI的DeepResearch近期引爆了全网，展现了惊人的信
 arxiv_id: "2507.15061"
 topics:
   - "AI Agent"
-  - "基础模型与理论"
+  - "基础模型"
 tags:
   - "Agentic Expander"
   - "GAIA Benchmark"

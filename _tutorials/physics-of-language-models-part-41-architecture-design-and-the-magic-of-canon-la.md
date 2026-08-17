@@ -3,7 +3,7 @@ layout: default
 title: "Physics of Language Models: Part 4.1, Architecture Design and the Magic of Canon Layers"
 description: "Meta新作Canon Layers：仅增0.5%参数，推理深度暴涨4倍的“魔法”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "the-missing-layer-of-agi-from-pattern-alchemy-to-coordination-physics"
   - "hybrid-architectures-for-language-models-systematic-analysis-and-design-insights"

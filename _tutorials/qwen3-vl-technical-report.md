@@ -3,7 +3,7 @@ layout: default
 title: "Qwen3-VL Technical Report"
 description: "Qwen3-VL重磅发布：256K上下文，三大架构升级打造全能多模态。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "deepseek-v3-technical-report"
   - "gpt-4-technical-report"

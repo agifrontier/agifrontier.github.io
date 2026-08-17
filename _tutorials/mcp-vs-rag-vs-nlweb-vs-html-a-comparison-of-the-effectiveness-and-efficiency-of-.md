@@ -3,7 +3,7 @@ layout: default
 title: "MCP vs RAG vs NLWeb vs HTML: A Comparison of the Effectiveness and Efficiency of Different Agent Interfaces to the Web (Technical Report)"
 description: "AI Agent上网指南：RAG效率飙升5倍，成本锐减80%，完胜HTML。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "RAG"
   - "AI Agent"
 related_tutorials:
   - "ui-tars-2-technical-report-advancing-gui-agent-with-multi-turn-reinforcement-lea"

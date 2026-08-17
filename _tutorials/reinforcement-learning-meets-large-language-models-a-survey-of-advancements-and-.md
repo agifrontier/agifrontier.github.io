@@ -3,7 +3,7 @@ layout: default
 title: "Reinforcement Learning Meets Large Language Models: A Survey of Advancements and Applications Across the LLM Lifecycle"
 description: "Reinforcement Learning Meets Large Language Models: A Survey of Advancements and Applications Across the LLM Lifecycle。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "a-survey-of-reinforcement-learning-for-large-reasoning-models"
   - "statistical-reinforcement-learning-in-the-real-world-a-survey-of-challenges-and-"

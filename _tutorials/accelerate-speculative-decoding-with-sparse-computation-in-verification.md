@@ -3,7 +3,7 @@ layout: default
 title: "Accelerate Speculative Decoding with Sparse Computation in Verification"
 description: "打破投机采样瓶颈：美团提出“稀疏验证”框架，Attention与MoE全面瘦身。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型优化"
 related_tutorials:
   - "rest-rl-achieving-accurate-code-reasoning-of-llms-with-optimized-self-training-a"
   - "continual-learning-via-sparse-memory-finetuning"

@@ -3,7 +3,7 @@ layout: default
 title: "Putting on the Thinking Hats: A Survey on Chain of Thought Fine-tuning from the Perspective of Human Reasoning Mechanism"
 description: "本文提出一个新颖的视角，即从人类的“六顶思考帽”思维模型出发，对思维链（Chain of Thought, CoT）微调技术进行系统性的梳理、分类和展望，为理解和发展更类人的大语言模型推理能力提供了全新的框架。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "less-is-more-tokens-efficient-math-reasoning-via-difficulty-aware-chain-of-thoug"
   - "valid-survey-simulations-with-limited-human-data-the-roles-of-prompting-fine-tun"

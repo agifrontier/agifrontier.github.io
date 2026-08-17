@@ -3,7 +3,7 @@ layout: default
 title: "BEAM: Brainwave Empathy Assessment Model for Early Childhood"
 description: "本文提出了一种名为 BEAM 的深度学习框架，它通过分析幼儿观看视频时的多视角脑电图（EEG）信号，结合特征融合与对比学习技术，实现了对儿童共情水平（表现为助人意愿）的客观、准确预测。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "generative-early-stage-ranking"
   - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"

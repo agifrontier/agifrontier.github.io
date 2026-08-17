@@ -3,7 +3,7 @@ layout: default
 title: "Scaling and context steer LLMs along the same computational path as the human brain"
 description: "LLM与人脑“神同步”：Meta AI证实模型越大，计算路径越像人。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "read-as-human-compressing-context-via-parallelizable-close-reading-and-skimming"
   - "predicting-task-performance-with-context-aware-scaling-laws"

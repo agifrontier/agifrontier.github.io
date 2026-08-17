@@ -3,8 +3,8 @@ layout: default
 title: "Spanish Pre-trained BERT Model and Evaluation Data"
 description: "本文提出并开源了第一个完全基于西班牙语料库预训练的BERT模型（BETO），并构建了一个名为GLUES的西班牙语NLP任务评估基准，实验证明该单语模型在多数西班牙语下游任务上的表现优于同等规模的多语言BERT模型。"
 topics:
-  - "AI安全与评测"
-  - "数据与AI工程"
+  - "AI评测"
+  - "数据工程"
 related_tutorials:
   - "hplt-30-very-large-scale-multilingual-resources-for-llm-and-mt-mono-and-bi-lingu"
   - "demystifying-synthetic-data-in-llm-pre-training-a-systematic-study-of-scaling-la"

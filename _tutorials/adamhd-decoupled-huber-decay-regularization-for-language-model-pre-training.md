@@ -3,7 +3,7 @@ layout: default
 title: "AdamHD: Decoupled Huber Decay Regularization for Language Model Pre-Training"
 description: "AdamW的继任者？AdamHD让LLM训练提速15%，性能提升4.7%，显存再省30%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "a-comedy-of-estimators-on-kl-regularization-in-rl-training-of-llms"
   - "demystifying-synthetic-data-in-llm-pre-training-a-systematic-study-of-scaling-la"

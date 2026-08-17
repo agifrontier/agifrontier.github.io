@@ -3,7 +3,7 @@ layout: default
 title: "Let's (not) just put things in Context: Test-Time Training for Long-Context LLMs"
 description: "别再堆Thinking Tokens了！qTTT让长文本性能暴涨14%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "end-to-end-test-time-training-for-long-context"
   - "reusing-pre-training-data-at-test-time-is-a-compute-multiplier"

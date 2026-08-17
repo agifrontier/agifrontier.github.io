@@ -3,8 +3,8 @@ layout: default
 title: "A Survey of Reasoning in Autonomous Driving Systems: Open Challenges and Emerging Paradigms"
 description: "自动驾驶的“认知”革命：大模型如何攻克7大核心推理挑战？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "具身智能与机器人"
-  - "推理与强化学习"
+  - "具身智能"
+  - "推理"
 related_tutorials:
   - "a-survey-of-reasoning-and-agentic-systems-in-time-series-with-large-language-mod"
   - "statistical-reinforcement-learning-in-the-real-world-a-survey-of-challenges-and-"

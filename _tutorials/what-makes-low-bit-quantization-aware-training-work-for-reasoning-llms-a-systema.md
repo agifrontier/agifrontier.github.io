@@ -3,8 +3,8 @@ layout: default
 title: "What Makes Low-Bit Quantization-Aware Training Work for Reasoning LLMs? A Systematic Study"
 description: "推理模型“瘦身”奇迹：2-bit量化下数学能力暴涨44%的技术解密。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
-  - "模型训练与优化"
+  - "推理"
+  - "模型训练"
 related_tutorials:
   - "demystifying-synthetic-data-in-llm-pre-training-a-systematic-study-of-scaling-la"
   - "power-of-two-quantization-aware-training-pot-qat-in-large-language-models-llms"

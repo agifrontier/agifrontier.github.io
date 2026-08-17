@@ -4,7 +4,7 @@ title: "Agent0: Unleashing Self-Evolving Agents from Zero Data via Tool-Integrat
 description: "零数据也能自我进化：Agent0让8B模型推理能力暴涨24%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
   - "AI Agent"
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "memrl-self-evolving-agents-via-runtime-reinforcement-learning-on-episodic-memory"
   - "deep-self-evolving-reasoning"

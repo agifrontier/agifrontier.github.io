@@ -3,7 +3,7 @@ layout: default
 title: "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs"
 description: "本文提出了一个名为ToolLLM的通用工具使用框架，通过构建一个包含超过16000个真实世界API的大规模指令微调数据集ToolBench，并采用一种新颖的深度优先搜索决策树（DFSDT）方法，成功地将开源大语言模型（LLaMA）的工具使用能力提升至与ChatGPT相当的水平。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "swe-bench-can-language-models-resolve-real-world-github-issues"
   - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"

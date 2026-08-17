@@ -3,7 +3,7 @@ layout: default
 title: "AlphaResearch: Accelerating New Algorithm Discovery with Language Models"
 description: "AI当上科学家：字节跳动AlphaResearch，8项难题2次击败人类专家。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "connecting-jensen-shannon-and-kullback-leibler-divergences-a-new-bound-for-repre"
   - "unifying-tree-search-algorithm-and-reward-design-for-llm-reasoning-a-survey"

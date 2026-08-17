@@ -3,7 +3,7 @@ layout: default
 title: "Valid Survey Simulations with Limited Human Data: The Roles of Prompting, Fine-Tuning, and Rectification"
 description: "本文提出了一种将大型语言模型（LLM）用于调查问卷模拟的有效框架，其核心思想是：不应将所有宝贵的人类数据用于微调模型，而应将大部分数据用于对LLM生成的大量合成数据进行统计校正（Rectification），从而在有限的人类数据下获得低偏倚、高效率的群体估计。"
 topics:
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "putting-on-the-thinking-hats-a-survey-on-chain-of-thought-fine-tuning-from-the-p"
   - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"

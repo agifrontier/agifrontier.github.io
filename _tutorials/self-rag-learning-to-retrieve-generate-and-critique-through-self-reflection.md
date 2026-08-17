@@ -3,7 +3,7 @@ layout: default
 title: "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection"
 description: "本文提出了一种名为自反思检索增强生成 (Self-Reflective Retrieval-Augmented Generation, Self-RAG) 的新框架，通过训练一个语言模型，使其能按需自适应地进行检索，并利用特殊的“反思”Token (reflection tokens) 对检索到的信息和自身。"
 topics:
-  - "RAG与知识系统"
+  - "RAG"
 related_tutorials:
   - "enhancing-llm-planning-capabilities-through-intrinsic-self-critique"
   - "bge-m3-embedding-multi-lingual-multi-functionality-multi-granularity-text-embedd"

@@ -3,8 +3,8 @@ layout: default
 title: "Retrieval--Reasoning Processes for Multi-hop Question Answering: A Four-Axis Design Framework and Empirical Trends"
 description: "RAG系统的“黑盒”困境：谷歌提出多跳QA的四轴设计框架。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
-  - "推理与强化学习"
+  - "RAG"
+  - "推理"
 related_tutorials:
   - "cost-aware-retrieval-augmentation-reasoning-models-with-adaptive-retrieval-depth"
   - "improving-context-fidelity-via-native-retrieval-augmented-reasoning"

@@ -5,7 +5,7 @@ description: "当你要求你的AI助手“整理本月的财务报表”时，�
 arxiv_id: "2605.14271"
 topics:
   - "AI Agent"
-  - "AI安全与评测"
+  - "AI安全"
 tags:
   - "HarnessAudit"
   - "HarnessAudit-Bench"

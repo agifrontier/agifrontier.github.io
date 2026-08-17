@@ -3,7 +3,7 @@ layout: default
 title: "Causal Reasoning Favors Encoders: On The Limits of Decoder-Only Models"
 description: "BERT“逆袭”GPT？微软新论文揭示Decoder-only在因果推理中的致命短板。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "executable-counterfactuals-improving-llms-causal-reasoning-through-code"
   - "deepseekmath-pushing-the-limits-of-mathematical-reasoning-in-open-language-model"

@@ -3,8 +3,8 @@ layout: default
 title: "Parrot: A Training Pipeline Enhances Both Program CoT and Natural Language CoT for Reasoning"
 description: "本文提出了一种名为 Parrot 的新颖训练流水线，旨在通过三个专门设计的子任务和混合训练策略，相互增强程序思维链（P-CoT）和自然语言思维链（N-CoT）的性能，从而同时提升两种范式下的数学推理能力。"
 topics:
-  - "推理与强化学习"
-  - "模型训练与优化"
+  - "推理"
+  - "模型训练"
 related_tutorials:
   - "balanced-actor-initialization-stable-rlhf-training-of-distillation-based-reasoni"
   - "beyond-two-stage-training-cooperative-sft-and-rl-for-llm-reasoning"

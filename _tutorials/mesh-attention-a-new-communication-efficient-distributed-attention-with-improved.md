@@ -3,8 +3,8 @@ layout: default
 title: "Mesh-Attention: A New Communication-Efficient Distributed Attention with Improved Data Locality"
 description: "挑战Ring-Attention霸主地位：Mesh-Attention实现3.4倍加速，通信暴降85%。"
 topics:
-  - "模型训练与优化"
-  - "数据与AI工程"
+  - "模型优化"
+  - "数据工程"
 related_tutorials:
   - "a-survey-on-efficient-large-language-model-training-from-data-centric-perspectiv"
   - "efficient-streaming-language-models-with-attention-sinks"

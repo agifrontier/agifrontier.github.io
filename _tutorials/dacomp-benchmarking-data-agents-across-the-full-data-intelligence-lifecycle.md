@@ -4,7 +4,7 @@ title: "DAComp: Benchmarking Data Agents across the Full Data Intelligence Lifec
 description: "数据智能体“高考”来了！字节跳动DAComp揭示：顶级模型成功率不足20%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
   - "AI Agent"
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "a-survey-of-data-agents-emerging-paradigm-or-overstated-hype"
   - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"

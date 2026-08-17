@@ -3,7 +3,7 @@ layout: default
 title: "Memoria: A Scalable Agentic Memory Framework for Personalized Conversational AI"
 description: "告别AI“健忘症”：Memoria利用加权知识图谱打造可扩展的个性化记忆。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "知识系统"
   - "AI Agent"
 related_tutorials:
   - "dynamic-affective-memory-management-for-personalized-llm-agents"

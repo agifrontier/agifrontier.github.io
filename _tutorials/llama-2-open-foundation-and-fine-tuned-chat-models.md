@@ -3,7 +3,7 @@ layout: default
 title: "Llama 2: Open Foundation and Fine-Tuned Chat Models"
 description: "本文发布了 Llama 2，一个包含从7B到70B参数的开源预训练和微调大型语言模型系列，其为对话优化的版本 Llama 2-Chat 在多个基准测试中表现优于现有开源模型，并通过详细阐述其微调和安全对齐方法，旨在推动社区对负责任的大型语言模型进行建设和发展。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "llama-adapter-efficient-fine-tuning-of-language-models-with-zero-init-attention"
   - "llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations"

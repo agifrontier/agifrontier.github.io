@@ -3,8 +3,8 @@ layout: default
 title: "KTO: Model Alignment as Prospect Theoretic Optimization"
 description: "本文提出了一种名为KTO (Kahneman-Tversky Optimization) 的新型大模型对齐方法，它基于前景理论，仅需“可取”或“不可取”的二元反馈信号，便能在10亿到300亿参数规模的模型上达到甚至超越基于偏好数据的DPO方法的性能。"
 topics:
-  - "AI安全与评测"
-  - "模型训练与优化"
+  - "AI安全"
+  - "模型优化"
 related_tutorials:
   - "extracting-alignment-data-in-open-models"
   - "openassistant-conversations-democratizing-large-language-model-alignment"

@@ -3,7 +3,8 @@ layout: default
 title: "Improved Baselines with Visual Instruction Tuning"
 description: "本文通过对LLaVA框架进行简单而有效的改进，即采用MLP视觉-语言连接器、引入带有响应格式化提示的学术VQA数据等，构建了LLaVA-1.5，一个在11个基准上达到SOTA、同时保持极高数据和计算效率的大型多模态模型基线。"
 topics:
-  - "多模态与视觉"
+  - "多模态"
+  - "计算机视觉"
 related_tutorials:
   - "instructblip-towards-general-purpose-vision-language-models-with-instruction-tun"
   - "rethinking-supervised-fine-tuning-emphasizing-key-answer-tokens-for-improved-llm"

@@ -3,7 +3,7 @@ layout: default
 title: "Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond"
 description: "本文是一份面向实践者和终端用户的综合性实践指南，围绕模型、数据和下游任务三个维度，深入探讨了如何有效利用大型语言模型（LLMs）解决自然语言处理（NLP）问题，并详细剖析了不同场景下选择LLMs或微调模型的利弊。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
   - "a-prompt-pattern-catalog-to-enhance-prompt-engineering-with-chatgpt"

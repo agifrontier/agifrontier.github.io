@@ -3,7 +3,7 @@ layout: default
 title: "Broken Words, Broken Performance: Effect of Tokenization on Performance of LLMs"
 description: "单词破碎，性能崩塌？揭秘Tokenization如何悄悄“降智”大模型。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "not-all-parameters-are-created-equal-smart-isolation-boosts-fine-tuning-performa"
   - "predicting-task-performance-with-context-aware-scaling-laws"

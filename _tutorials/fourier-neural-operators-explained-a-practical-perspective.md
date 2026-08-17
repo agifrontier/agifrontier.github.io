@@ -3,7 +3,7 @@ layout: default
 title: "Fourier Neural Operators Explained: A Practical Perspective"
 description: "NVIDIA万字长文：别再误用FNO了！傅里叶神经算子终极实践指南。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "caveagent-transforming-llms-into-stateful-runtime-operators"
   - "relative-based-scaling-law-for-neural-language-models"

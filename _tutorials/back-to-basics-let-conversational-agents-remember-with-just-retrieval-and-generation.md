@@ -5,7 +5,7 @@ description: "随着智能体与用户的交互日益频繁，让大语言模型
 arxiv_id: "2604.11628"
 topics:
   - "AI Agent"
-  - "RAG与知识系统"
+  - "RAG"
 tags:
   - "Aggregation-based Methods"
   - "Conversational Agents"

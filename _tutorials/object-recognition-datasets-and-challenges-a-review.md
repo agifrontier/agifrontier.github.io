@@ -3,7 +3,7 @@ layout: default
 title: "Object Recognition Datasets and Challenges: A Review"
 description: "本文通过对超过160个数据集的统计和描述，对物体识别领域的数据集和挑战赛进行了全面的回顾与分析，重点探讨了数据集在推动算法发展中的关键作用、主要数据集的演进趋势以及评估基准的变化。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "context-free-recognition-with-transformers"
   - "a-concise-review-of-hallucinations-in-llms-and-their-mitigation"

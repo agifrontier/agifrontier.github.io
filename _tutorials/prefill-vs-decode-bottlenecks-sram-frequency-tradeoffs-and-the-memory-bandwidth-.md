@@ -3,7 +3,7 @@ layout: default
 title: "Prefill vs. Decode Bottlenecks: SRAM-Frequency Tradeoffs and the Memory-Bandwidth Ceiling"
 description: "打破LLM能效瓶颈：32KB缓存+1.4GHz高频竟是最佳硬件甜点？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "知识系统"
 related_tutorials:
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
   - "ai-meets-brain-memory-systems-from-cognitive-neuroscience-to-autonomous-agents"

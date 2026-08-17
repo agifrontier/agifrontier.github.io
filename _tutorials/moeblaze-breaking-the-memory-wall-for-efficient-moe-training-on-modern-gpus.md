@@ -3,8 +3,8 @@ layout: default
 title: "MoEBlaze: Breaking the Memory Wall for Efficient MoE Training on Modern GPUs"
 description: "MoEBlaze：打破显存墙！Meta提出MoE训练新框架，速度飙升4倍。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
-  - "模型训练与优化"
+  - "知识系统"
+  - "模型训练"
 related_tutorials:
   - "continual-learning-via-sparse-memory-finetuning"
   - "spotlight-attention-towards-efficient-llm-generation-via-non-linear-hashing-base"

@@ -3,7 +3,7 @@ layout: default
 title: "PaCoRe: Learning to Scale Test-Time Compute with Parallel Coordinated Reasoning"
 description: "8B模型超越GPT-5！PaCoRe：解锁200万Token推理算力的新范式。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "learning-when-to-plan-efficiently-allocating-test-time-compute-for-llm-agents"
   - "reasoning-over-mathematical-objects-on-policy-reward-modeling-and-test-time-aggr"

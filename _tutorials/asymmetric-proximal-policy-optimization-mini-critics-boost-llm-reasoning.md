@@ -3,8 +3,8 @@ layout: default
 title: "Asymmetric Proximal Policy Optimization: mini-critics boost LLM reasoning"
 description: "本文提出了一种非对称近端策略优化（Asymmetric Proximal Policy Optimization, AsyPPO），该框架通过使用一组在非重叠数据上训练的轻量级“迷你评论家”（mini-critics），在保持计算高效的同时恢复了评论家（critic）在大型语言模型（LLM）推理任务中的关键。"
 topics:
-  - "推理与强化学习"
-  - "模型训练与优化"
+  - "推理"
+  - "模型训练"
 related_tutorials:
   - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
   - "fapo-flawed-aware-policy-optimization-for-efficient-and-reliable-reasoning"

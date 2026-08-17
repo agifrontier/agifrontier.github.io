@@ -3,7 +3,7 @@ layout: default
 title: "Stronger Normalization-Free Transformers"
 description: "告别LayerNorm？CMU提出Derf：仅用简单函数，多模态性能全面超越。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "context-free-recognition-with-transformers"
   - "a-model-of-errors-in-transformers"

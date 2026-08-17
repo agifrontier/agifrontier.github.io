@@ -4,7 +4,7 @@ title: "PPTArena: A Benchmark for Agentic PowerPoint Editing"
 description: "PPT炼狱场来了！新Agent PPTPilot精准编辑，性能超越专有模型10%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
   - "AI Agent"
-  - "AI安全与评测"
+  - "AI评测"
 related_tutorials:
   - "gui-360-a-comprehensive-dataset-and-benchmark-for-computer-using-agents"
   - "rex-mle-the-autonomous-agent-benchmark-for-medical-imaging-challenges"

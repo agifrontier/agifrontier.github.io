@@ -3,7 +3,7 @@ layout: default
 title: "Model Compression using Progressive Channel Pruning"
 description: "本文提出了一种名为渐进式通道剪枝 (Progressive Channel Pruning, PCP) 的迭代式剪枝框架，该框架通过在每次迭代中执行“尝试-选择-剪枝”三步流水线，从多个最优选择的层中逐步移除少量通道，从而自动确定压缩后网络的最优结构，并成功将其应用于监督学习和迁移学习场景。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "sentence-anchored-gist-compression-for-long-context-llms"
   - "think-right-learning-to-mitigate-under-over-thinking-via-adaptive-attentive-comp"

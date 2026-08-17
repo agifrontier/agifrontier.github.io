@@ -3,7 +3,7 @@ layout: default
 title: "The RefinedWeb Dataset for Falcon LLM: Outperforming Curated Corpora with Web Data, and Web Data Only"
 description: "本文提出了一种仅使用网页数据，通过大规模精细过滤和严格去重，就能训练出顶尖大语言模型（LLM）的方法，并发布了由此产生的5万亿token数据集RefinedWeb，挑战了LLM预训练必须混合“高质量”精选语料库的传统认知。"
 topics:
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "scribes-web-scale-script-based-semi-structured-data-extraction-with-reinforcemen"
   - "a-comprehensive-dataset-for-human-vs-ai-generated-text-detection"

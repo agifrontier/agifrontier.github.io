@@ -5,7 +5,7 @@ description: "长期以来，人工智能在物理世界面临着一个尴尬的
 arxiv_id: "2312.08782"
 topics:
   - "AI Agent"
-  - "RAG与知识系统"
+  - "RAG"
 tags:
   - "Computer Vision"
   - "Distribution Shifts"

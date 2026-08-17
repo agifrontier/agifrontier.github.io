@@ -3,8 +3,8 @@ layout: default
 title: "Efficient Memory Management for Large Language Model Serving with PagedAttention"
 description: "本文提出 PagedAttention，一种受操作系统虚拟内存和分页机制启发的注意力算法，通过将键值缓存（KV Cache）划分为非连续的内存块进行管理，解决了大型语言模型（LLM）服务中因内存碎片化和无法共享而导致的效率低下问题，从而在 vLLM 系统中实现了 2-4 倍的吞吐量提升。"
 topics:
-  - "RAG与知识系统"
-  - "数据与AI工程"
+  - "知识系统"
+  - "AI工程"
 related_tutorials:
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
   - "dynamic-affective-memory-management-for-personalized-llm-agents"

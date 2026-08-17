@@ -3,7 +3,8 @@ layout: default
 title: "Executable Counterfactuals: Improving LLMs' Causal Reasoning Through Code"
 description: "本文提出了一个名为“可执行反事实 (Executable Counterfactuals)”的框架，通过生成需要溯因、干预和预测三个步骤的编程和数学问题，系统地评估和提升大语言模型的反事实推理能力，并实验证明强化学习（RL）比监督微调（SFT）更能实现这种能力的泛化。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
+  - "推理"
 related_tutorials:
   - "causal-reasoning-favors-encoders-on-the-limits-of-decoder-only-models"
   - "improving-context-fidelity-via-native-retrieval-augmented-reasoning"

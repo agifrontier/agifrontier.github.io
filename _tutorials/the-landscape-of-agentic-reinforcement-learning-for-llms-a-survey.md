@@ -4,7 +4,7 @@ title: "The Landscape of Agentic Reinforcement Learning for LLMs: A Survey"
 description: "本文提出并形式化了“智能体强化学习（Agentic Reinforcement Learning, Agentic RL）”这一新兴范式，将其定义为将大语言模型（LLM）从被动的序列生成器转变为在复杂动态环境中进行自主决策的智能体，并通过一个围绕智能体核心能力（规划、工具使用、记忆、推理等）的分类体系，系统。"
 topics:
   - "AI Agent"
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
   - "online-process-reward-leanring-for-agentic-reinforcement-learning"

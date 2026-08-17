@@ -3,7 +3,7 @@ layout: default
 title: "Language models as tools for investigating the distinction between possible and impossible natural languages"
 description: "斯坦福新观点：让AI挑战“不可能的语言”，4步揭秘人类认知偏好。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
   - "collaboration-and-conflict-between-humans-and-language-models-through-the-lens-o"

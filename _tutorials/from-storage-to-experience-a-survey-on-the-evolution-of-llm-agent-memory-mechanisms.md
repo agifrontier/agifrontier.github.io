@@ -5,7 +5,7 @@ description: "很多开发者在构建大模型智能体时，常会遇到一个
 arxiv_id: "2605.06716"
 topics:
   - "AI Agent"
-  - "RAG与知识系统"
+  - "知识系统"
 tags:
   - "Experience stage"
   - "LLM agents"

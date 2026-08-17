@@ -3,7 +3,7 @@ layout: default
 title: "Optimizing Mixture of Block Attention"
 description: "MIT联手英伟达发布FlashMoBA：稀疏注意力提速14.7倍，长文本处理迎来新篇章。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型优化"
 related_tutorials:
   - "mixture-of-depths-attention"
   - "modular-prompt-optimization-optimizing-structured-prompts-with-section-local-tex"

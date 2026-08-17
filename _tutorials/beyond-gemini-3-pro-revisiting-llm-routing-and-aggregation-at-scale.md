@@ -3,7 +3,7 @@ layout: default
 title: "Beyond Gemini-3-Pro: Revisiting LLM Routing and Aggregation at Scale"
 description: "超越Gemini-3-Pro：开源模型“组团”打怪，成本仅47%！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "beyond-patch-aggregation-3-pass-pyramid-indexing-for-vision-enhanced-document-re"
   - "mobilellm-pro-technical-report"

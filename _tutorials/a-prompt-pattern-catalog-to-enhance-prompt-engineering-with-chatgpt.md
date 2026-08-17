@@ -3,7 +3,7 @@ layout: default
 title: "A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT"
 description: "软件模式与提示模式的比较。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "the-prompt-engineering-report-distilled-quick-start-guide-for-life-sciences"
   - "kcm-kan-based-collaboration-models-enhance-pretrained-large-models"

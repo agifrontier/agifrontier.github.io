@@ -4,7 +4,7 @@ title: "From Static Templates to Dynamic Runtime Graphs: A Survey of Workflow Op
 description: "告别“写死”的工作流：IBM万字综述，定义Agent动态进化新范式。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
   - "AI Agent"
-  - "模型训练与优化"
+  - "模型优化"
 related_tutorials:
   - "beyond-turn-limits-training-deep-search-agents-with-dynamic-context-window"
   - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"

@@ -3,7 +3,7 @@ layout: default
 title: "The Missing Layer of AGI: From Pattern Alchemy to Coordination Physics"
 description: "反驳“LLM死路论”！斯坦福提出AGI“缺失层”，用一个公式定义通往AGI之路。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "a-definition-of-agi"
   - "a-prompt-pattern-catalog-to-enhance-prompt-engineering-with-chatgpt"

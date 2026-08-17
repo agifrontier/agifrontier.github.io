@@ -3,8 +3,8 @@ layout: default
 title: "QeRL: Beyond Efficiency -- Quantization-enhanced Reinforcement Learning for LLMs"
 description: "本文提出了QeRL，一个量化增强的强化学习框架，它通过利用量化噪声来提升策略探索，在显著加速大模型强化学习（RL）训练、降低显存占用的同时，实现了超越16位基线方法的性能。"
 topics:
-  - "推理与强化学习"
-  - "模型训练与优化"
+  - "强化学习"
+  - "模型训练"
 related_tutorials:
   - "does-reinforcement-learning-really-incentivize-reasoning-capacity-in-llms-beyond"
   - "multi-phase-spacecraft-trajectory-optimization-via-transformer-based-reinforceme"

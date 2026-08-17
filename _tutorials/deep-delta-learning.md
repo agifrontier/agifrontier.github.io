@@ -3,7 +3,7 @@ layout: default
 title: "Deep Delta Learning"
 description: "超越ResNet！普林斯顿Deep Delta Learning：让神经网络学会“遗忘”与“反思”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "delta-decoupling-long-tailed-online-continual-learning"
   - "nested-learning-the-illusion-of-deep-learning-architectures"

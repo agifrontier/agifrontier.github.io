@@ -3,8 +3,8 @@ layout: default
 title: "Improving Context Fidelity via Native Retrieval-Augmented Reasoning"
 description: "本文提出了一种名为CARE的新型原生检索增强推理框架，通过教导大型语言模型（LLM）在推理链中动态地从输入上下文中检索并整合证据，以解决上下文失真问题，从而在无需昂贵外部工具的情况下显著提升答案的准确性和忠实度。"
 topics:
-  - "RAG与知识系统"
-  - "推理与强化学习"
+  - "RAG"
+  - "推理"
 related_tutorials:
   - "citation-grounded-code-comprehension-preventing-llm-hallucination-through-hybrid"
   - "scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-generation-for"

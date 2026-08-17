@@ -3,7 +3,7 @@ layout: default
 title: "T5Gemma 2: Seeing, Reading, and Understanding Longer"
 description: "Google DeepMind重磅发布T5Gemma 2：让Encoder-Decoder架构在长文本与多模态中强势回归。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "read-as-human-compressing-context-via-parallelizable-close-reading-and-skimming"
   - "a-survey-of-weight-space-learning-understanding-representation-and-generation"

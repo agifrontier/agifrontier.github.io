@@ -3,7 +3,7 @@ layout: default
 title: "Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents"
 description: "Agentic Memory：让LLM像人类一样“自主管理”记忆，长程推理能力暴涨49%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "知识系统"
   - "AI Agent"
 related_tutorials:
   - "dynamic-affective-memory-management-for-personalized-llm-agents"

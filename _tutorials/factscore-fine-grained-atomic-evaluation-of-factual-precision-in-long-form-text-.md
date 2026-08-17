@@ -3,7 +3,7 @@ layout: default
 title: "FActScore: Fine-grained Atomic Evaluation of Factual Precision in Long Form Text Generation"
 description: "本文提出了一种名为 FActScore 的新评估指标，通过将长文本分解为一系列原子事实并计算由可靠知识源支持的事实比例，来精细化地衡量语言模型生成内容的事实准确性，同时还开发了一个自动化模型来低成本、大规模地估算此分数。"
 topics:
-  - "AI安全与评测"
+  - "AI评测"
 related_tutorials:
   - "is-your-code-generated-by-chatgpt-really-correct-rigorous-evaluation-of-large-la"
   - "rethinking-retrieval-augmented-generation-for-medicine-a-large-scale-systematic-"

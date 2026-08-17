@@ -4,7 +4,7 @@ title: "Tree Search for LLM Agent Reinforcement Learning"
 description: "本文提出了一种名为 Tree-GRPO (Tree-based Group Relative Policy Optimization) 的方法，通过将传统强化学习中独立的链式轨迹采样替换为树搜索采样，从而在有限的 rollout 预算下为多轮智能体任务生成更多、更高质量的轨迹，并利用树结构从稀疏的结果奖励中。"
 topics:
   - "AI Agent"
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "coda-coordinating-the-cerebrum-and-cerebellum-for-a-dual-brain-computer-use-agen"
   - "mars-optimizing-dual-system-deep-research-via-multi-agent-reinforcement-learning"

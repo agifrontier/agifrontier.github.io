@@ -3,7 +3,7 @@ layout: default
 title: "Qwen2 Technical Report"
 description: "本文介绍了Qwen2系列大型语言模型，通过改进模型架构、扩大并优化多语言和代码数学预训练数据、采用可扩展的对齐技术，在0.5B到72B的多个尺寸上全面超越了现有开源模型，并在各项基准测试中展现出与顶尖闭源模型相当的竞争力。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "qwen25-math-technical-report-toward-mathematical-expert-model-via-self-improveme"
   - "deepseek-v3-technical-report"

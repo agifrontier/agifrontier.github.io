@@ -3,7 +3,7 @@ layout: default
 title: "DataSage: Multi-agent Collaboration for Insight Discovery with External Knowledge Retrieval, Multi-role Debating, and Multi-path Reasoning"
 description: "AI分析师天团来了！字节DataSage引入辩论机制，洞察力飙升13.9%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "RAG"
   - "AI Agent"
 related_tutorials:
   - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"

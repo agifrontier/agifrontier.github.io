@@ -3,7 +3,7 @@ layout: default
 title: "Train on Validation (ToV): Fast data selection with applications to fine-tuning"
 description: "本文提出了一种名为“在验证集上训练 (Train on Validation, ToV)”的快速数据选择方法，通过反转训练集和验证集的传统角色，依据训练样本在模型于少量目标验证集上微调后的预测损失变化来为其评分，从而高效地筛选出对提升目标任务性能最有益的数据。"
 topics:
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
   - "valid-survey-simulations-with-limited-human-data-the-roles-of-prompting-fine-tun"

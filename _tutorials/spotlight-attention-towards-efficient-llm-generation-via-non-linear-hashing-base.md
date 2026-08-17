@@ -3,8 +3,8 @@ layout: default
 title: "Spotlight Attention: Towards Efficient LLM Generation via Non-linear Hashing-based KV Cache Retrieval"
 description: "本文提出Spotlight Attention，一种通过可学习的非线性哈希函数来高效检索KV缓存（Key-Value Cache）的方法，从而在几乎不损失性能的前提下，显著提升大语言模型（LLM）的推理速度。"
 topics:
-  - "RAG与知识系统"
-  - "模型训练与优化"
+  - "RAG"
+  - "模型优化"
 related_tutorials:
   - "kimi-linear-an-expressive-efficient-attention-architecture"
   - "trainable-log-linear-sparse-attention-for-efficient-diffusion-transformers"

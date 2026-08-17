@@ -3,7 +3,7 @@ layout: default
 title: "The Two-Stage Decision-Sampling Hypothesis: Understanding the Emergence of Self-Reflection in RL-Trained LLMs"
 description: "RL为何能让大模型“学会自省”？双阶段决策采样假说揭秘SFT的死穴。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "beyond-two-stage-training-cooperative-sft-and-rl-for-llm-reasoning"
   - "self-rag-learning-to-retrieve-generate-and-critique-through-self-reflection"

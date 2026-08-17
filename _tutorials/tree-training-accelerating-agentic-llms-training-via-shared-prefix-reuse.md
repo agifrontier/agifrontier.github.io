@@ -4,7 +4,7 @@ title: "Tree Training: Accelerating Agentic LLMs Training via Shared Prefix Reus
 description: "本文提出了一种名为 Tree Training 的新训练范式，通过将智能体交互产生的树状轨迹数据进行高效打包和计算复用，在训练的前向和后向传播中对共享的前缀（prefix）只计算一次，从而显著提升了智能体大语言模型（Agentic LLM）的训练效率。"
 topics:
   - "AI Agent"
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "part-ii-roll-flash-accelerating-rlvr-and-agentic-training-with-asynchrony"
   - "batch-normalization-accelerating-deep-network-training-by-reducing-internal-cova"

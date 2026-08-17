@@ -3,7 +3,7 @@ layout: default
 title: "The Curse and Blessing of Mean Bias in FP4-Quantized LLM Training"
 description: "FP4训练的诅咒与祝福：简单“减均值”，性能直追BF16。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "a-comedy-of-estimators-on-kl-regularization-in-rl-training-of-llms"
   - "a-survey-on-efficient-large-language-model-training-from-data-centric-perspectiv"

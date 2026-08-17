@@ -5,7 +5,7 @@ description: "当OpenAI的o1模型横空出世，紧接着DeepSeek-R1震撼开�
 arxiv_id: "2504.09037"
 topics:
   - "AI Agent"
-  - "模型训练与优化"
+  - "模型训练"
 tags:
   - "Agentic systems"
   - "Agentic workflows"

@@ -3,7 +3,8 @@ layout: default
 title: "What is the objective of reasoning with reinforcement learning?"
 description: "本文通过一个统一的数学框架证明，多种用于大型语言模型的流行强化学习算法（如REINFORCE、拒绝采样和GRPO），在处理二元奖励时，都可以被看作是在给定提示下获得正确答案概率的某个单调变换函数上的随机梯度上升，从而揭示了这些算法内在的深刻关联。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
+  - "推理"
 related_tutorials:
   - "a-survey-of-reinforcement-learning-for-large-reasoning-models"
   - "deepseek-r1-incentivizing-reasoning-capability-in-llms-via-reinforcement-learnin"

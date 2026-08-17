@@ -3,7 +3,7 @@ layout: default
 title: "CoMeT: Collaborative Memory Transformer for Efficient Long Context Modeling"
 description: "阿里CoMeT：32k训练解锁100万长文，显存恒定，告别KV Cache爆炸。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "知识系统"
 related_tutorials:
   - "rmaat-astrocyte-inspired-memory-compression-and-replay-for-efficient-long-contex"
   - "artificial-hippocampus-networks-for-efficient-long-context-modeling"

@@ -3,7 +3,7 @@ layout: default
 title: "The Universal Landscape of Human Reasoning"
 description: "本文提出了一种名为“信息流追踪”（Information Flow Tracking, IFT）的框架，该框架利用大语言模型（LLM）作为概率编码器，通过量化推理每一步的信息熵和信息增益，首次在统一的度量空间中对人类通用推理的动态过程进行建模。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "cogguide-human-like-guidance-for-zero-shot-omni-modal-reasoning"
   - "putting-on-the-thinking-hats-a-survey-on-chain-of-thought-fine-tuning-from-the-p"

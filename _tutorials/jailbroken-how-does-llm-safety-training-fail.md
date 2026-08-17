@@ -3,8 +3,8 @@ layout: default
 title: "Jailbroken: How Does LLM Safety Training Fail?"
 description: "本文提出并验证了大型语言模型（LLM）安全训练的两种核心失败模式——“竞争性目标”与“泛化不匹配”，并基于此设计出能成功“越狱”（Jailbreak）GPT-4和Claude等顶尖模型的新型攻击方法。"
 topics:
-  - "AI安全与评测"
-  - "模型训练与优化"
+  - "AI安全"
+  - "模型训练"
 related_tutorials:
   - "how-does-rl-post-training-induce-skill-composition-a-case-study-on-countdown"
   - "the-alignment-waltz-jointly-training-agents-to-collaborate-for-safety"

@@ -3,7 +3,7 @@ layout: default
 title: "Auto-Rubric: Learning to Extract Generalizable Criteria for Reward Modeling"
 description: "本文提出了一种名为 Auto-Rubric 的无训练框架，通过一个两阶段（查询特定的准则生成与查询无关的准则聚合）过程，仅用极少量偏好数据即可自动提取出可解释、可泛化且高效的奖励模型评估准则（Rubric）集。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "excess-description-length-of-learning-generalizable-predictors"
   - "reasoning-over-mathematical-objects-on-policy-reward-modeling-and-test-time-aggr"

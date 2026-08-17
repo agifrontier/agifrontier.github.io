@@ -3,7 +3,7 @@ layout: default
 title: "Deep Self-Evolving Reasoning"
 description: "本文提出了一种名为深度自进化推理（Deep Self-Evolving Reasoning, DSER）的概率框架，它将迭代推理建模为马尔可夫链，使即使是能力较弱的模型也能通过长时间的并行自进化过程，解决原本无法解决的复杂问题。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
   - "dr-tulu-reinforcement-learning-with-evolving-rubrics-for-deep-research"

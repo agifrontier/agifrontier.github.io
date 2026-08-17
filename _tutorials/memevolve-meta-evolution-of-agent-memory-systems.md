@@ -3,7 +3,7 @@ layout: default
 title: "MemEvolve: Meta-Evolution of Agent Memory Systems"
 description: "让Agent自己“进化”大脑？MemEvolve实现17%性能跃升与跨模型泛化。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "知识系统"
   - "AI Agent"
 related_tutorials:
   - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"

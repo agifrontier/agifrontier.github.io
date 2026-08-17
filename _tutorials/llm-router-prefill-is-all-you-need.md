@@ -3,7 +3,7 @@ layout: default
 title: "LLM Router: Prefill is All You Need"
 description: "英伟达亮剑LLM路由：成本锐减74%，性能直追理论最优！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "AI理论"
 related_tutorials:
   - "all-you-need-is-one-capsule-prompt-tuning-with-a-single-vector"
   - "increasing-the-thinking-budget-is-not-all-you-need"

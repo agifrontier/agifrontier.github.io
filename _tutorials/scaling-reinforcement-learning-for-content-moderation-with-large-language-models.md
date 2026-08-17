@@ -3,7 +3,7 @@ layout: default
 title: "Scaling Reinforcement Learning for Content Moderation with Large Language Models"
 description: "数据效率暴涨100倍！Meta AI揭秘强化学习在内容审核中的Scaling Law。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "brorl-scaling-reinforcement-learning-via-broadened-exploration"
   - "kimi-k15-scaling-reinforcement-learning-with-llms"

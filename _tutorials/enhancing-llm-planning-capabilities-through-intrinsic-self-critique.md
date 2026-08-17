@@ -3,7 +3,7 @@ layout: default
 title: "Enhancing LLM Planning Capabilities through Intrinsic Self-Critique"
 description: "DeepMind力证LLM能自我纠错：无需外部验证，规划准确率飙升至89%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "self-rag-learning-to-retrieve-generate-and-critique-through-self-reflection"
   - "ssl4rl-revisiting-self-supervised-learning-as-intrinsic-reward-for-visual-langua"

@@ -3,8 +3,8 @@ layout: default
 title: "Decide Then Retrieve: A Training-Free Framework with Uncertainty-Guided Triggering and Dual-Path Retrieval"
 description: "告别“无脑”检索：无需训练，DTR框架利用不确定性让RAG性能全面提升。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
-  - "模型训练与优化"
+  - "RAG"
+  - "模型训练"
 related_tutorials:
   - "datasage-multi-agent-collaboration-for-insight-discovery-with-external-knowledge"
   - "llm-guided-hierarchical-retrieval"

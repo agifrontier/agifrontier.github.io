@@ -3,7 +3,7 @@ layout: default
 title: "The Illusion of Insight in Reasoning Models"
 description: "普林斯顿揭秘：模型“顿悟”竟是幻觉？百万推理轨迹拆解“自我修正”真相。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "datasage-multi-agent-collaboration-for-insight-discovery-with-external-knowledge"
   - "a-multitask-multilingual-multimodal-evaluation-of-chatgpt-on-reasoning-hallucina"

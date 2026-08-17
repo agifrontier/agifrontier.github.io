@@ -5,7 +5,7 @@ description: "当多个顶级大语言模型组成团队时，它们真的能像
 arxiv_id: "2605.01750"
 topics:
   - "AI Agent"
-  - "推理与强化学习"
+  - "推理"
 tags:
   - "Dynamic grounding"
   - "Full-transparency intervention"

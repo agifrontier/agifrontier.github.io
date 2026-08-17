@@ -3,7 +3,7 @@ layout: default
 title: "Higher-order Linear Attention"
 description: "本文提出了一种名为高阶线性注意力 (Higher-order Linear Attention, HLA) 的新型注意力机制，它通过紧凑的前缀充分统计量 (prefix sufficient statistics) 实现了高阶交互，同时保持了线性时间复杂度和流式计算能力，从而在不牺牲表达能力的情况下解决了标。"
 topics:
-  - "模型训练与优化"
+  - "模型优化"
 related_tutorials:
   - "kimi-linear-an-expressive-efficient-attention-architecture"
   - "spotlight-attention-towards-efficient-llm-generation-via-non-linear-hashing-base"

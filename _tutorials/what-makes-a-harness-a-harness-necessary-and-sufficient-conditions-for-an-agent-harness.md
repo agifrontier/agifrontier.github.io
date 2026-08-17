@@ -5,7 +5,7 @@ description: "当一个智能体在执行代码任务失败时，却一本正经
 arxiv_id: "2606.10106"
 topics:
   - "AI Agent"
-  - "AI安全与评测"
+  - "AI安全"
 tags:
   - "Claude Code"
   - "IDE plugin"

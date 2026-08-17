@@ -5,7 +5,7 @@ description: "大语言模型赛道早已不再是简单的参数堆砌游戏。
 arxiv_id: "2309.16609"
 topics:
   - "AI Agent"
-  - "推理与强化学习"
+  - "强化学习"
 tags:
   - "Code-Qwen"
   - "LLMs"

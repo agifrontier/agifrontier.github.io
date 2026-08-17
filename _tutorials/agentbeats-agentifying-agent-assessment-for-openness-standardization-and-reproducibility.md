@@ -5,7 +5,7 @@ description: "随着大语言模型技术的演进，能够自主编写代码、
 arxiv_id: "2606.13608"
 topics:
   - "AI Agent"
-  - "AI安全与评测"
+  - "AI评测"
 tags:
   - "A2A protocol"
   - "AAA"

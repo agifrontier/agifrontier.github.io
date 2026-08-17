@@ -3,8 +3,8 @@ layout: default
 title: "RLHF: A comprehensive Survey for Cultural, Multimodal and Low Latency Alignment Methods"
 description: "RLHF: A comprehensive Survey for Cultural, Multimodal and Low Latency Alignment Methods。"
 topics:
-  - "多模态与视觉"
-  - "AI安全与评测"
+  - "多模态"
+  - "AI安全"
 related_tutorials:
   - "a-survey-on-agentic-multimodal-large-language-models"
   - "a-survey-on-multimodal-large-language-models"

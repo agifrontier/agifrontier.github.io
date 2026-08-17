@@ -3,7 +3,7 @@ layout: default
 title: "FLEx: Language Modeling with Few-shot Language Explanations"
 description: "仅需4-11个纠错案例！FLEx：消除大模型83%顽固错误，无需参数微调。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "rags-to-riches-rag-like-few-shot-learning-for-large-language-model-role-playing"
   - "sparsegpt-massive-language-models-can-be-accurately-pruned-in-one-shot"

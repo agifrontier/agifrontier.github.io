@@ -5,7 +5,7 @@ description: "目前开发AIAgent，最痛苦的环节莫过于“手搓”外�
 arxiv_id: "2606.14249"
 topics:
   - "AI Agent"
-  - "推理与强化学习"
+  - "推理"
 tags:
   - "AEGIS"
   - "HarnessX"

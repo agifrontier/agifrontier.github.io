@@ -3,7 +3,7 @@ layout: default
 title: "WebWeaver: Structuring Web-Scale Evidence with Dynamic Outlines for Open-Ended Deep Research"
 description: "本文提出了 WebWeaver，一个模仿人类研究过程的双智能体框架，其中规划器（Planner）通过迭代优化大纲并搜集证据，构建动态且有来源依据的报告结构，而写作者（Writer）则分章节、有针对性地从记忆库中检索信息进行写作，有效解决了传统方法的静态规划缺陷和长上下文处理失败问题，在开放式深度研究任务中实。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "open-data-synthesis-for-deep-research"
   - "geometric-and-dynamic-scaling-in-deep-transformers"

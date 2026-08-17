@@ -3,7 +3,7 @@ layout: default
 title: "Every Token Counts: Generalizing 16M Ultra-Long Context in Large Language Models"
 description: "1600万Token上下文！蚂蚁HSA模型实现90%准确率，揭秘超长记忆关键。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "every-attention-matters-an-efficient-hybrid-architecture-for-long-context-reason"
   - "artificial-hippocampus-networks-for-efficient-long-context-modeling"

@@ -3,7 +3,7 @@ layout: default
 title: "Learning to Focus: Focal Attention for Selective and Scalable Transformers"
 description: "让大模型学会“专注”：AWS发布Focal Attention，参数减42%，长文本性能飙升82%！"
 topics:
-  - "模型训练与优化"
+  - "模型优化"
 related_tutorials:
   - "trainable-log-linear-sparse-attention-for-efficient-diffusion-transformers"
   - "vision-transformers-are-circulant-attention-learners"

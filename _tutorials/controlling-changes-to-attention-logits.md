@@ -3,7 +3,8 @@ layout: default
 title: "Controlling changes to attention logits"
 description: "Mistral AI新作QuacK：不靠归一化，动态学习率让Transformer训练提速10%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
+  - "模型优化"
 related_tutorials:
   - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
   - "efficient-streaming-language-models-with-attention-sinks"

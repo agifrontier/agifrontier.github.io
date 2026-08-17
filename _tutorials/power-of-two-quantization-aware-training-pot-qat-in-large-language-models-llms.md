@@ -3,7 +3,8 @@ layout: default
 title: "Power-of-Two Quantization-Aware-Training (PoT-QAT) in Large Language Models (LLMs)"
 description: "移位代替乘法！LLM推理提速10倍、内存节省87.5%的PoT-QAT技术。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
+  - "模型优化"
 related_tutorials:
   - "what-makes-low-bit-quantization-aware-training-work-for-reasoning-llms-a-systema"
   - "beyond-two-stage-training-cooperative-sft-and-rl-for-llm-reasoning"

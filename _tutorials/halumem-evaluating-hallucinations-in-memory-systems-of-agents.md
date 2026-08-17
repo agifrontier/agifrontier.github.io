@@ -3,7 +3,7 @@ layout: default
 title: "HaluMem: Evaluating Hallucinations in Memory Systems of Agents"
 description: "AI Agent记忆也“幻觉”？HaluMem：首个记忆系统“CT扫描”基准，精准定位错误根源。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "知识系统"
   - "AI Agent"
 related_tutorials:
   - "ai-meets-brain-memory-systems-from-cognitive-neuroscience-to-autonomous-agents"

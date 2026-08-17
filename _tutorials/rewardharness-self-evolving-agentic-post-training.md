@@ -5,7 +5,7 @@ description: "在评估图像编辑的优劣时，人类往往只需看几个参
 arxiv_id: "2605.08703"
 topics:
   - "AI Agent"
-  - "模型训练与优化"
+  - "模型训练"
 tags:
   - "Agentic reward"
   - "Context evolution"

@@ -3,7 +3,7 @@ layout: default
 title: "End-to-End Test-Time Training for Long Context"
 description: "128k长文本推理提速2.7倍：TTT-E2E让模型学会“边读边学”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "lets-not-just-put-things-in-context-test-time-training-for-long-context-llms"
   - "reusing-pre-training-data-at-test-time-is-a-compute-multiplier"

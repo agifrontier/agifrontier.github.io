@@ -3,7 +3,7 @@ layout: default
 title: "Prompts Generalize with Low Data: Non-vacuous Generalization Bounds for Optimizing Prompts with More Informative Priors"
 description: "本文提出了一种新颖的泛化界理论，通过引入基于困惑度（perplexity）的、信息更丰富的先验（prior），为数据稀疏场景下的提示（prompt）优化提供了非空泛的（non-vacuous）理论保证，并证明了这种方法在实践中能提升提示的泛化能力。"
 topics:
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "quantitative-bounds-for-length-generalization-in-transformers"
   - "lime-making-llm-data-more-efficient-with-linguistic-metadata-embeddings"

@@ -3,7 +3,7 @@ layout: default
 title: "Learning from Synthetic Data: Limitations of ERM"
 description: "谷歌揭秘合成数据陷阱：ERM不再万能，新算法破解“模型崩溃”危机。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "demystifying-synthetic-data-in-llm-pre-training-a-systematic-study-of-scaling-la"
   - "generative-models-for-synthetic-data-transforming-data-mining-in-the-genai-era"

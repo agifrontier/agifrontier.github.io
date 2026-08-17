@@ -3,8 +3,8 @@ layout: default
 title: "QwenLong-L1.5: Post-Training Recipe for Long-Context Reasoning and Memory Management"
 description: "QwenLong-L1.5：挑战GPT-5，揭秘400万字长文本推理的“后训练”秘籍。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
-  - "推理与强化学习"
+  - "知识系统"
+  - "推理"
 related_tutorials:
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
   - "comet-collaborative-memory-transformer-for-efficient-long-context-modeling"

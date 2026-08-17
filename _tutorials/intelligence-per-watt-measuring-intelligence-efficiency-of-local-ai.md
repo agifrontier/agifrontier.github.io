@@ -3,7 +3,7 @@ layout: default
 title: "Intelligence per Watt: Measuring Intelligence Efficiency of Local AI"
 description: "AI算力新范式：斯坦福提出“每瓦特智能”，本地模型能效两年提升5.3倍！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "dler-doing-length-penalty-right-incentivizing-more-intelligence-per-token-via-re"
   - "remote-labor-index-measuring-ai-automation-of-remote-work"

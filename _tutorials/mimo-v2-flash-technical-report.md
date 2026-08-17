@@ -3,7 +3,7 @@ layout: default
 title: "MiMo-V2-Flash Technical Report"
 description: "仅15B激活参数硬刚DeepSeek！MiMo-V2-Flash揭秘：混合注意力与多教师蒸馏的极致效率。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "deepseek-v3-technical-report"
   - "gpt-4-technical-report"

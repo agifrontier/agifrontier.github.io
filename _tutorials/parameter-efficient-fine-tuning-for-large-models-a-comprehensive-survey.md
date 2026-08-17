@@ -3,7 +3,7 @@ layout: default
 title: "Parameter-Efficient Fine-Tuning for Large Models: A Comprehensive Survey"
 description: "大型模型 (Large Models, LMs) 在自然语言处理 (NLP) 和计算机视觉 (CV) 等多个领域取得了显著进展，但其巨大的规模带来了高昂的计算成本。参数高效微调 (Parameter-Efficient Fine-Tuning, PEFT) 通过在冻结大部分预训练模型参数的同时，仅调整一小部。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "revffn-memory-efficient-full-parameter-fine-tuning-of-mixture-of-experts-llms-wi"
   - "beft-bias-efficient-fine-tuning-of-language-models"

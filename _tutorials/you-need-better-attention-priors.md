@@ -3,7 +3,7 @@ layout: default
 title: "You Need Better Attention Priors"
 description: "斯坦福GOAT：重构注意力底层数学，显存降36%，长文本性能全面超越RoPE。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型优化"
 related_tutorials:
   - "all-you-need-is-one-capsule-prompt-tuning-with-a-single-vector"
   - "camformer-associative-memory-is-all-you-need"

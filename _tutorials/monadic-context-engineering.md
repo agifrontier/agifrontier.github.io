@@ -3,7 +3,7 @@ layout: default
 title: "Monadic Context Engineering"
 description: "告别“面条代码”：普林斯顿用Monad重塑AI Agent架构，健壮性狂飙。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "a-prompt-pattern-catalog-to-enhance-prompt-engineering-with-chatgpt"
   - "the-prompt-engineering-report-distilled-quick-start-guide-for-life-sciences"

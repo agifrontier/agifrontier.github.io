@@ -3,7 +3,8 @@ layout: default
 title: "Memory Retrieval and Consolidation in Large Language Models through Function Tokens"
 description: "本文提出了“功能性Token假说” (Function Token Hypothesis)，揭示了语言模型中的一小部分高频Token（功能性Token）在记忆检索和巩固中扮演着核心角色：在推理时激活上下文中的预测性特征，在预训练时驱动模型学习和扩展新特征。"
 topics:
-  - "RAG与知识系统"
+  - "RAG"
+  - "知识系统"
 related_tutorials:
   - "citation-grounded-code-comprehension-preventing-llm-hallucination-through-hybrid"
   - "bge-m3-embedding-multi-lingual-multi-functionality-multi-granularity-text-embedd"

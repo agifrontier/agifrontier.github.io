@@ -5,7 +5,7 @@ description: "当前沿的大语言模型（LargeLanguageModel,LLM）逐渐进�
 arxiv_id: "2607.04763"
 topics:
   - "AI Agent"
-  - "推理与强化学习"
+  - "推理"
 tags:
   - "OPD"
   - "ReOPD"

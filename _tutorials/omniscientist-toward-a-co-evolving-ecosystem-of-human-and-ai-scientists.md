@@ -3,7 +3,7 @@ layout: default
 title: "OmniScientist: Toward a Co-evolving Ecosystem of Human and AI Scientists"
 description: "OmniScientist：让AI科学家“组建团队”，成果超越NIPS最佳论文。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "a-survey-of-ai-scientists-surveying-the-automatic-scientists-and-research"
   - "a-general-theoretical-paradigm-to-understand-learning-from-human-preferences"

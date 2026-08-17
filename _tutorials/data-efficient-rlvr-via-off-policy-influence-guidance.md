@@ -3,8 +3,8 @@ layout: default
 title: "Data-Efficient RLVR via Off-Policy Influence Guidance"
 description: "本文提出了一种名为CROPI的数据高效强化学习框架，通过一种新颖的离策略影响函数估计方法，以极低的计算成本识别并挑选对模型训练最有价值的数据，从而在大型语言模型的推理能力训练中实现显著的加速。"
 topics:
-  - "推理与强化学习"
-  - "数据与AI工程"
+  - "强化学习"
+  - "数据工程"
 related_tutorials:
   - "the-path-not-taken-rlvr-provably-learns-off-the-principals"
   - "evaluating-parameter-efficient-methods-for-rlvr"

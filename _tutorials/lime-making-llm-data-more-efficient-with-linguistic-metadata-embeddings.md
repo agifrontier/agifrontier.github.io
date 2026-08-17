@@ -3,7 +3,7 @@ layout: default
 title: "LIME: Making LLM Data More Efficient with Linguistic Metadata Embeddings"
 description: "LIME：给LLM喂点“语法糖”，训练效率飙升56%，推理能力提升38%！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "prompts-generalize-with-low-data-non-vacuous-generalization-bounds-for-optimizin"
   - "why-less-is-more-sometimes-a-theory-of-data-curation"

@@ -3,7 +3,7 @@ layout: default
 title: "Increasing the Thinking Budget is Not All You Need"
 description: "思考预算并非万能：揭秘让大模型更聪明的“性价比”策略。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "all-you-need-is-one-capsule-prompt-tuning-with-a-single-vector"
   - "llm-router-prefill-is-all-you-need"

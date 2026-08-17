@@ -3,7 +3,8 @@ layout: default
 title: "SonicMoE: Accelerating MoE with IO and Tile-aware Optimizations"
 description: "SonicMoE：64张H100顶96张用，MoE训练显存暴降45%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
+  - "模型优化"
 related_tutorials:
   - "sortedrl-accelerating-rl-training-for-llms-through-online-length-aware-schedulin"
   - "moeblaze-breaking-the-memory-wall-for-efficient-moe-training-on-modern-gpus"

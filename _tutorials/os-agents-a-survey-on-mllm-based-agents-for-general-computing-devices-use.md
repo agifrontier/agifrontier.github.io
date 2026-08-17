@@ -4,7 +4,7 @@ title: "AI全面接管设备：OS Agents核心架构机制万字全景解析"
 description: "Anthropic近期发布的ComputerUse功能让整个科技圈沸腾了。AI不再局限于聊天窗口中的文本对话。它们正在跨越屏幕的边界，直接操控鼠标和键盘。从苹果的AppleIntelligence到智谱的AutoGLM，变革已然发生。这类能自主操作计算设备的AI被统称为操作系统智能体（OSAgents）。"
 arxiv_id: "2508.04482"
 topics:
-  - "AI安全与评测"
+  - "AI评测"
   - "AI Agent"
 tags:
   - "Agent Frameworks"

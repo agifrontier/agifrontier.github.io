@@ -4,8 +4,8 @@ title: "揭秘大模型SFT数据陷阱：破解步长混杂，ASLEC提点超9%"
 description: "随着DeepSeek-R1等大模型的爆火，超长思维链（Chain-of-Thought）已成为攻克复杂推理任务的核心武器。为了激发基础模型的这种能力，业界普遍采用一种标准范式：在高质量、大规模的推理数据集上进行监督微调（SFT）。然而，如何从海量的AI生成内容中，精准筛选出真正高质量的SFT数据？"
 arxiv_id: "2604.06834"
 topics:
-  - "AI安全与评测"
-  - "推理与强化学习"
+  - "AI安全"
+  - "推理"
 tags:
   - "ASLEC-CASL"
   - "ASLEC-DROP"

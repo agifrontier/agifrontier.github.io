@@ -3,7 +3,8 @@ layout: default
 title: "Why Low-Precision Transformer Training Fails: An Analysis on Flash Attention"
 description: "本文首次系统性地揭示了在使用Flash Attention进行低精度（BF16）Transformer模型训练时，导致训练崩溃的内在机制，指出其根源在于注意力机制中出现的相似低秩表示与BF16算术固有有偏舍入误差的累积效应，两者共同形成恶性循环，最终导致损失爆炸。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
+  - "模型优化"
 related_tutorials:
   - "how-and-why-llms-generalize-a-fine-grained-analysis-of-llm-reasoning-from-cognit"
   - "what-makes-low-bit-quantization-aware-training-work-for-reasoning-llms-a-systema"

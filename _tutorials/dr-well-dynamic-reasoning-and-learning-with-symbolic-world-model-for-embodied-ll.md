@@ -3,7 +3,7 @@ layout: default
 title: "DR. WELL: Dynamic Reasoning and Learning with Symbolic World Model for Embodied LLM-Based Multi-Agent Collaboration"
 description: "本文提出了DR. WELL，一个去中心化的神经符号框架，该框架通过结构化的协商协议和动态演化的符号世界模型，使基于大语言模型（LLM）的具身智能体能够高效地进行协作规划、学习与自我优化。"
 topics:
-  - "具身智能与机器人"
+  - "具身智能"
   - "AI Agent"
 related_tutorials:
   - "datasage-multi-agent-collaboration-for-insight-discovery-with-external-knowledge"

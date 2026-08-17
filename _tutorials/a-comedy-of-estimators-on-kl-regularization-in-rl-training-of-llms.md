@@ -3,7 +3,7 @@ layout: default
 title: "A Comedy of Estimators: On KL Regularization in RL Training of LLMs"
 description: "RL微调避坑指南：揭秘KL正则化的“梯度陷阱”与性能真相。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "adamhd-decoupled-huber-decay-regularization-for-language-model-pre-training"
   - "a-survey-on-efficient-large-language-model-training-from-data-centric-perspectiv"

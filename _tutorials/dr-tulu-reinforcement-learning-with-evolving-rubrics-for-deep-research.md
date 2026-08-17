@@ -3,7 +3,7 @@ layout: default
 title: "DR Tulu: Reinforcement Learning with Evolving Rubrics for Deep Research"
 description: "AI自己当“考官”：DR Tulu-8B用进化标尺实现顶级研究，成本降低近1000倍。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "mars-optimizing-dual-system-deep-research-via-multi-agent-reinforcement-learning"
   - "deep-self-evolving-reasoning"

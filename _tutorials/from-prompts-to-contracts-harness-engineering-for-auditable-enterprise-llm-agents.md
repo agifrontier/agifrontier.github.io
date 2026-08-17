@@ -5,7 +5,7 @@ description: "许多企业级大模型应用在原型阶段表现惊艳，往往
 arxiv_id: "2607.08028"
 topics:
   - "AI Agent"
-  - "RAG与知识系统"
+  - "RAG"
 tags:
   - "Answer contracts"
   - "Auditable LLM agents"

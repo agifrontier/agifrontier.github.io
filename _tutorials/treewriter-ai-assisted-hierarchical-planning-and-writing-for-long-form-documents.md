@@ -3,7 +3,7 @@ layout: default
 title: "TreeWriter: AI-Assisted Hierarchical Planning and Writing for Long-Form Documents"
 description: "TreeWriter来了：打破线性束缚，用“树状结构”让AI长文写作更可控。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "factscore-fine-grained-atomic-evaluation-of-factual-precision-in-long-form-text-"
   - "dynamic-speculative-agent-planning"

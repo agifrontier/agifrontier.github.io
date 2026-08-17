@@ -3,8 +3,8 @@ layout: default
 title: "CogMem: A Cognitive Memory Architecture for Sustained Multi-Turn Reasoning in Large Language Models"
 description: "给大模型装上“类脑记忆”：CogMem三层架构破解长对话遗忘难题，多轮推理更像人。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
-  - "推理与强化学习"
+  - "知识系统"
+  - "推理"
 related_tutorials:
   - "forgetful-but-faithful-a-cognitive-memory-architecture-and-benchmark-for-privacy"
   - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"

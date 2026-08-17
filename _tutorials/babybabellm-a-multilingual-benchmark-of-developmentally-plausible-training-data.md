@@ -3,8 +3,8 @@ layout: default
 title: "BabyBabelLM: A Multilingual Benchmark of Developmentally Plausible Training Data"
 description: "本文提出了 BabyBabelLM，一个包含45种语言、模拟人类语言习得环境的多语言基准，旨在推动语言模型在数据效率和认知合理性方面的跨语言研究。"
 topics:
-  - "AI安全与评测"
-  - "模型训练与优化"
+  - "AI评测"
+  - "模型训练"
 related_tutorials:
   - "hplt-30-very-large-scale-multilingual-resources-for-llm-and-mt-mono-and-bi-lingu"
   - "jailbroken-how-does-llm-safety-training-fail"

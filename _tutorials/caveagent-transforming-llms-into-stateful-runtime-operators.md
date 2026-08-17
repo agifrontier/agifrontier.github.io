@@ -3,7 +3,7 @@ layout: default
 title: "CaveAgent: Transforming LLMs into Stateful Runtime Operators"
 description: "告别上下文遗忘！CaveAgent引入“双流架构”，数据密集任务Token暴降59%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "fourier-neural-operators-explained-a-practical-perspective"
   - "autoregressive-language-models-are-secretly-energy-based-models-insights-into-th"

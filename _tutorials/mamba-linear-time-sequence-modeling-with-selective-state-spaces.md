@@ -3,7 +3,7 @@ layout: default
 title: "Mamba: Linear-Time Sequence Modeling with Selective State Spaces"
 description: "本文提出了一种名为Mamba的新型序列建模架构，它通过引入选择性状态空间模型（Selective SSM），在保持线性时间复杂度的同时，实现了与Transformer相媲美的性能，尤其在处理长序列任务上表现出色。"
 topics:
-  - "基础模型与理论"
+  - "AI理论"
 related_tutorials:
   - "modeling-language-as-a-sequence-of-thoughts"
   - "vision-mamba-efficient-visual-representation-learning-with-bidirectional-state-s"

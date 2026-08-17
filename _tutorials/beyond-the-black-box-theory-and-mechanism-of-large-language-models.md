@@ -3,7 +3,7 @@ layout: default
 title: "Beyond the Black Box: Theory and Mechanism of Large Language Models"
 description: "告别“黑盒”炼丹：人大&厦大联合发布，LLM全生命周期理论图谱。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "AI理论"
 related_tutorials:
   - "jailbreaking-black-box-large-language-models-in-twenty-queries"
   - "can-llms-track-their-output-length-a-dynamic-feedback-mechanism-for-precise-leng"

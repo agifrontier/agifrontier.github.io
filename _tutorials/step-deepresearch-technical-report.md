@@ -3,7 +3,7 @@ layout: default
 title: "Step-DeepResearch Technical Report"
 description: "32B模型媲美OpenAI？Step-DeepResearch揭秘：低成本实现专家级深度研究。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "tongyi-deepresearch-technical-report"
   - "step-gui-technical-report"

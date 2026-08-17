@@ -3,7 +3,7 @@ layout: default
 title: "A Concise Review of Hallucinations in LLMs and their Mitigation"
 description: "终结AI幻觉：全面剖析大模型“胡说八道”的根源与应对策略。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "can-llms-track-their-output-length-a-dynamic-feedback-mechanism-for-precise-leng"
   - "object-recognition-datasets-and-challenges-a-review"

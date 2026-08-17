@@ -3,8 +3,8 @@ layout: default
 title: "On the Interplay of Pre-Training, Mid-Training, and RL on Reasoning Language Models"
 description: "CMU揭秘大模型推理训练“三部曲”：性能飙升60%的黄金法则。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
-  - "模型训练与优化"
+  - "推理"
+  - "模型训练"
 related_tutorials:
   - "balanced-actor-initialization-stable-rlhf-training-of-distillation-based-reasoni"
   - "beyond-two-stage-training-cooperative-sft-and-rl-for-llm-reasoning"

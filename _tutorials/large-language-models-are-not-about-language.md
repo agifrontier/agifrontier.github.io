@@ -3,7 +3,7 @@ layout: default
 title: "Large language models are not about language"
 description: "剑桥等名校联合檄文：LLM根本不懂语言！70MW能耗下的概率游戏。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "ai-progress-should-be-measured-by-capability-per-resource-not-scale-alone-a-fram"
   - "do-not-step-into-the-same-river-twice-learning-to-reason-from-trial-and-error"

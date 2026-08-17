@@ -3,7 +3,7 @@ layout: default
 title: "Remote Labor Index: Measuring AI Automation of Remote Work"
 description: "本文提出了一种名为远程劳动指数（Remote Labor Index, RLI）的新基准，通过评估AI智能体在真实自由职业平台上的端到端项目完成能力，来衡量AI在具有经济价值的实际任务上的自动化水平，从而为追踪AI的经济影响提供了实证基础。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "intelligence-per-watt-measuring-intelligence-efficiency-of-local-ai"
   - "the-2025-foundation-model-transparency-index"

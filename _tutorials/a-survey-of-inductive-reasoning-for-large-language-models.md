@@ -3,7 +3,7 @@ layout: default
 title: "A Survey of Inductive Reasoning for Large Language Models"
 description: "本节介绍归纳推理的相关概念、应用场景及其重要性。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "a-survey-of-reasoning-and-agentic-systems-in-time-series-with-large-language-mod"
   - "a-survey-of-reasoning-in-autonomous-driving-systems-open-challenges-and-emerging"

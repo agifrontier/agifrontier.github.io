@@ -5,7 +5,7 @@ description: "随着上下文窗口越来越长，大模型在长周期任务中
 arxiv_id: "2606.12882"
 topics:
   - "AI Agent"
-  - "基础模型与理论"
+  - "基础模型"
 tags:
   - "HarnessBridge"
   - "SWE-bench Verified"

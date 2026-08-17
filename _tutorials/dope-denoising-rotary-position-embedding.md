@@ -3,7 +3,7 @@ layout: default
 title: "DoPE: Denoising Rotary Position Embedding"
 description: "LLM长文本“失效”有救了！DoPE：免训练为RoPE降噪，解锁64K超长上下文。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "RAG"
 related_tutorials:
   - "crope-efficient-parametrization-of-rotary-positional-embedding"
   - "bge-m3-embedding-multi-lingual-multi-functionality-multi-granularity-text-embedd"

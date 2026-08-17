@@ -3,7 +3,7 @@ layout: default
 title: "On the Theoretical Limitations of Embedding-Based Retrieval"
 description: "本文通过连接学习理论与嵌入式检索，从理论和实证上证明了单向量嵌入模型因其维度限制，无法表示所有可能的相关文档组合，并构建了一个名为LIMIT的简单数据集，揭示了即使是当前最先进的模型也存在这一根本局限性。"
 topics:
-  - "RAG与知识系统"
+  - "RAG"
 related_tutorials:
   - "bge-m3-embedding-multi-lingual-multi-functionality-multi-granularity-text-embedd"
   - "crope-efficient-parametrization-of-rotary-positional-embedding"

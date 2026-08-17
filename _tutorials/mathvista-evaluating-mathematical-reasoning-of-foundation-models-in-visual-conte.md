@@ -3,8 +3,8 @@ layout: default
 title: "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts"
 description: "本文提出了 MathVista，一个全面的基准测试，旨在系统性地评估基础模型在视觉情境下的数学推理能力，并揭示了即便是最先进的 GPT-4V 模型，其性能也与人类水平存在显著差距。"
 topics:
-  - "多模态与视觉"
-  - "推理与强化学习"
+  - "计算机视觉"
+  - "推理"
 related_tutorials:
   - "cogflow-bridging-perception-and-reasoning-through-knowledge-internalization-for-"
   - "ssl4rl-revisiting-self-supervised-learning-as-intrinsic-reward-for-visual-langua"

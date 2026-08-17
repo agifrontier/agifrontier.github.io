@@ -3,7 +3,7 @@ layout: default
 title: "Context-Free Recognition with Transformers"
 description: "Transformer 突破理论极限： 循环层解锁 CFL 语法识别。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "AI理论"
 related_tutorials:
   - "stronger-normalization-free-transformers"
   - "object-recognition-datasets-and-challenges-a-review"

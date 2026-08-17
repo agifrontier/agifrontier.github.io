@@ -3,7 +3,8 @@ layout: default
 title: "Evaluating Parameter Efficient Methods for RLVR"
 description: "LoRA并非最优解？DeepSeek-R1实测揭秘：DoRA在RLVR推理任务中全面反超。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
+  - "推理"
 related_tutorials:
   - "data-efficient-rlvr-via-off-policy-influence-guidance"
   - "parameter-efficient-fine-tuning-for-large-models-a-comprehensive-survey"

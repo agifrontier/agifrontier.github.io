@@ -3,8 +3,8 @@ layout: default
 title: "Sigmoid Loss for Language Image Pre-Training"
 description: "本文提出了一种用于语言-图像预训练的简单成对 Sigmoid 损失函数 (Sigmoid loss)，它将对比学习任务转化为对图文对的独立二元分类，从而解耦了损失计算与批次大小 (batch size) 的依赖，实现了更高的内存效率和在小批量数据下更优的性能。"
 topics:
-  - "多模态与视觉"
-  - "模型训练与优化"
+  - "计算机视觉"
+  - "模型训练"
 related_tutorials:
   - "what-does-loss-optimization-actually-teach-if-anything-knowledge-dynamics-in-con"
   - "sampling-and-loss-weights-in-multi-domain-training"

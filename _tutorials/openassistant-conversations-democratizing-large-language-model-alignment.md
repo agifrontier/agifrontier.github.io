@@ -3,7 +3,7 @@ layout: default
 title: "OpenAssistant Conversations -- Democratizing Large Language Model Alignment"
 description: "本文发布了一个通过全球众包构建的大规模、多语言、人工标注的对话数据集——OpenAssistant Conversations，旨在通过开放高质量的人类反馈数据，推进大型语言模型对齐技术的研究民主化。"
 topics:
-  - "AI安全与评测"
+  - "AI安全"
 related_tutorials:
   - "extracting-alignment-data-in-open-models"
   - "kto-model-alignment-as-prospect-theoretic-optimization"

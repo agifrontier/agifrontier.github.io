@@ -3,7 +3,8 @@ layout: default
 title: "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal"
 description: "本文提出了HarmBench，一个用于自动化红队攻防的标准化评估框架，并通过大规模实验揭示了当前攻防方法的局限性，同时提出了一种高效的对抗训练方法R2D2，显著提升了大型语言模型的安全鲁棒性。"
 topics:
-  - "AI安全与评测"
+  - "AI安全"
+  - "AI评测"
 related_tutorials:
   - "an-information-theoretic-framework-for-robust-large-language-model-editing"
   - "a-survey-on-evaluation-of-large-language-models"

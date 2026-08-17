@@ -3,7 +3,7 @@ layout: default
 title: "Voyager: An Open-Ended Embodied Agent with Large Language Models"
 description: "本文提出了一种名为 Voyager 的具身智能体，它首次利用大型语言模型（LLM）实现了在《我的世界》(Minecraft) 开放世界中的无干预终身学习，通过自动课程、可不断增长的技能库和迭代提示机制，持续探索、获取技能并做出新发现。"
 topics:
-  - "具身智能与机器人"
+  - "具身智能"
   - "AI Agent"
 related_tutorials:
   - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"

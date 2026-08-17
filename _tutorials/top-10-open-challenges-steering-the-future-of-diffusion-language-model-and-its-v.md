@@ -3,7 +3,7 @@ layout: default
 title: "Top 10 Open Challenges Steering the Future of Diffusion Language Model and Its Variants"
 description: "扩散模型能否颠覆GPT？华为诺亚详解阻碍DLM爆发的十大核心挑战。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "多模态与视觉"
+  - "计算机视觉"
 related_tutorials:
   - "ai4x-roadmap-artificial-intelligence-for-the-advancement-of-scientific-pursuit-a"
   - "statistical-reinforcement-learning-in-the-real-world-a-survey-of-challenges-and-"

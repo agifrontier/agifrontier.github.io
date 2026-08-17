@@ -3,7 +3,7 @@ layout: default
 title: "AlpacaFarm: A Simulation Framework for Methods that Learn from Human Feedback"
 description: "本文提出了AlpacaFarm，这是一个旨在使用大型语言模型（LLM）模拟人类反馈，从而以低成本、高效率地研究、开发和评估人类反馈学习方法的仿真框架。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "stackelberg-learning-from-human-feedback-preference-optimization-as-a-sequential"
   - "transformers-learn-factored-representations"

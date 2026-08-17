@@ -5,7 +5,7 @@ description: "大模型Agent在应对专业领域的长周期任务时，往往�
 arxiv_id: "2606.14239"
 topics:
   - "AI Agent"
-  - "数据与AI工程"
+  - "AI工程"
 tags:
   - "PACE"
   - "Refine pipeline"

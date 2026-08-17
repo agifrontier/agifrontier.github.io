@@ -3,7 +3,7 @@ layout: default
 title: "HiFi-RAG: Hierarchical Content Filtering and Two-Pass Generation for Open-Domain RAG"
 description: "NeurIPS 2025冠军：Google HiFi-RAG如何用分层过滤让RAG性能暴涨19%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "RAG"
 related_tutorials:
   - "tackling-the-inherent-difficulty-of-noise-filtering-in-rag"
   - "retrieval-augmented-generation-rag-for-fintech-agentic-design-and-evaluation"

@@ -4,7 +4,7 @@ title: "提速4.14倍！LoSA破解长文本扩散模型的KV膨胀难题"
 description: "大语言模型的世界正在悄然发生深刻的变革。传统的自回归生成模式正逐渐显露出其在复杂推理上的局限。块级扩散语言模型（Block-wiseDiffusionLanguageModels,DLMs）异军突起。这种新兴架构允许以任意顺序一次性生成多个Token，展现出极大的灵活性。"
 arxiv_id: "2604.12056"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 tags:
   - "Attention density"
   - "Block-wise diffusion language models"

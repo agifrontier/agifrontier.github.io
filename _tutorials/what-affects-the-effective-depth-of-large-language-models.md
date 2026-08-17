@@ -3,7 +3,7 @@ layout: default
 title: "What Affects the Effective Depth of Large Language Models?"
 description: "MIT新发现：大模型半数层在“划水”，R1推理变强竟不靠深度？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "do-depth-grown-models-overcome-the-curse-of-depth-an-in-depth-analysis"
   - "itransformer-inverted-transformers-are-effective-for-time-series-forecasting"

@@ -3,7 +3,7 @@ layout: default
 title: "SortedRL: Accelerating RL Training for LLMs through Online Length-Aware Scheduling"
 description: "SortedRL：简单排个序，LLM强化学习训练吞吐量提升近40%，性能最高涨18%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "seesaw-accelerating-training-by-balancing-learning-rate-and-batch-size-schedulin"
   - "sonicmoe-accelerating-moe-with-io-and-tile-aware-optimizations"

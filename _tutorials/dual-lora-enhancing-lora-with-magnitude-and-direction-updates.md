@@ -3,7 +3,7 @@ layout: default
 title: "Dual LoRA: Enhancing LoRA with Magnitude and Direction Updates"
 description: "AMD力作Dual LoRA：性能最高提升1.8%！将参数更新分解为“幅值”与“方向”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "gallop-gradient-based-sparse-learning-on-low-magnitude-parameters"
   - "bi-lora-efficient-sharpness-aware-minimization-for-fine-tuning-large-scale-model"

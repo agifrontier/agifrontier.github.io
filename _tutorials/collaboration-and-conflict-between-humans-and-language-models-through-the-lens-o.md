@@ -3,7 +3,7 @@ layout: default
 title: "Collaboration and Conflict between Humans and Language Models through the Lens of Game Theory"
 description: "本文通过博弈论中的迭代囚徒困境 (Iterated Prisoner’s Dilemma) 框架，系统地研究了语言模型智能体在长期交互中的合作与对抗行为，发现其表现不亚于甚至超越了顶尖的经典策略，并能快速适应对手策略的变化，但与人类相比，其策略更倾向于短期收益最大化而非建立长期互利合作。"
 topics:
-  - "基础模型与理论"
+  - "AI理论"
 related_tutorials:
   - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
   - "algorithmic-thinking-theory"

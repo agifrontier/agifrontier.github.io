@@ -3,7 +3,7 @@ layout: default
 title: "Who Said Neural Networks Aren't Linear?"
 description: "本文提出了一种名为 Linearizer 的新架构，通过将一个线性算子置于两个可逆神经网络之间，使得传统的非线性映射在特定构造的向量空间中表现为严格的线性变换，从而能够将线性代数的强大工具（如SVD、伪逆）应用于深度学习模型。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "fourier-neural-operators-explained-a-practical-perspective"
   - "relative-based-scaling-law-for-neural-language-models"

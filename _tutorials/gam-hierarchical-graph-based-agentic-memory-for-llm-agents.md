@@ -5,7 +5,7 @@ description: "当前的大语言模型虽然能在单次对话中对答如流。
 arxiv_id: "2604.12285"
 topics:
   - "AI Agent"
-  - "基础模型与理论"
+  - "基础模型"
 tags:
   - "GAM"
   - "LLM agents"

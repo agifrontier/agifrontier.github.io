@@ -3,7 +3,7 @@ layout: default
 title: "Retrieval-Augmented Generation for Large Language Models: A Survey"
 description: "本文系统性地综述了大型语言模型（LLM）的检索增强生成（Retrieval-Augmented Generation，RAG）技术，将其发展划分为朴素（Naive）、高级（Advanced）和模块化（Modular）三个范式，并深入剖析了检索、生成与增强这三大核心组件的前沿技术、评估体系及未来挑战。"
 topics:
-  - "RAG与知识系统"
+  - "RAG"
 related_tutorials:
   - "scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-generation-for"
   - "mom-mixtures-of-scenario-aware-document-memories-for-retrieval-augmented-generat"

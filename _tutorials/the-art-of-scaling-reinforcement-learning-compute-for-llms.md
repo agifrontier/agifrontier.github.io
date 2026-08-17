@@ -3,7 +3,7 @@ layout: default
 title: "The Art of Scaling Reinforcement Learning Compute for LLMs"
 description: "本文通过大规模系统性研究，首次为大语言模型（LLMs）的强化学习（RL）训练提出了一个可预测的规模化框架，并基于此提出了一套名为 的最佳实践方法，旨在将RL训练的规模化从“艺术”转变为可预测的“科学”。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "brorl-scaling-reinforcement-learning-via-broadened-exploration"
   - "kimi-k15-scaling-reinforcement-learning-with-llms"

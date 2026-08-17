@@ -4,7 +4,7 @@ title: "告别黑盒！InfoFlow揭秘多层Transformer：两层架构如何省�
 description: "Transformer架构无疑是当今AI繁荣的绝对基石。然而，面对动辄数十乃至上百层的庞然大物，理论界却长期陷入一种尴尬的“偏科”状态。目前，学界对单层Transformer的数学性质已经有了相对透彻的理解，但多层Transformer的内部运作机制依然是一个巨大的黑盒。堆叠层数仅仅是为了增加参数容量吗？"
 arxiv_id: "2605.17930"
 topics:
-  - "基础模型与理论"
+  - "AI理论"
 tags:
   - "Approximation bounds"
   - "InfoFlow"

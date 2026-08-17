@@ -4,8 +4,8 @@ title: "统治大模型的RLHF完美吗？深度揭秘其3大环节的核心缺�
 description: "当前，无论是OpenAI的GPT-4、Anthropic的Claude，还是Meta的Llama2，这些能够与人类流畅对话、展现出惊人理解力的大语言模型背后，都站着同一位幕后英雄：基于人类反馈的强化学习（ReinforcementLearningfromHumanFeedback,RLHF）。"
 arxiv_id: "2307.15217"
 topics:
-  - "推理与强化学习"
-  - "模型训练与优化"
+  - "强化学习"
+  - "模型训练"
 tags:
   - "AI Alignment"
   - "Auditing Standards"

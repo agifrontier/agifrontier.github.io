@@ -4,7 +4,7 @@ title: "GUI-360: A Comprehensive Dataset and Benchmark for Computer-Using Agents
 description: "本文提出 GUI-360，一个用于推进桌面级计算机使用智能体（CUA）的大规模、综合性数据集与基准测试套件，它通过一个由 LLM 增强的高度自动化流程构建，旨在解决真实世界任务稀缺、数据收集标注困难、以及缺乏统一基准的三大挑战。"
 topics:
   - "AI Agent"
-  - "AI安全与评测"
+  - "AI评测"
 related_tutorials:
   - "pptarena-a-benchmark-for-agentic-powerpoint-editing"
   - "rex-mle-the-autonomous-agent-benchmark-for-medical-imaging-challenges"

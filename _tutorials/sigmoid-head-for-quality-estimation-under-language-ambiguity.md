@@ -3,7 +3,7 @@ layout: default
 title: "Sigmoid Head for Quality Estimation under Language Ambiguity"
 description: "告别Softmax“分票”困境：Sigmoid Head无需人工标注，精准量化大模型置信度。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "think-right-learning-to-mitigate-under-over-thinking-via-adaptive-attentive-comp"
   - "sigmoid-loss-for-language-image-pre-training"

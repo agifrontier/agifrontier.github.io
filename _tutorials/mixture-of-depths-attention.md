@@ -3,7 +3,7 @@ layout: default
 title: "Mixture-of-Depths Attention"
 description: "LLM越深越“健忘”？字节MoDA架构：性能+2.11%，开销仅3.7%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型优化"
 related_tutorials:
   - "optimizing-mixture-of-block-attention"
   - "gatepro-parameter-free-expert-selection-optimization-for-mixture-of-experts-mode"

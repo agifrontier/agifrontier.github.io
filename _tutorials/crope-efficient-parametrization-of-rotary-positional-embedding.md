@@ -3,7 +3,7 @@ layout: default
 title: "CRoPE: Efficient Parametrization of Rotary Positional Embedding"
 description: "RoPE“瘦身”术：砍掉Attention层50%参数，性能却几乎无损。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "RAG"
 related_tutorials:
   - "dope-denoising-rotary-position-embedding"
   - "bge-m3-embedding-multi-lingual-multi-functionality-multi-granularity-text-embedd"

@@ -3,7 +3,7 @@ layout: default
 title: "VibeVoice Technical Report"
 description: "本文提出了一种名为 VibeVoice 的新模型，它通过一个创新的、具有超高压缩率的连续语音tokenizer和一个基于大型语言模型的下一token扩散框架，实现了长达90分钟、多达4人的高质量长篇对话语音合成。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "deepseek-v3-technical-report"
   - "gpt-4-technical-report"

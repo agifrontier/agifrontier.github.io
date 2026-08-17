@@ -3,8 +3,8 @@ layout: default
 title: "PaLM-E: An Embodied Multimodal Language Model"
 description: "本文提出了一种具身多模态语言模型 PaLM-E，通过将图像等连续的真实世界传感器数据直接注入到预训练语言模型的词嵌入空间，从而在一个统一的模型中实现了机器人规划、视觉问答和语言理解等多种任务，并证明了跨领域联合训练带来的正向知识迁移效应。"
 topics:
-  - "具身智能与机器人"
-  - "多模态与视觉"
+  - "具身智能"
+  - "多模态"
 related_tutorials:
   - "a-comprehensive-survey-on-world-models-for-embodied-ai"
   - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"

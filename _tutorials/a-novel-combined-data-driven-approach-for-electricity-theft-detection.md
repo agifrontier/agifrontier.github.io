@@ -3,7 +3,7 @@ layout: default
 title: "A Novel Combined Data-Driven Approach for Electricity Theft Detection"
 description: "本文提出了一种结合最大信息系数(MIC)和快速搜索密度峰值聚类(CFSFDP)的数据驱动方法，以无监督的方式，仅需少量额外信息（区域总电表数据），即可高效、准确地检测出形态各异的电力盗窃行为。"
 topics:
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "convergewriter-data-driven-bottom-up-article-construction"
   - "dataflow-an-llm-driven-framework-for-unified-data-preparation-and-workflow-autom"

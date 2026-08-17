@@ -3,7 +3,7 @@ layout: default
 title: "Mitigating Hallucination in Large Language Models (LLMs): An Application-Oriented Survey on RAG, Reasoning, and Agentic Systems"
 description: "本文是一篇以应用为导向的综述，系统性地分析了检索增强生成（RAG）、推理增强以及智能体（Agentic Systems）系统如何通过提升模型能力来缓解大型语言模型（LLM）中的知识型和逻辑型幻觉。"
 topics:
-  - "RAG与知识系统"
+  - "RAG"
   - "AI Agent"
 related_tutorials:
   - "a-survey-of-reasoning-and-agentic-systems-in-time-series-with-large-language-mod"

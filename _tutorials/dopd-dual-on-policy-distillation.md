@@ -4,8 +4,8 @@ title: "拒绝“特权幻觉”！DOPD双重蒸馏让大模型能力狂飙14分
 description: "为什么给大模型“开小灶”，它反而越学越傻？在如今的大模型后训练阶段，用一个强大的“老师”模型来指导一个较弱的“学生”模型，已经成为提升性能的标准操作。为了让老师教得更好，研究人员往往会给老师提供一些特权信息（PrivilegedInformation），比如数学题的解题提示，或者视觉任务中的目标检测框。"
 arxiv_id: "2606.30626"
 topics:
-  - "模型训练与优化"
-  - "多模态与视觉"
+  - "模型训练"
+  - "计算机视觉"
 tags:
   - "Advantage-aware dual distillation"
   - "Capability transfer"

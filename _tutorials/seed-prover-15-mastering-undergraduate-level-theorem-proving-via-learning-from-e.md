@@ -3,7 +3,7 @@ layout: default
 title: "Seed-Prover 1.5: Mastering Undergraduate-Level Theorem Proving via Learning from Experience"
 description: "9小时攻克11道Putnam难题！Seed-Prover 1.5重塑AI形式化证明。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "AI理论"
 related_tutorials:
   - "structured-hints-for-sample-efficient-lean-theorem-proving"
   - "flex-continuous-agent-evolution-via-forward-learning-from-experience"

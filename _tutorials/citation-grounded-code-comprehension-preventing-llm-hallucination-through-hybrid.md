@@ -3,8 +3,8 @@ layout: default
 title: "Citation-Grounded Code Comprehension: Preventing LLM Hallucination Through Hybrid Retrieval and Graph-Augmented Context"
 description: "告别代码幻觉：混合检索+图增强，实现92%引用准确率与零错误。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
-  - "AI安全与评测"
+  - "RAG"
+  - "AI安全"
 related_tutorials:
   - "rethinking-retrieval-augmented-generation-for-medicine-a-large-scale-systematic-"
   - "improving-context-fidelity-via-native-retrieval-augmented-reasoning"

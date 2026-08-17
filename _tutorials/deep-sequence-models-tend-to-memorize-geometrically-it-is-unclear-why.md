@@ -3,7 +3,7 @@ layout: default
 title: "Deep sequence models tend to memorize geometrically; it is unclear why"
 description: "本文通过一个精心设计的实验揭示，深度序列模型在记忆事实时并非简单地存储局部关联，而是会自发形成一种“几何式记忆”结构，这种结构编码了实体间（包括训练中未共现的实体）的全局关系，从而将复杂的多步推理任务简化为易于学习的单步几何问题。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "mamba-linear-time-sequence-modeling-with-selective-state-spaces"
   - "modeling-language-as-a-sequence-of-thoughts"

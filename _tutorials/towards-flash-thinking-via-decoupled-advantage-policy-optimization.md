@@ -3,7 +3,7 @@ layout: default
 title: "Towards Flash Thinking via Decoupled Advantage Policy Optimization"
 description: "本文提出了一种名为DEPO的新型强化学习框架，它通过解耦高效与低效推理片段的优势计算、引入难度感知的长度惩罚和优势裁剪机制，在保持甚至提升模型准确率的同时，显著减少了大型推理模型的无效推理（“过度思考”）和响应长度。"
 topics:
-  - "模型训练与优化"
+  - "模型优化"
 related_tutorials:
   - "gdpo-group-reward-decoupled-normalization-policy-optimization-for-multi-reward-r"
   - "asymmetric-proximal-policy-optimization-mini-critics-boost-llm-reasoning"

@@ -3,8 +3,8 @@ layout: default
 title: "Stackelberg Learning from Human Feedback: Preference Optimization as a Sequential Game"
 description: "ETH新作SLHF：用“领导者-跟随者”博弈重塑对齐，推理性能零样本提升。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
-  - "模型训练与优化"
+  - "推理"
+  - "模型优化"
 related_tutorials:
   - "direct-preference-optimization-your-language-model-is-secretly-a-reward-model"
   - "semiparametric-preference-optimization-your-language-model-is-secretly-a-single-"

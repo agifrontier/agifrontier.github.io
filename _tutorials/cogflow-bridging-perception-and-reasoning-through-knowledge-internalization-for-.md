@@ -3,8 +3,8 @@ layout: default
 title: "CogFlow: Bridging Perception and Reasoning through Knowledge Internalization for Visual Mathematical Problem Solving"
 description: "拒绝“看对算错”！CogFlow首创知识内化机制，7B模型视觉数学推理SOTA。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "多模态与视觉"
-  - "推理与强化学习"
+  - "计算机视觉"
+  - "推理"
 related_tutorials:
   - "mathvista-evaluating-mathematical-reasoning-of-foundation-models-in-visual-conte"
   - "the-reasoning-creativity-trade-off-toward-creativity-driven-problem-solving"

@@ -3,7 +3,7 @@ layout: default
 title: "ELPO: Ensemble Learning Based Prompt Optimization for Large Language Models"
 description: "告别玄学Prompt！字节跳动ELPO框架，F1分数最高提升7.6分。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型优化"
 related_tutorials:
   - "dro-instructzero-distributionally-robust-prompt-optimization-for-large-language-"
   - "modular-prompt-optimization-optimizing-structured-prompts-with-section-local-tex"

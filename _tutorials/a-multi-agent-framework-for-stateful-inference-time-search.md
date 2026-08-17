@@ -4,7 +4,7 @@ title: "A Multi-Agent Framework for Stateful Inference-Time Search"
 description: "本文提出了一个无需训练的有状态多智能体进化搜索框架，通过结合持久化推理时状态、对抗性变异和进化式搜索，提升单元测试中边缘案例的生成能力和代码覆盖率。"
 topics:
   - "AI Agent"
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "staircase-streaming-for-low-latency-multi-agent-inference"
   - "matrix-peer-to-peer-multi-agent-synthetic-data-generation-framework"

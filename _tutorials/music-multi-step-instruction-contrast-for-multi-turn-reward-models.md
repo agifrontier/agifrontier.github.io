@@ -3,7 +3,7 @@ layout: default
 title: "MUSIC: MUlti-Step Instruction Contrast for Multi-Turn Reward Models"
 description: "别只看最后一句话！DeepMind新作MUSIC：合成数据攻克多轮对话评估难题。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "scaling-up-multi-turn-off-policy-rl-and-multi-agent-tree-search-for-llm-step-pro"
   - "compress-to-impress-efficient-llm-adaptation-using-a-single-gradient-step-on-100"

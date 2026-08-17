@@ -3,8 +3,8 @@ layout: default
 title: "SimPO: Simple Preference Optimization with a Reference-Free Reward"
 description: "本文提出了一种名为 SimPO 的简单偏好优化算法，它通过使用一个无需参考模型、与生成过程对齐的长度归一化奖励，在提升模型性能的同时，显著提高了训练的计算和内存效率。"
 topics:
-  - "推理与强化学习"
-  - "模型训练与优化"
+  - "强化学习"
+  - "模型训练"
 related_tutorials:
   - "direct-preference-optimization-your-language-model-is-secretly-a-reward-model"
   - "semiparametric-preference-optimization-your-language-model-is-secretly-a-single-"

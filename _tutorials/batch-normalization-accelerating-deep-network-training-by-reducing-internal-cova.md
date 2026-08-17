@@ -3,7 +3,7 @@ layout: default
 title: "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift"
 description: "批量归一化（Batch Normalization）：深度学习的“稳定器”与“加速器”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "seesaw-accelerating-training-by-balancing-learning-rate-and-batch-size-schedulin"
   - "sortedrl-accelerating-rl-training-for-llms-through-online-length-aware-schedulin"

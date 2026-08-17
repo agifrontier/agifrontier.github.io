@@ -4,7 +4,7 @@ title: "Reinforcement Learning for Machine Learning Engineering Agents"
 description: "本文证明，通过强化学习（RL）对一个较小的语言模型（如 Qwen2.5-3B）进行梯度更新，可以在机器学习工程（MLE）任务中超越比它大得多的静态模型（如 Claude-3.5-Sonnet），其核心贡献是提出了两种关键技术来克服RL在智能体（Agent）设置中的挑战：时长感知梯度更新（duration-a。"
 topics:
   - "AI Agent"
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
   - "reflexion-language-agents-with-verbal-reinforcement-learning"

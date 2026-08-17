@@ -3,7 +3,7 @@ layout: default
 title: "Generative Early Stage Ranking"
 description: "Meta重塑推荐系统：GESR用“混合注意力”打破双塔模型瓶颈，性能大涨延迟仅增10%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "beam-brainwave-empathy-assessment-model-for-early-childhood"
   - "the-two-stage-decision-sampling-hypothesis-understanding-the-emergence-of-self-r"

@@ -3,7 +3,7 @@ layout: default
 title: "DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning"
 description: "普特南118分超人类！DeepSeekMath-V2：AI如何学会“自我审日志”？。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "deepseekmath-pushing-the-limits-of-mathematical-reasoning-in-open-language-model"
   - "cogflow-bridging-perception-and-reasoning-through-knowledge-internalization-for-"

@@ -3,7 +3,7 @@ layout: default
 title: "Tree of Thoughts: Deliberate Problem Solving with Large Language Models"
 description: "本文提出了一种名为“思想树”（Tree of Thoughts, ToT）的新型语言模型推理框架，它通过将问题解决过程建模为对“思想”（连貫的文本单元）树的探索，使大型语言模型能够进行深思熟虑的决策、前瞻和回溯，从而显著提升其在需要规划和搜索的复杂任务上的解决能力。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "graph-of-thoughts-solving-elaborate-problems-with-large-language-models"
   - "cogflow-bridging-perception-and-reasoning-through-knowledge-internalization-for-"

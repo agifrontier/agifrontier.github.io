@@ -3,7 +3,7 @@ layout: default
 title: "Reinforcement Learning Improves Traversal of Hierarchical Knowledge in LLMs"
 description: "告别“对齐税”！Meta新研究：RL将LLM变身知识导航员，分层知识检索飙升24%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "a-multiobjective-reinforcement-learning-framework-for-microgrid-energy-managemen"
   - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"

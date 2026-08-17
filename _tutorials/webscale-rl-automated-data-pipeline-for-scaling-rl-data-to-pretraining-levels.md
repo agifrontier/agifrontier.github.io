@@ -3,7 +3,7 @@ layout: default
 title: "Webscale-RL: Automated Data Pipeline for Scaling RL Data to Pretraining Levels"
 description: "本文提出了一种名为 Webscale-RL 的自动化数据流水线，旨在通过从网络文档中自动挖掘和生成数据，将强化学习（RL）数据的规模扩展到与预训练数据相当的水平，从而显著提升大型语言模型的性能。"
 topics:
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "an-empirical-study-on-noisy-data-and-llm-pretraining-loss-divergence"
   - "synthdrive-scalable-real2sim2real-sensor-simulation-pipeline-for-high-fidelity-a"

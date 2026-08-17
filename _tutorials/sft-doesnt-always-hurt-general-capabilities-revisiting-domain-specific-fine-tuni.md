@@ -3,7 +3,7 @@ layout: default
 title: "SFT Doesn't Always Hurt General Capabilities: Revisiting Domain-Specific Fine-Tuning in LLMs"
 description: "本文挑战了领域特定监督微调（SFT）必然损害大语言模型（LLM）通用能力的普遍观念，指出使用小学习率可以显著缓解性能下降，并提出了一种名为“令牌自适应损失重加权”（TALR）的新方法，以更有效地平衡领域知识注入与通用能力保持。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "beft-bias-efficient-fine-tuning-of-language-models"
   - "not-all-parameters-are-created-equal-smart-isolation-boosts-fine-tuning-performa"

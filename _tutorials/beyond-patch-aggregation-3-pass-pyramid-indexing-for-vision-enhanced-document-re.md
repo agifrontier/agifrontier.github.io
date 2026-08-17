@@ -3,8 +3,8 @@ layout: default
 title: "Beyond Patch Aggregation: 3-Pass Pyramid Indexing for Vision-Enhanced Document Retrieval"
 description: "RAG新革命：VisionRAG告别OCR，每页17个向量实现SOTA文档检索。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "多模态与视觉"
-  - "RAG与知识系统"
+  - "计算机视觉"
+  - "RAG"
 related_tutorials:
   - "scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-generation-for"
   - "mom-mixtures-of-scenario-aware-document-memories-for-retrieval-augmented-generat"

@@ -3,7 +3,7 @@ layout: default
 title: "An Empirical Study of SFT-DPO Interaction and Parameterization in Small Language Models"
 description: "DPO收益甚微，LoRA竟被反超？斯坦福揭秘小模型微调的“最优解”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "an-empirical-study-on-noisy-data-and-llm-pretraining-loss-divergence"
   - "understanding-robustness-of-model-editing-in-code-llms-an-empirical-study"

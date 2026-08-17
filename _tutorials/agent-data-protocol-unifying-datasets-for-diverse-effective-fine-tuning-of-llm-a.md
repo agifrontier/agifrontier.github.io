@@ -4,7 +4,7 @@ title: "Agent Data Protocol: Unifying Datasets for Diverse, Effective Fine-tunin
 description: "本文提出了一种名为智能体数据协议 (Agent Data Protocol, ADP) 的轻量级表示语言，它通过将来自不同来源、格式各异的智能体训练数据统一为标准模式，解决了数据碎片化问题，从而实现了对大型语言模型智能体进行大规模、多样化且高效的监督式微调。"
 topics:
   - "AI Agent"
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "repurposing-synthetic-data-for-fine-grained-search-agent-supervision"
   - "train-on-validation-tov-fast-data-selection-with-applications-to-fine-tuning"

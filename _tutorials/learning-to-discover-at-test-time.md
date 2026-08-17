@@ -3,7 +3,7 @@ layout: default
 title: "Learning to Discover at Test Time"
 description: "TTT-Discover：开源模型+测试时训练，仅需数百美元刷新多领域SOTA。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "s1-simple-test-time-scaling"
   - "scaling-llm-test-time-compute-optimally-can-be-more-effective-than-scaling-model"

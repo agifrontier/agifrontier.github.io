@@ -3,7 +3,7 @@ layout: default
 title: "Memorization Dynamics in Knowledge Distillation for Language Models"
 description: "蒸馏即遗忘？大模型记忆率暴跌50%，揭秘知识蒸馏的“隐私红利”。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型优化"
 related_tutorials:
   - "what-does-loss-optimization-actually-teach-if-anything-knowledge-dynamics-in-con"
   - "bge-m3-embedding-multi-lingual-multi-functionality-multi-granularity-text-embedd"

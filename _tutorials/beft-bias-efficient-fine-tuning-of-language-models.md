@@ -3,7 +3,7 @@ layout: default
 title: "BEFT: Bias-Efficient Fine-Tuning of Language Models"
 description: "本文提出了一种偏置高效微调方法 (Bias-Efficient Fine-Tuning, BEFT)，其核心是一种通过计算微调前后偏置向量的投影比率来评估重要性的新方法，从而能够更精确地选择出对下游任务最关键的偏置项（如Q/K/V投影中的偏置）进行微调，以极低的参数量实现卓越性能。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "parameter-efficient-fine-tuning-for-large-models-a-comprehensive-survey"
   - "not-all-parameters-are-created-equal-smart-isolation-boosts-fine-tuning-performa"

@@ -3,8 +3,8 @@ layout: default
 title: "Rethinking Retrieval-Augmented Generation for Medicine: A Large-Scale, Systematic Expert Evaluation and Practical Insights"
 description: "Rethinking Retrieval-Augmented Generation for Medicine: A Large-Scale, Systematic Expert Evaluation and Practical Insights。"
 topics:
-  - "RAG与知识系统"
-  - "AI安全与评测"
+  - "RAG"
+  - "AI评测"
 related_tutorials:
   - "retrieval-augmented-generation-rag-for-fintech-agentic-design-and-evaluation"
   - "mom-mixtures-of-scenario-aware-document-memories-for-retrieval-augmented-generat"

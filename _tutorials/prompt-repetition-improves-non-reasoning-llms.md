@@ -3,7 +3,7 @@ layout: default
 title: "Prompt Repetition Improves Non-Reasoning LLMs"
 description: "谷歌新发现：简单重复Prompt，大模型准确率暴涨且零额外延迟。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "reinforcement-learning-improves-traversal-of-hierarchical-knowledge-in-llms"
   - "prompt-r1-collaborative-automatic-prompting-framework-via-end-to-end-reinforceme"

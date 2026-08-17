@@ -3,7 +3,7 @@ layout: default
 title: "Prompt-R1: Collaborative Automatic Prompting Framework via End-to-end Reinforcement Learning"
 description: "本文提出了一种名为 Prompt-R1 的端到端强化学习框架，该框架通过训练一个小型语言模型（作为智能体）以多轮交互的方式生成并优化提示，从而与一个大型语言模型（作为环境）协作，以更低的成本和更高的效率解决复杂问题。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "a-multiobjective-reinforcement-learning-framework-for-microgrid-energy-managemen"
   - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"

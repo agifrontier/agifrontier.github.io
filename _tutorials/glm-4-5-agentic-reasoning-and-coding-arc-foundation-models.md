@@ -5,7 +5,7 @@ description: "当前，大语言模型正从被动响应的知识库，向主动
 arxiv_id: "2508.06471"
 topics:
   - "AI Agent"
-  - "模型训练与优化"
+  - "模型优化"
 tags:
   - "ARC tasks"
   - "GLM-4.5"

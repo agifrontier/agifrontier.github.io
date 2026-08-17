@@ -3,8 +3,8 @@ layout: default
 title: "$π_0$: A Vision-Language-Action Flow Model for General Robot Control"
 description: "A Vision-Language-Action Flow Model for General Robot Control。"
 topics:
-  - "具身智能与机器人"
-  - "多模态与视觉"
+  - "具身智能"
+  - "多模态"
 related_tutorials:
   - "openvla-an-open-source-vision-language-action-model"
   - "instructblip-towards-general-purpose-vision-language-models-with-instruction-tun"

@@ -3,7 +3,7 @@ layout: default
 title: "From Experience to Strategy: Empowering LLM Agents with Trainable Graph Memory"
 description: "让Agent经验“活”起来：可训练图记忆，助小模型性能飙升25.8%！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "知识系统"
   - "AI Agent"
 related_tutorials:
   - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"

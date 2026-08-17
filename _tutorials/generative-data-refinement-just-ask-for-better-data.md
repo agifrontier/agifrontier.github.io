@@ -3,7 +3,7 @@ layout: default
 title: "Generative Data Refinement: Just Ask for Better Data"
 description: "本文提出了一个名为“生成式数据精炼”（Generative Data Refinement, GDR）的框架，利用预训练的生成模型将包含不良内容（如个人信息、有毒内容）的原始数据集重写为更适合模型训练的、经过精炼的高质量数据集，同时保留了数据的多样性和实用性。"
 topics:
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "generative-models-for-synthetic-data-transforming-data-mining-in-the-genai-era"
   - "a-novel-combined-data-driven-approach-for-electricity-theft-detection"

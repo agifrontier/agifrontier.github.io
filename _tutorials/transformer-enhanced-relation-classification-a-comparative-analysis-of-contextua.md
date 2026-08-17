@@ -3,7 +3,7 @@ layout: default
 title: "Transformer Enhanced Relation Classification: A Comparative Analysis of Contextuality, Data Efficiency and Sequence Complexity"
 description: "本文通过系统性的对比实验，证实了基于Transformer的模型在关系分类任务上，无论是在标准性能、长文本处理能力还是数据效率方面，均显著优于传统的非Transformer深度学习模型。"
 topics:
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "qerl-beyond-efficiency-quantization-enhanced-reinforcement-learning-for-llms"
   - "why-low-precision-transformer-training-fails-an-analysis-on-flash-attention"

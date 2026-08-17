@@ -3,7 +3,7 @@ layout: default
 title: "Hindsight is 20/20: Building Agent Memory that Retains, Recalls, and Reflects"
 description: "准确率飙升至91%！Hindsight：让20B模型记忆力超越GPT-4o。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "知识系统"
   - "AI Agent"
 related_tutorials:
   - "memevolve-meta-evolution-of-agent-memory-systems"

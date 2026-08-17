@@ -3,7 +3,7 @@ layout: default
 title: "A Comprehensive Survey on World Models for Embodied AI"
 description: "面向具身智能的世界模型综合综述。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "具身智能与机器人"
+  - "具身智能"
 related_tutorials:
   - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"
   - "palm-e-an-embodied-multimodal-language-model"

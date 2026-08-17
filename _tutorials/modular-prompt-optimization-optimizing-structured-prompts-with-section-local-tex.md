@@ -3,7 +3,8 @@ layout: default
 title: "Modular Prompt Optimization: Optimizing Structured Prompts with Section-Local Textual Gradients"
 description: "像搭积木一样优化Prompt：CMU新作MPO，分块微调击败TextGrad。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
+  - "模型优化"
 related_tutorials:
   - "dro-instructzero-distributionally-robust-prompt-optimization-for-large-language-"
   - "elpo-ensemble-learning-based-prompt-optimization-for-large-language-models"

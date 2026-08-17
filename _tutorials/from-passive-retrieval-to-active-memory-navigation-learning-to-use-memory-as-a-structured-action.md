@@ -4,7 +4,7 @@ title: "告别被动检索！NapMem多粒度记忆金字塔让大模型学会主
 description: "当你和一个AI助手交流了数月甚至数年，你期望它能建立起对你的深度理解。然而，当前大多数基于大型语言模型（LargeLanguageModel,LLM）的长期记忆系统，依然依赖于被动的检索接口——即系统在后台悄悄检索几段文本，然后塞进模型的上下文中。"
 arxiv_id: "2607.05794"
 topics:
-  - "推理与强化学习"
+  - "推理"
 tags:
   - "LongMemEval"
   - "NapMem"

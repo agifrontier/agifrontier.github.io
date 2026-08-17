@@ -3,7 +3,7 @@ layout: default
 title: "Generative Models for Synthetic Data: Transforming Data Mining in the GenAI Era"
 description: "生成式模型用于合成数据：在GenAI时代变革数据挖掘。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "educational-data-mining-and-learning-analytics-an-updated-survey"
   - "dataflow-an-llm-driven-framework-for-unified-data-preparation-and-workflow-autom"

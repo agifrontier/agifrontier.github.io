@@ -4,7 +4,7 @@ title: "AgentFrontier: Expanding the Capability Frontier of LLM Agents with ZPD-
 description: "本文提出了 AgentFrontier，一个基于教育心理学“最近发展区”（ZPD）理论的数据合成框架，通过自动生成位于大语言模型（LLM）能力边界上的复杂推理数据，从而系统性地提升智能体（Agent）的跨领域、综合推理能力。"
 topics:
   - "AI Agent"
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "whats-the-next-frontier-for-data-centric-ai-data-savvy-agents"
   - "a-survey-of-data-agents-emerging-paradigm-or-overstated-hype"

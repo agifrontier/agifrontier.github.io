@@ -3,7 +3,7 @@ layout: default
 title: "Statistical Reinforcement Learning in the Real World: A Survey of Challenges and Future Directions"
 description: "RL不该只会打游戏：哈佛联合帝国理工发布“现实世界落地”三步走指南。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "强化学习"
 related_tutorials:
   - "livethinking-enabling-real-time-efficient-reasoning-for-ai-powered-livestreaming"
   - "agentic-ai-a-comprehensive-survey-of-architectures-applications-and-future-direc"

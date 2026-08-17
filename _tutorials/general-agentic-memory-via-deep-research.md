@@ -3,7 +3,7 @@ layout: default
 title: "General Agentic Memory Via Deep Research"
 description: "AI记忆革命GAM：用“即时研究”取代静态压缩，长文本任务准确率超90%！。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "知识系统"
   - "AI Agent"
 related_tutorials:
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"

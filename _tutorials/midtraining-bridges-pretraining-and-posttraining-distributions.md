@@ -3,7 +3,7 @@ layout: default
 title: "Midtraining Bridges Pretraining and Posttraining Distributions"
 description: "本文系统地研究了“中训练 (Midtraining)”这一新兴实践，发现其通过在通用预训练和特定任务微调之间构建一个分布桥梁，能有效提升模型在数学和代码等领域的下游任务性能，并显著减少灾难性遗忘。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "flowrl-matching-reward-distributions-for-llm-reasoning"
   - "an-empirical-study-on-noisy-data-and-llm-pretraining-loss-divergence"

@@ -4,8 +4,8 @@ title: "千亿参数的基石：预训练基础模型(PFMs)跨模态演进全解
 description: "深度学习的演进史上，很少有技术能像如今的大模型这样，在短短几年内彻底重塑整个行业的底层逻辑。过去，研究人员习惯于针对单一任务从零开始训练模型；而现在，整个AI界都在拥抱一种全新的范式：“预训练+微调”。"
 arxiv_id: "2302.09419"
 topics:
-  - "基础模型与理论"
-  - "多模态与视觉"
+  - "基础模型"
+  - "多模态"
 tags:
   - "Artificial General Intelligence"
   - "Autoregressive Language Models"

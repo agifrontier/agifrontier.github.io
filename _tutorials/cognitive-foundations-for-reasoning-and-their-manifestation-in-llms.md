@@ -3,7 +3,7 @@ layout: default
 title: "Cognitive Foundations for Reasoning and Their Manifestation in LLMs"
 description: "哈佛解剖LLM大脑：揭示其“浅层思维”缺陷，认知引导让性能飙升60%。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "cogmem-a-cognitive-memory-architecture-for-sustained-multi-turn-reasoning-in-lar"
   - "how-and-why-llms-generalize-a-fine-grained-analysis-of-llm-reasoning-from-cognit"

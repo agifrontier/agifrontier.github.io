@@ -3,7 +3,7 @@ layout: default
 title: "GPQA: A Graduate-Level Google-Proof Q&A Benchmark"
 description: "本文提出了 GPQA，一个包含448道由生物、物理和化学领域专家编写的研究生水平多项选择题数据集，其设计目标是“防谷歌化”（Google-Proof），即对于拥有不受限制网络访问权限的熟练非专家来说也极其困难，旨在为未来超人AI系统的可扩展监督（scalable oversight）研究提供一个极具挑战性的。"
 topics:
-  - "AI安全与评测"
+  - "AI评测"
 related_tutorials:
   - "babybabellm-a-multilingual-benchmark-of-developmentally-plausible-training-data"
   - "creativityprism-a-holistic-benchmark-for-large-language-model-creativity"

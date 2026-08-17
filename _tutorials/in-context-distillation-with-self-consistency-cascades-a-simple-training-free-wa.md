@@ -4,7 +4,7 @@ title: "In-Context Distillation with Self-Consistency Cascades: A Simple, Traini
 description: "Agent推理成本降低2.5倍：斯坦福提出“上下文蒸馏”，免训练让小模型偷师大模型。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
   - "AI Agent"
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "language-self-play-for-data-free-training"
   - "beyond-turn-limits-training-deep-search-agents-with-dynamic-context-window"

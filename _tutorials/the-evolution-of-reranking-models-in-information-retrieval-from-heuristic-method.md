@@ -3,7 +3,7 @@ layout: default
 title: "The Evolution of Reranking Models in Information Retrieval: From Heuristic Methods to Large Language Models"
 description: "RAG效果提升神器：重排序模型从BERT到LLM的硬核进化史。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "RAG与知识系统"
+  - "RAG"
 related_tutorials:
   - "memevolve-meta-evolution-of-agent-memory-systems"
   - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"

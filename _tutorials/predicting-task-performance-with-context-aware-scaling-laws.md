@@ -3,7 +3,7 @@ layout: default
 title: "Predicting Task Performance with Context-aware Scaling Laws"
 description: "本文提出了一个简洁、可解释的上下文感知缩放定律 (context-aware scaling law) 框架，该框架通过一个函数联合建模了训练计算量和上下文长度，从而能够准确预测和推断大型语言模型在下游任务中的性能。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "zero-shot-performance-prediction-for-probabilistic-scaling-laws"
   - "relative-scaling-laws-for-llms"

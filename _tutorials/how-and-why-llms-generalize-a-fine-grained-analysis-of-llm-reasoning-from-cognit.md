@@ -3,7 +3,7 @@ layout: default
 title: "How and Why LLMs Generalize: A Fine-Grained Analysis of LLM Reasoning from Cognitive Behaviors to Low-Level Patterns"
 description: "SFT正在“毁掉”泛化能力？5大原子技能揭示RL为何是推理的未来。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
+  - "推理"
 related_tutorials:
   - "understanding-and-steering-the-cognitive-behaviors-of-reasoning-models-at-test-t"
   - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"

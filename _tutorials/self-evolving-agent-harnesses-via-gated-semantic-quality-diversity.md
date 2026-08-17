@@ -5,7 +5,7 @@ description: "在真实的业务部署中，决定一个大语言模型（LLM）
 arxiv_id: "2607.13683"
 topics:
   - "AI Agent"
-  - "基础模型与理论"
+  - "基础模型"
 tags:
   - "GSME"
   - "LLM agent"

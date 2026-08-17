@@ -3,7 +3,7 @@ layout: default
 title: "Thought Communication in Multiagent Collaboration"
 description: "本文提出了一种名为 THOUGHTCOMM 的多智能体协作新范式，它使智能体能通过理论上可识别的、直接的潜在“思想”进行交流，而非传统的自然语言，从而突破语言瓶颈，提升集体智能的协作效率和上限。"
 topics:
-  - "基础模型与理论"
+  - "AI理论"
 related_tutorials:
   - "are-large-language-models-sensitive-to-the-motives-behind-communication"
   - "orion-teaching-language-models-to-reason-efficiently-in-the-language-of-thought"

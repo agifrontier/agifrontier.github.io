@@ -3,7 +3,7 @@ layout: default
 title: "An Empirical Study on Noisy Data and LLM Pretraining Loss Divergence"
 description: "Meta/牛津重磅：噪声数据引爆LLM训练崩溃！深度比宽度更致命，诊断新法公开。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "数据与AI工程"
+  - "数据工程"
 related_tutorials:
   - "webscale-rl-automated-data-pipeline-for-scaling-rl-data-to-pretraining-levels"
   - "demystifying-synthetic-data-in-llm-pre-training-a-systematic-study-of-scaling-la"

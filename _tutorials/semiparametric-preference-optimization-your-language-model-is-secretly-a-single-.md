@@ -3,8 +3,8 @@ layout: default
 title: "Semiparametric Preference Optimization: Your Language Model is Secretly a Single-Index Model"
 description: "DPO假设失效？康奈尔联合Netflix提出SPO：大模型对齐的“单指标”革命。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "推理与强化学习"
-  - "模型训练与优化"
+  - "推理"
+  - "模型优化"
 related_tutorials:
   - "direct-preference-optimization-your-language-model-is-secretly-a-reward-model"
   - "simpo-simple-preference-optimization-with-a-reference-free-reward"

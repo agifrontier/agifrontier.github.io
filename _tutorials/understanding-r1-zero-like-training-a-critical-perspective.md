@@ -3,7 +3,7 @@ layout: default
 title: "Understanding R1-Zero-Like Training: A Critical Perspective"
 description: "本文通过剖析 R1-Zero 类训练，揭示了其基座模型与强化学习算法（GRPO）中存在的偏见，并提出了一种无偏的优化方法 Dr. GRPO，从而以更高效的方式提升了模型的数学推理能力。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "understanding-the-role-of-training-data-in-test-time-scaling"
   - "cogguide-human-like-guidance-for-zero-shot-omni-modal-reasoning"

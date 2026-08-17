@@ -91,6 +91,13 @@ strong {
   }
 }
 
+.topic-directory__legacy-anchor {
+  display: block;
+  height: 1px;
+  margin-bottom: -1px;
+  scroll-margin-top: 5rem;
+}
+
 @media (max-width: 576px) {
   .related-tutorials__list {
     grid-template-columns: minmax(0, 1fr);

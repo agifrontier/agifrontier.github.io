@@ -3,7 +3,7 @@ layout: default
 title: "Defeating the Training-Inference Mismatch via FP16"
 description: "本文发现，在强化学习微调大型语言模型时，仅需将训练精度从广泛使用的 BF16 切换回 FP16，即可从根源上解决训练与推理策略之间的数值不匹配问题，从而获得更稳定的优化、更快的收敛和更强的模型性能。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "a-multi-agent-framework-for-stateful-inference-time-search"
   - "kascade-a-practical-sparse-attention-method-for-long-context-llm-inference"

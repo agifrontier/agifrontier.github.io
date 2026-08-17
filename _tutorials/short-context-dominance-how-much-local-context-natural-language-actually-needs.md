@@ -3,7 +3,7 @@ layout: default
 title: "Short-Context Dominance: How Much Local Context Natural Language Actually Needs?"
 description: "80%的预测只需96个Token！DeepMind揭示大模型“短视”的秘密。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "intelligence-per-watt-measuring-intelligence-efficiency-of-local-ai"
   - "is-chatgpt-a-general-purpose-natural-language-processing-task-solver"

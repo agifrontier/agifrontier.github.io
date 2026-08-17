@@ -3,8 +3,8 @@ layout: default
 title: "ReST-RL: Achieving Accurate Code Reasoning of LLMs with Optimized Self-Training and Decoding"
 description: "本文提出了一种名为 ReST-RL 的统一强化学习范式，通过将优化的自训练算法 (ReST-GRPO) 与基于价值模型 (Value Model) 的蒙特卡洛树搜索解码方法 (VM-MCTS) 相结合，显著提升了大型语言模型 (LLM) 在代码推理任务上的准确性。"
 topics:
-  - "推理与强化学习"
-  - "模型训练与优化"
+  - "强化学习"
+  - "模型训练"
 related_tutorials:
   - "balanced-actor-initialization-stable-rlhf-training-of-distillation-based-reasoni"
   - "beyond-two-stage-training-cooperative-sft-and-rl-for-llm-reasoning"

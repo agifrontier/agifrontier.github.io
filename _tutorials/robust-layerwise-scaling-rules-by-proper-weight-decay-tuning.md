@@ -3,7 +3,7 @@ layout: default
 title: "Robust Layerwise Scaling Rules by Proper Weight Decay Tuning"
 description: "本文提出了一种针对矩阵类参数的权重衰减缩放规则 ( )，通过在AdamW训练的稳态下保持子层增益在不同模型宽度下的不变性，从而扩展了最大更新参数化( P)框架，实现了学习率和权重衰减超参数的零样本迁移。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "scaling-test-time-compute-to-achieve-ioi-gold-medal-with-open-weight-models"
   - "an-information-theoretic-framework-for-robust-large-language-model-editing"

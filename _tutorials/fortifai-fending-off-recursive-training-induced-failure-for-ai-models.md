@@ -3,7 +3,7 @@ layout: default
 title: "ForTIFAI: Fending Off Recursive Training Induced Failure for AI Models"
 description: "本文提出了一种名为截断交叉熵（TCE）的置信度感知损失函数，通过在训练中忽略对高置信度预测的损失贡献，有效缓解了因循环使用合成数据进行训练而导致的模型崩溃现象。"
 topics:
-  - "模型训练与优化"
+  - "模型训练"
 related_tutorials:
   - "a-comedy-of-estimators-on-kl-regularization-in-rl-training-of-llms"
   - "a-survey-on-efficient-large-language-model-training-from-data-centric-perspectiv"

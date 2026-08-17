@@ -3,7 +3,7 @@ layout: default
 title: "Supervised learning pays attention"
 description: "性能媲美XGBoost，解释性堪比Lasso：斯坦福新作“注意力Lasso”详解。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "模型训练与优化"
+  - "模型优化"
 related_tutorials:
   - "learning-to-focus-focal-attention-for-selective-and-scalable-transformers"
   - "process-supervised-reinforcement-learning-for-interactive-multimodal-tool-use-ag"

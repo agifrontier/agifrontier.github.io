@@ -3,7 +3,7 @@ layout: default
 title: "ELLA: Efficient Lifelong Learning for Adapters in Large Language Models"
 description: "内存仅需1/35！亚马逊ELLA：无需回放的大模型终身学习新SOTA。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "simplemem-efficient-lifelong-memory-for-llm-agents"
   - "artificial-hippocampus-networks-for-efficient-long-context-modeling"

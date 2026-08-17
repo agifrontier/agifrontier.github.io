@@ -4,8 +4,8 @@ title: "全景解构LLM Agent：从单体构建到多智能体进化的底层逻
 description: "从被动回答问题的聊天机器人，到能够自主完成深度研究的数字员工，AI正在经历一场重大的范式转换。近期爆火的复杂商业系统无不昭示着，大语言模型智能体（LargeLanguageModelAgent,LLMAgent）时代的全面到来。"
 arxiv_id: "2503.21460"
 topics:
-  - "RAG与知识系统"
-  - "AI安全与评测"
+  - "RAG"
+  - "AI评测"
 tags:
   - "Agent design principles"
   - "Architectural taxonomy"

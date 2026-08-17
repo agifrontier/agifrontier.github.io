@@ -3,7 +3,7 @@ layout: default
 title: "Gemma 2: Improving Open Language Models at a Practical Size"
 description: "本文介绍Gemma 2系列开放语言模型（2B、9B、27B），通过在Transformer架构中交错使用局部-全局注意力、采用分组查询注意力，并对2B和9B模型应用知识蒸馏进行训练，实现了在同等参数规模下的最佳性能，甚至能与2-3倍大的模型相媲美。"
 topics:
-  - "基础模型与理论"
+  - "基础模型"
 related_tutorials:
   - "fourier-neural-operators-explained-a-practical-perspective"
   - "improving-online-algorithms-via-ml-predictions"

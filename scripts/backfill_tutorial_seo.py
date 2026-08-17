@@ -12,6 +12,8 @@ from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
 
+from tutorial_topic_taxonomy import classify_topics
+
 
 ROOT = Path(__file__).resolve().parents[1]
 TUTORIALS_DIR = ROOT / "_tutorials"
@@ -54,17 +56,6 @@ GENERIC_HEADINGS = {
     "总结与展望",
     "结论",
 }
-TOPIC_RULES = [
-    ("具身智能与机器人", r"\b(robot|robotics|embodied|manipulation|slam|vision.language.action|vla|autonomous.driving)\b|具身|机器人|自动驾驶|运动控制"),
-    ("多模态与视觉", r"\b(multimodal|vision|visual|image|video|audio|ocr|vlm|diffusion)\b|多模态|视觉|图像|视频|语音"),
-    ("RAG与知识系统", r"\b(rag|retrieval|rerank|embedding|knowledge.graph|knowledge.base|memory)\b|检索|知识图谱|知识库|记忆"),
-    ("AI Agent", r"\b(agent|agents|agentic|multi.agent|tool.use|computer.use)\b|智能体|代理"),
-    ("推理与强化学习", r"\b(reasoning|reinforcement.learning|rlvr|grpo|dpo|preference|reward.model|planning)\b|推理|强化学习|偏好优化|奖励模型"),
-    ("AI安全与评测", r"\b(safety|security|privacy|benchmark|evaluation|hallucination|judge|alignment|jailbreak)\b|安全|隐私|评测|幻觉|对齐"),
-    ("模型训练与优化", r"\b(training|fine.tun|post.training|pretrain|optimization|optimizer|lora|quantization|distillation|model.merging|sparse|attention|moe|inference)\b|训练|微调|量化|蒸馏|稀疏|注意力|推理优化"),
-    ("数据与AI工程", r"\b(data|dataset|platform|infra|serving|deployment|cuda|gpu|kernel|database|software.engineering)\b|数据|平台|部署|工程化|算子"),
-    ("行业应用", r"\b(medical|medicine|health|education|finance|scientific|recommendation|search|advertising)\b|医疗|教育|金融|科研|推荐|广告"),
-]
 STOPWORDS = {
     "a", "an", "and", "are", "as", "at", "based", "by", "for", "from", "in", "is",
     "large", "language", "llm", "llms", "model", "models", "of", "on", "the", "to",
@@ -183,14 +174,6 @@ def extract_description(tutorial: Tutorial) -> str:
     elif candidate[-1] not in "。！？.!?":
         candidate += "。"
     return truncate(candidate, 155)
-
-
-def classify_topics(title: str) -> tuple[str, ...]:
-    normalized = title.casefold().replace("-", " ")
-    topics = [name for name, pattern in TOPIC_RULES if re.search(pattern, normalized, re.IGNORECASE)]
-    if not topics:
-        topics = ["基础模型与理论"]
-    return tuple(topics[:2])
 
 
 def title_tokens(title: str) -> set[str]:
