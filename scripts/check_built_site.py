@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import json
 import re
 from collections import defaultdict
@@ -59,6 +60,7 @@ class PageParser(HTMLParser):
         self.images: list[dict[str, str]] = []
         self.references: list[tuple[str, str]] = []
         self.json_ld_parts: list[list[str]] = []
+        self.topic_published_dates: list[str] = []
         self._current_h1: list[str] | None = None
         self._current_heading: list[str] | None = None
         self._current_pre: list[str] | None = None
@@ -94,6 +96,8 @@ class PageParser(HTMLParser):
             self._current_heading = []
         elif tag == "pre":
             self._current_pre = []
+        elif tag == "time" and "topic-page__published" in attributes.get("class", "").split():
+            self.topic_published_dates.append(attributes.get("datetime", "").strip())
 
     def handle_startendtag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         self.handle_starttag(tag, attrs)
@@ -264,6 +268,17 @@ def main() -> int:
                 issues.append(f"{relative_path}: invalid JSON-LD: {exc}")
 
         if re.fullmatch(r"topics/[^/]+/index\.html", relative_path):
+            parsed_dates: list[dt.datetime] = []
+            if not page.topic_published_dates:
+                issues.append(f"{relative_path}: missing topic article published dates")
+            for value in page.topic_published_dates:
+                try:
+                    parsed_dates.append(dt.datetime.fromisoformat(value.replace("Z", "+00:00")))
+                except ValueError:
+                    issues.append(f"{relative_path}: invalid topic article date: {value!r}")
+            if parsed_dates != sorted(parsed_dates, reverse=True):
+                issues.append(f"{relative_path}: topic articles are not sorted by published date descending")
+
             schema_types = {schema.get("@type") for schema in parsed_schemas}
             if "CollectionPage" not in schema_types:
                 issues.append(f"{relative_path}: missing CollectionPage JSON-LD")

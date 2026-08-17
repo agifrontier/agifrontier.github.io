@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% assign topic_tutorials = site.tutorials | where_exp: "tutorial", "tutorial.topics contains page.topic_name" | sort: "seo_lastmod" | reverse %}
+{% assign topic_tutorials = site.tutorials | where_exp: "tutorial", "tutorial.topics contains page.topic_name" | sort: "seo_published" | reverse %}
 
 <div class="post topic-page">
   <nav class="topic-page__breadcrumb" aria-label="面包屑导航">
@@ -12,20 +12,18 @@ layout: default
   </nav>
 
   <header class="post-header topic-page__header">
-    <p class="topic-page__eyebrow">AI TOPIC</p>
-    <h1 class="post-title">{{ page.topic_name }}论文解读</h1>
+    <h1 class="post-title">{{ page.topic_name }}</h1>
     <p>{{ page.description }}</p>
-    <p class="topic-page__count">当前收录 {{ topic_tutorials.size }} 篇论文解读</p>
+    <p class="topic-page__count">{{ topic_tutorials.size }} 篇 · 按发布时间倒序</p>
   </header>
 
-  <section aria-labelledby="topic-articles-title">
-    <h2 id="topic-articles-title">{{ page.topic_name }}最新文章</h2>
+  <section aria-label="{{ page.topic_name }}文章">
     <div class="topic-page__articles">
       {% for tutorial in topic_tutorials %}
         {% assign published_date = tutorial.seo_published | default: tutorial.date %}
         <article class="topic-page__article">
           <h3><a href="{{ tutorial.url | relative_url }}">{{ tutorial.title | replace: '$', '' | strip_html }}</a></h3>
-          {% if published_date %}<p class="topic-page__meta">{{ published_date | date: "%Y年%m月%d日" }}</p>{% endif %}
+          {% if published_date %}<p class="topic-page__meta"><time class="topic-page__published" datetime="{{ published_date | date_to_xmlschema }}">{{ published_date | date: "%Y年%m月%d日" }}</time></p>{% endif %}
           {% if tutorial.description %}<p>{{ tutorial.description | strip_html | truncate: 150 }}</p>{% endif %}
         </article>
       {% endfor %}
