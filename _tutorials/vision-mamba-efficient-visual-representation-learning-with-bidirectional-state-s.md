@@ -3,7 +3,7 @@ layout: default
 title: "Vision Mamba: Efficient Visual Representation Learning with Bidirectional State Space Model"
 description: "本文提出了一种名为 Vision Mamba (Vim) 的通用视觉骨干网络，它通过将双向状态空间模型 (SSM) 和位置嵌入相结合，在不使用自注意力机制的情况下，实现了与 Vision Transformer 相媲美甚至更优的性能，并显著提升了处理高分辨率图像时的计算与内存效率。"
 topics:
-  - "计算机视觉"
+  - "多模态&视觉"
 related_tutorials:
   - "transformers-are-ssms-generalized-models-and-efficient-algorithms-through-struct"
   - "a-survey-of-weight-space-learning-understanding-representation-and-generation"

@@ -3,7 +3,7 @@ layout: default
 title: "Mixture of Contexts for Long Video Generation"
 description: "本文提出了一种名为上下文混合（MoC）的可学习稀疏注意力路由模块，将长视频生成问题重构为一个内部信息检索任务，从而在大幅降低计算成本的同时，实现了分钟级视频的长期记忆和一致性。"
 topics:
-  - "计算机视觉"
+  - "多模态&视觉"
 related_tutorials:
   - "mathvista-evaluating-mathematical-reasoning-of-foundation-models-in-visual-conte"
   - "factscore-fine-grained-atomic-evaluation-of-factual-precision-in-long-form-text-"

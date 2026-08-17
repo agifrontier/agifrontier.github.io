@@ -255,11 +255,11 @@ tutorial_topics:
     slug: model-training
   - name: 模型优化
     slug: model-optimization
-  - name: 多模态
+  - name: "多模态&视觉"
     slug: multimodal
-    legacy_slug: multimodal-vision
-  - name: 计算机视觉
-    slug: computer-vision
+    legacy_slugs:
+      - multimodal-vision
+      - computer-vision
   - name: 具身智能
     slug: embodied-ai
     legacy_slug: embodied-robotics

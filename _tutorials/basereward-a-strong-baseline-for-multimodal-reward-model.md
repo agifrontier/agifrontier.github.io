@@ -3,7 +3,7 @@ layout: default
 title: "BaseReward: A Strong Baseline for Multimodal Reward Model"
 description: "本文通过一系列详尽的实验，系统性地探究了构建高性能多模态奖励模型的关键要素，总结出一套清晰的“配方”，并基于此提出了一款名为 BaseReward 的强大基线模型，在多个主流基准测试中达到了新的SOTA水平。"
 topics:
-  - "多模态"
+  - "多模态&视觉"
   - "强化学习"
 related_tutorials:
   - "a-multitask-multilingual-multimodal-evaluation-of-chatgpt-on-reasoning-hallucina"

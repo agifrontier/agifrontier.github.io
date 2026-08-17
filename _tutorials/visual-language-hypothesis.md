@@ -3,7 +3,7 @@ layout: default
 title: "Visual Language Hypothesis"
 description: "字节跳动硬核推导：视觉理解的本质是“纤维丛”？揭秘Expand-and-Snap背后的拓扑真相。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "计算机视觉"
+  - "多模态&视觉"
 related_tutorials:
   - "cogflow-bridging-perception-and-reasoning-through-knowledge-internalization-for-"
   - "improved-baselines-with-visual-instruction-tuning"

@@ -3,7 +3,7 @@ layout: default
 title: "LinMU: Multimodal Understanding Made Linear"
 description: "告别 ！LinMU让多模态大模型实现线性复杂度，推理提速9倍。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "多模态"
+  - "多模态&视觉"
 related_tutorials:
   - "nextflow-unified-sequential-modeling-activates-multimodal-understanding-and-gene"
   - "scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-generation-for"

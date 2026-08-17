@@ -3,7 +3,7 @@ layout: post
 title: "A Circular Argument : Does RoPE need to be Equivariant for Vision?"
 description: "颠覆RoPE核心信仰：等变性不再神圣？Spherical RoPE性能持平甚至反超。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "计算机视觉"
+  - "多模态&视觉"
 related_tutorials:
   - "behind-rope-how-does-causal-mask-encode-positional-information"
   - "beyond-patch-aggregation-3-pass-pyramid-indexing-for-vision-enhanced-document-re"

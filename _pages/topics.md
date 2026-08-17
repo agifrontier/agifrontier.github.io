@@ -19,6 +19,7 @@ nav_order: 2
     {% assign topic_tutorials = site.tutorials | where_exp: "tutorial", "tutorial.topics contains topic_name" | sort: "seo_lastmod" | reverse %}
     {% if topic_tutorials.size > 0 %}
       {% if topic.legacy_slug %}<span class="topic-directory__legacy-anchor" id="{{ topic.legacy_slug }}" aria-hidden="true"></span>{% endif %}
+      {% for legacy_slug in topic.legacy_slugs %}<span class="topic-directory__legacy-anchor" id="{{ legacy_slug }}" aria-hidden="true"></span>{% endfor %}
       <section class="topic-directory__section" id="{{ topic.slug }}">
         <h2>{{ topic.name }} <small>{{ topic_tutorials.size }} 篇</small></h2>
         <ul>

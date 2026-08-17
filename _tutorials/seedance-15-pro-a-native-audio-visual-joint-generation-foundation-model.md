@@ -3,7 +3,7 @@ layout: default
 title: "Seedance 1.5 pro: A Native Audio-Visual Joint Generation Foundation Model"
 description: "字节Seedance 1.5 pro发布：原生音视频联合生成，推理加速超10倍。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "计算机视觉"
+  - "多模态&视觉"
 related_tutorials:
   - "mathvista-evaluating-mathematical-reasoning-of-foundation-models-in-visual-conte"
   - "rewarddance-reward-scaling-in-visual-generation"

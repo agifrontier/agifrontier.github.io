@@ -3,7 +3,7 @@ layout: default
 title: "NextFlow: Unified Sequential Modeling Activates Multimodal Understanding and Generation"
 description: "NextFlow横空出世：6万亿Token打造统一自回归，5秒生成1024高清图。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "多模态"
+  - "多模态&视觉"
 related_tutorials:
   - "scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-generation-for"
   - "linmu-multimodal-understanding-made-linear"

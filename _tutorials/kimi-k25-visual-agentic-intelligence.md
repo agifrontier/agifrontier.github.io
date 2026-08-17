@@ -3,7 +3,7 @@ layout: default
 title: "Kimi K2.5: Visual Agentic Intelligence"
 description: "Kimi K2.5重磅开源：多模态联合增强，Agent推理提速4.5倍。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "多模态"
+  - "多模态&视觉"
   - "AI Agent"
 related_tutorials:
   - "slideagent-hierarchical-agentic-framework-for-multi-page-visual-document-underst"

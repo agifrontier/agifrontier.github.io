@@ -3,8 +3,7 @@ layout: default
 title: "InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning"
 description: "本文提出了InstructBLIP，一个基于预训练模型BLIP-2的视觉语言指令微调框架，通过引入一个创新的指令感知查询转换器（Q-Former），使模型能根据文本指令提取相应的视觉特征，从而在广泛的未见过的视觉语言任务上实现了最先进的零样本（zero-shot）泛化能力。"
 topics:
-  - "多模态"
-  - "计算机视觉"
+  - "多模态&视觉"
 related_tutorials:
   - "improved-baselines-with-visual-instruction-tuning"
   - "π_0-a-vision-language-action-flow-model-for-general-robot-control"

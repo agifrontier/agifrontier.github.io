@@ -3,8 +3,7 @@ layout: default
 title: "Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution"
 description: "本文提出了Qwen2-VL系列多模态模型，通过创新的原生动态分辨率机制和多模态旋转位置编码（M-RoPE），使模型能像人一样处理任意分辨率的图像和视频，并在广泛的多模态基准测试中展现出与GPT-4o等顶尖模型相媲美的性能。"
 topics:
-  - "多模态"
-  - "计算机视觉"
+  - "多模态&视觉"
 related_tutorials:
   - "cogflow-bridging-perception-and-reasoning-through-knowledge-internalization-for-"
   - "a-circular-argument-does-rope-need-to-be-equivariant-for-vision"

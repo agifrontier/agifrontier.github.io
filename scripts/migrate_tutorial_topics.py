@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Migrate tutorial front matter from compound to independent topic names."""
+"""Migrate tutorial front matter to the canonical topic taxonomy."""
 
 from __future__ import annotations
 

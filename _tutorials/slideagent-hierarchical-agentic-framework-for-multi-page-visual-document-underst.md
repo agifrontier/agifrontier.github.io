@@ -3,7 +3,7 @@ layout: default
 title: "SlideAgent: Hierarchical Agentic Framework for Multi-Page Visual Document Understanding"
 description: "本文提出了一种名为 SlideAgent 的分层智能体框架，通过设置全局、页面、元素三个级别的专业智能体，将复杂的多页视觉文档理解任务分解，先构建独立于查询的结构化知识库，再进行针对性推理，从而显著提升了大型语言模型在处理幻灯片等文档时的细粒度理解和推理能力。"
 topics:
-  - "计算机视觉"
+  - "多模态&视觉"
   - "AI Agent"
 related_tutorials:
   - "kimi-k25-visual-agentic-intelligence"

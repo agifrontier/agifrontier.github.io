@@ -3,7 +3,7 @@ layout: default
 title: "Trainable Log-linear Sparse Attention for Efficient Diffusion Transformers"
 description: "LLSA：让Diffusion Transformer提速28倍的“对数级”稀疏注意力机制。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "计算机视觉"
+  - "多模态&视觉"
   - "模型优化"
 related_tutorials:
   - "kimi-linear-an-expressive-efficient-attention-architecture"

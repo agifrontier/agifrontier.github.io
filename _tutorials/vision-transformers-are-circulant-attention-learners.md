@@ -3,7 +3,7 @@ layout: default
 title: "Vision Transformers are Circulant Attention Learners"
 description: "ViT暗藏“循环”玄机？清华新作：用FFT将注意力复杂度降至。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "计算机视觉"
+  - "多模态&视觉"
   - "模型优化"
 related_tutorials:
   - "trainable-log-linear-sparse-attention-for-efficient-diffusion-transformers"

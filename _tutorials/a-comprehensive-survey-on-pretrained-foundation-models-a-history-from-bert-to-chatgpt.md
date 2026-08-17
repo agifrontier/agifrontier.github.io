@@ -5,7 +5,7 @@ description: "深度学习的演进史上，很少有技术能像如今的大模
 arxiv_id: "2302.09419"
 topics:
   - "基础模型"
-  - "多模态"
+  - "多模态&视觉"
 tags:
   - "Artificial General Intelligence"
   - "Autoregressive Language Models"

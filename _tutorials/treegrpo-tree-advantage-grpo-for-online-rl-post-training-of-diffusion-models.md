@@ -3,7 +3,7 @@ layout: default
 title: "TreeGRPO: Tree-Advantage GRPO for Online RL Post-Training of Diffusion Models"
 description: "训练加速2.4倍！TreeGRPO用“决策树”革新AI绘画模型对齐。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
 topics:
-  - "计算机视觉"
+  - "多模态&视觉"
   - "强化学习"
 related_tutorials:
   - "qwenlong-l15-post-training-recipe-for-long-context-reasoning-and-memory-manageme"

@@ -5,7 +5,7 @@ description: "为什么给大模型“开小灶”，它反而越学越傻？在
 arxiv_id: "2606.30626"
 topics:
   - "模型训练"
-  - "计算机视觉"
+  - "多模态&视觉"
 tags:
   - "Advantage-aware dual distillation"
   - "Capability transfer"
