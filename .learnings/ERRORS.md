@@ -93,3 +93,27 @@ Create required directories first, then run independent browser commands in para
 ### Metadata
 - Reproducible: yes
 - Related Files: none
+
+## [ERR-20260817-004] zsh-path-variable-shadowing
+
+**Logged**: 2026-08-17T21:47:00+08:00
+**Priority**: medium
+**Status**: resolved
+**Area**: tests
+
+### Summary
+Using `path` as a loop variable under zsh overwrites the shell command-search path.
+
+### Error
+`zsh: command not found: curl`
+
+### Context
+- `/usr/bin/curl` existed and was executable.
+- `for path in ...` assigned zsh's special `path` array, which is tied to `PATH`.
+
+### Suggested Fix
+Use names such as `url_path` or `target_path`; never assign `path` in zsh verification snippets.
+
+### Metadata
+- Reproducible: yes
+- Related Files: none
