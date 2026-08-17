@@ -10090,5 +10090,37 @@
   "/images/2607.13683v1/x3.jpg": {
     "height": 891,
     "width": 997
+  },
+  "/images/2607.14777v1/A__title.jpg": {
+    "height": 492,
+    "width": 1105
+  },
+  "/images/2607.14777v1/x2.jpg": {
+    "height": 514,
+    "width": 986
+  },
+  "/images/2607.14777v1/x3.jpg": {
+    "height": 704,
+    "width": 957
+  },
+  "/images/2607.14777v1/x5.jpg": {
+    "height": 683,
+    "width": 999
+  },
+  "/images/2607.14777v1/x6.jpg": {
+    "height": 689,
+    "width": 998
+  },
+  "/images/2607.15899v1/A__title.jpg": {
+    "height": 439,
+    "width": 1200
+  },
+  "/images/2607.15899v1/architecture1.jpg": {
+    "height": 800,
+    "width": 1200
+  },
+  "/images/2607.15899v1/architecture2.jpg": {
+    "height": 800,
+    "width": 1200
   }
 }
