@@ -89,14 +89,14 @@ Qwen2-VL采用统一的范式处理图像和视频，增强了模型的动态视
 
 *   **视觉定位**：使用归一化的边界框坐标 $$(X_top left,Y_top left),(X_bottom right,Y_bottom right)$$ 和特殊Token $$<|box_start|>$$、$$<|box_end|>$$ 等来标注图像中的物体。
 
-    ``$$
+    ```text
     <|vision_start|>Picture1.jpg<|vision_end|>
     <|object_ref_start|>the eyes on a giraffe<|object_ref_end|><|box_start|>(176,106),(232,160) <|box_end|>
-    $$`$$
+    ```
 
 *   **视觉智能体**：将用户界面操作、机器人控制等任务构建为序贯决策问题。模型通过分析观察（截图）、推理规划、并生成函数调用（$$*FUNCTION*$$, $$*ARGS*$$）来与环境交互，直至完成任务。
 
-    $$`$$
+    ```text
     <|im_start|>user
     Find a pizza restaurant nearby in Map. <|vision_start|>Screenshot_1.jpg<|vision_end|> <|im_end|>
     <|im_start|>assistant
@@ -107,7 +107,7 @@ Qwen2-VL采用统一的范式处理图像和视频，增强了模型的动态视
     *FUNCTION*: Tap *ARGS*: {"point": (348,291)}
     ...
     I have found the pizza restaurant nearby in Map. <|im_end|>
-    $$``
+    ```
 
 <img src="/images/2409.12191v2/qwen2_vl_example.jpg" alt="Qwen2-VL能力展示" style="width:85%; max-width:600px; margin:auto; display:block;">
 

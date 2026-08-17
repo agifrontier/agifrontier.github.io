@@ -131,7 +131,7 @@ $${% endraw %}
 
 本文将PEFT策略分为四大类：加性PEFT、选择性PEFT、重参数化PEFT和混合PEFT。
 
-``$$
+```text
 [
 PEFT Methods for PLMs, ver
 [
@@ -193,7 +193,7 @@ Hybrid Fine-tuning
 [ UniPELT [97], S4 [98], MAM Adapter [32], NOAH [99], AUTOPEFT [100], LLM-Adapters [101], S^3PET [102] ]
 ]
 ]
-$$``
+```
 > 图3: 大模型参数高效微调方法的分类体系。
 
 <img src="/images/2403.14608v7/x4.jpg" alt="不同类型的PEFT算法" style="width:90%; max-width:700px; margin:auto; display:block;">

@@ -50,12 +50,12 @@ _图注：Code Evol-Instruct 方法示意图。_
 $$Code Evol-Instruct$$ 的创新之处在于其专为代码任务设计的进化策略。它通过一个特定的提示模板，驱动一个大型语言模型（如 GPT-3.5）来增强指令难度。
 
 **进化提示词模板**:
-``$$
+```text
 Please increase the difficulty of the given programming test question a bit.
 You can increase the difficulty using, but not limited to, the following methods:
 {method}
 {question}
-$$`$$
+```
 其中，$${question}$$ 是待进化的原始指令，$${method}$$ 是从以下五种专门设计的代码进化启发式方法中随机选择一种：
 
 1.  **增加约束**: 为原问题增加新的约束和要求（约增加10个词）。
@@ -68,12 +68,12 @@ $$`$$
 训练数据集的构建始于 Code Alpaca 数据集。通过 $$Code Evol-Instruct$$ 对其进行多轮迭代进化，每一轮进化产生的数据都会与之前所有轮次的数据及原始数据合并，用于模型精调。训练过程中会使用一个外部开发集来判断何时停止进化（Evol Stop），以防性能下降。
 
 **精调提示词格式**:
-$$`$$
+```text
 Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
 ### Instruction:
 {instruction}
 ### Response:
-$$`$$
+```
 
 <img src="/images/2306.08568v2/x3.jpg" alt="多语言性能对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 _图注：WizardCoder-34B 在多种编程语言上相较于当时的开源SOTA模型（CodeLlama-34B系列）展现出显著优势。_

@@ -98,7 +98,7 @@ Self-RAG 的训练是一个两阶段过程，旨在高效地将反思能力注�
 
 Self-RAG 的推理过程通过生成反思 Token 实现了高度的可控性和灵活性。
 
-``$$
+```text
 Algorithm 1: Self-RAG Inference
 
 1: 输入: prompt x, 已生成内容 y_{<t}
@@ -113,7 +113,7 @@ Algorithm 1: Self-RAG Inference
 10: else if [Retrieve] == No then
 11:    M 直接生成 y_t
 12:    M 预测 [IsUse]
-$$`$$
+```
 
 1.  **自适应检索 (Adaptive Retrieval)**: 在生成每个文本片段前，模型首先会预测是否需要检索（即生成 $$[Retrieve]$$ Token）。这使得模型可以根据任务需求动态决定是否引入外部知识。用户也可以通过设置一个概率阈值来调整检索的频率。
 

@@ -76,7 +76,7 @@ PAIR 的成功关键在于攻击者 $A$ 的设计，主要包含三个方面：
 ### 算法实现与并行化
 
 PAIR 的核心算法流程如 **Algorithm 1** 所示。该算法是单线程的，但可以轻松地并行化，即同时运行 $N$ 个独立的对话流（streams），每个流最多进行 $K$ 次迭代。这种并行化策略允许在广度（尝试多种初始思路）和深度（对单一思路进行深入优化）之间进行权衡。实验发现，$N \gg K$（即多路浅层搜索）通常更有效。
-``$$
+```text
 Algorithm 1 PAIR with a single stream
 
 Input: Number of iterations K, threshold t, attack objective O
@@ -91,7 +91,7 @@ for K steps do
   end if
   C <- C + [P,R,S]
 end for
-$$``
+```
 
 ### JUDGE 函数的选择
 

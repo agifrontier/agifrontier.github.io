@@ -70,7 +70,7 @@ related_tutorials:
 
 $$Sigmoid loss$$ 的伪代码实现如下：
 #### 算法 1 Sigmoid 损失伪代码实现
-``$$python
+```python
 1 # img_emb : 图像模型嵌入 [n, dim]
 2 # txt_emb : 文本模型嵌入 [n, dim]
 3 # t_prime, b : 可学习的温度和偏置
@@ -82,7 +82,7 @@ $$Sigmoid loss$$ 的伪代码实现如下：
 9 logits = dot(zimg, ztxt.T) * t + b
 10 labels = 2 * eye(n) - ones(n) # -1, 对角线为 1
 11 l = -sum(log_sigmoid(labels * logits)) / n
-$$`$$
+```
 
 ### 优点：高效的“分块”实现
 Sigmoid 损失的独立性使其能够采用一种内存高效的“分块” (chunked) 实现方式，特别适用于分布式数据并行训练。

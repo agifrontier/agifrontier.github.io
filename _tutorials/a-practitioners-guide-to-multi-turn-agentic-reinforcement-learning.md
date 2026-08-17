@@ -54,7 +54,7 @@ related_tutorials:
 
 一个具体流程示例如下：
 LLM接收到的输入遵循一个聊天模板：
-``$$
+```text
 <|im_start|>user
 Your task is: {任务提示}. state: {状态0} your action:<|im_end|>
 <|im_start|>assistant
@@ -63,7 +63,7 @@ Your task is: {任务提示}. state: {状态0} your action:<|im_end|>
 <|im_start|>user
 state: {状态t} your action:<|im_end|>
 <|im_start|>assistant
-$$`$$
+```
 模型 $\pi\_{\theta}$ 生成动作 $a\_t$。环境接收到完整的动作后，执行状态转换并计算奖励 $(s\_{t+1}, r\_t) = \text{env}(s\_t, a\_t)$。
 
 ### 创新点

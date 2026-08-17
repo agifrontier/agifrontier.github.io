@@ -59,14 +59,14 @@ Vision Mamba (Vim) 的整体架构遵循了Vision Transformer (ViT) 的基本设
 1.  输入token序列首先经过层归一化 (Layer Normalization)。
 2.  归一化后的序列通过线性层分别映射为两个中间表示 $\mathbf{x}$ 和 $\mathbf{z}$。
 3.  **双向处理**: $\mathbf{x}$ 被送入两个并行的SSM分支，一个处理前向序列，另一个处理反向序列。
-4.  在每个分支中，序列首先通过一个1D卷积层，然后经过激活函数。接着，通过线性投影生成SSM的动态参数 $\mathbf{B}$, $\mathbf{C}$, และ $\mathbf{\Delta}$。这些参数是输入依赖的，体现了Mamba的选择性机制。
-5.  利用这些参数和预设的 $\mathbf{A}$ 参数，执行SSM的循环计算，分别得到前向输出 $\mathbf{y}\_{forward}$ และ 后向输出 $\mathbf{y}\_{backward}$。
+4.  在每个分支中，序列首先通过一个1D卷积层，然后经过激活函数。接着，通过线性投影生成SSM的动态参数 $\mathbf{B}$、$\mathbf{C}$ 和 $\mathbf{\Delta}$。这些参数是输入依赖的，体现了Mamba的选择性机制。
+5.  利用这些参数和预设的 $\mathbf{A}$ 参数，执行SSM的循环计算，分别得到前向输出 $\mathbf{y}\_{forward}$ 和后向输出 $\mathbf{y}\_{backward}$。
 6.  **信息融合**: 两个方向的输出 $\mathbf{y}\_{forward}$ 和 $\mathbf{y}\_{backward}$ 在被门控单元（使用 $\mathbf{z}$）处理后相加。
 7.  最后，融合后的结果通过一个线性层投影回原始维度，并通过残差连接与输入相加，形成该模块的最终输出。
 
 这一双向设计确保了模型中的每个patch token都能够从序列中所有其他token（无论其前后位置）收集信息，从而有效地模拟了自注意力机制的全局感受野。
 
-``$$
+```text
 算法 1 Vim 模块处理流程
 
 输入: token序列 T_{l-1}
@@ -91,7 +91,7 @@ Vision Mamba (Vim) 的整体架构遵循了Vision Transformer (ViT) 的基本设
 17: /* 残差连接 */
 18: T_l ← Linear^T(y'_forward + y'_backward) + T_{l-1}
 19: 返回 T_l
-$$``
+```
 
 ## 效率分析
 Vim继承了Mamba的硬件感知设计，从而在计算、内存和IO三方面都具有高效率：

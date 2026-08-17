@@ -54,7 +54,7 @@ AgentGym-RL 是一个为训练多轮交互 LLM 智能体而设计的全新强化
 <img src="/images/2509.08755v1/page_2_Figure_0.jpg" alt="AgentGym-RL框架概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 **图 2**: AgentGym-RL 框架概览。它具有解耦、灵活和可扩展的架构，包括环境、智能体和训练三个主要模块，支持多样的场景、环境和算法。
 
-``$$python
+```python
 ## 伪代码示例
 ## 第1阶段：生成响应
 task_ids = expand(task_ids, sample_num)
@@ -84,7 +84,7 @@ batch = reference.compute_ref_log_prob(batch)
 batch = compute_advantages(batch, method="grpo")
 ## 第3阶段：Actor训练
 actor.update_actor(batch)
-$$``
+```
 **图 3**: 框架使用示例的伪代码（橙色标记为提供的API），以及智能体-环境交互与训练流程的简化理论图。
 
 ### 特点

@@ -105,7 +105,7 @@ GKPO的设计具有以下核心优点：
 
 ### GKPO 示例
 一个DPO方法的极简GKPO实例如下：
-``$$json
+```json
 {
   "version": "gkpo-1.0",
   "score":     { "type": "logpi" },
@@ -116,7 +116,7 @@ GKPO的设计具有以下核心优点：
   "provenance": { "method": "DPO", "citations": ["rafailov2023direct"] },
   "reducibility": { "inside_R": true, "reasons": [], "witness": {} }
 }
-$$`$$
+```
 
 ## 实验结论
 本文没有进行大规模的基准测试，而是通过一系列精心设计的“演示”和“压力测试”来验证Opal代数和GKPO模式的有效性。

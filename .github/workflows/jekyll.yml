@@ -52,6 +52,8 @@ jobs:
           convert -version
       - name: Validate Markdown tables
         run: python3 scripts/check_markdown_tables.py _tutorials _posts
+      - name: Validate Markdown code fences
+        run: python3 scripts/check_markdown_fences.py _tutorials _posts
       - name: Generate homepage thumbnails
         run: python3 scripts/generate_homepage_thumbnails.py
       - name: Build with Jekyll
