@@ -11055,6 +11055,350 @@
     "height": 800,
     "width": 1200
   },
+  "/images/2607.21557/coverfig_0717.jpg": {
+    "height": 452,
+    "width": 1200
+  },
+  "/images/2607.21557/rollout_arch_0716.jpg": {
+    "height": 694,
+    "width": 1200
+  },
+  "/images/2607.21557/task_synth_pipeline_0720.jpg": {
+    "height": 1417,
+    "width": 954
+  },
+  "/images/2607.23809v1/A__title.jpg": {
+    "height": 408,
+    "width": 1052
+  },
+  "/images/2607.23809v1/acm_pipeline.jpg": {
+    "height": 699,
+    "width": 1186
+  },
+  "/images/2607.23809v1/data_pipeline.jpg": {
+    "height": 635,
+    "width": 1113
+  },
+  "/images/2607.24653v1/A__title.jpg": {
+    "height": 315,
+    "width": 930
+  },
+  "/images/2607.24653v1/benchmark0727.jpg": {
+    "height": 677,
+    "width": 1200
+  },
+  "/images/2607.25333v1/A__title.jpg": {
+    "height": 463,
+    "width": 1200
+  },
+  "/images/2607.25333v1/evo-loops.jpg": {
+    "height": 470,
+    "width": 1200
+  },
+  "/images/2607.25333v1/process.jpg": {
+    "height": 297,
+    "width": 1200
+  },
+  "/images/2607.26115v1/A__title.jpg": {
+    "height": 407,
+    "width": 1200
+  },
+  "/images/2607.26115v1/attacker-robustness.jpg": {
+    "height": 482,
+    "width": 880
+  },
+  "/images/2607.26115v1/generalization-robustness.jpg": {
+    "height": 407,
+    "width": 902
+  },
+  "/images/2607.26115v1/multidefender-heatmap.jpg": {
+    "height": 462,
+    "width": 498
+  },
+  "/images/2607.26115v1/vendy-final.jpg": {
+    "height": 721,
+    "width": 1200
+  },
+  "/images/2607.26637v1/A__title.jpg": {
+    "height": 448,
+    "width": 1082
+  },
+  "/images/2607.26637v1/fig1.jpg": {
+    "height": 636,
+    "width": 1200
+  },
+  "/images/2607.26637v1/fig2.jpg": {
+    "height": 780,
+    "width": 875
+  },
+  "/images/2607.28074/fig01_loop.jpg": {
+    "height": 436,
+    "width": 1200
+  },
+  "/images/2607.28074/fig02_pipeline.jpg": {
+    "height": 454,
+    "width": 1200
+  },
+  "/images/2607.28227/Env.jpg": {
+    "height": 408,
+    "width": 1200
+  },
+  "/images/2607.28227/overview.jpg": {
+    "height": 549,
+    "width": 1200
+  },
+  "/images/2607.28227/performance_6panel_v3.jpg": {
+    "height": 685,
+    "width": 1200
+  },
+  "/images/2607.28227/realdevice.jpg": {
+    "height": 674,
+    "width": 1200
+  },
+  "/images/2607.28609/D1_hardset_overlay_p1.jpg": {
+    "height": 981,
+    "width": 1007
+  },
+  "/images/2607.28609/G3_hardset_pareto_zeta_wide_per1k.jpg": {
+    "height": 504,
+    "width": 1200
+  },
+  "/images/2607.28609/S0_main_judge_bias_p1_zeta.jpg": {
+    "height": 780,
+    "width": 769
+  },
+  "/images/2607.28609/instruction-annotation-v2.jpg": {
+    "height": 301,
+    "width": 1200
+  },
+  "/images/2607.28609/review-process.jpg": {
+    "height": 391,
+    "width": 1200
+  },
+  "/images/2607.29678/fig_workload_joint.jpg": {
+    "height": 342,
+    "width": 426
+  },
+  "/images/2608.00677/OpenART-1.jpg": {
+    "height": 683,
+    "width": 1200
+  },
+  "/images/2608.00677/OpenART.jpg": {
+    "height": 572,
+    "width": 1200
+  },
+  "/images/2608.02352/qwen-cua-main-results.jpg": {
+    "height": 666,
+    "width": 1200
+  },
+  "/images/2608.02352/qwen-for-chrome-deployment.jpg": {
+    "height": 659,
+    "width": 1200
+  },
+  "/images/2608.05466v1/fig5_alignment_quality_heatmap.jpg": {
+    "height": 188,
+    "width": 430
+  },
+  "/images/2608.05466v1/terminalworld_domain_stability.jpg": {
+    "height": 414,
+    "width": 780
+  },
+  "/images/2608.06704v1/A__title.jpg": {
+    "height": 315,
+    "width": 1200
+  },
+  "/images/2608.06704v1/figure1.jpg": {
+    "height": 1324,
+    "width": 1200
+  },
+  "/images/2608.06704v1/figure4.jpg": {
+    "height": 536,
+    "width": 432
+  },
+  "/images/2608.06704v1/figure6.jpg": {
+    "height": 380,
+    "width": 1200
+  },
+  "/images/2608.06704v1/human_audit_comparison.jpg": {
+    "height": 675,
+    "width": 1200
+  },
+  "/images/2608.08311v1/A__title.jpg": {
+    "height": 406,
+    "width": 1199
+  },
+  "/images/2608.08311v1/fig_interface.jpg": {
+    "height": 930,
+    "width": 910
+  },
+  "/images/2608.09861v1/A__title.jpg": {
+    "height": 1219,
+    "width": 1200
+  },
+  "/images/2608.09861v1/Fig1_Overview.jpg": {
+    "height": 1057,
+    "width": 1200
+  },
+  "/images/2608.09861v1/Fig4_Example_scenario_50_portrait.jpg": {
+    "height": 1320,
+    "width": 1020
+  },
+  "/images/2608.10366v1/A__title.jpg": {
+    "height": 405,
+    "width": 1108
+  },
+  "/images/2608.10366v1/figure_pie.jpg": {
+    "height": 704,
+    "width": 1200
+  },
+  "/images/2608.10366v1/x1.jpg": {
+    "height": 866,
+    "width": 793
+  },
+  "/images/2608.10366v1/x2.jpg": {
+    "height": 129,
+    "width": 769
+  },
+  "/images/2608.10366v1/x3.jpg": {
+    "height": 614,
+    "width": 777
+  },
+  "/images/2608.10450v2/A__title.jpg": {
+    "height": 400,
+    "width": 1066
+  },
+  "/images/2608.10450v2/Architecture.jpg": {
+    "height": 1144,
+    "width": 1200
+  },
+  "/images/2608.11739v1/teaser.jpg": {
+    "height": 849,
+    "width": 1200
+  },
+  "/images/2608.11739v1/tokenizer_v2.jpg": {
+    "height": 375,
+    "width": 1200
+  },
+  "/images/2608.12564v1/A__title.jpg": {
+    "height": 298,
+    "width": 1200
+  },
+  "/images/2608.12564v1/fig1.jpg": {
+    "height": 263,
+    "width": 1200
+  },
+  "/images/2608.12789v1/A__title.jpg": {
+    "height": 455,
+    "width": 823
+  },
+  "/images/2608.12789v1/perception_attack.jpg": {
+    "height": 620,
+    "width": 1200
+  },
+  "/images/2608.12789v1/structured_sanitization.jpg": {
+    "height": 303,
+    "width": 1200
+  },
+  "/images/2608.12789v1/unstructured_sanitization.jpg": {
+    "height": 349,
+    "width": 1200
+  },
+  "/images/2608.13505v1/A__title.jpg": {
+    "height": 998,
+    "width": 1200
+  },
+  "/images/2608.13505v1/arch_ts_encoder_struc.jpg": {
+    "height": 564,
+    "width": 630
+  },
+  "/images/2608.13505v1/partial-rollout-mechanism.jpg": {
+    "height": 433,
+    "width": 1200
+  },
+  "/images/2608.13505v1/vp_pipeline.jpg": {
+    "height": 409,
+    "width": 977
+  },
+  "/images/2608.13900v1/A__title.jpg": {
+    "height": 191,
+    "width": 1200
+  },
+  "/images/2608.13900v1/data-agent-v2.jpg": {
+    "height": 637,
+    "width": 1200
+  },
+  "/images/2608.13900v1/example.jpg": {
+    "height": 997,
+    "width": 839
+  },
+  "/images/2608.15089v1/A__title.jpg": {
+    "height": 396,
+    "width": 1200
+  },
+  "/images/2608.15265v1/A__title.jpg": {
+    "height": 610,
+    "width": 1094
+  },
+  "/images/2608.15265v1/fig_failcase.jpg": {
+    "height": 701,
+    "width": 1200
+  },
+  "/images/2608.15265v1/fig_main_bar.jpg": {
+    "height": 462,
+    "width": 1200
+  },
+  "/images/2608.15265v1/fig_samples.jpg": {
+    "height": 169,
+    "width": 1200
+  },
+  "/images/2608.15265v1/vibeworlding.jpg": {
+    "height": 718,
+    "width": 1200
+  },
+  "/images/2608.15930v1/A__title.jpg": {
+    "height": 1392,
+    "width": 1200
+  },
+  "/images/2608.15930v1/GUI_Capability_Tree-aligned.jpg": {
+    "height": 881,
+    "width": 837
+  },
+  "/images/2608.15930v1/dataflywheel-aligned.jpg": {
+    "height": 457,
+    "width": 1200
+  },
+  "/images/2608.15939v1/A__title.jpg": {
+    "height": 540,
+    "width": 1100
+  },
+  "/images/2608.16798v1/A__title.jpg": {
+    "height": 630,
+    "width": 1200
+  },
+  "/images/2608.17319v1/A__title.jpg": {
+    "height": 399,
+    "width": 1040
+  },
+  "/images/2608.17319v1/SFT.jpg": {
+    "height": 322,
+    "width": 1200
+  },
+  "/images/2608.17319v1/challenges.jpg": {
+    "height": 613,
+    "width": 1200
+  },
+  "/images/2608.17319v1/compare.jpg": {
+    "height": 477,
+    "width": 1200
+  },
+  "/images/2608.17319v1/network_overview_adj.jpg": {
+    "height": 373,
+    "width": 1200
+  },
+  "/images/2608.17528v1/A__title.jpg": {
+    "height": 701,
+    "width": 1200
+  },
   "/images/openreview_3hXEPbG0dh/page_0_Figure_5.jpg": {
     "height": 483,
     "width": 1115
