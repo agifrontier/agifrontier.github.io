@@ -11055,6 +11055,26 @@
     "height": 800,
     "width": 1200
   },
+  "/images/2607.20785/cross_embodiment_v2.jpg": {
+    "height": 953,
+    "width": 1200
+  },
+  "/images/2607.20785/data_fig.jpg": {
+    "height": 544,
+    "width": 1200
+  },
+  "/images/2607.20785/main_arch_styled.jpg": {
+    "height": 567,
+    "width": 1200
+  },
+  "/images/2607.20785/online_rl.jpg": {
+    "height": 835,
+    "width": 1200
+  },
+  "/images/2607.20785/prefix_cache.jpg": {
+    "height": 348,
+    "width": 1200
+  },
   "/images/2607.21557/coverfig_0717.jpg": {
     "height": 452,
     "width": 1200
@@ -11066,6 +11086,38 @@
   "/images/2607.21557/task_synth_pipeline_0720.jpg": {
     "height": 1417,
     "width": 954
+  },
+  "/images/2607.22529/fig_question_distribution.jpg": {
+    "height": 210,
+    "width": 270
+  },
+  "/images/2607.22529/intro.jpg": {
+    "height": 316,
+    "width": 735
+  },
+  "/images/2607.22529/method.jpg": {
+    "height": 180,
+    "width": 620
+  },
+  "/images/2607.23124v1/A__title.jpg": {
+    "height": 286,
+    "width": 1200
+  },
+  "/images/2607.23124v1/env_overview.jpg": {
+    "height": 618,
+    "width": 1200
+  },
+  "/images/2607.23124v1/overview.jpg": {
+    "height": 704,
+    "width": 1200
+  },
+  "/images/2607.23124v1/synthesis_overview.jpg": {
+    "height": 816,
+    "width": 1200
+  },
+  "/images/2607.23124v1/taxonomy_overview.jpg": {
+    "height": 578,
+    "width": 1200
   },
   "/images/2607.23809v1/A__title.jpg": {
     "height": 408,
@@ -11099,6 +11151,10 @@
     "height": 297,
     "width": 1200
   },
+  "/images/2607.25398v1/A__title.jpg": {
+    "height": 372,
+    "width": 1001
+  },
   "/images/2607.26115v1/A__title.jpg": {
     "height": 407,
     "width": 1200
@@ -11130,6 +11186,50 @@
   "/images/2607.26637v1/fig2.jpg": {
     "height": 780,
     "width": 875
+  },
+  "/images/2607.26760v1/A__title.jpg": {
+    "height": 555,
+    "width": 1200
+  },
+  "/images/2607.26760v1/figure_framework.jpg": {
+    "height": 799,
+    "width": 1200
+  },
+  "/images/2607.26760v1/figure_intro_extensive_memory.jpg": {
+    "height": 501,
+    "width": 1200
+  },
+  "/images/2607.27205v1/ablation-crop.jpg": {
+    "height": 356,
+    "width": 1200
+  },
+  "/images/2607.27205v1/intro-crop.jpg": {
+    "height": 677,
+    "width": 1200
+  },
+  "/images/2607.27205v1/pipeline-crop.jpg": {
+    "height": 700,
+    "width": 1145
+  },
+  "/images/2607.27205v1/real-world-crop.jpg": {
+    "height": 426,
+    "width": 1200
+  },
+  "/images/2607.27205v1/teaser-crop.jpg": {
+    "height": 594,
+    "width": 1200
+  },
+  "/images/2607.27690/alf_summary.jpg": {
+    "height": 359,
+    "width": 1200
+  },
+  "/images/2607.27690/overview.jpg": {
+    "height": 590,
+    "width": 1200
+  },
+  "/images/2607.27690/ph_closed_loop_execution.jpg": {
+    "height": 495,
+    "width": 1200
   },
   "/images/2607.28074/fig01_loop.jpg": {
     "height": 436,
@@ -11187,12 +11287,48 @@
     "height": 572,
     "width": 1200
   },
+  "/images/2608.01428/airsimnh_retained_collage_main.jpg": {
+    "height": 225,
+    "width": 1178
+  },
+  "/images/2608.01428/habitat_spnoise_nobrace_contact.jpg": {
+    "height": 887,
+    "width": 1156
+  },
+  "/images/2608.01428/overview.jpg": {
+    "height": 686,
+    "width": 963
+  },
+  "/images/2608.01964/benchmark_figure.jpg": {
+    "height": 981,
+    "width": 1200
+  },
+  "/images/2608.01964/domain_deltas.jpg": {
+    "height": 371,
+    "width": 1200
+  },
+  "/images/2608.01964/mea_main_edited_hd4x.jpg": {
+    "height": 800,
+    "width": 1200
+  },
+  "/images/2608.01964/role_tokens.jpg": {
+    "height": 270,
+    "width": 1200
+  },
   "/images/2608.02352/qwen-cua-main-results.jpg": {
     "height": 666,
     "width": 1200
   },
   "/images/2608.02352/qwen-for-chrome-deployment.jpg": {
     "height": 659,
+    "width": 1200
+  },
+  "/images/2608.04968v1/A__title.jpg": {
+    "height": 489,
+    "width": 948
+  },
+  "/images/2608.04968v1/ppl.jpg": {
+    "height": 675,
     "width": 1200
   },
   "/images/2608.05466v1/fig5_alignment_quality_heatmap.jpg": {
@@ -11202,6 +11338,22 @@
   "/images/2608.05466v1/terminalworld_domain_stability.jpg": {
     "height": 414,
     "width": 780
+  },
+  "/images/2608.05891v1/action_model_app_treemap.jpg": {
+    "height": 560,
+    "width": 560
+  },
+  "/images/2608.05891v1/appdeltaworld.jpg": {
+    "height": 621,
+    "width": 1200
+  },
+  "/images/2608.05891v1/motivation.jpg": {
+    "height": 900,
+    "width": 1200
+  },
+  "/images/2608.05891v1/ttrl_consensus_analysis.jpg": {
+    "height": 433,
+    "width": 1200
   },
   "/images/2608.06704v1/A__title.jpg": {
     "height": 315,
@@ -11222,6 +11374,22 @@
   "/images/2608.06704v1/human_audit_comparison.jpg": {
     "height": 675,
     "width": 1200
+  },
+  "/images/2608.07418v1/A__title.jpg": {
+    "height": 1245,
+    "width": 1200
+  },
+  "/images/2608.07418v1/ResidencyRL_Overview.jpg": {
+    "height": 789,
+    "width": 864
+  },
+  "/images/2608.07418v1/ResidencyRL_Scenario.jpg": {
+    "height": 377,
+    "width": 864
+  },
+  "/images/2608.07952v1/fig1_pse_overview.jpg": {
+    "height": 308,
+    "width": 551
   },
   "/images/2608.08311v1/A__title.jpg": {
     "height": 406,
@@ -11271,6 +11439,14 @@
     "height": 1144,
     "width": 1200
   },
+  "/images/2608.11469v1/A__title.jpg": {
+    "height": 407,
+    "width": 1107
+  },
+  "/images/2608.11469v1/pipeline.jpg": {
+    "height": 445,
+    "width": 1200
+  },
   "/images/2608.11739v1/teaser.jpg": {
     "height": 849,
     "width": 1200
@@ -11279,12 +11455,28 @@
     "height": 375,
     "width": 1200
   },
+  "/images/2608.12253v1/A__title.jpg": {
+    "height": 441,
+    "width": 1043
+  },
   "/images/2608.12564v1/A__title.jpg": {
     "height": 298,
     "width": 1200
   },
   "/images/2608.12564v1/fig1.jpg": {
     "height": 263,
+    "width": 1200
+  },
+  "/images/2608.12629v1/A__title.jpg": {
+    "height": 462,
+    "width": 907
+  },
+  "/images/2608.12764v1/A__title.jpg": {
+    "height": 391,
+    "width": 1078
+  },
+  "/images/2608.12764v1/anchors.jpg": {
+    "height": 631,
     "width": 1200
   },
   "/images/2608.12789v1/A__title.jpg": {
@@ -11302,6 +11494,14 @@
   "/images/2608.12789v1/unstructured_sanitization.jpg": {
     "height": 349,
     "width": 1200
+  },
+  "/images/2608.13331v1/A__title.jpg": {
+    "height": 932,
+    "width": 1200
+  },
+  "/images/2608.13331v1/methods_final.jpg": {
+    "height": 667,
+    "width": 1067
   },
   "/images/2608.13505v1/A__title.jpg": {
     "height": 998,
@@ -11331,6 +11531,10 @@
     "height": 997,
     "width": 839
   },
+  "/images/2608.14490v1/fig_loop_v4_print.jpg": {
+    "height": 564,
+    "width": 1200
+  },
   "/images/2608.15089v1/A__title.jpg": {
     "height": 396,
     "width": 1200
@@ -11355,6 +11559,18 @@
     "height": 718,
     "width": 1200
   },
+  "/images/2608.15579v1/A__title.jpg": {
+    "height": 949,
+    "width": 1200
+  },
+  "/images/2608.15579v1/broad_success_vs_params_with_java.jpg": {
+    "height": 727,
+    "width": 1200
+  },
+  "/images/2608.15579v1/overall-architecture.jpg": {
+    "height": 516,
+    "width": 1200
+  },
   "/images/2608.15930v1/A__title.jpg": {
     "height": 1392,
     "width": 1200
@@ -11373,6 +11589,22 @@
   },
   "/images/2608.16798v1/A__title.jpg": {
     "height": 630,
+    "width": 1200
+  },
+  "/images/2608.17271v1/A__title.jpg": {
+    "height": 195,
+    "width": 1154
+  },
+  "/images/2608.17271v1/overview_results.jpg": {
+    "height": 937,
+    "width": 1200
+  },
+  "/images/2608.17271v1/performance_compare.jpg": {
+    "height": 675,
+    "width": 1200
+  },
+  "/images/2608.17271v1/x1.jpg": {
+    "height": 366,
     "width": 1200
   },
   "/images/2608.17319v1/A__title.jpg": {
@@ -11395,8 +11627,80 @@
     "height": 373,
     "width": 1200
   },
+  "/images/2608.17393v1/A__title.jpg": {
+    "height": 664,
+    "width": 1200
+  },
+  "/images/2608.17393v1/SWE-Lego-RL-Trainer-framework-v2.jpg": {
+    "height": 744,
+    "width": 1200
+  },
+  "/images/2608.17393v1/swe_lego_live_rl_framework.jpg": {
+    "height": 659,
+    "width": 1200
+  },
   "/images/2608.17528v1/A__title.jpg": {
     "height": 701,
+    "width": 1200
+  },
+  "/images/2608.18307v1/A__title.jpg": {
+    "height": 515,
+    "width": 1110
+  },
+  "/images/2608.18307v1/figure1_hero.jpg": {
+    "height": 343,
+    "width": 1200
+  },
+  "/images/2608.18307v1/figure2_worked_example.jpg": {
+    "height": 430,
+    "width": 1200
+  },
+  "/images/2608.20711v1/A__title.jpg": {
+    "height": 292,
+    "width": 1200
+  },
+  "/images/2608.20711v1/AsmEvo_architecture.jpg": {
+    "height": 462,
+    "width": 1200
+  },
+  "/images/2608.21500v1/A__title.jpg": {
+    "height": 381,
+    "width": 1200
+  },
+  "/images/2608.21690v1/A__title.jpg": {
+    "height": 622,
+    "width": 1200
+  },
+  "/images/2608.21690v1/scroll_system_image.jpg": {
+    "height": 514,
+    "width": 1200
+  },
+  "/images/2608.22752v1/A__title.jpg": {
+    "height": 824,
+    "width": 1200
+  },
+  "/images/2608.23041v1/A__title.jpg": {
+    "height": 473,
+    "width": 1073
+  },
+  "/images/2608.23041v1/main_figure_revised.jpg": {
+    "height": 622,
+    "width": 1200
+  },
+  "/images/2608.25198v1/A__title.jpg": {
+    "height": 345,
+    "width": 1174
+  },
+  "/images/2608.25198v1/F0_draft_5.jpg": {
+    "height": 500,
+    "width": 1196
+  },
+  "/images/2608.25198v1/F8_layer_alpha.jpg": {
+    "height": 883,
+    "width": 726
+  },
+  "/images/2608.25570v1/A__title.jpg": {
+    "height": 300,
     "width": 1200
   },
   "/images/openreview_3hXEPbG0dh/page_0_Figure_5.jpg": {
