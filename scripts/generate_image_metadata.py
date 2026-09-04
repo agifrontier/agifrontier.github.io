@@ -71,11 +71,29 @@ def jpeg_dimensions(data: bytes) -> tuple[int, int] | None:
 
 
 def intrinsic_dimensions(path: Path) -> tuple[int, int] | None:
-    data = path.read_bytes()
-    if data.startswith(b"\x89PNG\r\n\x1a\n") and len(data) >= 24:
-        return struct.unpack(">II", data[16:24])
-    if data[:6] in {b"GIF87a", b"GIF89a"} and len(data) >= 10:
-        return struct.unpack("<HH", data[6:10])
+    with path.open("rb") as handle:
+        header = handle.read(32)
+        if header.startswith(b"\x89PNG\r\n\x1a\n") and len(header) >= 24:
+            return struct.unpack(">II", header[16:24])
+        if header[:6] in {b"GIF87a", b"GIF89a"} and len(header) >= 10:
+            return struct.unpack("<HH", header[6:10])
+        if header.startswith(b"RIFF") and header[8:12] == b"WEBP" and len(header) >= 20:
+            chunk = header[12:16]
+            payload = header[20:]
+            if chunk == b"VP8X" and len(payload) >= 10:
+                width = 1 + int.from_bytes(payload[4:7], "little")
+                height = 1 + int.from_bytes(payload[7:10], "little")
+                return width, height
+            if chunk == b"VP8L" and len(payload) >= 5 and payload[0] == 0x2F:
+                bits = int.from_bytes(payload[1:5], "little")
+                width = 1 + (bits & 0x3FFF)
+                height = 1 + ((bits >> 14) & 0x3FFF)
+                return width, height
+            if chunk == b"VP8 " and len(payload) >= 10 and payload[3:6] == b"\x9d\x01\x2a":
+                width = int.from_bytes(payload[6:8], "little") & 0x3FFF
+                height = int.from_bytes(payload[8:10], "little") & 0x3FFF
+                return width, height
+        data = header + handle.read()
     jpeg_size = jpeg_dimensions(data)
     if jpeg_size:
         return jpeg_size
