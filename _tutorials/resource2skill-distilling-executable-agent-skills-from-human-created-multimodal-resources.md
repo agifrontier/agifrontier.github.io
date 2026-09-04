@@ -47,7 +47,7 @@ $s = (p, x_{text}, x_{visual}, x_{code}, m)$
 
 其中，$p$ 表示技能在层级分类树中的路径，$x_{text}$ 解释了适用场景和机制，$x_{visual}$ 提供了视觉示例（如UI截图或动图），$x_{code}$ 是可执行的工具代码，而 $m$ 则是元数据。这种设计完美保留了不同资源的互补信号：视频捕捉了时序操作，代码提供了底层执行模式，而文章则提供了概念基础。
 
-<img src="/images/2606.29538v1/x6.jpg" alt="Resource2Skill架构图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.29538v1/x6.webp" alt="Resource2Skill架构图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 两阶段的发现与选择机制
 

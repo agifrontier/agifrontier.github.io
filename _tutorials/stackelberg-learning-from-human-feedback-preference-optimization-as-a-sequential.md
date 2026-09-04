@@ -14,7 +14,7 @@ related_tutorials:
 
 ## ETH新作SLHF：用“领导者-跟随者”博弈重塑对齐，推理性能零样本提升
 
-<img src="/images/2512.16626v1/A__title.jpg" alt="ETH新作SLHF：用“领导者-跟随者”博弈重塑对齐，推理性能零样本提升 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.16626v1/A__title.webp" alt="ETH新作SLHF：用“领导者-跟随者”博弈重塑对齐，推理性能零样本提升 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在大模型对齐（Alignment）的战场上，**人类反馈强化学习**（**Reinforcement Learning from Human Feedback, RLHF**）无疑是当前的霸主。然而，你是否想过，RLHF 赖以生存的“奖励模型”可能从根本上就是一种过度简化？
 

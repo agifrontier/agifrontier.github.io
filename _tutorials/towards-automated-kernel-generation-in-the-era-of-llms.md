@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 告别手写CUDA噩梦：LLM+Agent自动生成高性能Kernel技术全景
 
-<img src="/images/2601.15727v1/A__title.jpg" alt="告别手写CUDA噩梦：LLM+Agent自动生成高性能Kernel技术全景 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.15727v1/A__title.webp" alt="告别手写CUDA噩梦：LLM+Agent自动生成高性能Kernel技术全景 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在当今的AI大模型时代，算力就是黄金。但你是否知道，昂贵的GPU集群往往并没有被“吃干抹净”？
 
@@ -47,7 +47,7 @@ LLM的出现打破了这一僵局。LLM不仅阅读了海量的代码，还“�
 
 如果说LLM是大脑，那Agent就是拥有手脚的工程师。综述指出，单次推理往往难以生成完美的Kernel，**基于Agent的闭环工作流**才是未来的主流。
 
-<img src="/images/2601.15727v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.15727v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 Agent通过以下几个维度实现了能力的跃升：
 

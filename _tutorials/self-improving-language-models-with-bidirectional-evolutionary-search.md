@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Self-Improving Language Models with Bidirectional Evolutionary Search</p>
 
-<img src="/images/2605.28814v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2605.28814v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在当今的大型语言模型和智能体系统研究中，如何让模型在复杂推理任务上表现得更好，已成为核心议题。无论是通过后训练（Post-training）让模型自我改进，还是在推理阶段（Inference）通过增加计算量来拉升性能上限，依赖的核心机制往往都是“搜索”。然而，由 Harvard 和 MIT 研究团队主导的一项最新研究指出，当前主流的搜索方法存在两个极其隐蔽但致命的缺陷。该团队提出的解决方案——双向进化搜索（Bidirectional Evolutionary Search, 简称 BES），不仅在理论上打破了模型探索空间的“熵壳”限制，更在实际的后训练与推理基准测试中，展现出对现有方法的显著超越。
 
@@ -32,7 +32,7 @@ related_tutorials:
 
 为了彻底解决这两个问题，研究人员设计了 BES 框架。该框架创造性地将前向候选进化与后向目标分解结合在一起。前向搜索负责利用进化算子打破自回归的生成限制，而后向搜索则负责将原始任务拆解为可检验的子目标，从而为前向搜索提供密集的中间反馈。这种双向耦合的机制，使得 BES 能够在主流后训练算法失效的困难任务上实现稳定增益。
 
-<img src="/images/2605.28814v1/x1.jpg" alt="树搜索与BES机制对比图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2605.28814v1/x1.webp" alt="树搜索与BES机制对比图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 从上图可以直观地看出纯粹树搜索与 BES 的本质区别。左侧的树搜索只能通过顺序扩展步骤来构建候选，理论分析表明，这类候选不可避免地被困在一个狭窄的“熵壳”中，这使得模型只能在解空间的一个极小区域内打转。而右侧的 BES 则通过引入进化算子，将不同轨迹的片段重新组合，成功逃离了这一束缚。同时，后向搜索通过分解出能够提供即时反馈的子目标，引导前向搜索一步步向最终目标逼近。
 
@@ -42,7 +42,7 @@ related_tutorials:
 
 研究团队从有性繁殖的染色体重组中汲取灵感，为 BES 的前向搜索引入了四大进化算子：组合（Combination）、易位（Translocation）、缺失（Deletion）和交叉（Crossover）。这些算子不仅仅是简单的变异，而是建立在重组不同局部轨迹的基础上，生成那些单次模型采样几乎不可能产生的全新候选。
 
-<img src="/images/2605.28814v1/x2.jpg" alt="BES前向搜索进化算子示意图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2605.28814v1/x2.webp" alt="BES前向搜索进化算子示意图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 具体而言，除了保留常规的扩展（Expansion）操作外，组合算子允许提取两条具有共同前缀的轨迹，将它们各自独特的后缀拼接成一个新的候选方案。易位算子则是用一条路径中的某个步骤替换另一条路径中的对应步骤。缺失算子针对那些可能包含冗余或错误中间推导的轨迹，直接移除其中最不可靠的内部步骤。交叉算子更为直接，在特定的拼接点切断路径 A，并用路径 B 的尾部替换其后续部分。
 
@@ -74,7 +74,7 @@ BES 并非仅仅是工程上的巧妙拼接，研究团队为其有效性提供�
 
 在后训练（Post-Training）阶段，研究团队选择了具有极高挑战性的逻辑推理和多跳推理任务。在经典的骑士与无赖（Knights-and-Knaves）逻辑推理任务中，训练集的难度极高。
 
-<img src="/images/2605.28814v1/x3.jpg" alt="逻辑推理任务后训练结果图" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2605.28814v1/x3.webp" alt="逻辑推理任务后训练结果图" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 如图3所示，由于任务难度过大，传统的 GRPO 和 MaxRL 算法在训练过程中几乎找不到高质量的有效样本，导致验证集性能始终在低位徘徊，甚至毫无提升。相反，BES 能够持续、稳定地发现高质量的训练样本，其验证集表现呈现出稳健的上升趋势，最终显著拉开了与基准算法的差距。
 
@@ -86,7 +86,7 @@ BES 并非仅仅是工程上的巧妙拼接，研究团队为其有效性提供�
 
 结果表明，在相同的计算预算下，BES 在所有三个基准测试中均超越了当前最先进的开源框架（包括 OpenEvolve、GEPA 和 ShinkaEvolve）。更值得注意的是，BES 在多次独立运行中的方差远低于所有基准方法。这意味着其搜索过程不仅能找到更高质量的解，而且表现出极高的稳定性和可靠性。
 
-<img src="/images/2605.28814v1/x4.jpg" alt="逻辑推理消融实验结果图" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2605.28814v1/x4.webp" alt="逻辑推理消融实验结果图" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 为了剖析 BES 各组件的独立贡献，研究团队在逻辑推理任务上进行了消融实验。如图4所示，去除了答案重加权机制，或者彻底移除进化算子的 BES 变体，其性能均出现了明显的下滑，尽管它们仍然优于原始的 GRPO 基准。这充分证明了进化重组与后向分解在 BES 框架中是缺一不可的互补机制。
 

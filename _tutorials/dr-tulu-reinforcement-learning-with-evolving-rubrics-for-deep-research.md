@@ -13,7 +13,7 @@ related_tutorials:
 
 ## AI自己当“考官”：DR Tulu-8B用进化标尺实现顶级研究，成本降低近1000倍
 
-<img src="/images/2511.19399v1/A__title.jpg" alt="AI自己当“考官”：DR Tulu-8B用进化标尺实现顶级研究，成本降低近1000倍 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.19399v1/A__title.webp" alt="AI自己当“考官”：DR Tulu-8B用进化标尺实现顶级研究，成本降低近1000倍 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当AI Agent被要求撰写一篇深度研究报告时，它不仅要规划、搜索、综合信息，还要给出可靠的引用。这正是“深度研究”（Deep Research）任务的难点所在。目前，多数开源模型难以胜任，而强大的闭源系统不仅是黑箱，而且成本高昂。
 

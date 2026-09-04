@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 告别“无脑”检索：无需训练，DTR框架利用不确定性让RAG性能全面提升
 
-<img src="/images/2601.03908v1/A__title.jpg" alt="告别“无脑”检索：无需训练，DTR框架利用不确定性让RAG性能全面提升 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.03908v1/A__title.webp" alt="告别“无脑”检索：无需训练，DTR框架利用不确定性让RAG性能全面提升 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 现有的检索增强生成（RAG）系统往往患有一种“强迫症”：无论用户的问题是简单如“1+1等于几”，还是复杂如“量子纠缠的原理”，它们都会机械地触发检索流程。这种“无脑”检索不仅浪费计算资源，引入的无关文档噪声甚至会扰乱大模型原本正确的判断，导致“幻觉”产生。
 
@@ -32,7 +32,7 @@ RAG技术虽然通过引入外部知识极大地增强了LLM的能力，但在�
 
 针对这些问题，DTR框架提出了一套简洁而高效的解决方案，其核心架构如下图所示：
 
-<img src="/images/2601.03908v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.03908v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 核心机制一：基于不确定性的触发策略
 
@@ -65,7 +65,7 @@ DTR的第一步是“决策”（Decide）。该研究引入了**不确定性引
 
 2.  **自适应融合**：在获得两组候选文档后，AIS机制会计算每个文档与“原始查询”和“伪上下文”的联合相似度。
 
-<img src="/images/2601.03908v1/x4.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.03908v1/x4.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 具体的评分公式为：
 
@@ -90,7 +90,7 @@ DTR的第一步是“决策”（Decide）。该研究引入了**不确定性引
 
 下表展示了在不同数据集上的主要对比结果：
 
-<img src="/images/2601.03908v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.03908v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *(注：表格数据展示了DTR在多项指标上的领先优势)*
 

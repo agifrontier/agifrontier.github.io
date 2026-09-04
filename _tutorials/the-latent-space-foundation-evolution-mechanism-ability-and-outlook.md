@@ -40,7 +40,7 @@ related_tutorials:
 
 该研究构建了一个二维分类学框架，统摄了4大底层机制与7项核心能力。
 
-<img src="/images/2604.02029v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2604.02029v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 范式转移：显式符号至连续隐空间
 
@@ -67,7 +67,7 @@ related_tutorials:
 
 
 
-<img src="/images/2604.02029v1/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.02029v1/x3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 相较于传统的显式词汇空间，隐空间展现出截然不同的表征特性。
 
@@ -85,7 +85,7 @@ related_tutorials:
 
 该研究将这一发展轨迹清晰地划分为四个阶段：
 
-<img src="/images/2604.02029v1/x4.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.02029v1/x4.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 首先是**原型期**。研究人员开始质疑语言模型是否必须用自然语言表达中间推理步骤。
 

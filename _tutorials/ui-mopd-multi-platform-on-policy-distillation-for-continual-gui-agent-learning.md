@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">UI-MOPD: Multi-Platform On-Policy Distillation for Continual GUI Agent Learning</p>
 
-<img src="/images/2607.04425v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.04425v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 随着多模态基础模型和智能体系统的快速演进，图形用户界面（GUI）智能体正经历从单平台任务执行向跨平台复杂交互的关键跨越。真实世界的数字工作流往往需要跨越桌面应用程序、移动端 App 和 Web 服务，这就要求智能体不仅能适应异构的 GUI 环境，还要准确保留各个平台独有的交互习惯。然而，现有的跨平台联合训练方法面临着严重的瓶颈：直接混合不同平台的数据往往会导致模型行为模式的混淆、特定平台能力的退化，甚至在持续学习中引发灾难性遗忘。
 
@@ -41,7 +41,7 @@ related_tutorials:
 
 举个最直观的例子，当任务需要“返回上一个上下文”时，在桌面计算机上，智能体可能需要点击窗口的关闭按钮（X）或使用键盘快捷键；而在移动端，这一操作通常对应着点击底部的“返回”按键或执行侧滑手势。如果只是机械地将这两类数据混合进行联合训练，模型在优化过程中很容易将这两种截然不同的交互逻辑强行平均，最终产生一个“四不像”的策略。在持续学习的场景下，这种现象更为致命，新平台的训练信号会迅速覆盖旧平台的特征，导致灾难性遗忘。
 
-<img src="/images/2607.04425v1/x2.jpg" alt="UI-MOPD的核心动机" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.04425v1/x2.webp" alt="UI-MOPD的核心动机" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，UI-MOPD 的设计动机正是为了避免这种信号的粗暴混合。与简单的模型合并或混合监督微调不同，UI-MOPD 通过平台条件路由（Platform-Conditioned Routing）和多教师在线策略蒸馏，将特定平台的专业知识作为稳定的行为锚点（Behavioral Anchors），安全地注入到一个共享的 GUI 智能体策略中。
 
@@ -57,7 +57,7 @@ related_tutorials:
 
 UI-MOPD 的整体训练流程被分为两个清晰的阶段，其核心思想是在线策略优化（Online Policy Optimization）与平台专属知识蒸馏的深度融合。
 
-<img src="/images/2607.04425v1/x3.jpg" alt="UI-MOPD训练流程概览" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.04425v1/x3.webp" alt="UI-MOPD训练流程概览" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 **阶段一：平台专属教师的培育（Stage 1）**
 
@@ -122,7 +122,7 @@ K3 估算器仅仅依赖于学生模型和教师模型在实际采样出的 Toke
 
 为了验证这一点，研究人员在 AndroidControl、ScreenSpot-Pro、ScreenSpotV2 以及 OSWorld-G 等静态基准上进行了评估。
 
-<img src="/images/2607.04425v1/x4.jpg" alt="静态Grounding与理解能力评估" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2607.04425v1/x4.webp" alt="静态Grounding与理解能力评估" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 结果显示，UI-MOPD 最大限度地保留了基座模型的底层定位能力。例如，在 ScreenSpotV2 上，UI-MOPD 的分数为 90.88%，几乎与基座模型的 91.27% 持平；在 OSWorld-G 上，甚至从 52.13% 小幅提升到了 52.84%。
 

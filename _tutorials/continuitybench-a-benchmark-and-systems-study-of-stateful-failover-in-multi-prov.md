@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">ContinuityBench: A Benchmark and Systems Study of Stateful Failover in Multi-Provider LLM Routing</p>
 
-<img src="/images/2607.15899v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.15899v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在生产级别的大语言模型（LLM）部署中，开发者往往会配置多个模型提供商（Provider）以确保系统的高可用性。当主模型服务商遭遇宕机或严格的速率限制时，网关会自动将流量切换到备用模型。从监控面板上看，HTTP状态码依然是绿色的“200 OK”，系统看似运转正常。然而，对于正在与应用交互的用户来说，这种切换往往意味着一场灾难：系统虽然返回了回答，但却彻底“失忆”了，完全忘记了前几轮的对话背景。
 
@@ -82,7 +82,7 @@ related_tutorials:
 
 该架构主要由四个组件构成：请求拦截器（Request Interceptor）、对话状态存储（Conversation State Store）、故障注入层（Fault Injection Layer）以及故障转移控制器（Failover Controller）。
 
-<img src="/images/2607.15899v1/architecture1.jpg" alt="架构总览" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.15899v1/architecture1.webp" alt="架构总览" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 如上图所示，其工作流程如下：
 
@@ -92,7 +92,7 @@ related_tutorials:
 
 为了进行严格的对比验证，研究者将实验分为两种架构，它们在系统基础设施上完全相同，唯一的区别在于构建发送给备用提供商的 `messages[]` 数组的逻辑：
 
-<img src="/images/2607.15899v1/architecture2.jpg" alt="两种网关架构机制的对比" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.15899v1/architecture2.webp" alt="两种网关架构机制的对比" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *   **基线系统（无状态故障转移）**：这也是目前工业界最常见的默认策略。当检测到故障时，代理仅仅提取当前输入数组中的最后一条用户消息。备用提供商在没有任何前置对话轮次的情况下被迫作答，这自然带来了极高的失败率。
 

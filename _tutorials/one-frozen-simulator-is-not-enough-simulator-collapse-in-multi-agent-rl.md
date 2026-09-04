@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">One Frozen Simulator Is Not Enough: Simulator Collapse in Multi-Agent RL</p>
 
-<img src="/images/2608.12253v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.12253v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在大语言模型（LLM）的后训练阶段，基于强化学习（RL）的对齐技术已经取得了显著的成果。无论是在数学推理、工具调用还是代码生成等单轮交互任务中，标准的“生成-验证-更新”循环都展现出了极高的效率。然而，当研究视野转向多轮人机交互（如客户支持、协作编程、说服型对话）时，由于缺乏确定性的环境奖励，且收集海量真实人类交互数据的成本极其高昂，研究人员通常会求助于一个看似合理的替代方案：使用一个冻结的大语言模型（Frozen LLM）来扮演用户模拟器，让智能体在这个模拟环境中进行强化学习。
 

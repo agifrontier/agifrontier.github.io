@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 阿里LORE：电商搜索相关性暴涨27%！大模型训练心法全公开
 
-<img src="/images/2512.03025v1/A__title.jpg" alt="阿里LORE：电商搜索相关性暴涨27%！大模型训练心法全公开 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.03025v1/A__title.webp" alt="阿里LORE：电商搜索相关性暴涨27%！大模型训练心法全公开 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在淘宝、京东上搜索商品，你是否也曾被那些毫不相关的结果搞得一头雾水？明明想买“晨C晚A”的护肤品，出来的却是维生素C片。这种体验的背后，是电商搜索领域一个核心且棘手的难题：**相关性判断**。
 
@@ -45,7 +45,7 @@ LORE研究团队一针见血地指出：问题在于，大家把复杂的“相�
 
     有些判断需要严格遵守规则。例如，用户搜“LV包”，结果是个“二手LV包”。这不能仅靠属性匹配，而必须依据“新品/二手”的平台规则来判定相关性。
 
-<img src="/images/2512.03025v1/intro.jpg" alt="LORE框架的三大核心能力" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.03025v1/intro.webp" alt="LORE框架的三大核心能力" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 看清了这一点，LORE的整个框架便豁然开朗：先将问题拆解，再针对性地训练模型掌握这三种能力。
 
@@ -61,7 +61,7 @@ LORE研究团队一针见血地指出：问题在于，大家把复杂的“相�
 
 他们模拟了从“理解用户需求”到“匹配商品属性”再到“最终判断”的完整思考路径，生成高质量的思维链数据，让模型在SFT阶段就学到正确的“解题思路”，从而抬高模型能力的上限。
 
-<img src="/images/2512.03025v1/path.jpg" alt="相关性判断的路径建模" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.03025v1/path.webp" alt="相关性判断的路径建模" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 第二阶段：RL对齐偏好
 

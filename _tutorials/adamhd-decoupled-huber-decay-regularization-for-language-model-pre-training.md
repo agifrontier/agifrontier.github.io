@@ -13,7 +13,7 @@ related_tutorials:
 
 ## AdamW的继任者？AdamHD让LLM训练提速15%，性能提升4.7%，显存再省30%
 
-<img src="/images/2511.14721v1/A__title.jpg" alt="AdamW的继任者？AdamHD让LLM训练提速15%，性能提升4.7%，显存再省30% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.14721v1/A__title.webp" alt="AdamW的继任者？AdamHD让LLM训练提速15%，性能提升4.7%，显存再省30% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在训练大语言模型（LLM）时，我们常常聚焦于模型架构、数据质量和训练规模，但一个“幕后英雄”同样至关重要——优化器。多年来，**AdamW** 一直是训练Transformer模型的黄金标准。但它真的完美无缺吗？
 
@@ -41,7 +41,7 @@ Huber损失函数本身并不新鲜，它在机器学习中常用于回归任务
 
 *   当参数的绝对值超过阈值 $\delta$ 时，它切换为线性（$L\_1$-like）衰减，施加一个恒定的、有上限的拉力。
 
-<img src="/images/2511.14721v1/x1.jpg" alt="Huber与L1/L2正则化对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.14721v1/x1.webp" alt="Huber与L1/L2正则化对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图1：Huber正则化（红色）结合了$L\_2$（蓝色）在原点附近的平滑性和$L\_1$（绿色）在远离原点处的线性增长特性。*
 
@@ -80,7 +80,7 @@ Huber损失函数本身并不新鲜，它在机器学习中常用于回归任务
 
 与AdamW相比，AdamHD在达到相同的验证集困惑度（Perplexity）目标时，**训练速度（墙上时钟时间）快了10-15%**。这意味着更少的计算资源和时间成本。
 
-<img src="/images/2511.14721v1/loss_curve_gpt2_1558.jpg" alt="GPT-2 1.5B模型训练曲线" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.14721v1/loss_curve_gpt2_1558.webp" alt="GPT-2 1.5B模型训练曲线" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图2：在GPT-2 1.5B模型上，AdamHD（蓝色）的验证损失下降速度明显快于AdamW（橙色）。*
 

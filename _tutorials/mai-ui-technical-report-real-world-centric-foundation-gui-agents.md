@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 超越Gemini！阿里MAI-UI发布：全尺寸GUI Agent与端云协同新范式
 
-<img src="/images/2512.22047v1/A__title.jpg" alt="超越Gemini！阿里MAI-UI发布：全尺寸GUI Agent与端云协同新范式 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.22047v1/A__title.webp" alt="超越Gemini！阿里MAI-UI发布：全尺寸GUI Agent与端云协同新范式 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 我们距离真正的“贾维斯”还有多远？
 
@@ -25,7 +25,7 @@ related_tutorials:
 
 MAI-UI不仅在AndroidWorld上以 **76.7%** 的成功率刷新了SOTA，超越了UI-Tars-2和Gemini-2.5-Pro，更重要的是，它提出了一套**端云协同**（**Device-Cloud Collaboration**）和**在线强化学习**（**Online RL**）的全新系统架构。
 
-<img src="/images/2512.22047v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.22047v1/x1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 痛点：为什么现在的GUI Agent还不够好？
 
@@ -73,7 +73,7 @@ MAI-UI扩展了Agent的动作空间（Action Space）。除了常规的点击、
 
 实验表明，仅将并行环境从32扩展到512，就带来了 **+5.2** 个点的性能提升。
 
-<img src="/images/2512.22047v1/x5.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.22047v1/x5.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 4. 原生端云协同系统
 

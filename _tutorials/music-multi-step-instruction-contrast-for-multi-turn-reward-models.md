@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 别只看最后一句话！DeepMind新作MUSIC：合成数据攻克多轮对话评估难题
 
-<img src="/images/2512.24693v1/A__title.jpg" alt="别只看最后一句话！DeepMind新作MUSIC：合成数据攻克多轮对话评估难题 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.24693v1/A__title.webp" alt="别只看最后一句话！DeepMind新作MUSIC：合成数据攻克多轮对话评估难题 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 大模型（LLM）如今已经能写出漂亮的诗歌或代码片段，但你是否发现，一旦和它多聊几轮，它的逻辑就开始“掉链子”？
 
@@ -53,7 +53,7 @@ MUSIC 的工作流程非常巧妙，它利用 LLM 模拟用户和助手，生成
 
 比如，用户原本问“如何做红烧肉？”，在 Rejected 组中，系统在后台把指令改成“如何做回锅肉？”，助手虽然写出了完美的回锅肉菜谱，但对于用户原本的“红烧肉”需求来说，这就是一个严重的**指令遵循错误**。这种错误会随着对话的进行被保留下来，从而形成贯穿多轮的质量差异。
 
-<img src="/images/2512.24693v1/x1.jpg" alt="MUSIC 数据增强流程概览" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.24693v1/x1.webp" alt="MUSIC 数据增强流程概览" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图 1：MUSIC 数据增强流程概览。通过引入对比指令提示（Contrastive Instruction Prompt），在 Rejected 分支中诱导质量下降，从而生成具有多轮差异的偏好对。*
 
@@ -80,7 +80,7 @@ MUSIC 的贡献在于构造了更具挑战性的 ${\mathcal{D}}\_{\text{MUSIC}}$
 
 在 Best-of-N (BoN) 推理任务中，MUSIC 增强后的 RM 能够挑选出质量更高的对话。经过 Gemini 1.5 Pro 的评审，MUSIC 指导下的对话在 Anthropic HH 和 UltraInteract 数据集上均优于 Baseline。
 
-<img src="/images/2512.24693v1/x2.jpg" alt="Best-of-N 推理胜率对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.24693v1/x2.webp" alt="Best-of-N 推理胜率对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图 2：在 Best-of-N ($N\in\{2,4,8\}$) 设置下，MUSIC 增强 RM 与 Baseline RM 的胜率对比。随着 $N$ 的增加，MUSIC 利用候选池优势的能力更强。*
 

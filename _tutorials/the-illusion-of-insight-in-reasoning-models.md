@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 普林斯顿揭秘：模型“顿悟”竟是幻觉？百万推理轨迹拆解“自我修正”真相
 
-<img src="/images/2601.00514v1/A__title.jpg" alt="普林斯顿揭秘：模型“顿悟”竟是幻觉？百万推理轨迹拆解“自我修正”真相 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.00514v1/A__title.webp" alt="普林斯顿揭秘：模型“顿悟”竟是幻觉？百万推理轨迹拆解“自我修正”真相 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 DeepSeek-R1-Zero 的横空出世，让一种现象备受瞩目：模型在推理过程中突然输出一句“Wait... let’s re-evaluate”（等等，让我们重新评估一下），然后神奇地修正了之前的错误。这种类似人类“顿悟”（Aha! Moment）的行为，被广泛认为是模型具备**内在自我修正**（**Intrinsic Self-Correction**）能力的铁证。
 
@@ -35,7 +35,7 @@ DeepSeek-R1-Zero 的横空出世，让一种现象备受瞩目：模型在推理
 
 3.  **性能提升**：这种转变直接导致了最终答案从错误变为正确。
 
-<img src="/images/2601.00514v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.00514v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图 1：“顿悟”时刻解剖。图示展示了一个典型的修正过程：模型从错误的策略 $k \in \{1,2\}$ 突然通过一句“Wait...”转向了正确的策略 $k=3$。*
 
@@ -67,7 +67,7 @@ DeepSeek-R1-Zero 的横空出世，让一种现象备受瞩目：模型在推理
 
 随着 RL（强化学习）训练的进行，模型的能力确实变强了，但这种“中途修正”的行为频率并没有显著增加，其带来的正面收益也没有明显变化。这意味着，“顿悟”并不是 RL 训练出来的一种高级能力。
 
-<img src="/images/2601.00514v1/x12.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.00514v1/x12.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图 4：推理转变（Shift）对准确率的影响。在大多数情况下（柱状图位于 0 以下），发生转变的轨迹准确率反而更低。*
 

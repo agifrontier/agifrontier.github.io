@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 大模型推理太“话痨”？ORION压缩16倍思考路径，成本直降9倍
 
-<img src="/images/2511.22891v1/A__title.jpg" alt="大模型推理太“话痨”？ORION压缩16倍思考路径，成本直降9倍 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.22891v1/A__title.webp" alt="大模型推理太“话痨”？ORION压缩16倍思考路径，成本直降9倍 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大模型在数学、编码等复杂推理任务上越来越强，但你是否注意到，它们为了得到正确答案，往往需要生成一段极其冗长的“思考过程”？这种“话痨式”推理不仅导致高昂的计算成本和延迟，还常常引入冗余甚至矛盾的步骤。
 
@@ -27,7 +27,7 @@ related_tutorials:
 
 然而，这种方式也带来了“过度思考”（Overthinking）的现象。如下图所示，即便是简单问题，模型也可能生成大量啰嗦、重复的文本，这与人类简洁、高效的思维方式形成了鲜明对比。
 
-<img src="/images/2511.22891v1/x2.jpg" alt="Figure 2: Contrast between human and machine reasoning" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.22891v1/x2.webp" alt="Figure 2: Contrast between human and machine reasoning" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 <center>图2：人类与机器推理方式的对比</center>
 
@@ -39,7 +39,7 @@ related_tutorials:
 
 基于此，研究者们设计了一种名为**Mentalese**的紧凑符号推理格式。它摒弃了自然语言的繁琐，用一系列结构化的操作符（如$$SET$$, $$CALC$$, $$SOLVE$$）和表达式来描述推理的核心逻辑。
 
-<img src="/images/2511.22891v1/x3.jpg" alt="Figure 3: Illustration of symbolic, logic-based chain of thought (mentalese)" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.22891v1/x3.webp" alt="Figure 3: Illustration of symbolic, logic-based chain of thought (mentalese)" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 <center>图3：Mentalese符号化推理示意图</center>
 
@@ -78,7 +78,7 @@ related_tutorials:
 
 通过SFT对齐Mentalese，再用SLPO进行强化学习，ORION模型成功地在保持简洁性的同时，恢复了绝大部分损失的性能。
 
-<img src="/images/2511.22891v1/x4.jpg" alt="Figure 4: Comparison of reasoning traces on AIME 2024" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.22891v1/x4.webp" alt="Figure 4: Comparison of reasoning traces on AIME 2024" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 <center>图4：在AIME 2024题目上，不同模型的推理路径对比，Token数差异巨大</center>
 
@@ -88,7 +88,7 @@ ORION的效果有多好？数据说明了一切。
 
 研究者在AIME、MinervaMath、OlympiadBench等多个高难度数学推理基准上进行了广泛测试。
 
-<img src="/images/2511.22891v1/x1.jpg" alt="Figure 1: Performance-efficiency trade-offs" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.22891v1/x1.webp" alt="Figure 1: Performance-efficiency trade-offs" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 <center>图1：各模型在性能-效率权衡上的表现</center>
 
@@ -104,7 +104,7 @@ ORION的效果有多好？数据说明了一切。
 
 更有趣的是，研究发现，Mentalese对齐不仅提升了推理效率，还显著增强了强化学习阶段的**训练稳定性**，避免了模型因探索过长的推理路径而导致的“崩溃”现象。
 
-<img src="/images/2511.22891v1/x5.jpg" alt="Figure 5: Training stability comparison" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.22891v1/x5.webp" alt="Figure 5: Training stability comparison" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 <center>图5：Mentalese对齐带来了更稳定的RL训练过程</center>
 

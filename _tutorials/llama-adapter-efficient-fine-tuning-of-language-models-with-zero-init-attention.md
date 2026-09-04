@@ -52,7 +52,7 @@ $${% endraw %}
 
 其中 $C$ 是特征维度。通过这种方式，在 $P\_l$ 中学习到的指令知识，可以通过后续的注意力层来引导 $T\_l$ 生成符合指令的上下文响应。
 
-<img src="/images/2303.16199v3/x2.jpg" alt="图2：零初始化注意力的细节" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2303.16199v3/x2.webp" alt="图2：零初始化注意力的细节" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 ## 创新点：零初始化注意力
 为了解决随机初始化的适配提示在训练初期可能引入噪声、干扰模型原有知识的问题，本文提出了一种创新的**零初始化注意力 (Zero-initialized Attention)** 机制。
@@ -77,7 +77,7 @@ $${% endraw %}
 ## 扩展性：多模态推理
 LLaMA-Adapter 的架构具有很强的灵活性，可以简单地扩展到多模态任务，如处理图像条件的指令。
 
-<img src="/images/2303.16199v3/x3.jpg" alt="图3：多模态LLaMA-Adapter" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2303.16199v3/x3.webp" alt="图3：多模态LLaMA-Adapter" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 具体实现方法是：
 1.  使用一个预训练的视觉编码器（如 CLIP）提取图像的全局特征 $I\_p$。
@@ -95,7 +95,7 @@ LLaMA-Adapter 的架构具有很强的灵活性，可以简单地扩展到多模
 
 ## 实验结论
 
-<img src="/images/2303.16199v3/x1.jpg" alt="图1：LLaMA-Adapter的特点" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2303.16199v3/x1.webp" alt="图1：LLaMA-Adapter的特点" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 效率与性能
 *   **高效性**: LLaMA-Adapter 仅用 **1.2M** 可学习参数和在8卡A100上 **1小时** 的训练时间，就完成了 LLaMA 7B 模型的指令微调。相比之下，全参数微调的 Alpaca 需要训练 **7B** 参数，耗时 **3小时**；Alpaca-LoRA 也需要 **4.2M** 参数和 **1.5小时**。
@@ -115,12 +115,12 @@ LLaMA-Adapter 的架构具有很强的灵活性，可以简单地扩展到多模
 *   在 **ScienceQA** 数据集上，多模态 LLaMA-Adapter (1.8M 可调参数) 取得了 **85.19%** 的准确率，优于包括 GPT-3.5/GPT-4 在内的众多基线模型。
 *   在 **MME、MMBench、LVLM-eHub** 等多个零样本多模态评测基准上，LLaMA-Adapter 取得了与 LLaVA 和 MiniGPT-4 等需要全参数微调或更大模型的方法相竞争的性能，展示了其高效调优策略的优势。
 
-<img src="/images/2303.16199v3/x6.jpg" alt="图6：多模态推理示例" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2303.16199v3/x6.webp" alt="图6：多模态推理示例" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 消融研究
 *   **零初始化注意力的重要性**: 如果去除零初始化，改为随机初始化门控因子，模型在 ScienceQA 上的准确率从 **83.85%** 骤降至 **40.77%**（下降了43.08%），几乎等同于随机猜测。训练损失曲线也表明，零初始化使得模型收敛更快、损失更低，验证了该设计的关键作用。
 
-<img src="/images/2303.16199v3/x7.jpg" alt="图7：有无零初始化注意力的损失曲线对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2303.16199v3/x7.webp" alt="图7：有无零初始化注意力的损失曲线对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 泛化性
 *   本文提出的零初始化注意力机制不仅适用于 LLaMA，还可以泛化到其他预训练模型。在对 **ViT (视觉)**、**RoBERTa (语言)** 和 **CLIP (视觉-语言)** 的参数高效微调任务中，该方法均取得了优于全参数微调和其他 PEFT 方法的性能。

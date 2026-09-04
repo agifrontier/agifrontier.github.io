@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 2025 AI透明度大倒退：均分跌至40，IBM夺冠，xAI与Midjourney垫底
 
-<img src="/images/2512.10169v1/A__title.jpg" alt="2025 AI透明度大倒退：均分跌至40，IBM夺冠，xAI与Midjourney垫底 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.10169v1/A__title.webp" alt="2025 AI透明度大倒退：均分跌至40，IBM夺冠，xAI与Midjourney垫底 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 随着AI模型的能力以惊人的速度进化，我们对这些“黑盒”背后的运作机制却似乎知之甚少。斯坦福大学等机构最新发布的 **2025年基础模型透明度指数**（**Foundation Model Transparency Index, FMTI**）揭示了一个令人担忧的趋势：尽管AI技术在飞速发展，但行业整体的透明度却在大幅倒退。
 
@@ -25,7 +25,7 @@ related_tutorials:
 
 今年的FMTI报告评估了13家全球顶级的基础模型开发商。研究团队设计了包含100项指标的评估体系，涵盖了从上游数据、模型构建到下游影响的全过程。
 
-<img src="/images/2512.10169v1/x7.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.10169v1/x7.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 **红榜与黑榜的巨大反差：**
 
@@ -59,7 +59,7 @@ FMTI 2025对指标进行了大幅修订，旨在“去伪存真”。
 
 *   **强调可复现性**：仅仅声称模型在某个基准测试上得分很高是不够的，必须开源代码和提示词（Prompts），证明第三方可以复现这一结果才能得分。
 
-<img src="/images/2512.10169v1/x2.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.10169v1/x2.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 ### 技术拆解：如何量化透明度？
 
@@ -85,7 +85,7 @@ FMTI 2025对指标进行了大幅修订，旨在“去伪存真”。
 
     *   **影响**：对用户、受影响群体以及环境的实际影响。
 
-<img src="/images/2512.10169v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.10169v1/x1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 有趣的发现：AI Agent能取代人类评估员吗？
 

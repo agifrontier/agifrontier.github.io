@@ -116,7 +116,7 @@ related_tutorials:
 2.  要求它根据自己的描述生成该国旗的SVG代码。
 3.  如果生成的图像有误，通过多轮对话要求其修正。
 
-<img src="/images/2302.04023v4/x1.jpg" alt="一个由ChatGPT使用SVG格式绘制的德国国旗示例：(上)没有和(下)有自检索的国旗文本描述。为简洁起见，此处显示渲染后的图像而非生成的SVG代码。" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2302.04023v4/x1.webp" alt="一个由ChatGPT使用SVG格式绘制的德国国旗示例：(上)没有和(下)有自检索的国旗文本描述。为简洁起见，此处显示渲染后的图像而非生成的SVG代码。" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 **发现**：
 *   **自我描述有助于生成**：先生成文本描述再进行代码生成（一种“思维链”），能显著提高图像质量。
@@ -161,9 +161,9 @@ related_tutorials:
 本文探索了利用ChatGPT的对话接口通过多轮交互提升任务性能的潜力。
 *   **摘要**：通过第二轮“请把摘要写得更短”的指令，摘要长度被有效控制，ROUGE-1得分提升了约8%。
 *   **机器翻译**：在第一轮翻译后，通过后续交互进行自动后期编辑 (Automatic Post-Editing)，可以修正部分或全部翻译错误，尤其在低资源语言上效果显著。
-<img src="/images/2302.04023v4/x2.jpg" alt="多轮MT-APE实验结果。#Correct MT表示正确翻译的数量。#Correct APE表示后期编辑后正确翻译的数量。" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2302.04023v4/x2.webp" alt="多轮MT-APE实验结果。#Correct MT表示正确翻译的数量。#Correct APE表示后期编辑后正确翻译的数量。" style="width:90%; max-width:700px; margin:auto; display:block;">
 *   **多模态生成**：在画国旗任务中，通过多轮反馈修正，图像质量逐步提升。例如，加拿大国旗的绘制经过三轮交互，从仅颜色正确逐步修正到布局和组件都正确（尽管枫叶形状仍不完美）。
-<img src="/images/2302.04023v4/x3.jpg" alt="ChatGPT绘制加拿大国旗在三轮交互中的变化。布局、颜色、完整性和形状/尺寸如果与真实情况一致则标记为✓，否则为✗。" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2302.04023v4/x3.webp" alt="ChatGPT绘制加拿大国旗在三轮交互中的变化。布局、颜色、完整性和形状/尺寸如果与真实情况一致则标记为✓，否则为✗。" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ## 对GPT-4的评估
 本文的更新版本补充了对GPT-4的评估，发现：

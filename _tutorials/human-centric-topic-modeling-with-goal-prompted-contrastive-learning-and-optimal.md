@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Human-Centric Topic Modeling with Goal-Prompted Contrastive Learning and Optimal Transport</p>
 
-<img src="/images/2604.12663v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.12663v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在海量文本数据中提取核心信息时，主题模型（Topic Modeling）一直扮演着关键角色。从经典的隐狄利克雷分布（LDA）到近年来基于深度神经网络甚至大语言模型（LLM）的进阶方案，现有的主题建模方法在不断提升统计学意义上的连贯性。然而，这类技术在实际落地时往往面临一个极为尴尬的困境：模型挖掘出的主题虽然在词汇分布上极其自洽，却往往偏离了用户真正关心的业务意图，产生大量冗余或毫无用处的“正确废话”。
 
@@ -38,7 +38,7 @@ related_tutorials:
 
 如果采用传统的主题模型，算法会忠实地根据词频和共现关系输出结果。它可能会聚类出包含“房子（house）”、“妹妹（sister）”、“父亲（father）”的主题，或者包含“开心（happy）”、“享受（enjoy）”、“希望（hope）”的主题。从统计学的角度看，这些词语确实经常一起出现，模型并没有做错。但是，从人类分析目标的角度来看，这些主题完全没有回答“人们在烦恼什么”这个问题。真正关键的痛点，例如“分手挣扎（breakup struggles）”、“健康问题（health issue）”或“学业压力（academic stress）”，由于其词汇分布可能不如日常用语那样密集，很容易被传统模型掩盖或直接忽略。这迫使研究人员不得不在海量无用主题中进行极其繁琐的人工筛选。
 
-<img src="/images/2604.12663v1/x1.jpg" alt="传统主题模型与以人为中心主题模型的对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.12663v1/x1.webp" alt="传统主题模型与以人为中心主题模型的对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 正是基于这种错位，研究团队正式定义了 Human-TM 任务。该任务要求在给定文本语料库和一段自由文本形式的人类目标描述（例如“什么具体事情在困扰你？”）时，模型必须自动生成一组不仅语义连贯、易于解释，而且还要与人类目标高度相关、相互之间具有足够多样性（避免同质化）的目标导向主题。
 
@@ -46,7 +46,7 @@ related_tutorials:
 
 为了在无监督的文本分布与高度具象的人类意图之间建立桥梁，GCTM-OT 放弃了传统的单一生成范式，转而将主题建模构建为一个融合了提示工程与最优传输理论的表示学习过程。该框架的设计极其精妙，其运作机制主要分为五个核心模块，层层递进地将外部目标内化为模型的网络权重。
 
-<img src="/images/2604.12663v1/x2.jpg" alt="GCTM-OT模型整体架构与目标导向表示机制" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.12663v1/x2.webp" alt="GCTM-OT模型整体架构与目标导向表示机制" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 第一个关键步骤是**目标导向的摘要生成**。由于原始文本冗长且充满噪声，模型直接在全局层面寻找意图无异于大海捞针。因此，研究团队引入了大型语言模型（如 GPT-3.5-turbo）作为前置的“意图过滤器”。对于语料库中的每一篇文档，GCTM-OT 都会使用预先设计好的目标摘要提示词（Goal-summarization Prompt），要求 LLM 提取出与用户输入目标高度相关的短语级候选列表。如果 LLM 判断某篇文档与给定目标毫无关系，则直接将其标记为无关并从语料中剔除。这一步不仅大幅降低了后续处理的噪声，还为每篇文档生成了高度浓缩的“目标候选集”。
 
@@ -64,7 +64,7 @@ related_tutorials:
 
 结果表明，在传统主题模型（如 LDA、NVDM）以及最新的基于大模型辅助的主题模型（如 LLM-ITL）面前，GCTM-OT 展现出了压倒性的优势。
 
-<img src="/images/2604.12663v1/x6.jpg" alt="模型在 GTR 和 GCR 目标相关性指标上的对比表现" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2604.12663v1/x6.webp" alt="模型在 GTR 和 GCR 目标相关性指标上的对比表现" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 首先，在衡量主题覆盖面和去重能力的**多样性指标**上，GCTM-OT 彻底拉开了与基准模型的差距。传统模型为了追求统计连贯性，常常会围绕语料库中最高频的词汇生成多个高度重合的主题（例如反复输出关于“生活状态”的相似变体）。而 GCTM-OT 凭借语义对比学习与最优传输的双重约束，能够敏锐地捕捉到边缘但重要的目标差异，将不同语义强行分离，从而使用户在有限的主题数量内，看到更加广阔和丰富的意图切面。
 

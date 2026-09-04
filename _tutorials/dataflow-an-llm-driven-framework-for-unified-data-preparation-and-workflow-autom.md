@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 1万条顶100万条！北大DataFlow：像写PyTorch一样搞定大模型数据
 
-<img src="/images/2512.16676v1/A__title.jpg" alt="1万条顶100万条！北大DataFlow：像写PyTorch一样搞定大模型数据 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.16676v1/A__title.webp" alt="1万条顶100万条！北大DataFlow：像写PyTorch一样搞定大模型数据 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在大模型（LLM）开发的狂热浪潮中，我们往往沉迷于模型架构的微调或参数规模的扩展，却忽略了一个残酷的现实：**数据工程依然处于“手工作坊”时代。**
 
@@ -31,7 +31,7 @@ related_tutorials:
 
 DataFlow 的核心理念是将数据处理流程（Pipeline）提升为一等公民。它引入了类似 PyTorch 的编程接口，通过模块化、可复用、可组合的**算子**（**Operators**）来构建数据流。
 
-<img src="/images/2512.16676v1/x4.jpg" alt="DataFlow 架构概览" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.16676v1/x4.webp" alt="DataFlow 架构概览" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 该框架的设计包含四个核心支柱：
 
@@ -49,7 +49,7 @@ DataFlow 最吸引人的地方在于其代码风格。如果你熟悉 PyTorch �
 
 在 DataFlow 中，一个数据处理流程就是一个 Pipeline 对象，你可以通过 $$add_operator$$ 方法将各种处理步骤串联起来。这种显式的依赖关系定义，不仅让代码逻辑一目了然，还支持编译时的检查和优化。
 
-<img src="/images/2512.16676v1/x7.jpg" alt="DataFlow Pipeline API 示例" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.16676v1/x7.webp" alt="DataFlow Pipeline API 示例" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 这种设计带来的好处是巨大的：它将复杂的“模型在环”（Model-in-the-loop）数据生成任务，拆解为一个个标准化的原子操作。无论是做 **Text-to-SQL** 的合成，还是数学推理链（CoT）的生成，都可以通过组合现有的算子快速实现。
 

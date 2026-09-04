@@ -22,7 +22,7 @@ Meta Reality Labs最新的研究成果 **MobileLLM-Pro**，正是为了打破这
 
 更惊人的是，它支持高达128K的上下文窗口，并在4-bit量化后，性能几乎没有衰减。这一切是如何实现的？答案藏在 MobileLLM-Pro 的四大核心创新之中。
 
-<img src="/images/2511.06719v1/process.jpg" alt="MobileLLM-Pro的四阶段训练流程" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.06719v1/process.webp" alt="MobileLLM-Pro的四阶段训练流程" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 核心架构：小身材，大容量
 
@@ -36,7 +36,7 @@ MobileLLM-Pro的“骨架”基于成熟的Transformer架构，并借鉴了Llama
 
 MobileLLM-Pro提出了一种名为**隐式位置蒸馏**（implicit positional distillation）的全新技术。
 
-<img src="/images/2511.06719v1/impl_pos_emb_2.jpg" alt="隐式位置蒸馏示意图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.06719v1/impl_pos_emb_2.webp" alt="隐式位置蒸馏示意图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 它的核心思想是：让一个看过128K长文本的强大教师模型（Llama 4-Scout），将长距离依赖关系和位置理解能力，“蒸馏”提炼出来，再传授给学生模型（MobileLLM-Pro）。整个过程中，学生模型根本不需要看到完整的长文本数据。
 
@@ -48,7 +48,7 @@ MobileLLM-Pro提出了一种名为**隐式位置蒸馏**（implicit positional d
 
 MobileLLM-Pro采用了**专家模型融合**（Specialist Model Merging）策略。在预训练的最后阶段，他们基于同一个模型检查点，并行训练出多个“领域专家”，比如一个编码专家、一个推理专家。
 
-<img src="/images/2511.06719v1/btm.jpg" alt="专家模型融合过程" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.06719v1/btm.webp" alt="专家模型融合过程" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 最后，通过**非均匀权重平均**（non-uniform weight averaging）的方法，将这些专家的“智慧”（模型权重）融合到一个模型中。这种方法不增加任何参数，却能创造出一个在各项能力上超越单个专家的“全能选手”。
 

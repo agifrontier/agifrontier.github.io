@@ -14,7 +14,7 @@ related_tutorials:
 
 ## MIT新突破：Transformer实现火箭全程自主驾驶，成本仅高出最优解3%
 
-<img src="/images/2511.11402v1/A__title.jpg" alt="MIT新突破：Transformer实现火箭全程自主驾驶，成本仅高出最优解3% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.11402v1/A__title.webp" alt="MIT新突破：Transformer实现火箭全程自主驾驶，成本仅高出最优解3% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 火箭发射、级间分离、最终入轨……这些惊心动魄的阶段，传统上需要多个独立的控制器接力完成。这就像一场F1比赛，赛车每次进站都要换一个新车手，不仅操作复杂，而且任何交接失误都可能导致灾难性的后果。现在，来自麻省理工学院（MIT）的一项研究，让Transformer化身“全能舵手”，仅用一个AI模型就搞定了从地面到太空的全程轨迹优化。
 
@@ -28,7 +28,7 @@ related_tutorials:
 
 自阿波罗时代以来，受限于计算能力，复杂的太空任务总是被分解为一个个独立的阶段，例如发射、上升、轨道保持、交会对接等。每个阶段都由一个专门设计的控制器负责。
 
-<img src="/images/2511.11402v1/x1.jpg" alt="传统分段控制 vs. 统一控制框架" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.11402v1/x1.webp" alt="传统分段控制 vs. 统一控制框架" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 这种“分段式”方法虽然在当时是可行的，但其弊端也显而易见：
 
@@ -66,7 +66,7 @@ related_tutorials:
 
 在经典的“双积分器”控制问题上，这个Transformer策略的表现与理论上的最优解——**线性二次调节器**（**Linear-Quadratic Regulator, LQR**）——进行了比较。结果显示，AI策略的总成本仅比最优解高出平均3%，证明了其学习基本最优控制策略的能力。
 
-<img src="/images/2511.11402v1/x2.jpg" alt="双积分器任务成本分析（与最优解LQR对比）" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.11402v1/x2.webp" alt="双积分器任务成本分析（与最优解LQR对比）" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 **第二步：非线性挑战**
 
@@ -78,7 +78,7 @@ related_tutorials:
 
 这个任务包含四个截然不同的阶段：大气层内飞行、第一级分离、第二级工作、进入最终轨道。整个过程动力学模型会发生突变（如质量瞬间减小），控制目标也随之改变。
 
-<img src="/images/2511.11402v1/x12.jpg" alt="由单一Transformer策略控制的多阶段火箭上升轨迹" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.11402v1/x12.webp" alt="由单一Transformer策略控制的多阶段火箭上升轨迹" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 结果令人印象深刻：
 

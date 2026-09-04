@@ -48,7 +48,7 @@ related_tutorials:
 
 在这个系统中，助手的作用至关重要。它不仅要大刀阔斧地砍掉环境中的结构噪音和语义噪音，还要像沙里淘金一样，极其谨慎地保留下那些对未来推断至关重要的推理锚点。这种分工确保了名侦探的注意力头（Attention Heads）能够完全集中在具有极高保真度和高信噪比的数据上。
 
-<img src="/images/2604.11462v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.11462v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 多轮群体相对策略优化（MT-GRPO）
 

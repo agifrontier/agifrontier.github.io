@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 记忆即算力？阿里ReMe让8B模型超越14B，揭秘动态记忆进化论
 
-<img src="/images/2512.10696v1/A__title.jpg" alt="记忆即算力？阿里ReMe让8B模型超越14B，揭秘动态记忆进化论 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.10696v1/A__title.webp" alt="记忆即算力？阿里ReMe让8B模型超越14B，揭秘动态记忆进化论 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在这个“大力出奇迹”的时代，我们习惯了认为模型参数越大，能力越强。但阿里巴巴和上海交通大学的一项最新研究给出了一个反直觉的结论：**一个拥有“聪明大脑”的小模型，完全可以战胜一个“健忘”的大模型。**
 
@@ -42,7 +42,7 @@ Agent 需要的不是一个静态的硬盘，而是一个能像人类一样**提
 
 ReMe 的全称是 "Remember Me, Refine Me"，它的设计灵感源于人类的学习过程。整个框架由三个相互交织的机制组成，完美闭环了记忆的生命周期。
 
-<img src="/images/2512.10696v1/x6.jpg" alt="ReMe Framework Overview" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.10696v1/x6.webp" alt="ReMe Framework Overview" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 #### 1. 多面蒸馏（Multi-faceted Distillation）：从流水账到真知灼见
 
@@ -104,7 +104,7 @@ ReMe 定义了一个移除函数 $\phi\_{remove}(E)$：
 
 这意味着，**高质量的动态记忆可以作为一种计算资源的替代品**。我们不需要无限堆叠显卡去训练更大的模型，通过优化记忆机制，小模型也能展现出惊人的推理能力。
 
-<img src="/images/2512.10696v1/x9.jpg" alt="Error Analysis" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.10696v1/x9.webp" alt="Error Analysis" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 错误分析（上图）进一步证实，引入 ReMe 后，Agent 的推理错误（Reasoning Error）大幅减少。记忆不仅提供了知识，更提供了逻辑路径，帮助 Agent 避开了曾经踩过的坑。
 

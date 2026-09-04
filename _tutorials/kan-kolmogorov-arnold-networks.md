@@ -50,7 +50,7 @@ $${% endraw %}
 这个定理表明，高维函数的学习本质上可以分解为学习一组一维函数。
 
 基于此，本文提出了KAN架构。与将固定的非线性激活函数放在节点上的MLP不同，KAN将可学习的激活函数放在了网络的边上。
-<img src="/images/2404.19756v5/x1.jpg" alt="MLPs vs. KANs" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2404.19756v5/x1.webp" alt="MLPs vs. KANs" style="width:85%; max-width:600px; margin:auto; display:block;">
 *图1：多层感知机（MLPs）与科尔莫戈罗夫-阿诺德网络（KANs）的对比。*
 
 一个KAN网络由多个**KAN层**堆叠而成。一个从 $n\_{\rm in}$ 维输入到 $n\_{\rm out}$ 维输出的KAN层，是一个由 $n\_{\rm in} \times n\_{\rm out}$ 个一维激活函数 $\phi\_{q,p}$ 组成的矩阵。对于第 $l$ 层的第 $i$ 个节点，其输出 $x\_{l,i}$ 作为输入，传递给连接第 $l$ 层和第 $l+1$ 层的边上的激活函数 $\phi\_{l,j,i}$。第 $l+1$ 层的第 $j$ 个节点的输入值是所有传入信号经过激活函数后的总和：
@@ -69,7 +69,7 @@ $${% endraw %}
 $${% endraw %}
 
 
-<img src="/images/2404.19756v5/spline_notation.jpg" alt="KAN的符号表示与样条参数化" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2404.19756v5/spline_notation.webp" alt="KAN的符号表示与样条参数化" style="width:85%; max-width:600px; margin:auto; display:block;">
 *图2：左图为网络中激活流的符号表示。右图展示了一个激活函数如何被参数化为B样条，允许在粗细网格间切换。*
 
 ### 创新点
@@ -84,14 +84,14 @@ KAN最本质的创新在于**将学习的重心从线性权重转移到了自适
 *   **激活函数参数化**：每个边上的激活函数 $\phi(x)$ 被参数化为B样条基函数的线性组合，并叠加一个残差基函数（如SiLU）：$\phi(x)=w\_{b}b(x)+w\_{s}{\rm spline}(x)$。B样条的系数是可学习的。
 *   **理论保证**：本文证明了（**定理 2.1**），如果一个函数可以被一个光滑的KAN表示，那么使用有限网格点的B样条进行逼近时，其逼近误差的衰减速度与维度无关，衰减指数为 $k+1$（$k$是B样条的阶数），从而**在理论上战胜了维度灾难**。对于常用的三次B样条（$k=3$），KANs的神经缩放指数 $\alpha=4$，远优于现有理论中MLPs的缩放指数。
 
-<img src="/images/2404.19756v5/flowchart.jpg" alt="论文组织结构图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2404.19756v5/flowchart.webp" alt="论文组织结构图" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图3：论文组织结构图，展示了KANs的数学基础、精度和可解释性。*
 
 ## 提升KANs精度与可解释性的技术
 
 ### 精度：网格扩展
 为了进一步提升精度，本文提出了**网格扩展**技术。模型可以从一个具有少量网格点（参数较少）的粗糙样条开始训练。当训练进入平台期时，可以通过在现有样条函数上拟合一个新的、具有更密集网格点的样条，来增加模型容量，而无需重新从头训练。这个过程可以重复进行，使得损失呈现阶梯式下降。
-<img src="/images/2404.19756v5/x2.jpg" alt="网格扩展效果" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2404.19756v5/x2.webp" alt="网格扩展效果" style="width:85%; max-width:600px; margin:auto; display:block;">
 *图4：通过网格扩展可以提升KANs的精度。损失曲线呈现阶梯式下降，且测试RMSE随网格大小G呈现幂律缩放。*
 
 ### 可解释性：简化与交互
@@ -102,7 +102,7 @@ KAN最本质的创新在于**将学习的重心从线性权重转移到了自适
 4.  **符号化**：当用户通过可视化发现某个激活函数形似已知的数学函数（如 $$sin$$, $$x^2$$）时，可以手动或通过系统建议将其固定为该符号形式。系统会自动拟合仿射变换参数以匹配尺度和平移。
 
 下图展示了一个用户如何通过这个流程，从一个[2,5,1]的KAN逐步简化，最终发现目标函数 $f(x,y)=\exp(\sin(\pi x)+y^2)$ 的符号表达式。
-<img src="/images/2404.19756v5/sr.jpg" alt="符号回归示例" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2404.19756v5/sr.webp" alt="符号回归示例" style="width:85%; max-width:600px; margin:auto; display:block;">
 *图5：一个与KAN交互进行符号回归的示例。*
 
 ## 实验结论

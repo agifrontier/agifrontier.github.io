@@ -54,7 +54,7 @@ related_tutorials:
 在机器人领域，这种“心智推盘”的棋盘状态往往由高维的视觉观测序列（视频）构成。
 因此，动作条件下的视频生成，构成了当前具身世界模型的技术主轴。
 
-<img src="/images/2605.00080v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2605.00080v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 上图展示了世界模型在策略学习与模拟器应用中的演进脉络。
 一个真正可操作的世界模型，必须为系统提供三种核心能力。
@@ -75,7 +75,7 @@ related_tutorials:
 这种模块化设计保留了极强的可解释性。
 然而，一旦“心智推盘”的预测出现视觉上合理但物理上不连续的微小瑕疵，误差就会向控制端剧烈累积。
 
-<img src="/images/2605.00080v1/x4.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2605.00080v1/x4.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 #### 单主干统一架构
 为了消除解耦架构的割裂感，研究人员开始将预测与控制融为一体。
@@ -133,7 +133,7 @@ related_tutorials:
 
 这种基于想象的后训练范式，为具身智能跨越数据稀缺鸿沟提供了最可行的路径。
 
-<img src="/images/2605.00080v1/x6.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2605.00080v1/x6.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 #### 决策验证与高风险评估
 除了用于强化学习，世界模型还是极其出色的“安全裁判”。

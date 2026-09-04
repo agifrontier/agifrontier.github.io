@@ -27,7 +27,7 @@ related_tutorials:
 
 模型输出的概率分布可以直接转化为**码长**（**Code Length**），即 $-\log P$，这正是条件熵的一个上界。
 
-<img src="/images/2512.24969v1/C4_models.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.24969v1/C4_models.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图1：不同模型在C4语料库上的码长随上下文长度的变化。可以看到，即使在 $N > 10^3$ 之后，曲线依然保持下降趋势，且不同模型间的一致性惊人。*
 
@@ -47,7 +47,7 @@ related_tutorials:
 
 随着阅读的文本越来越长，模型对下一个字符的预测发生了什么质的变化？研究发现，平均熵的下降并不仅仅是因为整体分布的平移，而是因为出现了一种结构性的变化。
 
-<img src="/images/2512.24969v1/histogramsV3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.24969v1/histogramsV3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图3：条件熵（a）和码长（b）的分布随上下文长度 $K$ 的演变。注意在 $K$ 增大时，接近零熵（即完全确定）的峰值是如何“涌现”出来的。*
 
@@ -59,7 +59,7 @@ related_tutorials:
 
 有趣的是，这种“熵值无限下降”的规律并非放之四海而皆准。研究人员对比了不同体裁的文本：
 
-<img src="/images/2512.24969v1/GernreFigureV3.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.24969v1/GernreFigureV3.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图2：不同体裁文本的码长变化。诗歌（绿色）明显比互联网文本（蓝色）和维基百科（橙色）更早进入平台期。*
 

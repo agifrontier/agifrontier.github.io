@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">MOPD: Multi-Teacher On-Policy Distillation for Capability Integration in LLM Post-Training</p>
 
-<img src="/images/2606.30406v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.30406v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在大语言模型（LLM）的后训练（Post-Training）阶段，强化学习（RL）已经成为提升模型特定领域能力的标准范式。无论是利用可验证奖励进行数学推理训练，还是在沙盒环境中进行代码能力的代理式强化学习，或者是基于规则反馈优化指令遵循能力，针对单一领域的强化学习管道往往能够稳定且大幅度地提升该领域的表现。然而，研究人员和工程团队最终想要的是一个能在所有领域都表现优异的全能模型。将多个领域的能力完美融合到单一模型中，至今仍是大模型后训练中的一个核心痛点。
 
@@ -83,7 +83,7 @@ MOPD 将整个后训练管道划分为三个清晰的顺序阶段：
 
 在以 Qwen3-30B-A3B 为基座的实验中，研究团队横跨了数学（AIME）、指令遵循（IFBench/IFEval）和软件工程（SWE-bench Verified）三个领域。由于不同领域的绝对准确率天花板差异巨大，研究人员采用了一种归一化得分（Normalised Score）来进行公平比较。该得分将第一阶段 SFT 学生的基准能力设为 0，将第二阶段专门强化学习教师的巅峰能力设为 1。
 
-<img src="/images/2606.30406v1/x1.jpg" alt="多域能力融合实验与样本效率对比图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.30406v1/x1.webp" alt="多域能力融合实验与样本效率对比图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 对比结果显示，MOPD 显著击败了所有基线方案。在归一化得分上，MOPD 达到了 0.937，不仅比最强的基线方法（Mix-RL 的 0.882）高出 5.5 分，而且表明它成功继承了每个单一领域教师约 91% 到 95% 的巅峰能力，实现了几乎无损的能力大一统。
 

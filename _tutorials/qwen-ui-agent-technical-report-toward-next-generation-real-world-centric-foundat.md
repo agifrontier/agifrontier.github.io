@@ -26,7 +26,7 @@ related_tutorials:
 
 在实验验证中，Qwen-UI-Agent 展现了极强的真实环境适应力。在包含超过 100 款 App 的真实设备测试集 MobileWorld-Real 上，它达到了 92.2% 的成功率，在另一个真实设备基准 AndroidDaily 上更是取得了 97.5% 的惊人成绩。这些结果显著超越了诸如 Claude Opus 4.8、Gemini 3.1 Pro 以及 GPT-5.6 Sol 等闭源前沿模型。
 
-<img src="/images/2607.28227/performance_6panel_v3.jpg" alt="Qwen-UI-Agent多场景性能概览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.28227/performance_6panel_v3.webp" alt="Qwen-UI-Agent多场景性能概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 从模拟沙箱走向真实的复杂世界
 
@@ -36,13 +36,13 @@ Qwen-UI-Agent 的破局思路是从源头解决数据与环境脱节的问题。
 
 为了让这个包含上百台真实手机的集群能够稳定地支持大模型训练，研究者引入了一个“健康感知调度器”（Health-aware scheduler）。当一个任务进入队列时，调度器会实时评估每一台手机的健康状态、应用账号权限以及网络连通性。如果模型在执行过程中由于真实环境的不可控因素（如应用服务宕机、设备突然断网）导致失败，系统内部署的视觉语言模型裁判（VLM-based judge）会介入。它通过分析完整的回放轨迹，将“模型决策失误”与“环境故障”区分开来。确认的环境故障将被隔离并触发设备修复，而只有确认有效的交互轨迹才会流入训练集。这种设计有效剥离了真实世界的噪声，让模型能够在不稳定的物理载体上学到稳定的操作策略。
 
-<img src="/images/2607.28227/realdevice.jpg" alt="Qwen-UI-Agent真实手机运行环境与调度器" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.28227/realdevice.webp" alt="Qwen-UI-Agent真实手机运行环境与调度器" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 不仅限于手机端，Qwen-UI-Agent 被设计为一个能穿梭于异构数字环境的基础 Agent。以往的智能体大多局限于单一领域，做手机 Agent 的不管桌面，做 Web Agent 的不碰本地文件。但在实际工作流中，用户常常需要将任务在手机和电脑间接力。
 
 为了支撑跨域执行，模型配备了一个轻量级的挂载层（Harness layer）。这个层充当了不同平台间的“状态总线”，使得任务上下文得以保留。例如，Agent 可以在桌面端接收到一个处理排班的任务，通过桌面环境的命令行与界面查找资料；遇到需要通过手机端接收验证码或特定 App 权限的操作时，工作流能够无缝转移到移动环境中继续进行。这种跨平台的一致性，将分散的多域能力整合成了一体化的真实任务执行力。
 
-<img src="/images/2607.28227/overview.jpg" alt="Qwen-UI-Agent跨平台主动执行轨迹示例" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.28227/overview.webp" alt="Qwen-UI-Agent跨平台主动执行轨迹示例" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### GUI与CLI混合的统一动作空间
 
@@ -54,7 +54,7 @@ Qwen-UI-Agent 的破局思路是从源头解决数据与环境脱节的问题。
 
 Qwen-UI-Agent 能够在单个模型推理轮次内，生成一个包含多个有序动作的批次序列。在这个批次中，GUI 点击和 CLI 命令可以交错执行。执行完毕后，所有命令行的输出会被汇总压缩，作为下一步的观察输入。在实际的计算机控制任务中，研究显示有超过 40% 的动作输出被模型打包成了批处理形式。这一机制大幅缩减了长任务的执行步数，降低了因过度频繁推理而导致的任务迷失概率。
 
-<img src="/images/2607.28227/Env.jpg" alt="Qwen-UI-Agent环境基础设施概览" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.28227/Env.webp" alt="Qwen-UI-Agent环境基础设施概览" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 支撑长程任务的在线强化学习与数据飞轮
 

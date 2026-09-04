@@ -13,7 +13,7 @@ related_tutorials:
 
 ## MetaClaw：AI Agent的在职进化论，准确率从21.4%飙升至40.6%
 
-<img src="/images/2603.17187v1/A__title.jpg" alt="MetaClaw：AI Agent的在职进化论，准确率从21.4%飙升至40.6% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2603.17187v1/A__title.webp" alt="MetaClaw：AI Agent的在职进化论，准确率从21.4%飙升至40.6% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 你是否曾感到沮丧，你的AI助手虽然聪明，却似乎从不吸取教训？今天你纠正了它的一个错误，明天它可能在同样的地方再次跌倒。这种“静态智能”是当前AI Agent在处理复杂、多变任务时的一大瓶颈。
 
@@ -25,7 +25,7 @@ related_tutorials:
 
 通过一套巧妙的双速进化机制，MetaClaw能让基于Kimi的Agent在基准测试中的准确率，从21.4%一举跃升至40.6%，几乎翻了一番！
 
-<img src="/images/2603.17187v1/x5.jpg" alt="MetaClaw 框架概览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.17187v1/x5.webp" alt="MetaClaw 框架概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1: MetaClaw框架通过两个不同时间尺度的互补循环来提升模型。*
 
@@ -109,7 +109,7 @@ MetaClaw的精妙之处在于，上述两个循环并非各自为战，而是形
 
 *   **持续学习能力**：如下图所示，随着时间的推移（模拟工作日增加），任务难度不断上升，但MetaClaw（蓝色和绿色实线）相较于基线模型（虚线），能更好地维持其性能，尤其在任务复杂度中等的阶段（day11-22）优势最为明显。
 
-<img src="/images/2603.17187v1/x7.jpg" alt="每日准确率趋势图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.17187v1/x7.webp" alt="每日准确率趋势图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图2: 在MetaClaw-Bench上，MetaClaw（实线）相较于基线（虚线）展现出更强的持续适应能力。*
 

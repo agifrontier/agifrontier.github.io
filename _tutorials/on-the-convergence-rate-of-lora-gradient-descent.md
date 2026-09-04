@@ -13,7 +13,7 @@ related_tutorials:
 
 ## LoRA收敛性之谜破解：首个$O(1/\log T)$非渐进收敛速率证明
 
-<img src="/images/2512.18248v1/A__title.jpg" alt="LoRA收敛性之谜破解：首个 非渐进收敛速率证明 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.18248v1/A__title.webp" alt="LoRA收敛性之谜破解：首个 非渐进收敛速率证明 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型微调的江湖中，**低秩适配**（**Low-Rank Adaptation, LoRA**）无疑是当之无愧的“顶流”。它以极低的计算成本和显存占用，实现了与全量微调相媲美的效果。然而，在LoRA大行其道的背后，一直存在一个理论上的“幽灵”：**我们其实并不完全理解它为什么能收敛。**
 

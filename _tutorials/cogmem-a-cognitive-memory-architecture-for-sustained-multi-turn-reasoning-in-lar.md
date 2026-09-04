@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 给大模型装上“类脑记忆”：CogMem三层架构破解长对话遗忘难题，多轮推理更像人
 
-<img src="/images/2512.14118v1/A__title.jpg" alt="给大模型装上“类脑记忆”：CogMem三层架构破解长对话遗忘难题，多轮推理更像人 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.14118v1/A__title.webp" alt="给大模型装上“类脑记忆”：CogMem三层架构破解长对话遗忘难题，多轮推理更像人 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大语言模型（LLM）往往是“短跑冠军”却也是“马拉松低手”。在单轮对话中，它们能展现出惊人的推理能力，但一旦进入漫长的多轮交互，随着上下文的拉长，模型往往会陷入“失忆”、幻觉频发、逻辑前后矛盾的泥潭。现有的解决方案通常是简单粗暴地将所有历史对话塞进上下文窗口，这不仅导致计算成本飙升，还会因为噪音过多干扰模型的判断。
 
@@ -26,7 +26,7 @@ related_tutorials:
 
 CogMem 的核心创新在于其分层记忆设计，这一灵感直接来源于人类的认知科学模型（特别是 Oberauer 的工作记忆模型）。它并没有把所有信息混为一谈，而是将记忆划分为三个层级，分别处理不同时间跨度和重要性的信息：
 
-<img src="/images/2512.14118v1/x1.jpg" alt="CogMem 框架概览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.14118v1/x1.webp" alt="CogMem 框架概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 1.  **注意力焦点**（**Focus of Attention, FoA**）：
 

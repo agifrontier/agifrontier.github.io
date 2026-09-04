@@ -68,7 +68,7 @@ related_tutorials:
 *   **Beam search**: 在生成答案的每一步，保留N个候选项，使用PRM评分并选择最好的M个进行下一步扩展。
 *   **Lookahead search**: Beam search的加强版，在评估当前步骤时，会向前“模拟”生成k步，并使用模拟终点的PRM分数来评估当前步骤的优劣。
 
-<img src="/images/2408.03314v1/x3.jpg" alt="不同PRM搜索方法对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2408.03314v1/x3.webp" alt="不同PRM搜索方法对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 <center>图注：左：Best-of-N；中：Beam search；右：Lookahead search。</center>
 
 **发现**：
@@ -76,7 +76,7 @@ related_tutorials:
 *   $$Beam search$$ 在中等和较难问题上表现更好，而 $$Best-of-N$$ 在简单问题上更鲁棒。
 *   通过应用**计算最优策略**（即根据问题难度在 $$Best-of-N$$ 和 $$Beam search$$ 中切换），其性能可以远超任何单一策略，用少至 $$4x$$ 的计算量就能达到 $$Best-of-N$$ 的效果。
 
-<img src="/images/2408.03314v1/x4.jpg" alt="计算最优搜索策略与基线的对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2408.03314v1/x4.webp" alt="计算最优搜索策略与基线的对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 <center>图注：计算最优策略（橙色/蓝色曲线）在低计算预算下，仅用16个生成样本就能接近或超过Best-of-N基线在64个样本时的性能。</center>
 
 ### 在提议者维度上的应用：修正
@@ -84,7 +84,7 @@ related_tutorials:
 *   **并行采样 (Parallel sampling)**: 类似$$Best-of-N$$，一次性独立生成N个答案。
 *   **序列修正 (Sequential revisions)**: 生成一个答案，然后将其作为上下文，让模型生成一个修正版本，重复N次。
 
-<img src="/images/2408.03314v1/x5.jpg" alt="并行采样 vs. 序列修正" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2408.03314v1/x5.webp" alt="并行采样 vs. 序列修正" style="width:85%; max-width:450px; margin:auto; display:block;">
 <center>图注：并行采样与序列修正的流程图，以及两者结合的策略。</center>
 
 **发现**：
@@ -92,7 +92,7 @@ related_tutorials:
 *   **最优策略是两者的结合**。其最佳混合比例取决于问题难度：简单问题更适合纯序列修正（局部优化）；难题则需要一定比例的并行采样来保证探索（全局搜索）。
 *   同样，通过应用**计算最优策略**，可以在测试时根据问题难度动态调整并行与序列的计算分配比例，从而达到最佳性能。
 
-<img src="/images/2408.03314v1/x8.jpg" alt="不同并行/序列比例对不同难度问题的影响" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2408.03314v1/x8.webp" alt="不同并行/序列比例对不同难度问题的影响" style="width:90%; max-width:700px; margin:auto; display:block;">
 <center>图注：右图显示，对于简单问题（bin 1, 2），完全采用序列修正（横轴最左端）性能最好；而对于难题（bin 3, 4, 5），则需要在并行和序列间找到一个平衡点。</center>
 
 ### 创新点
@@ -100,7 +100,7 @@ related_tutorials:
 
 ## 实验结论
 
-<img src="/images/2408.03314v1/x1.jpg" alt="主要结果总结" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2408.03314v1/x1.webp" alt="主要结果总结" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 实验在MATH数学推理基准上进行，使用了PaLM 2-S*模型。
 

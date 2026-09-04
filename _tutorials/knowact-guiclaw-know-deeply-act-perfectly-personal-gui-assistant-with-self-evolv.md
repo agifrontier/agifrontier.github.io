@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">KnowAct-GUIClaw: Know Deeply, Act Perfectly, Personal GUI Assistant with Self-Evolving Memory and Skill</p>
 
-<img src="/images/2607.12625v2/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.12625v2/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 随着大语言模型能力的飞跃，智能代理（Agent）正在经历从一次性问答机器人向状态持久、可长期运行的个人桌面和手机助手的关键转型。然而，真实的设备生态往往不提供完美结构化的 API 接口，很多高价值任务要求系统直接在图形用户界面（GUI）上进行复杂交互。无论是跨应用的数据迁移，还是处理随机弹出的权限对话框，都要求系统具备类似人类的视觉定位能力和时序决策能力。
 
@@ -32,7 +32,7 @@ related_tutorials:
 
 基于该理念，团队构建了 KnowAct-GUIClaw 框架。这并非又一个简单套壳的屏幕点击器，而是一个具备自进化记忆系统和技能库的双层协同框架。它通过宿主代理（Host Agent）进行高层认知和调度，通过 GUI 子代理负责底层的精准操作。实验数据证明了这种架构的统治力：在长周期、跨应用为主的 MobileWorld 基准测试中，结合开源 Kimi-2.6 模型的 KnowAct-GUIClaw 实现了 64.1% 的压倒性胜率，不仅远超基础大模型，更击败了 GPT-5.5 和 Seed-2.0-Pro 等闭源系统。
 
-<img src="/images/2607.12625v2/front.jpg" alt="MobileWorld胜率对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.12625v2/front.webp" alt="MobileWorld胜率对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 将 GUI 操作视为一场盲人摸象的决策
 
@@ -46,13 +46,13 @@ related_tutorials:
 
 为了将这种协同具象化，作者设计了一条被称为 Know-Route-Act-Reflect 的闭环执行栈，将静态的视觉理解转变为动态的经验利用。
 
-<img src="/images/2607.12625v2/know-route-act-reflect.jpg" alt="KnowAct-GUIClaw核心架构图" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.12625v2/know-route-act-reflect.webp" alt="KnowAct-GUIClaw核心架构图" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在任务下达后的第一阶段（Know，知识检索），系统在产生任何物理点击之前，会优先通过语义相似度从记忆库中唤醒与当前任务相关的应用候选、历史工具和操作策略。值得注意的是，这些被唤醒的记忆扮演的是“顾问”角色，它们以策略注入的方式引导宿主代理，而不是直接强硬地覆盖当前的新指令。这种设计既保证了经验的复用，又避免了刻舟求剑的死板。
 
 紧接着进入拆解阶段（Route，任务分解）。为了解决跨应用数据丢失的顽疾，KnowAct-GUIClaw 的路由策略不是去预测具体的屏幕点击序列，而是将复杂需求拆解为一个个带有明确契约的子任务。对于每一个子任务，路由器都会显式定义它所需的“输入数据”和应该返回的“输出数据”。例如，从邮箱提取验证码然后填入注册页，前一个子任务必须将验证码数值挂载到系统共享的数据板上，后一个子任务必须声明需要调用该数值。如果在任何一环发现输入或输出缺失，工作流会立即触发熔断并报告异常，而不是带着错误的状态继续往下瞎走，这极大提升了跨应用调度的严谨性。
 
-<img src="/images/2607.12625v2/blackboard-subgoal.jpg" alt="任务黑板与跨应用状态转移" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.12625v2/blackboard-subgoal.webp" alt="任务黑板与跨应用状态转移" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在具体的执行阶段（Act，混合动作），GUI 子代理所面对的不再是单一的“点击/滑动”动作空间，而是一个高度复合的工具箱。这个动作空间融合了传统的多模态视觉操作、由历史成功经验蒸馏出的复合技能，以及系统原生的快捷命令（如安卓的 Intent）。但在调用那些看似高效的捷径之前，子代理必须基于当前的实时屏幕状态进行严苛的页面验证。这种设计巧妙平衡了效率与可靠性，既保证了在已知路径上的狂飙突进，又防止了因为环境微小变化而导致的满盘皆输。
 
@@ -64,7 +64,7 @@ related_tutorials:
 
 更深层次的进化体现在对经验和技能的分类存储上。研究团队借鉴了将经验转化为资产的思路，设计了独立的成功提示词和失败提示词来诱导模型提炼教训。对于那些反复出现的成功操作序列（比如固定的登录流程），系统会将其提炼并参数化，转化为可复用的“技能（Skill）”固化下来。而对于那些失败的尝试（例如在某个 App 里误入了不支持所需功能的页面），系统则会将其提炼为文本形式的“经验记忆（Experience Memory）”。
 
-<img src="/images/2607.12625v2/gui_memory_case.jpg" alt="GUI记忆介入的实际案例对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.12625v2/gui_memory_case.webp" alt="GUI记忆介入的实际案例对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 作者通过一个极其直观的案例证明了这种自进化记忆的威力。在操作 Mastodon（长毛象）应用的场景中，如果系统没有先前的经验记忆，它会凭借常识在手机 App 的设置里来回翻找“生成邀请链接”的选项，最终一无所获地卡死在无效路径上。然而，当系统接入了经过蒸馏的经验记忆后，宿主代理在任务一开始就会被明确告知：高级邀请链接功能在移动端 App 是缺失的，必须跳转至 Web 端管理面板。于是，执行器直接放弃在 App 内的盲目探索，调起浏览器并直达目标页面。这种能力的质变，完全不需要对底层大模型进行任何参数微调，纯粹依靠框架本身的记忆反刍机制就实现了降维打击。
 

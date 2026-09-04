@@ -51,7 +51,7 @@ related_tutorials:
     *   **Jupyter Notebooks处理**: 将Jupyter Notebooks转化为两种格式：一是纯脚本格式（Jupyter – scripts），二是保留Markdown和代码块结构化配对的格式（Jupyter – structured）。
     *   **GitHub Issues和Git Commits**：对GitHub Issues中的对话进行清洗，去除机器人评论和非英文内容；对Git Commits数据应用多种启发式规则过滤，以保留高质量的代码变更记录。
 
-<img src="/images/2305.06161v2/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2305.06161v2/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 <center>图1: 标注的PII数据集中编程语言的分布。</center>
 
 ### 数据去重与加权

@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 告别硬裁剪！阿里SAPO算法，用“柔性门控”提升LLM训练稳定性与性能
 
-<img src="/images/2511.20347v1/A__title.jpg" alt="告别硬裁剪！阿里SAPO算法，用“柔性门控”提升LLM训练稳定性与性能 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.20347v1/A__title.webp" alt="告别硬裁剪！阿里SAPO算法，用“柔性门控”提升LLM训练稳定性与性能 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 用强化学习（RL）来提升大语言模型（LLM）的推理能力，已是业界共识。但这条路并不好走，训练过程常常像坐过山车，极不稳定。一个核心痛点在于，现有的优化算法，如GRPO和GSPO，普遍采用“硬裁剪”（Hard Clipping）策略来控制更新幅度，这种方法虽然能防止模型跑偏，但也像一把“一刀切”的剪刀，常常错杀有用的学习信号，导致训练效率和最终性能难以两全。
 
@@ -30,7 +30,7 @@ related_tutorials:
 
 而SAPO则像一个调光器。它引入了一个由温度参数 $\tau$ 控制的Sigmoid函数，构建了一个平滑的门控机制。
 
-<img src="/images/2511.20347v1/x1.jpg" alt="SAPO与GRPO/GSPO的对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.20347v1/x1.webp" alt="SAPO与GRPO/GSPO的对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图1：不同优化目标对比。左：代理目标值；右：梯度权重。SAPO（蓝色）的曲线平滑过渡，而GRPO/GSPO（橙/绿）在裁剪点有明显断崖。*
 
@@ -64,7 +64,7 @@ SAPO还有一个精妙的设计：**非对称温度**（Asymmetric Temperatures�
 
 因此，通过为负向奖励设置一个更高的温度（$\tau\_{neg} > \tau\_{pos}$），SAPO能让其对应的梯度权重衰减得更快，从而更有效地抑制潜在的不稳定因素。
 
-<img src="/images/2511.20347v1/x9.jpg" alt="非对称温度消融实验" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.20347v1/x9.webp" alt="非对称温度消融实验" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图：不同温度设置下的训练稳定性。当负向温度更高时（$\tau\_{neg}=1.05$，蓝色），训练最稳定。*
 
@@ -86,13 +86,13 @@ SAPO巧妙地融合了GSPO和GRPO两类方法的优点。
 
 在对Qwen3-30B-A3B模型的微调实验中，与GSPO和GRPO-R2相比，SAPO不仅训练过程更稳定，避免了过早的性能崩溃，而且在相同的计算预算下取得了更高的最终性能（Pass@1）。
 
-<img src="/images/2511.20347v1/x8.jpg" alt="数学推理任务上的性能对比" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.20347v1/x8.webp" alt="数学推理任务上的性能对比" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图：在数学推理任务上，SAPO（蓝色）的训练奖励和验证性能持续稳定增长，显著优于早期崩溃的GSPO和GRPO-R2。*
 
 更重要的是，SAPO成功应用于Qwen3-VL系列模型的训练，覆盖了从稠密到MoE架构、从文本到多模态的各种复杂场景，展现出了一致的性能增益。
 
-<img src="/images/2511.20347v1/x10.jpg" alt="Qwen3-VL-30B-A3B训练效果" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.20347v1/x10.webp" alt="Qwen3-VL-30B-A3B训练效果" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图：在Qwen3-VL大规模训练中，SAPO（蓝色）同样实现了持续的性能改进，优于基线方法。*
 

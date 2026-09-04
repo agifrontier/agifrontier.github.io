@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 数据效率暴涨100倍！Meta AI揭秘强化学习在内容审核中的Scaling Law
 
-<img src="/images/2512.20061v1/A__title.jpg" alt="数据效率暴涨100倍！Meta AI揭秘强化学习在内容审核中的Scaling Law 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.20061v1/A__title.webp" alt="数据效率暴涨100倍！Meta AI揭秘强化学习在内容审核中的Scaling Law 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在当今的数字生态系统中，内容审核（Content Moderation）就像是一场永无止境的猫鼠游戏。面对数十亿条用户生成和AI生成的推文、图片和视频，传统的审核系统往往力不从心。虽然大语言模型（LLM）展现出了惊人的潜力，但要让它们达到“专家级”的审核水平，通常需要极其昂贵且耗时的人工标注数据。
 
@@ -37,7 +37,7 @@ Meta的研究团队发现，RL不仅仅是SFT的补充，它在某些维度上�
 
 在实验中，研究人员对比了仅使用RL训练（RL-Only）和传统SFT训练的模型。结果显示，**仅使用几百个样本训练的RL模型，其表现往往能匹配甚至超越使用了数万个标注样本的SFT模型。**
 
-<img src="/images/2512.20061v1/sft_scaling_3_hpi.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.20061v1/sft_scaling_3_hpi.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 为什么会有这么大的差距？
 
@@ -65,7 +65,7 @@ Meta团队系统地评估了RL在数据量、Rollouts（采样次数）和优化
 
 在RL训练中，模型非常“鸡贼”。如果奖励设计得不够严谨，模型会倾向于输出极短的推理过程，直接猜测答案以骗取奖励，导致**长度坍塌**（Length Collapse）。
 
-<img src="/images/2512.20061v1/reward_hacking.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.20061v1/reward_hacking.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 **解决方案：奖励重塑（Reward Shaping）**
 
@@ -97,7 +97,7 @@ Meta提出了一套组合拳奖励公式：
 
 *   **反思辅助提示（Reflection-aided Prompting）**：要求模型在给出最终标签前，先进行“反思”。这种“先想后说”的机制显著改善了分数的校准度。
 
-<img src="/images/2512.20061v1/distribution_comparison.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.20061v1/distribution_comparison.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 3. 忠实度 vs. 事实性（Faithfulness vs. Factuality）
 

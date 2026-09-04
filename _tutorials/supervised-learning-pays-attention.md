@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 性能媲美XGBoost，解释性堪比Lasso：斯坦福新作“注意力Lasso”详解
 
-<img src="/images/2512.09912v1/A__title.jpg" alt="性能媲美XGBoost，解释性堪比Lasso：斯坦福新作“注意力Lasso”详解 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.09912v1/A__title.webp" alt="性能媲美XGBoost，解释性堪比Lasso：斯坦福新作“注意力Lasso”详解 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在机器学习领域，我们长期面临一个两难的选择：是选择像 **Lasso** 这样简单、透明但往往欠拟合的线性模型，还是选择像 **XGBoost** 或神经网络这样性能强大但如同“黑盒”般的复杂模型？
 
@@ -70,7 +70,7 @@ Attention Lasso 的工作流程可以概括为三个步骤：**计算注意力�
 
 其中，$m$ 是通过交叉验证选择的混合参数。
 
-<img src="/images/2512.09912v1/computer_overview.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.09912v1/computer_overview.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 上图展示了这一过程：对于输入的测试样本（Input），系统通过注意力机制（Attention）从训练数据（Values）中提取相关信息，生成局部预测，最后与全局预测结合。
 
@@ -86,7 +86,7 @@ Attention Lasso 最吸引人的地方在于它提供了一种**逐样本（Insta
 
 下图展示了在不同数据集上，Attention Lasso 学习到的系数聚类情况。这不仅展示了特征的重要性，还揭示了数据内部潜在的子群结构。
 
-<img src="/images/2512.09912v1/x2.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.09912v1/x2.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 ### 实验表现：简单即是美
 
@@ -94,7 +94,7 @@ Attention Lasso 最吸引人的地方在于它提供了一种**逐样本（Insta
 
 在与 Lasso、XGBoost、LightGBM、随机森林和 KNN 的对比中，Attention Lasso 的预测平方误差（PSE）通常显著优于标准 Lasso，并且在许多情况下与复杂的树模型（如 XGBoost）不相上下，甚至更好。
 
-<img src="/images/2512.09912v1/x1.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.09912v1/x1.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 上图展示了相对 Lasso 的性能提升百分比（越往右越好）。可以看到，Attention Lasso（红色条）在绝大多数数据集上都取得了正向收益，且经常处于领先梯队。
 

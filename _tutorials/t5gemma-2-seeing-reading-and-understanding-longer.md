@@ -13,7 +13,7 @@ related_tutorials:
 
 ## Google DeepMind重磅发布T5Gemma 2：让Encoder-Decoder架构在长文本与多模态中强势回归
 
-<img src="/images/2512.14856v1/A__title.jpg" alt="Google DeepMind重磅发布T5Gemma 2：让Encoder-Decoder架构在长文本与多模态中强势回归 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.14856v1/A__title.webp" alt="Google DeepMind重磅发布T5Gemma 2：让Encoder-Decoder架构在长文本与多模态中强势回归 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 在Decoder-only架构（如GPT、Llama）几乎统治大语言模型江山的今天，你是否想过：经典的Encoder-Decoder架构真的过气了吗？
 
@@ -68,7 +68,7 @@ T5Gemma 2将这两个模块合并为一个**联合模块（Merged Attention）**
 
 2.  **结构更统一**：使得Decoder的结构与Gemma 3原本的Decoder结构差异更小，从而让参数初始化更加容易和稳定。
 
-<img src="/images/2512.14856v1/overview.jpg" alt="T5Gemma 2 架构概览" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.14856v1/overview.webp" alt="T5Gemma 2 架构概览" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 视觉与长文本：补齐短板
 
@@ -88,7 +88,7 @@ T5Gemma 2不仅仅是一个文本模型，它还是一个**多模态长文本专
 
 3.  **后训练提升**：在仅进行轻量级微调（SFT）而未使用强化学习（RL）的情况下，T5Gemma 2的综合表现依然超越了经过复杂后训练的Gemma 3。
 
-<img src="/images/2512.14856v1/x1.jpg" alt="Gemma 3 与 T5Gemma 2 性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.14856v1/x1.webp" alt="Gemma 3 与 T5Gemma 2 性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 总结
 

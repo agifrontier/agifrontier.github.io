@@ -49,7 +49,7 @@ Vision Mamba (Vim) 的整体架构遵循了Vision Transformer (ViT) 的基本设
 4.  **Vim编码器**: 得到的token序列 $\mathbf{T}\_{0}$ 被送入一个由 $\mathtt{L}$ 个Vim模块堆叠而成的编码器中进行特征提取。
 5.  **任务头**: 最后，从编码器输出的分类token经过一个多层感知机 (MLP) 头，得到最终的预测结果。
 
-<img src="/images/2401.09417v3/x2.jpg" alt="Vim模型概览" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2401.09417v3/x2.webp" alt="Vim模型概览" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ## 核心创新：双向Mamba模块
 
@@ -123,7 +123,7 @@ Vim继承了Mamba的硬件感知设计，从而在计算、内存和IO三方面�
 ## 关键实验结果
 本文在图像分类、语义分割和目标检测等多个基准任务上对Vim进行了全面评估。
 
-<img src="/images/2401.09417v3/x1.jpg" alt="性能与效率对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2401.09417v3/x1.webp" alt="性能与效率对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *   **图像分类 (ImageNet-1K)**: Vim在不同模型尺寸上均优于或持平于高度优化的DeiT模型。例如，Vim-S的Top-1准确率达到80.3%，超过DeiT-S的79.8%。经过长序列微调后，Vim-S†的准确率提升至81.4%，接近更大尺寸的DeiT-B。
 
@@ -157,8 +157,8 @@ Vim继承了Mamba的硬件感知设计，从而在计算、内存和IO三方面�
 
 *   **效率验证**: 实验明确显示，随着图像分辨率的增加，Vim的效率优势愈发显著。在1248×1248分辨率下进行推理时，Vim的速度是DeiT的2.8倍，同时节省了86.8%的GPU显存。这一线性扩展能力是Vim的核心优势。
 
-<img src="/images/2401.09417v3/x3.jpg" alt="下游任务FPS对比" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2401.09417v3/x4.jpg" alt="下游任务GPU内存对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2401.09417v3/x3.webp" alt="下游任务FPS对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2401.09417v3/x4.webp" alt="下游任务GPU内存对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ## 结论
 实验结果有力地证明，Vim作为一种纯SSM架构，不仅在性能上能够与成熟的Vision Transformer相媲美甚至超越，而且在处理高分辨率图像时具有压倒性的计算和内存效率优势。这表明，依赖自注意力机制进行视觉表征学习并非必要。Vim凭借其出色的性能和可扩展性，展现了成为下一代视觉基础模型骨干网络的巨大潜力。

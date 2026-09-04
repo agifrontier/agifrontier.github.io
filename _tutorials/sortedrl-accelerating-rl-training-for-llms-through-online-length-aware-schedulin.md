@@ -13,7 +13,7 @@ related_tutorials:
 
 ## SortedRL：简单排个序，LLM强化学习训练吞吐量提升近40%，性能最高涨18%
 
-<img src="/images/2603.23414v1/A__title.jpg" alt="SortedRL：简单排个序，LLM强化学习训练吞吐量提升近40%，性能最高涨18% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.23414v1/A__title.webp" alt="SortedRL：简单排个序，LLM强化学习训练吞吐量提升近40%，性能最高涨18% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当今的大模型（LLM）要变得更会推理，尤其是解决复杂的数学和逻辑问题时，强化学习（RL）已成为一把不可或缺的利器。然而，这条路并不平坦。一个巨大的瓶颈正拖慢整个进程：RL训练中高达70%的时间，都可能消耗在漫长的文本生成（Rollout）阶段。
 
@@ -25,13 +25,13 @@ related_tutorials:
 
 在典型的LLM强化学习流程中，模型需要先根据提示（prompt）生成一系列解决方案（即Rollout），然后根据这些方案的好坏（奖励）来更新自身参数。问题在于，不同提示生成文本的长度天差地别。
 
-<img src="/images/2603.23414v1/x1.jpg" alt="图1：RL训练的耗时分析" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.23414v1/x1.webp" alt="图1：RL训练的耗时分析" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1(a)清晰地显示，在需要长思维链（CoT）的任务中，Rollout阶段占据了绝大部分训练时间。*
 
 如下图所示，在一个批次中，多数任务可能很快完成，但少数任务需要生成极长的文本。由于更新步骤必须等待批次中所有任务都生成完毕，这导致了严重的资源浪费和效率低下，形成了巨大的计算“气泡”。
 
-<img src="/images/2603.23414v1/x3.jpg" alt="图2：Rollout中的长度分布与等待时间" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2603.23414v1/x3.webp" alt="图2：Rollout中的长度分布与等待时间" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图1(c)展示了生成长度的长尾分布特性，这正是“气泡”问题的根源。*
 
@@ -41,7 +41,7 @@ related_tutorials:
 
 为了刺破这些“气泡”，SortedRL提出了一种**在线长度感知调度**（**Online Length-Aware Scheduling**）策略。其核心思想非常直观：不再让快的等慢的，而是让快的先“跑”！
 
-<img src="/images/2603.23414v1/x4.jpg" alt="图3：SortedRL框架概览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.23414v1/x4.webp" alt="图3：SortedRL框架概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *SortedRL通过一个长度感知控制器和状态化Rollout缓冲区，实现了动态、高效的训练流程。*
 
@@ -75,7 +75,7 @@ SortedRL的效果堪称立竿见影，无论在效率还是性能上都取得了
 
 在吞吐量测试中，研究者对比了基线方法与SortedRL的两种模式。结果显示，SortedRL的**完全在线策略模式**和**部分离策略模式**分别带来了**7.57%**和**39.48%**的吞吐量提升。
 
-<img src="/images/2603.23414v1/x9.jpg" alt="图4：不同策略下的Rollout吞吐量对比" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2603.23414v1/x9.webp" alt="图4：不同策略下的Rollout吞吐量对比" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 更直观的是“气泡率”的下降。基线方法的计算气泡率高达**74%**，而SortedRL的两种模式分别将其压缩到了惊人的**5.81%**和**3.37%**！这意味着GPU的有效利用率得到了极大提升。
 
@@ -83,7 +83,7 @@ SortedRL的效果堪称立竿见影，无论在效率还是性能上都取得了
 
 在逻辑推理任务上，使用LLaMA-3.1-8B模型，SortedRL仅用**减少40.74%的样本**就达到了与基线相同的性能水平，展现了卓越的样本效率。
 
-<img src="/images/2603.23414v1/x5.jpg" alt="图5：逻辑推理任务上的性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.23414v1/x5.webp" alt="图5：逻辑推理任务上的性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *SortedRL（绿色实线）更快地达到了高分，并且模型更早开始探索生成更长的、更复杂的推理路径。*
 

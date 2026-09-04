@@ -41,7 +41,7 @@ MLA 通过对 **KV Cache** 进行低秩压缩，并使用更大的中间投影�
 
 Youtu-LLM 的核心理念是：**Agent能力应当在预训练阶段就注入，而非仅仅靠后期微调。** 为此，研究团队构建了一个高达 **11T Tokens** 的庞大语料库，并设计了一个分阶段的“课程表”。
 
-<img src="/images/2512.24618v1/scatter.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.24618v1/scatter.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1：在Agent基准测试中，Youtu-LLM（红色星号）在极小的参数量下展现了惊人的性能，超越了众多同类模型。*
 
@@ -67,7 +67,7 @@ Youtu-LLM 的核心理念是：**Agent能力应当在预训练阶段就注入，
 
 为了让模型学会写代码并自我修正，研究者设计了一套可扩展的合成框架（如图5所示）。
 
-<img src="/images/2512.24618v1/x4.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.24618v1/x4.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图2：代码轨迹合成流水线。通过扩展任务、上下文和动作分支，构建丰富的执行路径。*
 
@@ -81,7 +81,7 @@ Youtu-LLM 的核心理念是：**Agent能力应当在预训练阶段就注入，
 
 *   **逆向合成**：这是一个巧妙的创新（如图8所示）。研究者从高质量的学术论文或法律文档出发，利用引用关系反向构建搜索路径。既然这篇论文引用了文献A，那么搜索过程就应该指向文献A。这种方法确保了搜索轨迹的真实性和权威性。
 
-<img src="/images/2512.24618v1/x8.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.24618v1/x8.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图3：开放式深度研究报告生成的轨迹合成流水线。*
 

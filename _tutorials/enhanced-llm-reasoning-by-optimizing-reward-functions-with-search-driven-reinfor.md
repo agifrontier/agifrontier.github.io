@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Enhanced LLM Reasoning by Optimizing Reward Functions with Search-Driven Reinforcement Learning</p>
 
-<img src="/images/2605.02073v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2605.02073v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 最近，强化学习（RL）在提升大型语言模型（LLM）复杂推理能力上的表现令人瞩目。特别是 DeepSeekMath 引入的组相对策略优化（GRPO）算法以及后续引发热潮的各类推理模型，证明了后训练（Post-training）阶段不仅能让模型学会说话，还能让模型学会思考。然而，在这条繁荣的技术路线背后，仍然隐藏着一个高度依赖人工经验的瓶颈环节：奖励函数（Reward Function）的设计。
 
@@ -45,7 +45,7 @@ related_tutorials:
 
 整个框架的核心是一个迭代的反馈机制。为了在有限算力下跑通整个流程，研究者选用了 Meta 的 Llama-3.2-3B-Instruct 作为固定的基础模型，并结合了 4-bit 量化与 LoRA（低秩微调）技术。整个搜索流程被划分为五个轮次，每一轮包含以下关键步骤：
 
-<img src="/images/2605.02073v1/x1.jpg" alt="框架概览" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2605.02073v1/x1.webp" alt="框架概览" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 **1. 候选奖励的生成与验证**
 
@@ -76,11 +76,11 @@ related_tutorials:
 
 经过五个轮次的搜索，系统共产出了 50 个合法的候选奖励函数。研究者绘制了这 50 个函数在各轮次中的 F1 分布。
 
-<img src="/images/2605.02073v1/x2.jpg" alt="F1按轮次变化的箱线图" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2605.02073v1/x2.webp" alt="F1按轮次变化的箱线图" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 从分布数据可以看出，系统的整体表现呈稳步上升趋势。第一轮中候选奖励的平均 F1 仅为 0.596，而到了第五轮，平均值攀升至 0.632。其中单个表现最强的奖励函数（名为 `thinking_steps_count`）在第五轮被发现，单核作战便将 F1 顶到了 0.787。虽然第三轮的数据出现过微小回落，但这正符合启发式搜索在探索未知奖励空间时的正常波动。
 
-<img src="/images/2605.02073v1/x3.jpg" alt="Precision vs Recall 图" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2605.02073v1/x3.webp" alt="Precision vs Recall 图" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 这 50 个函数中究竟藏着什么秘密？研究者提取了排名前十的奖励代码，发现了一个极具启发性的规律：**排名前列的绝大多数是“过程监督”型的函数。**
 

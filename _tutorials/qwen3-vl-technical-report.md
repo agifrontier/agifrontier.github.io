@@ -13,7 +13,7 @@ related_tutorials:
 
 ## Qwen3-VL重磅发布：256K上下文，三大架构升级打造全能多模态
 
-<img src="/images/2511.21631v1/A__title.jpg" alt="Qwen3-VL重磅发布：256K上下文，三大架构升级打造全能多模态 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.21631v1/A__title.webp" alt="Qwen3-VL重磅发布：256K上下文，三大架构升级打造全能多模态 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 多模态大模型早已不是“看图说话”那么简单了。如今，它们必须能消化长篇图文报告，理解视频内容，甚至完成复杂的数理推理。
 

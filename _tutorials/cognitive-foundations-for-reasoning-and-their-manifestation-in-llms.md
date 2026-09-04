@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 哈佛解剖LLM大脑：揭示其“浅层思维”缺陷，认知引导让性能飙升60%
 
-<img src="/images/2511.16660v1/A__title.jpg" alt="哈佛解剖LLM大脑：揭示其“浅层思维”缺陷，认知引导让性能飙升60% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.16660v1/A__title.webp" alt="哈佛解剖LLM大脑：揭示其“浅层思维”缺陷，认知引导让性能飙升60% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大语言模型（LLM）时常展现出一种令人费解的“认知失调”：它们能解决极其复杂的问题，却在一些看似更简单的变体上栽跟头。这是否意味着，LLM的“推理”与人类真正的思考过程，有着本质的不同？
 
@@ -26,11 +26,11 @@ related_tutorials:
 
 想象一个孩子在玩乐高积木。他会设立目标（搭一艘飞船），分解任务（先搭机身再搭机翼），验证连接是否牢固，并随时监控进度。这种灵活、多层次的认知协调，才是真正的推理。
 
-<img src="/images/2511.16660v1/x1.jpg" alt="用乐高飞船示例解释推理行为" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.16660v1/x1.webp" alt="用乐高飞船示例解释推理行为" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 然而，目前对LLM推理的研究却显得支离破碎。一项对近1600篇LLM推理论文的元分析显示，研究重点严重失衡：
 
-<img src="/images/2511.16660v1/x2.jpg" alt="1598篇LLM推理论文的认知元素分布" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.16660v1/x2.webp" alt="1598篇LLM推理论文的认知元素分布" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 超过一半的研究关注易于量化的行为，如**顺序组织**（sequential organization，占比55%）和**任务分解**（decomposition，占比60%）。
 

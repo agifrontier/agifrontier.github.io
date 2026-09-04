@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">PM-Bench: Evaluating Prospective Memory in LLM Agents</p>
 
-<img src="/images/2607.12385v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.12385v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大语言模型（LLM）驱动的智能体系统正在被赋予越来越长周期的任务期望。如今的模型能够浏览网页、编写代码、制定计划、调用工具，并在多轮对话中采取行动，而不再局限于单次提示词的响应。然而，随着智能体助手变得越发强大，一种新的失效模式开始频繁出现：系统失败往往不是因为缺乏相关知识，或是丢失了上下文，而是因为它没有在“正确的时刻”采取行动。例如，用户要求智能体“在周三收到账单后取消订阅”，智能体可能在周一和周二表现得完美无缺，却在周三真正收到账单时无动于衷，继续执行其他日常指令。
 
@@ -47,7 +47,7 @@ PM-Bench 的实验结果揭示了当前前沿大模型在任务执行中的严�
 
 为了填补这一空白，UCLA 团队从认知心理学中汲取灵感，将经典的“虚拟周”（Virtual Week）范式改造为适合现代工具调用智能体执行的测试框架。虚拟周最初是一种棋盘游戏式的认知测试，用于研究人类在衰老或临床损伤情况下的记忆衰退。它将多个延迟的意图嵌入到连续的日常活动流中，要求测试者在推进日常流程的同时兼顾未来的承诺。
 
-<img src="/images/2607.12385v1/Fig1.jpg" alt="PM-Bench框架概览" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.12385v1/Fig1.webp" alt="PM-Bench框架概览" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，在 PM-Bench 中，场景在模拟的七天时间表中展开。每天包含 10 到 13 个以时间为锚点的离散步骤。在每一个步骤中，智能体必须继续进行正在进行的日常活动，同时决定是否有任何被推迟的意图需要在当前这一刻被执行。PM-Bench 的核心设计目标是明确分离“智能体记住了什么”和“智能体何时采取行动”。
 
@@ -57,7 +57,7 @@ PM-Bench 的实验结果揭示了当前前沿大模型在任务执行中的严�
 
 在具体交互规范上，每个步骤遵循“先查询后行动”（Query-then-Act）的协议。在做出最终决策之前，智能体可以向外部频道（如时钟、邮箱、状态追踪器等）发出零次或多次监控查询。在观察到返回的频道内容后，智能体再提交一个动作元组 $a_t = (c_t, A_t)$，其中 $c_t$ 表示推进剧情所需的正在进行的活动选择，$A_t$ 则代表智能体决定在步骤 $t$ 立即执行的前瞻性动作子集。
 
-<img src="/images/2607.12385v1/web_UI.jpg" alt="PM-Bench交互界面" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.12385v1/web_UI.webp" alt="PM-Bench交互界面" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 为了防止模型仅仅通过硬编码或记忆任务标识符来作弊，PM-Bench 在运行时交互中隐藏了真实的动作标签。每个步骤中，系统会提供一个包含匿名动作句柄的菜单，其中混合了真实的待办任务动作和随机生成的干扰项（Lures）。智能体必须完全根据当前的触发条件来推断应该选择哪个匿名句柄，而不是机械地调用某个固定的任务 ID。此外，基准测试还引入了跨日任务、显式的取消指令和重新安排指令。当任务的时间或触发条件被修改时，模型被迫更新现有的意图，而不是依赖最初编码的上下文。
 
@@ -65,7 +65,7 @@ PM-Bench 的实验结果揭示了当前前沿大模型在任务执行中的严�
 
 既然前瞻性记忆如此困难，仅仅向模型提供完整的上下文显然是不够的。研究团队在 PM-Bench 上测试了当前主流的几种智能体记忆支架（Scaffolding）策略，以探究是否有特定的工程方法能够缓解这一缺陷。实验涵盖了 8 种配置，最终被归纳为四种核心的代理架构范式。
 
-<img src="/images/2607.12385v1/agent_setup.jpg" alt="四种主要的智能体架构配置" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.12385v1/agent_setup.webp" alt="四种主要的智能体架构配置" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 第一种是最基础的单智能体基线（Single-agent baseline）。在这种配置下，单个大模型在没有外部记忆工具、没有角色分解、也没有任何专门提示策略的情况下在环境中导航。这构成了所有其他干预方法的参考基准。这种方法完全依赖模型自身的上下文窗口来维持未来的意图，也是目前大多数对话助手的默认状态。
 
@@ -85,7 +85,7 @@ PM-Bench 的实验结果揭示了当前前沿大模型在任务执行中的严�
 
 这种现象深刻地表明，智能体在处理前瞻性记忆时面临的最大困境并非简单的“遗忘”，而是“难以校准执行的激进程度”。那些能够召回更多到期任务的方法，往往付出了变得过度激进和大幅增加误报（False Alarms）的代价；而保守的方法虽然保持了高精确度，却因为行动不足而导致任务大面积逾期。这种在精确率与召回率之间的挣扎，证明当前模型缺乏对“时间”和“条件”的深刻内化理解，它们更像是在依靠模式匹配进行猜测，而不是像人类一样在潜意识中挂起一个随时待命的触发器。
 
-<img src="/images/2607.12385v1/x1.jpg" alt="不同架构在环境监测任务中的命中率" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.12385v1/x1.webp" alt="不同架构在环境监测任务中的命中率" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 其次，实验暴露了智能体在“主动监测”（Proactive Monitoring）方面的巨大软肋。在现实世界中，许多任务的触发条件并非直接显现在眼前，而是需要主动去检查。例如“如果今天有重要邮件就回复”。在 PM-Bench 中，这类任务要求智能体主动查询隐藏的状态频道。
 

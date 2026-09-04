@@ -13,7 +13,7 @@ related_tutorials:
 
 ## Meta新作Canon Layers：仅增0.5%参数，推理深度暴涨4倍的“魔法”
 
-<img src="/images/2512.17351v1/A__title.jpg" alt="Meta新作Canon Layers：仅增0.5%参数，推理深度暴涨4倍的“魔法” 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.17351v1/A__title.webp" alt="Meta新作Canon Layers：仅增0.5%参数，推理深度暴涨4倍的“魔法” 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在大模型“炼丹”盛行的今天，我们往往面临一个尴尬的局面：当我们在数万亿 Token 上训练一个 7B 或更大的模型时，究竟是哪个架构设计起了作用？是 RoPE 位置编码？是 Mamba 的状态空间？还是纯粹的数据量堆砌？
 

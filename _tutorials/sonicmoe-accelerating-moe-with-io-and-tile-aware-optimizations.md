@@ -14,7 +14,7 @@ related_tutorials:
 
 ## SonicMoE：64张H100顶96张用，MoE训练显存暴降45%
 
-<img src="/images/2512.14080v1/A__title.jpg" alt="SonicMoE：64张H100顶96张用，MoE训练显存暴降45% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.14080v1/A__title.webp" alt="SonicMoE：64张H100顶96张用，MoE训练显存暴降45% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 DeepSeek V3、Qwen2.5-MoE 等模型的爆火，让 **混合专家模型**（**Mixture of Experts, MoE**）成为了大模型扩展的“版本答案”。大家都在追求更细粒度的专家（Fine-grained Experts）和更高的稀疏度，试图在不增加计算量的前提下榨干模型性能。
 
@@ -38,7 +38,7 @@ MoE 的发展趋势很明显：专家越来越多，但每个专家的个头越�
 
 3.  **算力浪费**：GPU 喜欢整齐划一的矩阵运算。当分配给某个专家的 Token 数量不是 GPU 处理块（Tile）的整数倍时，就需要填充 0（Padding），这些无效计算就是纯纯的浪费。
 
-<img src="/images/2512.14080v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.14080v1/x1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图 1：SonicMoE（蓝色）不仅将显存占用压到了最低且保持恒定（左图），还在计算吞吐上逼近了硬件理论上限（右图）。*
 
@@ -60,7 +60,7 @@ SonicMoE 充分利用了新一代 GPU 的硬件特性，设计了 **IO-aware Ker
 
 简单来说，就是趁着 GPU 计算单元还在忙着算上一波数据时，内存单元已经悄悄把下一波数据搬到了门口。这种“打时间差”的策略，使得 SonicMoE 在前向传播上比高度优化的 DeepGEMM 快了 43%，在反向传播上更是比 ScatterMoE 快了 **83%**。
 
-<img src="/images/2512.14080v1/x4.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.14080v1/x4.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图 2：SonicMoE 的内核工作流。通过高度模块化的设计，将 IO 操作隐藏在计算背后。*
 

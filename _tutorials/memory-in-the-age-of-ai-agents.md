@@ -14,7 +14,7 @@ related_tutorials:
 
 ## Agent记忆≠RAG！复旦/NUS重磅综述：3大维度全景拆解智能体“大脑”
 
-<img src="/images/2512.13564v1/A__title.jpg" alt="Agent记忆≠RAG！复旦/NUS重磅综述：3大维度全景拆解智能体“大脑” 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.13564v1/A__title.webp" alt="Agent记忆≠RAG！复旦/NUS重磅综述：3大维度全景拆解智能体“大脑” 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 从Kimi的长文本到Devin的自主编程，过去两年见证了LLM向**AI智能体**（**AI Agents**）的惊人进化。但你是否发现，目前的智能体大多还是“健忘”的？一旦对话结束或窗口重置，它们就变回了那个初出茅庐的“小白”。
 

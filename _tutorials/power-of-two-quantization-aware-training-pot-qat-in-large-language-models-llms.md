@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 移位代替乘法！LLM推理提速10倍、内存节省87.5%的PoT-QAT技术
 
-<img src="/images/2601.02298v1/A__title.jpg" alt="移位代替乘法！LLM推理提速10倍、内存节省87.5%的PoT-QAT技术 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.02298v1/A__title.webp" alt="移位代替乘法！LLM推理提速10倍、内存节省87.5%的PoT-QAT技术 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 随着GPT-4、Llama 3等模型的参数量从几十亿一路狂飙到万亿级别，将这些庞然大物部署在手机、IoT设备等边缘端（Edge Devices）似乎成了一个不可能完成的任务。云端算力虽强，但高昂的成本和网络延迟始终是痛点。
 
@@ -44,7 +44,7 @@ related_tutorials:
 
 为了解决这个问题，研究团队引入了 **量化感知训练**（**Quantization Aware Training, QAT**）。
 
-<img src="/images/2601.02298v1/PyTorch_QAT.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.02298v1/PyTorch_QAT.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，QAT的思路是在训练过程中就模拟量化的效果。模型在“知道”自己会被量化成2的幂次的前提下进行微调（Fine-tuning），从而学会适应这种离散的权重分布。
 
@@ -67,7 +67,7 @@ related_tutorials:
 
 实验对比了不同量化精度的PoT设置（7级、11级、15级）。结果显示，经过QAT微调，模型的训练损失（Training Loss）和验证损失（Validation Loss）都能良好收敛。
 
-<img src="/images/2601.02298v1/val-all-v1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.02298v1/val-all-v1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 从上图的验证损失曲线可以看出，虽然量化初期会有性能下降，但随着训练进行，**PoT 15-levels**（对应 $[-2^7, 2^7]$）的性能几乎追平了全精度基线（Baseline）。
 
@@ -81,7 +81,7 @@ related_tutorials:
 
 为了更接近人类的判断，研究者还使用了 **BERT-Score** 来评估生成文本的质量。
 
-<img src="/images/2601.02298v1/Bert-diff.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.02298v1/Bert-diff.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 上图展示了量化模型与基线模型在BERT-Score上的差异。随着训练步数的增加，两者之间的差距迅速缩小。最终，量化模型与全精度GPT-2的BERT-Score差异仅为 **0.0019**，相当于仅有 **1%** 的性能损失。这意味着量化后的模型在生成文本的语义质量上，与原版几乎难以区分。
 

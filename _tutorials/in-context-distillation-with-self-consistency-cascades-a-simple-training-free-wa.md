@@ -14,7 +14,7 @@ related_tutorials:
 
 ## Agent推理成本降低2.5倍：斯坦福提出“上下文蒸馏”，免训练让小模型偷师大模型
 
-<img src="/images/2512.02543v1/A__title.jpg" alt="Agent推理成本降低2.5倍：斯坦福提出“上下文蒸馏”，免训练让小模型偷师大模型 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.02543v1/A__title.webp" alt="Agent推理成本降低2.5倍：斯坦福提出“上下文蒸馏”，免训练让小模型偷师大模型 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 构建强大的LLM Agent是当下的热门趋势，但一个残酷的现实摆在所有开发者面前：使用GPT-4或Claude这类顶级模型的推理成本实在太高了！这不仅阻碍了大规模部署，也让快速原型验证变得异常昂贵。有没有一种方法，既能享受顶级模型的智慧，又不必承受其高昂的账单呢？
 
@@ -32,7 +32,7 @@ related_tutorials:
 
 2.  **自洽级联**（**Self-Consistency Cascades**）：有了“偷师”的机会，学生模型的能力大大增强，但我们如何知道它何时学得到位，何时又会出错呢？“自洽级联”就是这个“质检员”。它让学生模型对同一个问题，生成多个（例如3个）答案。如果所有答案都完全一致，说明学生胸有成竹，我们就采纳它的答案。如果答案不一致，则说明学生感到困惑，此时系统会自动“级联”，将这个难题交给昂贵的教师模型来解决。
 
-<img src="/images/2512.02543v1/x1.jpg" alt="方法概览" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.02543v1/x1.webp" alt="方法概览" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图1：上下文蒸馏与自洽级联的工作流。首先收集教师模型的示范存入数据库，推理时为学生模型检索相关范例，并通过自洽性检查决定是否求助教师模型。*
 
@@ -70,7 +70,7 @@ related_tutorials:
 
 口说无凭，实验数据最能说明问题。该研究在两个主流的Agent基准测试ALFWorld和AppWorld上进行了验证。
 
-<img src="/images/2512.02543v1/x2.jpg" alt="成本-精度权衡图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.02543v1/x2.webp" alt="成本-精度权衡图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图2：成本与准确率的帕累托前沿。黄色星星代表的“IC + Cascade”（本文方法）在两个基准上都显著优于其他方法，实现了更低的成本和更高的准确率。*
 

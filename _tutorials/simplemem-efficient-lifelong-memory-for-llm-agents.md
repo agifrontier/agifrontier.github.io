@@ -14,7 +14,7 @@ related_tutorials:
 
 ## SimpleMem：让Agent记忆成本暴降30倍！F1提升26.4%的“语义无损压缩”新架构
 
-<img src="/images/2601.02553v1/A__title.jpg" alt="SimpleMem：让Agent记忆成本暴降30倍！F1提升26.4%的“语义无损压缩”新架构 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.02553v1/A__title.webp" alt="SimpleMem：让Agent记忆成本暴降30倍！F1提升26.4%的“语义无损压缩”新架构 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型（LLM）Agent 的长期交互中，开发者往往面临一个两难的“记忆困境”：如果保留全部对话历史，不仅 Token 成本爆炸，还会因为大量无意义的闲聊（Context Inflation）导致模型注意力分散，产生“迷失中间”现象；如果试图通过推理来压缩记忆，反复的调用又会带来极高的延迟和计算开销。
 
@@ -30,7 +30,7 @@ related_tutorials:
 
 SimpleMem 选择了第三条路。它受到认知科学中**互补学习系统**（Complementary Learning Systems, CLS）理论的启发，构建了一个三阶段的流水线，旨在最大化固定上下文窗口内的信息密度。
 
-<img src="/images/2601.02553v1/x2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.02553v1/x2.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图 1：SimpleMem 架构概览。包含语义结构化压缩、递归记忆整合和自适应查询感知检索三个核心阶段。*
 
@@ -79,7 +79,7 @@ SimpleMem 提出了**自适应查询感知检索**（**Adaptive Query-Aware Retr
 
 研究团队在专门测试长期对话依赖能力的 **LoCoMo** 基准上进行了评估。结果显示，SimpleMem 展现出了压倒性的优势。
 
-<img src="/images/2601.02553v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.02553v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图 2：性能与效率的权衡。SimpleMem 位于理想的左上角区域，以极低的 Token 消耗（约 550 tokens）实现了极高的准确率。*
 

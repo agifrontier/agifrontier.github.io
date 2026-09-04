@@ -14,7 +14,7 @@ related_tutorials:
 
 ## QwenLong-L1.5：挑战GPT-5，揭秘400万字长文本推理的“后训练”秘籍
 
-<img src="/images/2512.12967v1/A__title.jpg" alt="QwenLong-L1.5：挑战GPT-5，揭秘400万字长文本推理的“后训练”秘籍 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.12967v1/A__title.webp" alt="QwenLong-L1.5：挑战GPT-5，揭秘400万字长文本推理的“后训练”秘籍 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 长文本模型仅仅意味着“读得更多”吗？
 
@@ -30,7 +30,7 @@ related_tutorials:
 
 为了解决这个问题，该研究开发了一套系统化的 **长文本数据合成流水线**（**Long-Context Data Synthesis Pipeline**）。这套流水线不再满足于生成简单的问答，而是致力于构建需要“多跳锚定”（Multi-hop Grounding）的复杂推理任务。
 
-<img src="/images/2512.12967v1/x4.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.12967v1/x4.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 其核心逻辑在于“解构与重组”：
 
@@ -56,7 +56,7 @@ QwenLong-L1.5 引入了两项关键的 RL 创新技术：
 
     为了在长序列训练中维持探索性，研究团队提出了 **自适应熵控制策略优化**（**Adaptive Entropy-Controlled Policy Optimization, AEPO**）。该算法通过动态调节探索与利用的权衡，有效控制了负梯度的影响，使模型能够在序列长度逐步增加的过程中保持训练的稳定性。
 
-<img src="/images/2512.12967v1/x9.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.12967v1/x9.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 从上图的训练动态可以看出，结合了这两项技术的 RL 策略（红色曲线），在保持奖励增长的同时，极大地稳定了熵值（Entropy）和响应长度，避免了训练崩溃。
 
@@ -72,7 +72,7 @@ QwenLong-L1.5 给出的答案是：**记忆增强架构**（**Memory-Augmented A
 
 *   **迭代记忆处理**：对于超出窗口的任务，模型通过迭代的方式阅读文本块，动态更新其内部记忆状态 $(m\_t, p\_t)$，并在最后基于累积的记忆生成答案。
 
-<img src="/images/2512.12967v1/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.12967v1/x3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 为了让模型同时具备这两种能力，研究团队采用了一种 **多阶段融合 RL 训练**（**Multi-stage Fusion RL Training**）范式。先分别训练全上下文推理专家和记忆管理专家，然后通过模型融合技术将其合二为一。
 

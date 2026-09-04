@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 给大模型配台“电脑”：通用智能涌现，长文本Token消耗暴降8倍
 
-<img src="/images/2601.16206v1/A__title.jpg" alt="给大模型配台“电脑”：通用智能涌现，长文本Token消耗暴降8倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.16206v1/A__title.webp" alt="给大模型配台“电脑”：通用智能涌现，长文本Token消耗暴降8倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如果说大模型（LLM）是拥有超级大脑的智者，那么现在的 Agent 框架往往像是给这位智者配备了特定的“拐杖”——专门的计算器、专门的搜索工具。但如果直接给它一台功能完整的“虚拟电脑”，让它自己去探索如何使用，会发生什么？
 
@@ -35,7 +35,7 @@ related_tutorials:
 
 3.  **提交结果** ($$submit$$)：告诉系统任务已完成。
 
-<img src="/images/2601.16206v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.16206v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，这种设计极大地释放了模型的潜力。在没有任何额外微调的情况下，像 Claude-3.5-Sonnet 或 GPT-4 这样的强模型展现出了惊人的**泛化能力**。
 
@@ -57,7 +57,7 @@ related_tutorials:
 
 3.  使用基于结果的奖励机制（Outcome-based Rewards）进行强化学习。
 
-<img src="/images/2601.16206v1/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.16206v1/x3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 这种训练迫使模型必须学会“与环境交互”才能获得信息。实验结果表明，经过 **LLM-in-Sandbox-RL** 训练后：
 

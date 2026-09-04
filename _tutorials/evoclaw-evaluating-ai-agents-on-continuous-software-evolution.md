@@ -13,7 +13,7 @@ related_tutorials:
 
 ## AI Agent的“金鱼记忆”：EvoClaw揭示其长期编码性能从80%暴跌至38%
 
-<img src="/images/2603.13428v1/A__title.jpg" alt="AI Agent的“金鱼记忆”：EvoClaw揭示其长期编码性能从80%暴跌至38% 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2603.13428v1/A__title.webp" alt="AI Agent的“金鱼记忆”：EvoClaw揭示其长期编码性能从80%暴跌至38% 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 近来，从Devin到Claude，AI编程智能体（Agent）的能力似乎正在以惊人的速度进化，它们能独立完成复杂的编码任务，甚至解决GitHub上的真实问题。然而，这些光鲜的成功案例，是否掩盖了一个更深层次的挑战？
 
@@ -33,7 +33,7 @@ related_tutorials:
 
 在现实中，软件开发是一个持续不断的过程。今天的决策会成为明天的约束，早期引入的一个小缺陷，可能会在未来演变成一个巨大的技术债。这种任务间的“时间依赖性”和“错误累积效应”，在现有评测中被完全忽视了。
 
-<img src="/images/2603.13428v1/x1.jpg" alt="EvoClaw的里程碑粒度" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2603.13428v1/x1.webp" alt="EvoClaw的里程碑粒度" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 <center>图1：EvoClaw提出“里程碑”粒度，在功能内聚性和演进感知之间取得了最佳平衡。</center>
 
@@ -45,7 +45,7 @@ related_tutorials:
 
 为此，该研究设计了一个名为 **DeepCommit** 的自动化智能体流水线（Agentic Pipeline）。
 
-<img src="/images/2603.13428v1/x2.jpg" alt="DeepCommit流水线架构" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.13428v1/x2.webp" alt="DeepCommit流水线架构" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 <center>图2：DeepCommit流水线架构图</center>
 
@@ -67,7 +67,7 @@ DeepCommit的核心思想是，将软件演进过程建模为一个个“里程�
 
 与传统评测不同，EvoClaw设计了两种截然不同的评测模式：
 
-<img src="/images/2603.13428v1/x3.jpg" alt="EvoClaw的两种评测流程" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.13428v1/x3.webp" alt="EvoClaw的两种评测流程" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 <center>图3：(a) 独立任务评测 vs (b) 连续任务评测</center>
 
@@ -87,7 +87,7 @@ DeepCommit的核心思想是，将软件演进过程建模为一个个“里程�
 
 然而，切换到“连续任务”模式后，所有模型的性能都出现了断崖式下跌。表现最好的Claude Opus 4.6，其综合得分也仅为**38.03%**，而完全解决任务的比例（Resolve Rate）更是低至**13.37%**。
 
-<img src="/images/2603.13428v1/x6.jpg" alt="独立任务与连续任务的性能对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2603.13428v1/x6.webp" alt="独立任务与连续任务的性能对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 <center>图5：在所有项目中，连续任务（橙色）的得分远低于独立任务（蓝色）。</center>
 
@@ -103,7 +103,7 @@ DeepCommit的核心思想是，将软件演进过程建模为一个个“里程�
 
 分析发现了一个关键的不对称性：
 
-<img src="/images/2603.13428v1/x9.jpg" alt="召回率与精确率的演进趋势" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2603.13428v1/x9.webp" alt="召回率与精确率的演进趋势" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 <center>图9：随着演进的进行，召回率（实线）持续线性增长，但精确率（虚线）很快饱和并停滞不前。</center>
 
@@ -115,7 +115,7 @@ DeepCommit的核心思想是，将软件演进过程建模为一个个“里程�
 
 在连续开发中，早期的一个小错误会像滚雪球一样越滚越大。研究者通过“错误链”（error chains）分析发现，一个在初期被引入的Bug，会沿着依赖关系链传播，污染下游任务，导致后续的测试大量失败，最终让整个开发过程完全停滞。
 
-<img src="/images/2603.13428v1/x11.jpg" alt="错误传播分析" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2603.13428v1/x11.webp" alt="错误传播分析" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 <center>图10：错误传播类型分析。继承的失败（P1）在演进后期成为主导。</center>
 

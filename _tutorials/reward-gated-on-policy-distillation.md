@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Reward-Gated On-Policy Distillation</p>
 
-<img src="/images/2607.04037v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.04037v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在大型语言模型的后训练（Post-training）阶段，如何将强大的闭源或超大参数模型（Teacher）的推理能力，高效地迁移到参数量较小的模型（Student）身上，一直是工业界和学术界死磕的核心命题。目前主流的路线主要有两条：一条是基于验证器反馈的强化学习（RLVR），另一条是知识蒸馏（Knowledge Distillation）。
 
@@ -61,7 +61,7 @@ related_tutorials:
 
 RG-OPD 的做法是，不再把所有的学生生成轨迹都扔给蒸馏损失函数，而是建立一个“门控”（Gate），只有当验证器的奖励方向与教师-学生模型的概率差距方向**保持一致**时，才允许进行蒸馏更新。
 
-<img src="/images/2607.04037v1/digram3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.04037v1/digram3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 具体而言，在每个训练步骤中，学生模型对某个问题 $x$ 采样出多条轨迹，验证器对每条轨迹给出一个标量奖励 $r_i$（或者优势函数 Advantage $A_i$）。对于每个采样的 Token，系统会同时计算三个对数概率：当前学生模型的概率、采样时旧学生模型的概率、以及教师模型的概率。
 

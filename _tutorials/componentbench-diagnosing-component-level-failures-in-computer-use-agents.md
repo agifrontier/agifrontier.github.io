@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">ComponentBench: Diagnosing Component-Level Failures in Computer-Use Agents</p>
 
-<img src="/images/2608.18307v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.18307v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 随着 OpenAI Operator 和 Anthropic 计算机使用（Computer Use）API 的相继发布，能够直接操作网页和软件的计算机智能体（Computer-Use Agents）正迅速从实验室原型走向大规模商用。然而，当前业界对这些智能体的评估陷入了两个极端的泥潭：要么是像 WebArena 那样极其宏大的长周期工作流测试，要么是像 ScreenSpot 那样极其微观的原子级 GUI 定位测试。这导致了一个致命的盲区——当智能体在一个长流程中失败时，研究人员根本无法判断是因为规划能力不足，还是仅仅因为未能正确点击一个下拉菜单。
 
@@ -42,7 +42,7 @@ related_tutorials:
 
 为了彻底摸清智能体在这些关键节点上的真实表现，ComponentBench 应运而生。它不是对完整网站的粗略扫描，而是对构成网站的基础砖块进行高强度的“破坏性测试”。
 
-<img src="/images/2608.18307v1/figure1_hero.jpg" alt="ComponentBench评估概览" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.18307v1/figure1_hero.webp" alt="ComponentBench评估概览" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 从本体库到程序化验证：ComponentBench 的硬核设计
 
@@ -58,7 +58,7 @@ ComponentBench 的核心设计理念是“系统化”与“确定性”。研�
 
 第三，在统一的测试框架内支持多种观察与动作空间。本文设计了四个对比象限：可访问性树（AX-tree）、标记集合（Set-of-Marks, SoM）、纯像素（Pixel）以及作为工具丰富参照组的 Browser-Use。这使得研究人员能够将“模型内在的推理能力”与“暴露给模型的接口设计”彻底剥离。
 
-<img src="/images/2608.18307v1/figure2_worked_example.jpg" alt="ComponentBench具体任务示例" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.18307v1/figure2_worked_example.webp" alt="ComponentBench具体任务示例" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在上面展示的 `data_table_filterable` 任务中，页面上存在三个视觉上高度相似的微型表格。智能体必须准确识别出“Invoices”表格，应用两项过滤条件，并点击该实例局部的“Apply”按钮。这种饱含干扰项和状态提交流程的设计，正是现代复杂企业级 SaaS 软件的真实缩影。
 

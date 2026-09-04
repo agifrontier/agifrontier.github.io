@@ -61,7 +61,7 @@ related_tutorials:
 
 本文提出 Self-RAG 框架，通过训练一个语言模型 $\mathcal{M}$，使其不仅能生成文本，还能生成特殊的 "反思 Token" 来控制检索和评估自身输出。其核心思想是将“反思”内化为模型自身的能力，而不是依赖外部模块。
 
-<img src="/images/2310.11511v1/x1.jpg" alt="Self-RAG 框架概览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2310.11511v1/x1.webp" alt="Self-RAG 框架概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 *图1：Self-RAG 框架概览。左侧为传统RAG，右侧为 Self-RAG。Self-RAG 学会按需检索、评价和生成文本，以提升整体质量、事实性和可验证性。*
 
 ### 训练流程
@@ -91,7 +91,7 @@ Self-RAG 的训练是一个两阶段过程，旨在高效地将反思能力注�
 
     *   这种离线（offline）生成反思 Token 的方式，使得训练生成器 $$M$$ 时无需同时运行评价模型，极大降低了训练成本和复杂度，与需要在线奖励模型和复杂强化学习策略的 RLHF 形成对比。
 
-<img src="/images/2310.11511v1/x2.jpg" alt="Self-RAG 训练样本示例" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2310.11511v1/x2.webp" alt="Self-RAG 训练样本示例" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图2：Self-RAG 训练样本示例。左侧例子不需要检索，右侧例子需要检索并插入了外部段落和相应的反思 Token。*
 
 ### 推理流程
@@ -156,10 +156,10 @@ Algorithm 1: Self-RAG Inference
 3.  **对复杂任务提升显著**: 在传统 RAG 方法提升有限的任务上（如事实核查 PubHealth 和推理 ARC），Self-RAG 依然取得了巨大进步。这表明其通过自我评价来筛选和利用证据的机制比简单的信息拼接更为有效。
 4.  **可控性验证**: 消融实验证明了 Self-RAG 各个组成部分（如评价模型 $$C$$、$$IsSup$$ 评价 Token）的有效性。实验还表明，通过在推理时调整评价 Token 的权重，可以有效地在生成内容的流畅性（MAUVE）和事实性（引用精度）之间进行权衡，实现了无需再训练的灵活控制。
 
-<img src="/images/2310.11511v1/x3.jpg" alt="实验结论 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2310.11511v1/x3.webp" alt="实验结论 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 *(a)消融研究，显示了移除训练或测试中关键组件后的性能下降。*
 
-<img src="/images/2310.11511v1/x4.jpg" alt="实验结论 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2310.11511v1/x4.webp" alt="实验结论 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 *(b) 可定制性，展示了调整 `IsSup` Token 的权重可以在流畅性（Mauve）和引用精度之间进行权衡。*
 
 **最终结论**:

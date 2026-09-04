@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 英伟达亮剑LLM路由：成本锐减74%，性能直追理论最优！
 
-<img src="/images/2603.20895v1/A__title.jpg" alt="英伟达亮剑LLM路由：成本锐减74%，性能直追理论最优！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.20895v1/A__title.webp" alt="英伟达亮剑LLM路由：成本锐减74%，性能直追理论最优！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当面对一个复杂任务时，我们应该用GPT-4、Claude 3还是Llama 3？这是一个价值千金的问题。每个顶尖大模型都有自己的“绝活”，但在某些任务上也会“翻车”。如果有一个智能调度员，能为每个问题自动选择最擅长且最经济的模型，那该多好？
 
@@ -39,7 +39,7 @@ related_tutorials:
 
 这就像一位经验丰富的旁观者（编码器模型），通过观察棋手（目标模型）的开局落子，就能比棋手本人更准确地判断这盘棋的输赢。这使得我们能用一个轻量级的本地模型，去高效调度那些昂贵、不透明的闭源API，极具实用价值。
 
-<img src="/images/2603.20895v1/arch_diag.jpg" alt="模型路由架构" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.20895v1/arch_diag.webp" alt="模型路由架构" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1：LLM Router的两阶段架构：首先从编码器模型中提取Prefill信号，然后用一个小型网络（SharedTrunkNet）来预测各个目标模型的置信度。*
 
@@ -73,11 +73,11 @@ $${% endraw %}
 
 结果显示，SharedTrunkNet的表现全面碾压了基于语义的路由方法。
 
-<img src="/images/2603.20895v1/froniteR_raw_add_paper.jpg" alt="Frontier模型池成本-准确率曲线" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.20895v1/froniteR_raw_add_paper.webp" alt="Frontier模型池成本-准确率曲线" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图2：在前沿模型池上的原始成本-准确率曲线。蓝线（SharedTrunkNet）在所有成本点上都实现了比其他方法更高的准确率。*
 
-<img src="/images/2603.20895v1/forntier_inv_without_legend.jpg" alt="Frontier模型池归一化性能曲线" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2603.20895v1/forntier_inv_without_legend.webp" alt="Frontier模型池归一化性能曲线" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图3：归一化后的性能对比。目标是尽可能接近右上角的“Oracle”（理论最优）点。SharedTrunkNet（蓝色）的曲线最接近这个目标。*
 

@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">ACM: Agentic Context Management for Long Horizon Tasks</p>
 
-<img src="/images/2607.23809v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.23809v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大型语言模型（LLM）驱动的自主智能体（Agent）研究领域，长程任务始终是一个难以逾越的物理与认知双重瓶颈。当智能体在真实环境中执行复杂的网络搜索或代码编写任务时，它们不可避免地会与环境进行多轮交互。这些交互会产生海量的上下文——冗长的工具调用返回结果、多次尝试失败的报错信息、以及智能体自身的中间推理轨迹。这些信息迅速堆积，即使是名义上支持百万级别上下文窗口的最前沿模型，也会在这些充满噪声的历史记录中迷失方向，导致推理能力急剧下降。
 
@@ -44,7 +44,7 @@ ACM框架的设计灵感直接来源于人类认知的记忆机制，即短期�
 
 这种设计的精妙之处在于实现了真正的“无损（Lossless）”与“自主（Agent-initiated）”。与以往只能进行有损摘要压缩的基准方法（如ReSum或ACON）不同，ACM保留了所有原始数据；与完全依赖外部脚本强行截断的框架相比，ACM将“何时压缩”的决定权完全交还给了智能体的大脑，使其能够根据当前任务的逻辑进展动态调整有效上下文。
 
-<img src="/images/2607.23809v1/acm_pipeline.jpg" alt="ACM框架概览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.23809v1/acm_pipeline.webp" alt="ACM框架概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 跨越能力鸿沟：双重约束的后训练流水线
 
@@ -60,7 +60,7 @@ ACM框架的设计灵感直接来源于人类认知的记忆机制，即短期�
 
 另一方面，针对学生模型可能胡乱调用工具的轨迹，教师模型需要识别出那些“本该继续深入搜索”或“其实已经可以得出最终答案”却错误触发压缩的节点。在这些位置，教师模型会将上下文管理动作替换为更合理的搜索或作答动作。
 
-<img src="/images/2607.23809v1/data_pipeline.jpg" alt="双重约束的训练数据生成流水线" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.23809v1/data_pipeline.webp" alt="双重约束的训练数据生成流水线" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 为了确保生成的监督数据具备极高的质量，研究团队引入了严格的过滤机制。他们仅保留学生模型最初未能成功解决的困难任务轨迹，确保模型学习到的是真正具有挑战性的上下文压力应对策略。同时，内容过滤器会强制要求教师模型在标注时，必须基于轨迹的结构特征（例如“已经发起三次相同的查询”或“连续报错”）来解释压缩的理由，而绝对不能利用开了上帝视角才掌握的答案特征。这种严苛的过滤促使学生模型学会识别需要压缩的通用模式，而不是死记硬背特定任务的线索。
 

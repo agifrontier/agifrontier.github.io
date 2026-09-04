@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 打破投机采样瓶颈：美团提出“稀疏验证”框架，Attention与MoE全面瘦身
 
-<img src="/images/2512.21911v1/A__title.jpg" alt="打破投机采样瓶颈：美团提出“稀疏验证”框架，Attention与MoE全面瘦身 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.21911v1/A__title.webp" alt="打破投机采样瓶颈：美团提出“稀疏验证”框架，Attention与MoE全面瘦身 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型推理加速的赛道上，**投机采样**（**Speculative Decoding**）无疑是近年来最耀眼的明星技术之一。它通过一个小巧的“草稿模型”快速生成多个候选 Token，再由大模型（目标模型）一次性并行验证，从而在不损失精度的情况下显著提升推理速度。
 
@@ -41,7 +41,7 @@ related_tutorials:
 
 基于此，研究团队设计了一套三位一体的稀疏验证策略。
 
-<img src="/images/2512.21911v1/intro.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.21911v1/intro.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 核心技术一：面向多 Token 的稀疏 Attention
 

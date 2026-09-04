@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 只需数百样本，性能反超SOTA！蚂蚁Thinker教LLM如何“分层思考”
 
-<img src="/images/2511.07943v1/A__title.jpg" alt="只需数百样本，性能反超SOTA！蚂蚁Thinker教LLM如何“分层思考” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.07943v1/A__title.webp" alt="只需数百样本，性能反超SOTA！蚂蚁Thinker教LLM如何“分层思考” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型在应对复杂问题时，常常像一个知识渊博但思维混乱的学生。它们在需要深度搜索和多步推理的任务面前，要么逻辑跳跃，要么效率低下，甚至自信地“一本正经胡说八道”。
 
@@ -48,7 +48,7 @@ Thinker 会将其分解为：
 
 5.  根据#2和#4的结果，哪位导演先去世，他导演的是哪部电影？
 
-<img src="/images/2511.07943v1/x2.jpg" alt="Thinker模型概览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.07943v1/x2.webp" alt="Thinker模型概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图注：Thinker模型的分层思考与多轮交互推理概览*
 

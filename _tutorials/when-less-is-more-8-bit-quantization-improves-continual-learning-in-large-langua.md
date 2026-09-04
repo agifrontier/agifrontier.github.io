@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 少即是多？8-bit量化竟让大模型持续学习能力暴涨15%
 
-<img src="/images/2512.18934v1/A__title.jpg" alt="少即是多？8-bit量化竟让大模型持续学习能力暴涨15% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.18934v1/A__title.webp" alt="少即是多？8-bit量化竟让大模型持续学习能力暴涨15% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在人工智能领域，我们通常认为“精度即正义”：模型参数的精度越高（如FP16），性能就越好；而量化（Quantization）通常被视为一种为了节省计算资源而不得不做出的妥协，往往伴随着性能的损失。
 
@@ -51,7 +51,7 @@ Algoverse的研究团队在LLaMA-3.1-8B模型上进行了一系列严谨的实�
 
 *   **代码生成的奇迹**：在代码生成任务中，INT4模型的表现竟然达到了FP16的**两倍**（40% vs 20%）。
 
-<img src="/images/2512.18934v1/performance_graphs.jpg" alt="Forward Accuracy" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.18934v1/performance_graphs.webp" alt="Forward Accuracy" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图1：不同量化精度与回放大小下的任务表现。可以看到在低回放比例下，量化模型（特别是INT8）表现出了优越的稳定性。*
 
@@ -77,7 +77,7 @@ Algoverse的研究团队在LLaMA-3.1-8B模型上进行了一系列严谨的实�
 
 3.  **FP16的脆弱性**：高精度模型在缺乏足够回放数据时，遗忘速度最快。这意味着如果你必须使用FP16，你反而需要更大的存储空间来保存旧数据。
 
-<img src="/images/2512.18934v1/retention_graphs.jpg" alt="Retention Graphs" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.18934v1/retention_graphs.webp" alt="Retention Graphs" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图2：不同精度下的知识保留率。注意看INT8在低回放比例下的稳健表现。*
 

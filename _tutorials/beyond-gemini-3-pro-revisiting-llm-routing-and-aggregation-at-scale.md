@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 超越Gemini-3-Pro：开源模型“组团”打怪，成本仅47%！
 
-<img src="/images/2601.01330v1/A__title.jpg" alt="超越Gemini-3-Pro：开源模型“组团”打怪，成本仅47%！ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01330v1/A__title.webp" alt="超越Gemini-3-Pro：开源模型“组团”打怪，成本仅47%！ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 开篇：单体模型真的越大越好吗？
 
@@ -71,7 +71,7 @@ related_tutorials:
 
 结果令人咋舌（见下图）：
 
-<img src="/images/2601.01330v1/x2.jpg" alt="JiSi 性能对比图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01330v1/x2.webp" alt="JiSi 性能对比图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *   **全面超越**：JiSi 在综合榜单上击败了所有单体模型，包括最强的闭源模型 **Gemini-3-Pro**。
 

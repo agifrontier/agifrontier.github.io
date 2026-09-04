@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 别再堆Thinking Tokens了！qTTT让长文本性能暴涨14%
 
-<img src="/images/2512.13898v1/A__title.jpg" alt="别再堆Thinking Tokens了！qTTT让长文本性能暴涨14% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.13898v1/A__title.webp" alt="别再堆Thinking Tokens了！qTTT让长文本性能暴涨14% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 长文本（Long Context）已经成为大模型竞赛的必争之地，百万级 Token 的上下文窗口似乎已成标配。然而，也就是在我们将海量文档塞给模型时，一个尴尬的现实浮出水面：**模型“读得进去”，但未必“找得出来”。**
 
@@ -39,7 +39,7 @@ related_tutorials:
 
 遗憾的是，**静态的注意力机制无法自动满足这一要求**。更糟糕的是，目前流行的“Thinking Tokens”策略，本质上是在使用相同的静态参数生成更多 Token。如果模型原本的注意力机制就已经被稀释了，生成再多的思考过程也无法从根本上“捞”出被淹没的信号。
 
-<img src="/images/2512.13898v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.13898v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图 1(b)：随着上下文长度增加（横轴），仅靠上下文（蓝色）和增加 Thinking Tokens（橙色）的效果都在下降，而 qTTT（绿色）依然坚挺。*
 
@@ -57,7 +57,7 @@ related_tutorials:
 
 3.  **目标明确**：通过无监督或自监督的损失函数，让 Query 向量主动向“针”靠拢，人为地拉大目标与干扰项之间的 Logit 差距。
 
-<img src="/images/2512.13898v1/x5.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.13898v1/x5.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图 3：qTTT 的直观演示。标准的注意力（左）中，Query 可能离目标 Key 很远。通过 qTTT 更新（右），Query 被推向目标 Key，直接抵抗了分数稀释。*
 
@@ -77,7 +77,7 @@ related_tutorials:
 
 *   **代码任务奇效**：在涉及代码库层级依赖的复杂任务中，qTTT 展现出了极强的“大海捞针”能力。
 
-<img src="/images/2512.13898v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.13898v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图 1(c)：在 LongBench-v2 和 ZeroScrolls 两个权威基准上，qTTT 带来了显著的性能飞跃。*
 

@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">MetaSkill-Evolve: Recursive Self-Improvement of LLM Agents via Two-Timescale Meta-Skill Evolution</p>
 
-<img src="/images/2607.05297v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.05297v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型智能体（LLM Agents）在处理长周期、开放性任务时的能力正在快速进化。为了让智能体不只是“见招拆招”，研究人员往往会为其配备“技能（Skill）”——一种可复用、可编辑的程序化知识库。然而，手工编写的静态技能很难应对智能体在实际应用中遇到的海量且多样的任务。
 
@@ -38,7 +38,7 @@ related_tutorials:
 
 要理解 MetaSkill-Evolve 的核心创新，我们需要先回顾智能体技能演进的四个阶段。
 
-<img src="/images/2607.05297v1/x1.jpg" alt="智能体技能改进的四种模式" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.05297v1/x1.webp" alt="智能体技能改进的四种模式" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在传统的设定中，智能体可能完全没有可复用的技能记忆（No-Skill），或者仅依赖人工预设、固定不变的初始技能（Static Skill）。近年来流行的单层进化系统（Single Level Evolve）虽然能够基于失败经验不断迭代任务技能，但驱动这一进化的元过程（即诊断、检索、修改等策略）就像被上了锁一样，无法随着任务的深入而自适应调整。
 
@@ -62,7 +62,7 @@ MetaSkill-Evolve 彻底打破了这把锁。在这一框架中，每一次技能
 
 这五个组件协同工作，构成了一个完整的“分析-检索-分配-提议-演化”流水线。与传统的固定流水线相比，MetaSkill-Evolve 引入了检索器和分配器这两个极具针对性的模块，使得跨分支经验复用和算力资源的动态调配成为可能。
 
-<img src="/images/2607.05297v1/x2.jpg" alt="系统架构概览" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.05297v1/x2.webp" alt="系统架构概览" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 双时间尺度机制：快慢交替的协同进化
 
@@ -100,7 +100,7 @@ MetaSkill-Evolve 彻底打破了这把锁。在这一框架中，每一次技能
 
 最终，MetaSkill-Evolve 在 OfficeQA 上实现了比无技能基准高出 23.54 分的测试集绝对准确率提升；在 SealQA 上也获得了 16.09 分的巨大增幅。
 
-<img src="/images/2607.05297v1/x4.jpg" alt="QA基准测试中的组件消融实验" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.05297v1/x4.webp" alt="QA基准测试中的组件消融实验" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 通过逐一移除元技能组件的消融实验，研究发现没有任何单一组件可以被安全移除，但不同任务对组件的依赖程度呈现出有趣的差异。
 
@@ -112,7 +112,7 @@ MetaSkill-Evolve 彻底打破了这把锁。在这一框架中，每一次技能
 
 慢循环的触发周期 $H$ 直接决定了快慢两个时间尺度的耦合紧密程度。更新过于频繁，元技能会因追逐短期噪声而偏离正确方向；更新过于迟缓，元技能的修改逻辑又会落后于已经大幅进化的任务技能，导致提出的改进方案无的放矢。
 
-<img src="/images/2607.05297v1/x5.jpg" alt="元更新周期的超参数敏感度" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.05297v1/x5.webp" alt="元更新周期的超参数敏感度" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 研究团队在保持总计算量固定的前提下，对 $H \in \{2, 4, 8\}$（对应 6、12 和 24 次快循环迭代）进行了扫描。结果表明，$H=2$ 的紧凑周期在所有基准测试中都取得了最优表现。其中 OfficeQA 对周期最为敏感，当 $H$ 从 2 拉长到 8 时，准确率大幅下降了 9.1 分。这说明，只要 $H$ 稍微大于 1，能够聚合哪怕几次的迭代结果，就足以过滤掉单次快循环带来的噪声。在此基础上，保持元技能相对较高的敏捷性，能够更好地贴合任务技能演进的真实状态。
 

@@ -78,7 +78,7 @@ MolJSON放弃了将图线性化的执念，转而采用一种高度结构化的 
 当GPT-5尝试将 `IUPAC` 名称转换为 `MolJSON` 时，准确率达到了71.0%。
 然而，当同样的输入要求被转换为 `SMILES` 时，准确率暴跌至43.7%。
 
-<img src="/images/2605.01822v1/fig-translation-large-matrix-row-low.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2605.01822v1/fig-translation-large-matrix-row-low.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 这充分说明，生成符合严苛语法的 `SMILES` 字符串，是极具挑战性的。
 反过来，当MolJSON作为输入格式时，它同样帮助模型在生成其他格式时取得了更优的翻译表现。
@@ -89,7 +89,7 @@ MolJSON放弃了将图线性化的执念，转而采用一种高度结构化的 
 这要求模型必须在内部准确重构并遍历整个分子图结构。
 在这项考验中，MolJSON展现出了无可匹敌的绝对优势。
 
-<img src="/images/2605.01822v1/fig-gpt5-shortest-path-accuracy-and-tokens-two-panel-horizontal.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2605.01822v1/fig-gpt5-shortest-path-accuracy-and-tokens-two-panel-horizontal.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 以GPT-5为例，使用MolJSON作为输入时，模型成功回答了98.5%的问题。
 相比之下，`SMILES` 格式的准确率为92.2%，而 `IUPAC` 仅有82.7%。
@@ -104,7 +104,7 @@ MolJSON放弃了将图线性化的执念，转而采用一种高度结构化的 
 模型需要根据特定的环数量和拓扑约束，凭空生成符合所有设定条件的分子。
 在这个环节，MolJSON作为输出格式的可靠性得到了最大程度的验证。
 
-<img src="/images/2605.01822v1/constrained_generation_aggregate_accuracy_by_model_format.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2605.01822v1/constrained_generation_aggregate_accuracy_by_model_format.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 GPT-5在生成MolJSON时，交出了95.3%的优异答卷。
 而当它被强迫输出传统格式时，`IUPAC` 的准确率降至76.3%，`SMILES` 更是只有可怜的64.0%。

@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 告别“黑盒”炼丹：人大&厦大联合发布，LLM全生命周期理论图谱
 
-<img src="/images/2601.02907v1/A__title.jpg" alt="告别“黑盒”炼丹：人大&厦大联合发布，LLM全生命周期理论图谱 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.02907v1/A__title.webp" alt="告别“黑盒”炼丹：人大&厦大联合发布，LLM全生命周期理论图谱 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当 DeepSeek、ChatGPT 和 Claude 这样的模型在我们的屏幕上流畅地生成代码、撰写诗歌甚至进行复杂推理时，我们往往会惊叹于人工智能的“魔力”。但作为一个技术从业者，你是否曾在某个深夜看着训练 Loss 曲线发呆，心中涌起一种深深的无力感：**我们真的理解这些庞然大物内部发生了什么吗？**
 
@@ -43,7 +43,7 @@ related_tutorials:
 
 6.  **评估（Evaluation）**
 
-<img src="/images/2601.02907v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.02907v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 这六个阶段构成了 LLM 的“一生”。让我们重点剖析其中最关键的两个阶段——数据与模型，看看理论界是如何解释那些我们习以为常的工程现象的。
 

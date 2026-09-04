@@ -13,7 +13,7 @@ related_tutorials:
 
 ## AI Agent协作双刃剑：性能提升81%，错误放大17倍！DeepMind发布首个量化法则
 
-<img src="/images/2512.08296v1/A__title.jpg" alt="AI Agent协作双刃剑：性能提升81%，错误放大17倍！DeepMind发布首个量化法则 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.08296v1/A__title.webp" alt="AI Agent协作双刃剑：性能提升81%，错误放大17倍！DeepMind发布首个量化法则 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 “三个臭皮匠，顶个诸葛亮”，在AI Agent领域，这句古老的谚语似乎也成了金科玉律。许多人相信，通过“群聊”式的多Agent协作，就能解决更复杂的问题。
 
@@ -43,7 +43,7 @@ related_tutorials:
 
 *   **混合MAS**：结合了中心化和去中心化的结构。
 
-<img src="/images/2512.08296v1/x1.jpg" alt="Agent Scaling" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.08296v1/x1.webp" alt="Agent Scaling" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图1：不同架构下，Agent系统性能随模型智能水平的扩展情况*
 
@@ -95,7 +95,7 @@ related_tutorials:
 
 那么，多Agent协作究竟何时才有效？答案是：**架构必须与任务特性精准匹配**。
 
-<img src="/images/2512.08296v1/x7.jpg" alt="Performance Comparison" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.08296v1/x7.webp" alt="Performance Comparison" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图2：不同任务下，单Agent与多Agent系统的性能对比*
 

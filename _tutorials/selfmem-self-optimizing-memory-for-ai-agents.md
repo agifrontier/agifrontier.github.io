@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">SelfMem: Self-Optimizing Memory for AI Agents</p>
 
-<img src="/images/2607.03726v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.03726v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 随着大语言模型基础能力的飞跃，当前的 AI 智能体已经能够处理极长的上下文，熟练调用外部工具，并执行跨度极长的复杂任务。然而，当这些智能体被部署在真实的长期交互场景中时，它们不可避免地会遇到一个核心瓶颈：如何有效地记住并利用历史经验。无论是记住用户的长尾偏好、追踪项目的复杂背景，还是在海量对话中提取关键的事实细节，都需要一个强大的记忆系统作为支撑。
 
@@ -39,7 +39,7 @@ related_tutorials:
 
 尽管这些方法显著提升了模型利用历史对话的能力，但它们依然没有跳出“预定义”的窠臼。无论是记忆的最小存储单元、检索的触发机制，还是更新和合并的规则，大部分核心逻辑仍然是由人类开发者在系统底层写死的。不同类型的任务对记忆的要求千差万别：多轮闲聊可能只需要粗粒度的用户画像摘要，而跨度数月的法律或编程项目则需要极度精确的事实溯源和时间线梳理。预设的记忆架构无法同时兼顾这些相互冲突的需求，且往往需要大量的人工调参才能勉强适配特定场景。
 
-<img src="/images/2607.03726v1/x1.jpg" alt="授人以渔的概念对比" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.03726v1/x1.webp" alt="授人以渔的概念对比" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 研究团队敏锐地捕捉到了这一痛点。正如上图所示，传统的固定策略往往会由于过度压缩导致关键细节丢失，或者由于简单的检索策略引发上下文冗余。SelfMem 的核心动机在于：既然大语言模型已经具备了通过反馈、反思和搜索来改进自身行为的能力，为什么不将记忆管理本身也交还给模型来做决策？SelfMem 并没有给智能体一套死板的记忆机制，而是教智能体如何自适应地管理记忆，将暴露记忆管理决策作为整个框架设计的最高优先级。
 
@@ -47,7 +47,7 @@ related_tutorials:
 
 要让智能体自主管理记忆，首先需要为其构建一个安全、可控且反馈充足的运行环境。SelfMem 并没有抛弃历史对话，而是将其原始形式严格保留，同时开辟出一个供智能体自由操作的“记忆工作区”。
 
-<img src="/images/2607.03726v1/x2.jpg" alt="SelfMem 系统架构总览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.03726v1/x2.webp" alt="SelfMem 系统架构总览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在 SelfMem 的架构中，系统通过明确分离“框架约束”和“记忆策略”来实现自主性。框架负责提供人工设计的程序化原则、可用的记忆工具、反馈通道以及审计约束；而具体的记忆行为——包括应该检查哪些对话轮次、保存什么信息、对什么内容进行压缩或更新、哪些细节需要一字不落地保留，以及哪些信息完全可以留在原始记录中等待未来按需检索——则全部由智能体自己决定。
 
@@ -89,9 +89,9 @@ SelfMem 的潜力并没有止步于提供一个灵活的管理环境。研究团
 
 为了验证这一点，研究人员设计了一个策略迭代流程。从默认的 SelfMem 设置出发，智能体被要求利用训练集对话中汇总的反馈（包括训练得分和记忆工具的底层诊断信息），在纯自然语言层面反复提出并修改其“记忆策略笔记”。这个过程完全不需要更新模型的底层权重，而是将其视作一个黑盒优化器，依靠语言本身来寻找更优的策略解。
 
-<img src="/images/2607.03726v1/x3.jpg" alt="SelfMem 策略迭代优化分析" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.03726v1/x3.webp" alt="SelfMem 策略迭代优化分析" style="width:90%; max-width:700px; margin:auto; display:block;">
 
-<img src="/images/2607.03726v1/x4.jpg" alt="SelfMem 策略泛化表现" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2607.03726v1/x4.webp" alt="SelfMem 策略泛化表现" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 上图详细记录了策略迭代过程中的性能演变。无论是从优化轮次的视角，还是从引入训练样本数量的视角来看，结果都揭示了一个重要的规律：通过自我审视和策略重写，模型确实能够发现比默认设置更卓越的记忆管理方式。在保留的验证集上，默认未优化版本的得分为 0.472，而经过智能体自主迭代后，最终合成的策略将得分提升至 0.497，在整个搜索过程中发现的最优策略更是达到了 0.510。
 

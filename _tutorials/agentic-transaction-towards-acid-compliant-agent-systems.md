@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Agentic Transaction: Towards ACID-Compliant Agent Systems</p>
 
-<img src="/images/2608.13900v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.13900v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大语言模型（LLM）驱动的智能体正在经历一次关键的范式转换：从单轮对话助手，走向能够在真实环境中通过推理、工具调用和工作区操作来执行长周期任务的自治系统。然而，随着任务流程的拉长，现有智能体暴露出了致命的脆弱性。一个错误的工具调用、一次未经验证的中间推理，或者并发执行时的上下文冲突，都可能污染智能体的记忆和物理工作区，导致整个任务在执行中途崩溃。
 
@@ -39,7 +39,7 @@ related_tutorials:
 
 这与早期数据库系统面临的挑战如出一辙：如何保证并发执行的可靠性？如何确保状态变更要么全部成功、要么完全不发生？
 
-<img src="/images/2608.13900v1/example.jpg" alt="图1：ACID-Agent 运行示例" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2608.13900v1/example.webp" alt="图1：ACID-Agent 运行示例" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 清华团队指出，尽管智能体的执行环境（语义任务状态）不同于结构化的数据库状态，但其对可靠性、一致性、并发安全和持久化状态管理的底层需求是高度一致的。在传统的编码智能体（如 Claude Code）中，中间的错误决策会直接向后传播。而在 ACID 框架下，智能体的每一次执行都被封装为一个“事务单位”，只有经过严格验证的更新才会被提交并传递给后续步骤。
 
@@ -75,7 +75,7 @@ related_tutorials:
 
 为了将这一理论框架落地，研究团队构建了 ACID-Agent（符合 ACID 规范的数据智能体）。该系统专为自动化数据科学工作流、处理异构数据洞察而设计。
 
-<img src="/images/2608.13900v1/data-agent-v2.jpg" alt="图2：ACID-Compliant Data Agent 系统总览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.13900v1/data-agent-v2.webp" alt="图2：ACID-Compliant Data Agent 系统总览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 从系统架构总览中可以看到，ACID-Agent 在执行任务时，不再是单向奔赴，而是引入了在线的阶段化执行与离线的事务型技能中心。探索子代理利用任务描述和过往总结生成只读的探索代码，观察结果被汇总进记忆库；随后通过置信度验证机制剔除冗余探索；最终只有通过一致性验证的代码变更，才会被系统合并并持久化。
 

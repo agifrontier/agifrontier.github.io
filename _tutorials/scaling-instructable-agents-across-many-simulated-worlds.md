@@ -27,7 +27,7 @@ related_tutorials:
 
 为了跨越语言符号与物理（或虚拟）动作之间的鸿沟，Google DeepMind联合英属哥伦比亚大学推出了一个雄心勃勃的项目——**可扩展指令多世界智能体**（**Scalable, Instructable, Multiworld Agent, SIMA**）。该研究的核心目标非常明确：开发一个能够在其所处的三维模拟环境中，听懂任意自然语言指令，并完成人类所能完成的任何操作的通用智能体。
 
-<img src="/images/2404.10179v3/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2404.10179v3/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 通用接口范式
 
@@ -36,7 +36,7 @@ related_tutorials:
 SIMA采取了一种极其克制且彻底“拟人化”的架构设计。该系统摒弃了所有特权信息的输入，智能体与环境交互的接口被精简到了极致：
 输入端仅仅是屏幕的视觉图像（Image）和用户的自然语言指令（Language）；输出端则是标准的键盘和鼠标操作（Keyboard-and-mouse actions）。
 
-<img src="/images/2404.10179v3/x4.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2404.10179v3/x4.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 这种设计带来了一个显而易见的优势：极强的可扩展性。因为所有的3D游戏和模拟器，最终都是通过向人类展示画面并接收键鼠操作来运行的。SIMA的这套通用接口，使其无需针对新游戏重新设计控制空间，就具备了零样本迁移到全新环境的潜力。
 
@@ -63,7 +63,7 @@ CFG在这里就像是一个“注意力放大器”。它首先计算出“受�
 
 要支撑起如此庞大的通用模型，数据质量是成败的关键。SIMA的训练数据覆盖了超过10个视觉风格和物理机制截然不同的3D环境，包括《无人深空》、《英灵神殿》等商业大作，以及研究专用的虚拟实验室环境。
 
-<img src="/images/2404.10179v3/x2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2404.10179v3/x2.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 收集这类数据并非易事。研究团队采用了双人“设定-求解”（setter-solver）的数据收集模式：一名玩家负责在特定场景下向另一名玩家下达自然语言指令，后者则负责完成任务，整个过程的屏幕录像和键鼠操作被精确记录。此外，为了防止智能体学到捷径，数据预处理阶段还引入了严格的过滤和加权机制，确保模型面对的不是冗长无聊的跑图，而是高密度的有效交互经验。
 

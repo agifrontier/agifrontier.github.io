@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">RCWT: Measuring Task-Budget Displacement from Coordination Content in LLM Calls</p>
 
-<img src="/images/2607.12216v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.12216v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在当今的大语言模型（LLM）应用中，开发者正试图将越来越多的信息塞进单次 API 调用里。尤其是多智能体（Multi-agent）系统和增强记忆的架构，其 Prompt 中往往充斥着大量的协调内容——包括智能体间的历史对话、共享状态、工具输出结果、记忆摘要以及极其详尽的角色设定。这种看似全知全能的上下文组装方式，在实际工程部署中引发了一个极其严峻的资源分配问题：上下文窗口的总预算是固定的。在固定的 Token 预算下，每向“协调内容”分配一个 Token，就意味着当前核心任务指令或关键参考证据必须让渡出一个 Token 的空间。
 
@@ -44,7 +44,7 @@ RCWT 协议正是为了量化这一过程而设计的。作为一个单次调用
 
 实验在总预算 $W=4096$ 的设定下展开，协调内容的占比目标 $q$ 在 $0\%$ 到 $98\%$ 之间非线性递增。结果揭示了一个非常一致且极具视觉冲击力的现象：模型在经历中等程度的协调开销时，性能依然能够保持在基线水平附近，但在某个临界点之后，性能出现了急剧的“断崖式”下跌。
 
-<img src="/images/2607.12216v1/rcwt_cross_provider_arxiv.jpg" alt="RCWT跨模型固定预算下的性能断崖" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.12216v1/rcwt_cross_provider_arxiv.webp" alt="RCWT跨模型固定预算下的性能断崖" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 上图展示了三款主流商业模型（Gemini 2.5 Flash、Claude Haiku 4.5、GPT-4.1-mini）在不同协调占比下的表现。以目标占比 $q=90\%$ 为例，此时实际实现的协调内容占比 $p$ 达到了 $82.6\%$。在这个极端的挤压下，留给参考区块的物理空间仅剩 376 个 Tokens，整个残余任务预算（包含指令和证据）总共只有 713 个 Tokens。
 

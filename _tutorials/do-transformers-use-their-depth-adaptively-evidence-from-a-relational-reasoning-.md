@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Do Transformers Use their Depth Adaptively? Evidence from a Relational Reasoning Task</p>
 
-<img src="/images/2604.12426v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.12426v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 近年来，大语言模型的能力随着参数规模和网络深度的增加而显著跃升。直觉上，层数越深，模型能够处理的逻辑越复杂。然而，近期学术界却出现了一种截然相反的声音：有研究通过对残差流的分析指出，Transformer 模型后半部分的层对最终输出的贡献微乎其微，甚至砍掉后面的层也不会对结果产生致命影响。这引发了一个尖锐的争议——大模型的深度真的是被浪费了吗？
 
@@ -73,21 +73,21 @@ Logit Lens 的核心思想是，将中间某一层 $l$ 的隐藏状态 $h_l$ 强
 
 实验揭示，即便是在没有经过专门逻辑训练的基座模型中，也确实存在自适应使用深度的初步证据。
 
-<img src="/images/2604.12426v1/heatmap_family_probs_pretrained.jpg" alt="不同预训练模型族预测分布热力图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.12426v1/heatmap_family_probs_pretrained.webp" alt="不同预训练模型族预测分布热力图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 Logit Lens 的分析显示，对于部分规模较大的模型而言，它们处理更简单的任务时，往往能够在更浅的层级就产生正确的顶层预测。难度越低，模型内部的表征向正确方向收敛的速度就越快。
 
-<img src="/images/2604.12426v1/lineplot_is_corrects_top_fam_token_is_correct_pretrained_all-phi.jpg" alt="Phi模型在不同难度下的预测准确率演变" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.12426v1/lineplot_is_corrects_top_fam_token_is_correct_pretrained_all-phi.webp" alt="Phi模型在不同难度下的预测准确率演变" style="width:90%; max-width:700px; margin:auto; display:block;">
 
-<img src="/images/2604.12426v1/lineplot_is_corrects_top_fam_token_is_correct_pretrained_all-qwen2.5.jpg" alt="Qwen2.5模型在不同难度下的预测准确率演变" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.12426v1/lineplot_is_corrects_top_fam_token_is_correct_pretrained_all-qwen2.5.webp" alt="Qwen2.5模型在不同难度下的预测准确率演变" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 通过对比不同跳数下的层级表现可以清晰地看到，较深的模型在处理较长的逻辑链时，预测概率的上升曲线明显更加平缓，意味着模型确实在利用更多的后续层来逐步逼近正确答案。
 
 而因果补丁技术的应用，则进一步揭示了跨 Token 信息整合的动态过程。
 
-<img src="/images/2604.12426v1/cpa_all_models_avg_lineplot-forward-pretrained.jpg" alt="预训练模型前向因果补丁平均效果演变" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.12426v1/cpa_all_models_avg_lineplot-forward-pretrained.webp" alt="预训练模型前向因果补丁平均效果演变" style="width:90%; max-width:700px; margin:auto; display:block;">
 
-<img src="/images/2604.12426v1/cpa_all_models_avg_by_hop-forward-pretrained.jpg" alt="预训练模型按跳数划分的因果补丁效果" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.12426v1/cpa_all_models_avg_by_hop-forward-pretrained.webp" alt="预训练模型按跳数划分的因果补丁效果" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 数据表明，随着逻辑链条跳数的增加，模型需要使用更多层的计算资源来将分布在句子各个位置的关系信息整合到最终的查询 Token 上。上述结果与此前那些认为“深层无用”的研究结论形成了局部但关键的背离。微软团队认为，先前研究的盲区在于指标设计过于粗糙，将那些本身就不需要太多逻辑深度的死记硬背类 Token 与真正需要复杂组合推理的 Token 混为一谈，从而淹没了模型在深度分配上的微妙差异。
 
@@ -101,13 +101,13 @@ Logit Lens 的分析显示，对于部分规模较大的模型而言，它们处
 
 其二是彻底放开的 **完全微调（Full Finetuning）**，这种方法允许模型破坏原有的通用语言能力，将所有参数的潜力倾注于解决家庭树逻辑推理上。
 
-<img src="/images/2604.12426v1/compare_lineplot_is_corrects.jpg" alt="不同训练机制下模型预测准确率对比" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2604.12426v1/compare_lineplot_is_corrects.webp" alt="不同训练机制下模型预测准确率对比" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 实验结果展现出了惊人的差异。在完全微调的情况下，模型展现出了迄今为止最清晰、最一致的自适应深度使用证据。如对比图所示，完全微调模型对于 2 跳的简单任务，在非常早期的层就已经牢牢锁定了正确答案；而对于复杂的 10 跳任务，它则会按部就班地利用几乎所有的层，将推理过程均匀地平摊到整个网络的深度上。
 
 更深层次的因果补丁分析揭示了导致这种差异的底层机制。
 
-<img src="/images/2604.12426v1/cp_gpt2-large-finetuned-upto10_hop5_exexample0_cfg0_heatmap-forward.jpg" alt="完全微调模型的信息整合热力图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.12426v1/cp_gpt2-large-finetuned-upto10_hop5_exexample0_cfg0_heatmap-forward.webp" alt="完全微调模型的信息整合热力图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 
 

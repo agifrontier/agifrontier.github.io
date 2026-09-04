@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 谷歌新发现：简单重复Prompt，大模型准确率暴涨且零额外延迟
 
-<img src="/images/2512.14982v1/A__title.jpg" alt="谷歌新发现：简单重复Prompt，大模型准确率暴涨且零额外延迟 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.14982v1/A__title.webp" alt="谷歌新发现：简单重复Prompt，大模型准确率暴涨且零额外延迟 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 你有没有想过，提升大模型效果的最简单方法，可能不是精心设计复杂的“思维链”（CoT）提示词，也不是进行昂贵的微调，而是直接把你的Prompt“复制粘贴”一遍？
 
@@ -35,7 +35,7 @@ related_tutorials:
 
 即将输入从 $$<QUERY>$$ 变为 $$<QUERY><QUERY>$$。
 
-<img src="/images/2512.14982v1/figure1_big2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.14982v1/figure1_big2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，通过重复Prompt，模型在处理第二遍Prompt时，实际上已经“看过了”完整的第一遍内容。这就好比让模型拥有了“全局注意力”，使得Prompt中的每一个Token都能关注到Prompt中的其他任何Token。
 
@@ -65,7 +65,7 @@ related_tutorials:
 
 如下图所示，与标准的Prompt相比，重复Prompt（Prompt Repetition）在生成输出的长度和延迟上几乎没有变化。相比之下，使用“Think step by step”（Let's think）虽然也能提升性能，但会导致生成延迟大幅增加。
 
-<img src="/images/2512.14982v1/figure1_big2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.14982v1/figure1_big2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 这意味着，你可以在现有的系统中直接通过代码逻辑把用户的Prompt拼接两次，用户几乎感觉不到任何延迟变化，但得到的回答质量却更高了。
 

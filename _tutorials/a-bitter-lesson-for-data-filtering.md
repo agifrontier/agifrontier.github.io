@@ -89,7 +89,7 @@ related_tutorials:
 
 第二种是词序完全打乱的文档，虽然破坏了语义，但保留了词频分布特征。
 
-<img src="/images/2605.19407v1/x4.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2605.19407v1/x4.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 实验表明，在低算力预算下，这些垃圾数据确实会严重拖累模型性能。
 
@@ -126,7 +126,7 @@ related_tutorials:
 
 研究发现，随着数据池大小 $m$ 的增加，所需的算力呈现高度线性的增长趋势。
 
-<img src="/images/2605.19407v1/x7.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2605.19407v1/x7.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 通过将模型拟合到 $R^{2}$ 超过 $0.99$ 的线性回归上，本文得出了一个惊人的推论：
 

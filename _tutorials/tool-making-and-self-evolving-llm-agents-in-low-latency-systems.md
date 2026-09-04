@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Tool-Making and Self-Evolving LLM Agents in Low-Latency Systems</p>
 
-<img src="/images/2607.08010v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.08010v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在当今的大模型应用中，基于代码生成的智能体（Agent）正逐渐成为处理复杂软件和操作系统的主流交互方式。面对各种长尾的故障排查、工作流调度和数据查询，Agent 可以通过阅读自然语言指令、实时编写代码并执行来达成目标。这种被称为 CodeAct 风格的即兴编程能力赋予了系统极大的灵活性，但在要求极高的工业生产环境中，这种灵活性却悄悄转化为效率和可靠性的致命瓶颈。
 
@@ -54,7 +54,7 @@ Amazon 团队的解法是，把这种多轮的动态探索前置到构建阶段�
 
 为了验证这套流水线的有效性，研究团队对 44 个 SOP 决策节点进行了工具生成实验，并对比了不同的配置对生成成功率（Pass@1）的影响。这里的通过标准极其苛刻：一个生成的工具必须在保留的独立验证集上全部判断正确，才能算作通过。
 
-<img src="/images/2607.08010v1/x1.jpg" alt="各个节点在不同配置下的Pass@1通过率与生成成本" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.08010v1/x1.webp" alt="各个节点在不同配置下的Pass@1通过率与生成成本" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 上图展示了使用 GLM-4.7 模型作为工具制造者时的表现。如果我们仅仅将 SOP 文本扔给大模型让它写代码，生成的工具几乎无法在严格的验证集上存活，通过率极低。当我们引入了数据收集轨迹（+D）后，模型通过观察真实的环境反馈，表现有了显著提升。当我们进一步加入测试与修复循环（+R）时，也就是最终部署的 SOP+D+R 配置，系统的整体通过率一跃达到了 94.5%。
 

@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Kimi K3: Open Frontier Intelligence</p>
 
-<img src="/images/2607.24653v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.24653v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大语言模型（LLM）的发展进程中，扩展定律（Scaling Laws）长期主导着预训练阶段的资源投入。然而，随着推理模型和强化学习在测试时计算（Test-time computation）上的突破，行业逐渐演化出两条平行的扩展轴线：一是继续扩大预训练基础模型的参数规模，二是在测试阶段通过强化学习、多步骤推理和长周期代理（Agentic）任务来扩展计算量。近年来，尽管开源社区在第二条轴线上（如测试时推理和复杂强化学习）取得了长足进步，但在第一条预训练轴线上却进展缓慢，绝大多数开源模型仍停留在百亿到千亿（1T以下）参数级别。当日益复杂的强化学习方法被应用于规模停滞的预训练底座时，开源模型与最顶尖闭源系统之间的能力差距面临进一步拉大的风险。
 
@@ -32,7 +32,7 @@ Kimi K3 的发布正是为了同时在这两条轴线上突破现有的开源边
 
 广泛的评估表明，Kimi K3 在长周期代码编写、代理任务、知识问答、复杂推理和视觉任务上均达到了前沿水平。虽然其综合表现略逊于目前最强大的闭源模型（如 Claude Fable 5 和 GPT-5.6 Sol），但 Kimi K3 始终优于测试集中的其他开源及闭源模型。Moonshot AI 团队开源了 Kimi K3 的完整模型权重，这不仅为超大规模多模态模型提供了极具价值的研究实体，也标志着开源人工智能正式踏入 3T 参数级别的深水区。
 
-<img src="/images/2607.24653v1/benchmark0727.jpg" alt="Kimi K3核心评测结果对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.24653v1/benchmark0727.webp" alt="Kimi K3核心评测结果对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 架构设计哲学：三维度的信息流扩展
 

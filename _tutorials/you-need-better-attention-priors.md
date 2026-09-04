@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 斯坦福GOAT：重构注意力底层数学，显存降36%，长文本性能全面超越RoPE
 
-<img src="/images/2601.15380v1/A__title.jpg" alt="斯坦福GOAT：重构注意力底层数学，显存降36%，长文本性能全面超越RoPE 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.15380v1/A__title.webp" alt="斯坦福GOAT：重构注意力底层数学，显存降36%，长文本性能全面超越RoPE 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 Transformer 架构统治 AI 领域已久，但你是否想过，其核心组件——缩放点积注意力（Scaled Dot-Product Attention），可能建立在一个“天真”的假设之上？
 
@@ -50,7 +50,7 @@ Transformer 架构统治 AI 领域已久，但你是否想过，其核心组件�
 
 **GOAT** 的设计精髓在于其参数化方式。它并没有引入沉重的偏置矩阵，而是通过将 Query 和 Key 向量分解为“内容子空间”和“位置/结构子空间”来实现。
 
-<img src="/images/2601.15380v1/goat.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2601.15380v1/goat.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 具体来说，GOAT 将 Head Dimension 切分为两部分：
 
@@ -79,7 +79,7 @@ GOAT 通过在先验中显式引入一个**Sink 项**（Key-only bias），优�
 
 这意味着模型可以在先验层面学习到一个“默认选项”（比如指向特定的 Sink Token）。当语义信息不足时，模型会自动回退到这个默认选项，而无需扭曲内容向量。这实现了结构与语义的完美解耦。
 
-<img src="/images/2601.15380v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.15380v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图1：GOAT 在合成任务上学习到的先验分解。(a) 显示了 Sink 组件，(b) 显示了相对位置组件，(c) 是总的 Log-Prior。可以看到 GOAT 自动学会了关注特定位置和相对对角线。*
 
@@ -91,7 +91,7 @@ GOAT 的表现如何？研究团队在多个任务上进行了验证。
 
 在“大海捞针”（Needle-in-a-Haystack）和 Passkey 检索任务中，GOAT 展现了惊人的长文本泛化能力。即使在推理长度远超训练长度的情况下，GOAT 依然能保持近乎完美的准确率，而 RoPE 和线性插值方法则出现了严重的性能衰退。
 
-<img src="/images/2601.15380v1/x4.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.15380v1/x4.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图3(c)：大海捞针测试热力图。随着上下文长度增加（横轴）和针的深度变化（纵轴），GOAT（左一）始终保持深红色（高准确率），而 RoPE（左二）等基线方法在长文本下迅速崩溃。*
 
@@ -99,7 +99,7 @@ GOAT 的表现如何？研究团队在多个任务上进行了验证。
 
 在基因组序列建模任务中，GOAT 不仅在验证集 NLL（负对数似然）上优于 RoPE，更令人印象深刻的是其资源效率。由于不需要像 RoPE 那样进行复杂的旋转计算，且结构更加紧凑，GOAT 将峰值 CUDA 显存从 2.86 GB 降低到了 1.83 GB，降幅高达 **36%**。
 
-<img src="/images/2601.15380v1/x8.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.15380v1/x8.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图4(b)：在 DNA 建模任务中，GOAT（右侧阴影柱）相比 RoPE（左侧阴影柱）显著降低了峰值显存占用。*
 

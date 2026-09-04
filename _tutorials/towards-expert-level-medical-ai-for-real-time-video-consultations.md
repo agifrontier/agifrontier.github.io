@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Towards Expert-level Medical AI for Real-time Video Consultations</p>
 
-<img src="/images/2608.09861v1/A__title.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2608.09861v1/A__title.webp" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 在医疗人工智能的演进历程中，基于文本的大语言模型已经展示了令人瞩目的疾病诊断和医学推理能力。然而，真实的医患问诊从来不是一个纯粹的文本交换过程。在临床实践中，医生通过观察患者的面部表情、倾听咳嗽的音色、评估患者的体态和动作（如呼吸困难或静息震颤），不断捕获关键的非语言线索。这些视听维度的信息不仅构成了临床推理的基石，更是建立医患信任、共情和治疗依从性的核心要素。
 
@@ -33,7 +33,7 @@ related_tutorials:
 
 为了突破这一瓶颈，Google DeepMind团队正式推出了AMIE（Articulate Medical Intelligence Explorer）的视频版本——AMIE (Video)。这是一款基于Gemini大模型底座构建的多代理异步协作系统，首次在实时视频临床问诊中证明了AI可以达到甚至超越人类专家的水平。在一项包含100个临床场景的大规模随机客观结构化临床考试（OSCE）中，独立临床评估专家为AMIE给出的整体表现评分为83%，大幅领先于参与测试的执业初级保健医生（68%）。这一研究不仅标志着医疗AI正式跨越了从文本走向实时多感官交互的鸿沟，也为未来的远程医疗范式提供了全新的技术蓝本。
 
-<img src="/images/2608.09861v1/Fig1_Overview.jpg" alt="AMIE研究总览：核心贡献与实验设计" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2608.09861v1/Fig1_Overview.webp" alt="AMIE研究总览：核心贡献与实验设计" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 要让一个AI系统在实时视频中扮演医生，工程团队面临着一个根本性的技术矛盾：低延迟的流畅对话与深度的临床推理及高强度的视频流解析之间存在算力与时间的直接冲突。如果系统在每次回复前都要对过去几分钟的视频进行详细的视觉分析和医学逻辑推演，患者就会面临难以忍受的对话延迟；而如果为了降低延迟只做表面回应，AI就会丢失关键的医学判断甚至遗漏患者展示的体征。
 
@@ -45,7 +45,7 @@ related_tutorials:
 
 *   **Perception Agent（感知代理）：** 它是系统的“眼睛和耳朵”，专门调用推理能力更强的Gemini 3.1 Pro模型，负责处理连续的音视频流。在快节奏的问诊中，Talker为了降低延迟极易忽略那些稍纵即逝的非语言线索。Perception代理通过在更长的时间窗口内进行视觉和听觉推理，弥补了这一缺陷。它会在后台默默建立一个随时间累积的“临床线索观测日志”。例如，如果患者在问诊的前两分钟表现出轻微的干咳，Perception代理会将其永久记录在案，确保Planner在后续的诊断推理中能够调用这一关键体征。
 
-<img src="/images/2608.09861v1/Fig4_Example_scenario_50_portrait.jpg" alt="AMIE交互示例：Talker、Perception和Planner代理的协同" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2608.09861v1/Fig4_Example_scenario_50_portrait.webp" alt="AMIE交互示例：Talker、Perception和Planner代理的协同" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 通过这种巧妙的异步设计，AMIE系统能够在听觉上保持机敏，在视觉上保持专注，在医学逻辑上保持严谨。当用户在讲述病情时，系统其实正在并行处理多项任务：Talker在准备下一句安抚的话语，Perception在分析患者皱眉的微表情，而Planner正在将刚刚收集到的症状与知识库中的数百种疾病进行比对，并为Talker生成下一步的提问提纲。
 

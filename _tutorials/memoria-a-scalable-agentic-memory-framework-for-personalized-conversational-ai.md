@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 告别AI“健忘症”：Memoria利用加权知识图谱打造可扩展的个性化记忆
 
-<img src="/images/2512.12686v1/A__title.jpg" alt="告别AI“健忘症”：Memoria利用加权知识图谱打造可扩展的个性化记忆 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.12686v1/A__title.webp" alt="告别AI“健忘症”：Memoria利用加权知识图谱打造可扩展的个性化记忆 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 目前的LLM（大语言模型）聊天机器人往往像是一个患有严重“健忘症”的过客：无论你们之前的对话多么深入，一旦开启新会话，它就会把你忘得一干二净。这种“无状态”的特性，使得AI难以建立长期的用户画像，也无法提供真正连贯的个性化体验。
 
@@ -32,7 +32,7 @@ Memoria的出现，正是为了填补这一空白。它不是简单地存储聊�
 
 Memoria的设计理念非常清晰，它作为一个增强层嵌入到任何基于LLM的对话系统中。其核心由四个模块组成：
 
-<img src="/images/2512.12686v1/System_Architecutre_New.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.12686v1/System_Architecutre_New.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 1.  **结构化对话日志（Structured Conversation Logging）**：
 

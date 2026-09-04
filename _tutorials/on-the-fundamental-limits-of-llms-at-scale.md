@@ -13,7 +13,7 @@ related_tutorials:
 
 ## LLM越大越强？谷歌DeepMind等雄文揭示其5大“理论天花板”
 
-<img src="/images/2511.12869v1/A__title.jpg" alt="LLM越大越强？谷歌DeepMind等雄文揭示其5大“理论天花板” 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.12869v1/A__title.webp" alt="LLM越大越强？谷歌DeepMind等雄文揭示其5大“理论天花板” 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 “大力出奇迹”——这似乎已成为AI领域的黄金法则。从GPT-1的1.17亿参数到GPT-4的万亿级别，模型规模的指数级增长带来了惊人的能力涌现。我们似乎相信，只要数据够多、参数够大，一切问题都能被“暴力”解决。
 
@@ -21,7 +21,7 @@ related_tutorials:
 
 然而，一篇由谷歌DeepMind、Meta、斯坦福等多家顶尖机构联合发表的论文，为这股狂热的“规模崇拜”踩下了理论的刹车。研究指出，LLM的性能提升并非无限，而是受制于五个根本性的“理论天花板”。
 
-<img src="/images/2511.12869v1/x1.jpg" alt="Figure 1: Five interacting fronts that bound LLM reliability." style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.12869v1/x1.webp" alt="Figure 1: Five interacting fronts that bound LLM reliability." style="width:85%; max-width:450px; margin:auto; display:block;">
 
 这篇雄文系统性地论证了，无论模型如何扩展，都无法完全摆脱这些与生俱来的枷锁。
 
@@ -45,7 +45,7 @@ related_tutorials:
 
 许多人认为幻觉是数据不足或对齐不够导致的工程问题。但该研究从数学和理论层面证明，幻觉是**不可避免**的。
 
-<img src="/images/2511.12869v1/x2.jpg" alt="Figure 2: Taxonomy of hallucination sources in LLMs." style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.12869v1/x2.webp" alt="Figure 2: Taxonomy of hallucination sources in LLMs." style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 1. 可计算性与不可计算性边界
 
@@ -73,7 +73,7 @@ related_tutorials:
 
 - **噪声与长尾效应**：网络数据充斥着错误、偏见和矛盾信息。同时，知识分布极不均衡，模型对高频知识滚瓜烂熟，对低频的“长尾”知识则常常出错。
 
-<img src="/images/2511.12869v1/x3.jpg" alt="Figure 3: Empirical evidence of data-induced hallucinations." style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.12869v1/x3.webp" alt="Figure 3: Empirical evidence of data-induced hallucinations." style="width:85%; max-width:600px; margin:auto; display:block;">
 
 上图(a)显示，模型对热门实体（每天超10万次浏览）的准确率超过95%，但对冷门实体（每天少于100次浏览）的准确率骤降至40%以下。这清晰地揭示了数据分布不均带来的影响。
 

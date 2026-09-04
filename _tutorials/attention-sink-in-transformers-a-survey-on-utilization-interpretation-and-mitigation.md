@@ -46,7 +46,7 @@ related_tutorials:
 
 模型非常聪明地演化出了一种策略：它会自发寻找一个固定的、没有实际语义危害的Token（例如初始位置的特殊字符），将其作为“泄压阀”。大量无处安放的注意力被倾泻到这个Token上，从而保持了整体数值表示的稳定性。这就是AS产生的根源。
 
-<img src="/images/2604.10098v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.10098v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 Figure 4: 标准Transformer架构及典型AS现象示意图，沉没Token表现出异常高的注意力得分。
 
 在数学定义上，如果一个Token的累计注意力得分远超平均值，且其自身承载的信息量极低，它就被判定为沉没Token。
@@ -61,7 +61,7 @@ AS并非某种特定模型的缺陷，而是Transformer家族的“遗传特征�
 **视觉大模型**（**Vision Transformers, ViTs**）
 在纯视觉任务中，AS现象同样存在，但其空间分布呈现出另一种规律。ViTs中的沉没Token通常出现在图像边缘的背景Patch上。
 
-<img src="/images/2604.10098v1/image.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2604.10098v1/image.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 Figure 11: ViT中的异常值与AS分析总结。可以观察到注意力高度集中在无语义的背景图像块上。
 
 这些背景Patch不仅吸引了不成比例的注意力概率，而且其激活值（Value magnitudes）异常低。它们的作用不再是传递视觉特征，而是作为一种隐式的偏置项，帮助模型稳定整体的注意力分布。
@@ -85,7 +85,7 @@ Figure 11: ViT中的异常值与AS分析总结。可以观察到注意力高度�
 
 模型就能在极小的内存占用下，无限期地进行流畅生成。
 
-<img src="/images/2604.10098v1/x9.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.10098v1/x9.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 Figure 13: StreamingLLM通过保留AS以及最近的Token，实现了在超长文本上的高效稳定计算。
 
 不仅在内存压缩中如此，在**量化保护**（**Quantization-Aware Protection**）中，由于沉没Token往往伴随着极端的激活异常值，对它们进行低比特量化会导致灾难性的精度损失。现代量化方案会将这些少数的AS Token保留在较高的精度（如16位），而对其余Token进行激进的2比特量化，从而在不掉点的情况下大幅压缩模型体积。

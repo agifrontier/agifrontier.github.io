@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 大模型“瘦身”革命：砍掉99.7%注意力连接，内部电路清晰100倍且性能不降！
 
-<img src="/images/2512.05865v1/A__title.jpg" alt="大模型“瘦身”革命：砍掉99.7%注意力连接，内部电路清晰100倍且性能不降！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.05865v1/A__title.webp" alt="大模型“瘦身”革命：砍掉99.7%注意力连接，内部电路清晰100倍且性能不降！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大型语言模型（LLM）的能力日益强大，但其内部工作机制却像一个难以捉摸的“黑箱”，这极大地限制了我们对它的信任和进一步优化。如果我们能有一种方法，像做手术一样精确“清理”一个已经训练好的大模型，让它的逻辑变得清晰可见，同时又不损失任何性能，那会怎样？
 
@@ -32,7 +32,7 @@ related_tutorials:
 
 如下图（上）所示，一个普通Transformer在解决加法问题时，注意力模式杂乱无章，我们很难看懂它到底在“想”什么。
 
-<img src="/images/2512.05865v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.05865v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1：普通模型（上）与稀疏模型（下）在两位数加法任务上的注意力模式对比。稀疏模型（下）的计算逻辑清晰可见：首先对齐要相加的数字，然后在需要时关注进位。*
 
@@ -93,7 +93,7 @@ $${% endraw %}
 
 但它们的注意力连接数却急剧下降，平均只有 **0.2% 到 0.3%** 的连接处于激活状态！
 
-<img src="/images/2512.05865v1/x2.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.05865v1/x2.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 *图2：稀疏模型与密集模型在性能和稀疏度上的对比。左图显示，稀疏模型（橙色/绿色实线）在极低的连接比例下保持了与密集模型（蓝色/红色虚线）相当的性能。而简单的Top-k稀疏（蓝色/红色实线）则会导致性能急剧下降。*
 

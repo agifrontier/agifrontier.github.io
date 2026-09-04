@@ -22,7 +22,7 @@ related_tutorials:
 
 这项工作展示了AI从“知识的应用者”转变为“知识的发现者”的巨大潜力。
 
-<img src="/images/2511.08522v1/x2.jpg" alt="AlphaResearch与现有方法的性能对比" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.08522v1/x2.webp" alt="AlphaResearch与现有方法的性能对比" style="width:85%; max-width:450px; margin:auto; display:block;">
 *图1：在“圆形装箱 (n=26)”问题上，AlphaResearch（蓝色）的性能显著优于AlphaEvolve等其他方法。*
 
 ### 算法发现的“两难困境”
@@ -39,7 +39,7 @@ related_tutorials:
 
 AlphaResearch 的创新之处在于它模拟了一个更真实的科研流程，包含两个相互协作的核心环境。我们可以把它想象成一个高效的科研实验室。
 
-<img src="/images/2511.08522v1/x3.jpg" alt="AlphaResearch工作流" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.08522v1/x3.webp" alt="AlphaResearch工作流" style="width:85%; max-width:600px; margin:auto; display:block;">
 *图2：AlphaResearch 的工作流程。它首先训练一个奖励模型，然后通过“提出想法 -> 双重环境验证 -> 优化”的循环来自主发现算法。*
 
 #### 1. 模拟同行评审环境：科研的“导师”
@@ -93,7 +93,7 @@ AlphaResearch 通过训练一个**奖励模型**（**Reward Model, RM**）来模
 
 研究者在没有“导师”模型（$$AlphaResearch-RM-7B$$）的情况下运行了智能体。结果发现，这位“导师”的缺席，导致智能体尝试了大量最终执行失败或效果不佳的“坏点子”。
 
-<img src="/images/2511.08522v1/x8.jpg" alt="同行评审环境的影响" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.08522v1/x8.webp" alt="同行评审环境的影响" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图6：有无RM的对比。在400次迭代中，RM成功过滤掉了151个“坏点子”，其中108个被证实是会导致执行失败的想法，准确率超过70%。*
 
 如图所示，$$AlphaResearch-RM-7B$$ 成功地提前否决了151个低质量想法。其中108个事后被证明确实无法成功执行。这相当于在科研初期就避免了71.5%的无用功，极大地提升了探索效率。

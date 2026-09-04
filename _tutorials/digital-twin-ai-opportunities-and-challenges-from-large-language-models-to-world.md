@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 数字孪生迎“智变”：大模型与世界模型驱动的4阶段进化全景
 
-<img src="/images/2601.01321v1/A__title.jpg" alt="数字孪生迎“智变”：大模型与世界模型驱动的4阶段进化全景 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.01321v1/A__title.webp" alt="数字孪生迎“智变”：大模型与世界模型驱动的4阶段进化全景 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 理查德·费曼曾说过：“我无法创造的东西，我就无法理解。”
 
@@ -37,7 +37,7 @@ related_tutorials:
 
 4.  **自主管理（Autonomous Management）**：依靠大模型和智能体实现系统的自我管理。
 
-<img src="/images/2601.01321v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.01321v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1：AI驱动的数字孪生四阶段生命周期：从描述世界、镜像世界、干预世界到自主管理世界。*
 
@@ -62,7 +62,7 @@ related_tutorials:
 
 更进一步，**神经算子**（如 **DeepONet** 和 **FNO**）不再学习特定条件下的解，而是直接学习从函数到函数的映射算子。这意味着一旦训练完成，它们可以在毫秒级时间内推算出各种初始条件下的流体或结构变化，速度比传统方法快上**1000倍**甚至更多。
 
-<img src="/images/2601.01321v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.01321v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图2：物理感知AI方法概览。(a)(b) PINNs 将物理知识融入训练管道；(c) DeepONet 结构；(d) 傅里叶神经算子 (FNO)。*
 

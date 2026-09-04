@@ -45,7 +45,7 @@ related_tutorials:
 
 然而，当我们将目光从“任务规划”转移到“底层动作执行”时，这种设计的局限性就彻底暴露出来了。研究团队敏锐地指出，在大多数执行层面的操作中，人类给出的语言指令已经明确指定了目标技能（例如“抓取红色的苹果”）。此时，执行策略并不需要进行开放式的语言生成，也不需要进行复杂的长逻辑链任务分解；它真正需要做的，仅仅是利用语言指令来确定当前的视觉特征应该如何引导末端执行器进行三维空间中的连续运动。
 
-<img src="/images/2607.27205v1/intro-crop.jpg" alt="TurboVLA与传统LLM中心化架构的对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.27205v1/intro-crop.webp" alt="TurboVLA与传统LLM中心化架构的对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在传统的 LLM 中心化架构中，这种相对直接的视觉-语言对应关系，却被迫要经过一个拥有数十亿参数的通用语言表征空间的“中转”。这种过度杀鸡用牛刀的设计，引入了巨大的计算和内存开销。即使是采用了并行动作解码技术的最新模型，虽然规避了逐词元生成的顺序解码成本，但高维度的多模态特征输入依然要完整穿过整个庞大的语言模型主干，导致极高的推理延迟，严重限制了机器人的控制频率。
 
@@ -57,7 +57,7 @@ related_tutorials:
 
 TurboVLA 彻底摒弃了中心化的 LLM，转而采用独立编码、直接交互、并行解码的 $V+L \to A$ 流水线架构。
 
-<img src="/images/2607.27205v1/pipeline-crop.jpg" alt="TurboVLA架构总览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.27205v1/pipeline-crop.webp" alt="TurboVLA架构总览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 多模态特征的独立轻量级编码
 
@@ -91,7 +91,7 @@ TurboVLA 则从先进的视觉定位（**Visual Grounding**）模型（如 Groun
 
 为了验证这种极简架构的实际效能，研究团队在单臂操作基准 LIBERO、双臂操作基准 RoboTwin 2.0 以及真实机器人部署上进行了全面而严格的测试。结果表明，TurboVLA 在性能与效率的权衡上，达到了当前领域的最前沿水平。
 
-<img src="/images/2607.27205v1/teaser-crop.jpg" alt="TurboVLA在性能与资源开销上的综合对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.27205v1/teaser-crop.webp" alt="TurboVLA在性能与资源开销上的综合对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### LIBERO 仿真环境中的绝对统治力
 
@@ -109,7 +109,7 @@ TurboVLA 则从先进的视觉定位（**Visual Grounding**）模型（如 Groun
 
 架构的理论高效性最终需要转化为实际物理世界的可用性。研究团队将 TurboVLA 直接部署到了真实的 AgileX Piper 机械臂平台上，测试了四个不同难度的日常操作任务。
 
-<img src="/images/2607.27205v1/real-world-crop.jpg" alt="TurboVLA在真实机器人上的部署与表现" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.27205v1/real-world-crop.webp" alt="TurboVLA在真实机器人上的部署与表现" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在真实世界的测试中，TurboVLA 分别取得了 92.5%、80%、90% 和 87.5% 的极高操作成功率。在直接对比中，它的表现始终优于参数量大得多的 $\pi_{0.5}$。真实环境存在着光照变化、标定误差、物理摩擦等大量在仿真中难以完全复刻的噪声，而 TurboVLA 的成功充分证明，其直接的 $V+L \to A$ 路径提取的特征不仅足够指导精确控制，而且具备极强的鲁棒性。
 
@@ -123,7 +123,7 @@ TurboVLA 则从先进的视觉定位（**Visual Grounding**）模型（如 Groun
 
 最后是关于动作块预测步长 $H$ 的选择。动作块（Action Chunking）是缓解时间相关性和平滑运动轨迹的关键技术。
 
-<img src="/images/2607.27205v1/ablation-crop.jpg" alt="动作预测步长对性能的影响" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.27205v1/ablation-crop.webp" alt="动作预测步长对性能的影响" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如图表所示，较长的动作块能够为机器人提供更具前瞻性的局部轨迹指导。当改变 $H$ 的大小时，模型的表现呈现出先上升后平稳的趋势。合理设置步长结合高频的重规划，使得机器人在执行复杂装配和抓取时能保持极高的丝滑度。
 

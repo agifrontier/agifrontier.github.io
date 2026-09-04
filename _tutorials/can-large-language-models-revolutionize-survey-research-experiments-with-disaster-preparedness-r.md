@@ -56,7 +56,7 @@ related_tutorials:
 该理论详细描述了人类在面对潜在威胁时的完整认知链条：
 人们会先进行“威胁评估”（严重性、脆弱性、过往经验），然后再进行“应对评估”（措施有效性、自我效能、响应成本），最终产生保护动机并付诸行动。
 
-<img src="/images/2605.19229v1/image1.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2605.19229v1/image1.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 怎么理解这种AI与理论的结合呢？你可以把它看作人类在面对危急时的“心理决策流程图”。
 普通的检索增强生成技术（RAG）在遇到缺失值时，只是简单粗暴地在数据库里寻找人口特征相似的人。这就好比一个无头苍蝇，找来的参照物虽然背景相似，但面对灾害的决策逻辑可能完全南辕北辙。
@@ -68,13 +68,13 @@ related_tutorials:
 为了检验成色，研究人员精心设计了四种难度递增的缺失机制。其中最为严苛的S4场景模拟了“非随机缺失”（MNAR）的极限情况：复合弱势群体的特定模块数据被成块地完全抹除。
 在如此恶劣的条件下，我们来看看A-TLM与传统统计大佬们的巅峰对决结果。
 
-<img src="/images/2605.19229v1/image2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2605.19229v1/image2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 实验结果令人侧目。在S4极限场景中，A-TLM的均方根误差（RMSE）达到了所有测试方法中最低的1.439。
 作为对比，传统非参数插补的最强王者 $missForest$ 算法，不仅误差更高（1.496），还产生了令人难以忍受的系统性偏差（达到了夸张的-0.631）。
 相比之下，A-TLM在稳住误差下限的同时，其总体符号偏差仅为-0.121，无限逼近于零偏差的完美状态。
 
-<img src="/images/2605.19229v1/image3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2605.19229v1/image3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 从偏差-RMSE的二维前沿图谱中可以清晰地看到，A-TLM在两项核心指标的权衡上，占据了压倒性的优势位置。
 消融实验进一步证实，正是“同侪示例”与“漏洞提示”的巧妙结合，在S4场景下产生了超级叠加效应，为模型指明了方向。而单纯依赖近邻向量检索的标准RAG模型，其平均绝对误差（MAE）高达1.097，表现竟然垫底。这充分证明，缺乏深刻因果结构约束的单纯检索，在复杂的社会科学任务面前往往不堪大用。

@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 超越ResNet！普林斯顿Deep Delta Learning：让神经网络学会“遗忘”与“反思”
 
-<img src="/images/2601.00417v1/A__title.jpg" alt="超越ResNet！普林斯顿Deep Delta Learning：让神经网络学会“遗忘”与“反思” 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.00417v1/A__title.webp" alt="超越ResNet！普林斯顿Deep Delta Learning：让神经网络学会“遗忘”与“反思” 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在深度学习的殿堂里，ResNet（残差网络）无疑是那根最坚固的“承重柱”。
 

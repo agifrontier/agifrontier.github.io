@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 批量归一化（Batch Normalization）：深度学习的“稳定器”与“加速器”
 
-<img src="/images/1502.03167v3/A__title.jpg" alt="批量归一化（Batch Normalization）：深度学习的“稳定器”与“加速器” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/1502.03167v3/A__title.webp" alt="批量归一化（Batch Normalization）：深度学习的“稳定器”与“加速器” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在深度神经网络的训练过程中，研究者和工程师们面临着一个棘手而普遍的难题：训练过程极其缓慢且不稳定。模型需要精细的参数初始化、小心翼翼设置的低学习率，并且对某些类型的激活函数（如 Sigmoid）非常不友好。这背后的一个核心元凶，被2015年一篇来自Google的开创性论文精准地识别并命名为**内部协变量偏移**（**Internal Covariate Shift**）。
 

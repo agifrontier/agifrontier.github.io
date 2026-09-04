@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 告别炼丹玄学：谷歌用概率统一AI Agent，提出“自由度”新思路
 
-<img src="/images/2512.04469v1/A__title.jpg" alt="告别炼丹玄学：谷歌用概率统一AI Agent，提出“自由度”新思路 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.04469v1/A__title.webp" alt="告别炼丹玄学：谷歌用概率统一AI Agent，提出“自由度”新思路 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 AI Agent的浪潮正席卷而来，从能自主思考和使用工具的ReAct，到分工协作的多智能体（Multi-Agent）系统，各种新架构层出不穷。然而，这个繁荣的背后也隐藏着一个巨大的挑战：我们如何科学地比较这些设计？一个ReAct Agent和一个多智能体系统，哪个更优？我们是该优化提示词，还是该引入更复杂的控制流程？
 
@@ -36,7 +36,7 @@ AI Agent的浪潮正席卷而来，从能自主思考和使用工具的ReAct，�
 
 这个公式看起来可能有点吓人，但它的意思很简单：整个动作序列 $\mathbf{a}$ 发生的总概率，等于每一步选择正确动作的概率的连乘积。
 
-<img src="/images/2512.04469v1/image47.jpg" alt="一个概率链的图形化表示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.04469v1/image47.webp" alt="一个概率链的图形化表示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 <center>图1：概率链中的一个环节。Agent的每一步都是一个概率选择。</center>
 
@@ -81,7 +81,7 @@ ReAct是目前最经典的单Agent范式之一，它通过“思考（Thought）
 
 这正是“协作”的数学本质！Agent之间可以通过沟通、协商、甚至“讨价还价”，来动态地寻找一个最优的上下文 $c\_L$，从而最大化下游Agent成功的概率。这相当于在系统运行时，增加了一个强大的动态调优旋钮，这是单个Agent所不具备的。
 
-<img src="/images/2512.04469v1/image1_addition_v2.jpg" alt="不同策略的自由度对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.04469v1/image1_addition_v2.webp" alt="不同策略的自由度对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 <center>图2：策略能力面板。清晰展示了不同架构下的“自由度”。</center>
 

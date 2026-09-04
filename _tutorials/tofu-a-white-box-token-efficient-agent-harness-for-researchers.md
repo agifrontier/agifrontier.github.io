@@ -43,7 +43,7 @@ related_tutorials:
 
 ToFu作为一个白盒研究工具，将其“总经办”架构拆解为六大核心模块：
 
-<img src="/images/2607.11423v1/x4.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.11423v1/x4.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 1.  **用户接口**：支持Web UI与社交平台机器人接入，允许用户干预推理过程，提供检查点恢复与高风险操作的人工审批。
 2.  **智能体编排核心**：整个系统的控制中枢，负责任务拆解、协调“规划-工作-评估”的推理流，并管理工具调用与错误回退。
@@ -102,7 +102,7 @@ ToFu作为一个白盒研究工具，将其“总经办”架构拆解为六大�
 
 这使得ToFu能够覆盖从阅读文献（内置论文阅读器支持双栏PDF解析）到修改手稿的完整学术闭环。
 
-<img src="/images/2607.11423v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.11423v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 实验结论：更少的Token，更强的性能
 

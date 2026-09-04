@@ -46,7 +46,7 @@ related_tutorials:
 该研究提出了一种基于类型替换代数的基础架构。
 通过这种设计，整个运行时框架不再是一团相互耦合的“面条代码”。
 
-<img src="/images/2606.14249v1/x1.jpg" alt="[Uncaptioned image]" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.14249v1/x1.webp" alt="[Uncaptioned image]" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 研究团队将Agent的行为空间，极其严谨地划分为了九个独立维度。
 这包括了模型选择、上下文组装、记忆管理、工具生态等。
@@ -65,7 +65,7 @@ related_tutorials:
 经典的RL“病态”现象一旦进入符号空间，破坏力将被急剧放大。
 为了应对这些挑战，AEGIS精心设计了四个环环相扣的流水线阶段：
 
-<img src="/images/2606.14249v1/x2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.14249v1/x2.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 1. **消化器**（**Digester**）：负责处理海量日志。
 运行一次测试可能会产生上千万个Token的原始轨迹。
@@ -91,7 +91,7 @@ AEGIS引入了严格的“跷跷板约束”。
 无论外部工具给得多么完善，模型本身的推理能力才是最终的瓶颈。
 此时，HarnessX启动了最高阶的玩法：模型与框架的协同进化。
 
-<img src="/images/2606.14249v1/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.14249v1/x3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 研究团队引入了**组相对策略优化**（**GRPO**）算法，并进行了一次极其优美的工程架构设计。
 系统的精妙之处在于，为模型和框架构建了一个共享的经验回放缓冲区（Replay Buffer）。

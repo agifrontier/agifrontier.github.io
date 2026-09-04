@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">A Framework for Evaluating Agentic Skills at Scale</p>
 
-<img src="/images/2606.17819v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2606.17819v1/A__title.webp" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 大语言模型（LLM）驱动的 Agent 正在迅速重塑软件开发、数据分析和复杂工作流的自动化方式。为了让通用模型能够胜任特定领域的复杂任务，行业内形成了一种标准的做法：为 Agent 注入“技能”（Skills）。这些技能本质上是结构化、可复用的知识载体，它们封装了特定领域的工作流、API 调用模式、代码规范以及专家的偏好设定。
 
@@ -47,7 +47,7 @@ related_tutorials:
 
 为了突破这种局限，研究团队设计了一套将任意技能自动转化为可执行评估任务的合成框架。该框架的巧妙之处在于，它不需要人工去设想技能的使用场景，而是通过一组专门的协同 Agent，直接从技能的内容中推导出真实的测试任务。在整个生成和测试过程中，系统会隐蔽地植入评分标准，从而在不泄露“考题答案”的前提下，精准测试求解 Agent 的真实能力。
 
-<img src="/images/2606.17819v1/diagram-env-pipeline-vertical-small.jpg" alt="框架流程图" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2606.17819v1/diagram-env-pipeline-vertical-small.webp" alt="框架流程图" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 这套流水线包含几个关键的处理节点：
 
@@ -81,7 +81,7 @@ related_tutorials:
 
 通过聚类分析，这 500 个技能展现出了极其丰富的领域分布。
 
-<img src="/images/2606.17819v1/skill_clusters.jpg" alt="技能聚类分布图" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2606.17819v1/skill_clusters.webp" alt="技能聚类分布图" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 从聚类结果可以清晰地看到，软件工程类技能占据了绝对的主导地位。其中，Web 与 UI 设计（14.3%）、机器学习与 AI（13.6%）、测试与代码质量（10.2%）以及基础设施与 DevOps（8.3%）构成了最大的几个板块。此外，金融加密、数据处理、科学计算以及内容文档处理等领域也占据了可观的比例。
 

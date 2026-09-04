@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 80%的预测只需96个Token！DeepMind揭示大模型“短视”的秘密
 
-<img src="/images/2512.08082v1/A__title.jpg" alt="80%的预测只需96个Token！DeepMind揭示大模型“短视”的秘密 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.08082v1/A__title.webp" alt="80%的预测只需96个Token！DeepMind揭示大模型“短视”的秘密 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当整个AI界都在为百万、千万级长上下文窗口欢呼时，你是否想过一个反直觉的问题：在大多数情况下，大语言模型真的需要那么长的上下文吗？
 
@@ -23,7 +23,7 @@ related_tutorials:
 
 这项研究不仅系统性地验证了“短上下文主导”这一现象，还开发出了一套实用的检测和优化方法，能够智能识别并增强模型在真正需要长距离依赖时的表现。
 
-<img src="/images/2512.08082v1/MCL_algorithmic_method_withDaMCL.jpg" alt="Figure 1: Short-context dominance hypothesis" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.08082v1/MCL_algorithmic_method_withDaMCL.webp" alt="Figure 1: Short-context dominance hypothesis" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 短上下文主导：一个反直觉的假设
 
@@ -40,7 +40,7 @@ related_tutorials:
 
 实验结果令人震惊。研究团队在新闻、故事、政府报告等多种数据集上进行了测试，发现MCL的分布严重偏向极短的长度。
 
-<img src="/images/2512.08082v1/Sec1_MCL_Distribution_Vertical.jpg" alt="Figure 2: Distribution of MCL" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.08082v1/Sec1_MCL_Distribution_Vertical.webp" alt="Figure 2: Distribution of MCL" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 如上图所示（注意Y轴是对数尺度），无论是长文本还是短文本，绝大多数（约80-90%）序列的MCL都不超过96个Token。这有力地证明了“短上下文主导”假设的普遍性。
 
@@ -59,7 +59,7 @@ MCL虽然揭示了问题的本质，但它有一个致命缺陷：计算它需�
 
 DaMCL的巧妙之处在于，它完全摆脱了对“标准答案”的依赖，只需比较模型自身的输出分布，因此可以在推理时动态使用。
 
-<img src="/images/2512.08082v1/Grouped_JSD_2x2_final.jpg" alt="Figure 3: Distribution of DaMCL" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.08082v1/Grouped_JSD_2x2_final.webp" alt="Figure 3: Distribution of DaMCL" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 实验再次证实，即使从分布相似性的角度看，短上下文主导的趋势依然存在，尽管相比MCL的极端偏斜有所缓和。这说明，DaMCL是一个有效且可靠的代理指标。
 
@@ -92,7 +92,7 @@ DaMCL的巧妙之处在于，它完全摆脱了对“标准答案”的依赖，
 
 答案是肯定的。研究团队为此设计了一种名为**TaBoo**（**Targeted Boosting**）的解码算法。
 
-<img src="/images/2512.08082v1/BoostSampling_drawio_Improved.jpg" alt="TaBoo 算法流程图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.08082v1/BoostSampling_drawio_Improved.webp" alt="TaBoo 算法流程图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 TaBoo算法的核心步骤如下：
 

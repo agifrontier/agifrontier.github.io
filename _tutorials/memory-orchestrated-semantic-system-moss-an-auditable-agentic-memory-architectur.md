@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Memory-Orchestrated Semantic System (MOSS): An Auditable Agentic Memory Architecture</p>
 
-<img src="/images/2607.04391v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.04391v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当前，大语言模型（LLM）本身是无状态的。如果希望一个 AI 智能体（Agent）能在数月甚至数年间持续陪伴用户、积累知识，它就必须拥有一套强大的长期记忆“外挂”系统。目前的行业默认选项是基于向量的检索增强生成（**Retrieval**-**Augmented** **Generation**, **RAG**），将知识切块、向量化并通过相似度匹配提取。然而，向量检索天生具有黑盒属性，不仅在理论上存在容量瓶颈，更难以被人类核查和审计。
 
@@ -63,7 +63,7 @@ related_tutorials:
 
 3.  **自下而上的归纳式本体论**：系统不预设任何外部的知识分类法，所有的核心概念和知识图谱，都是随着对话和文档的积累，从语料本身归纳生成的。
 
-<img src="/images/2607.04391v1/x1.jpg" alt="MOSS 部署架构" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.04391v1/x1.webp" alt="MOSS 部署架构" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 从上图的架构中可以看出，**MOSS** 只有一个连接智能体与记忆的神经中枢——**Orchestrator**（编排器）。编排器负责管理所有代码和 API 调用，并将非确定性的 LLM 思考与完全确定性的 SQL 检索隔离开来。
 
@@ -77,7 +77,7 @@ related_tutorials:
 
 这种设计的巧妙之处在于，从智能体的视角来看，它的上下文窗口在逻辑上变得“无限大”了。因为任何刚刚掉出短时记忆的内容，都在几秒钟内化作了结构化数据库中可以随时通过 SQL 检索出来的历史记录。这不仅避免了无休止扩大上下文窗口带来的算力浪费，也完美绕过了大模型常见的“中间迷失”（**Lost**-**in**-**the**-**Middle**）现象。
 
-<img src="/images/2607.04391v1/x2.jpg" alt="查询生命周期与持续索引" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.04391v1/x2.webp" alt="查询生命周期与持续索引" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在上图的查询生命周期（**Query** **Lifecycle**）中，我们可以清晰地看到检索与思考的界限。
 

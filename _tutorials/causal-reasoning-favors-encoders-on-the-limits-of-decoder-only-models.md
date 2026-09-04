@@ -13,7 +13,7 @@ related_tutorials:
 
 ## BERT“逆袭”GPT？微软新论文揭示Decoder-only在因果推理中的致命短板
 
-<img src="/images/2512.10561v1/A__title.jpg" alt="BERT“逆袭”GPT？微软新论文揭示Decoder-only在因果推理中的致命短板 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.10561v1/A__title.webp" alt="BERT“逆袭”GPT？微软新论文揭示Decoder-only在因果推理中的致命短板 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在如今的大模型时代，“Decoder-only is all you need”似乎已成为某种不成文的铁律。从GPT系列到Llama，再到Qwen，生成式架构统治了几乎所有榜单。然而，当我们剥离掉华丽的语言外壳，直面最纯粹、最严苛的**因果推理**（**Causal Reasoning**）任务时，这些庞然大物是否依然无懈可击？
 
@@ -43,7 +43,7 @@ related_tutorials:
 
 *   **Decoder-only 架构（如 GPT）**：是递归的，只能从左到右逐个Token生成。虽然有注意力机制，但其本质是单向的。
 
-<img src="/images/2512.10561v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.10561v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1：研究概览。左侧展示了从自然语言到乱码（NNL）的数据集构建；右侧展示了对比的各类模型，包括BERT、BART以及Qwen等Decoder-only模型。*
 
@@ -61,7 +61,7 @@ related_tutorials:
 
 如下图所示，随着推理深度（Depth）的增加，Decoder-only 模型（如 Qwen3-1.7B）的准确率在 NNL 数据集上断崖式下跌，迅速退化为随机猜测。相比之下，微调后的 BERT-Base 展现出了惊人的鲁棒性，即使在深度为 7 的复杂推理链中依然能保持较高的准确率。
 
-<img src="/images/2512.10561v1/nnl.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.10561v1/nnl.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图2：非自然语言（NNL）数据集下的深度-准确率曲线。可以看到，随着推理步数（Depth）增加，Encoder-based 模型（如 BERT-Base，绿线）的衰减速度远慢于 Decoder-only 模型（如 Qwen3-1.7B，红线）。*
 
@@ -77,7 +77,7 @@ related_tutorials:
 
 逻辑推理在模型的表示空间中应该表现为平滑的轨迹。研究发现，**Encoder 架构在深层推理中能保持较高的“曲率相似性”，这意味着它们在进行一致的逻辑变换。** 而 Decoder-only 模型的曲率随着推理深度增加而迅速漂移，说明它们在递归过程中积累了大量的局部噪声，破坏了高阶的逻辑不变量。
 
-<img src="/images/2512.10561v1/curvature_depthwise_plot.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.10561v1/curvature_depthwise_plot.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图3：不同架构随推理深度增加的曲率相似性。BERT（蓝色）保持了最高的稳定性，而 Qwen（红色）则迅速下降，表明其内部逻辑流的崩塌。*
 

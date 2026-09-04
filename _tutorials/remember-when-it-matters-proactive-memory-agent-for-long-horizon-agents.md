@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Remember When It Matters: Proactive Memory Agent for Long-Horizon Agents</p>
 
-<img src="/images/2607.08716v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.08716v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在大型语言模型驱动的智能体（LLM Agent）研究中，业界长期受困于一个看似无解的顽疾：当任务轨迹变得越来越长，智能体会不可避免地变得“健忘”且固执。这种健忘往往不是因为上下文窗口不够大，而是智能体在漫长的局部试错和多步执行中，丢失了对全局约束和历史经验的控制力。Meta 研究团队在最新论文中精确地定义了这一现象，并提出了一种从根本上改变智能体记忆使用方式的全新架构，无需修改原有执行模型，仅通过即插即用的旁路干预，就在复杂任务基准上实现了最高 8.3 个百分点的成功率提升。
 
@@ -49,7 +49,7 @@ related_tutorials:
 
 整个架构的设计在保持动作流连贯的同时，通过两个严格分离的内部阶段赋予了记忆智能体极高的运作效率。
 
-<img src="/images/2607.08716v1/Picture2.jpg" alt="Overview of the memory-intervention architecture." style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.08716v1/Picture2.webp" alt="Overview of the memory-intervention architecture." style="width:85%; max-width:450px; margin:auto; display:block;">
 
 #### 阶段一：强制工具化的记忆管理
 
@@ -63,7 +63,7 @@ related_tutorials:
 
 允许并鼓励系统“保持沉默”是该方法的一个重要创新。记忆智能体被要求只有在极少数特定情况下才应该出声打断动作模型：例如动作智能体眼看就要违反一条明确的业务规则了、正在重蹈之前尝试过的错误覆辙，或是忽视了一个依然开放且紧迫的子目标。它被严厉禁止给出泛泛而谈的战略建议，也绝不允许去复述动作智能体明明在当前观察中就能看到的信息，更不能试图越权去直接规划动作智能体的下一步怎么走。这种极度克制的注入策略，确保了每一次记忆干预都能像手术刀一样精准地切断“行为状态衰退”的蔓延，重新建立关键约束对模型下一步动作的因果控制力。
 
-<img src="/images/2607.08716v1/Picture1.jpg" alt="Two-phase internal workflow of the memory agent." style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.08716v1/Picture1.webp" alt="Two-phase internal workflow of the memory agent." style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 突破长任务性能瓶颈：实验结果与深刻消融
 

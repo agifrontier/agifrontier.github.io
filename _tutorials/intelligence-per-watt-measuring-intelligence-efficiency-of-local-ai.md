@@ -22,7 +22,7 @@ related_tutorials:
 
 来自斯坦福大学和Together AI的一项最新研究，为我们描绘了这样一幅蓝图。他们不仅证明了本地AI的可行性，更提出了一个全新的衡量标准——**每瓦特智能**（**Intelligence per Watt, IPW**），来量化这一趋势。
 
-<img src="/images/2511.07885v1/main_figure.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.07885v1/main_figure.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图1：研究概览：每瓦特智能（IPW）*
 
 ### IPW：衡量AI能效的新标尺
@@ -47,7 +47,7 @@ IPW这个指标，就是要将“智能”和“能耗”统一起来。
 
 这意味着，近九成的日常AI查询，理论上都可以在你的个人设备上完成，无需再发往云端。当然，不同领域的表现有所差异：在创意写作等任务上超过90%，但在更专业的工程领域则降至68%左右。
 
-<img src="/images/2511.07885v1/x1.jpg" alt="Refer to tcaption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.07885v1/x1.webp" alt="Refer to tcaption" style="width:85%; max-width:600px; margin:auto; display:block;">
 *图2：本地模型在多个基准测试中媲美云端模型*
 
 如图所示，“本地路由”（为每个查询选择最优的本地模型）的表现在多个基准上甚至超越了“云端路由”（选择最优的云端大模型）。
@@ -77,7 +77,7 @@ IPW这个指标，就是要将“智能”和“能耗”统一起来。
 
 而这一切的实现，几乎不牺牲任何最终的答案质量，因为无法处理的请求最终还是会由最强的云端模型来“兜底”。
 
-<img src="/images/2511.07885v1/burst_gpt_plot_v3.1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.07885v1/burst_gpt_plot_v3.1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图3：模型路由带来的能源、计算和成本节省*
 
 ### 结论

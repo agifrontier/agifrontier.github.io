@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">GPT-Red: Automated Red Teaming via Self-Play at Scale</p>
 
-<img src="/images/2607.26115v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.26115v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大型语言模型（LLM）走向智能体（Agent）化、深度介入现实业务的过程中，安全防御一直是悬在开发者头顶的达摩克利斯之剑。传统的安全训练往往依赖人类组成的“红队”（Red Team）来测试模型的漏洞，或者收集有限的攻击数据集进行强化学习（RL）对抗训练。然而，这种静态的方法在模型能力爆发式增长面前显得捉襟见肘——模型很容易对已有的攻击模式过拟合，而对不断进化的、具备自适应能力的恶意攻击者毫无招架之力。
 
@@ -58,7 +58,7 @@ GPT-Red 最核心的创新在于其训练范式——基于强化学习的大规
 
 这是一个典型的零和博弈。在训练初期，两边的模型都由具备强大思维链（Chain-of-Thought, CoT）推理能力的基础模型初始化。随着训练的推进，防守模型在不断抵御攻击的过程中变得越来越无懈可击；为了继续获得奖励，GPT-Red 就必须绞尽脑汁，进化出更为隐蔽、更具欺骗性的攻击手法。
 
-<img src="/images/2607.26115v1/multidefender-heatmap.jpg" alt="[Uncaptioned image]" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.26115v1/multidefender-heatmap.webp" alt="[Uncaptioned image]" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 上图展示了在训练过程中 GPT-Red 针对不同防守模型生成的攻击策略热力图。我们可以清晰地看到，GPT-Red 并没有寻找一种“万能药”，而是针对不同的防御机制演化出了高度特异化的攻击手段。某些对模型 A 极其致命的攻击，在模型 B 面前可能完全失效，这不仅证明了攻击者策略的多样性，也凸显了自对弈机制能够有效避免攻击模式的单一化。
 
@@ -70,7 +70,7 @@ GPT-Red 最核心的创新在于其训练范式——基于强化学习的大规
 
 这些环境的设计理念非常巧妙：将现有的正常能力测试任务，直接转化为对抗训练环境。例如，在一个原本测试模型多模态图片识别能力的任务中，系统会在模型调用工具返回结果时，允许攻击者截断信息并在特定位置（如工具响应或者局部文件中）植入包含恶意指令的视觉图像。这就保证了所有的防御训练都发生在极其贴近真实生产环境的上下文之中。
 
-<img src="/images/2607.26115v1/generalization-robustness.jpg" alt="[Uncaptioned image]" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.26115v1/generalization-robustness.webp" alt="[Uncaptioned image]" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 红队测试环境主要分为几大类：
 
@@ -80,7 +80,7 @@ GPT-Red 最核心的创新在于其训练范式——基于强化学习的大规
 
 - **安全拒答越狱（Safety Refusal Jailbreaks）**：类似于传统的安全护栏测试。环境会模拟看似正常的长轮对话（如软件调试），然后在多轮交互后突然将话题引向开发恶意软件等危险领域。为了防止攻击模型“偷懒”（比如只是对现有的危险指令做简单的翻译，而不提供实质性的新对抗策略），系统还设计了严格的防作弊过滤机制，确保生成的攻击既具备新鲜度，又符合真实人类的对话习惯。
 
-<img src="/images/2607.26115v1/attacker-robustness.jpg" alt="[Uncaptioned image]" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.26115v1/attacker-robustness.webp" alt="[Uncaptioned image]" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### GPT-5.6 的诞生：百炼成钢的防御壁垒
 
@@ -92,7 +92,7 @@ GPT-Red 最核心的创新在于其训练范式——基于强化学习的大规
 
 在 GPT-5.6 的日常能力训练期间，系统会持续向其输送由 GPT-Red 实时生成的高质量、高难度的提示注入攻击样本。这种动态注入使得 GPT-5.6 不断在防御漏洞上进行梯度攀爬（Hillclimb）。
 
-<img src="/images/2607.26115v1/vendy-final.jpg" alt="[Uncaptioned image]" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.26115v1/vendy-final.webp" alt="[Uncaptioned image]" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 最终的评测结果证明了这一路线的巨大成功。研究团队将经过 GPT-Red 对抗训练的 GPT-5.6，与另一个经过严格安全训练但未引入自动化红队的对照组模型（GPT-5.1）进行了对比。结果显示，在各类苛刻的测试基准上，GPT-5.6 的鲁棒性实现了跨越式的提升。最典型的数据体现在针对前文提到的“假思维链”（Fake CoT）攻击的防御上：在同等难度的挑战下，对照组模型的防御成功率仅为 5.2%，而经过自对弈对抗洗礼的 GPT-5.6，将这一防御指标飙升至惊人的 95.9%。这种本质上的跃升，标志着模型不仅学会了应对表面的词汇级恶意输入，更具备了在复杂推理链条中甄别信息真伪的深层防御能力。
 

@@ -13,7 +13,7 @@ related_tutorials:
 
 ## OmniScientist：让AI科学家“组建团队”，成果超越NIPS最佳论文
 
-<img src="/images/2511.16931v1/A__title.jpg" alt="OmniScientist：让AI科学家“组建团队”，成果超越NIPS最佳论文 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.16931v1/A__title.webp" alt="OmniScientist：让AI科学家“组建团队”，成果超越NIPS最佳论文 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当前的AI Agent能写代码、做分析，甚至开始涉足科学研究，人们称之为“AI科学家”。但它们更像是孤军奋战的天才，缺乏一个关键要素：科学研究本质上是社会性与协作性的活动。
 
@@ -24,7 +24,7 @@ related_tutorials:
 
 来自清华大学等机构的研究者们推出了**OmniScientist**框架，它不再将AI视为孤立的工具，而是构建了一个完整的、模拟人类科研体系的AI科学家“生态系统”。更惊人的是，它在一个真实案例中，其发现的解决方案性能超越了NIPS 2024的最佳论文方法！
 
-<img src="/images/2511.16931v1/x1.jpg" alt="OmniScientist系统概览" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.16931v1/x1.webp" alt="OmniScientist系统概览" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### AI科学家的“社交困境”
 
@@ -52,7 +52,7 @@ OmniScientist的基础是一个动态知识库，它不仅仅是论文的堆砌�
 
 这种基于“关系”的检索，远比传统的关键词搜索更深刻、更精准。
 
-<img src="/images/2511.16931v1/pipeline.jpg" alt="知识库构建流程" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.16931v1/pipeline.webp" alt="知识库构建流程" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 2. Omni科学协议（OSP）：AI与人的协作规则
 
@@ -77,7 +77,7 @@ OmniScientist为此推出了一个开放评估平台**ScienceArena**。它模拟
 
 理论再好，不如实战。OmniScientist通过一个闭环多Agent系统，整合了文献研究、思想产生和自动化实验等模块，形成了一个强大的“AI研究小组”。
 
-<img src="/images/2511.16931v1/x12.jpg" alt="闭环多Agent系统" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.16931v1/x12.webp" alt="闭环多Agent系统" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 研究团队选择了一个极具挑战性的任务：改进**随机泰勒微分估计器**（**STDE**），这是NIPS 2024的一篇最佳论文。STDE方法虽然强大，但其精度受限于蒙特卡洛（MC）采样带来的高方差。
 
@@ -86,7 +86,7 @@ OmniScientist为此推出了一个开放评估平台**ScienceArena**。它模拟
 
 结果令人瞩目！
 
-<img src="/images/2511.16931v1/x13.jpg" alt="实验结果对比" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2511.16931v1/x13.webp" alt="实验结果对比" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 如上图所示，引入了外部知识的OmniScientist方案，在所有维度上都实现了解决方案误差的“巨大且一致的降低”，性能显著超越了原始的STDE方法。
 

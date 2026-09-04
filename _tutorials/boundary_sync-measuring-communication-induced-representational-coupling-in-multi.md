@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">BOUNDARY_SYNC: Measuring Communication-Induced Representational Coupling in Multi-Agent LLM Systems</p>
 
-<img src="/images/2607.01600/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.01600/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当大语言模型（LLM）作为智能体被组合成多智能体系统（Multi-Agent Systems）时，一个根本性的矛盾始终悬而未决：智能体之间的相互交流，究竟是会促使它们在观点和输出上趋于一致，还是会激发更多的多样性？随着多智能体协作推理、辩论和社会模拟的广泛应用，如果模型在交流后变得越来越同质化，那么引入多个智能体所带来的多样性红利将被彻底抹杀；反之，如果交流导致发散，则可能放大系统噪声。
 
@@ -68,6 +68,6 @@ related_tutorials:
 
 以某次对 DeepSeek 模型的测试为例，其记录了近乎于零的 CAF（0.034），有时甚至出现了几个智能体输出一模一样的概率分布。如果单看数字，这似乎意味着极其严重且真实的群体极化和同质化。但深入拆解后发现，这种断崖式的崩溃源于该批次测试强制开启了受限 JSON 输出格式，并关闭了模型的推理链。在严格的格式约束下，模型不再对信息进行深度的语义合成，而是退化成机械的格式复制机，直接照抄邻居的 JSON 结构。一旦解除这种刚性格式限制，极端的同质化就会大幅回退。因此，在构建多智能体评估基准时，必须严格区分哪些是由于模型内部认知发生的真实社会耦合，哪些仅仅是被复杂的 API 格式和指令结构所压榨出的假象。
 
-<img src="/images/2607.01600/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.01600/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 综合来看，如上图所示，当使用各自模态正确的基准进行校准时，无论是文本基线（0.816）还是图像基线（0.834），多智能体的通信都带来了无可辩驳的同质化结果。Boundary_Sync 的研究确立了一个全新的理解维度：多智能体系统的通信并不是没有代价的。每多引入一次互相参照的交流，系统就在用牺牲初始多样性的代价来换取输出的一致性。这种耦合是真实存在的、可通过 JSD 精确测量的，同时又因为其无状态的特性，完全受控于提示词和群体规模的设计。面对日益庞大且复杂的多智能体推理架构，开发者现在拥有了明确的量化标准，可以有意识地在共识与分歧之间进行工程上的取舍。

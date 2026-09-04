@@ -39,7 +39,7 @@ related_tutorials:
 ## 本文方法
 DeepSeek-V3的架构和训练方法在继承DeepSeek-V2高效设计的基础上，引入了多项关键创新，旨在同时优化模型性能和训练/推理效率。
 
-<img src="/images/2412.19437v2/x2.jpg" alt="DeepSeek-V3基础架构图" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2412.19437v2/x2.webp" alt="DeepSeek-V3基础架构图" style="width:85%; max-width:450px; margin:auto; display:block;">
 *图注：DeepSeek-V3 的基础架构示意图。沿用 DeepSeek-V2 的 MLA 和 DeepSeekMoE 实现高效推理和经济的训练。*
 
 ## 架构创新
@@ -75,7 +75,7 @@ $${% endraw %}
 
 ### 多Token预测 (MTP)
 为了增强训练信号，DeepSeek-V3引入了MTP训练目标。与传统只预测下一个token不同，MTP会预测未来的 $$D$$ 个token。
-<img src="/images/2412.19437v2/x3.jpg" alt="MTP实现示意图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2412.19437v2/x3.webp" alt="MTP实现示意图" style="width:85%; max-width:600px; margin:auto; display:block;">
 *图注：MTP实现示意图。在每个预测深度上为每个token的预测保留了完整的因果链。*
 
 **实现方式**：MTP由 $$D$$ 个顺序的模块构成。第 $$k$$ 个MTP模块接收来自第 $$k-1$$ 个模块的隐藏状态 $$\mathbf{h}_{i}^{k-1}$$ 和真实目标token $$t_{i+k}$$ 的嵌入，通过一个Transformer块来预测第 $$i+k+1$$ 个token。这种设计保持了完整的因果关系链，让模型能够“预先规划”其表示。
@@ -93,12 +93,12 @@ $${% endraw %}
 DeepSeek-V3的训练基于自研的HAI-LLM框架，采用了16路流水线并行(PP)、64路专家并行(EP)和ZeRO-1数据并行(DP)的混合并行策略。
 
 **核心创新：DualPipe算法**。为了解决MoE跨节点通信开销大的问题（计算通信比接近1:1），本文设计了DualPipe算法。它将每个计算块细分为Attention、MLP和All-to-all通信等部分，并巧妙地重新排列前向和反向传播中的这些子任务，实现了计算与通信的高度重叠。
-<img src="/images/2412.19437v2/x4.jpg" alt="DualPipe重叠策略" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2412.19437v2/x4.webp" alt="DualPipe重叠策略" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图注：一对前向和反向块的重叠策略。All-to-all和PP通信都可以被完全隐藏。*
 
 DualPipe采用双向流水线调度，同时从流水线的两端输入微批次数据，显著减少了流水线气泡。与1F1B等方法相比，DualPipe在略微增加激活内存的情况下，大幅减少了等待时间。
 
-<img src="/images/2412.19437v2/x5.jpg" alt="DualPipe调度示例" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2412.19437v2/x5.webp" alt="DualPipe调度示例" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图注：8个PP rank和20个微批次的DualPipe调度示例。*
 
 
@@ -112,12 +112,12 @@ DualPipe采用双向流水线调度，同时从流水线的两端输入微批次
 
 ### FP8混合精度训练
 本文首次在671B规模的模型上成功应用了FP8混合精度训练，极大地提升了训练速度并降低了显存占用。
-<img src="/images/2412.19437v2/x6.jpg" alt="FP8混合精度框架" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2412.19437v2/x6.webp" alt="FP8混合精度框架" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图注：FP8混合精度框架示意图，此处以线性算子为例。*
 
 **创新点**：
 1.  **细粒度量化 (Fine-Grained Quantization)**：为解决FP8动态范围有限易受异常值影响的问题，本文采用了细粒度量化策略。对激活函数按 $$1x128$$ 的tile-wise方式进行分组缩放，对权重按 $$128x128$$ 的block-wise方式进行分组缩放。这种方法有效隔离了异常值的影响。
-<img src="/images/2412.19437v2/x7.jpg" alt="细粒度量化与精度提升" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2412.19437v2/x7.webp" alt="细粒度量化与精度提升" style="width:85%; max-width:600px; margin:auto; display:block;">
 *图注：(a) 细粒度量化减轻异常值导致的量化误差；(b) 结合量化策略，通过在CUDA核上进行高精度累积来提升FP8 GEMM精度。*
 
 2.  **提升累积精度 (Increasing Accumulation Precision)**：标准的FP8 GEMM在H800上的累积精度有限。本文通过在Tensor Core执行一定数量的矩阵乘加(MMA)操作后，将中间结果提升到CUDA Core上进行全精度FP32累积，显著提高了计算的准确性，同时几乎不引入额外开销。

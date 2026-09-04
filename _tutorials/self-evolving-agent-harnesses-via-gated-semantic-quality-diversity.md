@@ -45,7 +45,7 @@ related_tutorials:
 
 通过这种结构性的隔离，主治医生（模型）可以天马行空地设计复杂的应对策略，但只有经过药监局（代码基建）严格验证确认有效的策略，才会被记录在案。这种设计从根本上杜绝了模型产生的幻觉或数学计算错误干扰最终的评估结果，使得每一个被记录的性能提升都在架构上值得信赖。
 
-<img src="/images/2607.13683v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.13683v1/x1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在上图中我们可以清晰地看到这个循环：任务Agent在训练集上运行，生成反馈信号；进化模块进行诊断并设计补丁；在实际推向全局前，还会进行预检（Preflight）以剔除无效候选者。只有通过严格门控的提交，才能写入持久化状态中。
 
@@ -65,7 +65,7 @@ related_tutorials:
 
 同时，系统会在不同的病理单元格之间进行交叉重组。例如，将解决“思考失控”的控制流补丁，与解决“过早完成”的验证器补丁结合在一起。这种重组既保证了探索的多样性，又避免了搜索空间的崩塌。
 
-<img src="/images/2607.13683v1/x2.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2607.13683v1/x2.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 上图展示了一个典型的进化树分支。我们可以看到不同的病理补丁是如何生成，又是如何通过交叉重组产生出协同效应的。图中被标记为协同（Synergistic）的重组方案，在最终的保留测试集中斩获了 $+13.9$ 个百分点的惊人提升。
 
@@ -88,7 +88,7 @@ related_tutorials:
 
 实验的最关键纪律在于：**训练期间脱颖而出的最佳脚手架，仅在完全隔离的、未见过的测试集（Sealed test）上进行一次性计分。** 这杜绝了通过反复试探测试集来刷榜的可能。
 
-<img src="/images/2607.13683v1/x3.jpg" alt="七个领域在密封测试集上的原始脚手架与进化脚手架成功率对比" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.13683v1/x3.webp" alt="七个领域在密封测试集上的原始脚手架与进化脚手架成功率对比" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图3：七个领域的密封测试集结果。实色条代表通过配对显著性检验的六个领域；斜线条为尚未获得可信归因的 SWE-bench。*
 

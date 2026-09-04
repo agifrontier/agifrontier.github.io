@@ -13,7 +13,7 @@ related_tutorials:
 
 ## LLM不读万行代码：Prune4Web让网页元素定位精度飙升至88%！
 
-<img src="/images/2511.21398v1/A__title.jpg" alt="LLM不读万行代码：Prune4Web让网页元素定位精度飙升至88%！ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.21398v1/A__title.webp" alt="LLM不读万行代码：Prune4Web让网页元素定位精度飙升至88%！ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当AI Agent试图帮我们在复杂的网页上预订机票或在线购物时，它们常常会“迷失”在由成千上万行代码组成的文档对象模型（DOM）中。这就像让一个人在一部万页电话簿里找一个没有具体地址的名字，效率低下且错误频出。传统的解决方法要么是粗暴地截断信息，要么是依赖低效的启发式方法。
 

@@ -42,7 +42,7 @@ OS Agents并非凭空产生，其运行逻辑高度依赖于操作系统的基�
 该研究指出，构建这类智能体需要深入理解三个核心要素。
 这三大要素构成了智能体与数字世界交互的物理法则。
 
-<img src="/images/2508.04482v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2508.04482v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 首先是环境空间，这是智能体活动的数字舞台。
 涵盖桌面端、移动端乃至Web浏览器的复杂生态。
@@ -63,7 +63,7 @@ OS Agents并非凭空产生，其运行逻辑高度依赖于操作系统的基�
 该研究深入探讨了领域专属基座模型的构建与微调方法。
 这涉及底层架构设计与专属训练策略的深度融合。
 
-<img src="/images/2508.04482v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2508.04482v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 核心痛点在于“屏幕分辨率”的解析瓶颈。
 标准大模型的视觉编码器通常只能处理极低分辨率的图像。
@@ -90,7 +90,7 @@ OS Agents并非凭空产生，其运行逻辑高度依赖于操作系统的基�
 拥有了强大的基座模型，还需要一套严密的智能体框架来驱动执行。
 该研究将框架系统性地拆分为感知、规划、记忆和动作四大模块。
 
-<img src="/images/2508.04482v1/x4.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2508.04482v1/x4.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 感知模块负责从复杂的环境中提取高信噪比的信息。
 目前学术界主要演化出三种截然不同的对齐流派。

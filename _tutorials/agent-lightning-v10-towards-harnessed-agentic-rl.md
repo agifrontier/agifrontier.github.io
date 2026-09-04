@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Agent Lightning v1.0: Towards Harnessed Agentic RL</p>
 
-<img src="/images/2608.17528v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.17528v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在当前的大模型应用生态中，现代智能体（**Agent**）早已不再作为裸露的语言模型独立运行。它们被包裹在复杂的智能体外壳（**Agent Harness**）中，这些外壳负责管理工具调用、执行环境、上下文窗口以及长程控制流。外壳决定了智能体如何观察环境、如何在长周期内采取行动以及如何从错误中恢复，构成了智能体能力的核心底座。然而，当研究者试图利用强化学习（**RL**）来进一步提升这些复杂智能体时，传统的强化学习框架与现代外壳架构之间产生了严重的摩擦。
 

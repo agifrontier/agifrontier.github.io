@@ -13,7 +13,7 @@ related_tutorials:
 
 ## Meta/牛津重磅：噪声数据引爆LLM训练崩溃！深度比宽度更致命，诊断新法公开
 
-<img src="/images/2602.02400v1/A__title.jpg" alt="Meta/牛津重磅：噪声数据引爆LLM训练崩溃！深度比宽度更致命，诊断新法公开 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2602.02400v1/A__title.webp" alt="Meta/牛津重磅：噪声数据引爆LLM训练崩溃！深度比宽度更致命，诊断新法公开 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 动辄花费数百万美元训练的大模型，最怕遇到什么？除了硬件故障，最令人心惊肉跳的莫过于看着Loss曲线突然“起飞”，然后一去不复返——也就是所谓的**损失发散**（**Loss Divergence**）。
 
@@ -29,7 +29,7 @@ related_tutorials:
 
 研究首先抛出了一个明确的结论：**噪声数据确实会导致预训练损失发散**，而且噪声的类型至关重要。
 
-<img src="/images/2602.02400v1/x1.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2602.02400v1/x1.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 如上图所示，即使是完全相同的架构和噪声比例，仅仅改变随机种子，有的模型能挺过去，有的则直接崩溃。
 
@@ -65,7 +65,7 @@ related_tutorials:
 
 关键指标是**最大注意力Logit**（Maximum Attention Logit），即 $z\_{ij}=\frac{\langle q\_{i},k\_{j}\rangle}{\sqrt{d\_{h}}}$ 中的最大值。
 
-<img src="/images/2602.02400v1/x11.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2602.02400v1/x11.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *   **高学习率导致的崩溃**：最大注意力Logit通常会飙升到极高的数值（约 **4000**）才发生崩溃。这是因为过大的更新步长导致参数范数爆炸。
 
@@ -79,7 +79,7 @@ related_tutorials:
 
 **混合专家模型**（**Mixture-of-Experts, MoE**）因其稀疏性通常被认为训练难度更大。人们担心：会不会某些Expert运气不好，分到了全是噪声的数据，从而导致局部崩溃，进而拖累整体？
 
-<img src="/images/2602.02400v1/x17.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2602.02400v1/x17.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 研究团队对比了Dense模型和同等激活参数量的MoE模型。结果令人宽慰：**MoE模型对噪声数据的敏感度与Dense模型相当**。
 

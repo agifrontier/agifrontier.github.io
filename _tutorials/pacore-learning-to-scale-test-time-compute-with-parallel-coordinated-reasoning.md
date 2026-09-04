@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 8B模型超越GPT-5！PaCoRe：解锁200万Token推理算力的新范式
 
-<img src="/images/2601.05593v1/A__title.jpg" alt="8B模型超越GPT-5！PaCoRe：解锁200万Token推理算力的新范式 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.05593v1/A__title.webp" alt="8B模型超越GPT-5！PaCoRe：解锁200万Token推理算力的新范式 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当前的大语言模型（LLM）存在一个显著的短板：**推理能力被死死地限制在了上下文窗口（Context Window）里**。一旦思维链（Chain-of-Thought）的长度填满了窗口，推理就必须停止。
 
@@ -31,7 +31,7 @@ related_tutorials:
 
 **PaCoRe**（**Pa**rallel **Co**ordinated **Re**asoning）则完全不同。它不再依赖单一的深度搜索，而是转向了广度的协同探索。
 
-<img src="/images/2601.05593v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.05593v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，PaCoRe的推理过程像是一个高效的团队协作：
 
@@ -63,7 +63,7 @@ related_tutorials:
 
 PaCoRe的效果在数学和代码任务上尤为显著。
 
-<img src="/images/2601.05593v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.05593v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 从上图左侧可以看到，在HMMT 2025基准测试中：
 

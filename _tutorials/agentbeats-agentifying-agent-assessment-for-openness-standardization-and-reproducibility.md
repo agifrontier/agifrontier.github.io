@@ -38,7 +38,7 @@ related_tutorials:
 
 打个比方，传统的评测就像是为每一款新车（Agent）专门修建一条带有各种传感器的专属测试跑道（Benchmark）。而 AAA 范式则是雇佣了一位“考官”（Judge Agent），这位考官可以坐进任何一辆车里，用行业通用的对讲机（标准协议）向车辆下达指令，并观察车辆的表现。
 
-<img src="/images/2606.13608v1/x1.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2606.13608v1/x1.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 在 AAA 范式下，所有的互动都通过标准化的协议进行：
 1.  **A2A 协议**：用于任务管理和 Agent 之间的通信。
@@ -64,7 +64,7 @@ AAA 范式究竟通不通用？研究团队并没有停留在理论阶段，而�
 
 这场比赛吸引了来自全球的开发者，最终收到了 298 个 Judge Agent（覆盖编程、网页浏览、医疗、多智能体游戏等12个类别）以及 467 个接受测试的 Subject Agent。
 
-<img src="/images/2606.13608v1/x5.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.13608v1/x5.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 通过对参赛代码的分析，研究人员发现了一个有趣的现象：虽然绝大多数 Agent 是用 Python 编写的，但也出现了 TypeScript 和 Rust 的实现。这证明了 AAA 范式的跨语言兼容性。此外，近 78% 的 Judge Agent 包含自然语言提示词（Prompts），这意味着开发者非常乐意通过“大白话”来定义评测逻辑，大大降低了构建新基准的门槛。
 

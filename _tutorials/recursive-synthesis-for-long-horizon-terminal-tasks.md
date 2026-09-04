@@ -48,7 +48,7 @@ related_tutorials:
 
 整个管道最初由 $639$ 个真实世界中验证过的终端任务作为基础种子启动（这些种子本身不计入合成轮次）。为了防止在多次递归中任务分布退化为单一的简单模式，系统在每一轮选取种子时都进行了严格的多样性控制。研究人员将原始类别合并为多个核心领域，通过测量归一化香农熵来监控分布。
 
-<img src="/images/2608.05466v1/terminalworld_domain_stability.jpg" alt="Domain composition and stability" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.05466v1/terminalworld_domain_stability.webp" alt="Domain composition and stability" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 从上图可以看出，从初始种子池一直到第十五轮（$R_{15}$），任务的领域构成始终保持着广泛的分布。没有任何一个领域在任务池中占据绝对主导地位（最大领域占比始终低于四分之一），这为后续生成高难度且类型丰富的长周期任务奠定了基础。
 
@@ -70,7 +70,7 @@ related_tutorials:
 
 通过静态检查的候选任务会被送入一个完全隔离的全新沙盒中执行。在这里，环境被从头初始化，模型生成的参考解决方案被投入运行，随后执行私有验证器。如果在这个过程中出现可修复的错误（例如权限不对或缺少极个别的依赖），系统允许利用日志进行有限次数的自动修复。只有当候选任务的解决方案能够在沙盒中完美通过私有验证器，且新指令与验证器的检查点高度一致时，该任务才会被正式标记为“接受”。
 
-<img src="/images/2608.05466v1/fig5_alignment_quality_heatmap.jpg" alt="Requirement-to-verifier alignment" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.05466v1/fig5_alignment_quality_heatmap.webp" alt="Requirement-to-verifier alignment" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图热力图所示，通过强制要求公共指令覆盖验证器所检查的内容，**RST** 在多轮迭代中始终保持着极高的指令-验证器对齐质量，防止了任务变得不可理解或陷入“黑盒要求”。
 

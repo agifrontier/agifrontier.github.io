@@ -70,7 +70,7 @@ related_tutorials:
 现有的应用经常随意拼凑上下文，导致每次调用的Prompt都发生微小的字节变化，进而无法命中各大提供商的 `**提示词缓存**（**Prompt Caching**）`。
 Harness强行实行了一种精心设计的物理形态——“双区提示”。
 
-<img src="/images/2607.06906v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.06906v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，调度中心将提示词严格分为稳固的“前缀区”和多变的“尾部区”。
 前缀区包含庞大的工具定义目录、稳定的系统指令和只增不减的对话副本。

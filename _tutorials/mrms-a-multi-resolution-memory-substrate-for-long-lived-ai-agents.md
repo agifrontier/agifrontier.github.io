@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">MRMS: A Multi-Resolution Memory Substrate for Long-Lived AI Agents</p>
 
-<img src="/images/2607.04617v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.04617v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 语言模型能够在单次提示的对话中生成连贯的回复，但当面对需要长期存在的长效智能体（Long-Lived AI Agents）时，单纯依赖上下文窗口的扩展往往会遭遇系统性的瓶颈。长效智能体需要在跨度极长、次数繁多的交互中维持对用户偏好、既往决策、约束条件以及未完成目标的记忆。这种需求引发了经典的学习系统难题：稳定性与可塑性的矛盾。智能体需要具备足够的可塑性以吸收新的证据，但又必须保持足够的稳定性，以免在每一次对话后都将对任务或用户的认知全盘推翻。
 
@@ -45,7 +45,7 @@ related_tutorials:
 
 为了实现这种生成前置控制，**MRMS** 提出了一种多分辨率的双轴记忆基座抽象模型。这里的基座并非指代某一个特定的单一数据库软件，而是一个负责存储交互痕迹、将其压缩为可复用的抽象概念、在严格约束下检索并在证据发生变化时进行修订的表征与操作层。
 
-<img src="/images/2607.04617v1/mrms-architecture.jpg" alt="MRMS 架构设计与操作流" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.04617v1/mrms-architecture.webp" alt="MRMS 架构设计与操作流" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 **MRMS** 的第一个正交维度是表征轴（Representational Axis）。该维度定义了记忆在系统中是如何被编码并发挥作用的。它强制要求系统维护三种互补的索引视图，且这三种视图必须保持严密的跨视图同步：
 

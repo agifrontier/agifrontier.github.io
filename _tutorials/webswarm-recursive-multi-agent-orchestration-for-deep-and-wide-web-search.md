@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">WebSwarm: Recursive Multi-Agent Orchestration for Deep-and-Wide Web Search</p>
 
-<img src="/images/2607.08662v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.08662v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 基于大语言模型（LLM）的智能体正在彻底改变网络信息检索的形态。我们早已不再满足于用它来回答简单的单一事实问题（例如“某电影的主演是谁”），而是开始向它下达更为复杂的“研究型”指令——比如“对比过去三年里所有开源多模态模型的核心架构差异与参数规模”。这类任务天然具备极强的复杂性，它们不仅需要**深度（Deep）**（即跨越多跳逻辑、理清层层依赖关系），同时还需要**广度（Wide）**（即覆盖海量候选实体与分散的信息源）。
 
@@ -39,7 +39,7 @@ related_tutorials:
 
 这就对调度系统提出了极高的要求。然而，现有主流的智能体调度范式在面对这种动态演化的深广任务时，暴露出三个致命的局限性。
 
-<img src="/images/2607.08662v1/x1.jpg" alt="Multi-agent orchestration paradigms" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2607.08662v1/x1.webp" alt="Multi-agent orchestration paradigms" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 从上图可以直观地看出不同多智能体范式的差异。现有系统主要面临以下困境：
 
@@ -53,7 +53,7 @@ related_tutorials:
 
 针对上述痛点，WebSwarm 放弃了提前铺设静态协作图的执念，转而提出了一种“渐进式递归委托”的核心机制。在这种机制下，复杂任务的分解不再是一个一次性的动作，而是伴随整个搜索过程持续发生的动态衍化。
 
-<img src="/images/2607.08662v1/x2.jpg" alt="Overview of WebSwarm" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.08662v1/x2.webp" alt="Overview of WebSwarm" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图的运行示例所示，WebSwarm 将整个搜索过程具象化为一棵动态生长的节点树。当系统接收到初始的复杂查询 $q_{0}$ 时，根节点便被激活。接下来，任何一个需要进一步展开的节点，都会根据当前的进度和获取的中间证据，动态派生出一组新的子委托（Child Delegations）：
 
@@ -104,7 +104,7 @@ related_tutorials:
 
 在以 GLM-4.5 为主干模型的对比实验中，WebSwarm 展现出了压倒性的优势，各项核心指标一致优于单智能体 ReAct 以及包括 Kimi-Swarm 变体在内的多种前沿多智能体基准。更值得关注的是模型在消融实验和任务难度分层测试中暴露出的深层机理。
 
-<img src="/images/2607.08662v1/x3.jpg" alt="Performance and tool usage" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.08662v1/x3.webp" alt="Performance and tool usage" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 观察上方依据任务难度进行分层后的表现折线图，可以发现一个极为关键的技术现象。
 

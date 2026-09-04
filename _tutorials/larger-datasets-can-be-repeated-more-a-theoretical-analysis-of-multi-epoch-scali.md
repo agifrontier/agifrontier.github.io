@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 数据告急？北大清华发现：数据集越大，重复训练收益越高，价值可达logN倍
 
-<img src="/images/2511.13421v1/A__title.jpg" alt="数据告急？北大清华发现：数据集越大，重复训练收益越高，价值可达logN倍 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.13421v1/A__title.webp" alt="数据告急？北大清华发现：数据集越大，重复训练收益越高，价值可达logN倍 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 AI的飞速发展正以前所未有的速度消耗着全球的高质量数据，甚至有预测称我们将在2028年耗尽公开可用的数据。面对日益严峻的数据荒，一个看似直接的办法摆在所有研究者面前：在有限的数据集上进行多轮次（multi-epoch）重复训练。
 

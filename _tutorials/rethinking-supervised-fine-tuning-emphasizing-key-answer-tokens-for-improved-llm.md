@@ -13,7 +13,7 @@ related_tutorials:
 
 ## SFTKey：别让CoT喧宾夺主！两阶段微调让大模型准确率提升超5%
 
-<img src="/images/2512.21017v1/A__title.jpg" alt="SFTKey：别让CoT喧宾夺主！两阶段微调让大模型准确率提升超5% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.21017v1/A__title.webp" alt="SFTKey：别让CoT喧宾夺主！两阶段微调让大模型准确率提升超5% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型微调的江湖里，**思维链**（**Chain-of-Thought, CoT**）几乎成了提升推理能力的“标配”。然而，你是否想过，过长的推理过程可能会产生副作用？当模型在训练中花费大量精力去学习冗长的推理步骤时，它往往会忽视那个虽然短小但至关重要的部分——**最终答案**。
 
@@ -41,7 +41,7 @@ related_tutorials:
 
 如下图所示，整个训练过程被拆分为两个互补的阶段：
 
-<img src="/images/2512.21017v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.21017v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 第一阶段：SFT-Tag（打好基础）
 
@@ -99,7 +99,7 @@ related_tutorials:
 
 研究者在消融实验中给出了答案。如下图所示，**Key-Tag** 策略（只训答案）虽然在准确率上表现强劲（蓝色区域），但在格式依从性上往往不如 **SFT-Tag**。
 
-<img src="/images/2512.21017v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.21017v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 这就好比一个偏科的天才，虽然题都能算对，但卷面一塌糊涂，甚至连答题卡都填不对。**SFTKey** 的两阶段设计，正是为了在“卷面整洁”（格式正确）和“答案正确”（高准确率）之间找到完美的平衡点。
 

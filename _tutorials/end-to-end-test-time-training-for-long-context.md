@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 128k长文本推理提速2.7倍：TTT-E2E让模型学会“边读边学”
 
-<img src="/images/2512.23675v1/A__title.jpg" alt="128k长文本推理提速2.7倍：TTT-E2E让模型学会“边读边学” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.23675v1/A__title.webp" alt="128k长文本推理提速2.7倍：TTT-E2E让模型学会“边读边学” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 人类的记忆机制非常奇妙：当你听完一场长达两小时的讲座，你可能无法逐字逐句复述讲师的每一句话，但你的大脑已经通过这场“训练”更新了认知，掌握了核心直觉。这种“边听边学、压缩信息”的能力，正是当前大模型领域最渴望突破的瓶颈。
 
@@ -49,7 +49,7 @@ TTT-E2E 的架构其实非常简单，它主要由两部分组成：
 
 如下图所示（图 2 左），传统的 Transformer（绿色路径）只是利用上下文进行预测。而 TTT（蓝色路径）则多了一步：它先尝试预测下一个 Token，计算误差，然后利用梯度下降更新模型的权重 $W$。
 
-<img src="/images/2512.23675v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.23675v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图 2：Toy Example 演示。TTT 通过在推理时计算梯度来更新权重，从而将上下文信息存储在更新后的 MLP 中。*
 
@@ -77,9 +77,9 @@ TTT-E2E 的架构其实非常简单，它主要由两部分组成：
 
 这是最关键的指标。通常，线性注意力或 RNN 类模型在上下文变长时，性能下降会比 Full Attention 快。
 
-<img src="/images/2512.23675v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.23675v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
-<img src="/images/2512.23675v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.23675v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图 1：左图显示随着上下文长度增加，TTT-E2E（蓝色）的 Loss 表现与全注意力 Transformer（橙色基准线）保持一致，远优于 Mamba 2 和 Gated DeltaNet。右图显示 TTT-E2E 的推理延迟是恒定的，而全注意力则是线性增长。*
 

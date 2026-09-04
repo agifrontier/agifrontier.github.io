@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 斯坦福新观点：让AI挑战“不可能的语言”，4步揭秘人类认知偏好
 
-<img src="/images/2512.09394v1/A__title.jpg" alt="斯坦福新观点：让AI挑战“不可能的语言”，4步揭秘人类认知偏好 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.09394v1/A__title.webp" alt="斯坦福新观点：让AI挑战“不可能的语言”，4步揭秘人类认知偏好 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 人类为何能轻松学会复杂的自然语言，却很难掌握某些看似简单的人造规则？这背后隐藏着人类大脑独特的**归纳偏置**（**Inductive Biases**）。长期以来，语言学家和认知科学家一直苦于缺乏完美的实验工具来探究这一奥秘——毕竟，我们不能为了实验，把儿童关在房间里只教他们一种违反自然规律的“不可能的语言”。
 

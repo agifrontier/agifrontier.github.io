@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Only Say What You Know: Calibration-Aware Generation for Long-Form Factuality</p>
 
-<img src="/images/2605.01749v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2605.01749v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大型推理模型（Large Reasoning Models）如 DeepSeek-R1 和 GPT-5 正在以前所未有的速度重塑复杂任务的解决边界。然而，当这些庞大的模型在生成长篇幅回答时，幻觉问题依然是悬在真实落地应用头顶的达摩克利斯之剑。尤其是在多步推理过程中，任何一个微小的局部错误推断，都会在后续的推理步骤中像滚雪球一样不断累积、放大，最终彻底污染整个输出结果。对于长文生成这一特定场景，错误的代价往往是难以承受的。
 
@@ -44,7 +44,7 @@ related_tutorials:
 
 针对上述痛点，微软与北大的研究团队选择从源头重新梳理模型的决策链条。他们果断地将推理过程中的“知识探索阶段”与最终输出文本的“答案承诺阶段”进行了彻底切分。这种解耦的核心直觉极其契合人类的高级认知行为：人在思考棘手问题时，脑海中会发散出各种假说、碎片记忆甚至毫无根据的猜想，这是思维的“探索”；但在最终诉诸言语开口作答时，一个理智的人会主动启用内部过滤器，只陈述那些自己有确凿证据支撑的事实，这就是谨慎的“承诺”。大模型也理应具备这种“带着觉知去发散，带着谨慎去收敛”的高级智力特征。
 
-<img src="/images/2605.01749v1/x1.jpg" alt="探索-承诺解耦范式与标准生成的对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2605.01749v1/x1.webp" alt="探索-承诺解耦范式与标准生成的对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在这个指导理念下，研究团队实例化了极具实操性的 **CAG** 框架，其运行逻辑由两个紧密衔接的核心环节构成。
 
@@ -72,11 +72,11 @@ related_tutorials:
 
 这项技术的适用边界也绝不仅限于标准的长文事实测验。研究人员进一步将测试版图扩展到了极其考验模型底蕴的知识密集型问答任务（如 PopQA 和 GPQA）以及强调开放交互的聊天机器人场景中。
 
-<img src="/images/2605.01749v1/x2.jpg" alt="PopQA实验结果" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2605.01749v1/x2.webp" alt="PopQA实验结果" style="width:85%; max-width:450px; margin:auto; display:block;">
 
-<img src="/images/2605.01749v1/x3.jpg" alt="GPQA实验结果" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2605.01749v1/x3.webp" alt="GPQA实验结果" style="width:85%; max-width:450px; margin:auto; display:block;">
 
-<img src="/images/2605.01749v1/x4.jpg" alt="Vicuna QA评测" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2605.01749v1/x4.webp" alt="Vicuna QA评测" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 通过这三组对比图表可以清晰地看到，无论是面对需要从深层权重中打捞罕见知识的 PopQA 提问，还是在考察前沿复杂科学概念的 GPQA 测试中，**CAG** 加持下的模型表现始终力压所有基线方案。在 Vicuna QA 模拟的自由对话环境中，解除了耦合束缚的模型在组织长篇距回答时显得尤为从容，不仅事实错漏大幅减少，其表达的连贯性和流畅度也经受住了严苛的考验。
 

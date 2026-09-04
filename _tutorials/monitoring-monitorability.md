@@ -13,7 +13,7 @@ related_tutorials:
 
 ## OpenAI意外曝光GPT-5 Thinking：思维链越长越安全？深度解析CoT监控新基准
 
-<img src="/images/2512.18311v1/A__title.jpg" alt="OpenAI意外曝光GPT-5 Thinking：思维链越长越安全？深度解析CoT监控新基准 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.18311v1/A__title.webp" alt="OpenAI意外曝光GPT-5 Thinking：思维链越长越安全？深度解析CoT监控新基准 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 OpenAI 最近悄悄发布了一篇看似硬核的AI安全论文，却在社区里炸开了锅。原因无他——在论文的图表中，赫然出现了 **GPT-5 Thinking** 的身影！
 
@@ -66,7 +66,7 @@ OpenAI 的这项研究给出了令人惊讶的答案：**思维链越长，模�
 
 3.  **结果-属性评估（Outcome-Property）**：监控者能否预测模型的最终行为是否具有某种属性（例如是否含有恶意代码）。
 
-<img src="/images/2512.18311v1/cotsv4.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.18311v1/cotsv4.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图：可监控与不可监控的CoT示例。绿色代表清晰展示了推理过程，红色则代表含糊其辞或隐藏了关键步骤。*
 
@@ -80,7 +80,7 @@ OpenAI 的这项研究给出了令人惊讶的答案：**思维链越长，模�
 
 这意味着，让模型“多想一会儿”，不仅能提高能力，还能让我们更容易看穿它的心思。
 
-<img src="/images/2512.18311v1/summary_full_width_row_cot_length.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.18311v1/summary_full_width_row_cot_length.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图1：左图显示，随着推理努力程度（CoT长度）增加，可监控性（$\text{g-mean}^{2}$）呈上升趋势。中图展示了仅查看 CoT（橙色）比仅查看行动（蓝色）能提供高得多的监控性能。*
 

@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 仅需4-11个纠错案例！FLEx：消除大模型83%顽固错误，无需参数微调
 
-<img src="/images/2601.04157v1/A__title.jpg" alt="仅需4-11个纠错案例！FLEx：消除大模型83%顽固错误，无需参数微调 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.04157v1/A__title.webp" alt="仅需4-11个纠错案例！FLEx：消除大模型83%顽固错误，无需参数微调 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型（LLM）虽然在数学解题和开放问答上表现出色，但它们有一个令人头疼的毛病：**死性不改**。如果模型在一个特定的逻辑陷阱上跌倒，它往往会在类似的查询中反复跌倒。
 
@@ -33,7 +33,7 @@ FLEx 的核心理念非常直观：**与其给模型灌输海量数据，不如�
 
 FLEx 的工作流程非常清晰，主要包含三个步骤：
 
-<img src="/images/2601.04157v1/flex.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.04157v1/flex.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 #### 1. 挑错：基于聚类的样本选择
 

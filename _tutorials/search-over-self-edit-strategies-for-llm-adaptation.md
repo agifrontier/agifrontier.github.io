@@ -13,7 +13,7 @@ related_tutorials:
 
 ## CMU新作：让AI自主设计“自我修正”策略，带存档机制逼近人类专家水平
 
-<img src="/images/2601.14532v1/A__title.jpg" alt="CMU新作：让AI自主设计“自我修正”策略，带存档机制逼近人类专家水平 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.14532v1/A__title.webp" alt="CMU新作：让AI自主设计“自我修正”策略，带存档机制逼近人类专家水平 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在通往通用人工智能（AGI）的道路上，**开放式搜索**（Open-Ended Search）一直被视为一种极具潜力的范式：让AI系统通过不断生成、评估和改进解决方案，实现自主进化。然而，目前的许多系统存在一个明显的瓶颈——负责提出改进建议的基础模型（Foundation Model）通常是被“冻结”的。
 

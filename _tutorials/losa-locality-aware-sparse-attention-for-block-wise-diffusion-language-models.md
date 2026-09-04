@@ -45,7 +45,7 @@ related_tutorials:
 但是，当研究人员将这种方法直接套用到块级DLM中时，却遭遇了滑铁卢。
 这种现象在本文中被精准地定义为KV膨胀难题。
 
-<img src="/images/2604.12056v1/x1.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2604.12056v1/x1.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 什么是KV膨胀？为了让专业人士和初学者都能直观理解，我们引入一个比喻。
 我们将模型当前正在处理的数据块，看作是一个由16人组成的学习小组。
@@ -67,8 +67,8 @@ KV Cache则是一座蕴藏着海量参考书籍的巨型图书馆。
 相反，他们将目光转向了块级扩散解码过程本身，并敏锐地捕捉到了一个核心特征：
 **表征变化的局部性**（**Locality of Representation Changes**）。
 
-<img src="/images/2604.12056v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2604.12056v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2604.12056v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2604.12056v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 扩散语言模型的文本生成，本质上是一个逐步去噪的迭代过程。
 通过追踪相邻两个去噪步骤之间特征向量的均方误差，研究人员发现了一个惊人事实。

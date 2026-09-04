@@ -13,7 +13,7 @@ related_tutorials:
 
 ## NeurIPS 2025冠军：Google HiFi-RAG如何用分层过滤让RAG性能暴涨19%
 
-<img src="/images/2512.22442v1/A__title.jpg" alt="NeurIPS 2025冠军：Google HiFi-RAG如何用分层过滤让RAG性能暴涨19% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.22442v1/A__title.webp" alt="NeurIPS 2025冠军：Google HiFi-RAG如何用分层过滤让RAG性能暴涨19% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在**检索增强生成**（**Retrieval-Augmented Generation, RAG**）的落地实践中，开发者们往往面临一个棘手的两难困境：检索回来的文档太多，充满了无关噪声，导致模型产生幻觉（即“Garbage-in, Garbage-out”）；而如果检索太少，又会遗漏关键信息。
 

@@ -72,7 +72,7 @@ Agent在处理长线任务时，往往深深受困于记忆系统的技术瓶颈
 
 这在切实保障个性化服务的同时，实现了极其严格的数据逻辑隔离。
 
-<img src="/images/2604.07798v1/con.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.07798v1/con.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 三大助理：重构在线记忆工作流
 

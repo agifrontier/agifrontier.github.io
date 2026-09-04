@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 数据生成提速15倍！Meta开源Matrix框架，用P2P架构颠覆多智能体协作
 
-<img src="/images/2511.21686v1/A__title.jpg" alt="数据生成提速15倍！Meta开源Matrix框架，用P2P架构颠覆多智能体协作 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.21686v1/A__title.webp" alt="数据生成提速15倍！Meta开源Matrix框架，用P2P架构颠覆多智能体协作 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 大模型训练越来越依赖高质量的合成数据，而让多个AI智能体（Agent）协作生成数据，正成为前沿趋势。但当成千上万个智能体工作流同时运行时，传统的中心化“总指挥”模式很快就会不堪重负，成为效率瓶瓶颈。
 
@@ -26,13 +26,13 @@ related_tutorials:
 
 传统的多智能体框架通常依赖一个中心化的编排器（Orchestrator），如下图（a）所示。这个“总指挥”需要管理所有任务的执行顺序、数据流转和资源调用。当任务规模扩大到数万个时，它就成了系统的性能瓶颈。
 
-<img src="/images/2511.21686v1/x2.jpg" alt="传统中心化编排" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.21686v1/x2.webp" alt="传统中心化编排" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图(a): 传统中心化编排*
 
 Matrix则另辟蹊径，采用了如上图（b）所示的P2P架构。它的核心思想是：将每个任务的工作流状态，包括控制逻辑和对话历史，都封装成一个可序列化的“编排器”消息。
 
-<img src="/images/2511.21686v1/x3.jpg" alt="Matrix的P2P编排" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.21686v1/x3.webp" alt="Matrix的P2P编排" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图(b): Matrix的P2P编排*
 
@@ -44,7 +44,7 @@ Matrix则另辟蹊径，采用了如上图（b）所示的P2P架构。它的核�
 
 Matrix构建在Ray、SLURM等成熟的开源技术栈之上，其整体架构设计清晰且模块化。
 
-<img src="/images/2511.21686v1/x1.jpg" alt="Matrix系统架构" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.21686v1/x1.webp" alt="Matrix系统架构" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 从上图可以看出，Matrix主要包括：
 
@@ -78,7 +78,7 @@ Matrix的设计则更为巧妙：它将超过特定大小阈值的对话内容�
 
 以**协同推理**（**Collaborative Reasoner, Coral**）任务为例，该任务需要两个智能体通过多轮对话达成共识。研究团队将Matrix与Coral的官方实现进行了直接对比。
 
-<img src="/images/2511.21686v1/x5.jpg" alt="Matrix与Coral在不同GPU节点下的吞吐量对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.21686v1/x5.webp" alt="Matrix与Coral在不同GPU节点下的吞吐量对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，随着GPU节点数量的增加，Matrix的吞吐量几乎呈线性增长。而基线系统的中心化编排很快达到瓶颈，性能无法继续提升。
 

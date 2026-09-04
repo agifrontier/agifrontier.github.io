@@ -61,7 +61,7 @@ related_tutorials:
 
 本文旨在解决上述问题，即**寻找一种更简单、更稳定、计算成本更低的方法来直接利用人类偏好数据优化语言模型，从而替代复杂的RLHF流程。**
 
-<img src="/images/2305.18290v3/teaser.jpg" alt="DPO与传统RLHF流程对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2305.18290v3/teaser.webp" alt="DPO与传统RLHF流程对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 <center>图1: DPO直接用一个简单的分类目标来优化策略，以满足人类偏好，从而避免了强化学习的复杂性。</center>
 
 ## 本文方法
@@ -135,7 +135,7 @@ $${% endraw %}
 
 *   **优化效率极高**：在控制情感生成任务中，通过绘制奖励-KL散度边界图，发现DPO在相同的KL散度下能达到比PPO高得多的奖励。DPO的效率甚至超过了能够获取真实奖励函数（而非学习的奖励模型）的PPO-GT（Oracle设置），这证明了DPO在优化RLHF目标函数方面的卓越效率。
 
-<img src="/images/2305.18290v3/x1.jpg" alt="奖励-KL散度边界图" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2305.18290v3/x1.webp" alt="奖励-KL散度边界图" style="width:85%; max-width:450px; margin:auto; display:block;">
 <center>图2 (左): DPO在所有KL值下都提供了最高的期望奖励，展示了其优化质量。</center>
 
 *   **在标准RLHF任务上表现优异**：
@@ -150,7 +150,7 @@ $${% endraw %}
 
 <center>表2 (节选): TL;DR摘要任务的人类与GPT-4评估对比。DPO在人类评估中显著优于PPO。</center>
 
-<img src="/images/2305.18290v3/x2.jpg" alt="摘要与对话任务结果" style="width:85%; max-width:450px; margin:auto; display:block;"> <img src="/images/2305.18290v3/x3.jpg" alt="摘要与对话任务结果" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2305.18290v3/x2.webp" alt="摘要与对话任务结果" style="width:85%; max-width:450px; margin:auto; display:block;"> <img src="/images/2305.18290v3/x3.webp" alt="摘要与对话任务结果" style="width:85%; max-width:450px; margin:auto; display:block;">
 <center>图2 (右) 和 图3 (左): 在摘要和对话任务中，DPO的性能均达到或超过了强基线。</center>
 
 *   **良好的泛化能力**：将在Reddit摘要数据上训练的模型迁移到新闻文章（CNN/DailyMail）摘要任务上时，DPO的表现同样显著优于PPO，表明DPO学习到的策略具有良好的分布外泛化能力。

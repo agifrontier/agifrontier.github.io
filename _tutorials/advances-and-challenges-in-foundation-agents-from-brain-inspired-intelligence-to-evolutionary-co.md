@@ -29,7 +29,7 @@ related_tutorials:
 
 > **ArXiv URL**：http://arxiv.org/abs/2504.01990v2
 
-<img src="/images/2504.01990v2/p02_AgentFramework_page_1.jpg" alt="论文中的核心图示" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2504.01990v2/p02_AgentFramework_page_1.webp" alt="论文中的核心图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 *论文原图：用于辅助理解核心方法或实验结果。*
 

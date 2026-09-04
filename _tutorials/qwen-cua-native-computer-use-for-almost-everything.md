@@ -70,7 +70,7 @@ Qwen-CUA 采用了带可验证奖励的强化学习（RLVR）策略。基于环�
 
 这种在环境规模、任务验证和长期强化学习上的系统性发力，使得 Qwen-CUA 在评估中展现了压倒性的优势。在涵盖不同维度设定的八项计算机使用基准测试中，Qwen-CUA 在核心指标上全面超越了之前的 Qwen3.7 版本。
 
-<img src="/images/2608.02352/qwen-cua-main-results.jpg" alt="Qwen-CUA 在八个基准上的主要结果" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.02352/qwen-cua-main-results.webp" alt="Qwen-CUA 在八个基准上的主要结果" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 从上图可以看出，在注重真实跨应用工作流的 OSWorld-Verified 基准上，Qwen-CUA 将分数从 Qwen3.7 的 73.3 分提升至 86.2 分。相比之下，当前业界最强大的闭源模型 GPT-5.5 的得分为 78.7，Claude Opus 4.8 为 83.4。在注重长期端到端流程且包含二元和部分完成度评估的 OSWorld 2.0 中，Qwen-CUA 的二元/部分完成度分别达到了 18.5/48.4，相比之前版本的 2.5/22.5 实现了质的飞跃。
 
@@ -78,7 +78,7 @@ Qwen-CUA 采用了带可验证奖励的强化学习（RLVR）策略。基于环�
 
 为了探究更高效的操作模式，研究者还在 MyPCBench 上进行了将原生交互与 Bash 命令行结合的混合实验。数据显示，当允许模型调用命令行工具时，交互步数显著减少（例如平均轮数从 63.6 缩短至 49.1）。虽然目前这种混合模式由于模型尚未完全掌握何时该用鼠标何时该写代码，导致任务成功率略有波动，但这指明了一个明确的发展方向：原生视觉交互能够提供兜底的通用性和视觉锚定，而专门的工具则负责精确和效率，两者的结合将是下一代通用智能体的标准形态。
 
-<img src="/images/2608.02352/qwen-for-chrome-deployment.jpg" alt="Qwen for Chrome 部署示例" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.02352/qwen-for-chrome-deployment.webp" alt="Qwen for Chrome 部署示例" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 不仅停留于实验室跑分，Qwen-CUA 已在真实的业务环境中进行了初步部署。例如在一个内部 Chrome 插件的部署展示中，模型能够独立完成在云服务控制台购买和配置虚拟机的完整流程。更为难得的是，面对涉及费用消耗的实质性操作（如确认支付），它能够基于先前的模拟用户训练，主动挂起流程并等待人类的确认。这种与人类直觉高度契合的行为模式，证明了其在实际应用中的巨大潜力。
 

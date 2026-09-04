@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">TurnOPD: Making On-Policy Distillation Turn-Aware for Efficient Long-Horizon Agent Training</p>
 
-<img src="/images/2607.05804v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.05804v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大型语言模型在规划、工具调用和环境交互等复杂任务中，正越来越多地被部署为自主智能体（Agent）。为了让模型在多轮交互中表现更佳，在线策略蒸馏（On-Policy Distillation，简称 OPD）成为了一种极具前景的训练框架。在这种范式下，学生模型会自行采样生成交互轨迹，而更强大的教师模型则在这些轨迹的状态节点上提供反向 KL 散度（Reverse-KL）监督，从而提供密集的反馈信号，避免了强化学习中常见的奖励稀疏问题。
 

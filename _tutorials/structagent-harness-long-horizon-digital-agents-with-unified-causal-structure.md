@@ -27,7 +27,7 @@ related_tutorials:
 
 本文解读的最新研究 StructAgent，为这一难题提供了一种极其优雅的解法。该研究摒弃了传统的“历史大杂烩”模式，提出用**统一因果结构**（**Unified Causal Structure**）来重塑智能体的记忆与执行逻辑。在 OSWorld-Verified 桌面任务基准上，该框架助力开源模型 MiniMax-M3 拿下了惊人的 78.9% 胜率，甚至在《我的世界》游戏中也展现出了卓越的跨域泛化能力。
 
-<img src="/images/2607.11388v1/results_osworld.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.11388v1/results_osworld.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 长序列迷局：智能体为何会“失忆”？
 
@@ -45,7 +45,7 @@ related_tutorials:
 
 这就像是给那位新手侦探配备了一本高度结构化的“案情卷宗”，且必须按照严格的程序来更新案件进度。
 
-<img src="/images/2607.11388v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.11388v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 统一状态：精简而确凿的进度记录
 
@@ -95,7 +95,7 @@ StructAgent 不再要求各个模块从冗长的历史中去自行推断进度�
 
 **基于证据的失败恢复**：当智能体卡壳时，StructAgent 不会盲目地重试。它会审视卷宗中的“实锤证据”，诊断到底是缺少权限、环境阻挡还是策略错误。基于这些证据，智能体可以针对性地重新规划，甚至在必要时请求人类接管。
 
-<img src="/images/2607.11388v1/case_study_main.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.11388v1/case_study_main.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 上图展示了一个多应用协同的真实案例。当执行器声称已经完成了图片导出时，验证器发现缺乏底层文件系统的支持证据，果断拒绝了进度更新，并引导智能体通过命令行进行实质性确认。
 

@@ -13,7 +13,7 @@ related_tutorials:
 
 ## RAG归因成本直降8倍！CMU提出MaxShapley算法，让内容贡献清晰可量
 
-<img src="/images/2512.05958v1/A__title.jpg" alt="RAG归因成本直降8倍！CMU提出MaxShapley算法，让内容贡献清晰可量 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.05958v1/A__title.webp" alt="RAG归因成本直降8倍！CMU提出MaxShapley算法，让内容贡献清晰可量 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当你在使用 Perplexity AI 或 Google Gemini 这类生成式搜索引擎时，是否曾想过，它们那份凝聚了多个信息源、看起来完美无瑕的回答，背后隐藏着怎样的利益博弈？对于用户来说，这是前所未有的便捷；但对于那些提供原创内容的网站和博客来说，这却可能是一场“灭绝级事件”。当流量不再，广告收入枯竭，谁还愿意创造优质内容呢？
 
@@ -29,7 +29,7 @@ related_tutorials:
 
 2.  **生成（Generate）**：让大语言模型（LLM）阅读这些文档，然后综合提炼出一个精炼的答案。
 
-<img src="/images/2512.05958v1/general_system.jpg" alt="RAG系统与归因模块" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.05958v1/general_system.webp" alt="RAG系统与归因模块" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 问题来了，如果最终答案融合了3个文档的内容，我们该如何为这3个文档的创作者“记功”？是平分功劳，还是根据某种规则分配？
 
@@ -83,7 +83,7 @@ MaxShapley的绝妙之处在于，它没有去硬磕夏普利值的计算难题�
 
 2.  **高效计算**：对于单个关键点的“最大值游戏”（Maximization Game），计算其夏普利值存在一个已知的、高效的多项式时间算法，远快于指数级复杂度的通用算法。
 
-<img src="/images/2512.05958v1/musique_openai_j_annotation.jpg" alt="MaxShapley算法流程" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.05958v1/musique_openai_j_annotation.webp" alt="MaxShapley算法流程" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 通过这种方式，MaxShapley将一个指数级的复杂问题，巧妙地拆解成了一系列可以快速求解的简单问题，最终实现了对夏普利值的**精确、高效**计算。
 
@@ -93,7 +93,7 @@ MaxShapley的绝妙之处在于，它没有去硬磕夏普利值的计算难题�
 
 **核心发现：MaxShapley在归因质量和效率之间取得了最佳平衡。**
 
-<img src="/images/2512.05958v1/hotpot_openai_k.jpg" alt="归因质量与Token消耗对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.05958v1/hotpot_openai_k.webp" alt="归因质量与Token消耗对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 上图展示了不同方法在HotPotQA数据集上的表现。横轴是Token消耗（成本），纵轴是与理论最优的FullShapley结果的排序相关性（质量）。
 
@@ -105,7 +105,7 @@ MaxShapley的绝妙之处在于，它没有去硬磕夏普利值的计算难题�
 
 - **质量媲美最优**：MaxShapley计算出的贡献度排名，与计算成本极高的FullShapley的排名高度一致（Kendall's $\tau\_b$ 指数表现优异）。
 
-<img src="/images/2512.05958v1/musique_openai_k.jpg" alt="不同数据集上的表现" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.05958v1/musique_openai_k.webp" alt="不同数据集上的表现" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 无论是在哪个数据集上，MaxShapley都展现出了一致的优越性，证明了其方法的普适性和鲁棒性。
 

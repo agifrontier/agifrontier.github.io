@@ -13,7 +13,7 @@ related_tutorials:
 
 ## AMD力作Dual LoRA：性能最高提升1.8%！将参数更新分解为“幅值”与“方向”
 
-<img src="/images/2512.03402v1/A__title.jpg" alt="AMD力作Dual LoRA：性能最高提升1.8%！将参数更新分解为“幅值”与“方向” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.03402v1/A__title.webp" alt="AMD力作Dual LoRA：性能最高提升1.8%！将参数更新分解为“幅值”与“方向” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型微调技术LoRA已经无处不在，但你是否想过，它为何总是与全量微调（FFT）存在性能差距？现在，来自AMD的研究团队给出了一个全新的答案，并带来了一个优雅而强大的解决方案——Dual LoRA。
 
@@ -41,7 +41,7 @@ related_tutorials:
 
 传统的LoRA用一个$\Delta W$矩阵混合了这两个信息，而Dual LoRA则主张将它们解耦，分开学习！
 
-<img src="/images/2512.03402v1/x1.jpg" alt="Dual LoRA 架构图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.03402v1/x1.webp" alt="Dual LoRA 架构图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1：原始LoRA（左）与Dual LoRA（右）的架构对比*
 
@@ -78,7 +78,7 @@ related_tutorials:
 
 *   **超越全量微调**：更令人惊讶的是，在某些NLU任务上，Dual LoRA的表现甚至超过了全量微调（FFT），这充分证明了其方法的优越性。
 
-<img src="/images/2512.03402v1/x2.jpg" alt="在不同秩分配下的性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.03402v1/x2.webp" alt="在不同秩分配下的性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图2：在LLaMA3-8B上的实验，Dual LoRA（红线）在不同秩分配下始终优于DoRA（蓝线）和LoRA（橙线）*
 
@@ -90,7 +90,7 @@ Dual LoRA成功的背后，还有一个更深层次的原因：**它能实现更
 
 这意味着Dual LoRA有潜力产生一个表达能力更强、更复杂的更新矩阵，从而更接近全量微调的效果。
 
-<img src="/images/2512.03402v1/x3.jpg" alt="更新矩阵的秩分析" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.03402v1/x3.webp" alt="更新矩阵的秩分析" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图3：在LLaMA2-7B上不同层的更新矩阵秩。Dual LoRA（绿色）的整体更新秩远高于原始LoRA（蓝色）*
 

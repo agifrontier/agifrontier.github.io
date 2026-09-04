@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 即插即用LoRA！LoGo实现零成本动态适配，推理性能最高提升3.6%
 
-<img src="/images/2511.07129v1/A__title.jpg" alt="即插即用LoRA！LoGo实现零成本动态适配，推理性能最高提升3.6% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.07129v1/A__title.webp" alt="即插即用LoRA！LoGo实现零成本动态适配，推理性能最高提升3.6% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当下的AI社区，**低秩适应**（**Low-Rank Adaptation, LoRA**）无疑是最火的**参数高效微调**（**Parameter-Efficient Fine-Tuning, PEFT**）技术。每个人都在训练自己专属的LoRA模型，从代码助手到小说家，LoRA模型库正以前所未有的速度扩张。
 
@@ -27,7 +27,7 @@ related_tutorials:
 
 现在，来自MPI-SWS和微软的研究者们提出了一个极其优雅的方案：**LoRA on the Go (LoGo)**。它无需任何额外训练，就能在推理时为每个输入动态选择并融合最合适的LoRA！
 
-<img src="/images/2511.07129v1/x1.jpg" alt="LoGo 框架整体工作流" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.07129v1/x1.webp" alt="LoGo 框架整体工作流" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### LoGo如何工作：一次前向传播定乾坤
 
@@ -57,7 +57,7 @@ LoGo正是利用了这一点。它的工作流程简单高效：
 
 结果令人惊叹：在没有任何额外训练的情况下，LoGo在部分任务上的表现，竟比需要额外训练数据的LoRAHub等基线方法高出 **3.6%**！
 
-<img src="/images/2511.07129v1/x2.jpg" alt="LoRA信号强度与任务相关性" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.07129v1/x2.webp" alt="LoRA信号强度与任务相关性" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 这张热图清晰地展示了，当输入特定任务的数据时（y轴），与之相关的LoRA（x轴）会表现出更强的信号范数（颜色更亮）。
 
@@ -69,7 +69,7 @@ LoGo的成功关键在于其提取的“信号”是否真的代表了任务相�
 
 研究者通过深入分析发现，LoGo分配给每个LoRA的融合权重，与该LoRA的训练任务和当前输入任务的语义相似度，呈现出非常强的正相关关系。
 
-<img src="/images/2511.07129v1/x3.jpg" alt="合并权重与任务相似度对齐" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.07129v1/x3.webp" alt="合并权重与任务相似度对齐" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 上图显示，LoGo赋予的合并权重（x轴）越高的LoRA，其任务与当前输入的相似度（y轴）也越高。这证实了LoGo的信号机制确实抓住了任务的本质关联。
 
@@ -83,7 +83,7 @@ LoGo的成功关键在于其提取的“信号”是否真的代表了任务相�
 
 LoGo的推理时间与LoRARetriever等需要复杂检索模型的方法相当。
 
-<img src="/images/2511.07129v1/x10.jpg" alt="长文本生成任务中的开销摊销" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.07129v1/x10.webp" alt="长文本生成任务中的开销摊销" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 更妙的是，在长文本生成（如摘要、长篇问答）等任务中，LoGo在初始阶段进行信号提取和选择的开销，会随着生成文本长度的增加而被迅速摊销。
 

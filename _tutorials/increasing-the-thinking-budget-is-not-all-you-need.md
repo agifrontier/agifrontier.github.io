@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 思考预算并非万能：揭秘让大模型更聪明的“性价比”策略
 
-<img src="/images/2512.19585v1/A__title.jpg" alt="思考预算并非万能：揭秘让大模型更聪明的“性价比”策略 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.19585v1/A__title.webp" alt="思考预算并非万能：揭秘让大模型更聪明的“性价比”策略 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在AI大模型（LLM）的竞赛中，OpenAI的o1和DeepSeek-R1等“思考型”模型（Thinking-Capable Models）掀起了一股新浪潮。大家似乎达成了一个共识：让模型“想”得越久，答案就越准确。
 

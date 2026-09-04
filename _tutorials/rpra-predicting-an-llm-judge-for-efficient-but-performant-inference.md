@@ -65,7 +65,7 @@ related_tutorials:
 
 既然学生对自己缺乏清晰的认知，那我们不妨把他在历次模拟考中的真实成绩汇总起来交给他。具体而言，研究人员在多个多样化的数据集上评估模型，利用裁判评分的众数构建出模型在不同类型问题上的历史性能描述。在推理时，这份成绩单会作为上下文提示（Prompt）的一部分，随着当前的用户查询一起输入给模型。
 
-<img src="/images/2604.12634v1/nestor_flowchart.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.12634v1/nestor_flowchart.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，当小模型收到新查询时，它会参考成绩单中记录的自身历史表现，进而预判自己回答当前问题的能力。实验结果令人振奋：这种无需修改任何模型权重的即插即用方法，对小模型和非推理模型效果尤为显著，使其预测准确率在不同数据集上平均提升了最高达 55%。成绩单成功地帮助小模型完成了问题分类，并将其与自身的能力集进行了精确匹配。
 
@@ -83,7 +83,7 @@ related_tutorials:
 
 在分析模型的预判行为时，研究人员在 MMLU-Pro 等复杂数据集上发现了一个有趣的现象。
 
-<img src="/images/2604.12634v1/mmlu_pro_dual_heatmap.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2604.12634v1/mmlu_pro_dual_heatmap.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 上图展示了模型在 MMLU-Pro 数据集不同类别上的表现概率（左）以及成功预测自身得分的概率（右）。数据表明，不同模型之间的预测方差远大于不同学科类别之间的方差。更有趣的是，模型在面对更具挑战性的高难度查询时，往往能展现出更强的自我意识。这暗示着，题目本身的“难度特征”可能已经被模型捕捉到，并作为判断自身能否胜任的重要内部信号。
 

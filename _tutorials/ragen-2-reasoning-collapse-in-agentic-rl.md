@@ -71,7 +71,7 @@ related_tutorials:
 日积月累，模型彻底放弃了对具体输入的思考，开始用同一套万能模板应付所有任务。
 这就是模板坍塌在梯度层面的微观物理过程。
 
-<img src="/images/2604.06268v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.06268v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 轻量级应对策略的工程突围
 
@@ -86,7 +86,7 @@ related_tutorials:
 系统将所有 Prompt 按方差大小排序，无情剔除那些方差低、噪音大的劣质样本。
 只保留排名前列的高信号 Prompt 参与后续的策略参数更新计算。
 
-<img src="/images/2604.06268v1/RV-filter.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.06268v1/RV-filter.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 这种做法极其优雅且成本低廉。
 它不需要训练额外的昂贵奖励模型，也不消耗宝贵的推理算力去生成新的验证轨迹。
@@ -107,7 +107,7 @@ related_tutorials:
 更为关键的是，模型真正学会了“对症下药”。
 通过追踪不同干预手段下的动态指标轨迹，研究人员发现了更为深刻的训练规律。
 
-<img src="/images/2604.06268v1/F08_metric_family_vs_performance_trajectory_only.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.06268v1/F08_metric_family_vs_performance_trajectory_only.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 单纯地调节 KL 惩罚系数或者放大熵正则化的权重，往往是徒劳无功的。
 这些常规的“头痛医头”操作确实能让熵值产生波动，但互信息指标却如同死水一潭。

@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 告别“写死”的工作流：IBM万字综述，定义Agent动态进化新范式
 
-<img src="/images/2603.22386v1/A__title.jpg" alt="告别“写死”的工作流：IBM万字综述，定义Agent动态进化新范式 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.22386v1/A__title.webp" alt="告别“写死”的工作流：IBM万字综述，定义Agent动态进化新范式 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 LLM Agent正以前所未有的速度涌现，但驱动它们解决复杂任务的工作流设计，却常常像一个“手工作坊”：结构固定、难以优化、复用性差。当任务稍有变化，写死的脚本可能就立刻失灵。
 
@@ -24,7 +24,7 @@ LLM Agent正以前所未有的速度涌现，但驱动它们解决复杂任务�
 
 最近，来自IBM Research等机构的研究者发布了一篇重磅综述，系统性地梳理了LLM Agent工作流优化的前沿进展。这篇论文的核心贡献，是提出了一个全新的统一框架，将Agent工作流视为一种可优化的**智能计算图**（**Agentic Computation Graph, ACG**），并清晰地划分了从“静态模板”到“动态图”的技术演进路线。
 
-<img src="/images/2603.22386v1/overview.jpg" alt="Agent工作流优化概览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.22386v1/overview.webp" alt="Agent工作流优化概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 本文将带你深入解读这篇综述，看看如何让你的Agent工作流真正“活”起来。
 

@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 群表示位置编码（GRAPE）：统一RoPE与ALiBi的理论框架
 
-<img src="/images/2512.07805v1/A__title.jpg" alt="群表示位置编码（GRAPE）：统一RoPE与ALiBi的理论框架 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.07805v1/A__title.webp" alt="群表示位置编码（GRAPE）：统一RoPE与ALiBi的理论框架 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 Transformer架构的核心是自注意力机制，但它本身无法感知序列中Token的顺序，即具有**置换不变性**（Permutation-Invariance）。为了让模型理解“词语A在词语B之前”，必须引入位置信息。这就是**位置编码**（Positional Encoding）的作用。
 

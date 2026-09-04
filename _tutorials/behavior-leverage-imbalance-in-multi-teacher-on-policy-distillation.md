@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Behavior Leverage Imbalance in Multi-Teacher On-Policy Distillation</p>
 
-<img src="/images/2607.07050v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.07050v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大语言模型正在加速演进为能够自主执行复杂任务的智能体（Agent）。在这一演进路线中，模型面对的最核心挑战之一不仅是“如何准确地生成工具调用参数”，更在于一系列离散的战略决策：“何时该调用工具”、“何时该消化工具的返回结果”，以及“何时该直接用自然语言回答用户”。
 
@@ -52,7 +52,7 @@ related_tutorials:
 
 如下图所示，无论是累积的曝光比例，还是原始的平均散度比例，均显示自然语言回复一侧占据主导地位。按照直觉，模型应该变得更偏向于直接回复才对，但最终的实体行为却完全背道而驰。
 
-<img src="/images/2607.07050v1/x1.jpg" alt="宏观统计数据无法解释工具调用的行为偏移" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.07050v1/x1.webp" alt="宏观统计数据无法解释工具调用的行为偏移" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 这就排除了最简单的解释：最终的行为偏移并不能用样本数量、Token 数量或者总散度的绝对大小来解释。模型之所以滑向工具调用，必然存在某种局部信号，它的“杀伤力”并未在全序列的宏观平均中体现出来。
 
@@ -70,9 +70,9 @@ related_tutorials:
 
 为了验证这一假设，研究团队检查了在回复类样本上的“决策压力”（Decision Pressure）。他们观察学生模型在本来应该直接回答的样本中，给予工具调用特殊标记的概率。
 
-<img src="/images/2607.07050v1/x2.jpg" alt="决策压力在训练过程中的演变" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.07050v1/x2.webp" alt="决策压力在训练过程中的演变" style="width:85%; max-width:450px; margin:auto; display:block;">
 
-<img src="/images/2607.07050v1/x3.jpg" alt="图3：响应侧的步级决策压力" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.07050v1/x3.webp" alt="图3：响应侧的步级决策压力" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 分析结果高度吻合了理论预测：在回复样本上，模型输出工具调用标记的概率与最终评测中的过度调用率表现出了极强的正相关。这说明，局部关键位置的极端散度信号，才是主导模型行为偏移的真正幕后推手。
 
@@ -106,7 +106,7 @@ related_tutorials:
 
 与全局重加权（Global Reweighting）相比，Soft Clamp 只作用于极端的异常值，不影响普通 Token 的学习节奏；与硬截断相比，Soft Clamp 为高杠杆位置保留了非零的梯度反馈，确保模型依然知道自己在这个分岔口犯了错。
 
-<img src="/images/2607.07050v1/x4.jpg" alt="Soft Clamp与其它干预强度的对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.07050v1/x4.webp" alt="Soft Clamp与其它干预强度的对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 从上图中可以观察到，通过合理控制干预强度，Soft Clamp 能够对过度调用行为进行极为有效的靶向治疗，同时并不影响大盘的稳定。值得一提的是，为了防止纯在线蒸馏带来的结构化输出模式崩塌（Schema Drift），研究人员在训练中还引入了一个很小的监督损失作为格式锚定（Format Anchor），确保模型输出的工具请求格式始终合法可用。
 
@@ -120,7 +120,7 @@ APIGen-MT 是评估模型在域内是否能正确决策工具调用的核心测�
 
 下表展示了多方对决的结果。基础的监督微调（SFT）模型虽然过度调用率很低，但它在真正需要工具时的召回率（Call Recall）不足。引入普通的广义知识蒸馏（Vanilla GKD）后，虽然召唤工具的能力被强力拉升到了 91.4%，但副作用极其明显——过度调用率飙升到了 13.7%。
 
-<img src="/images/2607.07050v1/x5.jpg" alt="APIGen-MT决策结果表格" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.07050v1/x5.webp" alt="APIGen-MT决策结果表格" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当切换到 Soft Clamp 之后，模型在保持了 89.2% 极高决策准确率的同时，成功将过度调用率大幅降低至 9.0%。这证明了对极端局部信号的动态压缩，有效地削弱了不受控的行为杠杆。不仅如此，在 BFCL 的无关请求拒绝（Irrelevance refusal）测试中，Soft Clamp 同样在所有 GKD 变体中表现最为优异，证明该方法具备跨出特定数据集的泛化能力。
 
@@ -130,7 +130,7 @@ APIGen-MT 是评估模型在域内是否能正确决策工具调用的核心测�
 
 研究团队为此设计了一套包含 800 个 BFCL 任务、3136 个用户交互轮次的多轮诊断环境。在这个环境下，重点监测模型是否会陷入重复调用某个无效工具的“死循环”。
 
-<img src="/images/2607.07050v1/x6.jpg" alt="多轮工具调用循环诊断结果" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.07050v1/x6.webp" alt="多轮工具调用循环诊断结果" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上表所示，诊断数据揭示了过度调用在系统层面的破坏力：
 

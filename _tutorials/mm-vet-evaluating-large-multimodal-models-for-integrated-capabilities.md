@@ -57,7 +57,7 @@ MM-Vet 的设计理念源于一个核心洞察：LMMs 解决复杂多模态任�
 
 下图展示了MM-Vet数据集中各核心能力及其组合的分布情况。
 
-<img src="/images/2308.02490v4/x2.jpg" alt="MM-Vet中各项能力的比例" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2308.02490v4/x2.webp" alt="MM-Vet中各项能力的比例" style="width:85%; max-width:450px; margin:auto; display:block;">
 *图注：(a) 数据集中每个单一能力的覆盖比例（因样本常涉及多能力，总和大于100%）。(b) 数据集中不同能力组合的分布比例（总和为100%）。*
 
 ### 基于LLM的开放式评估器

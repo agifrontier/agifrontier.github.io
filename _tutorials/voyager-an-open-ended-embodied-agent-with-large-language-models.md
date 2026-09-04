@@ -41,7 +41,7 @@ related_tutorials:
 ## 本文方法
 Voyager 作为一个由 LLM 驱动的具身终身学习智能体，其核心工作流程不依赖于模型微调，而是通过与黑盒 LLM (GPT-4) 的交互实现。整个系统由以下三个协同工作的组件构成。
 
-<img src="/images/2305.16291v2/x1.jpg" alt="Voyager 架构图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2305.16291v2/x1.webp" alt="Voyager 架构图" style="width:85%; max-width:600px; margin:auto; display:block;">
 **图2**: Voyager 包含三个关键组件：用于开放式探索的自动课程，用于实现日益复杂行为的技能库，以及使用代码作为动作空间的迭代提示机制。
 
 ### 自动课程
@@ -53,7 +53,7 @@ Voyager 作为一个由 LLM 驱动的具身终身学习智能体，其核心工�
 3.  **历史任务**: 已完成和失败的任务列表，反映智能体的能力边界。
 4.  **额外上下文**: 由 GPT-3.5 基于当前状态进行自我提问和回答，以丰富上下文信息。
 
-<img src="/images/2305.16291v2/x2.jpg" alt="自动课程的任务提出示例" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2305.16291v2/x2.webp" alt="自动课程的任务提出示例" style="width:90%; max-width:700px; margin:auto; display:block;">
 **图3**: 自动课程提出的任务示例。为简洁起见，仅展示部分提示。
 
 ### 技能库
@@ -62,7 +62,7 @@ Voyager 作为一个由 LLM 驱动的具身终身学习智能体，其核心工�
 - **技能存储**: 当一个新技能（一段JavaScript代码）通过迭代提示机制被成功生成和验证后，它会被添加到一个向量数据库中。该数据库的“键”是技能描述文本的嵌入向量，“值”是技能代码本身。
 - **技能检索**: 当智能体面对新任务时，系统会用任务规划和环境反馈共同构成的查询上下文，在技能库中进行语义搜索，检索出最相关的 Top-5 技能。这些检索到的技能将作为上下文示例（in-context learning）提供给 LLM，以辅助生成新的、更复杂的技能代码。
 
-<img src="/images/2305.16291v2/x3.jpg" alt="技能库的存储与检索机制" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2305.16291v2/x3.webp" alt="技能库的存储与检索机制" style="width:85%; max-width:600px; margin:auto; display:block;">
 **图4**: **顶部**: 添加新技能。GPT-4 生成并验证一个新技能后，将其添加到技能库（一个向量数据库）中。键是程序描述的嵌入向量，值是程序本身。**底部**: 技能检索。面对新任务时，系统首先生成解决任务的通用建议并结合环境反馈作为查询，然后检索出 Top-5 相关技能。
 
 ### 迭代提示机制
@@ -74,10 +74,10 @@ LLM 难以一次性生成完全正确的复杂代码。为解决此问题，本�
 
 这个迭代过程会持续进行，直到自我验证模块确认任务完成。此时，新技能被存入技能库，并向自动课程请求下一个目标。如果智能体在4轮代码生成后仍卡住，则会请求一个新任务。
 
-<img src="/images/2305.16291v2/x4.jpg" alt="环境反馈与执行错误的示例" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2305.16291v2/x4.webp" alt="环境反馈与执行错误的示例" style="width:85%; max-width:600px; margin:auto; display:block;">
 **图5**: **左**: 环境反馈示例。GPT-4 意识到在制作木棍前还需要2块木板。**右**: 执行错误示例。GPT-4 意识到它应该制作木斧而不是金合欢斧，因为游戏中没有金合欢斧。
 
-<img src="/images/2305.16291v2/x5.jpg" alt="自我验证示例" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2305.16291v2/x5.webp" alt="自我验证示例" style="width:85%; max-width:600px; margin:auto; display:block;">
 **图6**: 自我验证示例。
 
 ## 实验结论
@@ -87,7 +87,7 @@ LLM 难以一次性生成完全正确的复杂代码。为解决此问题，本�
 
 - **显著更优的探索能力**: Voyager 在160次提示迭代中发现了63种独特物品，是基线方法（ReAct, Reflexion, AutoGPT）的3.3倍。基线方法由于缺乏有效的课程引导，在开放式探索目标下难以取得进展。
 
-<img src="/images/2305.16291v2/main_experiment_fig.jpg" alt="探索性能对比图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2305.16291v2/main_experiment_fig.webp" alt="探索性能对比图" style="width:85%; max-width:600px; margin:auto; display:block;">
 **图1**: Voyager 持续发现新物品和技能，显著优于基线。X轴表示提示迭代次数。
 
 - **持续的技术树掌握**: 在《我的世界》技术树（木制工具 → 石制工具 → 铁制工具 → 钻石工具）解锁上，Voyager 展现了压倒性优势，解锁木、石、铁工具的速度分别比基线快15.3倍、8.5倍和6.4倍，并且是唯一成功解锁钻石级工具的智能体。
@@ -106,7 +106,7 @@ LLM 难以一次性生成完全正确的复杂代码。为解决此问题，本�
 
 - **广阔的地图遍历**: Voyager 的移动距离是基线的2.3倍，成功穿越了多样的地形。而基线智能体常常被困在局部区域。
 
-<img src="/images/2305.16291v2/map_fig.jpg" alt="地图覆盖范围对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2305.16291v2/map_fig.webp" alt="地图覆盖范围对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 **图7**: 地图覆盖范围：鸟瞰图。Voyager 穿越了多样的地形，移动距离是基线的2.3倍。
 
 - **高效的零样本泛化**: 在一个全新的世界中，面对从未见过的任务（如制作钻石镐），Voyager 能够利用其在先前学习中构建的技能库，稳定地完成所有任务。相比之下，基线方法无法完成任何一项任务。有趣的是，即使是 AutoGPT，在接入了 Voyager 的技能库后性能也得到提升，证明了该技能库的通用性和即插即用价值。
@@ -124,7 +124,7 @@ LLM 难以一次性生成完全正确的复杂代码。为解决此问题，本�
 | Voyager (无技能库) | 36 (2/3) | $30\pm 9$ **(3/3)** | $27\pm 9$ **(3/3)** | $26\pm 3$ **(3/3)** |
 | Voyager (本文方法) | **19±3** **(3/3)** | **18±7** **(3/3)** | **21±5** **(3/3)** | **18±2** **(3/3)** |
 
-<img src="/images/2305.16291v2/downstream_fig.jpg" alt="零样本泛化任务进展可视化" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2305.16291v2/downstream_fig.webp" alt="零样本泛化任务进展可视化" style="width:90%; max-width:700px; margin:auto; display:block;">
 **图8**: 对未见任务的零样本泛化。可视化了两种任务中各方法的中间进展。
 
 ### 消融研究
@@ -133,13 +133,13 @@ LLM 难以一次性生成完全正确的复杂代码。为解决此问题，本�
 - **自我验证**是所有反馈类型中最重要的，移除后性能下降73%。
 - 使用 **GPT-4** 进行代码生成远优于 GPT-3.5，发现的物品数量多5.7倍，证明了 GPT-4 在编码能力上的代际飞跃。
 
-<img src="/images/2305.16291v2/ablation_fig.jpg" alt="消融研究结果" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2305.16291v2/ablation_fig.webp" alt="消融研究结果" style="width:85%; max-width:600px; margin:auto; display:block;">
 **图9**: 消融研究。**左图**展示了自动课程、技能库和GPT-4的重要性。**右图**展示了迭代提示机制中每种反馈的必要性。
 
 ### 与人类反馈的结合
 尽管 Voyager 目前不具备视觉感知能力，但实验证明它可以通过整合人类反馈来完成更复杂的任务，例如建造一个下界传送门或一栋房子。人类可以扮演“批评家”（提供视觉修正）或“课程设计者”（分解复杂任务）的角色，增强 Voyager 在三维空间结构建造方面的能力。
 
-<img src="/images/2305.16291v2/human_fig.jpg" alt="Voyager在人类反馈下建造3D结构" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2305.16291v2/human_fig.webp" alt="Voyager在人类反馈下建造3D结构" style="width:90%; max-width:700px; margin:auto; display:block;">
 **图10**: 在人类输入下建造设计的进展展示。
 
 ### 总结

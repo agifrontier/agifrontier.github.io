@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 终结AI幻觉：全面剖析大模型“胡说八道”的根源与应对策略
 
-<img src="/images/2512.02527v1/A__title.jpg" alt="终结AI幻觉：全面剖析大模型“胡说八道”的根源与应对策略 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.02527v1/A__title.webp" alt="终结AI幻觉：全面剖析大模型“胡说八道”的根源与应对策略 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 你是否曾被AI一本正经的胡说八道给惊到？当它为你生成一篇看似完美的文章，却在关键事实上张冠李戴；或者在回答问题时，自信满满地编造出一个不存在的概念。这种现象，正是当前大型语言模型（LLM）面临的最大挑战之一——**幻觉**（**Hallucination**）。
 
@@ -31,7 +31,7 @@ related_tutorials:
 
 *   **逻辑性幻觉**（**Logical Hallucination**）：指模型生成的内容在内部存在矛盾或逻辑不连贯。比如，在一段文字中，它可能先说A大于B，后面又说B大于A。
 
-<img src="/images/2512.02527v1/image2.jpg" alt="AI幻觉示意图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.02527v1/image2.webp" alt="AI幻觉示意图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 这些幻觉不仅会误导用户，更在医疗、金融等高风险领域埋下巨大隐患。想象一下，如果一个用于医疗诊断的AI模型产生了幻觉，后果将不堪设想。
 
@@ -53,7 +53,7 @@ related_tutorials:
 
 为了驯服这头“幻觉猛兽”，研究者们开发出了一系列精密的策略。这些方法可以概括为四大类，形成了一个多层次的防御体系。
 
-<img src="/images/2512.02527v1/image4.jpg" alt="对抗幻觉的方法论" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.02527v1/image4.webp" alt="对抗幻觉的方法论" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 1. 优化训练与微调（Fine-tuning）
 

@@ -36,7 +36,7 @@ related_tutorials:
 
 本文提出的核心框架，正是这套系统的“招募-建制-成长”全生命周期模型。这构成了**构建**（**Construction**）、**协作**（**Collaboration**）与**进化**（**Evolution**）的三维坐标系。
 
-<img src="/images/2503.21460v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2503.21460v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 该图系统展示了智能体生态系统的全景图，涵盖了方法论、评估与工具、现实挑战以及应用等四个核心维度。
 
 ### 单体构建：塑造智能体的“岗位职能”
@@ -139,7 +139,7 @@ $CRITIC$ 框架允许智能体通过工具反馈来验证并修改自身输出�
 
 随着系统复杂度的提升，传统的成功率指标已无法准确衡量智能体的真实认知水平。
 
-<img src="/images/2503.21460v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2503.21460v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 上图展示了智能体的评估基准与工具生态概览，涵盖了从通用评估到协作测试的多维体系。
 
 #### 动态演进的评估框架
@@ -166,7 +166,7 @@ $MCP$ 标准化了应用程序为模型提供上下文的方式，在数据源�
 
 随着智能体越来越多地接管关键业务，其潜藏的风险也随之呈指数级扩大。
 
-<img src="/images/2503.21460v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2503.21460v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 上图总结了智能体系统面临的现实问题，主要集中在安全挑战、隐私泄露风险以及深远的社会伦理影响。
 
 智能体中心的安全威胁直接针对模型组件，恶意攻击者可能试图篡改其决策逻辑。同时，数据中心的威胁则通过污染输入上下文来诱导智能体执行危险动作。

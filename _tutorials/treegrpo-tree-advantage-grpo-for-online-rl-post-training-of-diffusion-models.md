@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 训练加速2.4倍！TreeGRPO用“决策树”革新AI绘画模型对齐
 
-<img src="/images/2512.08153v1/A__title.jpg" alt="训练加速2.4倍！TreeGRPO用“决策树”革新AI绘画模型对齐 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.08153v1/A__title.webp" alt="训练加速2.4倍！TreeGRPO用“决策树”革新AI绘画模型对齐 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 让AI画出更符合我们心意的作品，是生成模型发展的关键一步。
 
@@ -28,7 +28,7 @@ related_tutorials:
 
 它巧妙地将AIGC的生成过程重塑为一棵“决策树”，实现了惊人的**2.4倍训练加速**，同时在效果和效率之间取得了当前最佳的平衡！
 
-<img src="/images/2512.08153v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.08153v1/x1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图1: TreeGRPO在奖励分数和训练效率的帕累托前沿上表现最佳*
 
@@ -50,7 +50,7 @@ TreeGRPO的灵感来源于AlphaGo等棋类AI中高效的树搜索算法。
 
 研究者意识到，扩散模型的去噪过程是一个分步决策的序列，非常适合用树结构来优化。
 
-<img src="/images/2512.08153v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.08153v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图2: TreeGRPO框架示意图，将去噪过程构建为一棵搜索树*
 
@@ -138,7 +138,7 @@ $${% endraw %}
 
 研究团队在SD3.5-medium模型上进行了测试，并与DDPO、DanceGRPO等主流方法进行了对比。
 
-<img src="/images/2512.08153v1/x2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.08153v1/x2.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图3: 在多个奖励模型上，TreeGRPO（红色）均取得了领先的性能和效率*
 

@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">SEED: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning</p>
 
-<img src="/images/2607.14777v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.14777v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 随着大语言模型逐渐从单轮问答转向需要长期规划、多轮交互以及工具调用的智能体（**Agent**）任务，强化学习（**RL**）正成为大模型后训练阶段的核心范式。然而，在面对复杂的长周期任务时，传统的基于结果的强化学习面临着极其严重的监督信号稀疏问题。针对这一困境，清华大学、南洋理工大学等机构的研究团队提出了一种全新的自我进化同策略蒸馏框架 **SEED**（**SElf-Evolving On-Policy Distillation**）。该方法巧妙地将智能体完成任务后的“后见之明”转化为密集的词元（**Token**）级监督信号。
 
@@ -43,7 +43,7 @@ related_tutorials:
 
 针对这一问题，**SEED** 给出的答案是：将模型自身生成的后验轨迹动态转化为参数化的监督信号，让策略模型在不断进化的过程中自我吸收这些“后见之明”。
 
-<img src="/images/2607.14777v1/x2.jpg" alt="整体性能概览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.14777v1/x2.webp" alt="整体性能概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 突破静态束缚的自我进化循环
 
@@ -53,7 +53,7 @@ related_tutorials:
 
 基于上述理念，**SEED** 框架被设计为两个渐进的训练阶段。
 
-<img src="/images/2607.14777v1/x3.jpg" alt="SEED框架概览" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.14777v1/x3.webp" alt="SEED框架概览" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 #### 第一阶段：后见技能的监督微调（SFT）
 
@@ -83,7 +83,7 @@ related_tutorials:
 
 首先，自我进化的后验蒸馏展现出对静态自我蒸馏的绝对压制力。在所有的聚合对比中，**SEED** 在绝大多数指标上都取得了最优表现。这种优势在极度考验长序列执行与状态跟踪的 **ALFWorld** 基准上表现得尤为明显。对于参数量较小的 **Qwen3-1.7B** 模型，**SEED** 甚至比最强的静态基线方法高出了惊人的 38.1 个百分点。这一数据强有力地证明，当模型的试错空间巨大且容易陷入策略死胡同时，让监督信号随模型当前遇到的具体困境动态调整，能够极大程度地激发小参数模型的内在逻辑潜力。
 
-<img src="/images/2607.14777v1/x5.jpg" alt="样本效率与泛化对比图" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.14777v1/x5.webp" alt="样本效率与泛化对比图" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 更为炸裂的发现来自于对样本效率（**Sample Efficiency**）的深度剖析。强化学习在训练大语言模型时最令人头疼的成本往往来自于环境交互和轨迹采样的大量数据需求。上图展示了不同数据留存比例下的性能变化轨迹。数据清晰地表明，**SEED** 能够在极少的数据喂养下，迅速逼近甚至超越传统方法的上限。
 
@@ -91,7 +91,7 @@ related_tutorials:
 
 这种以 40% 数据匹敌全量数据的能力，从根本上改变了智能体强化学习的成本核算逻辑。它证明了在每一个漫长的失败或成功轨迹中，实际上隐藏着海量未被充分利用的决策指导。传统的标量结果就像是只看考试最终成绩而不看解题过程，而 **SEED** 则是让模型在做完每套卷子后，自己写一份详尽的错题本和思路总结，并把这些反思直接烙印在神经元的权重连接中。因此，模型从单条轨迹中榨取的有效信息密度呈指数级上升，极大地加速了策略向最优解收敛的速度。
 
-<img src="/images/2607.14777v1/x6.jpg" alt="泛化与消融对比图" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.14777v1/x6.webp" alt="泛化与消融对比图" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 除了训练阶段的高效，**SEED** 还赋予了模型极强的跨域泛化韧性。为了验证模型是否只是通过死记硬背训练集里的轨迹来刷高分数，研究团队在 **ALFWorld** 的未见测试集（**Unseen split**）上对 3B 规模的检查点进行了严苛的测试。如上图所示，与单纯依靠环境反馈盲目摸索的 **GRPO** 相比，经过 **SEED** 联合优化的策略将宏观平均成功率从 70.9 大幅拉升至 86.2，提升幅度高达 15.3 个百分点。
 

@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">PIPES: Securing Agent Perception with Provenance and Priors</p>
 
-<img src="/images/2608.12789v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.12789v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大模型智能体（Agent）在调用外部工具时，往往会毫无保留地吞下返回的所有数据。这种对外部输入“来者不拒”的机制，正在成为 Agent 系统中最致命的安全隐患。NVIDIA 研究团队在最新论文中揭示了一种名为“状态破坏攻击”（State-Corruption Attacks）的隐蔽手法。与传统的提示词注入试图直接抢夺模型控制权不同，状态破坏攻击通过篡改 Agent 对环境的感知，让恶意操作在安全护栏看来显得“完全合法”。
 
@@ -44,7 +44,7 @@ related_tutorials:
 
 状态破坏攻击则要狡猾得多。攻击者不再下达指令，而是通过越权声明来污染环境状态。如下图所示，攻击者在受控的标签字段中写入“平台评分：4.9星”。这属于典型的“出处越权”（Provenance Overreach）：商家的元数据根本没有权限去定义平台的评分数据，无论这个声明在事实上是否为真。
 
-<img src="/images/2608.12789v1/perception_attack.jpg" alt="不同攻击模式对比：传统指令注入与状态破坏攻击" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.12789v1/perception_attack.webp" alt="不同攻击模式对比：传统指令注入与状态破坏攻击" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当 Agent 读取到这段被污染的响应后，它会将“攻击者面馆评分为 4.9 星”作为客观环境事实纳入自己的状态表征中。随后，Agent 基于寻找最高分餐厅的用户真实意图，顺理成章地选择了攻击者的餐厅。由于这一最终动作在逻辑上与 Agent 接收到的“状态”完全吻合，传统的动作护栏会认为这是一个合法、合理的决策，从而予以放行。
 
@@ -66,7 +66,7 @@ PIPES 的审查逻辑建立在两个基本准则之上。首先是“先验一�
 
 如下图所示，PIPES 首先将响应字段分为两组。对于数字、布尔值和枚举类型等格式封闭的字段，PIPES 进行确定性检查，并将其划归为“受信任的参考上下文”。而对于名称、描述、标签等开放词汇字段，PIPES 会为它们分配语义先验和溯源标签，并交由语言模型进行评估。
 
-<img src="/images/2608.12789v1/structured_sanitization.jpg" alt="静态先验与溯源审查：针对结构化 JSON 响应的清洗流程" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.12789v1/structured_sanitization.webp" alt="静态先验与溯源审查：针对结构化 JSON 响应的清洗流程" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在这个过程中，评估模型需要判断开放字段的值是否超出了其先验范围，或者是否与受信任的参考上下文（或排名更高的已评估字段）相矛盾。数学上，这被表示为一个评估函数：
 
@@ -85,7 +85,7 @@ PIPES 的审查逻辑建立在两个基本准则之上。首先是“先验一�
 
 在这种情况下，PIPES 引入了上下文先验与溯源机制。研究团队巧妙地利用了 Agent 在获取该响应之前的“历史轨迹”（Trajectory）。历史轨迹通常记录了 Agent 为什么要请求这些内容，以及预期是谁来提供这些信息。
 
-<img src="/images/2608.12789v1/unstructured_sanitization.jpg" alt="上下文先验与溯源审查：结合历史轨迹对开放内容的清洗" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.12789v1/unstructured_sanitization.webp" alt="上下文先验与溯源审查：结合历史轨迹对开放内容的清洗" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，假设 Agent 打开收件箱是为了获取 GitHub 的验证码，那么历史轨迹本身就隐式提供了一个强大的先验边界：预期的信息类型是“一次性验证码”，预期的信任来源是“GitHub”。此时，PIPES 将响应单元、工具级宽泛契约以及历史轨迹一并提交给评估模型。如果攻击者通过伪造发件人或在无关邮件中注入诱导点击的指令，PIPES 能够敏锐地发现这些内容不仅违背了当前上下文期望的语义范畴，其来源权限也无法支撑其所做出的行为主张。
 

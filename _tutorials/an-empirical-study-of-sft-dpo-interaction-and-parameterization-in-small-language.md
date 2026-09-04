@@ -13,7 +13,7 @@ related_tutorials:
 
 ## DPO收益甚微，LoRA竟被反超？斯坦福揭秘小模型微调的“最优解”
 
-<img src="/images/2603.20100v1/A__title.jpg" alt="DPO收益甚微，LoRA竟被反超？斯坦福揭秘小模型微调的“最优解” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2603.20100v1/A__title.webp" alt="DPO收益甚微，LoRA竟被反超？斯坦福揭秘小模型微调的“最优解” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当前，**直接偏好优化**（**Direct Preference Optimization, DPO**）和**低秩适配**（**Low-Rank Adaptation, LoRA**）几乎已成为大模型对齐与微调的“标准动作”。我们似乎默认，先用SFT做监督微调，再用DPO对齐偏好，同时用LoRA来节省资源，就是一套黄金组合拳。
 
@@ -73,7 +73,7 @@ related_tutorials:
 
 *   **训练更快**：更令人意外的是，在H100 GPU上，LoRA并没有带来训练时间的缩短。研究者指出，这是因为对于GPT-2这样的小模型，训练瓶颈在于计算（compute-bound），而非显存（memory-bound）。LoRA节省的显存无法转化为实际的训练速度优势。
 
-<img src="/images/2603.20100v1/fft_lora_curves.jpg" alt="FFT vs. LoRA 训练曲线" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2603.20100v1/fft_lora_curves.webp" alt="FFT vs. LoRA 训练曲线" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 上图清晰地展示了FFT（蓝色实线）在开发集准确率上自始至终领先于不同秩的LoRA（虚线）。
 

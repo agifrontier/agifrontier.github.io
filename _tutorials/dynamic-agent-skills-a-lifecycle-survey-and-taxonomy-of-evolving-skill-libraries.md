@@ -98,7 +98,7 @@ related_tutorials:
 
 基于上述底层逻辑，该研究构建了一个宏大的八阶段生命周期架构。这是整篇论文的骨架，清晰展示了动态技能系统必须做出的设计承诺。
 
-<img src="/images/2607.10113v1/dynamic-skill-lifecycle.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.10113v1/dynamic-skill-lifecycle.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 以下是这八个核心阶段的技术拆解：
 

@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Kozuchi Agent: A Language-Agnostic Open-Weight Agent for Software Repair</p>
 
-<img src="/images/2608.15579v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2608.15579v1/A__title.webp" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 工业界对“AI程序员”的期望已经从单纯的代码补全，升级到了能够直接读取Bug报告、克隆仓库并独立提交正确补丁的端到端修复。在这个背景下，SWE-bench 成为了衡量大模型软件工程能力的试金石。然而，要在真实的基准测试中跑通长周期的修复任务，单纯依赖模型本身的上下文窗口和推理能力往往会撞墙：上下文丢失、工具调用格式崩溃、异构集群部署困难以及高昂的评估成本，都是横亘在实验室演示与工业级部署之间的鸿沟。
 
@@ -44,7 +44,7 @@ related_tutorials:
 
 其四是难以承受的评估成本。在 SWE-bench 上进行端到端的容器化打分极其昂贵。如果为了验证一个微小的代码改动就要重新跑完整个流水线，迭代速度将被严重拖慢。评估成本成为了限制大规模实验的物理瓶颈。
 
-<img src="/images/2608.15579v1/broad_success_vs_params_with_java.jpg" alt="Kozuchi Agent is parameter efficient on both Python SWE-bench Verified and Multi-SWE-bench Java." style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.15579v1/broad_success_vs_params_with_java.webp" alt="Kozuchi Agent is parameter efficient on both Python SWE-bench Verified and Multi-SWE-bench Java." style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 将自由对话转变为严谨的状态机：Kozuchi Agent 核心架构
 
@@ -58,7 +58,7 @@ related_tutorials:
 
 此外，Kozuchi 限制了工具的泛滥。系统只提供最小但高度确定性的软件工程工具集：动态行级追踪、调用者发现以及带保护机制的代码编辑。并且，这些工具是严格按阶段开放的（Phase-gated）。模型只有在确实需要编辑代码的阶段，才会看到代码编辑工具的提示词。这有效缩小了模型的动作搜索空间，防止其在不恰当的阶段滥用工具。
 
-<img src="/images/2608.15579v1/overall-architecture.jpg" alt="Kozuchi Agent workflow from candidate generation to cross-agent selection." style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.15579v1/overall-architecture.webp" alt="Kozuchi Agent workflow from candidate generation to cross-agent selection." style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 跨Agent测试时选择：不用“法官”也能优中选优
 

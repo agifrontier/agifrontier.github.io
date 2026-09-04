@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Wuying-Browser-Agent: Real-World Centric Fundamental Long-Horizon Browser Agents</p>
 
-<img src="/images/2608.17319v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.17319v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在短上下文和干净的演示数据上，现有的大语言模型网页智能体（Browser Agent）已经展现出令人惊艳的性能。然而，当这些智能体真正被部署到现实世界的动态网页中时，它们的表现往往会遭遇滑铁卢。真实的网页任务要求智能体在不断变化的页面上持续做出数十次决策，处理复杂的交互控件，并在偏离目标时具备自我纠错与恢复的能力。
 
@@ -37,7 +37,7 @@ related_tutorials:
 
 在深入解析 **Wuying-Browser-Agent** 的核心机制之前，我们必须先理解当前网页智能体在长序列（Long-Horizon）任务中究竟卡在了哪里。通过对大量失败轨迹的分析，研究者揭示了三个紧密咬合的结构性挑战。
 
-<img src="/images/2608.17319v1/challenges.jpg" alt="长序列网页智能体面临的三大结构性挑战及解决方案" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.17319v1/challenges.webp" alt="长序列网页智能体面临的三大结构性挑战及解决方案" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 第一个挑战在于训练数据的分布盲区。当前网页智能体的训练数据绝大多数来源于成功的演示轨迹。然而，在真实的长序列网页任务中，遇到意外的重定向、页面瞬态变化或是复杂的 UI 控件（如日期选择器、级联菜单）几乎是不可避免的。当模型不可避免地犯错并偏离既定路线时，基于“纯成功数据”训练出的模型完全不知道如何纠正错误。研究发现，基础的监督微调模型只能从 8.5% 的错误步骤中恢复。这说明问题的本质不是“数据不够多”，而是严重缺乏关于“如何从错误中恢复”以及“如何应对低频复杂 UI”的结构性监督信号。
 
@@ -63,7 +63,7 @@ related_tutorials:
 
 另一类是**专用 UI 组件数据集**。该数据集通过系统性的收集，密集地向模型展示那些长尾但又极其关键的复杂控件交互模式。这极大地降低了模型在面对罕见前端框架或复杂层级菜单时的动作不确定性。
 
-<img src="/images/2608.17319v1/SFT.jpg" alt="RUIC-SFT 课程微调中的分段线性退火混合策略" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.17319v1/SFT.webp" alt="RUIC-SFT 课程微调中的分段线性退火混合策略" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 为了让模型平稳地吸收这些“硬核”知识，研究者设计了一个精巧的三阶段课程微调策略（Curriculum Schedule）。在第一阶段，训练数据以通用网页操作为主，旨在稳固基础的浏览执行先验；随着训练推进到第二阶段，系统逐步增加专用 UI 数据的比例，以此强化模型处理复杂交互的能力；到了最后的第三阶段，反射数据集才被大规模引入。这种分段线性的数据混合策略，既培养了模型强大的自我纠错能力，又避免了过早引入错误状态导致基础执行逻辑的“灾难性遗忘”。
 
@@ -73,7 +73,7 @@ related_tutorials:
 
 为了攻克这一难题，研究者提出了 **DAO-GRPO**（Divergence-Aware Online GRPO），这是一种专为网页长序列控制定制的在线强化学习框架。
 
-<img src="/images/2608.17319v1/network_overview_adj.jpg" alt="Wuying-Browser-Agent 整体管线架构：共享的控制层支撑 SFT 与 RL" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.17319v1/network_overview_adj.webp" alt="Wuying-Browser-Agent 整体管线架构：共享的控制层支撑 SFT 与 RL" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 **DAO-GRPO** 引入了两个极其重要的机制来改造传统强化学习。首先，它采用了基于势能的奖励塑形（Potential-based Reward Shaping）。由于终端奖励过于稀疏，智能体在漫长的探索中极易迷失。通过引入密集的进度监督信号，智能体在每向目标推进一步时都能获得即时的正向反馈，这在不改变最优策略数学特性的前提下，极大缓解了长序列探索的盲目性。
 
@@ -87,7 +87,7 @@ related_tutorials:
 
 实验结果强有力地证明了整个框架的有效性。在参数规模达到 27B 时，**Wuying-Browser-Agent** 在多项权威指标上实现了断层式的领先。
 
-<img src="/images/2608.17319v1/compare.jpg" alt="在线网页智能体基准与通用智能体基准的性能对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.17319v1/compare.webp" alt="在线网页智能体基准与通用智能体基准的性能对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 从整体性能对比来看，**Wuying-Browser-Agent-27B** 在 **WebVoyager** 在线基准上达到了 80.6% 的高分，在动态环境更苛刻的 **Online-Mind2Web** 上取得了 66.7% 的成绩，而在自身构建的极限长序列基准 **BrowserBench** 上也实现了 65.1% 的成功率。这些关键数据标志着，在真实场景导向的网页控制领域，该工作确立了新的开源最优状态。
 

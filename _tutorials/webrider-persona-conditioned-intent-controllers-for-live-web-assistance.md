@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">WebRider: Persona-Conditioned Intent Controllers for Live-Web Assistance</p>
 
-<img src="/images/2608.06704v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.06704v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当我们在评价一个 Web Agent（网页智能体）有多聪明时，通常看的都是它能不能把任务干完。如果让它去买一台相机，只要它最终在一个电商网站上找到了商品并点击了购买，现有的评测基准往往就会给它打个满分。然而，这种“唯结果论”正在掩盖目前大模型代理在实际执行中的一个致命问题：为了完成任务，它们经常会把用户暗含的规矩抛在脑后。
 
@@ -66,7 +66,7 @@ WebRider 的第一个核心概念是“意图契约”。它并不是一种性�
 
 有了契约，接下来就是如何执行。WebRider 部署了一套严格分层的架构，强制分离了长周期的意图判断和短周期的网页动作实现。
 
-<img src="/images/2608.06704v1/figure1.jpg" alt="WebRider 的分层架构" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2608.06704v1/figure1.webp" alt="WebRider 的分层架构" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 如上图所示，WebRider 包含三个互不越界的层级：
 
@@ -78,7 +78,7 @@ WebRider 的第一个核心概念是“意图契约”。它并不是一种性�
 
 这种分层的精妙之处在于它不仅是一次架构重组，更是一种哲学上的取舍。以往的 Agent 往往通过一次庞大的 LLM 调用，既决定“我要不要停止”，又决定“我点屏幕左上角”。这就导致了动作选择和策略验证的深度纠缠。WebRider 将其彻底切断：顶层负责“Why”和“When”，中层专注于“How”。
 
-<img src="/images/2608.06704v1/figure4.jpg" alt="被审计的浏览器追踪记录" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2608.06704v1/figure4.webp" alt="被审计的浏览器追踪记录" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 这种设计的直接收益正如上图所展示的，每一次浏览器状态的变化，都能和与之对应的契约状态（当前的意图、受保护的约束、证据收集情况等）精准绑定。这就让那些不可见的大模型推理过程，变成了一条每一帧都可以被审计的透明轨迹。
 
@@ -125,7 +125,7 @@ WebRider 的测试结果在四个维度上对当前的 Web Agent 范式提出了
 
 如果最终答案看起来没问题，人类真的在乎中间过程吗？为了回答这个问题，研究团队引入了步骤级别的人类可接受度评估：**Persona-Consistency Score (PCS，人设一致性得分)** 和 **Human-Comfort Preference (HCP，人类舒适度偏好)**。
 
-<img src="/images/2608.06704v1/human_audit_comparison.jpg" alt="人类审查对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.06704v1/human_audit_comparison.webp" alt="人类审查对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 盲测结果表明，即便有些轨迹最终勉强通过了门控，人类裁判仍然能够明显感受到不同执行路径带来的不适感。相较于完全自由发挥的控制器，将意图信息绑定在单步受限动作上的 IntentCore 模型，在 PCS 上取得了 86% 的高分（远高于自由控制器的 70%），并获得了超过 42% 的净 HCP 偏好优势。
 
@@ -137,7 +137,7 @@ WebRider 分层架构在工程上的一个巨大红利，是它自然而然地�
 
 在以往的端到端 Agent 中，如果要用行为克隆去训练一个小模型，很难剥离它是“找错了按钮”还是“过早结束了任务”。而在 WebRider 中，由于顶层负责把握大局，中层只负责面对当前网页输出受限的动作 JSON（经过 guards 过滤），这个中间层就成了一个完美的、纯粹的“动作转换器”。
 
-<img src="/images/2608.06704v1/figure6.jpg" alt="用于审计和训练的守护轨迹" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.06704v1/figure6.webp" alt="用于审计和训练的守护轨迹" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 正如上图所示，同一套执行轨迹，既是顶层审计契约的证据库，又是中层极佳的监督学习样本。研究人员仅针对这个中层接口训练了一个 8B 规模的动作策略模型（MidSFT-8B）。结果显示，在保持顶层大模型控制器不变的情况下，直接替换这个 8B 模型上线跑实时任务，依然能够在 1,024 个 live 契约上取得 50.8% 的 CGS 成功率和 78.1% 的证据收集率。
 

@@ -14,7 +14,7 @@ related_tutorials:
 
 ## **Agentic Memory：让LLM像人类一样“自主管理”记忆，长程推理能力暴涨49%**
 
-<img src="/images/2601.01885v1/A__title.jpg" alt="Agentic Memory：让LLM像人类一样“自主管理”记忆，长程推理能力暴涨49% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01885v1/A__title.webp" alt="Agentic Memory：让LLM像人类一样“自主管理”记忆，长程推理能力暴涨49% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在人工智能的浩瀚星空中，大语言模型（LLM）无疑是最耀眼的那颗星。然而，这颗“星”一直有一个挥之不去的阴影——**记忆力**。
 
@@ -87,7 +87,7 @@ AgeMem的核心思想非常直观且优雅：**将记忆操作通过“工具调
 
 *   **工具使用更智能**：经过RL训练后，Agent不仅学会了频繁使用$$Add$$和$$Update$$来维护知识库，还学会了在上下文拥挤时主动使用$$Filter$$。
 
-<img src="/images/2601.01885v1/x2.jpg" alt="AgeMem性能对比" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2601.01885v1/x2.webp" alt="AgeMem性能对比" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 *(图注：AgeMem在多个数据集上均取得了最佳性能，证明了统一记忆管理的有效性)*
 

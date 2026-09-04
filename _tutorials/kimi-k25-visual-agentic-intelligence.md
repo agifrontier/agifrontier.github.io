@@ -14,7 +14,7 @@ related_tutorials:
 
 ## Kimi K2.5重磅开源：多模态联合增强，Agent推理提速4.5倍
 
-<img src="/images/2602.02276v1/A__title.jpg" alt="Kimi K2.5重磅开源：多模态联合增强，Agent推理提速4.5倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2602.02276v1/A__title.webp" alt="Kimi K2.5重磅开源：多模态联合增强，Agent推理提速4.5倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 月之暗面（Moonshot AI）刚刚投下了一枚重磅炸弹：**Kimi K2.5** 正式开源。这不仅仅是一个简单的模型升级，而是一次向**通用智能体**（**General Agentic Intelligence**）迈进的重要探索。
 
@@ -24,7 +24,7 @@ Kimi K2.5 最大的亮点在于它打破了以往多模态模型“文本强、�
 
 本文将深入解读 Kimi K2.5 背后的核心技术，看看它是如何重新定义多模态智能体的。
 
-<img src="/images/2602.02276v1/k25-main-result.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2602.02276v1/k25-main-result.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 视觉与文本：从“貌合神离”到“深度融合”
 
@@ -48,7 +48,7 @@ Kimi K2.5 最大的亮点在于它打破了以往多模态模型“文本强、�
 
 这种“文本引导视觉，视觉精炼文本”的双向增强，证明了跨模态对齐的深度潜力。
 
-<img src="/images/2602.02276v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2602.02276v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### Agent Swarm：拒绝串行，并行智能体蜂群
 
@@ -60,7 +60,7 @@ Kimi K2.5 最大的亮点在于它打破了以往多模态模型“文本强、�
 
 该框架采用了一种新颖的**并行智能体强化学习**（**Parallel-Agent Reinforcement Learning, PARL**）范式。为了避免端到端联合优化的不稳定性，研究团队选择冻结子智能体，只对编排器进行 RL 更新。编排器学会了将复杂任务动态分解为异构的子问题，并指派给专门的子智能体并行执行。
 
-<img src="/images/2602.02276v1/multi-agent-rl-system.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2602.02276v1/multi-agent-rl-system.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 以“关键步骤”为核心的资源约束
 

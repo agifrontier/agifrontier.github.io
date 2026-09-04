@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Filesystem-Based Memory for LLM Agents: Organization, Evolution, and Sustainability</p>
 
-<img src="/images/2607.26637v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.26637v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 随着大语言模型（LLM）Agent 部署场景的复杂化，其工作周期早已突破了单一上下文窗口的限制。为了在跨越数月的回话或代码维护中保持一致性，持久化的外部记忆成为了核心设计。在学术界，研究者们曾提出了大量复杂的记忆表征形式，例如知识图谱、自链接笔记网络或基于向量库组织的树状结构；然而在真实的工业界应用中，Anthropic、OpenAI 等主流方案却不约而同地走向了一个更朴素的默认介质：**文件系统（Filesystem）**。
 
@@ -37,7 +37,7 @@ Agent 通过通用的文件操作工具读写目录树中的 Markdown 文件，�
 
 为了系统评估这一问题，研究团队并没有局限于某一种特定的模型实现，而是将文件系统记忆的交互环境形式化抽象为一个由单一存储库和三大角色构成的协同框架。这种极简的契约设计，不仅可以直接映射到现有的工业部署方案，也使得“写入记忆”与“读取记忆”的能力能够被独立评估。
 
-<img src="/images/2607.26637v1/fig1.jpg" alt="文件系统 Agent 记忆框架概览，包含执行、管理与搜索三大角色" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.26637v1/fig1.webp" alt="文件系统 Agent 记忆框架概览，包含执行、管理与搜索三大角色" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 框架的核心围绕一个**记忆存储库（Memory Store）** ${\mathcal{M}}$ 展开。这是一个基于路径层次结构组织的有限文件集合。其中每个文件 $f$ 被定义为一个三元组 $f=(p_{f},d_{f},c_{f})$，分别代表文件路径（例如 `/memories/people/alice.md`）、一行简短描述以及具体的文本内容。文件夹本身不直接承载内容，而是作为路径的共享前缀存在。
 
@@ -55,7 +55,7 @@ Agent 通过通用的文件操作工具读写目录树中的 Markdown 文件，�
 
 为了衡量存储库是否真正做到了“有组织”，研究团队明确了一套基于文件系统的分类学契约（Taxonomy Contract）。一个优秀的记忆存储树应当满足：层次分明、避免过度碎片化但又能清晰拆分不同主题、描述精确且没有冗余过期的死文件。
 
-<img src="/images/2607.26637v1/fig2.jpg" alt="文件结构解析：通过严格的 Frontmatter 管理描述和名称信息" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.26637v1/fig2.webp" alt="文件结构解析：通过严格的 Frontmatter 管理描述和名称信息" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在具体的实例化中，每个文件通常采用 Markdown 格式，并强制要求在其 Frontmatter 中包含结构化的名称和单行描述 $d_{f}$，这直接模仿了当前工业界默认工具的标准做法。描述信息至关重要，因为在 Agent 展开目录列表或执行排序搜索时，这是它决定是否要进一步调用工具读取该文件全部内容的唯一线索。
 

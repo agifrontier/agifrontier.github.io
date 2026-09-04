@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Skills Are Not Islands: Measuring Dependency and Risk in Agent Skill Supply Chains</p>
 
-<img src="/images/2607.01136/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.01136/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当前，大语言模型（LLM）Agent 的开发正从“手写 Prompt”走向“组装技能库”的新阶段。开发者们为了让 Agent 能够执行特定的专业任务，往往不再从零开始编写代码，而是直接复用社区中已有的Agent技能（Skills）。这种复用极大加速了Agent应用的繁荣，但同时也带来了一个致命的盲区：这些技能包的规模在急速膨胀，却没有任何一套系统来记录它们的身份、版本和来源。当一个Agent加载了数十个外部技能时，开发者根本不知道这些技能又在暗中调用了哪些第三方代码包、其他子技能或是外部API服务。
 
@@ -42,7 +42,7 @@ Agent 技能的依赖并不是整齐地写在配置文件里的。它可能是�
 
 为了穿透技能内部的复杂性，研究团队设计了专门面向技能生态的分析工具 **SkillDepAnalyzer**（简称 **SDA**）。该工具借鉴了软件物料清单的理念，并首创了技能维度的物料清单格式——**SkillBOM**。SDA 的核心工作流包含四个精密的阶段，专门用于应对非结构化线索与多重调用逻辑。
 
-<img src="/images/2607.01136/x1.jpg" alt="SDA生成工作流" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.01136/x1.webp" alt="SDA生成工作流" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 从工具的架构图中可以看到，SDA 并没有简单地使用正则表达式或纯粹的大模型去瞎猜，而是采取了严谨的多步校准机制：
 

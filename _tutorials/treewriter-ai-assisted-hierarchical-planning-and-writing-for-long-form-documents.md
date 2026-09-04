@@ -13,7 +13,7 @@ related_tutorials:
 
 ## TreeWriter来了：打破线性束缚，用“树状结构”让AI长文写作更可控
 
-<img src="/images/2601.12740v1/A__title.jpg" alt="TreeWriter来了：打破线性束缚，用“树状结构”让AI长文写作更可控 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2601.12740v1/A__title.webp" alt="TreeWriter来了：打破线性束缚，用“树状结构”让AI长文写作更可控 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 写过长篇论文、项目标书或技术文档的人都知道，这简直是一场“记忆力灾难”。
 
@@ -47,7 +47,7 @@ related_tutorials:
 
 2.  **线性视图（Linear View）**：这是最终读者的视角。系统会遍历树状结构，将所有节点的内容拼接成一篇完整的文章。
 
-<img src="/images/2601.12740v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.12740v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 这种设计最大的好处是实现了**关注点分离**。在树状视图中，你可以专注于逻辑架构；在线性视图中，你可以检查行文的流畅度。
 
@@ -61,7 +61,7 @@ related_tutorials:
 
 当你写了一大段混乱的草稿时，可以一键让AI将其“拆解”为多个子节点，形成更清晰的结构。反之，你也可以让AI读取所有子节点的内容，自动在父节点生成一个高层级的摘要大纲。
 
-<img src="/images/2601.12740v1/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.12740v1/x3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 #### 2. 双向同步生成
 

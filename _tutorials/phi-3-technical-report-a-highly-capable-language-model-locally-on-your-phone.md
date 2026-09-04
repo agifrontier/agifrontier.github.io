@@ -71,9 +71,9 @@ related_tutorials:
 *   **Tokenizer**: 使用与Llama-2相同的tokenizer，词汇表大小为32064。
 *   **部署**: 可被量化至4-bit，内存占用约1.8GB，能够在iPhone 14上以超过12 tokens/秒的速度本地运行。
 
-<img src="/images/2404.14219v4/x1.jpg" alt="phi-3-mini在手机上运行" style="width:80%; max-width:300px; margin:auto; display:block;">
-<img src="/images/2404.14219v4/x2.jpg" alt="phi-3-mini在手机上运行" style="width:80%; max-width:300px; margin:auto; display:block;">
-<img src="/images/2404.14219v4/x3.jpg" alt="phi-3-mini在手机上运行" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2404.14219v4/x1.webp" alt="phi-3-mini在手机上运行" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2404.14219v4/x2.webp" alt="phi-3-mini在手机上运行" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2404.14219v4/x3.webp" alt="phi-3-mini在手机上运行" style="width:80%; max-width:300px; margin:auto; display:block;">
 <center>图2: 4-bit量化的phi-3-mini在iPhone上原生离线运行</center>
 
 #### phi-3-small (7B)
@@ -83,7 +83,7 @@ related_tutorials:
     *   **分组查询注意力 (Grouped-Query Attention)**: 4个查询共享1个键，以提升效率。
     *   **块稀疏注意力 (Blocksparse Attention)**: 这是本文的一个关键架构创新。它将密集注意力层和块稀疏注意力层交替使用，通过在不同注意力头上应用不同的稀疏模式来关注KV缓存的不同块，显著减少了KV缓存大小，同时通过高效的Triton内核实现训练和推理加速。
 
-<img src="/images/2404.14219v4/illustration-of-bs-attn.jpg" alt="块稀疏注意力图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2404.14219v4/illustration-of-bs-attn.webp" alt="块稀疏注意力图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 <center>图1: phi-3-small中块稀疏注意力的图示</center>
 
 #### phi-3.5-MoE (16x3.8B)
@@ -102,7 +102,7 @@ related_tutorials:
 *   **phi-3-mini (3.8B)** 在MMLU上取得69%，MT-bench上得分8.38，性能与Mixtral 8x7B和GPT-3.5不相上下。在GSM-8K（数学推理）和HumanEval（代码生成）等任务上甚至超过了这些大得多的模型。
 *   模型规模扩展后，**phi-3-small (7B)** 和 **phi-3-medium (14B)** 的性能持续提升，MMLU得分分别达到75.7%和78.0%，验证了数据策略在更大模型上的有效性。下图展示了Phi系列在“数据最优机制”下的扩展性能优于在固定数据上训练的Llama-2系列。
 
-<img src="/images/2404.14219v4/scaling.jpg" alt="扩展定律对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2404.14219v4/scaling.webp" alt="扩展定律对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 <center>图3: “数据最优机制”下的扩展定律对比</center>
 
 *   **phi-3.5-MoE** 在各项基准测试中显著优于其他同规模开源模型，性能与Gemini-1.5 Flash相当，达到了GPT-4o-mini平均性能的90%以上。

@@ -45,7 +45,7 @@ related_tutorials:
 那么，模型自身的“自我总结”能否作为内在的组织机制？
 为了回答这个问题，研究团队进行了两项引人深思的先导实验。
 
-<img src="/images/2606.13316v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.13316v1/x1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图左侧所示，第一项实验分析了生成轨迹中 Token 的熵值分布。
 他们敏锐地发现，模型在即将输出总结性短语前，不确定性急剧升高。
@@ -127,7 +127,7 @@ related_tutorials:
 
 更有趣的是训练与推理过程中的长度变化动态。
 
-<img src="/images/2606.13316v1/x4.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.13316v1/x4.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，在初期，由于模型还在摸索总结的技巧，输出长度有所增加。
 但随着训练不断深入，模型彻底掌握了压缩冗余上下文的诀窍。
@@ -139,7 +139,7 @@ related_tutorials:
 
 该研究还进一步分析了不同问题难度级别下的表现趋势。
 
-<img src="/images/2606.13316v1/x5.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2606.13316v1/x5.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在 MATH500 数据集的难度分级测试中，一个清晰的规律浮出水面。
 对于最困难的 Level 5 题目，基线模型往往因容量或长程遗忘而崩溃。

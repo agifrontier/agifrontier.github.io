@@ -51,7 +51,7 @@ related_tutorials:
 它将模型在解答历史问题时生成的中间响应，提炼为一种高度浓缩的持久认知单元，也就是“思考”（$T_i$）。
 这些“思考”就像是经过精心熬制并验证合格的“高汤块”。当你下次需要做一锅复杂的汤时，直接使用高汤块，远比从头炖煮要高效得多。
 
-<img src="/images/2604.12231v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.12231v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 具体而言，该框架的运作流程包含五个关键步骤，构成了一个闭环的自进化记忆系统：
 第一步是**思考检索**。当新查询到来时，模型不仅在原始食材库中寻找，还会去“高汤块”货架（思考记忆库）中检索最匹配的多个区块。
@@ -61,7 +61,7 @@ related_tutorials:
 它基于用户查询和生成的答案，提炼出一个新的“高汤块”（Thought），并为其打上置信度评分（$c_i$）。
 这个置信度检查是防止模型胡编乱造、产生幻觉的第一道防线。
 
-<img src="/images/2604.12231v1/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.12231v1/x3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 第四步是**思考融合**。并非所有的新发现都有留存价值。系统会计算新思考与现有记忆库的相似度。
 如果这个新“高汤块”的成分和之前的完全一样，它就会被标记为冗余。
@@ -93,7 +93,7 @@ related_tutorials:
 首先是**持续自我进化**。随着处理的用户查询越来越多，模型货架上积累的“高汤块”越来越丰富。
 数据清晰地表明，在不修改任何底层模型权重的前提下，大模型在各项复杂任务中的表现呈现出稳步上升的趋势。
 
-<img src="/images/2604.12231v1/x6.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.12231v1/x6.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 其次是**深层思考应对抽象命题**。
 当用户抛出高度抽象、需要宏观视野的问题时，模型会自动去检索那些经过多次融合、处于记忆树更深层的“高汤块”。

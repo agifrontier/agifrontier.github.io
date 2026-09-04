@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Route, Communicate, and Reason: Gated Routing and Adaptive Depth for Efficient Multi-Agent Reasoning</p>
 
-<img src="/images/2607.10836v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.10836v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大模型推理能力的发展，正逐渐从依赖单体模型参数的线性增长，转向多智能体（**Multi-agent**）协作机制。然而，简单地堆叠多个智能体往往会带来推理延迟与显存占用的成倍增加，更关键的是，过去的研究并未彻底解决三个核心问题：遇到具体查询时究竟该唤醒哪些智能体？查询信息需要在智能体层级中下探到多深？智能体之间的互相通信在何时才是真正具有性价比的？
 
@@ -61,7 +61,7 @@ GRADE 的核心架构是一个包含共享编码器、一个轻量级协调器�
 
 GRADE 给出的方案是为每一个智能体引入一个可学习的仿射校准映射 $\kappa_a$。当新的专家模型被接入时，只需在极少量的校准数据（如 64 个查询）上更新这个仿射变换的参数，将新模型的输出特征重新拉回系统共享的嵌入空间即可。
 
-<img src="/images/2607.10836v1/x2.jpg" alt="图注：在不同类型的专家替换后，MMLUPro 准确率的恢复曲线。未经过校准的替换会导致准确率无法恢复，而通过仿射校准，即使是跨架构替换也能在 9 个批次内迅速收敛。" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.10836v1/x2.webp" alt="图注：在不同类型的专家替换后，MMLUPro 准确率的恢复曲线。未经过校准的替换会导致准确率无法恢复，而通过仿射校准，即使是跨架构替换也能在 9 个批次内迅速收敛。" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 实验数据印证了这一机制的必要性。如果没有校准映射直接进行热插拔替换，GRADE 的准确率会瞬间暴跌 18.1 个百分点（从 78.2% 跌至 60.1%），并且在后续评估中彻底失去恢复能力。而加入校准机制后，即便是将 GPT-4o-mini 这种 API 模型直接替换为本地的 Qwen2.5-7B，系统也能在短短几个批次的校准后恢复到原本的最佳性能。
 
@@ -71,12 +71,12 @@ GRADE 展现出的核心哲学非常明确：计算资源的收益并非总是�
 
 在对跨读门控的消融实验中，研究人员发现，当允许所有被激活的智能体互相通信时（通信频率 $\rho=1.0$），有半数的智能体对实际上是在产生噪声或冗余信息，这直接导致模型性能下降了 2.1 个百分点。最终，门控网络自发将通信频率稳定在了约 0.5 的水平，只让最必要的专家进行信息交换。
 
-<img src="/images/2607.10836v1/x3.jpg" alt="图注：跨读频率与 MMLUPro 准确率的关系。当跨读频率为 1.0 时，由于引入了无关专家的噪声消息，模型性能受到明显损害。" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.10836v1/x3.webp" alt="图注：跨读频率与 MMLUPro 准确率的关系。当跨读频率为 1.0 时，由于引入了无关专家的噪声消息，模型性能受到明显损害。" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 类似的情况也出现在智能体数量的选择上。强制使用固定数量的专家（固定 $k$）进行评估时发现，当激活的专家数量从 3 个增加到 5 个时，MMLUPro 的准确率不仅没有提升，反而从 63.5% 下降到了 62.1%。因为当最强硬的领域专家已经就位后，强行拉入第六个不相关的专家只会扰乱最终的特征融合。GRADE 的动态路由通过精确截断有效规避了这种内耗，超越了所有的固定 $k$ 设定。
 
 通过对不同难度基准测试的 Token 消耗追踪，可以更直观地看到 GRADE 的自适应调度能力。对于较为简单的 GSM8K，模型在经过初期的探索后，迅速学会了克制，将平均调用智能体数量压缩在 2.1 个，深度降至 1.8 左右，甚至许多问题直接由管理者层级返回；而面对极其困难的 AIME-2025 竞赛题，系统则毫不吝啬，平均调用 3.8 个智能体，并且全部下探到底层专家池。
 
-<img src="/images/2607.10836v1/x4.jpg" alt="图注：不同训练步数下每次查询的 Token 消耗情况。简单的 GSM8K 迅速收敛至较低开销，而 AIME-2025 等困难任务则需要更长时间探索且维持高算力开销。" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.10836v1/x4.webp" alt="图注：不同训练步数下每次查询的 Token 消耗情况。简单的 GSM8K 迅速收敛至较低开销，而 AIME-2025 等困难任务则需要更长时间探索且维持高算力开销。" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 GRADE 为未来的多智能体大模型框架提供了一个清晰的范本。通过层次化的深度控制与精细的门控裁剪，AI 系统完全有能力在单体模型与堆料式多智能体之间找到最佳平衡点。将计算资源视为一种需要被动态分配和收回的昂贵资产，或许正是下一代高效推理模型需要跨越的关键门槛。

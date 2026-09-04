@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Context as an Environment: Programmatic Context Management for Long-Horizon Agents</p>
 
-<img src="/images/2608.21690v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.21690v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在大语言模型（LLM）逐渐从单轮问答转向执行长期复杂任务（如仓库级软件工程、开放网络深度研究）的今天，智能体（Agent）面临着一个不可回避的物理瓶颈：随着交互轮次、工具调用和观察结果的不断累积，会话历史的长度将不可避免地远超单一模型的上下文窗口上限。更严峻的是，即使模型宣称支持百万级上下文，其在超长输入下的检索与推理能力也会随着长度的增加而显著衰退。
 
@@ -50,7 +50,7 @@ related_tutorials:
 
 基于上述洞察，Scroll 将完整的会话状态 $S_t$ 实例化为一个持久的、可执行的“会话环境”。在这个架构下，长篇累牍的交互记录不再被强行序列化到 Prompt 中，而是安放在模型上下文之外，由一套严密的组件进行管理。
 
-<img src="/images/2608.21690v1/scroll_system_image.jpg" alt="Scroll 系统总览与会话环境架构" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.21690v1/scroll_system_image.webp" alt="Scroll 系统总览与会话环境架构" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 这一会话环境主要由三个核心物理基础设施构成：
 

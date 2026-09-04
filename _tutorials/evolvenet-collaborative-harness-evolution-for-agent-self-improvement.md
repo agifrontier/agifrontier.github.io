@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">EvolveNet: Collaborative Harness Evolution for Agent Self-Improvement</p>
 
-<img src="/images/2608.04968v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.04968v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大语言模型（LLM）本身并不等同于一个真正可运行的智能体（Agent）。决定 Agent 最终能力边界的，不仅是底层的神经网络权重，更是包裹在模型外围的“控制程序（Harness）”——这套可执行代码负责构建多轮上下文、精准调用外部工具、验证中间推理结果，并在遭遇死胡同或运行崩溃时执行恢复策略。近年来，前沿研究逐渐揭示了一条无需触碰模型权重的能力跃升路径：只要不断优化和迭代这套 Harness 代码，Agent 就能获得持久且显著的行为改善。
 
@@ -38,7 +38,7 @@ related_tutorials:
 
 在现有的单点中心化演进中，Agent 的进化过程是高度串行的。中心节点只能像消化单一流水线上的零部件一样，依次读取新进来的数据批次，生成新版 Harness，验证它，然后再基于这个版本去探索下一个方向。这意味着如果进行 $T$ 次搜索，其时间成本和串行深度就是 $T$。当面对来源错综复杂的海量数据时，单一的进化轨迹很容易在某个局部最优解中迷失，或者顾此失彼，为了迎合新场景的特定需求而改坏了原有的通用逻辑。
 
-<img src="/images/2608.04968v1/ppl.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.04968v1/ppl.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 EvolveNet 彻底逆转了这一流程，提出了一种基于并行协作的全新生命周期。在每一轮进化的起点，服务器会将当前最优秀的共享 Harness 广播给网络中所有具备本地数据的 Agent 节点（即客户端）。这些客户端互不干扰，各自在受保护的本地数据环境里运行这套代码。当它们发现当前的 Harness 在处理本地特定任务（比如某个独特的代码库错误，或某种罕见的 SQL 语法结构）表现不佳时，就会在本地利用 LLM 驱动的代码修改器去修改和增强 Harness。
 

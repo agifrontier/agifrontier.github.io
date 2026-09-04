@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">FARS: A Fully Automated Research System Deployed at Scale</p>
 
-<img src="/images/2606.31651v1/A__title.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2606.31651v1/A__title.webp" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 过去一年里，AI在科研领域的应用边界被不断拓宽，从文献检索到辅助实验，甚至是端到端的“AI科学家”框架，都展示了语言模型在科学工作流中的巨大潜力。然而，现有绝大多数自动化研究系统往往在精心挑选的示例、人类限定的主题、预定义的基准测试或是狭窄的任务空间内进行展示。这些受限环境下的演示虽然证明了AI“能做”科研，但并没有回答一个关键的系统性问题：如果让一个全自动的AI科研系统在完全没有人类干预的情况下大规模连续运行，它到底会产出什么？它的真实能力分布和失败模式又是什么样的？
 
@@ -45,7 +45,7 @@ FARS从根本上改变了这一追求。在FARS的视角下，自动化科研的
 
 FARS的架构被严格划分为四个依次递进的阶段：构思（Ideation）、规划（Planning）、实验（Experiment）和写作（Writing）。这四个阶段通过共享工作区进行协同，共同推进一个项目的生命周期。
 
-<img src="/images/2606.31651v1/framework_overview.jpg" alt="FARS架构概览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.31651v1/framework_overview.webp" alt="FARS架构概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 第一个阶段是构思阶段（Ideation）。在这个环节，FARS需要在没有用户交互提示的情况下，将开放式的研究方向转化为具体、可执行的提案。在实际部署中，系统仅被植入了九个建议的研究主题作为冷启动的种子，随后便被鼓励在这些领域之外自由探索。构思智能体自主执行文献回顾、方向探索、提案起草和质量评估。为了防止系统陷入死循环，构思阶段配备了自动化的质量门控和熔断机制。只有当一个提案围绕单一且界定良好的假设建立，并详细覆盖了动机、方法、相关工作、实验设计和成功标准后，它才能进入下一环节。同时，构思阶段还会施加边界约束，确保所选方向停留在AI/ML领域，且实验过程不需要人类标注，并能适配固定的计算预算。
 

@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Memory in the Loop: In-Process Retrieval as ExtendedWorking Memory for Language Agents</p>
 
-<img src="/images/2607.05690v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.05690v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当前的大语言模型智能体（Language Agents）普遍遵循着“观察-推理-行动”的经典循环，但它们所依赖的外部记忆，往往被隔离在这个核心循环之外。在现有的主流架构中，外部记忆通常被当作一个独立的数据库，智能体在每个对话轮次（Turn）开始时最多只查询一次。为什么不让智能体在每一步（Step）推理时都去查询和写入记忆？阻碍这一理想状态的唯一核心障碍是：延迟。
 
@@ -39,7 +39,7 @@ related_tutorials:
 
 为了解决这些问题，引入外部存储（如 RAG 系统）成为了标配。但这引出了检索频率（Retrieval Frequency）的定义差异。在传统的每轮检索（Per-turn Retrieval）中，系统仅在接收到用户指令时进行一次网络请求拉取背景信息，随后进入无记忆访问的内部推理循环。而 Memory in the Loop 则主张每步检索（Per-step Retrieval），允许智能体在每产生一个推理步骤或执行一个中间动作时，都能实时读写存储。
 
-<img src="/images/2607.05690v1/fig_loops.jpg" alt="检索频率对比：左侧为传统的每轮检索，右侧为Memory in the Loop架构，记忆读写无缝嵌入每一步推理循环中" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.05690v1/fig_loops.webp" alt="检索频率对比：左侧为传统的每轮检索，右侧为Memory in the Loop架构，记忆读写无缝嵌入每一步推理循环中" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在此前的研究中，如果在每步推理中都使用常规的网络向量库，由于每一步都会被检索阻塞，端到端延迟会被放大高达 $83$ 倍。其背后的数学逻辑非常清晰。如果我们建立一个简单的成本模型，端到端延迟可以近似表示为 $\text{E2E} \approx \sum (t_{\text{reason}} + f \cdot (t_{\text{embed}} + t_{\text{store}}))$，其中 $f$ 是每步的检索频率。
 
@@ -49,7 +49,7 @@ related_tutorials:
 
 为了更直观地量化这种架构转换带来的红利，研究人员绘制了“可行性边界”（Feasibility Frontier）。假设我们设定一个严格的预算：记忆操作带来的额外时间消耗不能超过端到端总延迟的 $10\%$（即 $\beta=0.1$）。在此预算下，智能体每步所能负担的最大检索次数 $f_{\max}$ 完全取决于单步推理时间 $r$ 与单次检索成本 $c$ 的比值。
 
-<img src="/images/2607.05690v1/feasibility_frontier.jpg" alt="可行性边界：展示了在10%延迟预算下，不同存储架构每步可负担的检索次数。进程内存储+本地嵌入的组合高出阈值三个数量级" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.05690v1/feasibility_frontier.webp" alt="可行性边界：展示了在10%延迟预算下，不同存储架构每步可负担的检索次数。进程内存储+本地嵌入的组合高出阈值三个数量级" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在传统的网络存储架构下，对于单步推理时间约为 $1$ 秒的大模型来说，其可负担的每步检索次数甚至达不到 $1$ 次——这就是为什么现有的智能体不得不精打细算地“配给”记忆访问权限。然而，当切换到进程内存储并搭配小型本地嵌入模型时，整套检索操作的时间被压缩到了约 $40\,\mu\mathrm{s}$。在相同的 $10\%$ 延迟预算下，系统每步可以轻松负担数千次检索。
 
@@ -67,7 +67,7 @@ related_tutorials:
 
 延展认知理论中的“对等原则”（Parity Principle）提出：当一个外部资源能够被持续获取、直接且无障碍地访问，并能被自动认可时，它就不再是外部工具，而是认知过程本身的组成部分。研究人员将这一哲学标准创造性地翻译为了工程领域的“延迟预算”。
 
-<img src="/images/2607.05690v1/fig_parity.jpg" alt="延展认知的对等原则：延迟决定了外部存储是否有资格成为工作记忆，而循环机制决定了它是否真正发挥作用" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.05690v1/fig_parity.webp" alt="延展认知的对等原则：延迟决定了外部存储是否有资格成为工作记忆，而循环机制决定了它是否真正发挥作用" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如果一个网络存储库需要 $100\,$ms 才能响应，这就相当于人类去翻阅一本放在书架上的参考书，它是一个被“查阅”的外部工具。但当延迟降至 $100\,\mu\mathrm{s}$，它的响应速度已经与模型访问自身上下文窗口的速度没有本质区别。这种极低延迟赋予了外部存储成为智能体“工作记忆”的物理资格。当然，极低延迟只是提供了可能性，智能体是否真的信任并依赖它（即自动认可原则），则取决于核心循环代码（Loop Wiring）是如何编写以及模型自身的策略规划能力。
 

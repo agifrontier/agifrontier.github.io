@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">DSAgentBench: Can Agents Automate End-to-End Data-Science Workflows in Real Computer Environments?</p>
 
-<img src="/images/2608.10366v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.10366v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 真实世界的数据科学远不止是在隔离的沙盒中编写几行 Python 代码并顺利通过单元测试。对于一线的分析师和算法工程师而言，日常工作是一个长周期、跨工具的复杂链路：从异构数据源的获取与清洗，到终端环境的依赖管理，再到 Jupyter Notebook 的探索性分析、IDE 中的模型训练以及最终的可视化呈现。这就要求操作者必须在真实的操作系统环境内，协调使用浏览器、数据库、终端和代码编辑器。然而，当前绝大多数用于评估大型语言模型（LLM）或 AI Agent 数据科学能力的基准测试，往往剥离了这些环境交互，仅仅关注静态的代码生成和语法正确性，未能真正捕捉到数据科学实践中多阶段、多工具协作的本质。
 
@@ -41,7 +41,7 @@ related_tutorials:
 
 另一方面，像 OSWorld 或 VisualWebArena 这样的多模态计算机控制基准，虽然实现了针对真实操作系统或网页环境的点击与输入测试，但其任务主要集中在日常办公、应用导航和通用网页浏览上，缺乏对深度分析推理和数学计算的考察。换句话说，它们测试的是 Agent “会不会用电脑”，而不是“能不能做数据科学”。
 
-<img src="/images/2608.10366v1/x1.jpg" alt="示例：DSAgentBench 中的智能体工作流，展示了从获取数据、执行代码到输出最终结果的多阶段操作轨迹" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2608.10366v1/x1.webp" alt="示例：DSAgentBench 中的智能体工作流，展示了从获取数据、执行代码到输出最终结果的多阶段操作轨迹" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 DSAgentBench 正是站在了这两个研究方向的交叉点上。它要求 Agent 必须同时具备强大的系统级交互能力和深厚的数据分析推理能力，在真实的操作系统中跑通端到端的链路。
 
@@ -51,7 +51,7 @@ DSAgentBench 正是站在了这两个研究方向的交叉点上。它要求 Age
 
 环境中预装了 Visual Studio Code 和 Jupyter Notebook 用于脚本开发与交互式分析，同时内置了 Chrome 浏览器以便 Agent 查阅文档或获取外部数据。此外，为了模拟真实的异构数据获取过程，环境还支持通过 Kaggle API、OpenML 甚至直连 SQLite 数据库来调取数据。Agent 不能调用任何作弊性质的底层 API，必须通过标准的图形用户界面（GUI）动作空间（如鼠标点击、拖拽、键盘输入）来控制这些应用，这完全复刻了人类分析师的工作方式。
 
-<img src="/images/2608.10366v1/x3.jpg" alt="DSAgentBench 环境架构与执行反馈循环" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2608.10366v1/x3.webp" alt="DSAgentBench 环境架构与执行反馈循环" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 #### 极具挑战的 275 个真实任务
 
@@ -59,11 +59,11 @@ DSAgentBench 正是站在了这两个研究方向的交叉点上。它要求 Age
 
 专家标注团队耗费约 400 小时，根据真实的 Kaggle 高分 Notebook 提炼出典型的数据流模式。每一个任务都包含一条自然语言指令、一个独立的环境初始化配置以及一个负责验证结果的 Python 评估器。更关键的是，为了保证基准的无懈可击，每一个任务都经过了严格的双人验证：一位标注者负责创建规范和评估逻辑，另一位标注者则必须在基准模型上独立运行该任务，并确认指令的清晰度和评估的绝对正确。只有当双方完全达成一致时（初次一致率达 86%，剩余经过反复修正），该任务才会被纳入最终集合。
 
-<img src="/images/2608.10366v1/x2.jpg" alt="基准测试任务构建流水线：从异构数据源收集，到人工与模型协作设计，再到双验证机制" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.10366v1/x2.webp" alt="基准测试任务构建流水线：从异构数据源收集，到人工与模型协作设计，再到双验证机制" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 从任务的生命周期分布来看，DSAgentBench 极其贴近工业界的真实时间分配：探索性数据分析（EDA）占据了最大的比重（43.3%），其余分布在数据获取、特征工程、模型建立、可视化展示以及模型评估等环节。
 
-<img src="/images/2608.10366v1/figure_pie.jpg" alt="基准测试中的任务类别分布比例" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.10366v1/figure_pie.webp" alt="基准测试中的任务类别分布比例" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 确定性执行验证：拒绝“表面文章”
 

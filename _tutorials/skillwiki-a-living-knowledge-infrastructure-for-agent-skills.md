@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">SkillWiki: A Living Knowledge Infrastructure for Agent Skills</p>
 
-<img src="/images/2606.16523v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.16523v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 随着大语言模型驱动的智能体（Agent）从执行简单的单次工具调用，逐步演进为能够自主执行复杂长周期任务的系统，Agent 需要掌握的技能数量和种类正在急剧膨胀。为了在真实环境中有效运作，Agent 必须从多种来源获取大量可复用的技能。这些来源不仅包括人工设计的提示词，还涵盖了执行轨迹、环境交互记录、文档说明以及历史经验。然而，随着Agent能力的增长，技能库的规模和异构性也在成倍增加，导致技能的管理成为一个棘手的系统工程问题。
 
@@ -33,13 +33,13 @@ related_tutorials:
 
 为了打破这一瓶颈，哈尔滨工业大学、南洋理工大学与腾讯的研究人员共同提出了 SkillWiki。这是一个面向大规模 Agent 技能生态的“活的”知识基础设施。它不再将技能视为存储在数据库里的死板代码，而是将其建模为可以被持续生产、组织、验证、版本控制并基于执行反馈不断演进的“能力资产”。SkillWiki 构建了一个完整的闭环生态系统，使得底层知识、Agent 技能以及执行经验能够在共享的基础设施中协同进化，首次在系统层面解决了 Agent 技能大规模治理的难题。
 
-<img src="/images/2606.16523v1/x1.jpg" alt="从孤立的技能集合走向受治理的技能生态。" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2606.16523v1/x1.webp" alt="从孤立的技能集合走向受治理的技能生态。" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 要理解 SkillWiki 的突破性，首先需要审视传统技能库管理方式的局限。过去的方法在面对激增的技能数量时，往往只是简单地将新获取的提示词或脚本堆砌到向量数据库中。这种做法会导致知识来源模糊不清、技能之间的依赖关系难以维护，并且当环境发生变化或底层 API 更新时，旧技能会迅速失效并引发连锁错误。SkillWiki 的设计理念发生了根本性转变：它将技能管理视为一个基础设施问题，引入了类似软件工程领域的全生命周期治理机制。
 
 SkillWiki 的系统架构由两个紧密耦合的核心工作流构成：一个是基于知识的技能生产工作流，负责将异构的知识材料转化为标准的技能资产；另一个是治理工作流，负责技能的组织、版本控制、维护和演进。这种解耦设计使得系统既能源源不断地从新知识中汲取养分，又能保持整个技能生态的健康与稳定。
 
-<img src="/images/2606.16523v1/x2.jpg" alt="SkillWiki的系统概览：两大工作流支撑知识、技能与经验的协同演进。" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.16523v1/x2.webp" alt="SkillWiki的系统概览：两大工作流支撑知识、技能与经验的协同演进。" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在“从知识到技能”的转化阶段，SkillWiki 展现出了极强的包容性与结构化能力。系统并不会直接修改或丢弃原始的知识材料，而是将它们作为长期资产妥善保存。无论是 Agent 过去的执行轨迹、外部 API 规范、操作文档还是历史代码脚本，SkillWiki 都能通过统一的管线从中提取出可复用的操作动作、工作流和业务模式，并将它们构造为结构化的能力表示形式。
 
@@ -51,13 +51,13 @@ SkillWiki 的系统架构由两个紧密耦合的核心工作流构成：一个�
 
 除了被动的治理，SkillWiki 还具备执行驱动的自主演进能力。系统并不认为技能发布后就一劳永逸，而是将演进视为一个基于反馈的持续过程。在 Agent 调用技能执行任务的过程中，SkillWiki 会在后台静默收集丰富的使用统计数据，包括调用成功率、执行延迟、失败模式以及 Agent 的反思记忆。一旦系统监测到某个技能的性能出现明显下降，或者识别出某种反复出现的环境失效模式，就会自动触发健康评估，并生成针对性的维护提案。这些提案随后会流入自动化的治理管线，生成修复后的新版本。这种从执行反馈到版本更新的闭环，使得整个技能库能够随着环境的变化和经验的积累，持续不断地自我适应和修复。
 
-<img src="/images/2606.16523v1/x3.jpg" alt="SkillWiki的交互界面与核心功能演示，涵盖知识摄取、溯源探索、自动化治理与演进。" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2606.16523v1/x3.webp" alt="SkillWiki的交互界面与核心功能演示，涵盖知识摄取、溯源探索、自动化治理与演进。" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 为了验证这一基础设施的有效性，研究团队不仅构建了完整的 SkillWiki 系统并提供了交互式演示界面和命令行工具，还进行了专门的评估测试。在针对涵盖轨迹、文档、API 规范等 5 种不同来源的 125 个知识制品的测试中，SkillWiki 成功证明了其能够可靠地将高度异构的原始材料转化为受治理的标准技能资产。
 
 不仅如此，研究团队还通过一个完整的端到端案例，清晰地展示了 SkillWiki 对技能生命周期的管控能力。以一份 API 文档作为起点，系统自动完成了技能的提取与构建，随后该技能顺利通过验证并正式发布投入使用。在后续的模拟运行中，当检测到执行异常时，系统成功触发了自动修复机制，生成了新版本，并将旧版本平滑地过渡到了废弃和归档状态。这一流转过程完整覆盖了从最初的 S0 状态到最终的 S7 状态，充分验证了基于 Git 风格的生命周期管理在 Agent 技能生态中的可行性与巨大潜力。
 
-<img src="/images/2606.16523v1/x4.jpg" alt="一个技能在SkillWiki中的完整生命周期轨迹。" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.16523v1/x4.webp" alt="一个技能在SkillWiki中的完整生命周期轨迹。" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 SkillWiki 的提出，标志着 Agent 领域正在经历一次重要的视角转换。过去，行业内的目光大多聚焦于如何提升单个大模型在特定任务上的 prompt 遵循能力，或者如何让 Agent 通过单次反思记住某个正确的动作。而 SkillWiki 告诉我们，当 Agent 真正走向大规模落地时，我们更需要关注的是底层的“基础设施”。
 

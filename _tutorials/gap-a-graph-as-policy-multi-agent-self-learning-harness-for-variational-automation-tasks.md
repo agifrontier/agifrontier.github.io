@@ -55,7 +55,7 @@ related_tutorials:
 
 边（$E$）则相当于“传送带”与“控制阀”。数据边负责将上一个加工站的输出传递给下一个节点，控制边则根据条件判断执行走向。
 
-<img src="/images/2607.05369v1/x1.jpg" alt="[Uncaptioned image]" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.05369v1/x1.webp" alt="[Uncaptioned image]" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 通过这种图结构，GaP 极大地限制了单个智能体的上下文负担，并杜绝了模型虚构不存在技能的“作弊”行为。
 
@@ -75,7 +75,7 @@ GaP 会在仿真中反复“彩排”这些实例。如果某次执行失败，�
 
 随后，智能体们会触发图更新机制。它们会迭代地修改计算图架构，例如替换功能相似的节点、调整连接边，或是修改代码参数。这一过程会持续进行，直到任务的成功率与吞吐量达到平台期。
 
-<img src="/images/2607.05369v1/rehearsal-new.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.05369v1/rehearsal-new.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 核心实验与惊人表现
 
@@ -93,7 +93,7 @@ GaP 会在仿真中反复“彩排”这些实例。如果某次执行失败，�
 
 在工业气息更浓的 **插入USB-C线缆**（**Insert Cables**） 真实任务中，由于引入了 ROS 节点，GaP 在 130 次试验中取得了 0.93 的高成功率。
 
-<img src="/images/2607.05369v1/usb-insertion_setup.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.05369v1/usb-insertion_setup.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 而在仿真的 **清洗周转箱**（**Wash Crates**） 双臂协作任务中，GaP 自主生成的策略图达到了 0.953 的成功率。这几乎媲美了人类专家手工精心调试的策略性能（0.987）。
 

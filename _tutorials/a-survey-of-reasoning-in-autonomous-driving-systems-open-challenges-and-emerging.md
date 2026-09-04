@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 自动驾驶的“认知”革命：大模型如何攻克7大核心推理挑战？
 
-<img src="/images/2603.11093v1/A__title.jpg" alt="自动驾驶的“认知”革命：大模型如何攻克7大核心推理挑战？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.11093v1/A__title.webp" alt="自动驾驶的“认知”革命：大模型如何攻克7大核心推理挑战？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 自动驾驶汽车已经从科幻驶入现实，但为何它们在面对人类司机看来“常识性”的复杂路况时，仍会显得犹豫甚至犯错？当感知能力不再是唯一瓶颈，真正的挑战已经悄然转向一个更深层次的问题：**推理能力的缺失**。
 
@@ -22,7 +22,7 @@ related_tutorials:
 
 最近，来自华东师范大学、香港大学和清华大学的学者联合发表了一篇综述，系统性地探讨了自动驾驶领域的这一核心难题。该研究旗帜鲜明地指出，我们不应再将推理视为一个独立的模块，而应将其提升为整个自动驾驶系统的**认知核心**。更令人兴奋的是，以LLM和MLLM为代表的大模型，正为这场“认知”革命带来了前所未有的机遇。
 
-<img src="/images/2603.11093v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.11093v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1：显式推理为何至关重要。左侧为7大推理挑战，右侧展示了缺乏推理的系统（红色决策）与具备推理能力的系统（绿色决策）在处理突发状况时的巨大差异。*
 
@@ -38,7 +38,7 @@ related_tutorials:
 
 为了精准地分析和解决问题，研究者首先提出了一个全新的**认知层次**（**Cognitive Hierarchy**）框架，将“驾驶”这一宏大任务，按认知和交互的复杂性，分解为三个层次。
 
-<img src="/images/2603.11093v1/Task_Definition.jpg" alt="Refer tocaption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.11093v1/Task_Definition.webp" alt="Refer tocaption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图2：驾驶任务的三层认知层次框架*
 

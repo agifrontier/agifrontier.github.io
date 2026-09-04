@@ -13,7 +13,7 @@ related_tutorials:
 
 ## LLM Agent全面爆发：人大重磅综述，一套统一架构读懂通往AGI的未来
 
-<img src="/images/2308.11432v7/A__title.jpg" alt="LLM Agent全面爆发：人大重磅综述，一套统一架构读懂通往AGI的未来 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2308.11432v7/A__title.webp" alt="LLM Agent全面爆发：人大重磅综述，一套统一架构读懂通往AGI的未来 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 从AutoGPT的横空出世到斯坦福“西部世界”的惊艳亮相，**自主智能体**（**Autonomous Agents**）正以惊人的速度重塑我们对AI的认知。如果说ChatGPT只是一个博学的“大脑”，那么Agent就是给这个大脑装上了手脚和感官，让它真正具备了像人一样在物理或数字世界中行动的能力。
 
@@ -31,13 +31,13 @@ LLM的出现改变了游戏规则。凭借海量的网络知识和强大的泛�
 
 如图1所示，这一领域的论文数量在2023年呈现了井喷式的增长。
 
-<img src="/images/2308.11432v7/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2308.11432v7/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 核心解密：Agent的统一架构框架
 
 为了理清纷繁复杂的研究，论文提出了一个通用的Agent架构框架。这个框架将一个合格的Agent拆解为四个核心模块：**配置**（**Profiling**）、**记忆**（**Memory**）、**规划**（**Planning**）和**行动**（**Action**）。
 
-<img src="/images/2308.11432v7/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2308.11432v7/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 这就好比一个人类员工：他首先要有职业身份（配置），然后要能记住工作经验（记忆），接到任务后要懂得拆解步骤（规划），最后动手执行（行动）。
 
@@ -86,7 +86,7 @@ Agent不仅仅是一个问答机器，它通常需要扮演特定的角色，比
 
 此外，**带反馈的规划**至关重要。Agent不能只是一股脑地生成计划，还需要根据环境反馈（比如代码运行报错了）来修正计划，这被称为“环境反馈”或“自我修正”。
 
-<img src="/images/2308.11432v7/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2308.11432v7/x3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 #### 4. 行动模块（Action）：从数字到物理
 

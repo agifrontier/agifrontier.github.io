@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 斯坦福Agent新解：3B模型压缩上下文，99%性能仅需26%成本
 
-<img src="/images/2512.21720v1/A__title.jpg" alt="斯坦福Agent新解：3B模型压缩上下文，99%性能仅需26%成本 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.21720v1/A__title.webp" alt="斯坦福Agent新解：3B模型压缩上下文，99%性能仅需26%成本 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 像 "Deep Research" 和 "Claude Code" 这样的现代 AI 应用正在重塑我们的工作流。在这些光鲜亮丽的系统背后，往往隐藏着一种通用的架构模式：**多模型协作**。
 

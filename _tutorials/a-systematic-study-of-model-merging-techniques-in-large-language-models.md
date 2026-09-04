@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 大模型融合实测：6种先进方法惨败，竟不敌最简单的“加减法”？
 
-<img src="/images/2511.21437v1/A__title.jpg" alt="大模型融合实测：6种先进方法惨败，竟不敌最简单的“加减法”？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.21437v1/A__title.webp" alt="大模型融合实测：6种先进方法惨败，竟不敌最简单的“加减法”？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 想不想把多个“偏科”的AI模型融合成一个全能的“六边形战士”，还不用花钱重新训练？
 
@@ -33,7 +33,7 @@ related_tutorials:
 
 整个评测流程如下图所示，堪称“地毯式”搜索：
 
-<img src="/images/2511.21437v1/x1.jpg" alt="评测流程图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.21437v1/x1.webp" alt="评测流程图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 这6种方法可以分为两大类：
 
@@ -73,7 +73,7 @@ related_tutorials:
 
 然而，结果却出人意料。
 
-<img src="/images/2511.21437v1/x3.jpg" alt="Task Arithmetic性能表现" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.21437v1/x3.webp" alt="Task Arithmetic性能表现" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，横轴是融合模型的数量，纵轴是相对基础模型的平均准确率提升。
 
@@ -89,7 +89,7 @@ related_tutorials:
 
 听起来是不是非常高明？但现实是残酷的。
 
-<img src="/images/2511.21437v1/x6.jpg" alt="子空间融合方法性能表现" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.21437v1/x6.webp" alt="子空间融合方法性能表现" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 从上图可以清晰地看到，这三种子空间方法在LLM上几乎全军覆没。随着融合模型数量的增加，它们的性能都出现了显著的下滑，远不如基础模型。
 

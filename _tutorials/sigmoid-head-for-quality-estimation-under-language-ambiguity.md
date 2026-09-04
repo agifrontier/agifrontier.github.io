@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 告别Softmax“分票”困境：Sigmoid Head无需人工标注，精准量化大模型置信度
 
-<img src="/images/2601.00680v1/A__title.jpg" alt="告别Softmax“分票”困境：Sigmoid Head无需人工标注，精准量化大模型置信度 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.00680v1/A__title.webp" alt="告别Softmax“分票”困境：Sigmoid Head无需人工标注，精准量化大模型置信度 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型（LLM）经常会让我们面临一个棘手的悖论：有时候它一本正经地胡说八道（幻觉），有时候它明明说对了，给出的置信度（Probability）却很低。
 
@@ -52,7 +52,7 @@ related_tutorials:
 
 Sigmoid 允许每个 token 独立打分。这意味着，在理想情况下，模型可以同时给“Start”和“Begin”打出接近 1 的高分，而不再需要它们互相“抢夺”概率。
 
-<img src="/images/2601.00680v1/x1.jpg" alt="Sigmoid Head 架构图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.00680v1/x1.webp" alt="Sigmoid Head 架构图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图 1：在预训练模型上扩展的 Sigmoid Head 架构。原有的 Softmax Head 保持不变，新增的 Sigmoid Head 负责输出独立的质量分数。*
 
@@ -89,9 +89,9 @@ Sigmoid 允许每个 token 独立打分。这意味着，在理想情况下，�
 
 *   **排除优势词的 Sigmoid Head（图 f）**：预测分数与真实质量呈现出最佳的线性关系。
 
-<img src="/images/2601.00680v1/x2.jpg" alt="不同策略下的质量评估对比" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.00680v1/x2.webp" alt="不同策略下的质量评估对比" style="width:85%; max-width:450px; margin:auto; display:block;">
 
-<img src="/images/2601.00680v1/x7.jpg" alt="不同策略下的质量评估对比" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.00680v1/x7.webp" alt="不同策略下的质量评估对比" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图 2：真实质量分数 vs. 预测质量分数。(a) 标准 Softmax 明显低估了高质量输出；(f) 采用本文策略的 Sigmoid Head 展现了最佳的一致性。*
 

@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Weak-to-Strong Generalization via Direct On-Policy Distillation</p>
 
-<img src="/images/2607.05394v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.05394v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 带有可验证奖励的强化学习（RLVR）是当前激活大型语言模型深层推理能力的核心密码。从各大顶尖机构的动作来看，让模型在数学、代码等逻辑严密领域通过自我纠错和多步推理来获取高分，已经成为一种标配。然而，这种后训练（post-training）范式极其昂贵。因为无论算法多么精妙，每一次策略更新都要求当前的大模型在环境中进行海量的采样（rollouts）。随着目标推理模型越来越庞大，生成这些训练轨迹的速度变得极其缓慢，最终使得强化学习本身成了整个模型迭代周期的最大算力瓶颈。
 
@@ -40,7 +40,7 @@ related_tutorials:
 
 当大模型本身的初始能力已经超过了这个小模型时，强行要求大模型去拟合小模型的绝对输出，本质上是在用小模型的天花板来压抑大模型的潜力。实验数据清晰地展现了这一悲剧：在一个测试中，R1-Distill-7B 模型的初始准确率为 56.7，而作为教师的 post-RL JustRL-1.5B 模型准确率只有 51.3。如果使用传统的 OPD 让 7B 模型去向 1.5B 模型学习，7B 模型的表现会被硬生生拖拽到 50 左右。这说明，弱模型身上确实带着强化学习的宝贵经验，但它的绝对策略分布绝不是传递这些经验的合格载体。
 
-<img src="/images/2607.05394v1/x1.jpg" alt="Direct-OPD机制与效果对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.05394v1/x1.webp" alt="Direct-OPD机制与效果对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 核心机制：剥离缺陷，提取隐式奖励
 
@@ -67,13 +67,13 @@ related_tutorials:
 
 第一个关键事实是，这种弱到强的范式不仅是一种节约算力的退而求其次的选择，它在最终效果上甚至可以击败直接在大模型上死磕强化学习。研究团队进行了一场严格的对比测试：一条路线是直接在 R1-Distill-7B 模型上运行标准的强化学习；另一条路线是先用极小的开销在 1.5B 模型上跑完强化学习，然后通过 Direct-OPD 将策略偏移转移给 7B 模型。
 
-<img src="/images/2607.05394v1/x4.jpg" alt="弱到强蒸馏与直接RL的对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.05394v1/x4.webp" alt="弱到强蒸馏与直接RL的对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 测试结果证明了分步策略的巨大优势。直接在一个 7B 级别的大模型上启动强化学习，往往面临着严重的探索不稳定性和冷启动问题，算力在大量的无效试错中被白白燃烧。而小模型的参数量小，探索的迭代速度极快，更容易在复杂的解题空间中找到那条高分路径。随后 Direct-OPD 将这条路径转化为密集的信号指引大模型。这不仅大幅缩短了上分时间，其最终达到的性能天花板也比匹配步数的直接强化学习更高。
 
 Direct-OPD 的另一个杀手锏是其绝佳的可组合性（Sequential composition）。因为转移的不再是模型的绝对输出，而是某种特定能力的“增量修改”，这就意味着你可以像堆叠系统补丁一样，将不同训练来源的策略偏移依次注入到同一个模型中。
 
-<img src="/images/2607.05394v1/x5.jpg" alt="不同策略偏移的连续组合" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.05394v1/x5.webp" alt="不同策略偏移的连续组合" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在连续组合实验中，研究人员首先用一组基于特定数据源训练出来的小模型策略偏移（比如强化逻辑拆解能力）去训练大模型；随后，在保持该大模型当前状态的基础上，再引入另一组完全不同数据流派下产生的策略偏移（比如强化特定学科的运算能力）继续训练。轨迹清楚地表明，大模型能够平滑地吸收第二阶段的技能，使得各项能力得以线性累加，而不会引发严重的灾难性遗忘。这为未来打造全能型的超级推理模型提供了一种极其廉价且模块化的生产流水线。
 
@@ -91,7 +91,7 @@ Direct-OPD 的另一个杀手锏是其绝佳的可组合性（Sequential composi
 
 不过，将两个模型的对数差值直接当做奖励来用，并非没有风险。其最大的隐患在于尺度的不可控。这个密集的隐式奖励带有一个它自己无法决定的缩放系数——这取决于小模型在强化学习时的探索步长和它自身的 KL 惩罚预算。当大模型游荡到一些非常罕见的状态时，教师模型和参考模型给出的概率都极低，此时两者的对数差值可能会剧烈波动，产生极度嘈杂的伪信号。
 
-<img src="/images/2607.05394v1/x11.jpg" alt="KL系数对奖励可靠性的影响" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.05394v1/x11.webp" alt="KL系数对奖励可靠性的影响" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 为了把控这种局面，本文设计了一种基于奖励符号的自适应 KL 控制器。传统的 KL 控制通常是硬性要求模型之间的偏离度维持在一个固定数值；而这里的控制器则敏锐地根据当前密集奖励的局部平均符号进行动态涨跌。当大模型当前采样的轨迹在平均意义上获得了正向的策略偏移，说明大模型正在顺着正确的方向狂奔，此时系统会主动提高 KL 系数（$\alpha$），如同勒紧缰绳，防止大模型对这片局部的优质信号过度拟合而走向极端；相反，如果大模型不慎掉入了一个充满负向偏移的糟糕区域，系统会迅速降低 KL 系数，松开缰绳，允许大模型打破与初始状态的锚定，以最快速度逃离这片惩罚泥潭。
 

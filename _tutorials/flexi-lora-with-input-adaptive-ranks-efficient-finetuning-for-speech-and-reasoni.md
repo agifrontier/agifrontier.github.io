@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Flexi-LoRA with Input-Adaptive Ranks: Efficient Finetuning for Speech and Reasoning Tasks</p>
 
-<img src="/images/2605.01959v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2605.01959v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大型语言模型的落地部署正经历一场从追求极度规模到追求极致效率的范式转移。在这个过程中，低秩自适应（Low-Rank Adaptation，即 **LoRA**）凭借其极小的训练开销，几乎成为了参数高效微调（Parameter-Efficient Fine-Tuning）的行业基石。然而，随着模型面对的应用场景日益复杂，学术界逐渐意识到了一个根本性的矛盾：当前的 LoRA 框架在参数分配上是绝对静态的。
 
@@ -39,7 +39,7 @@ related_tutorials:
 
 更深层的问题在于，现实世界中的任务输入具有极大的方差。一个理想的高效模型，应该具备“看菜下饭”的能力——对简单问题只动用极少的参数通道，对复杂问题则火力全开。
 
-<img src="/images/2605.01959v1/cover_figure.jpg" alt="Flexi-LoRA与静态LoRA对复杂度和Rank分配的对比" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2605.01959v1/cover_figure.webp" alt="Flexi-LoRA与静态LoRA对复杂度和Rank分配的对比" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在此之前，学术界并非没有尝试过让 Rank 动起来。诸如 **AdaLoRA** 等方法，通过重要性评估在训练过程中逐步削减某些权重层的 Rank。但这种方法本质上是一种“渐进式剪枝”，一旦训练完成，它最终收敛到的依然是一个静态的参数配置，在推理时丧失了对不同输入的灵活性。
 
@@ -49,7 +49,7 @@ related_tutorials:
 
 剑桥大学的研究团队敏锐地识别到了现有方法的两大盲区：**缺乏样本级的难度感知能力**以及**训练与推理机制的断层**。为此，他们设计的 Flexi-LoRA 框架将混合专家模型（MoE）的思想与参数高效微调进行了巧妙的融合。
 
-<img src="/images/2605.01959v1/method.jpg" alt="Flexi-LoRA的核心方法架构与路由机制" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2605.01959v1/method.webp" alt="Flexi-LoRA的核心方法架构与路由机制" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 该方法的核心架构包含两个决定性的创新模块：
 
@@ -63,7 +63,7 @@ related_tutorials:
 
 为了验证这种动态路由机制的真实效用，研究团队在涵盖了自然语言问答（QA）、数学逻辑推理以及语音识别等多个维度的评测基准上进行了详实的验证。实验选用了具备指令微调能力的 LLaMA-3.2（1B 和 3B 规模）作为基础模型。实验数据清晰地表明，Flexi-LoRA 彻底改写了参数效率与模型性能之间的帕累托前沿（Pareto Optimality）。
 
-<img src="/images/2605.01959v1/x1.jpg" alt="不同微调方法在QA与数学任务上的性能-效率权衡曲线" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2605.01959v1/x1.webp" alt="不同微调方法在QA与数学任务上的性能-效率权衡曲线" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在衡量参数有效性的核心指标上，Flexi-LoRA 展现出了惊人的效率压缩能力。在广泛使用的多源问答（QA）测试集中，配置为跨度 $(2,8)$ 的 Flexi-LoRA 达到了所有对比方法中最高的 F1 分数（52.37%）和精确匹配度（EM 37.41%）。实现这一顶尖成绩，它仅仅调动了相当于静态 LoRA-8 约 **29.59%** 的参数量。
 

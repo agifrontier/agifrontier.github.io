@@ -13,7 +13,7 @@ related_tutorials:
 
 ## RL微调避坑指南：揭秘KL正则化的“梯度陷阱”与性能真相
 
-<img src="/images/2512.21852v1/A__title.jpg" alt="RL微调避坑指南：揭秘KL正则化的“梯度陷阱”与性能真相 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.21852v1/A__title.webp" alt="RL微调避坑指南：揭秘KL正则化的“梯度陷阱”与性能真相 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 随着 DeepSeek-R1 等模型的爆火，**强化学习**（**Reinforcement Learning, RL**）在提升大模型推理能力方面的潜力再次成为焦点。现在的开发者们都在忙着复现 GRPO、PPO，试图让自己的模型在数学和代码任务上“顿悟”。
 

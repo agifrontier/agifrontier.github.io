@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 速度飙升17倍，成本仅1/19：微软亚马逊用小模型“蒸馏”搞定企业搜索标注
 
-<img src="/images/2601.03211v1/A__title.jpg" alt="速度飙升17倍，成本仅1/19：微软亚马逊用小模型“蒸馏”搞定企业搜索标注 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.03211v1/A__title.webp" alt="速度飙升17倍，成本仅1/19：微软亚马逊用小模型“蒸馏”搞定企业搜索标注 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在企业级搜索领域，由于数据隐私和专业性的限制，构建高质量的标注数据集一直是一个令人头疼的难题。虽然利用 GPT-4 这样的**大语言模型**（**Large Language Models, LLMs**）进行自动标注已成为一种流行方案，但其昂贵的推理成本和缓慢的吞吐量，使其难以在生产环境中大规模应用。
 
@@ -35,7 +35,7 @@ related_tutorials:
 
 为了打破这一僵局，研究团队设计了一套无需人工查询日志的**合成数据生成流水线**。该方法仅需少量的种子文档，即可自动生成高质量的训练数据。
 
-<img src="/images/2601.03211v1/finetune.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.03211v1/finetune.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 整个流程分为四个关键步骤：
 
@@ -77,7 +77,7 @@ related_tutorials:
 
 *   **成本**：在输入和输出 token 的计费上，使用 Phi-3.5 Mini 的成本仅为 GPT-4o 的 **1/19**。
 
-<img src="/images/2601.03211v1/figure_new.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.03211v1/figure_new.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 深度洞察：数据质量 > 数量
 

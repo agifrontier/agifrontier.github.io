@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Socratic-SWE: Self-Evolving Coding Agents via Trace-Derived Agent Skills</p>
 
-<img src="/images/2606.07412v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.07412v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 近年来，大型语言模型在软件工程（Software Engineering, SWE）领域的表现，已成为衡量其真实世界推理与执行能力的核心试金石。然而，要训练出顶尖的编程智能体（Agent），往往受限于高质量代码工程任务数据的严重稀缺。为了打破这种长期存在的数据瓶颈，阿里巴巴和上海交通大学的研究团队提出了一种名为 **Socratic-SWE** 的全新闭环自我进化框架。
 

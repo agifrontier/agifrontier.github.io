@@ -56,16 +56,16 @@ GPT-4项目的一个核心重点是构建一个可预测扩展的深度学习堆
 
 其中，$L(C)$ 是计算量为 $C$ 时的损失。通过使用计算量远小于GPT-4（最多10,000倍）的模型进行训练，该定律成功地高精度预测了GPT-4的最终损失。
 
-<img src="/images/2303.08774v6/x1.jpg" alt="图1：GPT-4及更小模型的性能。纵轴为内部代码库数据集上的最终损失。虚线是根据小模型拟合的幂律，它准确预测了GPT-4的最终损失。" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2303.08774v6/x1.webp" alt="图1：GPT-4及更小模型的性能。纵轴为内部代码库数据集上的最终损失。虚线是根据小模型拟合的幂律，它准确预测了GPT-4的最终损失。" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 2. 能力预测
 除了损失，本文还开发了预测更具可解释性的能力指标的方法，例如在HumanEval（一个衡量Python代码生成能力的数据集）上的通过率。通过外推计算量最多小1,000倍的模型的性能，本文成功预测了GPT-4在HumanEval部分子集上的表现。
 
-<img src="/images/2303.08774v6/x2.jpg" alt="图2：GPT-4及更小模型在HumanEval子集上的性能。纵轴为平均对数通过率。虚线是根据小模型拟合的幂律，它准确预测了GPT-4的性能。" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2303.08774v6/x2.webp" alt="图2：GPT-4及更小模型在HumanEval子集上的性能。纵轴为平均对数通过率。虚线是根据小模型拟合的幂律，它准确预测了GPT-4的性能。" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 然而，并非所有能力都能被轻易预测。例如，在“Hindsight Neglect”任务上，小模型的性能随规模增大而下降，但GPT-4逆转了这一趋势，表现出涌现能力（emergent ability）。
 
-<img src="/images/2303.08774v6/x3.jpg" alt="图3：GPT-4及更小模型在Hindsight Neglect任务上的性能。纵轴为准确率，越高越好。GPT-4逆转了小模型上观察到的负向扩展趋势。" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2303.08774v6/x3.webp" alt="图3：GPT-4及更小模型在Hindsight Neglect任务上的性能。纵轴为准确率，越高越好。GPT-4逆转了小模型上观察到的负向扩展趋势。" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 创新点：多模态输入
 GPT-4能够接受由文本和图像任意交错组成的提示，并生成文本输出。这一能力使其可以处理包含图表、截图、照片的文档，并执行视觉或语言任务。
@@ -100,7 +100,7 @@ GPT-4能够接受由文本和图像任意交错组成的提示，并生成文本
 ### 能力验证
 1.  **专业和学术考试**: GPT-4在为人类设计的多种模拟考试中展现了人类水平的表现，显著优于GPT-3.5。例如，在模拟律师资格考试中，GPT-4的得分位于应试者的前10%，而GPT-3.5则在后10%。
 
-    <img src="/images/2303.08774v6/x4.jpg" alt="图4：GPT在学术和专业考试上的表现。GPT-4在大多数考试中优于GPT-3.5。" style="width:85%; max-width:450px; margin:auto; display:block;">
+    <img src="/images/2303.08774v6/x4.webp" alt="图4：GPT在学术和专业考试上的表现。GPT-4在大多数考试中优于GPT-3.5。" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 
     | 考试 | GPT-4 | GPT-4 (无视觉) | GPT-3.5 |
@@ -126,7 +126,7 @@ GPT-4能够接受由文本和图像任意交错组成的提示，并生成文本
 
 3.  **多语言能力**: 通过将MMLU基准翻译成多种语言进行测试，发现GPT-4在大多数语言上的表现超过了现有模型在英语上的SOTA水平，即使是对于拉脱维亚语、威尔士语等低资源语言。
 
-    <img src="/images/2303.08774v6/x5.jpg" alt="图5：GPT-4在多种语言上的MMLU表现，与先前模型在英语上的表现对比。" style="width:80%; max-width:300px; margin:auto; display:block;">
+    <img src="/images/2303.08774v6/x5.webp" alt="图5：GPT-4在多种语言上的MMLU表现，与先前模型在英语上的表现对比。" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 ### 局限性分析
 尽管能力强大，GPT-4仍存在与早期模型相似的局限性：
@@ -134,7 +134,7 @@ GPT-4能够接受由文本和图像任意交错组成的提示，并生成文本
 *   **知识时效性**: 其知识大部分截止于2021年9月，并且无法从经验中学习。
 *   **校准度**: 预训练模型具有良好的校准度（其预测的置信度与正确率相符），但在经过后训练对齐过程后，校准度显著下降。
 
-<img src="/images/2303.08774v6/x8.jpg" alt="图8：预训练（左）和后训练（右）GPT-4模型在MMLU子集上的校准图。后训练过程损害了校准度。" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2303.08774v6/x8.webp" alt="图8：预训练（左）和后训练（右）GPT-4模型在MMLU子集上的校准图。后训练过程损害了校准度。" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 风险与缓解措施
 本文通过专家对抗性测试和模型辅助安全流程等措施，显著改善了GPT-4的安全属性：
@@ -142,6 +142,6 @@ GPT-4能够接受由文本和图像任意交错组成的提示，并生成文本
 *   **遵循策略**: 在处理敏感请求（如医疗建议和自残）时，GPT-4遵循策略的频率提高了29%。
 *   **毒性降低**: 在RealToxicityPrompts数据集上，GPT-4生成有毒内容的比例仅为0.73%，远低于GPT-3.5的6.48%。
 
-<img src="/images/2303.08774v6/x10.jpg" alt="图9：在敏感和违禁提示上的不当行为率。数值越低越好。GPT-4 RLHF模型的不当行为率远低于先前模型。" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2303.08774v6/x10.webp" alt="图9：在敏感和违禁提示上的不当行为率。数值越低越好。GPT-4 RLHF模型的不当行为率远低于先前模型。" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 尽管取得了显著进步，但仍然存在可以绕过安全机制的“越狱”（jailbreaks）方法。因此，部署时的安全措施（如滥用监控）和模型的快速迭代改进仍然至关重要。

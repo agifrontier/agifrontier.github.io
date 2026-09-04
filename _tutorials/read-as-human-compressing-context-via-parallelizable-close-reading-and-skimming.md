@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 像人一样“精读+略读”：RAM长文本压缩框架实现12倍加速
 
-<img src="/images/2602.01840v1/A__title.jpg" alt="像人一样“精读+略读”：RAM长文本压缩框架实现12倍加速 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2602.01840v1/A__title.webp" alt="像人一样“精读+略读”：RAM长文本压缩框架实现12倍加速 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 面对动辄几万字的超长文档，人类是如何阅读的？我们通常不会逐字逐句地读完每一个字，而是会快速**略读**（Skimming）背景信息，一旦发现与目标相关的关键段落，就会立刻切换到**精读**（Close Reading）模式。
 
@@ -35,13 +35,13 @@ RAM 的核心洞察在于：**高效的压缩应当是并行的，且保留形�
 
 如下图所示，相比于一次性加载（图a）和自回归压缩（图b），RAM（图c）采用了并行处理策略，并根据相关性自适应地决定哪些段落该“精读”，哪些该“略读”。
 
-<img src="/images/2602.01840v1/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2602.01840v1/x3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### RAM 技术核心：并行编码与混合压缩
 
 RAM 的工作流程非常清晰，主要包含两个阶段：**查询感知的并行编码** 和 **自适应压缩与训练**。
 
-<img src="/images/2602.01840v1/x4.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2602.01840v1/x4.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 1. 并行分块与相关性计算
 
@@ -91,7 +91,7 @@ RAM 首先将长上下文 $\mathbf{C}$ 切分为 $N$ 个等长的片段（Segmen
 
 如下表所示，在 4倍 和 8倍 的压缩率下，RAM 几乎在所有数据集上都取得了最优（Bold）的成绩。特别是在 NaturalQuestions 数据集上，RAM 的表现显著优于 LongLLMLingua 等强力基线。
 
-<img src="/images/2602.01840v1/x6.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2602.01840v1/x6.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *(注：表格数据展示了 RAM 在不同数据集上的 EM 和 F1 分数，均优于对比方法)*
 

@@ -13,7 +13,7 @@ related_tutorials:
 
 ## Sakana AI新作：赋予模型“即时记忆”，4K训练竟能泛化至128K长文
 
-<img src="/images/2601.00671v1/A__title.jpg" alt="Sakana AI新作：赋予模型“即时记忆”，4K训练竟能泛化至128K长文 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.00671v1/A__title.webp" alt="Sakana AI新作：赋予模型“即时记忆”，4K训练竟能泛化至128K长文 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 如果大模型像人类一样阅读一本书，目前的架构往往面临一个两难的选择：要么像 Transformer 那样拥有“过目不忘”的能力，但随着书本变厚，脑容量（显存和计算量）呈平方级爆炸；要么像线性注意力（Linear Attention）那样读得飞快，但“读了后页忘前页”，受限于固定的记忆容量。
 
@@ -60,7 +60,7 @@ FwPKM 的工作流程可以概括为以下几个精妙的步骤：
 
     并不是所有信息都需要存入情景记忆。模型引入了一个门控值 $g\_t$，智能地决定是依赖静态的“慢权重”知识，还是调用动态的 FwPKM “快权重”记忆。
 
-<img src="/images/2601.00671v1/x1.jpg" alt="FwPKM 架构图" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2601.00671v1/x1.webp" alt="FwPKM 架构图" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 ### 实验结果：以小博大的长文本能力
 
@@ -72,7 +72,7 @@ FwPKM 的实验结果令人印象深刻，尤其是在长文本处理上展现�
 
 在经典的“大海捞针”（Needle in a Haystack, NIAH）测试中，传统的全注意力（Full Attention）模型在超出训练长度后性能迅速崩塌，而 FwPKM 依然保持稳健。
 
-<img src="/images/2601.00671v1/eval_niah_combined_short.jpg" alt="NIAH 测试结果" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.00671v1/eval_niah_combined_short.webp" alt="NIAH 测试结果" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 2. “反复阅读”带来的质变
 

@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">SEAD: Competence-Aware On-Policy Distillation via Entropy-Guided Supervision</p>
 
-<img src="/images/2606.28562v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.28562v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大型推理模型的部署中，知识蒸馏（Knowledge Distillation）是将数百亿参数模型的强大能力压缩至轻量级模型的核心手段。长期以来，离线策略（Off-policy）蒸馏占据主导地位，即让学生模型在教师模型预先生成的静态数据上进行训练。然而，这种范式不可避免地遭遇了“暴露偏差”问题：学生在推理时一旦犯错，错误便会随着自回归生成不断累积放大。
 
@@ -50,7 +50,7 @@ related_tutorials:
 
 这些看似独立的挑战，实际上都是“忽视监督质量随能力变化”这一根本问题的症状。SEAD 的破局之道在于发现，**信息熵**能够完美且统一地量化这种“能力”。
 
-<img src="/images/2606.28562v1/sys_v3.jpg" alt="SEAD框架总览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.28562v1/sys_v3.webp" alt="SEAD框架总览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### SEAD 的三层协同机制
 
@@ -128,7 +128,7 @@ SEAD 设计了一个基于余弦策略的连续退火调度。散度权重从偏
 
 为了解释 SEAD 是如何在节约算力的同时提升效果的，论文对 Token 级别的损失分布进行了深入透视。
 
-<img src="/images/2606.28562v1/x1.jpg" alt="按区域排序的单Token FKL损失" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.28562v1/x1.webp" alt="按区域排序的单Token FKL损失" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 上图清晰地展示了 FKL 损失在不同 Token 上的分布具有极强的长尾效应。
 
@@ -138,7 +138,7 @@ SEAD 设计了一个基于余弦策略的连续退火调度。散度权重从偏
 
 更有意思的是具体 Token 的语义分类。数据表明，Zone A 绝大部分由标点符号、固定句式连接词和简单的确定性数学运算组成；而 Zone C 几乎完美覆盖了“策略分叉点（Strategy fork）”。在 SEAD 的 50/40/10 默认配置下，**没有任何一个推理关键分叉点会被错误地分入 Zone A 而被忽略**。
 
-<img src="/images/2606.28562v1/x2.jpg" alt="Token区域着色与分布分析" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.28562v1/x2.webp" alt="Token区域着色与分布分析" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 可视化模型输出也能印证这一点。在实际的推理生成中，代表 Zone C 的高熵区域（红色部分）精准地出现在逻辑推演需要做出选择的十字路口。在这些关键节点上，SEAD 通过 FKL 保留了探索空间；而在常规的叙述和计算中，SEAD 直接将其判定为绿色（Zone A）并切断梯度计算，从而让模型将有限的拟合能力集中在真正卡脖子的推理难点上。
 

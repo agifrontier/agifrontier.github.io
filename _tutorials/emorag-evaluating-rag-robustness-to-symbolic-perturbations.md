@@ -13,7 +13,7 @@ related_tutorials:
 
 ## EmoRAG：一个表情符号，如何100%“污染”RAG，让大模型更易“中招”？
 
-<img src="/images/2512.01335v1/A__title.jpg" alt="EmoRAG：一个表情符号，如何100%“污染”RAG，让大模型更易“中招”？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.01335v1/A__title.webp" alt="EmoRAG：一个表情符号，如何100%“污染”RAG，让大模型更易“中招”？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 **检索增强生成**（**Retrieval-Augmented Generation, RAG**）技术，通过外挂知识库，极大地提升了大型语言模型（LLM）的准确性和时效性，被誉为解决模型“幻觉”的利器。
 
@@ -40,7 +40,7 @@ related_tutorials:
 
 研究人员测试了96种结构、频率和含义各不相同的表情符号，发现其中约83%的表情都能触发这种近乎100%的检索失败。
 
-<img src="/images/2512.01335v1/x5.jpg" alt="不同表情符号的攻击效果" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.01335v1/x5.webp" alt="不同表情符号的攻击效果" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图2：96种不同表情符号对RAG系统的攻击效果*
 
@@ -58,7 +58,7 @@ EmoRAG现象并非表情符号本身的“魔力”，而是暴露了当前RAG�
 
 当查询中包含这样一个“孤僻”的向量时，它会极大地影响整个查询语句的最终向量表示，使其向着知识库中同样包含这个罕见Token的文档“漂移”，而忽略了原始的语义信息。
 
-<img src="/images/2512.01335v1/x17.jpg" alt="PCA降维可视化" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.01335v1/x17.webp" alt="PCA降维可视化" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图3：PCA降维显示，加入表情符号后（红色），查询向量发生显著偏移*
 
@@ -97,7 +97,7 @@ $${% endraw %}
 
 然后，当其他开发者或系统查询相关功能时，攻击者只需在查询中附带这个“扳机”表情，就能诱导RAG系统检索到这段被污染的代码，并生成看似合理但包含后门的建议，从而引入严重的安全漏洞。
 
-<img src="/images/2512.01335v1/x21.jpg" alt="代码审计系统攻击示意图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.01335v1/x21.webp" alt="代码审计系统攻击示意图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图4：通过表情符号触发，操纵基于RAG的代码评估系统*
 

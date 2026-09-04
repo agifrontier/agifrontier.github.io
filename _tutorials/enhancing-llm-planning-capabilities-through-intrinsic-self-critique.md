@@ -13,7 +13,7 @@ related_tutorials:
 
 ## DeepMind力证LLM能自我纠错：无需外部验证，规划准确率飙升至89%
 
-<img src="/images/2512.24103v1/A__title.jpg" alt="DeepMind力证LLM能自我纠错：无需外部验证，规划准确率飙升至89% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.24103v1/A__title.webp" alt="DeepMind力证LLM能自我纠错：无需外部验证，规划准确率飙升至89% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 长期以来，学术界对大语言模型（LLM）的规划能力一直存在争议。早期的研究普遍认为“语言模型无法进行规划（Plan）”，甚至断言LLM在没有外部验证器（Verifier）帮助的情况下，其**自我批评**（**Self-Critique**）能力是无效的。然而，Google DeepMind的一项最新研究打破了这一固有印象。
 
@@ -27,7 +27,7 @@ related_tutorials:
 
 DeepMind的这项工作反驳了这一观点。研究人员发现，只要方法得当，LLM完全具备**内在自我改进**（**Intrinsic Self-Improvement**）的能力。
 
-<img src="/images/2512.24103v1/main-fig-new.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.24103v1/main-fig-new.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，该方法模拟了一个迭代的“生成-批评-修正”过程：
 
@@ -73,7 +73,7 @@ DeepMind的这项工作反驳了这一观点。研究人员发现，只要方法
 
 *   **GPT-4o**：同样展现出了显著的提升。
 
-<img src="/images/2512.24103v1/correct_instances_minigrid_blocksworld.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.24103v1/correct_instances_minigrid_blocksworld.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 上图清晰地展示了随着自我批评迭代次数的增加（X轴），解决问题的准确率（Y轴）呈现稳步上升的趋势。值得注意的是，大部分的性能提升发生在第一轮迭代中，这表明模型往往只需要一次“反思”就能纠正大部分错误。
 

@@ -13,7 +13,7 @@ related_tutorials:
 
 ## AI数学推理不再“偏科”：Principia让大模型精通复杂公式，性能提升18%！
 
-<img src="/images/2603.18886v1/A__title.jpg" alt="AI数学推理不再“偏科”：Principia让大模型精通复杂公式，性能提升18%！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.18886v1/A__title.webp" alt="AI数学推理不再“偏科”：Principia让大模型精通复杂公式，性能提升18%！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大模型在数学竞赛中摘金夺银，但你有没有发现，它们给出的答案通常只是一个孤零零的数字或选择题选项？当面对真正需要推导矩阵、方程组或分段函数等复杂“数学对象”的科学问题时，即便是最前沿的模型也常常束手无策。
 

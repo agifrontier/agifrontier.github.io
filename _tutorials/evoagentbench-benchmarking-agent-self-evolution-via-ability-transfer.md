@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">EvoAgentBench: Benchmarking Agent Self-Evolution via Ability Transfer</p>
 
-<img src="/images/2607.05202v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.05202v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在长时间跨度的大型语言模型（LLM）系统研究中，一个不争的共识正在成型：一个实用的智能体（Agent）不应该每次都从零开始解决任务。当 Agent 在复杂环境中经历过成功与失败后，它应当能够像人类一样，将过往的经验沉淀为可复用的策略——比如一套有效的搜索工作流、一种特定的代码调试模式，或是某种严谨的数据验证步骤。
 
@@ -54,7 +54,7 @@ EvoAgentBench 涵盖了四个典型的长周期 Agent 领域：基于网页搜�
 
 为了构建真正反映 Agent 行为的能力单元，研究团队设计了一个极其严谨的三阶段流水线。
 
-<img src="/images/2607.05202v1/fig1_protocol.jpg" alt="EvoAgentBench构建流程图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.05202v1/fig1_protocol.webp" alt="EvoAgentBench构建流程图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 首先是多主干模型的轨迹收集阶段。能力（Ability）的定义绝不是几句大话，而是扎根于多模型的真实执行。研究人员让多个不同特性的强力大模型（包括 Kimi-K2.5、GLM-5.1 和 DeepSeek-V3.2）在无技能辅助的情况下强行解决任务。对于每一个任务，系统会收集大量成功和失败的轨迹。在这个过程中，分析器不再是独立地看待某一次执行，而是交叉对比成功与失败的尝试，敏锐地捕捉到那些能够区分出可靠完成与脆弱尝试的关键操作。这种跨模型的聚合，有效剔除了单一模型可能存在的思维捷径或工具使用偏好。
 

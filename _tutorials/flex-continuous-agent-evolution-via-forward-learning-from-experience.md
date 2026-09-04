@@ -25,7 +25,7 @@ related_tutorials:
 
 最关键的是，这个过程完全**无需梯度反向传播**，成本极低，却在数学、化学、生物等多个领域的难题上取得了高达23%的性能提升！
 
-<img src="/images/2511.06449v1/front_pic.jpg" alt="FLEX范式概览与主要成果" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.06449v1/front_pic.webp" alt="FLEX范式概览与主要成果" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 困境：为何今天的Agent“学不会”？
 
@@ -67,7 +67,7 @@ FLEX提出了一种截然不同的思路：**学习的重点不应是修改模�
 
 为了实现这一优雅的构想，FLEX设计了一套精巧的机制，可以将其理解为一个分工明确的“战略指挥部”。该研究将其形式化为**分层马尔可夫决策过程**（**Meta-MDP**）。
 
-<img src="/images/2511.06449v1/fig-fl.jpg" alt="FLEX的具体实现机制" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.06449v1/fig-fl.webp" alt="FLEX的具体实现机制" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 #### 底层MDP：一线探索与经验提炼
 

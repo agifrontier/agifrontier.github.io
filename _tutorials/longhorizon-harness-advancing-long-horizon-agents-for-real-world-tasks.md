@@ -42,7 +42,7 @@ related_tutorials:
 
 为了彻底解决上述痛点，LongHorizon-Harness 放弃了“维护单一超长执行轨迹”的传统思路，将核心转变为“在外部维护显式的任务状态”。框架的设计哲学非常清晰：当前的状态必须且只能由环境产生的客观事实来更新，而绝不能依赖执行者主观的“自述”。
 
-<img src="/images/2608.01964/mea_main_edited_hd4x.jpg" alt="LongHorizon-Harness架构总览" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2608.01964/mea_main_edited_hd4x.webp" alt="LongHorizon-Harness架构总览" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 如上图所示，LongHorizon-Harness 的核心引擎是被称为 MEA 的控制循环，即 Manager（管理者）、Executor（执行者）和 Auditor（审计者）三个核心角色的协同工作。这三个角色不仅在功能上严格分工，在信息隔离和权限控制上也做到了极致。
 
@@ -66,7 +66,7 @@ Auditor 的权限被严格限制为“只读”。它可以通过观察屏幕、
 
 通过这样精妙的机制，整个长周期任务被切分成了多个干净的、被独立验证的步进，只有经过审计的事实才能跨越轮次保留下来。
 
-<img src="/images/2608.01964/benchmark_figure.jpg" alt="多基准测试与审计状态转移对比" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2608.01964/benchmark_figure.webp" alt="多基准测试与审计状态转移对比" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 突破性的实验结果：在多形态任务中验证架构优势
 
@@ -82,13 +82,13 @@ Auditor 的权限被严格限制为“只读”。它可以通过观察屏幕、
 
 对于工业界而言，任何精妙的架构如果带来了不可接受的计算开销，其实用价值都会大打折扣。引入了独立的 Manager 和 Auditor，是否意味着 Token 消耗量会成倍爆炸？本文给出了详细的开销拆解分析。
 
-<img src="/images/2608.01964/role_tokens.jpg" alt="不同角色的Token消耗分布" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.01964/role_tokens.webp" alt="不同角色的Token消耗分布" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 通过分析 Token 的消耗占比，研究者发现，负责运筹帷幄的 Manager 其实非常“轻量”，它在各个基准测试中占用的总 Token 量仅在 2.0% 到 8.1% 之间波动。这说明将全局状态从冗杂的执行日志中提纯出来，本身并不会带来过高的计算负担。新增的主要成本源于 Auditor，它占据了约 20% 到 38% 的 Token 消耗，这是为了获取客观环境真相所必须支付的独立验证代价。
 
 然而，总体 Token 消耗并非总是线性增加。在 WeaveBench 和 OSWorld 2.0 上，由于模型成功走到了更深的任务阶段并经历了更多轮次的重试与验证，总消耗确实有所增加。但在纯命令行的 Terminal-Bench 2.1 上，引入该框架后总 Token 消耗反而下降了 24%，同时成功率却获得了提升。这是因为在传统模式下，模型常常在一个错误的环境状态中陷入死循环，白白消耗大量无意义的上下文；而 MEA 循环能在错误发生后及时通过审计发现，并强制剥离无效的历史包袱，从而在宏观上实现了“少走弯路即是省钱”。
 
-<img src="/images/2608.01964/domain_deltas.jpg" alt="领域增量分析" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.01964/domain_deltas.webp" alt="领域增量分析" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 此外，作者对不同任务领域的增量分析也清晰地划定了该框架的能力边界。在需要维护、检查和修改多个关联环境状态的任务（如设计开发、系统管理）中，LongHorizon-Harness 带来的收益最为显著，提升幅度甚至高达 50 到 60 个百分点。但在一些主要考验纯粹算法设计或单步复杂数学推理的任务中，提升幅度相对较小。这就指向了一个非常理性的结论：独立审计可以敏锐地察觉错误并督促重试，但它无法无中生有地赋予模型本身不具备的推理深度。只有当模型的单步能力足以解决局部问题时，该框架才能最大化其长程调度的价值。
 

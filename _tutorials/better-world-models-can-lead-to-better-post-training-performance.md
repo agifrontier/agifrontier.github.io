@@ -13,7 +13,7 @@ related_tutorials:
 
 ## AI解魔方新突破：预训练一个“世界模型”，强化学习性能提升40%！
 
-<img src="/images/2512.03400v1/A__title.jpg" alt="AI解魔方新突破：预训练一个“世界模型”，强化学习性能提升40%！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.03400v1/A__title.webp" alt="AI解魔方新突破：预训练一个“世界模型”，强化学习性能提升40%！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大型语言模型在预训练、微调和强化学习等一系列“修炼”后，展现出惊人的能力。但我们是否想过，这些训练阶段是如何塑造模型内部的“世界观”的？一个更清晰、更准确的内部世界模型，又能否让AI在后续的学习中如虎添翼？
 
@@ -27,7 +27,7 @@ related_tutorials:
 
 任务很简单：给Transformer一个被打乱的魔方状态序列，让它生成一串能还原魔方的“最优”步骤。
 
-<img src="/images/2512.03400v1/x1.jpg" alt="魔方任务流程图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.03400v1/x1.webp" alt="魔方任务流程图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 这里的关键在于，模型在训练时只看得到初始状态和最终的解法步骤，却**看不到**每一步操作后魔方的中间状态。
 
@@ -57,7 +57,7 @@ related_tutorials:
 
 解码的准确率越高，说明模型内部对魔方状态的表征越清晰、越有条理。
 
-<img src="/images/2512.03400v1/intermediate_states.jpg" alt="探针准确率对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.03400v1/intermediate_states.webp" alt="探针准确率对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 结果如上图所示，经过“世界模型预训练”（Pre-Train）或“联合训练”（Joint-Train）的模型，其探针准确率显著高于标准微调模型。这证明显式学习确实构建了更优质的内部世界表征。
 
@@ -69,7 +69,7 @@ related_tutorials:
 
 如果模型真的依赖这个内部表征，那么它的下一步决策应该会从“解决魔方S的合理步骤”变为“解决魔方T的合理步骤”。
 
-<img src="/images/2512.03400v1/intervene_plots_good_move_acc.jpg" alt="因果干预成功率" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.03400v1/intervene_plots_good_move_acc.webp" alt="因果干预成功率" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 实验结果（如上图左）表明，经过显式世界模型训练的模型，其干预成功率更高。这说明，它们的决策更加依赖于内部构建的那个清晰的世界模型，而不是一些虚无缥缈的统计关联。
 
@@ -79,7 +79,7 @@ related_tutorials:
 
 研究团队在上述三种训练策略的基础上，都增加了一个**强化学习后期训练**（Post-training with GRPO）阶段。GRPO会通过多次尝试（rollouts）并给予奖励（解开魔方则奖励为1，否则为0）来进一步优化模型的策略。
 
-<img src="/images/2512.03400v1/x2.jpg" alt="最终性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.03400v1/x2.webp" alt="最终性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 上图是最终的对决结果，揭示了惊人的发现：
 

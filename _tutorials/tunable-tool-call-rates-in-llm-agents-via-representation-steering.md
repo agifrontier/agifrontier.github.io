@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Tunable Tool-Call Rates in LLM Agents via Representation Steering</p>
 
-<img src="/images/2608.25198v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.25198v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 让大模型从一个只会聊天的文本生成器，转变为能够解决实际问题的智能体（**Agent**），其核心跨越在于赋予模型调用外部工具的能力。不论是查询实时搜索引擎、运行 Python 脚本，还是发送邮件、执行 SQL 数据库操作，决定“在什么时候使用工具”不仅是智能体认知能力的核心体现，更是工业界落地时必须精打细算的算力账本。
 
@@ -80,7 +80,7 @@ related_tutorials:
 
 这种极其简单的线性干预真的有用吗？它会不会只是强行把模型变成一个盲目输出工具代码的损坏机器？实验结果给出了否定的答案，而且展示出了极高的机制鲁棒性。
 
-<img src="/images/2608.25198v1/F0_draft_5.jpg" alt="双向控制效果展示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.25198v1/F0_draft_5.webp" alt="双向控制效果展示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 首先，这种表征引导（**Representation Steering**）能够完美实现双向控制。对于那些基座模型原本就能靠自身储备算出来的数学题，不受干预的模型可能会画蛇添足地调用计算器，但只要给 $\alpha$ 施加一个负向压力，就能在不破坏答案正确性的前提下，精确地抹掉这个毫无意义的调用动作。反之，面对冷门的生僻知识题，稍微上调 $\alpha$，模型就会乖乖地输出搜索指令，从而获取正确答案。
 
@@ -100,7 +100,7 @@ related_tutorials:
 
 那么，这个回路在多深的网络层次才开始起作用？研究对模型的所有解码层进行了逐层扫描。
 
-<img src="/images/2608.25198v1/F8_layer_alpha.jpg" alt="层深度对控制强度的影响" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2608.25198v1/F8_layer_alpha.webp" alt="层深度对控制强度的影响" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 扫描结果揭示了一个清晰的网络认知加工过程。在最初的浅层网络中，无论怎么施加干预，模型都无动于衷，改变的概率微乎其微。控制力在网络的中间层逐渐积累，并在中后段（例如上述测算的第 21 到 24 层）达到巅峰。在这一关键频段，随着 $\alpha$ 从 -4 调节至 4，工具调用倾向的对数概率跨度达到了惊人的 37 纳特（Nats），这意味着模型的主观意愿被干预到了数百亿倍级的差距，呈现出完美的单调可控性。
 

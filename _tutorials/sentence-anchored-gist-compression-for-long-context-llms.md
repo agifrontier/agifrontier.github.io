@@ -47,7 +47,7 @@ Gist Token扮演的就是“章节摘要”的角色。它是一种特殊的可�
 1.  **普通词语（Regular Tokens）的视野**：当模型处理某个句子中的一个词时，它只能“看到”这个句子内的其他词，以及**之前所有句子**的**Gist Token（摘要）**。它无法直接回看前面句子的原文。这极大地减少了计算量。
 2.  **Gist Token（摘要）的视野**：当模型生成某个句子的Gist Token时，它被赋予了更高的权限。它既可以“看到”当前句子中的**所有词语**，也能“看到”**之前所有句子**的**Gist Token（摘要）**。这保证了Gist Token能够充分概括当前句子的信息，并继承历史摘要。
 
-<img src="/images/2511.08128v1/x2.jpg" alt="Attention Mechanisms Comparison" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2511.08128v1/x2.webp" alt="Attention Mechanisms Comparison" style="width:80%; max-width:300px; margin:auto; display:block;">
 图1：(a) 标准因果注意力 vs (b) 句子注意力。在句子注意力中，普通Token（$t\_i$）只关注句内信息和历史摘要（$g\_1$），而摘要（$g\_1$）则聚合当前整个句子的信息。
 
 这种设计通过一个修改后的注意力掩码实现，无需改变Transformer的核心架构，训练和推理都能高效并行。
@@ -75,7 +75,7 @@ Gist Token扮演的就是“章节摘要”的角色。它是一种特殊的可�
 
 更关键的是压缩率。当每句使用4个Gist Token ($N\_g=4$)时，该方法在长文本任务上的平均KV缓存压缩率达到了**6倍**左右。相比之下，与之类似的Activation Beacon模型压缩率仅为2倍。这意味着用更小的模型、更少的显存，就能处理同样复杂的长文本任务。
 
-<img src="/images/2511.08128v1/x3.jpg" alt="PG19 Perplexity" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2511.08128v1/x3.webp" alt="PG19 Perplexity" style="width:80%; max-width:300px; margin:auto; display:block;">
 *图2：在PG19数据集上的困惑度。压缩模型（蓝色/橙色实线）的整体困惑度甚至低于基线，显示了其强大的建模能力。*
 
 ### 结论与局限

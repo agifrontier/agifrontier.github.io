@@ -123,7 +123,7 @@ $${% endraw %}
 *   **参数共享**：输入词嵌入与最终输出前的线性映射层共享权重。
 
 ### 模型规模
-<img src="/images/2303.17564v3/x1.jpg" alt="Kaplan et al. (2020) and Chinchilla scaling laws with prior large language model and BloombergGPT parameter and data sizes. We adopt the style from Hoffmann et al. (2022)." style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2303.17564v3/x1.webp" alt="Kaplan et al. (2020) and Chinchilla scaling laws with prior large language model and BloombergGPT parameter and data sizes. We adopt the style from Hoffmann et al. (2022)." style="width:85%; max-width:600px; margin:auto; display:block;">
 > 图1：与现有大型语言模型相比，BloombergGPT在模型参数和数据规模上的定位，参考了Chinchilla缩放定律。
 
 模型的500亿参数量是根据Chinchilla缩放定律和可用的计算预算（约130万A100 GPU小时）精心选择的。考虑到金融领域数据（FinPile）的量是有限的（约3630亿Token），并且作者不希望其占比低于总数据的一半，因此无法无限增加数据量来匹配“Chinchilla最优”的更小模型尺寸。最终，选择500亿参数是在数据量受限的情况下，对计算资源的最优利用。
@@ -160,7 +160,7 @@ $${% endraw %}
 
 ## 训练过程
 训练在AWS SageMaker平台上进行，使用了512个40GB A100 GPU，历时约53天。
-<img src="/images/2303.17564v3/x2.jpg" alt="（平滑后）BloombergGPT的训练和验证损失曲线。内图是外图中虚线框区域的放大。" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2303.17564v3/x2.webp" alt="（平滑后）BloombergGPT的训练和验证损失曲线。内图是外图中虚线框区域的放大。" style="width:85%; max-width:600px; margin:auto; display:block;">
 > 图2：训练和验证损失曲线。不同颜色代表不同的超参数配置。
 
 为了在有限的GPU内存中训练大模型，本文采用了一系列并行和优化技术：
@@ -194,7 +194,7 @@ $${% endraw %}
 1.  **在金融任务上表现卓越**：在公开的金融NLP基准测试以及反映彭博内部实际应用场景的专有任务（如情感分析、命名实体识别）上，BloombergGPT的表现**显著优于**所有可比较的同类模型。这直接验证了混合训练中大量高质量金融数据的价值。
 2.  **在通用任务上保持强大竞争力**：尽管训练数据中有一半是金融专业数据，BloombergGPT在通用的LLM基准测试（如BIG-bench Hard、常规知识问答）上，其性能与同等规模甚至更大规模的通用模型**持平或更好**。这表明，领域特化并未以牺牲通用能力为代价。
 
-<img src="/images/2303.17564v3/x3.jpg" alt="在一系列留出测试集上的每字节比特数（Bits per byte）表现" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2303.17564v3/x3.webp" alt="在一系列留出测试集上的每字节比特数（Bits per byte）表现" style="width:85%; max-width:600px; margin:auto; display:block;">
 > 图3：在多个留出测试集上的每字节比特数表现，数值越低越好。
 
 **最终结论：**

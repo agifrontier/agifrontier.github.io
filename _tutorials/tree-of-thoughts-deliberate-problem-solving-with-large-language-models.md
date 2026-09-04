@@ -43,7 +43,7 @@ related_tutorials:
 ## 本文方法
 为了克服现有方法的局限性，本文提出了**思想树（Tree of Thoughts, ToT）**框架，将问题求解过程形式化为在一棵树上的搜索。
 
-<img src="/images/2305.10601v2/x1.jpg" alt="不同问题解决方法的示意图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2305.10601v2/x1.webp" alt="不同问题解决方法的示意图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1：展示了不同的大语言模型问题解决方法。每个矩形框代表一个“思想”，即解决问题的连贯中间步骤。*
 
@@ -101,7 +101,7 @@ ToT方法的核心创新与优点在于：
 *   **结果**：ToT取得了压倒性的成功。在使用BFS（广度 $b=5$）时，ToT的成功率达到 **74%**，而标准的CoT提示仅为 **4.0%**，CoT-SC（100个样本）也只有9.0%。
 *   **分析**：错误分析表明，超过60%的CoT样本在第一步计算后就已经走上了错误的路径。这凸显了线性、不可回溯方法的脆弱性。ToT通过在每一步探索多个选项并进行评估，有效避免了早期错误。
 
-<img src="/images/2305.10601v2/x2.jpg" alt="24点游戏中的ToT过程" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2305.10601v2/x2.webp" alt="24点游戏中的ToT过程" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图2：在24点游戏中，LM被提示 (a) 生成思想（中间步骤）和 (b) 对其进行评估。*
 
 
@@ -121,7 +121,7 @@ ToT方法的核心创新与优点在于：
 *   **结果**：ToT生成的文章在连贯性上表现更优。GPT-4自动评分中，ToT平均得分 **7.56**，高于CoT的6.93。在人类盲评中，41%的情况下人类偏好ToT的产出，而只有21%的情况偏好CoT。
 *   **方法**：ToT在此任务中采用两步策略：首先生成多个写作计划并投票选出最佳计划，然后基于该计划生成多个段落并投票选出最终版本。这种“计划-执行”加“投票”的模式显著提升了全局连贯性。
 
-<img src="/images/2305.10601v2/x5.jpg" alt="创意写作中的ToT步骤" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2305.10601v2/x5.webp" alt="创意写作中的ToT步骤" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图4：创意写作任务中的一步深思熟虑的搜索过程。LM首先采样5个不同的计划，然后投票选出最佳方案。*
 
 ### 3. 迷你填字游戏 (Mini Crosswords)
@@ -139,7 +139,7 @@ ToT方法的核心创新与优点在于：
 
 *表3：迷你填字游戏结果。*
 
-<img src="/images/2305.10601v2/x8.jpg" alt="填字游戏中的ToT搜索" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2305.10601v2/x8.webp" alt="填字游戏中的ToT搜索" style="width:85%; max-width:600px; margin:auto; display:block;">
 *图6：在迷你填字游戏中，(a) 思想被提出并放入优先队列进行DFS搜索，(b) LM评估一个状态是否可行，如果某个线索被判定为“不可能”填入，则进行剪枝并回溯。*
 
 ### 总结

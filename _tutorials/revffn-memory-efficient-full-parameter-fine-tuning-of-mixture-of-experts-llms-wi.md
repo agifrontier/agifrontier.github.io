@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 单卡全量微调MoE大模型？RevFFN让显存占用减半，性能超越LoRA
 
-<img src="/images/2512.20920v1/A__title.jpg" alt="单卡全量微调MoE大模型？RevFFN让显存占用减半，性能超越LoRA 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.20920v1/A__title.webp" alt="单卡全量微调MoE大模型？RevFFN让显存占用减半，性能超越LoRA 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在当今的大模型（LLM）时代，**全量微调（Full Fine-Tuning）** 依然是让模型适应下游任务的“黄金标准”。相比于只更新少量参数的 LoRA 等方法，全量微调往往能带来更强悍的性能表现。
 
@@ -47,7 +47,7 @@ RevFFN 的核心思想非常巧妙：**既然存不下，那就不存了，用�
 
 RevFFN 并没有直接生硬地改造 Transformer，而是设计了一种特殊的**可逆块（Reversible Block）**。
 
-<img src="/images/2512.20920v1/x1.jpg" alt="RevFFN 架构图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.20920v1/x1.webp" alt="RevFFN 架构图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 具体来说，它将输入特征 $H$ 沿着特征维度一分为二，变成 $X\_1$ 和 $X\_2$ 两股“流”。这两股流通过一种耦合更新规则进行交替处理：
 

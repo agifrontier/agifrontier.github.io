@@ -13,7 +13,7 @@ related_tutorials:
 
 ## DeepSeek-Prover潜力释放：仅需简单“骨架”提示，性能飙升43%
 
-<img src="/images/2601.16172v1/A__title.jpg" alt="DeepSeek-Prover潜力释放：仅需简单“骨架”提示，性能飙升43% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.16172v1/A__title.webp" alt="DeepSeek-Prover潜力释放：仅需简单“骨架”提示，性能飙升43% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在AI数学定理证明的赛道上，大家似乎陷入了一种“暴力美学”的军备竞赛：更强的**强化学习**（**Reinforcement Learning, RL**）、更庞大的搜索树、成千上万次的采样（$k=1024$ 甚至更多）。
 
@@ -75,7 +75,7 @@ MIT的研究团队提出了一种轻量级的干预手段：**结构化中间表
 
 2.  **绝对优势**：在成对比较中，结构化方法解出了19道基线模型解不出的题，而反之只有3道。这说明该方法不是在做“拆东墙补西墙”的权衡，而是实打实的全面提升。
 
-<img src="/images/2601.16172v1/venn_simple.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.16172v1/venn_simple.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图1：成对分析显示，结构化提示（Structured IR）在解决独特问题上具有压倒性优势（19 vs 3）。*
 

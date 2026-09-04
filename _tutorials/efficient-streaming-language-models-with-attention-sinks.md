@@ -41,7 +41,7 @@ related_tutorials:
 ## 注意力池：窗口注意力的失败根源
 传统的窗口注意力 (Window Attention) 方法虽然高效，但性能很差。本文通过实验发现，其性能崩溃的关键节点在于**初始 Token 的键值（KV）缓存被丢弃时**。
 
-<img src="/images/2309.17453v4/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2309.17453v4/x3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 **图3**：不同LLM在20K长文本上的语言建模困惑度（Perplexity）。可以观察到：(1) 密集注意力的性能在输入超过预训练长度后下降。(2) 窗口注意力的性能在输入超过缓存大小、初始Token被丢弃后急剧恶化。(3) StreamingLLM表现稳定，其困惑度与滑动窗口重计算基线相当。
 
 通过可视化注意力图谱，作者发现，LLM（如 Llama-2）的许多注意力头会持续地将大量注意力分数分配给最初的几个 Token，即使这些 Token 语义上并不重要。作者将这种现象命名为**注意力池 (Attention Sink)**。
@@ -59,13 +59,13 @@ related_tutorials:
 | 4 + 1020 | 5.40 |
 | 4"\n"+1020 | 5.60 |
 
-<img src="/images/2309.17453v4/x2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2309.17453v4/x2.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 **图2**：Llama-2-7B在256个16词句子上的平均注意力对数（logits）可视化。观察发现：(1) 最底两层（layer 0, 1）注意力呈现“局部”模式，关注最近的 Token。(2) 在更高层，模型在所有层和头上都严重关注初始 Token。
 
 ## StreamingLLM：保留注意力池的滚动缓存
 基于注意力池的发现，本文提出了 StreamingLLM 框架。其核心思想非常简单：在滚动的 KV 缓存中，除了保留最近的一部分 Token，**始终保留最初的几个 Token（如4个）作为注意力池**。
 
-<img src="/images/2309.17453v4/x4.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2309.17453v4/x4.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 **图4**：StreamingLLM 的 KV 缓存结构。它包含两部分：用于稳定注意力计算的**注意力池**（几个初始Token），以及用于语言建模的**滚动KV缓存**（最近的Token）。
 
 这种方法的关键技术细节在于**位置编码的处理**。StreamingLLM 在计算相对位置时，是根据 Token 在**当前缓存中的相对位置**，而不是其在原始文本中的绝对位置。例如，一个缓存中包含原始位置为 $$[0, 1, 2, 3]$$ 的注意力池和 $$[100, 101, 102]$$ 的最近 Token，那么在计算注意力时，它们在缓存中的位置会被当作 $$[0, 1, 2, 3, 4, 5, 6]$$ 来处理。这使得模型能够在其预训练的注意力窗口长度内有效工作，即使处理的文本总长度已经远超该范围。
@@ -93,12 +93,12 @@ related_tutorials:
 
 *   **长文本稳定性**：StreamingLLM 能够稳定处理长达400万个 Token 的文本，其困惑度保持稳定，与速度缓慢但性能强大的“滑动窗口重计算”基线相当。而传统的密集注意力和窗口注意力方法则在文本变长后性能崩溃。
 
-<img src="/images/2309.17453v4/x5.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2309.17453v4/x5.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 **图5**：StreamingLLM 在处理400万 Token 超长文本时的困惑度表现，覆盖了多种模型家族和规模。困惑度全程保持稳定。
 
 *   **效率优势**：与唯一可行的基线（滑动窗口重计算）相比，StreamingLLM 在保持相似内存占用的同时，实现了巨大的速度提升，**最高可达 22.2 倍**。这是因为它避免了在每个解码步骤中重新计算整个窗口的注意力。
 
-<img src="/images/2309.17453v4/x9.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2309.17453v4/x9.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 **图10**：StreamingLLM 与滑动窗口重计算基线在每 Token 解码延迟和内存使用上的对比。StreamingLLM 实现了高达 22.2 倍的加速。
 
 *   **真实世界应用**：在流式问答任务（StreamEval）中，StreamingLLM 能够持续正确回答与近期上下文相关的问题，而其他方法则因内存溢出或性能崩溃而失败。

@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 告别玄学Prompt！字节跳动ELPO框架，F1分数最高提升7.6分
 
-<img src="/images/2511.16122v1/A__title.jpg" alt="告别玄学Prompt！字节跳动ELPO框架，F1分数最高提升7.6分 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.16122v1/A__title.webp" alt="告别玄学Prompt！字节跳动ELPO框架，F1分数最高提升7.6分 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 与大语言模型（LLM）打交道时，我们总会遇到一个头疼的问题：模型表现对提示词（Prompt）极其敏感。
 
@@ -35,7 +35,7 @@ related_tutorials:
 
 如下图所示，传统方法通常采用单一的生成和搜索路径，缺乏灵活性。
 
-<img src="/images/2511.16122v1/AutoPe.jpg" alt="传统APO与ELPO框架对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.16122v1/AutoPe.webp" alt="传统APO与ELPO框架对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ELPO则像一个“智囊团”，它不押宝于任何单一策略，而是集思广益，从多个维度进行优化，从而获得更全面、更鲁棒的解决方案。
 

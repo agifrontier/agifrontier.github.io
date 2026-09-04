@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 打破LLM能效瓶颈：32KB缓存+1.4GHz高频竟是最佳硬件甜点？
 
-<img src="/images/2512.22066v1/A__title.jpg" alt="打破LLM能效瓶颈：32KB缓存+1.4GHz高频竟是最佳硬件甜点？ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.22066v1/A__title.webp" alt="打破LLM能效瓶颈：32KB缓存+1.4GHz高频竟是最佳硬件甜点？ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在当今的AI时代，数据中心的电力消耗正成为一个巨大的隐忧。据估计，2024年全球数据中心消耗了约415太瓦时（TWh）的电力，而随着大语言模型（LLM）的普及，这一数字预计到2030年将翻倍。
 
@@ -55,7 +55,7 @@ related_tutorials:
 
 研究团队通过**能量-延迟积（Energy-Delay Product, EDP）**这一指标，寻找速度与能效的最佳平衡点。
 
-<img src="/images/2512.22066v1/energy_delay_product_prefill.jpg" alt="Energy Delay Product" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.22066v1/energy_delay_product_prefill.webp" alt="Energy Delay Product" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *(图：Prefill阶段的能量-延迟积分析，颜色越深代表能效越好)*
 

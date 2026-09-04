@@ -13,7 +13,7 @@ related_tutorials:
 
 ## Token级优化为何能对齐序列级奖励？阿里耗费数十万GPU时，揭秘LLM强化学习稳定之道
 
-<img src="/images/2512.01374v1/A__title.jpg" alt="Token级优化为何能对齐序列级奖励？阿里耗费数十万GPU时，揭秘LLM强化学习稳定之道 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.01374v1/A__title.webp" alt="Token级优化为何能对齐序列级奖励？阿里耗费数十万GPU时，揭秘LLM强化学习稳定之道 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 用强化学习（RL）来“调教”大模型，使其在复杂任务上表现更佳，已是行业共识。但一个棘手的问题始终困扰着研究者们：训练过程极其不稳定，常常像坐过山车。
 
@@ -74,7 +74,7 @@ MoE模型在生成每个Token时，都会动态地选择一部分“专家”来
 
 为了解决这个问题，研究者引入了**路由回放**（**Routing Replay**）技术。其核心思想是在策略优化期间，**固定**住生成数据时所选择的专家路径，让MoE模型暂时像一个稠密模型一样被优化。
 
-<img src="/images/2512.01374v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.01374v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 如上图所示，在On-policy（即每次更新都用新数据）训练中，遵循理论的基线方法（MiniRL）表现最为稳定。而移除重要性采样（wo/ train-infer-is）或引入不合理的长度归一化（w/ length-norm）都会破坏近似的有效性，导致训练崩溃。
 
@@ -86,13 +86,13 @@ MoE模型在生成每个Token时，都会动态地选择一部分“专家”来
 
 - **路由回放**（**Routing Replay**）：通过固定专家路径，同时降低了训练-推理差异和策略陈旧度带来的不确定性。
 
-<img src="/images/2512.01374v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.01374v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 上图展示了在Off-policy（N=2，即每批数据更新2次）设定下，不同策略的稳定性。可以看到，简单的MiniRL（蓝色）很快就崩溃了。而结合了路由回放（R2/R3）和Clipping的策略（绿色和紫色）则表现出优异的稳定性，并取得了最好的性能。
 
 当Off-policy的程度加剧（N=4或N=8），这种稳定性差异更加明显。
 
-<img src="/images/2512.01374v1/x4.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.01374v1/x4.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 稳定训练的终极价值
 
@@ -100,7 +100,7 @@ MoE模型在生成每个Token时，都会动态地选择一部分“专家”来
 
 研究者们用三个不同的前沿模型蒸馏出的数据作为冷启动，使用稳定的“MiniRL + R2”配方进行训练。
 
-<img src="/images/2512.01374v1/x5.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.01374v1/x5.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 结果如上图所示，尽管起点不同，但经过足够长的稳定训练后，三个模型最终达到了非常接近的性能水平。
 

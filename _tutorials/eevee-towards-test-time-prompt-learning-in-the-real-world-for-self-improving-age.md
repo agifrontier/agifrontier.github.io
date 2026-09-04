@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">EEVEE: Towards Test-time Prompt Learning in the Real World for Self-Improving Agents</p>
 
-<img src="/images/2606.11182v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.11182v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 测试时提示词学习（Test-time prompt learning）为基础模型的部署后适配提供了一种轻量级机制。与传统的权重微调不同，这种方法通过更新提示词来应对新输入、分布偏移和失效模式，特别适合通过与环境交互来自我优化的智能体（Self-Improving Agents）。然而，现有的前沿方法大多针对单一数据集或单一基准进行设计。当模型被部署到真实的复杂应用中时，面对的往往是来自多个数据集、多个领域和多种任务分布的异构输入流。
 
@@ -38,7 +38,7 @@ related_tutorials:
 
 这种设定直接暴露了现有方法的致命缺陷——跨数据集干扰。现有的提示词学习方法通常假设存在一个统一的适应目标或固定的提示空间，它们仅从一个基准中获取反馈。这意味着，当模型为了适应某个特定领域的任务而更新提示词时，这种更新往往会破坏模型在其他领域的表现。
 
-<img src="/images/2606.11182v1/x3.jpg" alt="增量多基准保留率随任务增加的变化情况" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.11182v1/x3.webp" alt="增量多基准保留率随任务增加的变化情况" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 上图直观地展示了这种破坏性干扰。随着更多不同类型的任务（如 GPQA Diamond、Formula、TheoremQA、HumanEval）依次加入适应流，现有的强基线方法 **GEPA** 和 **ACE** 在早期任务上的保留率出现了明显的负增长。图中向下的阴影方块代表负的保留损失，这表明单一的演化提示词难以在吸收异构反馈的同时，保持针对特定任务的行为能力。当所有四个任务全部引入后，**GEPA** 和 **ACE** 的累积保留增益分别跌至 -15.36 和 -18.58。这一现象揭示了一个核心矛盾：要从混合任务流中学习，就必须找到一种能够保护任务特化的新架构。
 
@@ -57,7 +57,7 @@ related_tutorials:
 
 在这个架构中，路由器负责评估当前输入最适合由哪个提示词槽来处理，从而阻断了不同领域数据在单一提示词更新时的相互污染。
 
-<img src="/images/2606.11182v1/x4.jpg" alt="EEVEE 框架主流程图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.11182v1/x4.webp" alt="EEVEE 框架主流程图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 然而，设计这样一个路由器充满了挑战。如果路由器是刚性且固定的，它将无法捕捉复杂多变的任务结构；如果路由器过于不稳定，又会干扰底层提示词的优化。更重要的是，提示词学习器和路由器之间存在深度的相互依赖关系：路由策略决定了每个提示词能够从哪些样本中学习，而提示词的实际表现又反过来决定了哪种路由策略才是真正有效的。
 
@@ -71,7 +71,7 @@ related_tutorials:
 
 为了使上述协同进化策略在实际应用中兼顾效率和收敛性，研究团队为其量身定制了一个精巧的三阶段训练流程。这三个阶段各自承担着不可替代的职能，确保了模型从无到有构建稳定路由策略的过程。
 
-<img src="/images/2606.11182v1/x5.jpg" alt="三阶段训练设计与初始化选择规则" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.11182v1/x5.webp" alt="三阶段训练设计与初始化选择规则" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 第一阶段被称为初始化（Initialization）。在启动路由进化之前，框架必须先拥有一组具有基本区分度的提示词集合。如果初始提示词毫无用处，那么准确率的波动将主要反映提示词本身的缺陷，而不是路由分配的质量，这就使得路由器无法获得有效的梯度信号。因此，**EEVEE** 首先在混合训练集上运行全量提示词学习，并保留一个帕累托前沿池。通过一种基于贪心覆盖率的规则（如上图右侧公式所示），框架从池中挑选出那些能够覆盖互补样本的前 $K$ 个提示词，形成初始提示词集 $\mathcal{P}^{0}$。这些初始提示词为后续构建路由规则提供了必要的行为特化基座。
 
@@ -87,7 +87,7 @@ related_tutorials:
 
 当底层模型替换为更强大的 **DeepSeek-V3.2** 时，**EEVEE** 的性能潜力得到了进一步释放。多基准平均得分攀升至 64.07，相较基础模型获得了惊人的 24.32 分绝对提升。在 Formula 测试中提升 30.55 分，在 HumanEval 测试中更是达到了 92.82 的极高分数水平，完全碾压了基于单一提示词更新的现有框架。
 
-<img src="/images/2606.11182v1/x6.jpg" alt="单基准与多基准任务扩展对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.11182v1/x6.webp" alt="单基准与多基准任务扩展对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 为了探究 **EEVEE** 性能优势的边界，研究团队进一步实施了任务规模扩展分析。在退回到传统的单基准环境时，**EEVEE** 依然能够保持与 **GEPA** 和 **ACE** 相当甚至略微领先的竞争力。这证明了其内置的提示词进化机制本身就是极其高效的。然而，真正的鸿沟出现在多任务混合规模扩大的时候。如同前文提到的保留率统计所示，当四个任务全部混合后，单一提示词系统不可避免地陷入了负保留的泥潭，而 **EEVEE** 凭借路由条件的隔离，最终维持了高达 +41.53 的累积保留增益。这说明，任务池越庞杂、异构性越强，路由-提示词协同进化的价值就越凸显。
 
@@ -97,7 +97,7 @@ related_tutorials:
 
 在评估复杂框架时，推理时期的 Token 消耗往往是决定其能否落地的核心指标之一。由于 **EEVEE** 在生成最终答案之前插入了一层路由推理，这难免让人担忧其会不会带来不可接受的延迟和成本膨胀。
 
-<img src="/images/2606.11182v1/x7.jpg" alt="测试时提示词学习的平均 Token 消耗对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.11182v1/x7.webp" alt="测试时提示词学习的平均 Token 消耗对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 上图展示了不同方法在完成测试时提示词学习后的平均 Token 消耗对比。结果令人惊喜：在包含输入和输出的完整交互中，**EEVEE** 平均每个样本仅消耗 4.32k Token。这一数字虽然略高于 **GEPA** 的 3.47k，但却远远低于 **ACE** 夸张的 21.30k。
 

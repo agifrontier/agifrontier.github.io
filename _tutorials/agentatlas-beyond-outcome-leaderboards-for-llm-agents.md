@@ -35,7 +35,7 @@ related_tutorials:
 
 论文通过现有排行榜的异常现象揭示了这一痛点。在 $\tau$-bench 榜单上（图2所示），当我们考察模型一次性通关的指标 $pass@1$ 时，Claude Opus 4.5 稳居第一（0.70）；但当我们允许模型重试并考察 $k=4$ 的指标时，Qwen3.5 却实现了反超（0.56）。
 
-<img src="/images/2605.20530v1/tau_passk-overall.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2605.20530v1/tau_passk-overall.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 为何会出现排名的翻转？因为具备更强推理能力的模型，往往在“一致性”和“重试恢复能力”上表现得与“一次性做对”的能力大相径庭。**单纯的单次成功率指标，会让你在选型时选错实际部署的最优解**。同样的，针对安全的攻击成功率与常规效用指标也往往呈现割裂状态。
 
@@ -54,7 +54,7 @@ related_tutorials:
 5.  **确认**（**Confirm**）：在执行具有破坏性的操作前，向人类获取授权。
 6.  **恢复**（**Recover**）：在工具报错或观察到异常状态时，能调整策略重试。
 
-<img src="/images/2605.20530v1/agent_control.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2605.20530v1/agent_control.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在过往的评测中，这六项能力是支离破碎的。例如，研究表明，针对模糊的 SWE-bench Verified 任务，如果模型具备“提问（Ask）”意识，其整体任务解决率能直接提升 8.2 个百分点（从 $61.2\%$ 飙升至 $69.4\%$）。
 
@@ -71,7 +71,7 @@ related_tutorials:
 
 有了上述的“度量尺”，该研究对当前业界主流的 15 个基准测试（如 SWE-bench, WebArena, $\tau$-bench, AgentDojo 等）进行了全覆盖审计，并将它们映射到 6 个行为轴上（0-2 评分制）。
 
-<img src="/images/2605.20530v1/coverage_audit.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2605.20530v1/coverage_audit.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 审计结果一针见血地指出：**没有任何一个单一榜单能覆盖智能体的全貌**。
 代码测试榜单关心 Bug 是否修复，但不在乎模型是否懂得在需求不明确时提问；浏览器测试榜单关注功能实现，但在细粒度的失败溯源上表现孱弱；安全榜单测试了对抗环境下的防御，却脱离了日常工具使用的语境。这进一步佐证了 AgentAtlas 作为统一分类元语言的必要性。

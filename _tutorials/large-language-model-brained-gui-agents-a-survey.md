@@ -31,7 +31,7 @@ related_tutorials:
 
 > **ArXiv URL**：http://arxiv.org/abs/2411.18279v12
 
-<img src="/images/2411.18279v12/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2411.18279v12/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 演进路线：从刻板脚本到认知中枢
 
@@ -46,7 +46,7 @@ related_tutorials:
 以$GPT\text{-}4o$为代表的模型展现出了惊人的自然语言理解和零样本泛化能力。
 它们不再需要人类硬编码规则，而是能够根据一句模糊的指令，自主在复杂的数字环境中探索。
 
-<img src="/images/2411.18279v12/x4.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2411.18279v12/x4.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 核心机制拆解：智能体的“眼、脑、手”协作
 
@@ -67,7 +67,7 @@ related_tutorials:
 视觉模型会像真正的视网膜一样，通过像素特征识别出隐藏的非标准按钮。
 执行动作后，环境会生成新的界面状态或报错弹窗，这些反馈会被“眼睛”再次捕捉，形成观察闭环。
 
-<img src="/images/2411.18279v12/x10.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2411.18279v12/x10.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 #### “大脑”：提示词工程与深度推理
 

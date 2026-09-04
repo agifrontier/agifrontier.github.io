@@ -14,7 +14,7 @@ related_tutorials:
 
 ## JACM重磅综述：拆解AI Agent三大核心架构与“Agent Transformer”新范式
 
-<img src="/images/2601.01743v1/A__title.jpg" alt="JACM重磅综述：拆解AI Agent三大核心架构与“Agent Transformer”新范式 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.01743v1/A__title.webp" alt="JACM重磅综述：拆解AI Agent三大核心架构与“Agent Transformer”新范式 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 大模型（LLM）的出现让自然语言成为了计算的通用接口，但我们面临的一个尴尬现实是：大多数现实世界的任务并非简单的单轮问答。无论是处理复杂的企业工作流、编写并运行代码，还是操作浏览器完成购物，仅靠“生成文本”是远远不够的。
 
@@ -71,7 +71,7 @@ related_tutorials:
 
 这意味着，Agent 不再是简单的 $Input \rightarrow Output$，而是一个包含检索、规划、验证、执行和更新记忆的动态系统。
 
-<img src="/images/2601.01743v1/section3.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.01743v1/section3.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图 1：Agent Transformer 抽象架构，展示了策略模型与记忆、工具、验证器及环境的交互接口。*
 
@@ -101,7 +101,7 @@ related_tutorials:
 
     这是目前最灵活的“软编程”方式。通过在 Prompt 中提供工具的 Schema 和少样本示例（Few-shot exemplars），我们无需更新参数就能定义 Agent 的行为规范和协议。
 
-<img src="/images/2601.01743v1/section4.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.01743v1/section4.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图 2：Agent AI 学习的全景图，涵盖了从机制、系统工程到基础模型微调的各个层面。*
 

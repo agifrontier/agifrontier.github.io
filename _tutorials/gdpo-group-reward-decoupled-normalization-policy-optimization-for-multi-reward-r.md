@@ -56,7 +56,7 @@ GDPO 的核心思想非常直观：**先各算各的账，最后再汇总。**
 
 3.  **二次归一化**：为了保证数值稳定性，最后再进行一次 Batch 级别的归一化。
 
-<img src="/images/2601.05242v1/teaser.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.05242v1/teaser.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *(a) GDPO 概览：对每个奖励单独进行组内归一化，保留了不同奖励分量的相对差异。*
 
@@ -72,7 +72,7 @@ GDPO 的核心思想非常直观：**先各算各的账，最后再汇总。**
 
 实验结果显示，使用 Qwen2.5-1.5B 模型时，GDPO 在 BFCL-v3 基准测试上的平均准确率比 GRPO 提升了约 **2.7%**，格式正确率提升了超过 **4%**。
 
-<img src="/images/2601.05242v1/x1.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2601.05242v1/x1.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 *(b) 奖励趋势对比：GDPO（蓝色）在正确性和格式奖励上都比 GRPO（橙色）收敛得更好、更高。*
 

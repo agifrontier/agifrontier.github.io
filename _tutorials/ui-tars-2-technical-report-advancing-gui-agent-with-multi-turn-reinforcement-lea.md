@@ -14,7 +14,7 @@ related_tutorials:
 
 ## UI-TARS-2：多轮强化学习炼成！达60%人类水平，AI智能体自主操作电脑
 
-<img src="/images/2509.02544v2/A__title.jpg" alt="UI-TARS-2：多轮强化学习炼成！达60%人类水平，AI智能体自主操作电脑 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2509.02544v2/A__title.webp" alt="UI-TARS-2：多轮强化学习炼成！达60%人类水平，AI智能体自主操作电脑 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 让AI像我们一样熟练地操作电脑，无论是浏览网页、处理文件还是玩游戏，这无疑是通用人工智能（AGI）最激动人心的目标之一。然而，现实却骨感得多：去哪里找海量的操作数据？如何让模型在漫长而复杂的任务中稳定学习？
 
@@ -42,7 +42,7 @@ UI-TARS-2 直面这些挑战，提出了一个由四大支柱构成的系统性�
 
 UI-TARS-2 设计了一个精巧的**数据飞轮**（**Data Flywheel**）机制。它建立了一个自我强化的闭环，让模型能力和数据质量共同进化。
 
-<img src="/images/2509.02544v2/x3.jpg" alt="UI-TARS-2的数据飞轮机制" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2509.02544v2/x3.webp" alt="UI-TARS-2的数据飞轮机制" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 这个飞轮包含三个核心训练阶段：
 
@@ -60,7 +60,7 @@ UI-TARS-2 设计了一个精巧的**数据飞轮**（**Data Flywheel**）机制�
 
 传统方法在处理长尾、复杂的任务时效率低下，且容易因策略偏离而导致训练崩溃。UI-TARS-2 通过一个专为大规模、长时程任务设计的RL训练框架，巧妙地解决了这个问题。
 
-<img src="/images/2509.02544v2/x6.jpg" alt="UI-TARS-2的多轮RL训练架构" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2509.02544v2/x6.webp" alt="UI-TARS-2的多轮RL训练架构" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 其核心设计包括：
 

@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 颠覆常识！阿里SkillRouter：Agent选对工具，代码比描述重要44%
 
-<img src="/images/2603.22455v1/A__title.jpg" alt="颠覆常识！阿里SkillRouter：Agent选对工具，代码比描述重要44% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.22455v1/A__title.webp" alt="颠覆常识！阿里SkillRouter：Agent选对工具，代码比描述重要44% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当下的AI Agent正变得越来越“全能”，它们的背后是一个庞大且不断增长的技能（Skill）生态系统。从代码生成到API集成，成千上万的工具和插件让Agent的能力边界不断拓宽。
 
@@ -36,7 +36,7 @@ SkillRouter的研究者们对此发起了直接挑战。他们构建了一个包
 
 结果怎么样呢？
 
-<img src="/images/2603.22455v1/x1.jpg" alt="图1：技能代码是决定性信号" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2603.22455v1/x1.webp" alt="图1：技能代码是决定性信号" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图左侧所示，结果堪称“惨烈”：
 
@@ -68,7 +68,7 @@ SkillRouter的研究者们对此发起了直接挑战。他们构建了一个包
 
 基于以上洞察，该研究提出了一个专为大规模技能路由设计的实用管线——**SkillRouter**。它是一个总参数量仅为1.2B（0.6B编码器 + 0.6B重排器）的“检索-重排”（retrieve-and-rerank）架构，小巧的体积使其可以轻松部署在消费级硬件上。
 
-<img src="/images/2603.22455v1/x2.jpg" alt="图2：SkillRouter管线架构" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.22455v1/x2.webp" alt="图2：SkillRouter管线架构" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 SkillRouter的工作流程分为两步：
 

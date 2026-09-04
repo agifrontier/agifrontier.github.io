@@ -13,7 +13,7 @@ related_tutorials:
 
 ## RAG去噪为何这么难？人大清华揭秘“三元困境”，非线性微调让LLM自带“过滤器”
 
-<img src="/images/2601.01896v2/A__title.jpg" alt="RAG去噪为何这么难？人大清华揭秘“三元困境”，非线性微调让LLM自带“过滤器” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01896v2/A__title.webp" alt="RAG去噪为何这么难？人大清华揭秘“三元困境”，非线性微调让LLM自带“过滤器” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在构建 **检索增强生成**（**Retrieval-Augmented Generation, RAG**）系统时，我们往往面临一个令人头秃的现实：无论检索器（Retriever）优化得多么好，总会有“噪声文档”混入上下文。这些无关信息不仅浪费了宝贵的上下文窗口，更糟糕的是，它们会误导大模型，导致严重的幻觉问题。
 
@@ -31,7 +31,7 @@ related_tutorials:
 
 传统的检索模型（如双塔模型）通常基于 Query 和 Document 之间的成对（Pairwise）相似度来工作。但在复杂的推理场景中，判断一个文档是否相关，往往涉及到三个甚至更多的元素。
 
-<img src="/images/2601.01896v2/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.01896v2/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，假设 Query 是“Bob感觉如何？”，文档中有一句“Alice和Bob在跑步，Bob精疲力竭”。要判断“精疲力竭（exhausted）”这个词是否相关，模型必须同时连接：
 
@@ -85,7 +85,7 @@ related_tutorials:
 
 *   **对于相关 Token**：函数保持在较为平缓的线性区域，允许模型对相关信息进行微调，而不破坏其原有的相对重要性。
 
-<img src="/images/2601.01896v2/x2.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.01896v2/x2.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 如上图所示，这种方法成功地将“去噪”和“特征提取”两个任务分离开来，打破了线性更新的桎梏。
 
@@ -95,7 +95,7 @@ related_tutorials:
 
 结果显示，使用了该非线性微调方法的模型（Ours），在面对噪声时表现出了极强的鲁棒性。
 
-<img src="/images/2601.01896v2/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01896v2/x3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 更有趣的是图 3 的可视化结果（Attention Gap）。它展示了模型对“答案 Token”和“其他 Token”的注意力分数差值。
 

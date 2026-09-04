@@ -14,7 +14,7 @@ related_tutorials:
 
 ## PPT炼狱场来了！新Agent PPTPilot精准编辑，性能超越专有模型10%
 
-<img src="/images/2512.03042v1/A__title.jpg" alt="PPT炼狱场来了！新Agent PPTPilot精准编辑，性能超越专有模型10% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.03042v1/A__title.webp" alt="PPT炼狱场来了！新Agent PPTPilot精准编辑，性能超越专有模型10% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 让AI帮你改PPT，这个梦想离我们还有多远？
 

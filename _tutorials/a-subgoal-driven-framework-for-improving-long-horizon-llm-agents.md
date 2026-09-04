@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 成功率飙升6倍超GPT-4o！DeepMind发布MiRA，用“里程碑”根治AI智能体“迷路”顽疾
 
-<img src="/images/2603.19685v1/A__title.jpg" alt="成功率飙升6倍超GPT-4o！DeepMind发布MiRA，用“里程碑”根治AI智能体“迷路”顽疾 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2603.19685v1/A__title.webp" alt="成功率飙升6倍超GPT-4o！DeepMind发布MiRA，用“里程碑”根治AI智能体“迷路”顽疾 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 AI智能体（Agent）正被赋予越来越复杂艰巨的任务，从自动操作手机到浏览网页完成预订。然而，当任务流程变长、步骤变多时，即使是最先进的大模型也常常会“迷路”——陷入无效循环，或在任务中途“卡住”不知所措。
 
@@ -47,7 +47,7 @@ AI智能体（Agent）正被赋予越来越复杂艰巨的任务，从自动操�
 
 基于此，他们设计了一个双管齐下的框架，将复杂的长任务分解为一系列可执行的子目标（或称“里程碑”）。
 
-<img src="/images/2603.19685v1/x1.jpg" alt="Framework Overview" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2603.19685v1/x1.webp" alt="Framework Overview" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 这个框架主要包含两大贡献：
 
@@ -108,7 +108,7 @@ MiRA框架的效果有多惊人？数据说明了一切。
 
 当然，这一切的前提是子目标的质量要足够高。研究也证实，这些由大模型生成的子目标是可靠的进度指标。如下图所示，完成的子目标数量与最终任务成功率呈现出强烈的正相关性（AUROC高达0.84）。
 
-<img src="/images/2603.19685v1/x3.jpg" alt="Subgoal Quality Validation" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.19685v1/x3.webp" alt="Subgoal Quality Validation" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 结论
 

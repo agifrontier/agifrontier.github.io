@@ -13,7 +13,7 @@ related_tutorials:
 
 ## Transformer 越深越“傻”？几何视角揭秘百层大模型坍塌之谜
 
-<img src="/images/2601.01014v1/A__title.jpg" alt="Transformer 越深越“傻”？几何视角揭秘百层大模型坍塌之谜 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01014v1/A__title.webp" alt="Transformer 越深越“傻”？几何视角揭秘百层大模型坍塌之谜 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在深度学习的殿堂里，我们一直信奉“更深即更强”。然而，当你试图将 Transformer 堆叠到 100 层甚至更深时，一个诡异的现象出现了：模型不仅没有变聪明，反而开始“坍塌”——特征变得越来越雷同，表达能力急剧下降。
 

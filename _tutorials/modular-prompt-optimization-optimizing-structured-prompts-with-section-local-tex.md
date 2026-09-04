@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 像搭积木一样优化Prompt：CMU新作MPO，分块微调击败TextGrad
 
-<img src="/images/2601.04055v1/A__title.jpg" alt="像搭积木一样优化Prompt：CMU新作MPO，分块微调击败TextGrad 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.04055v1/A__title.webp" alt="像搭积木一样优化Prompt：CMU新作MPO，分块微调击败TextGrad 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 你是否经历过这样的绝望时刻：为了让大模型输出理想的结果，你小心翼翼地修改Prompt（提示词）中的一个词，结果整个回答的逻辑却完全崩塌了？
 
@@ -44,7 +44,7 @@ related_tutorials:
 
 这种结构化的划分，使得优化过程可以从“全局重写”转变为“局部微调”。
 
-<img src="/images/2601.04055v1/architecture.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.04055v1/architecture.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### MPO是如何工作的？
 
@@ -90,7 +90,7 @@ MPO的工作流程非常像软件开发中的“单元测试”与“代码重�
 
 结果令人印象深刻：
 
-<img src="/images/2601.04055v1/result_modified.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.04055v1/result_modified.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 从上图可以看出，**MPO在所有测试中均取得了一致的性能提升**。
 

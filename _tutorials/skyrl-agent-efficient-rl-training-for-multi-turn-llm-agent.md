@@ -14,7 +14,7 @@ related_tutorials:
 
 ## AI Agent训练成本减半！SkyRL-Agent框架揭秘1.55倍加速秘诀
 
-<img src="/images/2511.16108v1/A__title.jpg" alt="AI Agent训练成本减半！SkyRL-Agent框架揭秘1.55倍加速秘诀 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.16108v1/A__title.webp" alt="AI Agent训练成本减半！SkyRL-Agent框架揭秘1.55倍加速秘诀 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 AI Agent无疑是当下最火热的技术浪潮，但要训练一个能在复杂、多步骤任务中稳定发挥的Agent，其背后高昂的算力成本和漫长的训练周期，正成为许多团队难以逾越的障碍。如果训练成本能直接减半，效率还能提升超过50%，会带来怎样的改变？
 
@@ -38,7 +38,7 @@ SkyRL-Agent的设计初衷，正是为了解决这些“老大难”问题。
 
 SkyRL-Agent的架构设计精巧而高效，其核心在于三大组件的协同工作。
 
-<img src="/images/2511.16108v1/x5.jpg" alt="SkyRL-Agent 架构概览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.16108v1/x5.webp" alt="SkyRL-Agent 架构概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 1. 工具为中心的智能体循环
 
@@ -52,7 +52,7 @@ SkyRL-Agent的架构设计精巧而高效，其核心在于三大组件的协同
 
 通过一个精细的**异步流水线调度器**（asynchronous pipeline dispatcher），系统可以智能地将来自不同rollout的、不同类型的阶段性任务调度到对应的硬件上并行执行。这种“流水线”作业模式，极大地提升了异构资源的利用率。
 
-<img src="/images/2511.16108v1/x4.jpg" alt="GPU利用率对比" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.16108v1/x4.webp" alt="GPU利用率对比" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 实验数据显示，相比传统的异步批处理方法，这种流水线调度器带来了**1.55倍**的训练加速，并显著提高了GPU的利用率。
 
@@ -68,7 +68,7 @@ SkyRL-Agent通过一个“后端桥接”层，将Agent的执行逻辑与具体�
 *   **引导式工具使用**：研究发现，Agent在代码库中定位错误时，常常低效地逐行查看文件，而不是使用搜索工具。为此，他们引入了一个基于**抽象语法树**（**Abstract Syntax Tree, AST**）的强大搜索工具，并辅以提示，引导Agent学会更高效地导航代码。
 *   **失败中学习**：当Agent执行失败或陷入循环时，系统会注入结构化的**提示**（hints），帮助Agent分析错误、自我纠正，从而显著提高了训练轨迹的质量和成功率。
 
-<img src="/images/2511.16108v1/x3.jpg" alt="训练效果对比" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.16108v1/x3.webp" alt="训练效果对比" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 最终，SA-SWE-32B在SWE-Bench Verified测试集上达到了**39.4%的Pass@1**，性能媲美顶尖水平，而训练成本降低了超过**2倍**。
 

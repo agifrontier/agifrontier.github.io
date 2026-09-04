@@ -25,7 +25,7 @@ related_tutorials:
 
 > **ArXiv URL**：http://arxiv.org/abs/2604.14148v1
 
-<img src="/images/2604.14148v1/p01_overall_radar_page_1.jpg" alt="论文中的核心图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.14148v1/p01_overall_radar_page_1.webp" alt="论文中的核心图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *论文原图：用于辅助理解核心方法或实验结果。*
 

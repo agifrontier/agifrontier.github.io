@@ -14,7 +14,7 @@ related_tutorials:
 
 ## RAG系统的“黑盒”困境：谷歌提出多跳QA的四轴设计框架
 
-<img src="/images/2601.00536v1/A__title.jpg" alt="RAG系统的“黑盒”困境：谷歌提出多跳QA的四轴设计框架 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.00536v1/A__title.webp" alt="RAG系统的“黑盒”困境：谷歌提出多跳QA的四轴设计框架 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在构建复杂的问答系统时，我们常常陷入一种“黑盒”焦虑：RAG（检索增强生成）和Agent（智能体）虽然效果不错，但它们内部的检索与推理究竟是如何交互的？为什么有的模型在简单问题上表现完美，遇到多跳（Multi-hop）复杂问题就“幻觉”频出？
 

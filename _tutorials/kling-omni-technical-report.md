@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 10步推理生成电影级视频：快手Kling-Omni全能架构揭秘
 
-<img src="/images/2512.16776v1/A__title.jpg" alt="10步推理生成电影级视频：快手Kling-Omni全能架构揭秘 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.16776v1/A__title.webp" alt="10步推理生成电影级视频：快手Kling-Omni全能架构揭秘 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 视频生成领域长期存在着一种“割裂感”：有的模型擅长文生视频，有的专精于视频编辑，而有的则需要借助外部工具才能理解复杂的视觉指令。这种“流水线式”的拼凑方案，不仅效率低下，更难以捕捉用户细腻的创作意图。
 
@@ -27,7 +27,7 @@ related_tutorials:
 
 这种范式不再将文本、图像和视频视为分离的输入，而是将它们构建为一个统一的输入表示。
 
-<img src="/images/2512.16776v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.16776v1/x1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，Kling-Omni 的架构主要由三个关键组件构成：
 
@@ -67,7 +67,7 @@ related_tutorials:
 
 特别是在数据合成方面，单纯依赖真实数据往往难以学习到精确的控制力。因此，团队利用内部的图像编辑和视频理解模型，构建了大量高质量的合成数据，用于训练模型的编辑和多图参考能力。
 
-<img src="/images/2512.16776v1/Data_Filter_Pipeline_V4.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.16776v1/Data_Filter_Pipeline_V4.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 为了保证数据质量，还建立了一个三层过滤系统（如上图），分别从基础质量、时间稳定性和跨模态对齐三个维度对数据进行清洗，确保“喂”给模型的数据都是精品。
 
@@ -77,7 +77,7 @@ Kling-Omni 的实际表现如何？研究团队构建了 OmniVideo-1.0 基准测
 
 在与行业领先模型（如 Veo 3.1 和 Runway-Aleph）的对比中，Kling-Omni 展现出了显著优势。
 
-<img src="/images/2512.16776v1/x5.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.16776v1/x5.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 从上图的 GSB（Good-Same-Bad）评估结果可以看出：
 

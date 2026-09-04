@@ -93,7 +93,7 @@ related_tutorials:
 传统模式下的上下文是一部永远在变厚的流水账，充满了无用的历史赘肉。
 而在Agentic Programming中，上下文被重构为有向无环图。
 
-<img src="/images/2606.15874v1/x2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.15874v1/x2.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 正如原论文这幅架构图所示，上下文的追踪轨迹直接与程序的函数调用图绑定。
 正在运行的子调用树，只会携带自身的祖先调用链作为必要的历史依据。

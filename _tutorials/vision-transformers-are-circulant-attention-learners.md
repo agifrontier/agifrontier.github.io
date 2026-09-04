@@ -14,7 +14,7 @@ related_tutorials:
 
 ## ViT暗藏“循环”玄机？清华新作：用FFT将注意力复杂度降至$O(N\log N)$
 
-<img src="/images/2512.21542v1/A__title.jpg" alt="ViT暗藏“循环”玄机？清华新作：用FFT将注意力复杂度降至 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.21542v1/A__title.webp" alt="ViT暗藏“循环”玄机？清华新作：用FFT将注意力复杂度降至 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 Vision Transformer (ViT) 自从问世以来，凭借其强大的全局建模能力，在计算机视觉的各个领域攻城略地。然而，这种强大的能力并非没有代价——标准自注意力机制（Self-Attention）的计算复杂度是 $O(N^2)$。这意味着，随着图像分辨率的提升，计算量呈爆炸式增长，这成为了ViT在高分辨率任务（如分割、检测）中落地的最大拦路虎。
 
@@ -36,7 +36,7 @@ Vision Transformer (ViT) 自从问世以来，凭借其强大的全局建模能�
 
 然而，作者在观察 DeiT 模型训练出的注意力图时，发现了一个惊人的规律：
 
-<img src="/images/2512.21542v1/x2.jpg" alt="Attention maps from DeiT" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.21542v1/x2.webp" alt="Attention maps from DeiT" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 如上图所示，这些注意力图并非杂乱无章，而是呈现出明显的条纹状结构。在数学上，这种结构高度近似于 **BCCB矩阵**。
 
@@ -50,7 +50,7 @@ Vision Transformer (ViT) 自从问世以来，凭借其强大的全局建模能�
 
 基于上述发现，作者提出了 **循环注意力**（**Circulant Attention**）。其核心思想非常直接：既然ViT倾向于学习BCCB结构，那我们干脆直接显式地将注意力图建模为BCCB矩阵。
 
-<img src="/images/2512.21542v1/x1.jpg" alt="Vanilla self-attention vs Circulant attention" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.21542v1/x1.webp" alt="Vanilla self-attention vs Circulant attention" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，**循环注意力** 的计算流程与传统方法大不相同：
 
@@ -87,7 +87,7 @@ Vision Transformer (ViT) 自从问世以来，凭借其强大的全局建模能�
 
 在处理高分辨率图像时，优势尤为明显。如下图所示，随着Token数量的增加（图像分辨率变大），传统自注意力（SA）的计算量（FLOPs）呈指数级上升，而 **循环注意力**（CA）则保持了近乎线性的增长。
 
-<img src="/images/2512.21542v1/x4.jpg" alt="Efficiency Comparison" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.21542v1/x4.webp" alt="Efficiency Comparison" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *   在 $1536 \times 1536$ 的分辨率下，CA-DeiT 的计算量比原始 DeiT 减少了 **8倍**。
 

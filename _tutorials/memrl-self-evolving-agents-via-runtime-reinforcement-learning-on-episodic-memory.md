@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 告别微调！MemRL：用“记忆RL”让Agent在运行时实现自我进化
 
-<img src="/images/2601.03192v1/A__title.jpg" alt="告别微调！MemRL：用“记忆RL”让Agent在运行时实现自我进化 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.03192v1/A__title.webp" alt="告别微调！MemRL：用“记忆RL”让Agent在运行时实现自我进化 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大模型（LLM）看似无所不知，但它们往往面临一个尴尬的困境：一旦训练完成，它们就停止了“学习”。
 
@@ -38,7 +38,7 @@ MemRL 正是模仿了这一机制。它将 Agent 的能力解耦为两部分：
 
 这就好比给一个天才（LLM）配了一本会自己打分的笔记本（MemRL）。天才的大脑不需要动手术（不微调），只需要不断优化笔记本里的笔记权重即可。
 
-<img src="/images/2601.03192v1/The_conceptual_framework_of_MemRL.jpg" alt="The conceptual framework of MemRL" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.03192v1/The_conceptual_framework_of_MemRL.webp" alt="The conceptual framework of MemRL" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 技术拆解：让记忆学会“打分”
 
@@ -94,7 +94,7 @@ MemRL 并没有抛弃语义检索，而是将其作为第一步，形成了一�
 
 这是一个完全**非参数化**的过程。模型权重 $\theta$ 保持不变，变的是记忆库中的 $Q$ 值。这意味着 Agent 可以在运行时（Runtime）实时学习，无需停止服务去重新训练。
 
-<img src="/images/2601.03192v1/x3.jpg" alt="Overview of the MemRL Framework" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.03192v1/x3.webp" alt="Overview of the MemRL Framework" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 实验表现：在复杂任务中持续进化
 
@@ -102,7 +102,7 @@ MemRL 并没有抛弃语义检索，而是将其作为第一步，形成了一�
 
 特别是在 **Runtime Learning**（运行时学习）的设定下，随着任务的进行，MemRL 的性能曲线呈现出明显的上升趋势，证明了它能够从过往的交互中有效汲取经验。
 
-<img src="/images/2601.03192v1/x1.jpg" alt="Benchmark Runtime Learning performance of MemRL" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.03192v1/x1.webp" alt="Benchmark Runtime Learning performance of MemRL" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 总结与展望
 

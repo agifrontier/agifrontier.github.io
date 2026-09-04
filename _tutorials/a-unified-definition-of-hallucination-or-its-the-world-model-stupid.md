@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 幻觉研究迎来“大一统”：CMU等机构揭示本质，错在世界模型！
 
-<img src="/images/2512.21577v1/A__title.jpg" alt="幻觉研究迎来“大一统”：CMU等机构揭示本质，错在世界模型！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.21577v1/A__title.webp" alt="幻觉研究迎来“大一统”：CMU等机构揭示本质，错在世界模型！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 从早期的机器翻译到如今的智能体（Agent），“幻觉”这个幽灵始终盘旋在大模型头顶。尽管我们尝试了无数种方法——从RAG到RLHF——来消除它，但它依然存在。为什么？
 

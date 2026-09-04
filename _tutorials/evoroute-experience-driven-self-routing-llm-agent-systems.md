@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 破解Agent“不可能三角”：EvoRoute实现成本降80%、速度提升3倍
 
-<img src="/images/2601.02695v1/A__title.jpg" alt="破解Agent“不可能三角”：EvoRoute实现成本降80%、速度提升3倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.02695v1/A__title.webp" alt="破解Agent“不可能三角”：EvoRoute实现成本降80%、速度提升3倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当我们在惊叹于 AgentOrchestra 或 Devin 等顶尖 AI Agent 处理复杂任务的能力时，往往忽略了一个尴尬的现实：这些系统正在疯狂地“烧钱”。
 
@@ -27,7 +27,7 @@ related_tutorials:
 
 在经济学中，有著名的“蒙代尔不可能三角”。研究团队敏锐地发现，在复杂的 Agent 系统中也存在类似的困境。
 
-<img src="/images/2601.02695v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.02695v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，现有的 Agent 系统往往顾此失彼：
 
@@ -76,7 +76,7 @@ EvoRoute 的工作流程可以概括为三个关键阶段：
 
 其中 $\tilde{x}\_{\mathbb{P},l}$、$\tilde{x}\_{\mathbb{C},l}$、$\tilde{x}\_{\mathbb{D},l}$ 分别代表模型 $l$ 在性能、成本和延迟上的预估值，$w$ 为权重。系统会选择得分最高的模型 $l^{\*}$ 来执行当前步骤。
 
-<img src="/images/2601.02695v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.02695v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 最精妙的是，EvoRoute 是**自进化**的。一旦选定的模型完成了任务，这次执行的真实结果（成功与否、耗时、花费）会被立即写回经验库 $\mathcal{K}$。这意味着，EvoRoute 用得越多，它就越聪明，越能精准地避开那些“又贵又笨”的坑。
 
@@ -102,7 +102,7 @@ EvoRoute 的工作流程可以概括为三个关键阶段：
 
 *   对于简单的**文件处理代理**（File Agent），它则大量使用廉价的 Qwen-14B。
 
-<img src="/images/2601.02695v1/x4.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.02695v1/x4.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 这种分配策略完美诠释了“该省省，该花花”的原则。
 

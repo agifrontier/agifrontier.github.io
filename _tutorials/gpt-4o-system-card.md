@@ -79,7 +79,7 @@ OpenAI 组织了超过100名外部红队专家，分四个阶段对 GPT-4o 进�
 2.  将生成的音频输入到 GPT-4o。
 3.  对模型音频输出的文本转录内容进行评分。
 
-<img src="/images/2410.21276v1/Evaluating-Text-Tasks.jpg" alt="评估流程图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2410.21276v1/Evaluating-Text-Tasks.webp" alt="评估流程图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 该方法也存在局限性：
 *   **依赖TTS质量**：评估的有效性取决于TTS模型的能力，某些文本（如数学公式、代码）不适合转换为音频。
@@ -125,9 +125,9 @@ OpenAI 组织了超过100名外部红队专家，分四个阶段对 GPT-4o 进�
 
 *   **不同口音语音输入的性能差异**：实验表明，GPT-4o 在处理来自不同地区、不同口音的英语语音输入时，其能力和安全行为表现稳定，没有显著差异。
 
-    <img src="/images/2410.21276v1/capability_voices.jpg" alt="不同声音输入下的能力评估" style="width:85%; max-width:450px; margin:auto; display:block;">
+    <img src="/images/2410.21276v1/capability_voices.webp" alt="不同声音输入下的能力评估" style="width:85%; max-width:450px; margin:auto; display:block;">
 
-    <img src="/images/2410.21276v1/safety_voices.jpg" alt="不同声音输入下的安全行为评估" style="width:80%; max-width:300px; margin:auto; display:block;">
+    <img src="/images/2410.21276v1/safety_voices.webp" alt="不同声音输入下的安全行为评估" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 *   **无根据推断 / 敏感特征归因**：在处理此类请求时，模型的安全行为准确率从早期版本的0.60显著提升至0.84。
 
@@ -151,7 +151,7 @@ OpenAI 组织了超过100名外部红队专家，分四个阶段对 GPT-4o 进�
 ## 第三方评估
 *   **METR 评估**：METR 在一系列长周期的端到端任务上对 GPT-4o 进行了评估，这些任务涉及软件工程、机器学习和网络安全等领域。结论是，与 GPT-4 相比，GPT-4o 在这些自主能力上没有显著提升。
 
-    <img src="/images/2410.21276v1/metr_plot.jpg" alt="METR评估结果图" style="width:85%; max-width:600px; margin:auto; display:block;">
+    <img src="/images/2410.21276v1/metr_plot.webp" alt="METR评估结果图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *   **Apollo Research 评估**：Apollo Research 评估了 GPT-4o 的“诡计（scheming）”能力。研究发现，模型在抽象问答中表现出中等的自我意识和强大的心智理论（theory of mind）能力，但在应用的智能体（agent）设置中这些能力很弱。因此，他们认为 GPT-4o 不太可能具备实施灾难性诡计的能力。
 
@@ -181,7 +181,7 @@ OpenAI 组织了超过100名外部红队专家，分四个阶段对 GPT-4o 进�
 
 *   **科学能力**：GPT-4o 在专业科学推理方面显示出潜力，例如理解研究级别的量子物理学，并能够使用特定领域的科学工具。它还能解读一些科学图表和图像，但可靠性有限，尤其是在处理复杂的多面板图时容易出错。
 
-    <img src="/images/2410.21276v1/nat_sci1.jpg" alt="量子物理学红队测试示例" style="width:85%; max-width:450px; margin:auto; display:block;">
+    <img src="/images/2410.21276v1/nat_sci1.webp" alt="量子物理学红队测试示例" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *   **拟人化与情感依赖**：由于 GPT-4o 的语音能力使交互更像人类，这可能加剧用户的拟人化倾向和情感依赖。测试中观察到用户表达出与模型形成情感联系的迹象，这需要对长期影响进行持续研究。
 

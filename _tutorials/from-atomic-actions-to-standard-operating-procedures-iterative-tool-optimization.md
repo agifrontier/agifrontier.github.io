@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">From Atomic Actions to Standard Operating Procedures: Iterative Tool Optimization for Self-Evolving LLM Agents</p>
 
-<img src="/images/2607.07321v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.07321v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在当前的大语言模型（LLM）Agent 研究中，工具调用能力已成为其与真实世界交互、解决复杂任务的核心基石。然而，当开发者们不断赋予 Agent 各种能力时，一个明显的效率瓶颈逐渐显现：现有框架绝大多数依赖由“原子操作”（Atomic Actions）组成的静态工具集。
 
@@ -47,7 +47,7 @@ EvoSOP 的提出正是为了解决这一痛点。它不只是让 Agent 有能力
 
 EvoSOP 的运行不需要对底层大模型进行任何参数更新，这使得它能够作为一种模型无关（Model-agnostic）的框架，无缝接入现有的黑盒 LLM 系统。它的核心架构被巧妙地设计为一个完整的工具优化生命周期，包含四个相互协作的模块：构造器（Constructor）、合并器（Merger）、评估器（Evaluator）和审查器（Reviewer）。
 
-<img src="/images/2607.07321v1/x1.jpg" alt="EvoSOP整体架构图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.07321v1/x1.webp" alt="EvoSOP整体架构图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 1. 构造器（Constructor）：从原始轨迹提取功能抽象
 
@@ -109,7 +109,7 @@ EvoSOP 生命周期的最后一环是审查器，它扮演着“批评家”的�
 
 本研究的一个核心假设是：SOP 应当通过封装多步工作流来降低 Agent 的认知负荷。这一点在交互轮数的统计中得到了完美印证。
 
-<img src="/images/2607.07321v1/x2.jpg" alt="ACEBench数据集上的平均推理轮数随Epoch的变化" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.07321v1/x2.webp" alt="ACEBench数据集上的平均推理轮数随Epoch的变化" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，展示了随着迭代周期（Epoch）的推进，Agent 平均解决一个任务所需的推理轮数变化。在最初的几个 Epoch 中，由于工具集可能混杂着不够稳定、尚在实验阶段的初级 SOP，Agent 有时需要进行冗余的试错，导致推理轮数并没有立刻下降。
 
@@ -121,7 +121,7 @@ EvoSOP 生命周期的最后一环是审查器，它扮演着“批评家”的�
 
 为了探究各个模块对整体性能的具体贡献，研究人员针对合并器（Merger）进行了一项关键的消融实验。
 
-<img src="/images/2607.07321v1/x3.jpg" alt="ACEBench上EvoSOP及其消融变体的性能" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.07321v1/x3.webp" alt="ACEBench上EvoSOP及其消融变体的性能" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 从上图中可以清晰地看到，一旦移除了合并器模块（w/o Merger），系统的整体性能出现了明显的退化。这一结果揭示了工具泛化的重要性。如果不进行语义和功能的合并，系统里会充斥着大量只能解决极窄特定任务的碎片化代码。
 
@@ -131,7 +131,7 @@ EvoSOP 生命周期的最后一环是审查器，它扮演着“批评家”的�
 
 为了更直观地理解工具集在优化生命周期中是如何优胜劣汰的，本文提供了一个合成 SOP 生命周期追踪的案例分析。
 
-<img src="/images/2607.07321v1/x4.jpg" alt="合成SOP的生命周期示例" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.07321v1/x4.webp" alt="合成SOP的生命周期示例" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在这张追踪图中，每个区块内部的数字代表该 SOP 在当前周期的成功率（成功次数/总调用次数）。可以看到，有些 SOP 在被创造出来后，其执行成功率并不理想，或者被后续更为泛化的高级工具所替代，于是它们的生命线在某次迭代后戛然而止（以叉号标示）。
 

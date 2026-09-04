@@ -40,7 +40,7 @@ related_tutorials:
 
 随后，不知情的独立评委采用标准的**一致性评估技术**（**Consensual Assessment Technique, CAT**）进行盲评，将创造力定义为“新颖性”与“实用性”的乘积。
 
-<img src="/images/2605.17885v1/llm_vs_human_creativity_boxplots.jpg" alt="LLM vs human creativity" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2605.17885v1/llm_vs_human_creativity_boxplots.webp" alt="LLM vs human creativity" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 结果表明，LLM团队在整体创造力上完全占据主导地位，其核心优势源于极高的新颖性（$d=1.29$），同时在实用性上并没有打折扣（两者表现相当，$p=0.142$）。这种断层优势甚至在头部创意中更为明显：排名前5%的顶级想法中，LLM团队的平均得分为 $M=0.53$，远超人类团队的 $M=0.37$。
 
@@ -56,7 +56,7 @@ related_tutorials:
 
 多智能体系统仿佛是一支**掌握了空间传送技术的探险队**。它们得益于极高的探索效率，在几何特征上表现为极大的语义传播范围和更短的绝对路径长度。AI能够轻松跨越常人的思维盲区，进行大跨度的概念跃迁。例如，在一个关于塑料垃圾的高分创意对话中，AI团队的讨论从“经济激励”瞬间跳跃到“区块链”，接着又跨越到“生物技术”和“活体生物”。这种跳跃直接打破了常规思路，造就了高新颖度。
 
-<img src="/images/2605.17885v1/LLM_human_coefficient_comparison.jpg" alt="Trajectory analysis" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2605.17885v1/LLM_human_coefficient_comparison.webp" alt="Trajectory analysis" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 相比之下，人类团队更像是**必须徒步开荒的探险队**。人类的创造力极度依赖于维持顺畅的沟通心流。在轨迹特征上，人类团队迫切需要高局部连贯性和频繁的平滑转向。如果某个成员的想法跨度太大，团队的沟通逻辑就会断裂，导致协作失败。人类必须小心翼翼地、一步一个脚印地维持对话的连贯性，这在无形中限制了他们探索广阔语义边界的速度与深度。
 
@@ -72,7 +72,7 @@ related_tutorials:
 
 然而，对于具备强大内部思维链的推理模型（如 o3-high），复杂的讨论结构带来的收益微乎其微（仅为+4.0%）。这是因为推理模型在输出结果之前，已经在其内部的高维隐空间中完成了深度的自我探索，它们不再需要外部的沟通机制来强制发散思维。
 
-<img src="/images/2605.17885v1/scaffolding_paradox.jpg" alt="Scaffolding paradox" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2605.17885v1/scaffolding_paradox.webp" alt="Scaffolding paradox" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 局限性与混合团队的未来
 

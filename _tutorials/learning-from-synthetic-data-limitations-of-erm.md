@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 谷歌揭秘合成数据陷阱：ERM不再万能，新算法破解“模型崩溃”危机
 
-<img src="/images/2601.15468v1/A__title.jpg" alt="谷歌揭秘合成数据陷阱：ERM不再万能，新算法破解“模型崩溃”危机 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.15468v1/A__title.webp" alt="谷歌揭秘合成数据陷阱：ERM不再万能，新算法破解“模型崩溃”危机 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 随着大语言模型（LLM）的爆发，互联网正在被AI生成的内容淹没。从在线评论到法庭文件，“自然”数据正在被那些看起来很像人写、实际上却是AI生成的“合成数据”所污染。
 

@@ -13,7 +13,7 @@ related_tutorials:
 
 ## DeepSeek-R1变“复读机”？MIT揭秘：蒸馏导致死循环暴增，调高温度治标不治本
 
-<img src="/images/2512.12895v1/A__title.jpg" alt="DeepSeek-R1变“复读机”？MIT揭秘：蒸馏导致死循环暴增，调高温度治标不治本 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.12895v1/A__title.webp" alt="DeepSeek-R1变“复读机”？MIT揭秘：蒸馏导致死循环暴增，调高温度治标不治本 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当你在使用 DeepSeek-R1 或 OpenThinker 等最新的推理模型解决复杂的数学问题时，是否遇到过这样的情况：模型开始输出长长的思维链（Chain of Thought），一切看起来都很顺利，直到它突然陷入了某种怪圈——不断重复同一段话，或者在两个步骤之间反复横跳，直到耗尽 Token 上限。
 
@@ -35,7 +35,7 @@ related_tutorials:
 
 如下图所示，OpenThinker3-1.5B（学生）在低温度下的死循环比例高达 30% 以上，而它的老师 QwQ-32B 几乎从不陷入死循环。
 
-<img src="/images/2512.12895v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.12895v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如果学生完美地学习了老师的概率分布，这种差异是不应该存在的。这直接指向了一个核心原因：**学习误差（Errors in Learning）**。也就是说，学生模型并没有学会老师在关键决策点上的精准判断，这种“学艺不精”导致了死循环。
 
@@ -65,7 +65,7 @@ related_tutorials:
 
 这种误差的自我强化，导致模型一旦踏入某条错误的路径，就会在后续的决策中不断重复这个错误，最终形成闭环。
 
-<img src="/images/2512.12895v1/x8.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.12895v1/x8.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 温度（Temperature）：是解药还是止痛药？
 
@@ -75,7 +75,7 @@ related_tutorials:
 
 如下图所示，随着温度升高，死循环确实减少了（图 a），但模型的平均响应长度（Average CoT Length）却在持续飙升（图 b），甚至远超老师模型。
 
-<img src="/images/2512.12895v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.12895v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 这意味着，高温度下的模型并没有学会“正确”的推理路径，它只是在错误和循环的边缘疯狂试探，依靠运气（随机性）最终跌跌撞撞地找到了答案，或者输出了大量无效的废话。
 

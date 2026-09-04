@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Scaling Automatic Research Agents via World Models</p>
 
-<img src="/images/2608.12564v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.12564v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在人工智能向通用能力迈进的进程中，自动化研究智能体（**AutoResearch agents**）一直被视为一块重要的试金石。现代大语言模型已经展现出了令人瞩目的能力：给定一个科学问题或工程需求，它们可以自主提出假设、编写代码实现解决方案，并根据执行结果不断迭代。在化学合成、数据科学和机器学习工程等领域，这类智能体甚至已经开始逼近人类专家的表现。
 
@@ -44,7 +44,7 @@ related_tutorials:
 
 但环境执行端则完全是另一番景象。环境执行是不可被批处理的。每一个候选解决方案都代表着一段独特的、不可预测的代码，必须在一个独立的沙盒中独占真实机器时间。这意味着，每增加一条交互轨迹，执行成本就会线性叠加。如果智能体生成了 1000 个不同的训练脚本，系统就必须实打实地跑 1000 次模型训练。
 
-<img src="/images/2608.12564v1/fig1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.12564v1/fig1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 这就导致了一个致命的算力不对称现象：在传统的 RL 训练中，算力容量会迅速被环境执行耗尽。执行环节不仅主导了整个训练成本，更成为了阻碍模型通过海量探索实现能力涌现的绝对瓶颈。简单地堆砌 GPU 也无法解决问题，因为执行真实物理过程或漫长代码逻辑的时间常数是固定的。
 

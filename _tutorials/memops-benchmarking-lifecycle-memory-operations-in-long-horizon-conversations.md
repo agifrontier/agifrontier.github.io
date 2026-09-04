@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">MemOps: Benchmarking Lifecycle Memory Operations in Long-Horizon Conversations</p>
 
-<img src="/images/2607.12893v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.12893v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 随着大语言模型（LLM）的快速迭代，AI 正在从仅能处理单次会话的简单助手，演变为能够跨越数天、数周乃至数月陪伴用户的长期智能体。在这种长周期、多会话的交互场景中，长记忆能力（Long-term Memory）已经成为决定智能体能否维持连贯性、并提供个性化体验的基础能力。为了评估这种能力，业界涌现了大量长记忆基准测试。然而，当下的评估体系却普遍陷入了一个“黑盒”误区。
 
@@ -38,7 +38,7 @@ related_tutorials:
 
 现有的诸如 LoCoMo、LongMemEval 等基准虽然在时间推理和超长上下文方面做出了贡献，但它们依然将评估重心放在黑盒的输入输出行为上。即使部分测试包含了“知识更新”的标签，其最终裁判标准依然是对最终问题回答的准确与否。这种评估方式无法提供任何操作级别的直接监督或失败诊断。
 
-<img src="/images/2607.12893v1/x1.jpg" alt="现有长记忆基准与 MemOps 的对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.12893v1/x1.webp" alt="现有长记忆基准与 MemOps 的对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 为了解决这一问题，MemOps 将长对话记忆拆解为五类显式的生命周期操作，并要求系统为每一个操作生成结构化的轨迹（包含触发条件、目标对象、作用域、状态转移以及支持证据）。这种范式的转变，使得评估从“答案对不对”进化到了“记忆是怎么演变的”。这五大核心操作包括：
 
@@ -56,15 +56,15 @@ related_tutorials:
 
 为了支撑这样细粒度、多维度的诊断目标，仅仅靠人工收集真实对话是远远不够的。MemOps 构建了一条高度可控的基准生成管线，将复杂的记忆操作无缝嵌入到超长、自然、且面向任务的对话历史中。在形式化定义上，MemOps 将每一个实例表示为一个元组 $(b,C,O,A)$，其中 $b$ 代表特定主题的用户背景，$C$ 是包含证据的对话集，$O$ 是黄金操作轨迹，而 $A$ 则是包含预期答案的评估探针集合。
 
-<img src="/images/2607.12893v1/x2.jpg" alt="MemOps 基准生成与验证管线" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.12893v1/x2.webp" alt="MemOps 基准生成与验证管线" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 整个构建流程被精巧地划分为四个阶段。第一阶段是背景构建，确保测试场景具备广泛的主题多样性。第二阶段是核心的证据对话与黄金轨迹生成，管线会生成具体的对话内容，并强制将每一段证据的跨度锚定在精确的用户对话轮次上。这种硬性锚定至关重要，它确保了每一个被评估的记忆状态都能溯源到清晰的对话原文，而不是依赖助手产生的模糊摘要。第三阶段是生成六大类操作级探针，这些探针专门针对操作检测、目标提取、状态转移等底层机制进行提问。最后，第四阶段的长上下文对话生成会将这些包含证据的片段巧妙地注入到充满干扰信息的长周期任务对话中，模拟真实世界中极其嘈杂的信息获取环境。
 
-<img src="/images/2607.12893v1/x3.jpg" alt="操作级探针的不同对话示例" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.12893v1/x3.webp" alt="操作级探针的不同对话示例" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 为了保证这一套复杂管线生成的数据具备极高的质量，研究团队引入了确定性本地门控与大语言模型验证相结合的混合校验机制。本地系统会无情地拒绝任何模式无效或证据格式不一致的畸形样本；随后，LLM 验证器会对语义属性、对话的逻辑扎实度、状态转移的连贯性进行深度审计。如果样本在任何一个环节未能通过，管线会将失败转化为反馈信号并触发重新生成。经过这样严密的洗礼，MemOps 最终沉淀了跨越 100 个独特主题、包含近万轮对话交互的测试集，生成了超过 4000 个在邻近证据和长上下文双重设置下的高价值评估实例。
 
-<img src="/images/2607.12893v1/x5.jpg" alt="MemOps 评估设计与操作分布" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.12893v1/x5.webp" alt="MemOps 评估设计与操作分布" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ## 诊断结果揭露的残忍现实
 

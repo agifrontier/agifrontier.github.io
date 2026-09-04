@@ -38,14 +38,14 @@ related_tutorials:
 
 本文旨在解决上述问题，即传统Transformer架构在多变量时间序列预测任务中的不适应性。作者认为问题不在于Transformer本身无效，而在于其**使用方式不当**。
 
-<img src="/images/2310.06625v4/x3.jpg" alt="不同Transformer模型的分类" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2310.06625v4/x3.webp" alt="不同Transformer模型的分类" style="width:90%; max-width:700px; margin:auto; display:block;">
 > 图：根据对组件和架构的修改对基于Transformer的预测器进行分类。iTransformer属于第四类，即不修改组件，但改变其作用维度和架构。
 
 ## 本文方法
 
 本文提出的iTransformer通过反转Transformer组件的作用维度，重新定义了其在时间序列预测中的角色，采用了一个简洁的*仅编码器 (encoder-only)* 架构。
 
-<img src="/images/2310.06625v4/x2.jpg" alt="Vanilla Transformer与iTransformer对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2310.06625v4/x2.webp" alt="Vanilla Transformer与iTransformer对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 > 图：Vanilla Transformer将每个时间步的数据作为Token；iTransformer则将每个变量的完整序列作为Token，使注意力机制捕捉变量间相关性，前馈网络学习序列表示。
 
 ### 架构创新：维度反转
@@ -64,7 +64,7 @@ iTransformer的核心是将输入数据的处理维度进行了反转。对于�
 
 3.  **预测输出 (Projection)**：经过$$L$$层Transformer模块处理后，最终的变量Token表示 $\mathbf{h}\_n^L$ 被送入一个线性投影层，直接生成对该变量未来$$S$$个时间步的预测值 $\hat{\mathbf{Y}}\_{:,n}$。
 
-<img src="/images/2310.06625v4/x4.jpg" alt="iTransformer整体架构" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2310.06625v4/x4.webp" alt="iTransformer整体架构" style="width:85%; max-width:600px; margin:auto; display:block;">
 > 图：iTransformer整体架构图。展示了序列嵌入、自注意力、前馈网络和层归一化的反转应用。
 
 ### 优点
@@ -97,26 +97,26 @@ iTransformer在多个真实世界数据集上的实验表现优异，验证了�
 ### 框架泛化性与优势验证
 *   **普适性提升 (iTransformers)**：将“维度反转”思想应用于多种Transformer变体（如Reformer, Informer, FlashAttention），其性能均获得巨大提升（平均MSE降低16.8%至38.9%），证明了该框架的普适性和有效性。
 
-<img src="/images/2310.06625v4/x6.jpg" alt="增加回看窗口长度的效果" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2310.06625v4/x6.webp" alt="增加回看窗口长度的效果" style="width:85%; max-width:600px; margin:auto; display:block;">
 > 图：与传统Transformer不同，iTransformer及其变体的性能随回看窗口长度的增加而稳定提升。
 
 *   **长回看窗口优势**：实验证明，iTransformer的预测精度随回看窗口（lookback length）的增长而持续提高，解决了传统Transformer模型在此问题上的性能退化现象。
 
 *   **变量泛化能力**：在仅用20%的变量进行训练，再对全部变量进行预测的“零样本”场景下，iTransformer表现出很强的泛化能力，性能下降幅度远小于传统的通道独立（Channel Independence）方法。
 
-<img src="/images/2310.06625v4/x5.jpg" alt="变量泛化能力对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2310.06625v4/x5.webp" alt="变量泛化能力对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 > 图：在仅用部分变量训练的泛化测试中，iTransformer（橙色）相比基线（蓝色）性能下降更少，展现了更强的泛化能力。
 
 ### 模型分析
 *   **消融研究**：实验验证了“注意力用于变量维度、FFN用于时间维度”是最佳组合。若对调两者作用或移除任一组件，性能均会显著下降，其中传统Transformer的架构（FFN作用于变量，注意力作用于时间）表现最差。
 *   **表征分析**：通过CKA相似度分析发现，iTransformer在不同层之间学习到的表示更加一致，这与时间序列预测任务中更好的性能相关。同时，注意力图的可视化也证实了其能有效捕捉变量间的真实相关性。
 
-<img src="/images/2310.06625v4/x7.jpg" alt="表征与相关性分析" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2310.06625v4/x7.webp" alt="表征与相关性分析" style="width:90%; max-width:700px; margin:auto; display:block;">
 > 图：左侧显示iTransformer（绿色三角）具有更高的CKA相似度和更低的MSE。右侧显示iTransformer的注意力图能从原始数据相关性（浅层）演化为未来数据相关性（深层）。
 
 *   **高效训练策略**：本文提出一种高效训练策略，即在每个batch中随机采样部分变量进行训练。该方法可在大幅降低显存占用的同时，基本不影响最终的预测性能。
 
-<img src="/images/2310.06625v4/x8.jpg" alt="高效训练策略分析" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2310.06625v4/x8.webp" alt="高效训练策略分析" style="width:90%; max-width:700px; margin:auto; display:block;">
 > 图：随着采样变量比例的降低，模型性能（左）保持稳定，而显存占用（右）显著减少。
 
 ### 最终结论

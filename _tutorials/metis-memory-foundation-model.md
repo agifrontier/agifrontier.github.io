@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Metis: Memory Foundation Model</p>
 
-<img src="/images/2607.26760v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.26760v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在过去几年中，大语言模型的能力边界得到了极大的拓展，但当我们将这些模型构建为复杂的 AI Agent 时，一个核心瓶颈始终存在：模型本身是没有记忆的。为了解决这个问题，当前的行业标准做法是依赖检索增强生成（RAG）等外部记忆模块，将历史信息转化为文本片段塞入模型的上下文窗口中。然而，这种“外挂式”的记忆方案正在显露出其固有的天花板。
 
@@ -40,7 +40,7 @@ related_tutorials:
 
 为了打破这一僵局，研究团队提出了“记忆基础模型”的构想，其核心理念是将记忆能力从外部模块转化为骨干模型的内部机制，使其直接参与到每一次的前向计算中。在这个全新的范式下，原生记忆（Native Memory）被赋予了两个维度的严谨定义：原生记忆状态与原生记忆过程。
 
-<img src="/images/2607.26760v1/figure_intro_extensive_memory.jpg" alt="传统外部记忆与原生记忆的演进对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.26760v1/figure_intro_extensive_memory.webp" alt="传统外部记忆与原生记忆的演进对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 所谓“原生记忆状态”，意味着记忆基础模型在多轮推理中原生具备状态性（Stateful）。不同于传统大模型在每次生成结束后就“阅后即焚”，记忆基础模型能够在骨干网络内部形成、维持并利用来自过往推理的记忆状态。这些记忆状态动态地表现为模型参数的一部分，且其语义空间在预训练或中期训练阶段就已与模型的静态参数完成了对齐。
 
@@ -52,7 +52,7 @@ related_tutorials:
 
 在标准的 Transformer 架构中，当前词的生成依赖于对历史 Token 的注意力计算，所有历史状态都被存储在不断增长的 KV Cache 中。然而，KV Cache 本质上仍然是当前会话的上下文，无法跨越不同的交互周期形成持久记忆。Metis 的思路是：不把历史信息存为冗长的 Token 序列，而是将其压缩并编码到一个固定大小的参数矩阵中，在后续交互时通过特殊的“记忆注意力”（Memory Attention）进行读取。
 
-<img src="/images/2607.26760v1/figure_framework.jpg" alt="Metis模型架构及记忆更新过程" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.26760v1/figure_framework.webp" alt="Metis模型架构及记忆更新过程" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 Metis 的基本组成单元由两部分协同工作：超记忆块（Hyper Memory Block）和局部记忆块（Local Memory Block）。
 

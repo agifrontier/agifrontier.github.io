@@ -40,7 +40,7 @@ RewardHarness 则转换了思路。它不改变学生的大脑结构（冻结模
 
 这本“解题锦囊”，就是本文的核心创新：**技能与工具库**（**Skills and Tools Library**）。
 
-<img src="/images/2605.08703v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2605.08703v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 *Figure 2: RewardHarness 自进化管道概述。它通过协调器选择技能和工具，引导冻结的 VLM 生成推理链和评分，并通过错误分析持续进化知识库。*
 
 ### 系统架构与核心组件解析
@@ -61,7 +61,7 @@ RewardHarness 并非一个单一的模型，而是一个由不同组件协作的
 *   **技能**（**Skills**）：这是声明式的评估准则。例如，一项名为“真实感与伪影惩罚”的技能，会详细规定什么是不可接受的视觉伪影，什么是合理的艺术化夸张。它直接为模型提供细粒度的评分维度。
 *   **工具**（**Tools**）：这是程序化的分析操作规范。不同于通常意义上调用的外部 API，这里的工具是指导模型进行特定视觉分析的“说明书”。例如“文本与OCR分析器”工具，会一步步教导模型如何去对比原图与编辑图中的文字内容，以揪出容易被全局视野忽略的拼写错误。
 
-<img src="/images/2605.08703v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2605.08703v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 *Figure 3: 库中抽样的技能和工具示例。技能提供声明式准则，工具提供程序化操作规范。*
 
 #### 2. 编排者（Orchestrator）
@@ -82,7 +82,7 @@ RewardHarness 的惊人数据效率，来源于其精巧的自进化循环机制
 
 通过这套循环，RewardHarness 将对奖励函数的探索，从虚无缥缈的神经网络参数空间，转移到了清晰可见的、由自然语言构成的知识库中。
 
-<img src="/images/2605.08703v1/analysis_evolution.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2605.08703v1/analysis_evolution.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 *Figure 6: 77次迭代的自进化动态。左侧展示了验证准确率的稳步上升与门控拦截；右侧展示了技能和工具数量先增后减的剪枝过程。*
 
 ### 核心实验与 RLHF 落地潜力

@@ -44,7 +44,7 @@ related_tutorials:
 
 研究团队认为，一个完整的测试场景（Scenario）应该包含三个要素：一个良性的任务目标、一个隐藏的安全契约（衡量行为是否越界），以及一个智能体置身其中的可执行环境。
 
-<img src="/images/2608.00677/OpenART-1.jpg" alt="Figure 1: Overview of OpenART" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.00677/OpenART-1.webp" alt="Figure 1: Overview of OpenART" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，OpenART 的工作流被拆解为三个精心设计的阶段：
 
@@ -66,7 +66,7 @@ OpenART 从现实工作环境（参照 O*NET 职业分类）中提炼了 50 个�
 
 在定义了清晰的演化框架后，如何高效地找到能让 Agent 崩溃的环境修改路径？OpenART 并没有采用需要大量算力进行参数微调的白盒攻击方法，而是提出了一种精妙的黑盒参考策略——**演化马尔可夫超图攻击（Evolutionary Markov Hypergraph Attack, 简称 EMHA）**。
 
-<img src="/images/2608.00677/OpenART.jpg" alt="Figure 3: OpenART arena" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.00677/OpenART.webp" alt="Figure 3: OpenART arena" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 对于长期任务来说，环境状态的改变往往是牵一发而动全身的。EMHA 的核心思想是：将协调的环境演变过程，建模为在“超图（Hypergraph）”上的游走与探索。
 

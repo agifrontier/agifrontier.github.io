@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 准确率飙升至91%！Hindsight：让20B模型记忆力超越GPT-4o
 
-<img src="/images/2512.12818v1/A__title.jpg" alt="准确率飙升至91%！Hindsight：让20B模型记忆力超越GPT-4o 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.12818v1/A__title.webp" alt="准确率飙升至91%！Hindsight：让20B模型记忆力超越GPT-4o 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 目前的AI Agent（智能体）记忆系统存在一个致命缺陷：它们大多只是简单的“搬运工”。现有的架构通常将记忆视为一个外部的向量数据库，通过**检索增强生成**（**Retrieval-Augmented Generation, RAG**）提取片段塞进Prompt里。这种做法虽然能缓解“健忘”问题，但Agent无法区分“客观事实”与“主观推论”，难以在长周期内组织信息，更无法像人类一样随着经历改变观点。
 

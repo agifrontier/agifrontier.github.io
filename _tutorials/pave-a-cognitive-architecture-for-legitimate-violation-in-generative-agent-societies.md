@@ -108,7 +108,7 @@ PAVE赋予了智能体在紧急情况下进行“合理违规”的认知能力�
 
 为了验证PAVE的有效性，研究团队将Smallville沙盒扩展为了基于网格的交通环境Voville，并设计了三大核心场景。
 
-<img src="/images/2605.19351v1/fig_scenarios.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2605.19351v1/fig_scenarios.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 #### 场景一：无权威在场的火灾逃生
 

@@ -82,7 +82,7 @@ related_tutorials:
 第一个角色是 **BugFixer**，其核心使命是定位出错代码并提供修复补丁。
 第二个角色是 **TestWriter**，负责编写能够精准复现该缺陷的单元测试。
 
-<img src="/images/2509.23045v1/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2509.23045v1/x3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 一个成功的修复不仅需要补丁能够解决问题，还需要通过相应的测试。
 这两个角色都需要极强的两项基础能力：文件定位能力和代码编辑能力。
@@ -122,7 +122,7 @@ related_tutorials:
 具体而言，模型会扮演 TestWriter 生成多个候选的复现测试用例。
 随后，BugFixer 生成的补丁必须经过这些测试用例的重重考验。
 
-<img src="/images/2509.23045v1/selfplay_figure_v2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2509.23045v1/selfplay_figure_v2.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 实验数据表明，这种自我对弈带来的收益远超传统的多数投票法。
 在滚动测试下，Kimi-Dev 在 SWE-bench Verified 榜单上成绩斐然。
@@ -150,7 +150,7 @@ related_tutorials:
 为什么单步训练积累的先验能够如此完美地迁移到多轮复杂的对抗中？
 为了揭示这一黑盒，研究团队针对各个训练阶段的模型进行了消融对比。
 
-<img src="/images/2509.23045v1/skill_analysis_figure.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2509.23045v1/skill_analysis_figure.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 研究发现，长链条推理训练中培养出的自我反思机制，是至关重要的纽带。
 在面对长达百轮的极限交互测试时，各阶段模型的耐力表现出了显著差异。

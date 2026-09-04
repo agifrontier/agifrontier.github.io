@@ -36,7 +36,7 @@ RoPE最初是为一维文本序列设计的。它通过在embedding的不同维�
 *   **Mixed RoPE**：为了解决Axial RoPE的局限，Mixed RoPE允许每个维度对同时受到 $x$ 和 $y$ 位置的影响，通过学习不同的旋转频率组合，来表达更丰富的空間關係。
 *   **LieRE**：从李代数的视角出发，将RoPE推广到更高维的旋转。它在数学上最为通用，但却不保证一定满足等变性。
 
-<img src="/images/2511.08368v1/x1.jpg" alt="Axial RoPE与Mixed RoPE的注意力模式对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.08368v1/x1.webp" alt="Axial RoPE与Mixed RoPE的注意力模式对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 <center>图1：Axial RoPE（上）只能产生轴对齐的注意力模式，而Mixed RoPE（下）可以学习对角线等更复杂的模式。</center>
 
 ### 重新审视等变性：一个数学洞察
@@ -69,7 +69,7 @@ $${% endraw %}
 
 关键在于，三维空间中的旋转通常是**不可交换的**。先绕x轴转再绕y轴转，与先绕y轴转再绕x轴转，结果完全不同。这种设计在保留旋转特性的同时，精准地破坏了严格的等变性。
 
-<img src="/images/2511.08368v1/x2.jpg" alt="不同RoPE变体的旋转机制" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.08368v1/x2.webp" alt="不同RoPE变体的旋转机制" style="width:90%; max-width:700px; margin:auto; display:block;">
 <center>图2：Mixed RoPE（左）的旋转顺序无关紧要，而Spherical RoPE（右）的旋转顺序会影响最终结果，从而打破了等变性。</center>
 
 通过比较Mixed RoPE（最通用的等变版本）和Spherical RoPE（精心设计的非等变版本），研究者可以直接检验等变性本身究竟有多大贡献。
@@ -78,7 +78,7 @@ $${% endraw %}
 
 研究者在CIFAR100和ImageNet数据集上，使用标准的ViT-S架构对多种位置编码方法进行了评估。结果令人惊讶：
 
-<img src="/images/2511.08368v1/x3.jpg" alt="ImageNet-1k上不同分辨率下的准确率" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.08368v1/x3.webp" alt="ImageNet-1k上不同分辨率下的准确率" style="width:85%; max-width:450px; margin:auto; display:block;">
 <center>图3：ImageNet-1k上的泛化性能测试。横轴为图片分辨率，纵轴为准确率。</center>
 
 从上图可以看出：

@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 阿里开源ROME：SWE-bench胜率57%，揭秘打造顶尖Agent的“罗马”基建
 
-<img src="/images/2512.24873v1/A__title.jpg" alt="阿里开源ROME：SWE-bench胜率57%，揭秘打造顶尖Agent的“罗马”基建 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.24873v1/A__title.webp" alt="阿里开源ROME：SWE-bench胜率57%，揭秘打造顶尖Agent的“罗马”基建 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型的发展正在经历一场从“对话者”到“行动者”的深刻变革。
 

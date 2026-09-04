@@ -13,7 +13,7 @@ related_tutorials:
 
 ## RoPE“瘦身”术：砍掉Attention层50%参数，性能却几乎无损
 
-<img src="/images/2601.02728v1/A__title.jpg" alt="RoPE“瘦身”术：砍掉Attention层50%参数，性能却几乎无损 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.02728v1/A__title.webp" alt="RoPE“瘦身”术：砍掉Attention层50%参数，性能却几乎无损 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 Transformer 架构如今已是大语言模型的绝对基石，而 **旋转位置编码**（**Rotary Positional Embedding, RoPE**） 更是其中的“标配”。从 LLaMA 到 DeepSeek，几乎所有主流开源模型都采用了 RoPE 来处理序列的位置信息。
 
@@ -69,7 +69,7 @@ RoPE 的核心直觉非常优雅：通过将词向量旋转一定的角度来编
 
 而 CRoPE 所对应的复数乘法，在几何上仅对应于 **旋转** 和 **缩放**。
 
-<img src="/images/2601.02728v1/fig2.jpg" alt="CRoPE的几何解释" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.02728v1/fig2.webp" alt="CRoPE的几何解释" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，CRoPE 的函数空间（左图）保留了旋转和缩放能力，但丢失了反射能力（右图）。
 
@@ -85,7 +85,7 @@ RoPE 的核心直觉非常优雅：通过将词向量旋转一定的角度来编
 
 研究团队在 WikiText-2、Penn Treebank 和 PG-19 等数据集上，使用 GPT-2 架构进行了对比实验。他们将标准 RoPE 模型的 $Q/K/V$ 投影层替换为 CRoPE 结构（即参数量减半），然后从头开始训练。
 
-<img src="/images/2601.02728v1/fig4a.jpg" alt="训练与验证损失曲线" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2601.02728v1/fig4a.webp" alt="训练与验证损失曲线" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 上图展示了在 WikiText-2 数据集上的验证损失（上）和训练损失（下）。
 

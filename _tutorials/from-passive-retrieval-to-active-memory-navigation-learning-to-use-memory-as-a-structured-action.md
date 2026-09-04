@@ -31,7 +31,7 @@ related_tutorials:
 
 今天，我们就来深入拆解这篇极具启发性的工作，看看大模型是如何学会“主动记忆导航”的。
 
-<img src="/images/2607.05794v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.05794v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 *图1：主动记忆导航的动机示例。被动检索只能提供部分证据，而NapMem允许智能体在回答前主动搜索足够的证据。*
 
 ### 核心机制：搭建多粒度的记忆金字塔
@@ -43,7 +43,7 @@ related_tutorials:
 3. **主题轨迹层**（**Topic tracks**）：这是档案馆里的“主题案卷”。单一的记忆记录是碎片化的，而用户的某些特征往往在多个会话中跨期发展。主题轨迹将相关的记忆记录组织起来，由智能体驱动更新，决定是更新现有轨迹、合并还是新建。它以文件的形式存在，包含摘要和描述，并明确链接到支持它的记忆记录标识符。
 4. **用户画像层**（**User profile**）：这是金字塔顶端的“人物特写”。它是一个全局文件，在设定的长度预算内，总结了用户稳定的属性、长期偏好和交互模式。它为智能体提供了最凝练的全局用户视角。
 
-<img src="/images/2607.05794v1/x2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.05794v1/x2.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图2：NapMem框架概览。智能体通过记忆工具在多粒度长期记忆金字塔中主动导航，根据中间证据选择合适的抽象层级并完善动作。*
 
 通过这种精巧的设计，在这个“档案馆”中，大模型既可以直接阅读顶层的总结报告，也能通过引用链接顺藤摸瓜，一路深挖到底层的原始对话。
@@ -91,7 +91,7 @@ NapMem为智能体暴露了5个专门针对不同记忆粒度的工具：`get_co
 
 得益于多层抽象机制，NapMem的存储占用远小于保存大量冗余上下文的传统系统。而在推理效率上，实验抛出了一个非常关键的工程洞察：**主动导航实际上比被动检索更省时间**。
 
-<img src="/images/2607.05794v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.05794v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 *图3：在100个PersonaMem-v2样本的成功运行中，延迟和完成Token数的统计。*
 
 如上图散点图所示，由于NapMem的模型能够精准执行目标导航，并在证据足够时主动叫停（而不是像被动检索那样被塞入成堆的无关文档并被迫阅读），其生成的补全Token数大幅减少，从而带来了显著更低的系统响应延迟。

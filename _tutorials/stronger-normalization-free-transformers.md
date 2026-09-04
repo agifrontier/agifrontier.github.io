@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 告别LayerNorm？CMU提出Derf：仅用简单函数，多模态性能全面超越
 
-<img src="/images/2512.10938v1/A__title.jpg" alt="告别LayerNorm？CMU提出Derf：仅用简单函数，多模态性能全面超越 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.10938v1/A__title.webp" alt="告别LayerNorm？CMU提出Derf：仅用简单函数，多模态性能全面超越 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在深度学习的殿堂里，**归一化层**（**Normalization Layers**）如 LayerNorm 和 RMSNorm 长期以来被视为不可或缺的“承重墙”。它们通过调整激活值的分布，稳定了训练过程，加速了模型收敛。
 
@@ -43,7 +43,7 @@ related_tutorials:
 
 基于这四大原则，研究人员对大量候选函数进行了筛选和测试。
 
-<img src="/images/2512.10938v1/x6.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.10938v1/x6.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 冠军诞生：Derf 的数学之美
 
@@ -70,7 +70,7 @@ related_tutorials:
 
 与 LayerNorm 需要计算当前输入的统计量不同，Derf 仅仅是一个带有可学习参数的固定映射，计算效率更高，且完全独立于 Batch 或 Token 的统计信息。
 
-<img src="/images/2512.10938v1/x2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.10938v1/x2.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 实验结果：全方位的胜利
 
@@ -82,7 +82,7 @@ Derf 的表现究竟如何？研究团队在视觉、生成模型、语音和基
 
 *   **语音与DNA建模**：在 wav2vec 2.0 和 HyenaDNA 等模型中，Derf 同样展现出了更低的验证损失和更高的准确率。
 
-<img src="/images/2512.10938v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.10938v1/x1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 深度洞察：是拟合得更好，还是泛化得更强？
 

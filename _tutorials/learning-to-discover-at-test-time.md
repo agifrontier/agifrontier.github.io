@@ -13,7 +13,7 @@ related_tutorials:
 
 ## TTT-Discover：开源模型+测试时训练，仅需数百美元刷新多领域SOTA
 
-<img src="/images/2601.16175v1/A__title.jpg" alt="TTT-Discover：开源模型+测试时训练，仅需数百美元刷新多领域SOTA 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.16175v1/A__title.webp" alt="TTT-Discover：开源模型+测试时训练，仅需数百美元刷新多领域SOTA 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当面对一个从未见过的科学难题时，人类专家通常不会只依赖“既有知识”去猜测答案，而是会通过不断的尝试、失败、总结经验，在解决问题的过程中“现场学习”。
 
@@ -39,7 +39,7 @@ TTT-Discover则更进一步：**它在测试时直接对LLM进行强化学习训
 
 2.  **专注于特例，而非泛化**：模型不需要学会解决所有问题，只需要解决**当前这一个**特定的难题。
 
-<img src="/images/2601.16175v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.16175v1/x1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图1：TTT-Discover在测试时针对单个问题持续训练LLM。随着训练步数（Step 0到49）的增加，奖励分布显著向高分移动，最终超越了人类最佳水平（Prior Art）。*
 
@@ -74,7 +74,7 @@ TTT-Discover则更进一步：**它在测试时直接对LLM进行强化学习训
 
 TTT-Discover 发现了一种非对称的构造方法，成功将该问题的上界从之前的 $0.380924$（由AlphaEvolve保持）进一步降低。这不仅是数值上的微小提升，更是数学结构上的新发现。此外，在自相关不等式（Autocorrelation Inequalities）问题上，它也构建出了优于现有最佳结果的阶跃函数。
 
-<img src="/images/2601.16175v1/x2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.16175v1/x2.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图2：TTT-Discover发现的算法通过FFT加速梯度下降，找到了最小化相关性边界的新解。*
 

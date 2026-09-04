@@ -36,7 +36,7 @@ related_tutorials:
 
 因此，本文旨在解决的核心问题是：**如何建立一个既鲁棒又可扩展的自动化方法，来评估LLM在开放、多轮对话中与人类偏好的一致性。**
 
-<img src="/images/2306.05685v4/x1.jpg" alt="一个多轮对话示例，展示了LLaMA-13B和Vicuna-13B在MMLU问题上的表现差异，并由GPT-4进行评判。" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2306.05685v4/x1.webp" alt="一个多轮对话示例，展示了LLaMA-13B和Vicuna-13B在MMLU问题上的表现差异，并由GPT-4进行评判。" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ## 本文方法
 ## 评估基准
@@ -138,12 +138,12 @@ Chatbot Arena 是一个众包基准平台，采用匿名“对战”模式。用
 
 *   进一步分析发现，当两个被评估模型的性能差距越大时，GPT-4与人类的一致性就越高，从70%逼近100%。
 
-<img src="/images/2306.05685v4/x2.jpg" alt="GPT-4与人类的一致性随模型胜率差异的变化" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2306.05685v4/x2.webp" alt="GPT-4与人类的一致性随模型胜率差异的变化" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ## 模型表现与基准互补性
 *   LLM裁判和人类裁判对各个模型的排名趋势高度一致。GPT-4在所有模型中表现最佳，其后是GPT-3.5和Claude。Vicuna-13B在推理、数学和编码方面明显弱于GPT-3.5。
-<img src="/images/2306.05685v4/x3.jpg" alt="MT-Bench上不同裁判给出的模型平均胜率" style="width:90%; max-width:700px; margin:auto; display:block;">
-<img src="/images/2306.05685v4/x4.jpg" alt="Chatbot Arena上不同裁判给出的模型平均胜率" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2306.05685v4/x3.webp" alt="MT-Bench上不同裁判给出的模型平均胜率" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2306.05685v4/x4.webp" alt="Chatbot Arena上不同裁判给出的模型平均胜率" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *   实验证明，MT-Bench这类偏好基准与MMLU等传统能力基准是互补的。如下表所示，仅用少量高质量对话数据微调的Vicuna-7B (selected)，其MT-Bench分数大幅提升（从2.74到5.95），但MMLU分数提升不明显。这说明偏好基准能捕捉到传统基准无法衡量的人机交互质量提升。
     **模型在不同基准上的表现**

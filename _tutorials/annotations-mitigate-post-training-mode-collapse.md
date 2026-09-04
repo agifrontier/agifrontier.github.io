@@ -39,7 +39,7 @@ related_tutorials:
 
 该研究考察了Qwen2.5系列（0.5B至72B）和Llama 3系列（1B至70B）模型。实验结果令人扼腕：在所有采样策略下，指令微调模型的语义多样性都远低于其对应的基座模型。
 
-<img src="/images/2605.09995v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2605.09995v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 观察上方的图3可以发现一个令人遗憾的**逆向缩放**趋势。在传统的SFT模型（橙色线等）中，参数规模越大，生成的语义多样性（熵）反而越低。基础模型本来是随着参数变大而更多样的，微调却逆转了这一规律。
 
@@ -90,7 +90,7 @@ related_tutorials:
 
 具体操作分为极其巧妙的三个步骤：
 
-<img src="/images/2605.09995v1/x2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2605.09995v1/x2.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 #### 第一步：带注释的预训练
 在预训练语料库中，研究者利用大模型（如Qwen3-30B）自动提取文档的语义属性（如主题、实体、动作、设定等），将其作为**注释**（**Annotations**）插入到文档正文之前。
@@ -109,7 +109,7 @@ related_tutorials:
 
 为了验证该方法的有效性，研究团队在Stories、NoveltyBench等多个基准测试上进行了全面评估。
 
-<img src="/images/2605.09995v1/x5.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2605.09995v1/x5.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 **1. 扭转逆向缩放定律，拯救多样性**
 如图5所示，在所有基准测试和模型规模下，注释锚定模型（绿色线）的语义多样性都显著高于标准SFT模型（橙色线）。

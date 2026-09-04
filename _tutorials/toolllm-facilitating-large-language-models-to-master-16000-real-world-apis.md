@@ -43,7 +43,7 @@ related_tutorials:
 ## 本文方法
 本文提出了ToolLLM框架，其核心在于通过高质量的数据、创新的推理方法和系统的训练评估流程，来教会开源LLM使用工具。整个框架由三大部分组成：ToolBench数据集构建、ToolLLaMA模型训练与API检索器，以及ToolEval评估器。
 
-<img src="/images/2307.16789v2/x1.jpg" alt="ToolLLM框架概览" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2307.16789v2/x1.webp" alt="ToolLLM框架概览" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### ToolBench数据集构建
 ToolBench的构建过程完全自动化，使用ChatGPT作为“数据标注员”，主要分为三个阶段：
@@ -51,7 +51,7 @@ ToolBench的构建过程完全自动化，使用ChatGPT作为“数据标注员�
 #### 1. API收集
 从一个大型API市场RapidAPI上收集了16,464个真实的RESTful API，这些API覆盖了金融、社交媒体、电商等49个不同类别。为了确保数据集的质量，对API进行了严格筛选，移除了失效或不稳定的API，最终保留了3,451个高质量工具（包含16,464个API）。
 
-<img src="/images/2307.16789v2/x3.jpg" alt="RapidAPI层级结构与指令生成流程" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2307.16789v2/x3.webp" alt="RapidAPI层级结构与指令生成流程" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 2. 指令生成
 为了确保指令的多样性和真实性，本文并非从零开始构思指令，而是先采样API组合，再让ChatGPT围绕这些API生成合适的指令。这种方法覆盖了三种场景：
@@ -64,7 +64,7 @@ ToolBench的构建过程完全自动化，使用ChatGPT作为“数据标注员�
 #### 3. 解决方案路径标注
 这是本文方法的核心创新所在。传统的ReACT方法只探索一条执行路径，一旦出错就难以挽回。为了解决这个问题，本文提出了**深度优先搜索决策树（DFSDT）**方法。
 
-<img src="/images/2307.16789v2/x4.jpg" alt="DFSDT与传统方法的对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2307.16789v2/x4.webp" alt="DFSDT与传统方法的对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 **创新点：DFSDT算法**
 *   **树状探索**：DFSDT不再是线性地生成“思考-行动”序列，而是构建一个决策树。在每一步，模型可以生成多个可能的下一步行动作为候选分支。
@@ -122,7 +122,7 @@ DFSDT的优势在于，它极大地扩展了LLM的探索空间，使其能够“
 
 *   **与API检索器结合效果更佳**：有趣的是，将ToolLLaMA与本文的API检索器结合使用时，性能甚至优于提供标准答案API的情况（平均通过率67.3% vs 66.7%）。这说明检索器有时能找到比预设答案更优或功能更强的替代API，进一步增强了系统的实用性。
 
-<img src="/images/2307.16789v2/x2.jpg" alt="主要实验结果对比" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2307.16789v2/x2.webp" alt="主要实验结果对比" style="width:85%; max-width:450px; margin:auto; display:block;">
 <center>图2: 不同模型在工具使用评估中的通过率与胜率对比</center>
 
 

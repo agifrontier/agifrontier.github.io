@@ -14,7 +14,7 @@ related_tutorials:
 
 ## CMU揭秘大模型推理训练“三部曲”：性能飙升60%的黄金法则
 
-<img src="/images/2512.07783v1/A__title.jpg" alt="CMU揭秘大模型推理训练“三部曲”：性能飙升60%的黄金法则 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.07783v1/A__title.webp" alt="CMU揭秘大模型推理训练“三部曲”：性能飙升60%的黄金法则 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 强化学习（RL）真的能教会大模型新的推理能力，还是仅仅在“抛光”它已有的知识？尽管像DeepSeek和OpenAI的o1这样的模型通过RL在推理上取得了惊人进展，但这个根本问题一直悬而未决。
 
@@ -24,7 +24,7 @@ related_tutorials:
 
 为了拨开这层迷雾，卡内基梅隆大学（CMU）的研究者们设计了一套堪称“洁癖”的实验框架。他们通过完全可控的合成数据，首次清晰地剖析了**预训练**（Pre-training）、**中训练**（Mid-training）和**强化学习后训练**（RL-based Post-training）这“三部曲”在塑造模型推理能力时各自扮演的角色，并得出了颠覆性的结论。
 
-<img src="/images/2512.07783v1/x1.jpg" alt="Figure 1" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.07783v1/x1.webp" alt="Figure 1" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图1：论文核心发现概览。左：RL仅在任务难度略超预训练范围时才产生真正的外推收益（校准后最高提升42%）。中：只需极少量（≥1%）的预训练曝光，RL就能实现强大的跨情景泛化（最高提升60%）。右：在固定算力下，加入中训练阶段比单独使用RL在OOD任务上性能高出10.8%。*
 
@@ -32,7 +32,7 @@ related_tutorials:
 
 要精确测量每个训练阶段的贡献，就必须摆脱真实世界语料的“污染”和不可控性。该研究为此构建了一个精巧的合成数据生成框架。
 
-<img src="/images/2512.07783v1/x2.jpg" alt="Figure 2" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.07783v1/x2.webp" alt="Figure 2" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图2：数据生成、任务设置与过程验证评估框架概览。*
 
@@ -60,7 +60,7 @@ related_tutorials:
 
 2.  **RL数据位于“能力边界”**（Edge of Competence）：RL训练数据不能太简单（模型已掌握），也不能太难（模型完全无法理解）。只有当任务难度恰好处于模型“跳一跳才能够得着”的区域时，RL才能发挥最大作用，实现真正的能力外推。
 
-<img src="/images/2512.07783v1/x3.jpg" alt="Figure 3" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.07783v1/x3.webp" alt="Figure 3" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图3：RL在外推泛化中的作用。当RL数据（op=11-12）处于模型能力边界时，性能提升最显著（+42% pass@128）。*
 
@@ -74,7 +74,7 @@ related_tutorials:
 
 令人惊讶的是，这个“种子”不需要很多。实验表明，即使某个情景在预训练数据中只出现了 **1%** 的极低频率，也足以让RL在此基础上进行有效泛化，最终在新情景的复杂任务上取得高达 **60%** 的性能飞跃。
 
-<img src="/images/2512.07783v1/x4.jpg" alt="Figure 4" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.07783v1/x4.webp" alt="Figure 4" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图4：预训练曝光对情景泛化的影响。即使只有1%的稀疏曝光，RL也能实现强大的跨情景泛化。*
 
@@ -86,7 +86,7 @@ related_tutorials:
 
 研究表明，这个“中间阶段”的作用远超想象。在**固定的总算力预算**下，将一部分算力分配给中训练，另一部分给RL，其效果远胜于将所有算力都用于RL。
 
-<img src="/images/2512.07783v1/x6.jpg" alt="Figure 6" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.07783v1/x6.webp" alt="Figure 6" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图6：中训练与RL的协同作用。在固定算力下，“中训练+RL”的组合在难任务上的表现比“仅RL”高出10.8%。*
 
@@ -111,7 +111,7 @@ $${% endraw %}
 
 这里的 $R\_{\text{out}}$ 是传统的最终答案奖励，而 $R\_{\text{pv}}$ 则是基于推理过程每一步正确性的“过程分”。实验证明，这种结合了过程监督的奖励机制能有效减少奖励黑客行为，提升模型推理的保真度和泛化能力。
 
-<img src="/images/2512.07783v1/x7.jpg" alt="Figure 7" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.07783v1/x7.webp" alt="Figure 7" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图7：过程奖励的效果。加入过程验证奖励后，模型在所有难度级别的任务上都表现出一致的性能提升。*
 

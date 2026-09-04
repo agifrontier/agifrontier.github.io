@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 挑战Ring-Attention霸主地位：Mesh-Attention实现3.4倍加速，通信暴降85%
 
-<img src="/images/2512.20968v1/A__title.jpg" alt="挑战Ring-Attention霸主地位：Mesh-Attention实现3.4倍加速，通信暴降85% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.20968v1/A__title.webp" alt="挑战Ring-Attention霸主地位：Mesh-Attention实现3.4倍加速，通信暴降85% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型（LLM）的“军备竞赛”中，上下文窗口（Context Window）的长度已经成为各大厂商争夺的制高点。从Gemini的100万token到Llama 4 Scout号称的1000万token，我们对模型处理超长文本、视频的需求似乎永无止境。
 
@@ -44,7 +44,7 @@ Mesh-Attention 的核心洞察在于：**为什么我们只能按行（Row）或
 
 Mesh-Attention 提出：不如给每个 GPU 分配一个 **二维图块（Tile）**。
 
-<img src="/images/2512.20968v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.20968v1/x1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示：
 
@@ -70,7 +70,7 @@ Mesh-Attention 提出：不如给每个 GPU 分配一个 **二维图块（Tile�
 
 2.  **适度延迟计算**：不要一有数据就马上计算，而是将部分计算任务“攒”在手里，用来填补未来可能出现的通信等待时间。
 
-<img src="/images/2512.20968v1/x5.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.20968v1/x5.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 通过这种策略，Mesh-Attention 能够在复杂的通信模式下，依然保持极高的流水线效率，让 GPU 始终处于忙碌状态。
 

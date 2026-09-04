@@ -13,7 +13,7 @@ related_tutorials:
 
 ## RL不该只会打游戏：哈佛联合帝国理工发布“现实世界落地”三步走指南
 
-<img src="/images/2601.15353v1/A__title.jpg" alt="RL不该只会打游戏：哈佛联合帝国理工发布“现实世界落地”三步走指南 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.15353v1/A__title.webp" alt="RL不该只会打游戏：哈佛联合帝国理工发布“现实世界落地”三步走指南 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当DeepMind的AI在围棋盘上碾压人类，或者在《GT赛车》中跑出超人类的圈速时，我们很容易产生一种错觉：强化学习（RL）已经无所不能了。但当你转过头，试图将同样的算法应用到医疗健康、在线教育或公共政策时，现实往往会给你一记响亮的耳光。
 
@@ -37,7 +37,7 @@ related_tutorials:
 
 为了解决这些问题，作者们不再将RL视为一个单纯的“训练-部署”过程，而是提出了一个包含**部署内（Online）**、**部署间（Offline）**和**持续改进**的闭环系统。
 
-<img src="/images/2601.15353v1/Learning_WithinBetweenContinual_v3.jpg" alt="RL落地三步走框架" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.15353v1/Learning_WithinBetweenContinual_v3.webp" alt="RL落地三步走框架" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 核心框架：RL落地的“三步走”战略
 

@@ -61,7 +61,7 @@ related_tutorials:
 $TIR$ 机制彻底抛弃了粗笨的“大铲斗”，改用一种名为最大激活（Max-activation）的细粒度策略，这就好比换上了极其敏锐的高精度金属探测器。
 它不再评估整个大段会话的“平均价值”，而是逐一扫描对话中的每一轮互动。只要某个会话序列中，存在哪怕一个与当前用户查询高度匹配的孤立轮次，$TIR$ 就会直接根据这个局部最高分来捕获整个信号。
 
-<img src="/images/2604.11628v1/x2.jpg" alt="Figure 2 ‣ 3.1 Associate Deep with Turn Isolation Retrieval ‣ 3 Methodology ‣ Back to Basics: Let Conversational Agents Remember with Just Retrieval and Generation" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.11628v1/x2.webp" alt="Figure 2 ‣ 3.1 Associate Deep with Turn Isolation Retrieval ‣ 3 Methodology ‣ Back to Basics: Let Conversational Agents Remember with Just Retrieval and Generation" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 正如上图所示，$TIR$ 机制展现出了极强的稳定性。通过这种单轮粒度的隔离匹配，该研究有效中和了上下文长度膨胀带来的稀疏稀释效应，精准锁定了潜知识流形中的高收益信号点。
 
@@ -73,7 +73,7 @@ $TIR$ 机制彻底抛弃了粗笨的“大铲斗”，改用一种名为最大�
 这正是 $QDP$ 机制大显身手的地方。在检索出前 $k$ 个相关会话后，$QDP$ 会死死盯住当前的用户查询（Query），对这些历史单元进行大刀阔斧的“清洗”。
 它会无情地剔除掉那些冗余的会话，以及会话内部的闲聊寒暄和无关背景信息。
 
-<img src="/images/2604.11628v1/x3.jpg" alt="Figure 3 ‣ 3.2 Reply Sharp with Query Driven Pruning ‣ 3 Methodology ‣ Back to Basics: Let Conversational Agents Remember with Just Retrieval and Generation" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.11628v1/x3.webp" alt="Figure 3 ‣ 3.2 Reply Sharp with Query Driven Pruning ‣ 3 Methodology ‣ Back to Basics: Let Conversational Agents Remember with Just Retrieval and Generation" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 这一步相当于淘金过程中的“高压水洗”工序。经过 $QDP$ 的严格剪枝，原本臃肿、注水的历史记录，被暴力压缩成了一个极为紧凑、高密度的证据集。
 模型不仅彻底摆脱了双层冗余的干扰，其生成上下文的负担也得到了极大的释放，使得最终的回复更加敏锐、准确。
@@ -87,7 +87,7 @@ $TIR$ 机制彻底抛弃了粗笨的“大铲斗”，改用一种名为最大�
 最直观的改进体现在对硬时序约束的处理上。许多传统方法（如摘要级、关键词级压缩）在压缩上下文时，极易丢失原本的对话时间线索和语义边界。
 而 Nano-Memory 在时序类（Temporal）查询任务中，实现了高达 39.7% 的惊人相对提升。这直接证明了原生保留原始对话中核心孤立信号，要远优于任何形式的降维摘要。
 
-<img src="/images/2604.11628v1/x5.jpg" alt="Figure 5 ‣ 4.1 Effectiveness Analysis ‣ 4 Experiments ‣ Back to Basics: Let Conversational Agents Remember with Just Retrieval and Generation" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.11628v1/x5.webp" alt="Figure 5 ‣ 4.1 Effectiveness Analysis ‣ 4 Experiments ‣ Back to Basics: Let Conversational Agents Remember with Just Retrieval and Generation" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在泛化性（Universality）方面，该框架展现出了令人惊喜的“百搭”特性。
 首先是底层检索引擎的适配性。如上图所示，无论底层 Retriever 使用的是 $Contriever$、$MPNet$ 还是 $MiniLM$，Nano-Memory 均能带来极其稳定的提升。特别是在搭载不同检索器时，相对 $Recall@3$ 提升分别达到了 22.06%、17.34% 和 23.20%。

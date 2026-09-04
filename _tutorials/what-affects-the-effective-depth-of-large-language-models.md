@@ -13,7 +13,7 @@ related_tutorials:
 
 ## MIT新发现：大模型半数层在“划水”，R1推理变强竟不靠深度？
 
-<img src="/images/2512.14064v1/A__title.jpg" alt="MIT新发现：大模型半数层在“划水”，R1推理变强竟不靠深度？ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.14064v1/A__title.webp" alt="MIT新发现：大模型半数层在“划水”，R1推理变强竟不靠深度？ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型（LLM）的Scaling Law竞赛中，我们似乎达成了一个共识：模型越深，能力越强。为了追求更高的智能，模型层数从几十层堆叠到上百层。然而，来自麻省理工学院（MIT）和北京大学的一项最新研究却给这股“堆层数”的热潮泼了一盆冷水。
 
@@ -39,7 +39,7 @@ related_tutorials:
 
 研究人员使用余弦相似度（Residual Cosine Similarity）等工具探测了Qwen-2.5系列模型。结果发现，随着模型参数量的增加（从1.5B到32B），虽然“有效层”的绝对数量增加了，但**有效深度在总层数中的比例却保持惊人的稳定**。
 
-<img src="/images/2512.14064v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.14064v1/x1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图1：GSM8K任务上的余弦相似度分析。可以看到，所有模型都呈现出相似的趋势：在中间某处发生相变，之后相似度回升，意味着后续层级贡献递减。*
 

@@ -56,7 +56,7 @@ HASE框架的核心机制，是将“解答问题”和“修改环境”放置�
 同一个 $Qwen3-8B$ 策略模型，既能提议任务解答，也能通过沙盒工具提交环境修改补丁。
 为了防止模型胡乱修改规则导致系统崩溃，该研究将环境分为两类，并实施了严格的阶段级审查机制。
 
-<img src="/images/2607.03935v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.03935v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 引导环境的自由演化
 

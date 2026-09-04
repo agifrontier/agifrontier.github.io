@@ -13,7 +13,7 @@ related_tutorials:
 
 ## AI Agent的第三维度：MiroThinker单任务600次工具调用，性能直逼GPT-5
 
-<img src="/images/2511.11793v2/A__title.jpg" alt="AI Agent的第三维度：MiroThinker单任务600次工具调用，性能直逼GPT-5 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.11793v2/A__title.webp" alt="AI Agent的第三维度：MiroThinker单任务600次工具调用，性能直逼GPT-5 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 当整个AI领域还在疯狂“卷”模型参数和上下文长度时，一个新的性能提升维度已经悄然出现。如果一个AI Agent在执行单个任务时，能与外部工具交互多达600次，它的研究和推理能力会达到何种恐怖的水平？
 
@@ -23,7 +23,7 @@ related_tutorials:
 
 这就是最新开源的研究型Agent——**MiroThinker**，为我们揭示的答案。它不仅仅是一个更大的模型或更长的上下文窗口，而是开创性地提出了**交互缩放**（**Interaction Scaling**）作为性能提升的“第三维度”，在多个基准测试中超越了所有现有开源Agent，性能直逼GPT-5等顶级闭源模型。
 
-<img src="/images/2511.11793v2/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.11793v2/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 什么是交互缩放？
 
@@ -43,7 +43,7 @@ related_tutorials:
 
 MiroThinker基于经典的**ReAct**（**Reasoning and Acting**）范式构建，但为了支撑超高频率的交互，其在架构上做了精巧的设计。
 
-<img src="/images/2511.11793v2/x3.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.11793v2/x3.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 其核心组件包括：
 
@@ -61,7 +61,7 @@ MiroThinker基于经典的**ReAct**（**Reasoning and Acting**）范式构建，
 
 为了训练出具备深度交互能力的模型，研究团队构建了一个名为 **MiroVerse v1.0** 的大规模合成数据集。
 
-<img src="/images/2511.11793v2/x4.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.11793v2/x4.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 这个数据集的生成过程极为复杂，首先通过知识图谱技术将维基百科、网页等数据源构建成复杂的多文档问答对（MultiDocQA），然后通过一个强大的Agent轨迹合成框架，将这些问答对转化为高质量的“思考-行动-观察”轨迹数据。
 
@@ -77,7 +77,7 @@ MiroThinker的训练流程分为三个精心设计的阶段，使其从一个模
 
 3.  **强化学习**（**RL**）：最后，也是最关键的一步，研究采用了**GRPO**（**Group Relative Policy Optimization**）算法，让Agent在真实环境中通过在线探索和试错来学习。正是在这个阶段，模型真正学会了如何进行深度交互，发现创新的解题路径。
 
-<img src="/images/2511.11793v2/mirothinker_grpo_reward.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.11793v2/mirothinker_grpo_reward.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 惊艳的性能表现
 

@@ -50,7 +50,7 @@ related_tutorials:
 
 在传统的监督微调（Supervised Fine-Tuning）中，考卷（即基准测试或训练集）是静态的，只有考生（即模型）在不断进步。由于考卷本身不再改变，这种单向过程很快就会遭遇饱和。而 Echoverse 将构建环境与训练模型视为同一个过程的两个侧面，打破了考卷与考生的隔离。
 
-<img src="/images/2607.28074/fig01_loop.jpg" alt="协同进化循环示意图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.28074/fig01_loop.webp" alt="协同进化循环示意图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，这就是 Echoverse 核心的学习循环机制。当智能体在环境世界中进行一次带有评分的运行（Graded run）时，这次运行的结果不会被单一地对待，而是会被**读取两次**。
 
@@ -82,7 +82,7 @@ Echoverse 选择了一种粗暴但绝对可靠的路线——基于真实数据�
 
 既然要求如此之高，这些深层环境到底是如何被制造出来的？Echoverse 给出的解法同样前沿：利用智能体来生产环境。这不是一个静态的脚本工具，而是一个拥有各种角色的 GitHub Copilot SDK 智能体管线。
 
-<img src="/images/2607.28074/fig02_pipeline.jpg" alt="环境工厂管线示意图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.28074/fig02_pipeline.webp" alt="环境工厂管线示意图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 图 2 完整展示了这座“环境工厂”的两阶段运作模式。这些智能体被赋予了不同的角色和强大的工具——比如供开发使用的终端工具、用于驱动和检查界面的 Playwright 工具，以及能够通过模型上下文协议（MCP）查询和编辑后端状态的数据库工具。
 

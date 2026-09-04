@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 内存仅需1/35！亚马逊ELLA：无需回放的大模型终身学习新SOTA
 
-<img src="/images/2601.02232v1/A__title.jpg" alt="内存仅需1/35！亚马逊ELLA：无需回放的大模型终身学习新SOTA 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.02232v1/A__title.webp" alt="内存仅需1/35！亚马逊ELLA：无需回放的大模型终身学习新SOTA 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型（LLM）虽然在预训练中展现了惊人的能力，但它们往往像是一个“记性不好”的学生：一旦开始学习新任务，就会迅速遗忘之前学过的知识。这就是著名的**灾难性遗忘**（**Catastrophic Forgetting**）。
 
@@ -39,7 +39,7 @@ ELLA（**E**fficient **L**ifelong **L**earning for **A**dapters）选择了一�
 
 ELLA 认为，我们只需要避开那些过去任务中“能量极高”（即非常重要）的方向，而在那些“低能量”的剩余子空间里，新任务可以自由地复用旧知识。这就像是在装修房子时，承重墙（高能量方向）不能动，但非承重墙和软装（低能量方向）可以随意改造，甚至可以借用之前的风格。
 
-<img src="/images/2601.02232v1/method.jpg" alt="ELLA Method Overview" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.02232v1/method.webp" alt="ELLA Method Overview" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 技术解密：各向异性收缩算子
 
@@ -87,7 +87,7 @@ ELLA 在三个主流的终身学习基准测试（Standard CL, Long Sequence, TR
 
 *   **计算开销**：ELLA 的正则化项计算成本几乎可以忽略不计，且不需要在推理时知道任务 ID。
 
-<img src="/images/2601.02232v1/x1.jpg" alt="Performance comparison across different backbone size" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.02232v1/x1.webp" alt="Performance comparison across different backbone size" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 3. 越学越通用的 Zero-shot 能力
 

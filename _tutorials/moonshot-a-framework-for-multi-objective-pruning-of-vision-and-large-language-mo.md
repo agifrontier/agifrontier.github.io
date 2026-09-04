@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">MOONSHOT : A Framework for Multi-Objective Pruning of Vision and Large Language Models</p>
 
-<img src="/images/2604.13287v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.13287v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 随着当代视觉与大语言模型（LLMs）参数规模的指数级增长，其在推理阶段所消耗的计算资源与显存带宽已成为实际部署中的严峻挑战。在众多模型压缩策略中，网络剪枝（Network Pruning）因其能够直接移除冗余权重而备受关注。特别是在大模型时代，传统的“剪枝-微调”范式由于高昂的重训练成本变得不再现实。因此，研究界的焦点逐渐转向了极具挑战性的**后训练单次剪枝（post-training one-shot pruning）**——仅需少量校准数据，且无需任何重新训练即可完成模型压缩。
 
@@ -66,7 +66,7 @@ related_tutorials:
 
 然而，在将这套优美的理论向十亿级以上参数的大型模型迁移时，工程层面的算力噩梦随之浮现。
 
-<img src="/images/2604.13287v1/block_diag.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.13287v1/block_diag.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 上图展示了不同目标下 Hessian 矩阵的结构差异。在单目标逐层重构误差的设定下（如最左侧所示），输入特征带来的 Hessian 矩阵具有极其完美的块对角（Block-diagonal）结构，且更重要的是，对角线上的每一个数据块都是**完全相同**的。这使得底层算法（如 SparseGPT）在处理包含成千上万行的权重矩阵时，只需计算一次相对较小矩阵的逆，然后复用于所有行，极大地降低了计算复杂度。
 
@@ -92,7 +92,7 @@ related_tutorials:
 
 3. **半结构化稀疏（Semi-structured n:m Sparsity）**：在每 m 个连续权重中强制归零 n 个（通常为 2:4）。这是目前能够完美匹配 NVIDIA Ampere 等现代 GPU 架构硬件加速、且能较好保持模型质量的最佳折中方案。
 
-<img src="/images/2604.13287v1/main_fig.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.13287v1/main_fig.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 从上文的综合性能走势图中可以清晰地看到 MOONSHOT 带来的绝对增益。
 

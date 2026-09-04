@@ -26,12 +26,12 @@ related_tutorials:
 ## RAG概述
 一个典型的RAG应用场景如图2所示。当用户向ChatGPT这类模型询问近期发生的事件时，由于其知识库截止于预训练数据，无法直接回答。RAG通过从外部知识库（如新闻文章）中检索相关信息，并将这些信息与原始问题一同作为提示（Prompt）输入给LLM，从而赋能LLM生成基于最新信息的、内容详实的回答。
 
-<img src="/images/2312.10997v5/RAG_case.jpg" alt="一个RAG在问答任务中的典型应用实例" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2312.10997v5/RAG_case.webp" alt="一个RAG在问答任务中的典型应用实例" style="width:85%; max-width:600px; margin:auto; display:block;">
 _图2：一个RAG在问答任务中的典型应用实例。主要包含3个步骤：1) 索引：将文档分割成块，编码成向量并存入向量数据库。2) 检索：根据语义相似度，检索与问题最相关的Top-K个文本块。3) 生成：将原始问题和检索到的文本块一同输入LLM，生成最终答案。_
 
 RAG的研究范式在不断演进，本文将其归纳为三个阶段：朴素RAG、高级RAG和模块化RAG，如图3所示。
 
-<img src="/images/2312.10997v5/RAG_FrameCompre_eng.jpg" alt="三种RAG范式的对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2312.10997v5/RAG_FrameCompre_eng.webp" alt="三种RAG范式的对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 _图3：三种RAG范式的对比。(左) 朴素RAG主要包含索引、检索和生成三部分。(中) 高级RAG围绕检索前和检索后环节提出了多种优化策略，其流程与朴素RAG相似，仍为链式结构。(右) 模块化RAG继承并发展了前两种范式，整体展现出更大的灵活性，引入了多个特定功能模块并可替换现有模块，其流程不限于顺序执行，包含迭代和自适应检索等方式。_
 
 ## 朴素RAG
@@ -78,7 +78,7 @@ _图3：三种RAG范式的对比。(左) 朴素RAG主要包含索引、检索和
 
 ## RAG vs. 微调 (Fine-tuning)
 
-<img src="/images/2312.10997v5/rag_FT.jpg" alt="RAG与其他模型优化方法的比较" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2312.10997v5/rag_FT.webp" alt="RAG与其他模型优化方法的比较" style="width:85%; max-width:600px; margin:auto; display:block;">
 _图4：RAG与其他模型优化方法在“所需外部知识”和“所需模型适配”两个维度的比较。提示工程对模型和外部知识的改造要求最低；微调涉及对模型的进一步训练；RAG在早期对模型改造要求低，但随着发展，模块化RAG与微调技术结合得越来越紧密。_
 
 如图4所示，RAG和微调是增强LLM的两种不同路径：

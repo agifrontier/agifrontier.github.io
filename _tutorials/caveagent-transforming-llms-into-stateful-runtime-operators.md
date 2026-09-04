@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 告别上下文遗忘！CaveAgent引入“双流架构”，数据密集任务Token暴降59%
 
-<img src="/images/2601.01569v1/A__title.jpg" alt="告别上下文遗忘！CaveAgent引入“双流架构”，数据密集任务Token暴降59% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01569v1/A__title.webp" alt="告别上下文遗忘！CaveAgent引入“双流架构”，数据密集任务Token暴降59% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 你是否遇到过这样的尴尬：让AI Agent处理一个复杂任务，几轮对话后它竟然把之前的关键变量“忘了”，或者因为上下文窗口爆炸而不得不截断信息？目前的Agent大多依赖JSON格式进行函数调用，这种“文本进、文本出”的模式不仅效率低下，而且极易在多轮交互中丢失状态。
 
@@ -37,13 +37,13 @@ related_tutorials:
 
 如图3所示，CaveAgent代表了Agent工具使用的最新进化方向：**对象导向的状态操作**。
 
-<img src="/images/2601.01569v1/evolve.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.01569v1/evolve.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 核心解法：双流架构与有状态管理
 
 CaveAgent的核心创新在于它不再把所有东西都塞进一个Prompt里，而是设计了**双流上下文架构**（**Dual-stream Context Architecture**），如图4所示：
 
-<img src="/images/2601.01569v1/framework_png.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.01569v1/framework_png.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 1. 语义流（Semantic Stream）：轻量级的大脑
 

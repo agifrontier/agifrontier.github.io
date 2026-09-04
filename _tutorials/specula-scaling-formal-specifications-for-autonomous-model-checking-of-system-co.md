@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Specula: Scaling formal specifications for autonomous model checking of system code</p>
 
-<img src="/images/2607.25333v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.25333v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 形式化方法一直被视为软件工程领域对抗复杂系统缺陷的终极武器。对于分布式架构和高并发系统而言，多线程交织调度和网络消息传递的非确定性，使得系统状态空间呈现指数级爆炸。传统的单元测试和集成测试通常只能覆盖最常见的执行路径，而大量潜伏在特定调度顺序、极端异常组合下的时序混乱、死锁与数据污染问题，往往要在生产环境运行数月甚至数年后才会引爆。为了彻底消除这些深埋的隐患，工业界的最高标准是采用 TLA+ 等形式化规范语言，将底层代码抽象为严密的数学状态机模型，再利用模型检查器（Model Checker）进行暴力穷举与状态空间遍历。
 
@@ -44,7 +44,7 @@ Specula 接管代码库后的第一步，甚至根本不是生成模型，而是
 
 构建出模型仅仅完成了抽象层面的工作，如何证明这个数学模型能够精准映射底层 C++ 或 Rust 程序的真实行为，是以往人工建模阶段最大的痛点。Specula 提出了一套极其优雅的全自动轨迹验证方案，彻底填平了模型与代码之间的一致性鸿沟。
 
-<img src="/images/2607.25333v1/process.jpg" alt="经典形式化规范与模型检测流程" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.25333v1/process.webp" alt="经典形式化规范与模型检测流程" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，智能体会根据生成的 TLA+ 动作，自动在真实系统的源码中寻找对应的事件触发点，并无缝植入轻量级的追踪插桩代码。当目标系统在测试环境下启动后，底层的真实执行动作会被逐条记录并汇聚成代码轨迹。随后，Specula 自动生成一个回放夹具，让模型检查器沿着这条收集到的真实轨迹，在抽象的数学状态空间中逐个节点进行状态匹配。
 
@@ -56,7 +56,7 @@ Specula 接管代码库后的第一步，甚至根本不是生成模型，而是
 
 当一条真实轨迹引发了验证冲突，智能体不仅仅要在轨迹调试器里修补逻辑，还要时刻提防不要触发模型检查器的不变量警报。这种在严苛双重约束下不断试错的压力，构成了 Specula 独创的自进化循环机制。
 
-<img src="/images/2607.25333v1/evo-loops.jpg" alt="Specula的自进化循环机制" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.25333v1/evo-loops.webp" alt="Specula的自进化循环机制" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在这个持续运转的飞轮中，智能体每一次修改模型代码、调整不变量范围，甚至重新评估源码插桩点的位置，都必须依赖更深层次的上下文读取和新一轮的运行时反馈。随着循环次数的累加，智能体起初包含大量幻觉和粗糙理解的认知被现实数据不断打磨洗礼，最终演化出的形式化规范与真实系统实现了严丝合缝的契合。这一自适应体系，彻底代替了以往需要多名资深工程师反复沟通校对的繁重脑力劳动。
 

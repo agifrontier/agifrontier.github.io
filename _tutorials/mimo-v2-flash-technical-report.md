@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 仅15B激活参数硬刚DeepSeek！MiMo-V2-Flash揭秘：混合注意力与多教师蒸馏的极致效率
 
-<img src="/images/2601.02780v1/A__title.jpg" alt="仅15B激活参数硬刚DeepSeek！MiMo-V2-Flash揭秘：混合注意力与多教师蒸馏的极致效率 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.02780v1/A__title.webp" alt="仅15B激活参数硬刚DeepSeek！MiMo-V2-Flash揭秘：混合注意力与多教师蒸馏的极致效率 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在通往AGI的赛道上，推理能力（Reasoning）和智能体（Agent）工作流已成为两大核心驱动力。然而，构建能够处理超长上下文、同时保持极快响应速度的模型，始终是一个巨大的挑战。通常情况下，高性能意味着巨大的参数量和昂贵的推理成本。
 
@@ -21,7 +21,7 @@ related_tutorials:
 
 **MiMo-V2-Flash** 的出现打破了这一僵局。这款由小米团队推出的新模型，虽然拥有309B的总参数量，但每次推理仅激活 **15B参数**。更令人惊讶的是，它在推理和智能体能力上竟能与DeepSeek-V3.2和Kimi-K2等顶级开源模型分庭抗礼，而参数量仅为它们的1/2甚至1/3。本文将深入剖析其背后的三大技术杀手锏：混合注意力机制、多Token预测以及创新的多教师蒸馏范式。
 
-<img src="/images/2601.02780v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.02780v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 架构之美：混合注意力与MoE的精妙共舞
 
@@ -31,7 +31,7 @@ MiMo-V2-Flash的核心架构基于Transformer，但引入了**混合专家**（*
 
 具体来说，模型采用了5:1的混合比例（每5层SWA后接1层GA），且滑动窗口大小仅为128个Token。这种设计将长上下文的KV缓存存储和注意力计算量减少了近6倍。
 
-<img src="/images/2601.02780v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.02780v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 你可能会问，如此小的窗口（128 Token）是否会丢失长距离依赖？
 
@@ -57,7 +57,7 @@ MiMo-V2-Flash的核心架构基于Transformer，但引入了**混合专家**（*
 
 3.  **多教师在线蒸馏**：这是最关键的一步。学生模型（MiMo-V2-Flash）在训练时，不仅接收最终结果的奖励，还同时接收来自各领域教师模型的**密集Token级奖励**。
 
-<img src="/images/2601.02780v1/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.02780v1/x3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 这种方法让模型能够同时汲取多个“专家”的精华，既掌握了特定领域的深度知识（如复杂的代码Debug），又保持了通用的对话能力，避免了传统模型合并带来的性能损失。
 

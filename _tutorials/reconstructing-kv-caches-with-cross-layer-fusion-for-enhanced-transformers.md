@@ -13,7 +13,7 @@ related_tutorials:
 
 ## KV缓存减半，性能反超！阿里FusedKV揭示K/V不对称共享新范式
 
-<img src="/images/2512.03870v1/A__title.jpg" alt="KV缓存减半，性能反超！阿里FusedKV揭示K/V不对称共享新范式 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.03870v1/A__title.webp" alt="KV缓存减半，性能反超！阿里FusedKV揭示K/V不对称共享新范式 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型处理长文本的能力越来越强，但一个幽灵始终在数据中心徘徊——那就是庞大的**键值缓存**（**Key-Value Cache, KV Cache**）。它像一个无底洞，吞噬着宝贵的显存，让长文本推理的成本居高不下。
 
@@ -25,7 +25,7 @@ related_tutorials:
 
 来自阿里巴巴、中科院等机构的最新研究《FusedKV》给出了一个惊人的答案：完全可以！他们提出了一种全新的跨层融合策略，不仅将KV缓存需求直接砍掉50%，模型性能（以困惑度衡量）甚至超越了标准的Transformer。
 
-<img src="/images/2512.03870v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.03870v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图1：FusedKV（绿色）和FusedKV-Lite（蓝色）在将KV缓存减半、预填充延迟降低近2倍的同时，在1.5B模型上取得了比其他方法更优的预训练损失。*
 
@@ -41,7 +41,7 @@ related_tutorials:
 
 *   **Key（K）**：而顶层的Key，其信息则更多地来源于**底层和中间层**。Key的作用更像是“索引”或“查询”，它需要结合浅层的基本信息和中层的抽象语义，来决定在注意力计算中关注哪些内容。
 
-<img src="/images/2512.03870v1/x2.jpg" alt="Refer tocaption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.03870v1/x2.webp" alt="Refer tocaption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图2：在一个16层模型中，重构顶层8个层的Key（左）和Value（右）的融合权重。可以清晰地看到，Value的权重高度集中在第0-1层，而Key的权重则更多地分布在第6-7层。*
 
@@ -57,7 +57,7 @@ related_tutorials:
 
 *   **重构层**（Reconstruction Layers）：模型的上半部分（$n$层之后），它们的KV缓存不再独立存储，而是通过一个函数从存储层动态“生成”。
 
-<img src="/images/2512.03870v1/x4.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.03870v1/x4.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图3：(a) 标准Transformer；(b) FusedKV-Lite，顶层Key复用中间层，Value复用最底层；(c) FusedKV，顶层K/V由最底层和中间层的K/V加权融合而成。*
 
@@ -116,7 +116,7 @@ related_tutorials:
 
 在多个模型规模的实验中，FusedKV不仅成功将KV缓存减半，其验证集损失（Validation Loss）始终低于标准的Transformer模型。这意味着在相同的训练量下，FusedKV学得更好、性能更强。
 
-<img src="/images/2512.03870v1/x7.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.03870v1/x7.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图6：在332M、650M和1.5B模型上，FusedKV（绿色）的验证损失持续低于标准模型（蓝色）。*
 

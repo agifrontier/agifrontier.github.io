@@ -46,7 +46,7 @@ related_tutorials:
 随着对话的不断拉长，瞬时噪音不断累积。
 最终会导致已有知识的语义发生漂移，或者关键节点变成结构上的孤岛。
 
-<img src="/images/2604.12285v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2604.12285v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 另一种技术路线是离散的结构化记忆体系。
 比如GraphRAG，它将知识严格组织为静态图谱，抗干扰能力极强。
@@ -86,7 +86,7 @@ GAM创新性地引入了基于状态的记忆巩固机制。
 即被存入`**主题关联网络**（**Topic Associative Network**）` $\mathcal{G}_{\text{topic}}$ 中。
 完成归档后，白板会被清空，准备迎接下一个话题的演算。
 
-<img src="/images/2604.12285v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.12285v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 图引导的多因子检索策略
 
@@ -127,7 +127,7 @@ GAM依然取得了12.55的平均F1分数，超越MemoryOS高达86%。
 为了验证语义边界触发的必要性，研究分析了不同的切分策略。
 如图3所示，固定窗口（256 Token）的硬切分表现垫底（F1为34.23）。
 
-<img src="/images/2604.12285v1/x3.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2604.12285v1/x3.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 这是因为生硬的字数截断会无情割裂上下文，导致逻辑链条断裂。
 而GAM的动态语义触发（平均F1达40.00）则完美保留了推理所需的连贯结构。

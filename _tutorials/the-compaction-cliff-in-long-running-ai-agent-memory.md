@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">The Compaction Cliff in Long-Running AI Agent Memory</p>
 
-<img src="/images/2608.22752v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2608.22752v1/A__title.webp" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在长期运行的 AI Agent 应用中，随着上下文历史不断积累，系统不可避免地会触发记忆压缩机制以适应大语言模型的 Token 预算限制。然而，现有的工业界压缩策略往往忽视了一个致命问题：一条生死攸关的安全规则和一行无关痛痒的系统执行日志，在 Token 预算溢出时，正以相同的概率遭到删改。这种类型盲目（Type-blind）的内存管理直接导致 Agent 在长时交互中频繁“失忆”并采取违规行为。
 

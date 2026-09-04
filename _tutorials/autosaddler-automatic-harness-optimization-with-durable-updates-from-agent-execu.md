@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">AutoSaddler: Automatic Harness Optimization with Durable Updates from Agent Execution Traces</p>
 
-<img src="/images/2608.23041v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.23041v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 随着大型语言模型（LLM）能力的飞速提升，我们见证了它们在诸多单步交互任务中展现出令人惊艳的表现。然而，当这些模型被真正放入自主代理（Agent）系统中，去执行需要长期规划、多步推理和复杂环境交互的任务时，一种被称为“参差智能”（Jagged Intelligence）的现象便会显现：它们在某些复杂任务上游刃有余，却在看似更简单的相关任务上一败涂地。这种不稳定性直接构成了当前 Agent 应用走向生产环境的核心障碍。在长周期的任务轨迹中，哪怕只是一个非常微小的工具调用失误，如果不能被及时纠正，就会在后续交互中像滚雪球一样不断放大，最终导致整个任务失败。
 
@@ -45,7 +45,7 @@ related_tutorials:
 
 如何在这个更为广阔和复杂的空间中进行高效优化？AutoSaddler 将这一过程设计为一个由微批次（mini-batch）驱动的离线迭代闭环。其整体架构不再依赖简单的问答反思，而是由多个专门分工的子 Agent 相互配合完成深度诊断、结构化修补和经验演化。
 
-<img src="/images/2608.23041v1/main_figure_revised.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.23041v1/main_figure_revised.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 整个迭代过程可以清晰地拆解为三个接力进行的“会话”：
 

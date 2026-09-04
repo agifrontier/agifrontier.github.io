@@ -13,7 +13,7 @@ related_tutorials:
 
 ## SFT正在“毁掉”泛化能力？5大原子技能揭示RL为何是推理的未来
 
-<img src="/images/2512.24063v1/A__title.jpg" alt="SFT正在“毁掉”泛化能力？5大原子技能揭示RL为何是推理的未来 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.24063v1/A__title.webp" alt="SFT正在“毁掉”泛化能力？5大原子技能揭示RL为何是推理的未来 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 DeepSeek-R1 和 OpenAI-o1 的横空出世，让整个 AI 社区达成了一个新共识：**强化学习（Reinforcement Learning, RL）** 才是通往高阶推理的必经之路。
 
@@ -39,7 +39,7 @@ DeepSeek-R1 和 OpenAI-o1 的横空出世，让整个 AI 社区达成了一个�
 
 5.  **诊断（Diagnostic）**：自我检查、发现矛盾并修正的能力。
 
-<img src="/images/2512.24063v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.24063v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，解决一个简单的“弹簧滑块”物理题，模型需要像搭乐高一样，按顺序调用检索、模拟、计算和诊断技能。任何一个环节掉链子，整个推理链条就会断裂。
 
@@ -57,7 +57,7 @@ SFT 模型（尤其是未使用思维链 CoT 的版本）表现出了极端的�
 
 相比之下，RL 调优后的模型展现出了极佳的稳定性。请看下图的雷达图对比：
 
-<img src="/images/2512.24063v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.24063v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *   **蓝色线条（SFT）**：形状尖锐、扭曲，说明技能发展极不平衡。
 

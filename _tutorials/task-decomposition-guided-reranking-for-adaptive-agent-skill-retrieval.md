@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Task Decomposition-Guided Reranking for Adaptive Agent Skill Retrieval</p>
 
-<img src="/images/2607.06283v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.06283v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型智能体（Agent）正越来越多地依靠外部技能库来完成复杂任务。相比于完全依赖模型的隐式推理能力，调用封装好的功能代码或API能够显著提升执行的稳定性和成功率。然而，随着技能库规模的不断膨胀，如何精准地为当前任务挑选最合适的技能，成为了制约Agent系统能力上限的瓶颈。
 
@@ -39,7 +39,7 @@ related_tutorials:
 
 最核心的冲突来源于**任务需求与技能描述之间的粒度鸿沟**。实际应用中，用户下达的指令通常非常精简且聚焦于特定目标（例如“加热杯子”）。相反，技能库中的工具为了保证复用性，往往采用泛化、抽象的说明（例如“利用电器加热物品”或“改变物体温度”）。这种表达层面的错位，导致那些依靠密集向量检索（Dense Retrieval）的系统极易陷入语义模糊的陷阱。
 
-<img src="/images/2607.06283v1/x1.jpg" alt="Figure 1: Task-matching difficulty caused by semantic similarity between skills." style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.06283v1/x1.webp" alt="Figure 1: Task-matching difficulty caused by semantic similarity between skills." style="width:85%; max-width:450px; margin:auto; display:block;">
 
 如上图所示，当面对特定的物理交互任务时，系统可能会召回多个在文本嵌入上高度相似的候选技能。这些技能虽然表面上都与“加热”或“电器”有关，但在实际的前置条件和执行路径上却存在天壤之别。如果检索模型缺乏对这些操作逻辑的深层理解，仅凭文本表面相关性进行推荐，Agent在执行时便会频繁遭遇“技能调用失败”的窘境。
 
@@ -49,7 +49,7 @@ related_tutorials:
 
 为了彻底解决语义模糊和固定数量召回的弊端，SkillReranker采取了“先解构，再建图，后分段”的两阶段设计思路。整个框架的核心在于将任务和技能从纯文本形态，转化为具有明确状态转移语义的图结构。
 
-<img src="/images/2607.06283v1/framework5.jpg" alt="Figure 2: Overview of the proposed framework." style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.06283v1/framework5.webp" alt="Figure 2: Overview of the proposed framework." style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 任务与技能的结构化解构
 
@@ -101,11 +101,11 @@ SkillReranker的第一步是消除自然语言描述中的模糊性，将其规�
 
 为了更直观地理解全局与局部结合的动态检索效果，我们可以观察研究团队提供的具体案例。
 
-<img src="/images/2607.06283v1/x2.jpg" alt="Figure 4: Two examples of skill retrieval by our method (a)" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.06283v1/x2.webp" alt="Figure 4: Two examples of skill retrieval by our method (a)" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在上方的简单任务场景中，任务指令为“将手表放到边桌上”。这在逻辑上属于极简的物理位移操作。尽管全局检索阶段召回了多个表面相关的技能，但SkillReranker在构建执行图后发现，该任务区间内只包含一个主要的子动作：获取并放置目标。因此，系统没有产生任何中断节点，而是精准锁定了得分最高的 `alfworld-object-locator` 技能。这充分验证了框架能够抵抗多余技能的诱惑，防止Agent产生过度思考。
 
-<img src="/images/2607.06283v1/x3.jpg" alt="Figure 4: Two examples of skill retrieval by our method (b)" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2607.06283v1/x3.webp" alt="Figure 4: Two examples of skill retrieval by our method (b)" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 相比之下，下方的复杂任务“将热马克杯放进咖啡机中”则展现了完全不同的处理逻辑。这一任务暗含了“获取物品”和“加热物品”两个截然不同的物理操作。在这个案例中，执行图成功探测到了操作流派的转换边界，将任务划分为两个阶段。随后，在计算局部匹配度时，不仅保留了用于定位物品的 `alfworld-object-locator`，还自适应地追加了 `alfworld-heat-object-with-appliance` 技能，确保了复杂长链条任务的顺利交接。
 

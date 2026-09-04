@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 蒸馏即遗忘？大模型记忆率暴跌50%，揭秘知识蒸馏的“隐私红利”
 
-<img src="/images/2601.15394v1/A__title.jpg" alt="蒸馏即遗忘？大模型记忆率暴跌50%，揭秘知识蒸馏的“隐私红利” 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2601.15394v1/A__title.webp" alt="蒸馏即遗忘？大模型记忆率暴跌50%，揭秘知识蒸馏的“隐私红利” 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 在当今的大模型（LLM）时代，**知识蒸馏**（**Knowledge Distillation, KD**）已经成为一种标准的“降本增效”手段。无论是 DeepSeek-R1 的蒸馏系列，还是各大厂商推出的端侧小模型，本质上都是为了把千亿参数巨兽的能力迁移到更轻量级的模型上。
 
@@ -29,7 +29,7 @@ related_tutorials:
 
 研究团队在 Pythia、OLMo-2 和 Qwen-3 三个模型家族上进行了广泛实验，对比了“教师模型”（Teacher）、“学生模型”（Student）和“基线模型”（Baseline，即同等大小但使用标准微调训练的模型）。
 
-<img src="/images/2601.15394v1/exp_setup.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.15394v1/exp_setup.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 最核心的结论非常直观：**蒸馏模型的记忆率显著低于标准微调模型。**
 
@@ -39,7 +39,7 @@ related_tutorials:
 
 下表展示了不同模型家族的记忆率对比，可以明显看到 $M\_{student}$ 的数值远低于 $M\_{baseline}$：
 
-<img src="/images/2601.15394v1/memorization_vs_temperature.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.15394v1/memorization_vs_temperature.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 哪些数据容易被“记住”？
 
@@ -53,7 +53,7 @@ related_tutorials:
 
 3.  **拒绝继承**：对于那些只有教师模型记住的“独家记忆”（往往是过拟合或难样本），学生模型继承的比例极低（仅约 0.9%）。
 
-<img src="/images/2601.15394v1/venn.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.15394v1/venn.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 上图清晰地展示了这种重叠关系：中间加粗的黑框代表那些“易于记忆”的样本，学生模型（Student）的记忆几乎完全落在这一区域内。
 
@@ -75,7 +75,7 @@ related_tutorials:
 
 *   **知识蒸馏（学生模型）**：教师模型在面对难样本时，输出的分布本身就是平滑的（高熵）。学生模型通过 KL 散度模仿教师，学到的是“对这个样本保持不确定”，而不是“死记硬背这个词”。
 
-<img src="/images/2601.15394v1/entropy_prob.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.15394v1/entropy_prob.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，红色点（基线模型）中有大量高熵样本被赋予了极高的概率（强行记忆），而蓝色点（学生模型）则老老实实地保持了较低的置信度。
 

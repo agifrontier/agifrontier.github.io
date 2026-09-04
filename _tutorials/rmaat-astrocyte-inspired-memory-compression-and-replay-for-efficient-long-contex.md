@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 模拟大脑“胶质细胞”！RMAAT解锁线性注意力，长序列训练显存效率暴涨
 
-<img src="/images/2601.00426v1/A__title.jpg" alt="模拟大脑“胶质细胞”！RMAAT解锁线性注意力，长序列训练显存效率暴涨 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.00426v1/A__title.webp" alt="模拟大脑“胶质细胞”！RMAAT解锁线性注意力，长序列训练显存效率暴涨 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 Transformer 架构虽然统治了自然语言处理领域，但它一直背负着一个沉重的“包袱”：自注意力机制的二次方复杂度（$O(N^2)$）。这使得处理超长序列变得极其昂贵，甚至在硬件上不可行。为了解决这个问题，研究人员尝试了稀疏注意力、线性近似等各种魔改，但往往要在性能和效率之间做艰难的取舍。
 
@@ -35,7 +35,7 @@ RMAAT 的核心理念在于：利用星形胶质细胞的**长时程增强**（*
 
 但分段处理最怕的是“读了后章忘前章”。为了解决这个问题，RMAAT 引入了**记忆 Token**（**Memory Tokens**）。这些 Token 就像是流动的“笔记”，在处理完一个片段后，会携带上下文信息传递给下一个片段。
 
-<img src="/images/2601.00426v1/x2.jpg" alt="RMAAT 架构概览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.00426v1/x2.webp" alt="RMAAT 架构概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 这就引出了 RMAAT 的第一个杀手锏：**基于星形胶质细胞的自适应记忆压缩**。
 
@@ -63,7 +63,7 @@ RMAAT 的核心理念在于：利用星形胶质细胞的**长时程增强**（*
 
 这种机制受到星形胶质细胞短时程可塑性（STP）的启发，将注意力计算分解为“写入”（Write）和“读取”（Read）两个模式，模拟了三方突触（神经元-星形胶质细胞-神经元）的互动：
 
-<img src="/images/2601.00426v1/x1.jpg" alt="注意力机制细节" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.00426v1/x1.webp" alt="注意力机制细节" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 其数学形式巧妙地转化为线性操作：
 

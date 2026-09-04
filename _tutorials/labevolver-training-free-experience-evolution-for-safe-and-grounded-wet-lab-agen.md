@@ -36,7 +36,7 @@ related_tutorials:
 
 **LabEvolver** 的核心设计哲学正是针对这一困境：智能体绝不能仅仅依赖端到端的隐式动作生成，而是需要在执行昂贵的物理试错之前，建立有边界的、“基于状态锚点”的规划机制。在确保每一次物理操作都绝对安全的前提下，将成功与失败的轨迹转化为可复用的知识。
 
-<img src="/images/2607.27690/overview.jpg" alt="LabEvolver框架总览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.27690/overview.webp" alt="LabEvolver框架总览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 为了将这一理念落地，**LabEvolver** 被精心设计为一个双层嵌套循环结构：内层试错循环（Inner Trial Loop）负责基于实时状态的安全执行与闭环感知；外层进化循环（Outer Evolution Loop）则在任务结束后，将历史轨迹蒸馏为技能、策略和安全层面的结构化经验。两者相互咬合，前者提供动态的操作边界，后者注入跨任务的经验先验。
 
@@ -46,7 +46,7 @@ related_tutorials:
 
 在这个闭环中，环境反馈不再是无序的文本流。系统的“观察者”（Observer）模块会在每一步机器人动作执行后，将自由形式的环境反馈转化为结构化的实验室状态变量。在时间步 $t$ 时，系统维持着一个包含全局变量的动态状态 $s_t$。例如，在 pH 调节实验中，电子天平和水质计传回的反馈会被实时更新为烧杯的具体状态（如当前溶液质量和 pH 读数）。这种结构化的状态追踪，为后续的规划和安全检查提供了一个清晰、不可篡改的物理参考系。
 
-<img src="/images/2607.27690/ph_closed_loop_execution.jpg" alt="代表性的pH调节过程，展示了基于状态反馈的安全闭环执行" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.27690/ph_closed_loop_execution.webp" alt="代表性的pH调节过程，展示了基于状态反馈的安全闭环执行" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在动作规划层面，“操作员”（Operator）模块通过三层动作接口，将高维度的推理落地为可执行的实验室技能。系统并没有让模型直接控制硬件细节，而是使用了预定义的技能模板。为了防止模型在长周期执行中出现幻觉和目标偏移，“监督者”（Supervisor）模块还会定期将累积的状态转换压缩成结构化的进度检查点，从而降低上下文饱和带来的负面影响。
 
@@ -75,7 +75,7 @@ related_tutorials:
 
 研究团队在两个层面对 **LabEvolver** 进行了系统评估：先在 ALFWorld 环境中测试外层循环在长视野任务中的算法可扩展性，随后在真实的机器人湿实验平台上验证完整的双循环系统处理噪声和安全约束的能力。
 
-<img src="/images/2607.27690/alf_summary.jpg" alt="ALFWorld基准测试结果，展示了记忆增长与成功率的对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.27690/alf_summary.webp" alt="ALFWorld基准测试结果，展示了记忆增长与成功率的对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在 ALFWorld 的长周期任务流测试中，**LabEvolver** 展现出了惊人的自我进化能力。在 500 个连续剧集中，它最终斩获了 91.4% 的累积成功率（Success@20）。相比之下，仅依赖大模型内部推理的 **ReAct** 只有 76.2%，而没有任何推理步骤的直接生成（Act）更是低至 72.6%。值得一提的是，一个名为 **MemP** 的基线方法虽然也采用了记忆机制（将轨迹程序化为工作流），但其记忆库在 500 轮后线性膨胀到了 1177 条，且成功率仍落后 **LabEvolver** 将近 4 个百分点。得益于添加、更新、点赞、踩踏以及遗忘机制，**LabEvolver** 将最终的有效记忆条目严格限制在了 281 条左右，完美规避了长期部署中的记忆灾难。
 

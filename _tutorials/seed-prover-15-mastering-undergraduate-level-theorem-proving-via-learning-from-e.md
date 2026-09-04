@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 9小时攻克11道Putnam难题！Seed-Prover 1.5重塑AI形式化证明
 
-<img src="/images/2512.17260v1/A__title.jpg" alt="9小时攻克11道Putnam难题！Seed-Prover 1.5重塑AI形式化证明 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.17260v1/A__title.webp" alt="9小时攻克11道Putnam难题！Seed-Prover 1.5重塑AI形式化证明 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在AI数学推理领域，我们正处于一个有趣的十字路口。一方面，DeepSeek-Math、GPT-4o等模型在自然语言解题上高歌猛进；另一方面，使用Lean等形式化语言进行**严格定理证明**（**Formal Theorem Proving**）却依然步履维艰——它不仅门槛高，而且计算成本极其昂贵。
 
@@ -29,7 +29,7 @@ Seed-Prover 1.5 的核心理念非常直观：与其让模型像无头苍蝇一�
 
 这就好比培养一个数学系学生，你不能只让他背答案，得让他去图书馆查资料（使用工具）、去草稿纸上推演（中间步骤）、并从老师的批改中学习（环境反馈）。
 
-<img src="/images/2512.17260v1/x1.jpg" alt="Seed-Prover 1.5 Performance" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.17260v1/x1.webp" alt="Seed-Prover 1.5 Performance" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 从上图可以看出，Seed-Prover 1.5 在各项基准测试中均取得了SOTA（State-of-the-Art）的成绩，尤其是在计算预算较小的情况下，效率惊人。
 
@@ -51,7 +51,7 @@ Seed-Prover 1.5 的成功主要归功于两个关键技术支柱：**基于工�
 
 通过大规模的**强化学习**（**Reinforcement Learning, RL**），模型学会了何时该查资料、何时该写代码、何时该回溯。训练数据显示，随着RL步数的增加，模型调用工具的次数反而下降了（从平均15次降到10次），这说明它变得更“聪明”了——不再盲目试错，而是精准打击。
 
-<img src="/images/2512.17260v1/x2.jpg" alt="Agentic Prover Workflow" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.17260v1/x2.webp" alt="Agentic Prover Workflow" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 2. Sketch Model：自然语言作为桥梁
 

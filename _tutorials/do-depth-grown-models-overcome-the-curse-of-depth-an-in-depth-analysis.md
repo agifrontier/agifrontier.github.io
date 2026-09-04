@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 告别“深度诅咒”：谷歌新方法LIDAS让LLM动态生长，训练提速29%！
 
-<img src="/images/2512.08819v1/A__title.jpg" alt="告别“深度诅咒”：谷歌新方法LIDAS让LLM动态生长，训练提速29%！ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.08819v1/A__title.webp" alt="告别“深度诅咒”：谷歌新方法LIDAS让LLM动态生长，训练提速29%！ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 你是否想过，当我们费尽心力将语言模型（LLM）堆叠到数百上千层时，这些层真的都在“努力工作”吗？一个残酷的现实是，许多Transformer模型的深层网络贡献甚微，甚至有些“懒惰”，这种现象被称为**深度诅咒**（**Curse of Depth**）。这不仅造成了巨大的计算资源浪费，也限制了模型潜力的完全释放。
 
@@ -29,7 +29,7 @@ related_tutorials:
 
 在此基础上，研究团队提出了一个更精妙的变体——**LIDAS**。与MIDAS粗犷地复制整个块不同，LIDAS在插入新层时，巧妙地交错融合了相邻层的权重。这种设计旨在提供一个更平滑、更有效的初始化，从而更好地保留和传递学习到的知识。
 
-<img src="/images/2512.08819v1/x1.jpg" alt="图1：深度生长模型对网络层的使用更充分" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.08819v1/x1.webp" alt="图1：深度生长模型对网络层的使用更充分" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1：在多个指标上，生长式模型（MIDAS, LIDAS）都表现出比基线模型更强的深度利用率。*
 
@@ -51,7 +51,7 @@ related_tutorials:
 
 研究者做了一个大胆的实验：交换模型中不同块（block）的位置。对于传统模型，这种“大手术”几乎是致命的，会导致性能断崖式下跌。然而，MIDAS和LIDAS模型却表现出惊人的鲁棒性。即使是交换多达4个连续层组成的块，它们的性能也仅有轻微下降。
 
-<img src="/images/2512.08819v1/x3.jpg" alt="图3：交换不同大小的层块对模型性能的影响" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.08819v1/x3.webp" alt="图3：交换不同大小的层块对模型性能的影响" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图3：在交换层块的实验中，生长式模型（MIDAS, LIDAS）比基线模型表现出更强的鲁棒性，尤其是在交换大尺寸块时。*
 
@@ -63,7 +63,7 @@ related_tutorials:
 
 研究发现，MIDAS的块复制策略会导致一种不对称的权重结构。而LIDAS通过更精细的层级交错复制，创造出了更对称的权重分布。这种对称性更接近于**循环Transformer**（**Looped Transformer**）的理论思想，即反复应用同一个计算单元。
 
-<img src="/images/2512.08819v1/x7.jpg" alt="图7：MIDAS与LIDAS的对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.08819v1/x7.webp" alt="图7：MIDAS与LIDAS的对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图7：(a) LIDAS的权重相似性（左）比MIDAS（中）更对称。(b) 在中间层跳过注意力子层时，LIDAS（右）受到的影响比MIDAS（中）更大，表明其注意力层参与度更高。*
 

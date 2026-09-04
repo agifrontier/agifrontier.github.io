@@ -24,7 +24,7 @@ related_tutorials:
 
 大语言模型（Large Language Models, LLMs），例如ChatGPT和GPT-4，因其涌现能力和泛化性，在自然语言处理和人工智能领域引发了新的浪潮。然而，LLMs是黑箱模型，常常难以捕获和访问事实性知识。相比之下，知识图谱（Knowledge Graphs, KGs）是结构化的知识模型，明确地存储了丰富的实体知识。KGs能够通过提供外部知识来增强LLMs的推理能力和可解释性。同时，KGs自身存在构建和演进困难的问题，使得现有方法难以生成新事实和表示未见知识。因此，统一LLMs和KGs，协同利用它们的优势，是互补且必要的。
 
-<img src="/images/2306.08302v3/LLM_vs_KG.jpg" alt="LLM与KG的优缺点总结" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2306.08302v3/LLM_vs_KG.webp" alt="LLM与KG的优缺点总结" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1: LLM与KG的优缺点总结。LLM优点: 通用知识、语言处理、泛化能力；LLM缺点: 隐式知识、幻觉、不确定性、黑箱、缺乏领域/新知识。KG优点: 结构化知识、准确性、确定性、可解释性、领域特定知识、可演进知识；KG缺点: 不完整性、缺乏语言理解能力、无法处理未见事实。*
 
@@ -41,11 +41,11 @@ related_tutorials:
 
 LLMs是在大规模语料库上预训练的语言模型，在多种自然语言处理（NLP）任务中表现出色。大多数LLMs源于Transformer架构，该架构利用自注意力（self-attention）机制赋能其编码器和解码器模块。
 
-<img src="/images/2306.08302v3/x1.jpg" alt="近年来的代表性大语言模型" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2306.08302v3/x1.webp" alt="近年来的代表性大语言模型" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图2: 近年来的代表性大语言模型（LLMs）。实心方块表示开源模型，空心方块表示闭源模型。*
 
-<img src="/images/2306.08302v3/x2.jpg" alt="基于Transformer和自注意力机制的LLM示意图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2306.08302v3/x2.webp" alt="基于Transformer和自注意力机制的LLM示意图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图3: 基于Transformer和自注意力机制的LLM示意图。*
 
@@ -58,7 +58,7 @@ LLMs是在大规模语料库上预训练的语言模型，在多种自然语言�
 
 提示工程是通过设计和优化提示（prompts）来最大化LLM在各种应用中性能的新兴领域。一个提示通常包含指令（Instruction）、上下文（Context）和输入文本（Input Text）。例如，思维链（Chain-of-thought, CoT）提示通过引导模型进行中间步骤推理，来解决复杂任务。提示工程也使得将KGs这类结构化数据整合进LLMs成为可能，例如通过模板将KG线性化为文本段落。
 
-<img src="/images/2306.08302v3/x3.jpg" alt="情感分类提示示例" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2306.08302v3/x3.webp" alt="情感分类提示示例" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图4: 一个情感分类提示的例子。*
 
@@ -66,7 +66,7 @@ LLMs是在大规模语料库上预训练的语言模型，在多种自然语言�
 
 知识图谱以三元组 $\mathcal{KG}=\{(h,r,t)\subseteq\mathcal{E}\times\mathcal{R}\times\mathcal{E}\}$ 的形式存储结构化知识，其中 $\mathcal{E}$ 是实体集，$\mathcal{R}$ 是关系集。
 
-<img src="/images/2306.08302v3/x4.jpg" alt="不同类别知识图谱示例" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2306.08302v3/x4.webp" alt="不同类别知识图谱示例" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 *图5: 不同类别知识图谱的示例，包括百科知识图谱、常识知识图谱、领域知识图谱和多模态知识图谱。*
 
@@ -107,7 +107,7 @@ LLMs和KGs已在多种现实世界应用中得到广泛应用。
 
 本文提出的路线图确定了三个统一LLMs和KGs的框架。
 
-<img src="/images/2306.08302v3/x5.jpg" alt="统一KG和LLM的通用路线图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2306.08302v3/x5.webp" alt="统一KG和LLM的通用路线图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图6: 统一KG和LLM的通用路线图。(a) KG增强的LLMs。(b) LLM增强的KGs。(c) 协同的LLMs + KGs。*
 
@@ -117,7 +117,7 @@ LLMs和KGs已在多种现实世界应用中得到广泛应用。
 
 3.  **协同的LLMs + KGs (Synergized LLMs + KGs)**：这是一个统一框架，旨在让LLMs和KGs相互促进、协同工作。
 
-<img src="/images/2306.08302v3/x6.jpg" alt="协同的LLMs+KGs的通用框架" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2306.08302v3/x6.webp" alt="协同的LLMs+KGs的通用框架" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图7: 协同的LLMs + KGs的通用框架，包含四层：1) 数据层，2) 协同模型层，3) 技术层，4) 应用层。*
 
@@ -131,7 +131,7 @@ LLMs和KGs已在多种现实世界应用中得到广泛应用。
 
 为了更好地理解统一LLMs和KGs的研究，本文对每个框架提供了细粒度的分类。
 
-<img src="/images/2306.08302v3/x7.jpg" alt="统一LLMs与KGs研究的细粒度分类" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2306.08302v3/x7.webp" alt="统一LLMs与KGs研究的细粒度分类" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图8: 统一LLMs与KGs研究的细粒度分类。*
 
@@ -190,7 +190,7 @@ LLMs和KGs已在多种现实世界应用中得到广泛应用。
 *   **基于实体设计目标**：ERNIE 提出文本-知识对齐的训练目标，让模型学习文本Token和KG实体之间的对齐关系。KEPLER 则将知识图谱嵌入的目标和掩码语言模型的目标结合在一个共享编码器中进行训练。WKLM 通过替换文本中的实体并让模型判断是否被替换，来注入知识。
 *   **基于图结构设计目标**：GLM 利用KG的图结构为实体分配不同的掩码概率，距离近的实体有更高的概率被遮蔽。
 
-<img src="/images/2306.08302v3/x8.jpg" alt="通过文本-知识对齐损失将KG信息注入LLM训练目标" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2306.08302v3/x8.webp" alt="通过文本-知识对齐损失将KG信息注入LLM训练目标" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图9: 通过文本-知识对齐损失将KG信息注入LLM训练目标，其中 $h$ 表示LLM生成的隐藏表示。*
 
@@ -199,7 +199,7 @@ LLMs和KGs已在多种现实世界应用中得到广泛应用。
 *   **避免知识噪声**：直接将KG三元组序列化并与句子拼接（如ERNIE 3.0）可能导致“知识噪声”。为解决此问题，K-BERT 设计了一个“可见矩阵”，使得句子中的Token只能看到彼此，而知识实体可以额外看到三元组信息。CoLAKE 则构建了一个统一的词-知识图，将文本Token和KG实体节点连接起来。
 *   **关注长尾实体**：DkLLM 关注低频和长尾实体，用伪Token嵌入替换这些实体作为LLM的新输入。
 
-<img src="/images/2306.08302v3/x9.jpg" alt="利用图结构将KG信息注入LLM输入" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2306.08302v3/x9.webp" alt="利用图结构将KG信息注入LLM输入" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图10: 利用图结构将KG信息注入LLM输入。*
 
@@ -216,7 +216,7 @@ LLMs和KGs已在多种现实世界应用中得到广泛应用。
 *   REALM 在预训练阶段就集成了一个知识检索器，可以在预训练和微调时从大型语料库中检索和关注文档。
 *   KGLM 则根据当前上下文从KG中选择事实来生成事实性句子。
 
-<img src="/images/2306.08302v3/x10.jpg" alt="检索外部知识以增强LLM生成" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2306.08302v3/x10.webp" alt="检索外部知识以增强LLM生成" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图11: 检索外部知识以增强LLM的生成过程。*
 
@@ -241,7 +241,7 @@ LLMs和KGs已在多种现实世界应用中得到广泛应用。
 
 LLM探测旨在理解存储在LLMs内部的知识。LLMs通过在大型语料库上训练来隐式地存储知识，但很难确切知道它们存储了什么，并且它们还存在“幻觉”问题。
 
-<img src="/images/2306.08302v3/LLM_probing.jpg" alt="使用知识图谱进行语言模型探测的通用框架" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2306.08302v3/LLM_probing.webp" alt="使用知识图谱进行语言模型探测的通用框架" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图12: 使用知识图谱进行语言模型探测的通用框架。*
 

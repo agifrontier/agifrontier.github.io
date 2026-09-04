@@ -63,7 +63,7 @@ FActScore 的核心是基于两个关键思想：
 1.  **以原子事实为单位**：将复杂的长文本分解为最基本的信息单元（原子事实），并对每个单元进行独立判断。这允许进行更精细的评估，能够识别并量化部分正确的内容。
 2.  **基于知识源的验证**：事实的“真假”是相对于一个给定的、可信的知识源（如维基百科）而言的。一个原子事实是否被认为是“事实”，取决于它是否能在该知识源中找到支持性证据。
 
-<img src="/images/2305.14251v2/x1.jpg" alt="FActScore 概述" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2305.14251v2/x1.webp" alt="FActScore 概述" style="width:85%; max-width:450px; margin:auto; display:block;">
 *图1：FActScore 概述，它计算由给定知识源支持的原子事实的比例。*
 
 在本文中，评估框架的具体实施流程如下，以生成人物传记为例，并以维基百科作为知识源：
@@ -108,8 +108,8 @@ FActScore 的核心是基于两个关键思想：
     *   对于更稀有（在预训练语料中出现频率更低）的人物，所有模型的事实准确性都显著下降。
     *   在同一篇生成文本中，越靠后的事实错误率越高，这可能源于信息重要性递减和错误传播。
 
-<img src="/images/2305.14251v2/x2.jpg" alt="FActScore与实体频率/事实位置的关系" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2305.14251v2/x3.jpg" alt="FActScore与实体频率/事实位置的关系" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2305.14251v2/x2.webp" alt="FActScore与实体频率/事实位置的关系" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2305.14251v2/x3.webp" alt="FActScore与实体频率/事实位置的关系" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图2：FActScore 随实体稀有度（上）和事实在文本中相对位置（下）的变化。*
 
 *   **错误类型分析**：对 PerplexityAI 的错误进行分类发现，错误原因多样，包括与维基百科单句或整页内容的矛盾、生成主观性陈述、引用不相关信息，甚至维基百科本身也存在不一致之处。
@@ -142,7 +142,7 @@ FActScore 的核心是基于两个关键思想：
 ## 大规模模型评测
 利用自动化估算器，本文对12个当时新发布的LM和人类撰写的传记进行了大规模评测，总计评估了6500份生成文本。
 
-<img src="/images/2305.14251v2/x4.jpg" alt="13个主体（12个LM和人类）的FActScore排名" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2305.14251v2/x4.webp" alt="13个主体（12个LM和人类）的FActScore排名" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图3：由两种最佳自动化评估器得出的13个主体的 FActScore 排名。*
 
 *   **所有LM均远逊于人类**：在撰写传记这项相对简单的任务上，所有被测LM的事实准确性都显著低于人类撰写的文本。

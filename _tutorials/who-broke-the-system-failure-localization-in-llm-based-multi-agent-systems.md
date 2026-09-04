@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Who Broke the System? Failure Localization in LLM-Based Multi-Agent Systems</p>
 
-<img src="/images/2607.07989v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.07989v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在基于大语言模型（ **LLM** ）的复杂应用前沿，多智能体系统正在成为解决跨领域复杂任务的核心范式。通过将不同的职责分配给具备专门设定的智能体，系统能够实现更丰富的推理、更灵活的规划以及跨越多个工具的协调工作流。然而，随着这种分布式架构的广泛采用，一种全新的系统级可靠性危机也随之浮现：当一个由多个智能体协同运行的复杂任务最终宣告失败时，开发者往往很难查明究竟是哪一个智能体在哪个具体步骤上犯下了不可挽回的致命错误。
 

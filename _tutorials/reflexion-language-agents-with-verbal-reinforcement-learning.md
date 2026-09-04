@@ -49,7 +49,7 @@ related_tutorials:
 
 ## 本文方法
 
-<img src="/images/2303.11366v4/x2.jpg" alt="Reflexion 框架示意图与算法流程" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2303.11366v4/x2.webp" alt="Reflexion 框架示意图与算法流程" style="width:85%; max-width:450px; margin:auto; display:block;">
 *图注：(a) Reflexion示意图。(b) Reflexion强化算法流程*
 
 本文提出的 Reflexion 框架通过模拟人类的反思学习过程，实现了一种轻量级但高效的“口头强化学习”。其核心在于将稀疏的外部反馈转化为丰富的语言文字指导，并存储于记忆中以备后续使用。
@@ -84,7 +84,7 @@ Reflexion 包含三个核心模型：
     3.  **记忆可解释性强**: 长期记忆由自然语言构成，使得智能体的学习过程和“心路历程”变得透明且易于理解。
     4.  **提供明确指引**: 反思内容为智能体在未来决策时提供了明确的“启发式线索”。
 
-<img src="/images/2303.11366v4/x1.jpg" alt="Reflexion 在不同任务上的应用" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2303.11366v4/x1.webp" alt="Reflexion 在不同任务上的应用" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图注：Reflexion 框架可应用于决策、编程和推理等多种任务。*
 
 ## 实验结论
@@ -95,8 +95,8 @@ Reflexion 包含三个核心模型：
 *   **结果**: Reflexion Agent（使用 ReAct 作为 Actor）在134个任务中成功完成了130个（成功率97%），相比仅使用 ReAct 的基线（成功率75%）**提升了22%**。基线模型在尝试6-7次后性能停滞，而 Reflexion 能在12次尝试中持续学习并解决更多任务。
 *   **分析**: Reflexion 能够有效解决基线模型常见的“幻觉”问题（例如，智能体以为自己拿起了某个物体，但实际上没有）。通过反思，智能体能定位长轨迹中早期的关键错误，或在多次尝试中系统地探索复杂的环境，避免了重复无效操作。
 
-<img src="/images/2303.11366v4/x3.jpg" alt="ALFWorld 任务性能" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2303.11366v4/x4.jpg" alt="ALFWorld 任务失败原因分类" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2303.11366v4/x3.webp" alt="ALFWorld 任务性能" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2303.11366v4/x4.webp" alt="ALFWorld 任务失败原因分类" style="width:85%; max-width:450px; margin:auto; display:block;">
 *图注：(a) Reflexion 在 ALFWorld 任务上随尝试次数增加的性能表现优于基线。 (b) Reflexion 显著减少了因幻觉和低效规划导致的失败。*
 
 ### 推理任务 (HotpotQA)
@@ -104,9 +104,9 @@ Reflexion 包含三个核心模型：
 *   **结果**: 在只提供标准上下文的纯推理任务上（CoT (GT)），Reflexion 将准确率从61%提升至75%（**提升14%**）。在需要自行搜索信息的完整任务上（ReAct），Reflexion 将准确率从23%提升至43%（**提升20%**）。
 *   **分析**: 消融实验表明，Reflexion 的优势不仅仅来自于记忆。相比只把前一次失败的轨迹作为上下文（Episodic Memory），明确生成“反思文本”能带来额外 8% 的绝对性能提升。这证明了将经验提炼成第一人称的语言教训，比简单地重复“观看”失败案例更有效。
 
-<img src="/images/2303.11366v4/x5.jpg" alt="HotpotQA 任务性能" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2303.11366v4/x6.jpg" alt="HotpotQA (CoT) 任务性能" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2303.11366v4/x7.jpg" alt="HotpotQA 消融实验" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2303.11366v4/x5.webp" alt="HotpotQA 任务性能" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2303.11366v4/x6.webp" alt="HotpotQA (CoT) 任务性能" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2303.11366v4/x7.webp" alt="HotpotQA 消融实验" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 编程任务 (HumanEval, MBPP等)
 *   **任务**: 根据自然语言描述生成 Python 和 Rust 代码。评估方式为 pass@1 准确率。

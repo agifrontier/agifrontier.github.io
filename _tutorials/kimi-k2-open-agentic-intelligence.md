@@ -60,7 +60,7 @@ QK-Clip就像是一个深植于引擎内部的智能限速器。
 赛车可以在每次换挡时保持巅峰加速度，同时绝对不会越过红线。
 凭借MuonClip，Kimi K2在消耗15.5万亿Token的漫长预训练中。
 成功实现了令人惊叹的零损失毛刺（Zero Loss Spike）。
-<img src="/images/2507.20534v1/x5.jpg" alt="Kimi K2 Training Loss" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2507.20534v1/x5.webp" alt="Kimi K2 Training Loss" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 数据重写与架构演进：算力与数据的极致压榨
 
@@ -126,7 +126,7 @@ K2专门训练了一个句子级别的裁判模型，用于揪出缺乏证据支
 在ACEBench基准测试中，K2的得分也达到了令人瞩目的76.5分。
 在极具挑战的SWE-Bench Verified中，K2以65.8的高分脱颖而出。
 这一成绩大幅超越了绝大多数开源与闭源的竞争对手。
-<img src="/images/2507.20534v1/x2.jpg" alt="Kimi K2 main results" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2507.20534v1/x2.webp" alt="Kimi K2 main results" style="width:85%; max-width:600px; margin:auto; display:block;">
 更令人瞩目的是，在未开启额外思考时间的情况下，它的各项理科成绩依然优异。
 K2在LiveCodeBench和AIME 2025中分别拿下了53.7分和49.5分。
 

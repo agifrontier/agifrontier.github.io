@@ -58,7 +58,7 @@ Twin 则走向了另一条极其高效的路径：**程序推导（Program Induc
 
 整个 Twin 系统由一个核心循环驱动：验证（Validate）、探索（Explore）、规划（Plan）和带检查的执行（ExecuteChecked）。
 
-<img src="/images/2608.14490v1/fig_loop_v4_print.jpg" alt="Figure 1: The Twin loop" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.14490v1/fig_loop_v4_print.webp" alt="Figure 1: The Twin loop" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，计分边界将系统严格划分为两侧。在虚线左侧，所有的推演、代码重写和内部搜索都是不计入游戏动作分数的；只有当执行器向真实的 ARC-AGI-3 模拟器提交动作时，才会产生真实的代价。
 

@@ -30,7 +30,7 @@ related_tutorials:
 
 来自微软研究院和阿姆斯特丹大学的最新研究给出了肯定的答案。该研究提出了一种名为**前缀重放同策略蒸馏**（**Replayed-Prefix On-Policy Distillation, ReOPD**）的新型离线替代方案。它巧妙地将昂贵的智能体-环境交互转化为可复用的离线资源。在数学推理和搜索等复杂环境中，ReOPD不仅在准确率上媲美甚至超越了传统的在线OPD，更实现了训练期间**零工具调用**，并将单步训练速度提升了至少4倍。
 
-<img src="/images/2607.04763v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.04763v1/x1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 多轮交互中的蒸馏困境
 
@@ -40,7 +40,7 @@ related_tutorials:
 
 **同策略蒸馏**（**OPD**）通过让学生自己采样前缀，同时用教师的逐词元分布进行蒸馏，有效解决了这个问题。然而，当场景升级为多轮智能体任务时，OPD的成本呈指数级上升。因为多轮任务需要不断与外部环境（如Python解释器）交互，在线OPD要求每次更新都必须让学生在环境中重新滚动，并在访问过的每个历史节点上重新查询教师。这种频繁的在线环境部署和实时查询，构成了难以逾越的算力与时间瓶颈。
 
-<img src="/images/2607.04763v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.04763v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 核心挑战：“前缀陷阱”与双侧分布偏移
 
@@ -84,7 +84,7 @@ ReOPD直接复用预先收集的教师轨迹池 $\mathcal{D}_T$。对于每一�
 
 其中 $\kappa\in(0,1]$ 是一个控制衰减陡峭程度的超参数。$\kappa=1$ 表示对所有步骤均匀采样（无衰减）；$\kappa$ 越小，训练的重心就越向早期、偏移量小且高度可靠的步骤倾斜。通过在采样前缀时引入这个衰减权重，ReOPD优雅地规避了“前缀陷阱”，确保教师始终在其熟悉的领域内提供高质量的指导。
 
-<img src="/images/2607.04763v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.04763v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 实验验证：速度与精度的双重胜利
 

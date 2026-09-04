@@ -14,7 +14,7 @@ related_tutorials:
 
 ## AI记忆系统的“脑科学”革命：复旦哈工大万字综述，揭秘智能体进化的核心
 
-<img src="/images/2512.23343v1/A__title.jpg" alt="AI记忆系统的“脑科学”革命：复旦哈工大万字综述，揭秘智能体进化的核心 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.23343v1/A__title.webp" alt="AI记忆系统的“脑科学”革命：复旦哈工大万字综述，揭秘智能体进化的核心 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 大语言模型（LLMs）虽然在推理能力上突飞猛进，但它们本质上有着一种致命的缺陷：**原生无状态**（**Natively Stateless**）。每一次对话对于模型来说都是全新的开始，这种“金鱼记忆”严重限制了AI处理长期复杂任务的能力。尽管我们可以无限拉长上下文窗口，但高昂的计算成本和“迷失中间”现象依然是难以逾越的物理瓶颈。
 
@@ -48,7 +48,7 @@ related_tutorials:
 
 *   **动态调度机制**：面对有限的注意力资源，智能体必须像操作系统一样进行资源调度。研究提到了基于强化学习的自适应机制，甚至模拟人类的“遗忘曲线”，主动剔除低价值信息，以降低认知负荷。
 
-<img src="/images/2512.23343v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.23343v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 记忆的生命周期：像人脑一样“反思”
 

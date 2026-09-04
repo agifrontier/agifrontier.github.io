@@ -32,7 +32,7 @@ related_tutorials:
 
 Kimi-VL 的核心架构可以类比为一个“高能效情报处理中心”。它主要由三个精密运作的部门组成，分别是原生分辨率视觉编码器 $MoonViT$、用于特征对齐的 $MLP$ 投影层，以及扮演大脑角色的 $MoE$ 语言模型。
 
-<img src="/images/2504.07491v3/x3.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2504.07491v3/x3.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 首先是负责“看”的部门：$MoonViT$。传统视觉模型处理图片时，就像是强制要求把所有照片裁剪或拼接成固定尺寸的相框。这不仅会丢失高清细节，还费时费力。$MoonViT$ 则引入了原生的动态处理机制。它将不同分辨率的图片直接切片、展平，再首尾相连成一维序列。这就好比扫描仪能够自适应任何尺寸的纸张，直接提取关键信息。
 为了让模型在处理高清图像时依然能精准定位，研究人员不仅保留了绝对位置编码，还创新性地引入了 **二维旋转位置编码**（**2D RoPE**）。这种双管齐下的编码方式，让模型能够完美驾驭单张图片高达320万像素的超高清输入，而不会造成空间信息的紊乱。
@@ -51,7 +51,7 @@ Kimi-VL 的核心架构可以类比为一个“高能效情报处理中心”。
 3.  **联合冷却阶段**（$Cooldown$）：通过引入高质量的合成问答对（$QA$）和高保真数据子集，以极低的混合比例，重点激发模型在数学、代码和知识领域的潜能，避免过拟合。
 4.  **长上下文激活阶段**：在此阶段，模型的上下文窗口被逐步从8K扩展到惊人的128K。研究通过将长数据的比例提升至25%，配合旋转位置编码逆频率的调整，让模型稳稳拿捏长文本与长视频的输入。
 
-<img src="/images/2504.07491v3/x5.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2504.07491v3/x5.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在后训练阶段，Kimi-VL 同样经历了精心的调校。除了在32K和128K下进行两阶段的 **监督微调**（**Supervised Fine-Tuning, SFT**），该研究还专门针对推理能力进行了大幅强化，推出了长思考变体：Kimi-VL-Thinking。
 
@@ -61,7 +61,7 @@ Kimi-VL 的核心架构可以类比为一个“高能效情报处理中心”。
 
 Kimi-VL 的实验数据极其亮眼，展现出了惊人的效率与性能比。
 
-<img src="/images/2504.07491v3/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2504.07491v3/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在大学级别的学术测试 $MMMU$ 中，仅有2.8B激活参数的 Kimi-VL 拿下了57.0%的得分，不仅超越了同架构但参数更大的 $DeepSeek-VL2$，更是与体积庞大得多的 $Qwen2.5-VL-7B$ 和 $Gemma-3-12B-IT$ 打得难解难分。
 

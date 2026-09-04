@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">CoAgent: Concurrency Control for Multi-Agent Systems</p>
 
-<img src="/images/2606.15376v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.15376v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当我们在生产环境中同时运行多个大型语言模型（LLM）智能体时，一个经典但致命的计算机科学问题正在以全新的形态复活：并发控制。无论是修复代码库、管理 Kubernetes 集群，还是协作编辑长文档，一旦多个智能体开始读取和修改同一个共享状态，它们的执行轨迹就会交织在一起。
 
@@ -64,7 +64,7 @@ related_tutorials:
 
 为了将上述设计理念转化为一个严谨、可证明的系统，研究团队在 CoAgent 中设计并实现了一种名为 MTPO（Monotonic Trajectory Pre-Order）的通信与控制协议。该协议在系统启动时为并发的智能体分配一个确定的串行执行顺序，并通过过滤和通知机制来维持整个系统的最终状态一致性。
 
-<img src="/images/2606.15376v1/mtpo-three-actions.jpg" alt="MTPO核心动作" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.15376v1/mtpo-three-actions.webp" alt="MTPO核心动作" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，MTPO 协议定义了三个核心动作，这三个动作相互配合，既保证了执行的乐观性和高效性，又兜底了状态的严谨性。
 

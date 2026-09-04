@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 告别“面条代码”：普林斯顿用Monad重塑AI Agent架构，健壮性狂飙
 
-<img src="/images/2512.22431v1/A__title.jpg" alt="告别“面条代码”：普林斯顿用Monad重塑AI Agent架构，健壮性狂飙 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.22431v1/A__title.webp" alt="告别“面条代码”：普林斯顿用Monad重塑AI Agent架构，健壮性狂飙 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 你是否经历过这样的崩溃时刻：写一个简单的 **AI Agent** demo 只需要一下午，但要把它变成一个在生产环境中稳定运行的系统，却像是在修补一座摇摇欲坠的危楼？
 

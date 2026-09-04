@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Latent Planning Emerges with Scale</p>
 
-<img src="/images/2604.12493v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.12493v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 第二部分
 
@@ -54,7 +54,7 @@ related_tutorials:
 
 在此基础上，研究人员进一步构建了转码器特征回路（Transcoder Feature Circuits）。给定特定的输入文本，这一技术可以描绘出从模型输入、各个中间转码器特征，直到最终输出 Logits 之间的加权有向无环图。回路中的每一条边都代表了源节点对目标节点的直接因果效应。这种精确到特征级别的因果追踪，为验证模型是否真正在进行前向和后向规划提供了决定性的工具。
 
-<img src="/images/2604.12493v1/x1.jpg" alt="Figure 1 Feature circuit for Latent Planning" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.12493v1/x1.webp" alt="Figure 1 Feature circuit for Latent Planning" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，这就是研究团队从 **Qwen-3** 14B 模型中提取出的一个典型的规划回路。当输入要求描述一个处理财务记录的人时，模型内部会激活代表“计划输出 accountant”的特定特征。这个特征通过回路中的边，直接且显著地上调了输出冠词“an”的概率。通过对这些节点进行介入式干预（如置零或成倍放大），研究者验证了这并非统计上的巧合，而是真实存在的因果控制链路。
 
@@ -64,7 +64,7 @@ related_tutorials:
 
 实验结果揭示了极其显著的规模效应。当测试不同参数量级的 **Qwen-3** 系列模型时，性能曲线呈现出了清晰的阶段性跨越。
 
-<img src="/images/2604.12493v1/x2.jpg" alt="Recall metrics on simple planning tasks" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.12493v1/x2.webp" alt="Recall metrics on simple planning tasks" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在上图中可以看出，不论模型大小，它们对于大多数情况下的默认选项（即冠词“a”）都保持着极高的召回率。然而，真正考验规划能力的少数类（需要输出“an”）却成为了分水岭。0.6B 到 1.7B 的小型模型在这一任务上彻底溃败，它们几乎只会一味地输出占绝对多数的“a”，即便它们能够算出目标词是什么，也无法完成为了目标词调整当前冠词的后向规划。
 
@@ -80,7 +80,7 @@ related_tutorials:
 
 在这个任务中，模型需要根据给定的第一句诗，生成第二句诗，并且保证第二句结尾的单词与第一句结尾的单词押韵。研究者特意使用 **Qwen-3** 32B 模型生成了未曾出现在训练语料中的诗句开头，以确保被测试模型是在即兴创作，而非单纯地背诵记忆。
 
-<img src="/images/2604.12493v1/x5.jpg" alt="Feature circuit for couplet completion" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.12493v1/x5.webp" alt="Feature circuit for couplet completion" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 通过提取押韵任务的特征回路，研究者揭示了一个精妙的内部协作网络。如上图所示，当 14B 的模型在输出第二句诗的过程中，一种被称为“诗歌行将结束（near end of a line of poetry）”的特征会逐渐积累激活。当这种感觉足够强烈时，它会触发模型将注意力回溯到第一句诗的末尾，去提取那里的“押韵（rhymes with...）”特征。这些提取出的押韵特征随后被搬运到当前的输出位置，并最终引导模型生成了一个发音完美契合的结尾词。
 
@@ -88,7 +88,7 @@ related_tutorials:
 
 在押韵回路中，模型确实展现出了强烈的前向规划能力：提取到的押韵特征成为了最终输出押韵词的直接因果原因。但是，在后向规划层面，即使是 14B 的模型也表现得非常挣扎。如果研究者通过人工干预的方式，在诗句生成的早期阶段强制注入一个全新的押韵目标，模型虽然有可能会顺从这个目标在最后输出那个词，但它很少能修改诗句中间的过渡部分，使其在语义上合理地适配这个强行塞入的新韵脚。
 
-<img src="/images/2604.12493v1/x8.jpg" alt="Adaptation metrics by model in prose" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.12493v1/x8.webp" alt="Adaptation metrics by model in prose" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 然而，规模带来的希望并未完全破灭。当研究者降低任务的结构复杂度，通过引导模型在普通散文中朝着特定计划词前进时，更大规模的模型确实表现出了更强的上下文适配能力（如上图所示）。随着参数量的增长，模型不仅仅是生硬地输出目标词，而是越来越倾向于生成自然连贯的过渡短语来引出目标词。这种局部规划（Local Planning）能力的稳步提升再次印证了：前向规划比后向规划更容易习得，而后向塑造上下文的能力正在作为一种高级演化特性，在大模型中缓慢但坚定地生根发芽。
 

@@ -14,7 +14,7 @@ related_tutorials:
 
 ## Mistral AI新作QuacK：不靠归一化，动态学习率让Transformer训练提速10%
 
-<img src="/images/2511.21377v1/A__title.jpg" alt="Mistral AI新作QuacK：不靠归一化，动态学习率让Transformer训练提速10% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.21377v1/A__title.webp" alt="Mistral AI新作QuacK：不靠归一化，动态学习率让Transformer训练提速10% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 Transformer模型的训练过程，有时就像驾驶一辆狂野的赛车，稍有不慎就可能“翻车”——训练过程突然崩溃，损失函数（Loss）直接飙升到无穷大。为了驯服这头性能猛兽，研究者们想出了各种办法，其中最著名的当属**QK Norm**。然而，这个“稳定器”并非万能，在一些更高效的注意力机制（如MLA）中会“水土不服”。
 
@@ -41,7 +41,7 @@ $${% endraw %}
 
 为了解决这个问题，**QK Norm**应运而生。它通过在计算$Q$和$K$后强制进行归一化，把它们的范数限制在可控范围内，从而保证了训练的稳定性。
 
-<img src="/images/2511.21377v1/x1.jpg" alt="训练稳定性对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.21377v1/x1.webp" alt="训练稳定性对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1：仅需降低Q/K权重的学习率，就能在极高的基础学习率下稳定训练过程*
 
@@ -81,7 +81,7 @@ $${% endraw %}
 
 那么，QuacK的实际效果如何？研究者在一个1B参数模型上进行了预训练实验，结果令人印象深刻。
 
-<img src="/images/2511.21377v1/x2.jpg" alt="各方法在不同学习率下的性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.21377v1/x2.webp" alt="各方法在不同学习率下的性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图2：QuacK在各种设置下均表现稳定，尤其在高学习率和MLA场景下优势明显*
 

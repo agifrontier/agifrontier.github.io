@@ -63,7 +63,7 @@ related_tutorials:
 
 $\mathrm{HMS}$ 是一个事后诊断指标，用于衡量Agent是否遵循了可靠的执行模式，比如“提交前检查”、“断言前寻找证据”、“失败后修改”等。研究明确指出，训练时绝对不直接使用 $\mathrm{HMS}$ 作为奖励信号。
 
-<img src="/images/2607.05458v1/g4_global_intuition.jpg" alt="流程与直觉" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.05458v1/g4_global_intuition.webp" alt="流程与直觉" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 为什么要特意解耦这两个概念？继续使用前面的比喻：项目经理（控制器）通过观察历史成功案例，很容易学到一个好习惯，比如“提交代码前一定要先运行测试（CheckBeforeSubmit）”。只要这个动作与高优势轨迹存在正相关，过程行为（$\mathrm{HMS}$）就能得到显著改善。
 
@@ -81,7 +81,7 @@ $\mathrm{HMS}$ 是一个事后诊断指标，用于衡量Agent是否遵循了可
 
 过程的改善是否带来了分数的提升？答案是选择性的。
 
-<img src="/images/2607.05458v1/x1.jpg" alt="结果展示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.05458v1/x1.webp" alt="结果展示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 如上图所示，在 $\tau$-bench retail（+18.2分）、AgentBench DB-Bench（+13.2分）以及配备校准结构化验证器的编程任务（+10.0分）中，最终任务质量出现了最大的跃升。这说明，在这些任务的离线数据中，恰好存在着“只要多做验证和修改就能做对”的轨迹，AW成功捕捉并放大了这些轨迹。
 

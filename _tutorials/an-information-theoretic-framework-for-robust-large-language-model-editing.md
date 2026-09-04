@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 阿里IBKE：用“信息瓶颈”给大模型做脑部微创，知识编辑SOTA
 
-<img src="/images/2512.16227v1/A__title.jpg" alt="阿里IBKE：用“信息瓶颈”给大模型做脑部微创，知识编辑SOTA 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.16227v1/A__title.webp" alt="阿里IBKE：用“信息瓶颈”给大模型做脑部微创，知识编辑SOTA 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型（LLM）虽然博学，但它们也有一个致命弱点：**知识会过时，且容易产生幻觉**。当我们需要修正模型中的错误（例如“现任英国首相是谁”）时，重新训练整个模型无异于为了换个灯泡而重建整栋大楼——成本高昂且效率低下。
 
@@ -52,7 +52,7 @@ IB原理的核心思想是在压缩输入信息的同时，最大化保留与目
 
 *   $-\beta I(Z;X)$ 鼓励 $Z$ 尽可能压缩输入 $X$，丢弃与编辑目标无关的冗余信息（保证编辑的**局部性**，减少对无关知识的干扰）。
 
-<img src="/images/2512.16227v1/x10.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.16227v1/x10.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### IBKE：基于梯度的超网络架构
 
@@ -74,7 +74,7 @@ IB原理的核心思想是在压缩输入信息的同时，最大化保留与目
 
 **1. 泛化性与局部性的完美平衡**
 
-<img src="/images/2512.16227v1/x2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.16227v1/x2.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 上图展示了不同编辑方法在泛化性（纵轴）和局部性（横轴）上的权衡。可以看出，**IBKE（红色星号）** 几乎在所有模型上都位于右上角，这意味着它在保持极高局部性（不坏事）的同时，显著提升了泛化性（做对事）。
 
@@ -82,7 +82,7 @@ IB原理的核心思想是在压缩输入信息的同时，最大化保留与目
 
 为了探究IBKE到底学到了什么，研究人员对潜在表示进行了可视化分析。
 
-<img src="/images/2512.16227v1/x9.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.16227v1/x9.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 t-SNE可视化结果显示，引入IB机制后（右图），不同类型的编辑任务（不同颜色）在潜在空间中形成了边界更清晰、分离度更好的簇。这说明IB机制成功地帮助模型剔除了噪声，学到了更本质的编辑语义。
 

@@ -49,7 +49,7 @@ related_tutorials:
 该研究敏锐地指出，现代大模型推理系统通常依赖于三大组件。
 这三个组件各司其职，共同构成了机器认知流转的完整闭环。
 
-<img src="/images/2504.09037v3/x2.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2504.09037v3/x2.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 处于系统最核心地位的是**推理器**（**Reasoner**）。
 它本质上是整个策略模型，负责基于当前的上下文状态。
@@ -89,7 +89,7 @@ related_tutorials:
 当前，大模型跨越推理迷宫的策略主要分为两大阵营。
 它们在计算资源的分配上展现出完全相反的工程哲学。
 
-<img src="/images/2504.09037v3/x3.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2504.09037v3/x3.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 第一种经典策略被称为**测试时扩展**（**Inference Scaling**）。
 这是一种极具暴力美学的现场试错机制。
@@ -125,7 +125,7 @@ related_tutorials:
 除了底层计算范式的演进，该研究指出的第二个正交维度是系统架构。
 这也是模型从单一的文本处理器走向复杂通用系统的关键跳板。
 
-<img src="/images/2504.09037v3/architecture_compare.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2504.09037v3/architecture_compare.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在发展初期，业界主要受限于**单体大模型**（**Standalone LLM**）。
 此时的模型如同一个在封闭房间里独自解题的学者。

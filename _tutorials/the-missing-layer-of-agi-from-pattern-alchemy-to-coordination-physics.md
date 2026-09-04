@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 反驳“LLM死路论”！斯坦福提出AGI“缺失层”，用一个公式定义通往AGI之路
 
-<img src="/images/2512.05765v1/A__title.jpg" alt="反驳“LLM死路论”！斯坦福提出AGI“缺失层”，用一个公式定义通往AGI之路 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.05765v1/A__title.webp" alt="反驳“LLM死路论”！斯坦福提出AGI“缺失层”，用一个公式定义通往AGI之路 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 关于大型语言模型（LLM）的未来，AI领域正上演一场激烈的辩论。一派认为，只要不断扩大模型规模，AGI（通用人工智能）的曙光就在眼前；而另一派，以LeCun等巨擘为代表，则尖锐地指出：LLM不过是“模式匹配器”，结构上无法实现真正的推理和规划，是通往AGI的一条死路。
 
@@ -31,7 +31,7 @@ related_tutorials:
 
 如果只是随意一撒（无引导的生成），我们大概率只能捞到最常见的“鱼”，也就是模型预训练数据中最普遍、最可能的回答。这正是LLM产生“幻觉”或给出平庸答案的原因。
 
-<img src="/images/2512.05765v1/FIG_fishing_metaphore.jpg" alt="The Mechanics of Coordination" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.05765v1/FIG_fishing_metaphore.webp" alt="The Mechanics of Coordination" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 而真正的推理和规划，则像是一次目标明确的“捕鱼”行动。我们需要精良的渔具：**诱饵**（Baiting）和**渔网**（Filtering）。
 
@@ -49,7 +49,7 @@ related_tutorials:
 
 UCCT的核心观点是，从无目标的模式匹配到有目标的推理，并非一个渐进的过程，而是一个类似物理学中“相变”的突变过程。就像水在0℃会瞬间结冰一样，当外部引导的强度跨过一个临界点时，LLM的行为也会发生质的飞跃。
 
-<img src="/images/2512.05765v1/FIG_phase_transition.jpg" alt="The Physics of Coordination" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.05765v1/FIG_phase_transition.webp" alt="The Physics of Coordination" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 这个相变过程可以用一个简洁的**锚定强度**（**Anchoring Strength**）公式来描述：
 

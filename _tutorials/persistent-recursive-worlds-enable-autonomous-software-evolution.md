@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Persistent Recursive Worlds Enable Autonomous Software Evolution</p>
 
-<img src="/images/2608.10450v2/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.10450v2/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在复杂软件系统的生命周期中，存在一个基础却常被忽视的矛盾：软件项目的存活时间，远远超过任何单个代码贡献者的参与周期。当大语言模型被引入代码生成领域时，当前的智能体开发范式几乎都在试图解决一个死胡同般的问题——如何让 **Agent** 拥有更长的上下文、更持久的记忆或更全局的管理者权限，以维持开发过程的连贯性。香港理工大学的研究团队提出了一项名为 **EvoX Genesis** 的全新框架，直接颠覆了这一思路。
 
@@ -55,7 +55,7 @@ related_tutorials:
 
 其中 $v$ 代表版本，$p$ 代表路径。在这个框架下，所有的开发行为不再是全局视角的漫无目的修改，而是受到严格约束的递归活动。
 
-<img src="/images/2608.10450v2/Architecture.jpg" alt="持久递归世界架构" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2608.10450v2/Architecture.webp" alt="持久递归世界架构" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 当一个生命周期有限的智能体 $A_{i}$ 在局部世界 $(v,p)$ 中接收到一个具体的任务目标 $g_{i}$ 时，它会产生一个候选的修改方案 $\Delta_{i}$：
 

@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 普特南118分超人类！DeepSeekMath-V2：AI如何学会“自我审日志”？
 
-<img src="/images/2511.22570v1/A__title.jpg" alt="普特南118分超人类！DeepSeekMath-V2：AI如何学会“自我审日志”？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.22570v1/A__title.webp" alt="普特南118分超人类！DeepSeekMath-V2：AI如何学会“自我审日志”？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 AI在数学竞赛中再次技惊四座！这一次，DeepSeek-AI推出的DeepSeekMath-V2在顶级的大学生数学竞赛普特南（Putnam）2024中取得了118/120的近乎满分的成绩，远超人类最高分90分。
 
@@ -92,7 +92,7 @@ DeepSeekMath-V2最精妙的设计在于，验证器和生成器构成了一个�
 
 4.  升级后的验证器又可以更好地指导生成器。
 
-<img src="/images/2511.22570v1/x1.jpg" alt="Synergy Cycle" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.22570v1/x1.webp" alt="Synergy Cycle" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图1：DeepSeekMath-V2在各类问题上均优于其他模型*
 
@@ -118,7 +118,7 @@ DeepSeekMath-V2最精妙的设计在于，验证器和生成器构成了一个�
 
 在与DeepMind的DeepThink（同样达到IMO金牌水平）等模型的对比中，DeepSeekMath-V2也表现出色。
 
-<img src="/images/2511.22570v1/x3.jpg" alt="Expert Evaluation" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.22570v1/x3.webp" alt="Expert Evaluation" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图3：在IMO-ProofBench上的专家评估结果，DeepSeekMath-V2表现优异*
 

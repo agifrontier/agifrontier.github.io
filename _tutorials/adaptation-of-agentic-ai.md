@@ -29,7 +29,7 @@ related_tutorials:
 
 为了系统化这一过程，论文提出了一个基于 **适配对象（Agent vs. Tool）** 和 **信号来源** 的 $2 \times 2$ 核心框架，将现有的适配策略划分为四大范式：**A1、A2、T1、T2**。
 
-<img src="/images/2512.16301v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.16301v1/x1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### A1 & A2：改造“大脑”（Agent Adaptation）
 
@@ -51,7 +51,7 @@ related_tutorials:
 
 *   **典型应用**：思维链（CoT）的优化。通过对 Agent 生成的推理步骤进行打分，引导其学会更缜密的思考逻辑。
 
-<img src="/images/2512.16301v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.16301v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### T1 & T2：升级“装备”（Tool Adaptation）
 

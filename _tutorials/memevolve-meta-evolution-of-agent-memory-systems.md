@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 让Agent自己“进化”大脑？MemEvolve实现17%性能跃升与跨模型泛化
 
-<img src="/images/2512.18746v1/A__title.jpg" alt="让Agent自己“进化”大脑？MemEvolve实现17%性能跃升与跨模型泛化 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.18746v1/A__title.webp" alt="让Agent自己“进化”大脑？MemEvolve实现17%性能跃升与跨模型泛化 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 **如果说现在的AI Agent像是一个勤奋的学生，那么它的“记忆系统”就是它的笔记本。**
 

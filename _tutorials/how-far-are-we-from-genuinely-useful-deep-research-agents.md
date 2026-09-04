@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 千份报告揭示AI研究助手致命弱点：OPPO发布FINDER基准与DEFT分类法
 
-<img src="/images/2512.01948v1/A__title.jpg" alt="千份报告揭示AI研究助手致命弱点：OPPO发布FINDER基准与DEFT分类法 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.01948v1/A__title.webp" alt="千份报告揭示AI研究助手致命弱点：OPPO发布FINDER基准与DEFT分类法 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 AI研究助手（Deep Research Agents, DRA）正火，号称能自动检索、分析并撰写出分析师级别的深度报告。但它们真的靠谱吗？
 
@@ -31,7 +31,7 @@ AI研究助手（Deep Research Agents, DRA）正火，号称能自动检索、�
 
 另一些开放式基准，虽然更接近真实场景，但其任务设计和评估标准往往充满主观性，难以进行标准化、可复现的横向比较。这导致我们无法准确判断一个AI助手到底“好”在哪里，“差”在何处。
 
-<img src="/images/2512.01948v1/x1.jpg" alt="Comparison between DeepResearch Bench (DRB) and our Finder" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.01948v1/x1.webp" alt="Comparison between DeepResearch Bench (DRB) and our Finder" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 ### 更精细的“标尺”：FINDER基准
 
@@ -51,13 +51,13 @@ AI研究助手（Deep Research Agents, DRA）正火，号称能自动检索、�
 
 为此，研究团队基于对主流AI研究助手生成的近1000份报告的详尽分析，提出了首个**深度研究失败分类法**（**Deep rEsearch Failure Taxonomy, DEFT**）。
 
-<img src="/images/2512.01948v1/x2.jpg" alt="Overview of the DEFT Construction" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.01948v1/x2.webp" alt="Overview of the DEFT Construction" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 DEFT的构建过程极为严谨，它借鉴了质性研究中的“扎根理论”，通过一个“人机协作”的框架，历经开放、关联和核心三轮编码过程，最终提炼而成。
 
 这个分类法将AI研究助手的失败模式归纳为三大核心维度，并进一步细分为14种具体的失败类型。
 
-<img src="/images/2512.01948v1/x3.jpg" alt="Overview of the Level 1 (Core) and Level 2 (Axial) Failure Categories in DEFT" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.01948v1/x3.webp" alt="Overview of the Level 1 (Core) and Level 2 (Axial) Failure Categories in DEFT" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 实验揭示的残酷现实
 
@@ -92,7 +92,7 @@ DEFT的构建过程极为严谨，它借鉴了质性研究中的“扎根理论�
 
 最关键的发现是：**当前AI研究助手最大的瓶颈并非任务理解，而在于证据整合、事实核查和最终的内容生成。**
 
-<img src="/images/2512.01948v1/x4.jpg" alt="Overview of agent performance on DeepResearch Bench (DRB) and our Finder" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.01948v1/x4.webp" alt="Overview of agent performance on DeepResearch Bench (DRB) and our Finder" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 深度剖析三大失败维度
 
@@ -120,7 +120,7 @@ DEFT分类法为我们提供了一个清晰的诊断框架，让我们看看AI�
 
 *   **验证机制失效**（8.72%）：未能有效核查信息的真实性，导致引用错误或事实偏差。
 
-<img src="/images/2512.01948v1/x5.jpg" alt="A Brief Information Retrieval Workflow in Deep Research and Its Potential Failures" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.01948v1/x5.webp" alt="A Brief Information Retrieval Workflow in Deep Research and Its Potential Failures" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 #### 3. 生成（Generation）失败
 

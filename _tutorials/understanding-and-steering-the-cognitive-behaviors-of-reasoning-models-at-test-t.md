@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 拒绝“过度思考”！CREST让大模型推理提速37.6%，精度暴涨17.5%
 
-<img src="/images/2512.24574v1/A__title.jpg" alt="拒绝“过度思考”！CREST让大模型推理提速37.6%，精度暴涨17.5% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.24574v1/A__title.webp" alt="拒绝“过度思考”！CREST让大模型推理提速37.6%，精度暴涨17.5% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大模型（LLM）的**思维链**（**Chain-of-Thought, CoT**）技术虽然强大，但你是否发现，模型有时候像个啰嗦的老学究？它经常陷入“过度思考”（Overthinking）的泥潭，生成大量冗余的验证步骤，或者在简单问题上反复纠结，导致推理速度极慢，计算成本飙升。
 
@@ -37,7 +37,7 @@ related_tutorials:
 
 这些特殊的注意力头被命名为**认知头**（**Cognitive Heads**）。它们就像是模型大脑中的“监控器”，专门负责检查、回溯和纠错。
 
-<img src="/images/2512.24574v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.24574v1/x1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图1：不同层中注意力头对非线性推理步骤的分类准确率。可以看到，深层的某些头（红色点）对认知行为有极高的识别能力。*
 
@@ -70,7 +70,7 @@ CREST包含两个简洁的步骤：
 
 这个公式看起来复杂，其实含义很简单：**剔除掉隐藏状态中那些“想要过度反思”的分量，同时保持信号的总强度不变。** 这使得CREST具有极高的稳定性，不需要针对每个任务费力地调整参数。
 
-<img src="/images/2512.24574v1/x2.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.24574v1/x2.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 *图2：CREST的工作流程。通过抑制特定的认知头，模型从冗长的“过度思考”路径（红色）转变为更高效的路径（绿色）。*
 
@@ -84,7 +84,7 @@ CREST包含两个简洁的步骤：
 
 *   **Token消耗降低**：同一任务中，Token的使用量减少了**37.60%**。这意味着推理速度更快，API调用成本更低。
 
-<img src="/images/2512.24574v1/x7.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.24574v1/x7.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图7：响应长度分布对比。CREST（橙色）显著将推理长度的分布向左推移，大幅减少了长尾的冗余推理。*
 

@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Progressive Crystallization: Turning Agent Exploration into Deterministic, Lower-Cost Workflows in Production</p>
 
-<img src="/images/2607.07052v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.07052v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在企业级 IT 运维（AIOps）中，引入大语言模型（LLM）驱动的 Agent 已经成为解决复杂故障的主流方向。Agent 通过调用工具观察系统状态、进行逻辑推理并执行修复动作，这种高度的灵活性使其能够有效应对前所未见的新型故障。然而，随着部署规模的扩大，一个致命的商业悖论逐渐浮出水面：在生产环境中，越是高频发生的已知问题，Agent 消耗的算力成本就越高。
 
@@ -44,7 +44,7 @@ Progressive Crystallization 的解法与优化模型本身完全正交，它汲�
 
 为了实现从探索到确定的平滑过渡，研究团队定义了一个包含三个阶段的执行类型谱系。这三种类型并非相互孤立的系统，而是同一个底层运维任务在不同生命周期阶段的表现形式。
 
-<img src="/images/2607.07052v1/fig1_spectrum.jpg" alt="执行类型的分类谱系，展示从完全Agent编排到完全确定性工作流的演进轨迹" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.07052v1/fig1_spectrum.webp" alt="执行类型的分类谱系，展示从完全Agent编排到完全确定性工作流的演进轨迹" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 处于最前端的是 **Type 3（Agent 编排）**工作流。这是一种完全随机且成本高昂的执行模式，也是任何新型故障进入系统的初始入口。在这个阶段，Agent 在预设的边界内拥有极大的自主调查权，它将自主决定读取哪些监控数据、如何组合信息。为了保证安全，这类工作流在执行写入或变更操作时，必须依赖人类在环（Human-in-the-Loop, HITL）的审批机制。每一次 Type 3 的执行通常需要消耗数万个 Token，耗时几秒到几分钟不等。
 
@@ -58,7 +58,7 @@ Progressive Crystallization 的解法与优化模型本身完全正交，它汲�
 
 研究团队强调了一个核心的设计哲学：系统的自主权并非来自于底层模型能力的强弱，而是来自于特定剧本和操作类型的“历史业绩”。一个参数规模再庞大、跑分再高的先进模型，如果在某个特定运维任务上没有积累足够的历史成功轨迹，它依然只能在 Type 3 阶段接受人类的严格监督；相反，只有那些被数据反复证明行之有效的执行路径，才会被自动提取为 Type 1。
 
-<img src="/images/2607.07052v1/fig3_cost.jpg" alt="不同执行类型之间的成本与延迟对比，确定性工作流实现零Token消耗" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.07052v1/fig3_cost.webp" alt="不同执行类型之间的成本与延迟对比，确定性工作流实现零Token消耗" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 然而，IT 基础设施是一个动态变化的环境，曾经完美的确定性脚本随时可能因为外部环境的改变而失效。为此，该框架引入了“持续发现与降级”的熔断机制。
 
@@ -80,7 +80,7 @@ Microsoft 的研究给出了截然相反的结论：结晶过程不仅没有损�
 
 为了验证该框架的实际效能，Microsoft 将 Progressive Crystallization 部署到了其负责大规模云网络运维的生产级 AIOps 系统中。在长达八个月的观察期内，该系统每月需要处理数以万计的真实网络故障。
 
-<img src="/images/2607.07052v1/fig2_ratio.jpg" alt="生产环境部署八个月内，不同执行类型工作流的占比变化趋势" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.07052v1/fig2_ratio.webp" alt="生产环境部署八个月内，不同执行类型工作流的占比变化趋势" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 实验结果展现了惊人的商业价值。随着时间推移，系统中越来越高比例的故障匹配到了成熟的模式。原本完全依赖大模型的系统，其 Type 1 确定性工作流的执行占比从最初的 0% 稳步攀升至 45%。得益于底层路由策略将流量引向零成本工作流，即使在此期间总体的网络故障工单量翻了一倍，系统分摊到每次故障处理的 Agent 成本依然大幅降低了 70% 以上。
 

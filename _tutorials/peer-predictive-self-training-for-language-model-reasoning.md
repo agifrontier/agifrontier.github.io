@@ -122,9 +122,9 @@ PST并非单纯地将多个模型集成在一起进行投票式输出。
 参测模型包含了 Gemma-2-2B、LLaMA-3.2-1B 以及 Qwen-2.5-1.5B 这三款指令微调变体。
 在每个训练周期初，系统会重新随机打乱模型在序列中的出场顺序以消除位置偏差。
 
-<img src="/images/2604.13356v1/SimulEq.jpg" alt="SimulEq测试结果" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2604.13356v1/MATH500.jpg" alt="MATH500测试结果" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2604.13356v1/MultiArith.jpg" alt="MultiArith测试结果" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2604.13356v1/SimulEq.webp" alt="SimulEq测试结果" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2604.13356v1/MATH500.webp" alt="MATH500测试结果" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2604.13356v1/MultiArith.webp" alt="MultiArith测试结果" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 上面三组直观的直方图揭示了 PST 框架带来的实质性收益。
 在完全隔绝外部监督信号，且未引入任何额外奖励模型的严苛设定下。

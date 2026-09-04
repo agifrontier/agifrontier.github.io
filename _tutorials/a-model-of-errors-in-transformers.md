@@ -13,7 +13,7 @@ related_tutorials:
 
 ## DeepMind重磅：仅需2个参数，精准预测LLM错误率！物理学“有效场论”立大功
 
-<img src="/images/2601.14175v1/A__title.jpg" alt="DeepMind重磅：仅需2个参数，精准预测LLM错误率！物理学“有效场论”立大功 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.14175v1/A__title.webp" alt="DeepMind重磅：仅需2个参数，精准预测LLM错误率！物理学“有效场论”立大功 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 你是否遇到过这种情况：一个在写诗、编程上表现惊人的大模型，却在做简单的多位数加法、或者玩“汉诺塔”游戏时，随着步骤变长而突然“智商掉线”？
 
@@ -58,7 +58,7 @@ related_tutorials:
 
 无论是 DeepSeek R1 还是 Gemini 系列，在绝大多数任务中，其错误率随任务长度的变化都完美遵循上述公式。
 
-<img src="/images/2601.14175v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.14175v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图：不同模型在乘法任务上的准确率随复杂度变化的曲线，实线为理论预测，点为实际数据。可以看到拟合度极高。*
 

@@ -40,13 +40,13 @@ related_tutorials:
 
 在这个基础设施中，测试环境不再是静态的网页快照或干净的虚拟机初始状态。以 **Ubuntu** 平台为例，环境中不仅预装了数十种日常和专业的软件工具，还配置了一个包含二十多种类型、成百上千个真实文件的数据池。在安卓模拟器中，甚至会随机生成浏览记录、相册照片以及干扰性的推送消息和伪造文件。这种充满噪声和状态叠加的“活体环境”，才能真正测试出智能体在混乱中执行任务的能力，也才能为后续的裁判模型提供真正有判别价值的复杂轨迹。
 
-<img src="/images/2607.28609/instruction-annotation-v2.jpg" alt="环境搭建与指令标注流程" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.28609/instruction-annotation-v2.webp" alt="环境搭建与指令标注流程" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 有了真实的环境，还需要真正接地的任务指令。所有的测试指令均由人工在探索上述环境的过程中编写，并通过严格的交叉审查来剔除那些无法在当前环境中完成或表述含糊的任务。随后，团队调用了来自不同技术路线的多种主流基座模型来执行这些指令，确保收集到的轨迹在动作习惯、思考冗余度以及失败模式上具有高度的多样性。
 
 经过层层筛选，最终留下了上千条高质量轨迹。为了确立不可动摇的黄金评判标准，每条轨迹都交由三名独立标注员进行审阅。他们不能只看最后一张结果截图，而是必须结合环境上下文、智能体的中间思考过程以及每一步的具体动作进行全盘回溯。当三人意见出现分歧时，轨迹会被提交给资深审核员进行“元审核”合议，绝不单纯依赖少数服从多数的妥协。
 
-<img src="/images/2607.28609/review-process.jpg" alt="三轮独立标注与元审核流程" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.28609/review-process.webp" alt="三轮独立标注与元审核流程" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### OSReward 基准的多维视角
 
@@ -66,9 +66,9 @@ related_tutorials:
 
 究竟是什么绊倒了这些算力巨兽？通过对错误模式的深入剖析，研究团队锁定了一个极其典型的特征：绝大多数裁判模型都患有严重的“宽大偏见”（**Leniency Bias**）。
 
-<img src="/images/2607.28609/D1_hardset_overlay_p1.jpg" alt="OSReward与OSReward-Hard表现" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.28609/D1_hardset_overlay_p1.webp" alt="OSReward与OSReward-Hard表现" style="width:85%; max-width:450px; margin:auto; display:block;">
 
-<img src="/images/2607.28609/S0_main_judge_bias_p1_zeta.jpg" alt="VLM裁判的偏见分析" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2607.28609/S0_main_judge_bias_p1_zeta.webp" alt="VLM裁判的偏见分析" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 具体来说，这些 **VLM** 在判定一条其实已经失败的轨迹时，表现得极为软弱和轻信。当智能体在轨迹末尾的思考过程中主动输出诸如“任务已完成”或者“我现在停止操作”的自我声明时，裁判模型往往会不加核实地采信智能体的“一家之言”，进而给出一个“假成功”的错误判决。
 
@@ -86,7 +86,7 @@ related_tutorials:
 
 正是站在这个坚实的数据地基上，团队分别训练并开源了参数量为 **9B** 和 **35B** 的 **OS-Shepherd** 奖励模型。训练过程采用了两阶段策略：第一阶段让模型掌握跨平台的基础判定能力和多模态理解力；第二阶段则直击痛点，专门对极具迷惑性的“假成功”样本进行对抗性微调。
 
-<img src="/images/2607.28609/G3_hardset_pareto_zeta_wide_per1k.jpg" alt="成本与准确率帕累托前沿" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.28609/G3_hardset_pareto_zeta_wide_per1k.webp" alt="成本与准确率帕累托前沿" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 最终的成果是突破性的。在性能与成本的帕累托前沿图上，**OS-Shepherd** 模型展现出了惊人的效率。其中 **35B** 版本在 **OSReward-Hard** 挑战集上的表现，已经逼近了最强闭源前沿模型的准确率边界，而其所需的运行成本仅仅是后者的几十分之一。这种级别的降本增效（高达 30 到 60 倍的成本缩减），使得中小型团队完全可以在本地服务器上低成本地运行持续的奖励反馈循环，扫清了智能体强化学习落地的最大经济障碍。
 

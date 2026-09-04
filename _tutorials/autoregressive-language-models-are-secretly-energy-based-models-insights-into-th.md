@@ -13,7 +13,7 @@ related_tutorials:
 
 ## DeepMind重磅：自回归模型竟是EBM？揭秘Next-Token预测的“全局规划”能力
 
-<img src="/images/2512.15605v1/A__title.jpg" alt="DeepMind重磅：自回归模型竟是EBM？揭秘Next-Token预测的“全局规划”能力 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.15605v1/A__title.webp" alt="DeepMind重磅：自回归模型竟是EBM？揭秘Next-Token预测的“全局规划”能力 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 长期以来，大语言模型（LLM）圈子里存在一种普遍的质疑：基于 **Next-Token Prediction**（下一词预测）的自回归模型，真的具备逻辑推理和规划能力吗？还是说它们仅仅是依靠概率惯性滑行的“随机鹦鹉”？
 

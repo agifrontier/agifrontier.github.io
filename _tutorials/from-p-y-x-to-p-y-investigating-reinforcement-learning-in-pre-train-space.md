@@ -67,7 +67,7 @@ related_tutorials:
 正是这种修剪机制，极大激发了模型内生的反思与纠错行为。
 核心数据显示，NSR-PreRL让模型的过渡思考和反思思考分别激增了14.89倍和6.54倍。
 
-<img src="/images/2604.14142v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.14142v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 双空间策略：DSRL的策略转世架构
 
@@ -95,7 +95,7 @@ related_tutorials:
 相较于标准GRPO算法，DSRL达到45.0%和58.0%准确率所需消耗的训练步数，分别大幅减少了2.5倍和1.6倍。
 这有力地证明了，前期对底层错误路径的系统性修剪，能够以指数级降低后期试错的昂贵成本。
 
-<img src="/images/2604.14142v1/x6.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.14142v1/x6.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 上图清晰记录了训练动态中“完全解出”与“完全未解”问题的演变轨迹。
 在关键的NSR-PreRL预热阶段，“完全解出”的数量呈现出爆发式的陡增。

@@ -14,7 +14,7 @@ related_tutorials:
 
 ## AI记忆革命GAM：用“即时研究”取代静态压缩，长文本任务准确率超90%！
 
-<img src="/images/2511.18423v1/A__title.jpg" alt="AI记忆革命GAM：用“即时研究”取代静态压缩，长文本任务准确率超90%！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.18423v1/A__title.webp" alt="AI记忆革命GAM：用“即时研究”取代静态压缩，长文本任务准确率超90%！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 AI Agent的记忆力，正在成为其智能的瓶颈。
 
@@ -36,7 +36,7 @@ AI Agent的记忆力，正在成为其智能的瓶颈。
 
 它在离线时只做最轻量的工作，而在运行时（即需要回答问题时）才投入密集计算，为当前任务“深度研究”并生成一个定制化的、最高效的上下文。
 
-<img src="/images/2511.18423v1/x1.jpg" alt="GAM框架概览" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.18423v1/x1.webp" alt="GAM框架概览" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 为了实现这一目标，GAM设计了一个优雅的“二人组”架构：**记忆者**（**Memorizer**）和**研究者**（**Researcher**）。
 
@@ -96,11 +96,11 @@ GAM的核心是两个基于LLM的智能体，它们各司其职，高效协作�
 
 GAM的一个独特优势是其**测试时可扩展性**（**test-time scalability**）。这意味着在处理难题时，我们可以通过增加其“思考时间”来提升性能。
 
-<img src="/images/2511.18423v1/reflection_depth.jpg" alt="增加反思深度提升性能" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.18423v1/reflection_depth.webp" alt="增加反思深度提升性能" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *左图：增加反思深度（允许更多轮研究）*
 
-<img src="/images/2511.18423v1/pages.jpg" alt="增加检索页面数提升性能" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.18423v1/pages.webp" alt="增加检索页面数提升性能" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *右图：增加单轮研究检索的页面数*
 

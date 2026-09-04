@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 准确率飙升至86.7%！哈工大发布“知识调优”，专治医疗大模型“一本正经胡说八道”
 
-<img src="/images/2309.04175v1/A__title.jpg" alt="准确率飙升至86.7%！哈工大发布“知识调优”，专治医疗大模型“一本正经胡说八道” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2309.04175v1/A__title.webp" alt="准确率飙升至86.7%！哈工大发布“知识调优”，专治医疗大模型“一本正经胡说八道” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当AI大模型被问到“肝胆管结石”的治疗药物时，它却推荐了治疗结核病的“利福平”。这个真实案例暴露了一个致命问题：通用大模型在专业领域，尤其是在人命关天的医疗领域，可能会产生严重“幻觉”。
 

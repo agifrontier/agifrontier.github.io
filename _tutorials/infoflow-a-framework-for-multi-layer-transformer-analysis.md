@@ -105,8 +105,8 @@ InfoFlow 敏锐地指出，这种涉及三元组同步对比的任务，其固�
 
 这意味着什么？这意味着**对于任何固定大小的Transformer架构，只要输入序列长度 $T$ 不断增加，其逼近该任务所需的参数量必将呈超多项式级爆炸**。无论你在这个固定架构里塞多少层、多少个头，面对这种高阶逻辑，模型都会碰壁。
 
-<img src="/images/2605.17930v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2605.17930v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2605.17930v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2605.17930v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 *(图1：内在维度现象的实验验证（左）与三角形中心任务的逼近困难（右）)*
 
 从图1右侧的实验可以看出，在处理三元组（红线）任务时，随着序列长度 $T$ 的增加，模型的损失（Loss）居高不下，且与成对任务（蓝线）拉开了不可逾越的鸿沟。

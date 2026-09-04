@@ -13,7 +13,7 @@ related_tutorials:
 
 ## Meta重塑推荐系统：GESR用“混合注意力”打破双塔模型瓶颈，性能大涨延迟仅增10%
 
-<img src="/images/2511.21095v1/A__title.jpg" alt="Meta重塑推荐系统：GESR用“混合注意力”打破双塔模型瓶颈，性能大涨延迟仅增10% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.21095v1/A__title.webp" alt="Meta重塑推荐系统：GESR用“混合注意力”打破双塔模型瓶颈，性能大涨延迟仅增10% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 你的信息流App背后，藏着一场效率与效果的持续博弈。经典的“双塔模型”因其高效而称霸多年，但它真的懂你吗？
 
@@ -31,7 +31,7 @@ related_tutorials:
 
 它需要从海量的召回物品中，快速筛选出几百个高质量的候选，送给后续更精细的排序模型。
 
-<img src="/images/2511.21095v1/x1.jpg" alt="多阶段级联排序系统" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.21095v1/x1.webp" alt="多阶段级联排序系统" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 为了平衡效率和效果，工业界普遍采用“用户-物品解耦”的双塔架构。
 
@@ -47,7 +47,7 @@ related_tutorials:
 
 这个模块不再让用户和物品“分居”，而是让它们在编码阶段就进行充分的互动。
 
-<img src="/images/2511.21095v1/x2.jpg" alt="GESR整体模型架构" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2511.21095v1/x2.webp" alt="GESR整体模型架构" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 MoA模块像一个“特征融合大师”，内部包含了多种精心设计的注意力机制：
 
@@ -59,7 +59,7 @@ HMA模块的思路堪称简单粗暴但有效：它直接计算用户历史行�
 
 这种方式直接编码了显性的交叉信号，轻量且可解释性强。
 
-<img src="/images/2511.21095v1/x4.jpg" alt="硬匹配注意力（HMA）模块概览" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.21095v1/x4.webp" alt="硬匹配注意力（HMA）模块概览" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 #### 2. 深度理解：目标感知自注意力
 
@@ -103,7 +103,7 @@ Meta的工程师们为此祭出了一套组合拳：
 
 *   **高效服务架构**：通过优化的缓存机制，在服务时高效获取物品特征，最大限度减少在线计算量。
 
-<img src="/images/2511.21095v1/x5.jpg" alt="GESR服务架构" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.21095v1/x5.webp" alt="GESR服务架构" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 最终结果令人惊艳：在模型效果大幅提升的同时，GESR（高级版）的QPS（每秒查询率）仅下降了不到10%，完全满足了线上服务的严苛要求。
 

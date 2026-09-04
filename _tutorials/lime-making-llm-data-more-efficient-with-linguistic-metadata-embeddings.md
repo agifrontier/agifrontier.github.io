@@ -13,7 +13,7 @@ related_tutorials:
 
 ## LIME：给LLM喂点“语法糖”，训练效率飙升56%，推理能力提升38%！
 
-<img src="/images/2512.07522v1/A__title.jpg" alt="LIME：给LLM喂点“语法糖”，训练效率飙升56%，推理能力提升38%！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.07522v1/A__title.webp" alt="LIME：给LLM喂点“语法糖”，训练效率飙升56%，推理能力提升38%！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大模型预训练越来越像一场“军备竞赛”，对高质量数据的渴求几乎永无止境。但一个残酷的现实是，我们正在逼近高质量人类语料的枯竭点。当数据本身无法再“量大管饱”时，我们能否换个思路，让模型从现有数据中“吃”得更精、更有效？
 

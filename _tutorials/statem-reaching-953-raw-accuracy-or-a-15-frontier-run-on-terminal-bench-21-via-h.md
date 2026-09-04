@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">StateM: Reaching 95.3% Raw Accuracy, or a \$15 Frontier Run, on Terminal-Bench 2.1 via Harness Scaling</p>
 
-<img src="/images/2608.15089v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.15089v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在评估复杂任务中的大语言模型智能体时，研究人员经常观察到一种极具启发性的失败模式：底层的语言模型明明具备解决任务每一个局部步骤的能力，但整个智能体运行却依然走向失败。智能体往往会在漫长的执行过程中偏离既定计划，丢失对可变任务状态的追踪，跳过必要的验证步骤，重复毫无成效的动作，甚至在最终交付物尚未经验证时就过早地宣告任务完成。
 

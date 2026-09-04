@@ -30,7 +30,7 @@ related_tutorials:
 
 本文通过对大量行业一线专家的深度调研，首次给出了个人大模型Agent的智能分级标准，并深入剖析了其背后的系统架构、底层能力、运行效率与安全挑战。
 
-<img src="/images/2401.05459v2/software_paradigm.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2401.05459v2/software_paradigm.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 图1：个人大模型Agent将成为未来个人用户的核心软件范式。
 
 ### 告别规则模板：大模型重塑交互
@@ -57,7 +57,7 @@ related_tutorials:
 
 要支撑起极具未来感的高阶智能化体验，底层系统架构的设计至关重要。
 
-<img src="/images/2401.05459v2/architecture.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2401.05459v2/architecture.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 图4：个人大模型Agent的基础架构与关键组件设计。
 
 该研究指出，区别于运行在云端的通用大模型，个人Agent的核心壁垒在于对个人数据与硬件资源的深度整合能力。具体而言，它必须精通三大基础能力：任务执行、情境感知与记忆机制。
@@ -75,7 +75,7 @@ related_tutorials:
 例如，通过静默分析用户的打字节律、屏幕亮屏时间与应用切换频次，Agent能精准推断出用户当前处于高压工作状态还是休闲放松状态。未来的关键挑战在于构建一套统一的感知本体格式，让多源异构的碎片化数据能够被大模型高效融合。
 
 **记忆机制**
-<img src="/images/2401.05459v2/foundamental_capabilities.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2401.05459v2/foundamental_capabilities.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 图8：任务执行、情境感知与记忆机制的协同关系。
 
 记忆是Agent实现真正个性化的灵魂。Agent的记忆不仅包含底层的海量原始数据日志，更重要的是，它需要具备高级的“知识提取”能力。Agent需要能够从日常流水账中，敏锐地推断出用户的隐性性格特征、情感波动与深层偏好，并将其转化为结构化的长期记忆库。

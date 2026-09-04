@@ -30,7 +30,7 @@ Meta AI 联合加州大学和罗切斯特大学的学者们发布了一篇重磅
 
 > **ArXiv URL**：http://arxiv.org/abs/2502.19411v1
 
-<img src="/images/2502.19411v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2502.19411v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 代码格式：重构模型推理的“结构化沙盒”
 

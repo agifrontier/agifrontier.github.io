@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 剑桥重磅：直击LLM“创造力坍缩”，DCR框架如何打破推理单一化僵局？
 
-<img src="/images/2601.00747v1/A__title.jpg" alt="剑桥重磅：直击LLM“创造力坍缩”，DCR框架如何打破推理单一化僵局？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.00747v1/A__title.webp" alt="剑桥重磅：直击LLM“创造力坍缩”，DCR框架如何打破推理单一化僵局？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在追求大语言模型（LLM）推理能力的过程中，整个社区似乎陷入了一个怪圈：为了提升准确率，我们不断强化模型生成“高分”答案的能力，结果却导致模型变得越来越“无聊”。
 

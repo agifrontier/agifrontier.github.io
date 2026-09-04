@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Beyond Outcome Rewards: Step-Level Self-Distilled Policy Optimization for Deep Search Agents</p>
 
-<img src="/images/2608.12764v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.12764v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大型语言模型在处理现实世界任务时，正越来越依赖于多步推理与外部工具调用的结合。尤其是面对模糊、信息不全的用户查询，深度搜索智能体（Deep Search Agents）需要在广阔的开放网络中主动探索，其交互轨迹往往会跨越数十个步骤。然而，在训练这类复杂智能体时，当前主流的强化学习范式遭遇了一个极为致命的瓶颈：信用分配（Credit Assignment）极度稀疏。一条包含二十多个步骤的长轨迹，往往只能在最终结束时获得一个单一的二元结果奖励。面对这种极其稀疏的监督信号，模型根本无法分辨在这漫长的探索过程中，究竟是哪一步直接导致了最终的成功，又是哪一步酿成了彻底的失败。
 
@@ -57,7 +57,7 @@ related_tutorials:
 
 在多轮搜索中，智能体可能需要阅读数十万字的网页内容。如果直接将表现最好的历史轨迹作为特权信息，不仅会导致上下文窗口爆炸，而且对于指导当前的具体动作往往是不充分的。Evidence Anchors 是一种紧凑的、基于步级的证据片段。它们是从广阔的网络信息中提取出来的，包含了回答问题所需的关键事实或中间推理节点，但刻意保留了信息的碎片化，没有串联成一条完整的答案路径。
 
-<img src="/images/2608.12764v1/anchors.jpg" alt="Teacher prompt template incorporating evidence anchors" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.12764v1/anchors.webp" alt="Teacher prompt template incorporating evidence anchors" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，教师模型在接收提示词时，除了原始的用户问题，还会额外接收到这些 Evidence Anchors，以及学生模型之前生成的错误答案。这些锚点就像是在黑暗迷宫中点亮的关键路灯，它们并不直接画出从入口到出口的完整地图，但能让教师模型清楚地判断出，当前学生模型所处的这一个步骤，是否正朝着正确的路灯靠近。通过这种方式，Evidence Anchors 成功地将特权信息与搜索动作的自然粒度对齐，使得教师模型能够对学生的每一步检索行为给出准确的价值判断。
 

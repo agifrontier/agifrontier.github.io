@@ -13,7 +13,7 @@ related_tutorials:
 
 ## RAG效果提升神器：重排序模型从BERT到LLM的硬核进化史
 
-<img src="/images/2512.16236v1/A__title.jpg" alt="RAG效果提升神器：重排序模型从BERT到LLM的硬核进化史 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.16236v1/A__title.webp" alt="RAG效果提升神器：重排序模型从BERT到LLM的硬核进化史 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在构建 **检索增强生成**（**Retrieval Augmented Generation, RAG**）应用时，你是否遇到过这样的尴尬场景：明明知识库里有正确答案，但检索系统捞出来的Top-K文档里，关键信息却被淹没在无关噪音中，导致大模型（LLM）最终胡说八道？
 
@@ -29,7 +29,7 @@ related_tutorials:
 
 重排序模型的作用，就是充当一个精明的“过滤器”：它对粗排后的候选集进行精细的语义打分，把最相关的文档“推”到最前面，确保LLM看到的是真正的“干货”。
 
-<img src="/images/2512.16236v1/Reranker_Module_2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.16236v1/Reranker_Module_2.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图1：RAG流程中的重排序（Reranking）模块位置示意图*
 

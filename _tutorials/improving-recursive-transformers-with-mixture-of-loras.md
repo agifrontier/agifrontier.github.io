@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 小模型逆袭：MoL让1.2亿参数ModernALBERT超越全参数基线
 
-<img src="/images/2512.12880v1/A__title.jpg" alt="小模型逆袭：MoL让1.2亿参数ModernALBERT超越全参数基线 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.12880v1/A__title.webp" alt="小模型逆袭：MoL让1.2亿参数ModernALBERT超越全参数基线 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在追求大模型极致性能的今天，如何让小模型兼具“轻量级”与“高智商”一直是业界的痛点。经典的ALBERT模型通过极其激进的**参数共享**（**Parameter Sharing**）策略大幅降低了显存占用，但代价是模型表达能力的显著下降——这就好比让一个学生用同一套解题思路去应对语文、数学和英语考试，效果自然大打折扣。
 
@@ -31,7 +31,7 @@ related_tutorials:
 
 本文提出的**混合LoRA**（**MoL**）是一种轻量级的**条件计算**（**Conditional Computation**）机制。不同于以往在FFN（前馈神经网络）之后添加适配器的做法，MoL选择直接深入“敌后”，将LoRA专家嵌入到共享的FFN内部。
 
-<img src="/images/2512.12880v1/x1.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.12880v1/x1.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 MoL的工作原理可以概括为以下几点：
 
@@ -60,7 +60,7 @@ MoL的工作原理可以概括为以下几点：
 
 *   **蒸馏初始化**：为了解决从头预训练数据效率低的问题，ModernALBERT利用了全参数模型（ModernBERT）进行知识蒸馏和参数初始化。这使得它在仅使用300亿Token进行预训练的情况下，就能达到极高的性能水平。
 
-<img src="/images/2512.12880v1/architecture_comparison_mol.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.12880v1/architecture_comparison_mol.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 实验结果：小身材，大能量
 

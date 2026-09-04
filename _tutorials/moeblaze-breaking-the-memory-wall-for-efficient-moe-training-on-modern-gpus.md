@@ -14,7 +14,7 @@ related_tutorials:
 
 ## MoEBlaze：打破显存墙！Meta提出MoE训练新框架，速度飙升4倍
 
-<img src="/images/2601.05296v1/A__title.jpg" alt="MoEBlaze：打破显存墙！Meta提出MoE训练新框架，速度飙升4倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.05296v1/A__title.webp" alt="MoEBlaze：打破显存墙！Meta提出MoE训练新框架，速度飙升4倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在当今的大模型时代，**混合专家模型（Mixture-of-Experts, MoE）** 已经成为了扩展模型参数量的首选架构。从 Mixtral 8x7B 到 DeepSeek-V3，MoE 凭借其“稀疏激活”的特性，让我们能在不显著增加推理成本的前提下，训练出万亿参数级别的巨兽。
 
@@ -94,13 +94,13 @@ MoEBlaze 的策略是：**只存最关键的，其他的算两遍。**
 
 如下图所示，在 SwiGLU 激活函数下，MoEBlaze 的显存占用（橙色线）远低于 Megablocks（蓝色线）。在某些配置下（如 conf3），显存占用甚至不到对方的 **1/4**。这意味着在同样的硬件上，你可以训练 Batch Size 更大、序列更长的模型。
 
-<img src="/images/2601.05296v1/x5.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.05296v1/x5.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 训练速度显著提升
 
 不仅省显存，跑得还更快。在 SwiGLU 配置下，MoEBlaze 实现了 **2倍到 6.2倍** 的速度提升。这主要归功于减少了数据搬运和高效的内核实现。
 
-<img src="/images/2601.05296v1/x6.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.05296v1/x6.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 总结
 

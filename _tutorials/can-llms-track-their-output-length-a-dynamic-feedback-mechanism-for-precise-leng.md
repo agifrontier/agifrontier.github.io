@@ -13,7 +13,7 @@ related_tutorials:
 
 ## LLM数不清字数？阿里新法让模型“边写边看”，训练效率升4倍
 
-<img src="/images/2601.01768v1/A__title.jpg" alt="LLM数不清字数？阿里新法让模型“边写边看”，训练效率升4倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01768v1/A__title.webp" alt="LLM数不清字数？阿里新法让模型“边写边看”，训练效率升4倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 “请写一篇500字的文章。”
 
@@ -31,7 +31,7 @@ related_tutorials:
 
 结果令人大跌眼镜（如下图所示）：
 
-<img src="/images/2601.01768v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.01768v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 随着文本长度的增加，模型的估算误差（MAE）呈直线上升趋势。这揭示了一个本质缺陷：**LLM 在生成长文本时，注意力主要集中在内容规划上，完全丢失了对长度的感知。**
 
@@ -51,7 +51,7 @@ related_tutorials:
 
 4.  **动态调整**：模型看到这个反馈后，会根据剩余的目标长度，自动调整接下来的生成策略。
 
-<img src="/images/2601.01768v1/x1.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2601.01768v1/x1.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 如上图所示，传统的 Prompt 方法（左侧）是一条道走到黑，模型写着写着就忘了长度限制。而反馈引导方法（右侧）则像是在跑步时不断看表，确保配速精准。
 
@@ -75,7 +75,7 @@ related_tutorials:
 
 为了解决这个问题，研究团队进一步使用了**监督微调**（**Supervised Fine-Tuning, SFT**）。他们构建了一个包含长度反馈的数据集，让模型学会主动利用这些反馈信息来平衡长度和质量。
 
-<img src="/images/2601.01768v1/x5.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.01768v1/x5.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 训练动力学分析（上图）表明，引入反馈机制后的 SFT 效率惊人。**SFT+Feedback** 方法仅需基线方法 **1/4** 的训练步数，就能达到同等甚至更好的长度控制效果。这说明，当模型不再需要分心去“猜”自己写了多少字时，它能更专注于学习如何根据长度调整内容。
 

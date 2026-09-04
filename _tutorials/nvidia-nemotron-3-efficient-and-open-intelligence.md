@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 英伟达Nemotron 3发布：Mamba+MoE混合架构，百万上下文与NVFP4训练揭秘
 
-<img src="/images/2512.20856v1/A__title.jpg" alt="英伟达Nemotron 3发布：Mamba+MoE混合架构，百万上下文与NVFP4训练揭秘 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.20856v1/A__title.webp" alt="英伟达Nemotron 3发布：Mamba+MoE混合架构，百万上下文与NVFP4训练揭秘 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型领域，"堆算力"似乎已成常态，但英伟达（NVIDIA）刚刚发布的研究展示了另一条路径：通过架构创新实现极致效率。NVIDIA Nemotron 3 系列模型（Nano, Super, Ultra）横空出世，它不仅是一个新的模型家族，更是对当前主流架构的一次大胆挑战——它抛弃了纯Transformer结构，转而采用了 **混合Mamba-Transformer架构**。
 
@@ -27,7 +27,7 @@ Nemotron 3 最核心的创新在于其架构设计。为了在推理效率（特
 
 传统的Transformer模型在生成过程中，KV Cache会随着序列长度线性增长，导致显存占用和计算量激增。而 **Mamba-2** 层（基于状态空间模型）在生成时只需要存储恒定的状态，极大地降低了推理成本。
 
-<img src="/images/2512.20856v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.20856v1/x1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 Nemotron 3 的策略是：
 
@@ -45,11 +45,11 @@ Nemotron 3 的策略是：
 
 传统的 **混合专家模型** (**Standard MoE**) 通常使用较大的隐藏层维度和较少的专家数量。而LatentMoE则反其道而行之，它使用较小的潜在维度（latent dimension $\ell=1024$）和更多的专家总数（512个专家，激活22个），相比之下标准MoE可能使用 $d=4096$ 和128个专家。
 
-<img src="/images/2512.20856v1/standard_moe.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.20856v1/standard_moe.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 *(a) Standard MoE architecture.*
 
-<img src="/images/2512.20856v1/latent_moe.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.20856v1/latent_moe.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 *(b) LatentMoE architecture.*
 
@@ -61,7 +61,7 @@ Nemotron 3 的策略是：
 
 这并非简单的模拟，而是真正的原生支持。权重、激活和梯度张量都被量化为NVFP4格式，利用了Blackwell架构（如GB200）上NVFP4 GEMM的高吞吐能力（峰值吞吐量是FP8的3倍）。
 
-<img src="/images/2512.20856v1/x4.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.20856v1/x4.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大家最关心的问题是：精度损失大吗？
 
@@ -73,7 +73,7 @@ Nemotron 3 支持长达 **100万Token** 的上下文窗口。这里有一个架�
 
 此外，该系列模型还引入了类似OpenAI o1的 **推理预算控制** (**Reasoning Budget Control**)。
 
-<img src="/images/2512.20856v1/x7.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.20856v1/x7.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 通过多环境强化学习（Multi-environment RL）后训练，模型学会了使用 $$</think>$$ Token。用户可以在推理时指定"思考预算"（即允许模型生成多少思考Token），从而在响应速度和推理深度之间进行精细的权衡。如图8所示，随着思考预算的增加，模型在复杂任务上的准确率呈现明显的上升趋势。
 

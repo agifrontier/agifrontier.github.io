@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 给 AI 装上“橡皮擦”：MaRS 架构如何用“遗忘”换取 0.911 的高分表现？
 
-<img src="/images/2512.12856v1/A__title.jpg" alt="给 AI 装上“橡皮擦”：MaRS 架构如何用“遗忘”换取 0.911 的高分表现？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.12856v1/A__title.webp" alt="给 AI 装上“橡皮擦”：MaRS 架构如何用“遗忘”换取 0.911 的高分表现？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在大模型（LLM）领域，“长文本”似乎成了唯一的军备竞赛方向。从 128k 到 100万甚至更多 Token 的上下文窗口，我们似乎默认了一个逻辑：AI 记得越多越好。然而，当智能体（Agent）真正进入长周期的交互场景时，这种“只进不出”的记忆策略却成了噩梦——推理成本呈二次方爆炸，隐私泄露风险激增，甚至过多的噪音还会干扰 AI 的决策。
 

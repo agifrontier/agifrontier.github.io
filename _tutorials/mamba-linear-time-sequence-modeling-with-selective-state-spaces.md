@@ -44,7 +44,7 @@ related_tutorials:
 ## 本文方法
 本文方法的核心是设计一个能够进行内容感知的选择性状态空间模型（Selective SSM），并为其开发一种高效的计算实现，最终将其整合到一个简洁而强大的Mamba架构中。
 
-<img src="/images/2312.00752v2/x1.jpg" alt="Mamba概览" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2312.00752v2/x1.webp" alt="Mamba概览" style="width:90%; max-width:700px; margin:auto; display:block;">
 > 图1：上图展示了Mamba的核心思想。传统的结构化SSM（左）通过一个高维隐状态 $h$
 将输入 $x$ 的每个通道独立映射到输出 $y$。为了计算效率，它们要求参数 $(\Delta, \mathbf{A}, \mathbf{B}, \mathbf{C})$ 在时间上是固定的（时不变），从而可以使用卷积来避免物化巨大的隐状态。Mamba的S6模型（右）引入了选择机制，使这些参数依赖于输入，从而打破了时不变性。为了解决由此带来的效率问题，本文设计了一种硬件感知的扫描算法，该算法只在GPU更快的内存层级（如SRAM）中物化扩展后的状态，从而保持了计算的高效性。
 
@@ -56,7 +56,7 @@ related_tutorials:
 1.  **选择性复制任务 (Selective Copying)**：要求模型记住特定（有色）的 token 并忽略其他（白色）的 token。LTI模型由于其固定的动态性，无法区分哪些是需要记忆的。
 2.  **归纳头任务 (Induction Heads)**：要求模型根据特定上下文提示给出答案。这需要模型理解上下文关系，而LTI模型的卷积核是静态的，无法处理这种动态变化的依赖关系。
 
-<img src="/images/2312.00752v2/x2.jpg" alt="合成任务示意图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2312.00752v2/x2.webp" alt="合成任务示意图" style="width:90%; max-width:700px; margin:auto; display:block;">
 > 图2：选择性任务揭示了LTI模型的局限性。(左) 标准的复制任务中，输入-输出间距固定，LTI模型可轻松解决。(右上) 在选择性复制任务中，间距是随机的，需要时变模型才能选择性地记忆或忽略输入。(右下) 归纳头任务需要根据上下文进行关联回忆，这是大语言模型的关键能力。
 
 这些任务表明，一个高效且强大的模型必须能够智能地选择哪些信息进入其状态。
@@ -114,7 +114,7 @@ $${% endraw %}
 ### Mamba的简洁架构
 本文将选择性SSM集成到一个简洁、同质化的**Mamba块**中，并用其构建整个网络。
 
-<img src="/images/2312.00752v2/x3.jpg" alt="Mamba架构图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2312.00752v2/x3.webp" alt="Mamba架构图" style="width:90%; max-width:700px; margin:auto; display:block;">
 > 图3：Mamba块的设计。它将先前SSM架构中的H3块与Transformer中常见的MLP块进行了简化和合并。输入经过线性层扩展维度后，一路通过SiLU激活函数，另一路通过核心的S6层（选择性SSM）。两路结果逐元素相乘（门控），再通过线性层投影回原维度。整个Mamba模型由这种同质化的块堆叠而成。
 
 这种设计比Transformer中交错的注意力块和MLP块更加简单和统一。Mamba块取代了注意力层和前馈网络（FFN）层，形成了一个单一、重复的结构单元。

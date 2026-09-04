@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 告别思维混乱：自重写技术让LLM推理长度锐减46%，质量反而更高
 
-<img src="/images/2511.16331v1/A__title.jpg" alt="告别思维混乱：自重写技术让LLM推理长度锐减46%，质量反而更高 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.16331v1/A__title.webp" alt="告别思维混乱：自重写技术让LLM推理长度锐减46%，质量反而更高 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型在解决复杂问题时，其推理过程常常显得冗长、混乱，甚至充满无效思考。你是否也曾被它绕来绕去的“思维过程”搞得头大？这不仅消耗了大量计算资源，也降低了我们对模型决策的信任度。
 
@@ -37,7 +37,7 @@ related_tutorials:
 
 *   **无序思考**（Disordered-thinking）：思维线索混乱，东一榔头西一棒子。
 
-<img src="/images/2511.16331v1/intro.jpg" alt="模型推理中的常见缺陷" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.16331v1/intro.webp" alt="模型推理中的常见缺陷" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图1：大模型推理中常见的四种思维缺陷，而自我重写能显著改善这些问题。*
 
@@ -53,7 +53,7 @@ related_tutorials:
 
 具体来说，只有当模型对一个问题的所有初步回答都正确时，才会触发“重写”机制。模型会将自己重写后的、更精炼的推理版本视为更优的答案，并在后续的强化学习中模仿这种高质量的思考方式。
 
-<img src="/images/2511.16331v1/method.jpg" alt="自我重写框架流程图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.16331v1/method.webp" alt="自我重写框架流程图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图2：自我重写框架。仅当所有初步推理都正确时，模型才会进行重写，并为重写后的版本赋予更高奖励。*
 
@@ -67,7 +67,7 @@ related_tutorials:
 
 结果显示，自我重写方法在**准确率-长度权衡**上取得了最佳表现。
 
-<img src="/images/2511.16331v1/new_scatter.jpg" alt="不同方法在准确率-长度上的表现" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.16331v1/new_scatter.webp" alt="不同方法在准确率-长度上的表现" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图3：在不同推理长度下，自我重写（Self-Rewriting，红色）始终保持着最高的准确率。*
 
@@ -79,7 +79,7 @@ related_tutorials:
 
 自我重写为何比传统的“长度惩罚”等方法更有效？研究者通过分析模型偏好的数据揭示了答案。
 
-<img src="/images/2511.16331v1/ratio_distribution.jpg" alt="不同方法下偏好/拒绝样本的长度比分布" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.16331v1/ratio_distribution.webp" alt="不同方法下偏好/拒绝样本的长度比分布" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图4：自我重写（左）产生的长度比例分布更多样，表明其能根据问题动态调整压缩程度。*
 

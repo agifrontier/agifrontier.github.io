@@ -29,7 +29,7 @@ AI Agent要实现真正的长期交互和个性化，一个可靠的记忆系统
 
 传统的记忆评测范式通常是端到端的。它们向系统抛出一个问题，然后评估最终答案的质量。这种方式虽然简单，但无法揭示问题的根源。
 
-<img src="/images/2511.03506v2/x2.jpg" alt="HaluMem与现有评测方法的对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.03506v2/x2.webp" alt="HaluMem与现有评测方法的对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图注：HaluMem（右）能深入记忆操作的各个环节进行评测，而传统方法（左）只能进行端到端的黑盒评估。*
 
 一个错误的答案，其背后可能的原因多种多样：
@@ -51,7 +51,7 @@ HaluMem的核心思想是将复杂的记忆过程拆解为三个关键的操作�
 
 为了支撑这套评测框架，研究团队构建了两个大规模、以用户为中心的多轮对话数据集：**HaluMem-Medium**和**HaluMem-Long**。这两个数据集包含约1.5万个记忆点和3500个问题，其中HaluMem-Long的平均对话上下文长度更是超过了惊人的100万Token，用以测试系统在超长文本环境下的鲁棒性。
 
-<img src="/images/2511.03506v2/x3.jpg" alt="HaluMem的构建流程" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.03506v2/x3.webp" alt="HaluMem的构建流程" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图注：HaluMem数据集的构建流程，通过多阶段的扩展和标注，确保了数据的质量和复杂性。*
 
 ### 实验发现：幻觉会“滚雪球”
@@ -64,7 +64,7 @@ HaluMem的核心思想是将复杂的记忆过程拆解为三个关键的操作�
 **2. 现有系统仍有巨大提升空间**
 在最终的问答任务中，即便是表现最好的系统，其准确率也未能超过56%。同时，幻觉率和遗忘率居高不下，尤其是在HaluMem-Long的长上下文场景下，性能普遍出现下滑。
 
-<img src="/images/2511.03506v2/x5.jpg" alt="不同记忆系统在各类问题上的表现" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.03506v2/x5.webp" alt="不同记忆系统在各类问题上的表现" style="width:85%; max-width:600px; margin:auto; display:block;">
 *图注：不同记忆系统在六种不同类型问题上的表现。可以看出，在多跳推理、动态更新等复杂问题上，所有系统的表现都显著下降。*
 
 **3. 对不同类型信息的处理能力不均**

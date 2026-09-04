@@ -13,7 +13,7 @@ related_tutorials:
 
 ## OpenAI重磅发现：让Transformer“瘦身”99.9%，电路可解释性暴增16倍！
 
-<img src="/images/2511.13653v1/A__title.jpg" alt="OpenAI重磅发现：让Transformer“瘦身”99.9%，电路可解释性暴增16倍！ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.13653v1/A__title.webp" alt="OpenAI重磅发现：让Transformer“瘦身”99.9%，电路可解释性暴增16倍！ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大语言模型（LLM）的能力日益强大，但其内部工作机制却像一个难以捉摸的“黑箱”，这让无数研究者头疼不已。我们真的能彻底理解Transformer内部的算法吗？最近，OpenAI的一项研究为我们带来了曙光。他们没有选择在复杂的密集模型上“事后”解释，而是另辟蹊径：从头训练一个绝大部分权重都为零的“稀疏”模型。结果惊人：这些模型不仅性能不俗，其内部形成的**神经回路**（circuits）更是小到可以被人类完全理解，为我们打开了窥探AI心智的全新窗口。
 
@@ -33,7 +33,7 @@ related_tutorials:
 
 3.  分析这些被分离出来的、极其精简的电路。
 
-<img src="/images/2511.13653v1/x1.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2511.13653v1/x1.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 ### 稀疏模型：电路规模缩小16倍
 
@@ -47,7 +47,7 @@ related_tutorials:
 
 当然，天下没有免费的午餐。研究也揭示了模型能力与可解释性之间的权衡关系。在总参数量固定的情况下，模型越稀疏，可解释性越好，但性能会有所下降。好消息是，通过扩大模型规模，可以同时提升性能和可解释性，推动“帕累托前沿”不断向更优的方向发展。
 
-<img src="/images/2511.13653v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.13653v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 电路解剖：AI如何“思考”？
 
@@ -59,7 +59,7 @@ related_tutorials:
 
 研究发现，模型完成这个任务的电路极其简洁，仅涉及1个MLP层中的2个神经元和1个注意力头。整个过程清晰可见，总共只用了9条连接边！
 
-<img src="/images/2511.13653v1/x4.jpg" alt="Refer tocaption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.13653v1/x4.webp" alt="Refer tocaption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 上图完整展示了这个电路的全部细节：
 

@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 1600万Token上下文！蚂蚁HSA模型实现90%准确率，揭秘超长记忆关键
 
-<img src="/images/2511.23319v1/A__title.jpg" alt="1600万Token上下文！蚂蚁HSA模型实现90%准确率，揭秘超长记忆关键 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.23319v1/A__title.webp" alt="1600万Token上下文！蚂蚁HSA模型实现90%准确率，揭秘超长记忆关键 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大语言模型（LLM）的知识被固化在参数中，无法从与用户的日常互动中动态学习，这引出了一个根本性问题：我们如何构建真正拥有记忆的机器？如果模型能处理无限长的上下文，它就能将世界知识、用户偏好甚至专业技能都从上下文中即时获取，而非依赖于昂贵且缓慢的模型重训。
 
@@ -21,7 +21,7 @@ related_tutorials:
 
 最近，来自蚂蚁集团和西湖大学的研究者们朝着这个目标迈出了关键一步。他们推出了一款名为HSA-UltraLong的8B模型，在仅用32K上下文训练的情况下，成功将有效上下文窗口泛化到了惊人的**1600万Token**，并在大海捞针（Needle-in-a-Haystack）测试中取得了超过90%的准确率！
 
-<img src="/images/2511.23319v1/x1.jpg" alt="Figure 1" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.23319v1/x1.webp" alt="Figure 1" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1: HSA-UltraLong在8K预训练和32K中途训练后，在1600万Token长度的S-NIAH测试中仍能达到近乎完美的准确率。*
 
@@ -45,7 +45,7 @@ related_tutorials:
 
 HSA的巧妙之处在于，它将文本切分成固定长度的“块”（chunks），然后让每个当前的Token去检索最相关的Top-k个历史文本块。这个过程与**混合专家模型**（**Mixture-of-Experts, MoE**）的运行机制惊人地相似：
 
-<img src="/images/2511.23319v1/x2.jpg" alt="Figure 2" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.23319v1/x2.webp" alt="Figure 2" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图2: HSA与MoE的类比。检索文本块如同路由到专家，对每个块做注意力计算如同调用专家，最后加权融合结果。*
 
@@ -72,7 +72,7 @@ $${% endraw %}
 
 基于HSA，研究者构建了HSA-UltraLong模型。它并非简单地用HSA替代所有注意力层，而是采用了一种更精巧的混合架构。
 
-<img src="/images/2511.23319v1/model_arch.jpg" alt="Model Architecture" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.23319v1/model_arch.webp" alt="Model Architecture" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图3: HSA-UltraLong模型架构图。*
 
@@ -98,7 +98,7 @@ $${% endraw %}
 
 在长文本评测中，模型在32K上下文长度中途训练后，被直接用于测试高达1600万Token的任务。结果显示，在“大海捞针”测试中，无论信息“针”被藏在100万、800万还是1600万Token的“草堆”中，模型都能精准地找到它。
 
-<img src="/images/2511.23319v1/x4.jpg" alt="Long Context Evaluation" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.23319v1/x4.webp" alt="Long Context Evaluation" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图4: 在大海捞针（MQ-NIAH）任务上，模型在16M上下文中依然保持高准确率。*
 
@@ -108,7 +108,7 @@ $${% endraw %}
 
 2.  **模型规模效应**：在同时需要检索和推理的任务中，更大的模型（8B MoE）明显优于较小的模型（0.5B Dense），证明了模型规模对于复杂长文本任务的重要性。
 
-<img src="/images/2511.23319v1/x6.jpg" alt="Reasoning-Retrieval Task" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.23319v1/x6.webp" alt="Reasoning-Retrieval Task" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图5: 在变量追踪任务中，8B MoE模型（蓝色）的性能显著优于0.5B Dense模型（橙色）。*
 

@@ -13,7 +13,7 @@ related_tutorials:
 
 ## LLM越深越“健忘”？字节MoDA架构：性能+2.11%，开销仅3.7%
 
-<img src="/images/2603.15619v1/A__title.jpg" alt="LLM越深越“健忘”？字节MoDA架构：性能+2.11%，开销仅3.7% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2603.15619v1/A__title.webp" alt="LLM越深越“健忘”？字节MoDA架构：性能+2.11%，开销仅3.7% 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 大模型（LLM）的竞赛似乎很简单：堆更多的层，模型就会更强大。但现实却给了我们一记重拳——模型越深，反而越容易“忘记”浅层学到的关键信息。这种现象被称为**信号衰减**（signal degradation）。
 
@@ -23,7 +23,7 @@ related_tutorials:
 
 为了解决这个“健忘症”，来自字节跳动和华中科技大学的研究者们提出了一个全新的注意力机制：**深度混合注意力**（**Mixture-of-Depths Attention, MoDA**）。它让模型在处理当前序列信息的同时，还能“回头看”，动态地从前面所有层中提取最有用的信息。
 
-<img src="/images/2603.15619v1/x1.jpg" alt="MoDA核心思想" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.15619v1/x1.webp" alt="MoDA核心思想" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1：MoDA允许Query在关注当前层序列KV对的同时，也关注来自前面所有层的深度KV对。*
 
@@ -37,7 +37,7 @@ related_tutorials:
 
 这就好比玩“传话游戏”，信息每经过一个人（一层网络），都可能发生微小的失真或丢失。层数一多，最初的“悄悄话”就可能面目全非了。
 
-<img src="/images/2603.15619v1/x3.jpg" alt="深度信息利用机制对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.15619v1/x3.webp" alt="深度信息利用机制对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图3：(a) 标准残差连接；(b) DenseNet式的密集连接，计算开销大；(c) 深度注意力，只关注历史KV；(d) MoDA，统一处理序列和深度信息。*
 
@@ -74,7 +74,7 @@ $${% endraw %}
 
 为了让MoDA在实际训练中跑得起来，研究者们设计了一套**硬件感知的高效算法**（hardware-aware efficient algorithm）。
 
-<img src="/images/2603.15619v1/x4.jpg" alt="硬件视角下的MoDA缓存访问" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2603.15619v1/x4.webp" alt="硬件视角下的MoDA缓存访问" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图4：通过分块（Chunk-aware）和分组（Group-aware）优化，MoDA大幅提升了深度KV缓存的访问效率。*
 
@@ -96,7 +96,7 @@ $${% endraw %}
 
 在1.5B模型规模下，与强大的开源基线OLMo2相比，MoDA在10个下游任务上的平均性能提升了2.11%，并在10个验证集上的平均困惑度降低了0.2。
 
-<img src="/images/2603.15619v1/x2.jpg" alt="MoDA与OLMo2性能对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2603.15619v1/x2.webp" alt="MoDA与OLMo2性能对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图2：在1.5B参数规模下，MoDA在C4验证集以及多个下游任务上均优于OLMo2基线。*
 
@@ -106,7 +106,7 @@ $${% endraw %}
 
 通过可视化注意力热力图，我们可以直观地看到MoDA是如何工作的。
 
-<img src="/images/2603.15619v1/selected_layers_custom_heads_v4p0.jpg" alt="MoDA注意力热力图" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2603.15619v1/selected_layers_custom_heads_v4p0.webp" alt="MoDA注意力热力图" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图5：注意力热力图。红色虚线右侧是深度KV区域。可以看到，模型在不同层、不同头都分配了相当大的注意力权重给深度信息，证明MoDA确实在有效利用历史层知识。*
 

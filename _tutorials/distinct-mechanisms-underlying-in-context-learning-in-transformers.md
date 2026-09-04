@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Distinct mechanisms underlying in-context learning in transformers</p>
 
-<img src="/images/2604.12151v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.12151v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 现代大语言模型展现出了一种被称为“上下文学习”（In-Context Learning, ICL）的非凡能力。当给定少量的示例或部分序列时，一个参数已被冻结的 Transformer 能够推断出生成数据的隐藏规则，并将其应用于新的输入，而无需进行任何昂贵的梯度更新。这种能力将学习的重担从缓慢的参数微调，转移到了由网络动态执行的快速前向计算中。
 
@@ -50,7 +50,7 @@ related_tutorials:
 
 4.  **$M_2$ 相（2-Mem，双点记忆）**：模型识别出当前序列属于训练集 $\mathcal{S}$ 中的哪条链，并直接调用该链的完整转移矩阵。这是在训练分布内的最优记忆策略。
 
-<img src="/images/2604.12151v1/x1.jpg" alt="马尔可夫链训练与四种算法相的演变" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.12151v1/x1.webp" alt="马尔可夫链训练与四种算法相的演变" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 研究发现，随着训练的推进和 $K$ 的变化，Transformer 会在这些离散的相之间发生清晰的跳跃。模型首先总会进入 $G_1$ 相。当数据多样性极低（$K$ 很小）时，模型会沿着“记忆”的路线，从 $G_1$ 滑入 $M_1$，最终停留在 $M_2$；而当 $K$ 超过某个阈值时，模型会发生剧烈的相变，直接从 $G_1$ 跃迁到具备强大泛化能力的 $G_2$ 相。
 
@@ -58,7 +58,7 @@ related_tutorials:
 
 为了确认这四种宏观行为背后是否真的存在对应的物理回路，研究人员展开了细致的回路追踪（Circuit Tracing）。由于 Transformer 中的每个计算块都是向残差流中进行加法写入，整个两层网络可以被展开为一个有向图。通过消融特定的边并观察预测结果的偏离，研究人员成功锁定了主导 $G_2$ 和 $M_2$ 的两种核心子回路。
 
-<img src="/images/2604.12151v1/x2.jpg" alt="模型在不同数据多样性下的损失动力学与行为特征" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2604.12151v1/x2.webp" alt="模型在不同数据多样性下的损失动力学与行为特征" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 #### $G_2$ 相的物理实现：统计归纳头
 
@@ -84,7 +84,7 @@ related_tutorials:
 
 实验表明，当 $K < K_1^\ast$ 时，模型会平滑地过渡到单点记忆（$M_1$）；而当 $K > K_1^\ast$ 时，模型会拒绝 $M_1$，并突然爆发出归纳头，跃迁至双点泛化（$G_2$）。这一转变极其尖锐，呈现出双峰分布的特性：模型要么建立归纳头，要么彻底陷入记忆，几乎不存在中间态。根据测量，在当前的网络设定下，$K_1^\ast \approx 94$。
 
-<img src="/images/2604.12151v1/x5.jpg" alt="SA-Transformer的损失动力学与归纳头机制" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.12151v1/x5.webp" alt="SA-Transformer的损失动力学与归纳头机制" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 为了在数学上解释这种突变，研究人员在 $K \to \infty$ 的极限下，推导出了一个受对称性约束的极简注意力模型（SA-transformer）。在这个模型中，复杂的注意力键值查询被大幅度压缩，第一层注意力的权重被简化为参数 $\delta$（决定是否关注前一个状态），第二层注意力的权重被简化为参数 $\beta$（决定是否进行相同状态匹配）。
 
@@ -107,7 +107,7 @@ related_tutorials:
 
 然而，当数据多样性 $K$ 越过了第二道边界 $K_2^\ast$ 时，模型将永远停留在 $G_2$ 相。无论训练多久，它都不会再进入 $M_2$。
 
-<img src="/images/2604.12151v1/x8.jpg" alt="表征瓶颈K_2^\ast与记忆任务比例的变化" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.12151v1/x8.webp" alt="表征瓶颈K_2^\ast与记忆任务比例的变化" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 为了测算这个边界，研究人员测量了从 $G_2$ 开始到模型训练损失降至纯泛化下限之下所需的时间 $\Delta\tau_K$。数据表明，$\Delta\tau_K$ 随 $K$ 的增加呈现出幂律发散 $(K_2^\ast - K)^{-\gamma}$。通过拟合，在这个特定的双层网络中，$K_2^\ast \approx 7000$。
 

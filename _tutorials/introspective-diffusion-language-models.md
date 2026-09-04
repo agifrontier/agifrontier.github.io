@@ -72,7 +72,7 @@ I-DLM 通过一种极其高效的一致性训练配方，将预训练的自回�
 
 传统 DLM 需要多次迭代去噪，计算开销巨大。而 ISD 能够在同一次前向传播中，既生成一批新词，又根据因果锚点分布验证之前生成的词。
 
-<img src="/images/2604.11035v1/x6.jpg" alt="Figure 4" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.11035v1/x6.webp" alt="Figure 4" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在 $[MASK]$ 位置，模型大胆提出新词；在内省位置，模型则严格复核已有的词。这种机制从数学上保证了输出分布与基础自回归模型一致，无需依赖外部的置信度试探或单独的验证轮次。
 
@@ -97,7 +97,7 @@ ISD 算法具有严格的依赖链：前向传播到验证，再到修剪和准�
 
 实验数据充分证明了这套设计的威力。该研究基于 Qwen3 训练了 8B 和 32B 版本的 I-DLM 模型，展现了惊人的性能基线。
 
-<img src="/images/2604.11035v1/x1.jpg" alt="Figure 1" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.11035v1/x1.webp" alt="Figure 1" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在衡量复杂数学推理能力的 AIME-24 基准上，I-DLM 达到了 69.6 的高分。在编程基准 LiveCodeBench-v6 上则达到了 45.7。这两个成绩分别超越了 16B 参数规模的 LLaDA-2.1-mini 模型达 26 分和 15 分之多。
 

@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">UI-Mate: Advancing Open-Weight Foundation GUI Agents with In-Context Demonstrations</p>
 
-<img src="/images/2608.15930v1/A__title.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2608.15930v1/A__title.webp" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 图形用户界面（GUI）智能体展现出了将自然语言意图转化为跨软件生态多步操作的巨大潜力。然而，从基准测试的进步到真实世界的可靠部署，GUI智能体一直被两大瓶颈死死卡住：一是训练层面的数据稀缺与分布偏差；二是交互层面的提示词歧义与执行不可靠。真实世界的工作流高度依赖用户个人的特定工具习惯和默契约定，用户通常只会给出简短的结果导向指令，而省略掉具体的过程细节。这种未言明的指令导致智能体在不同运行次序中产生随机的变化——一次成功的执行，完全可能在下一次同样的请求中遭遇失败。
 
@@ -67,7 +67,7 @@ UI-Mate 引入的演示引导机制彻底改变了这一策略条件。当提供
 
 为了支撑起这样强大的策略模型，UI-Mate 设计了一个精密的闭环数据飞轮系统，将指令策划、环境构建、任务生成和轨迹过滤无缝整合。
 
-<img src="/images/2608.15930v1/dataflywheel-aligned.jpg" alt="数据飞轮架构全景" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.15930v1/dataflywheel-aligned.webp" alt="数据飞轮架构全景" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 高质量的指令是数据飞轮的起点。为了避免指令过于单一，UI-Mate 整合了四种互补的数据源：来自真实用户活动的开源数据集确保了基础的日常覆盖度；从失败的智能体运行中分解出的原子子任务，专门用于攻克模型当前的软肋；从真实的文档、表格、PPT和静态网站中生成的指令，迫使模型去理解具体的实体关系而非合成的占位符；最后，基于应用程序规范构建的能力树，负责挖掘那些容易被日常工作流遗漏的细粒度操作。
 
@@ -79,7 +79,7 @@ UI-Mate 引入的演示引导机制彻底改变了这一策略条件。当提供
 
 在大规模自动化数据收集中，“廉价任务”不可避免地会占据压倒性的比例。为了防止模型的局部能力过度膨胀而长视野能力萎缩，UI-Mate 引入了一套动态生长的 GUI 能力树（GUI Capability Tree）。
 
-<img src="/images/2608.15930v1/GUI_Capability_Tree-aligned.jpg" alt="GUI能力树示意图" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2608.15930v1/GUI_Capability_Tree-aligned.webp" alt="GUI能力树示意图" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 这个能力树将所有可能的操作划分为应用层、粗粒度能力层和细粒度操作层。每一条收集到的任务轨迹都会被映射到这棵树的具体节点上。系统实时监控各节点的覆盖率、数据密度以及智能体的运行成功率。当发现某个细粒度操作（例如跨应用复制特定格式的表格）数据密度极低或运行失败率异常高时，这部分指标会立刻作为负反馈信号传导给数据生成引擎，在下一轮循环中定向增加该类型任务的生成预算。这种闭环诊断机制，使得数据飞轮具备了自我修复分布倾斜的能力。
 

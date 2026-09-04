@@ -82,7 +82,7 @@ AHE在真实环境中的表现究竟如何？
 研究团队在极具挑战性的长线终端任务基准 $Terminal-Bench\ 2$ 上进行了严格测试。
 在这个包含89个复杂任务的测试集中，AHE经历了十轮无人值守的自动迭代。
 
-<img src="/images/2604.25850v3/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.25850v3/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 结果显示，AHE将其 $pass@1$ 成功率从初始的 $69.7\%$ 强劲拉升至 $77.0\%$。
 这一成绩不仅超越了人类精心设计的开源标杆 $Codex-CLI$（$71.9\%$）。
@@ -101,7 +101,7 @@ AHE进化出的脚手架，会不会只是对当前测试集的过拟合？
 
 更令人振奋的是其强大的跨底座模型迁移能力。
 
-<img src="/images/2604.25850v3/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.25850v3/x3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 研究人员将底座模型切换为 $Qwen-3.6-Plus$、$Gemini-3.1-Flash$ 以及 $DeepSeek-V4$ 等不同厂商的模型。
 结果表明，AHE脚手架在所有新底座上均实现了正向胜率增长，提升幅度在 $+5.1$ 到 $+10.1$ 个百分点之间。

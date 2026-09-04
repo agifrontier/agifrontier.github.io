@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 模型即数据！英伟达领衔，三大维度解读AI新前沿：权重空间学习
 
-<img src="/images/2603.10090v1/A__title.jpg" alt="模型即数据！英伟达领衔，三大维度解读AI新前沿：权重空间学习 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.10090v1/A__title.webp" alt="模型即数据！英伟达领衔，三大维度解读AI新前沿：权重空间学习 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当今的AI世界，我们仿佛置身于一个由海量预训练模型构成的“模型动物园”（Model Zoo）。从GPT系列到Stable Diffusion，无数强大的模型被创造和分享。
 
@@ -27,7 +27,7 @@ related_tutorials:
 
 这篇综述系统地梳理了该领域的现状，并将其划分为三大核心维度，为我们打开了通往“模型即数据”新世界的大门。
 
-<img src="/images/2603.10090v1/x1.jpg" alt="Survey Overview" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.10090v1/x1.webp" alt="Survey Overview" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1：权重空间学习（WSL）综述概览*
 
@@ -46,7 +46,7 @@ related_tutorials:
 
 3.  **权重空间生成 (WSG)**：通过辅助模型直接合成全新的网络权重。
 
-<img src="/images/2603.10090v1/x2.jpg" alt="Conceptual Overview" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2603.10090v1/x2.webp" alt="Conceptual Overview" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图2：WSL三大核心维度的概念图*
 
@@ -73,7 +73,7 @@ WSU旨在揭示神经网络权重空间固有的“物理定律”。它发现�
 
 最典型的例子就是**神经元置换不变性**：在一个全连接层中，交换任意两个神经元的位置及其对应的连接权重，网络的最终输出保持不变。
 
-<img src="/images/2603.10090v1/x3.jpg" alt="Weight Space Symmetry" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.10090v1/x3.webp" alt="Weight Space Symmetry" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图4：权重空间对称性示意图*
 
@@ -109,7 +109,7 @@ WSU旨在揭示神经网络权重空间固有的“物理定律”。它发现�
 
 有了这个嵌入向量 $z$，我们就可以在不访问原始训练数据的情况下，直接预测模型的性能、检索功能相似的模型，甚至对模型进行编辑。
 
-<img src="/images/2603.10090v1/x4.jpg" alt="WSR Methods" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.10090v1/x4.webp" alt="WSR Methods" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图5：权重空间表示（WSR）的主要方法*
 

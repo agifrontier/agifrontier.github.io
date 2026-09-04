@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">PLACEMEM: Toward a Compute-Aware Memory Plane for Lifelong Agents</p>
 
-<img src="/images/2607.04089v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.04089v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当前，大语言模型的应用范式正在从单次对话向终身学习智能体（Lifelong Agents）快速演进。为了应对复杂任务，这类智能体需要记住用户的偏好、迭代行动计划、积累工具使用经验，并在长周期的交互中保持敏捷的响应。然而，现有的基础设施在这方面正面临一个隐蔽却致命的瓶颈。
 

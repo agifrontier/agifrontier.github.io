@@ -14,7 +14,7 @@ related_tutorials:
 
 ## AI分析师天团来了！字节DataSage引入辩论机制，洞察力飙升13.9%
 
-<img src="/images/2511.14299v1/A__title.jpg" alt="AI分析师天团来了！字节DataSage引入辩论机制，洞察力飙升13.9% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.14299v1/A__title.webp" alt="AI分析师天团来了！字节DataSage引入辩论机制，洞察力飙升13.9% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 AI数据分析师听起来很酷，但实际用起来却常常让人头疼。它们要么缺乏特定领域的背景知识，闹出“春节期间销量下降是随机波动”的笑话；要么只会提一些无关痛痒的表面问题，分析深度堪忧；更别提动不动就写出跑不通的bug代码了。
 
@@ -25,7 +25,7 @@ AI数据分析师听起来很酷，但实际用起来却常常让人头疼。它
 
 来自字节跳动的最新研究DataSage给出了响亮的回答：不！他们打造了一个由多个AI智能体组成的“分析师天团”，通过引入外部知识检索、多角色辩论和多路径推理，让AI的数据洞察力实现了质的飞跃。
 
-<img src="/images/2511.14299v1/x2.jpg" alt="DataSage框架图" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.14299v1/x2.webp" alt="DataSage框架图" style="width:85%; max-width:450px; margin:auto; display:block;">
 *图1: DataSage多智能体框架概览*
 
 这项工作直击当前数据智能体的三大核心痛点，让AI分析师真正变得可靠、深刻、智能。
@@ -38,7 +38,7 @@ AI数据分析师听起来很酷，但实际用起来却常常让人头疼。它
 2.  **分析深度不足**：多数工具采用单次提问模式，生成的问题往往流于表面，缺乏像人类专家那样层层递进、探究根本原因的能力。
 3.  **代码错误频发**：LLM生成代码的“幻觉”问题依然存在。一个微小的代码错误，就可能导致整个分析结果谬以千里，严重影响决策。
 
-<img src="/images/2511.14299v1/x1.jpg" alt="当前数据智能体的三大局限" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.14299v1/x1.webp" alt="当前数据智能体的三大局限" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图2: 现有数据智能体的三大局限性*
 
 正是这些问题，限制了AI在严肃、复杂的商业决策场景中的应用。
@@ -100,7 +100,7 @@ AI数据分析师听起来很酷，但实际用起来却常常让人头疼。它
 *   **专攻难题**：在“困难”级别的数据集上，DataSage的性能优势尤为明显，洞察得分提升了 **+9.3%**，证明其复杂问题处理能力更强。
 *   **图表更优**：得益于代码精炼环节，DataSage生成的数据可视化图表在可读性、美观度和准确性上都远超基线模型。
 
-<img src="/images/2511.14299v1/x3.jpg" alt="图表质量对比" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.14299v1/x3.webp" alt="图表质量对比" style="width:85%; max-width:450px; margin:auto; display:block;">
 *图3: DataSage生成的图表质量显著更高*
 
 消融实验进一步证实，RAKG、多角色辩论和多路径推理这三个组件都不可或缺，其中**RAKG模块**对性能的贡献最大，再次凸显了领域知识在数据分析中的核心地位。

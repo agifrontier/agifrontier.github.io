@@ -13,7 +13,7 @@ related_tutorials:
 
 ## Agent智能进化论：阿里港科大万字综述，揭秘GEF三步循环
 
-<img src="/images/2511.09586v1/A__title.jpg" alt="Agent智能进化论：阿里港科大万字综述，揭秘GEF三步循环 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.09586v1/A__title.webp" alt="Agent智能进化论：阿里港科大万字综述，揭秘GEF三步循环 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型Agent正以前所未有的速度发展，但一个巨大的瓶颈也随之浮现：静态数据集已经喂不饱它们了！
 
@@ -29,7 +29,7 @@ related_tutorials:
 
 其核心框架，就是**生成-执行-反馈**（**Generation-Execution-Feedback, GEF**）循环。
 
-<img src="/images/2511.09586v1/x1.jpg" alt="GEF 循环与环境扩展概览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.09586v1/x1.webp" alt="GEF 循环与环境扩展概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1: (A) GEF循环示意图；(B) 以GEF为核心的环境扩展方法论*
 
@@ -61,7 +61,7 @@ related_tutorials:
 
 *   **多样性扩展**：通过生成跨领域、跨工具集的异构任务，避免Agent过拟合，提升其在未知场景下的泛化能力，如AgentGym、AgentGen等工作所示。
 
-<img src="/images/2511.09586v1/x2.jpg" alt="任务生成与执行扩展示例" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.09586v1/x2.webp" alt="任务生成与执行扩展示例" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图3: 会议安排任务中的环境扩展示例*
 

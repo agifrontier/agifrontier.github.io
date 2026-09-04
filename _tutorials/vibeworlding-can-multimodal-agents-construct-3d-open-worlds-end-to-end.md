@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">VibeWorlding: Can Multimodal Agents Construct 3D Open Worlds End-to-End?</p>
 
-<img src="/images/2608.15265v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.15265v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在游戏开发、物理仿真以及具身智能等前沿领域，根据用户的自然语言指令快速构建可交互的开放式3D世界，一直是一项极具挑战性的核心任务。近年来，随着多模态大语言模型（MLLM）的爆发，学术界和工业界开始尝试利用多模态 Agent 来实现3D世界构建的自动化。然而，目前的研究大多停留在理想化、结构简单的查询指令上，极少触及真实世界中复杂且开放的用户意图。更关键的是，由于缺乏一个统一且开源的框架，研究人员很难系统性地评估多模态 Agent 在理解用户意图、调用3D工具以及对图文信息进行空间推理时的真实表现。
 
@@ -41,7 +41,7 @@ related_tutorials:
 
 3D世界构建的验证难题则构成了第二座大山。一个合格的3D世界不仅需要满足严苛的物理约束（例如物体不能悬空、资产之间不能发生穿模碰撞），还需要在语义和审美上契合用户的开放式意图。这种多维度的评价标准，既无法单纯依赖程序员手工编写的代码规则来判定，也无法放心地完全交给一个通用大语言模型来做裁判。
 
-<img src="/images/2608.15265v1/vibeworlding.jpg" alt="VWE-Bench和VibeWorlding-Gym概览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.15265v1/vibeworlding.webp" alt="VWE-Bench和VibeWorlding-Gym概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 为了彻底打通这一链路，VibeWorlding 框架将3D世界构建任务重新定义为一个多轮次、多模态、深度集成工具的推理过程。无论是接收到一句简单的“从零搭建一个舒适的书房”，还是接收到一个现有的3D场景并附带“在桌子旁边加一个书架”的修改指令，Agent 都需要自主推断意图、规划场景布局，并在不断的“调用工具-观察多模态反馈”的循环中完善场景，直到输出最终的交互式3D世界。
 
@@ -53,7 +53,7 @@ related_tutorials:
 
 随后，专业艺术家使用这些资产手动搭建了323个种子3D世界。这些种子世界被刻意设计为功能完整但尚未极尽精雕细琢的粗糙场景。保留这种“粗糙感”是为了给后续的“世界优化”指令留出充足的操作空间。
 
-<img src="/images/2608.15265v1/fig_samples.jpg" alt="VWE-Bench的数据分布" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.15265v1/fig_samples.webp" alt="VWE-Bench的数据分布" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 有了资产和种子世界，研究团队利用 MLLM 进行逆向合成，生成了高达6828条多模态查询指令。这些指令被巧妙地划分为两大类：一类是要求从无到有构建场景的“从零构建”查询；另一类则是针对现有种子世界提出修改意见的“编辑优化”查询。为了确保评估的严谨性，数据集被进一步划分为拥有绝对标准答案的 Verified（已验证）查询，以及依靠精心设计的量规进行评估的 Unverified（未验证）查询。
 
@@ -79,7 +79,7 @@ related_tutorials:
 
 首先，即便是当下最顶级的模型，在未经专门训练的零样本（Zero-shot）状态下面对 VWE-Bench 时，也显得力不从心。无论是 GPT-5.5 还是 Qwen3.8-Max，其通过率均低于60%。作者通过详细的能力雷达图分析指出，这些模型其实能够很好地理解用户意图并看懂3D世界的整体布局，但它们的致命弱点在于“精确的3D工具执行”。当需要将一个物体精确移动到特定坐标并旋转特定角度时，通用大模型的空间想象力往往会彻底崩塌。
 
-<img src="/images/2608.15265v1/fig_main_bar.jpg" alt="各模型在Verified和Unverified任务上的Pass@1表现" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.15265v1/fig_main_bar.webp" alt="各模型在Verified和Unverified任务上的Pass@1表现" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 然而，多模态强化学习展现出了扭转乾坤的力量。通过 RL 训练，模型在精确编辑上的短板被大幅补齐。以 Qwen3-VL-8B 为底座训练而成的 VibeWorlder-8B，在体量极小的情况下，其表现直接追平了 Gemini 3.1-pro。而以 30B 规模模型为基础打造的 VibeWorlder-30B-A3B，不仅一举抹平了开源与闭源之间的鸿沟，更是在 Verified 和 Unverified 任务的综合评估中超越了 GPT-5.5，拿下了全场最高的 Pass@1 成绩。
 
@@ -91,7 +91,7 @@ related_tutorials:
 
 第一种典型的失败是“3D距离编辑不精确”。当面对诸如“将石头向前移动7米”这种指令时，模型往往能够准确理解位移的标量大小（7米），但在方向矢量的判断上却经常南辕北辙。由于在复杂的3D坐标系中发生了方向性倒置，本该微调位置的石头被抛到了距离目标点极远的地方。这说明当前的大模型在将自然语言的相对方位关系转化为绝对3D坐标时，依然缺乏足够鲁棒的映射能力。
 
-<img src="/images/2608.15265v1/fig_failcase.jpg" alt="前沿Agent在VWE-Bench上的两种主要失败模式" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.15265v1/fig_failcase.webp" alt="前沿Agent在VWE-Bench上的两种主要失败模式" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 第二种更隐蔽的失败则是“过度编辑”（Overediting）。在一个多轮交互的场景中，用户可能仅仅要求“在箱子旁边加一棵树”。Agent 的规划模块完美地理解了指令，并且在指定位置成功添加了新树。但在执行过程中，Agent 却莫名其妙地调用了删除工具，将场景中原本存在的一棵大树抹除了。这种失败并非源于对当前指令的误解，而是暴露出 Agent 对3D世界现有状态的“记忆力”极其薄弱。它们在执行局部修改时，很容易忽视或破坏周围未被提及的元素，这凸显了在交互循环中持续引入高质量渲染图像反馈，以维持场景状态一致性的极端重要性。
 

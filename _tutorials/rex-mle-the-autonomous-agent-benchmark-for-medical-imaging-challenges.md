@@ -14,7 +14,7 @@ related_tutorials:
 
 ## GPT-5也排0%分位？ReX-MLE揭秘：顶尖AI智能体为何搞不定医学影像
 
-<img src="/images/2512.17838v1/A__title.jpg" alt="GPT-5也排0%分位？ReX-MLE揭秘：顶尖AI智能体为何搞不定医学影像 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.17838v1/A__title.webp" alt="GPT-5也排0%分位？ReX-MLE揭秘：顶尖AI智能体为何搞不定医学影像 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当我们在惊叹 AI 智能体（Agents）能够像熟练工一样写代码、修 Bug 甚至开发小型游戏时，一个残酷的现实正在被忽视：一旦离开通用的软件工程舒适区，进入复杂的科学领域，这些“全能助手”可能瞬间变成“小白”。
 
@@ -30,7 +30,7 @@ related_tutorials:
 
 为了填补这一评估空白，研究团队推出了 **ReX-MLE**。
 
-<img src="/images/2512.17838v1/figure3.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.17838v1/figure3.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ReX-MLE 不仅仅是一套习题集，它是一个模拟真实科研环境的竞技场：
 
@@ -48,7 +48,7 @@ ReX-MLE 不仅仅是一套习题集，它是一个模拟真实科研环境的竞
 
 结果如图 1 所示，几乎可以用“惨烈”来形容。
 
-<img src="/images/2512.17838v1/figure1_v3.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.17838v1/figure1_v3.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *   **排名垫底**：与人类专家相比，大多数智能体的提交结果排在 **0% 分位**。这意味着它们甚至不如竞赛中的入门选手。
 
@@ -66,7 +66,7 @@ ReX-MLE 不仅仅是一套习题集，它是一个模拟真实科研环境的竞
 
 通过对智能体行为的深度分析（如图 4），研究人员发现了几个关键的瓶颈：
 
-<img src="/images/2512.17838v1/figure6.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.17838v1/figure6.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 1.  **缺乏领域感知的预处理**：医学图像往往需要特定的归一化、重采样和增强策略。AI 往往直接套用通用的计算机视觉方法，导致模型输入就是垃圾数据。
 

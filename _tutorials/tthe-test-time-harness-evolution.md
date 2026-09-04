@@ -35,7 +35,7 @@ related_tutorials:
 
 TTHE 的核心思想是将这个可执行的 $harness$ 视为 **测试时适应**（**Test-Time Adaptation**）的状态载体。整个优化过程完全发生在系统的评估阶段，且极其巧妙地避开了对“金标准”答案的依赖。
 
-<img src="/images/2607.08124v1/x1.jpg" alt="图1: TTHE 流程图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.08124v1/x1.webp" alt="图1: TTHE 流程图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 TTHE 维持了一套基于种群的“生成-评估”循环。整个系统虽然包含解题者、提议者和裁判三种角色，但它们其实都是共用同一个冻结参数的底层 LLM，仅仅是套上了不同的任务外壳。
 
@@ -55,7 +55,7 @@ TTHE 维持了一套基于种群的“生成-评估”循环。整个系统虽�
 
 更为惊艳的是，研究团队发现 TTHE 演化出的绝非毫无逻辑的随机代码变动，而是真正可解释的、高度符合高级软件工程师直觉的策略。例如，在 SWE-bench 上，TTHE 自动为 Agent 插入了严格的“复现漏洞-定位根因-修复-再验证”工作流，甚至还手写了一个前所未有的“回滚修复”分支：如果首次生成的代码补丁为空，程序会自动更换更严厉的系统提示词并强制触发重试。这一切，全是它从报错轨迹中自行领悟的。
 
-<img src="/images/2607.08124v1/x2.jpg" alt="批次大小消融实验" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.08124v1/x2.webp" alt="批次大小消融实验" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在上图展示的批次大小消融实验中，揭示了一个有趣的现象：性能增益并非随着批次大小 $B$ 单调递增，而是在 $B=10$ 时达到完美的峰值 50.0%。这表明，批次太小会导致裁判获得的裁决证据不足，容易做出短视的决策；而批次太大则变相减少了系统在整个数据流上进行迭代适应的次数，导致迟钝。
 

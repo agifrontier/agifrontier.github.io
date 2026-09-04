@@ -13,7 +13,7 @@ related_tutorials:
 
 ## RL训练的秘密：LLM学会了举一反三，为何却被“先易后难”的结构卡住？
 
-<img src="/images/2512.01775v1/A__title.jpg" alt="RL训练的秘密：LLM学会了举一反三，为何却被“先易后难”的结构卡住？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.01775v1/A__title.webp" alt="RL训练的秘密：LLM学会了举一反三，为何却被“先易后难”的结构卡住？ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 我们都知道，强化学习（RL）是提升大模型推理能力的一剂“猛药”。但它究竟是如何起作用的？仅仅是让模型能处理更长、更复杂的任务序列吗？还是说，它教会了模型一种更根本的能力——像搭乐高一样，将已知的小技能组合成全新的解决方案？
 
@@ -31,7 +31,7 @@ related_tutorials:
 
 这个任务的巧妙之处在于，任何一个解（比如 $8+(2\times 9)\div 3$）都可以被唯一地解析成一棵“表达式树”。通过规范化处理，这棵树可以对应到一个唯一的、抽象的**计算模式**（**Canonical Pattern**），如下图所示。
 
-<img src="/images/2512.01775v1/x1.jpg" alt="从表达式到模式树" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.01775v1/x1.webp" alt="从表达式到模式树" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1：从模型生成的表达式到唯一的“计算模式”。这使得研究者可以精确分析模型采用的推理结构。*
 
@@ -41,7 +41,7 @@ related_tutorials:
 
 *   **组合泛化**（**Compositional Generalization**）：模型能用已知技能，组合出训练中从未见过的全新“模式树”。
 
-<img src="/images/2512.01775v1/x2.jpg" alt="两种泛化能力" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.01775v1/x2.webp" alt="两种泛化能力" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图2：长度泛化关注“量”的增加，而组合泛化关注“结构”的创新。*
 
@@ -53,7 +53,7 @@ related_tutorials:
 
 结果首先证实了模型的**长度泛化**能力。只见过$n=3,4$问题的模型，在面对从未见过的$n=5$问题时，准确率（Pass@32）能达到近70%，在$n=6$问题上也能达到40%左右。
 
-<img src="/images/2512.01775v1/x3.jpg" alt="模型在不同长度任务上的表现" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.01775v1/x3.webp" alt="模型在不同长度任务上的表现" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图3：模型在$n=5,6$的未见任务上表现出色，证明了长度泛化能力。*
 
@@ -67,7 +67,7 @@ related_tutorials:
 
 令人惊讶的是，这种难度层级在泛化到$n=5$的任务时依然存在。这说明，结构复杂度才是限制模型推理能力的真正瓶颈。
 
-<img src="/images/2512.01775v1/x4.jpg" alt="模式结构决定学习难度" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.01775v1/x4.webp" alt="模式结构决定学习难度" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图4：无论问题长度如何，模型总是先学会平衡结构（紫色），再学不平衡结构（红/蓝）。*
 
@@ -91,7 +91,7 @@ related_tutorials:
 
 结果令人振奋：模型在训练后，不仅成功“重构”出了被移除的$n=3$模式，还进一步泛化，掌握了其更复杂的$n=4$衍生模式！
 
-<img src="/images/2512.01775v1/x5.jpg" alt="模型泛化到未见过的模式家族" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.01775v1/x5.webp" alt="模型泛化到未见过的模式家族" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图5：模型成功恢复了在训练中被完全移除的模式家族，证明了其组合新技能的能力。*
 

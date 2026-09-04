@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 32B模型媲美OpenAI？Step-DeepResearch揭秘：低成本实现专家级深度研究
 
-<img src="/images/2512.20491v2/A__title.jpg" alt="32B模型媲美OpenAI？Step-DeepResearch揭秘：低成本实现专家级深度研究 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.20491v2/A__title.webp" alt="32B模型媲美OpenAI？Step-DeepResearch揭秘：低成本实现专家级深度研究 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型向**自主智能体**（**Autonomous Agents**）演进的浪潮中，我们经常混淆两个概念：“搜索”与“研究”。搜索通常是针对明确问题的单次查询，而**深度研究**（**Deep Research**）则是一个漫长的迭代过程——它需要意图识别、长程规划、跨源验证以及撰写结构化的报告。
 
@@ -91,7 +91,7 @@ Step-DeepResearch 选择 **Qwen2.5-32B-Base** 作为基座模型，采用了一�
 
 为了验证效果，研究团队不仅在 Scale AI 的 ResearchRubrics 上进行了测试，还专门构建了针对中文领域的 **ADR-Bench**。
 
-<img src="/images/2512.20491v2/x1.jpg" alt="Step-DeepResearch 综合评估结果" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.20491v2/x1.webp" alt="Step-DeepResearch 综合评估结果" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 从上图（Figure 1）可以看出 Step-DeepResearch 的强悍表现：
 

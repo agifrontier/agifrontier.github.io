@@ -30,7 +30,7 @@ related_tutorials:
 
 > **ArXiv URL**：http://arxiv.org/abs/2312.08782v3
 
-<img src="/images/2312.08782v3/x1.jpg" alt="Figure 1" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2312.08782v3/x1.webp" alt="Figure 1" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 统一视角的数学抽象与核心难题
 
@@ -92,7 +92,7 @@ SayPlan算法引入了**三维场景图**（**3D Scene Graph, 3DSG**）作为外
 近年来，**机器人基础模型**（**Robotics Foundation Models, RFMs**）开始崛起。
 这些模型直接在包含真实状态-动作对的机器人数据集上进行端到端训练。
 
-<img src="/images/2312.08782v3/x3.jpg" alt="Figure 6" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2312.08782v3/x3.webp" alt="Figure 6" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 **大规模模仿学习**：RT系列模型和RoboCat是该路线的代表。
 它们将几十万条带有语言标注的真实机器人轨迹，输入到庞大的Transformer架构中进行行为克隆。
@@ -106,7 +106,7 @@ SayPlan算法引入了**三维场景图**（**3D Scene Graph, 3DSG**）作为外
 尽管算法日新月异，但本文对Open-X Embodiment等大规模数据集的元分析，揭露了一个极其残酷的物理现实：
 我们极其缺乏高质量且多样化的真实物理数据。
 
-<img src="/images/2312.08782v3/dataset_figure.jpg" alt="Figure 4" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2312.08782v3/dataset_figure.webp" alt="Figure 4" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，当前的机器人数据分布存在着灾难性的倾斜。
 首先是**形态偏差**：在73个子数据集中，竟有55个完全局限于单臂机械狗操作。

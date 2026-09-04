@@ -13,7 +13,7 @@ related_tutorials:
 
 ## Web World Model：用普通代码构建“物理法则”，让LLM只负责“想象”
 
-<img src="/images/2512.23676v1/A__title.jpg" alt="Web World Model：用普通代码构建“物理法则”，让LLM只负责“想象” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.23676v1/A__title.webp" alt="Web World Model：用普通代码构建“物理法则”，让LLM只负责“想象” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 **如果说传统的Web应用像是在逛博物馆（只能看固定的展品），而完全生成的AI世界像是在做梦（光怪陆离但容易失控），那么今天介绍的这项研究，就是试图在“现实”与“梦境”之间搭建一座桥梁。**
 
@@ -95,7 +95,7 @@ LLM很慢，也很贵。WWM设计了一个“保真度滑块”。
 
 这是一个基于真实地理的“地球”。当你点击地图上的任意坐标（比如内罗毕附近），系统会根据经纬度生成种子，LLM随即生成一份详细的旅行指南。无论你点哪里，都能生成逻辑自洽的内容，而且不需要庞大的后端数据库。
 
-<img src="/images/2512.23676v1/x2.jpg" alt="Infinite Travel Atlas" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.23676v1/x2.webp" alt="Infinite Travel Atlas" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 **2. 银河探索 (Galaxy Travel Atlas)**
 
@@ -105,7 +105,7 @@ LLM很慢，也很贵。WWM设计了一个“保真度滑块”。
 
 这是一个类似“沙盒”的游戏。传统的游戏里，水+火=蒸汽是写死的。但在这里，你可以创造任何新元素，LLM会实时判断新元素与其他元素的反应规则，并将其转化为代码逻辑执行。
 
-<img src="/images/2512.23676v1/Alchemy.jpg" alt="AI Alchemy" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.23676v1/Alchemy.webp" alt="AI Alchemy" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 **4. 杀戮尖塔风格卡牌 (AI Spire)**
 

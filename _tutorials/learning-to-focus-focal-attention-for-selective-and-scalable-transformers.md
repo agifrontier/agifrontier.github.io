@@ -24,9 +24,9 @@ Transformer模型的能力源泉——注意力机制，有时却像一个眼神
 - **更省资源**：达到同等精度，最多可节省**42%**的参数或**33%**的训练数据。
 - **更强长文本能力**：在长上下文任务中，性能相对提升高达**17%**到**82%**！
 
-<img src="/images/2511.06818v1/intro_base.jpg" alt="Focal Attention效果对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.06818v1/intro_base.webp" alt="Focal Attention效果对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 *上图：标准Attention的注意力分布，较为分散和嘈杂*
-<img src="/images/2511.06818v1/intro_focal.jpg" alt="Focal Attention效果对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.06818v1/intro_focal.webp" alt="Focal Attention效果对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 *下图：Focal Attention的注意力分布，更锐利、更聚焦*
 
 ### 一、Focal Attention：给注意力机制装上“变焦镜头”
@@ -69,7 +69,7 @@ Focal Attention的威力在 scaling law 上体现得淋漓尽致。研究表明�
 **2. 用更少的训练数据学得更快**
 在对一个2.7B模型的训练中，研究者发现，使用Focal Attention的模型仅用**210B** Tokens的训练数据，就达到了基线模型训练**315B** Tokens后的性能水平。这意味着节省了**33%**的训练数据和计算成本！
 
-<img src="/images/2511.06818v1/scale_tokens_tasks.jpg" alt="训练数据扩展性对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.06818v1/scale_tokens_tasks.webp" alt="训练数据扩展性对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 *随着训练Token增加，Focal Attention（橙色和绿色线）相比基线（蓝色线）的优势越来越大。*
 
 ### 三、长文本任务中的绝对王者
@@ -78,7 +78,7 @@ Focal Attention真正的杀手锏在于处理长上下文。当文本长度从�
 
 研究团队在一个名为HELMET的综合性长文本评测基准上，对一个经过32K上下文微调的2.7B模型进行了测试。结果令人震撼。
 
-<img src="/images/2511.06818v1/icl.jpg" alt="长文本任务性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.06818v1/icl.webp" alt="长文本任务性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 *在多样本上下文学习（ICL）任务中，Focal Attention（橙色）的性能远超基线（蓝色），且上下文越长，优势越明显。*
 
 在包括**多样本上下文学习**（**In-Context Learning, ICL**）、**检索增强生成**（**Retrieval-Augmented Generation, RAG**）和信息检索等任务中，Focal Attention取得了压倒性优势。
@@ -86,7 +86,7 @@ Focal Attention真正的杀手锏在于处理长上下文。当文本长度从�
 - **对于ICL任务**，当上下文中可以放入成百上千个示例时，Focal Attention能更有效地从这些示例中学习模式，准确率远超基线。
 - **对于RAG任务**，当模型需要在大量检索到的文档（其中混杂着干扰项）中寻找答案时，Focal Attention的“专注”能力让它能精准锁定包含答案的“黄金段落”，而不会被无关信息迷惑。
 
-<img src="/images/2511.06818v1/rag.jpg" alt="RAG任务性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.06818v1/rag.webp" alt="RAG任务性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 *在RAG任务中，Focal Attention同样表现出持续的领先优势。*
 
 ### 四、一些有趣的发现与结论

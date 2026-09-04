@@ -28,7 +28,7 @@ related_tutorials:
 
 语言建模的发展大致可分为四个主要阶段，这四个阶段也体现了其解决任务能力的演进：
 
-<img src="/images/2303.18223v16/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2303.18223v16/x3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 - **统计语言模型 (Statistical Language Models, SLM)**：SLM 基于 20 世纪 90 年代兴起的统计学习方法，核心思想是利用马尔可夫假设（例如，基于最近的上下文预测下一个词），如 n-gram 模型。然而，它们面临“维度灾难”问题，难以准确估计高阶语言模型。
 
@@ -38,10 +38,10 @@ related_tutorials:
 
 - **大语言模型 (Large Language Models, LLM)**：研究发现，扩大 PLM 的规模（模型大小或数据大小）通常能提升模型在下游任务上的能力，这遵循所谓的“缩放法则 (scaling law)”。当模型参数规模超过某一水平时，这些放大的语言模型不仅性能显著提升，还表现出小模型（如 BERT）所不具备的特殊能力，即“涌现能力 (emergent abilities)”，例如上下文学习 (in-context learning)。最近，以 ChatGPT 为代表的 LLM 应用引起了社会的广泛关注。
 
-<img src="/images/2303.18223v16/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2303.18223v16/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 *(a) 查询=”Language Model”*
 
-<img src="/images/2303.18223v16/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2303.18223v16/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 *(b) 查询=”Large Language Model”*
 
 从“语言建模”到“任务解决”，是理解语言模型发展史的关键。LLM 的发展正对整个 AI 社区产生重要影响，并可能革新我们开发和使用 AI 算法的方式。
@@ -139,7 +139,7 @@ LLM 的成功归功于一系列关键技术的进步。
 
 - **工具操纵 (Tools manipulation)**：LLM 本质上是文本生成器，不擅长精确计算或获取实时信息。通过赋予 LLM 使用外部工具的能力（如计算器、搜索引擎），可以弥补其内在缺陷。ChatGPT 的插件机制正是这一思想的体现，极大地扩展了 LLM 的能力边界。
 
-<img src="/images/2303.18223v16/x4.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2303.18223v16/x4.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 下表总结了近年来发布的一些主要 LLM 的统计信息。
 
@@ -213,7 +213,7 @@ TABLE I: 近年来大语言模型（本文中指规模大于10B）的统计数�
 
 ChatGPT 的巨大成功激发了社区对 GPT 系列模型的浓厚兴趣。GPT 模型的基本原理是通过语言建模任务，将世界知识压缩到一个仅包含解码器 (decoder-only) 的 Transformer 模型中，使其能够恢复或记忆世界知识的语义，从而成为一个通用的任务解决器。其成功的两个关键点是：(I) 训练能够**准确预测下一个词**的 decoder-only Transformer 语言模型，以及 (II) **扩大语言模型的规模**。
 
-<img src="/images/2303.18223v16/x5.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2303.18223v16/x5.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 OpenAI 在 LLM 上的研究大致可分为以下几个阶段：
 

@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Triviality Corrected Endogenous Reward</p>
 
-<img src="/images/2604.11522v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.11522v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在当今大语言模型（LLM）的训练范式中，对齐技术已经成为决定模型最终表现的胜负手。在有监督微调（SFT）阶段之后，强化学习微调（RFT）被广泛用于进一步优化模型行为。然而，当我们把目光从数学推理或代码生成转向开放式文本生成（如长文写作、创意生成）时，强化学习面临着一个极为棘手的瓶颈：缺乏可验证的客观奖励信号。
 
@@ -51,7 +51,7 @@ related_tutorials:
 
 这种方法在数学推理任务中表现极佳。因为在数学推导中，逻辑最严密、最不容易出错的步骤，往往也是模型置信度最高的步骤。引导模型朝着高置信度方向优化，实际上是在收敛搜索空间，剔除那些容易引发幻觉的脆弱推理分支。
 
-<img src="/images/2604.11522v1/x1.jpg" alt="TCER与基础内生奖励在处理分布时的差异" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2604.11522v1/x1.webp" alt="TCER与基础内生奖励在处理分布时的差异" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 然而，当研究人员将这种看似完美的机制迁移到开放式写作时，灾难发生了。如上图所示，虽然内生奖励在一定程度上能提升模型相对于纯 SFT 基线的表现，但随着强化的进行，模型输出的熵（Entropy）开始急剧下降。
 
@@ -61,7 +61,7 @@ related_tutorials:
 
 如何既能利用模型内部的隐式奖励信号，又能避免模型陷入“安全废话”的泥潭？研究团队提出的 TCER 方案包含两个极为关键的机制：基于双模型的相对信息增益解构，以及对抗高概率的动态权重惩罚。
 
-<img src="/images/2604.11522v1/x2.jpg" alt="TCER训练管线与奖励对比可视化" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.11522v1/x2.webp" alt="TCER训练管线与奖励对比可视化" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 第一层解构：剥离通用废话，提取专业增益
 

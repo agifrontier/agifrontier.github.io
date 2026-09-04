@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Behavior Cloning is Not All You Need: The Optimality of On-Policy Distillation for Noisy Expert Feedback</p>
 
-<img src="/images/2606.30923v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.30923v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在过去几年中，模仿学习（Imitation Learning, IL）已经成为理解和训练大型语言模型（LLM）的核心范式。从最基础的指令微调（SFT）到更高级的模型对齐，我们都可以将其视为让一个学习者（模型）去模仿一个专家（人类反馈或更强大的教师模型）的序列决策过程。然而，在这个领域一直存在一个理论与实践相悖的未解之谜：理论研究表明，只要使用合适的目标函数，最简单的离线行为克隆（Behavioral Cloning, BC，即标准的监督微调）就能实现无视野依赖（horizon-free）的最优表现。但几乎所有前沿的工业界实践都发现，像同策略蒸馏（On-Policy Distillation, OPD）或基于强化学习的在线方法，在性能上往往大幅超越离线的行为克隆。
 
@@ -98,7 +98,7 @@ related_tutorials:
 
 在验证环节，作者设计了合成任务（模块加法）和自然语言任务（GSM-8K 数学推理），以测试算法在面临不同程度退化专家时的表现。
 
-<img src="/images/2606.30923v1/x1.jpg" alt="图1：离线 BC、标准 OPD 与新提出的 NAIL 算法在不同专家噪声下的性能对比。" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.30923v1/x1.webp" alt="图1：离线 BC、标准 OPD 与新提出的 NAIL 算法在不同专家噪声下的性能对比。" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 从给出的实验图表（Figure 1）中，我们可以清晰地观察到理论与现实的共振。左侧是需要较长步骤的模块加法任务，右侧是需要严密逻辑推导的 GSM-8K 任务。当专家提供的是极其纯净的反馈（例如左图中 $\eta=0$，右图中生成温度 $t=1$ 处于低噪声状态）时，离线的行为克隆（BC）、标准的同策略蒸馏（OPD）以及作者受理论启发提出的 NAIL 算法，表现差异并不巨大，均能保持较高的胜率。这验证了过去理论界关于“在完美专家下，BC 已经足够好”的论断。
 

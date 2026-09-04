@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 告别“对齐税”！Meta新研究：RL将LLM变身知识导航员，分层知识检索飙升24%
 
-<img src="/images/2511.05933v1/A__title.jpg" alt="告别“对齐税”！Meta新研究：RL将LLM变身知识导航员，分层知识检索飙升24% 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2511.05933v1/A__title.webp" alt="告别“对齐税”！Meta新研究：RL将LLM变身知识导航员，分层知识检索飙升24% 图示" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 长期以来，AI社区一直流传着一个“魔咒”：用**强化学习**（**Reinforcement Learning, RL**）对大模型进行对齐，虽然能提升其推理和遵循指令的能力，但往往会损害模型在预训练阶段学到的海量知识，这被称作“对齐税”（Alignment Tax）。
 
@@ -27,7 +27,7 @@ related_tutorials:
 
 在医疗编码查询这类任务上，性能差距竟高达惊人的24个百分点。这究竟是怎么回事？难道强化学习 secretly 给模型“补课”了吗？
 
-<img src="/images/2511.05933v1/x1.jpg" alt="Overview" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.05933v1/x1.webp" alt="Overview" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图1：左侧展示了普通模型（DeepSeek-V3）靠“猜”而答错，而RL增强模型（DeepSeek-R1）通过分层导航答对。右侧显示，通过优化提示词，可以缩小两者差距。*
 
@@ -53,7 +53,7 @@ related_tutorials:
 
 实验结果再次印证了假设。随着任务复杂度（检索深度）的增加，RL模型在“路径匹配得分”上的优势愈发明显。
 
-<img src="/images/2511.05933v1/neurips_dual_model_comparison.jpg" alt="Table 5: Comparison of structured prompting performance by task complexity" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.05933v1/neurips_dual_model_comparison.webp" alt="Table 5: Comparison of structured prompting performance by task complexity" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 
 *表5：在需要5次以上分层回忆的复杂任务中，DeepSeek-R1（RL模型）的路径匹配得分（Path Matching Score）领先V3（SFT模型）的差距从简单任务的5pp扩大到9pp。*
@@ -78,7 +78,7 @@ related_tutorials:
 
 - 但对于**问题查询**，两者表征的相似度在模型中间层急剧下降（低至$0.65$ - $0.73$）。
 
-<img src="/images/2511.05933v1/comprehensive_plot_ICD9PROC_no_CI_similarity_label_bold.jpg" alt="Internal Activation Analysis" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.05933v1/comprehensive_plot_ICD9PROC_no_CI_similarity_label_bold.webp" alt="Internal Activation Analysis" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图3：模型内部激活分析。无论哪个模型，(d)问句表征在SFT和RL版本间的相似度，都显著低于(a)答案（事实）表征的相似度。*
 

@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 斯坦福自动化AI科研：10轮进化准确率飙升21%，RL反而“变笨”？
 
-<img src="/images/2601.14525v1/A__title.jpg" alt="斯坦福自动化AI科研：10轮进化准确率飙升21%，RL反而“变笨”？ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.14525v1/A__title.webp" alt="斯坦福自动化AI科研：10轮进化准确率飙升21%，RL反而“变笨”？ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如果AI不仅能写代码，还能自己提出科研Idea、自己跑实验、自己看结果，甚至还能根据实验反馈自我进化，那会是怎样一番景象？
 
@@ -31,7 +31,7 @@ related_tutorials:
 
 自动化科研的核心瓶颈在于：LLM生成的Idea往往缺乏实证。为了打破这一僵局，该研究首先构建了一个高吞吐量的**自动化Idea执行器**（**Automated Idea Executor**）。
 
-<img src="/images/2601.14525v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.14525v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，这个系统就像一个不知疲倦的科研团队：
 
@@ -61,7 +61,7 @@ related_tutorials:
 
 结果非常惊人！
 
-<img src="/images/2601.14525v1/x8.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.14525v1/x8.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在**后训练任务**中，仅经过10轮搜索，Claude-4.5-Sonnet发现的方法就将1.5B模型的数学推理准确率从基线的 **48.0%** 提升到了 **69.4%**，甚至超过了该任务下最佳人类专家的表现（68.8%）。
 
@@ -77,7 +77,7 @@ related_tutorials:
 
 结果却出乎意料：RL确实提高了Idea的**平均得分**，但却**没有提高最高得分**（即没有发现突破性的Idea）。
 
-<img src="/images/2601.14525v1/x13.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.14525v1/x13.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 为什么会这样？深入分析后，研究人员发现了两个致命问题：
 

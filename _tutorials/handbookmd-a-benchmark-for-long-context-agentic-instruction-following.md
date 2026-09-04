@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">HANDBOOK.md: A Benchmark for Long-Context Agentic Instruction Following</p>
 
-<img src="/images/2607.25398v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.25398v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大语言模型智能体正在以前所未有的速度深入企业核心业务流。在真实的生产环境中，它们的部署模式通常遵循一种默认的“长期指令”架构：开发者会将一份系统提示词、一份企业合规文件或是一份厚厚的技能说明书塞进模型的上下文窗口中，并理所当然地信任智能体在后续所有的工具调用和多步交互中，都能严格受这些先决规则的约束。然而，现有的评测基准却极少直接检验这种部署模式的可靠性。当前的基准测试往往只关心智能体能否“完成”某个任务（例如订票、回复邮件、修改代码），却忽略了一个更致命的问题：一份冗长且具有约束力的政策文件，在漫长的工具使用周期中，是否真的能持续管束智能体的行为？
 

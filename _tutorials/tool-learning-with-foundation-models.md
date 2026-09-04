@@ -37,7 +37,7 @@ related_tutorials:
 
 该研究不仅梳理了模型使用工具的认知起源，还构建了一个标准的系统架构，并在18种主流工具上进行了验证。
 
-<img src="/images/2304.08354v3/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2304.08354v3/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 为什么需要工具与模型的双向奔赴？
 
@@ -69,7 +69,7 @@ related_tutorials:
 
 **感知器**（**Perceiver**）：团队的**汇报专员**。它负责处理环境返回的杂乱数据，将其总结为标准格式，再次提交给项目经理。
 
-<img src="/images/2304.08354v3/x3.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2304.08354v3/x3.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在数学表达上，控制器在时间步 $t$ 生成动作 $a_t$ 的过程，本质上是一个复杂的条件概率分布：
 

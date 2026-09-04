@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 数据智能体“高考”来了！字节跳动DAComp揭示：顶级模型成功率不足20%
 
-<img src="/images/2512.04324v1/A__title.jpg" alt="数据智能体“高考”来了！字节跳动DAComp揭示：顶级模型成功率不足20% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.04324v1/A__title.webp" alt="数据智能体“高考”来了！字节跳动DAComp揭示：顶级模型成功率不足20% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 AI Agent正以前所未有的速度渗透到各个领域，尤其是在数据处理方面，人们期待它能像资深专家一样，自动完成从原始数据到商业洞察的全过程。但它们真的准备好了吗？最近，一份来自字节跳动、中国科学院等机构联合发布的“数据智能体高考卷”——DAComp，给所有顶尖大模型泼了一盆冷水。测试结果显示，即使是GPT-4/5级别的先进模型，在模拟真实企业级数据任务时也步履维艰，在最复杂的数据工程任务上，端到端成功率竟不足20%！
 
@@ -22,7 +22,7 @@ AI Agent正以前所未有的速度渗透到各个领域，尤其是在数据处
 
 这究竟是一份怎样的“魔鬼考卷”？它又揭示了当前AI Agent发展的哪些核心瓶颈？
 
-<img src="/images/2512.04324v1/x1.jpg" alt="DAComp full-lifecycle data intelligence workflows" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.04324v1/x1.webp" alt="DAComp full-lifecycle data intelligence workflows" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1: DAComp旨在评估大模型在完整数据智能生命周期中的表现，涵盖数据工程（DE）和数据分析（DA）*
 
@@ -64,7 +64,7 @@ DAComp则完全不同，它首次构建了一个覆盖**数据智能全生命周
 
 这项任务的评估是另一个亮点。研究团队开创性地设计了一套**分层级、多路径的评估框架**（hierarchical rubrics），并由LLM-judge进行打分。
 
-<img src="/images/2512.04324v1/x2.jpg" alt="Hierarchical rubrics details" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.04324v1/x2.webp" alt="Hierarchical rubrics details" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图2: 分层级评估框架细节*
 
@@ -84,7 +84,7 @@ DAComp则完全不同，它首次构建了一个覆盖**数据智能全生命周
 
 这说明，**当前Agent的最大瓶颈并非生成单个正确的代码片段，而是在复杂的代码仓库中进行整体的、端到端的流水线编排和依赖管理能力。**
 
-<img src="/images/2512.04324v1/x5.jpg" alt="Error distribution and pipeline survival rate" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.04324v1/x5.webp" alt="Error distribution and pipeline survival rate" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图5: 错误分布（左）与流水线存活率（右）*
 
@@ -100,7 +100,7 @@ DAComp则完全不同，它首次构建了一个覆盖**数据智能全生命周
 
 #### 错误分析：依赖管理与错误级联是两大“杀手”
 
-<img src="/images/2512.04324v1/x7.jpg" alt="Error analysis of DE task" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.04324v1/x7.webp" alt="Error analysis of DE task" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 *图7: DE任务的错误分析*
 

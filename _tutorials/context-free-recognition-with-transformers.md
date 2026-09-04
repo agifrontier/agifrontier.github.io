@@ -13,7 +13,7 @@ related_tutorials:
 
 ## Transformer 突破理论极限：$\log n$ 循环层解锁 CFL 语法识别
 
-<img src="/images/2601.01754v1/A__title.jpg" alt="Transformer 突破理论极限： 循环层解锁 CFL 语法识别 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01754v1/A__title.webp" alt="Transformer 突破理论极限： 循环层解锁 CFL 语法识别 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 尽管 Transformer 在自然语言处理和代码生成任务上表现出了惊人的统治力，但在理论计算机科学的视角下，它一直存在一个尴尬的“阿喀琉斯之踵”：**标准的、固定深度的 Transformer 甚至被认为无法识别上下文无关语言（Context-Free Languages, CFLs）**。
 

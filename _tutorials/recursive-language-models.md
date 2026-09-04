@@ -13,7 +13,7 @@ related_tutorials:
 
 ## **打破上下文诅咒：递归语言模型（RLM）让GPT-5处理无限长文本**
 
-<img src="/images/2512.24601v1/A__title.jpg" alt="打破上下文诅咒：递归语言模型（RLM）让GPT-5处理无限长文本 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.24601v1/A__title.webp" alt="打破上下文诅咒：递归语言模型（RLM）让GPT-5处理无限长文本 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 **想象一下，如果你的大脑内存只有几秒钟，你该如何阅读一本百万字的小说？**
 

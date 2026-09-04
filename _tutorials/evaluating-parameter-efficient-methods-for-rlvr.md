@@ -14,7 +14,7 @@ related_tutorials:
 
 ## LoRA并非最优解？DeepSeek-R1实测揭秘：DoRA在RLVR推理任务中全面反超
 
-<img src="/images/2512.23165v1/A__title.jpg" alt="LoRA并非最优解？DeepSeek-R1实测揭秘：DoRA在RLVR推理任务中全面反超 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.23165v1/A__title.webp" alt="LoRA并非最优解？DeepSeek-R1实测揭秘：DoRA在RLVR推理任务中全面反超 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在后DeepSeek-R1时代，大模型的“推理能力”成为了新的皇冠上的明珠。为了让模型学会复杂的数学推导和逻辑思考，**带验证奖励的强化学习**（**Reinforcement Learning with Verifiable Rewards, RLVR**）成为了主流范式。
 
@@ -34,7 +34,7 @@ related_tutorials:
 
 这篇论文的核心贡献，就是通过大规模实测（覆盖MATH-500, AIME等硬核数学榜单），回答了一个关键问题：**在强化学习的独特优化动力学下，谁才是真正的版本答案？**
 
-<img src="/images/2512.23165v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.23165v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 核心发现一：LoRA 并非最佳，结构变体上位
 
@@ -54,7 +54,7 @@ related_tutorials:
 
 许多人认为利用SVD（奇异值分解）来初始化适配器（如 **PiSSA**, **MiLoRA**）能保留预训练模型的“精华”，理应效果更好。然而，实验却发现这些方法在RLVR中出现了严重的**训练崩溃**。
 
-<img src="/images/2512.23165v1/x4.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.23165v1/x4.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 研究者通过光谱分析揭示了背后的原因：**光谱错位（Spectral Misalignment）**。
 

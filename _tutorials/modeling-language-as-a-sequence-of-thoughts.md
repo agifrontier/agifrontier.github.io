@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 拒绝Token流水账！斯坦福新作Thought Gestalt：让AI像人类一样“思考”，参数效率暴涨40%
 
-<img src="/images/2512.25026v1/A__title.jpg" alt="拒绝Token流水账！斯坦福新作Thought Gestalt：让AI像人类一样“思考”，参数效率暴涨40% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.25026v1/A__title.webp" alt="拒绝Token流水账！斯坦福新作Thought Gestalt：让AI像人类一样“思考”，参数效率暴涨40% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当前的语言模型（LLM）虽然能写出流畅的诗歌和代码，但它们本质上更像是高明的“统计学家”而非“思考者”。它们通过预测下一个Token来生成文本，过度依赖表层的共现统计，却往往缺乏对实体和事件的全局一致性理解。
 
@@ -35,7 +35,7 @@ related_tutorials:
 
 2.  **思维层级（Sentence-level "Thought" states）**：负责存储高度抽象的语义信息。
 
-<img src="/images/2512.25026v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.25026v1/x1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，TG是一个循环Transformer（Recurrent Transformer）。它一次生成一个句子的Token，同时利用**交叉注意力（Cross-Attention）** 机制，去访问之前存储在记忆中的“句子表征”。
 
@@ -57,7 +57,7 @@ TG在将句子向量写入记忆时，**保留了计算图（Computation Graph�
 
 TG的架构设计非常精巧（见下图），主要包含以下几个关键点：
 
-<img src="/images/2512.25026v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.25026v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 1.  **分层抽象**：模型交替使用自注意力（处理当前句子的Token）和交叉注意力（查询过去的思维记忆）。
 
@@ -79,7 +79,7 @@ TG的架构设计非常精巧（见下图），主要包含以下几个关键点
 
 *   **参数效率**：在固定训练数据量（50M Token）的情况下，GPT-2需要增加**33%–42%** 的参数量，才能追平TG的性能。
 
-<img src="/images/2512.25026v1/scaling_loss.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.25026v1/scaling_loss.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 上图(b)清晰地展示了这一点：蓝线（TG）始终位于橙线（GPT-2）的下方，且差距随着模型规模增大而保持稳定。这意味着，**让AI学会“提炼思维”，比单纯增加神经元数量更有效。**
 

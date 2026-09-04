@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 推理模型“瘦身”奇迹：2-bit量化下数学能力暴涨44%的技术解密
 
-<img src="/images/2601.14888v1/A__title.jpg" alt="推理模型“瘦身”奇迹：2-bit量化下数学能力暴涨44%的技术解密 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.14888v1/A__title.webp" alt="推理模型“瘦身”奇迹：2-bit量化下数学能力暴涨44%的技术解密 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 随着 DeepSeek-R1、OpenAI o1 等具备强大推理能力的模型相继问世，我们在惊叹于其解决复杂数学和代码问题能力的同时，也不得不面对一个尴尬的现实：**推理模型太慢、太贵了。**
 
@@ -32,7 +32,7 @@ related_tutorials:
 
 传统的 PTQ 方法在通用语言任务上表现尚可，但在推理任务上却遭遇了滑铁卢。研究人员对比了非推理任务和推理任务在量化后的表现，发现了一个残酷的现象：
 
-<img src="/images/2601.14888v1/r_vs_nonr_legned.jpg" alt="[Uncaptioned image]" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.14888v1/r_vs_nonr_legned.webp" alt="[Uncaptioned image]" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，当使用 4-bit 量化时，性能损失还可接受；但一旦进入 3-bit 甚至更低的领域，推理任务（Reasoning）的准确率下降幅度远超非推理任务（Non-Reasoning）。这意味着，推理模型对精度的敏感度极高，简单的“剪裁”权重会直接破坏其逻辑链条。
 
@@ -88,7 +88,7 @@ QAT 的初始化非常关键。通常做法是直接加载全精度权重开始�
 
 3.  **RL 进阶**：在 KD 的基础上，使用强化学习（如 GRPO）进一步微调，激发模型的推理潜能。
 
-<img src="/images/2601.14888v1/data_compare.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.14888v1/data_compare.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 总结
 

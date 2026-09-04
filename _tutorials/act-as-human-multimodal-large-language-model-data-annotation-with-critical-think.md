@@ -2,7 +2,7 @@
 layout: default
 title: "ACT as Human: Multimodal Large Language Model Data Annotation with Critical Thinking"
 description: "AI标注成本直降90%！字节ACT框架：让大模型学会「批判性思维」。本文系统梳理其研究背景、核心方法、关键实验结果、现有局限以及后续工程实践启示。"
-thumbnail: "/images/2511.09833v1/x1.jpg"
+thumbnail: "/images/2511.09833v1/x1.webp"
 topics:
   - "多模态&视觉"
   - "数据工程"
@@ -35,7 +35,7 @@ related_tutorials:
 
 3.  **人类专家**：最后，人类专家不再需要埋头于所有数据，只需集中精力审查被“批判家”标记出来的少量可疑样本。
 
-<img src="/images/2511.09833v1/x1.jpg" alt="ACT数据流水线示意图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.09833v1/x1.webp" alt="ACT数据流水线示意图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 这个流程的核心思想是，**将有限且宝贵的人类智慧，用在最需要的地方**。
 
@@ -55,7 +55,7 @@ related_tutorials:
 
 研究人员发现，对于“标注员”来说，CoT并不总是能带来提升。但在“批判家”的角色中，CoT却大放异彩。引导模型进行一步步的推理和判断，能显著提升其发现错误的能力。
 
-<img src="/images/2511.09833v1/x3.jpg" alt="黑盒批判策略对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.09833v1/x3.webp" alt="黑盒批判策略对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 上图展示了多种黑盒批判策略的效果。可以看到，采用CoT策略的批判家（橙色条）在多个数据集上都取得了最佳表现，相比简单策略，其效率提升最高可达22.46%。
 

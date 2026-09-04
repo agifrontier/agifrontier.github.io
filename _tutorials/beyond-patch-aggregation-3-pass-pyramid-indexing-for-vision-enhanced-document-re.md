@@ -14,7 +14,7 @@ related_tutorials:
 
 ## RAG新革命：VisionRAG告别OCR，每页17个向量实现SOTA文档检索
 
-<img src="/images/2511.21121v1/A__title.jpg" alt="RAG新革命：VisionRAG告别OCR，每页17个向量实现SOTA文档检索 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.21121v1/A__title.webp" alt="RAG新革命：VisionRAG告别OCR，每页17个向量实现SOTA文档检索 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 还在为RAG系统处理PDF、财报时丢失表格和布局信息而头疼吗？传统的**光学字符识别**（**Optical Character Recognition, OCR**）方法会把复杂的文档“拍平”成纯文本，丢失关键的视觉结构。而新兴的视觉检索模型（如ColPali）虽然强大，但每页动辄上千个向量的存储和计算开销，让大规模部署成为奢望。
 
@@ -22,7 +22,7 @@ related_tutorials:
 
 现在，来自Inception AI的研究者们提出了一个两全其美的方案：**VisionRAG**。它完全抛弃了OCR，直接将文档页面当做图像处理，每页仅需存储17-27个向量，便在金融文档检索任务上取得了顶尖性能。这究竟是如何做到的？
 
-<img src="/images/2511.21121v1/ComparisonImage.excalidraw.jpg" alt="图1：文档检索方法的演进" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.21121v1/ComparisonImage.excalidraw.webp" alt="图1：文档检索方法的演进" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 告别OCR，拥抱“三遍扫描金字塔索引”
 
@@ -48,7 +48,7 @@ VisionRAG的核心思想非常巧妙：它不直接对图像进行暴力切块�
 
 为了更直观地理解VisionRAG的优势，我们可以将它与基于Patch的重量级选手ColPali进行对比。
 
-<img src="/images/2511.21121v1/ColPaliVSVision.jpg" alt="图2：VisionRAG与ColPali架构对比" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.21121v1/ColPaliVSVision.webp" alt="图2：VisionRAG与ColPali架构对比" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *   **ColPali**：采用**后期交互**（**Late Interaction**）模型，将页面分割成一个密集的网格（如32x32），为每个网格生成一个Patch向量，总计**每页1024个向量**。检索时，查询向量需要与所有Patch向量进行复杂的相似度计算。这保证了高精度，但也带来了巨大的存储和计算成本。
 
@@ -78,11 +78,11 @@ VisionRAG的核心思想非常巧妙：它不直接对图像进行暴力切块�
 
 在FinanceBench上，当检索10个最相关页面（$K=10$）时，VisionRAG的端到端问答准确率达到了 **80.51%**，这是一个非常强的结果。
 
-<img src="/images/2511.21121v1/financebench_metrics_four_horizontal_panels.jpg" alt="图3：VisionRAG在FinanceBench上的性能表现" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.21121v1/financebench_metrics_four_horizontal_panels.webp" alt="图3：VisionRAG在FinanceBench上的性能表现" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在TAT-DQA上，VisionRAG的**召回率@100**（Recall@100）达到了 **96.29%**，与ColPali等顶尖视觉检索模型的性能（97.98%）非常接近，证明了它在复杂文档中定位答案相关信息的能力。
 
-<img src="/images/2511.21121v1/colpali_visionRAG.jpg" alt="图4：VisionRAG与ColPali在ViDoRe上的召回率对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.21121v1/colpali_visionRAG.webp" alt="图4：VisionRAG与ColPali在ViDoRe上的召回率对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 更重要的是，VisionRAG的设计是**模型无关**（**Model-Agnostic**）的。研究者们用GPT-4o、GPT-5甚至开源的InstructBLIP模型进行了测试，发现系统性能差异很小（$\leq 8\%$）。这证明了其金字塔索引和融合策略的鲁棒性，不依赖于某个特定的超强VLM。
 

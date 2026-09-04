@@ -75,7 +75,7 @@ $${% endraw %}
 #### 涌现与不足
 训练过程中，DeepSeek-R1-Zero自发地学会了通过增加思考时间（生成更长的CoT）来解决复杂问题，并涌现出如自我反思、探索不同解题路径等高级行为，甚至出现了类似“啊哈时刻（aha moment）”的自我修正。
 
-<img src="/images/2501.12948v1/plot_length.jpg" alt="DeepSeek-R1-Zero在训练过程中平均响应长度的变化" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2501.12948v1/plot_length.webp" alt="DeepSeek-R1-Zero在训练过程中平均响应长度的变化" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 然而，这种纯粹RL训练出的模型存在可读性差、中英文混杂等问题，不适合直接面向用户。
 
@@ -125,7 +125,7 @@ $${% endraw %}
 
 实验结果有力地证实了本文方法的有效性。
 
-<img src="/images/2501.12948v1/x1.jpg" alt="DeepSeek-R1的基准测试性能" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2501.12948v1/x1.webp" alt="DeepSeek-R1的基准测试性能" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 关键结果
 *   **DeepSeek-R1 vs. 顶级模型**:

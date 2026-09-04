@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Muon$^p$: Muon with Fractional Spectral Powers</p>
 
-<img src="/images/2606.13867v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.13867v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在深度学习尤其是大语言模型的训练中，优化器的设计直接决定了模型学习的效率与最终的性能上限。长期以来，AdamW 等基于标量动量和方差调整的优化器占据了主导地位。然而，随着模型规模的爆炸式增长，研究人员开始将目光投向利用权重和梯度矩阵结构的二阶或伪二阶优化器。
 
@@ -79,7 +79,7 @@ related_tutorials:
 
 在数学推理与代码任务中，$\text{Muon}^p$ 的优势展现得淋漓尽致。
 
-<img src="/images/2606.13867v1/numina_hyperparameter_sweep_heatmap.jpg" alt="Numina任务上的超参数扫描热力图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.13867v1/numina_hyperparameter_sweep_heatmap.webp" alt="Numina任务上的超参数扫描热力图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 上图展示了在 Numina 数据集上微调 Llama3-1B 时，不同学习率下的超参数扫描热力图。可以清晰地看到，无论学习率如何变动，$\text{Muon}^p$ 的表现区间始终优于标准 Muon。最终，在 GSM8K、Numina 上的 pass@8 验证准确率，以及 OpenCodeInstruct 上的损失指标，$\text{Muon}^p$ 均实现了显著的超越。
 
@@ -89,7 +89,7 @@ related_tutorials:
 
 $\text{Muon}^p$ 为什么有效？为何它的优势主要体现在微调阶段，而在从零开始的预训练阶段却往往不如标准 Muon？研究团队通过谱几何（Spectral Geometry）的视角，给出了极为深刻的物理洞察。
 
-<img src="/images/2606.13867v1/pretrain_vs_finetune.jpg" alt="预训练与微调场景下Muon与Muon^p的性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.13867v1/pretrain_vs_finetune.webp" alt="预训练与微调场景下Muon与Muon^p的性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，在 135M 的 SmolLM 基座模型上，预训练阶段（左图）标准 Muon 的损失下降明显快于 $\text{Muon}^p$；而在微调阶段（右图），局势发生了逆转，$\text{Muon}^p$ 占据了主导地位。
 
@@ -99,25 +99,25 @@ $\text{Muon}^p$ 为什么有效？为何它的优势主要体现在微调阶段�
 
 为了验证这不是多项式逼近误差导致的假象，作者直接使用精确的 SVD 计算了 $UV^\top$ 和 $US^{1/3}V^\top$ 进行比对。
 
-<img src="/images/2606.13867v1/svd_pretrain_finetune_loss1.jpg" alt="使用精确SVD计算的更新在预训练与微调中的表现" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.13867v1/svd_pretrain_finetune_loss1.webp" alt="使用精确SVD计算的更新在预训练与微调中的表现" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 精确 SVD 的实验（上图）完美复现了前面的结论：预训练确实从无差别的全谱更新中获益，而特定领域的适应性微调必须依赖奇异值的幅度信息。
 
 此外，引入分数幂 $p$，本质上等同于为每个奇异向量方向隐式地分配了一个自适应学习率。
 
-<img src="/images/2606.13867v1/eval_loss_by_exponent1.jpg" alt="不同指数p对验证集损失的影响" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2606.13867v1/eval_loss_by_exponent1.webp" alt="不同指数p对验证集损失的影响" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 上图展示了在微调中不同 $p$ 值的效果验证。可以看到，最优解既不是完全展平的 $p=0$（Muon），也不是完全保持原状的 $p=1$（普通梯度），而是落在 $p=1/3$ 到 $p=1/5$ 这样的中间地带。这证明了分数阶介于两者之间的插值特性，不仅具有极高的鲁棒性，还能切实逼近微调的最优几何流形。
 
 更有趣的是，$\text{Muon}^p$ 与标准 Muon 之间存在极其平滑的过渡能力。在实际训练中，我们可以直接实施一种“课程学习”（Curriculum Learning）。
 
-<img src="/images/2606.13867v1/curriculum_lr_reduction_train_loss_.jpg" alt="Muon到Muon^p课程学习的损失变化" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.13867v1/curriculum_lr_reduction_train_loss_.webp" alt="Muon到Muon^p课程学习的损失变化" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 上图展示了在训练后期，不需要像切换到 AdamW 那样丢弃并重置复杂的动量状态，仅仅将优化器从 Muon 切换为 $\text{Muon}^p$（只需更改底层调用的逼近多项式），就能在最后 500 步中触发一次极其可观的损失骤降。这种无缝衔接的特性，赋予了它极强的工程灵活性。
 
 最后，作者追踪了训练过程中模型权重的有效秩（Effective Rank）。
 
-<img src="/images/2606.13867v1/erank.jpg" alt="训练过程中有效秩的演变" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2606.13867v1/erank.webp" alt="训练过程中有效秩的演变" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 有效秩的变化曲线强有力地印证了理论猜想：由于 $\text{Muon}^p$ 相较于 Muon 更加压制微小奇异向量，集中力量在主导方向上进行更新，它在优化过程中实质上驱动模型在一个维度更低的子空间内进行演化。这对于旨在避免破坏预训练泛化能力的微调过程而言，是一种天然且极其优美的正则化。
 

@@ -29,7 +29,7 @@ LLM Agent无疑是当前AI领域最激动人心的方向之一，它们被寄予
 
 最近一篇名为《From Experience to Strategy》的论文给出了答案。该研究提出了一种创新的**可训练多层图记忆框架**（Trainable, Multi-layered Graph Memory），它能将Agent的原始经验提炼为高阶策略，并通过强化学习动态优化，最终显著提升Agent的战略推理能力。
 
-<img src="/images/2511.07800v1/x2.jpg" alt="框架总览" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.07800v1/x2.webp" alt="框架总览" style="width:85%; max-width:450px; margin:auto; display:block;">
 *图1: 本文提出的可训练记忆框架：从轨迹中构建图（阶段1），用RL优化图权重（阶段2），再用优化后的记忆指导Agent训练（阶段3）。*
 
 ### 三步走：从原始经验到可学习的策略图
@@ -74,7 +74,7 @@ Agent带着这些“锦囊妙计”去训练，其策略网络$π\_θ$就能站�
 
 研究者在7个主流的问答（QA）数据集上进行了广泛测试，结果令人印象深刻。
 
-<img src="/images/2511.07800v1/x3.jpg" alt="主要结果" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.07800v1/x3.webp" alt="主要结果" style="width:85%; max-width:600px; margin:auto; display:block;">
 *图2: 在多个QA数据集上的性能对比*
 
 最亮眼的表现出现在小模型上。在4B参数规模的模型上，该方法相比基线取得了高达**+25.8%的相对性能提升**。这表明，这种结构化的外部记忆极大地弥补了小模型自身推理能力的不足，让小模型也能完成“逆袭”。
@@ -85,7 +85,7 @@ Agent带着这些“锦囊妙计”去训练，其策略网络$π\_θ$就能站�
 
 为了验证该框架的通用性，研究者还进行了一项有趣的实验：用谷歌的Gemini-1.5-pro替换原本用于构建记忆图谱的GPT-4o，再进行下游任务评估。
 
-<img src="/images/2511.07800v1/x4.jpg" alt="Ablation" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.07800v1/x4.webp" alt="Ablation" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图3: 消融实验证明了可学习权重的重要性*
 
 结果显示，即使更换了底层的LLM，这套记忆框架依然能稳定地带来性能提升。这证明了其设计的普适性，它并非某个特定模型的“专属外挂”，而是一种可以“即插即用”的通用增强模块。

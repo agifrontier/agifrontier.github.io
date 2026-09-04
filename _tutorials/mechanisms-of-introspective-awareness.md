@@ -13,7 +13,7 @@ related_tutorials:
 
 ## AI也能“反思”了？Anthropic揭秘LLM内省电路，检测率飙升75%
 
-<img src="/images/2603.21396v1/A__title.jpg" alt="AI也能“反思”了？Anthropic揭秘LLM内省电路，检测率飙升75% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2603.21396v1/A__title.webp" alt="AI也能“反思”了？Anthropic揭秘LLM内省电路，检测率飙升75% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如果我们能直接向AI提问：“你刚才在想什么？”，甚至在它的“大脑”中植入一个想法，它能察觉到吗？
 
@@ -41,7 +41,7 @@ related_tutorials:
 
 2.  **识别**（Identification）：模型是否正确说出了被注入的概念？
 
-<img src="/images/2603.21396v1/p01_main-figure_page_1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.21396v1/p01_main-figure_page_1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1：左侧为概念注入与检测的基本流程。右侧展示了三种可以调节该电路的干预方法。*
 
@@ -57,7 +57,7 @@ related_tutorials:
 
 “内省意识”是在**指令微调**（instruction fine-tuning）等后训练（post-training）阶段才涌现出来的。这说明，教会模型如何当一个好“助手”的过程，也无意中教会了它某种程度的自我审视。
 
-<img src="/images/2603.21396v1/x4.jpg" alt="[Uncaptioned image]" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2603.21396v1/x4.webp" alt="[Uncaptioned image]" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图4：Gemma3-27B模型在不同阶段的表现。基座模型（左）无法区分注入和非注入，而指令微调模型（中）的假阳性率降至0%。*
 
@@ -99,7 +99,7 @@ related_tutorials:
 
 更进一步，研究团队还训练了一个专门用于“放大”内省信号的转向向量。当使用这个向量时，模型的检测率提升了约75个百分点，并且同样没有增加误报率。
 
-<img src="/images/2603.21396v1/x19.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2603.21396v1/x19.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 *图18：使用经过训练的转向向量后，内省率（检测并正确识别）和检测率都得到了显著提升。*
 

@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">SecOPD: Mitigating Adaptive Prompt Injections by On-Policy Distillation</p>
 
-<img src="/images/2608.21500v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.21500v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大模型正从单纯的聊天机器人向能够操作工具、浏览网页和处理文件的 AI Agent 演进。在这个过程中，提示注入（Prompt Injection）成为了横亘在应用落地前的一座大山，并被普遍视为 AI Agent 面临的首要安全威胁。
 

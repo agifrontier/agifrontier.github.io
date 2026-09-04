@@ -39,7 +39,7 @@ CORAL 让智能体真正翻身做主人。在极其严苛的 Anthropic 内核工
 
 像 FunSearch 或 AlphaEvolve 这样出色的系统，本质上采用的是**固定进化搜索**（**Fixed Evolutionary Search**）范式。
 
-<img src="/images/2604.01658v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.01658v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在这种模式下，系统通过外部写死的规则来决定怎么筛选候选方案、怎么构建上下文。大模型仅仅扮演一个被动的“突变生成器”，在接到提示词后完成一次前向推理。
 
@@ -53,7 +53,7 @@ CORAL 让智能体真正翻身做主人。在极其严苛的 Anthropic 内核工
 
 CORAL 将决策权彻底交还给智能体。它抛弃了僵化的流水线，构建了一个支持长期运行的异步协作网络。
 
-<img src="/images/2604.01658v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2604.01658v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在这个网络中，智能体可以在隔离的工作区中安全地试错。而支撑它们高效进化的，是两大核心设计：共享内存与心跳机制。
 

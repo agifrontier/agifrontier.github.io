@@ -87,9 +87,9 @@ $ACDL$能够追踪元素在不同交互步骤中是如何累积的。
 为了证明这种描述语言的有效性，该研究展示了三个不同的基础架构。
 它们都是非常经典的$ReAct$循环结构的变体。
 
-<img src="/images/2605.01920v1/fig1-left.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
-<img src="/images/2605.01920v1/fig1-base.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
-<img src="/images/2605.01920v1/fig1-right.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2605.01920v1/fig1-left.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2605.01920v1/fig1-base.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2605.01920v1/fig1-right.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 如上图所示，这是三种$ReAct$变体的$ACDL$可视化渲染图。
 中间是基准的实现方式，包含了完整的思考和动作循环。

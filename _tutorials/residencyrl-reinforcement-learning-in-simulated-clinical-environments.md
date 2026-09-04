@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">ResidencyRL: Reinforcement Learning in Simulated Clinical Environments</p>
 
-<img src="/images/2608.07418v1/A__title.jpg" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2608.07418v1/A__title.webp" alt="" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 在现实世界的医学教育中，医学生将书本上的学术知识转化为真正的临床专业能力，必须经历漫长而高压的住院医师规范化培训阶段（Residency）。在这个过程中，他们需要在数千次真实的医患互动中积累经验，接收来自上级医生和患者的多样化反馈，并逐渐承担更大的独立决策权。临床推理绝不是对静态病历的机械作答，它高度依赖于患者面诊时的动态对话。在对话中，临床医生必须引出病史、不断修正诊断假设，并在高度不确定性下做出后续管理决策。
 
@@ -41,7 +41,7 @@ related_tutorials:
 
 特别值得注意的是其中的对抗性安全场景。这些场景覆盖了9个不同的临床安全分类，例如：最小化红旗症状的急性心肌梗死（测试紧急升级判断）、针对文本远程医疗不安全情况下的临床边界执行、诱导模型过早闭合的非典型表现、违反安全处方边界的药理学限制，以及面对患者急性心理健康危机时的降级处理技巧。通过这些精心设计的“刁钻”病患，模型在训练期就被逼迫着去面对医疗活动中最棘手的人性与伦理考验。
 
-<img src="/images/2608.07418v1/ResidencyRL_Overview.jpg" alt="ResidencyRL框架概览" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2608.07418v1/ResidencyRL_Overview.webp" alt="ResidencyRL框架概览" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 多模态交互与结构化反馈机制
 
@@ -49,7 +49,7 @@ related_tutorials:
 
 AI智能体的行动空间不再局限于纯文本的聊天。ResidencyRL框架暴露了一个模仿真实结构化临床工作流的工具调用API，涵盖七大功能：查看患者初始病历、提交主要诊断、提交带有推理链的鉴别诊断排名、进行紧迫性分类、制定结构化的后续管理计划、生成通俗易懂的患者沟通摘要，以及撰写标准化的SOAP（主观、客观、评估和计划）临床笔记。这些工具让AI医生的行为产生了实质性的临床重量。
 
-<img src="/images/2608.07418v1/ResidencyRL_Scenario.jpg" alt="患者场景上下文示例" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.07418v1/ResidencyRL_Scenario.webp" alt="患者场景上下文示例" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 由于患者模拟器无法真正对处方产生生理反应，ResidencyRL利用基于大型语言模型的自动化评分器（Autorater）来作为裁判。在长达数十轮的完整对话结束后，评分系统会基于遭遇战的文字记录和工具调用记录，对照地面真实病历进行评估。评分维度包含六大临床核心：诊断准确性、管理质量、筛查完整性（即病史问诊）、以患者为中心的沟通、临床文档记录以及对话风格。任何违反安全底线的行为都会触发严厉的惩罚标志。这一结构化的奖励信号最终会被送入群组相对策略优化（GRPO）算法中，用于不断更新AI智能体的策略网络。
 

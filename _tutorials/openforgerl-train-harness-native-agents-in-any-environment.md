@@ -40,11 +40,11 @@ OpenForgeRL 的设计初衷非常明确：不修改现有的 RL 算法库，也�
 
 第二，**基于 Kubernetes 的远程环境编排器**。既然复杂的框架和环境（比如一个完整的虚拟桌面或真实的浏览器进程）不能挤在昂贵的 GPU 训练节点上，OpenForgeRL 借助云服务（如 Microsoft Azure）实现了弹性的容器编排。每一次模型尝试（Rollout）都会在一个独立的远程容器中拉起。这样一来，计算最密集的训练留在本地 GPU 集群，而环境交互带来的 CPU 与内存消耗则被完全卸载并分散到云端，实现了真正的海量并发。
 
-<img src="/images/2607.21557/coverfig_0717.jpg" alt="OpenForgeRL 架构总览与多场景表现" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.21557/coverfig_0717.webp" alt="OpenForgeRL 架构总览与多场景表现" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在实际的分布式强化学习过程中，由于几百个远程容器在同时跑不同的任务，难免会遇到框架崩溃、网络超时或是某个环境意外死锁的情况。如果按照传统强化学习的同步逻辑，只要有一个 Rollout 卡住，整个训练批次的数据收集就会停滞。OpenForgeRL 放弃了不可靠的“最大交互轮数”限制，转而实施了一种宽容的“墙上时钟超时机制”。一旦某个任务超出时间，框架会直接终止该任务，并让训练继续吸收其他正常完成的任务数据。同时，对于那些因为非模型本身原因（如网络错误）中断的半截轨迹，OpenForgeRL 选择直接丢弃，以防止错误的负向奖励信号污染模型的梯度。
 
-<img src="/images/2607.21557/rollout_arch_0716.jpg" alt="OpenForgeRL 分布式 Rollout 与轨迹收集流程" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.21557/rollout_arch_0716.webp" alt="OpenForgeRL 分布式 Rollout 与轨迹收集流程" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 从文本工具到多模态 GUI：全面超越同级开源基准
 
@@ -52,7 +52,7 @@ OpenForgeRL 的设计初衷非常明确：不修改现有的 RL 算法库，也�
 
 为了提供高质量的训练数据，研究人员设计了一套自动化的任务与环境合成管线（Data Synthesis Pipeline），从真实的工具 API 和网页资源库中反向合成具有真实分布的指令。
 
-<img src="/images/2607.21557/task_synth_pipeline_0720.jpg" alt="OpenForgeRL 任务与环境自动合成管线" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2607.21557/task_synth_pipeline_0720.webp" alt="OpenForgeRL 任务与环境自动合成管线" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 在文本工具领域，团队基于 Qwen3-30B-A3B-Thinking（约 30B 规模的 MoE 模型）训练了 **OpenForge-Claw**。令人瞩目的是，模型不仅仅在一个框架里训练，而是同时在 ZeroClaw、OpenClaw 和 Codex 三个完全不同设计理念的流行框架内进行探索学习。
 

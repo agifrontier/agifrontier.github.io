@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Intern-S2-Preview: Scientific Agentic Foundation Model</p>
 
-<img src="/images/2608.13505v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2608.13505v1/A__title.webp" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 长期以来，人工智能在科学领域的应用（AI for Science）大多局限于“静态问答”模式。模型或许能准确回答某个具体的生物学机制或物理公式，但在真实的科研场景中，科学发现往往需要跨越极长的时间维度，涉及多种模态的证据收集、复杂工具的迭代调用，以及对外部环境的持续规划与交互。通用的大型语言模型虽然具备强大的指令遵循能力，却难以深入理解雷达高频信号、多通道生理数据或复杂的科学论文版面；而现有的多模态科学模型，又大多缺乏支撑长期任务规划的智能体（Agent）特性。
 
@@ -41,7 +41,7 @@ related_tutorials:
 
 不仅如此，模型还实现了从“时序理解”到“数值预测”的跨越。科学研究不仅需要解释历史观测，更需要预测系统未来的演化状态。**Intern-S2-Preview-397B** 并没有粗暴地让大语言模型把预测数值当成离散文本去逐个生成，这种做法既低效又容易损失精度。相反，团队引入了一个专门的数值预测分支。
 
-<img src="/images/2608.13505v1/arch_ts_encoder_struc.jpg" alt="时间序列模块架构，支持长序列理解与数值预测" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2608.13505v1/arch_ts_encoder_struc.webp" alt="时间序列模块架构，支持长序列理解与数值预测" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 该分支通过 Q-Former 选择性地提取大语言模型的语义上下文和时序编码器的数值特征，通过交叉注意力机制条件化一个因果 Transformer 预测器，从而在多模态大模型的框架内，完美保留了未来状态生成的数值保真度。
 
@@ -53,7 +53,7 @@ related_tutorials:
 
 视觉预训练（Visual Pre-training）构成了一个极具前瞻性的模态扩展阶段。模型直接从渲染为页面图像的大规模无标注科学文档中学习。它不再将文档视为干瘪的字符串，而是将其视为包含丰富空间逻辑的二维视觉场。这一机制有效地弥补了文本预训练在处理图表和跨栏排版时的先天不足。
 
-<img src="/images/2608.13505v1/vp_pipeline.jpg" alt="视觉预训练流水线，从页面级视觉特征中捕捉文档结构" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.13505v1/vp_pipeline.webp" alt="视觉预训练流水线，从页面级视觉特征中捕捉文档结构" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在此基础上，研究团队精心构建了图文交错数据，这远比普通的“图像-描述”配对复杂得多：
 
@@ -71,7 +71,7 @@ related_tutorials:
 
 最大的工程瓶颈在于长轨迹生成的“木桶效应”。在传统的同步强化学习系统中，哪怕批次中只有一个请求生成了异常冗长的推理轨迹，其他所有 GPU 都必须停下来苦苦等待这个“慢行者”完成，这导致算力利用率极其低下。为此，研究团队设计了一套带有离线策略修正（Off-Policy Correction）的局部 Rollout 系统。
 
-<img src="/images/2608.13505v1/partial-rollout-mechanism.jpg" alt="局部Rollout机制，彻底打破长轨迹生成导致的算力闲置" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.13505v1/partial-rollout-mechanism.webp" alt="局部Rollout机制，彻底打破长轨迹生成导致的算力闲置" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在该机制下，一旦收集到足够支撑一个训练批次的轨迹，系统就会立即暂停剩余那些还在生成中的超长请求，并将它们的生成前缀暂时封存。GPU 随后无缝切换至策略训练模式，待模型权重更新完毕后，这些被暂停的请求会继续从中断处恢复生成。为了抵消这种异步机制带来的策略滞后偏差，团队引入了 KL 散度验证与重要性采样裁剪技术，确保利用旧权重生成的轨迹在更新当前模型时依然能够提供稳定、无偏的梯度信号。这一系统级创新，让集群在面对极端长尾的科学推理任务时，依然能保持满载运转。
 

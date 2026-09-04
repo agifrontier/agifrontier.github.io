@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 扩散模型能否颠覆GPT？华为诺亚详解阻碍DLM爆发的十大核心挑战
 
-<img src="/images/2601.14041v1/A__title.jpg" alt="扩散模型能否颠覆GPT？华为诺亚详解阻碍DLM爆发的十大核心挑战 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.14041v1/A__title.webp" alt="扩散模型能否颠覆GPT？华为诺亚详解阻碍DLM爆发的十大核心挑战 图示" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 当下的 AI 领域，**大语言模型**（**Large Language Models, LLMs**）几乎等同于**自回归**（**Auto-Regressive, AR**）架构。无论是 GPT-4 还是 DeepSeek，它们生成文本的方式就像泥瓦匠砌墙——“一块砖接一块砖”地按顺序堆砌。虽然这种模式取得了巨大成功，但它天生存在一个缺陷：缺乏全局视野，一旦“砌歪了”很难回头修改。
 
@@ -49,7 +49,7 @@ related_tutorials:
 
 这意味着模型在每一步都能看到“全局”的信息，并对其进行细化。
 
-<img src="/images/2601.14041v1/top10.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.14041v1/top10.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 阻碍 DLMs 爆发的十大核心挑战
 

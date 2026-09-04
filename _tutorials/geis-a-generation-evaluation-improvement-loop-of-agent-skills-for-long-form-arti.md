@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">GEIS: A Generation-Evaluation-Improvement Loop of Agent Skills for Long-Form Article Generation</p>
 
-<img src="/images/2607.11503v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.11503v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在当前的大模型能力版图中，短文本回答、代码生成或是日常对话的响应早已不是难点。然而，当我们把视线转向撰写维基百科级别的深度文章、行业技术报告或是长篇分析文档时，大模型的表现往往暴露出明显的局限性。这类任务在研究中被定义为“L3 级别”的长文生成任务，它们强制要求系统同时应对长上下文输入、长指令约束以及长篇幅的文本输出。
 
@@ -47,7 +47,7 @@ GEIS 选择彻底摒弃这种紧耦合模式，转而采用“渐进式披露”
 
 GEIS 的生成侧核心由一个名为 `article-writer` 的技能主导。它将原本模糊的长文写作过程，强制拆解为六个高度受控且责任明确的语义阶段。
 
-<img src="/images/2607.11503v1/article_writer_process.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.11503v1/article_writer_process.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，这六个阶段构成了一条严密的生产流水线。任务首先进入 Request（请求）阶段，该阶段负责对用户的开放式需求进行标准化处理，提炼出明确的写作意图。紧接着是 Plan（规划）阶段，这或许是控制长文结构最核心的一步，系统必须在这里敲定包含多级标题的全局大纲。随后系统进入 Draft（起草）阶段，根据大纲填充实质性文本。
 
@@ -65,7 +65,7 @@ GEIS 的生成侧核心由一个名为 `article-writer` 的技能主导。它将
 
 然而，仅仅给出评分并不能让系统变得更聪明，GEIS 最精妙的设计在于它的终极组件：`article-writer-improving`（写作技能改进）。这就涉及到了 GEIS 所谓的“闭环”到底是如何运转的。
 
-<img src="/images/2607.11503v1/closed_loop.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.11503v1/closed_loop.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图展示的闭环流程，评估报告并不仅仅是一张成绩单，它更像是一份可执行的医学诊断书。改进技能会自动阅读这些诊断报告，从中甄别出哪些缺陷是属于写作者主观能力不足造成的（例如段落缺乏过渡、缺少对结论的归纳、引用的格式混乱），哪些缺陷仅仅是底层 PDF 导出工具包的 Bug（例如书签丢失）。
 

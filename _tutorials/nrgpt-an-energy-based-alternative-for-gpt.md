@@ -13,7 +13,7 @@ related_tutorials:
 
 ## NRGPT重构GPT底层逻辑：推理即能量下降，抗过拟合能力显著提升
 
-<img src="/images/2512.16762v1/A__title.jpg" alt="NRGPT重构GPT底层逻辑：推理即能量下降，抗过拟合能力显著提升 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.16762v1/A__title.webp" alt="NRGPT重构GPT底层逻辑：推理即能量下降，抗过拟合能力显著提升 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大语言模型（LLM）的统治时代，Transformer 架构几乎成为了唯一的真理。无论是 GPT-4 还是 Llama，本质上都是在做同一件事：将输入序列通过层层映射，预测下一个 Token。
 
@@ -37,7 +37,7 @@ related_tutorials:
 
 NRGPT 的核心突破在于：它通过极其精妙的数学设计，修改了 GPT 的设置，使其既保留了自回归生成的特性，又完全符合 EBM 的动力学框架。
 
-<img src="/images/2512.16762v1/fig1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.16762v1/fig1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图 1：NRGPT 将标准 GPT 设置转化为基于能量的框架。网络被定义为注意力能量和前馈能量的总和。每个 Token 通过探索能量景观转化为下一个 Token。*
 
@@ -87,7 +87,7 @@ NRGPT 本质上是一种**循环神经网络**（Recurrent Neural Network），�
 
 为了验证理论，研究者可视化了 Token 在推理过程中的能量变化。
 
-<img src="/images/2512.16762v1/long_trajectory.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.16762v1/long_trajectory.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 *图 2：NRGPT 中 Token 的能量轨迹。可以看到，在经过短暂的瞬态阶段后，随着推理步数（层数）的增加，Token 的能量确实在单调下降，最终收敛到稳定的低能量状态。*
 
@@ -95,7 +95,7 @@ NRGPT 本质上是一种**循环神经网络**（Recurrent Neural Network），�
 
 在性能上，NRGPT 与参数量相当的 **循环 GPT**（Recurrent GPT）表现持平。但在莎士比亚数据集的实验中，研究者发现了一个有趣的现象：
 
-<img src="/images/2512.16762v1/shakespeare_losses.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.16762v1/shakespeare_losses.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图 3：莎士比亚数据集上的 Scaling 表现。注意看右侧的大参数量区域，标准 GPT（蓝色）和循环 GPT（橙色）在训练后期容易出现过拟合（验证集 Loss 上升），而 NRGPT（红色/紫色）则表现出了更强的鲁棒性。*
 

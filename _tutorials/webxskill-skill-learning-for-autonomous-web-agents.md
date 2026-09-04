@@ -35,7 +35,7 @@ related_tutorials:
 
 为了避免智能体每次都从头规划，WebXSkill 构建了一个三阶段的系统流水线，为其配备了结构化的可执行知识库。
 
-<img src="/images/2604.13318v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.13318v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 第一阶段：轨迹抽象与技能精炼
 
@@ -81,7 +81,7 @@ WebXSkill 则提供了一个透明且带有逐向播报的导航仪，并开放�
 
 研究团队在极具挑战的 WebArena 以及基于真实网站的 WebVoyager 基准上进行了广泛评估。
 
-<img src="/images/2604.13318v1/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.13318v1/x3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 首先，从技能库质量来看（如图3所示），WebXSkill 提取的技能覆盖了全部十个功能类别且分布均衡。相比之下，SkillWeaver 超60%的技能局限在信息检索上，而 WALT 仅提供了极其稀疏的数十个技能。
 
@@ -97,7 +97,7 @@ WebXSkill 则提供了一个透明且带有逐向播报的导航仪，并开放�
 
 为了探究系统瓶颈，研究团队对失败案例进行了深度归因诊断。
 
-<img src="/images/2604.13318v1/x4.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.13318v1/x4.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 数据揭示了令人意外的现象：绝大多数失败并非源于技能本身的崩溃。
 1. **技能后推理失败占比最大（38%）**：技能已经完美执行并到达了目标页面，但智能体在最后一步提取答案时报错（例如数错商品数量）。

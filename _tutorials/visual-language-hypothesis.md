@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 字节跳动硬核推导：视觉理解的本质是“纤维丛”？揭秘Expand-and-Snap背后的拓扑真相
 
-<img src="/images/2512.23335v1/A__title.jpg" alt="字节跳动硬核推导：视觉理解的本质是“纤维丛”？揭秘Expand-and-Snap背后的拓扑真相 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.23335v1/A__title.webp" alt="字节跳动硬核推导：视觉理解的本质是“纤维丛”？揭秘Expand-and-Snap背后的拓扑真相 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在大模型时代，我们习惯了通过堆砌算力和数据来换取智能的涌现。然而，一个根本性的问题始终悬而未决：仅仅通过重构像素或保持局部一致性，真的能让模型获得“语义理解”吗？
 

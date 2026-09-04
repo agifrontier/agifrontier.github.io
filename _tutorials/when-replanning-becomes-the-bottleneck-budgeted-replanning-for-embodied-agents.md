@@ -36,7 +36,7 @@ related_tutorials:
 
 论文作者一针见血地指出，大多数具身基准测试仅仅报告任务的最终完成情况。在他们的初步实验中，一个不加任何预算或压缩限制的基线系统（被称为 No BRACE），在三个主流平台上都达到了 100% 的任务成功率。然而，令人触目惊心的是，这个系统在绝大多数的重新规划调用中，都违反了预设的延迟服务等级目标（SLO）。
 
-<img src="/images/2608.01428/habitat_spnoise_nobrace_contact.jpg" alt="定性动机示例" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2608.01428/habitat_spnoise_nobrace_contact.webp" alt="定性动机示例" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 正如上图在 Meta Habitat 导航任务中展示的定性示例，当执行噪音加入后，随着重规划历史的累积，上下文急剧膨胀，产生了严重的尾部延迟峰值。系统虽然最终把任务做完了，但在这个过程中，机器人其实处于一种“长时期停顿思考”的僵死状态。这种仅靠成功率掩盖的长尾故障，正是将重规划视为系统级基础原语进行管控的核心动机。
 
@@ -50,7 +50,7 @@ BRACE 作为介于触发信号和实际大模型调用之间的闭环控制器�
 
 第二步，一旦决定进行重新规划，BRACE 必须选择适当的重规划模式，并分配一个明确的 Token 预算 $B_t$（即压缩后允许输入给规划器的最大长度）以及一个延迟目标 $SLO_t$。这种“带资进组”的设计从根本上改变了规划器的调用逻辑。
 
-<img src="/images/2608.01428/overview.jpg" alt="BRACE 概览图" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2608.01428/overview.webp" alt="BRACE 概览图" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 如上图所示，BRACE 提供了一个极具操作性的工程接口。更重要的是，它引入了细粒度的“阶段记账法（Phase Accounting）”。在以往的研究中，许多旨在提升效率的模块（例如 RAG 检索、提示词压缩、计划缓存等）往往只报告最终延迟，导致很难界定究竟是哪个环节拖了后腿。BRACE 会记录重新规划调用路径上每一个阶段的时间戳和 Token 消耗。从上下文压缩所需的时间、检索的时间，到实际规划的时间，每一笔“开销”都被详细记录并输出审计日志。这不仅让系统的长尾延迟（如 P95 尾部百分位数）变得透明，还使得公平的“预算匹配”基准测试成为可能——所有试图减少上下文的方法，都必须在相同的严格 Token 预算下证明其保留有效信息的能力，而不是单纯依靠堆砌算力。
 
@@ -72,7 +72,7 @@ E-RECAP 训练了一个轻量级的预测器，利用模型中间层的隐藏状
 
 在更复杂的 RoboFactory 协调操作以及 Microsoft AirSim 的多智能体交互场景中，效果同样显著。特别是在 AirSim 的无人机路口协调基准测试中，由于多台无人机需要不断交换意图和避障信息，上下文极其庞大。
 
-<img src="/images/2608.01428/airsimnh_retained_collage_main.jpg" alt="AirSimNH 上的定性比较" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.01428/airsimnh_retained_collage_main.webp" alt="AirSimNH 上的定性比较" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 上图清晰地展示了 AirSim 任务中的对比情况。无预算的基线系统由于处理海量历史消息，产生了严重的延迟，它将过期的决策不断累积到同一个触发窗口中，导致无人机在交互期限内无法及时做出避让动作。相比之下，BRACE 通过有效的剪枝和预算管控，极大地缩短了实际的重规划路径，用远低于基线的截止时间违规次数完成了高风险的交互。
 

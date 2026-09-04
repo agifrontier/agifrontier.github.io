@@ -42,19 +42,19 @@ related_tutorials:
 
 真正让蛮力转化为有用功的，是那一套将马匹与马车连接起来的皮带和缰绳——这就是Harness（**马具**）的本意。马具并不替代马，而是工作在一个完全不同的维度：一个安全传导和引导力量的工程层。
 
-<img src="/images/2606.10106v1/cavalo_carroca.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.10106v1/cavalo_carroca.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在传统软件工程中，这个比喻延伸出了`Test Harness`（**测试脚手架**），用于在受控环境下观察代码。而在机器学习时代，它演变为`Evaluation Harness`（**评估环境**），用于测量模型得分。
 
 但到了智能体时代，系统不再是简单的输入输出，而是需要主动调用工具、修改文件。本文指出，Agent Harness继承了控制的隐喻，但发生了关键的时间点偏移：它不仅在事后评估，更在运行时进行动态干预与控制。
 
-<img src="/images/2606.10106v1/harness_timeline_en.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.10106v1/harness_timeline_en.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 解剖核心：构成Agent Harness的4大必要条件
 
 为了将模糊的口号转化为可操作的测量工具，该研究提出了一套包含四个要素的包含与排除测试。要让这匹“大模型之马”拉动“复杂任务之车”，Harness必须在运行时（Runtime）集齐以下四件核心装备：
 
-<img src="/images/2606.10106v1/harness_anatomy.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2606.10106v1/harness_anatomy.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 #### 条件一：维持动态循环（$T1$）
 系统是否在运行时维持一个交织了推理、行动和观察的循环？

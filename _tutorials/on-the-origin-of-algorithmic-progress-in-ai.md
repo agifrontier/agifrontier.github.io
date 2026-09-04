@@ -13,7 +13,7 @@ related_tutorials:
 
 ## AI效率万倍增长神话破灭？MIT研究：90%的功劳来自Transformer的规模效应
 
-<img src="/images/2511.21622v1/A__title.jpg" alt="AI效率万倍增长神话破灭？MIT研究：90%的功劳来自Transformer的规模效应 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.21622v1/A__title.webp" alt="AI效率万倍增长神话破灭？MIT研究：90%的功劳来自Transformer的规模效应 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 过去十年，人工智能的训练效率据称飙升了惊人的22000倍！这听起来像是无数算法天才夜以继日、不断堆砌微小创新共同铸就的奇迹。但事实果真如此吗？
 
@@ -39,7 +39,7 @@ related_tutorials:
 
 结果令人震惊。如下图所示，即便是像从 $SGD$ 切换到 $Adam$ 这样公认的巨大改进，也只带来了不到 $2\times$ 的效率提升。而其他大部分创新的增益更是微乎其微。
 
-<img src="/images/2511.21622v1/compute_multiplier_estimates.jpg" alt="图1：各项算法创新的计算等效增益" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.21622v1/compute_multiplier_estimates.webp" alt="图1：各项算法创新的计算等效增益" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 将这些在小模型上测得的、看似“重要”的创新全部加起来，总的效率增益还不到10倍！
 
@@ -53,7 +53,7 @@ related_tutorials:
 
 这次，他们将目光投向了AI历史上最重要的一次架构交替：从LSTM到Transformer。
 
-<img src="/images/2511.21622v1/neurips_two_panel_scaling.jpg" alt="图4：不同架构的缩放曲线对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.21622v1/neurips_two_panel_scaling.webp" alt="图4：不同架构的缩放曲线对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 上图揭示了核心秘密。
 
@@ -73,7 +73,7 @@ related_tutorials:
 
 将这些因素综合考虑后，研究者们对算法进步的贡献进行了重新分解。
 
-<img src="/images/2511.21622v1/scale_dependent_stackplot.jpg" alt="图6：算法进步的来源分解" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.21622v1/scale_dependent_stackplot.webp" alt="图6：算法进步的来源分解" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 这张图清晰地显示，在迈向2025年计算前沿（约 $2 \times 10^{23}$ FLOPs）的过程中，从LSTM到Transformer的转变（图中橙色区域）占据了算法效率增益的绝大部分，估计贡献了超过90%！
 

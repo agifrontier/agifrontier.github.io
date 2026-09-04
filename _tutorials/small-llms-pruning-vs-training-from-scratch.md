@@ -54,7 +54,7 @@ related_tutorials:
 
 当预算受限，即只能使用 $50$B 的 token 进行训练时，剪枝初始化（P$200$-R$50$）毫无悬念地碾压了随机初始化的从头训练（S$50$）。
 
-<img src="/images/2606.14150v1/x8.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.14150v1/x8.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在 $50\%$ 的经典剪枝率下，Minitron-D 让模型在 ARC Challenge 上的准确率比从零训练提升了 $4.5\%$，在 HellaSwag 上提升了 $6.1\%$。而更加细致的 Minitron-W 表现更为夸张，这两项指标的提升分别达到了惊人的 $8.2\%$ 和 $10.2\%$。
 
@@ -68,7 +68,7 @@ related_tutorials:
 
 这就是本研究最引人注目的发现：在充足的总算力面前，结构化剪枝惨遭反超，而稀疏剪枝依然坚挺。
 
-<img src="/images/2606.14150v1/x12.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.14150v1/x12.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 对于结构化的 Minitron-D 而言，S$250$ 在所有基准测试中完成了全面超越。不管是困惑度还是零样本下游任务的准确率，从头训练的模型都比剪枝模型高出了 $0.6\%$ 到 $4.0\%$。即使是表现更好的 Minitron-W，其领先优势也被极大压缩。这意味着，粗粒度结构化剪枝所传递的知识，只要给足数据，从头训练完全可以通过勤能补拙来弥补。
 

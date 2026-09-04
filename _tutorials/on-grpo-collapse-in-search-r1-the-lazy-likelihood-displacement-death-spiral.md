@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 破解AI智能体训练“死亡螺旋”：LLDS让Qwen2.5性能大涨37.8%
 
-<img src="/images/2512.04220v1/A__title.jpg" alt="破解AI智能体训练“死亡螺旋”：LLDS让Qwen2.5性能大涨37.8% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.04220v1/A__title.webp" alt="破解AI智能体训练“死亡螺旋”：LLDS让Qwen2.5性能大涨37.8% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当AI智能体（Agent）学会使用搜索引擎等外部工具时，它们解决复杂问题的能力将发生质的飞跃。然而，一条“捷径”式的训练方法——**组相对策略优化**（**Group Relative Policy Optimization, GRPO**）却隐藏着一个致命缺陷：模型在训练中常常毫无征兆地“突然死亡”，性能一落千丈。
 
@@ -22,7 +22,7 @@ related_tutorials:
 
 这究竟是为什么？最近，来自UBC、UC Berkeley等顶尖机构的研究者们，终于揪出了导致这场“悲剧”的幕后黑手，并提出了一种极其简单有效的“解药”，不仅稳定了训练过程，还让Qwen2.5系列模型在多项问答任务上性能飙升，最高提升达**37.8%**！
 
-<img src="/images/2512.04220v1/performance_comparison_7b_v2.jpg" alt="Qwen2.5-7B模型性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.04220v1/performance_comparison_7b_v2.webp" alt="Qwen2.5-7B模型性能对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### AI智能体的“阿喀琉斯之踵”：GRPO与训练崩溃
 
@@ -54,14 +54,14 @@ GRPO因其收敛快、无需价值函数等优点，在**工具集成强化学�
 
 3.  **加速崩溃**：似然值急剧下跌，导致梯度爆炸，最终引发奖励雪崩。
 
-<img src="/images/2512.04220v1/LD_dynamic_v3.jpg" alt="似然位移动态过程" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.04220v1/LD_dynamic_v3.webp" alt="似然位移动态过程" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 研究者将这个自我强化的恶性循环命名为**LLD死亡螺旋**（**LLD Death Spiral**）：
 > 似然下降 ➡️ 模型信心不足 ➡️ 来自低似然错误答案的负梯度被放大 ➡️ 进一步扼杀正确答案的似然 ➡️ 梯度爆炸 ➡️ 彻底崩溃！
 
 如下图所示，在崩溃前夕，模型的熵（不确定性）会急剧飙升，这正是LLD问题恶化的一个明确信号。
 
-<img src="/images/2512.04220v1/entropy_fig.jpg" alt="训练过程中的熵变化" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.04220v1/entropy_fig.webp" alt="训练过程中的熵变化" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 精准“手术”：轻量级正则化方法LLDS
 
@@ -100,7 +100,7 @@ LLDS的效果立竿见影。
 
 而加入了LLDS之后，所有模型的训练都变得异常稳定，奖励持续攀升，成功摆脱了“死亡螺旋”的宿命。
 
-<img src="/images/2512.04220v1/comparison_7b_instruct.jpg" alt="不同模型上GRPO与GRPO+LLDS的训练奖励对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.04220v1/comparison_7b_instruct.webp" alt="不同模型上GRPO与GRPO+LLDS的训练奖励对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 更重要的是，稳定的训练带来了实打实的性能提升。
 

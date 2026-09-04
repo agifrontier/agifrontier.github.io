@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">CAKE: Compiler-Agent Co-Design for Frontier Kernel Evolution</p>
 
-<img src="/images/2608.12629v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.12629v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在过去几年中，利用大型语言模型（Agent）来编写和优化底层 GPU 代码（Kernel）成为了提升 AI 计算效率的热门路径。然而，当前的大部分尝试都面临着一个难以逾越的瓶颈：Agent 通常将编译器视为一个僵化的黑盒。它们提交代码、等待编译、运行测试，最后只能获得一个冰冷的报错信息或一个总体的执行延迟数字。系统从不告诉 Agent 究竟是哪一次同步引发了死锁、哪一种内存布局打破了硬件契约，或者是哪一步流水线导致了计算停滞。
 

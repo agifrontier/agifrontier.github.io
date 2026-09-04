@@ -14,7 +14,7 @@ related_tutorials:
 
 ## LLSA：让Diffusion Transformer提速28倍的“对数级”稀疏注意力机制
 
-<img src="/images/2512.16615v1/A__title.jpg" alt="LLSA：让Diffusion Transformer提速28倍的“对数级”稀疏注意力机制 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.16615v1/A__title.webp" alt="LLSA：让Diffusion Transformer提速28倍的“对数级”稀疏注意力机制 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 你是否曾被Diffusion Transformer（DiT）那令人惊叹的高清图像生成能力所折服？从Sora到FLUX，这些模型正在重塑视觉生成的边界。
 
@@ -62,7 +62,7 @@ LLSA引入了一种**混合粒度**的策略：
 
 这就好比我们在看一幅画：对于焦点区域，我们用放大镜看细节；对于背景区域，我们用余光看轮廓。这样既保留了**全局上下文（Global Context）**，又极大地减少了计算量。
 
-<img src="/images/2512.16615v1/x1.jpg" alt="LLSA架构图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.16615v1/x1.webp" alt="LLSA架构图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 极致的工程优化：告别Dense Mask
 
@@ -82,7 +82,7 @@ LLSA引入了一种**混合粒度**的策略：
 
 *   **质量更优**：得益于KV富集机制，LLSA即使在$K=8$这种极小的稀疏度下，其生成质量（FID分数）依然优于其他需要$K=32$的稀疏注意力方法。
 
-<img src="/images/2512.16615v1/x3.jpg" alt="加速比对比图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.16615v1/x3.webp" alt="加速比对比图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 总结
 

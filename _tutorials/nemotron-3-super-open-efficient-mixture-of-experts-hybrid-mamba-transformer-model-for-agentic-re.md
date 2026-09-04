@@ -42,7 +42,7 @@ NVIDIA最近开源的Nemotron 3 Super交出了一份惊艳的答卷。这款总�
 
 该研究引入了创新的LatentMoE架构。如图所示，输入Token $x$ 首先通过一个可学习的降维矩阵，被压缩到一个低维的“潜在空间”。
 
-<img src="/images/2604.12374v1/latent_moe.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2604.12374v1/latent_moe.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 这个过程好比先将厚重的文件浓缩成一页纸的“核心摘要”，然后再分发给数量更多、分工更细的专家进行处理。
 
@@ -68,7 +68,7 @@ NVIDIA最近开源的Nemotron 3 Super交出了一份惊艳的答卷。这款总�
 
 由于采用了共享权重，预测头在生成多步内容时不会出现严重的分布偏移现象，最终交由主模型一次性验证即可。在SPEED-Bench测试中，该设计展现了极高的接受率。
 
-<img src="/images/2604.12374v1/mtp_trtllm_perf.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2604.12374v1/mtp_trtllm_perf.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 极致的预训练工程
 
@@ -84,7 +84,7 @@ NVIDIA最近开源的Nemotron 3 Super交出了一份惊艳的答卷。这款总�
 
 Nemotron 3 Super的后训练阶段极具特色，重点强化了智能体的长程推理与工具调用能力。
 
-<img src="/images/2604.12374v1/x11.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.12374v1/x11.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 #### 双阶段监督微调
 

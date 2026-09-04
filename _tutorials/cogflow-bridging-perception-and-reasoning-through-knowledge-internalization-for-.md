@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 拒绝“看对算错”！CogFlow首创知识内化机制，7B模型视觉数学推理SOTA
 
-<img src="/images/2601.01874v1/A__title.jpg" alt="拒绝“看对算错”！CogFlow首创知识内化机制，7B模型视觉数学推理SOTA 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.01874v1/A__title.webp" alt="拒绝“看对算错”！CogFlow首创知识内化机制，7B模型视觉数学推理SOTA 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 多模态大模型（MLLM）在处理视觉数学问题时，经常会出现一种令人啼笑皆非的现象：模型明明准确识别出了图中的几何元素（比如识别出是一个直角三角形），但在随后的推理计算中，却完全无视这些视觉证据，开始“一本正经地胡说八道”。
 
@@ -34,7 +34,7 @@ related_tutorials:
 
 2.  **解耦式推理（Decoupled）**：先用一个模块提取视觉信息，再扔给语言模型推理。
 
-<img src="/images/2601.01874v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.01874v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 然而，研究团队发现，解耦式方案虽然提升了感知的准确率，但推理模块往往会忽略提取出的视觉线索，产生**推理漂移**。这就像一个学生明明抄下了题目中的条件，解题时却完全没用到，全靠瞎蒙。
 
@@ -44,7 +44,7 @@ related_tutorials:
 
 CogFlow 严格遵循“感知 $\Rightarrow$ 内化 $\Rightarrow$ 推理”的认知流程，并针对每个阶段设计了专门的增强机制。
 
-<img src="/images/2601.01874v1/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01874v1/x3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 #### 1. 感知阶段：协同视觉奖励（SynVRs）
 
@@ -76,7 +76,7 @@ VGPO 的核心思想非常直观：**如果第一步看都看错了，后面推�
 
 在 FlowVerse、MathVerse、MathVista 等多个主流基准测试上的实验结果表明，CogFlow 取得了显著的性能提升。
 
-<img src="/images/2601.01874v1/x10.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.01874v1/x10.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 从上表可以看出：
 

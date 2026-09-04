@@ -49,13 +49,13 @@ related_tutorials:
 
 而RHO的机制则是：让探险家在营地里，独自翻看过去失败和成功的探险录像。通过分析录像找出装备箱里的短板，然后自己打造新工具，重写生存指南。
 
-<img src="/images/2606.05922v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.05922v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### RHO的三阶段进化机制
 
 RHO的优化过程完全摒弃了真实标签，主要由三个精心设计的阶段构成。
 
-<img src="/images/2606.05922v1/x2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.05922v1/x2.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 #### 第一阶段：核心集采样，兼顾难度与多样性
 
@@ -115,7 +115,7 @@ RHO的优化过程完全摒弃了真实标签，主要由三个精心设计的�
 
 更深层次的改变，发生在了智能体的行为模式上。
 
-<img src="/images/2606.05922v1/x4.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.05922v1/x4.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如图4所示，优化后的智能体，在长周期任务中的成功率显著上升。
 

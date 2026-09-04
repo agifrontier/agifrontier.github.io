@@ -130,7 +130,7 @@ Agent 成功复现了 75.8% 的数据，误差控制在 5% 以内。
 人类审稿人拥有强大的文献储备，能指出研究的背景缺陷。
 而 Agent 拥有强大的计算触角，能通过实际跑数据发现致命的数值硬伤。
 
-<img src="/images/2604.12198v1/x4.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2604.12198v1/x4.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 如上图的重叠矩阵所示，Agent 提出了 10 项人类审稿人完全没有发现的新问题。
 人类不曾在审稿时去运行极其复杂的计算仿真，而 Agent 做到了。

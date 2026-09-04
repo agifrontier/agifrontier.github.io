@@ -40,7 +40,7 @@ related_tutorials:
 ### DeepSeekMath语料库构建
 为了获得高质量的数学预训练数据，本文设计了一个从Common Crawl (CC) 中挖掘数学网页的迭代式流程。
 
-<img src="/images/2402.03300v3/x1.jpg" alt="迭代式数据收集流程" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2402.03300v3/x1.webp" alt="迭代式数据收集流程" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 1.  **初始阶段**：使用一个高质量的数学文本集合OpenWebMath作为种子语料，训练一个fastText分类器，用于从海量CC数据中初步召回与数学相关的网页。
 2.  **迭代优化**：为了提升分类器的多样性和准确性，本文分析了初次召回的网页所属的域名，将数学内容占比较高的域名（如 $$mathoverflow.net$$）识别出来。然后，通过人工标注这些域名下的特定URL模式，将更多未被召回的数学网页补充到种子语料中。
@@ -73,7 +73,7 @@ related_tutorials:
 ### 组相对策略优化 (GRPO)
 PPO算法需要一个与策略模型大小相当的评论家模型来估计值函数，这带来了巨大的资源开销。GRPO通过以下方式解决了这个问题：
 
-<img src="/images/2402.03300v3/x2.jpg" alt="PPO与GRPO对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2402.03300v3/x2.webp" alt="PPO与GRPO对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *   **核心机制**：对于每个问题，GRPO不再依赖评论家模型，而是让当前策略模型生成一组（例如64个）不同的答案。然后，一个奖励模型（reward model）为这些答案打分。
 *   **优势估计**：GRPO使用这组答案的**平均奖励**作为基线（baseline）。每个答案的优势（advantage）就是其自身奖励与该组平均奖励的差值。这个相对优势 $$$\hat{A}\_{i,t}$$$ 被用来指导策略模型的优化。

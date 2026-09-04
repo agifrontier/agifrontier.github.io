@@ -14,7 +14,7 @@ related_tutorials:
 
 ## Loss一直降，模型却没学会？揭秘LLM持续预训练的“学习假象”
 
-<img src="/images/2601.03858v1/A__title.jpg" alt="Loss一直降，模型却没学会？揭秘LLM持续预训练的“学习假象” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.03858v1/A__title.webp" alt="Loss一直降，模型却没学会？揭秘LLM持续预训练的“学习假象” 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型训练的常识中，有一个根深蒂固的信仰：**Loss（损失函数）是真理**。我们默认只要 Loss 曲线平滑下降，模型就在稳步变强，新的知识就在被“吸收”。
 
@@ -52,7 +52,7 @@ related_tutorials:
 
 但是，代表**事实召回率（Factual Recall）**（橙线）的曲线却像过山车一样剧烈震荡！模型在某个 Epoch 学会了新知识，下一个 Epoch 可能就忘了，接着又重新学会。
 
-<img src="/images/2601.03858v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.03858v1/x1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 **这意味着什么？**
 
@@ -66,7 +66,7 @@ related_tutorials:
 
 *   **低频实体**（Low-Frequency Entities）：对于那些冷门的知识，模型几乎**完全学不进去**。无论你训练多少个 Epoch，召回率始终在低位徘徊。
 
-<img src="/images/2601.03858v1/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.03858v1/x3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，低频实体（左侧）的召回率几乎是一条死线。这说明，如果你的新知识不够“热门”，仅仅通过 CPT 灌输，模型很可能根本记不住。
 
@@ -92,7 +92,7 @@ related_tutorials:
 
 *   OOD 能力更是直接腰斩，再也没恢复。
 
-<img src="/images/2601.03858v1/x4.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.03858v1/x4.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 这证明了“大力出奇迹”在 CPT 场景下是行不通的。随着训练的进行，模型并没有巩固知识，而是在不断地**覆写（Overwriting）**。
 
@@ -102,7 +102,7 @@ related_tutorials:
 
 结果发现，随着 Epoch 的推移，负责同一个知识点的“电路”在不断地**剧烈重组**。
 
-<img src="/images/2601.03858v1/x5.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.03858v1/x5.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 上图展示了不同 Epoch 之间知识回路的 Jaccard 相似度。可以看到，相似度极低。这意味着，模型并不是在强化某一条通路来记忆知识，而是每次都在寻找新的、临时的通路来“过拟合”当前的数据。这种**不稳定的内部表征**，正是导致“学了就忘”的根本原因。
 

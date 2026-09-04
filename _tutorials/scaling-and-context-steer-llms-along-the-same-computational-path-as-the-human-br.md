@@ -13,7 +13,7 @@ related_tutorials:
 
 ## LLM与人脑“神同步”：Meta AI证实模型越大，计算路径越像人
 
-<img src="/images/2512.01591v1/A__title.jpg" alt="LLM与人脑“神同步”：Meta AI证实模型越大，计算路径越像人 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.01591v1/A__title.webp" alt="LLM与人脑“神同步”：Meta AI证实模型越大，计算路径越像人 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大型语言模型（LLM）和人类大脑，一个由硅基芯片驱动，一个由碳基神经元构成，它们的思考方式会有共同点吗？
 
@@ -33,7 +33,7 @@ LLM的浅层网络活动对应大脑的早期反应，而深层网络则对应�
 
 他们让受试者在**脑磁图**（**Magnetoencephalography, MEG**）扫描仪中，聆听长达10小时的有声读物，并记录下大脑的实时神经信号。
 
-<img src="/images/2512.01591v1/method_figure_tmax.jpg" alt="实验方法示意图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.01591v1/method_figure_tmax.webp" alt="实验方法示意图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 与此同时，研究人员将相同的文本输入到22个不同架构和规模的LLM中（如Llama 3, GPT-2, Mamba等）。
 
@@ -61,7 +61,7 @@ LLM的浅层（输入端）激活，与大脑接收到单词后约200-300毫秒�
 
 结果清晰地显示，时间对齐现象随着模型规模的增长而出现并增强。
 
-<img src="/images/2512.01591v1/x1.jpg" alt="时间对齐随模型规模增长而增强" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.01591v1/x1.webp" alt="时间对齐随模型规模增长而增强" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 - 对于1400万参数的小模型，时间对齐分数$r$仅为0.44，不具备统计显著性。
 
@@ -77,7 +77,7 @@ LLM的浅层（输入端）激活，与大脑接收到单词后约200-300毫秒�
 
 研究人员在Llama-3.2 3B模型上进行了测试，逐步增加输入文本的上下文长度。
 
-<img src="/images/2512.01591v1/x2.jpg" alt="时间对齐随上下文长度增加而增强" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.01591v1/x2.webp" alt="时间对齐随上下文长度增加而增强" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 - 当没有上下文（仅单个词）时，时间对齐分数$r$仅为0.19。
 
@@ -91,7 +91,7 @@ LLM的浅层（输入端）激活，与大脑接收到单词后约200-300毫秒�
 
 研究团队通过控制实验排除了这种简单的解释。他们发现，无论是对于非常容易预测的词，还是非常出人意料的“惊喜”词，LLM与大脑的时间对齐都非常稳固。
 
-<img src="/images/2512.01591v1/x3.jpg" alt="对齐分数与词语可预测性关系不大" style="width:85%; max-width:600px; margin:auto; display:block;">LLM与人脑惊人同步！Meta AI揭示：模型越大、上下文越长，计算路径越像人
+<img src="/images/2512.01591v1/x3.webp" alt="对齐分数与词语可预测性关系不大" style="width:85%; max-width:600px; margin:auto; display:block;">LLM与人脑惊人同步！Meta AI揭示：模型越大、上下文越长，计算路径越像人
 
 ---
 
@@ -107,7 +107,7 @@ LLM的浅层（输入端）激活，与大脑接收到单词后约200-300毫秒�
 
 他们采集了受试者在收听长达10小时有声书时的**脑磁图**（**Magnetoencephalography, MEG**）数据。MEG能够以毫秒级精度捕捉大脑处理语言时的动态神经信号。
 
-<img src="/images/2512.01591v1/method_figure_tmax.jpg" alt="实验方法示意图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.01591v1/method_figure_tmax.webp" alt="实验方法示意图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 与此同时，研究团队将相同的文本输入到22个不同架构和规模的LLM中（包括Llama 3、GPT-2、Mamba等），并提取出模型每一层的激活值。
 
@@ -128,7 +128,7 @@ LLM的浅层（输入端）激活，与大脑接收到单词后约200-300毫秒�
 
 而LLM的深层网络激活，则与大脑后期的、更高级的语义整合阶段的神经反应（约400-500毫秒）最为匹配。
 
-<img src="/images/2512.01591v1/main_tmax_alignment_order.jpg" alt="LLM层深度与大脑响应时间的对齐" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.01591v1/main_tmax_alignment_order.webp" alt="LLM层深度与大脑响应时间的对齐" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 简单来说，从接收一个词开始，大脑和LLM似乎都在沿着一条相似的计算路径前进：从低阶的特征提取，逐步走向高阶的语义理解。
 
@@ -142,7 +142,7 @@ LLM的浅层（输入端）激活，与大脑接收到单词后约200-300毫秒�
 
 通过分析Pythia系列模型（从1400万到120亿参数，在相同数据上训练），研究者发现了一个清晰的规律：模型越大，其计算路径与人脑的“时间对齐”程度就越高。
 
-<img src="/images/2512.01591v1/x1.jpg" alt="时间对齐随模型规模增长而增强" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.01591v1/x1.webp" alt="时间对齐随模型规模增长而增强" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，14M参数的小模型，其时间分数并不显著（$r$ = 0.44）。
 
@@ -162,7 +162,7 @@ LLM的浅层（输入端）激活，与大脑接收到单词后约200-300毫秒�
 
 随着上下文窗口的增长，时间对齐分数也呈现出对数级的增长。
 
-<img src="/images/2512.01591v1/x2.jpg" alt="时间对齐随上下文长度增长而增强" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.01591v1/x2.webp" alt="时间对齐随上下文长度增长而增强" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当模型只看到当前单词（无上下文）时，时间对齐几乎不存在（$r$ = 0.19）。
 
@@ -178,7 +178,7 @@ LLM的浅层（输入端）激活，与大脑接收到单词后约200-300毫秒�
 
 结果发现，无论是处理高预测性的词还是低预测性的词（“惊喜词”），LLM都与人脑保持了显著的时间对齐。
 
-<img src="/images/2512.01591v1/x3.jpg" alt="时间对齐与单词可预测性无关" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.01591v1/x3.webp" alt="时间对齐与单词可预测性无关" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 这表明，时间对齐并非简单源于自回归预测任务本身，而是反映了一种更深层次、更普适的语言处理机制。
 

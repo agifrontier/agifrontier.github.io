@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 打破深度学习“幻觉”：哥大&谷歌提出Nested Learning，重构大模型记忆与进化
 
-<img src="/images/2512.24695v1/A__title.jpg" alt="打破深度学习“幻觉”：哥大&谷歌提出Nested Learning，重构大模型记忆与进化 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.24695v1/A__title.webp" alt="打破深度学习“幻觉”：哥大&谷歌提出Nested Learning，重构大模型记忆与进化 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 你是否意识到，当今最强大的大语言模型（LLM），本质上都患有一种神经学上的疾病——**顺行性遗忘症**（**Anterograde Amnesia**）？
 

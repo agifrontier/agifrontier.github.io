@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 单词破碎，性能崩塌？揭秘Tokenization如何悄悄“降智”大模型
 
-<img src="/images/2512.21933v1/A__title.jpg" alt="单词破碎，性能崩塌？揭秘Tokenization如何悄悄“降智”大模型 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.21933v1/A__title.webp" alt="单词破碎，性能崩塌？揭秘Tokenization如何悄悄“降智”大模型 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在训练大语言模型（LLM）的万里长征中，第一步往往最容易被忽视，却可能埋下致命的隐患。
 
@@ -73,7 +73,7 @@ related_tutorials:
 
 *   这意味着，如果一段文本的“切分惩罚”很高，那么模型处理这段文本时出错的概率就会大大增加。
 
-<img src="/images/2512.21933v1/x1.jpg" alt="实验结果图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.21933v1/x1.webp" alt="实验结果图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图注：实验显示，当单词被切分为多个 Token 时（橙色柱），模型性能普遍低于单词未被切分时（蓝色柱）。*
 

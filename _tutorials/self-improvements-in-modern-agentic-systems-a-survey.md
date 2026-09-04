@@ -42,7 +42,7 @@ related_tutorials:
 
 真正的自我提升，被本文形式化为一个自我诱导的更新操作符 $\mathcal{U}$。当系统在环境中运行并遇到问题时，它会基于自身的执行经验产生更新信号，并调用 $\mathcal{U}$ 来持久化地修改自身的内部组件。基于此，该研究将自我提升划分为两条截然不同的技术轨道。
 
-<img src="/images/2607.13104v1/x4.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.13104v1/x4.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 寻根溯源：自然语言如何打破历史瓶颈
 
@@ -65,7 +65,7 @@ related_tutorials:
 
 这种演进方式的特点是“慢而深远”。虽然每一次参数更新都需要耗费巨大的算力，并且迭代周期漫长，但它能带来认知能力的全局性跃升。这种能力的提升被永久固化，能够平摊到未来所有的多任务执行中，使得系统的基础泛化能力得到实质性增强。
 
-<img src="/images/2607.13104v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.13104v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 轨道二：操作脚手架结构重构
 

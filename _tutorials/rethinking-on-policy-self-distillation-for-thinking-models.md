@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Rethinking On-Policy Self-Distillation for Thinking Models</p>
 
-<img src="/images/2607.05184v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.05184v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大型语言模型的自我进化路线中，带有特权上下文的同策略自蒸馏（On-Policy Self-Distillation, OPSD）一直被视为一种极具潜力的范式。这种方法让模型互为师生，同时给予“教师”模型额外的特权信息（例如标准答案或完整解题步骤），从而引导“学生”模型更高效地学习。对于依赖测试时计算（Test-Time Compute）的思考模型（Thinking Models）而言，这原本似乎是一个完美的自我提升工具——因为思考模型有能力在漫长的推理轨迹中充分吸收这些特权信息。
 
@@ -68,7 +68,7 @@ related_tutorials:
 
 研究人员还发现，这种退化现象具有很强的隐蔽性，尤其是在较短的生成预算下。
 
-<img src="/images/2607.05184v1/x1.jpg" alt="长短生成预算下的性能差异" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.05184v1/x1.webp" alt="长短生成预算下的性能差异" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，当在 4,000 到 8,000 Token 的短生成预算下进行评估时，经过黄金演示（Gold Demonstration）特权自蒸馏的模型，其表现甚至偶尔优于基础模型。这是因为特权蒸馏起到了一种“推理压缩”的作用，迫使模型更直接地走向答案。
 
@@ -78,7 +78,7 @@ related_tutorials:
 
 一个自然的问题是：如果在测试时，直接把特权上下文也喂给基础模型（这就模拟了训练时教师模型的状态），它会表现得差吗？
 
-<img src="/images/2607.05184v1/x2.jpg" alt="教师模型与学生模型的行为对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.05184v1/x2.webp" alt="教师模型与学生模型的行为对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 实验给出了否定的答案。如上图对比所示，当基础模型获得黄金演示作为上下文时，它自身生成的回复长度确实大幅缩短了，但这并没有损害它的 pass@k 指标，甚至还有所提升。这在逻辑上是说得通的，因为答案就在上下文里，模型不需要绕弯子。
 
@@ -88,7 +88,7 @@ related_tutorials:
 
 研究进一步对比了不同类型的特权上下文。如果仅仅给教师模型提供稀疏的“最终答案”（Final-answer-only），退化现象会相对温和；但如果提供极其密集的“完整解题过程”（Full-solution），性能下降就会极其显著。
 
-<img src="/images/2607.05184v1/x3.jpg" alt="稀疏特权上下文与密集特权上下文的对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.05184v1/x3.webp" alt="稀疏特权上下文与密集特权上下文的对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 从上图可以清晰地看到，带有密集黄金演示的模型在长预算下的性能变化幅度（红线）深深跌入负值区域，且生成长度被极其严重地压缩。这暗示了教师模型在获得完整解题路径后，对学生探索行为的惩罚更为严厉。
 
@@ -104,7 +104,7 @@ related_tutorials:
 
 思考模型之所以能纠错，正是因为它在分叉点能够进行多样的探索。
 
-<img src="/images/2607.05184v1/x4.jpg" alt="特权上下文重塑了轨迹的分布结构" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.05184v1/x4.webp" alt="特权上下文重塑了轨迹的分布结构" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 上图揭示了特权上下文对这一微观结构产生的深远影响。当教师模型获得了特权信息后，其概率分布发生了根本性的重塑。对于思考模型而言，特权信息显著降低了其输出分布中的分叉率（Fork Rates），同时大幅提升了锁定率（Lock Rates）。换句话说，对于站在“上帝视角”的教师而言，前方的道路一目了然，那些原本充满不确定性的分叉点，在它眼中变成了单行道。
 
@@ -112,7 +112,7 @@ related_tutorials:
 
 在真实的推理轨迹中，分叉点往往伴随着特定的词汇标记（Lexical Markers），也就是所谓的“认识论标记”或审慎标记，例如“wait（等等）”、“hmm（嗯）”、“but（但是）”、“maybe（也许）”或“alternatively（或者）”。这些词是模型正在进行探索、自我怀疑或准备开启自我纠错分支的强烈信号。
 
-<img src="/images/2607.05184v1/x5.jpg" alt="认识论标记在有无特权上下文时的信号反转" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.05184v1/x5.webp" alt="认识论标记在有无特权上下文时的信号反转" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图的 Token 级别信号分析所示，在没有特权上下文的普通蒸馏（Vanilla OPD）中，教师模型对这些审慎标记赋予了正向的优势（Positive Advantage），这意味着教师鼓励学生在不确定时进行这类表达。
 

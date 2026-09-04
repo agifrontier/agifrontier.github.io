@@ -43,7 +43,7 @@ related_tutorials:
 
 本文将基于权威机构的最新联合研究，全面解密大语言模型数据选择的底层逻辑与实战。
 
-<img src="/images/2402.16827v3/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2402.16827v3/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 数据选择的统一分类学
 
@@ -101,7 +101,7 @@ related_tutorials:
 
 这不仅能以极高效率压缩数据集体积，更能有效抑制模型对特定局部模式的死记硬背。
 
-<img src="/images/2402.16827v3/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2402.16827v3/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 颗粒度微操：整个数据集与局部数据点
 

@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 告别$O(N^2)$！LinMU让多模态大模型实现线性复杂度，推理提速9倍
 
-<img src="/images/2601.01322v1/A__title.jpg" alt="告别 ！LinMU让多模态大模型实现线性复杂度，推理提速9倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01322v1/A__title.webp" alt="告别 ！LinMU让多模态大模型实现线性复杂度，推理提速9倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当前最先进的多模态大模型（VLMs）虽然在理解图像和视频方面表现惊人，但它们都有一个共同的“阿喀琉斯之踵”：基于Transformer的自注意力机制带来的二次方计算复杂度（$O(N^2)$）。这意味着，随着输入视频变长或图像分辨率变高，计算成本会呈爆炸式增长。
 
@@ -35,7 +35,7 @@ LinMU 的核心思想非常直接：彻底移除 VLM 中昂贵的自注意力层
 
     采用固定窗口大小的 $$**3D Swin Attention**$$。它只关注局部的时空相关性，计算量是线性的。它就像模型的“显微镜”，负责捕捉相邻像素间的精细关联。
 
-<img src="/images/2601.01322v1/teaser.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01322v1/teaser.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 通过这种“全局线性混合 + 局部精确注意”的组合，LinMU 既享受了 Mamba 的高效率，又保留了 Attention 在处理局部视觉特征时的优势。
 
@@ -51,7 +51,7 @@ LinMU 的核心思想非常直接：彻底移除 VLM 中昂贵的自注意力层
 
 *   **阶段三**：通过 $$**LoRA**$$ 微调其余的骨干网络层。这一步是为了让整个模型适应新的线性模块，进一步对齐教师模型的隐藏状态和输出分布。
 
-<img src="/images/2601.01322v1/x5.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01322v1/x5.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 性能与效率的完美平衡
 
@@ -67,7 +67,7 @@ LinMU 的表现如何？实验结果令人印象深刻。
 
 下图展示了随着输入序列长度增加，LinMU 相比传统 VLM 在延迟和吞吐量上的巨大优势：
 
-<img src="/images/2601.01322v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.01322v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 总结
 

@@ -13,7 +13,7 @@ related_tutorials:
 
 ## GoAgent：让AI Agent学会“抱团”，准确率93.8%，Token成本降低17%
 
-<img src="/images/2603.19677v1/A__title.jpg" alt="GoAgent：让AI Agent学会“抱团”，准确率93.8%，Token成本降低17% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2603.19677v1/A__title.webp" alt="GoAgent：让AI Agent学会“抱团”，准确率93.8%，Token成本降低17% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 单个AI Agent的能力再强，也难解复杂任务。于是，**多智能体系统**（**Multi-Agent Systems, MAS**）应运而生，通过让多个Agent协作来解决问题。但一个核心挑战随之而来：如何组织这些Agent才能最高效？
 
@@ -27,7 +27,7 @@ related_tutorials:
 
 传统方法构建通信网络时，一次只考虑一个Agent，这被称为**节点中心**（**node-centric**）范式。这种方式的弊端显而易见：它无法从宏观上把握任务所需的协作结构，容易产生不必要的沟通，甚至导致关键角色缺失。
 
-<img src="/images/2603.19677v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2603.19677v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图1：(a) 节点中心范式 vs (b) GoAgent的群组中心范式*
 
@@ -41,7 +41,7 @@ GoAgent则开创了**群组中心**（**group-centric**）的新范式。它不�
 
 2.  **简化宏观协调**：模型只需关注更高层级的群组间依赖关系，大大降低了构建的复杂度。
 
-<img src="/images/2603.19677v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.19677v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图2：GoAgent整体架构概览*
 
@@ -117,7 +117,7 @@ GoAgent的表现在六个主流基准测试（包括MMLU、GSM8K和HumanEval等�
 
 效率是衡量多智能体系统好坏的另一个关键指标。如下图所示，GoAgent在实现更高准确率的同时，还成功将Token消耗降低了约17%。
 
-<img src="/images/2603.19677v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2603.19677v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图3：Token消耗对比*
 

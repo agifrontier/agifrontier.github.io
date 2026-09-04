@@ -99,23 +99,23 @@ $${% endraw %}
 
 ### 基础设施创新
 
-<img src="/images/2501.12599v4/x3.jpg" alt="系统总览" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2501.12599v4/x3.webp" alt="系统总览" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *   **大规模RL训练系统**: 本文构建了一个同步迭代的RL训练系统。系统包含一个中央主节点（central master）、rollout工作节点和训练工作节点。Rollout节点负责生成经验存入Replay Buffer，训练节点则从中取数据更新模型。
 
-<img src="/images/2501.12599v4/x4.jpg" alt="部分Rollout示意图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2501.12599v4/x4.webp" alt="部分Rollout示意图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *   **部分Rollout (Partial Rollouts)**: 这是支持长上下文RL的核心技术。系统为每次rollout设定一个固定的Token预算。如果一次生成没有完成，未完成的部分会被存入Replay Buffer，在下一次迭代中继续生成。这样，前序内容可以被高效复用，极大地降低了生成长序列的计算开销。
 
-<img src="/images/2501.12599v4/x5.jpg" alt="混合部署框架" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2501.12599v4/x5.webp" alt="混合部署框架" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *   **训练与推理的混合部署**: 为了极致地利用GPU资源，本文设计了一个混合部署框架。该框架利用Kubernetes Sidecar容器，在同一个Pod中同时部署训练框架（Megatron）和推理框架（vLLM）。在RL的训练阶段，GPU用于Megatron；在rollout（推理）阶段，模型权重通过内存高效传递给vLLM执行，训练进程则暂停。这避免了在On-Policy RL中因等待推理而导致的训练GPU闲置问题。
 
 ## 实验结论
 
-<img src="/images/2501.12599v4/x1.jpg" alt="Kimi k1.5 long-CoT 结果" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2501.12599v4/x1.webp" alt="Kimi k1.5 long-CoT 结果" style="width:85%; max-width:600px; margin:auto; display:block;">
 
-<img src="/images/2501.12599v4/x2.jpg" alt="Kimi k1.5 short-CoT 结果" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2501.12599v4/x2.webp" alt="Kimi k1.5 short-CoT 结果" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 本文通过在多个权威基准测试上进行评估，验证了所提出方法的有效性。
 

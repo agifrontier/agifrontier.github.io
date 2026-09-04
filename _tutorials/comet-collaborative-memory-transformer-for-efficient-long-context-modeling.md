@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 阿里CoMeT：32k训练解锁100万长文，显存恒定，告别KV Cache爆炸
 
-<img src="/images/2602.01766v1/A__title.jpg" alt="阿里CoMeT：32k训练解锁100万长文，显存恒定，告别KV Cache爆炸 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2602.01766v1/A__title.webp" alt="阿里CoMeT：32k训练解锁100万长文，显存恒定，告别KV Cache爆炸 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在大模型（LLM）的竞赛中，“长文本能力”一直是兵家必争之地。然而，现有的Transformer架构面临着一个物理定律般的诅咒：随着上下文长度增加，计算复杂度呈二次方爆炸，KV Cache更是像无底洞一样吞噬显存。
 
@@ -37,7 +37,7 @@ related_tutorials:
 
 CoMeT的设计理念非常精妙，它作为一个轻量级的“插件”模块，可以无缝集成到预训练模型中。其核心在于将输入文本切分成一个个块（Chunk），并利用两套记忆系统来管理上下文：
 
-<img src="/images/2602.01766v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2602.01766v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 #### 1. 临时记忆（Temporary Memory）：FIFO队列
 
@@ -55,7 +55,7 @@ CoMeT的设计理念非常精妙，它作为一个轻量级的“插件”模块
 
 *   **公式**：全局状态的更新公式为 $\mathbf{S}^{i}\_{\tau+1}=\mathbf{g}\odot\mathbf{S}^{i}\_{\tau}+(\mathbf{1}-\mathbf{g})\odot\tilde{\mathbf{S}}^{i}\_{\tau+1}$，其中 $\mathbf{g}$ 是门控权重。这有效防止了重要历史信息被后续无关信息“冲刷”掉。
 
-<img src="/images/2602.01766v1/x4.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2602.01766v1/x4.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，在处理每一个文本块时，模型会同时参考全局记忆 $\mathbf{G}^{i}\_{\tau}$ 和临时记忆 $\mathbf{T}^{i}\_{\tau}$，从而兼顾了全局大局观和局部细节。
 
@@ -65,7 +65,7 @@ CoMeT最令人印象深刻的特性是其强大的外推能力。研究人员仅
 
 结果如何？请看下图的“大海捞针”（Passkey Retrieval）测试：
 
-<img src="/images/2602.01766v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2602.01766v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *   **全绿的准确率**：图1(a)显示，无论密钥（Passkey）隐藏在1M上下文的哪个位置，CoMeT都能准确找回，准确率接近100%。
 

@@ -33,7 +33,7 @@ related_tutorials:
 本文首次对当前浩如烟海的AI Agent通信协议进行了全面摸底，提出了一套严谨的双维分类框架。
 该研究不仅为开发者梳理了底层逻辑，更揭示了迈向大规模分布式集体智能（Collective Intelligence）的核心路径。
 
-<img src="/images/2504.16736v3/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2504.16736v3/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 架构瓶颈
 
@@ -112,7 +112,7 @@ Agent在交互时，必须为输出打上“确认”、“反驳”、“修改
 它将架构解耦为应用协议层、传输层与身份安全层。
 通过引入万维网联盟的**去中心化标识符**（**Decentralized Identifiers, DIDs**），LMOS确保了跨组织交互的绝对可信。
 
-<img src="/images/2504.16736v3/development2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2504.16736v3/development2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 工程启示
 

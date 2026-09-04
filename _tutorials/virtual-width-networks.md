@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 字节跳动VWN：不加算力“拓宽”Transformer，训练提速高达3倍！
 
-<img src="/images/2511.11238v1/A__title.jpg" alt="字节跳动VWN：不加算力“拓宽”Transformer，训练提速高达3倍！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.11238v1/A__title.webp" alt="字节跳动VWN：不加算力“拓宽”Transformer，训练提速高达3倍！ 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 想让大模型更强，最直接的方法就是“加宽”——增加其隐藏层维度。但这会导致计算成本呈二次方爆炸式增长，成为一个难以逾越的瓶颈。
 
@@ -25,7 +25,7 @@ related_tutorials:
 
 字节跳动最新的研究**虚拟宽度网络**（**Virtual Width Networks, VWN**）给出了一个极为巧妙的答案。它通过一种创新的方式，在几乎不增加核心计算负载的前提下，实现了模型“虚拟宽度”的扩展，并带来了惊人的性能提升。
 
-<img src="/images/2511.11238v1/x4.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.11238v1/x4.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图注：(a) 标准Transformer，(b) 朴素加宽（计算量二次方增长），(c) VWN解耦了表征宽度和骨干网络宽度。*
 
@@ -43,7 +43,7 @@ VWN的核心洞见在于：**将表征宽度与骨干宽度解耦**。
 
 实现上述“压缩-扩展”操作的关键，是一种名为**广义超连接**（**Generalized Hyper-Connections, GHC**）的全新模块。
 
-<img src="/images/2511.11238v1/x5.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.11238v1/x5.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图注：VWN架构概览，GHC通过轻量级的矩阵A和B实现宽窄维度的灵活交互。*
 
@@ -67,7 +67,7 @@ MTP要求模型同时预测未来多个Token，这本身就需要模型具备更
 
 VWN的效果到底如何？研究在一系列大规模MoE模型上进行了验证，结果令人印象深刻。
 
-<img src="/images/2511.11238v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.11238v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图注：在一个3.3B参数的MoE模型上，VWN（橙线）与基线（蓝线）的训练损失对比。*
 

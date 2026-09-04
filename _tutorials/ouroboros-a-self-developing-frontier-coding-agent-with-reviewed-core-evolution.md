@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution</p>
 
-<img src="/images/2608.08311v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.08311v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 长视距 AI 智能体（Agent）的表现上限，早已不再仅仅取决于底层大模型的参数规模或基础能力。现如今，智能体的能力体现是一个由模型、执行环境（Harness）、环境交互边界和评估器共同组成的系统工程。随着大模型能力的不断跃升，智能体在组装上下文、调用复杂工具、验证任务执行结果以及从失败中进行状态恢复的策略，正在决定其最终能触及的天花板。
 
@@ -40,7 +40,7 @@ Ouroboros 的核心思想是将智能体自身的执行环境转变为一个受�
 
 启动监督层掌握着系统的生杀大权。它负责进程启动、运行时监督、系统恢复引导以及极其关键的恐慌停止（panic-stop）机制。这一层的代码是不允许智能体触碰的。与之相对，可变智能体代码库中则包含了任务循环主逻辑、所有外部工具的实现、系统提示词、记忆投射模块、甚至包括验证基准测试的适配器和用户交互界面。当 Ouroboros 在执行任务或进行自我反思时，它可以像一名人类工程师一样，在自身的代码库中进行开发、调试，并生成补丁（Patch）。
 
-<img src="/images/2608.08311v1/fig_interface.jpg" alt="任务树视图下的嵌套规划与执行子智能体运行状态" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2608.08311v1/fig_interface.webp" alt="任务树视图下的嵌套规划与执行子智能体运行状态" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 为了保证修改的质量并隔离风险，Ouroboros 支持生成只读的规划探测节点（Planning Scouts）和具有执行修改权限的子智能体（Acting Subagents）。这些子节点通常在独立的隔离工作区中运行，绝不允许直接提交到主系统代码库中。只有当子智能体将修改结果返回给父节点后，系统才会校验补丁的哈希值、代码谱系和受保护路径，随后通过一个三方索引的集成流程，将改动合并到主代码中。
 

@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Training AI Scientists to Replicate Research</p>
 
-<img src="/images/2608.13331v1/A__title.jpg" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2608.13331v1/A__title.webp" alt="" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 科学研究的基石在于可复现性。一个好的科学解释应当能够经受住反复的验证：在相同的实验条件下，应当能得出相同的结果。然而，当代科学特别是机器学习领域，正面临着严峻的“复现危机”。理论上，基于大语言模型（LLM）的智能体有潜力成为解决这一危机的可扩展方案，但在实践中，让AI独立完成论文复现一直是个未解之题。
 
@@ -44,7 +44,7 @@ Replica 的构建高度自动化且精妙。团队利用 Gemini 2.5 Pro 构建�
 
 在执行任务时，智能体会身处一个受限的沙盒中。它只能看到那份残缺的论文和图注，而无法看到原始图表长什么样。它被给予 60 分钟的严格时间限制，以及极度有限的算力资源（一块 H200 GPU 的七分之一算力切片）。这种资源匮乏的设定是刻意为之的：由于资源限制，智能体通常无法原封不动地跑完论文中动辄成百上千 GPU 小时的完整实验。它必须理解原始实验的科学本质，主动设计出一个“按比例缩减（scaled-down）”但仍然忠实于核心主张的微型实验。这种应对约束的创造力，正是从“盲目复制”向“真正的科学探索”跨越的关键一步。
 
-<img src="/images/2608.13331v1/methods_final.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.13331v1/methods_final.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 捕捉科学直觉：低噪声的动态评分评判器
 

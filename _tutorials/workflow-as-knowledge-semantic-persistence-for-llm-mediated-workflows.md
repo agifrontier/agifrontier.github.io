@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows</p>
 
-<img src="/images/2607.08740v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.08740v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 大语言模型（LLM）的应用正在发生一场不可逆转的结构性转变：从简单的单轮提示词（Prompting），全面转向由工具调用、检索、分支、检查点和人工审批构成的显式工作流（Explicit Workflows）。市面上的各种 Agent 框架通过图结构、节点状态和内存机制，在一定程度上解决了“如何让模型可控运行”的执行问题。
 
@@ -48,7 +48,7 @@ related_tutorials:
 
 3. **高层（语义层）**：这是整个模型的核心，包含工作流定义（Workflow Definitions）、工作流实例（Workflow Instances）及其链接的推理记录、审批记录和审议记录。
 
-<img src="/images/2607.08740v1/mermaid-001.55d3bc13c172.jpg" alt="Figure 1. Semantic workflow objects are interpreted by the DSL-machine control layer, which coordinates runtime services and writes back workflow instances, mediated effects, and records of inference, approval, and panel activity." style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.08740v1/mermaid-001.55d3bc13c172.webp" alt="Figure 1. Semantic workflow objects are interpreted by the DSL-machine control layer, which coordinates runtime services and writes back workflow instances, mediated effects, and records of inference, approval, and panel activity." style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在这种架构中，控制层读取语义对象，并在运行时将其执行结果“写回”为持久化的语义对象。这种双向关系确保了所有有意义的动作都不会以“过眼云烟”的形式消散，而是变成了系统中可供查询和复用的结构化数据。
 
@@ -64,7 +64,7 @@ related_tutorials:
 
 - **推理记录**：模型的每一次关键判断，都会附带当时的上下文快照一起打包保存，而不仅仅是把生成的文本拼接到对话记录里。
 
-<img src="/images/2607.08740v1/mermaid-002.b44c1e4dfbff.jpg" alt="Figure 2: Execution persistence retains runnable state, checkpoints, logs, traces, and outputs; semantic persistence treats workflow definitions, workflow instances, inference records, and context snapshots as first-class knowledge objects." style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.08740v1/mermaid-002.b44c1e4dfbff.webp" alt="Figure 2: Execution persistence retains runnable state, checkpoints, logs, traces, and outputs; semantic persistence treats workflow definitions, workflow instances, inference records, and context snapshots as first-class knowledge objects." style="width:85%; max-width:600px; margin:auto; display:block;">
 
 这种机制带来的最直接好处是极强的可审计性。当一个决策产生争议时，审查者提取出的不仅仅是一个最终文档，而是整个工作流实例，其中明确包含了当时模型能够获取哪些知识来源、受限于什么安全策略，以及它推导出该结果的具体链路。
 
@@ -80,7 +80,7 @@ related_tutorials:
 
 在工作流中执行 `infer` 时，执行器必须经过极为严格的流程：首先根据上下文范围组装出一份**上下文快照（Context Snapshot）**，接着附带上当前的策略要求发起模型调用，得到候选结果后，还需要执行器验证才能将值绑定到状态空间中。
 
-<img src="/images/2607.08740v1/mermaid-003.fbfb487bc625.jpg" alt="Figure 3. derive computes over available state; infer requests mediated LLM judgment whose recorded value may influence an executor-applied declared branch." style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.08740v1/mermaid-003.fbfb487bc625.webp" alt="Figure 3. derive computes over available state; infer requests mediated LLM judgment whose recorded value may influence an executor-applied declared branch." style="width:85%; max-width:450px; margin:auto; display:block;">
 
 这种区分极为关键，它剥夺了 LLM 直接操纵系统底层逻辑的权力。在很多试图让 LLM 扮演“全能上帝”直接生成代码并执行的方案中，风险往往不可控。而在这个架构下，LLM 只是一个被严格限制在 `infer` 槽位中的“中介组件”，它没有权力去改变执行规则，它的输出结果充其量只能影响执行器下一步选择哪条预设分支。
 
@@ -90,7 +90,7 @@ related_tutorials:
 
 执行器不仅要负责实例化工作流、检查安全策略（Policy checks）、调动运行时资源，更重要的是它控制着知识基底的写入权限。每一次状态转换完成后，执行器都会向底层知识基底写入一条关联的持久化记录。这使得系统拥有了一套内在的血统追踪机制。
 
-<img src="/images/2607.08740v1/mermaid-004.d3d720fe32c3.jpg" alt="Figure 4. The executor as controller of workflow instantiation, policy checks, runtime-mediated resources, transitions, and knowledge-substrate persistence." style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2607.08740v1/mermaid-004.d3d720fe32c3.webp" alt="Figure 4. The executor as controller of workflow instantiation, policy checks, runtime-mediated resources, transitions, and knowledge-substrate persistence." style="width:80%; max-width:300px; margin:auto; display:block;">
 
 ### 人类介入机制的深化：审批（Approval）与审议（Panel）
 

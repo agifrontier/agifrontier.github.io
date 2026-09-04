@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 微软Kascade：无需训练，H100上长文本推理提速4.1倍！
 
-<img src="/images/2512.16391v1/A__title.jpg" alt="微软Kascade：无需训练，H100上长文本推理提速4.1倍！ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.16391v1/A__title.webp" alt="微软Kascade：无需训练，H100上长文本推理提速4.1倍！ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在当今的大模型应用中，长上下文（Long-Context）能力已成为“兵家必争之地”。无论是RAG（检索增强生成）、代码助手，还是复杂的Agent推理，都依赖于模型处理海量Token的能力。然而，随着上下文长度的增加，推理延迟和显存占用呈指数级增长，尤其是Attention机制带来的 $O(n^2)$ 复杂度，成为了制约长文本落地的最大瓶颈。
 
@@ -36,7 +36,7 @@ Kascade的设计灵感源于两个简单却深刻的观察，这两个观察揭�
 
 Kascade 将模型的层分为两类：**锚点层（Anchor Layers）** 和 **复用层（Reuse Layers）**。
 
-<img src="/images/2512.16391v1/x3.jpg" alt="Figure 3: Cross-layer similarity" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.16391v1/x3.webp" alt="Figure 3: Cross-layer similarity" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *   **锚点层**：负责“干重活”。在这些层中，Kascade 计算精确的 Top-$k$ 索引。
 
@@ -72,7 +72,7 @@ Kascade 发现，锚点层的第 $i$ 个头，可能与复用层的第 $j$ 个�
 
 在 LongBench 和 AIME-24（一个专注于长文本推理的基准）上，Kascade 展现了卓越的稳定性。
 
-<img src="/images/2512.16391v1/x7.jpg" alt="Table 2: Results on AIME-24" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.16391v1/x7.webp" alt="Table 2: Results on AIME-24" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上表所示，在 AIME-24 测试中，相比于 Quest、OmniKV 等其他稀疏注意力方法，Kascade 在保持相同稀疏度（10% Top-$k$）的情况下，准确率大幅领先（提升了8-10个百分点），几乎与全量注意力（Dense）持平。
 

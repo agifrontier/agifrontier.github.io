@@ -13,7 +13,7 @@ related_tutorials:
 
 ## DeepSeek魔改残差连接：mHC仅增6.7%开销，完美驯服大模型训练不稳定性
 
-<img src="/images/2512.24880v1/A__title.jpg" alt="DeepSeek魔改残差连接：mHC仅增6.7%开销，完美驯服大模型训练不稳定性 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.24880v1/A__title.webp" alt="DeepSeek魔改残差连接：mHC仅增6.7%开销，完美驯服大模型训练不稳定性 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在过去十年里，深度学习架构的每一次飞跃，几乎都离不开一个核心组件——**残差连接**（**Residual Connection**）。从ResNet到Transformer，再到如今的LLM（如Llama、DeepSeek-V3），公式 $\mathbf{x} + \mathcal{F}(\mathbf{x})$ 简直就是现代AI的“地基”。
 
@@ -33,13 +33,13 @@ DeepSeek给出的答案既优雅又硬核：通过数学上的“流形投影”
 
 如图1(b)所示，HC通过将残差流的宽度扩展 $n$ 倍，并引入可学习的矩阵（$\mathcal{H}^{\mathrm{res}}$）来混合不同流之间的特征。这就好比把原来的单车道扩建成了多车道高速公路，并且允许车辆在车道间自由变道。
 
-<img src="/images/2512.24880v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.24880v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 **但问题随之而来：** 这种“自由变道”是完全不受控的。
 
 在HC中，随着层数的叠加，信号经过无数个矩阵 $\mathcal{H}^{\mathrm{res}}$ 的连乘，原本的“恒等映射”属性被破坏了。这会导致信号强度在深层网络中要么指数级爆炸，要么消失殆尽（如图3所示），从而引发严重的训练不稳定。此外，变宽的通道也带来了巨大的显存访问（I/O）压力，撞上了著名的“内存墙”。
 
-<img src="/images/2512.24880v1/x3.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.24880v1/x3.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### DeepSeek的解法：给矩阵戴上“流形”的镣铐
 
@@ -79,7 +79,7 @@ DeepSeek团队展示了他们深厚的系统功底，通过一系列“基建优
 
 3.  **DualPipe中的通信重叠**：在DeepSeek-V3使用的DualPipe流水线并行策略基础上，mHC进一步优化了调度（如图4）。通过将MLP层的计算放在高优先级流上，并允许注意力计算被抢占，成功掩盖了mHC带来的额外通信延迟。
 
-<img src="/images/2512.24880v1/x4.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.24880v1/x4.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 总结
 

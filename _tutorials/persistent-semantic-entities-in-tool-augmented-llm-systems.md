@@ -42,7 +42,7 @@ related_tutorials:
 
 为了准确描述这种威胁，研究团队将持久语义实体（ **PSE** ）形式化定义为一个包含三个核心机制的元组。这三个机制相互配合，共同构成了智能体系统的全新攻击面。
 
-<img src="/images/2608.07952v1/fig1_pse_overview.jpg" alt="PSE机制总览图，展示了名称绑定、事件触发与跨越边界的传播路径，以及不同类型污染在第10轮对话中的持久性差异。" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.07952v1/fig1_pse_overview.webp" alt="PSE机制总览图，展示了名称绑定、事件触发与跨越边界的传播路径，以及不同类型污染在第10轮对话中的持久性差异。" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 首先是名称绑定（ **Name Binding** ）。系统通常通过字符串标识符来注册执行逻辑（处理器），并通过名称到处理器的映射来触发行为。如果一个被污染的逻辑被绑定在一个看似合法的工具名称之下，它就会在其生命周期内持续劫持该名称的所有调用。
 

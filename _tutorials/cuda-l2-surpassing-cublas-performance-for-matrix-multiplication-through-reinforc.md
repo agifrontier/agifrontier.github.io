@@ -14,7 +14,7 @@ related_tutorials:
 
 ## AI当上CUDA工程师：性能超NVIDIA官方库26%，CUDA-L2来了！
 
-<img src="/images/2512.02551v1/A__title.jpg" alt="AI当上CUDA工程师：性能超NVIDIA官方库26%，CUDA-L2来了！ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.02551v1/A__title.webp" alt="AI当上CUDA工程师：性能超NVIDIA官方库26%，CUDA-L2来了！ 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在AI的世界里，从大模型训练到推理，几乎所有计算的核心都离不开一个基础操作：矩阵乘法。为了榨干GPU的每一滴性能，NVIDIA的工程师们用数十年经验打造了像cuBLAS这样神级的官方优化库。大家普遍认为，这已经是人类优化的天花板。但如果说，一个AI系统现在能自动写出比cuBLAS更快的代码，你敢信吗？
 
@@ -22,7 +22,7 @@ related_tutorials:
 
 这正是DeepReinforce团队最新研究CUDA-L2所实现的目标。该研究表明，通过结合大语言模型（LLM）和强化学习（RL），AI不仅能编写CUDA代码，甚至能在最关键的矩阵乘法任务上，系统性地超越NVIDIA官方高度优化的闭源库，在某些场景下性能提升高达26%！
 
-<img src="/images/2512.02551v1/x1.jpg" alt="Figure 1: CUDA-L2与各大基准的性能对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.02551v1/x1.webp" alt="Figure 1: CUDA-L2与各大基准的性能对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图1：CUDA-L2在1000种不同矩阵尺寸配置下的性能表现，分别对比了torch.matmul, cuBLAS, cuBLASLt-heuristic, 和 cuBLASLt-AutoTuning。*
 
@@ -68,7 +68,7 @@ CUDA-L2并非凭空出世，它是在其前身CUDA-L1的基础上，针对矩阵
 
 评测在两种模式下进行：**离线模式**（Offline），模拟GPU满负荷持续计算；**服务器模式**（Server），模拟真实世界中请求随机到达的场景。
 
-<img src="/images/2512.02551v1/1.jpg" alt="CUDA-L2性能对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.02551v1/1.webp" alt="CUDA-L2性能对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 
 *表1：CUDA-L2相较于各大基准的性能加速比。*
@@ -93,7 +93,7 @@ CUDA-L2的成功并非偶然。通过分析AI生成的代码，研究人员发�
 
 这种“因地制宜”的智慧，恰恰是人类专家进行优化的精髓，而现在，AI也学会了。
 
-<img src="/images/2512.02551v1/x2.jpg" alt="不同矩阵尺寸下的性能提升" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.02551v1/x2.webp" alt="不同矩阵尺寸下的性能提升" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 
 *表3：在离线模式下，CUDA-L2相对于cuBLASLt-AutoTuning在不同矩阵尺寸下的加速比。*

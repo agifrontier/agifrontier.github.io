@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Aborted but Not Forgotten: KV-Cache Retention Breaks Rollback Consistency in Language Agents</p>
 
-<img src="/images/2608.15939v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.15939v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 对于构建大语言模型智能体（Language Agent）的开发者而言，有一个几乎成为本能的开发假设：如果模型在多步执行中走错了路，或者获取了不安全的工具返回结果，我们只需要“撤销”这一步，把有害内容从对话历史（Transcript）中剔除，Agent 就能回到干净的状态重新思考。这个被称为状态回滚（Rollback）的机制，是目前几乎所有复杂业务 Agent 保障安全与逻辑准确性的基石。
 

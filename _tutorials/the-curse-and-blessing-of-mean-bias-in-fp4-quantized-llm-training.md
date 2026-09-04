@@ -13,7 +13,7 @@ related_tutorials:
 
 ## FP4训练的诅咒与祝福：简单“减均值”，性能直追BF16
 
-<img src="/images/2603.10444v1/A__title.jpg" alt="FP4训练的诅咒与祝福：简单“减均值”，性能直追BF16 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.10444v1/A__title.webp" alt="FP4训练的诅咒与祝福：简单“减均值”，性能直追BF16 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 想要训练更经济、更高效的大语言模型（LLM）吗？4比特（FP4）量化训练听起来像个完美的答案，但它却像一匹难以驾驭的野马，常常伴随着训练崩溃的风险。
 
@@ -65,7 +65,7 @@ related_tutorials:
 
 这意味着，这个看似不起眼的均值分量，随着网络加深和训练推进，会成长为一个能量巨大的“巨人”。
 
-<img src="/images/2603.10444v1/energy_170k.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2603.10444v1/energy_170k.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图2：随着训练（从10k步到170k步）和网络加深，均值偏差（Mean）在总能量中的占比越来越高*
 
@@ -90,7 +90,7 @@ related_tutorials:
 
 然后，他们分析了激活值中最大的0.1%的异常值，其能量究竟来自哪个部分。
 
-<img src="/images/2603.10444v1/outlier_170k_layer27.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.10444v1/outlier_170k_layer27.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图3：在训练后期（170k步）的深层网络（第27层）中，前0.1%的异常值（Top 0.1% Outliers）的能量绝大部分（橙色部分）都归因于均值偏差（Mean Component）*
 
@@ -127,7 +127,7 @@ related_tutorials:
 
 研究者在0.6B参数规模的Qwen模型上进行了实验，对比了BF16全精度训练、标准FP4量化训练以及使用了Averis的FP4训练。
 
-<img src="/images/2603.10444v1/qwen_0.6B_loss.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2603.10444v1/qwen_0.6B_loss.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图4：训练损失曲线。Averis (FP4+Ours, 绿色) 显著优于朴素的FP4（蓝色），大幅缩小了与BF16基线（橙色）的差距*
 

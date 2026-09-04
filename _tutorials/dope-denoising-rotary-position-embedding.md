@@ -13,7 +13,7 @@ related_tutorials:
 
 ## LLM长文本“失效”有救了！DoPE：免训练为RoPE降噪，解锁64K超长上下文
 
-<img src="/images/2511.09146v1/A__title.jpg" alt="LLM长文本“失效”有救了！DoPE：免训练为RoPE降噪，解锁64K超长上下文 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.09146v1/A__title.webp" alt="LLM长文本“失效”有救了！DoPE：免训练为RoPE降噪，解锁64K超长上下文 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当大语言模型（LLM）处理的文本越来越长，我们常常会发现一个令人沮丧的现象：模型好像“忘记”了开头的内容，注意力过度集中在最近的文本上。这就是所谓的“注意力沉没”（Attention Sink）问题。即使是像**旋转位置编码**（**Rotary Position Embedding, RoPE**）这样先进的技术，也难以幸免。
 
@@ -45,7 +45,7 @@ DoPE的研究者们换了一个新视角：他们将带有位置编码的注意�
 
 通过计算每个注意力头的截断矩阵熵，DoPE能够像医生一样，精确地“诊断”出哪些头是“生病”的，需要进行“降噪”处理。
 
-<img src="/images/2511.09146v1/x1.jpg" alt="DoPE的可视化解释" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.09146v1/x1.webp" alt="DoPE的可视化解释" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图1：DoPE方法的可视化解释*
 
@@ -63,7 +63,7 @@ DoPE的研究者们换了一个新视角：他们将带有位置编码的注意�
 
 为了验证效果，研究者们设计了严苛的“大海捞针”（Needle-in-a-Haystack）测试。即在数万字的文本中插入一句关键信息（“针”），看模型能否准确地找出来。
 
-<img src="/images/2511.09146v1/x2.jpg" alt="注意力权重熵对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.09146v1/x2.webp" alt="注意力权重熵对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图2：DoPE处理前后，注意力熵的对比。处理后（右图），注意力分布更均衡，成功定位到“针”的位置。*
 
@@ -75,7 +75,7 @@ DoPE的研究者们换了一个新视角：他们将带有位置编码的注意�
 
 - 实验还发现，截断矩阵熵为1（等价于谱范数）时，在极稀疏（如64K上下文）场景下效果最好，这表明上下文越长，奇异值分布越“尖锐”。
 
-<img src="/images/2511.09146v1/x6.jpg" alt="低截断矩阵熵的注意力头表现" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.09146v1/x6.webp" alt="低截断矩阵熵的注意力头表现" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图3：一个被截断矩阵熵识别为“低秩”的注意力头，其相似度矩阵呈现明显的周期性和低秩结构。*
 

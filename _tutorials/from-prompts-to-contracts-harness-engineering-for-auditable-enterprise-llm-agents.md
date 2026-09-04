@@ -44,7 +44,7 @@ Harness 架构的核心思想，就是建立一条严苛的**现代化流水线*
 
 前端的原材料采购、清洗、质检，以及成品的安全检测，全部由不带任何随机性的钢铁机器（系统代码）来完成。大模型只负责最后一步：用流畅的人类语言把合格的材料“包装”起来。
 
-<img src="/images/2607.08028v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.08028v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 核心机制一：严格准入的断言流水线
 
@@ -86,7 +86,7 @@ Harness 架构设定了一套极其严苛的知识准入关卡。
 
 在总计 270 次的极限测试运行中，Harness 架构的代码验证器展现出了惊人的稳定性。所有不符合契约的生成失败，都被成功限制在模型组合侧，并被系统代码精准捕获并记录。系统安全性彻底摆脱了对特定模型“指令遵循能力”的依赖。
 
-<img src="/images/2607.08028v1/architecture-flow.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.08028v1/architecture-flow.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 **消融实验揭示提示词局限（RQ3）**
 

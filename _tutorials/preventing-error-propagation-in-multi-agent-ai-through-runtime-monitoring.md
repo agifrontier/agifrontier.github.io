@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Preventing Error Propagation in Multi-Agent AI through Runtime Monitoring</p>
 
-<img src="/images/2606.29026v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.29026v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大型语言模型正在从单一智能体的问答模式，向多智能体协同工作流快速演进。在这些系统中，多个智能体会进行交流、检索信息、对中间输出进行批判，并共同生成最终答复。虽然这种架构通过任务分解显著提升了系统处理复杂问题的鲁棒性，但它也引入了全新的可靠性风险：最终答案不再由单一的孤立模型生成，而是从一系列消息、工具调用、证据检索和相互修正中涌现。这种交互不仅可能纠正错误，同样也存在让原本正确的智能体被误导的风险。
 
@@ -32,7 +32,7 @@ related_tutorials:
 
 最值得关注的结论是，多智能体推理交换确实在总体上提升了系统的准确率，在网络安全等特定领域中，模型准确率甚至从 60.34% 飙升至 93.10%。然而，研究也明确揭示了这种机制的“双刃剑”特性：在网络等某些领域，引入外部推理痕迹有时会扰乱原本正确的判断，导致新错误的产生。这意味着多智能体的有效性不仅取决于模型本身的能力，还高度依赖于具体领域的推理需求和通信质量。
 
-<img src="/images/2606.29026v1/example.jpg" alt="多智能体交互中的错误传播与纠错示例" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2606.29026v1/example.webp" alt="多智能体交互中的错误传播与纠错示例" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 多智能体系统中的可靠性盲区
 
@@ -46,7 +46,7 @@ related_tutorials:
 
 为了量化研究多智能体通信中的可靠性，研究团队提出了一个受控的多智能体框架。在这个框架内，系统由 $K$ 个具备推理能力的协作语言模型智能体组成。每个智能体独立处理问题并生成选择结果及其对应的推理痕迹。随后，这些推理痕迹会在智能体之间共享，作为修正初始决策的上下文。
 
-<img src="/images/2606.29026v1/combiner2.jpg" alt="实验流水线与框架总览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.29026v1/combiner2.webp" alt="实验流水线与框架总览" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 这种设计的核心在于分离“检测”与“修正”两个阶段，并引入对领域特征的考量。
 
@@ -75,7 +75,7 @@ related_tutorials:
 
 整体而言，结合推理痕迹确实能够提升答案的准确率，但这种提升并非在所有模型和领域中都一致。
 
-<img src="/images/2606.29026v1/figure2_accuracy_comparison_across_domains2.jpg" alt="不同领域下的准确率对比" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2606.29026v1/figure2_accuracy_comparison_across_domains2.webp" alt="不同领域下的准确率对比" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在网络安全领域，准确率的提升最为显著。原本表现较弱的 Phi-3 在结合了 Gemma-2 的推理后，准确率从 60.34% 大幅跃升至 93.10%。Gemma-2 本身在这一领域也有所提升，从 87.93% 增加到了 93.10%。这说明当一个模型的基础表现存在较大修正空间，且另一个模型能够提供强有力的互补信息时，推理结合的效果最佳。
 
@@ -89,15 +89,15 @@ related_tutorials:
 
 在网络安全领域，正向影响表现出了绝对的优势。Phi-3 在结合推理后，成功纠正了 20 个原本错误的答案，且仅仅引入了 1 个新错误，产生了高达 19 的净收益。这证明在这个特定领域，交互带来的补充信息是高度有效且不易误导的。
 
-<img src="/images/2606.29026v1/figure_impact_cybersecurity.jpg" alt="网络安全领域的正负向影响" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.29026v1/figure_impact_cybersecurity.webp" alt="网络安全领域的正负向影响" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 相比之下，机器学习领域的净收益规模较小。这主要是因为初始预测已经非常准确，留给机制去“纠错”的样本数量本来就不多。
 
-<img src="/images/2606.29026v1/figure_impact_machine_learning.jpg" alt="机器学习领域的正负向影响" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.29026v1/figure_impact_machine_learning.webp" alt="机器学习领域的正负向影响" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 最不稳定的是计算机网络领域。虽然 Phi-3 的结合结果仍然产生了正向的净收益，但在某些评估条件下（如 Gemma-2 结合后，以及使用 Llama 3.2 作为裁判模型针对 Gemma-2 的评估），引入的新错误数量甚至略微超过了被纠正的错误数量。这意味着在此类需要严谨协议逻辑的领域中，错误的推理痕迹极具迷惑性，一旦被引入就很容易破坏原有的正确判断。
 
-<img src="/images/2606.29026v1/figure_impact_networking.jpg" alt="计算机网络领域的正负向影响" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.29026v1/figure_impact_networking.webp" alt="计算机网络领域的正负向影响" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 结论与对未来的启示
 

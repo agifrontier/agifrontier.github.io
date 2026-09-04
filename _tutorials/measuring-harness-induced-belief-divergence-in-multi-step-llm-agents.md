@@ -44,7 +44,7 @@ related_tutorials:
 论文中给出了一个非常克制且精准的机制隐喻。
 如图1所示，我们假设任务是切牛排，大模型是进餐的食客。
 
-<img src="/images/2607.04528v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.04528v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在原生的参考接口下，系统正常提供刀和叉。
 模型在获取这一观察结果后，会判定该任务非常容易可行。
@@ -61,7 +61,7 @@ related_tutorials:
 它不再把世界模型看作一个仅供一次性调用的黑盒网络。
 而是让Agent在给定接口下，生成结构化的 $K$ 步信念推演。
 
-<img src="/images/2607.04528v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.04528v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 这种推演记录了Agent对任务进度、活跃约束、风险状态的评估。
 同时包含了对不确定性、可能故障模式以及推荐下一步动作的预测。
@@ -115,7 +115,7 @@ related_tutorials:
 为此，本文提出了一种无需重新训练的强大协议。
 即`**信念不变世界模型**（**Belief-Invariant World-Modeling, BIWM**）`。
 
-<img src="/images/2607.04528v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.04528v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 BIWM本质上是一套严谨的“证据矫正”管线。
 它包含几个硬核的底层操作，旨在拉平不同接口造成的认知鸿沟：

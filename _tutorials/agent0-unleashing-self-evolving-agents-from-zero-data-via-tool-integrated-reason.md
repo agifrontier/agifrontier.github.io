@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 零数据也能自我进化：Agent0让8B模型推理能力暴涨24%
 
-<img src="/images/2511.16043v1/A__title.jpg" alt="零数据也能自我进化：Agent0让8B模型推理能力暴涨24% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.16043v1/A__title.webp" alt="零数据也能自我进化：Agent0让8B模型推理能力暴涨24% 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在没有一条人工标注数据的前提下，只靠“自己出题、自己做题”，还能把一个普通的8B Base模型的数学推理拉高18%、通用推理拉高24%，这听上去像是 AI 圈的“永动机”。
 
@@ -66,7 +66,7 @@ Agent0 的目标，就是打破这个双重瓶颈。
 
 ## 框架总览：两代理共生竞争的“螺旋升级”
 
-<img src="/images/2511.16043v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.16043v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 Agent0 的整体思路可以总结为一句话：
 
@@ -110,7 +110,7 @@ Executor 被接上了一个**代码解释器工具**：
 
 ## 第一阶段：老师如何学会“出刁钻好题”？
 
-<img src="/images/2511.16043v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.16043v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 Curriculum Agent 的任务，是生成一个任务描述 $x$，让当前的 Executor 感到“既难又值得学”。
 
@@ -337,7 +337,7 @@ $${% endraw %}
 
 ### 2. 通用推理：+24% 提升
 
-<img src="/images/2511.16043v1/co_evo.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.16043v1/co_evo.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在 SuperGPQA、MMLU-Pro、BBEH 等更偏通识与复杂推理的基准上：
 

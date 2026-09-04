@@ -35,7 +35,7 @@ related_tutorials:
 
 要理解 AppDeltaWorld 的设计动机，必须先直面现有 GUI 世界模型在闭环环境训练中暴露出的三大顽疾。
 
-<img src="/images/2608.05891v1/motivation.jpg" alt="GUI世界模型的典型失败案例分析" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2608.05891v1/motivation.webp" alt="GUI世界模型的典型失败案例分析" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 首先是保真度（Fidelity）的崩塌。在长程轨迹的收集过程中，智能体需要连续执行多次复杂的触摸或滑动动作。理想的世界模型应当稳定地输出与真实设备高度一致的渲染页面。但实际上，由于缺乏结构化约束，许多模型在经历了三四步操作后，页面结构就开始发生严重的“漂移”，按钮错位、文本重叠成了家常便饭。
 
@@ -47,7 +47,7 @@ related_tutorials:
 
 为了根治上述问题，AppDeltaWorld 在架构设计上进行了一次彻底的解耦，将任务拆解为结构检索、多模态渲染和动作-转换验证三个独立且相互约束的模块。
 
-<img src="/images/2608.05891v1/appdeltaworld.jpg" alt="AppDeltaWorld 架构全景：分层检索、混合渲染与闭环SFT生成" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.05891v1/appdeltaworld.webp" alt="AppDeltaWorld 架构全景：分层检索、混合渲染与闭环SFT生成" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 第一个核心设计是引入了 **Level-1 与 Level-2 层次化 HTML 机制**，以此来锚定界面的稳定性。AppDeltaWorld 并不是在每次动作后从零开始生成下一个界面的全部代码，而是将界面的 HTML 代码一分为二。Level-1 HTML 负责捕获那些高度可复用的页面宏观结构和骨架布局，而 Level-2 HTML 则负责填充具体的下一步内容细节。
 
@@ -61,7 +61,7 @@ related_tutorials:
 
 AppDeltaWorld 的终极野心不仅仅是做个好用的预测器，而是要成为移动端 GUI 智能体无穷无尽的“虚拟训练场”。
 
-<img src="/images/2608.05891v1/action_model_app_treemap.jpg" alt="动作模型应用分布与训练数据规模概览" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2608.05891v1/action_model_app_treemap.webp" alt="动作模型应用分布与训练数据规模概览" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 以往的工作很少去深究 GUI 世界模型能否真正作为真实环境的替代品来为策略模型提供具有学习价值的经验。AppDeltaWorld 通过一套称为“World-Model-in-the-Loop SFT Data Construction”的流程给出了肯定的答案。
 
@@ -87,7 +87,7 @@ AppDeltaWorld 的终极野心不仅仅是做个好用的预测器，而是要成
 
 既然世界模型可以预测未来的状态，那么策略模型在真实设备上采取行动前，完全可以在大脑（世界模型）中预演一遍。本文设计了一种无需人工奖励介入的自我打分强化学习机制（Self-score RL）：针对当前屏幕和指令，策略模型先设想出 8 种可能的操作动作，由 AppDeltaWorld 逐一预测出对应的下一步渲染界面。然后，策略模型再回过头来审视这 8 个未来状态，评估哪条路径对完成任务最有利，以此作为 Reward 信号反向更新自身的策略。
 
-<img src="/images/2608.05891v1/ttrl_consensus_analysis.jpg" alt="Test-Time RL 在不同应用上的共识分析与收益表现" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.05891v1/ttrl_consensus_analysis.webp" alt="Test-Time RL 在不同应用上的共识分析与收益表现" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 实验结果极其振奋人心。在针对淘宝、京东、美团和飞猪等特定应用的微调中，无需真机交互，仅仅经过几十步的世界模型预演迭代，策略模型就实现了稳步的自我进化。数据表明，经过 48 步的 Test-Time RL 后，策略在这四个应用上的动作匹配得分（AMS）分别提升了 5.06、3.02、3.25 和 1.51。前 60 次更新中，整体奖励得分从 68 分稳步攀升至 76 分。这项实验彻底证明了 AppDeltaWorld 作为“口袋里的数字孪生宇宙”的潜力：智能体完全可以利用它在后台默默“脑补”演练，待实操时便已是熟练工。
 

@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 微调是“唤醒”还是“注入”？Anthropic提出EDL：量化模型泛化能力的标尺
 
-<img src="/images/2601.04728v1/A__title.jpg" alt="微调是“唤醒”还是“注入”？Anthropic提出EDL：量化模型泛化能力的标尺 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.04728v1/A__title.webp" alt="微调是“唤醒”还是“注入”？Anthropic提出EDL：量化模型泛化能力的标尺 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当我们对大语言模型（LLM）进行微调时，一个核心但往往被忽视的问题是：**模型变强了，到底是因为它学会了全新的知识（Teaching），还是仅仅被“唤醒”了沉睡在预训练参数中的潜在能力（Elicitation）？**
 
@@ -72,7 +72,7 @@ EDL 的定义非常直观：它是“训练过程中的累积编码成本”与�
 
 #### 1. 随机标签：EDL 归零
 
-<img src="/images/2601.04728v1/x1.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2601.04728v1/x1.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 如上图所示，当标签完全随机时，无论怎么训练，测试损失（$L\_{test}$）都不会下降。此时，前序 MDL 的增长率与最终模型的残差编码成本一致，导致 EDL 接近于零。这验证了 EDL 的基本属性：没有泛化信息，就没有 EDL。
 
@@ -86,7 +86,7 @@ EDL 的定义非常直观：它是“训练过程中的累积编码成本”与�
 
 #### 3. 优惠券收集者效应：学习的相变
 
-<img src="/images/2601.04728v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2601.04728v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 如果任务需要掌握多个独立的知识点（如上图中的“Coupon Collector”模型），学习曲线会呈现出明显的阶段性。
 

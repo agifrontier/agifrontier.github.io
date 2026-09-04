@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">SkillFab: An Agent-Native Skill Production Platform</p>
 
-<img src="/images/2607.03780v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.03780v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当前的大模型智能体（Agent）已经展现出令人惊叹的单点任务解决能力。面对复杂的指令，它们能够自主调用工具、反思错误，并通过与环境的不断交互找到破局之道。然而，这种成功往往是高度脆弱且孤立的。当下一个智能体遇到完全相同的任务时，它通常无法直接继承前驱者的经验，最多只能得到一个零碎的提示词片段、一段冗长的执行日志，或者干脆从零开始重新摸索。
 
@@ -45,7 +45,7 @@ related_tutorials:
 
 为了支撑起整个 Agent 原生的协作网络，研究团队在系统架构上进行了极为克制的边界划分。整个 SkillFab 平台被清晰地划分为控制平面（Control Plane）、证据平面（Evidence Plane）以及连接两者的共享状态层，以确保系统在提供高度自动化的同时，绝不丧失底层逻辑的可追溯性。
 
-<img src="/images/2607.03780v1/x1.jpg" alt="SkillFab 系统架构设计，清晰划分控制面、证据面与共享状态" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.03780v1/x1.webp" alt="SkillFab 系统架构设计，清晰划分控制面、证据面与共享状态" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 控制平面是平台与外界交互的核心枢纽。与传统的开发者社区不同，SkillFab 暴露了三种同等重要的操作界面：浏览器 Web 页面、REST API 接口以及 MCP（模型上下文协议）端点。其中，MCP 接口的引入具有决定性的意义。MCP 使得外部的智能体无需去痛苦地解析复杂的网页结构，而是可以通过标准的结构化工具调用（JSON-RPC），像人类开发者一样直接查询可用任务、请求代码审查或读取工作流状态。这就确保了人类、自动化脚本和智能体能够在一个完全一致的逻辑层面上协同工作，而不是被割裂在不同的任务日志中。
 
@@ -57,15 +57,15 @@ related_tutorials:
 
 在 SkillFab 中，编写一个智能体技能绝不等于仅仅生成一段 Python 脚本。平台定义了一套极其严密的状态机，将一个想法最终转化为注册表中的正式技能。
 
-<img src="/images/2607.03780v1/x2.jpg" alt="系统生产工作流展示，展现从需求到发布的跨角色协同序列" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.03780v1/x2.webp" alt="系统生产工作流展示，展现从需求到发布的跨角色协同序列" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 整个流程高度还原了真实世界中的开源协作。开发者（可以是人类或另一个 Agent）接取需求后，在指定的仓库中提交包含实现文件与 `SKILL.md` 描述文档的代码。当代码推送到服务器后，这些提交会被系统严格摄取并作为审查证据，平台随后生成一个提交快照（Submission）。
 
-<img src="/images/2607.03780v1/x3.jpg" alt="请求路由逻辑，清晰展示了寻找技能与创建新需求的判定过程" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.03780v1/x3.webp" alt="请求路由逻辑，清晰展示了寻找技能与创建新需求的判定过程" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 紧接着，维护者介入对这个快照进行审查。最关键的设计在于对“失败与修改”的处理。在过去的智能体交互中，如果代码运行报错，智能体往往只能在对话框里不断试错，整个过程是一笔糊涂账。而在 SkillFab 平台，如果审查不通过，或者系统未能正确摄取预期文件，这个提交请求会被明确打回到“需要修改”（needs_work）状态。
 
-<img src="/images/2607.03780v1/x4.jpg" alt="技能提交的状态流转，展示了在不同阶段中可打断与可恢复的设计" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2607.03780v1/x4.webp" alt="技能提交的状态流转，展示了在不同阶段中可打断与可恢复的设计" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 开发者在这个明确的中间状态下，可以推送新的代码补丁，系统会自动验证新快照并允许再次发起审查请求。正是这种状态机机制，使得中断、修改和替换都转化为了清晰的平台状态转移，让整个能力生产过程变得高度透明和可控。只有当维护者最终核准，这套包含完整执行逻辑的代码才会被发布到注册表中，成为后续其他智能体可以随时取用的标准化资产。
 
@@ -77,7 +77,7 @@ related_tutorials:
 
 第一个案例展示了平台最基础的闭环。在这个最小可运行实例中，研究团队模拟了一个完整的端到端路径：从平台生成操作系统检测的需求工单，到分配代码库，再到提交 Git 证据、触发审查、完成认证，最终将生成的技能推送到注册表中被成功读回。
 
-<img src="/images/2607.03780v1/x5.jpg" alt="OS-detect 端到端运行轨迹，验证了平台基础功能的全流程畅通" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.03780v1/x5.webp" alt="OS-detect 端到端运行轨迹，验证了平台基础功能的全流程畅通" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在这个过程中，无论是需求提出方、开发者还是审核者，都是通过公共的 MCP 工具或 Git 推送路径进行操作，而没有走任何内部后门或直接操作数据库。这一案例有力地证明了，即使是外部完全独立的智能体，也能在这个标准平台上顺畅走完软件发布的生命周期。
 
@@ -85,7 +85,7 @@ related_tutorials:
 
 智能体不仅需要学会写新代码，更需要学会利用现有的成熟工具栈。第二个案例聚焦于 Docker 环境的使用。尽管 Docker 已经为构建和运行应用程序提供了标准化的运行环境，但对于智能体而言，“怎么把一个环境跑起来”依然充满挑战。智能体需要精确知道操作的时序：何时应该构建镜像？何时需要保持容器运行？如何收集执行结果？如何处理文件的热更新？以及在任务结束后如何清理现场？
 
-<img src="/images/2607.03780v1/x6.jpg" alt="Docker案例展示了如何将复杂的操作时序沉淀为标准的技能包" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.03780v1/x6.webp" alt="Docker案例展示了如何将复杂的操作时序沉淀为标准的技能包" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在这个被称为软件到技能（Software-to-Skill）的案例中，SkillFab 成功地将上述所有复杂的工程决策、执行指令和上下文参考，打包成了结构化的代码资产。这意味着，以后的智能体遇到需要操作容器的场景时，直接调取这个经过审核的技能包即可，再也不需要靠大模型凭借概率去猜测容器操作的时序逻辑。
 
@@ -93,7 +93,7 @@ related_tutorials:
 
 如果说前两个案例是在“生产”技能，那么第三个案例则探讨了平台如何“治理”技能演进。系统引入了外部的技能优化系统（如 SkillOpt）来参与测试。研究团队抛出了一个极具价值的问题：平台能否在不将优化器深度绑定为自身内部组件的前提下，依然有效地管理优化器产出的改进版本？
 
-<img src="/images/2607.03780v1/x7.jpg" alt="外部优化器介入流程，展示了平台作为中立治理核心的包容性" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.03780v1/x7.webp" alt="外部优化器介入流程，展示了平台作为中立治理核心的包容性" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 实验给出了肯定的答案。在这个案例中，优化器就像一个普通的社区贡献者一样，针对已有技能提交了一份经过优化的 `SKILL.md` 文档及辅助证据。SkillFab 通过版本恢复功能记录了这次改进的全貌：原始的问题和旧版技能被完好保留；新的改进工单记录了为什么要进行版本升级；提交记录锁定了接受审查的具体文件；注册表则忠实记录了版本迭代的完整历史。
 

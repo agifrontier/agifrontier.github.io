@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">SpaCellAgent: A Self-Evolving LLM-Based Multi-Agent Framework for Trajectory Analysis</p>
 
-<img src="/images/2607.07467v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.07467v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 单细胞RNA测序与空间转录组学技术的普及，为人类解析细胞动态发育过程提供了前所未有的显微镜。在这其中，轨迹推断（Trajectory Inference, TI）作为将静态细胞“快照”重构为连续发育路径的核心方法，一直扮演着计算生物学中的关键角色。然而，面对高维度的生物学数据和日益复杂的组织架构，现有的轨迹分析管线正面临着严重的效率瓶颈：研究人员必须在众多异构的计算工具中手动摸索，反复进行启发式的参数调优，这不仅抬高了非计算背景科学家的使用门槛，也严重影响了数据分析的重现性与效率。
 
@@ -40,7 +40,7 @@ related_tutorials:
 
 与此同时，大语言模型（如 GPT-4、DeepSeek-V3 等）在复杂推理和任务分解上展现出了惊人的潜力。在化学材料或通用软件工程领域，基于多智能体（Multi-agent）的协作框架已经能够自主完成很多实验设计。但生物信息学分析面对的是极度嘈杂、高维且高度专业化的组学数据，简单的文本生成或单步代码生成根本无法覆盖复杂的轨迹推断闭环。现有大模型框架普遍缺乏针对生物学数据特征的动态算法调度能力，也缺乏在长序列分析中进行自我纠错的机制。SpaCellAgent 正是为了填补这一空白而诞生的。
 
-<img src="/images/2607.07467v1/x1.jpg" alt="传统工作流与 SpaCellAgent 对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.07467v1/x1.webp" alt="传统工作流与 SpaCellAgent 对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 如上图所示，传统的分析工作流是一条需要大量人工干预的非标准化路径，而 SpaCellAgent 则通过大模型驱动的多智能体系统，直接将自然语言查询和原始空间数据转化为最终的生物学见解，彻底替代了原本繁杂的流水线。
 
@@ -48,7 +48,7 @@ related_tutorials:
 
 为了应对复杂的时空分析，SpaCellAgent 摒弃了传统的单线代码生成逻辑，在框架内部构建了一个由多个专业化大模型智能体组成的协作社会。整个系统按照功能划分为规划者（Planner）、执行者（Executor）、评估者（Evaluator）和报告者（Reporter），并在底层部署了一个创新的自我进化模块。
 
-<img src="/images/2607.07467v1/x2.jpg" alt="SpaCellAgent 架构设计图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.07467v1/x2.webp" alt="SpaCellAgent 架构设计图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当用户输入一段自然语言的分析需求时，系统会启动以下闭环流程：
 
@@ -78,19 +78,19 @@ related_tutorials:
 
 实验结果表明，SpaCellAgent 在自动处理这些复杂数据时，不仅在各项指标上超越了现有的通用基准，更重要的是，它大幅缩短了从原始数据到得出结论的时间周期——相较于传统的专家手动分析，整体效率提升高达 41.2%。
 
-<img src="/images/2607.07467v1/x4.jpg" alt="SpaCellAgent 推断的发育轨迹对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.07467v1/x4.webp" alt="SpaCellAgent 推断的发育轨迹对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在上图所示的小鼠胚胎背侧中脑发育数据集测试中，SpaCellAgent 自主完成了数据预处理，并通过 UMAP 进行了聚类可视化。令人瞩目的是，智能体主动推断了潜在的发育路径，准确重构了从放射状胶质样（RGL）祖细胞向神经元和胶质细胞分化的分叉轨迹。它还自主识别出随着时间推进，标记物表达从 Sox2 阳性祖细胞向其他特定神经元标志物的转变。后续的通路富集分析进一步证实了其推断结果的生物学高度合理性，与现有经典文献的结论完全一致。
 
 SpaCellAgent 并不只是在已知的公共数据集上表现出色，它在面对未知的私有数据时，同样展现出了提出新颖生物学假说的能力。研究团队将其部署在合作医院提供的脊髓损伤小鼠单细胞私有数据集上。该数据旨在对比高盐饮食与正常盐饮食在损伤后不同时间点对神经恢复的影响。
 
-<img src="/images/2607.07467v1/x6.jpg" alt="伪时间分析揭示的表达趋势差异" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.07467v1/x6.webp" alt="伪时间分析揭示的表达趋势差异" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 SpaCellAgent 自主运用伪时间分析解剖了其中的谱系动态（如上图实线拟合趋势所示）。系统整合了基于 RNA 速率的流线与细胞命运概率计算，敏锐地捕捉到了高盐组中出现的分化阻滞现象。它指出，高盐组的神经细胞发育轨迹出现了过早终止，其流线呈现碎片化，表明内源性髓鞘再生受到了严重阻碍。这一由 AI 智能体自主挖掘出的结论，为探究高盐饮食对创伤后神经修复的不利影响提供了极其直接的计算证据，充分证明了其实战应用价值。
 
 为了进一步确认各个模块对系统整体性能的贡献，研究团队还进行了详细的消融实验。
 
-<img src="/images/2607.07467v1/x7.jpg" alt="消融实验与系统效能分析" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.07467v1/x7.webp" alt="消融实验与系统效能分析" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 运行效能分析（图7）直观地展示了 SpaCellAgent 的优势。剥离掉经验记忆库（全局记忆）的变体在处理复杂数据时，试错次数明显增加，分析成功率和时间消耗均受到显著影响。这说明，多智能体架构之所以能够超越简单的代码助手，关键在于其将历史成功经验固化为可复用知识的机制。正是凭借“知识增强的后备机制”，系统才能在面对充满噪声的空间转录组学数据时，保持极高的鲁棒性和分析稳定性。
 

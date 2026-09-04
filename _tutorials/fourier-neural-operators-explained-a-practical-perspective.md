@@ -13,7 +13,7 @@ related_tutorials:
 
 ## NVIDIA万字长文：别再误用FNO了！傅里叶神经算子终极实践指南
 
-<img src="/images/2512.01421v1/A__title.jpg" alt="NVIDIA万字长文：别再误用FNO了！傅里叶神经算子终极实践指南 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.01421v1/A__title.webp" alt="NVIDIA万字长文：别再误用FNO了！傅里叶神经算子终极实践指南 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当流体力学、天气预报、电磁场模拟这些复杂的科学计算任务摆在面前时，我们往往会想到一个词：慢。求解这些由偏微分方程（PDEs）描述的系统，需要极高的计算资源和漫长的时间。但如果有一种方法，能让AI直接学习物理规律，将模拟速度提升数个量级呢？
 

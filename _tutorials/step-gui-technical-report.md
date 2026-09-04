@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 成本暴降100倍！Step-GUI刷新SOTA，打造手机端最强“操作员”
 
-<img src="/images/2512.15431v1/A__title.jpg" alt="成本暴降100倍！Step-GUI刷新SOTA，打造手机端最强“操作员” 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.15431v1/A__title.webp" alt="成本暴降100倍！Step-GUI刷新SOTA，打造手机端最强“操作员” 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 多模态大模型（MLLM）虽然已经能“看懂”屏幕，但要让它们像人类一样流畅操作手机或电脑，依然面临巨大的鸿沟。核心痛点在于：高质量的GUI（图形用户界面）训练数据极其稀缺且昂贵，而传统的标注方法往往充满噪音。
 
@@ -31,7 +31,7 @@ related_tutorials:
 
 CSRS 的核心逻辑在于“结果导向的校准”。它不再盲目信任模型生成的每一步思维链（CoT），而是通过执行结果来反向验证。系统让模型在环境中试错（Rollout），如果任务成功，则说明这条轨迹是高质量的；如果失败，则仅提取其中的部分知识。
 
-<img src="/images/2512.15431v1/x4.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.15431v1/x4.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，CSRS 将模型生成的轨迹转化为可靠的训练信号。它利用更强大的“思考模型”（Thinking Models）来生成详细的步骤解释，结合轨迹级的成功验证，实现了“粗粒度高置信度标签 + 细粒度高质量内容”的完美结合。
 
@@ -61,7 +61,7 @@ CSRS 的核心逻辑在于“结果导向的校准”。它不再盲目信任模
 
 *   **能力奖励（LLM-as-a-Judge）**：用大模型判断操作逻辑是否符合人类直觉。
 
-<img src="/images/2512.15431v1/intro_head2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.15431v1/intro_head2.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 结果令人瞩目：**Step-GUI-8B** 在 AndroidWorld 上达到了 **80.2%** 的成功率，大幅领先于现有的开源和闭源智能体，甚至超越了参数量大得多的模型。
 
@@ -71,7 +71,7 @@ CSRS 的核心逻辑在于“结果导向的校准”。它不再盲目信任模
 
 当前，苹果、安卓、Windows 的控制接口五花八门，且用户非常担心将隐私截图上传到云端。为此，该研究提出了 **GUI-MCP**（GUI Model Context Protocol），这是首个专为 GUI 自动化设计的模型上下文协议。
 
-<img src="/images/2512.15431v1/x6.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.15431v1/x6.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 GUI-MCP 采用了精妙的**双层架构**：
 

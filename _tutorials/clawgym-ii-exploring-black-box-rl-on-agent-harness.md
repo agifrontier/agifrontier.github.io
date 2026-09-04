@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">ClawGym II: Exploring Black-Box RL on Agent Harness</p>
 
-<img src="/images/2608.16798v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.16798v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在构建能够处理长周期、复杂现实任务的通用智能体（Agent）时，研究人员和工程师们越来越依赖于成熟的“智能体执行框架”（Agent Harness）。像 Claude Code、Codex 或 OpenClaw 这样的生产级系统，将系统提示词、工具接口、上下文管理、工作流编排以及重试与恢复机制封装在了一个统一的运行时环境中。这些框架极大地提升了模型在复杂任务上的表现，但同时也引入了一个致命的副作用：它们过于复杂和不透明，导致传统的强化学习（RL）算法很难在这些框架之上对底层模型进行进一步的优化。
 

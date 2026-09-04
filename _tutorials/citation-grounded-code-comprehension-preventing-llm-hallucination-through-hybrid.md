@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 告别代码幻觉：混合检索+图增强，实现92%引用准确率与零错误
 
-<img src="/images/2512.12117v1/A__title.jpg" alt="告别代码幻觉：混合检索+图增强，实现92%引用准确率与零错误 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.12117v1/A__title.webp" alt="告别代码幻觉：混合检索+图增强，实现92%引用准确率与零错误 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当你在深夜调试代码，询问 AI 助手某个函数的定义位置时，它自信满满地给出了一个文件路径和行号。你兴奋地打开编辑器，却发现那个文件根本不存在，或者那几行代码完全是风马牛不相及。这种“一本正经胡说八道”的幻觉（Hallucination），是目前大模型在代码理解任务中最大的痛点。
 
@@ -34,7 +34,7 @@ related_tutorials:
 
 传统的文本相似度检索（Textual Similarity）往往会忽略这些跨文件的架构联系，导致 AI 只能看到“冰山一角”，从而产生幻觉。
 
-<img src="/images/2512.12117v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.12117v1/x1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图 1：三种典型的 LLM 代码幻觉失败案例：(a) 捏造不存在的文件；(b) 引用了超出文件长度的行号；(c) 遗漏了关键的跨文件依赖（如异常定义）。*
 
@@ -78,7 +78,7 @@ related_tutorials:
 
 这种方法成功地在 **62%** 的架构查询中发现了纯文本检索遗漏的跨文件证据。
 
-<img src="/images/2512.12117v1/x2.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2512.12117v1/x2.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 *图 2：代码仓库的多维结构。理解代码不仅需要文本检索，还需要利用引用图（Import Graph）来发现跨文件的依赖关系。*
 
@@ -104,7 +104,7 @@ related_tutorials:
 
 *   **模型表现**：**DeepSeek-Coder-6.7B** 和 **Qwen-Coder-7B** 表现出了极高的指令遵循能力，能够很好地配合这套系统输出精确的引用格式。
 
-<img src="/images/2512.12117v1/x4.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.12117v1/x4.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图 4：不同检索策略在 DeepSeek-Coder 模型上的表现对比。混合检索（Hybrid）明显优于单一模式，而图扩展（+Graph）进一步显著提升了准确率。*
 

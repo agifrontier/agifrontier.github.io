@@ -14,7 +14,7 @@ related_tutorials:
 
 ## 推理成本直降75%！英伟达新研究：LLM学会“长话短说”，数学能力还不减
 
-<img src="/images/2511.19333v1/A__title.jpg" alt="推理成本直降75%！英伟达新研究：LLM学会“长话短说”，数学能力还不减 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.19333v1/A__title.webp" alt="推理成本直降75%！英伟达新研究：LLM学会“长话短说”，数学能力还不减 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 让大模型（LLM）学会像人一样思考和推理，是AI领域的一大难题。但更强的推理能力，往往意味着更长的“思考”过程和更高的计算成本。
 
@@ -70,7 +70,7 @@ related_tutorials:
 
 这意味着，模型的推理成本和延迟可以大幅降低。
 
-<img src="/images/2511.19333v1/mathtest-nanov2-loss.jpg" alt="训练损失曲线图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.19333v1/mathtest-nanov2-loss.webp" alt="训练损失曲线图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图1: 在Nemotron-Nano-12B-V2上微调时的训练损失曲线*
 

@@ -13,7 +13,7 @@ related_tutorials:
 
 ## RL为何能让大模型“学会自省”？双阶段决策采样假说揭秘SFT的死穴
 
-<img src="/images/2601.01580v1/A__title.jpg" alt="RL为何能让大模型“学会自省”？双阶段决策采样假说揭秘SFT的死穴 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.01580v1/A__title.webp" alt="RL为何能让大模型“学会自省”？双阶段决策采样假说揭秘SFT的死穴 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在大模型领域，一个令人困惑的现象长期存在：为什么经过强化学习（RL）训练的模型（如DeepSeek-R1、OpenAI o1）能够涌现出“自省”和“自我修正”的能力，而传统的监督微调（SFT）即使使用了包含大量思维链（CoT）的数据，却往往只是在模仿“思考的语气”，很难真正学会发现错误并改正？
 
@@ -53,7 +53,7 @@ SFT本质上是在最小化预测Token与参考Token之间的距离。由于Toke
 
 这就解释了为什么SFT模型往往只是“鹦鹉学舌”：它们学会了生成看起来像推理过程的文本（因为 $\pi\_{sample}$ 被强力优化了），但并没有学会何时该真正地停下来反思（因为 $\pi\_{d}$ 处于欠优化状态）。
 
-<img src="/images/2601.01580v1/ds_hypothesis_simulation.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.01580v1/ds_hypothesis_simulation.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *上图展示了模拟结果：RL（Surrogate Reward）能同时提升两个策略的参数，而KL惩罚导致决策策略（$\pi\_d$）的参数几乎无法更新。*
 
@@ -67,11 +67,11 @@ SFT本质上是在最小化预测Token与参考Token之间的距离。由于Toke
 
 2.  **SFT的“回声室效应”**：SFT模型虽然在简单任务上表现尚可，但在面对分布外（OOD）的难题时，其决策能力迅速崩溃。即使模型生成了错误的答案，它也无法识别，只会盲目自信地输出。
 
-<img src="/images/2601.01580v1/reflection_anatomy-rl.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.01580v1/reflection_anatomy-rl.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *RL模型的解剖分析：注意右侧的 $p\_{d \mid W}$（错误时重试的概率）保持在较高水平，说明模型学会了“知错能改”。*
 
-<img src="/images/2601.01580v1/reflection_anatomy-sft.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.01580v1/reflection_anatomy-sft.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *SFT模型的解剖分析：在任务变难时（横轴向右），$p\_{d \mid W}$ 迅速跌至零。模型失去了判断对错的能力，陷入了“回声室”。*
 

@@ -32,7 +32,7 @@ related_tutorials:
 ### 创新的评估框架
 作者设计了一个三阶段评估框架，以系统性地解构并评测RAG流程中的每一个环节。
 
-<img src="/images/2511.06738v1/x1.jpg" alt="Study design and evaluation framework" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2511.06738v1/x1.webp" alt="Study design and evaluation framework" style="width:80%; max-width:300px; margin:auto; display:block;">
 *图1：研究设计与评估框架。该框架将RAG流程分解为证据检索、证据选择和响应生成三个组件，以实现对每个阶段的系统性评估。*
 
 **1. 模型与数据设置**
@@ -69,7 +69,7 @@ related_tutorials:
 
 ### 证据检索：精度低、覆盖不足
 检索阶段表现出显著的性能瓶颈，大部分检索到的内容都无关紧要。
-<img src="/images/2511.06738v1/x2.jpg" alt="Retrieval performance" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.06738v1/x2.webp" alt="Retrieval performance" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图2：证据检索性能分析。a) Precision@k，b) Miss@k，c) Coverage@k。*
 
 *   **低精度**: 在检索到的前16个段落中，平均只有**21.7%**是相关的 (Precision@16)，对于更复杂的USMLE风格问题，该比例更是降至15.3%。
@@ -79,7 +79,7 @@ related_tutorials:
 ### 证据选择：模型难以有效利用相关信息
 即使检索到了相关段落，LLM在选择和使用这些信息时也表现不佳。
 
-<img src="/images/2511.06738v1/x3.jpg" alt="Citation analysis" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.06738v1/x3.webp" alt="Citation analysis" style="width:90%; max-width:700px; margin:auto; display:block;">
 *图3：引用类型和证据选择性能分析。a) 按证据来源分类的每条查询的平均引用数。b) 识别检索段落中相关证据的精确率和召回率。*
 
 *   **选择能力差**: 模型在从检索结果中挑选相关信息方面的表现很差。GPT-4o的精确率仅为41%，召回率为49%；Llama-3.1的精确率为43%，召回率更是低至28%。这意味着模型既引用了大量不相关信息，也遗漏了大量已检索到的相关信息。

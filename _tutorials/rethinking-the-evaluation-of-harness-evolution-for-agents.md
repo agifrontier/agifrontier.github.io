@@ -47,7 +47,7 @@ related_tutorials:
 
 研究团队引入了一个非常形象的对照组概念。如果把模型当做考生，把任务当做考题，那么 Harness 就是考生的“文具和答题规范”。在固定总调用次数（预算 $K$）的前提下，我们有四种花掉算力的策略。
 
-<img src="/images/2607.12227v1/x2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.12227v1/x2.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 *Figure 2: 四种在测试时消耗算力的方法对比。核心差异在于修改的是“轨迹”还是“外壳”，以及优化的范围是“实例级”还是“数据集级”。*
 
 #### 1. 简单重试：并行采样
@@ -100,7 +100,7 @@ related_tutorials:
 
 实验表明，在此场景下，自动 Harness 演化表现最差。例如，Claude Opus 4.6 的初始通过率是 31.5%，演化后反而下降到 30.3%。这说明强如当代模型，也无法可靠地从自己的错误轨迹中提取出正确的指导信号来修改外壳，错误的反馈反而污染了全局配置。相对而言，直接进行**并行采样**达到了 39.3%。
 
-<img src="/images/2607.12227v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.12227v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 *Figure 1: 在无单元测试反馈的情况下，自动演化算法（蓝色）甚至跑输了极其简单的并行采样（紫色）。*
 
 #### 场景二：拥有单元测试时，优势仍是“算力幻觉”

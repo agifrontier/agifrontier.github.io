@@ -32,7 +32,7 @@ related_tutorials:
 
 究竟什么是“特权幻觉”？DOPD又是如何巧妙化解这一难题的？本文将为您深度硬核剖析。
 
-<img src="/images/2606.30626v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.30626v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 揭开“特权幻觉”的伪装
 
@@ -66,7 +66,7 @@ related_tutorials:
 
 基于这一洞察，DOPD构建了一个四象限的动态路由机制。它根据优势差距 $\mathcal{A}$ 以及老师和学生在这个 $Token$ 上的相对概率，将 $Token$ 划分为四类，并实施不同强度、不同来源的惩罚和激励。
 
-<img src="/images/2606.30626v1/x7.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.30626v1/x7.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 #### 四大蒸馏策略深度拆解
 
@@ -104,7 +104,7 @@ related_tutorials:
 
 在模型训练的稳定性层面，DOPD 更是给出了教科书般的曲线。
 
-<img src="/images/2606.30626v1/x13.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2606.30626v1/x13.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 从上图可以清晰地看到，相比于其他极易在训练中后期发生崩溃的范式，DOPD 维持了极其健康的熵轨迹。它的熵值在初期适度上升以鼓励探索，随后平稳下降并最终收敛。仅仅在第 80 步时，它取得的性能就已经超越了其他竞品在 200 步时的极限。
 

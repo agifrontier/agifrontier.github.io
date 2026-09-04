@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">The Next Challenge for Agentic Cybersecurity: A Realistic, Contamination-Free Reverse Engineering Benchmark</p>
 
-<img src="/images/2608.11469v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.11469v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在过去一年里，具备自主运行能力的网络安全 AI 智能体（Cybersecurity Agents）在漏洞挖掘和代码审计领域展现出了惊人的进展。然而，这种繁荣很大程度上建立在一个理想化的前提之上：智能体能够直接获取目标软件的源代码。现实世界中的高价值攻击目标——闭源企业软件、安全硬件固件以及每天新增的数十万恶意软件样本，几乎全是以编译后的二进制（Binary）形式存在的。
 
@@ -43,7 +43,7 @@ related_tutorials:
 
 由于采用开源项目必定带来污染，而对开源项目进行局部修改又无法掩盖其整体架构特征，研究团队最终选择了一条极其硬核、成本高昂的道路：不依赖任何现成的开源代码，完全依赖领域专家以“净室设计”（Clean-Room）的方式，从头编写具备真实规模的复杂程序与保护机制。
 
-<img src="/images/2608.11469v1/pipeline.jpg" alt="SRE-Bench构建与评估流程" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.11469v1/pipeline.webp" alt="SRE-Bench构建与评估流程" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### SRE-Bench 的硬核构建：5000小时的净室工程
 

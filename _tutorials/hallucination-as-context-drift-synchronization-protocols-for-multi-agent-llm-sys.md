@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Hallucination as Context Drift: Synchronization Protocols for Multi-Agent LLM Systems</p>
 
-<img src="/images/2606.21666v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.21666v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在多智能体大型语言模型（LLM）系统的部署中，开发者往往会面临一个棘手的现象：当多个专注于特定子任务的智能体协同工作时，系统输出经常会出现严重的幻觉。这种幻觉与单个模型能力不足所导致的胡言乱语不同，在很多情况下，每一个智能体在隔离状态下都进行了完全正确的逻辑推理，但它们组合在一起的结果却自相矛盾。
 
@@ -80,7 +80,7 @@ CDS 提供了一个极其轻量的标量指标，能够在不进行昂贵的全�
 
 为了更直观地理解污染效应的发生机制，研究通过监测系统级 CDS 随推理步长的动态变化，揭示了多智能体网络中一种极其危险的“群体盲思”现象。
 
-<img src="/images/2606.21666v1/x1.jpg" alt="系统级 CDS 随推理步长的动态变化" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2606.21666v1/x1.webp" alt="系统级 CDS 随推理步长的动态变化" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 如上图所示，在不进行同步的基线组中，系统 CDS 稳定在 0.18 到 0.19 之间，反映了智能体之间存在持久但受限的分歧。而在全量广播组中，系统的 CDS 迅速下降并维持在极低的水平（0.097–0.107）。
 

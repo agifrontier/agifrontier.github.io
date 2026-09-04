@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">AsmEvo: Agentic Assembly-Level Optimization of AMD GPU Kernels with Functional Equivalence Verification</p>
 
-<img src="/images/2608.20711v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.20711v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在当今的高性能机器学习系统中，GPU内核的执行效率往往决定了整个大模型推理或训练的吞吐天花板。然而，在实际的工业部署环境中，开发者常常面临一个极为棘手的黑盒困境：那些真正跑在显卡上的算子，往往只是一团无法直接阅读和修改的编译后二进制文件。无论是供应商提供的闭源库，还是部署框架在运行时动态生成的机器码，它们都远离了开发者最熟悉的高级源码层面。
 
@@ -49,7 +49,7 @@ related_tutorials:
 
 在初始阶段，AsmEvo 会对给定的 AMDGPU 原始代码对象 $K\_{0}$ 进行深度的“逆向重建”。它不仅要提取出 AMDGCN 汇编指令体，更要完整重构 ELF 容器中的节区、符号、内核描述符以及相关的 AMDGPU 元数据。它必须重新建立基于程序计数器（PC）的相对控制流符号，以确保后续哪怕在大模型删减、插入或重排指令后，分支跳转依然能够精准命中。AsmEvo 为此设置了一个“往返保真度（Round-Trip Fidelity）”的一票否决门槛：重组后的汇编必须能够重新链接回与原始二进制完全等效的文件。这确立了后续所有优化的坚实基础。
 
-<img src="/images/2608.20711v1/AsmEvo_architecture.jpg" alt="AsmEvo 结合忠实的代码恢复与元数据重建进行严格验证的架构示意" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.20711v1/AsmEvo_architecture.webp" alt="AsmEvo 结合忠实的代码恢复与元数据重建进行严格验证的架构示意" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 有了可自由修改的底层画布，最大的挑战便落在了如何验证这幅画是不是画错了。由于毫无高级函数签名可言，AsmEvo 创新性地引入了双层差分验证机制（Two-Tier Differential Oracle）。
 

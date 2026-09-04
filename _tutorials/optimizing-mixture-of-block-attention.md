@@ -13,7 +13,7 @@ related_tutorials:
 
 ## MIT联手英伟达发布FlashMoBA：稀疏注意力提速14.7倍，长文本处理迎来新篇章
 
-<img src="/images/2511.11571v1/A__title.jpg" alt="MIT联手英伟达发布FlashMoBA：稀疏注意力提速14.7倍，长文本处理迎来新篇章 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.11571v1/A__title.webp" alt="MIT联手英伟达发布FlashMoBA：稀疏注意力提速14.7倍，长文本处理迎来新篇章 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当大语言模型（LLM）试图理解长视频、分析海量文档时，一个巨大的瓶颈便显现出来：自注意力机制的计算成本会随序列长度二次方增长。为了解决这个问题，稀疏注意力应运而生，而**混合块注意力**（**Mixture of Block Attention, MoBA**）是其中的佼佼者。它通过一个智能“路由器”，让每个查询只关注少数几个关键信息块，从而大大降低计算量。
 
@@ -54,7 +54,7 @@ MoBA成功的关键在于，它的路由器能否在成千上万个文本块中�
 
 为了解决这个“理论与实践脱节”的问题，研究团队推出了 **FlashMoBA**——一个专为小块MoBA设计的、硬件感知的CUDA内核。
 
-<img src="/images/2511.11571v1/x1.jpg" alt="FlashMoBA流程图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.11571v1/x1.webp" alt="FlashMoBA流程图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图1：FlashMoBA前向传播示意图。它通过“Tiled Top-k Selection”高效找到目标块，再用“Gather-and-Densify”策略将零散计算转化为密集的、对GPU友好的计算。*
 
@@ -74,7 +74,7 @@ FlashMoBA的核心思想是“化零为整”，它通过以下设计克服了�
 
 实验结果完美印证了SNR模型的预测。如下图所示，在3.4亿参数模型上，将块大小从512减小到128，模型的困惑度（Perplexity）和长文本检索（RULER）准确率都得到了显著改善。
 
-<img src="/images/2511.11571v1/x2.jpg" alt="块大小对模型质量的影响" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2511.11571v1/x2.webp" alt="块大小对模型质量的影响" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *图2：更小的块尺寸（$B$）带来了更低的困惑度和更高的RULER准确率。*
 
@@ -84,7 +84,7 @@ FlashMoBA的核心思想是“化零为整”，它通过以下设计克服了�
 
 FlashMoBA的性能表现堪称惊艳。在64K的长序列下，FlashMoBA比原始MoBA实现快7.4倍，内存占用减少6.1倍。
 
-<img src="/images/2511.11571v1/x4.jpg" alt="FlashMoBA与原始MoBA及FlashAttention-2的性能对比" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.11571v1/x4.webp" alt="FlashMoBA与原始MoBA及FlashAttention-2的性能对比" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图4：在64K序列长度下，原始MoBA的开销主要在路由和索引上，而FlashMoBA通过融合内核大幅降低了这部分开销，总耗时甚至低于FlashAttention-2。*
 

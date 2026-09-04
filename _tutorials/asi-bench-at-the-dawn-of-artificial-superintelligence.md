@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">ASI-Bench: At the Dawn of Artificial Superintelligence</p>
 
-<img src="/images/2608.17271v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.17271v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在通往超级人工智能（Artificial Superintelligence, 简称 ASI）的道路上，整个学术界和工业界正面临一个隐秘的错觉：当前的大模型在各类测试榜单上屡创佳绩，在科学推理、代码生成和数据分析等任务中表现出惊人的成熟度。然而，这种繁荣很大程度上建立在对人类已有知识的学习、压缩与应用之上。当下的 AI 系统在面对有明确答案的问题，或者在人类高度指定了方法和步骤的任务中表现优异，但这并非真正的“超级智能”。真正的 ASI 必须跨越已知知识的边界，具备探索未知、创造新知识并将全新想法转化为可验证结果的自主能力。
 
@@ -32,7 +32,7 @@ related_tutorials:
 
 实验结果揭示了一个冷酷的现实。在测试了 18 种最先进的“智能体与模型”组合后，研究人员发现，当提供完整的方法论和操作步骤指导时，系统的平均得分为 50.91 分；但当要求智能体完全自主决定研究方法时，得分暴跌至 26.62 分。这一高达 24 分的断崖式下跌，明确无误地表明：当前的顶尖 AI 系统仍然极度依赖人类的“保姆式”指导。它们距离能够端到端自主进行项目级科学研究，仍有极其漫长的道路要走。
 
-<img src="/images/2608.17271v1/performance_compare.jpg" alt="ASI-Bench与其他主流基准的对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.17271v1/performance_compare.webp" alt="ASI-Bench与其他主流基准的对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 要理解 ASI-Bench 为何能精准测出当前大模型的软肋，必须先看清传统评测基准的盲区。现有的基准如 Humanity's Last Exam (HLE) 在拓展跨学科前沿知识方面做出了巨大贡献，而 SWE-bench 和 Terminal-Bench 则在代码能力和长周期工具调用上设立了标杆。然而，这些测试通常预设了明确的目标、已知的答案或固定的评价路径。它们考察的是“执行力”和“记忆力”，而非“科研创新力”。
 
@@ -40,7 +40,7 @@ ASI-Bench 的设计哲学是还原真实的科研环境。该基准中的每一�
 
 为了精确衡量“自主性”这一抽象概念，研究团队设计了一种被称为“指导梯度退化”的 B1 到 B4 测试框架。这一框架在保持研究问题、底层数据、输出要求和评分标准完全不变的前提下，人为控制提供给 AI 的信息量。在 B1 阶段，AI 享受最高级别的待遇，获得完整的指导，包括具体的偏微分方程、数值公式以及求解器步骤，AI 主要是将人类的智慧转化为可执行的工作流；进入 B2 阶段，具体的实施步骤被抽离，AI 仅被告知应该使用哪种特定类别的数值方法；到了 B3 阶段，所有方法论提示被完全抹除，AI 只能看着原始的时空数据和最终的科学目标，自己去推导底层模型、选择数值方法并完成验证；最后的 B4 阶段则在 B3 的基础上加入了似是而非的干扰信息，测试系统在迷雾中保持科研方向的鲁棒性。
 
-<img src="/images/2608.17271v1/overview_results.jpg" alt="ASI-Bench全景概览与核心测试结果" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2608.17271v1/overview_results.webp" alt="ASI-Bench全景概览与核心测试结果" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 这种阶梯式的测试机制，首次将“执行预设程序”、“将抽象方法转化为工作流”以及“独立进行科学发现”这三种能力剥离开来。通过这种剥离，ASI-Bench 发现了一个极为反直觉且深刻的结论：AI 科学探索的真正瓶颈，并不在于“想不出用什么方法”，而在于“无法将方法落地为具体步骤”。
 
@@ -48,7 +48,7 @@ ASI-Bench 的设计哲学是还原真实的科研环境。该基准中的每一�
 
 在评估这些系统时，ASI-Bench 还揭示了另一个常常被忽视的维度：智能体框架（Harness）对基础模型能力的重塑作用。在当前的评测语境中，人们往往将科学探索能力直接归功于底层的大语言模型。但实验证明，同一个骨干模型在不同的智能体外壳下，表现天差地别。例如，MiMo V2.5 Pro 模型在使用 MiMo Code 框架时得分为 16.17，但切换到 Claude Code 框架后，得分飙升至 23.25；Kimi K2.7 模型也展现了类似的规律。这表明，项目级的科学研究能力不仅仅是模型参数量或推理能力的直接映射，它更是模型与智能体执行、错误恢复、资源组织机制之间复杂交互的涌现结果。这也为未来的 AI 研发指明了方向：除了无脑扩大模型规模，优化智能体的脚手架系统同样是通向自主科研的关键路径。
 
-<img src="/images/2608.17271v1/x1.jpg" alt="ASI-Bench中跨学科项目级任务示例" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.17271v1/x1.webp" alt="ASI-Bench中跨学科项目级任务示例" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 除了对能力的极限施压，ASI-Bench 还在计算经济学层面提供了一组极其重要且违反直觉的发现。人们通常认为，给 AI 提供的提示越少，AI 需要自主探索的空间越大，耗费的算力和时间就越多。但真实情况远比这复杂。
 

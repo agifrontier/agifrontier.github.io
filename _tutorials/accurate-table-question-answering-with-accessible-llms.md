@@ -13,7 +13,7 @@ related_tutorials:
 
 ## Qwen-14B逼近GPT-4！Orchestra多智能体架构让开源模型制霸表格问答
 
-<img src="/images/2601.03137v1/A__title.jpg" alt="Qwen-14B逼近GPT-4！Orchestra多智能体架构让开源模型制霸表格问答 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.03137v1/A__title.webp" alt="Qwen-14B逼近GPT-4！Orchestra多智能体架构让开源模型制霸表格问答 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 表格问答（Table Question Answering, TQA）一直是企业级AI应用中的“硬骨头”。虽然GPT-4等闭源巨型模型在这一领域表现出色，但昂贵的API成本和数据隐私隐患让许多中小企业望而却步。当我们试图转向更轻量级的开源模型（如Llama-7B或Qwen-14B）时，往往会发现效果惨不忍睹——模型经常因为上下文过长或指令太复杂而“大脑宕机”。
 
@@ -39,7 +39,7 @@ related_tutorials:
 
 Orchestra 将复杂的TQA流程解耦为两个核心子任务：**逻辑推导**和**数据处理**。并为此设计了专门的智能体角色。
 
-<img src="/images/2601.03137v1/x2.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.03137v1/x2.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 #### 1. 逻辑智能体（Logic Agent）与查询智能体（Query Agent）
 
@@ -94,7 +94,7 @@ Orchestra 的效果究竟如何？研究团队在WikiTQ、TabFact和TableBench�
 
 当 Orchestra 搭配更强的开源模型（如Qwen2.5-72B, Llama3.1-70B, DeepSeek-V3）时，它直接超越了GPT-4，刷新了所有榜单的SOTA。
 
-<img src="/images/2601.03137v1/x5.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.03137v1/x5.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 上图展示了在WikiTQ上的对比结果。可以看到，无论是哪个系列的开源模型，在搭载Orchestra框架后，性能都实现了显著跃升。
 

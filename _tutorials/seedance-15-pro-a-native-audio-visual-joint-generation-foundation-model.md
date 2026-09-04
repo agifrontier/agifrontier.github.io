@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 字节Seedance 1.5 pro发布：原生音视频联合生成，推理加速超10倍
 
-<img src="/images/2512.13507v2/A__title.jpg" alt="字节Seedance 1.5 pro发布：原生音视频联合生成，推理加速超10倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2512.13507v2/A__title.webp" alt="字节Seedance 1.5 pro发布：原生音视频联合生成，推理加速超10倍 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 视频生成领域的“军备竞赛”在过去一年里从未停歇，从Sora到Kling，再到Veo，画面的逼真度已令人惊叹。然而，一个长期被忽视的痛点始终存在：**声音与画面的割裂**。大多数现有方案仍是将视频生成与音频生成作为两个独立的步骤，导致“口型对不上”、“声画不同步”等问题频发。
 

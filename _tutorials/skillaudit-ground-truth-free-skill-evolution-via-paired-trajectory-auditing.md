@@ -40,7 +40,7 @@ related_tutorials:
 
 通过并排对比这两条执行轨迹，系统能够清晰地隔离出该技能究竟如何改变了Agent的行为。这种差异本身，就构成了无需外部标签的自我诊断证据。它可以揭示技能在哪里发挥了作用，在哪里被Agent无视，又在哪里把Agent带进了沟里。
 
-<img src="/images/2606.14239v1/x1.jpg" alt="Figure 1" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.14239v1/x1.webp" alt="Figure 1" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，有别于依赖Oracle信号或失败反馈的传统范式，SkillAudit仅需任务描述 $T$、工作区 $W$ 和初始技能 $S_0$ 即可完成进化闭环。
 
@@ -54,7 +54,7 @@ related_tutorials:
 
 在这个诊断机制中，系统坚持一种不对称的决策逻辑：宁可放过一个好更新，绝不放进一个坏更新。只要有任何一个维度报告“技能起到了反作用”（hurt），更新就会被立刻否决。
 
-<img src="/images/2606.14239v1/x2.jpg" alt="Figure 2" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.14239v1/x2.webp" alt="Figure 2" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 双管齐下：提纯与修复
 

@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">EvoGraph-R1: Self-Evolving Multimodal Knowledge Hypergraphs for Agentic Retrieval</p>
 
-<img src="/images/2607.12764v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.12764v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 检索增强生成（RAG）已经成为大模型解决幻觉和获取外部知识的标准范式。为了让大模型具备更复杂的推理能力，基于知识图谱的 GraphRAG 逐渐成为当前的研究热点。然而，现有的系统往往潜藏着一个致命缺陷：它们将知识图谱视为一种**静态的数据结构**。这种“先离线建图，后在线单次检索”的流水线，完全违背了人类面对复杂问题时“边查边想、反复验证、动态纠错”的认知规律。
 
@@ -39,7 +39,7 @@ related_tutorials:
 
 这种将建图与推理硬性解耦的静态范式，在面对复杂的长文本或多模态输入时，暴露出三个难以逾越的瓶颈。
 
-<img src="/images/2607.12764v1/x1.jpg" alt="现有的静态检索范式与EvoGraph-R1自进化范式的对比" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2607.12764v1/x1.webp" alt="现有的静态检索范式与EvoGraph-R1自进化范式的对比" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 第一个瓶颈是**以文本为中心的碎片化**。当前主流的图谱提取工具大多基于纯文本逻辑。当它们处理多模态数据时，往往会简单粗暴地将丰富的视觉证据（如图像中的物体关系、空间方位）压缩成孤立的文本三元组。这种降维打击切断了细粒度的视觉语义和跨模态的对齐关系，导致构建出的图谱从一开始就支离破碎，根本无法支持需要图文深度融合的多跳推理。
 
@@ -53,7 +53,7 @@ related_tutorials:
 
 为了彻底消除上述瓶颈，EvoGraph-R1 引入了强化学习中的智能体-环境交互理念。在这一框架下，知识图谱不再是死板的数据仓库，而是演变成了一个与智能体推理过程**协同进化**的动态环境。
 
-<img src="/images/2607.12764v1/x2.jpg" alt="EvoGraph-R1的整体架构：智能体通过四种操作与超图环境交互并触发自我进化" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.12764v1/x2.webp" alt="EvoGraph-R1的整体架构：智能体通过四种操作与超图环境交互并触发自我进化" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在这个重新定义的马尔可夫决策过程（MDP）中，系统的运行逻辑被拆解为四个相互依存的核心要素：
 
@@ -85,7 +85,7 @@ EvoGraph-R1 的自进化机制是否真的优于传统静态检索？研究团�
 
 为了更细致地探究图谱进化对生成质量的影响，研究团队评估了回答的七个关键维度。
 
-<img src="/images/2607.12764v1/radar_ver3.jpg" alt="雷达图展示了EvoGraph-R1在七个生成质量维度上的全面领先" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.12764v1/radar_ver3.webp" alt="雷达图展示了EvoGraph-R1在七个生成质量维度上的全面领先" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 通过对比可以看出，由于自进化图谱在推理过程中不断剔除噪声、引入高置信度事实，EvoGraph-R1 在“相关性”和“正确性”上与之前的基线（如 MMSearch-R1 和 Graph-R1）拉开了明显差距。更值得注意的是，其在“事实性”和“逻辑连贯性”上的优异表现证明，动态纠错机制确实有效地遏制了多模态大模型的幻觉问题；而“多样性”指标的领先，则验证了外部网络搜索的无缝接入成功打破了信息孤岛。
 
@@ -93,7 +93,7 @@ EvoGraph-R1 的自进化机制是否真的优于传统静态检索？研究团�
 
 EvoGraph-R1 最具说服力的应用场景，体现在对知识库极度匮乏环境的适应能力上。研究团队在 E-VQA 任务中人为制造了极限挑战：将系统可访问的维基百科语料库削减至完整版的 10%、5% 甚至 1%。
 
-<img src="/images/2607.12764v1/performance_comparison_adjusted_ver3.jpg" alt="在不同知识库规模下，EvoGraph-R1与其他基线的准确率对比" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.12764v1/performance_comparison_adjusted_ver3.webp" alt="在不同知识库规模下，EvoGraph-R1与其他基线的准确率对比" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在这种“巧妇难为无米之炊”的绝境下，传统静态 RAG 模型的表现迎来了断崖式暴跌。然而，EvoGraph-R1 却展示出了惊人的韧性。在仅有 1% 内部语料的设定下，它依然维持了 37.2% 的准确率，将一众准确率仅在 13.2% 到 18.9% 之间徘徊的基线模型远远甩在身后。
 

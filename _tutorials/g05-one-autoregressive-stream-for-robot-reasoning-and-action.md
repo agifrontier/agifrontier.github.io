@@ -39,7 +39,7 @@ related_tutorials:
 
 G0.5 的研究团队选择直面自回归范式的原始缺陷，而不是将其抛弃。他们的核心主张是：统一模型使用同一套权重，在单一自回归 Token 流中同时生成推理和动作。通过引入高效的学习型动作分词器来消除 Token 膨胀，G0.5 成功保留了 VLM 作为生成式演员的角色，从而在物理操作中完全释放了多模态大模型的认知潜力。
 
-<img src="/images/2608.11739v1/teaser.jpg" alt="G0.5自回归流与闭环推理生成" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2608.11739v1/teaser.webp" alt="G0.5自回归流与闭环推理生成" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### 跨具身动作编解码：打破异构数据的结构壁垒
 
@@ -51,7 +51,7 @@ G0.5 引入了一个端到端学习的异构动作编解码器（Action Codec）
 
 更精妙的是，在生成 Token 序列时，G0.5 会显式地注入结构化的特殊标记。在图表中展示的生成片段中，动作跨度会被展开为 $R$ 个残差轮次，每一轮首先输出当前激活的自由度组标记（如 `<left_control_r>`、`<right_control_r>`），紧接着是该组对应的 8 个动作代码。这一机制赋予了模型极高的灵活性：在推理过程中，模型只需预测当前任务中真正需要运动的部位；对于处于静止状态的部位，模型可以直接跳过其 Token 的生成，完全无需像传统方法那样用零填充。这种动态的稀疏动作预测不仅提升了跨具身系统（如单臂、双臂、带底盘机器人）之间的数据共享效率，还从根本上解决了高频控制带来的自回归解码延迟问题。
 
-<img src="/images/2608.11739v1/tokenizer_v2.jpg" alt="结构化动作分词与编解码设计" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2608.11739v1/tokenizer_v2.webp" alt="结构化动作分词与编解码设计" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 ### 原生思维链：将推理深深植入动作生成
 

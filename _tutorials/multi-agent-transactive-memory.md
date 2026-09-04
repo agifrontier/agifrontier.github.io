@@ -50,7 +50,7 @@ related_tutorials:
 
 而 MATM 迈出了关键的下一步：让 Agent 检索其他 Agent 生成的交互轨迹。
 
-<img src="/images/2606.19911v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.19911v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 为了理解 MATM 的运作机制，我们可以引入一个贯穿始终的“共享航海日志”比喻。
 
@@ -154,8 +154,8 @@ ALFWorld 的成功率依然能达到 59.9%，远高于 47.1% 的基线。
 
 此外，系统的表现与记忆库的规模密切相关。
 
-<img src="/images/2606.19911v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
-<img src="/images/2606.19911v1/x4.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.19911v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.19911v1/x4.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，在 ALFWorld 中，成功率和效率随着索引规模的扩大呈现单调递增。
 

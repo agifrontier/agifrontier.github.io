@@ -89,7 +89,7 @@ Agent 技能通常由可复用的自然语言指令组成，包含名称、触�
 
 基于上述三种原子操作，SkillComposer 能够灵活应对不同的实际应用场景，并衍生出三种部署模式：
 
-<img src="/images/2606.06079v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2606.06079v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 1. **离线模式（Offline）**：利用训练集，通过反复的“创建”和“合并”构建一个通用的技能库。在推理时，模型直接检索并使用相关技能。
 2. **在线模式（Online）**：从零开始，面对新流任务时即时“创建”并不断“改进”技能。这种模式无需先验数据，极大地驱动了特化能力。
@@ -125,7 +125,7 @@ Agent 技能通常由可复用的自然语言指令组成，包含名称、触�
 #### 合并与改进的正交性
 本文对技能库进行了降维可视化分析。
 
-<img src="/images/2606.06079v1/x3.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.06079v1/x3.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 从上图可以看出，经过“合并（Merge）”操作后，原本密集的技能簇被有效压缩，技能库变得更加稀疏且通用，大幅减少了冗余。
 消融实验证实，合并和改进各自针对技能的不同质量维度，缺一不可。
@@ -133,7 +133,7 @@ Agent 技能通常由可复用的自然语言指令组成，包含名称、触�
 #### 迭代进化优于重复采样
 在实际工程中，人们常常通过多次采样（$pass@k$）来碰运气获取正确答案。
 
-<img src="/images/2606.06079v1/x4.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2606.06079v1/x4.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 但如上图所示，在相同的推理预算 $k$ 次尝试下，SkillComposer 的在线迭代进化策略始终显著优于单纯的独立重复采样。
 随着尝试次数的增加，这种通过结构化知识沉淀带来的优势差距会越来越大。

@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">Trust Region Policy Distillation</p>
 
-<img src="/images/2607.04751v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.04751v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在大语言模型的后训练（Post-training）阶段，如何有效地将强大的闭源或超大参数模型的能力“灌输”给较小的学生模型，一直是极具挑战的核心命题。在过去的探索中，**同策略蒸馏**（On-Policy Distillation, 简称 OPD）凭借其能够提供密集奖励信号、且不易发生灾难性遗忘的优势，迅速成为了当前业界青睐的主流范式。
 
@@ -77,7 +77,7 @@ related_tutorials:
 
 请注意这个新公式的美妙之处。即便目标教师对某个 Token 给出绝对的 0 分（即 $\rho_k = 0$），这个新的奖励值 $\tilde{r}_k$ 也会被严格兜底在 $\log(1-\alpha)$，而不会跌入负无穷。这意味着，通过引入学生自身的概率分布作为缓冲，奖励信号获得了严格的下界，整个函数被彻底平滑化了。
 
-<img src="/images/2607.04751v1/x1.jpg" alt="机制对比图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.04751v1/x1.webp" alt="机制对比图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 作者通过严谨的理论证明指出，在引入近端教师后，梯度的方差不再发散，而是被严格限制在一个统一的绝对上限内。更关键的是，$\alpha$ 成为了一个直接控制方差的旋钮：当 $\alpha$ 趋近于 1 时，框架退化为标准 OPD，方差无界；而减小 $\alpha$ 则能强制拉平波动。
 
@@ -102,7 +102,7 @@ related_tutorials:
 
 然而，这里的优势函数（Advantage）计算与常规做法有所不同。在序列生成任务中，如果直接在整个序列层面进行优势归一化，容易淹没 Token 级别的细粒度密集奖励。为此，**TOP-D** 特别强调了在同一提示词（Prompt）下生成的多个回答之间，执行 **Token 级别的优势归一化**。
 
-<img src="/images/2607.04751v1/x4.jpg" alt="Token级别归一化" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.04751v1/x4.webp" alt="Token级别归一化" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 这种内部信任域的引入，不仅仅是为了节省数据的工程手段，它在理论上补齐了收敛闭环。
 
@@ -114,7 +114,7 @@ related_tutorials:
 
 实验结果揭示了令人震撼的性能跃升，证明了限制奖励方差确实能够彻底释放小模型的推理潜能。
 
-<img src="/images/2607.04751v1/x2.jpg" alt="主实验结果" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.04751v1/x2.webp" alt="主实验结果" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 首先，观察在 Qwen3-8B-Base 上的表现。当使用标准 OPD 强行对齐 30B 的教师模型时，由于优化过程极其颠簸，学生模型在 AIME24 基准上的 avg@32 准确率仅能达到 24.58%。甚至传统的带有可验证奖励的强化学习（RLVR）方法，因为其奖励过于稀疏，表现也差强人意。
 
@@ -124,7 +124,7 @@ related_tutorials:
 
 反观 **TOP-D**，不仅没有崩溃，反而稳稳地将 1.7B 模型在 AIME24 上的准确率推过了 20% 的大关，并在两个 AIME 年份基准上持续领先标准 OPD 超过 10 个百分点。
 
-<img src="/images/2607.04751v1/x5.jpg" alt="消融实验曲线" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.04751v1/x5.webp" alt="消融实验曲线" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 为了进一步剖析性能暴涨的来源，作者在 1.7B 模型上进行了细致的消融实验。如上方的学习曲线所示，我们可以清晰地看到不同模块的贡献：
 

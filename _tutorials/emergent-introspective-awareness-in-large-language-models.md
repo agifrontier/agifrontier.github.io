@@ -13,7 +13,7 @@ related_tutorials:
 
 ## Anthropic重磅：给大模型“植入思想”，Claude Opus 4.1展现惊人内省能力
 
-<img src="/images/2601.01828v1/A__title.jpg" alt="Anthropic重磅：给大模型“植入思想”，Claude Opus 4.1展现惊人内省能力 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2601.01828v1/A__title.webp" alt="Anthropic重磅：给大模型“植入思想”，Claude Opus 4.1展现惊人内省能力 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大语言模型（LLM）是否真的“知道”自己在想什么？当我们问模型“你为什么这么回答”时，它是在真诚地剖析内心，还是仅仅在根据训练数据一本正经地胡说八道（Confabulation）？
 

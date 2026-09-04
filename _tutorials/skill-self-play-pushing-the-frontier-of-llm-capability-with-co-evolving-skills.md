@@ -30,7 +30,7 @@ related_tutorials:
 
 在这篇名为《Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills》的最新论文中，研究团队为这一难题提供了一个极其巧妙的解法。他们将“智能体技能”（Agent Skills）引入训练循环，提出了一种名为 **Skill Self-Play (Skill-SP)** 的协同进化框架。通过将技能作为主动的任务模式接口，Skill-SP 成功在结构化验证与开放式探索之间架起了一座桥梁。实验表明，该框架不仅稳步提升了高阶模型的性能天花板，更在工具调用任务上实现了高达 42.9 分的惊人绝对提升，成功挽救了原本完全无法对齐的基础模型。
 
-<img src="/images/2607.22529/intro.jpg" alt="动机对比图" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.22529/intro.webp" alt="动机对比图" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 打破僵局的钥匙：将“技能”作为进化的载体
 
@@ -44,7 +44,7 @@ Skill-SP 的核心洞察在于，将“技能”视作一种动态进化的接�
 
 Skill-SP 框架并非一个静态的生成管线，而是一个由强化学习驱动的动态系统。其核心由三大组件构成：提议者（Proposer）、求解者（Solver）和控制器（Controller）。这三者围绕着一个不断生长的“技能库”进行持续的协同进化。
 
-<img src="/images/2607.22529/method.jpg" alt="方法总览图" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.22529/method.webp" alt="方法总览图" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 在这个持续运转的飞轮中，三大组件各司其职，又紧密扣合：
 
@@ -72,7 +72,7 @@ Skill-SP 框架并非一个静态的生成管线，而是一个由强化学习�
 
 研究团队通过深入的数据循环诊断（Data-Loop Diagnostics）打消了这一疑虑。仅仅看最终的准确率往往会掩盖自我提升的底层机制。只有追踪模型在训练过程中到底生成了什么样的数据，才能看清进化的全貌。
 
-<img src="/images/2607.22529/fig_question_distribution.jpg" alt="问题分布与技能利用图" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.22529/fig_question_distribution.webp" alt="问题分布与技能利用图" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 诊断数据显示，一个不断增长的技能库必须主动引导训练走向多元化。经过五轮迭代，系统中产生实质作用的活跃技能数量（Active Skills）扩展到了 86 个。更严谨地看，如果我们通过香农熵来计算有效技能数（排除长尾偶尔触发的技能），这个数值也在稳步增长至 46。
 

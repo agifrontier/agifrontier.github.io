@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">When LLMs Develop Languages: Symbolic Communication for Efficient Multi-Agent Reasoning</p>
 
-<img src="/images/2606.29354v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2606.29354v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大型语言模型（LLMs）在处理复杂推理任务时，往往依赖于思维链（Chain-of-Thought, CoT）技术。通过让模型一步一步地用自然语言写出推理过程，其准确率确实得到了显著提升。然而，这里隐藏着一个根本性的效率错位：人类用来沟通和理解的自然语言，对于机器的内部逻辑推理而言，真的是最经济、最高效的载体吗？
 
@@ -47,7 +47,7 @@ related_tutorials:
 
 **CLSR** 的出发点正是基于对上述局限性的反思。研究团队受到新兴通信领域（emergent communication）的启发，将问题转化为一个基于进化搜索的社会语言学过程。如果赋予大模型自主设计的权利，并在自然选择的压力下（即追求回答正确且尽量少用 Token）进行迭代，它们完全有能力演化出比自然语言紧凑得多、且专为机器内部状态转换优化的协议。
 
-<img src="/images/2606.29354v1/mainFig_concept_v2.jpg" alt="CLSR框架概念图：让模型自上演化机器方言" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2606.29354v1/mainFig_concept_v2.webp" alt="CLSR框架概念图：让模型自上演化机器方言" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 ### CLSR 的解剖学：从语言诞生到智能路由
 
@@ -61,7 +61,7 @@ related_tutorials:
 
 这里的演化压力是明确且残酷的：一个 LSF 只有在能够帮助模型准确回答问题，并且消耗极少 Token 的情况下，才会被保留到最终的候选池中。这非常类似于人类社会中语言的演变——冗长且容易引起歧义的表达会被逐渐淘汰，而那些能够用最少字节传递最核心逻辑的行话和术语则会被广泛采纳和传播。研究发现，在较高的采样温度下，模型能够生成高度多样化的 LSF 群体，从极其严苛的纯机器格式，到带有少量自然语言痕迹的半结构化协议，应有尽有。
 
-<img src="/images/2606.29354v1/mainFig_evolvePLL_v2.jpg" alt="多智能体演化循环：通过提议、批评和变异优化LSF" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.29354v1/mainFig_evolvePLL_v2.webp" alt="多智能体演化循环：通过提议、批评和变异优化LSF" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当一个饱和且高质量的 LSF 语言池建立完毕后，就进入了测试时的路由阶段。这正是 **CLSR** 展现出强大灵活性的地方。与传统的“选择一个最优提示词然后贯穿始终”不同，**CLSR** 将 LSF 视为一组可调用的“语言专家”。
 
@@ -69,7 +69,7 @@ related_tutorials:
 
 对于简单直接的事实性问题，路由器可能会决定只调用一个成本极低的严格 LSF 进行单次生成。而面对极其复杂的数学推导或多跳逻辑链，路由器则可能启动多轮 LSF 组合协议。在这种模式下，模型首先用一种专门用于拆解问题的 LSF 将复杂任务分解，然后再用针对具体计算优化的 LSF 处理子问题，最终汇总得出结果。这种设计显式地将计算预算分配到了最需要的地方，彻底告别了传统 CoT 一刀切的冗长模式。
 
-<img src="/images/2606.29354v1/mainFig_LLMrouter_v1.jpg" alt="无延迟LLM路由器：根据查询自适应规划语言协议" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2606.29354v1/mainFig_LLMrouter_v1.webp" alt="无延迟LLM路由器：根据查询自适应规划语言协议" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 寻找推理的极限：信息论与可计算性的理论注脚
 
@@ -95,7 +95,7 @@ related_tutorials:
 
 消融实验进一步巩固了方法的可靠性。研究发现，随着进化深度的增加，整个 LSF 语言池会系统性地向更高的“准确率/Token”比率演进。这意味着多智能体之间的自然选择确实在发挥淘汰冗余、提纯逻辑的作用。
 
-<img src="/images/2606.29354v1/ScaleNT_gpqa_mmlu_v1.jpg" alt="扩展智能体数量对LSF质量的提升作用" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2606.29354v1/ScaleNT_gpqa_mmlu_v1.webp" alt="扩展智能体数量对LSF质量的提升作用" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 同时，扩大参与离线演化的智能体群体规模，能够显著增加发现那些鲁棒性极强、可高度复用的 LSF 的几率。只要演化目标在正确性和压缩率之间保持合理的平衡，更大规模的群体往往能探索出更加精妙的符号表达方式，从而在下游测试中带来准确率的实质性飞跃。
 

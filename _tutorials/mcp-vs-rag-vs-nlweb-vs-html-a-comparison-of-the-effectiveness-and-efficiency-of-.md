@@ -14,7 +14,7 @@ related_tutorials:
 
 ## AI Agent上网指南：RAG效率飙升5倍，成本锐减80%，完胜HTML
 
-<img src="/images/2511.23281v1/A__title.jpg" alt="AI Agent上网指南：RAG效率飙升5倍，成本锐减80%，完胜HTML 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.23281v1/A__title.webp" alt="AI Agent上网指南：RAG效率飙升5倍，成本锐减80%，完胜HTML 图示" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 当我们在谈论AI Agent时，我们总会幻想它能像一个不知疲倦的数字助理，帮我们处理网络上的各种杂事。但你是否想过，这个“助理”究竟是如何“看”懂并“操作”网页的？是像我们一样浏览，还是有更聪明的捷径？
 
@@ -38,7 +38,7 @@ related_tutorials:
 
 这四种架构的对比如下图所示：
 
-<img src="/images/2511.23281v1/interface_overview.jpg" alt="四种架构概览" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2511.23281v1/interface_overview.webp" alt="四种架构概览" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 那么，在真实的购物场景中，这四种架构的表现究竟孰优孰劣呢？
 
@@ -64,7 +64,7 @@ related_tutorials:
 
 - **运行时间**：HTML Agent平均耗时 **291秒**，而RAG、MCP和NLWeb的平均耗时仅为 **50到62秒**，速度提升了近 **5倍**！
 
-<img src="/images/2511.23281v1/price_performance_ratio.jpg" alt="性能与价格权衡" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2511.23281v1/price_performance_ratio.webp" alt="性能与价格权衡" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 上图清晰地展示了不同模型和架构的性价比。HTML（图中橙色点）在性能和成本上都处于明显劣势。
 

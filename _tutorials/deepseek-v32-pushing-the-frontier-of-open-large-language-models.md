@@ -13,7 +13,7 @@ related_tutorials:
 
 ## 斩获IMO/IOI金牌！DeepSeek-V3.2发布，推理比肩Gemini 3.0 Pro
 
-<img src="/images/2512.02556v1/A__title.jpg" alt="斩获IMO/IOI金牌！DeepSeek-V3.2发布，推理比肩Gemini 3.0 Pro 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.02556v1/A__title.webp" alt="斩获IMO/IOI金牌！DeepSeek-V3.2发布，推理比肩Gemini 3.0 Pro 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 开源大模型的世界，刚刚迎来了一位重量级选手！就在人们感叹开源与闭源模型的差距似乎越拉越大时，深度求索（DeepSeek）发布了最新的 **DeepSeek-V3.2** 模型。它不仅在国际数学奥林匹克（IMO）和国际信息学奥林匹克（IOI）竞赛中取得了金牌级表现，其推理能力更是直接对标顶尖的闭源模型 Gemini 3.0 Pro。
 
@@ -21,7 +21,7 @@ related_tutorials:
 
 这究竟是如何做到的？DeepSeek-V3.2 凭借三大技术法宝，成功突破了开源模型面临的效率、性能和Agent能力三大瓶颈，向世界展示了开源力量的巨大潜力。
 
-<img src="/images/2512.02556v1/x1.jpg" alt="Benchmark of DeepSeek-V3.2" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.02556v1/x1.webp" alt="Benchmark of DeepSeek-V3.2" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *▲ DeepSeek-V3.2 与其他顶尖模型的性能对比*
 
@@ -35,7 +35,7 @@ DSA 的核心思想非常巧妙。它包含一个“闪电索引器”（lightni
 
 这样一来，模型就不再需要进行全局的密集计算，而是将注意力集中在最关键的信息上。
 
-<img src="/images/2512.02556v1/x2.jpg" alt="DSA Attention Architecture" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.02556v1/x2.webp" alt="DSA Attention Architecture" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 *▲ DeepSeek-V3.2 的注意力架构，绿色部分为DSA如何选择Top-k信息*
 
@@ -45,7 +45,7 @@ DSA 的核心思想非常巧妙。它包含一个“闪电索引器”（lightni
 
 带来的直接好处就是推理成本的大幅下降。从官方公布的成本对比图可以看出，在处理长序列时，DeepSeek-V3.2 的成本优势极为显著，为大模型在长文本场景的规模化应用铺平了道路。
 
-<img src="/images/2512.02556v1/x3.jpg" alt="Inference Costs Comparison" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.02556v1/x3.webp" alt="Inference Costs Comparison" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *▲ DeepSeek-V3.2 与前代模型的推理成本对比*
 

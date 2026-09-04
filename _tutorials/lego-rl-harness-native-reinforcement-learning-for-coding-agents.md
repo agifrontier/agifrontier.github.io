@@ -23,7 +23,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">LEGO-RL: Harness-Native Reinforcement Learning for Coding Agents</p>
 
-<img src="/images/2608.17393v1/A__title.jpg" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.17393v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 随着大模型在复杂软件工程任务中的应用日益深入，针对代码智能体（Coding Agents）的强化学习正在成为前沿焦点。这类智能体在执行任务时，高度依赖长时间运行的智能体脚手架（Agent Harnesses）来管理工具集成、代码仓库上下文以及执行反馈。然而，现有的强化学习框架与这些原生脚手架的执行环境之间存在着根本性的错位：一方面，沙盒环境的崩溃和“奖励劫持”（Reward Hacking）会破坏结果信号；另一方面，脚手架内部的上下文压缩和历史重写机制，会导致交互展开（Rollout）时的行为与训练时的策略更新脱节。
 
@@ -60,7 +60,7 @@ related_tutorials:
 
 为了在不侵入脚手架逻辑的前提下实现上述要求，**LEGO-RL** 构建了一套独特的基础设施，其核心主要依赖于进程内代理、可靠的沙盒执行环境以及异步的流水线调度。
 
-<img src="/images/2608.17393v1/SWE-Lego-RL-Trainer-framework-v2.jpg" alt="Figure 1: Overview of the Lego-RL training infrastructure." style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.17393v1/SWE-Lego-RL-Trainer-framework-v2.webp" alt="Figure 1: Overview of the Lego-RL training infrastructure." style="width:85%; max-width:600px; margin:auto; display:block;">
 
 首先，**LEGO-RL** 引入了“进程内代理”（In-Process LLM Proxy）机制。每一个由脚手架发出的模型调用，都会先经过这个与采样引擎同机部署的代理层。代理层直接在模型服务边界捕获精确的词元 ID、对数概率、回复掩码以及生成元数据。当脚手架不可避免地进行了历史重写或压缩时，**LEGO-RL** 能够在消息（Message）粒度上对连续的上下文进行对齐。系统提示词、用户指令和工具结果必须完全匹配；工具调用则通过其稳定的标识符和函数名进行关联。对于被脚手架修改过的历史内容，系统仅将其视为条件上下文，绝不将其混入策略生成的词元掩码中。通过这种方式，即便脚手架对外部呈现的文本面目全非，底层优化的概率计算依然能够保持绝对的忠实。针对 MoE 模型，代理还会记录下每次生成的路由决策，并在训练阶段进行严格的回放重演。
 
@@ -72,7 +72,7 @@ related_tutorials:
 
 代码智能体的强化学习不仅仅是一个算法问题，更是一个涉及大量长周期诊断的系统工程。为此，**LEGO-RL** 提供了一套完整的闭环操作工作流，将数据准备、运行验证、训练执行与实时观测结合在一起。
 
-<img src="/images/2608.17393v1/swe_lego_live_rl_framework.jpg" alt="Figure 2: Closed-loop operational workflow of Lego-RL." style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2608.17393v1/swe_lego_live_rl_framework.webp" alt="Figure 2: Closed-loop operational workflow of Lego-RL." style="width:85%; max-width:600px; margin:auto; display:block;">
 
 在整个闭环中，最引人注目的是其提供的智能体插件与实时可视化界面（Live UI）。在过去，当模型的训练指标出现剧烈波动时，研究人员往往难以定位是因为策略崩坏，还是因为某个特定环境依赖失效。**LEGO-RL** 的监控系统通过将验证器结果与终止状态、具体的交互轨迹以及工具使用模式进行绑定，打破了这种黑盒状态。
 

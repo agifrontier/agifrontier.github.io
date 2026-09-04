@@ -13,7 +13,7 @@ related_tutorials:
 
 ## Agent训练告别数值奖励：字节跳動NLAC让AI用“人话”指导，性能最高提升24%
 
-<img src="/images/2512.04601v1/A__title.jpg" alt="Agent训练告别数值奖励：字节跳動NLAC让AI用“人话”指导，性能最高提升24% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.04601v1/A__title.webp" alt="Agent训练告别数值奖励：字节跳動NLAC让AI用“人话”指导，性能最高提升24% 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 当今，我们正目睹 **LLM Agent**（大语言模型智能体）的浪潮，它们被寄予厚望，以期能自主处理网页浏览、工具使用甚至与人对话等复杂任务。但一个棘手的问题始终摆在面前：如何高效地训练这些Agent？传统方法就像一位沉默的考官，只给最终得分，却从不解释错在哪里，导致训练过程既不稳定又极其耗费数据。
 
@@ -43,7 +43,7 @@ NLAC巧妙地将经典的**行动者-评论家**（**Actor-Critic**）框架与L
 
 *   **评论家（Critic）**：负责评估行动者的行为，但它输出的不是数值，而是详细的文本评论。
 
-<img src="/images/2512.04601v1/x1.jpg" alt="NLAC框架概览" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2512.04601v1/x1.webp" alt="NLAC框架概览" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 <center>图1: NLAC框架概览。评论家通过“语言贝尔曼回溯”进行训练，而行动者则通过提炼“改进策略”来学习。</center>
 
@@ -104,13 +104,13 @@ NLAC巧妙地将经典的**行动者-评论家**（**Actor-Critic**）框架与L
 
 下面的例子生动地展示了NLAC的威力。
 
-<img src="/images/2512.04601v1/nlac_example_2.jpg" alt="20Q游戏中的改进" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.04601v1/nlac_example_2.webp" alt="20Q游戏中的改进" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 <center>图2: 在20Q游戏中，基础模型陷入无效的线性提问，而NLAC的评论家明确指出其策略错误，并指导其转向更优的探索方向。</center>
 
 在20Q猜谜游戏中，基础Agent只会傻傻地顺着一个思路问下去（“是红色的吗？”“是蓝色的吗？”）。而NLAC的评论家一针见血地指出：“你正在对颜色进行线性搜索，这很低效。” 从而引导Agent采取更聪明的策略。
 
-<img src="/images/2512.04601v1/nlac_example.jpg" alt="客服任务中的改进" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2512.04601v1/nlac_example.webp" alt="客服任务中的改进" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 <center>图3: 在客服任务中，基础模型未能遵守“一次只处理一个请求”的规则，NLAC的评论家精准地指出了其违反的策略，避免了错误操作。</center>
 

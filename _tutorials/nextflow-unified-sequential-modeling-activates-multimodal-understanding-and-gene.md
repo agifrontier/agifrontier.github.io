@@ -13,7 +13,7 @@ related_tutorials:
 
 ## NextFlow横空出世：6万亿Token打造统一自回归，5秒生成1024高清图
 
-<img src="/images/2601.02204v1/A__title.jpg" alt="NextFlow横空出世：6万亿Token打造统一自回归，5秒生成1024高清图 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.02204v1/A__title.webp" alt="NextFlow横空出世：6万亿Token打造统一自回归，5秒生成1024高清图 图示" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 长期以来，AI 领域存在着一道“隐形柏林墙”：大语言模型（LLMs）在逻辑推理和文本理解上独步天下，而扩散模型（Diffusion Models）则统治着视觉生成的像素世界。虽然我们一直梦想着一个“大一统”的模型能同时精通这两者，但现实往往很骨感——要么是拼接缝合的怪胎，要么是虽然统一了架构但在生成速度上慢如蜗牛。
 
@@ -37,7 +37,7 @@ NextFlow 的核心创新在于“因地制宜”：
 
 *   **对图像**：采用 **下一尺度预测**（**Next-Scale Prediction**）。
 
-<img src="/images/2601.02204v1/x1.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.02204v1/x1.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 如上图所示，NextFlow 不是在一个平面上漫无目的地游走，而是像画家作画一样——先画构图（粗粒度 Token），再画轮廓，最后填充细节（细粒度 Token）。这种层级化的生成方式，使得模型能够以 $O(1)$ 的复杂度并行预测同一尺度的所有 Token，极大地释放了并行计算能力。
 
@@ -65,7 +65,7 @@ NextFlow 的强大不仅仅在于速度，还在于它是一个真正的“全�
 
 论文非常诚实地记录了他们的“Training Odyssey”（训练奥德赛），详细披露了从 256px 到 1024px 分辨率的进阶之路。
 
-<img src="/images/2601.02204v1/x7.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2601.02204v1/x7.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 整个训练过程使用了高达 **6 万亿（6T）** 个 Token，涵盖了纯文本、图文对、交错图文以及视频数据。为了驯服这个庞然大物，团队引入了几个关键策略：
 
@@ -83,7 +83,7 @@ NextFlow 的表现如何？一句话：**不仅快，而且好。**
 
 在视觉质量上，NextFlow 能够生成具有极高保真度和美感的图像，足以媲美专门的扩散模型（如 SD3）。
 
-<img src="/images/2601.02204v1/x2.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2601.02204v1/x2.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 更重要的是，由于保留了 LLM 的基因，NextFlow 天生具备 **上下文学习**（**In-Context Learning, ICL**）和 **思维链**（**Chain-of-Thought, CoT**）能力。
 
@@ -91,7 +91,7 @@ NextFlow 的表现如何？一句话：**不仅快，而且好。**
 
 *   **交错生成**：模型可以流畅地生成图文并茂的文章，甚至进行简单的视频生成。
 
-<img src="/images/2601.02204v1/x4.jpg" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
+<img src="/images/2601.02204v1/x4.webp" alt="Refer to caption" style="width:80%; max-width:300px; margin:auto; display:block;">
 
 ### 总结
 

@@ -48,7 +48,7 @@ related_tutorials:
 面对这一核心痛点，SkillOS提出了一种极其巧妙的模块化架构设计。
 系统被物理隔离为两个各司其职的核心角色：处于冻结状态的**代理执行器**（**Agent Executor**），以及可被训练的**技能管理员**（**Skill Curator**）。
 
-<img src="/images/2605.06614v1/x1.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2605.06614v1/x1.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 为了更直观地理解这种设计，我们可以将其类比为现代计算机操作系统的底层运作逻辑。
 这里的执行器就像是系统的CPU或应用程序，它不关心底层的存储逻辑，只负责从外部调用所需的技能，专心致志地解决眼前的任务。
@@ -101,7 +101,7 @@ $r^{\text{cnt}}$用于衡量生成的Markdown技能内容的实质质量。
 公式中的$\rho^{n}$代表新旧策略的概率比值，而优势函数$A^{n}$被均匀地分配给序列中的所有Token。
 值得注意的是，研究团队在此策略中去除了传统的KL散度惩罚项，旨在赋予模型更大的探索空间，鼓励管理员大胆尝试各种激进的技能重构方案。
 
-<img src="/images/2605.06614v1/x2.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2605.06614v1/x2.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 多场景下的性能飞跃
 

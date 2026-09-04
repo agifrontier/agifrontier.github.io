@@ -38,7 +38,7 @@ related_tutorials:
 ## 本文方法
 本文的核心贡献是 $$Code Evol-Instruct$$ 方法，它通过迭代进化来提升代码指令的质量，并用此数据训练出 $$WizardCoder$$ 模型。
 
-<img src="/images/2306.08568v2/x2.jpg" alt="方法概览" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2306.08568v2/x2.webp" alt="方法概览" style="width:85%; max-width:600px; margin:auto; display:block;">
 _图注：Code Evol-Instruct 方法示意图。_
 
 ### 方法流程
@@ -75,7 +75,7 @@ Below is an instruction that describes a task, paired with an input that provide
 ### Response:
 ```
 
-<img src="/images/2306.08568v2/x3.jpg" alt="多语言性能对比" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2306.08568v2/x3.webp" alt="多语言性能对比" style="width:90%; max-width:700px; margin:auto; display:block;">
 _图注：WizardCoder-34B 在多种编程语言上相较于当时的开源SOTA模型（CodeLlama-34B系列）展现出显著优势。_
 
 ## 实验结论
@@ -88,7 +88,7 @@ _图注：WizardCoder-34B 在多种编程语言上相较于当时的开源SOTA�
     *   $$WizardCoder-15B$$ 在 HumanEval 和 HumanEval+ 基准上的 $$pass@1$$ 分数超过了著名的闭源模型 Anthropic Claude 和 Google Bard。
     *   $$WizardCoder-34B$$ 在 HumanEval 上的分数与 GPT-3.5 (ChatGPT) 相当，在测试用例更丰富的 HumanEval+ 上则**超越**了 GPT-3.5。
 
-<img src="/images/2306.08568v2/x4.jpg" alt="EvalPlus 排行榜" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2306.08568v2/x4.webp" alt="EvalPlus 排行榜" style="width:85%; max-width:600px; margin:auto; display:block;">
 _图注：在 EvalPlus 排行榜上，WizardCoder-34B 在 HumanEval+ 上的表现优于 GPT-3.5，仅次于 GPT-4。_
 
 *   **多语言和特定领域能力**:

@@ -40,7 +40,7 @@ related_tutorials:
 
 为什么自然度筛选会被数据的长度欺骗？研究人员对入选数据和落选数据进行了深度量化分析。
 
-<img src="/images/2604.06834v1/x4.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2604.06834v1/x4.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 如上图所示，入选数据的推理步骤长度显著偏高。难道步骤越长，推理质量真的越高吗？显然不是。
 
@@ -58,7 +58,7 @@ related_tutorials:
 但如果运动员在起跳后，故意加入大量简单、重复的常规动作（也就是冗长的废话 Token）。
 这个低分起跳对整体**平均分**的影响，就被严重“稀释”了。
 
-<img src="/images/2604.06834v1/x5.jpg" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2604.06834v1/x5.webp" alt="Refer to caption" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 正如上图的 Token 级概率分布所示，较长的推理步骤通过堆砌大量高概率的常规词汇，掩盖了首个 Token 的低概率。
 
@@ -119,7 +119,7 @@ Aslec-casl 将“步长”视为一个混杂因子，通过拟合一个轻量级
 
 数据源来自 QwQ-32B、Qwen3-32B 等四种强大的开源模型。测试则涵盖了 AIME24、MATH500 等五项严苛的评估。
 
-<img src="/images/2604.06834v1/x6.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2604.06834v1/x6.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 上表展示了在 AceReason-1.1-SFT 数据集上的惊艳结果。
 

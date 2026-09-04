@@ -35,7 +35,7 @@ DeepMind、牛津大学等机构的最新研究给出了肯定的答案。这篇
 
     模型将每个部分单独表示，并将它们“堆叠”在一起。这种表示的维度随着因子数量呈**线性增长**。对于 $N$ 个部分，维度需求仅为 $N \times (d-1)$。这就像是分别记住每个时钟的时间，高效且清晰。
 
-<img src="/images/2602.02385v1/figure1_v3_arxiv.jpg" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2602.02385v1/figure1_v3_arxiv.webp" alt="Refer to caption" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 *图1：Transformer 学习将世界分解为部分。(a) 复杂的联合过程（左上）可以分解为简单的独立过程（右上）。(c) 这种分解带来了巨大的表示节省：联合表示（红色）需要指数级维度，而因子化表示（绿色）仅需线性维度。*
 
@@ -59,7 +59,7 @@ DeepMind、牛津大学等机构的最新研究给出了肯定的答案。这篇
 
 研究人员发现，代表不同因子的激活向量位于**相互正交的子空间**（Orthogonal Subspaces）中。这意味着模型在处理“因子A”的信息时，完全不会干扰到“因子B”的信息。残差流就像一条宽阔的高速公路，被模型自动划分成了互不干扰的车道，每个车道跑着不同的因子信息。
 
-<img src="/images/2602.02385v1/figure_2_final_vertical_arxiv.jpg" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2602.02385v1/figure_2_final_vertical_arxiv.webp" alt="Refer to caption" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 *图2：(b) 随着训练进行，不同因子对应的子空间逐渐变得正交（重叠度降低）。(c) 激活空间的有效维度迅速收敛到因子化表示的理论值（绿色虚线），彻底抛弃了联合表示（红色虚线）。*
 
