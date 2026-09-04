@@ -11107,6 +11107,34 @@
     "height": 464,
     "width": 1600
   },
+  "/images/2607.20911/fig-code-scenario.webp": {
+    "height": 723,
+    "width": 1600
+  },
+  "/images/2607.20911/fig-web-scenario.webp": {
+    "height": 629,
+    "width": 1107
+  },
+  "/images/2607.20911/figure1-unified-benchmark-overview.webp": {
+    "height": 836,
+    "width": 1600
+  },
+  "/images/2607.21461/arex_benchmark_results_paper.webp": {
+    "height": 607,
+    "width": 1200
+  },
+  "/images/2607.21461/method_recursive.webp": {
+    "height": 844,
+    "width": 1585
+  },
+  "/images/2607.21553/model_overview.webp": {
+    "height": 355,
+    "width": 877
+  },
+  "/images/2607.21553/teaser.webp": {
+    "height": 444,
+    "width": 660
+  },
   "/images/2607.21557/coverfig_0717.jpg": {
     "height": 452,
     "width": 1200
@@ -11118,6 +11146,18 @@
   "/images/2607.21557/task_synth_pipeline_0720.jpg": {
     "height": 1417,
     "width": 954
+  },
+  "/images/2607.21971/approach.webp": {
+    "height": 1247,
+    "width": 1600
+  },
+  "/images/2607.22165/architecture_workflow.webp": {
+    "height": 620,
+    "width": 1512
+  },
+  "/images/2607.22165/scenario_example.webp": {
+    "height": 887,
+    "width": 880
   },
   "/images/2607.22529/fig_question_distribution.jpg": {
     "height": 210,
@@ -11151,6 +11191,34 @@
     "height": 615,
     "width": 1276
   },
+  "/images/2607.23263v1/A__title.webp": {
+    "height": 432,
+    "width": 1265
+  },
+  "/images/2607.23784v1/A__title.webp": {
+    "height": 389,
+    "width": 1050
+  },
+  "/images/2607.23784v1/compare_03_vs_04.webp": {
+    "height": 416,
+    "width": 528
+  },
+  "/images/2607.23784v1/compare_03_vs_04_gcr.webp": {
+    "height": 416,
+    "width": 528
+  },
+  "/images/2607.23784v1/compare_05_vs_06.webp": {
+    "height": 416,
+    "width": 528
+  },
+  "/images/2607.23784v1/comparison.webp": {
+    "height": 575,
+    "width": 1600
+  },
+  "/images/2607.23784v1/eval_tasks.webp": {
+    "height": 610,
+    "width": 1600
+  },
   "/images/2607.23809v1/A__title.jpg": {
     "height": 408,
     "width": 1052
@@ -11162,6 +11230,30 @@
   "/images/2607.23809v1/data_pipeline.jpg": {
     "height": 635,
     "width": 1113
+  },
+  "/images/2607.23933v1/A__title.webp": {
+    "height": 274,
+    "width": 1350
+  },
+  "/images/2607.23933v1/data_plane_optimization.webp": {
+    "height": 1277,
+    "width": 1600
+  },
+  "/images/2607.23933v1/laplace_motivation.webp": {
+    "height": 781,
+    "width": 1600
+  },
+  "/images/2607.23933v1/laplace_overview.webp": {
+    "height": 886,
+    "width": 1600
+  },
+  "/images/2607.23933v1/markov_process.webp": {
+    "height": 769,
+    "width": 1600
+  },
+  "/images/2607.23933v1/routing_tradeoff.webp": {
+    "height": 1000,
+    "width": 1600
   },
   "/images/2607.24653v1/A__title.jpg": {
     "height": 315,
@@ -11211,6 +11303,42 @@
     "height": 372,
     "width": 1001
   },
+  "/images/2607.25485v1/A__title.webp": {
+    "height": 439,
+    "width": 1196
+  },
+  "/images/2607.25485v1/end_to_end_architecture.webp": {
+    "height": 726,
+    "width": 1600
+  },
+  "/images/2607.25485v1/evaluation_framework.webp": {
+    "height": 790,
+    "width": 1600
+  },
+  "/images/2607.25485v1/example_conversation.webp": {
+    "height": 918,
+    "width": 1600
+  },
+  "/images/2607.26005v1/A__title.webp": {
+    "height": 457,
+    "width": 916
+  },
+  "/images/2607.26005v1/pv_architecture.webp": {
+    "height": 380,
+    "width": 426
+  },
+  "/images/2607.26005v1/qualitative_renders.webp": {
+    "height": 468,
+    "width": 1600
+  },
+  "/images/2607.26005v1/system.webp": {
+    "height": 356,
+    "width": 1252
+  },
+  "/images/2607.26005v1/teaser.webp": {
+    "height": 222,
+    "width": 541
+  },
   "/images/2607.26115v1/A__title.jpg": {
     "height": 407,
     "width": 1200
@@ -11230,6 +11358,22 @@
   "/images/2607.26115v1/vendy-final.jpg": {
     "height": 721,
     "width": 1200
+  },
+  "/images/2607.26598v1/A__title.webp": {
+    "height": 373,
+    "width": 1119
+  },
+  "/images/2607.26598v1/Figure3.webp": {
+    "height": 648,
+    "width": 1432
+  },
+  "/images/2607.26598v1/Figure4.webp": {
+    "height": 577,
+    "width": 1465
+  },
+  "/images/2607.26598v1/figure1.webp": {
+    "height": 652,
+    "width": 1438
   },
   "/images/2607.26637v1/A__title.jpg": {
     "height": 448,
@@ -11255,6 +11399,22 @@
     "height": 501,
     "width": 1200
   },
+  "/images/2607.27080v1/A__title.webp": {
+    "height": 338,
+    "width": 1260
+  },
+  "/images/2607.27080v1/Fig1-memory-poisoning-lifecycle1.webp": {
+    "height": 282,
+    "width": 380
+  },
+  "/images/2607.27080v1/Fig2-threat-model.webp": {
+    "height": 845,
+    "width": 1097
+  },
+  "/images/2607.27080v1/Fig3-evaluation-framework.webp": {
+    "height": 565,
+    "width": 1314
+  },
   "/images/2607.27205v1/ablation-crop.jpg": {
     "height": 356,
     "width": 1200
@@ -11274,6 +11434,34 @@
   "/images/2607.27205v1/teaser-crop.jpg": {
     "height": 594,
     "width": 1200
+  },
+  "/images/2607.27372/gen_modeling_axes.webp": {
+    "height": 814,
+    "width": 1600
+  },
+  "/images/2607.27372/pred_images_ground_truth.webp": {
+    "height": 512,
+    "width": 512
+  },
+  "/images/2607.27372/pred_images_xm_k1.webp": {
+    "height": 512,
+    "width": 512
+  },
+  "/images/2607.27372/pred_images_xm_k20.webp": {
+    "height": 512,
+    "width": 512
+  },
+  "/images/2607.27372/pred_images_xm_k5.webp": {
+    "height": 512,
+    "width": 512
+  },
+  "/images/2607.27372/pred_images_xm_k50.webp": {
+    "height": 512,
+    "width": 512
+  },
+  "/images/2607.27372/xm_main_figure.webp": {
+    "height": 483,
+    "width": 1600
   },
   "/images/2607.27690/alf_summary.jpg": {
     "height": 359,
@@ -11311,6 +11499,22 @@
     "height": 674,
     "width": 1200
   },
+  "/images/2607.28568/frontis-method-figure.webp": {
+    "height": 1167,
+    "width": 1200
+  },
+  "/images/2607.28568/main_figure_v3_all_harnesses.webp": {
+    "height": 619,
+    "width": 1563
+  },
+  "/images/2607.28568/openmle_positioning_integrated_v3.webp": {
+    "height": 1029,
+    "width": 1600
+  },
+  "/images/2607.28568/x1.webp": {
+    "height": 900,
+    "width": 1600
+  },
   "/images/2607.28609/D1_hardset_overlay_p1.jpg": {
     "height": 981,
     "width": 1007
@@ -11331,6 +11535,42 @@
     "height": 391,
     "width": 1200
   },
+  "/images/2607.29055/mars.webp": {
+    "height": 845,
+    "width": 1600
+  },
+  "/images/2607.29347/AI-Neuroscientist-Framework.webp": {
+    "height": 907,
+    "width": 989
+  },
+  "/images/2607.29347/Discovery_FreeMoving.webp": {
+    "height": 1486,
+    "width": 1600
+  },
+  "/images/2607.29347/benchmark_all.webp": {
+    "height": 979,
+    "width": 806
+  },
+  "/images/2607.29347/shared-axis-2.webp": {
+    "height": 752,
+    "width": 1600
+  },
+  "/images/2607.29613/graphical_model.webp": {
+    "height": 392,
+    "width": 392
+  },
+  "/images/2607.29613/main_fig.webp": {
+    "height": 337,
+    "width": 765
+  },
+  "/images/2607.29613/method.webp": {
+    "height": 347,
+    "width": 690
+  },
+  "/images/2607.29613/wcm_3_subplots_3d_ribbons.webp": {
+    "height": 392,
+    "width": 1447
+  },
   "/images/2607.29678/fig_workload_joint.jpg": {
     "height": 342,
     "width": 426
@@ -11343,6 +11583,10 @@
     "height": 572,
     "width": 1200
   },
+  "/images/2608.00881/latency_scatter.webp": {
+    "height": 127,
+    "width": 187
+  },
   "/images/2608.01428/airsimnh_retained_collage_main.jpg": {
     "height": 225,
     "width": 1178
@@ -11354,6 +11598,18 @@
   "/images/2608.01428/overview.jpg": {
     "height": 686,
     "width": 963
+  },
+  "/images/2608.01507/action-spaces.webp": {
+    "height": 946,
+    "width": 1600
+  },
+  "/images/2608.01507/agent-architectures.webp": {
+    "height": 955,
+    "width": 1600
+  },
+  "/images/2608.01507/hero-banner.webp": {
+    "height": 1872,
+    "width": 1600
   },
   "/images/2608.01964/benchmark_figure.jpg": {
     "height": 981,
@@ -11371,6 +11627,10 @@
     "height": 270,
     "width": 1200
   },
+  "/images/2608.02276/x1.webp": {
+    "height": 900,
+    "width": 1600
+  },
   "/images/2608.02352/qwen-cua-main-results.jpg": {
     "height": 666,
     "width": 1200
@@ -11378,6 +11638,30 @@
   "/images/2608.02352/qwen-for-chrome-deployment.jpg": {
     "height": 659,
     "width": 1200
+  },
+  "/images/2608.03451v1/A__title.webp": {
+    "height": 650,
+    "width": 1481
+  },
+  "/images/2608.03451v1/overview.webp": {
+    "height": 826,
+    "width": 1600
+  },
+  "/images/2608.03451v1/task_example.webp": {
+    "height": 1251,
+    "width": 1600
+  },
+  "/images/2608.03836v2/A__title.webp": {
+    "height": 435,
+    "width": 1368
+  },
+  "/images/2608.04830v1/A__title.webp": {
+    "height": 620,
+    "width": 1322
+  },
+  "/images/2608.04830v1/main.webp": {
+    "height": 586,
+    "width": 1600
   },
   "/images/2608.04968v1/A__title.jpg": {
     "height": 489,
@@ -11387,6 +11671,22 @@
     "height": 675,
     "width": 1200
   },
+  "/images/2608.05212v1/A__title.webp": {
+    "height": 338,
+    "width": 886
+  },
+  "/images/2608.05212v1/dataset_figure.webp": {
+    "height": 804,
+    "width": 1600
+  },
+  "/images/2608.05212v1/intro_figure.webp": {
+    "height": 942,
+    "width": 1122
+  },
+  "/images/2608.05212v1/method_figure.webp": {
+    "height": 630,
+    "width": 1600
+  },
   "/images/2608.05466v1/fig5_alignment_quality_heatmap.jpg": {
     "height": 188,
     "width": 430
@@ -11394,6 +11694,30 @@
   "/images/2608.05466v1/terminalworld_domain_stability.jpg": {
     "height": 414,
     "width": 780
+  },
+  "/images/2608.05475v1/A__title.webp": {
+    "height": 408,
+    "width": 1106
+  },
+  "/images/2608.05475v1/Figure01_0803.webp": {
+    "height": 844,
+    "width": 1600
+  },
+  "/images/2608.05475v1/Figure2.webp": {
+    "height": 1210,
+    "width": 1388
+  },
+  "/images/2608.05810v1/A__title.webp": {
+    "height": 341,
+    "width": 1380
+  },
+  "/images/2608.05810v1/figure_1.webp": {
+    "height": 432,
+    "width": 768
+  },
+  "/images/2608.05810v1/figure_main.webp": {
+    "height": 432,
+    "width": 768
   },
   "/images/2608.05891v1/action_model_app_treemap.jpg": {
     "height": 560,
@@ -11410,6 +11734,70 @@
   "/images/2608.05891v1/ttrl_consensus_analysis.jpg": {
     "height": 433,
     "width": 1200
+  },
+  "/images/2608.06057v1/A__title.webp": {
+    "height": 338,
+    "width": 953
+  },
+  "/images/2608.06144v1/A__title.webp": {
+    "height": 338,
+    "width": 1204
+  },
+  "/images/2608.06144v1/fig1_task_dataset_panorama_swapped_connected_v6.webp": {
+    "height": 548,
+    "width": 1600
+  },
+  "/images/2608.06144v1/fig2_benchmark_construction_self_evolution_v18_aaai.webp": {
+    "height": 579,
+    "width": 1600
+  },
+  "/images/2608.06197v1/A__title.webp": {
+    "height": 570,
+    "width": 1105
+  },
+  "/images/2608.06197v1/bfcltts.webp": {
+    "height": 880,
+    "width": 1600
+  },
+  "/images/2608.06197v1/envace.webp": {
+    "height": 694,
+    "width": 1347
+  },
+  "/images/2608.06197v1/method2.webp": {
+    "height": 708,
+    "width": 1470
+  },
+  "/images/2608.06197v1/share8b_tau2_avg_styled.webp": {
+    "height": 377,
+    "width": 669
+  },
+  "/images/2608.06663v1/A__title.webp": {
+    "height": 450,
+    "width": 1228
+  },
+  "/images/2608.06663v1/figure1_taxonomy_grid.webp": {
+    "height": 1329,
+    "width": 1600
+  },
+  "/images/2608.06663v1/figure3_planning_spectrum.webp": {
+    "height": 605,
+    "width": 1600
+  },
+  "/images/2608.06663v1/figure4_memory_hierarchy.webp": {
+    "height": 928,
+    "width": 1600
+  },
+  "/images/2608.06663v1/figure5_benchmark_duration.webp": {
+    "height": 718,
+    "width": 1600
+  },
+  "/images/2608.06663v1/growth_timeline.webp": {
+    "height": 1138,
+    "width": 1600
+  },
+  "/images/2608.06663v1/map_landscape.webp": {
+    "height": 1045,
+    "width": 1600
   },
   "/images/2608.06704v1/A__title.jpg": {
     "height": 315,
