@@ -66,10 +66,14 @@ class PageParser(HTMLParser):
         self.topic_total_pages: int | None = None
         self.topic_total_items: int | None = None
         self.pagination_relations: list[tuple[str, str]] = []
+        self.table_parts: list[list[str]] = []
+        self.table_header_flags: list[bool] = []
         self._current_h1: list[str] | None = None
         self._current_heading: list[str] | None = None
         self._current_pre: list[str] | None = None
         self._current_json_ld: list[str] | None = None
+        self._current_table: list[str] | None = None
+        self._current_table_has_header = False
         self._in_topic_article = False
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
@@ -77,6 +81,11 @@ class PageParser(HTMLParser):
         attributes = {name.lower(): value or "" for name, value in attrs}
         if tag not in VOID_TAGS:
             self.stack.append(tag)
+        if tag == "table":
+            self._current_table = []
+            self._current_table_has_header = False
+        elif tag in {"thead", "th"} and self._current_table is not None:
+            self._current_table_has_header = True
         if tag == "meta" and attributes.get("name", "").lower() == "description":
             self.descriptions.append(attributes.get("content", "").strip())
         elif tag == "link":
@@ -142,6 +151,11 @@ class PageParser(HTMLParser):
             self._current_json_ld = None
         elif tag == "article" and self._in_topic_article:
             self._in_topic_article = False
+        elif tag == "table" and self._current_table is not None:
+            self.table_parts.append(self._current_table)
+            self.table_header_flags.append(self._current_table_has_header)
+            self._current_table = None
+            self._current_table_has_header = False
         for index in range(len(self.stack) - 1, -1, -1):
             if self.stack[index] == tag:
                 del self.stack[index:]
@@ -158,12 +172,19 @@ class PageParser(HTMLParser):
             self._current_pre.append(data)
         if self._current_json_ld is not None:
             self._current_json_ld.append(data)
+        if self._current_table is not None:
+            self._current_table.append(data)
         if not any(tag in SKIP_TEXT_TAGS for tag in self.stack):
             self.visible_parts.append(data)
 
 
 def clean_text(parts: list[str]) -> str:
     return re.sub(r"\s+", " ", "".join(parts)).strip()
+
+
+def likely_kramdown_math_table(parts: list[str], has_header: bool) -> bool:
+    """Identify headerless tables formed when Kramdown splits math on bare pipes."""
+    return not has_header and "$" in "".join(parts)
 
 
 def is_user_page(relative_path: str) -> bool:
@@ -242,6 +263,14 @@ def main() -> int:
             pre_text = "".join(pre_parts)
             if "```" in pre_text and ("**" in pre_text or re.search(r"(?m)^\s*[*-]\s+", pre_text)):
                 issues.append(f"{relative_path}: likely swallowed Markdown in code block")
+
+        for table_parts, has_header in zip(page.table_parts, page.table_header_flags):
+            if likely_kramdown_math_table(table_parts, has_header):
+                preview = clean_text(table_parts)[:120]
+                issues.append(
+                    f"{relative_path}: headerless table contains math delimiters; "
+                    f"likely Kramdown pipe misparse: {preview}"
+                )
 
         visible_text = "\n".join(page.visible_parts)
         if re.search(r"(?m)^[ \t]*\|?[ \t]*:?-{3,}:?[ \t]*\|", visible_text):

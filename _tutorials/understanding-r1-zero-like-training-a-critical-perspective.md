@@ -83,13 +83,13 @@ $${% endraw %}
 
 
 本文指出，公式中红色部分引入了两种偏见：
-1.  **响应级长度偏见 (Response-level length bias)**: 由损失函数中的 $$1/|o_i|$$ 项引入。对于奖励为正的正确回答，该项会给予较短的回答更大的梯度更新，鼓励模型生成简短的正确答案。但对于奖励为负的错误回答，该项会减少对较长回答的惩罚，导致模型在犯错时倾向于生成越来越长的无效思考过程。
+1.  **响应级长度偏见 (Response-level length bias)**: 由损失函数中的 $$1/\lvert o_i \rvert$$ 项引入。对于奖励为正的正确回答，该项会给予较短的回答更大的梯度更新，鼓励模型生成简短的正确答案。但对于奖励为负的错误回答，该项会减少对较长回答的惩罚，导致模型在犯错时倾向于生成越来越长的无效思考过程。
 2.  **问题级难度偏见 (Question-level difficulty bias)**: 由优势函数中按问题（per-question）计算的 $$std(...)$$ 分母引入。对于奖励方差很小的问题（即太容易或太难，导致模型回答几乎全对或全错），该项会给予过大的权重，而在中等难度问题上权重较小，从而扭曲了优化方向。
 
 <img src="/images/2503.20783v1/x5.jpg" alt="Figure 5: Illustration of the biases in GRPO." style="width:90%; max-width:700px; margin:auto; display:block;">
 
 #### Dr. GRPO: 无偏见的优化方法
-为了解决上述偏见，本文提出了 Dr. GRPO。其核心改动非常简单：**移除引入偏见的两项归一化**，即去掉损失函数中的 $$1/|o_i|$$ 和优势函数计算中的 $$std(...)$$ 分母。
+为了解决上述偏见，本文提出了 Dr. GRPO。其核心改动非常简单：**移除引入偏见的两项归一化**，即去掉损失函数中的 $$1/\lvert o_i \rvert$$ 和优势函数计算中的 $$std(...)$$ 分母。
 
 <img src="/images/2503.20783v1/x1.jpg" alt="Figure 1: Left: Dr. GRPO introduces simple yet significant modifications to address the biases in GRPO, by removing the length and std normalization terms. Right: Our unbiased optimizer effectively prevents the model from generating progressively longer incorrect responses, thereby enhancing token efficiency." style="width:90%; max-width:700px; margin:auto; display:block;">
 

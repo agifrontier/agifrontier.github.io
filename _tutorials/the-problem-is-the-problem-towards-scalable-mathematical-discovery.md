@@ -106,12 +106,12 @@ related_tutorials:
 
 在实际应用中，学术团队往往没有足够的预算将几千个问题全量跑一遍昂贵推理。那么，**如果只给你 $B$ 次求解机会（Budget），你应该优先把算力分配给哪些猜想？**
 
-作者在论文中将这一问题形式化为一个受约束的最优化问题：在猜想集 $\mathcal{P}$ 中选择子集 $\mathcal{S}$（$|\mathcal{S}| = B$），以最大化某种成果效用函数 $f(\mathcal{A} \cap \mathcal{S})$ 的期望：
+作者在论文中将这一问题形式化为一个受约束的最优化问题：在猜想集 $\mathcal{P}$ 中选择子集 $\mathcal{S}$（$\lvert \mathcal{S} \rvert = B$），以最大化某种成果效用函数 $f(\mathcal{A} \cap \mathcal{S})$ 的期望：
 
 
 
 
-{% raw %}$$\max_{\mathcal{S} \subseteq \mathcal{P}} \mathbb{E}\big[ f(\mathcal{A} \cap \mathcal{S}) \big] \quad \text{subject to } |\mathcal{S}| = B$${% endraw %}
+{% raw %}$$\max_{\mathcal{S} \subseteq \mathcal{P}} \mathbb{E}\big[ f(\mathcal{A} \cap \mathcal{S}) \big] \quad \text{subject to } \lvert \mathcal{S} \rvert = B$${% endraw %}
 
 
 
@@ -127,7 +127,7 @@ related_tutorials:
 
 基于此，研究团队针对三类截然不同的科研目标，推导出了最佳算力分配策略：
 
-1. **目标一：最大化产出数量（Maximize Artifact Count, $f_1 = |\mathcal{A} \cap \mathcal{S}|$）**
+1. **目标一：最大化产出数量（Maximize Artifact Count, $f_1 = \lvert \mathcal{A} \cap \mathcal{S} \rvert$）**
    如果目标是获得尽可能多的突破性论文，理论最优解是根据猜想最终能被解决且被评为可发表的边际概率 $\hat{p}(c) = (1 - \hat{\delta}(c))\hat{\iota}(c)$ 从大到小贪心排序，取前 $B$ 个问题。实验表明，按 $\hat{p}$ 排序大幅超越了随机均匀分配的基线。
 
 2. **目标二：最大化加权影响力（Maximize Total Importance, $f_2 = \sum i(c)$）**

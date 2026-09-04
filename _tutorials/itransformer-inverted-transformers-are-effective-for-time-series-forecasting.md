@@ -56,7 +56,7 @@ iTransformer的核心是将输入数据的处理维度进行了反转。对于�
 
 2.  **反转的Transformer模块**：模型由多个堆叠的Transformer模块构成，但其内部组件的作用被重新定义。
 
-    *   **层归一化 (Layer Normalization)**：对每个变量Token $\mathbf{h}\_n$ 单独进行归一化。这有助于处理不同变量因单位、尺度不同导致的分布差异（即非平稳性），避免了传统方法中在时间步维度上归一化可能造成的过平滑问题。 $$ \operatorname{LayerNorm}(\mathbf{H})=\left\{\frac{\mathbf{h}_{n}-\operatorname{Mean}(\mathbf{h}_{n})}{\sqrt{\operatorname{Var}(\mathbf{h}_{n})}}\bigg{|} n=1,\dots,N\right\} $$
+    *   **层归一化 (Layer Normalization)**：对每个变量Token $\mathbf{h}\_n$ 单独进行归一化。这有助于处理不同变量因单位、尺度不同导致的分布差异（即非平稳性），避免了传统方法中在时间步维度上归一化可能造成的过平滑问题。 $$ \operatorname{LayerNorm}(\mathbf{H})=\left\{\frac{\mathbf{h}_{n}-\operatorname{Mean}(\mathbf{h}_{n})}{\sqrt{\operatorname{Var}(\mathbf{h}_{n})}}\bigg{\vert{}} n=1,\dots,N\right\} $$
 
     *   **自注意力机制的角色转变 (Self-Attention)**：自注意力机制被应用于$$N$$个变量Token之间。其计算的注意力分数矩阵 $\mathbf{A} \in \mathbb{R}^{N \times N}$ 直接反映了变量与变量之间的相关性。这使得注意力图具有了清晰的物理解释性，帮助模型关注与预测目标最相关的其他变量。
 

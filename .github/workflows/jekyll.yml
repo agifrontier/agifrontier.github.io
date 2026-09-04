@@ -52,6 +52,8 @@ jobs:
           convert -version
       - name: Validate Markdown tables
         run: python3 scripts/check_markdown_tables.py _tutorials _posts
+      - name: Test built-site validator
+        run: python3 -m unittest discover -s scripts/tests -p 'test_*.py'
       - name: Validate Markdown code fences
         run: python3 scripts/check_markdown_fences.py _tutorials _posts
       - name: Generate homepage thumbnails

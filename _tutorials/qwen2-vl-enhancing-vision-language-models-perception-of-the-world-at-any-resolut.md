@@ -87,7 +87,7 @@ Qwen2-VL采用统一的范式处理图像和视频，增强了模型的动态视
 
 为了支持复杂的视觉任务，本文定义了特定的数据格式，包括视觉定位和视觉智能体交互。
 
-*   **视觉定位**：使用归一化的边界框坐标 $$(X_top left,Y_top left),(X_bottom right,Y_bottom right)$$ 和特殊Token $$<|box_start|>$$、$$<|box_end|>$$ 等来标注图像中的物体。
+*   **视觉定位**：使用归一化的边界框坐标 $$(X_top left,Y_top left),(X_bottom right,Y_bottom right)$$ 和特殊Token $$<\vert{}box_start\vert{}>$$、$$<\vert{}box_end\vert{}>$$ 等来标注图像中的物体。
 
     ```text
     <|vision_start|>Picture1.jpg<|vision_end|>

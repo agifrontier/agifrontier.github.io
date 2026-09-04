@@ -33,7 +33,7 @@ related_tutorials:
     $${% endraw %}
 
 
-    该算法的约束条件是，对于每个问题的采样组，正确答案的数量必须在0和组大小 $G$ 之间，即 $$s.t. 0 < |{o_i | is_equivalent(a, o_i)}| < G$$。
+    该算法的约束条件是，对于每个问题的采样组，正确答案的数量必须在0和组大小 $G$ 之间，即 $$s.t. 0 < \vert{}{o_i \vert{} is_equivalent(a, o_i)}\vert{} < G$$。
 
 2.  **Clip-Higher (提高裁剪上限)**: 一种修改PPO裁剪机制的策略。它将传统的对称裁剪范围 $\varepsilon$ 解耦为不同的下限 $\varepsilon\_{\text{low}}$ 和上限 $\varepsilon\_{\text{high}}$。通过特意增高 $\varepsilon\_{\text{high}}$ 的值，该策略为低概率的“探索性”Token提供了更大的概率提升空间，从而对抗熵崩溃（entropy collapse）现象，增加策略的多样性。
 
