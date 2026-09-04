@@ -22,7 +22,7 @@ related_tutorials:
 
 <p class="paper-original-title" lang="en">AgentOmnia: Scaling Agentic Models for Full-Scenario Applications</p>
 
-<img src="/images/2607.23124v1/A__title.jpg" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.23124v1/A__title.webp" alt="" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 大语言模型在智能体（Agent）方向的进化一日千里，但一个令许多开发者感到挫败的现象依然存在：在某个框架或基准测试中表现卓越的“高分智能体”，一旦被放入全新的工具生态、面对跨系统的长周期任务，或是遇到难以预测的用户追问时，往往会迅速崩溃。当前的智能体进展在很大程度上是“碎片化”的，零散地分布在不同的应用领域、能力维度和交互协议中。
 
@@ -46,13 +46,13 @@ related_tutorials:
 
 为了打破这些僵局，AgentOmnia 的第一步是建立一套极具野心的“全场景分类学（Full-Scenario Taxonomy）”。它放弃了简单粗暴的任务列表堆砌，转而采用 $Domain \times Capability \times Atomic Difficulty$（领域 × 能力 × 原子难度）的三维结构来精准定位智能体的表现边界。
 
-<img src="/images/2607.23124v1/overview.jpg" alt="AgentOmnia 整体框架，展示了从分类体系到数据合成、后训练再到 PRD 引导进化的闭环。" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.23124v1/overview.webp" alt="AgentOmnia 整体框架，展示了从分类体系到数据合成、后训练再到 PRD 引导进化的闭环。" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 这个坐标系的领域轴（Domain）被划分为三大核心应用场景：面向消费者（ToC）、面向企业（ToB）和面向员工（ToE）。ToC 涵盖了购物、差旅、支付和售后服务等，考验模型对用户偏好、预算约束和多轮澄清的处理能力。ToB 深入到金融、制造、物流等行业系统，侧重于结构化业务实体、跨系统状态和工作流协同。ToE 则抽象出各行各业通用的办公活动，如邮件处理、项目协调、知识管理和数据分析。在这三大类下，作者极其细致地拆分出了 90 个一级领域和 354 个二级领域，形成了一个具有极高还原度的任务底图。
 
 能力轴（Capability）则独立于具体领域，描述了智能体需要具备的 10 项核心能力。这使得评估不再局限于“它会不会订机票”，而是深入到“它在订机票过程中，是否具备状态跟踪或约束满足的能力”。原子难度轴（Atomic Difficulty）则通过 8 个独立的难度因子，将任务复杂化的原因拆解开来。这种设计确保了同一项能力可以在不同的领域和难度配置下进行正交验证，从而让系统能够精准区分模型到底是某一类知识储备不足，还是根本不具备底层的逻辑推理能力。
 
-<img src="/images/2607.23124v1/taxonomy_overview.jpg" alt="三维分类体系的直观展现，不仅定义了空间，还为诊断提供了颗粒度极细的坐标系统。" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.23124v1/taxonomy_overview.webp" alt="三维分类体系的直观展现，不仅定义了空间，还为诊断提供了颗粒度极细的坐标系统。" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 双向合成：让环境与任务真正咬合
 
@@ -60,13 +60,13 @@ related_tutorials:
 
 AgentOmnia 将环境供给与任务需求彻底打通。环境导向的路径会首先构建具有高度可复用性的底层环境，随后在其上大量生成接地气的任务，从而摊薄环境开发成本；任务导向的路径则从一份高难度的任务描述出发，反向倒逼环境的构建或适配，确保极端的长尾场景也能得到支持。
 
-<img src="/images/2607.23124v1/synthesis_overview.jpg" alt="AgentOmnia 数据合成概览，展示了环境生成与三种复杂任务生成管道的配合。" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.23124v1/synthesis_overview.webp" alt="AgentOmnia 数据合成概览，展示了环境生成与三种复杂任务生成管道的配合。" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 为了支撑这种双向合成，研究团队打造了一套完全基于代码驱动的、具备状态记忆的环境管线。从异构种子挖掘开始，大语言模型通过深度搜索提取出具备真实世界属性的实体、关系和约束条件，从而生成结构化的状态空间。紧接着，系统为这些状态空间合成一套高度复杂的工具集。这些工具不再是简单的单参数调用，而是包含了多分支选择、参数间约束耦合以及需要后续字段提取的复杂操作。在这个过程中，系统共构建了 5018 个可追踪状态的代码驱动环境，孕育出超过 25 万个高度仿真的执行工具。
 
 在任务层面，单纯的执行流已经无法满足全场景的要求。因此，AgentOmnia 引入了三种并行的任务构建策略。有向无环图（DAG）合成专门负责生成具有极强工具依赖和超长跨度的工作流；程序结构合成则负责引入循环、分支和依赖数据的动态执行路径；而基于求解器（Solver-based）的合成更是跳出了局部执行的局限，专门针对具有全局约束的资源优化和多目标规划任务进行对抗性生成。这种多管齐下的策略，最终沉淀出 52361 个高质量、经过严格验证的可执行任务。
 
-<img src="/images/2607.23124v1/env_overview.jpg" alt="交互式环境合成的细节步骤，展示了从种子到状态空间再到工具执行的完整闭环保障。" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.23124v1/env_overview.webp" alt="交互式环境合成的细节步骤，展示了从种子到状态空间再到工具执行的完整闭环保障。" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 绝境求生：弱到强的后训练与回滚机制
 

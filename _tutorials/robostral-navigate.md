@@ -38,7 +38,7 @@ Robostral Navigate 为了彻底打破这种硬件壁垒，提出了一种全新�
 
 当然，系统也考虑到了特殊情况。当下一个导航目标暂时处于当前摄像头的视野盲区（例如需要向后转）时，指向机制会失效，此时模型会平滑地退回到无视觉锚点的度量位移输出 $a_{\text{invis}}=(\Delta x,\Delta y,\Delta\theta)$。此外，当判断任务已经达成时，模型会主动输出 STOP 信号。这种将几何推理转化为视觉 grounding 任务的做法，极大降低了具身模型的跨平台迁移阻力。
 
-<img src="/images/2607.20785/main_arch_styled.jpg" alt="Figure 1: System Architecture" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.20785/main_arch_styled.webp" alt="Figure 1: System Architecture" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### “大小脑”分工的混合系统架构
 
@@ -52,7 +52,7 @@ Robostral Navigate 为了彻底打破这种硬件壁垒，提出了一种全新�
 
 这种解耦设计的绝妙之处在于，沉重的语义理解与轻巧的运动执行被完美分开。即便因为 VLM 推理耗时导致 $O_{t_{\text{vlm}}}$ 和 $O_{t}$ 之间存在微小的延迟差，扩散策略网络也能通过比对这两帧图像，修正机器人在大模型思考期间产生的位移偏差，确保导航轨迹的平滑。
 
-<img src="/images/2607.20785/cross_embodiment_v2.jpg" alt="Figure 2: Cross-robot deployment" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.20785/cross_embodiment_v2.webp" alt="Figure 2: Cross-robot deployment" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 为了验证这种设计的泛化上限，研究团队特意在生成训练数据时，对机器人的高度（0.4至1.8米）、半径（0.15至0.45米）、相机安装高度和俯仰角进行了大幅度的随机扰动。结果证明，无需任何额外的重新训练，同一套 Robostral Navigate 权重可以完美部署在形态差异巨大的 Galaxea R1 和 Hiwonder JetAuto 平台上，展现出了极强的跨实体泛化性能。
 
@@ -62,7 +62,7 @@ Robostral Navigate 为了彻底打破这种硬件壁垒，提出了一种全新�
 
 如果在 35 万个模拟场景中生成的 240 万条轨迹都按照这种极其冗余的方式进行监督微调（SFT），训练周期将长达数月，这在工程上是不可接受的。
 
-<img src="/images/2607.20785/prefix_cache.jpg" alt="Figure 4: prefix-caching" style="width:90%; max-width:700px; margin:auto; display:block;">
+<img src="/images/2607.20785/prefix_cache.webp" alt="Figure 4: prefix-caching" style="width:90%; max-width:700px; margin:auto; display:block;">
 
 为了攻克这一算力瓶颈，Robostral Navigate 团队引入了一种巧妙的前缀缓存（Prefix-caching）训练方法。其核心思想是将整个导航回合（Episode）打包成一个单一的连续训练序列：
 
@@ -79,7 +79,7 @@ Robostral Navigate 为了彻底打破这种硬件壁垒，提出了一种全新�
 
 这一看似底层的计算图优化，为整个系统带来了惊人的收益：它在没有丢弃任何一个动作预测目标的前提下，将训练 Token 总数硬生生削减了 22 倍。在实际操作中，这不仅极大缓解了显存压力，更是将长达数月的分布式训练硬生生压缩到了几天之内，确立了一套极具经济性的高效训练基准。
 
-<img src="/images/2607.20785/data_fig.jpg" alt="Figure 3: Example of training data" style="width:85%; max-width:600px; margin:auto; display:block;">
+<img src="/images/2607.20785/data_fig.webp" alt="Figure 3: Example of training data" style="width:85%; max-width:600px; margin:auto; display:block;">
 
 ### 在线强化学习与长尾环境的突围
 
@@ -97,7 +97,7 @@ Robostral Navigate 为了彻底打破这种硬件壁垒，提出了一种全新�
 
 如果这三个系统发生死锁或算力争抢，整个训练流就会停滞。研究团队通过极度精细的集群资源分配，确保了渲染和推理引擎之间的高效异步轮询，避免了昂贵的 GPU 算力闲置。
 
-<img src="/images/2607.20785/online_rl.jpg" alt="Figure 5: online RL pipeline" style="width:85%; max-width:450px; margin:auto; display:block;">
+<img src="/images/2607.20785/online_rl.webp" alt="Figure 5: online RL pipeline" style="width:85%; max-width:450px; margin:auto; display:block;">
 
 在数据的利用上，RL 阶段也采取了极其务实的“困难样本挖掘”策略。团队首先运行 SFT 策略，专门筛选出那些模型无法稳定到达目标的失败轨迹，构成了一个包含 3.5 万个任务的“困难子集”。在线强化学习将算力完全聚焦于这些模型最不擅长、最容易迷失的死角。
 
