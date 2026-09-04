@@ -2,6 +2,17 @@ require 'nokogiri'
 
 module Jekyll
   module ArticleImageFilter
+    LEGACY_GENERATED_STYLE = /\Awidth:(?:80|85|90)%;\s*max-width:(?:300|450|600|700)px;\s*margin:auto;\s*display:block;?\z/i
+    WIDE_LANDSCAPE_STYLE = [
+      'width:min(1000px, calc(100vw - 2rem))',
+      'max-width:none',
+      'height:auto',
+      'margin:1.5rem auto',
+      'position:relative',
+      'left:50%',
+      'transform:translateX(-50%)',
+      'display:block'
+    ].join('; ') + ';'
     WEAK_ALT_TEXT = [
       '',
       'refer to caption',
@@ -24,9 +35,16 @@ module Jekyll
         dimensions = image_metadata[source]
         next unless dimensions
 
-        image['width'] ||= dimensions['width'].to_s
-        image['height'] ||= dimensions['height'].to_s
+        width = dimensions['width'].to_i
+        height = dimensions['height'].to_i
+        image['width'] ||= width.to_s
+        image['height'] ||= height.to_s
         image['decoding'] ||= 'async'
+
+        legacy_style = image['style'].to_s.strip
+        if width >= 900 && width > height && LEGACY_GENERATED_STYLE.match?(legacy_style)
+          image['style'] = WIDE_LANDSCAPE_STYLE
+        end
       end
 
       fragment.to_html
