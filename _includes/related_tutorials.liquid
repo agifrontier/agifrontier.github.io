@@ -8,7 +8,7 @@
         {% if related %}
           <li>
             <a class="related-tutorials__article" href="{{ related.url | relative_url }}">
-              {{- related.title | replace: '$', '' | strip_html -}}
+              {{- related.display_title | default: related.seo_title | default: related.title | replace: '$', '' | strip_html -}}
             </a>
             {% if related.topics and related.topics.size > 0 %}
               <span class="related-tutorials__topics">

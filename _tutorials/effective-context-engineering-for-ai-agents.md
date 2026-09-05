@@ -1,6 +1,8 @@
 ---
 layout: default
 title: "Effective context engineering for AI agents"
+source_url: "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"
+paper_published: "2025-09-29"
 description: "本文提出了“上下文工程” (Context Engineering) 的概念，主张将 AI 智能体开发的重点从编写静态提示词（prompt）转向动态地策划和管理输入给模型的全部信息（即上下文），从而在模型有限的注意力预算下，实现更可靠、更高效的智能体行为。"
 topics:
   - "AI Agent"
@@ -12,7 +14,7 @@ related_tutorials:
 ---
 
 
-- **ArXiv URL**: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+- **来源原文**: [Anthropic：Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
 
 - **作者**: 
 

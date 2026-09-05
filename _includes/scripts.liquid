@@ -1,3 +1,7 @@
+{% assign is_reading_page = false %}
+{% if page.collection == 'tutorials' or page.collection == 'posts' or page.layout == 'post' or page.layout == 'distill' %}
+  {% assign is_reading_page = true %}
+{% endif %}
 <!-- jQuery -->
 <script
   src="{{ site.third_party_libraries.jquery.url.js }}"
@@ -13,7 +17,7 @@
   crossorigin="anonymous"
 ></script>
 
-{% if site.enable_masonry %}
+{% if site.enable_masonry and page.masonry %}
   <!-- Masonry & imagesLoaded -->
   <script
     defer
@@ -152,7 +156,7 @@
   <script src="{{ '/assets/js/tooltips-setup.js' | relative_url | bust_file_cache }}"></script>
 {% endif %}
 
-{% if site.enable_medium_zoom %}
+{% if site.enable_medium_zoom and is_reading_page %}
   <!-- Medium Zoom JS -->
   <script
     defer
@@ -182,20 +186,28 @@
 <!-- Load Common JS -->
 <script src="{{ '/assets/js/no_defer.js' | relative_url | bust_file_cache }}"></script>
 <script defer src="{{ '/assets/js/common.js' | relative_url | bust_file_cache }}"></script>
-<script defer src="{{ '/assets/js/copy_code.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
+{% if is_reading_page %}
+  <script defer src="{{ '/assets/js/copy_code.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
+{% endif %}
 
 <!-- Jupyter Open External Links New Tab -->
-<script defer src="{{ '/assets/js/jupyter_new_tab.js' | relative_url | bust_file_cache }}"></script>
+{% if page.jupyter %}<script defer src="{{ '/assets/js/jupyter_new_tab.js' | relative_url | bust_file_cache }}"></script>{% endif %}
 
 <!-- Badges -->
-{% if site.enable_publication_badges.altmetric %}
+{% if site.enable_publication_badges.altmetric and content contains 'altmetric-embed' %}
   <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script>
 {% endif %}
-{% if site.enable_publication_badges.dimensions %}
+{% if site.enable_publication_badges.dimensions and content contains '__dimensions_badge_embed__' %}
   <script async src="https://badge.dimensions.ai/badge.js"></script>
 {% endif %}
 
-{% if site.enable_math %}
+{% assign load_math = false %}
+{% if page.article_has_math or page.math or page.pseudocode %}
+  {% assign load_math = true %}
+{% elsif is_reading_page %}
+  {% if content contains '$' or content contains '\[' or content contains '\(' %}{% assign load_math = true %}{% endif %}
+{% endif %}
+{% if site.enable_math and load_math %}
   <!-- MathJax -->
   <script
     defer
@@ -248,7 +260,7 @@
   <script async defer src="https://openpanel.dev/op1.js"></script>
 {% endif %}
 
-{% if site.enable_progressbar %}
+{% if site.enable_progressbar and is_reading_page %}
   <!-- Scrolling Progress Bar -->
   <script defer src="{{ '/assets/js/progress-bar.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
 {% endif %}

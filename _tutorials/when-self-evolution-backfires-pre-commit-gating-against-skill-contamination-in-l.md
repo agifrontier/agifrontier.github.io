@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "VaG：化解自进化Agent技能污染，腾讯以5倍更小技能池达72%成功率"
-description: "给大模型赋予“自我进化”（Self-Evolution）的能力，是构建真正长生命周期自主Agent的核心愿景之一。目前主流的设计模式非常直观：让智能体在执行任务后复盘自身轨迹，将解决问题的有效经验提炼成一条条自然语言技能（Skills），写入持久化的技能库中；当下一次遇到新任务时，这些技能会被动态检索或全部注。"
+description: "针对这一本质瓶颈，研究团队提出了名为 VaG （Verifier-as-Gatekeeper）的预提交门控机制。该框架通过三层异构判别器与边际增益贪心选择，把技能入库变成一道极其严苛的晋升流程。"
 arxiv_id: "2608.05810"
 published_at: "2026-09-04T13:15:08.122237+08:00"
 topics:
@@ -14,12 +14,11 @@ tags:
   - "cross-round contamination chains"
   - "marginal-gain subset selection"
 related_tutorials:
-  - "learning-when-to-plan-efficiently-allocating-test-time-compute-for-llm-agents"
-  - "multi-agent-evolve-llm-self-improve-through-co-evolution"
   - "skill-self-play-pushing-the-frontier-of-llm-capability-with-co-evolving-skills"
-  - "skillrouter-retrieve-and-rerank-skill-selection-for-llm-agents-at-scale"
+  - "trace-a-self-evolving-skill-bank-for-consistent-limit-aware-llm-agents"
+  - "ouroboros-a-self-developing-frontier-coding-agent-with-reviewed-core-evolution"
+  - "socratic-swe-self-evolving-coding-agents-via-trace-derived-agent-skills"
 ---
-
 <p class="paper-original-title" lang="en">When Self-Evolution Backfires: Pre-Commit Gating against Skill Contamination in LLM Agents</p>
 
 <img src="/images/2608.05810v1/A__title.webp" alt="" style="width:min(1000px, calc(100vw - 2rem)); max-width:none; height:auto; margin:1.5rem auto; position:relative; left:50%; transform:translateX(-50%); display:block;">

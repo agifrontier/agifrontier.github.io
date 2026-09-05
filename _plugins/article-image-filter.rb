@@ -27,7 +27,7 @@ module Jekyll
       fragment = Nokogiri::HTML::DocumentFragment.parse(html.to_s)
       fallback_alt = "#{page_title} 论文图示".strip
 
-      fragment.css('img').each do |image|
+      fragment.css('img').each_with_index do |image, index|
         alt = image['alt'].to_s.strip
         image['alt'] = fallback_alt if WEAK_ALT_TEXT.include?(alt.downcase) && !fallback_alt.empty?
 
@@ -40,6 +40,8 @@ module Jekyll
         image['width'] ||= width.to_s
         image['height'] ||= height.to_s
         image['decoding'] ||= 'async'
+        image['loading'] ||= index.zero? ? 'eager' : 'lazy'
+        image['data-zoomable'] ||= ''
 
         legacy_style = image['style'].to_s.strip
         if width >= 900 && width > height && LEGACY_GENERATED_STYLE.match?(legacy_style)

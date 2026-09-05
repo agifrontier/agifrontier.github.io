@@ -19,6 +19,25 @@ strong {
   color: var(--global-text-color);
 }
 
+.paper-information {
+  align-items: center;
+  border-bottom: 1px solid var(--global-divider-color);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1rem;
+  margin: 0.75rem 0 1.5rem;
+  padding-bottom: 0.85rem;
+
+  span, time {
+    color: var(--global-text-color-light);
+    font-size: 0.85rem;
+  }
+
+  a {
+    font-size: 0.9rem;
+  }
+}
+
 .related-tutorials {
   border-top: 1px solid var(--global-divider-color);
   margin-top: 3rem;

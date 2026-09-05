@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import datetime as dt
 from collections import Counter
 from html.parser import HTMLParser
 from pathlib import Path
@@ -25,6 +26,10 @@ class SeoParser(HTMLParser):
         self.images_missing_alt = 0
         self.images_empty_alt = 0
         self.related_links = 0
+        self.paper_sources: list[str] = []
+        self.paper_dates: list[str] = []
+        self.interpretation_dates: list[str] = []
+        self.scripts: list[str] = []
 
     def handle_starttag(self, tag: str, attrs_list: list[tuple[str, str | None]]) -> None:
         attrs = {key: value or "" for key, value in attrs_list}
@@ -48,6 +53,14 @@ class SeoParser(HTMLParser):
 
         if tag == "a" and "related-tutorials__article" in classes:
             self.related_links += 1
+        if tag == "a" and "paper-information__source" in classes:
+            self.paper_sources.append(attrs.get("href", ""))
+        if tag == "time" and "paper-information__published" in classes:
+            self.paper_dates.append(attrs.get("datetime", ""))
+        if tag == "time" and "paper-information__interpretation" in classes:
+            self.interpretation_dates.append(attrs.get("datetime", ""))
+        if tag == "script" and attrs.get("src"):
+            self.scripts.append(attrs["src"])
 
     def handle_endtag(self, tag: str) -> None:
         if tag == "title":
@@ -83,6 +96,21 @@ def parse(path: Path) -> SeoParser:
 
 def add_error(errors: list[dict[str, str]], path: Path, message: str) -> None:
     errors.append({"path": str(path), "message": message})
+
+
+def identity_issues(schema: object) -> list[str]:
+    issues: list[str] = []
+    if isinstance(schema, dict):
+        for key, value in schema.items():
+            if key == "sameAs" and (not isinstance(value, list) or any(not isinstance(url, str) or not url.startswith("https://") for url in value)):
+                issues.append("sameAs must contain nonempty HTTPS identities")
+            issues.extend(identity_issues(value))
+    elif isinstance(schema, list):
+        for value in schema:
+            issues.extend(identity_issues(value))
+    elif isinstance(schema, str) and any(marker in schema for marker in ("alberteinstein.com", "qc6CJjYAAAAJ", "you@example.com", "example_pdf.pdf")):
+        issues.append("template identity remains in JSON-LD")
+    return issues
 
 
 def main() -> int:
@@ -126,6 +154,16 @@ def main() -> int:
             )
         if page.related_links != 4:
             add_error(errors, path, f"related links {page.related_links}")
+        if len(page.paper_sources) != 1 or not page.paper_sources[0].startswith("https://"):
+            add_error(errors, path, "missing or invalid clickable paper source")
+        for label, dates in (("paper", page.paper_dates), ("interpretation", page.interpretation_dates)):
+            if len(dates) != 1:
+                add_error(errors, path, f"expected one {label} date")
+            else:
+                try:
+                    dt.datetime.fromisoformat(dates[0])
+                except ValueError:
+                    add_error(errors, path, f"invalid {label} date: {dates[0]}")
         if not page.json_ld_blocks:
             add_error(errors, path, "missing JSON-LD")
         for block in page.json_ld_blocks:
@@ -135,6 +173,12 @@ def main() -> int:
                 add_error(errors, path, f"invalid JSON-LD: {exc}")
                 continue
             schema_type = str(schema.get("@type", ""))
+            for issue in identity_issues(schema):
+                add_error(errors, path, issue)
+            if schema.get("author", {}).get("@type") != "Organization":
+                add_error(errors, path, "tutorial author must identify the editorial organization")
+            if page.paper_sources and schema.get("isBasedOn") != page.paper_sources[0]:
+                add_error(errors, path, "schema source differs from visible source")
             schema_types[schema_type] += 1
             if schema_type != "TechArticle":
                 add_error(errors, path, f"schema type {schema_type!r}")
@@ -167,6 +211,12 @@ def main() -> int:
             continue
         if schema.get("@type") != expected_schema:
             add_error(errors, path, f"schema type {schema.get('@type')!r}")
+        for issue in identity_issues(schema):
+            add_error(errors, path, issue)
+        if label in {"homepage", "topics"}:
+            unused = [src for src in page.scripts if any(marker in src for marker in ("mathjax", "masonry", "badge.dimensions.ai", "d1bxh8uas1mnw7"))]
+            if unused:
+                add_error(errors, path, f"unused listing scripts: {unused}")
 
     topic_pages = sorted(
         path

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "腾讯提出Oracle-OPD：斩断多轮历史诱偏，小模型工具准确率达87%"
-description: "在多轮交互中构建自主智能体（Agent）时，开发者普遍面临一个看似矛盾的困境：随着交互轮数增加，模型往往不是因为“缺乏上下文”而犯错，反而是被上下文里看似言之成理的陈旧信息给带偏了。"
+description: "为了攻克这一隐蔽而普遍的系统性缺陷，该团队推出了成对诊断基准 ContextPollute-Bench ，并提出了基于可靠状态特权知识迁移的在线策略蒸馏方法 Oracle-OPD （Oracle-guided On-Policy Distillation）。"
 arxiv_id: "2608.06057"
 published_at: "2026-09-04T13:15:08.122237+08:00"
 topics:
@@ -14,12 +14,11 @@ tags:
   - "Oracle sequence distillation"
   - "Oracle-conditioned teacher"
 related_tutorials:
-  - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
+  - "multi-turn-on-policy-distillation-with-prefix-replay"
   - "scaling-up-multi-turn-off-policy-rl-and-multi-agent-tree-search-for-llm-step-pro"
-  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
-  - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
+  - "behavior-leverage-imbalance-in-multi-teacher-on-policy-distillation"
+  - "mopd-multi-teacher-on-policy-distillation-for-capability-integration-in-llm-post"
 ---
-
 <p class="paper-original-title" lang="en">When History Lies: Evaluating and Improving Tool Use under Misleading Multi-Turn Histories</p>
 
 <img src="/images/2608.06057v1/A__title.webp" alt="" style="width:min(1000px, calc(100vw - 2rem)); max-width:none; height:auto; margin:1.5rem auto; position:relative; left:50%; transform:translateX(-50%); display:block;">

@@ -16,6 +16,7 @@
 
 {% capture author_name %}{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
 {% assign author_name = author_name | strip %}
+{% if page.collection == 'tutorials' %}{% assign author_name = site.title %}{% endif %}
 {% assign is_blog_post = false %}
 {% if page.url != '/blog/index.html' and page.url contains '/blog/' %}
   {% unless page.url contains '/tag/' or page.url contains '/category/' %}
@@ -239,6 +240,7 @@
     {% endcase %}
   {% endfor %}
 
+  {% assign sameaslinks = sameaslinks | compact | uniq %}
   {% assign schema_type = page.schema_type | default: 'WebSite' %}
   {% if is_blog_post %}
     {% assign schema_type = 'BlogPosting' %}
@@ -257,7 +259,9 @@
       "inLanguage": {{ site.lang | jsonify }},
       "publisher": {
         "@type": "Organization",
-        "name": {{ site.title | jsonify }}
+        "name": {{ site.title | jsonify }},
+        "url": {{ '/' | absolute_url | jsonify }}{% if sameaslinks.size > 0 %},
+        "sameAs": {{ sameaslinks | jsonify }}{% endif %}
       }{% if is_article %},
       "headline": {{ page_seo_title | jsonify }},
       "mainEntityOfPage": {
@@ -265,13 +269,13 @@
         "@id": {{ canonical_url | jsonify }}
       },
       "author": {
-        "@type": "Person",
+        "@type": {% if is_tutorial %}"Organization"{% else %}"Person"{% endif %},
         "name": {{ author_name | jsonify }}
       }{% if published_date %},
       "datePublished": {{ published_date | date_to_xmlschema | jsonify }}{% endif %}{% if article_date %},
       "dateModified": {{ article_date | date_to_xmlschema | jsonify }}{% endif %}{% if og_image_url %},
-      "image": {{ og_image_url | jsonify }}{% endif %}{% endif %}{% if sameaslinks != blank %},
-      "sameAs": {{ sameaslinks | jsonify }}{% endif %}
+      "image": {{ og_image_url | jsonify }}{% endif %}{% if page.paper_url %},
+      "isBasedOn": {{ page.paper_url | jsonify }}{% endif %}{% endif %}
     }
   </script>
 {% endif %}

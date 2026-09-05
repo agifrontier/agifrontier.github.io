@@ -1,0 +1,13 @@
+{% assign interpretation_date = page.seo_published | default: page.published_at | default: page.date %}
+<div class="paper-information" aria-label="论文来源和解读信息">
+  {% if page.paper_url %}
+    <a class="paper-information__source" href="{{ page.paper_url | escape }}" target="_blank" rel="noopener noreferrer">{% if page.source_is_article %}来源原文{% else %}论文原文{% endif %} ↗</a>
+  {% endif %}
+  {% if page.paper_published %}
+    <span>{% if page.source_is_article %}原文发布{% else %}论文发布{% endif %} <time class="paper-information__published" datetime="{{ page.paper_published | date: '%Y-%m-%d' }}">{{ page.paper_published | date: '%Y-%m-%d' }}</time></span>
+  {% endif %}
+  {% if interpretation_date %}
+    <span>解读发布 <time class="paper-information__interpretation" datetime="{{ interpretation_date | date_to_xmlschema }}">{{ interpretation_date | date: '%Y-%m-%d' }}</time></span>
+  {% endif %}
+  <span>解读：{{ site.title | escape }}</span>
+</div>

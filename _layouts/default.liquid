@@ -24,6 +24,8 @@
     {% assign rendered_content = content %}
     {% if page.collection == 'tutorials' %}
       {% assign rendered_content = content | ensure_single_h1: page.title %}
+      {% capture paper_information %}{% include paper-information.liquid %}{% endcapture %}
+      {% assign rendered_content = rendered_content | with_paper_information: paper_information %}
     {% endif %}
     {% if page.collection == 'tutorials' or page.layout == 'post' %}
       {% assign rendered_content = rendered_content | optimize_article_images: site.data.image_metadata, page.title %}

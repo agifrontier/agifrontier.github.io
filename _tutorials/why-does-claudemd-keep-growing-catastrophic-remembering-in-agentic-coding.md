@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "CLAUDE.md暴增226%：灾难性记忆让指令不敢删，注释来破局"
-description: "几乎每一个在生产环境中使用过智能编程助手（如ClaudeCode、Cursor或GitHubCopilot）的工程师，都遭遇过一个微妙而普遍的治理噩梦：代码仓库根目录下的CLAUDE.md、AGENTS.md或是.github/copilot-instructions.md，随着项目迭代总是在不可遏制地变长。"
+description: "CLAUDE.md：研究团队据此提出了 提示词注释 （Prompt Comments）机制：在维护系统规则时，以特定符号（如 Python 风格的 # 或 Markdown 隐藏语法）为指令附带结构化的潜在推理元数据。"
 arxiv_id: "2608.11095"
 published_at: "2026-09-04T11:26:52.370742+08:00"
 topics:
@@ -14,12 +14,11 @@ tags:
   - "catastrophic remembering"
   - "instruction lifetimes"
 related_tutorials:
-  - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
-  - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
-  - "a-survey-of-reasoning-and-agentic-systems-in-time-series-with-large-language-mod"
-  - "a-survey-on-agentic-multimodal-large-language-models"
+  - "evomal-self-poisoning-in-self-evolving-coding-agents"
+  - "memory-in-the-age-of-ai-agents"
+  - "from-prompts-to-contracts-harness-engineering-for-auditable-enterprise-llm-agents"
+  - "the-optimizer-is-the-agent-reasoning-driven-search-across-prompts-programs-and-m"
 ---
-
 <p class="paper-original-title" lang="en">Why Does CLAUDE.md Keep Growing? Catastrophic Remembering in Agentic Coding</p>
 
 <img src="/images/2608.11095v1/A__title.webp" alt="" style="width:85%; max-width:600px; margin:auto; display:block;">
