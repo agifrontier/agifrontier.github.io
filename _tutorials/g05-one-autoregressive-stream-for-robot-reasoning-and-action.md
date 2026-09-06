@@ -15,10 +15,10 @@ tags:
   - "action tokens"
   - "autoregressive transformer decoder"
 related_tutorials:
-  - "a-survey-of-reasoning-in-autonomous-driving-systems-open-challenges-and-emerging"
-  - "beyond-two-stage-training-cooperative-sft-and-rl-for-llm-reasoning"
-  - "cogflow-bridging-perception-and-reasoning-through-knowledge-internalization-for-"
-  - "cognitive-foundations-for-reasoning-and-their-manifestation-in-llms"
+  - "openvla-an-open-source-vision-language-action-model"
+  - "π_0-a-vision-language-action-flow-model-for-general-robot-control"
+  - "octo-an-open-source-generalist-robot-policy"
+  - "atlasvla-persistent-world-ego-state-modeling-for-vision-language-action-models"
 ---
 
 <p class="paper-original-title" lang="en">G0.5: One Autoregressive Stream for Robot Reasoning and Action</p>

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Deep Agentic Search未能超越向量检索：SWE-QA代码问答准确率65.2%对46.2%"
-description: "在AI驱动的软件工程领域，代码智能体（CodeAgent）的上下文工程（ContextEngineering）正经历一场剧烈的范式转移。为了解决海量仓库代码撑爆模型上下文、引发所谓“上下文腐化”（ContextRot或ContextPollution）的问题，近期的主流工具（如ClaudeCode、Gemin。"
+description: "Deep Agentic Search研究在仓库级代码问答任务中对比向量语义检索和子智能体深层检索。本文解释两种架构的上下文组织、任务交接和成本差异，结合失败案例讨论多层检索的局限；结论不直接推广到所有代码修复任务。"
 arxiv_id: "2608.01507"
 published_at: "2026-09-04T13:15:08.122237+08:00"
 topics:

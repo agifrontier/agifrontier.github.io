@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "MoM: Mixtures of Scenario-Aware Document Memories for Retrieval-Augmented Generation Systems"
-description: "本文提出一个名为MoM（Mixtures of Scenario-aware Document Memories）的框架，通过模拟专家阅读过程，将传统检索增强生成（RAG, Retrieval-Augmented Generation）中的被动文本分块，转变为主动提取结构化的“文档记忆”（包含大纲、核心内容。"
+description: "MoM通过模拟专家阅读，把RAG中的被动文本分块改为主动提取结构化文档记忆。本文解读文档大纲、核心内容和原子分块的提取，以及三层文档记忆检索流程，说明这种设计如何组织不同粒度的信息，并讨论实验结果和适用边界。"
 topics:
   - "RAG"
 related_tutorials:

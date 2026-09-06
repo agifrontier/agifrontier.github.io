@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import datetime as dt
+import re
 from collections import Counter
 from html.parser import HTMLParser
 from pathlib import Path
@@ -112,6 +113,22 @@ def add_error(errors: list[dict[str, str]], path: Path, message: str) -> None:
     errors.append({"path": str(path), "message": message})
 
 
+def description_quality_issues(description: str) -> list[str]:
+    """Catch summaries cut inside an explanation, without rejecting numeric intervals."""
+    text = description.translate(str.maketrans({"（": "(", "）": ")"}))
+    number = r"[+-]?(?:\d+(?:\.\d+)?|∞)"
+    text = re.sub(rf"[\[(]\s*{number}\s*[,，]\s*{number}\s*[\])]", "", text)
+    depth = 0
+    for char in text:
+        if char == "(":
+            depth += 1
+        elif char == ")":
+            depth -= 1
+            if depth < 0:
+                return ["description has an unmatched closing parenthesis"]
+    return ["description ends with an unclosed parenthesis"] if depth else []
+
+
 def identity_issues(schema: object) -> list[str]:
     issues: list[str] = []
     if isinstance(schema, dict):
@@ -163,6 +180,8 @@ def main() -> int:
         relative_url = "/" + str(path.relative_to(build_dir).parent) + "/"
         description = page.meta_content(name="description") or ""
         descriptions.append(description)
+        for issue in description_quality_issues(description):
+            add_error(errors, path, issue)
         if not 10 <= len(page.title) <= 60:
             add_error(errors, path, f"title length {len(page.title)}")
         if not 50 <= len(description) <= 160:

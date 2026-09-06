@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Agentic AI: A Comprehensive Survey of Architectures, Applications, and Future Directions"
-description: "本文对智能体AI（Agentic AI）领域进行了全面的综述，提出了一个核心的分析框架以解决现有文献中的概念混乱。作者认为，当前的智能体AI系统并非单一演化的产物，而是源于两个截然不同但有时会交汇的谱系：符号/经典谱系（Symbolic/Classical lineage）和神经/生成谱系（Neural/G。"
+description: "Agentic AI综述从符号/经典与神经/生成两条技术谱系梳理智能体架构，解释规划、决策及工具交互的不同实现方式。本文解读其分类框架、典型应用和未来方向，帮助区分不同类型智能体的能力来源与适用边界。"
 topics:
   - "AI Agent"
 related_tutorials:

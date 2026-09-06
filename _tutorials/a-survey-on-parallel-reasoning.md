@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "A Survey on Parallel Reasoning"
-description: "现代大型语言模型 (Large Language Models, LLMs) 通过扩展参数和训练数据，获得了强大的基础能力。随后的研究探索了推理时扩展，如扩展思维链 (Chain-of-Thought, CoT)，显著提升了推理性能。在此基础上，本文探讨了一种正交的方法：并行推理 (Parallel Rea。"
+description: "Parallel Reasoning综述系统梳理大模型的并行推理方法，区分独立生成、多路协作等测试时扩展路线。本文说明并行推理与串行思维链的差异，解读分类框架、代表方法、计算成本以及开放问题。"
 topics:
   - "推理"
 related_tutorials:

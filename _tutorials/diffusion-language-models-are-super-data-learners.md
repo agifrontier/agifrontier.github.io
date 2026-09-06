@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Diffusion Language Models are Super Data Learners"
-description: "本文通过大量实验证明，在训练数据稀缺但计算资源充足的条件下，扩散语言模型（Diffusion Language Models, DLMs）相比同等规模的自回归模型（Autoregressive Models, AR）能从有限数据中学习到更多信息，最终在性能上实现超越，这一现象被称为“智能交叉”（Intell。"
+description: "扩散语言模型（DLM）研究发现，在训练数据有限、计算资源充足的实验条件下，扩散模型可能比同规模自回归模型获得更好的数据利用效率。本文解读这种“智能交叉”现象的实验设计、计算开销和适用条件，避免将特定设置下的结果推广为全面优势。"
 topics:
   - "多模态&视觉"
   - "数据工程"

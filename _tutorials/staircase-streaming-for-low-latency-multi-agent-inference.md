@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Staircase Streaming for Low-Latency Multi-Agent Inference"
-description: "本文提出了一种名为“阶梯式流式传输 (Staircase Streaming)”的方法，通过让多智能体系统中的后续智能体（如聚合器）在接收到前序智能体（如提议者）的部分输出块（chunks）后便开始生成，而非等待其完整输出，从而将序贯依赖转变为流水线并行处理，显著降低了多智能体推理的首Token时间 (TT。"
+description: "Staircase Streaming通过流式协作降低多智能体推理的串行等待，让下游智能体在上游输出完整结果前开始处理。本文解读分块传递、流水线并行和前缀缓存优化，比较首Token延迟与回答质量的权衡，并说明实验设置及适用边界。"
 topics:
   - "AI Agent"
   - "模型训练"

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "BGE M3-Embedding: Multi-Lingual, Multi-Functionality, Multi-Granularity Text Embeddings Through Self-Knowledge Distillation"
-description: "本文提出了一种名为 M3-Embedding 的通用文本嵌入模型，它通过新颖的自知识蒸馏（Self-Knowledge Distillation）训练框架，在单一模型中同时实现了多语言（Multi-Lingual）、多功能（Multi-Functionality）和多粒度（Multi-Granularity。"
+description: "BGE-M3以自知识蒸馏统一多语言、多功能和多粒度文本嵌入，兼顾不同长度文本的检索需求。本文解读其训练框架、稠密检索、稀疏检索和多向量检索的协同方式，并说明实验设置、检索效果及适用边界。"
 topics:
   - "RAG"
   - "模型训练"
