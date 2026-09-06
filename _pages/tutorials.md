@@ -174,6 +174,10 @@ pagination:
     </nav>
   {% endif %}
 
+  {% if paginator.page == 1 or page.pagination.enabled == false %}
+    {% include reading-guide-links.liquid %}
+  {% endif %}
+
   <section class="homepage-feed" aria-labelledby="homepage-feed-title">
     <div class="homepage-section-heading homepage-section-heading--feed">
       <div>

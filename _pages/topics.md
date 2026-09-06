@@ -14,6 +14,8 @@ nav_order: 2
     <p>每个研究方向均拥有独立主题页，集中展示相关论文解读、核心方法与最新进展。</p>
   </header>
 
+  {% include reading-guide-links.liquid %}
+
   <div class="topic-directory__grid">
     {% for topic in site.tutorial_topics %}
       {% assign topic_name = topic.name %}

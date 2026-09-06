@@ -1,0 +1,12 @@
+{% if site.data.reading_guides.size > 0 %}
+  <nav class="reading-guide-links" aria-label="精选专题">
+    <a class="reading-guide-links__heading" href="{{ '/guides/' | relative_url }}">精选专题</a>
+    <ul>
+      {% for guide in site.data.reading_guides %}
+        {% unless guide.slug == page.slug %}
+          <li><a href="{{ '/guides/' | append: guide.slug | append: '/' | relative_url }}">{{ guide.title | escape }}</a></li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}

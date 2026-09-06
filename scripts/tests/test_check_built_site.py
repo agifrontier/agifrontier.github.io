@@ -2,10 +2,14 @@ from __future__ import annotations
 
 import unittest
 
-from scripts.check_built_site import PageParser, likely_kramdown_math_table
+from scripts.check_built_site import PageParser, is_user_page, likely_kramdown_math_table
 
 
 class CheckBuiltSiteTest(unittest.TestCase):
+    def test_curated_guides_are_included_in_full_render_validation(self) -> None:
+        self.assertTrue(is_user_page("guides/index.html"))
+        self.assertTrue(is_user_page("guides/agent-memory/index.html"))
+
     def _table(self, html: str) -> tuple[list[str], bool]:
         page = PageParser()
         page.feed(html)

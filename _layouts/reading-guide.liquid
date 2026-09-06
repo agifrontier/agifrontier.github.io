@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+<article class="reading-guide">
+  <nav class="topic-page__breadcrumb" aria-label="面包屑导航">
+    <a href="{{ '/guides/' | relative_url }}">精选专题</a><span aria-hidden="true"> / </span><span>{{ page.title | escape }}</span>
+  </nav>
+  <header class="post-header">
+    <h1>{{ page.title | escape }}</h1>
+    <p>{{ page.intro | escape }}</p>
+  </header>
+
+  <section aria-labelledby="guide-choices-title">
+    <h2 id="guide-choices-title">从你的问题开始</h2>
+    <div class="reading-guide__choices">
+      {% for choice in page.choices %}
+        <div class="reading-guide__choice">
+          <h3>{{ choice.need | escape }}</h3>
+          <p>{{ choice.route | escape }}</p>
+          <p class="reading-guide__boundary">比较时看：{{ choice.check | escape }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section aria-labelledby="guide-order-title">
+    <h2 id="guide-order-title">建议阅读顺序</h2>
+    <p class="reading-guide__boundary">按理解问题的顺序精选，非时间排名。下方日期为原文发表日期；不同论文的分数不作直接横比。</p>
+    <ol class="reading-guide__list">
+      {% for item in page.guide_items %}
+        {% assign tutorial = item.tutorial %}
+        <li class="reading-guide__item">
+          <p class="reading-guide__stage">{{ item.stage | escape }}</p>
+          <h3><a class="reading-guide__article" href="{{ tutorial.url | relative_url }}">{{ item.label | escape }}</a></h3>
+          <p>{{ item.note | escape }}</p>
+          <p class="reading-guide__boundary">阅读边界：{{ item.boundary | escape }}</p>
+          <div class="reading-guide__meta">
+            {% if tutorial.paper_published %}<time datetime="{{ tutorial.paper_published }}">原文 {{ tutorial.paper_published }}</time>{% endif %}
+            <a class="reading-guide__source" href="{{ tutorial.paper_url | escape }}" rel="noopener">论文原文</a>
+            <a href="{{ tutorial.url | relative_url }}">阅读解读 <span aria-hidden="true">→</span></a>
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% include reading-guide-links.liquid %}
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": {{ page.title | jsonify }},
+  "numberOfItems": {{ page.guide_items.size }},
+  "itemListOrder": "https://schema.org/ItemListOrderAscending",
+  "itemListElement": [
+    {% for item in page.guide_items %}
+      {"@type": "ListItem", "position": {{ forloop.index }}, "url": {{ item.tutorial.url | absolute_url | jsonify }}, "name": {{ item.label | jsonify }}}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>

@@ -1,0 +1,140 @@
+- slug: agent-memory
+  title: Agent记忆
+  seo_title: Agent记忆论文导读：综述、AgeMem、MemRL和记忆评测
+  description: 从Agent记忆综述读到AgeMem、图记忆、MemRL、HaluMem和CLAUDE.md指令维护，按问题选择阅读路线，区分存储、检索、更新和遗忘。
+  intro: 先明确记忆要解决什么问题，再选择存储和更新机制。这条路线从分类综述出发，分别阅读可训练管理、结构化经验和运行时更新，最后检查幻觉及过期指令的维护成本。
+  choices:
+    - need: 上下文装不下，长期经验又不能丢
+      route: 先读综述，再读AgeMem，区分工作上下文和长期记忆的操作。
+      check: 记忆管理策略是否需要训练；写入、检索和删除的成本分别如何。
+    - need: 检索内容相关，但对完成任务没帮助
+      route: 对照可训练图记忆和MemRL，比较结构关系与经验效用。
+      check: 图结构如何更新；效用信号从哪里来；失败经验是否被重复放大。
+    - need: 记忆越来越多，正确性却越来越难维护
+      route: 结合HaluMem的错误分解和CLAUDE.md的指令维护研究。
+      check: 区分事实记忆、执行经验和规则指令，分别设计评测与清理条件。
+  items:
+    - slug: memory-in-the-age-of-ai-agents
+      label: Memory in the Age of AI Agents：记忆综述
+      stage: 01 · 建立分类
+      note: 先按形式、功能和动态过程整理记忆设计，避免把所有Agent记忆都等同于一次向量检索。
+      boundary: 综述提供分类坐标，不是一个可以直接部署或统一排名的实现。
+    - slug: agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l
+      label: AgeMem：统一长短期记忆管理
+      stage: 02 · 管理操作
+      note: 观察它如何把长期存储和短期上下文管理变成Agent可以选择的工具操作，以及这些操作如何训练。
+      boundary: 工具接口、训练策略和底座模型都会影响结果，不能只复制存储格式。
+    - slug: from-experience-to-strategy-empowering-llm-agents-with-trainable-graph-memory
+      label: Trainable Graph Memory：从经验到策略
+      stage: 03 · 组织经验
+      note: 关注经验图的层次结构、图权重优化及记忆如何参与后续策略，而不是只比较文本片段是否相似。
+      boundary: 图的构建和维护增加工程成本，需要和简单检索在相同任务上比较。
+    - slug: memrl-self-evolving-agents-via-runtime-reinforcement-learning-on-episodic-memory
+      label: MemRL：按效用检索情景记忆
+      stage: 04 · 运行时更新
+      note: 阅读意图、经验、效用三元组和两阶段检索，区分语义相关性与帮助任务成功的程度。
+      boundary: 运行时效用更新不同于微调模型权重；效果仍取决于反馈信号和任务分布。
+    - slug: halumem-evaluating-hallucinations-in-memory-systems-of-agents
+      label: HaluMem：定位记忆系统幻觉
+      stage: 05 · 验证正确性
+      note: 把记忆系统的错误拆开检查，关注错误在哪一步产生、如何随后续交互传播。
+      boundary: 问答表现不能单独证明记忆内容正确，也不能替代隐私和权限检查。
+    - slug: why-does-claudemd-keep-growing-catastrophic-remembering-in-agentic-coding
+      label: CLAUDE.md：指令为什么只增不减？
+      stage: 06 · 维护和删除
+      note: 从规则文件的增长理解过期指令的维护问题，阅读Prompt Comments如何保留指令背后的理由。
+      boundary: 这里讨论规则指令的生命周期，不应直接套用为所有事实记忆的删除策略。
+
+- slug: agent-harness
+  title: Agent Harness
+  seo_title: Agent Harness论文导读：定义、综述、运行时优化和安全审计
+  description: 精选Agent Harness定义、工程综述、Code as Agent Harness、AHE、Harness-R1和HarnessAudit，按接口、可观测性、优化和安全边界阅读。
+  intro: Agent的外围执行系统不仅负责调用模型，还要处理工具、状态、上下文和约束。这条路线先澄清Harness的定义，再比较工程组织、自动优化和安全审计，不把最终任务成功当作唯一验收标准。
+  choices:
+    - need: 分不清框架、SDK和Harness
+      route: 先读定义论文，再用工程综述整理组件和职责。
+      check: 看具体系统是否真正控制执行循环和环境交互，不只看产品名称。
+    - need: 失败很多，却不知道应该改哪里
+      route: 从Code as Agent Harness读到AHE和Harness-R1。
+      check: 区分改接口、改运行时和改模型；检查可观测轨迹、回归集与补丁验收。
+    - need: 任务完成了，但担心越权和执行偏离
+      route: 单独阅读HarnessAudit的轨迹审计视角。
+      check: 同时检查结果、权限边界和实际执行过程，避免用完成率替代安全性。
+  items:
+    - slug: what-makes-a-harness-a-harness-necessary-and-sufficient-conditions-for-an-agent-harness
+      label: What Makes a Harness a Harness：先厘清定义
+      stage: 01 · 定义边界
+      note: 用执行循环、环境接口、上下文管理等判定条件理解Harness，先建立共同语言。
+      boundary: 这是该论文提出的判定框架，不能当作行业已经统一的标准。
+    - slug: agent-harness-engineering-a-survey
+      label: Agent Harness Engineering：工程综述
+      stage: 02 · 梳理组件
+      note: 借助ETCLOVG分层框架整理沙盒、工具接口、运行时控制等职责，识别系统的薄弱层。
+      boundary: 组件多不代表系统好；对照自己的任务需求选取必要层，而非照单堆叠。
+    - slug: code-as-agent-harness
+      label: Code as Agent Harness：用代码组织执行
+      stage: 03 · 连接接口和反馈
+      note: 关注代码作为环境接口、执行控制和验证反馈的作用，不把它仅看作模型生成的最终产物。
+      boundary: 可执行不等于安全，工具权限、隔离环境和结果验证仍需独立设计。
+    - slug: agentic-harness-engineering-observability-driven-automatic-evolution-of-coding-agent-harnesses
+      label: AHE：可观测性驱动的Harness优化
+      stage: 04 · 找到修改依据
+      note: 观察组件、经验和决策的可观测性如何支持迭代，把失败轨迹转为可验证的修改假设。
+      boundary: 优化需要独立验证集和回归检查，不能把同一组任务上的反复调试当作泛化。
+    - slug: harness-r1-learning-to-edit-executable-runtime-harnesses-from-agent-failure-traj
+      label: Harness-R1：从失败轨迹到运行时补丁
+      stage: 05 · 比较优化对象
+      note: 阅读专职工程师根据失败信息编辑运行时的流程，区分优化Harness和直接训练任务Agent。
+      boundary: 补丁必须通过运行验证；不能假设在一个Agent上有效就能无条件迁移。
+    - slug: auditing-agent-harness-safety
+      label: HarnessAudit：检查成功背后的执行过程
+      stage: 06 · 审计安全
+      note: 从边界合规、执行保真度和系统稳定性三个层次检查轨迹，补足只看结果的盲区。
+      boundary: 基准测试覆盖的攻击和环境有限，不能据此宣称系统已具备全面安全保证。
+
+- slug: coding-agents
+  title: 代码Agent
+  seo_title: 代码Agent论文导读：Vibe Coding综述、SWE-bench和技能训练
+  description: 从Vibe Coding综述、SWE-bench读到仓库检索、Kimi-Dev、Socratic-SWE和EvoMal，理解代码Agent的任务边界、训练路径和复用风险。
+  intro: 写出一段代码、理解一个仓库、修复真实Issue是不同任务。这条路线先明确评测对象，再看检索、技能训练和自演化，最后检查代码与技能复用引入的安全风险。
+  choices:
+    - need: 判断一个代码Agent到底擅长什么
+      route: 用Vibe Coding综述梳理交互方式，再读SWE-bench的任务定义。
+      check: 明确是代码生成、仓库问答还是Issue修复；不要混用不同基准和子集的分数。
+    - need: 仓库太大，Agent找不到关键代码
+      route: 阅读Deep Agentic Search的仓库问答对照研究。
+      check: 同时测正确率、检索成本和任务交接损失；问答结论不自动等于修复任务结论。
+    - need: 想让Agent通过训练和经验持续进步
+      route: 对照Kimi-Dev与Socratic-SWE，再用EvoMal检查复用风险。
+      check: 区分模型训练、技能提炼和运行时复用；单独核验数据来源、测试泄漏与供应链安全。
+  items:
+    - slug: a-survey-of-vibe-coding-with-large-language-models
+      label: Vibe Coding综述：人和代码Agent如何协作
+      stage: 01 · 任务全景
+      note: 先整理基于自然语言的编程交互及其研究问题，再确定你需要自动化的工作环节。
+      boundary: 综述中的不同交互方式不等价于生产可用性，仍需要自己的验收用例。
+    - slug: swe-bench-can-language-models-resolve-real-world-github-issues
+      label: SWE-bench：真实Issue如何变成评测任务
+      stage: 02 · 定义验收
+      note: 关注仓库状态、问题描述、补丁和测试之间的关系，理解真实软件工程任务的评测方式。
+      boundary: 原版、Lite、Verified等口径不能混合比较；通过测试也不覆盖全部工程质量。
+    - slug: deep-agentic-search-for-repository-level-code-question-answering-an-empirical-st
+      label: Deep Agentic Search：仓库检索的实证对照
+      stage: 03 · 获取上下文
+      note: 比较向量检索和子Agent探索，重点阅读任务交接、上下文压缩和成本分析。
+      boundary: 研究针对特定仓库问答设置，不应推广为所有多Agent架构都不如单Agent。
+    - slug: kimi-dev-agentless-training-as-skill-prior-for-swe-agents
+      label: Kimi-Dev：Agentless训练如何提供技能先验
+      stage: 04 · 训练基础技能
+      note: 阅读从工作流训练到多轮Agent应用的连接方式，关注先验技能如何迁移到交互任务。
+      boundary: 训练配方、底座模型和评测设置共同影响结果，不能只靠替换提示词复现。
+    - slug: socratic-swe-self-evolving-coding-agents-via-trace-derived-agent-skills
+      label: Socratic-SWE：从轨迹提炼训练技能
+      stage: 05 · 迭代训练任务
+      note: 跟踪执行轨迹、短板技能、任务生成和再次训练的循环，观察训练数据如何由失败驱动。
+      boundary: 需要区分真实能力增长与对生成任务分布的适应，并保留隔离测试集。
+    - slug: evomal-self-poisoning-in-self-evolving-coding-agents
+      label: EvoMal：自演化代码的复用风险
+      stage: 06 · 守住复用边界
+      note: 从安全研究视角检查生成代码和技能复用如何传播不可信内容，补上自演化流程的审查环节。
+      boundary: 这里用于理解风险和防护边界，不把单一攻击基准视为完整安全评估。

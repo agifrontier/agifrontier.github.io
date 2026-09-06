@@ -22,6 +22,10 @@ layout: default
     </h1>
   </header>
 
+  {% if page.topic_slug == 'ai-agent' and page.topic_page_number == 1 %}
+    {% include reading-guide-links.liquid %}
+  {% endif %}
+
   <section
     aria-label="{{ page.topic_name }}文章"
     data-topic-page="{{ page.topic_page_number }}"

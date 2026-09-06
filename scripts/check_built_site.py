@@ -14,7 +14,7 @@ from urllib.parse import unquote, urljoin, urlparse
 
 
 SITE_ORIGIN = "https://agifrontier.github.io"
-USER_PREFIXES = ("tutorials/", "page/", "topics/", "blog/")
+USER_PREFIXES = ("tutorials/", "page/", "topics/", "guides/", "blog/")
 SKIP_TEXT_TAGS = {"pre", "code", "script", "style"}
 VOID_TAGS = {
     "area",

@@ -30,6 +30,10 @@ class SeoParser(HTMLParser):
         self.paper_dates: list[str] = []
         self.interpretation_dates: list[str] = []
         self.scripts: list[str] = []
+        self.guide_articles: list[str] = []
+        self.guide_sources: list[str] = []
+        self.guide_backlinks: list[str] = []
+        self.in_guide_backlinks = False
 
     def handle_starttag(self, tag: str, attrs_list: list[tuple[str, str | None]]) -> None:
         attrs = {key: value or "" for key, value in attrs_list}
@@ -61,8 +65,18 @@ class SeoParser(HTMLParser):
             self.interpretation_dates.append(attrs.get("datetime", ""))
         if tag == "script" and attrs.get("src"):
             self.scripts.append(attrs["src"])
+        if tag == "nav" and "reading-guide-backlinks" in classes:
+            self.in_guide_backlinks = True
+        if tag == "a" and "reading-guide__article" in classes:
+            self.guide_articles.append(attrs.get("href", ""))
+        if tag == "a" and "reading-guide__source" in classes:
+            self.guide_sources.append(attrs.get("href", ""))
+        if tag == "a" and self.in_guide_backlinks:
+            self.guide_backlinks.append(attrs.get("href", ""))
 
     def handle_endtag(self, tag: str) -> None:
+        if tag == "nav":
+            self.in_guide_backlinks = False
         if tag == "title":
             self.in_title = False
         elif tag == "script" and self.in_json_ld:
@@ -110,6 +124,24 @@ def identity_issues(schema: object) -> list[str]:
             issues.extend(identity_issues(value))
     elif isinstance(schema, str) and any(marker in schema for marker in ("alberteinstein.com", "qc6CJjYAAAAJ", "you@example.com", "example_pdf.pdf")):
         issues.append("template identity remains in JSON-LD")
+    return issues
+
+
+def guide_order_issues(page: SeoParser, schema: dict) -> list[str]:
+    """Keep the visible curated order and search metadata in agreement."""
+    issues = []
+    articles = page.guide_articles
+    if not articles or len(set(articles)) != len(articles):
+        issues.append("guide needs unique visible article links")
+    if len(page.guide_sources) != len(articles):
+        issues.append("guide must link to each paper source")
+    elements = schema.get("itemListElement", [])
+    if schema.get("numberOfItems") != len(articles):
+        issues.append("guide schema count differs from visible articles")
+    if [item.get("position") for item in elements] != list(range(1, len(articles) + 1)):
+        issues.append("guide schema positions are not consecutive")
+    if [item.get("url") for item in elements] != [f"https://agifrontier.github.io{url}" for url in articles]:
+        issues.append("guide schema order differs from visible articles")
     return issues
 
 
@@ -192,6 +224,7 @@ def main() -> int:
     page_checks = {
         "homepage": (build_dir / "index.html", "WebSite"),
         "topics": (build_dir / "topics/index.html", "WebSite"),
+        "guides": (build_dir / "guides/index.html", "CollectionPage"),
         "blog_post": (build_dir / "blog/2025/attention-is-all-you-need/index.html", "BlogPosting"),
     }
     for label, (path, expected_schema) in page_checks.items():
@@ -213,7 +246,7 @@ def main() -> int:
             add_error(errors, path, f"schema type {schema.get('@type')!r}")
         for issue in identity_issues(schema):
             add_error(errors, path, issue)
-        if label in {"homepage", "topics"}:
+        if label in {"homepage", "topics", "guides"}:
             unused = [src for src in page.scripts if any(marker in src for marker in ("mathjax", "masonry", "badge.dimensions.ai", "d1bxh8uas1mnw7"))]
             if unused:
                 add_error(errors, path, f"unused listing scripts: {unused}")
@@ -223,7 +256,10 @@ def main() -> int:
         for path in (build_dir / "topics").rglob("index.html")
         if path != build_dir / "topics/index.html"
     )
-    for path in topic_pages:
+    guide_pages = sorted((build_dir / "guides").glob("*/index.html"))
+    if not guide_pages:
+        add_error(errors, build_dir / "guides", "missing curated guide pages")
+    for path in topic_pages + guide_pages:
         page = parse(path)
         description = page.meta_content(name="description") or ""
         relative_url = "/" + str(path.relative_to(build_dir).parent) + "/"
@@ -245,14 +281,32 @@ def main() -> int:
                 add_error(errors, path, f"invalid JSON-LD: {exc}")
                 continue
             topic_schema_types.add(str(schema.get("@type", "")))
+            if path in guide_pages and schema.get("@type") == "ItemList":
+                for issue in guide_order_issues(page, schema):
+                    add_error(errors, path, issue)
         if "CollectionPage" not in topic_schema_types:
             add_error(errors, path, "missing CollectionPage schema")
         if "ItemList" not in topic_schema_types:
             add_error(errors, path, "missing ItemList schema")
+        if path in guide_pages:
+            for url, source in zip(page.guide_articles, page.guide_sources):
+                if not url.startswith("/tutorials/") or ".." in url:
+                    add_error(errors, path, f"invalid guide article URL: {url}")
+                    continue
+                target = build_dir / url.strip("/") / "index.html"
+                if not target.is_file():
+                    add_error(errors, path, f"missing guide target: {url}")
+                    continue
+                article = parse(target)
+                if relative_url not in article.guide_backlinks:
+                    add_error(errors, target, f"missing guide backlink: {relative_url}")
+                if article.paper_sources != [source]:
+                    add_error(errors, path, f"guide paper source mismatch: {url}")
 
     report = {
         "tutorial_pages": len(tutorial_pages),
         "topic_pages": len(topic_pages),
+        "guide_pages": len(guide_pages),
         "unique_descriptions": len(set(descriptions)),
         "schema_types": dict(schema_types),
         "errors": errors,

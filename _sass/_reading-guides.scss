@@ -1,0 +1,52 @@
+.reading-guide-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem 1.25rem;
+  padding: 1rem 0;
+  margin: 1.25rem 0;
+  border-top: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-divider-color);
+
+  &__heading { font-weight: 600; }
+  ul { display: flex; flex-wrap: wrap; gap: 0.6rem 1.25rem; list-style: none; padding: 0; margin: 0; }
+}
+
+.reading-guide,
+.reading-guide-directory {
+  overflow-wrap: anywhere;
+
+  h1 { margin: 1.25rem 0; }
+  h2 { margin: 2rem 0 1rem; }
+  h3 { font-size: 1.2rem; line-height: 1.5; }
+  p { line-height: 1.8; }
+  a:focus-visible { outline: 2px solid var(--global-theme-color); outline-offset: 4px; }
+}
+
+.reading-guide__choices,
+.reading-guide-directory__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.reading-guide__choice,
+.reading-guide-directory__card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  padding: 1.1rem;
+  background: var(--global-bg-color);
+}
+
+.reading-guide-directory__card h2 { margin-top: 0; font-size: 1.4rem; }
+.reading-guide-directory__grid { margin-bottom: 1.5rem; }
+.reading-guide__boundary { color: var(--global-text-color-light); font-size: 0.92rem; }
+.reading-guide__list { list-style: none; margin: 0; padding: 0; }
+.reading-guide__item { padding: 1.5rem 0; border-bottom: 1px solid var(--global-divider-color); }
+.reading-guide__stage { color: var(--global-theme-color); font-weight: 600; margin-bottom: 0.5rem; }
+.reading-guide__meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; font-size: 0.88rem; }
+
+@media (max-width: 767px) {
+  .reading-guide__choices,
+  .reading-guide-directory__grid { grid-template-columns: minmax(0, 1fr); }
+}

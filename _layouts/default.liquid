@@ -57,6 +57,16 @@
       {% endif %}
 
       {% if page.collection == 'tutorials' %}
+        {% if page.reading_guides.size > 0 %}
+          <nav class="reading-guide-links reading-guide-backlinks" aria-label="本文所属专题">
+            <span class="reading-guide-links__heading">本文所属专题</span>
+            <ul>
+              {% for guide in page.reading_guides %}
+                <li><a href="{{ guide.path | relative_url }}">{{ guide.title | escape }} · 阅读路线</a></li>
+              {% endfor %}
+            </ul>
+          </nav>
+        {% endif %}
         {% include related_tutorials.liquid %}
         {% include tutorial-navigation.liquid %}
       {% endif %}
