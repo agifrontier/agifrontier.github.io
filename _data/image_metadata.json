@@ -11091,6 +11091,22 @@
     "height": 935,
     "width": 1600
   },
+  "/images/2607.19191v1/A__title.webp": {
+    "height": 330,
+    "width": 1253
+  },
+  "/images/2607.19191v1/abot-world-0.webp": {
+    "height": 877,
+    "width": 1600
+  },
+  "/images/2607.19191v1/abot_pipeline_new_ppt_editable.webp": {
+    "height": 734,
+    "width": 1600
+  },
+  "/images/2607.19191v1/datapipe.webp": {
+    "height": 675,
+    "width": 1197
+  },
   "/images/2607.19321v1/A__title.webp": {
     "height": 547,
     "width": 980
@@ -11379,6 +11395,18 @@
     "height": 918,
     "width": 1600
   },
+  "/images/2607.25886v1/A__title.webp": {
+    "height": 638,
+    "width": 1269
+  },
+  "/images/2607.25886v1/evoforge_framework.webp": {
+    "height": 387,
+    "width": 1126
+  },
+  "/images/2607.25886v1/evoforge_motivation.webp": {
+    "height": 284,
+    "width": 999
+  },
   "/images/2607.26005v1/A__title.webp": {
     "height": 457,
     "width": 916
@@ -11522,6 +11550,26 @@
   "/images/2607.27372/xm_main_figure.webp": {
     "height": 483,
     "width": 1600
+  },
+  "/images/2607.27599/fig1.webp": {
+    "height": 404,
+    "width": 970
+  },
+  "/images/2607.27599/fig2.webp": {
+    "height": 787,
+    "width": 1459
+  },
+  "/images/2607.27599/fig3.webp": {
+    "height": 465,
+    "width": 1374
+  },
+  "/images/2607.27599/fig4.webp": {
+    "height": 420,
+    "width": 1270
+  },
+  "/images/2607.27599/fig6.webp": {
+    "height": 545,
+    "width": 1580
   },
   "/images/2607.27690/alf_summary.webp": {
     "height": 479,
@@ -12263,9 +12311,45 @@
     "height": 501,
     "width": 1600
   },
+  "/images/2608.11941v2/A__title.webp": {
+    "height": 451,
+    "width": 1172
+  },
+  "/images/2608.11941v2/accuracy.webp": {
+    "height": 738,
+    "width": 1600
+  },
+  "/images/2608.11941v2/solve_cost_curves.webp": {
+    "height": 937,
+    "width": 1600
+  },
   "/images/2608.12253v1/A__title.webp": {
     "height": 441,
     "width": 1043
+  },
+  "/images/2608.12282v1/enterprise_example.webp": {
+    "height": 896,
+    "width": 1600
+  },
+  "/images/2608.12282v1/task4_hop_accuracy_wo_mistral.webp": {
+    "height": 499,
+    "width": 1600
+  },
+  "/images/2608.12307v1/A__title.webp": {
+    "height": 402,
+    "width": 1267
+  },
+  "/images/2608.12307v1/fig_complementarity.webp": {
+    "height": 508,
+    "width": 886
+  },
+  "/images/2608.12307v1/fig_overview_heatmap.webp": {
+    "height": 379,
+    "width": 793
+  },
+  "/images/2608.12307v1/harness_eng.webp": {
+    "height": 782,
+    "width": 1600
   },
   "/images/2608.12564v1/A__title.webp": {
     "height": 318,
@@ -12278,6 +12362,26 @@
   "/images/2608.12629v1/A__title.webp": {
     "height": 462,
     "width": 907
+  },
+  "/images/2608.12720v1/A__title.webp": {
+    "height": 556,
+    "width": 1110
+  },
+  "/images/2608.12720v1/case_study.webp": {
+    "height": 469,
+    "width": 1600
+  },
+  "/images/2608.12720v1/main_architecture.webp": {
+    "height": 783,
+    "width": 1600
+  },
+  "/images/2608.12720v1/paradigm_comparison.webp": {
+    "height": 1114,
+    "width": 1600
+  },
+  "/images/2608.12720v1/skill_sample.webp": {
+    "height": 468,
+    "width": 1600
   },
   "/images/2608.12743v1/casestudy.webp": {
     "height": 1327,
@@ -12335,6 +12439,26 @@
     "height": 957,
     "width": 1600
   },
+  "/images/2608.13113v1/A__title.webp": {
+    "height": 1200,
+    "width": 1359
+  },
+  "/images/2608.13113v1/QA1.webp": {
+    "height": 530,
+    "width": 1115
+  },
+  "/images/2608.13113v1/QA2.webp": {
+    "height": 628,
+    "width": 1115
+  },
+  "/images/2608.13113v1/data_static.webp": {
+    "height": 936,
+    "width": 1600
+  },
+  "/images/2608.13113v1/teaser.webp": {
+    "height": 640,
+    "width": 1600
+  },
   "/images/2608.13331v1/A__title.webp": {
     "height": 939,
     "width": 1208
@@ -12359,6 +12483,26 @@
     "height": 409,
     "width": 977
   },
+  "/images/2608.13522v1/A__title.webp": {
+    "height": 529,
+    "width": 1110
+  },
+  "/images/2608.13522v1/pipeline.webp": {
+    "height": 680,
+    "width": 1600
+  },
+  "/images/2608.13787v1/main.webp": {
+    "height": 992,
+    "width": 1586
+  },
+  "/images/2608.13787v1/sage_architecture.webp": {
+    "height": 768,
+    "width": 1376
+  },
+  "/images/2608.13787v1/train_diagram.webp": {
+    "height": 1024,
+    "width": 1535
+  },
   "/images/2608.13833v1/A__title.webp": {
     "height": 301,
     "width": 1351
@@ -12366,6 +12510,10 @@
   "/images/2608.13833v1/fig1.webp": {
     "height": 240,
     "width": 840
+  },
+  "/images/2608.13867v1/A__title.webp": {
+    "height": 103,
+    "width": 1230
   },
   "/images/2608.13900v1/A__title.webp": {
     "height": 215,
@@ -12379,6 +12527,10 @@
     "height": 997,
     "width": 839
   },
+  "/images/2608.14312v1/10_figure.webp": {
+    "height": 699,
+    "width": 1600
+  },
   "/images/2608.14354v1/A__title.webp": {
     "height": 471,
     "width": 1024
@@ -12386,6 +12538,18 @@
   "/images/2608.14354v1/main_v8_figure.webp": {
     "height": 720,
     "width": 1500
+  },
+  "/images/2608.14441v1/paper_images_1.webp": {
+    "height": 695,
+    "width": 1254
+  },
+  "/images/2608.14441v1/paper_images_3.webp": {
+    "height": 422,
+    "width": 894
+  },
+  "/images/2608.14441v1/sunburst_panel3_combined_readable.webp": {
+    "height": 800,
+    "width": 1600
   },
   "/images/2608.14490v1/fig_loop_v4_print.webp": {
     "height": 752,
@@ -12399,9 +12563,69 @@
     "height": 801,
     "width": 1600
   },
+  "/images/2608.14863v1/bug_family_tier.webp": {
+    "height": 439,
+    "width": 1600
+  },
+  "/images/2608.14863v1/capability_cost_pareto.webp": {
+    "height": 1122,
+    "width": 1600
+  },
+  "/images/2608.14863v1/curation.webp": {
+    "height": 395,
+    "width": 1600
+  },
+  "/images/2608.14863v1/debug-context.webp": {
+    "height": 358,
+    "width": 1600
+  },
+  "/images/2608.14863v1/pass_rate_boxplot.webp": {
+    "height": 1074,
+    "width": 1600
+  },
+  "/images/2608.14863v1/rank_change_bump.webp": {
+    "height": 1240,
+    "width": 1600
+  },
+  "/images/2608.14863v1/swebench_vs_ddbench_dumbbell.webp": {
+    "height": 1448,
+    "width": 1600
+  },
+  "/images/2608.14905v1/failure_heatmap.webp": {
+    "height": 687,
+    "width": 1600
+  },
+  "/images/2608.14905v1/general_overview.webp": {
+    "height": 792,
+    "width": 917
+  },
+  "/images/2608.15008v1/attn_region_heatmap.webp": {
+    "height": 423,
+    "width": 653
+  },
+  "/images/2608.15008v1/subMem_K.webp": {
+    "height": 570,
+    "width": 1260
+  },
+  "/images/2608.15008v1/submem_mem.webp": {
+    "height": 769,
+    "width": 1340
+  },
+  "/images/2608.15071v1/A__title.webp": {
+    "height": 403,
+    "width": 1253
+  },
   "/images/2608.15089v1/A__title.webp": {
     "height": 432,
     "width": 1306
+  },
+  "/images/2608.15108v1/A__title.webp": {
+    "height": 338,
+    "width": 1110
+  },
+  "/images/2608.15108v1/introduction.webp": {
+    "height": 696,
+    "width": 1370
   },
   "/images/2608.15265v1/A__title.webp": {
     "height": 610,
@@ -12483,6 +12707,34 @@
     "height": 547,
     "width": 774
   },
+  "/images/2608.16211v1/A__title.webp": {
+    "height": 437,
+    "width": 1317
+  },
+  "/images/2608.16211v1/fig_ablation_study.webp": {
+    "height": 1506,
+    "width": 1600
+  },
+  "/images/2608.16211v1/fig_baseline_comparison.webp": {
+    "height": 535,
+    "width": 1600
+  },
+  "/images/2608.16211v1/fig_data_state_bank.webp": {
+    "height": 851,
+    "width": 1600
+  },
+  "/images/2608.16211v1/fig_local_llm_comparison.webp": {
+    "height": 690,
+    "width": 1600
+  },
+  "/images/2608.16211v1/fig_method.webp": {
+    "height": 815,
+    "width": 1600
+  },
+  "/images/2608.16211v1/fig_teaser_figure.webp": {
+    "height": 605,
+    "width": 1600
+  },
   "/images/2608.16798v1/A__title.webp": {
     "height": 661,
     "width": 1259
@@ -12498,6 +12750,10 @@
   "/images/2608.16977v1/score_joint.webp": {
     "height": 331,
     "width": 430
+  },
+  "/images/2608.17071v1/A__title.webp": {
+    "height": 263,
+    "width": 1274
   },
   "/images/2608.17271v1/A__title.webp": {
     "height": 195,
@@ -12571,6 +12827,42 @@
     "height": 827,
     "width": 1414
   },
+  "/images/2608.17800v1/A__title.webp": {
+    "height": 510,
+    "width": 1297
+  },
+  "/images/2608.17800v1/MainFig.webp": {
+    "height": 470,
+    "width": 908
+  },
+  "/images/2608.17800v1/StartupBench-fig2.webp": {
+    "height": 524,
+    "width": 1261
+  },
+  "/images/2608.17800v1/heatmap_9model.webp": {
+    "height": 876,
+    "width": 1432
+  },
+  "/images/2608.17800v1/rubric_corefail_case.webp": {
+    "height": 1067,
+    "width": 1600
+  },
+  "/images/2608.18050v1/A__title.webp": {
+    "height": 443,
+    "width": 974
+  },
+  "/images/2608.18050v1/ArtifactState_Workspace.webp": {
+    "height": 867,
+    "width": 1600
+  },
+  "/images/2608.18050v1/harfeast_column_guide_parsed_cache.webp": {
+    "height": 314,
+    "width": 1024
+  },
+  "/images/2608.18050v1/intro.webp": {
+    "height": 278,
+    "width": 396
+  },
   "/images/2608.18307v1/A__title.webp": {
     "height": 515,
     "width": 1110
@@ -12582,6 +12874,46 @@
   "/images/2608.18307v1/figure2_worked_example.webp": {
     "height": 542,
     "width": 1512
+  },
+  "/images/2608.19303v1/A__title.webp": {
+    "height": 338,
+    "width": 1121
+  },
+  "/images/2608.19652v1/1eaf.webp": {
+    "height": 832,
+    "width": 914
+  },
+  "/images/2608.19652v1/A__title.webp": {
+    "height": 338,
+    "width": 909
+  },
+  "/images/2608.19652v1/state_drift_teaser1.webp": {
+    "height": 805,
+    "width": 774
+  },
+  "/images/2608.20485v1/A__title.webp": {
+    "height": 602,
+    "width": 1036
+  },
+  "/images/2608.20485v1/competence_acquisition_ecosystem.webp": {
+    "height": 900,
+    "width": 1600
+  },
+  "/images/2608.20485v1/layered_loop_architecture.webp": {
+    "height": 850,
+    "width": 1600
+  },
+  "/images/2608.20485v1/technical_evolution.webp": {
+    "height": 780,
+    "width": 1559
+  },
+  "/images/2608.20485v1/terminal-agent-definition.webp": {
+    "height": 695,
+    "width": 1404
+  },
+  "/images/2608.20485v1/terminal_grounded_scope.webp": {
+    "height": 900,
+    "width": 1600
   },
   "/images/2608.20614v1/A__title.webp": {
     "height": 311,
@@ -12739,6 +13071,10 @@
     "height": 300,
     "width": 1200
   },
+  "/images/2608.25655v1/A__title.jpg": {
+    "height": 514,
+    "width": 1200
+  },
   "/images/2608.25776v1/A__title.webp": {
     "height": 448,
     "width": 983
@@ -12746,6 +13082,14 @@
   "/images/2608.25776v1/workflow.webp": {
     "height": 881,
     "width": 1592
+  },
+  "/images/2608.26004v1/A__title.webp": {
+    "height": 401,
+    "width": 1251
+  },
+  "/images/2608.26004v1/pipeline_0526_v4.webp": {
+    "height": 610,
+    "width": 1344
   },
   "/images/2608.26200v1/A__title.webp": {
     "height": 435,
@@ -12763,9 +13107,41 @@
     "height": 349,
     "width": 1600
   },
+  "/images/2608.26204v1/A__title.webp": {
+    "height": 1042,
+    "width": 1420
+  },
+  "/images/2608.26204v1/figure_2_examples.webp": {
+    "height": 440,
+    "width": 1458
+  },
+  "/images/2608.26204v1/figure_3_spectrum.webp": {
+    "height": 311,
+    "width": 1600
+  },
   "/images/2608.26263v1/A__title.webp": {
     "height": 408,
     "width": 857
+  },
+  "/images/2608.26480v1/A__title.webp": {
+    "height": 361,
+    "width": 1144
+  },
+  "/images/2608.26480v1/how_the_manager_arm_answers_one_question_multiagent_py_current_tree_light.webp": {
+    "height": 1600,
+    "width": 1200
+  },
+  "/images/2608.26480v1/manager_vs_single_call_across_model_scale_lcb-100_5_passes_16k_max_tokens_reasoning_off_bars_light.webp": {
+    "height": 763,
+    "width": 1600
+  },
+  "/images/2608.26480v1/manager_vs_single_call_four_models_lcb-100_5_passes_128k_max_tokens_reasoning_on_bars_light.webp": {
+    "height": 763,
+    "width": 1600
+  },
+  "/images/2608.26480v1/what_accuracy_costs_lcb-100_5_passes_128k_max_tokens_reasoning_on_all_seven_pinned-backend_arms_light.webp": {
+    "height": 763,
+    "width": 1600
   },
   "/images/2608.26733v1/A__title.webp": {
     "height": 455,
@@ -12794,6 +13170,10 @@
   "/images/2608.28945v1/A__title.webp": {
     "height": 356,
     "width": 962
+  },
+  "/images/2609.00077/A__title.webp": {
+    "height": 345,
+    "width": 1182
   },
   "/images/2609.02088/A__title.webp": {
     "height": 341,
