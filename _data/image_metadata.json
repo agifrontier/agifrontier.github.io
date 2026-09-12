@@ -11055,6 +11055,10 @@
     "height": 1024,
     "width": 1536
   },
+  "/images/2607.17044v1/A__title.webp": {
+    "height": 464,
+    "width": 1262
+  },
   "/images/2607.17352v1/A__title.webp": {
     "height": 524,
     "width": 1188
@@ -11062,6 +11066,26 @@
   "/images/2607.17352v1/system_overview.webp": {
     "height": 714,
     "width": 1276
+  },
+  "/images/2607.17598v1/A__title.webp": {
+    "height": 408,
+    "width": 1121
+  },
+  "/images/2607.17719v2/A__title.webp": {
+    "height": 396,
+    "width": 1261
+  },
+  "/images/2607.17719v2/case3.webp": {
+    "height": 920,
+    "width": 1290
+  },
+  "/images/2607.17719v2/intro2.webp": {
+    "height": 599,
+    "width": 1057
+  },
+  "/images/2607.17719v2/method8.webp": {
+    "height": 990,
+    "width": 1600
   },
   "/images/2607.18171v1/A__title.webp": {
     "height": 1151,
@@ -11078,6 +11102,22 @@
   "/images/2607.18171v1/overview.webp": {
     "height": 765,
     "width": 1006
+  },
+  "/images/2607.18213v1/A__title.webp": {
+    "height": 576,
+    "width": 1306
+  },
+  "/images/2607.18213v1/arch.webp": {
+    "height": 1224,
+    "width": 1127
+  },
+  "/images/2607.18213v1/comparison.webp": {
+    "height": 792,
+    "width": 1407
+  },
+  "/images/2607.18213v1/overview.webp": {
+    "height": 867,
+    "width": 1590
   },
   "/images/2607.18754v1/A__title.webp": {
     "height": 401,
@@ -11147,6 +11187,22 @@
     "height": 684,
     "width": 1554
   },
+  "/images/2607.19592/stylized_arc_example_v2.webp": {
+    "height": 1069,
+    "width": 1600
+  },
+  "/images/2607.19592/stylized_tb2_example_v2.webp": {
+    "height": 1081,
+    "width": 1600
+  },
+  "/images/2607.19595/pipeline.webp": {
+    "height": 499,
+    "width": 1097
+  },
+  "/images/2607.19595/trace2.webp": {
+    "height": 334,
+    "width": 1135
+  },
   "/images/2607.20759/attack_workflow.jpg": {
     "height": 669,
     "width": 1200
@@ -11193,6 +11249,10 @@
   },
   "/images/2607.20911/figure1-unified-benchmark-overview.webp": {
     "height": 836,
+    "width": 1600
+  },
+  "/images/2607.20999/workflow_wgso_editable_image_icons_math_fixed.webp": {
+    "height": 395,
     "width": 1600
   },
   "/images/2607.21461/arex_benchmark_results_paper.webp": {
@@ -11271,6 +11331,58 @@
     "height": 432,
     "width": 1265
   },
+  "/images/2607.23605v1/A__title.webp": {
+    "height": 496,
+    "width": 1086
+  },
+  "/images/2607.23605v1/algorithm.webp": {
+    "height": 632,
+    "width": 1600
+  },
+  "/images/2607.23605v1/overview.webp": {
+    "height": 350,
+    "width": 830
+  },
+  "/images/2607.23605v1/training_curves.webp": {
+    "height": 521,
+    "width": 1600
+  },
+  "/images/2607.23624v2/A__title.webp": {
+    "height": 588,
+    "width": 1109
+  },
+  "/images/2607.23624v2/SIDEL.webp": {
+    "height": 832,
+    "width": 1600
+  },
+  "/images/2607.23624v2/inject.webp": {
+    "height": 746,
+    "width": 1600
+  },
+  "/images/2607.23624v2/intro.webp": {
+    "height": 829,
+    "width": 1600
+  },
+  "/images/2607.23722v1/A__title.webp": {
+    "height": 157,
+    "width": 1192
+  },
+  "/images/2607.23722v1/data_filling.webp": {
+    "height": 667,
+    "width": 1600
+  },
+  "/images/2607.23722v1/overview.webp": {
+    "height": 689,
+    "width": 1600
+  },
+  "/images/2607.23722v1/price_vs_performance_vertical.webp": {
+    "height": 895,
+    "width": 1555
+  },
+  "/images/2607.23722v1/task_syn_and_gap.webp": {
+    "height": 413,
+    "width": 1600
+  },
   "/images/2607.23784v1/A__title.webp": {
     "height": 389,
     "width": 1050
@@ -11295,6 +11407,26 @@
     "height": 610,
     "width": 1600
   },
+  "/images/2607.23802v1/A__title.webp": {
+    "height": 524,
+    "width": 1112
+  },
+  "/images/2607.23802v1/example.webp": {
+    "height": 667,
+    "width": 1599
+  },
+  "/images/2607.23802v1/framework.webp": {
+    "height": 858,
+    "width": 1600
+  },
+  "/images/2607.23802v1/rlsvr.webp": {
+    "height": 1254,
+    "width": 1254
+  },
+  "/images/2607.23802v1/rlvr.webp": {
+    "height": 1254,
+    "width": 1254
+  },
   "/images/2607.23809v1/A__title.webp": {
     "height": 408,
     "width": 1052
@@ -11306,6 +11438,14 @@
   "/images/2607.23809v1/data_pipeline.webp": {
     "height": 635,
     "width": 1113
+  },
+  "/images/2607.23929v2/A__title.webp": {
+    "height": 354,
+    "width": 1281
+  },
+  "/images/2607.23929v2/figure1_protocol_reference_styled.webp": {
+    "height": 720,
+    "width": 1600
   },
   "/images/2607.23933v1/A__title.webp": {
     "height": 274,
@@ -11330,6 +11470,18 @@
   "/images/2607.23933v1/routing_tradeoff.webp": {
     "height": 1000,
     "width": 1600
+  },
+  "/images/2607.24112v1/A__title.webp": {
+    "height": 313,
+    "width": 1099
+  },
+  "/images/2607.24112v1/fig-stp-overview-pdf.webp": {
+    "height": 829,
+    "width": 1501
+  },
+  "/images/2607.24112v1/fig-transition-sources-pdf.webp": {
+    "height": 902,
+    "width": 1438
   },
   "/images/2607.24653v1/A__title.webp": {
     "height": 315,
@@ -11363,6 +11515,14 @@
     "height": 417,
     "width": 1600
   },
+  "/images/2607.25090v1/A__title.webp": {
+    "height": 459,
+    "width": 971
+  },
+  "/images/2607.25090v1/main_large.webp": {
+    "height": 758,
+    "width": 1392
+  },
   "/images/2607.25333v1/A__title.webp": {
     "height": 544,
     "width": 1408
@@ -11395,6 +11555,34 @@
     "height": 918,
     "width": 1600
   },
+  "/images/2607.25487v1/architecture.webp": {
+    "height": 900,
+    "width": 1600
+  },
+  "/images/2607.25816v1/A__title.webp": {
+    "height": 406,
+    "width": 1261
+  },
+  "/images/2607.25816v1/example-speculation.webp": {
+    "height": 1091,
+    "width": 1600
+  },
+  "/images/2607.25816v1/intro_self_speculation.webp": {
+    "height": 1033,
+    "width": 1600
+  },
+  "/images/2607.25853v1/A__title.webp": {
+    "height": 455,
+    "width": 1216
+  },
+  "/images/2607.25853v1/intro.webp": {
+    "height": 810,
+    "width": 1600
+  },
+  "/images/2607.25853v1/parameters_success_rate.webp": {
+    "height": 840,
+    "width": 1600
+  },
   "/images/2607.25886v1/A__title.webp": {
     "height": 638,
     "width": 1269
@@ -11406,6 +11594,26 @@
   "/images/2607.25886v1/evoforge_motivation.webp": {
     "height": 284,
     "width": 999
+  },
+  "/images/2607.25948v1/A__title.webp": {
+    "height": 1459,
+    "width": 1463
+  },
+  "/images/2607.25948v1/Method_v21.webp": {
+    "height": 452,
+    "width": 1600
+  },
+  "/images/2607.25948v1/fig_representation_v2_cam.webp": {
+    "height": 709,
+    "width": 1600
+  },
+  "/images/2607.25948v1/figure3_modality_mix_v13_cam.webp": {
+    "height": 1181,
+    "width": 1600
+  },
+  "/images/2607.25948v1/modus_grid_chained.webp": {
+    "height": 1521,
+    "width": 1600
   },
   "/images/2607.26005v1/A__title.webp": {
     "height": 457,
@@ -11446,6 +11654,14 @@
   "/images/2607.26115v1/vendy-final.webp": {
     "height": 962,
     "width": 1600
+  },
+  "/images/2607.26515v1/A__title.webp": {
+    "height": 609,
+    "width": 1056
+  },
+  "/images/2607.26515v1/heatmap_layer0_down_proj_r0-64_c0-128.webp": {
+    "height": 534,
+    "width": 1215
   },
   "/images/2607.26598v1/A__title.webp": {
     "height": 373,
@@ -12647,6 +12863,10 @@
     "height": 1700,
     "width": 1600
   },
+  "/images/2608.07527/framework_overview.webp": {
+    "height": 811,
+    "width": 1520
+  },
   "/images/2608.07631v1/A__title.webp": {
     "height": 281,
     "width": 1202
@@ -13471,6 +13691,22 @@
     "height": 752,
     "width": 1600
   },
+  "/images/2608.14621/A__title.webp": {
+    "height": 560,
+    "width": 1286
+  },
+  "/images/2608.14621/x1.webp": {
+    "height": 784,
+    "width": 996
+  },
+  "/images/2608.14621/x2.webp": {
+    "height": 784,
+    "width": 996
+  },
+  "/images/2608.14621/x3.webp": {
+    "height": 559,
+    "width": 997
+  },
   "/images/2608.14747v1/A__title.webp": {
     "height": 547,
     "width": 1035
@@ -14059,6 +14295,10 @@
     "height": 763,
     "width": 1600
   },
+  "/images/2608.26563v1/A__title.webp": {
+    "height": 338,
+    "width": 1071
+  },
   "/images/2608.26733v1/A__title.webp": {
     "height": 455,
     "width": 1370
@@ -14082,6 +14322,18 @@
   "/images/2608.28476v1/A__title.jpg": {
     "height": 1115,
     "width": 1200
+  },
+  "/images/2608.28718v1/A__title.webp": {
+    "height": 757,
+    "width": 1348
+  },
+  "/images/2608.28718v1/fig1.webp": {
+    "height": 888,
+    "width": 1600
+  },
+  "/images/2608.28718v1/fig2.webp": {
+    "height": 293,
+    "width": 1600
   },
   "/images/2608.28945v1/A__title.webp": {
     "height": 356,
@@ -14211,6 +14463,14 @@
     "height": 343,
     "width": 911
   },
+  "/images/2609.05818v1/A__title.webp": {
+    "height": 299,
+    "width": 1336
+  },
+  "/images/2609.05818v1/capability_matrix.webp": {
+    "height": 445,
+    "width": 626
+  },
   "/images/2609.05837v1/A__title.webp": {
     "height": 496,
     "width": 1076
@@ -14249,6 +14509,14 @@
   },
   "/images/2609.06055v1/teaser.webp": {
     "height": 708,
+    "width": 1600
+  },
+  "/images/2609.06124v1/A__title.webp": {
+    "height": 408,
+    "width": 1292
+  },
+  "/images/2609.06124v1/main.webp": {
+    "height": 807,
     "width": 1600
   },
   "/images/2609.06966v1/A__title.webp": {
@@ -14305,6 +14573,58 @@
   },
   "/images/2609.09133v1/figures2.webp": {
     "height": 1250,
+    "width": 1600
+  },
+  "/images/2609.09395v1/A__title.webp": {
+    "height": 406,
+    "width": 1352
+  },
+  "/images/2609.09395v1/teaser.webp": {
+    "height": 522,
+    "width": 1600
+  },
+  "/images/2609.09410v1/A__title.webp": {
+    "height": 408,
+    "width": 1325
+  },
+  "/images/2609.09410v1/composition-example.webp": {
+    "height": 858,
+    "width": 1600
+  },
+  "/images/2609.09410v1/flow.webp": {
+    "height": 334,
+    "width": 1600
+  },
+  "/images/2609.09410v1/search.webp": {
+    "height": 293,
+    "width": 961
+  },
+  "/images/2609.09410v1/subset_avg8_bars.webp": {
+    "height": 690,
+    "width": 1600
+  },
+  "/images/2609.09410v1/three_types.webp": {
+    "height": 515,
+    "width": 1600
+  },
+  "/images/2609.10712v1/A__title.webp": {
+    "height": 424,
+    "width": 1315
+  },
+  "/images/2609.10712v1/imo-run-progress.webp": {
+    "height": 840,
+    "width": 1500
+  },
+  "/images/2609.10715v1/A__title.webp": {
+    "height": 680,
+    "width": 1307
+  },
+  "/images/2609.10854v1/A__title.webp": {
+    "height": 494,
+    "width": 1331
+  },
+  "/images/2609.10854v1/pipeline-overview.webp": {
+    "height": 397,
     "width": 1600
   },
   "/images/openreview_3hXEPbG0dh/page_0_Figure_5.jpg": {
