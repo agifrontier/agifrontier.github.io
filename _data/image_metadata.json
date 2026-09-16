@@ -11483,6 +11483,22 @@
     "height": 902,
     "width": 1438
   },
+  "/images/2607.24300v1/A__title.webp": {
+    "height": 341,
+    "width": 1369
+  },
+  "/images/2607.24300v1/fig_casestudy.webp": {
+    "height": 315,
+    "width": 864
+  },
+  "/images/2607.24300v1/model.webp": {
+    "height": 419,
+    "width": 1465
+  },
+  "/images/2607.24300v1/motivation.webp": {
+    "height": 907,
+    "width": 1600
+  },
   "/images/2607.24653v1/A__title.webp": {
     "height": 315,
     "width": 930
@@ -11490,6 +11506,14 @@
   "/images/2607.24653v1/benchmark0727.webp": {
     "height": 903,
     "width": 1600
+  },
+  "/images/2607.24720v1/introduction.webp": {
+    "height": 884,
+    "width": 1559
+  },
+  "/images/2607.24720v1/task.webp": {
+    "height": 591,
+    "width": 1526
   },
   "/images/2607.24850v1/A__title.webp": {
     "height": 354,
@@ -11522,6 +11546,14 @@
   "/images/2607.25090v1/main_large.webp": {
     "height": 758,
     "width": 1392
+  },
+  "/images/2607.25297v1/MTGuard.webp": {
+    "height": 450,
+    "width": 1559
+  },
+  "/images/2607.25297v1/time_overheads.webp": {
+    "height": 782,
+    "width": 1443
   },
   "/images/2607.25333v1/A__title.webp": {
     "height": 544,
@@ -11655,6 +11687,30 @@
     "height": 962,
     "width": 1600
   },
+  "/images/2607.26155v1/A__title.webp": {
+    "height": 396,
+    "width": 1110
+  },
+  "/images/2607.26228v1/A__title.webp": {
+    "height": 492,
+    "width": 920
+  },
+  "/images/2607.26228v1/avg_3d.webp": {
+    "height": 696,
+    "width": 840
+  },
+  "/images/2607.26228v1/dla_heatmap.webp": {
+    "height": 711,
+    "width": 1600
+  },
+  "/images/2607.26228v1/intro.webp": {
+    "height": 329,
+    "width": 1245
+  },
+  "/images/2607.26228v1/technical_vs_simple.webp": {
+    "height": 403,
+    "width": 1600
+  },
   "/images/2607.26515v1/A__title.webp": {
     "height": 609,
     "width": 1056
@@ -11699,6 +11755,14 @@
     "height": 780,
     "width": 875
   },
+  "/images/2607.26661v1/framework.webp": {
+    "height": 390,
+    "width": 945
+  },
+  "/images/2607.26661v1/pipeline.webp": {
+    "height": 272,
+    "width": 1178
+  },
   "/images/2607.26760v1/A__title.webp": {
     "height": 611,
     "width": 1320
@@ -11710,6 +11774,14 @@
   "/images/2607.26760v1/figure_intro_extensive_memory.webp": {
     "height": 669,
     "width": 1600
+  },
+  "/images/2607.26784v1/A__title.webp": {
+    "height": 593,
+    "width": 1107
+  },
+  "/images/2607.26784v1/method_overview.webp": {
+    "height": 581,
+    "width": 1015
   },
   "/images/2607.26791v1/A__title.webp": {
     "height": 502,
@@ -11735,6 +11807,18 @@
     "height": 593,
     "width": 1399
   },
+  "/images/2607.26998v1/A__title.webp": {
+    "height": 443,
+    "width": 909
+  },
+  "/images/2607.26998v1/arch.webp": {
+    "height": 724,
+    "width": 1600
+  },
+  "/images/2607.26998v1/motivation_heatmap.webp": {
+    "height": 415,
+    "width": 777
+  },
   "/images/2607.27030v1/A__title.webp": {
     "height": 574,
     "width": 1204
@@ -11759,6 +11843,38 @@
     "height": 565,
     "width": 1314
   },
+  "/images/2607.27180v1/fig__collision.webp": {
+    "height": 1688,
+    "width": 1600
+  },
+  "/images/2607.27180v1/fig_difficulty_overview.webp": {
+    "height": 884,
+    "width": 1600
+  },
+  "/images/2607.27180v1/fig_error_analysis2.webp": {
+    "height": 827,
+    "width": 1600
+  },
+  "/images/2607.27180v1/fig_harness2.webp": {
+    "height": 1325,
+    "width": 1425
+  },
+  "/images/2607.27180v1/fig_hpp.webp": {
+    "height": 404,
+    "width": 1600
+  },
+  "/images/2607.27180v1/fig_motion.webp": {
+    "height": 636,
+    "width": 1600
+  },
+  "/images/2607.27180v1/fig_pipeline.webp": {
+    "height": 452,
+    "width": 1600
+  },
+  "/images/2607.27180v1/fig_teaser6.webp": {
+    "height": 1185,
+    "width": 1600
+  },
   "/images/2607.27205v1/ablation-crop.webp": {
     "height": 445,
     "width": 1497
@@ -11778,6 +11894,14 @@
   "/images/2607.27205v1/teaser-crop.webp": {
     "height": 777,
     "width": 1569
+  },
+  "/images/2607.27360/f1.webp": {
+    "height": 329,
+    "width": 1380
+  },
+  "/images/2607.27360/f2-new.webp": {
+    "height": 895,
+    "width": 1600
   },
   "/images/2607.27372/gen_modeling_axes.webp": {
     "height": 814,
@@ -11827,6 +11951,18 @@
     "height": 545,
     "width": 1580
   },
+  "/images/2607.27687/fig_cliff.webp": {
+    "height": 676,
+    "width": 1100
+  },
+  "/images/2607.27687/fig_live.webp": {
+    "height": 417,
+    "width": 1600
+  },
+  "/images/2607.27687/fig_overview.webp": {
+    "height": 1024,
+    "width": 1024
+  },
   "/images/2607.27690/alf_summary.webp": {
     "height": 479,
     "width": 1600
@@ -11838,6 +11974,18 @@
   "/images/2607.27690/ph_closed_loop_execution.webp": {
     "height": 661,
     "width": 1600
+  },
+  "/images/2607.27703/SpatialCLI_intro_zyt.webp": {
+    "height": 401,
+    "width": 1600
+  },
+  "/images/2607.27703/SpatialCLI_method.webp": {
+    "height": 568,
+    "width": 1600
+  },
+  "/images/2607.27733/veriskill_framework.webp": {
+    "height": 697,
+    "width": 1565
   },
   "/images/2607.27773/arc.webp": {
     "height": 727,
@@ -11886,6 +12034,18 @@
   "/images/2607.27973/method.webp": {
     "height": 678,
     "width": 1600
+  },
+  "/images/2607.28037/intro.webp": {
+    "height": 631,
+    "width": 1244
+  },
+  "/images/2607.28037/overview.webp": {
+    "height": 530,
+    "width": 622
+  },
+  "/images/2607.28037/rubric.webp": {
+    "height": 397,
+    "width": 549
   },
   "/images/2607.28074/fig01_loop.webp": {
     "height": 582,
@@ -11979,6 +12139,14 @@
     "height": 522,
     "width": 1600
   },
+  "/images/2607.28692/OpenSciToolBench.webp": {
+    "height": 832,
+    "width": 847
+  },
+  "/images/2607.28692/SciToolAgent-Evo.webp": {
+    "height": 821,
+    "width": 1339
+  },
   "/images/2607.28887/canitdelete_benchmark_overview.webp": {
     "height": 486,
     "width": 1600
@@ -12006,6 +12174,26 @@
   "/images/2607.29055/mars.webp": {
     "height": 845,
     "width": 1600
+  },
+  "/images/2607.29172/experiments.webp": {
+    "height": 366,
+    "width": 860
+  },
+  "/images/2607.29172/qualitative.webp": {
+    "height": 228,
+    "width": 860
+  },
+  "/images/2607.29172/reward.webp": {
+    "height": 270,
+    "width": 860
+  },
+  "/images/2607.29172/rl_finetuning_results.webp": {
+    "height": 420,
+    "width": 1600
+  },
+  "/images/2607.29172/teaser.webp": {
+    "height": 360,
+    "width": 860
   },
   "/images/2607.29250/hero_taubench.webp": {
     "height": 814,
@@ -12095,6 +12283,30 @@
     "height": 342,
     "width": 426
   },
+  "/images/2607.29679/ed_calc.webp": {
+    "height": 744,
+    "width": 1524
+  },
+  "/images/2607.29679/gallery_trimmed.webp": {
+    "height": 1408,
+    "width": 1359
+  },
+  "/images/2607.29679/gpg_calc.webp": {
+    "height": 699,
+    "width": 1502
+  },
+  "/images/2607.29679/schema_example.webp": {
+    "height": 606,
+    "width": 1600
+  },
+  "/images/2607.29679/sp_edit_showcase.webp": {
+    "height": 577,
+    "width": 1327
+  },
+  "/images/2607.29679/teaser.webp": {
+    "height": 704,
+    "width": 1592
+  },
   "/images/2608.00677/OpenART-1.webp": {
     "height": 723,
     "width": 1269
@@ -12103,9 +12315,21 @@
     "height": 648,
     "width": 1359
   },
+  "/images/2608.00814/OoO-head.webp": {
+    "height": 615,
+    "width": 707
+  },
+  "/images/2608.00814/OoO-pipeline-cropped.webp": {
+    "height": 760,
+    "width": 1191
+  },
   "/images/2608.00881/latency_scatter.webp": {
     "height": 127,
     "width": 187
+  },
+  "/images/2608.00902/overview.webp": {
+    "height": 570,
+    "width": 1406
   },
   "/images/2608.01050/guardrail_anonymous_distributions.webp": {
     "height": 563,
@@ -12131,6 +12355,26 @@
     "height": 194,
     "width": 335
   },
+  "/images/2608.01284/gatedadamw.webp": {
+    "height": 700,
+    "width": 933
+  },
+  "/images/2608.01284/gatedvsbase.webp": {
+    "height": 833,
+    "width": 1500
+  },
+  "/images/2608.01284/logannealing.webp": {
+    "height": 700,
+    "width": 933
+  },
+  "/images/2608.01284/ngptsphere.webp": {
+    "height": 900,
+    "width": 1600
+  },
+  "/images/2608.01284/sz.webp": {
+    "height": 700,
+    "width": 933
+  },
   "/images/2608.01324/example_latest.webp": {
     "height": 596,
     "width": 684
@@ -12138,6 +12382,14 @@
   "/images/2608.01324/framework.webp": {
     "height": 837,
     "width": 1463
+  },
+  "/images/2608.01402/failure-profile-key.webp": {
+    "height": 97,
+    "width": 499
+  },
+  "/images/2608.01402/failure-profile-usb.webp": {
+    "height": 97,
+    "width": 499
   },
   "/images/2608.01428/airsimnh_retained_collage_main.webp": {
     "height": 225,
@@ -12163,6 +12415,14 @@
     "height": 1872,
     "width": 1600
   },
+  "/images/2608.01543/figure1.webp": {
+    "height": 2154,
+    "width": 1600
+  },
+  "/images/2608.01543/figure2.webp": {
+    "height": 534,
+    "width": 1600
+  },
   "/images/2608.01604/tree.webp": {
     "height": 963,
     "width": 1600
@@ -12170,6 +12430,14 @@
   "/images/2608.01662/fig_cli_overlap.webp": {
     "height": 475,
     "width": 1600
+  },
+  "/images/2608.01684/GABench_overview.webp": {
+    "height": 708,
+    "width": 1472
+  },
+  "/images/2608.01684/pipeline.webp": {
+    "height": 384,
+    "width": 1566
   },
   "/images/2608.01772/architecture.webp": {
     "height": 313,
@@ -12202,6 +12470,26 @@
   "/images/2608.01964/role_tokens.webp": {
     "height": 360,
     "width": 1600
+  },
+  "/images/2608.02018/HITLCUA.webp": {
+    "height": 867,
+    "width": 1570
+  },
+  "/images/2608.02018/first.webp": {
+    "height": 509,
+    "width": 715
+  },
+  "/images/2608.02018/platform.webp": {
+    "height": 195,
+    "width": 879
+  },
+  "/images/2608.02143/fig1_motivation.webp": {
+    "height": 686,
+    "width": 1319
+  },
+  "/images/2608.02143/fig2_iris_overview.webp": {
+    "height": 714,
+    "width": 1382
   },
   "/images/2608.02217/fig1-sub1.webp": {
     "height": 1194,
@@ -15366,6 +15654,74 @@
   "/images/2609.12818/tradeoff_plot.webp": {
     "height": 1027,
     "width": 1600
+  },
+  "/images/2609.13814/A__title.webp": {
+    "height": 257,
+    "width": 1194
+  },
+  "/images/2609.13814/Realtime-Venus-Omni.webp": {
+    "height": 1172,
+    "width": 1600
+  },
+  "/images/2609.13814/case.webp": {
+    "height": 900,
+    "width": 1600
+  },
+  "/images/2609.13814/realtime-venus-data-pipeline.webp": {
+    "height": 546,
+    "width": 1124
+  },
+  "/images/2609.13984/A__title.webp": {
+    "height": 647,
+    "width": 1406
+  },
+  "/images/2609.13984/fig_attention_case.webp": {
+    "height": 721,
+    "width": 1600
+  },
+  "/images/2609.13984/fig_headline_new.webp": {
+    "height": 582,
+    "width": 657
+  },
+  "/images/2609.14758/A__title.webp": {
+    "height": 475,
+    "width": 1304
+  },
+  "/images/2609.14857/A__title.webp": {
+    "height": 459,
+    "width": 1103
+  },
+  "/images/2609.14857/main.webp": {
+    "height": 569,
+    "width": 1049
+  },
+  "/images/2609.14992/A__title.webp": {
+    "height": 367,
+    "width": 1318
+  },
+  "/images/2609.14992/constraint_from_categories.webp": {
+    "height": 1200,
+    "width": 1050
+  },
+  "/images/2609.14992/constraint_from_sources.webp": {
+    "height": 800,
+    "width": 1600
+  },
+  "/images/2609.14992/constraints.webp": {
+    "height": 987,
+    "width": 1600
+  },
+  "/images/2609.14992/framework.webp": {
+    "height": 618,
+    "width": 1600
+  },
+  "/images/2609.14992/harness_comparison.webp": {
+    "height": 593,
+    "width": 1600
+  },
+  "/images/2609.14992/intro.webp": {
+    "height": 799,
+    "width": 739
   },
   "/images/openreview_3hXEPbG0dh/page_0_Figure_5.jpg": {
     "height": 483,
