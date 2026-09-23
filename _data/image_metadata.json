@@ -11059,9 +11059,25 @@
     "height": 721,
     "width": 1276
   },
+  "/images/2607.16848v1/A__title.webp": {
+    "height": 675,
+    "width": 1212
+  },
+  "/images/2607.16851v1/framework.webp": {
+    "height": 597,
+    "width": 1254
+  },
   "/images/2607.17044v1/A__title.webp": {
     "height": 464,
     "width": 1262
+  },
+  "/images/2607.17291v1/A__title.webp": {
+    "height": 531,
+    "width": 1112
+  },
+  "/images/2607.17291v1/drnoise.webp": {
+    "height": 900,
+    "width": 1600
   },
   "/images/2607.17352v1/A__title.webp": {
     "height": 524,
@@ -11083,9 +11099,57 @@
     "height": 2145,
     "width": 1453
   },
+  "/images/2607.17545v2/figure_overview.webp": {
+    "height": 766,
+    "width": 1600
+  },
   "/images/2607.17598v1/A__title.webp": {
     "height": 408,
     "width": 1121
+  },
+  "/images/2607.17701v1/Data_construction_7.webp": {
+    "height": 514,
+    "width": 1600
+  },
+  "/images/2607.17701v1/Discussion_robustness.webp": {
+    "height": 827,
+    "width": 851
+  },
+  "/images/2607.17701v1/Figure1.webp": {
+    "height": 900,
+    "width": 1600
+  },
+  "/images/2607.17701v1/error_distribution.webp": {
+    "height": 567,
+    "width": 1418
+  },
+  "/images/2607.17710v1/A__title.webp": {
+    "height": 542,
+    "width": 1225
+  },
+  "/images/2607.17710v1/Introduction.webp": {
+    "height": 860,
+    "width": 1600
+  },
+  "/images/2607.17715v1/2.3.ttft_breakdown.webp": {
+    "height": 289,
+    "width": 624
+  },
+  "/images/2607.17715v1/3.1.Architecture.webp": {
+    "height": 402,
+    "width": 1295
+  },
+  "/images/2607.17715v1/3.1.Pipeline.webp": {
+    "height": 389,
+    "width": 600
+  },
+  "/images/2607.17715v1/A__title.webp": {
+    "height": 879,
+    "width": 1436
+  },
+  "/images/2607.17715v1/ruler_comparison.webp": {
+    "height": 369,
+    "width": 701
   },
   "/images/2607.17719v2/A__title.webp": {
     "height": 396,
@@ -11134,6 +11198,30 @@
   "/images/2607.18213v1/overview.webp": {
     "height": 867,
     "width": 1590
+  },
+  "/images/2607.18236v1/A__title.webp": {
+    "height": 387,
+    "width": 851
+  },
+  "/images/2607.18236v1/all_envs.webp": {
+    "height": 813,
+    "width": 1600
+  },
+  "/images/2607.18236v1/encoder_ablation.webp": {
+    "height": 437,
+    "width": 1600
+  },
+  "/images/2607.18236v1/method_new.webp": {
+    "height": 765,
+    "width": 1600
+  },
+  "/images/2607.18236v1/rollouts.webp": {
+    "height": 682,
+    "width": 1600
+  },
+  "/images/2607.18236v1/teaser_new.webp": {
+    "height": 577,
+    "width": 1600
   },
   "/images/2607.18367v1/A__title.webp": {
     "height": 829,
@@ -15151,6 +15239,38 @@
     "height": 1100,
     "width": 1600
   },
+  "/images/2608.10413v1/A__title.webp": {
+    "height": 1448,
+    "width": 1519
+  },
+  "/images/2608.10413v1/x2.webp": {
+    "height": 501,
+    "width": 674
+  },
+  "/images/2608.10413v1/x3.webp": {
+    "height": 176,
+    "width": 674
+  },
+  "/images/2608.10413v1/x4.webp": {
+    "height": 222,
+    "width": 634
+  },
+  "/images/2608.10413v1/x5.webp": {
+    "height": 129,
+    "width": 357
+  },
+  "/images/2608.10424v1/ts_backtracking_fig.webp": {
+    "height": 900,
+    "width": 1600
+  },
+  "/images/2608.10424v1/x1.webp": {
+    "height": 289,
+    "width": 996
+  },
+  "/images/2608.10424v1/x2.webp": {
+    "height": 362,
+    "width": 997
+  },
   "/images/2608.10430v1/x1.webp": {
     "height": 1053,
     "width": 997
@@ -15170,6 +15290,14 @@
   "/images/2608.10450v2/Architecture.webp": {
     "height": 1527,
     "width": 1600
+  },
+  "/images/2608.10502v1/x1.webp": {
+    "height": 494,
+    "width": 996
+  },
+  "/images/2608.10502v1/x2.webp": {
+    "height": 582,
+    "width": 1046
   },
   "/images/2608.10538v1/A__title.webp": {
     "height": 338,
@@ -15191,6 +15319,26 @@
     "height": 948,
     "width": 998
   },
+  "/images/2608.10628v1/A__title.webp": {
+    "height": 401,
+    "width": 1266
+  },
+  "/images/2608.10628v1/x1.webp": {
+    "height": 906,
+    "width": 998
+  },
+  "/images/2608.10628v1/x2.webp": {
+    "height": 586,
+    "width": 996
+  },
+  "/images/2608.10628v1/x3.webp": {
+    "height": 523,
+    "width": 987
+  },
+  "/images/2608.10628v1/x4.webp": {
+    "height": 495,
+    "width": 996
+  },
   "/images/2608.10676v1/A__title.webp": {
     "height": 262,
     "width": 1032
@@ -15206,6 +15354,50 @@
   "/images/2608.10676v1/x1.webp": {
     "height": 394,
     "width": 793
+  },
+  "/images/2608.10694v2/A__title.webp": {
+    "height": 401,
+    "width": 1182
+  },
+  "/images/2608.10743v1/context_len.webp": {
+    "height": 882,
+    "width": 1600
+  },
+  "/images/2608.10743v1/x1.webp": {
+    "height": 535,
+    "width": 897
+  },
+  "/images/2608.10743v1/x2.webp": {
+    "height": 1174,
+    "width": 987
+  },
+  "/images/2608.10743v1/x3.webp": {
+    "height": 241,
+    "width": 937
+  },
+  "/images/2608.10743v1/x4.webp": {
+    "height": 162,
+    "width": 937
+  },
+  "/images/2608.10775v1/carddistill_training_stability_dashboard.webp": {
+    "height": 987,
+    "width": 1600
+  },
+  "/images/2608.10775v1/x1.webp": {
+    "height": 458,
+    "width": 996
+  },
+  "/images/2608.10775v1/x2.webp": {
+    "height": 376,
+    "width": 930
+  },
+  "/images/2608.10775v1/x3.webp": {
+    "height": 493,
+    "width": 898
+  },
+  "/images/2608.10775v1/x4.webp": {
+    "height": 447,
+    "width": 897
   },
   "/images/2608.10827v1/A__title.webp": {
     "height": 637,
@@ -15250,6 +15442,22 @@
   "/images/2608.11110v2/A__title.webp": {
     "height": 448,
     "width": 1100
+  },
+  "/images/2608.11191v1/A__title.webp": {
+    "height": 338,
+    "width": 1368
+  },
+  "/images/2608.11191v1/x1.webp": {
+    "height": 1218,
+    "width": 997
+  },
+  "/images/2608.11191v1/x2.webp": {
+    "height": 565,
+    "width": 1140
+  },
+  "/images/2608.11191v1/x3.webp": {
+    "height": 1035,
+    "width": 943
   },
   "/images/2608.11292v1/fig_main.webp": {
     "height": 900,
@@ -15323,9 +15531,41 @@
     "height": 680,
     "width": 1440
   },
+  "/images/2608.11584v1/overview_0128.webp": {
+    "height": 730,
+    "width": 1480
+  },
   "/images/2608.11588v1/evofsm_method_overview.webp": {
     "height": 810,
     "width": 1600
+  },
+  "/images/2608.11605v1/A__title.webp": {
+    "height": 338,
+    "width": 1018
+  },
+  "/images/2608.11605v1/architecture_1.webp": {
+    "height": 684,
+    "width": 1164
+  },
+  "/images/2608.11605v1/paradigm.webp": {
+    "height": 571,
+    "width": 1600
+  },
+  "/images/2608.11612v1/A__title.webp": {
+    "height": 430,
+    "width": 1285
+  },
+  "/images/2608.11612v1/x1.webp": {
+    "height": 195,
+    "width": 595
+  },
+  "/images/2608.11612v1/x2.webp": {
+    "height": 333,
+    "width": 345
+  },
+  "/images/2608.11612v1/x3.webp": {
+    "height": 311,
+    "width": 420
   },
   "/images/2608.11674v1/A__title.webp": {
     "height": 500,
@@ -15383,6 +15623,34 @@
     "height": 682,
     "width": 1288
   },
+  "/images/2608.11738v1/A__title.webp": {
+    "height": 336,
+    "width": 1420
+  },
+  "/images/2608.11738v1/Fig1V7.webp": {
+    "height": 473,
+    "width": 662
+  },
+  "/images/2608.11738v1/dataset2-2.webp": {
+    "height": 412,
+    "width": 884
+  },
+  "/images/2608.11738v1/framework_final_1.webp": {
+    "height": 515,
+    "width": 1145
+  },
+  "/images/2608.11738v1/stat_5_resolution.webp": {
+    "height": 499,
+    "width": 641
+  },
+  "/images/2608.11738v1/visual_case_2.webp": {
+    "height": 246,
+    "width": 1181
+  },
+  "/images/2608.11738v1/word_cloud.webp": {
+    "height": 567,
+    "width": 936
+  },
   "/images/2608.11739v1/teaser.webp": {
     "height": 1119,
     "width": 1580
@@ -15406,6 +15674,10 @@
   "/images/2608.11878v1/ToolHazard.webp": {
     "height": 639,
     "width": 1600
+  },
+  "/images/2608.11888v1/A__title.webp": {
+    "height": 432,
+    "width": 1394
   },
   "/images/2608.11941v2/A__title.webp": {
     "height": 451,
@@ -15507,6 +15779,22 @@
     "height": 960,
     "width": 1600
   },
+  "/images/2608.12429v1/A__title.webp": {
+    "height": 403,
+    "width": 1195
+  },
+  "/images/2608.12429v1/CR.webp": {
+    "height": 387,
+    "width": 1600
+  },
+  "/images/2608.12429v1/WP_result_label.webp": {
+    "height": 1219,
+    "width": 1600
+  },
+  "/images/2608.12429v1/method.webp": {
+    "height": 1007,
+    "width": 1600
+  },
   "/images/2608.12486v1/A__title.webp": {
     "height": 338,
     "width": 1344
@@ -15523,9 +15811,21 @@
     "height": 352,
     "width": 1600
   },
+  "/images/2608.12574v1/A__title.webp": {
+    "height": 469,
+    "width": 1107
+  },
   "/images/2608.12629v1/A__title.webp": {
     "height": 462,
     "width": 907
+  },
+  "/images/2608.12654v1/A__title.webp": {
+    "height": 432,
+    "width": 1200
+  },
+  "/images/2608.12654v1/steerbench-figure-1-action-boundary.webp": {
+    "height": 960,
+    "width": 1600
   },
   "/images/2608.12700v1/A__title.webp": {
     "height": 567,
@@ -15627,6 +15927,26 @@
     "height": 832,
     "width": 1184
   },
+  "/images/2608.12854v1/framework.webp": {
+    "height": 437,
+    "width": 1067
+  },
+  "/images/2608.12854v1/qualitative.webp": {
+    "height": 895,
+    "width": 847
+  },
+  "/images/2608.12854v1/teaser.webp": {
+    "height": 810,
+    "width": 1264
+  },
+  "/images/2608.12854v1/training_pipeline.webp": {
+    "height": 304,
+    "width": 1165
+  },
+  "/images/2608.12854v1/tri-mot.webp": {
+    "height": 834,
+    "width": 1600
+  },
   "/images/2608.12932v1/A__title.webp": {
     "height": 487,
     "width": 1084
@@ -15706,6 +16026,10 @@
   "/images/2608.13120v1/A__title.webp": {
     "height": 549,
     "width": 1004
+  },
+  "/images/2608.13179v1/A__title.webp": {
+    "height": 491,
+    "width": 1297
   },
   "/images/2608.13331v1/A__title.webp": {
     "height": 939,
@@ -16067,6 +16391,54 @@
     "height": 801,
     "width": 1600
   },
+  "/images/2608.14808v1/A__title.webp": {
+    "height": 406,
+    "width": 1103
+  },
+  "/images/2608.14808v1/clinguide_exp.webp": {
+    "height": 483,
+    "width": 820
+  },
+  "/images/2608.14808v1/correlations_heatmap.webp": {
+    "height": 741,
+    "width": 1600
+  },
+  "/images/2608.14808v1/early_recovery_slope_logicq.webp": {
+    "height": 742,
+    "width": 1507
+  },
+  "/images/2608.14808v1/isambig_acc_v_k.webp": {
+    "height": 845,
+    "width": 1600
+  },
+  "/images/2608.14808v1/main_acc_forbid_alt.webp": {
+    "height": 868,
+    "width": 1600
+  },
+  "/images/2608.14808v1/order_final_combined_k3_d10_k4_d10.webp": {
+    "height": 385,
+    "width": 1600
+  },
+  "/images/2608.14808v1/overview.webp": {
+    "height": 489,
+    "width": 1208
+  },
+  "/images/2608.14822v1/A__title.webp": {
+    "height": 338,
+    "width": 1179
+  },
+  "/images/2608.14822v1/framework_core.webp": {
+    "height": 613,
+    "width": 1600
+  },
+  "/images/2608.14822v1/real_overview.webp": {
+    "height": 1484,
+    "width": 1600
+  },
+  "/images/2608.14822v1/syn_example.webp": {
+    "height": 912,
+    "width": 917
+  },
   "/images/2608.14863v1/bug_family_tier.webp": {
     "height": 439,
     "width": 1600
@@ -16102,6 +16474,38 @@
   "/images/2608.14905v1/general_overview.webp": {
     "height": 792,
     "width": 917
+  },
+  "/images/2608.14986v1/A__title.webp": {
+    "height": 262,
+    "width": 1122
+  },
+  "/images/2608.14986v1/archi714.webp": {
+    "height": 509,
+    "width": 993
+  },
+  "/images/2608.14986v1/concept1.webp": {
+    "height": 693,
+    "width": 1317
+  },
+  "/images/2608.14986v1/crop_archi.webp": {
+    "height": 534,
+    "width": 1281
+  },
+  "/images/2608.14986v1/crop_shiyanzhu.webp": {
+    "height": 562,
+    "width": 1403
+  },
+  "/images/2608.14986v1/duibi.webp": {
+    "height": 440,
+    "width": 1317
+  },
+  "/images/2608.14986v1/eta.webp": {
+    "height": 791,
+    "width": 1568
+  },
+  "/images/2608.14986v1/memory_size_over_time.webp": {
+    "height": 872,
+    "width": 1600
   },
   "/images/2608.15008v1/attn_region_heatmap.webp": {
     "height": 423,
@@ -16210,6 +16614,10 @@
   "/images/2608.15265v1/vibeworlding.webp": {
     "height": 959,
     "width": 1600
+  },
+  "/images/2608.15286v1/A__title.webp": {
+    "height": 455,
+    "width": 1112
   },
   "/images/2608.15579v1/A__title.webp": {
     "height": 1163,
