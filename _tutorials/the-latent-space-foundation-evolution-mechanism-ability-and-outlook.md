@@ -18,6 +18,7 @@ related_tutorials:
   - "forgetful-but-faithful-a-cognitive-memory-architecture-and-benchmark-for-privacy"
   - "tool-learning-with-foundation-models"
   - "os-agents-a-survey-on-mllm-based-agents-for-general-computing-devices-use"
+seo_title: "The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">The Latent Space: Foundation, Evolution, Mechanism, Ability, and Outlook</p>

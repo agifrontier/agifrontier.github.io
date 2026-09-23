@@ -19,6 +19,7 @@ related_tutorials:
   - "glm-4-5-agentic-reasoning-and-coding-arc-foundation-models"
   - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
   - "scaling-environments-for-llm-agents-in-the-era-of-learning-from-interaction-a-su"
+seo_title: "From Atomic Actions to Standard Operating Procedures: Iterative Tool Optimization for Self-Evolving LLM Agents"
 ---
 
 <p class="paper-original-title" lang="en">From Atomic Actions to Standard Operating Procedures: Iterative Tool Optimization for Self-Evolving LLM Agents</p>

@@ -19,6 +19,7 @@ related_tutorials:
   - "in-context-distillation-with-self-consistency-cascades-a-simple-training-free-wa"
   - "a-multi-agent-framework-for-stateful-inference-time-search"
   - "beyond-turn-limits-training-deep-search-agents-with-dynamic-context-window"
+seo_title: "TurnOPD: Making On-Policy Distillation Turn-Aware for Efficient Long-Horizon Agent Training"
 ---
 
 <p class="paper-original-title" lang="en">TurnOPD: Making On-Policy Distillation Turn-Aware for Efficient Long-Horizon Agent Training</p>

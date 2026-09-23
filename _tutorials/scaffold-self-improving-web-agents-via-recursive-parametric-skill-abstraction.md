@@ -20,6 +20,7 @@ related_tutorials:
   - "improving-recursive-transformers-with-mixture-of-loras"
   - "skillstate-scalable-long-horizon-agent-skills"
   - "how-does-rl-post-training-induce-skill-composition-a-case-study-on-countdown"
+seo_title: "SCAFFOLD: Self-Improving Web Agents via Recursive Parametric Skill Abstraction"
 ---
 
 <p class="paper-original-title" lang="en">SCAFFOLD: Self-Improving Web Agents via Recursive Parametric Skill Abstraction</p>

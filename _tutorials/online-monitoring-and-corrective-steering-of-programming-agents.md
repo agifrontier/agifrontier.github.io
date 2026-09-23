@@ -19,6 +19,7 @@ related_tutorials:
   - "prune4web-dom-tree-pruning-programming-for-web-agent"
   - "socratic-swe-self-evolving-coding-agents-via-trace-derived-agent-skills"
   - "harnessbridge-learnable-bidirectional-controller-for-llm-agent-harness"
+seo_title: "Online Monitoring and Corrective Steering of Programming Agents"
 ---
 
 <p class="paper-original-title" lang="en">Online Monitoring and Corrective Steering of Programming Agents</p>

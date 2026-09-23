@@ -18,6 +18,7 @@ related_tutorials:
   - "ai-agent-systems-architectures-applications-and-evaluation"
   - "auditing-agent-harness-safety"
   - "rethinking-the-evaluation-of-harness-evolution-for-agents"
+seo_title: "Measuring Harness-Induced Belief Divergence in Multi-Step LLM Agents"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Measuring Harness-Induced Belief Divergence in Multi-Step LLM Agents</p>

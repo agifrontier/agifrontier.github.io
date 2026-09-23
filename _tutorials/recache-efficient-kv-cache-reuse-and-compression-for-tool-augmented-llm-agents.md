@@ -20,6 +20,7 @@ related_tutorials:
   - "a-multi-agent-framework-for-stateful-inference-time-search"
   - "gdpo-group-reward-decoupled-normalization-policy-optimization-for-multi-reward-r"
   - "tunable-tool-call-rates-in-llm-agents-via-representation-steering"
+seo_title: "ReCache: Efficient KV Cache Reuse and Compression for Tool-Augmented LLM Agents"
 ---
 
 <p class="paper-original-title" lang="en">ReCache: Efficient KV Cache Reuse and Compression for Tool-Augmented LLM Agents</p>

@@ -19,6 +19,7 @@ related_tutorials:
   - "swe-bench-can-language-models-resolve-real-world-github-issues"
   - "path-bench-path-dependent-evaluation-of-lifelong-agents"
   - "appsim-bench-bridging-real-world-apps-and-reproducible-evaluation-for-mobile-gui"
+seo_title: "E-Bench: Benchmarking Multi-Step Tool-Use Agents in Real-World Product Scenarios"
 ---
 
 <p class="paper-original-title" lang="en">E-Bench: Benchmarking Multi-Step Tool-Use Agents in Real-World Product Scenarios</p>

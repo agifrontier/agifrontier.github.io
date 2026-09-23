@@ -19,6 +19,7 @@ related_tutorials:
   - "scaling-instructable-agents-across-many-simulated-worlds"
   - "wuying-browser-agent-real-world-centric-fundamental-long-horizon-browser-agents"
   - "agentomnia-scaling-agentic-models-for-full-scenario-applications"
+seo_title: "RynnValue: Scaling Robotic Value Foundation Models with Temporal Distance"
 ---
 
 <p class="paper-original-title" lang="en">RynnValue: Scaling Robotic Value Foundation Models with Temporal Distance</p>

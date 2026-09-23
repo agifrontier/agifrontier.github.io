@@ -17,6 +17,7 @@ related_tutorials:
   - "sfr-deepresearch-towards-effective-reinforcement-learning-for-autonomously-reaso"
   - "tthe-test-time-harness-evolution"
   - "skillaudit-ground-truth-free-skill-evolution-via-paired-trajectory-auditing"
+seo_title: "RHO揭秘：零标注驱动Agent复盘，代码基准通过率暴增19%"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Retrospective Harness Optimization: Improving LLM Agents via Self-Preference over Trajectory Rollouts</p>

@@ -17,6 +17,7 @@ related_tutorials:
   - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
   - "harnessx-a-composable-adaptive-and-evolvable-agent-harness-foundry"
   - "self-evolving-agent-harnesses-via-gated-semantic-quality-diversity"
+seo_title: "Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses</p>

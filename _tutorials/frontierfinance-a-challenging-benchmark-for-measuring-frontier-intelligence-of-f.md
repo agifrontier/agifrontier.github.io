@@ -20,6 +20,7 @@ related_tutorials:
   - "a-survey-on-evaluation-of-large-language-models"
   - "intelligence-per-watt-measuring-intelligence-efficiency-of-local-ai"
   - "k-bench-measuring-model-performance-on-real-scientific-agent-requests"
+seo_title: "FrontierFinance: A Challenging Benchmark for Measuring Frontier Intelligence of Finance Agents"
 ---
 
 <p class="paper-original-title" lang="en">FrontierFinance: A Challenging Benchmark for Measuring Frontier Intelligence of Finance Agents</p>

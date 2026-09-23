@@ -17,6 +17,7 @@ related_tutorials:
   - "qwen-cua-native-computer-use-for-almost-everything"
   - "skill-self-play-pushing-the-frontier-of-llm-capability-with-co-evolving-skills"
   - "agent-harness-engineering-a-survey"
+seo_title: "SafeKeep：大模型做成Agent就学坏？压平工具格式让拒绝率提升至70.6%"
 ---
 
 <p class="paper-original-title" lang="en">Tool Specifications Matter: Uncovering and Mitigating Safety Risks in AI Agents</p>

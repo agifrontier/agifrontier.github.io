@@ -17,6 +17,7 @@ related_tutorials:
   - "failure-makes-the-agent-stronger-enhancing-accuracy-through-structured-reflectio"
   - "the-latent-space-foundation-evolution-mechanism-ability-and-outlook"
   - "code-as-agent-harness"
+seo_title: "Code to Think, Think to Code: A Survey on Code-Enhanced Reasoning and Reasoning-Driven Code Intelligence in LLMs"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Code to Think, Think to Code: A Survey on Code-Enhanced Reasoning and Reasoning-Driven Code Intelligence in LLMs</p>

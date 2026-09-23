@@ -18,6 +18,7 @@ related_tutorials:
   - "ai-agent-systems-architectures-applications-and-evaluation"
   - "are-agents-just-automata-on-the-formal-equivalence-between-agentic-ai-and-the-ch"
   - "coda-coordinating-the-cerebrum-and-cerebellum-for-a-dual-brain-computer-use-agen"
+seo_title: "SkillDepAnalyzer：北大分析143万Agent技能，揭示隐藏供应链风险"
 ---
 
 <p class="paper-original-title" lang="en">Skills Are Not Islands: Measuring Dependency and Risk in Agent Skill Supply Chains</p>

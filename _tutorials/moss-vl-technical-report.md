@@ -19,6 +19,7 @@ related_tutorials:
   - "deepseek-v3-technical-report"
   - "gpt-4-technical-report"
   - "hunyuanvideo-15-technical-report"
+seo_title: "MOSS-VL Technical Report"
 ---
 
 <p class="paper-original-title" lang="en">MOSS-VL Technical Report</p>

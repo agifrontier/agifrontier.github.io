@@ -20,6 +20,7 @@ related_tutorials:
   - "beyond-two-stage-training-cooperative-sft-and-rl-for-llm-reasoning"
   - "deep-self-evolving-reasoning"
   - "the-two-stage-decision-sampling-hypothesis-understanding-the-emergence-of-self-r"
+seo_title: "NVIDIA提出BaT：以评测为师分阶段强化，9B模型超越Claude Opus"
 ---
 
 <p class="paper-original-title" lang="en">BaT: Towards Self-Evolving Medical Research Agent with Stage Rubrics</p>

@@ -20,6 +20,7 @@ related_tutorials:
   - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
   - "siriusdeliver-automating-data-warehouse-delivery-at-tencent"
   - "agentinit-initializing-llm-based-multi-agent-systems-via-diversity-and-expertise"
+seo_title: "ForestBench: A Unified Graph Framework for Evaluating Multi-Agent Collaboration"
 ---
 
 <p class="paper-original-title" lang="en">ForestBench: A Unified Graph Framework for Evaluating Multi-Agent Collaboration</p>

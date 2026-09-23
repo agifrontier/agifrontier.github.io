@@ -19,6 +19,7 @@ related_tutorials:
   - "slideagent-hierarchical-agentic-framework-for-multi-page-visual-document-underst"
   - "a-survey-on-agentic-multimodal-large-language-models"
   - "ai-native-games-a-survey-and-roadmap"
+seo_title: "DataSpace: Benchmarking Data Agents for Verifiable Analytics over Heterogeneous Workspaces"
 ---
 
 <p class="paper-original-title" lang="en">DataSpace: Benchmarking Data Agents for Verifiable Analytics over Heterogeneous Workspaces</p>

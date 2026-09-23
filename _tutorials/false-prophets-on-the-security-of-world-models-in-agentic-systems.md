@@ -20,6 +20,7 @@ related_tutorials:
   - "toolhazard-scaling-adversarial-environments-for-security-evaluation-and-alignmen"
   - "llm-as-a-judge-toward-world-models-for-slate-recommendation-systems"
   - "world-model-for-robot-learning-a-comprehensive-survey"
+seo_title: "False Prophets: On the Security of World Models in Agentic Systems"
 ---
 
 <p class="paper-original-title" lang="en">False Prophets: On the Security of World Models in Agentic Systems</p>

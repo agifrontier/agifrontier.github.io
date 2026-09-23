@@ -19,6 +19,7 @@ related_tutorials:
   - "seekjudge-a-practical-reward-framework-for-reinforcement-learning-in-computer-us"
   - "reinforcement-learning-for-machine-learning-engineering-agents"
   - "openforgerl-train-harness-native-agents-in-any-environment"
+seo_title: "Matryoshka Agent: Unfolding Sub-Agents for Long-Horizon Machine Learning Engineering"
 ---
 
 <p class="paper-original-title" lang="en">Matryoshka Agent: Unfolding Sub-Agents for Long-Horizon Machine Learning Engineering</p>

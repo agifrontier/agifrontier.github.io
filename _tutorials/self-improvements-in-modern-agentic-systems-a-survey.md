@@ -17,6 +17,7 @@ related_tutorials:
   - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"
   - "advances-and-challenges-in-foundation-agents-from-brain-inspired-intelligence-to-evolutionary-co"
   - "the-latent-space-foundation-evolution-mechanism-ability-and-outlook"
+seo_title: "AI Agent的无限进化：双轨自我提升架构技术全景解析"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Self-Improvements in Modern Agentic Systems: A Survey</p>

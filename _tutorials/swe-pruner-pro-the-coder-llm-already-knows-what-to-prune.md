@@ -19,6 +19,7 @@ related_tutorials:
   - "online-monitoring-and-corrective-steering-of-programming-agents"
   - "swe-bench-can-language-models-resolve-real-world-github-issues"
   - "towards-flash-thinking-via-decoupled-advantage-policy-optimization"
+seo_title: "SWE-Pruner Pro: The Coder LLM Already Knows What to Prune"
 ---
 
 <p class="paper-original-title" lang="en">SWE-Pruner Pro: The Coder LLM Already Knows What to Prune</p>

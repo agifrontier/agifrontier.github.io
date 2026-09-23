@@ -19,6 +19,7 @@ related_tutorials:
   - "a-survey-on-agentic-multimodal-large-language-models"
   - "ai-native-games-a-survey-and-roadmap"
   - "kimi-k25-visual-agentic-intelligence"
+seo_title: "UI-Mate: Advancing Open-Weight Foundation GUI Agents with In-Context Demonstrations"
 ---
 
 <p class="paper-original-title" lang="en">UI-Mate: Advancing Open-Weight Foundation GUI Agents with In-Context Demonstrations</p>

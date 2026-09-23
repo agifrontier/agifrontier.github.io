@@ -19,6 +19,7 @@ related_tutorials:
   - "spotlight-attention-towards-efficient-llm-generation-via-non-linear-hashing-base"
   - "latent-traits-and-cross-task-transfer-deconstructing-dataset-interactions-in-llm"
   - "tunable-tool-call-rates-in-llm-agents-via-representation-steering"
+seo_title: "Cross-Model KV Cache Transfer in LLM Families: A Closed-Form Linear Mapping for Prefill Reuse"
 ---
 
 <p class="paper-original-title" lang="en">Cross-Model KV Cache Transfer in LLM Families: A Closed-Form Linear Mapping for Prefill Reuse</p>

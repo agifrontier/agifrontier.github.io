@@ -19,6 +19,7 @@ related_tutorials:
   - "\u03c0_0-a-vision-language-action-flow-model-for-general-robot-control"
   - "palm-e-an-embodied-multimodal-language-model"
   - "act-as-human-multimodal-large-language-model-data-annotation-with-critical-think"
+seo_title: "TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with <1 GB VRAM"
 ---
 
 <p class="paper-original-title" lang="en">TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090 with &lt;1 GB VRAM</p>

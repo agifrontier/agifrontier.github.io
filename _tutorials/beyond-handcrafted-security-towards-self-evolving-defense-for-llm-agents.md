@@ -20,6 +20,7 @@ related_tutorials:
   - "a-survey-on-large-language-model-based-autonomous-agents"
   - "memrl-self-evolving-agents-via-runtime-reinforcement-learning-on-episodic-memory"
   - "talk-is-cheap-communication-is-hard-dynamic-grounding-failures-and-repair-in-multi-agent-negotia"
+seo_title: "Beyond Handcrafted Security: Towards Self-Evolving Defense for LLM Agents"
 ---
 
 <p class="paper-original-title" lang="en">Beyond Handcrafted Security: Towards Self-Evolving Defense for LLM Agents</p>

@@ -19,6 +19,7 @@ related_tutorials:
   - "when-less-is-more-8-bit-quantization-improves-continual-learning-in-large-langua"
   - "small-llms-pruning-vs-training-from-scratch"
   - "open-problems-and-fundamental-limitations-of-reinforcement-learning-from-human-feedback"
+seo_title: "Quantization Damage Is Multiplicative, Not Additive"
 ---
 
 <p class="paper-original-title" lang="en">Quantization Damage Is Multiplicative, Not Additive</p>

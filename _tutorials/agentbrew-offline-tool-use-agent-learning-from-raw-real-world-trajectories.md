@@ -19,6 +19,7 @@ related_tutorials:
   - "learning-to-control-llm-agent-harnesses-with-offline-reinforcement-learning"
   - "verltool-towards-holistic-agentic-reinforcement-learning-with-tool-use"
   - "terminal-agents-a-survey-of-ai-agents-in-command-line-environments"
+seo_title: "AgentBrew：无需验证器与模拟器，单批离线数据让32B逆袭235B"
 ---
 
 <p class="paper-original-title" lang="en">AgentBrew: Offline Tool-Use Agent Learning from Raw Real-World Trajectories</p>

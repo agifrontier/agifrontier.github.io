@@ -19,6 +19,7 @@ related_tutorials:
   - "mixture-of-contexts-for-long-video-generation"
   - "atlasvla-persistent-world-ego-state-modeling-for-vision-language-action-models"
   - "wcm-a-world-critic-model-for-vision-language-action-reinforcement-learning"
+seo_title: "GameWAM: A World Action Model for Video Games"
 ---
 
 <p class="paper-original-title" lang="en">GameWAM: A World Action Model for Video Games</p>

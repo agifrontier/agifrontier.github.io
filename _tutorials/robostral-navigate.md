@@ -16,6 +16,7 @@ related_tutorials:
   - "sigmoid-loss-for-language-image-pre-training"
   - "a-bitter-lesson-for-data-filtering"
   - "a-circular-argument-does-rope-need-to-be-equivariant-for-vision"
+seo_title: "Robostral Navigate：单目视觉超越多相机系统，训练Token缩减22倍"
 ---
 
 <p class="paper-original-title" lang="en">Robostral Navigate</p>

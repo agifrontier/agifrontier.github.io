@@ -19,6 +19,7 @@ related_tutorials:
   - "music-multi-step-instruction-contrast-for-multi-turn-reward-models"
   - "scaling-up-multi-turn-off-policy-rl-and-multi-agent-tree-search-for-llm-step-pro"
   - "datasage-multi-agent-collaboration-for-insight-discovery-with-external-knowledge"
+seo_title: "State-Path：不改 Agent 架构，如何靠“工具菜单”让成功率提升至 0.898？"
 ---
 
 <p class="paper-original-title" lang="en">The Menu Is an Execution Prior: State-Path Tool Menus for Online Agents</p>

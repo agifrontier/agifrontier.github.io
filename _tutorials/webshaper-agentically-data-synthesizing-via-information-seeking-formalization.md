@@ -18,6 +18,7 @@ related_tutorials:
   - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
   - "personal-llm-agents-insights-and-survey-about-the-capability-efficiency-and-security"
   - "a-language-for-describing-agentic-llm-contexts"
+seo_title: "WebShaper: Agentically Data Synthesizing via Information-Seeking Formalization"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">WebShaper: Agentically Data Synthesizing via Information-Seeking Formalization</p>

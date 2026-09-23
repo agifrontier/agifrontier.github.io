@@ -18,6 +18,7 @@ related_tutorials:
   - "agentinit-initializing-llm-based-multi-agent-systems-via-diversity-and-expertise"
   - "autonomous-agents-for-scientific-discovery-orchestrating-scientists-language-cod"
   - "coda-coordinating-the-cerebrum-and-cerebellum-for-a-dual-brain-computer-use-agen"
+seo_title: "工作流恢复不是简单重跑：形式化契约戳破主流智能体框架的持久化假象"
 ---
 
 <p class="paper-original-title" lang="en">Resume Means Resume: A Machine-Checked Conformance Contract for Checkpoint, Interrupt, and Resume Semantics in Workflow Persistence Layers</p>

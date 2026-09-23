@@ -19,6 +19,7 @@ related_tutorials:
   - "a-survey-of-reasoning-in-autonomous-driving-systems-open-challenges-and-emerging"
   - "world-action-planner-generalizable-decision-making-with-action-conditioned-world"
   - "persistent-semantic-entities-in-tool-augmented-llm-systems"
+seo_title: "DriveZero: End-to-End Driving Beyond Human Demonstrations"
 ---
 
 <p class="paper-original-title" lang="en">DriveZero: End-to-End Driving Beyond Human Demonstrations</p>

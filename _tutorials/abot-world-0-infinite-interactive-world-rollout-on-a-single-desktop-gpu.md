@@ -19,6 +19,7 @@ related_tutorials:
   - "gamewam-a-world-action-model-for-video-games"
   - "measuring-harness-induced-belief-divergence-in-multi-step-llm-agents"
   - "beyond-retrieval-query-conditioned-reuse-of-long-horizon-agent-trajectories"
+seo_title: "ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU"
 ---
 
 <p class="paper-original-title" lang="en">ABot-World-0: Infinite Interactive World Rollout on a Single Desktop GPU</p>

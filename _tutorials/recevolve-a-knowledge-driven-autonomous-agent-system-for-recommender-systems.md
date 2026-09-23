@@ -20,6 +20,7 @@ related_tutorials:
   - "self-evolving-agentic-customer-support-system-at-linkedin"
   - "a-subgoal-driven-framework-for-improving-long-horizon-llm-agents"
   - "evoroute-experience-driven-self-routing-llm-agent-systems"
+seo_title: "RecEvolve：Google让Agent接管模型迭代，NDCG提升20%还学会了刷分"
 ---
 
 <p class="paper-original-title" lang="en">RecEvolve: A Knowledge-Driven Autonomous Agent System for Recommender Systems</p>

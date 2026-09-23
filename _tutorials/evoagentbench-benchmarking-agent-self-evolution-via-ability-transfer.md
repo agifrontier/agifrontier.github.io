@@ -18,6 +18,7 @@ related_tutorials:
   - "multi-agent-evolve-llm-self-improve-through-co-evolution"
   - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
   - "agentinit-initializing-llm-based-multi-agent-systems-via-diversity-and-expertise"
+seo_title: "EvoAgentBench: Benchmarking Agent Self-Evolution via Ability Transfer"
 ---
 
 <p class="paper-original-title" lang="en">EvoAgentBench: Benchmarking Agent Self-Evolution via Ability Transfer</p>

@@ -19,6 +19,7 @@ related_tutorials:
   - "cake-compiler-agent-co-design-for-frontier-kernel-evolution"
   - "sparseditto-customizing-gpu-kernels-for-different-sparsity-patterns-with-llm-bas"
   - "sysevolve-an-ai-native-safe-autonomous-adversarial-attack-defense-co-evolutionar"
+seo_title: "A Contract-Grade Verifier for LLM-Generated GPU Kernels, and a Native Blackwell Backward for the Gated-Linear-Recurrence Family"
 ---
 
 <p class="paper-original-title" lang="en">A Contract-Grade Verifier for LLM-Generated GPU Kernels, and a Native Blackwell Backward for the Gated-Linear-Recurrence Family</p>

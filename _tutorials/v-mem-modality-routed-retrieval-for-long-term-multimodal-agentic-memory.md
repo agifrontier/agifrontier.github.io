@@ -17,6 +17,7 @@ related_tutorials:
   - "knowledge-centric-self-improvement"
   - "chronomem-version-control-and-semantic-rollback-for-large-language-model-agent-m"
   - "understanding-is-done-early-a-depth-division-of-labor-in-large-language-models-a"
+seo_title: "V-Mem：别再暴力跨模态搜索！模态路由将长程多模态记忆准确率拉升至0.82"
 ---
 
 <p class="paper-original-title" lang="en">V-Mem: Modality-Routed Retrieval for Long-Term Multimodal Agentic Memory</p>

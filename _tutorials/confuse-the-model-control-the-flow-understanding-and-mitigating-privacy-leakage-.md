@@ -20,6 +20,7 @@ related_tutorials:
   - "retaining-by-doing-the-role-of-on-policy-data-in-mitigating-forgetting"
   - "shared-selective-persistent-memory-for-agentic-llm-systems"
   - "a-survey-on-large-language-model-llm-security-and-privacy-the-good-the-bad-and-t"
+seo_title: "Confuse the Model, Control the Flow: Understanding and Mitigating Privacy Leakage from LLM Agents with Information Flow Control"
 ---
 
 <p class="paper-original-title" lang="en">Confuse the Model, Control the Flow: Understanding and Mitigating Privacy Leakage from LLM Agents with Information Flow Control</p>

@@ -17,6 +17,7 @@ related_tutorials:
   - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
   - "thought-retriever-don-t-just-retrieve-raw-data-retrieve-thoughts-for-memory-augmented-agentic-sy"
   - "skillos-learning-skill-curation-for-self-evolving-agents"
+seo_title: "StructAgent: Harness Long-horizon Digital Agents with Unified Causal Structure"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">StructAgent: Harness Long-horizon Digital Agents with Unified Causal Structure</p>

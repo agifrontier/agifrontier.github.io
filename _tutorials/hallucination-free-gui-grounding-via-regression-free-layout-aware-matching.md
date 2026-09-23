@@ -19,6 +19,7 @@ related_tutorials:
   - "had-hallucination-detection-language-models-based-on-a-comprehensive-hallucinati"
   - "a-unified-definition-of-hallucination-or-its-the-world-model-stupid"
   - "toward-general-purpose-robots-via-foundation-models-a-survey-and-meta-analysis"
+seo_title: "Hallucination-Free GUI Grounding via Regression-Free Layout-Aware Matching"
 ---
 
 <p class="paper-original-title" lang="en">Hallucination-Free GUI Grounding via Regression-Free Layout-Aware Matching</p>

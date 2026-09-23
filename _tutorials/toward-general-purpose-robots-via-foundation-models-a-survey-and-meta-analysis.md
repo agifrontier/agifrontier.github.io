@@ -18,6 +18,7 @@ related_tutorials:
   - "memevolve-meta-evolution-of-agent-memory-systems"
   - "os-agents-a-survey-on-mllm-based-agents-for-general-computing-devices-use"
   - "a-survey-of-ai-agent-protocols"
+seo_title: "打破“专机专用”魔咒：基础大模型重塑通用机器人的核心机制与局限"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Toward General-Purpose Robots via Foundation Models: A Survey and Meta-Analysis</p>

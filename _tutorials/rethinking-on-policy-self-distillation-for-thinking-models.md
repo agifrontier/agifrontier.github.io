@@ -18,6 +18,7 @@ related_tutorials:
   - "memorization-dynamics-in-knowledge-distillation-for-language-models"
   - "a-systematic-survey-on-large-language-models-for-evolutionary-optimization-from-"
   - "dro-instructzero-distributionally-robust-prompt-optimization-for-large-language-"
+seo_title: "Rethinking On-Policy Self-Distillation for Thinking Models"
 ---
 
 <p class="paper-original-title" lang="en">Rethinking On-Policy Self-Distillation for Thinking Models</p>

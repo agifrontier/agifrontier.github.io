@@ -15,6 +15,7 @@ related_tutorials:
   - "your-agentic-llms-secretly-encode-latent-signals-of-indirect-prompt-injection-ex"
   - "arex-towards-a-recursively-self-improving-agent-for-deep-research"
   - "issuetrojanbench-benchmarking-ai-coding-agents-against-malicious-issue-requests"
+seo_title: "Rehearse：攻克自动科研“置信度悬崖”，小记忆撬动大模型执行前判断"
 ---
 
 <p class="paper-original-title" lang="en">Rehearse: Stepping Back from the Confidence Cliff in Self-Improving Autoresearch</p>

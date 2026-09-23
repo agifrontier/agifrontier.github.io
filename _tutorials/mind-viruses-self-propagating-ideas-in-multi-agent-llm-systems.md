@@ -20,6 +20,7 @@ related_tutorials:
   - "spacellagent-a-self-evolving-llm-based-multi-agent-framework-for-trajectory-anal"
   - "evoroute-experience-driven-self-routing-llm-agent-systems"
   - "scaling-environments-for-llm-agents-in-the-era-of-learning-from-interaction-a-su"
+seo_title: "不是越狱而是洗脑：Anthropic揭秘多智能体“思想病毒”"
 ---
 
 <p class="paper-original-title" lang="en">Mind Viruses: Self-Propagating Ideas in Multi-Agent LLM Systems</p>

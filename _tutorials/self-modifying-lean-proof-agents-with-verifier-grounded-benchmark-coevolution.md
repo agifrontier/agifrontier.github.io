@@ -20,6 +20,7 @@ related_tutorials:
   - "reinforcement-learning-for-machine-learning-engineering-agents"
   - "towards-grounded-autonomous-research-an-end-to-end-llm-mini-research-loop-on-published-computati"
   - "kimi-k3-open-frontier-intelligence"
+seo_title: "从12.7%到45.1%：自修改Lean智能体与测试基准的双重协同进化"
 ---
 
 <p class="paper-original-title" lang="en">Self-Modifying Lean Proof Agents with Verifier-Grounded Benchmark Coevolution</p>

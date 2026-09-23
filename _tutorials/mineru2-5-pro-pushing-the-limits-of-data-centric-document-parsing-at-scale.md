@@ -18,6 +18,7 @@ related_tutorials:
   - "babybabellm-a-multilingual-benchmark-of-developmentally-plausible-training-data"
   - "tthe-test-time-harness-evolution"
   - "rewardharness-self-evolving-agentic-post-training"
+seo_title: "1.2B反超200倍巨头：MinerU2.5-Pro重塑文档解析飞轮"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">MinerU2.5-Pro: Pushing the Limits of Data-Centric Document Parsing at Scale</p>

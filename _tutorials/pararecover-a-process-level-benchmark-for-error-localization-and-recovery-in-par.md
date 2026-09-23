@@ -20,6 +20,7 @@ related_tutorials:
   - "process-supervised-reinforcement-learning-for-interactive-multimodal-tool-use-ag"
   - "retry-switch-or-abstain-learning-strategy-aware-tool-use-policies-via-controlled"
   - "gpqa-a-graduate-level-google-proof-qa-benchmark"
+seo_title: "ParaRecover：大模型并发调工具越快，越容易在错题中“盲目乱窜”？"
 ---
 
 <p class="paper-original-title" lang="en">ParaRecover: A Process-Level Benchmark for Error Localization and Recovery in Parallel Tool-Use Agents</p>

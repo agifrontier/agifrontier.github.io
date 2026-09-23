@@ -20,6 +20,7 @@ related_tutorials:
   - "a-survey-on-efficient-large-language-model-training-from-data-centric-perspectiv"
   - "language-self-play-for-data-free-training"
   - "mineru2-5-pro-pushing-the-limits-of-data-centric-document-parsing-at-scale"
+seo_title: "RSIBench-Data：大模型自主搞数据科研，58%能突破但78%越改越差"
 ---
 
 <p class="paper-original-title" lang="en">RSIBench-Data: Benchmarking Data-Centric Research for Recursive Self-Improvement</p>

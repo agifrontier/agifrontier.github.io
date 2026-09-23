@@ -19,6 +19,7 @@ related_tutorials:
   - "a-survey-of-data-agents-emerging-paradigm-or-overstated-hype"
   - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
   - "agentfrontier-expanding-the-capability-frontier-of-llm-agents-with-zpd-guided-da"
+seo_title: "DSAgentBench: Can Agents Automate End-to-End Data-Science Workflows in Real Computer Environments?"
 ---
 
 <p class="paper-original-title" lang="en">DSAgentBench: Can Agents Automate End-to-End Data-Science Workflows in Real Computer Environments?</p>

@@ -19,6 +19,7 @@ related_tutorials:
   - "step-gui-technical-report"
   - "ui-tars-2-technical-report-advancing-gui-agent-with-multi-turn-reinforcement-lea"
   - "deepseek-v3-technical-report"
+seo_title: "BlueLM-GUI Technical Report: A Real-Device-Centric Flywheel for Self-Improving Mobile GUI Agents"
 ---
 
 <p class="paper-original-title" lang="en">BlueLM-GUI Technical Report: A Real-Device-Centric Flywheel for Self-Improving Mobile GUI Agents</p>

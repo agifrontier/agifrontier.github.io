@@ -19,6 +19,7 @@ related_tutorials:
   - "balanced-actor-initialization-stable-rlhf-training-of-distillation-based-reasoni"
   - "calm-before-the-storm-unlocking-native-reasoning-for-optimization-modeling"
   - "direct-preference-optimization-your-language-model-is-secretly-a-reward-model"
+seo_title: "Google DeepMind提出ResidencyRL：多轮RL训练临床AI，遗漏风险降低31%"
 ---
 
 <p class="paper-original-title" lang="en">ResidencyRL: Reinforcement Learning in Simulated Clinical Environments</p>

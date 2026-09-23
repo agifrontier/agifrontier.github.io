@@ -19,6 +19,7 @@ related_tutorials:
   - "rcwt-measuring-task-budget-displacement-from-coordination-content-in-llm-calls"
   - "autonomous-agents-for-scientific-discovery-orchestrating-scientists-language-cod"
   - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"
+seo_title: "PACE-Bench: Benchmarking Physics Adaptation via Code Evolution in Dynamic Environments"
 ---
 
 <p class="paper-original-title" lang="en">PACE-Bench: Benchmarking Physics Adaptation via Code Evolution in Dynamic Environments</p>

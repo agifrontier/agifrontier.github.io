@@ -20,6 +20,7 @@ related_tutorials:
   - "memrl-self-evolving-agents-via-runtime-reinforcement-learning-on-episodic-memory"
   - "treewriter-ai-assisted-hierarchical-planning-and-writing-for-long-form-documents"
   - "evomal-self-poisoning-in-self-evolving-coding-agents"
+seo_title: "PMCoder：规划与情境记忆双向耦合，SWE-bench Verified多解25题"
 ---
 
 <p class="paper-original-title" lang="en">Coupling Planning with Episodic Memory in LLM Agents for Software Issue Resolution</p>

@@ -20,6 +20,7 @@ related_tutorials:
   - "do-transformers-use-their-depth-adaptively-evidence-from-a-relational-reasoning-"
   - "a-unified-definition-of-hallucination-or-its-the-world-model-stupid"
   - "your-agentic-llms-secretly-encode-latent-signals-of-indirect-prompt-injection-ex"
+seo_title: "Latent Critic：将隐层不确定性翻译为精准批评，AUROC达0.966且延迟不足10ms"
 ---
 
 <p class="paper-original-title" lang="en">Actionable Hallucination Detection: Translating Latent Uncertainty into Agentic Critique</p>

@@ -18,6 +18,7 @@ related_tutorials:
   - "sparsegpt-massive-language-models-can-be-accurately-pruned-in-one-shot"
   - "introspective-diffusion-language-models"
   - "dopd-dual-on-policy-distillation"
+seo_title: "大模型剪枝还是从头训练？50%压缩率下的LLM微缩路线指南"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Small LLMs: Pruning vs. Training from Scratch</p>

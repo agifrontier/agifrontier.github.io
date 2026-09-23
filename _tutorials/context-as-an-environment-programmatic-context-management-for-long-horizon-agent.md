@@ -18,6 +18,7 @@ related_tutorials:
   - "a-subgoal-driven-framework-for-improving-long-horizon-llm-agents"
   - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+seo_title: "Context as an Environment: Programmatic Context Management for Long-Horizon Agents"
 ---
 
 <p class="paper-original-title" lang="en">Context as an Environment: Programmatic Context Management for Long-Horizon Agents</p>

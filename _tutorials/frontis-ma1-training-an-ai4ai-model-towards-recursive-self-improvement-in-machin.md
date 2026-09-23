@@ -14,6 +14,7 @@ related_tutorials:
   - "a-survey-on-efficient-large-language-model-training-from-data-centric-perspectiv"
   - "adamhd-decoupled-huber-decay-regularization-for-language-model-pre-training"
   - "fortifai-fending-off-recursive-training-induced-failure-for-ai-models"
+seo_title: "Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering"
 ---
 
 <p class="paper-original-title" lang="en">Frontis-MA1: Training an AI4AI Model towards Recursive Self-Improvement in Machine Learning Engineering</p>

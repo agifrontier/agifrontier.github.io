@@ -19,6 +19,7 @@ related_tutorials:
   - "from-atomic-actions-to-standard-operating-procedures-iterative-tool-optimization"
   - "glm-4-5-agentic-reasoning-and-coding-arc-foundation-models"
   - "ui-mopd-multi-platform-on-policy-distillation-for-continual-gui-agent-learning"
+seo_title: "AsmEvo: Agentic Assembly-Level Optimization of AMD GPU Kernels with Functional Equivalence Verification"
 ---
 
 <p class="paper-original-title" lang="en">AsmEvo: Agentic Assembly-Level Optimization of AMD GPU Kernels with Functional Equivalence Verification</p>

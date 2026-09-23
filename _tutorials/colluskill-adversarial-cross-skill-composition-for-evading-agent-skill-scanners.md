@@ -20,6 +20,7 @@ related_tutorials:
   - "how-and-why-llms-generalize-a-fine-grained-analysis-of-llm-reasoning-from-cognit"
   - "evaluating-skills-not-just-agents-agentic-continuous-evaluation-of-skills"
   - "dynamic-speculative-agent-planning"
+seo_title: "ColluSkill: Adversarial Cross-Skill Composition for Evading Agent Skill Scanners"
 ---
 
 <p class="paper-original-title" lang="en">ColluSkill: Adversarial Cross-Skill Composition for Evading Agent Skill Scanners</p>

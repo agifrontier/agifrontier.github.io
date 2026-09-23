@@ -17,6 +17,7 @@ related_tutorials:
   - "autonomous-repair-for-multi-agent-systems-via-monte-carlo-tree-search"
   - "longhorizon-harness-advancing-long-horizon-agents-for-real-world-tasks"
   - "skill-self-play-pushing-the-frontier-of-llm-capability-with-co-evolving-skills"
+seo_title: "SciToolAgent-Evo：让大模型自主“进货”新工具，科学问答准确率提升超12点"
 ---
 
 <p class="paper-original-title" lang="en">SciToolAgent-Evo: An Ontology-Aware Self-Evolving Agent for Open-World Scientific Tool Acquisition</p>

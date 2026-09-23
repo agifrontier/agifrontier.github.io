@@ -20,6 +20,7 @@ related_tutorials:
   - "bge-m3-embedding-multi-lingual-multi-functionality-multi-granularity-text-embedd"
   - "act2intention-a-benchmark-for-developing-active-mobile-agents-through-inferring-"
   - "cap-a-scalable-benchmark-for-evaluating-cross-site-browser-agents-with-complex-a"
+seo_title: "微软238万次评测：跨语言Agent看似答对，背后动作策略为何只保留72%？"
 ---
 
 <p class="paper-original-title" lang="en">Actions Speak Louder than Words: Measuring Cross-Lingual Policy Retention in Tool-Using Agents</p>

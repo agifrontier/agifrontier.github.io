@@ -19,6 +19,7 @@ related_tutorials:
   - "emorag-evaluating-rag-robustness-to-symbolic-perturbations"
   - "memoria-a-scalable-agentic-memory-framework-for-personalized-conversational-ai"
   - "halumem-evaluating-hallucinations-in-memory-systems-of-agents"
+seo_title: "Reconstructing the Right Episode: Evaluating Interleaved Conversational Memory Beyond Long Context"
 ---
 
 <p class="paper-original-title" lang="en">Reconstructing the Right Episode: Evaluating Interleaved Conversational Memory Beyond Long Context</p>

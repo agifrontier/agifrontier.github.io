@@ -18,6 +18,7 @@ related_tutorials:
   - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"
   - "tthe-test-time-harness-evolution"
   - "agentic-harness-engineering-observability-driven-automatic-evolution-of-coding-agent-harnesses"
+seo_title: "Self-Evolving Agent Harnesses via Gated Semantic Quality-Diversity"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Self-Evolving Agent Harnesses via Gated Semantic Quality-Diversity</p>

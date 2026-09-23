@@ -18,6 +18,7 @@ related_tutorials:
   - "the-alignment-waltz-jointly-training-agents-to-collaborate-for-safety"
   - "measuring-harness-induced-belief-divergence-in-multi-step-llm-agents"
   - "agentbeats-agentifying-agent-assessment-for-openness-standardization-and-reproducibility"
+seo_title: "别只看结果！HarnessAudit揭秘智能体框架的隐秘安全漏洞"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Auditing Agent Harness Safety</p>

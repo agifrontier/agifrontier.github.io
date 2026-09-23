@@ -20,6 +20,7 @@ related_tutorials:
   - "scaling-up-multi-turn-off-policy-rl-and-multi-agent-tree-search-for-llm-step-pro"
   - "beyond-retrieval-query-conditioned-reuse-of-long-horizon-agent-trajectories"
   - "qwenlong-l15-post-training-recipe-for-long-context-reasoning-and-memory-manageme"
+seo_title: "Self-Correcting Long-Horizon Search Agents via Tree-Structured Memory"
 ---
 
 <p class="paper-original-title" lang="en">Self-Correcting Long-Horizon Search Agents via Tree-Structured Memory</p>

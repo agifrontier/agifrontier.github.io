@@ -19,6 +19,7 @@ related_tutorials:
   - "rendering-in-the-loop-an-execution-driven-agent-for-interactive-web-development"
   - "skillrouter-retrieve-and-rerank-skill-selection-for-llm-agents-at-scale"
   - "is-your-code-generated-by-chatgpt-really-correct-rigorous-evaluation-of-large-la"
+seo_title: "Code2Skill：从2万开源仓库提炼百万执行级技能，Agent表现提升11.7%"
 ---
 
 <p class="paper-original-title" lang="en">Grounded Skill Synthesis from Code at Scale for Agentic Intelligence</p>

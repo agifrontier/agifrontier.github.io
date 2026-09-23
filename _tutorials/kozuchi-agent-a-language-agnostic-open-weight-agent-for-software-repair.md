@@ -18,6 +18,7 @@ related_tutorials:
   - "a-multi-agent-framework-for-stateful-inference-time-search"
   - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+seo_title: "富士通提出Kozuchi Agent：用27B开源模型跨语言修Bug，SWE-bench达74.8%"
 ---
 
 <p class="paper-original-title" lang="en">Kozuchi Agent: A Language-Agnostic Open-Weight Agent for Software Repair</p>

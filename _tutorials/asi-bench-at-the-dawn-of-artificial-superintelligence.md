@@ -18,6 +18,7 @@ related_tutorials:
   - "on-grpo-collapse-in-search-r1-the-lazy-likelihood-displacement-death-spiral"
   - "autonomous-agents-for-scientific-discovery-orchestrating-scientists-language-cod"
   - "bloomberggpt-a-large-language-model-for-finance"
+seo_title: "ASI-Bench：撤除人类科研指导后，顶尖AI得分直降24分"
 ---
 
 <p class="paper-original-title" lang="en">ASI-Bench: At the Dawn of Artificial Superintelligence</p>

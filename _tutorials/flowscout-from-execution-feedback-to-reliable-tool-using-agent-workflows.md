@@ -19,6 +19,7 @@ related_tutorials:
   - "failure-makes-the-agent-stronger-enhancing-accuracy-through-structured-reflectio"
   - "paper2agent-reimagining-research-papers-as-interactive-and-reliable-ai-agents"
   - "skillsentry-reliable-skill-execution-for-llm-agents-via-runtime-assurance"
+seo_title: "FlowScout: From Execution Feedback to Reliable Tool-Using Agent Workflows"
 ---
 
 <p class="paper-original-title" lang="en">FlowScout: From Execution Feedback to Reliable Tool-Using Agent Workflows</p>

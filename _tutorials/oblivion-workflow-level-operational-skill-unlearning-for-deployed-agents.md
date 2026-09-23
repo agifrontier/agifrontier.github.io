@@ -19,6 +19,7 @@ related_tutorials:
   - "always-onagents-a-survey-of-persistent-memory-state-and-governance-in-llmagents"
   - "kv-skill-forging-expertise-in-the-models-native-language"
   - "skillrouter-retrieve-and-rerank-skill-selection-for-llm-agents-at-scale"
+seo_title: "OBLIVION：阻断Agent技能死灰复燃，恶意重构成功率从1.0降至0.114"
 ---
 
 <p class="paper-original-title" lang="en">OBLIVION: Workflow-Level Operational Skill Unlearning for Deployed Agents</p>

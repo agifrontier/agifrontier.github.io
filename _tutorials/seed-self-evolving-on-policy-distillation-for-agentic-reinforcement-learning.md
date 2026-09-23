@@ -19,6 +19,7 @@ related_tutorials:
   - "the-landscape-of-agentic-reinforcement-learning-for-llms-a-survey"
   - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
   - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
+seo_title: "SEED：自我进化同策略蒸馏，40%数据即可匹敌全量强化学习"
 ---
 
 <p class="paper-original-title" lang="en">SEED: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning</p>

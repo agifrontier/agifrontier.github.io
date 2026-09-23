@@ -18,6 +18,7 @@ related_tutorials:
   - "sentence-anchored-gist-compression-for-long-context-llms"
   - "alpacafarm-a-simulation-framework-for-methods-that-learn-from-human-feedback"
   - "an-information-theoretic-framework-for-robust-large-language-model-editing"
+seo_title: "RST：递归合成长周期任务，0.05美元生成3.7万验证数据！"
 ---
 
 <p class="paper-original-title" lang="en">Recursive Synthesis for Long-Horizon Terminal Tasks</p>

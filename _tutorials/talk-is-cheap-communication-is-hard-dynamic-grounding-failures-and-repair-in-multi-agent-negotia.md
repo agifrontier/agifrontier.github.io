@@ -18,6 +18,7 @@ related_tutorials:
   - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
   - "auditing-agent-harness-safety"
   - "tthe-test-time-harness-evolution"
+seo_title: "大模型也会“聊崩”？多智能体谈判实验揭秘4大协作陷阱"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Talk is Cheap, Communication is Hard: Dynamic Grounding Failures and Repair in Multi-Agent Negotiation</p>

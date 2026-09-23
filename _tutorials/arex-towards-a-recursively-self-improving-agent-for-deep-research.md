@@ -14,6 +14,7 @@ related_tutorials:
   - "learning-on-the-job-an-experience-driven-self-evolving-agent-for-long-horizon-ta"
   - "mars-optimizing-dual-system-deep-research-via-multi-agent-reinforcement-learning"
   - "a-multi-agent-framework-for-stateful-inference-time-search"
+seo_title: "智源研究院AREX：基于发现-验证不对称性，让大模型递归自我改进"
 ---
 
 <p class="paper-original-title" lang="en">AREX: Towards a Recursively Self-Improving Agent for Deep Research</p>

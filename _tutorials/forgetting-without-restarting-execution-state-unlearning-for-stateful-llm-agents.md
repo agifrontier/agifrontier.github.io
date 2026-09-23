@@ -19,6 +19,7 @@ related_tutorials:
   - "skillwiki-a-living-knowledge-infrastructure-for-agent-skills"
   - "task-decomposition-guided-reranking-for-adaptive-agent-skill-retrieval"
   - "from-experience-to-strategy-empowering-llm-agents-with-trainable-graph-memory"
+seo_title: "删记录不等于真遗忘：选择性重放实现Agent状态清洗，重算Token缩减9倍"
 ---
 
 <p class="paper-original-title" lang="en">Forgetting Without Restarting: Execution-State Unlearning for Stateful LLM Agents</p>

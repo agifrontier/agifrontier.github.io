@@ -20,6 +20,7 @@ related_tutorials:
   - "a-survey-on-agentic-multimodal-large-language-models"
   - "a-survey-on-multimodal-large-language-models"
   - "process-supervised-reinforcement-learning-for-interactive-multimodal-tool-use-ag"
+seo_title: "ToolArtist: Tool-Using Unified Multimodal Models for Agentic Image Generation"
 ---
 
 <p class="paper-original-title" lang="en">ToolArtist: Tool-Using Unified Multimodal Models for Agentic Image Generation</p>

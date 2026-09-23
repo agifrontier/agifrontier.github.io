@@ -18,6 +18,7 @@ related_tutorials:
   - "gui-360-a-comprehensive-dataset-and-benchmark-for-computer-using-agents"
   - "process-supervised-reinforcement-learning-for-interactive-multimodal-tool-use-ag"
   - "videoagenttrek-computer-use-pretraining-from-unlabeled-videos"
+seo_title: "ComponentBench: Diagnosing Component-Level Failures in Computer-Use Agents"
 ---
 
 <p class="paper-original-title" lang="en">ComponentBench: Diagnosing Component-Level Failures in Computer-Use Agents</p>

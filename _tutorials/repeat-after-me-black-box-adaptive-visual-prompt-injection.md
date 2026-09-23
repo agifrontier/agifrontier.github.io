@@ -20,6 +20,7 @@ related_tutorials:
   - "jailbreaking-black-box-large-language-models-in-twenty-queries"
   - "clawgym-ii-exploring-black-box-rl-on-agent-harness"
   - "visual-language-hypothesis"
+seo_title: "Repeat-After-Me: Black-Box Adaptive Visual Prompt Injection"
 ---
 
 <p class="paper-original-title" lang="en">Repeat-After-Me: Black-Box Adaptive Visual Prompt Injection</p>

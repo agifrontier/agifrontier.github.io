@@ -14,6 +14,7 @@ related_tutorials:
   - "in-context-distillation-with-self-consistency-cascades-a-simple-training-free-wa"
   - "learning-on-the-job-an-experience-driven-self-evolving-agent-for-long-horizon-ta"
   - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
+seo_title: "Skill Self-Play：用协同进化技能指导LLM自我对弈，工具调用提升42.9分！"
 ---
 
 <p class="paper-original-title" lang="en">Skill Self-Play: Pushing the Frontier of LLM Capability with Co-Evolving Skills</p>

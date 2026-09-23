@@ -20,6 +20,7 @@ related_tutorials:
   - "appsim-bench-bridging-real-world-apps-and-reproducible-evaluation-for-mobile-gui"
   - "swe-bench-can-language-models-resolve-real-world-github-issues"
   - "hof-bench-rediscovering-real-ai-discovered-cves-without-frontier-models"
+seo_title: "K-Bench: measuring model performance on real scientific agent requests"
 ---
 
 <p class="paper-original-title" lang="en">K-Bench: measuring model performance on real scientific agent requests</p>

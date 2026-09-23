@@ -20,6 +20,7 @@ related_tutorials:
   - "autonomous-agents-for-scientific-discovery-orchestrating-scientists-language-cod"
   - "code-as-agent-harness"
   - "rendering-in-the-loop-an-execution-driven-agent-for-interactive-web-development"
+seo_title: "ABE-Ralph：代码能跑不等于实验做对！破解AI科研“方法论幻觉”"
 ---
 
 <p class="paper-original-title" lang="en">Beyond Execution: Auditing Experimental Fidelity in LLM-Driven Scientific Research</p>

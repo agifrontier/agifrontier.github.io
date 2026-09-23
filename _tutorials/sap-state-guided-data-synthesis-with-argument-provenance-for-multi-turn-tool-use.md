@@ -20,6 +20,7 @@ related_tutorials:
   - "open-data-synthesis-for-deep-research"
   - "getting-the-parameters-right-a-difficulty-graded-benchmark-and-probe-guided-trai"
   - "verltool-towards-holistic-agentic-reinforcement-learning-with-tool-use"
+seo_title: "SAP：多轮工具调用翻车往往不是选错工具，而是参数断了因果链"
 ---
 
 <p class="paper-original-title" lang="en">SAP: State-Guided Data Synthesis with Argument Provenance for Multi-Turn Tool Use</p>

@@ -19,6 +19,7 @@ related_tutorials:
   - "think-outside-the-policy-in-context-steered-policy-optimization"
   - "seedance-2-0-advancing-video-generation-for-world-complexity"
   - "large-language-model-agent-a-survey-on-methodology-applications-and-challenges"
+seo_title: "CoAdapt-GUI：双通道测试时自适应，让手机Agent跨App成功率升至52.9%"
 ---
 
 <p class="paper-original-title" lang="en">CoAdapt-GUI: Joint Workflow Context and Policy Adaptation for Unseen GUI Applications</p>

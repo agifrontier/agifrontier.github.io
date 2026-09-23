@@ -15,6 +15,7 @@ related_tutorials:
   - "autonomous-repair-for-multi-agent-systems-via-monte-carlo-tree-search"
   - "deep-agentic-search-for-repository-level-code-question-answering-an-empirical-st"
   - "searchmaster-grounded-and-regulated-self-play-for-search-agents"
+seo_title: "Beyond Solution-Centric Search: Adaptive Inquiry and Knowledge Revision for Autonomous ML Engineering"
 ---
 
 <p class="paper-original-title" lang="en">Beyond Solution-Centric Search: Adaptive Inquiry and Knowledge Revision for Autonomous ML Engineering</p>

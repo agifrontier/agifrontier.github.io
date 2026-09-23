@@ -20,6 +20,7 @@ related_tutorials:
   - "specattn-speculating-sparse-attention"
   - "learning-to-discover-at-test-time"
   - "s1-simple-test-time-scaling"
+seo_title: "GlanceWAM: Sparse Test-Time Imagination for World-Action Models"
 ---
 
 <p class="paper-original-title" lang="en">GlanceWAM: Sparse Test-Time Imagination for World-Action Models</p>

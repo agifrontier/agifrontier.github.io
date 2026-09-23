@@ -19,6 +19,7 @@ related_tutorials:
   - "shrinking-the-variance-shrinkage-baselines-for-reinforcement-learning-with-verif"
   - "internalizing-world-models-via-self-play-finetuning-for-agentic-rl"
   - "language-self-play-for-data-free-training"
+seo_title: "RLSVR：不是死磕外部裁判，而是用“谁是卧底”重构大模型自进化"
 ---
 
 <p class="paper-original-title" lang="en">From RLVR to RLSVR: Task Transformation Induces Self-Verifiable Rewards for Open-Ended LLM Self-Improvement</p>

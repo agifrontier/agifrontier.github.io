@@ -19,6 +19,7 @@ related_tutorials:
   - "dynamic-affective-memory-management-for-personalized-llm-agents"
   - "memoria-a-scalable-agentic-memory-framework-for-personalized-conversational-ai"
   - "simplemem-efficient-lifelong-memory-for-llm-agents"
+seo_title: "Apple提出Shared Selective Persistent Memory：4大机制将完成率升至96%"
 ---
 
 <p class="paper-original-title" lang="en">Shared Selective Persistent Memory for Agentic LLM Systems</p>

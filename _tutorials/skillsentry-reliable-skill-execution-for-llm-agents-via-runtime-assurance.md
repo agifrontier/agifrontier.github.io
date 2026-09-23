@@ -19,6 +19,7 @@ related_tutorials:
   - "from-atomic-actions-to-standard-operating-procedures-iterative-tool-optimization"
   - "verltool-towards-holistic-agentic-reinforcement-learning-with-tool-use"
   - "searchauditor-auditing-and-attributing-failures-in-long-horizon-search-agents"
+seo_title: "SkillSentry：把执行经验编入DSL，大模型Agent技能成功率提升24.1%"
 ---
 
 <p class="paper-original-title" lang="en">SkillSentry: Reliable Skill Execution for LLM Agents via Runtime Assurance</p>

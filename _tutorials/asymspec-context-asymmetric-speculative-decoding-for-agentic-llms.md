@@ -19,6 +19,7 @@ related_tutorials:
   - "dynamic-speculative-agent-planning"
   - "sentence-anchored-gist-compression-for-long-context-llms"
   - "kimi-k3-open-frontier-intelligence"
+seo_title: "AsymSpec：小模型读全文大模型读摘要，用0.2倍算力找回90%精度"
 ---
 
 <p class="paper-original-title" lang="en">AsymSpec: Context-Asymmetric Speculative Decoding for Agentic LLMs</p>

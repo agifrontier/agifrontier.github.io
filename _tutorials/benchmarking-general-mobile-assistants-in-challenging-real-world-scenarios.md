@@ -19,6 +19,7 @@ related_tutorials:
   - "benchmarking-llm-judges-for-mobile-agent-evaluation"
   - "appsim-bench-bridging-real-world-apps-and-reproducible-evaluation-for-mobile-gui"
   - "os-agents-a-survey-on-mllm-based-agents-for-general-computing-devices-use"
+seo_title: "GMA：评测8大前沿模型，真实手机工作流成功率为何全线跌破20%？"
 ---
 
 <p class="paper-original-title" lang="en">Benchmarking General Mobile Assistants in Challenging Real-World Scenarios</p>

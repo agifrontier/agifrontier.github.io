@@ -18,6 +18,7 @@ related_tutorials:
   - "riskpo-risk-based-policy-optimization-via-verifiable-reward-for-llm-post-trainin"
   - "towards-flash-thinking-via-decoupled-advantage-policy-optimization"
   - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
+seo_title: "SEAD：三层熵引导在线蒸馏，跳过50%Token，数学准确率提升4.8！"
 ---
 
 <p class="paper-original-title" lang="en">SEAD: Competence-Aware On-Policy Distillation via Entropy-Guided Supervision</p>

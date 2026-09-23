@@ -19,6 +19,7 @@ related_tutorials:
   - "beyond-outcome-rewards-step-level-self-distilled-policy-optimization-for-deep-se"
   - "what-does-loss-optimization-actually-teach-if-anything-knowledge-dynamics-in-con"
   - "deep-self-evolving-reasoning"
+seo_title: "Intern-S2-Mobius: Foundation Model with Decoupled Knowledge and Reasoning"
 ---
 
 <p class="paper-original-title" lang="en">Intern-S2-Mobius: Foundation Model with Decoupled Knowledge and Reasoning</p>

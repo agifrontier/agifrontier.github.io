@@ -18,6 +18,7 @@ related_tutorials:
   - "a-multi-agent-framework-for-stateful-inference-time-search"
   - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
   - "agentinit-initializing-llm-based-multi-agent-systems-via-diversity-and-expertise"
+seo_title: "多智能体通信：准确率升至93%！运行时的纠错与误导机制"
 ---
 
 <p class="paper-original-title" lang="en">Preventing Error Propagation in Multi-Agent AI through Runtime Monitoring</p>

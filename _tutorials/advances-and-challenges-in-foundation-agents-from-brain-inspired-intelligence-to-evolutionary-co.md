@@ -17,6 +17,7 @@ related_tutorials:
   - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
   - "large-language-model-brained-gui-agents-a-survey"
   - "os-agents-a-survey-on-mllm-based-agents-for-general-computing-devices-use"
+seo_title: "揭秘“数字大脑”：下一代类脑架构基础智能体的四大演进路径"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Advances and Challenges in Foundation Agents: From Brain-Inspired Intelligence to Evolutionary, Collaborative, and Safe Systems</p>

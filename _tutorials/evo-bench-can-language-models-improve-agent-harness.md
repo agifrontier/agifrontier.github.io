@@ -19,6 +19,7 @@ related_tutorials:
   - "evo-harness-context-to-harness-skill-compilation-for-self-evolving-agents"
   - "multi-agent-evolve-llm-self-improve-through-co-evolution"
   - "swe-bench-can-language-models-resolve-real-world-github-issues"
+seo_title: "Evo-Bench: Can Language Models Improve Agent Harness?"
 ---
 
 <p class="paper-original-title" lang="en">Evo-Bench: Can Language Models Improve Agent Harness?</p>

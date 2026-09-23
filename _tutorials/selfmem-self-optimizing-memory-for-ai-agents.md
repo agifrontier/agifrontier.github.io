@@ -19,6 +19,7 @@ related_tutorials:
   - "dynamic-affective-memory-management-for-personalized-llm-agents"
   - "forgetful-but-faithful-a-cognitive-memory-architecture-and-benchmark-for-privacy"
   - "memrl-self-evolving-agents-via-runtime-reinforcement-learning-on-episodic-memory"
+seo_title: "SelfMem: Self-Optimizing Memory for AI Agents"
 ---
 
 <p class="paper-original-title" lang="en">SelfMem: Self-Optimizing Memory for AI Agents</p>

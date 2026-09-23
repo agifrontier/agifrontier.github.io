@@ -19,6 +19,7 @@ related_tutorials:
   - "agentmercury-your-agent-can-synthesize-verifiable-environments-for-business-scen"
   - "deepwidesearch-benchmarking-depth-and-width-in-agentic-information-seeking"
   - "contextpilot-teaching-agents-for-proactive-context-management-via-fine-grained-r"
+seo_title: "Business Arena：大模型独立开店实测，15款前沿模型净资产相差9倍"
 ---
 
 <p class="paper-original-title" lang="en">Business Arena: Benchmarking LLM Agents in a Realistic Marketplace</p>

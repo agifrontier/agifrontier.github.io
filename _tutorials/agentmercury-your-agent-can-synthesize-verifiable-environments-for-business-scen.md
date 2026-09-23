@@ -18,6 +18,7 @@ related_tutorials:
   - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
   - "agentinit-initializing-llm-based-multi-agent-systems-via-diversity-and-expertise"
   - "alita-g-self-evolving-generative-agent-for-agent-generation"
+seo_title: "AgentMercury：从业务场景自生成交互环境，环境构建成功率达83%"
 ---
 
 <p class="paper-original-title" lang="en">AgentMercury: Your Agent Can Synthesize Verifiable Environments for Business Scenarios at scale</p>

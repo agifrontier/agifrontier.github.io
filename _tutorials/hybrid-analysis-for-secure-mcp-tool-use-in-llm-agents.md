@@ -19,6 +19,7 @@ related_tutorials:
   - "hybrid-architectures-for-language-models-systematic-analysis-and-design-insights"
   - "online-video-agent-harness-for-long-video-understanding"
   - "heal-a-hypothesis-based-preference-aware-analysis-framework"
+seo_title: "MTGuard：动静混合分析护航MCP，危险工具调用检测率达48.3%"
 ---
 
 <p class="paper-original-title" lang="en">Hybrid Analysis for Secure MCP Tool Use in LLM Agents</p>

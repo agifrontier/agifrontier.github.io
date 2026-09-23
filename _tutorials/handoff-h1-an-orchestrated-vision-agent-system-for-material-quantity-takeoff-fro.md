@@ -20,6 +20,7 @@ related_tutorials:
   - "memory-orchestrated-semantic-system-moss-an-auditable-agentic-memory-architectur"
   - "skillsmith-enhancing-locally-deployed-agents-via-automatic-skill-construction-an"
   - "agentdebugx-an-open-source-toolkit-for-failure-observability-attribution-and-rec"
+seo_title: "Handoff-H1: An Orchestrated Vision-Agent System for Material Quantity Takeoff from Construction Blueprints"
 ---
 
 <p class="paper-original-title" lang="en">Handoff-H1: An Orchestrated Vision-Agent System for Material Quantity Takeoff from Construction Blueprints</p>

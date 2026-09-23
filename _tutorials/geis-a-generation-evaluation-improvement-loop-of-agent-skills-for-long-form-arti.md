@@ -19,6 +19,7 @@ related_tutorials:
   - "rex-mle-the-autonomous-agent-benchmark-for-medical-imaging-challenges"
   - "agentbeats-agentifying-agent-assessment-for-openness-standardization-and-reproducibility"
   - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
+seo_title: "GEIS: A Generation-Evaluation-Improvement Loop of Agent Skills for Long-Form Article Generation"
 ---
 
 <p class="paper-original-title" lang="en">GEIS: A Generation-Evaluation-Improvement Loop of Agent Skills for Long-Form Article Generation</p>

@@ -19,6 +19,7 @@ related_tutorials:
   - "agentdebugx-an-open-source-toolkit-for-failure-observability-attribution-and-rec"
   - "talk-is-cheap-communication-is-hard-dynamic-grounding-failures-and-repair-in-multi-agent-negotia"
   - "evolvenet-collaborative-harness-evolution-for-agent-self-improvement"
+seo_title: "Diagnosis Before Recovery: Turning Agent Failures into Selective Self-Correction"
 ---
 
 <p class="paper-original-title" lang="en">Diagnosis Before Recovery: Turning Agent Failures into Selective Self-Correction</p>

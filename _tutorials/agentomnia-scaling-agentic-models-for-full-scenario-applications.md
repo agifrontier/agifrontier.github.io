@@ -18,6 +18,7 @@ related_tutorials:
   - "youtu-llm-unlocking-the-native-agentic-potential-for-lightweight-large-language-"
   - "a-survey-of-reasoning-and-agentic-systems-in-time-series-with-large-language-mod"
   - "a-survey-on-agentic-multimodal-large-language-models"
+seo_title: "从碎片化到全场景扩展！AgentOmnia将四榜宏平均提升至41.69%"
 ---
 
 <p class="paper-original-title" lang="en">AgentOmnia: Scaling Agentic Models for Full-Scenario Applications</p>

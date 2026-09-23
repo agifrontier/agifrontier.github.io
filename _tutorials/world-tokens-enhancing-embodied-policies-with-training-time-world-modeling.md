@@ -20,6 +20,7 @@ related_tutorials:
   - "atlasvla-persistent-world-ego-state-modeling-for-vision-language-action-models"
   - "scaling-automatic-research-agents-via-world-models"
   - "g05-one-autoregressive-stream-for-robot-reasoning-and-action"
+seo_title: "World Tokens: Enhancing Embodied Policies with Training-Time World Modeling"
 ---
 
 <p class="paper-original-title" lang="en">World Tokens: Enhancing Embodied Policies with Training-Time World Modeling</p>

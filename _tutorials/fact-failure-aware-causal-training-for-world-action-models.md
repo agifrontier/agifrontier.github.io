@@ -19,6 +19,7 @@ related_tutorials:
   - "learning-fine-grained-bimanual-manipulation-with-low-cost-hardware"
   - "gamewam-a-world-action-model-for-video-games"
   - "world-tokens-enhancing-embodied-policies-with-training-time-world-modeling"
+seo_title: "FACT: Failure-Aware Causal Training for World-Action Models"
 ---
 
 <p class="paper-original-title" lang="en">FACT: Failure-Aware Causal Training for World-Action Models</p>

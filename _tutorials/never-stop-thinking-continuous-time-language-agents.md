@@ -19,6 +19,7 @@ related_tutorials:
   - "thinker-training-llms-in-hierarchical-thinking-for-deep-search-via-multi-turn-in"
   - "towards-flash-thinking-via-decoupled-advantage-policy-optimization"
   - "resume-means-resume-a-machine-checked-conformance-contract-for-checkpoint-interr"
+seo_title: "Never Stop Thinking: Continuous-Time Language Agents"
 ---
 
 <p class="paper-original-title" lang="en">Never Stop Thinking: Continuous-Time Language Agents</p>

@@ -19,6 +19,7 @@ related_tutorials:
   - "natural-language-actor-critic-scalable-off-policy-learning-in-language-space"
   - "skills-are-not-islands-measuring-dependency-and-risk-in-agent-skill-supply-chain"
   - "mrms-a-multi-resolution-memory-substrate-for-long-lived-ai-agents"
+seo_title: "RangeFactory：攻破首跳后47%仍溃败，多跳靶场迎来自动化量产"
 ---
 
 <p class="paper-original-title" lang="en">RangeFactory: Scalable Construction of Multi-Hop Cyber Ranges</p>

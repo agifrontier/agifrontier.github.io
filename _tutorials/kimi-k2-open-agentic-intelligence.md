@@ -18,6 +18,7 @@ related_tutorials:
   - "skyrl-agent-efficient-rl-training-for-multi-turn-llm-agent"
   - "glm-4-5-agentic-reasoning-and-coding-arc-foundation-models"
   - "webshaper-agentically-data-synthesizing-via-information-seeking-formalization"
+seo_title: "Kimi K2: Open Agentic Intelligence"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Kimi K2: Open Agentic Intelligence</p>

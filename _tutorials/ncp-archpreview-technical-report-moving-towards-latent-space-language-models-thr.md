@@ -19,6 +19,7 @@ related_tutorials:
   - "gpt-4-technical-report"
   - "hunyuanvideo-15-technical-report"
   - "qwen2-technical-report"
+seo_title: "NCP-ArchPreview Technical Report: Moving towards Latent Space Language Models through Next Concept Prediction"
 ---
 
 <p class="paper-original-title" lang="en">NCP-ArchPreview Technical Report: Moving towards Latent Space Language Models through Next Concept Prediction</p>

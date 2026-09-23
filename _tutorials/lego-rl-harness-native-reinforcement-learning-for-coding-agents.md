@@ -19,6 +19,7 @@ related_tutorials:
   - "reinforcement-learning-for-machine-learning-engineering-agents"
   - "sfr-deepresearch-towards-effective-reinforcement-learning-for-autonomously-reaso"
   - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
+seo_title: "LEGO-RL: Harness-Native Reinforcement Learning for Coding Agents"
 ---
 
 <p class="paper-original-title" lang="en">LEGO-RL: Harness-Native Reinforcement Learning for Coding Agents</p>

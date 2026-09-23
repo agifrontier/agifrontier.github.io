@@ -19,6 +19,7 @@ related_tutorials:
   - "rangefactory-scalable-construction-of-multi-hop-cyber-ranges"
   - "reinforcement-learning"
   - "scribes-web-scale-script-based-semi-structured-data-extraction-with-reinforcemen"
+seo_title: "SKILLER：自然语言强化学习优化技能，让4B模型性能反超9B！"
 ---
 
 <p class="paper-original-title" lang="en">SKILLER: Language-Level Reinforcement Learning for Reusable Skill Extraction in Small Language Models</p>

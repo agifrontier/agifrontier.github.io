@@ -18,6 +18,7 @@ related_tutorials:
   - "memory-r1-enhancing-large-language-model-agents-to-manage-and-utilize-memories-v"
   - "learning-agent-routing-from-early-experience"
   - "thought-retriever-don-t-just-retrieve-raw-data-retrieve-thoughts-for-memory-augmented-agentic-sy"
+seo_title: "大模型长记忆返璞归真：Nano-Memory极简检索法降低近半Token消耗"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Back to Basics: Let Conversational Agents Remember with Just Retrieval and Generation</p>

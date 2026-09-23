@@ -19,6 +19,7 @@ related_tutorials:
   - "a-framework-for-evaluating-agentic-skills-at-scale"
   - "handbookmd-a-benchmark-for-long-context-agentic-instruction-following"
   - "why-does-claudemd-keep-growing-catastrophic-remembering-in-agentic-coding"
+seo_title: "Harness-IF: Evaluating Instruction Following Across Instruction Surfaces in Coding Agents"
 ---
 
 <p class="paper-original-title" lang="en">Harness-IF: Evaluating Instruction Following Across Instruction Surfaces in Coding Agents</p>

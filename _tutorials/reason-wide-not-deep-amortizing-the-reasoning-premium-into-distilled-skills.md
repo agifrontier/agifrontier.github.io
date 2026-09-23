@@ -19,6 +19,7 @@ related_tutorials:
   - "reward-gated-on-policy-distillation"
   - "semiparametric-preference-optimization-your-language-model-is-secretly-a-single-"
   - "stackelberg-learning-from-human-feedback-preference-optimization-as-a-sequential"
+seo_title: "Reason Wide, Not Deep: Amortizing the Reasoning Premium into Distilled Skills"
 ---
 
 <p class="paper-original-title" lang="en">Reason Wide, Not Deep: Amortizing the Reasoning Premium into Distilled Skills</p>

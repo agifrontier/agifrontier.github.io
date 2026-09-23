@@ -20,6 +20,7 @@ related_tutorials:
   - "scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-generation-for"
   - "beyond-scaling-self-evolving-llm-agents-for-hardware-kernel-optimization-via-an-"
   - "evaluating-agentic-code-repair-capabilities-in-distributed-systems"
+seo_title: "MemChain: Learning Interpretable Memory Traces for Memory-Augmented LLM Agents"
 ---
 
 <p class="paper-original-title" lang="en">MemChain: Learning Interpretable Memory Traces for Memory-Augmented LLM Agents</p>

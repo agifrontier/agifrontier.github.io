@@ -18,6 +18,7 @@ related_tutorials:
   - "process-supervised-reinforcement-learning-for-interactive-multimodal-tool-use-ag"
   - "dynamic-agent-skills-a-lifecycle-survey-and-taxonomy-of-evolving-skill-libraries"
   - "skillos-learning-skill-curation-for-self-evolving-agents"
+seo_title: "看教程学操作：Resource2Skill让Agent性能飙升11.9%"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources</p>

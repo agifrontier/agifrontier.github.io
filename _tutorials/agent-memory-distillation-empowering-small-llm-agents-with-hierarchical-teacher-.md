@@ -20,6 +20,7 @@ related_tutorials:
   - "from-experience-to-strategy-empowering-llm-agents-with-trainable-graph-memory"
   - "behavior-leverage-imbalance-in-multi-teacher-on-policy-distillation"
   - "gam-hierarchical-graph-based-agentic-memory-for-llm-agents"
+seo_title: "AMD：分层记忆蒸馏小模型Agent，AppWorld提升27.2%p反超教师"
 ---
 
 <p class="paper-original-title" lang="en">Agent Memory Distillation: Empowering Small LLM Agents with Hierarchical Teacher Memory</p>

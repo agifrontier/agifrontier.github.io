@@ -19,6 +19,7 @@ related_tutorials:
   - "mera-model-evolution-and-routing-with-skill-adaptation-for-agentic-systems-at-sc"
   - "evoroute-experience-driven-self-routing-llm-agent-systems"
   - "multi-agent-evolve-llm-self-improve-through-co-evolution"
+seo_title: "DIVE: Unlocking Self-Improvement in Frozen Language Models Through Diversity-Driven Skill Evolution"
 ---
 
 <p class="paper-original-title" lang="en">DIVE: Unlocking Self-Improvement in Frozen Language Models Through Diversity-Driven Skill Evolution</p>

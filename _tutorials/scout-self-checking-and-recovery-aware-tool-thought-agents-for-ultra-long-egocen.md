@@ -20,6 +20,7 @@ related_tutorials:
   - "exploration-vs-exploitation-rethinking-rlvr-through-clipping-entropy-and-spuriou"
   - "evoharness-rl-learning-self-evolving-runtime-harness-for-long-horizon-llm-agents"
   - "less-is-more-tokens-efficient-math-reasoning-via-difficulty-aware-chain-of-thoug"
+seo_title: "SCOUT：超长第一人称视频理解新机制，自检恢复打破单向缩放提升9.1分"
 ---
 
 <p class="paper-original-title" lang="en">SCOUT: Self-Checking and Recovery-Aware Tool-Thought Agents for Ultra-Long Egocentric Video Reasoning</p>

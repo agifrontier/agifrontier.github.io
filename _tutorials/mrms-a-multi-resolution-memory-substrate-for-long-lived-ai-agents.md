@@ -19,6 +19,7 @@ related_tutorials:
   - "dynamic-affective-memory-management-for-personalized-llm-agents"
   - "forgetful-but-faithful-a-cognitive-memory-architecture-and-benchmark-for-privacy"
   - "simplemem-efficient-lifelong-memory-for-llm-agents"
+seo_title: "MRMS: A Multi-Resolution Memory Substrate for Long-Lived AI Agents"
 ---
 
 <p class="paper-original-title" lang="en">MRMS: A Multi-Resolution Memory Substrate for Long-Lived AI Agents</p>

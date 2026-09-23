@@ -17,6 +17,7 @@ related_tutorials:
   - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
   - "peek-context-map-as-an-orientation-cache-for-long-context-llm-agents"
   - "talk-is-cheap-communication-is-hard-dynamic-grounding-failures-and-repair-in-multi-agent-negotia"
+seo_title: "告别被动检索！NapMem多粒度记忆金字塔让大模型学会主动导航"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">From Passive Retrieval to Active Memory Navigation: Learning to Use Memory as a Structured Action Space</p>

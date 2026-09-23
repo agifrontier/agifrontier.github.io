@@ -19,6 +19,7 @@ related_tutorials:
   - "re4-scientific-computing-agent-with-rewriting-resolution-review-and-revision"
   - "scaling-up-multi-turn-off-policy-rl-and-multi-agent-tree-search-for-llm-step-pro"
   - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
+seo_title: "ScienceFlow: A long-horizon agent for ML research, scientific discovery and beyond"
 ---
 
 <p class="paper-original-title" lang="en">ScienceFlow: A long-horizon agent for ML research, scientific discovery and beyond</p>

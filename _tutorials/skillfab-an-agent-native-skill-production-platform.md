@@ -19,6 +19,7 @@ related_tutorials:
   - "always-onagents-a-survey-of-persistent-memory-state-and-governance-in-llmagents"
   - "skillaudit-ground-truth-free-skill-evolution-via-paired-trajectory-auditing"
   - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
+seo_title: "SkillFab: An Agent-Native Skill Production Platform"
 ---
 
 <p class="paper-original-title" lang="en">SkillFab: An Agent-Native Skill Production Platform</p>

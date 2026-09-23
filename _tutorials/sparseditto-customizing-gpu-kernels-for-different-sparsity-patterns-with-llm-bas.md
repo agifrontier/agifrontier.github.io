@@ -20,6 +20,7 @@ related_tutorials:
   - "asmevo-agentic-assembly-level-optimization-of-amd-gpu-kernels-with-functional-eq"
   - "an-information-theoretic-perspective-on-agentic-system-design"
   - "kernelarc-a-multi-agent-framework-for-gpu-kernel-optimization"
+seo_title: "SparseDitto: Customizing GPU Kernels for Different Sparsity Patterns with LLM-Based Agentic System"
 ---
 
 <p class="paper-original-title" lang="en">SparseDitto: Customizing GPU Kernels for Different Sparsity Patterns with LLM-Based Agentic System</p>

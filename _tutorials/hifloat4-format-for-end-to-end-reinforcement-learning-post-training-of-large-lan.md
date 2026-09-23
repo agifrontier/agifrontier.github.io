@@ -20,6 +20,7 @@ related_tutorials:
   - "towards-a-unified-view-of-large-language-model-post-training"
   - "reinforcement-learning-fine-tuning-enhances-activation-intensity-and-diversity-i"
   - "end-to-end-test-time-training-for-long-context"
+seo_title: "华为HiFloat4：首个端到端FP4强化学习，将BF16差距缩至1.1%"
 ---
 
 <p class="paper-original-title" lang="en">HiFloat4 Format for End-To-End Reinforcement Learning Post-Training of Large Language Models</p>

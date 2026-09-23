@@ -18,6 +18,7 @@ related_tutorials:
   - "gdpo-group-reward-decoupled-normalization-policy-optimization-for-multi-reward-r"
   - "inpainting-guided-policy-optimization-for-diffusion-large-language-models"
   - "memorization-dynamics-in-knowledge-distillation-for-language-models"
+seo_title: "TOP-D：微软零开销蒸馏新框架，平滑无界奖励，准确率提升25.84%"
 ---
 
 <p class="paper-original-title" lang="en">Trust Region Policy Distillation</p>

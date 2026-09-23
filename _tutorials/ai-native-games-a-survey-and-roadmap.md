@@ -18,6 +18,7 @@ related_tutorials:
   - "process-supervised-reinforcement-learning-for-interactive-multimodal-tool-use-ag"
   - "from-prompts-to-contracts-harness-engineering-for-auditable-enterprise-llm-agents"
   - "resource2skill-distilling-executable-agent-skills-from-human-created-multimodal-resources"
+seo_title: "移除AI游戏就崩溃？53款案例深度解析真正的AI原生游戏"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">AI Native Games: A Survey and Roadmap</p>

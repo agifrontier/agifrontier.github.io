@@ -19,6 +19,7 @@ related_tutorials:
   - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
   - "beyond-outcome-rewards-step-level-self-distilled-policy-optimization-for-deep-se"
   - "harnessx-a-composable-adaptive-and-evolvable-agent-harness-foundry"
+seo_title: "SearchAuditor：近八成搜索失败不是没搜到！审计修复助准确率达45%"
 ---
 
 <p class="paper-original-title" lang="en">SearchAuditor: Auditing and Attributing Failures in Long-Horizon Search Agents</p>

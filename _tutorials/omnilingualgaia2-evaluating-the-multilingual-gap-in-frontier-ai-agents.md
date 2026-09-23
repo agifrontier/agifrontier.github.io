@@ -19,6 +19,7 @@ related_tutorials:
   - "hplt-30-very-large-scale-multilingual-resources-for-llm-and-mt-mono-and-bi-lingu"
   - "agents-catching-agents-shortcut-cascades-and-benchmark-gaming-in-clinical-multi-"
   - "getting-the-parameters-right-a-difficulty-graded-benchmark-and-probe-guided-trai"
+seo_title: "Meta发布OmnilingualGAIA2：前沿Agent非英语能力全线暴跌8.8至18.4分"
 ---
 
 <p class="paper-original-title" lang="en">OmnilingualGAIA2: Evaluating the Multilingual Gap in Frontier AI Agents</p>

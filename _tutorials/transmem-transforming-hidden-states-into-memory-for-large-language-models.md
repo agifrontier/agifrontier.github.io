@@ -17,6 +17,7 @@ related_tutorials:
   - "robostral-navigate"
   - "frontis-ma1-training-an-ai4ai-model-towards-recursive-self-improvement-in-machin"
   - "echoverse-deep-evolving-environments-for-training-computer-use-agents-at-scale"
+seo_title: "TransMem: Transforming Hidden States into Memory for Large Language Models"
 ---
 
 <p class="paper-original-title" lang="en">TransMem: Transforming Hidden States into Memory for Large Language Models</p>

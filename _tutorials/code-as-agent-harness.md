@@ -17,6 +17,7 @@ related_tutorials:
   - "scaling-environments-for-llm-agents-in-the-era-of-learning-from-interaction-a-su"
   - "advances-and-challenges-in-foundation-agents-from-brain-inspired-intelligence-to-evolutionary-co"
   - "os-agents-a-survey-on-mllm-based-agents-for-general-computing-devices-use"
+seo_title: "别再只让大模型写代码了！Meta与斯坦福联合提出“代码即脚手架”，重构AI智能体引擎"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Code as Agent Harness</p>

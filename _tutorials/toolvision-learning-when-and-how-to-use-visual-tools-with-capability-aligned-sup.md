@@ -20,6 +20,7 @@ related_tutorials:
   - "kimi-k25-visual-agentic-intelligence"
   - "ui-mate-advancing-open-weight-foundation-gui-agents-with-in-context-demonstratio"
   - "vibeworlding-can-multimodal-agents-construct-3d-open-worlds-end-to-end"
+seo_title: "ToolVision：能力对齐解决工具调用失灵，8B模型跨级超越32B！"
 ---
 
 <p class="paper-original-title" lang="en">ToolVision: Learning When and How to Use Visual Tools with Capability-Aligned Supervision</p>

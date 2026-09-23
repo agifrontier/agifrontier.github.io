@@ -19,6 +19,7 @@ related_tutorials:
   - "inside-the-skill-market-from-software-engineering-activities-to-reusable-agent-s"
   - "skillaudit-ground-truth-free-skill-evolution-via-paired-trajectory-auditing"
   - "skillfab-an-agent-native-skill-production-platform"
+seo_title: "CAKE: Compiler-Agent Co-Design for Frontier Kernel Evolution"
 ---
 
 <p class="paper-original-title" lang="en">CAKE: Compiler-Agent Co-Design for Frontier Kernel Evolution</p>

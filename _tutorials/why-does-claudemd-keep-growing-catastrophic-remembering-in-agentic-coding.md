@@ -18,6 +18,7 @@ related_tutorials:
   - "memory-in-the-age-of-ai-agents"
   - "from-prompts-to-contracts-harness-engineering-for-auditable-enterprise-llm-agents"
   - "the-optimizer-is-the-agent-reasoning-driven-search-across-prompts-programs-and-m"
+seo_title: "Why Does CLAUDE.md Keep Growing? Catastrophic Remembering in Agentic Coding"
 ---
 <p class="paper-original-title" lang="en">Why Does CLAUDE.md Keep Growing? Catastrophic Remembering in Agentic Coding</p>
 

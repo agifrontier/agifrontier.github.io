@@ -17,6 +17,7 @@ related_tutorials:
   - "echoverse-deep-evolving-environments-for-training-computer-use-agents-at-scale"
   - "labevolver-training-free-experience-evolution-for-safe-and-grounded-wet-lab-agen"
   - "frontis-ma1-training-an-ai4ai-model-towards-recursive-self-improvement-in-machin"
+seo_title: "Meta-Task：把任务合成做成终端任务，3221条轨迹刷榜Terminal-Bench 2.0"
 ---
 
 <p class="paper-original-title" lang="en">Meta-Task: Turning Terminal Task Synthesis into a Terminal Task for Scalable Agent Training</p>

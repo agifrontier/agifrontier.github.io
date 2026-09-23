@@ -14,6 +14,7 @@ related_tutorials:
   - "ui-tars-2-technical-report-advancing-gui-agent-with-multi-turn-reinforcement-lea"
   - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
   - "goagent-group-of-agents-communication-topology-generation-for-llm-based-multi-ag"
+seo_title: "Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents"
 ---
 
 <p class="paper-original-title" lang="en">Qwen-UI-Agent Technical Report: Toward Next-Generation Real-World Centric Foundation GUI Agents</p>

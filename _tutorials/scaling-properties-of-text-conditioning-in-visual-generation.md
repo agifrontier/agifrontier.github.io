@@ -15,6 +15,7 @@ related_tutorials:
   - "vc-tooler-learning-compositional-and-adaptive-visual-tool-use"
   - "sana-video-20-hybrid-linear-attention-with-attention-residuals-for-efficient-vid"
   - "robostral-navigate"
+seo_title: "Scaling Properties of Text Conditioning in Visual Generation"
 ---
 
 <p class="paper-original-title" lang="en">Scaling Properties of Text Conditioning in Visual Generation</p>

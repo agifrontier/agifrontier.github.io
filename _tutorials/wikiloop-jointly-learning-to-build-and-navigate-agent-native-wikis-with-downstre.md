@@ -20,6 +20,7 @@ related_tutorials:
   - "beyond-pipelines-a-survey-of-the-paradigm-shift-toward-model-native-agentic-ai"
   - "youtu-llm-unlocking-the-native-agentic-potential-for-lightweight-large-language-"
   - "dataspace-benchmarking-data-agents-for-verifiable-analytics-over-heterogeneous-w"
+seo_title: "WikiLoop：让检索反馈反哺知识库构建，多文档问答提升 6.3 分"
 ---
 
 <p class="paper-original-title" lang="en">WikiLoop: Jointly Learning to Build and Navigate Agent-Native Wikis with Downstream Feedback</p>

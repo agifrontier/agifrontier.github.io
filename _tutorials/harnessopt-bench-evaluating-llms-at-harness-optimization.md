@@ -19,6 +19,7 @@ related_tutorials:
   - "halumem-evaluating-hallucinations-in-memory-systems-of-agents"
   - "tencent-workbuddy-bench-a-multi-domain-coding-agent-benchmark-with-contamination"
   - "autodesign-meta-harness-optimization-for-long-horizon-agentic-design"
+seo_title: "HarnessOpt-Bench：AI如何自己优化AI？模型底座影响是脚手架的1.8倍"
 ---
 
 <p class="paper-original-title" lang="en">HarnessOpt-Bench: Evaluating LLMs at Harness Optimization</p>

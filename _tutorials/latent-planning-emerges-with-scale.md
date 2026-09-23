@@ -18,6 +18,7 @@ related_tutorials:
   - "a-survey-of-reasoning-and-agentic-systems-in-time-series-with-large-language-mod"
   - "dapo-an-open-source-llm-reinforcement-learning-system-at-scale"
   - "enhancing-large-language-model-reasoning-with-reward-models-an-analytical-survey"
+seo_title: "Anthropic揭秘Qwen-3：隐式规划的双向因果机制随规模涌现！"
 ---
 
 <p class="paper-original-title" lang="en">Latent Planning Emerges with Scale</p>

@@ -19,6 +19,7 @@ related_tutorials:
   - "sft-doesnt-always-hurt-general-capabilities-revisiting-domain-specific-fine-tuni"
   - "a-survey-of-ai-agent-protocols"
   - "instructblip-towards-general-purpose-vision-language-models-with-instruction-tun"
+seo_title: "StartupBench：顶尖大模型端到端成功率仅30%？首个真实商业工作流Agent基准发布"
 ---
 
 <p class="paper-original-title" lang="en">StartupBench: Benchmarking General-Purpose Agents on Market-Validated End-to-End Workflows</p>

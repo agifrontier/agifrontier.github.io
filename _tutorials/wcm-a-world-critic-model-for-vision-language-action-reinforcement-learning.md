@@ -16,6 +16,7 @@ related_tutorials:
   - "\u03c0_0-a-vision-language-action-flow-model-for-general-robot-control"
   - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"
   - "efficient-reinforcement-learning-for-large-language-models-with-intrinsic-explor"
+seo_title: "WCM: A World Critic Model for Vision-Language-Action Reinforcement Learning"
 ---
 
 <p class="paper-original-title" lang="en">WCM: A World Critic Model for Vision-Language-Action Reinforcement Learning</p>

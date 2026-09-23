@@ -19,6 +19,7 @@ related_tutorials:
   - "simplemem-efficient-lifelong-memory-for-llm-agents"
   - "dynamic-affective-memory-management-for-personalized-llm-agents"
   - "forgetful-but-faithful-a-cognitive-memory-architecture-and-benchmark-for-privacy"
+seo_title: "LycheeMemory V2: Efficient Long-Term Memory for LLM Agents via Semantic Segment-Level Consolidation"
 ---
 
 <p class="paper-original-title" lang="en">LycheeMemory V2: Efficient Long-Term Memory for LLM Agents via Semantic Segment-Level Consolidation</p>

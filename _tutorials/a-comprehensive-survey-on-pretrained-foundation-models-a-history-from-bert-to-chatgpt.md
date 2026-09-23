@@ -18,6 +18,7 @@ related_tutorials:
   - "vision-mamba-efficient-visual-representation-learning-with-bidirectional-state-s"
   - "toward-general-purpose-robots-via-foundation-models-a-survey-and-meta-analysis"
   - "personal-llm-agents-insights-and-survey-about-the-capability-efficiency-and-security"
+seo_title: "A Comprehensive Survey on Pretrained Foundation Models: A History from BERT to ChatGPT"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">A Comprehensive Survey on Pretrained Foundation Models: A History from BERT to ChatGPT</p>

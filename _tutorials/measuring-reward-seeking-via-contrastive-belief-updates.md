@@ -19,6 +19,7 @@ related_tutorials:
   - "putting-on-the-thinking-hats-a-survey-on-chain-of-thought-fine-tuning-from-the-p"
   - "calibforge-adversarial-solver-calibration-for-scaling-learnable-terminal-tasks"
   - "dual-lora-enhancing-lora-with-magnitude-and-direction-updates"
+seo_title: "Measuring Reward-Seeking via Contrastive Belief Updates"
 ---
 
 <p class="paper-original-title" lang="en">Measuring Reward-Seeking via Contrastive Belief Updates</p>

@@ -17,6 +17,7 @@ related_tutorials:
   - "real-time-detection-and-repair-of-llm-agent-failures"
   - "robostral-navigate"
   - "sana-video-20-hybrid-linear-attention-with-attention-residuals-for-efficient-vid"
+seo_title: "VC-Tooler：让视觉Agent学会组合与自适应工具，V*达95.8%"
 ---
 
 <p class="paper-original-title" lang="en">VC-Tooler: Learning Compositional and Adaptive Visual Tool Use</p>

@@ -19,6 +19,7 @@ related_tutorials:
   - "from-rlvr-to-rlsvr-task-transformation-induces-self-verifiable-rewards-for-open-"
   - "when-replanning-becomes-the-bottleneck-budgeted-replanning-for-embodied-agents"
   - "exploration-vs-exploitation-rethinking-rlvr-through-clipping-entropy-and-spuriou"
+seo_title: "Ant International提出ARC：解耦交互策略，让开放式Agent强化学习回归“公平比较”"
 ---
 
 <p class="paper-original-title" lang="en">ARC: Fair Relative Advantage Comparison in Open-Ended Real-World Interaction</p>

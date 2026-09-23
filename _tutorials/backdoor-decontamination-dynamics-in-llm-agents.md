@@ -19,6 +19,7 @@ related_tutorials:
   - "why-does-claudemd-keep-growing-catastrophic-remembering-in-agentic-coding"
   - "pipes-securing-agent-perception-with-provenance-and-priors"
   - "mole-detecting-insider-threats-in-ai-agents"
+seo_title: "Backdoor Decontamination Dynamics in LLM Agents"
 ---
 
 <p class="paper-original-title" lang="en">Backdoor Decontamination Dynamics in LLM Agents</p>

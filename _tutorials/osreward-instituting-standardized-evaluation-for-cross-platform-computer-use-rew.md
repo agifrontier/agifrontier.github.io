@@ -16,6 +16,7 @@ related_tutorials:
   - "ai-agent-systems-architectures-applications-and-evaluation"
   - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
   - "pptarena-a-benchmark-for-agentic-powerpoint-editing"
+seo_title: "OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models"
 ---
 
 <p class="paper-original-title" lang="en">OSReward: Instituting Standardized Evaluation for Cross-Platform Computer-Use Reward Models</p>

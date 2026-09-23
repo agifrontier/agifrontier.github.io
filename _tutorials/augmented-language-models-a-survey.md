@@ -18,6 +18,7 @@ related_tutorials:
   - "datasage-multi-agent-collaboration-for-insight-discovery-with-external-knowledge"
   - "toward-general-purpose-robots-via-foundation-models-a-survey-and-meta-analysis"
   - "tool-learning-with-foundation-models"
+seo_title: "突破纯文本瓶颈！增强语言模型（ALMs）如何用推理与工具重塑AI边界"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Augmented Language Models: a Survey</p>

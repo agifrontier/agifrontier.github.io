@@ -19,6 +19,7 @@ related_tutorials:
   - "what-keeps-agent-skills-from-being-reusable-evidence-from-138k-skillmd-files"
   - "kv-skill-forging-expertise-in-the-models-native-language"
   - "evaluating-skills-not-just-agents-agentic-continuous-evaluation-of-skills"
+seo_title: "GSE：从局部修补到全局图谱，让编程Agent召回率最高提升180%"
 ---
 
 <p class="paper-original-title" lang="en">Learning Globally Reusable Skills for Coding Agents</p>

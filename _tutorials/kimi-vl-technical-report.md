@@ -18,6 +18,7 @@ related_tutorials:
   - "cogflow-bridging-perception-and-reasoning-through-knowledge-internalization-for-"
   - "kimi-k2-open-agentic-intelligence"
   - "palm-2-technical-report"
+seo_title: "Kimi-VL技术解密：28亿激活参数跑通128K长窗口与多模态慢思考"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Kimi-VL Technical Report</p>

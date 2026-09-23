@@ -20,6 +20,7 @@ related_tutorials:
   - "contextweave-a-real-world-workflow-benchmark"
   - "a-survey-on-multimodal-large-language-models"
   - "towards-a-science-of-scaling-agent-systems"
+seo_title: "ClinLens：代码100%跑通却仅56%正确！首个多模态临床数据Agent基准"
 ---
 
 <p class="paper-original-title" lang="en">ClinLens: Towards Long-Horizon Coding Agents for Longitudinal Multimodal Clinical Data Science</p>

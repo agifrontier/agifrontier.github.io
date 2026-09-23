@@ -20,6 +20,7 @@ related_tutorials:
   - "world-tokens-enhancing-embodied-policies-with-training-time-world-modeling"
   - "mixture-of-contexts-for-long-video-generation"
   - "gamewam-a-world-action-model-for-video-games"
+seo_title: "MobileWAM: Bridging World Action Models to Mobile Manipulation with Chain-of-Foresight"
 ---
 
 <p class="paper-original-title" lang="en">MobileWAM: Bridging World Action Models to Mobile Manipulation with Chain-of-Foresight</p>

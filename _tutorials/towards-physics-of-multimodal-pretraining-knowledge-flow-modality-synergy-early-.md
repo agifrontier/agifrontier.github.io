@@ -20,6 +20,7 @@ related_tutorials:
   - "a-survey-on-multimodal-large-language-models"
   - "multimodal-deep-learning"
   - "palm-e-an-embodied-multimodal-language-model"
+seo_title: "Towards Physics of Multimodal Pretraining: Knowledge Flow, Modality Synergy, Early Unification, and Recipes"
 ---
 
 <p class="paper-original-title" lang="en">Towards Physics of Multimodal Pretraining: Knowledge Flow, Modality Synergy, Early Unification, and Recipes</p>

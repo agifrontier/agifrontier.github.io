@@ -20,6 +20,7 @@ related_tutorials:
   - "real-time-detection-and-repair-of-llm-agent-failures"
   - "advances-and-challenges-in-foundation-agents-from-brain-inspired-intelligence-to-evolutionary-co"
   - "gpt-red-automated-red-teaming-via-self-play-at-scale"
+seo_title: "SysEvolve：首个AI原生攻防共进化闭环，揭秘大模型实战三大能力盲区"
 ---
 
 <p class="paper-original-title" lang="en">SysEvolve: An AI-native, safe, autonomous adversarial attack-defense co-evolutionary system</p>

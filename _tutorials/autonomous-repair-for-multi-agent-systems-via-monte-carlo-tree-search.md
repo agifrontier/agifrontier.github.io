@@ -16,6 +16,7 @@ related_tutorials:
   - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
   - "harnessx-a-composable-adaptive-and-evolvable-agent-harness-foundry"
   - "planpo-group-planning-aware-policy-optimization-for-multi-turn-agentic-llms"
+seo_title: "Autonomous Repair for Multi-Agent Systems via Monte-Carlo Tree Search"
 ---
 
 <p class="paper-original-title" lang="en">Autonomous Repair for Multi-Agent Systems via Monte-Carlo Tree Search</p>

@@ -20,6 +20,7 @@ related_tutorials:
   - "didpo-diff-in-diff-policy-optimization-for-coding-agent-training"
   - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
   - "natural-language-actor-critic-scalable-off-policy-learning-in-language-space"
+seo_title: "Hybrid Advantage Estimation with Unified Critic for VLM Agentic Reinforcement Learning"
 ---
 
 <p class="paper-original-title" lang="en">Hybrid Advantage Estimation with Unified Critic for VLM Agentic Reinforcement Learning</p>

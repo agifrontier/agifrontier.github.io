@@ -15,6 +15,7 @@ related_tutorials:
   - "echoverse-deep-evolving-environments-for-training-computer-use-agents-at-scale"
   - "robostral-navigate"
   - "longcat-sparse-attention-taming-the-lightning-via-streaming-aware-hierarchical-c"
+seo_title: "Don't Offer What Can't Be Done: Deterministic Executability Gating for LLM Skill Selection at Scale"
 ---
 
 <p class="paper-original-title" lang="en">Don&#x27;t Offer What Can&#x27;t Be Done: Deterministic Executability Gating for LLM Skill Selection at Scale</p>

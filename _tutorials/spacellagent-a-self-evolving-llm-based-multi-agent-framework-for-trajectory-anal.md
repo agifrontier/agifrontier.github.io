@@ -18,6 +18,7 @@ related_tutorials:
   - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"
   - "goagent-group-of-agents-communication-topology-generation-for-llm-based-multi-ag"
   - "a-multi-agent-framework-for-stateful-inference-time-search"
+seo_title: "清华等提出SpaCellAgent：自进化多智能体框架，单细胞轨迹分析提速41%"
 ---
 
 <p class="paper-original-title" lang="en">SpaCellAgent: A Self-Evolving LLM-Based Multi-Agent Framework for Trajectory Analysis</p>

@@ -20,6 +20,7 @@ related_tutorials:
   - "gdpo-group-reward-decoupled-normalization-policy-optimization-for-multi-reward-r"
   - "riskpo-risk-based-policy-optimization-via-verifiable-reward-for-llm-post-trainin"
   - "searchauditor-auditing-and-attributing-failures-in-long-horizon-search-agents"
+seo_title: "BCP：冻结VLA实现自适应重规划，真机操作成功率从44%提升至84%"
 ---
 
 <p class="paper-original-title" lang="en">Continue or Replan? Bernoulli-Continuation Policy Learning for Adaptive Horizon Execution</p>

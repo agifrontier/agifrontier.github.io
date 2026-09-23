@@ -20,6 +20,7 @@ related_tutorials:
   - "tthe-test-time-harness-evolution"
   - "verltool-towards-holistic-agentic-reinforcement-learning-with-tool-use"
   - "robobridge-a-modular-framework-for-bridging-policies-to-robust-real-world-roboti"
+seo_title: "VAKRA: Evaluating Multi-Hop Reasoning Across APIs and Retrieval Under Tool-Use Policies"
 ---
 
 <p class="paper-original-title" lang="en">VAKRA: Evaluating Multi-Hop Reasoning Across APIs and Retrieval Under Tool-Use Policies</p>

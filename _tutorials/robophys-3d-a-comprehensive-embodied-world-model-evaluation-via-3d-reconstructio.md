@@ -20,6 +20,7 @@ related_tutorials:
   - "a-survey-on-evaluation-of-large-language-models"
   - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"
   - "palm-e-an-embodied-multimodal-language-model"
+seo_title: "RoboPhys-3D: A Comprehensive Embodied World Model Evaluation via 3D Reconstruction"
 ---
 
 <p class="paper-original-title" lang="en">RoboPhys-3D: A Comprehensive Embodied World Model Evaluation via 3D Reconstruction</p>

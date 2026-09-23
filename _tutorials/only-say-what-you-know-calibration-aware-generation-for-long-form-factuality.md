@@ -18,6 +18,7 @@ related_tutorials:
   - "sentence-anchored-gist-compression-for-long-context-llms"
   - "a-survey-of-weight-space-learning-understanding-representation-and-generation"
   - "all-you-need-is-one-capsule-prompt-tuning-with-a-single-vector"
+seo_title: "CAG：解耦探索与承诺，微软北大让大模型长文事实性提升13%！"
 ---
 
 <p class="paper-original-title" lang="en">Only Say What You Know: Calibration-Aware Generation for Long-Form Factuality</p>

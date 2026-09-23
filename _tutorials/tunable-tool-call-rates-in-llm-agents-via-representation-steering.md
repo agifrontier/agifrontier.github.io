@@ -19,6 +19,7 @@ related_tutorials:
   - "in-context-distillation-with-self-consistency-cascades-a-simple-training-free-wa"
   - "skyrl-agent-efficient-rl-training-for-multi-turn-llm-agent"
   - "tree-training-accelerating-agentic-llms-training-via-shared-prefix-reuse"
+seo_title: "UC Berkeley提出表征引导：无需微调控制工具调用，准确率升至0.56！"
 ---
 
 <p class="paper-original-title" lang="en">Tunable Tool-Call Rates in LLM Agents via Representation Steering</p>

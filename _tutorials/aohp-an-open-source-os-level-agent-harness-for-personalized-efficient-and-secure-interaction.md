@@ -17,6 +17,7 @@ related_tutorials:
   - "simplemem-efficient-lifelong-memory-for-llm-agents"
   - "personal-llm-agents-insights-and-survey-about-the-capability-efficiency-and-security"
   - "structagent-harness-long-horizon-digital-agents-with-unified-causal-structure"
+seo_title: "AOHP: An Open-Source OS-Level Agent Harness for Personalized, Efficient and Secure Interaction"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">AOHP: An Open-Source OS-Level Agent Harness for Personalized, Efficient and Secure Interaction</p>

@@ -18,6 +18,7 @@ related_tutorials:
   - "openvla-an-open-source-vision-language-action-model"
   - "qwen2-vl-enhancing-vision-language-models-perception-of-the-world-at-any-resolut"
   - "vision-mamba-efficient-visual-representation-learning-with-bidirectional-state-s"
+seo_title: "Flex-π：视频生成VAE竟能无损编码3D点云！真机成功率提升6倍"
 ---
 
 <p class="paper-original-title" lang="en">Flex-$π$: A Multi-Stream World-Action Model with Compute Flexibility</p>

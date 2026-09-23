@@ -19,6 +19,7 @@ related_tutorials:
   - "forgetful-but-faithful-a-cognitive-memory-architecture-and-benchmark-for-privacy"
   - "general-agentic-memory-via-deep-research"
   - "memoria-a-scalable-agentic-memory-framework-for-personalized-conversational-ai"
+seo_title: "Memory-Orchestrated Semantic System (MOSS): An Auditable Agentic Memory Architecture"
 ---
 
 <p class="paper-original-title" lang="en">Memory-Orchestrated Semantic System (MOSS): An Auditable Agentic Memory Architecture</p>

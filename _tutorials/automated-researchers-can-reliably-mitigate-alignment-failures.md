@@ -18,6 +18,7 @@ related_tutorials:
   - "harmbench-a-standardized-evaluation-framework-for-automated-red-teaming-and-robu"
   - "kto-model-alignment-as-prospect-theoretic-optimization"
   - "openassistant-conversations-democratizing-large-language-model-alignment"
+seo_title: "Automated Researchers Can Reliably Mitigate Alignment Failures"
 ---
 
 <p class="paper-original-title" lang="en">Automated Researchers Can Reliably Mitigate Alignment Failures</p>

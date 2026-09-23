@@ -17,6 +17,7 @@ related_tutorials:
   - "labevolver-training-free-experience-evolution-for-safe-and-grounded-wet-lab-agen"
   - "longcat-sparse-attention-taming-the-lightning-via-streaming-aware-hierarchical-c"
   - "post-training-on-office-work-improves-software-engineering-a-behavioral-account-"
+seo_title: "G-ReAct：图引导深度搜索打破线性困境，1.9K轨迹微调达79%精度"
 ---
 
 <p class="paper-original-title" lang="en">G-ReAct: Graph-Guided Deep Search via Structure-State Co-Evolution</p>

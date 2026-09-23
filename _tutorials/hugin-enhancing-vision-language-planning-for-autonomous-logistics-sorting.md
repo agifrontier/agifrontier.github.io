@@ -20,6 +20,7 @@ related_tutorials:
   - "enhancing-llm-planning-capabilities-through-intrinsic-self-critique"
   - "onepiece-bringing-context-engineering-and-reasoning-to-industrial-cascade-rankin"
   - "detecting-data-contamination-in-llms-via-in-context-learning"
+seo_title: "HUGIN: Enhancing Vision-Language Planning for Autonomous Logistics Sorting"
 ---
 
 <p class="paper-original-title" lang="en">HUGIN: Enhancing Vision-Language Planning for Autonomous Logistics Sorting</p>

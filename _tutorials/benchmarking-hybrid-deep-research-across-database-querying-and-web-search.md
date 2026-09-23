@@ -20,6 +20,7 @@ related_tutorials:
   - "change2task-from-repository-changes-to-executable-coding-agent-tasks-and-environ"
   - "does-reinforcement-learning-really-incentivize-reasoning-capacity-in-llms-beyond"
   - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
+seo_title: "Benchmarking Hybrid Deep Research Across Database Querying and Web Search"
 ---
 
 <p class="paper-original-title" lang="en">Benchmarking Hybrid Deep Research Across Database Querying and Web Search</p>

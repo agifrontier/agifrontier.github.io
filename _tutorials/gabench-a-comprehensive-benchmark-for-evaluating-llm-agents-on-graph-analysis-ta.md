@@ -17,6 +17,7 @@ related_tutorials:
   - "osreward-instituting-standardized-evaluation-for-cross-platform-computer-use-rew"
   - "path-bench-path-dependent-evaluation-of-lifelong-agents"
   - "change2task-from-repository-changes-to-executable-coding-agent-tasks-and-environ"
+seo_title: "GABench：首个大模型图分析Agent基准，万级任务测出能力断层"
 ---
 
 <p class="paper-original-title" lang="en">GABench: A Comprehensive Benchmark for Evaluating LLM Agents on Graph Analysis Tasks</p>

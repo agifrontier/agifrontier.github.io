@@ -17,6 +17,7 @@ related_tutorials:
   - "in-context-distillation-with-self-consistency-cascades-a-simple-training-free-wa"
   - "thought-retriever-don-t-just-retrieve-raw-data-retrieve-thoughts-for-memory-augmented-agentic-sy"
   - "tool-learning-with-foundation-models"
+seo_title: "告别盲目自信！RPRA框架让小模型学会“自知之明”，预测准确率飙升55%"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">RPRA: Predicting an LLM-Judge for Efficient but Performant Inference</p>

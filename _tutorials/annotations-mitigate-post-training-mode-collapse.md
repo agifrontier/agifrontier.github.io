@@ -17,6 +17,7 @@ related_tutorials:
   - "when-less-is-more-8-bit-quantization-improves-continual-learning-in-large-langua"
   - "peer-predictive-self-training-for-language-model-reasoning"
   - "rewardharness-self-evolving-agentic-post-training"
+seo_title: "Annotations Mitigate Post-Training Mode Collapse"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Annotations Mitigate Post-Training Mode Collapse</p>

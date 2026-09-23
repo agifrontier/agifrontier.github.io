@@ -19,6 +19,7 @@ related_tutorials:
   - "beyond-the-black-box-theory-and-mechanism-of-large-language-models"
   - "clawgym-ii-exploring-black-box-rl-on-agent-harness"
   - "aero-realtime-fully-aligned-input-output-streams-for-low-latency-streaming-multi"
+seo_title: "PACE：阿里锚定播放边界，打断指代率从25%提至96.3%"
 ---
 
 <p class="paper-original-title" lang="en">PACE: A Playback-Aligned Context Engine for LLM-Based Full-Duplex Voice Dialogue</p>

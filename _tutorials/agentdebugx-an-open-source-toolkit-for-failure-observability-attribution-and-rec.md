@@ -19,6 +19,7 @@ related_tutorials:
   - "dapo-an-open-source-llm-reinforcement-learning-system-at-scale"
   - "octo-an-open-source-generalist-robot-policy"
   - "mirothinker-pushing-the-performance-boundaries-of-open-source-research-agents-vi"
+seo_title: "AgentDebugX: An Open-Source Toolkit for Failure Observability, Attribution, and Recovery in LLM Agents"
 ---
 
 <p class="paper-original-title" lang="en">AgentDebugX: An Open-Source Toolkit for Failure Observability, Attribution, and Recovery in LLM Agents</p>

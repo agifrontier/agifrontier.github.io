@@ -19,6 +19,7 @@ related_tutorials:
   - "autonomous-agents-for-scientific-discovery-orchestrating-scientists-language-cod"
   - "search-over-self-edit-strategies-for-llm-adaptation"
   - "specula-scaling-formal-specifications-for-autonomous-model-checking-of-system-co"
+seo_title: "不是代码没变，而是算法卡死！DAPS让自主科研闭环泛化提升83.7%"
 ---
 
 <p class="paper-original-title" lang="en">Beneath the Diff: Diagnosing and Mitigating Algorithmic Mode Collapse in Code-Level Autonomous Research Loops</p>

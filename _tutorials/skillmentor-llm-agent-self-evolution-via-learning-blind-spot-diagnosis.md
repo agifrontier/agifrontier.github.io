@@ -15,6 +15,7 @@ related_tutorials:
   - "longhorizon-harness-advancing-long-horizon-agents-for-real-world-tasks"
   - "echoverse-deep-evolving-environments-for-training-computer-use-agents-at-scale"
   - "search-inspect-fetch-exploiting-boolean-retrieval-for-deep-research-agents"
+seo_title: "SkillMentor: LLM Agent Self-Evolution via Learning Blind-Spot Diagnosis"
 ---
 
 <p class="paper-original-title" lang="en">SkillMentor: LLM Agent Self-Evolution via Learning Blind-Spot Diagnosis</p>

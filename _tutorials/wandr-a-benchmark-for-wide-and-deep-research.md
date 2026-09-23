@@ -18,6 +18,7 @@ related_tutorials:
   - "creativityprism-a-holistic-benchmark-for-large-language-model-creativity"
   - "harmbench-a-standardized-evaluation-framework-for-automated-red-teaming-and-robu"
   - "hplt-30-very-large-scale-multilingual-resources-for-llm-and-mt-mono-and-bi-lingu"
+seo_title: "WANDR：Perplexity提出广深调研基准，顶尖Agent在500项任务中Hard F1仅0.133"
 ---
 
 <p class="paper-original-title" lang="en">WANDR: A Benchmark for Wide and Deep Research</p>

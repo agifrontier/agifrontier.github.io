@@ -18,6 +18,7 @@ related_tutorials:
   - "from-experience-to-strategy-empowering-llm-agents-with-trainable-graph-memory"
   - "back-to-basics-let-conversational-agents-remember-with-just-retrieval-and-generation"
   - "skillos-learning-skill-curation-for-self-evolving-agents"
+seo_title: "告别记忆污染！GAM分层图记忆让Agent长程推理提升86%"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">GAM: Hierarchical Graph-based Agentic Memory for LLM Agents</p>

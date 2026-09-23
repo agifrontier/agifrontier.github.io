@@ -18,6 +18,7 @@ related_tutorials:
   - "from-prompts-to-contracts-harness-engineering-for-auditable-enterprise-llm-agents"
   - "what-makes-a-harness-a-harness-necessary-and-sufficient-conditions-for-an-agent-harness"
   - "a-framework-for-evaluating-agentic-skills-at-scale"
+seo_title: "ClawGym II: Exploring Black-Box RL on Agent Harness"
 ---
 
 <p class="paper-original-title" lang="en">ClawGym II: Exploring Black-Box RL on Agent Harness</p>

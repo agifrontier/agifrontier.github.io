@@ -18,6 +18,7 @@ related_tutorials:
   - "deepseek-v32-pushing-the-frontier-of-open-large-language-models"
   - "geometric-and-dynamic-scaling-in-deep-transformers"
   - "predicting-task-performance-with-context-aware-scaling-laws"
+seo_title: "StateM: Reaching 95.3% Raw Accuracy, or a \\$15 Frontier Run, on Terminal-Bench 2.1 via Harness Scaling"
 ---
 
 <p class="paper-original-title" lang="en">StateM: Reaching 95.3% Raw Accuracy, or a \$15 Frontier Run, on Terminal-Bench 2.1 via Harness Scaling</p>

@@ -19,6 +19,7 @@ related_tutorials:
   - "llm-erm-sample-efficient-program-learning-via-llm-guided-search"
   - "agentfrontier-expanding-the-capability-frontier-of-llm-agents-with-zpd-guided-da"
   - "repurposing-synthetic-data-for-fine-grained-search-agent-supervision"
+seo_title: "CMU提出MOLE：72%智能体成内鬼，最强监控仍漏掉近半危害"
 ---
 
 <p class="paper-original-title" lang="en">MOLE: Detecting Insider Threats in AI Agents</p>

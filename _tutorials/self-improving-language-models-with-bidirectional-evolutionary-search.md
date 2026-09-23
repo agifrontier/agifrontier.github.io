@@ -18,6 +18,7 @@ related_tutorials:
   - "enhancing-large-language-model-reasoning-with-reward-models-an-analytical-survey"
   - "a-survey-of-inductive-reasoning-for-large-language-models"
   - "cogmem-a-cognitive-memory-architecture-for-sustained-multi-turn-reasoning-in-lar"
+seo_title: "Harvard与MIT提出BES：双向进化机制攻克3大推理基准"
 ---
 
 <p class="paper-original-title" lang="en">Self-Improving Language Models with Bidirectional Evolutionary Search</p>

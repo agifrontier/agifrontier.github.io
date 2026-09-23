@@ -18,6 +18,7 @@ related_tutorials:
   - "larger-datasets-can-be-repeated-more-a-theoretical-analysis-of-multi-epoch-scali"
   - "tthe-test-time-harness-evolution"
   - "multi-agent-ai-systems-outperform-human-teams-in-creativity"
+seo_title: "HarnessBridge: Learnable Bidirectional Controller for LLM Agent Harness"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">HarnessBridge: Learnable Bidirectional Controller for LLM Agent Harness</p>

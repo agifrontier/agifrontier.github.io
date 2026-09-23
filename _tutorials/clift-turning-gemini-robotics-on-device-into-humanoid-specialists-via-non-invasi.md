@@ -17,6 +17,7 @@ related_tutorials:
   - "when-replanning-becomes-the-bottleneck-budgeted-replanning-for-embodied-agents"
   - "meta-task-turning-terminal-task-synthesis-into-a-terminal-task-for-scalable-agen"
   - "world-action-planner-generalizable-decision-making-with-action-conditioned-world"
+seo_title: "CLIFT：不碰权重做闭环，人形机器人两轮成功率逼近100%"
 ---
 
 <p class="paper-original-title" lang="en">CLIFT: Turning Gemini Robotics On-Device into Humanoid Specialists via Non-Invasive Closed-Loop Iterative Fine-Tuning</p>

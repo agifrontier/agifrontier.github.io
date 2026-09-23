@@ -19,6 +19,7 @@ related_tutorials:
   - "from-experience-to-strategy-empowering-llm-agents-with-trainable-graph-memory"
   - "webxskill-skill-learning-for-autonomous-web-agents"
   - "gam-hierarchical-graph-based-agentic-memory-for-llm-agents"
+seo_title: "HiSkill: Empowering LLM Agents with Hierarchical Skill Graphs"
 ---
 
 <p class="paper-original-title" lang="en">HiSkill: Empowering LLM Agents with Hierarchical Skill Graphs</p>

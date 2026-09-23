@@ -19,6 +19,7 @@ related_tutorials:
   - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
   - "online-process-reward-leanring-for-agentic-reinforcement-learning"
   - "reinforcement-learning-for-machine-learning-engineering-agents"
+seo_title: "SeekJudge：解耦定位与提取，首个在强化学习中超越规则奖励的智能体裁判"
 ---
 
 <p class="paper-original-title" lang="en">SeekJudge: A Practical Reward Framework for Reinforcement Learning in Computer-Use Agents</p>

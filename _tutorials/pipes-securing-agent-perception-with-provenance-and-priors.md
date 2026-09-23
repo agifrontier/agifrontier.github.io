@@ -18,6 +18,7 @@ related_tutorials:
   - "datasage-multi-agent-collaboration-for-insight-discovery-with-external-knowledge"
   - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"
   - "re4-scientific-computing-agent-with-rewriting-resolution-review-and-revision"
+seo_title: "PIPES: Securing Agent Perception with Provenance and Priors"
 ---
 
 <p class="paper-original-title" lang="en">PIPES: Securing Agent Perception with Provenance and Priors</p>

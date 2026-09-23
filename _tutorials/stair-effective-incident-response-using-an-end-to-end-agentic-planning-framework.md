@@ -20,6 +20,7 @@ related_tutorials:
   - "prompt-r1-collaborative-automatic-prompting-framework-via-end-to-end-reinforceme"
   - "effective-context-engineering-for-ai-agents"
   - "sr-agent-an-experience-driven-agentic-framework-for-post-ranking-strategy-refine"
+seo_title: "STAIR: Effective Incident Response Using an End-to-End Agentic Planning Framework"
 ---
 
 <p class="paper-original-title" lang="en">STAIR: Effective Incident Response Using an End-to-End Agentic Planning Framework</p>

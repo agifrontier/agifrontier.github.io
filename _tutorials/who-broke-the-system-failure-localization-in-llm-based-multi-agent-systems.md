@@ -19,6 +19,7 @@ related_tutorials:
   - "a-multi-agent-framework-for-stateful-inference-time-search"
   - "in-context-distillation-with-self-consistency-cascades-a-simple-training-free-wa"
   - "staircase-streaming-for-low-latency-multi-agent-inference"
+seo_title: "AgentLocate：多视角验证与微调机制，精准定位多智能体故障"
 ---
 
 <p class="paper-original-title" lang="en">Who Broke the System? Failure Localization in LLM-Based Multi-Agent Systems</p>

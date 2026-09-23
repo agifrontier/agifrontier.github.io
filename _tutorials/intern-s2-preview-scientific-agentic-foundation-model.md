@@ -19,6 +19,7 @@ related_tutorials:
   - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
   - "harnessx-a-composable-adaptive-and-evolvable-agent-harness-foundry"
   - "multi-turn-on-policy-distillation-with-prefix-replay"
+seo_title: "Intern-S2-Preview：397B科学智能体，时序推理提速5倍！"
 ---
 
 <p class="paper-original-title" lang="en">Intern-S2-Preview: Scientific Agentic Foundation Model</p>

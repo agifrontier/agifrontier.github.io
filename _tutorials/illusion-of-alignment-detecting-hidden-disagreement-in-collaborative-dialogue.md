@@ -19,6 +19,7 @@ related_tutorials:
   - "openassistant-conversations-democratizing-large-language-model-alignment"
   - "kto-model-alignment-as-prospect-theoretic-optimization"
   - "the-alignment-waltz-jointly-training-agents-to-collaborate-for-safety"
+seo_title: "Illusion of Alignment: Detecting Hidden Disagreement in Collaborative Dialogue"
 ---
 
 <p class="paper-original-title" lang="en">Illusion of Alignment: Detecting Hidden Disagreement in Collaborative Dialogue</p>

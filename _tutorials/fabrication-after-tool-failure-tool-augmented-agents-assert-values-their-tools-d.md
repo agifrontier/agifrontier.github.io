@@ -19,6 +19,7 @@ related_tutorials:
   - "gpqa-a-graduate-level-google-proof-qa-benchmark"
   - "is-bash-all-you-need-an-empirical-study-of-tool-interfaces-for-enterprise-digita"
   - "corl-co-evolutionary-reinforcement-learning-for-adaptive-indirect-prompt-injecti"
+seo_title: "Fabrication After Tool Failure: Tool-Augmented Agents Assert Values Their Tools Did Not Return"
 ---
 
 <p class="paper-original-title" lang="en">Fabrication After Tool Failure: Tool-Augmented Agents Assert Values Their Tools Did Not Return</p>

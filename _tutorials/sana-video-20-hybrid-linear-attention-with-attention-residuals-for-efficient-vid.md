@@ -16,6 +16,7 @@ related_tutorials:
   - "inpainting-guided-policy-optimization-for-diffusion-large-language-models"
   - "vision-transformers-are-circulant-attention-learners"
   - "moonshot-a-framework-for-multi-objective-pruning-of-vision-and-large-language-mo"
+seo_title: "从全Softmax转向混合架构：SANA-Video 2.0用25%锚点换来120倍加速"
 ---
 
 <p class="paper-original-title" lang="en">SANA-Video 2.0: Hybrid Linear Attention with Attention Residuals for Efficient Video Generation</p>

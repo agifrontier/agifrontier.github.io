@@ -19,6 +19,7 @@ related_tutorials:
   - "self-evolving-agent-harnesses-via-gated-semantic-quality-diversity"
   - "s1-simple-test-time-scaling"
   - "tofu-a-white-box-token-efficient-agent-harness-for-researchers"
+seo_title: "不改权重！强模型为弱模型写脚手架，准确率从0.49升至0.91"
 ---
 
 <p class="paper-original-title" lang="en">AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses</p>

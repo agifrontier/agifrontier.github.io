@@ -19,6 +19,7 @@ related_tutorials:
   - "agentic-software-engineering-foundational-pillars-and-a-research-roadmap"
   - "towards-automated-kernel-generation-in-the-era-of-llms"
   - "a-survey-of-ai-agent-protocols"
+seo_title: "Analemma推出FARS：全自动科研系统，量产166篇论文！"
 ---
 
 <p class="paper-original-title" lang="en">FARS: A Fully Automated Research System Deployed at Scale</p>

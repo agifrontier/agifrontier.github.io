@@ -18,6 +18,7 @@ related_tutorials:
   - "comet-collaborative-memory-transformer-for-efficient-long-context-modeling"
   - "qwenlong-l15-post-training-recipe-for-long-context-reasoning-and-memory-manageme"
   - "rmaat-astrocyte-inspired-memory-compression-and-replay-for-efficient-long-contex"
+seo_title: "MemOps：定义5大记忆生命周期，揭露大模型状态更新短板！"
 ---
 
 <p class="paper-original-title" lang="en">MemOps: Benchmarking Lifecycle Memory Operations in Long-Horizon Conversations</p>

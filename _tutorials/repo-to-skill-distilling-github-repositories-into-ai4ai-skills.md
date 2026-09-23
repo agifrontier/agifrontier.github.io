@@ -20,6 +20,7 @@ related_tutorials:
   - "dynamic-agent-skills-a-lifecycle-survey-and-taxonomy-of-evolving-skill-libraries"
   - "resource2skill-distilling-executable-agent-skills-from-human-created-multimodal-resources"
   - "capabilities-of-gpt-4-on-medical-challenge-problems"
+seo_title: "DisCo：蒸馏千个开源仓库为技能库，科研Agent性能提升134%"
 ---
 
 <p class="paper-original-title" lang="en">Repo-To-Skill: Distilling GitHub Repositories Into AI4AI Skills</p>

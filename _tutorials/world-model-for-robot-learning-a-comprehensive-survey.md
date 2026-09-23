@@ -18,6 +18,7 @@ related_tutorials:
   - "statistical-reinforcement-learning-in-the-real-world-a-survey-of-challenges-and-"
   - "large-language-model-brained-gui-agents-a-survey"
   - "os-agents-a-survey-on-mllm-based-agents-for-general-computing-devices-use"
+seo_title: "告别纯反应式VLA：全面解析机器人世界模型进化密码"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">World Model for Robot Learning: A Comprehensive Survey</p>

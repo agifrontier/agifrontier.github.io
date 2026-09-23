@@ -20,6 +20,7 @@ related_tutorials:
   - "from-static-templates-to-dynamic-runtime-graphs-a-survey-of-workflow-optimizatio"
   - "cost-aware-retrieval-augmentation-reasoning-models-with-adaptive-retrieval-depth"
   - "autosaddler-automatic-harness-optimization-with-durable-updates-from-agent-execu"
+seo_title: "EASy：告别无脑堆算力，莫纳什用强化学习让智能体按预算精明办大事"
 ---
 
 <p class="paper-original-title" lang="en">EASy: Towards Efficient LLM-Based Agentic System</p>

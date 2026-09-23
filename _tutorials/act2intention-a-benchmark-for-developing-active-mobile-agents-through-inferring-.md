@@ -20,6 +20,7 @@ related_tutorials:
   - "gui-360-a-comprehensive-dataset-and-benchmark-for-computer-using-agents"
   - "appsim-bench-bridging-real-world-apps-and-reproducible-evaluation-for-mobile-gui"
   - "appdeltaworld-transition-grounded-delta-code-world-model-for-mobile-gui-agents"
+seo_title: "Act2Intention：从70万次手机操作预判意图，理解准确率提升32分"
 ---
 
 <p class="paper-original-title" lang="en">Act2Intention: A Benchmark For Developing Active Mobile Agents Through Inferring User Intention from GUI Actions</p>

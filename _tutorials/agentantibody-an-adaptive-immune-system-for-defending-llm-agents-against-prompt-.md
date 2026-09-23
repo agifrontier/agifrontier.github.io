@@ -20,6 +20,7 @@ related_tutorials:
   - "the-optimizer-is-the-agent-reasoning-driven-search-across-prompts-programs-and-m"
   - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
   - "an-information-theoretic-perspective-on-agentic-system-design"
+seo_title: "AgentAntibody：不是一刀切拦截，而是赋予智能体自适应免疫力"
 ---
 
 <p class="paper-original-title" lang="en">AgentAntibody: An Adaptive Immune System for Defending LLM Agents against Prompt Injection</p>

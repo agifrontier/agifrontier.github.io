@@ -17,6 +17,7 @@ related_tutorials:
   - "the-alignment-waltz-jointly-training-agents-to-collaborate-for-safety"
   - "agentbeats-agentifying-agent-assessment-for-openness-standardization-and-reproducibility"
   - "auditing-agent-harness-safety"
+seo_title: "AgentAtlas: Beyond Outcome Leaderboards for LLM Agents"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">AgentAtlas: Beyond Outcome Leaderboards for LLM Agents</p>

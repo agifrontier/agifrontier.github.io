@@ -19,6 +19,7 @@ related_tutorials:
   - "skyrl-agent-efficient-rl-training-for-multi-turn-llm-agent"
   - "staircase-streaming-for-low-latency-multi-agent-inference"
   - "in-context-distillation-with-self-consistency-cascades-a-simple-training-free-wa"
+seo_title: "SCOPE框架与Co-Training：斯坦福破解多智能体RL模拟器崩溃，成功率提升14%！"
 ---
 
 <p class="paper-original-title" lang="en">One Frozen Simulator Is Not Enough: Simulator Collapse in Multi-Agent RL</p>

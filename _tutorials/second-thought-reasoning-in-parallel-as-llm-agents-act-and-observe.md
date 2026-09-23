@@ -20,6 +20,7 @@ related_tutorials:
   - "pacore-learning-to-scale-test-time-compute-with-parallel-coordinated-reasoning"
   - "rest-rl-achieving-accurate-code-reasoning-of-llms-with-optimized-self-training-a"
   - "thought-level-beam-search-for-reasoning"
+seo_title: "Second Thought: Reasoning in Parallel as LLM Agents Act and Observe"
 ---
 
 <p class="paper-original-title" lang="en">Second Thought: Reasoning in Parallel as LLM Agents Act and Observe</p>

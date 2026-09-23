@@ -18,6 +18,7 @@ related_tutorials:
   - "learning-on-the-job-an-experience-driven-self-evolving-agent-for-long-horizon-ta"
   - "multi-agent-evolve-llm-self-improve-through-co-evolution"
   - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"
+seo_title: "EvolveNet：不是聚合数据而是聚合代码！协作式Agent进化机制提升5大场景"
 ---
 
 <p class="paper-original-title" lang="en">EvolveNet: Collaborative Harness Evolution for Agent Self-Improvement</p>

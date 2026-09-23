@@ -15,6 +15,7 @@ related_tutorials:
   - "when-replanning-becomes-the-bottleneck-budgeted-replanning-for-embodied-agents"
   - "longhorizon-harness-advancing-long-horizon-agents-for-real-world-tasks"
   - "openforgerl-train-harness-native-agents-in-any-environment"
+seo_title: "World Action Planner: Generalizable Decision-Making with Action-Conditioned World Models"
 ---
 
 <p class="paper-original-title" lang="en">World Action Planner: Generalizable Decision-Making with Action-Conditioned World Models</p>

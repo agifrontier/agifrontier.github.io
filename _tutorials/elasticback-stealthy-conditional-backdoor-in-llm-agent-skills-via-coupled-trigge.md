@@ -20,6 +20,7 @@ related_tutorials:
   - "rangefactory-scalable-construction-of-multi-hop-cyber-ranges"
   - "a-language-for-describing-agentic-llm-contexts"
   - "skills-are-not-islands-measuring-dependency-and-risk-in-agent-skill-supply-chain"
+seo_title: "ElasticBack: Stealthy Conditional Backdoor in LLM-Agent Skills via Coupled Trigger-Rule Optimization"
 ---
 
 <p class="paper-original-title" lang="en">ElasticBack: Stealthy Conditional Backdoor in LLM-Agent Skills via Coupled Trigger-Rule Optimization</p>

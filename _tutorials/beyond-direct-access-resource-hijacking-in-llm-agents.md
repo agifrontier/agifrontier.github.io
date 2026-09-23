@@ -19,6 +19,7 @@ related_tutorials:
   - "retrieval-augmented-generation-rag-for-fintech-agentic-design-and-evaluation"
   - "harmbench-a-standardized-evaluation-framework-for-automated-red-teaming-and-robu"
   - "hplt-30-very-large-scale-multilingual-resources-for-llm-and-mt-mono-and-bi-lingu"
+seo_title: "不偷凭证也能掏空算力？南开上交揭秘Agent资源劫持，成功率超84%"
 ---
 
 <p class="paper-original-title" lang="en">Beyond Direct Access: Resource Hijacking in LLM Agents</p>

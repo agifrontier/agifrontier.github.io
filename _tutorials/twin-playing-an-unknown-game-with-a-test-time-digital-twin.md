@@ -18,6 +18,7 @@ related_tutorials:
   - "learning-to-discover-at-test-time"
   - "s1-simple-test-time-scaling"
   - "a-prompt-pattern-catalog-to-enhance-prompt-engineering-with-chatgpt"
+seo_title: "Twin: Playing an Unknown Game with a Test-Time Digital Twin"
 ---
 
 <p class="paper-original-title" lang="en">Twin: Playing an Unknown Game with a Test-Time Digital Twin</p>

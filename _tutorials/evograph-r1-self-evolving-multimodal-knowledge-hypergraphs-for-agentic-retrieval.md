@@ -19,6 +19,7 @@ related_tutorials:
   - "retrieval-augmented-generation-rag-for-fintech-agentic-design-and-evaluation"
   - "mitigating-hallucination-in-large-language-models-llms-an-application-oriented-s"
   - "skillrouter-retrieve-and-rerank-skill-selection-for-llm-agents-at-scale"
+seo_title: "EvoGraph-R1: Self-Evolving Multimodal Knowledge Hypergraphs for Agentic Retrieval"
 ---
 
 <p class="paper-original-title" lang="en">EvoGraph-R1: Self-Evolving Multimodal Knowledge Hypergraphs for Agentic Retrieval</p>

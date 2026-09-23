@@ -18,6 +18,7 @@ related_tutorials:
   - "decide-then-retrieve-a-training-free-framework-with-uncertainty-guided-triggerin"
   - "dual-lora-enhancing-lora-with-magnitude-and-direction-updates"
   - "efficient-streaming-language-models-with-attention-sinks"
+seo_title: "$\\text{Muon}^p$：分数阶谱幂更新机制，全面提升十亿级大模型微调性能"
 ---
 
 <p class="paper-original-title" lang="en">Muon$^p$: Muon with Fractional Spectral Powers</p>

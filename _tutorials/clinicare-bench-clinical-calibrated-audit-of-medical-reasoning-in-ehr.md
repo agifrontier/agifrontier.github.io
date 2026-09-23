@@ -20,6 +20,7 @@ related_tutorials:
   - "limits-of-trust-in-medical-ai"
   - "capabilities-of-gpt-4-on-medical-challenge-problems"
   - "the-next-challenge-for-agentic-cybersecurity-a-realistic-contamination-free-reve"
+seo_title: "CliniCARE-Bench：不是答题而是真实查房审计，无缺陷准确率下降最高14.8分"
 ---
 
 <p class="paper-original-title" lang="en">CliniCARE-Bench: Clinical Calibrated Audit of Medical Reasoning in EHR</p>

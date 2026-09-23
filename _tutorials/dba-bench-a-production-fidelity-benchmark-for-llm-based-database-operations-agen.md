@@ -16,6 +16,7 @@ related_tutorials:
   - "agentic-data-environments"
   - "auditing-agent-harness-safety"
   - "clawsentry-a-progressive-multi-tier-security-monitor-for-safeguarding-autonomous"
+seo_title: "DBA-Bench: A Production-Fidelity Benchmark for LLM-Based Database Operations Agents"
 ---
 
 <p class="paper-original-title" lang="en">DBA-Bench: A Production-Fidelity Benchmark for LLM-Based Database Operations Agents</p>

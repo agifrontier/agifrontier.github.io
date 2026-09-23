@@ -19,6 +19,7 @@ related_tutorials:
   - "search-over-self-edit-strategies-for-llm-adaptation"
   - "kimi-dev-agentless-training-as-skill-prior-for-swe-agents"
   - "is-your-code-generated-by-chatgpt-really-correct-rigorous-evaluation-of-large-la"
+seo_title: "EvoHarnessBench：装具不断扩增，Agent为何反而遭遇“装具诱发遗忘”？"
 ---
 
 <p class="paper-original-title" lang="en">EVOHARNESSBENCH: Can Your Agents Keep Pace with an Evolving Harness?</p>

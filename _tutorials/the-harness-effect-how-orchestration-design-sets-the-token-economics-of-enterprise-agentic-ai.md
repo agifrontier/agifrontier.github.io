@@ -17,6 +17,7 @@ related_tutorials:
   - "what-limits-agentic-systems-efficiency"
   - "agentic-harness-engineering-observability-driven-automatic-evolution-of-coding-agent-harnesses"
   - "self-evolving-agent-harnesses-via-gated-semantic-quality-diversity"
+seo_title: "The Harness Effect: How Orchestration Design Sets the Token Economics of Enterprise Agentic AI"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">The Harness Effect: How Orchestration Design Sets the Token Economics of Enterprise Agentic AI</p>

@@ -17,6 +17,7 @@ related_tutorials:
   - "ai-agent-systems-architectures-applications-and-evaluation"
   - "os-agents-a-survey-on-mllm-based-agents-for-general-computing-devices-use"
   - "agentic-environment-engineering-for-large-language-models-a-survey-of-environment-modeling-synth"
+seo_title: "LLM as a Mastermind: A Survey of Strategic Reasoning with Large Language Models"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">LLM as a Mastermind: A Survey of Strategic Reasoning with Large Language Models</p>

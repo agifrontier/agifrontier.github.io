@@ -20,6 +20,7 @@ related_tutorials:
   - "memorization-dynamics-in-knowledge-distillation-for-language-models"
   - "the-alignment-waltz-jointly-training-agents-to-collaborate-for-safety"
   - "pm-bench-evaluating-prospective-memory-in-llm-agents"
+seo_title: "Coupled Graph--Policy Distillation for Personalized Medication Safety in Older Adults with Multimorbidity"
 ---
 
 <p class="paper-original-title" lang="en">Coupled Graph--Policy Distillation for Personalized Medication Safety in Older Adults with Multimorbidity</p>

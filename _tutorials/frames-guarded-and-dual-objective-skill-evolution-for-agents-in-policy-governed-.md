@@ -17,6 +17,7 @@ related_tutorials:
   - "echoverse-deep-evolving-environments-for-training-computer-use-agents-at-scale"
   - "labevolver-training-free-experience-evolution-for-safe-and-grounded-wet-lab-agen"
   - "frontis-ma1-training-an-ai4ai-model-towards-recursive-self-improvement-in-machin"
+seo_title: "FRAMES：不微调模型也能自我进化？双目标优化与防退化门控驱动Agent技能演进"
 ---
 
 <p class="paper-original-title" lang="en">FRAMES: Guarded and Dual-Objective Skill Evolution for Agents in Policy-Governed Enterprise Workflows</p>

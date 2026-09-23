@@ -18,6 +18,7 @@ related_tutorials:
   - "hplt-30-very-large-scale-multilingual-resources-for-llm-and-mt-mono-and-bi-lingu"
   - "thought-retriever-don-t-just-retrieve-raw-data-retrieve-thoughts-for-memory-augmented-agentic-sy"
   - "resum-synergizing-llm-reasoning-and-summarization-with-reinforcement-learning"
+seo_title: "揭秘大模型SFT数据陷阱：破解步长混杂，ASLEC提点超9%"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">On the Step Length Confounding in LLM Reasoning Data Selection</p>

@@ -15,6 +15,7 @@ related_tutorials:
   - "semiparametric-preference-optimization-your-language-model-is-secretly-a-single-"
   - "agent-harness-engineering-a-survey"
   - "arex-towards-a-recursively-self-improving-agent-for-deep-research"
+seo_title: "AGRI：大模型早知被入侵，探测潜层表征将注入成功率降至0%"
 ---
 
 <p class="paper-original-title" lang="en">Your Agentic LLMs Secretly Encode Latent Signals of Indirect Prompt-Injection Exposure</p>

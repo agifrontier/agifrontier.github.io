@@ -19,6 +19,7 @@ related_tutorials:
   - "robophys-3d-a-comprehensive-embodied-world-model-evaluation-via-3d-reconstructio"
   - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
   - "longhorizon-harness-advancing-long-horizon-agents-for-real-world-tasks"
+seo_title: "PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives"
 ---
 
 <p class="paper-original-title" lang="en">PlayWorld: Benchmarking World Models with Agent Players over Long-Horizon Objectives</p>

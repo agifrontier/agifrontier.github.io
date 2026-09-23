@@ -18,6 +18,7 @@ related_tutorials:
   - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"
   - "thought-retriever-don-t-just-retrieve-raw-data-retrieve-thoughts-for-memory-augmented-agentic-sy"
   - "dynamic-agent-skills-a-lifecycle-survey-and-taxonomy-of-evolving-skill-libraries"
+seo_title: "突破智能体孤岛：MATM共享Agent轨迹记忆，任务成功率提升17%"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Multi-Agent Transactive Memory</p>

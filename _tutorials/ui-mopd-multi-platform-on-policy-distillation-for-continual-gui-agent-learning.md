@@ -19,6 +19,7 @@ related_tutorials:
   - "glm-4-5-agentic-reasoning-and-coding-arc-foundation-models"
   - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"
   - "mixture-of-minds-multi-agent-reinforcement-learning-for-table-understanding"
+seo_title: "UI-MOPD: Multi-Platform On-Policy Distillation for Continual GUI Agent Learning"
 ---
 
 <p class="paper-original-title" lang="en">UI-MOPD: Multi-Platform On-Policy Distillation for Continual GUI Agent Learning</p>

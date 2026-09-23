@@ -19,6 +19,7 @@ related_tutorials:
   - "world-action-planner-generalizable-decision-making-with-action-conditioned-world"
   - "turbovla-real-time-vision-language-action-model-at-32-hz-on-an-rtx-4090-with-1-g"
   - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"
+seo_title: "WorldSimProbe: Diagnosing Simulator Faithfulness in Action-Conditioned World Models for Embodied Manipulation"
 ---
 
 <p class="paper-original-title" lang="en">WorldSimProbe: Diagnosing Simulator Faithfulness in Action-Conditioned World Models for Embodied Manipulation</p>

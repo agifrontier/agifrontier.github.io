@@ -18,6 +18,7 @@ related_tutorials:
   - "agentinit-initializing-llm-based-multi-agent-systems-via-diversity-and-expertise"
   - "the-latent-space-foundation-evolution-mechanism-ability-and-outlook"
   - "harnessbridge-learnable-bidirectional-controller-for-llm-agent-harness"
+seo_title: "多智能体AI创造力碾压人类团队？1.5倍断层优势与语义轨迹揭秘"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Multi-agent AI systems outperform human teams in creativity</p>

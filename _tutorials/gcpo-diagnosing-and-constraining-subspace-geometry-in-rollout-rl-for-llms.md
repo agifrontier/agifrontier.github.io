@@ -19,6 +19,7 @@ related_tutorials:
   - "enhanced-llm-reasoning-by-optimizing-reward-functions-with-search-driven-reinfor"
   - "on-grpo-collapse-in-search-r1-the-lazy-likelihood-displacement-death-spiral"
   - "treegrpo-tree-advantage-grpo-for-online-rl-post-training-of-diffusion-models"
+seo_title: "GCPO：双侧正交约束锁死参数漂移，大模型强化学习告别长度膨胀与崩溃"
 ---
 
 <p class="paper-original-title" lang="en">GCPO: Diagnosing and Constraining Subspace Geometry in Rollout RL for LLMs</p>

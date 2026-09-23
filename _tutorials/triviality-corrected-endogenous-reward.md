@@ -18,6 +18,7 @@ related_tutorials:
   - "basereward-a-strong-baseline-for-multimodal-reward-model"
   - "direct-preference-optimization-your-language-model-is-secretly-a-reward-model"
   - "docreward-a-document-reward-model-for-structuring-and-stylizing"
+seo_title: "Triviality Corrected Endogenous Reward"
 ---
 
 <p class="paper-original-title" lang="en">Triviality Corrected Endogenous Reward</p>

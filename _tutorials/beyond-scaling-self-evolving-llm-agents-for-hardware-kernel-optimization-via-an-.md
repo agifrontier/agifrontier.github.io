@@ -19,6 +19,7 @@ related_tutorials:
   - "memrl-self-evolving-agents-via-runtime-reinforcement-learning-on-episodic-memory"
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
   - "dynamic-affective-memory-management-for-personalized-llm-agents"
+seo_title: "Beyond Scaling: Self-Evolving LLM Agents for Hardware Kernel Optimization via an Experience-Driven Workflow and Experience Graph Memory"
 ---
 
 <p class="paper-original-title" lang="en">Beyond Scaling: Self-Evolving LLM Agents for Hardware Kernel Optimization via an Experience-Driven Workflow and Experience Graph Memory</p>

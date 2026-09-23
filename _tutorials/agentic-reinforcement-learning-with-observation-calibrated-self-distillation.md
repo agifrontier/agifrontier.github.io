@@ -20,6 +20,7 @@ related_tutorials:
   - "mera-model-evolution-and-routing-with-skill-adaptation-for-agentic-systems-at-sc"
   - "incorporating-self-rewriting-into-large-language-model-reasoning-reinforcement"
   - "the-landscape-of-agentic-reinforcement-learning-for-llms-a-survey"
+seo_title: "Agentic Reinforcement Learning with Observation-Calibrated Self-Distillation"
 ---
 
 <p class="paper-original-title" lang="en">Agentic Reinforcement Learning with Observation-Calibrated Self-Distillation</p>

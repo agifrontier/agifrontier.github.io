@@ -16,6 +16,7 @@ related_tutorials:
   - "a-framework-for-evaluating-agentic-skills-at-scale"
   - "agentbeats-agentifying-agent-assessment-for-openness-standardization-and-reproducibility"
   - "ai-agent-systems-architectures-applications-and-evaluation"
+seo_title: "Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction"
 ---
 
 <p class="paper-original-title" lang="en">Tencent WorkBuddy Bench: A Multi-Domain Coding-Agent Benchmark with Contamination-Resistant Task Construction</p>

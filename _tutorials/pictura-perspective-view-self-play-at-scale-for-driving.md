@@ -18,6 +18,7 @@ related_tutorials:
   - "webweaver-structuring-web-scale-evidence-with-dynamic-outlines-for-open-ended-de"
   - "alpacafarm-a-simulation-framework-for-methods-that-learn-from-human-feedback"
   - "an-information-theoretic-framework-for-robust-large-language-model-editing"
+seo_title: "Pictura：告别开挂上帝视角，500亿步透视自博弈零样本反超特权模型"
 ---
 
 <p class="paper-original-title" lang="en">Pictura: Perspective-View Self-Play at Scale for Driving</p>

@@ -15,6 +15,7 @@ related_tutorials:
   - "arex-towards-a-recursively-self-improving-agent-for-deep-research"
   - "toktier-exact-stateful-tokenization-for-agentic-llm-serving"
   - "explorative-modeling-unlocking-a-third-pretraining-axis-and-end-to-end-generatio"
+seo_title: "Data Turnstile：DAG分步校验合成数据，让1.7B小模型多轮Agent表现超越32B"
 ---
 
 <p class="paper-original-title" lang="en">Data Turnstile: A Scalable Open Framework for Function-Calling Data Generation</p>

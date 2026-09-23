@@ -19,6 +19,7 @@ related_tutorials:
   - "latent-traits-and-cross-task-transfer-deconstructing-dataset-interactions-in-llm"
   - "towards-execution-grounded-automated-ai-research"
   - "are-large-language-models-sensitive-to-the-motives-behind-communication"
+seo_title: "XBridge：破解异构模型通信瓶颈，延迟降低11倍且全面超越文本交互"
 ---
 
 <p class="paper-original-title" lang="en">XBridge: Entity-Grounded Latent Bridge for Heterogeneous LLM Communication</p>

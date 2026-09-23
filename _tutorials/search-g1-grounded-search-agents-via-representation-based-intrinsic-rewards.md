@@ -17,6 +17,7 @@ related_tutorials:
   - "searchmaster-grounded-and-regulated-self-play-for-search-agents"
   - "spatialcli-learning-to-reason-with-spatial-tools-then-without-them"
   - "beyond-solution-centric-search-adaptive-inquiry-and-knowledge-revision-for-auton"
+seo_title: "Search-G1: Grounded Search Agents via Representation-Based Intrinsic Rewards"
 ---
 
 <p class="paper-original-title" lang="en">Search-G1: Grounded Search Agents via Representation-Based Intrinsic Rewards</p>

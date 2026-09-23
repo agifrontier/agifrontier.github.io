@@ -19,6 +19,7 @@ related_tutorials:
   - "a-survey-of-reasoning-and-agentic-systems-in-time-series-with-large-language-mod"
   - "harnessx-a-composable-adaptive-and-evolvable-agent-harness-foundry"
   - "intern-s2-preview-scientific-agentic-foundation-model"
+seo_title: "SSPO：步级自蒸馏机制，仅5%开销超越双倍训练步数GRPO"
 ---
 
 <p class="paper-original-title" lang="en">Beyond Outcome Rewards: Step-Level Self-Distilled Policy Optimization for Deep Search Agents</p>

@@ -20,6 +20,7 @@ related_tutorials:
   - "arex-towards-a-recursively-self-improving-agent-for-deep-research"
   - "self-improving-language-models-with-bidirectional-evolutionary-search"
   - "evoroute-experience-driven-self-routing-llm-agent-systems"
+seo_title: "AQuA: Recursively Self-Improving Quantitative Trading Research Agents"
 ---
 
 <p class="paper-original-title" lang="en">AQuA: Recursively Self-Improving Quantitative Trading Research Agents</p>

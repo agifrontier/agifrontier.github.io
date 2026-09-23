@@ -20,6 +20,7 @@ related_tutorials:
   - "searchart-training-long-horizon-search-agent-with-scalable-synthetic-and-verifie"
   - "preventing-error-propagation-in-multi-agent-ai-through-runtime-monitoring"
   - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
+seo_title: "ABSeeker：从答案倒推线索，4B小模型长程搜索能力比肩30B"
 ---
 
 <p class="paper-original-title" lang="en">ABSeeker: Training Long-Horizon Search Agents via Answer-Backtracked Credit Assignment</p>

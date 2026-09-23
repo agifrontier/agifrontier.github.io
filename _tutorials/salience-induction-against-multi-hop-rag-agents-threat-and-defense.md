@@ -20,6 +20,7 @@ related_tutorials:
   - "pptarena-a-benchmark-for-agentic-powerpoint-editing"
   - "memory-orchestrated-semantic-system-moss-an-auditable-agentic-memory-architectur"
   - "retrieval-reasoning-processes-for-multi-hop-question-answering-a-four-axis-desig"
+seo_title: "不改事实也能带偏大模型：国防科大团队揭秘显著性诱导，攻击成功率达83.3%"
 ---
 
 <p class="paper-original-title" lang="en">Salience Induction against Multi-Hop RAG Agents: Threat and Defense</p>

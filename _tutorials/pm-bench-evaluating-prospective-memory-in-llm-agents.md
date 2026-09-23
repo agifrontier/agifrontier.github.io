@@ -19,6 +19,7 @@ related_tutorials:
   - "from-experience-to-strategy-empowering-llm-agents-with-trainable-graph-memory"
   - "halumem-evaluating-hallucinations-in-memory-systems-of-agents"
   - "simplemem-efficient-lifelong-memory-for-llm-agents"
+seo_title: "PM-Bench: Evaluating Prospective Memory in LLM Agents"
 ---
 
 <p class="paper-original-title" lang="en">PM-Bench: Evaluating Prospective Memory in LLM Agents</p>

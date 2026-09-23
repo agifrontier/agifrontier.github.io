@@ -18,6 +18,7 @@ related_tutorials:
   - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
   - "agentic-harness-engineering-observability-driven-automatic-evolution-of-coding-agent-harnesses"
   - "tthe-test-time-harness-evolution"
+seo_title: "告别手搓Agent！HarnessX实现大模型与运行时外挂协同进化，性能最高飙升44%"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">HarnessX: A Composable, Adaptive, and Evolvable Agent Harness Foundry</p>

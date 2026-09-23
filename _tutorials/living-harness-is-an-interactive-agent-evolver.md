@@ -18,6 +18,7 @@ related_tutorials:
   - "from-prompts-to-contracts-harness-engineering-for-auditable-enterprise-llm-agents"
   - "llmtimesmapreduce-v3-enabling-interactive-in-depth-survey-generation-through-a-m"
   - "longhorizon-harness-advancing-long-horizon-agents-for-real-world-tasks"
+seo_title: "Living-Harness Is an Interactive-Agent Evolver"
 ---
 
 <p class="paper-original-title" lang="en">Living-Harness Is an Interactive-Agent Evolver</p>

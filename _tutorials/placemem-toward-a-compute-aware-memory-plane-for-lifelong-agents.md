@@ -19,6 +19,7 @@ related_tutorials:
   - "simplemem-efficient-lifelong-memory-for-llm-agents"
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
   - "dynamic-affective-memory-management-for-personalized-llm-agents"
+seo_title: "PLACEMEM: Toward a Compute-Aware Memory Plane for Lifelong Agents"
 ---
 
 <p class="paper-original-title" lang="en">PLACEMEM: Toward a Compute-Aware Memory Plane for Lifelong Agents</p>

@@ -20,6 +20,7 @@ related_tutorials:
   - "alita-g-self-evolving-generative-agent-for-agent-generation"
   - "jailbroken-how-does-llm-safety-training-fail"
   - "back-to-basics-let-conversational-agents-remember-with-just-retrieval-and-generation"
+seo_title: "ActBench：从回答走向行为安全！2.4万条轨迹实测，攻击成功率最高达94.4%"
 ---
 
 <p class="paper-original-title" lang="en">ActBench: Self-Evolving Benchmark of Behavioral Safety in Cowork Agents</p>

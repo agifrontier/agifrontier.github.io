@@ -18,6 +18,7 @@ related_tutorials:
   - "livethinking-enabling-real-time-efficient-reasoning-for-ai-powered-livestreaming"
   - "thought-retriever-don-t-just-retrieve-raw-data-retrieve-thoughts-for-memory-augmented-agentic-sy"
   - "peek-context-map-as-an-orientation-cache-for-long-context-llm-agents"
+seo_title: "ReSum: Synergizing LLM Reasoning and Summarization with Reinforcement Learning"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">ReSum: Synergizing LLM Reasoning and Summarization with Reinforcement Learning</p>

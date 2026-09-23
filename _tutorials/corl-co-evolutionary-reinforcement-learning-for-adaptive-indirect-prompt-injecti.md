@@ -19,6 +19,7 @@ related_tutorials:
   - "reinforcement-learning"
   - "prompt-r1-collaborative-automatic-prompting-framework-via-end-to-end-reinforceme"
   - "secopd-mitigating-adaptive-prompt-injections-by-on-policy-distillation"
+seo_title: "CoRL: Co-Evolutionary Reinforcement Learning for Adaptive Indirect Prompt-Injection Attacks and Defenses"
 ---
 
 <p class="paper-original-title" lang="en">CoRL: Co-Evolutionary Reinforcement Learning for Adaptive Indirect Prompt-Injection Attacks and Defenses</p>

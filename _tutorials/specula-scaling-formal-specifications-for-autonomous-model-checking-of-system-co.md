@@ -18,6 +18,7 @@ related_tutorials:
   - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
   - "chatbot-arena-an-open-platform-for-evaluating-llms-by-human-preference"
   - "cuda-l2-surpassing-cublas-performance-for-matrix-multiplication-through-reinforc"
+seo_title: "Specula: Scaling formal specifications for autonomous model checking of system code"
 ---
 
 <p class="paper-original-title" lang="en">Specula: Scaling formal specifications for autonomous model checking of system code</p>

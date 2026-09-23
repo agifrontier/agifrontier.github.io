@@ -18,6 +18,7 @@ related_tutorials:
   - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
   - "tthe-test-time-harness-evolution"
   - "skillos-learning-skill-curation-for-self-evolving-agents"
+seo_title: "RAGEN-2: Reasoning Collapse in Agentic RL"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">RAGEN-2: Reasoning Collapse in Agentic RL</p>

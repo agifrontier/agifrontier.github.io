@@ -19,6 +19,7 @@ related_tutorials:
   - "memrl-self-evolving-agents-via-runtime-reinforcement-learning-on-episodic-memory"
   - "ui-copilot-advancing-long-horizon-gui-automation-via-tool-integrated-policy-optimization"
   - "planpo-group-planning-aware-policy-optimization-for-multi-turn-agentic-llms"
+seo_title: "EvoHarness-RL：自主调度外部支架，8B模型成功率达96.9%"
 ---
 
 <p class="paper-original-title" lang="en">EvoHarness-RL: Learning Self-Evolving Runtime Harness for Long-Horizon LLM Agents</p>

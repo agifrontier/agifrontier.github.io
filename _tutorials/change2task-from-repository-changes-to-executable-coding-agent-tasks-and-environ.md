@@ -15,6 +15,7 @@ related_tutorials:
   - "mechgeo-autoformalizing-and-proving-euclidean-geometry-in-lean-4"
   - "deep-agentic-search-for-repository-level-code-question-answering-an-empirical-st"
   - "dba-bench-a-production-fidelity-benchmark-for-llm-based-database-operations-agen"
+seo_title: "Change2Task：把历史PR迁移到现代代码分支，存储成本降低71.2%"
 ---
 
 <p class="paper-original-title" lang="en">Change2Task: From Repository Changes to Executable Coding Agent Tasks and Environments</p>

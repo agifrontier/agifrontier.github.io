@@ -19,6 +19,7 @@ related_tutorials:
   - "evoclaw-evaluating-ai-agents-on-continuous-software-evolution"
   - "the-alignment-waltz-jointly-training-agents-to-collaborate-for-safety"
   - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
+seo_title: "SIDEL：第三方API路由暗藏杀机，四大Coding Agent防御率全为0%"
 ---
 
 <p class="paper-original-title" lang="en">Where Is the Cost of Third-Party API Routers in Agentic Software Development?</p>

@@ -17,6 +17,7 @@ related_tutorials:
   - "sfr-deepresearch-towards-effective-reinforcement-learning-for-autonomously-reaso"
   - "researchstudio-idea-an-evidence-grounded-research-ideation-skill-suite-from-ml-conference-outcom"
   - "tool-learning-with-foundation-models"
+seo_title: "AI进军真实物理科研：端到端复现111篇论文，揪出42%潜在错误"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Towards grounded autonomous research: an end-to-end LLM mini research loop on published computational physics</p>

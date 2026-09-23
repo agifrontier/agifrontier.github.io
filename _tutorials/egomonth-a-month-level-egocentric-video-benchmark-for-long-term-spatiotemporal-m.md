@@ -20,6 +20,7 @@ related_tutorials:
   - "knowact-guiclaw-know-deeply-act-perfectly-personal-gui-assistant-with-self-evolv"
   - "placemem-toward-a-compute-aware-memory-plane-for-lifelong-agents"
   - "mixture-of-contexts-for-long-video-generation"
+seo_title: "EgoMonth：首个跨月第一人称长视频基准，最强模型落后人类22.4%"
 ---
 
 <p class="paper-original-title" lang="en">EgoMonth: A Month-Level Egocentric Video Benchmark for Long-Term Spatiotemporal Memory</p>

@@ -20,6 +20,7 @@ related_tutorials:
   - "rest-rl-achieving-accurate-code-reasoning-of-llms-with-optimized-self-training-a"
   - "scaling-manual-grounded-appliance-manipulation-with-data-synthesis-and-unified-p"
   - "whats-the-next-frontier-for-data-centric-ai-data-savvy-agents"
+seo_title: "Envs-FORGE: Frontier-Optimized Reward-Grounded Environment Synthesis for Agent RL"
 ---
 
 <p class="paper-original-title" lang="en">Envs-FORGE: Frontier-Optimized Reward-Grounded Environment Synthesis for Agent RL</p>

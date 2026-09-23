@@ -14,6 +14,7 @@ related_tutorials:
   - "stabilizing-reinforcement-learning-with-llms-formulation-and-practices"
   - "coda-coordinating-the-cerebrum-and-cerebellum-for-a-dual-brain-computer-use-agen"
   - "deepseek-r1-incentivizing-reasoning-capability-in-llms-via-reinforcement-learnin"
+seo_title: "Teaching LLMs to Self-Evolve: Cultivating Core Meta-Skills with Reinforcement Learning"
 ---
 
 <p class="paper-original-title" lang="en">Teaching LLMs to Self-Evolve: Cultivating Core Meta-Skills with Reinforcement Learning</p>

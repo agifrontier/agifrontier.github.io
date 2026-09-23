@@ -20,6 +20,7 @@ related_tutorials:
   - "learning-on-the-job-an-experience-driven-self-evolving-agent-for-long-horizon-ta"
   - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
   - "the-path-not-taken-rlvr-provably-learns-off-the-principals"
+seo_title: "TREK：告别LLM裁判，最强Agent复杂规划完美率仅46.2%"
 ---
 
 <p class="paper-original-title" lang="en">TREK: A Travel Reasoning and Evaluation Kit for LLM Agents in Complex Trip Planning</p>

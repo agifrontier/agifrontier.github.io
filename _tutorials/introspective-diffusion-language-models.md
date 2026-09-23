@@ -18,6 +18,7 @@ related_tutorials:
   - "seesaw-accelerating-training-by-balancing-learning-rate-and-batch-size-schedulin"
   - "small-llms-pruning-vs-training-from-scratch"
   - "gemini-1-5-unlocking-multimodal-understanding-across-millions-of-tokens-of-context"
+seo_title: "Introspective Diffusion Language Models"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Introspective Diffusion Language Models</p>

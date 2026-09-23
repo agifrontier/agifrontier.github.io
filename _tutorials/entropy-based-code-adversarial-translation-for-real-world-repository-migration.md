@@ -19,6 +19,7 @@ related_tutorials:
   - "toolllm-facilitating-large-language-models-to-master-16000-real-world-apis"
   - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
   - "mai-ui-technical-report-real-world-centric-foundation-gui-agents"
+seo_title: "Entropy-based Code Adversarial Translation for Real-world Repository Migration"
 ---
 
 <p class="paper-original-title" lang="en">Entropy-based Code Adversarial Translation for Real-world Repository Migration</p>

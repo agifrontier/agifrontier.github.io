@@ -17,6 +17,7 @@ related_tutorials:
   - "robostral-navigate"
   - "sana-video-20-hybrid-linear-attention-with-attention-residuals-for-efficient-vid"
   - "autonomous-repair-for-multi-agent-systems-via-monte-carlo-tree-search"
+seo_title: "Real-Time Detection and Repair of LLM Agent Failures"
 ---
 
 <p class="paper-original-title" lang="en">Real-Time Detection and Repair of LLM Agent Failures</p>

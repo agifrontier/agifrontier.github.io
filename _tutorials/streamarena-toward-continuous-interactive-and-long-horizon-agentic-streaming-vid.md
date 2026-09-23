@@ -20,6 +20,7 @@ related_tutorials:
   - "a-survey-on-multimodal-large-language-models"
   - "mixture-of-contexts-for-long-video-generation"
   - "process-supervised-reinforcement-learning-for-interactive-multimodal-tool-use-ag"
+seo_title: "StreamArena: Toward Continuous, Interactive, and Long-Horizon Agentic Streaming Video Understanding"
 ---
 
 <p class="paper-original-title" lang="en">StreamArena: Toward Continuous, Interactive, and Long-Horizon Agentic Streaming Video Understanding</p>

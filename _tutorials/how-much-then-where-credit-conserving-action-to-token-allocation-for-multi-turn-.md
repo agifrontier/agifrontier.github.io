@@ -20,6 +20,7 @@ related_tutorials:
   - "dler-doing-length-penalty-right-incentivizing-more-intelligence-per-token-via-re"
   - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
   - "ui-tars-2-technical-report-advancing-gui-agent-with-multi-turn-reinforcement-lea"
+seo_title: "FACTOR：不是全轨迹广播，而是先定动作信用再分Token"
 ---
 
 <p class="paper-original-title" lang="en">How Much, Then Where: Credit-Conserving Action-to-Token Allocation for Multi-Turn Agent Reinforcement Learning</p>

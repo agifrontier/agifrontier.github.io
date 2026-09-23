@@ -20,6 +20,7 @@ related_tutorials:
   - "kimi-k25-visual-agentic-intelligence"
   - "sigmoid-loss-for-language-image-pre-training"
   - "dr-tulu-reinforcement-learning-with-evolving-rubrics-for-deep-research"
+seo_title: "MIRA：盲目调用工具反受其害？同济等提出医疗视觉反思Agent，有害调用直降至1.6%"
 ---
 
 <p class="paper-original-title" lang="en">MIRA: Medical Image Reflection for Agentic Diagnosis</p>

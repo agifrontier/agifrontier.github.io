@@ -20,6 +20,7 @@ related_tutorials:
   - "cap-a-scalable-benchmark-for-evaluating-cross-site-browser-agents-with-complex-a"
   - "self-modifying-lean-proof-agents-with-verifier-grounded-benchmark-coevolution"
   - "path-bench-path-dependent-evaluation-of-lifelong-agents"
+seo_title: "Agent可靠性来自哪里？Leni系统拆解：验证闭环只贡献1.5分却决定胜负"
 ---
 
 <p class="paper-original-title" lang="en">Where Does Agent Reliability Come From? A Cross-Benchmark Decomposition of Verification Loops, Specialist Models, and Scaffolding in a Production Enterprise Agent</p>

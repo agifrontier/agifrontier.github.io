@@ -17,6 +17,7 @@ related_tutorials:
   - "learning-on-the-job-an-experience-driven-self-evolving-agent-for-long-horizon-ta"
   - "skillos-learning-skill-curation-for-self-evolving-agents"
   - "skillcomposer-learning-to-evolve-agent-skills-for-specification-and-generalization"
+seo_title: "微软提出WebXSkill：赋予网页Agent“双模”技能，成功率最高涨12.9%"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">WebXSkill: Skill Learning for Autonomous Web Agents</p>

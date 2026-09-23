@@ -17,6 +17,7 @@ related_tutorials:
   - "sana-video-20-hybrid-linear-attention-with-attention-residuals-for-efficient-vid"
   - "twin-agent-context-residual-compression-for-privilege-separated-agents"
   - "transmem-transforming-hidden-states-into-memory-for-large-language-models"
+seo_title: "KV Cache缩减80%且吞吐提升4.2倍：Agent在线压缩关键在延迟"
 ---
 
 <p class="paper-original-title" lang="en">Practical Online KV Cache Compaction for LLM Agents: An Empirical Study</p>

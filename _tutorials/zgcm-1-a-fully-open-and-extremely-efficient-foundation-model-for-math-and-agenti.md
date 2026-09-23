@@ -20,6 +20,7 @@ related_tutorials:
   - "mid-training-of-large-language-models-a-survey"
   - "on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language-model"
   - "beyond-turn-limits-training-deep-search-agents-with-dynamic-context-window"
+seo_title: "ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search"
 ---
 
 <p class="paper-original-title" lang="en">ZGCM-1: A Fully Open and Extremely Efficient Foundation Model for Math and Agentic Search</p>

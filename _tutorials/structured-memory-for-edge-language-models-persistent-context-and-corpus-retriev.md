@@ -17,6 +17,7 @@ related_tutorials:
   - "knowledge-centric-self-improvement"
   - "chronomem-version-control-and-semantic-rollback-for-large-language-model-agent-m"
   - "transmem-transforming-hidden-states-into-memory-for-large-language-models"
+seo_title: "Structured Memory for Edge Language Models: Persistent Context and Corpus Retrieval via O(1) SSM State Injection"
 ---
 
 <p class="paper-original-title" lang="en">Structured Memory for Edge Language Models: Persistent Context and Corpus Retrieval via O(1) SSM State Injection</p>

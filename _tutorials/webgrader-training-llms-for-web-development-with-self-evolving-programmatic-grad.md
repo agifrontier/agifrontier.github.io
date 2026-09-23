@@ -20,6 +20,7 @@ related_tutorials:
   - "rendering-in-the-loop-an-execution-driven-agent-for-interactive-web-development"
   - "online-monitoring-and-corrective-steering-of-programming-agents"
   - "ouroboros-a-self-developing-frontier-coding-agent-with-reviewed-core-evolution"
+seo_title: "WebGrader: Training LLMs for Web Development with Self-Evolving Programmatic Grader"
 ---
 
 <p class="paper-original-title" lang="en">WebGrader: Training LLMs for Web Development with Self-Evolving Programmatic Grader</p>

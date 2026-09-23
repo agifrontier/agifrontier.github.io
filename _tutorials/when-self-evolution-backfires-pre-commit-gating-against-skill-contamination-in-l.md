@@ -18,6 +18,7 @@ related_tutorials:
   - "trace-a-self-evolving-skill-bank-for-consistent-limit-aware-llm-agents"
   - "ouroboros-a-self-developing-frontier-coding-agent-with-reviewed-core-evolution"
   - "socratic-swe-self-evolving-coding-agents-via-trace-derived-agent-skills"
+seo_title: "VaG：化解自进化Agent技能污染，腾讯以5倍更小技能池达72%成功率"
 ---
 <p class="paper-original-title" lang="en">When Self-Evolution Backfires: Pre-Commit Gating against Skill Contamination in LLM Agents</p>
 

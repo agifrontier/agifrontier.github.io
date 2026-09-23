@@ -16,6 +16,7 @@ related_tutorials:
   - "agentic-software-engineering-foundational-pillars-and-a-research-roadmap"
   - "always-onagents-a-survey-of-persistent-memory-state-and-governance-in-llmagents"
   - "cake-compiler-agent-co-design-for-frontier-kernel-evolution"
+seo_title: "AOSpec：动作与观察协同推测，大模型Agent长尾延迟降低42.8%"
 ---
 
 <p class="paper-original-title" lang="en">AOSpec: Action and Observation Co-Speculation for Low-Latency Agent Serving</p>

@@ -20,6 +20,7 @@ related_tutorials:
   - "turbovla-real-time-vision-language-action-model-at-32-hz-on-an-rtx-4090-with-1-g"
   - "behavior-cloning-is-not-all-you-need-the-optimality-of-on-policy-distillation-fo"
   - "bridgedata-v2-a-dataset-for-robot-learning-at-scale"
+seo_title: "Adaptation of Generalist Robot Policies with Minimal Data"
 ---
 
 <p class="paper-original-title" lang="en">Adaptation of Generalist Robot Policies with Minimal Data</p>

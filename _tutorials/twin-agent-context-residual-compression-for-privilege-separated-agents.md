@@ -17,6 +17,7 @@ related_tutorials:
   - "sana-video-20-hybrid-linear-attention-with-attention-residuals-for-efficient-vid"
   - "transmem-transforming-hidden-states-into-memory-for-large-language-models"
   - "echoverse-deep-evolving-environments-for-training-computer-use-agents-at-scale"
+seo_title: "Twin Agent：不是绝对隔离，而是用极简残差提示化解注入攻击"
 ---
 
 <p class="paper-original-title" lang="en">Twin Agent: Context Residual Compression for Privilege Separated Agents</p>

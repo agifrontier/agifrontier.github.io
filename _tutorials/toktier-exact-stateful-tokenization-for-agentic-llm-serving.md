@@ -16,6 +16,7 @@ related_tutorials:
   - "agentic-software-engineering-foundational-pillars-and-a-research-roadmap"
   - "always-onagents-a-survey-of-persistent-memory-state-and-governance-in-llmagents"
   - "inside-the-skill-market-from-software-engineering-activities-to-reusable-agent-s"
+seo_title: "**TokTier：精确状态感知分词机制，Agent场景提速491倍！**"
 ---
 
 <p class="paper-original-title" lang="en">TokTier: Exact Stateful Tokenization for Agentic LLM Serving</p>

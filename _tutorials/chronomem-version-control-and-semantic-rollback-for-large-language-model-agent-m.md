@@ -17,6 +17,7 @@ related_tutorials:
   - "toktier-exact-stateful-tokenization-for-agentic-llm-serving"
   - "aospec-action-and-observation-co-speculation-for-low-latency-agent-serving"
   - "seekbrain-an-autonomous-multi-agent-system-for-accelerating-neuroscience-discove"
+seo_title: "ChronoMem：给Agent记忆装上“撤回键”，首个实现全局语义回滚的开源框架"
 ---
 
 <p class="paper-original-title" lang="en">ChronoMem: Version Control and Semantic Rollback for Large Language Model Agent Memory</p>

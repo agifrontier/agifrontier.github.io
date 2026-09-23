@@ -20,6 +20,7 @@ related_tutorials:
   - "gui-360-a-comprehensive-dataset-and-benchmark-for-computer-using-agents"
   - "contextweave-a-real-world-workflow-benchmark"
   - "handbookmd-a-benchmark-for-long-context-agentic-instruction-following"
+seo_title: "CADWorld: Computer-Use Benchmark for Long-Horizon Computer-Aided Design"
 ---
 
 <p class="paper-original-title" lang="en">CADWorld: Computer-Use Benchmark for Long-Horizon Computer-Aided Design</p>

@@ -18,6 +18,7 @@ related_tutorials:
   - "beyond-gemini-3-pro-revisiting-llm-routing-and-aggregation-at-scale"
   - "escaping-the-context-bottleneck-active-context-curation-for-llm-agents-via-reinforcement-learnin"
   - "gpt-4-technical-report"
+seo_title: "GPT-Red: Automated Red Teaming via Self-Play at Scale"
 ---
 
 <p class="paper-original-title" lang="en">GPT-Red: Automated Red Teaming via Self-Play at Scale</p>

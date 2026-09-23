@@ -18,6 +18,7 @@ related_tutorials:
   - "trainable-log-linear-sparse-attention-for-efficient-diffusion-transformers"
   - "small-llms-pruning-vs-training-from-scratch"
   - "multi-turn-on-policy-distillation-with-prefix-replay"
+seo_title: "拒绝“特权幻觉”！DOPD双重蒸馏让大模型能力狂飙14分"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">DOPD: Dual On-policy Distillation</p>

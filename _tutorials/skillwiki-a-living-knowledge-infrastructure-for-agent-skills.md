@@ -19,6 +19,7 @@ related_tutorials:
   - "inside-the-skill-market-from-software-engineering-activities-to-reusable-agent-s"
   - "skillaudit-ground-truth-free-skill-evolution-via-paired-trajectory-auditing"
   - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
+seo_title: "SkillWiki: A Living Knowledge Infrastructure for Agent Skills"
 ---
 
 <p class="paper-original-title" lang="en">SkillWiki: A Living Knowledge Infrastructure for Agent Skills</p>

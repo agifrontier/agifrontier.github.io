@@ -19,6 +19,7 @@ related_tutorials:
   - "ai-agent-systems-architectures-applications-and-evaluation"
   - "gui-360-a-comprehensive-dataset-and-benchmark-for-computer-using-agents"
   - "os-agents-a-survey-on-mllm-based-agents-for-general-computing-devices-use"
+seo_title: "CMU实测Agent动态路由：74%首步即偏离，静态回放评测了假世界？"
 ---
 
 <p class="paper-original-title" lang="en">The Replay Gap: Static Evaluation of Model Switching in LLM Agents Scores the Wrong World</p>

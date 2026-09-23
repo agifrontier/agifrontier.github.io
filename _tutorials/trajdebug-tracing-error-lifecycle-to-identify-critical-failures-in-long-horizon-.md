@@ -19,6 +19,7 @@ related_tutorials:
   - "searchauditor-auditing-and-attributing-failures-in-long-horizon-search-agents"
   - "self-correcting-long-horizon-search-agents-via-tree-structured-memory"
   - "a-subgoal-driven-framework-for-improving-long-horizon-llm-agents"
+seo_title: "TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories"
 ---
 
 <p class="paper-original-title" lang="en">TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories</p>

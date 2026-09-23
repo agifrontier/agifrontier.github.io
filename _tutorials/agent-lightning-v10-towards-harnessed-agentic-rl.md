@@ -18,6 +18,7 @@ related_tutorials:
   - "towards-a-science-of-scaling-agent-systems"
   - "verltool-towards-holistic-agentic-reinforcement-learning-with-tool-use"
   - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
+seo_title: "Agent Lightning v1.0: Towards Harnessed Agentic RL"
 ---
 
 <p class="paper-original-title" lang="en">Agent Lightning v1.0: Towards Harnessed Agentic RL</p>

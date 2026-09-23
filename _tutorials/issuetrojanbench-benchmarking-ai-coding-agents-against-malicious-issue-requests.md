@@ -15,6 +15,7 @@ related_tutorials:
   - "agent-harness-engineering-a-survey"
   - "deep-agentic-search-for-repository-level-code-question-answering-an-empirical-st"
   - "arex-towards-a-recursively-self-improving-agent-for-deep-research"
+seo_title: "IssueTrojanBench：恶意Issue攻破66.5%编程Agent，框架级防御形同虚设"
 ---
 
 <p class="paper-original-title" lang="en">IssueTrojanBench: Benchmarking AI Coding Agents Against Malicious Issue Requests</p>

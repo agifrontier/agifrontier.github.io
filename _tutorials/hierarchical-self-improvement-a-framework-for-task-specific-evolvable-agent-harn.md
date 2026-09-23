@@ -19,6 +19,7 @@ related_tutorials:
   - "themcpcompany-creating-general-purpose-agents-with-task-specific-tools"
   - "skillevo-self-renewing-evolution-gradients-from-multi-turn-interaction-feedback"
   - "slideagent-hierarchical-agentic-framework-for-multi-page-visual-document-underst"
+seo_title: "Hierarchical Self-Improvement: A Framework for Task-Specific Evolvable Agent Harnesses"
 ---
 
 <p class="paper-original-title" lang="en">Hierarchical Self-Improvement: A Framework for Task-Specific Evolvable Agent Harnesses</p>

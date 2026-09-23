@@ -19,6 +19,7 @@ related_tutorials:
   - "pace-a-playback-aligned-context-engine-for-llm-based-full-duplex-voice-dialogue"
   - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
   - "retrieval-reasoning-processes-for-multi-hop-question-answering-a-four-axis-desig"
+seo_title: "Realtime-Venus: A full-duplex interaction system with asynchronous delegation"
 ---
 
 <p class="paper-original-title" lang="en">Realtime-Venus: A full-duplex interaction system with asynchronous delegation</p>

@@ -18,6 +18,7 @@ related_tutorials:
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
   - "autonomous-agents-for-scientific-discovery-orchestrating-scientists-language-cod"
   - "forgetful-but-faithful-a-cognitive-memory-architecture-and-benchmark-for-privacy"
+seo_title: "Aborted but Not Forgotten: KV-Cache Retention Breaks Rollback Consistency in Language Agents"
 ---
 
 <p class="paper-original-title" lang="en">Aborted but Not Forgotten: KV-Cache Retention Breaks Rollback Consistency in Language Agents</p>

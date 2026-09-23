@@ -18,6 +18,7 @@ related_tutorials:
   - "browseconf-confidence-guided-test-time-scaling-for-web-agents"
   - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
   - "learning-on-the-job-an-experience-driven-self-evolving-agent-for-long-horizon-ta"
+seo_title: "EEVEE: Towards Test-time Prompt Learning in the Real World for Self-Improving Agents"
 ---
 
 <p class="paper-original-title" lang="en">EEVEE: Towards Test-time Prompt Learning in the Real World for Self-Improving Agents</p>

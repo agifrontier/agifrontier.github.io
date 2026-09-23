@@ -19,6 +19,7 @@ related_tutorials:
   - "swe-bench-can-language-models-resolve-real-world-github-issues"
   - "coral-towards-autonomous-multi-agent-evolution-for-open-ended-discovery"
   - "socratic-swe-self-evolving-coding-agents-via-trace-derived-agent-skills"
+seo_title: "FailForge: Distilling Procedural Competence from Persistent Failures into Code Agents"
 ---
 
 <p class="paper-original-title" lang="en">FailForge: Distilling Procedural Competence from Persistent Failures into Code Agents</p>

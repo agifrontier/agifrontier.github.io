@@ -19,6 +19,7 @@ related_tutorials:
   - "dynamic-affective-memory-management-for-personalized-llm-agents"
   - "forgetful-but-faithful-a-cognitive-memory-architecture-and-benchmark-for-privacy"
   - "simplemem-efficient-lifelong-memory-for-llm-agents"
+seo_title: "长程Agent最新综述！六大生命周期+1547篇论文总结"
 ---
 
 <p class="paper-original-title" lang="en">The Horizon Gap: Planning, Memory, Execution, Training, and Evaluation for Long-Horizon LLM Agents</p>

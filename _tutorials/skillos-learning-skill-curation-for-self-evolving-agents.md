@@ -18,6 +18,7 @@ related_tutorials:
   - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
   - "skillcomposer-learning-to-evolve-agent-skills-for-specification-and-generalization"
   - "multi-turn-on-policy-distillation-with-prefix-replay"
+seo_title: "告别“一次性”Agent！SkillOS重塑技能管理，性能跃升近10%"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">SkillOS: Learning Skill Curation for Self-Evolving Agents</p>

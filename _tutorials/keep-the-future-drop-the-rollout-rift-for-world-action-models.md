@@ -19,6 +19,7 @@ related_tutorials:
   - "world-tokens-enhancing-embodied-policies-with-training-time-world-modeling"
   - "statistical-reinforcement-learning-in-the-real-world-a-survey-of-challenges-and-"
   - "what-makes-an-efficient-vla-navigating-action-head-design-scaling-and-latency"
+seo_title: "Keep the Future, Drop the Rollout: RIFT for World Action Models"
 ---
 
 <p class="paper-original-title" lang="en">Keep the Future, Drop the Rollout: RIFT for World Action Models</p>

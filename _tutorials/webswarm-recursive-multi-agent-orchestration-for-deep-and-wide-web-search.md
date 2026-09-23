@@ -19,6 +19,7 @@ related_tutorials:
   - "harnessx-a-composable-adaptive-and-evolvable-agent-harness-foundry"
   - "skillos-learning-skill-curation-for-self-evolving-agents"
   - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
+seo_title: "WebSwarm: Recursive Multi-Agent Orchestration for Deep-and-Wide Web Search"
 ---
 
 <p class="paper-original-title" lang="en">WebSwarm: Recursive Multi-Agent Orchestration for Deep-and-Wide Web Search</p>

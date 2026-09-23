@@ -20,6 +20,7 @@ related_tutorials:
   - "hybrid-architectures-for-language-models-systematic-analysis-and-design-insights"
   - "rendering-in-the-loop-an-execution-driven-agent-for-interactive-web-development"
   - "learning-on-the-job-an-experience-driven-self-evolving-agent-for-long-horizon-ta"
+seo_title: "Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development"
 ---
 
 <p class="paper-original-title" lang="en">Beyond Final Scores: A Systematic Evaluation of Agents for Long-Horizon AI Research and Development</p>

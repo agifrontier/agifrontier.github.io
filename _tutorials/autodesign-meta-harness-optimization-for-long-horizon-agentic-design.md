@@ -20,6 +20,7 @@ related_tutorials:
   - "asymmetric-proximal-policy-optimization-mini-critics-boost-llm-reasoning"
   - "the-optimizer-is-the-agent-reasoning-driven-search-across-prompts-programs-and-m"
   - "ui-copilot-advancing-long-horizon-gui-automation-via-tool-integrated-policy-optimization"
+seo_title: "AutoDesign：不是微调模型而是迭代脚手架，得分超Claude Design 7.4分"
 ---
 
 <p class="paper-original-title" lang="en">AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design</p>

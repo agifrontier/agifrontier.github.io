@@ -20,6 +20,7 @@ related_tutorials:
   - "evolvenet-collaborative-harness-evolution-for-agent-self-improvement"
   - "acm-agentic-context-management-for-long-horizon-tasks"
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
+seo_title: "AutoMem：用文本梯度搜索智能体记忆架构，准确率提升2.8分且降低14.3%消耗"
 ---
 
 <p class="paper-original-title" lang="en">AutoMem: A Text-Gradient Recursive Self-Improvement Framework for Automated Memory Architectures Search</p>

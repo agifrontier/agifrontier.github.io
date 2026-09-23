@@ -20,6 +20,7 @@ related_tutorials:
   - "metis-memory-foundation-model"
   - "contextpilot-teaching-agents-for-proactive-context-management-via-fine-grained-r"
   - "leanmem-simple-and-efficient-long-term-memory-for-llm-agents"
+seo_title: "TARL：告别粗暴二元写入，面向长程Agent的可执行三账本记忆架构"
 ---
 
 <p class="paper-original-title" lang="en">TARL: Transaction-Aware Reliable Ledgers for Executable Memory Management in Long-Term Agents</p>

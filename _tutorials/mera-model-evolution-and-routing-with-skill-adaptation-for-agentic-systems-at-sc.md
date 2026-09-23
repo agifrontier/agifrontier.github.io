@@ -20,6 +20,7 @@ related_tutorials:
   - "evoroute-experience-driven-self-routing-llm-agent-systems"
   - "bi-lora-efficient-sharpness-aware-minimization-for-fine-tuning-large-scale-model"
   - "skillrouter-retrieve-and-rerank-skill-selection-for-llm-agents-at-scale"
+seo_title: "MERA：不是绕开小模型而是让它持续进化，推理成本直降近40%"
 ---
 
 <p class="paper-original-title" lang="en">MERA: Model Evolution and Routing with Skill Adaptation for Agentic Systems at Scale</p>

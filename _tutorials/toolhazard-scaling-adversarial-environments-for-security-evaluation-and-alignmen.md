@@ -20,6 +20,7 @@ related_tutorials:
   - "dba-bench-a-production-fidelity-benchmark-for-llm-based-database-operations-agen"
   - "colluskill-adversarial-cross-skill-composition-for-evading-agent-skill-scanners"
   - "terminal-agents-a-survey-of-ai-agents-in-command-line-environments"
+seo_title: "ToolHazard：全自动合成有状态沙箱，揭开大模型智能体被劫持真相"
 ---
 
 <p class="paper-original-title" lang="en">ToolHazard: Scaling Adversarial Environments for Security Evaluation and Alignment of LLM-based Agents</p>

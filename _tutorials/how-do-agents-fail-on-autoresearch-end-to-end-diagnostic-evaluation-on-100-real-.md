@@ -20,6 +20,7 @@ related_tutorials:
   - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
   - "llm-as-a-judge-toward-world-models-for-slate-recommendation-systems"
   - "a-survey-on-evaluation-of-large-language-models"
+seo_title: "How Do Agents Fail on AutoResearch: End-to-End Diagnostic Evaluation on 100 Real-World Frontier Research Tasks"
 ---
 
 <p class="paper-original-title" lang="en">How Do Agents Fail on AutoResearch: End-to-End Diagnostic Evaluation on 100 Real-World Frontier Research Tasks</p>

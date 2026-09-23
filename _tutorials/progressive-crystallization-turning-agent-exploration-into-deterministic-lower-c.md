@@ -18,6 +18,7 @@ related_tutorials:
   - "a-multi-agent-framework-for-stateful-inference-time-search"
   - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
   - "agentbeats-agentifying-agent-assessment-for-openness-standardization-and-reproducibility"
+seo_title: "Progressive Crystallization: Turning Agent Exploration into Deterministic, Lower-Cost Workflows in Production"
 ---
 
 <p class="paper-original-title" lang="en">Progressive Crystallization: Turning Agent Exploration into Deterministic, Lower-Cost Workflows in Production</p>

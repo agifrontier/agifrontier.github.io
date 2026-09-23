@@ -20,6 +20,7 @@ related_tutorials:
   - "decide-then-retrieve-a-training-free-framework-with-uncertainty-guided-triggerin"
   - "peek-context-map-as-an-orientation-cache-for-long-context-llm-agents"
   - "memrl-self-evolving-agents-via-runtime-reinforcement-learning-on-episodic-memory"
+seo_title: "HyperSkill: Self-Evolving LLM Agents via Hypergraph-Structured Skill Memory"
 ---
 
 <p class="paper-original-title" lang="en">HyperSkill: Self-Evolving LLM Agents via Hypergraph-Structured Skill Memory</p>

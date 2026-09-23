@@ -17,6 +17,7 @@ related_tutorials:
   - "when-replanning-becomes-the-bottleneck-budgeted-replanning-for-embodied-agents"
   - "autonomous-agents-for-scientific-discovery-orchestrating-scientists-language-cod"
   - "echoverse-deep-evolving-environments-for-training-computer-use-agents-at-scale"
+seo_title: "Scaling Scientific Discovery Environments for Turn-Level Agentic RL"
 ---
 
 <p class="paper-original-title" lang="en">Scaling Scientific Discovery Environments for Turn-Level Agentic RL</p>

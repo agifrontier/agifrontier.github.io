@@ -19,6 +19,7 @@ related_tutorials:
   - "a-survey-on-agentic-multimodal-large-language-models"
   - "open-data-synthesis-for-deep-research"
   - "openjiuwen-beyond-static-harnesses-for-long-horizon-coding-agents"
+seo_title: "RILA：浏览器渲染进闭环，9B小模型交互开发反超GPT-5.5"
 ---
 
 <p class="paper-original-title" lang="en">Rendering-in-the-Loop: An Execution-Driven Agent for Interactive Web Development</p>

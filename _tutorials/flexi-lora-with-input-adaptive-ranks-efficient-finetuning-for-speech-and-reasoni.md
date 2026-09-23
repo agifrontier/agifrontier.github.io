@@ -19,6 +19,7 @@ related_tutorials:
   - "parrot-a-training-pipeline-enhances-both-program-cot-and-natural-language-cot-fo"
   - "learning-to-reason-training-llms-with-gpt-oss-or-deepseek-r1-reasoning-traces"
   - "less-is-more-tokens-efficient-math-reasoning-via-difficulty-aware-chain-of-thoug"
+seo_title: "剑桥大学 Flexi-LoRA：输入自适应动态Rank，用30%参数反超静态微调"
 ---
 
 <p class="paper-original-title" lang="en">Flexi-LoRA with Input-Adaptive Ranks: Efficient Finetuning for Speech and Reasoning Tasks</p>

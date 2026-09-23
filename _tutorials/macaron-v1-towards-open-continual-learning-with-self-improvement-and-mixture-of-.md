@@ -19,6 +19,7 @@ related_tutorials:
   - "qwen25-math-technical-report-toward-mathematical-expert-model-via-self-improveme"
   - "on-the-convergence-rate-of-lora-gradient-descent"
   - "dual-lora-enhancing-lora-with-magnitude-and-direction-updates"
+seo_title: "Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA"
 ---
 
 <p class="paper-original-title" lang="en">Macaron-V1: Towards Open Continual Learning with Self-Improvement and Mixture-of-LoRA</p>

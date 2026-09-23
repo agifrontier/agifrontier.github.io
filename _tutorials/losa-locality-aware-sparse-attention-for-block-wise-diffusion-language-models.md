@@ -17,6 +17,7 @@ related_tutorials:
   - "tree-of-thoughts-deliberate-problem-solving-with-large-language-models"
   - "introspective-diffusion-language-models"
   - "nemotron-3-super-open-efficient-mixture-of-experts-hybrid-mamba-transformer-model-for-agentic-re"
+seo_title: "提速4.14倍！LoSA破解长文本扩散模型的KV膨胀难题"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">LoSA: Locality Aware Sparse Attention for Block-Wise Diffusion Language Models</p>

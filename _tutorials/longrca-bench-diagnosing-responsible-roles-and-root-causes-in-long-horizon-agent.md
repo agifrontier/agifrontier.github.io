@@ -20,6 +20,7 @@ related_tutorials:
   - "searchauditor-auditing-and-attributing-failures-in-long-horizon-search-agents"
   - "a-subgoal-driven-framework-for-improving-long-horizon-llm-agents"
   - "the-menu-is-an-execution-prior-state-path-tool-menus-for-online-agents"
+seo_title: "LongRCA Bench：长轨迹Agent故障谁背锅？免训练RCTA定位达24.1%"
 ---
 
 <p class="paper-original-title" lang="en">LongRCA Bench: Diagnosing Responsible Roles and Root Causes in Long-Horizon Agent Failures</p>

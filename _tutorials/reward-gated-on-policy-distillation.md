@@ -19,6 +19,7 @@ related_tutorials:
   - "semiparametric-preference-optimization-your-language-model-is-secretly-a-single-"
   - "stackelberg-learning-from-human-feedback-preference-optimization-as-a-sequential"
   - "gdpo-group-reward-decoupled-normalization-policy-optimization-for-multi-reward-r"
+seo_title: "Reward-Gated On-Policy Distillation"
 ---
 
 <p class="paper-original-title" lang="en">Reward-Gated On-Policy Distillation</p>

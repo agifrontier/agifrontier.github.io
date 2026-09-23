@@ -14,6 +14,7 @@ related_tutorials:
   - "mirothinker-pushing-the-performance-boundaries-of-open-source-research-agents-vi"
   - "voyager-an-open-ended-embodied-agent-with-large-language-models"
   - "agentinit-initializing-llm-based-multi-agent-systems-via-diversity-and-expertise"
+seo_title: "OpenART：告别静态测试，环境演化让Agent攻击成功率达到85%！"
 ---
 
 <p class="paper-original-title" lang="en">OpenART: Scaling Agent Red Teaming via Open-Ended Environment Evolution</p>

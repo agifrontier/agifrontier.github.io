@@ -19,6 +19,7 @@ related_tutorials:
   - "when-history-lies-evaluating-and-improving-tool-use-under-misleading-multi-turn-"
   - "beyond-two-stage-training-cooperative-sft-and-rl-for-llm-reasoning"
   - "vakra-evaluating-multi-hop-reasoning-across-apis-and-retrieval-under-tool-use-po"
+seo_title: "Iris: Climbing to the Search Frontier"
 ---
 
 <p class="paper-original-title" lang="en">Iris: Climbing to the Search Frontier</p>

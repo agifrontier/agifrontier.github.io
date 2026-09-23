@@ -20,6 +20,7 @@ related_tutorials:
   - "cap-a-scalable-benchmark-for-evaluating-cross-site-browser-agents-with-complex-a"
   - "osreward-instituting-standardized-evaluation-for-cross-platform-computer-use-rew"
   - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
+seo_title: "Agents Catching Agents: Shortcut Cascades and Benchmark Gaming in Clinical Multi-Agent Systems"
 ---
 
 <p class="paper-original-title" lang="en">Agents Catching Agents: Shortcut Cascades and Benchmark Gaming in Clinical Multi-Agent Systems</p>

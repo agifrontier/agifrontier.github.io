@@ -19,6 +19,7 @@ related_tutorials:
   - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
   - "harnessx-a-composable-adaptive-and-evolvable-agent-harness-foundry"
   - "skillos-learning-skill-curation-for-self-evolving-agents"
+seo_title: "中科院提出CLSR：让大模型自创符号语言，推理Token缩减3-6倍"
 ---
 
 <p class="paper-original-title" lang="en">When LLMs Develop Languages: Symbolic Communication for Efficient Multi-Agent Reasoning</p>

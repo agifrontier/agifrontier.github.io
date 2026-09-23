@@ -20,6 +20,7 @@ related_tutorials:
   - "search-over-self-edit-strategies-for-llm-adaptation"
   - "memory-retrieval-and-consolidation-in-large-language-models-through-function-tok"
   - "atlasvla-persistent-world-ego-state-modeling-for-vision-language-action-models"
+seo_title: "VideoDB：视频检索不是给文件打分！分层索引与可播放证据打破端到端神话"
 ---
 
 <p class="paper-original-title" lang="en">Search over the Visual World: Persistent Visual Memory, Layered Indexes, and Source-Grounded Evidence</p>

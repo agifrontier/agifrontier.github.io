@@ -20,6 +20,7 @@ related_tutorials:
   - "themcpcompany-creating-general-purpose-agents-with-task-specific-tools"
   - "is-chatgpt-a-general-purpose-natural-language-processing-task-solver"
   - "ui-copilot-advancing-long-horizon-gui-automation-via-tool-integrated-policy-optimization"
+seo_title: "Argus: A General-Purpose Agentic Runtime for Long-Horizon Reasoning"
 ---
 
 <p class="paper-original-title" lang="en">Argus: A General-Purpose Agentic Runtime for Long-Horizon Reasoning</p>

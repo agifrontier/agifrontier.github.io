@@ -20,6 +20,7 @@ related_tutorials:
   - "terminal-agents-a-survey-of-ai-agents-in-command-line-environments"
   - "benchmarking-llm-judges-for-mobile-agent-evaluation"
   - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
+seo_title: "AppSim-Bench：告别真机随机噪音，19个手机Agent最高成功率仅50.27%"
 ---
 
 <p class="paper-original-title" lang="en">APPSim-Bench: Bridging Real-world Apps and Reproducible Evaluation for Mobile GUI Agents</p>

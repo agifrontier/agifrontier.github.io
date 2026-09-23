@@ -19,6 +19,7 @@ related_tutorials:
   - "a-bitter-lesson-for-data-filtering"
   - "robostral-navigate"
   - "augmented-language-models-a-survey"
+seo_title: "The Bitter Lesson of Tool Calling"
 ---
 
 <p class="paper-original-title" lang="en">The Bitter Lesson of Tool Calling</p>

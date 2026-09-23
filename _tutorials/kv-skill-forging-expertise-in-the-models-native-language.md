@@ -18,6 +18,7 @@ related_tutorials:
   - "inside-the-skill-market-from-software-engineering-activities-to-reusable-agent-s"
   - "towards-automated-kernel-generation-in-the-era-of-llms"
   - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
+seo_title: "KV-Skill：将提示词编译为外挂算子，LiveMath准确率升至77.2%"
 ---
 
 <p class="paper-original-title" lang="en">KV-Skill: Forging Expertise in the Model&#x27;s Native Language</p>

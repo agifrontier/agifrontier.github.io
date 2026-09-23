@@ -17,6 +17,7 @@ related_tutorials:
   - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
   - "tthe-test-time-harness-evolution"
   - "a-language-for-describing-agentic-llm-contexts"
+seo_title: "LLM-as-Code Agentic Programming for Agent Harness"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">LLM-as-Code Agentic Programming for Agent Harness</p>

@@ -19,6 +19,7 @@ related_tutorials:
   - "openvla-an-open-source-vision-language-action-model"
   - "palm-e-an-embodied-multimodal-language-model"
   - "turbovla-real-time-vision-language-action-model-at-32-hz-on-an-rtx-4090-with-1-g"
+seo_title: "AtlasVLA: Persistent World-Ego State Modeling for Vision-Language-Action Models"
 ---
 
 <p class="paper-original-title" lang="en">AtlasVLA: Persistent World-Ego State Modeling for Vision-Language-Action Models</p>

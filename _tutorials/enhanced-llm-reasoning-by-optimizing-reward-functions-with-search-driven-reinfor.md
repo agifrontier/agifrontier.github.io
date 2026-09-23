@@ -19,6 +19,7 @@ related_tutorials:
   - "a-survey-of-reinforcement-learning-for-large-reasoning-models"
   - "dapo-an-open-source-llm-reinforcement-learning-system-at-scale"
   - "deepseek-r1-incentivizing-reasoning-capability-in-llms-via-reinforcement-learnin"
+seo_title: "Enhanced LLM Reasoning by Optimizing Reward Functions with Search-Driven Reinforcement Learning"
 ---
 
 <p class="paper-original-title" lang="en">Enhanced LLM Reasoning by Optimizing Reward Functions with Search-Driven Reinforcement Learning</p>

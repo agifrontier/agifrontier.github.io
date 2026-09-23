@@ -18,6 +18,7 @@ related_tutorials:
   - "a-survey-on-efficient-large-language-model-training-from-data-centric-perspectiv"
   - "a-survey-on-llm-mid-training"
   - "adamhd-decoupled-huber-decay-regularization-for-language-model-pre-training"
+seo_title: "Training AI Scientists to Replicate Research"
 ---
 
 <p class="paper-original-title" lang="en">Training AI Scientists to Replicate Research</p>

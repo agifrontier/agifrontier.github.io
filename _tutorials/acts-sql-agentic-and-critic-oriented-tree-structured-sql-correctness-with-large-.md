@@ -19,6 +19,7 @@ related_tutorials:
   - "tree-search-for-llm-agent-reinforcement-learning"
   - "mechgeo-autoformalizing-and-proving-euclidean-geometry-in-lean-4"
   - "learning-when-to-plan-efficiently-allocating-test-time-compute-for-llm-agents"
+seo_title: "字节跳动ACTS-SQL：打破单向修Bug困局，树状回溯让SQL纠错提升9.42%"
 ---
 
 <p class="paper-original-title" lang="en">ACTS-SQL: Agentic and Critic-Oriented Tree-Structured SQL Correctness with Large Language Models</p>

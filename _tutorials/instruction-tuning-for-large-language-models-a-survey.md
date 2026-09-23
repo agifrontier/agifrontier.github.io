@@ -17,6 +17,7 @@ related_tutorials:
   - "why-low-precision-transformer-training-fails-an-analysis-on-flash-attention"
   - "a-survey-of-frontiers-in-llm-reasoning-inference-scaling-learning-to-reason-and-agentic-systems"
   - "rewardharness-self-evolving-agentic-post-training"
+seo_title: "万字长文拆解大模型“听话”的秘密：指令微调（IT/SFT）前沿全景综述"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Instruction Tuning for Large Language Models: A Survey</p>

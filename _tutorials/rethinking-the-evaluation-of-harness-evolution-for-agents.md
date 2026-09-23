@@ -18,6 +18,7 @@ related_tutorials:
   - "pptarena-a-benchmark-for-agentic-powerpoint-editing"
   - "tthe-test-time-harness-evolution"
   - "measuring-harness-induced-belief-divergence-in-multi-step-llm-agents"
+seo_title: "Rethinking the Evaluation of Harness Evolution for Agents"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Rethinking the Evaluation of Harness Evolution for Agents</p>

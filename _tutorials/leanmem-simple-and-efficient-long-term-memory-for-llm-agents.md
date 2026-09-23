@@ -20,6 +20,7 @@ related_tutorials:
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
   - "filesystem-based-memory-for-llm-agents-organization-evolution-and-sustainability"
   - "from-passive-retrieval-to-active-memory-navigation-learning-to-use-memory-as-a-structured-action"
+seo_title: "LeanMem: Simple and Efficient Long-Term Memory for LLM Agents"
 ---
 
 <p class="paper-original-title" lang="en">LeanMem: Simple and Efficient Long-Term Memory for LLM Agents</p>

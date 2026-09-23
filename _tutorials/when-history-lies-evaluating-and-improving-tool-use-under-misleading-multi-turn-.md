@@ -18,6 +18,7 @@ related_tutorials:
   - "scaling-up-multi-turn-off-policy-rl-and-multi-agent-tree-search-for-llm-step-pro"
   - "behavior-leverage-imbalance-in-multi-teacher-on-policy-distillation"
   - "mopd-multi-teacher-on-policy-distillation-for-capability-integration-in-llm-post"
+seo_title: "When History Lies: Evaluating and Improving Tool Use under Misleading Multi-Turn Histories"
 ---
 <p class="paper-original-title" lang="en">When History Lies: Evaluating and Improving Tool Use under Misleading Multi-Turn Histories</p>
 

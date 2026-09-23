@@ -18,6 +18,7 @@ related_tutorials:
   - "does-reinforcement-learning-really-incentivize-reasoning-capacity-in-llms-beyond"
   - "back-to-basics-let-conversational-agents-remember-with-just-retrieval-and-generation"
   - "skillos-learning-skill-curation-for-self-evolving-agents"
+seo_title: "From $P(y|x)$ to $P(y)$: Investigating Reinforcement Learning in Pre-train Space"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">From $P(y|x)$ to $P(y)$: Investigating Reinforcement Learning in Pre-train Space</p>

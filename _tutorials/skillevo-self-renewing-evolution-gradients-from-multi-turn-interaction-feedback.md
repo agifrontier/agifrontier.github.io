@@ -19,6 +19,7 @@ related_tutorials:
   - "thinker-training-llms-in-hierarchical-thinking-for-deep-search-via-multi-turn-in"
   - "imbalanced-gradients-in-rl-post-training-of-multi-task-llms"
   - "multi-agent-evolve-llm-self-improve-through-co-evolution"
+seo_title: "SkillEvo: Self-Renewing Evolution Gradients from Multi-Turn Interaction Feedback"
 ---
 
 <p class="paper-original-title" lang="en">SkillEvo: Self-Renewing Evolution Gradients from Multi-Turn Interaction Feedback</p>

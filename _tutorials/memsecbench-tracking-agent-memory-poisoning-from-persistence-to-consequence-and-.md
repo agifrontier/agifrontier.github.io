@@ -19,6 +19,7 @@ related_tutorials:
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
   - "ai-meets-brain-memory-systems-from-cognitive-neuroscience-to-autonomous-agents"
   - "forgetful-but-faithful-a-cognitive-memory-architecture-and-benchmark-for-privacy"
+seo_title: "MemSecBench：Agent记忆投毒超84%持久化，半数攻击直达真实危害"
 ---
 
 <p class="paper-original-title" lang="en">MemSecBench: Tracking Agent Memory Poisoning from Persistence to Consequence and Repair</p>

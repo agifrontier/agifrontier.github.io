@@ -18,6 +18,7 @@ related_tutorials:
   - "hybrid-architectures-for-language-models-systematic-analysis-and-design-insights"
   - "language-models-as-tools-for-investigating-the-distinction-between-possible-and-"
   - "music-multi-step-instruction-contrast-for-multi-turn-reward-models"
+seo_title: "LoopArena: Benchmarking Models as Runtime Controllers for Loop Engineering"
 ---
 
 <p class="paper-original-title" lang="en">LoopArena: Benchmarking Models as Runtime Controllers for Loop Engineering</p>

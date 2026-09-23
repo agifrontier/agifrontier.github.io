@@ -19,6 +19,7 @@ related_tutorials:
   - "rex-mle-the-autonomous-agent-benchmark-for-medical-imaging-challenges"
   - "gui-360-a-comprehensive-dataset-and-benchmark-for-computer-using-agents"
   - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
+seo_title: "The Next Challenge for Agentic Cybersecurity: A Realistic, Contamination-Free Reverse Engineering Benchmark"
 ---
 
 <p class="paper-original-title" lang="en">The Next Challenge for Agentic Cybersecurity: A Realistic, Contamination-Free Reverse Engineering Benchmark</p>

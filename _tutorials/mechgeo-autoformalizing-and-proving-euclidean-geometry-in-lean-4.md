@@ -15,6 +15,7 @@ related_tutorials:
   - "autonomous-repair-for-multi-agent-systems-via-monte-carlo-tree-search"
   - "deep-agentic-search-for-repository-level-code-question-answering-an-empirical-st"
   - "agent-harness-engineering-a-survey"
+seo_title: "MechGeo: Autoformalizing and Proving Euclidean Geometry in Lean 4"
 ---
 
 <p class="paper-original-title" lang="en">MechGeo: Autoformalizing and Proving Euclidean Geometry in Lean 4</p>

@@ -18,6 +18,7 @@ related_tutorials:
   - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
   - "harnessing-uncertainty-entropy-modulated-policy-gradients-for-long-horizon-llm-a"
   - "agentfold-long-horizon-web-agents-with-proactive-context-management"
+seo_title: "openJiuwen：华为双层自适应架构，长程代码Agent双榜超榜首3.4分"
 ---
 
 <p class="paper-original-title" lang="en">openJiuwen: Beyond Static Harnesses for Long-Horizon Coding Agents</p>

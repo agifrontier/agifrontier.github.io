@@ -20,6 +20,7 @@ related_tutorials:
   - "mixture-of-contexts-for-long-video-generation"
   - "practical-online-kv-cache-compaction-for-llm-agents-an-empirical-study"
   - "towards-expert-level-medical-ai-for-real-time-video-consultations"
+seo_title: "Addressable Memory for Video World Models"
 ---
 
 <p class="paper-original-title" lang="en">Addressable Memory for Video World Models</p>

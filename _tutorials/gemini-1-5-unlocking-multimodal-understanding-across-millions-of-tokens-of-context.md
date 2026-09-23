@@ -18,6 +18,7 @@ related_tutorials:
   - "phi-3-technical-report-a-highly-capable-language-model-locally-on-your-phone"
   - "a-comprehensive-survey-on-pretrained-foundation-models-a-history-from-bert-to-chatgpt"
   - "palm-2-technical-report"
+seo_title: "谷歌Gemini 1.5硬核解析：挑战1000万Token上下文，解锁多模态推理新极限"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context</p>

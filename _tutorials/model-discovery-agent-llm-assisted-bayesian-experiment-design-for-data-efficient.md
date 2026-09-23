@@ -20,6 +20,7 @@ related_tutorials:
   - "open-data-synthesis-for-deep-research"
   - "nvidia-nemotron-3-efficient-and-open-intelligence"
   - "a-survey-on-efficient-large-language-model-training-from-data-centric-perspectiv"
+seo_title: "Model Discovery Agent: LLM-assisted Bayesian experiment design for data-efficient discovery of mechanistic world models"
 ---
 
 <p class="paper-original-title" lang="en">Model Discovery Agent: LLM-assisted Bayesian experiment design for data-efficient discovery of mechanistic world models</p>

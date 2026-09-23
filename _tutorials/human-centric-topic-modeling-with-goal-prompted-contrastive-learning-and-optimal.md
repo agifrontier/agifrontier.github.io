@@ -18,6 +18,7 @@ related_tutorials:
   - "auto-rubric-learning-to-extract-generalizable-criteria-for-reward-modeling"
   - "do-not-step-into-the-same-river-twice-learning-to-reason-from-trial-and-error"
   - "epistemological-fault-lines-between-human-and-artificial-intelligence"
+seo_title: "Human-Centric Topic Modeling with Goal-Prompted Contrastive Learning and Optimal Transport"
 ---
 
 <p class="paper-original-title" lang="en">Human-Centric Topic Modeling with Goal-Prompted Contrastive Learning and Optimal Transport</p>

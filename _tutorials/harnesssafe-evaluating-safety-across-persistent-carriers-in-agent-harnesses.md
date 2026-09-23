@@ -20,6 +20,7 @@ related_tutorials:
   - "dacomp-benchmarking-data-agents-across-the-full-data-intelligence-lifecycle"
   - "tthe-test-time-harness-evolution"
   - "vakra-evaluating-multi-hop-reasoning-across-apis-and-retrieval-under-tool-use-po"
+seo_title: "HarnessSafe：328个可执行用例，揭示Agent持久化隐蔽攻击传播链"
 ---
 
 <p class="paper-original-title" lang="en">HarnessSafe: Evaluating Safety Across Persistent Carriers in Agent Harnesses</p>

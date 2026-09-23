@@ -20,6 +20,7 @@ related_tutorials:
   - "beyond-the-black-box-theory-and-mechanism-of-large-language-models"
   - "erskill-evolving-for-skill-guided-adaptive-memory-retrieval"
   - "higher-order-linear-attention"
+seo_title: "零阶优化破解智能体自进化瓶颈：困难样本成功率从22%跃升至54%"
 ---
 
 <p class="paper-original-title" lang="en">Beyond the Capability Boundary: Zeroth-Order Optimization for Self-Evolving LLM Agents</p>

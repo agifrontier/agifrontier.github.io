@@ -20,6 +20,7 @@ related_tutorials:
   - "improving-context-fidelity-via-native-retrieval-augmented-reasoning"
   - "seedance-15-pro-a-native-audio-visual-joint-generation-foundation-model"
   - "mixture-of-contexts-for-long-video-generation"
+seo_title: "OmniReasoner: Thinking with Long Audio-Video via Native Tool Use"
 ---
 
 <p class="paper-original-title" lang="en">OmniReasoner: Thinking with Long Audio-Video via Native Tool Use</p>

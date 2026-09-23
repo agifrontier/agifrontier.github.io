@@ -19,6 +19,7 @@ related_tutorials:
   - "a-survey-on-agentic-multimodal-large-language-models"
   - "ai-native-games-a-survey-and-roadmap"
   - "kimi-k25-visual-agentic-intelligence"
+seo_title: "VibeWorlding：腾讯等开源3D构建框架，RL让开源Agent超越GPT-5.5"
 ---
 
 <p class="paper-original-title" lang="en">VibeWorlding: Can Multimodal Agents Construct 3D Open Worlds End-to-End?</p>

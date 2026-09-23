@@ -19,6 +19,7 @@ related_tutorials:
   - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
   - "harnessx-a-composable-adaptive-and-evolvable-agent-harness-foundry"
   - "skillos-learning-skill-curation-for-self-evolving-agents"
+seo_title: "ReASearch：摆脱外挂搜索算法，让Agent自主推理驱动优化全流程"
 ---
 
 <p class="paper-original-title" lang="en">The Optimizer Is the Agent: Reasoning-Driven Search across Prompts, Programs, and ML Workflows</p>

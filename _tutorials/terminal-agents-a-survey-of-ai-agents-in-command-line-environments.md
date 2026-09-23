@@ -19,6 +19,7 @@ related_tutorials:
   - "contextweave-a-real-world-workflow-benchmark"
   - "gpqa-a-graduate-level-google-proof-qa-benchmark"
   - "appdeltaworld-transition-grounded-delta-code-world-model-for-mobile-gui-agents"
+seo_title: "Terminal Agents: A Survey of AI Agents in Command-Line Environments"
 ---
 
 <p class="paper-original-title" lang="en">Terminal Agents: A Survey of AI Agents in Command-Line Environments</p>

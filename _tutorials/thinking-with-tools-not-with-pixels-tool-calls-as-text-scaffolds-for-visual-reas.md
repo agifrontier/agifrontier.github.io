@@ -20,6 +20,7 @@ related_tutorials:
   - "repeat-after-me-black-box-adaptive-visual-prompt-injection"
   - "mira-medical-image-reflection-for-agentic-diagnosis"
   - "increasing-the-thinking-budget-is-not-all-you-need"
+seo_title: "Thinking With Tools, Not With Pixels: Tool Calls as Text Scaffolds for Visual Reasoning"
 ---
 
 <p class="paper-original-title" lang="en">Thinking With Tools, Not With Pixels: Tool Calls as Text Scaffolds for Visual Reasoning</p>

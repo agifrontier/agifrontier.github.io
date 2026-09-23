@@ -20,6 +20,7 @@ related_tutorials:
   - "a-survey-on-evaluation-of-large-language-models"
   - "skills-are-not-islands-measuring-dependency-and-risk-in-agent-skill-supply-chain"
   - "inside-the-skill-market-from-software-engineering-activities-to-reusable-agent-s"
+seo_title: "Evaluating Skills, Not Just Agents: Agentic Continuous Evaluation of Skills"
 ---
 
 <p class="paper-original-title" lang="en">Evaluating Skills, Not Just Agents: Agentic Continuous Evaluation of Skills</p>

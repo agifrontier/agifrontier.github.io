@@ -19,6 +19,7 @@ related_tutorials:
   - "camformer-associative-memory-is-all-you-need"
   - "increasing-the-thinking-budget-is-not-all-you-need"
   - "all-you-need-is-one-capsule-prompt-tuning-with-a-single-vector"
+seo_title: "微软与CMU企业级Agent实测：不是工具越细越好，一个纯Bash最高涨分24点还省72%Token"
 ---
 
 <p class="paper-original-title" lang="en">Is Bash All You Need? An Empirical Study of Tool Interfaces for Enterprise Digital Worker Agents</p>

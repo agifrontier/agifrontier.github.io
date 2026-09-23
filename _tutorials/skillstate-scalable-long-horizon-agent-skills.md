@@ -19,6 +19,7 @@ related_tutorials:
   - "a-subgoal-driven-framework-for-improving-long-horizon-llm-agents"
   - "agentfold-long-horizon-web-agents-with-proactive-context-management"
   - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
+seo_title: "SKILL.state: Scalable Long-Horizon Agent Skills"
 ---
 
 <p class="paper-original-title" lang="en">SKILL.state: Scalable Long-Horizon Agent Skills</p>

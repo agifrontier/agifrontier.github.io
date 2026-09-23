@@ -19,6 +19,7 @@ related_tutorials:
   - "sparsegpt-massive-language-models-can-be-accurately-pruned-in-one-shot"
   - "all-you-need-is-one-capsule-prompt-tuning-with-a-single-vector"
   - "your-agentic-llms-secretly-encode-latent-signals-of-indirect-prompt-injection-ex"
+seo_title: "SAVOR：单次无反馈间接提示注入，ASR领先基线最高11.8个百分点"
 ---
 
 <p class="paper-original-title" lang="en">Toward Metacognitive One-Shot Indirect Prompt Injection: Strategy Abstraction Via Outcome-Conditioned Reflection</p>

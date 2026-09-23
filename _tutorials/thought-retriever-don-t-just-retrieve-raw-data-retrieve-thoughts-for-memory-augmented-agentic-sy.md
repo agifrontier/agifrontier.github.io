@@ -18,6 +18,7 @@ related_tutorials:
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
   - "multi-agent-transactive-memory"
   - "lightweight-llm-agent-memory-with-small-language-models"
+seo_title: "Thought-Retriever: Don't Just Retrieve Raw Data, Retrieve Thoughts for Memory-Augmented Agentic Systems"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Thought-Retriever: Don&#x27;t Just Retrieve Raw Data, Retrieve Thoughts for Memory-Augmented Agentic Systems</p>

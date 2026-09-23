@@ -17,6 +17,7 @@ related_tutorials:
   - "deep-agentic-search-for-repository-level-code-question-answering-an-empirical-st"
   - "labevolver-training-free-experience-evolution-for-safe-and-grounded-wet-lab-agen"
   - "mechgeo-autoformalizing-and-proving-euclidean-geometry-in-lean-4"
+seo_title: "SearchMaster: Grounded and Regulated Self-Play for Search Agents"
 ---
 
 <p class="paper-original-title" lang="en">SearchMaster: Grounded and Regulated Self-Play for Search Agents</p>

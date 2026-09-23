@@ -19,6 +19,7 @@ related_tutorials:
   - "retrieval-augmented-generation-rag-for-fintech-agentic-design-and-evaluation"
   - "skillrouter-retrieve-and-rerank-skill-selection-for-llm-agents-at-scale"
   - "from-prompts-to-contracts-harness-engineering-for-auditable-enterprise-llm-agents"
+seo_title: "不是固定Top-K！SkillReranker：基于执行图的Agent自适应技能检索"
 ---
 
 <p class="paper-original-title" lang="en">Task Decomposition-Guided Reranking for Adaptive Agent Skill Retrieval</p>

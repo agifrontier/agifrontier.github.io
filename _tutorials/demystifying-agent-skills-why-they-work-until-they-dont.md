@@ -19,6 +19,7 @@ related_tutorials:
   - "heal-a-hypothesis-based-preference-aware-analysis-framework"
   - "inside-the-skill-market-from-software-engineering-activities-to-reusable-agent-s"
   - "instruction-tuning-for-large-language-models-a-survey"
+seo_title: "Demystifying Agent Skills: Why They Work-Until They Don't"
 ---
 
 <p class="paper-original-title" lang="en">Demystifying Agent Skills: Why They Work-Until They Don&#x27;t</p>

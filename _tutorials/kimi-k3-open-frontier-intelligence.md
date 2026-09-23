@@ -18,6 +18,7 @@ related_tutorials:
   - "a-systematic-study-of-model-merging-techniques-in-large-language-models"
   - "a-systematic-survey-on-large-language-models-for-evolutionary-optimization-from-"
   - "accelerate-speculative-decoding-with-sparse-computation-in-verification"
+seo_title: "Kimi K3: Open Frontier Intelligence"
 ---
 
 <p class="paper-original-title" lang="en">Kimi K3: Open Frontier Intelligence</p>

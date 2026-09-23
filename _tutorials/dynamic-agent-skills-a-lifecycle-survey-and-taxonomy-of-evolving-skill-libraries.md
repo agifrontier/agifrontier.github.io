@@ -18,6 +18,7 @@ related_tutorials:
   - "skillrouter-retrieve-and-rerank-skill-selection-for-llm-agents-at-scale"
   - "resource2skill-distilling-executable-agent-skills-from-human-created-multimodal-resources"
   - "multi-agent-transactive-memory"
+seo_title: "Dynamic Agent Skills: A Lifecycle Survey and Taxonomy of Evolving Skill Libraries"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Dynamic Agent Skills: A Lifecycle Survey and Taxonomy of Evolving Skill Libraries</p>

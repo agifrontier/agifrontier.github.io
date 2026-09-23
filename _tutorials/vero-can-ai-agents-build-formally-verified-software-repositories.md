@@ -19,6 +19,7 @@ related_tutorials:
   - "specula-scaling-formal-specifications-for-autonomous-model-checking-of-system-co"
   - "self-modifying-lean-proof-agents-with-verifier-grounded-benchmark-coevolution"
   - "issuetrojanbench-benchmarking-ai-coding-agents-against-malicious-issue-requests"
+seo_title: "Vero：首个仓库级形式化验证基准，最强AI只搞定了27个工程"
 ---
 
 <p class="paper-original-title" lang="en">Vero: Can AI Agents Build Formally Verified Software Repositories?</p>

@@ -19,6 +19,7 @@ related_tutorials:
   - "how-do-agents-fail-on-autoresearch-end-to-end-diagnostic-evaluation-on-100-real-"
   - "swe-bench-can-language-models-resolve-real-world-github-issues"
   - "a-survey-of-vibe-coding-with-large-language-models"
+seo_title: "HoF-Bench：无需前沿大模型，轻量级AI复现68%真实开源CVE"
 ---
 
 <p class="paper-original-title" lang="en">HoF-Bench: Rediscovering Real AI-Discovered CVEs Without Frontier Models</p>

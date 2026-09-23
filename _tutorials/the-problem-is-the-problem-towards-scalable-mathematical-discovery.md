@@ -18,6 +18,7 @@ related_tutorials:
   - "alpharesearch-accelerating-new-algorithm-discovery-with-language-models"
   - "are-large-language-models-sensitive-to-the-motives-behind-communication"
   - "autoregressive-language-models-are-secretly-energy-based-models-insights-into-th"
+seo_title: "从选题目到选方向！CMU等提出FAR框架：77项数学新解直面专家评审"
 ---
 
 <p class="paper-original-title" lang="en">The Problem Is the Problem: Towards Scalable Mathematical Discovery</p>

@@ -19,6 +19,7 @@ related_tutorials:
   - "evo-bench-can-language-models-improve-agent-harness"
   - "self-evolving-embodied-agents-via-skill-harness-evolution"
   - "turbovla-real-time-vision-language-action-model-at-32-hz-on-an-rtx-4090-with-1-g"
+seo_title: "HumanCLAW: Can Vision-Language Models Act Through a Body?"
 ---
 
 <p class="paper-original-title" lang="en">HumanCLAW: Can Vision-Language Models Act Through a Body?</p>

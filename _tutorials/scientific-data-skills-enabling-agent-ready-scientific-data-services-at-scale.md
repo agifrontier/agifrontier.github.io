@@ -20,6 +20,7 @@ related_tutorials:
   - "bridgedata-v2-a-dataset-for-robot-learning-at-scale"
   - "a-survey-on-large-language-model-based-autonomous-agents"
   - "dataset-growth"
+seo_title: "Scientific Data Skills: Enabling Agent-Ready Scientific Data Services at Scale"
 ---
 
 <p class="paper-original-title" lang="en">Scientific Data Skills: Enabling Agent-Ready Scientific Data Services at Scale</p>

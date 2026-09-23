@@ -15,6 +15,7 @@ related_tutorials:
   - "mechgeo-autoformalizing-and-proving-euclidean-geometry-in-lean-4"
   - "skill-self-play-pushing-the-frontier-of-llm-capability-with-co-evolving-skills"
   - "tapo-transition-aware-policy-optimization-for-llm-agents"
+seo_title: "Workflow-Localized Mechanism Learning: Attribution-Guided Repair and Knowledge Reuse for Structured Agent Skills"
 ---
 
 <p class="paper-original-title" lang="en">Workflow-Localized Mechanism Learning: Attribution-Guided Repair and Knowledge Reuse for Structured Agent Skills</p>

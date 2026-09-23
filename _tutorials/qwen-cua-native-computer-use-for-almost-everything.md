@@ -16,6 +16,7 @@ related_tutorials:
   - "slideagent-hierarchical-agentic-framework-for-multi-page-visual-document-underst"
   - "a-survey-on-agentic-multimodal-large-language-models"
   - "ai-native-games-a-survey-and-roadmap"
+seo_title: "Qwen-CUA: Native Computer Use for (almost) Everything"
 ---
 
 <p class="paper-original-title" lang="en">Qwen-CUA: Native Computer Use for (almost) Everything</p>

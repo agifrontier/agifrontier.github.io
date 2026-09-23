@@ -18,6 +18,7 @@ related_tutorials:
   - "a-survey-of-weight-space-learning-understanding-representation-and-generation"
   - "artificial-hippocampus-networks-for-efficient-long-context-modeling"
   - "auto-rubric-learning-to-extract-generalizable-criteria-for-reward-modeling"
+seo_title: "Princeton揭秘ICL双重机制：4大算法相与2大临界边界！"
 ---
 
 <p class="paper-original-title" lang="en">Distinct mechanisms underlying in-context learning in transformers</p>

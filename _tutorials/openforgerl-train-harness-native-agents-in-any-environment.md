@@ -16,6 +16,7 @@ related_tutorials:
   - "reflexion-language-agents-with-verbal-reinforcement-learning"
   - "reinforcement-learning-for-machine-learning-engineering-agents"
   - "sfr-deepresearch-towards-effective-reinforcement-learning-for-autonomously-reaso"
+seo_title: "OpenForgeRL：破解Agent端到端强化学习难题，GUI基准达72.3"
 ---
 
 <p class="paper-original-title" lang="en">OpenForgeRL: Train Harness-native Agents in Any Environment</p>

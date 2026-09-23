@@ -20,6 +20,7 @@ related_tutorials:
   - "deep-self-evolving-reasoning"
   - "executable-counterfactuals-improving-llms-causal-reasoning-through-code"
   - "a-survey-on-agentic-multimodal-large-language-models"
+seo_title: "Code-with-Image：代码即推理，多模态准确率从30%升至67%"
 ---
 
 <p class="paper-original-title" lang="en">Self-Evolving Code-with-Image Reasoning</p>

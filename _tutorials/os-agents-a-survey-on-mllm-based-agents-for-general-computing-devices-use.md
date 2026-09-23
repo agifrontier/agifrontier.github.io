@@ -18,6 +18,7 @@ related_tutorials:
   - "ai-agent-systems-architectures-applications-and-evaluation"
   - "large-language-model-brained-gui-agents-a-survey"
   - "advances-and-challenges-in-foundation-agents-from-brain-inspired-intelligence-to-evolutionary-co"
+seo_title: "OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use</p>

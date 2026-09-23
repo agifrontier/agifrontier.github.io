@@ -19,6 +19,7 @@ related_tutorials:
   - "gui-360-a-comprehensive-dataset-and-benchmark-for-computer-using-agents"
   - "rex-mle-the-autonomous-agent-benchmark-for-medical-imaging-challenges"
   - "a-framework-for-evaluating-agentic-skills-at-scale"
+seo_title: "HANDBOOK.md：65个长文档智能体任务，最强模型仅达36.2%"
 ---
 
 <p class="paper-original-title" lang="en">HANDBOOK.md: A Benchmark for Long-Context Agentic Instruction Following</p>

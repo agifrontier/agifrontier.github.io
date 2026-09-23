@@ -19,6 +19,7 @@ related_tutorials:
   - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
   - "matrix-peer-to-peer-multi-agent-synthetic-data-generation-framework"
   - "repurposing-synthetic-data-for-fine-grained-search-agent-supervision"
+seo_title: "Agentic Transaction: Towards ACID-Compliant Agent Systems"
 ---
 
 <p class="paper-original-title" lang="en">Agentic Transaction: Towards ACID-Compliant Agent Systems</p>

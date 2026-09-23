@@ -18,6 +18,7 @@ related_tutorials:
   - "autonomous-agents-for-scientific-discovery-orchestrating-scientists-language-cod"
   - "re4-scientific-computing-agent-with-rewriting-resolution-review-and-revision"
   - "asi-bench-at-the-dawn-of-artificial-superintelligence"
+seo_title: "FrontierChallenge：平均分逼近90，顶尖科学Agent为何交付通过率仅20.6%？"
 ---
 
 <p class="paper-original-title" lang="en">FrontierChallenge: Evaluating Scientific Workflow Completion</p>

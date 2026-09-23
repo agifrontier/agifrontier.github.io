@@ -19,6 +19,7 @@ related_tutorials:
   - "tencent-workbuddy-bench-a-multi-domain-coding-agent-benchmark-with-contamination"
   - "asi-bench-at-the-dawn-of-artificial-superintelligence"
   - "self-evolving-embodied-agents-via-skill-harness-evolution"
+seo_title: "AgentSnare: Learning to Delay, Divert, and Defuse Autonomous Penetration Agents"
 ---
 
 <p class="paper-original-title" lang="en">AgentSnare: Learning to Delay, Divert, and Defuse Autonomous Penetration Agents</p>

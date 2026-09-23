@@ -18,6 +18,7 @@ related_tutorials:
   - "multi-agent-evolve-llm-self-improve-through-co-evolution"
   - "agentfrontier-expanding-the-capability-frontier-of-llm-agents-with-zpd-guided-da"
   - "alita-g-self-evolving-generative-agent-for-agent-generation"
+seo_title: "161天自我进化！Ouroboros刷新三大基准SOTA"
 ---
 
 <p class="paper-original-title" lang="en">Ouroboros: A Self-Developing Frontier Coding Agent with Reviewed Core Evolution</p>

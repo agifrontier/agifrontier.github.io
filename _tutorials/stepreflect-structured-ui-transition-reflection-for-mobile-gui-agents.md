@@ -19,6 +19,7 @@ related_tutorials:
   - "direct-preference-optimization-your-language-model-is-secretly-a-reward-model"
   - "failure-makes-the-agent-stronger-enhancing-accuracy-through-structured-reflectio"
   - "simpo-simple-preference-optimization-with-a-reference-free-reward"
+seo_title: "StepReflect: Structured UI Transition Reflection for Mobile GUI Agents"
 ---
 
 <p class="paper-original-title" lang="en">StepReflect: Structured UI Transition Reflection for Mobile GUI Agents</p>

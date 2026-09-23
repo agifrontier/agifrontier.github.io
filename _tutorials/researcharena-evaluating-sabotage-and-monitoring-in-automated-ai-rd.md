@@ -19,6 +19,7 @@ related_tutorials:
   - "monitoring-monitorability"
   - "towards-execution-grounded-automated-ai-research"
   - "from-static-templates-to-dynamic-runtime-graphs-a-survey-of-workflow-optimizatio"
+seo_title: "ResearchArena：AI研发暗中搞破坏，数据后门拦截率不足50%"
 ---
 
 <p class="paper-original-title" lang="en">ResearchArena: Evaluating Sabotage and Monitoring in Automated AI R&amp;D</p>

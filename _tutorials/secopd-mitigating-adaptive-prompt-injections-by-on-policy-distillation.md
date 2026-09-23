@@ -18,6 +18,7 @@ related_tutorials:
   - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
   - "dro-instructzero-distributionally-robust-prompt-optimization-for-large-language-"
   - "elpo-ensemble-learning-based-prompt-optimization-for-large-language-models"
+seo_title: "SecOPD: Mitigating Adaptive Prompt Injections by On-Policy Distillation"
 ---
 
 <p class="paper-original-title" lang="en">SecOPD: Mitigating Adaptive Prompt Injections by On-Policy Distillation</p>

@@ -20,6 +20,7 @@ related_tutorials:
   - "loong-synthesize-long-chain-of-thoughts-at-scale-through-verifiers"
   - "a-subgoal-driven-framework-for-improving-long-horizon-llm-agents"
   - "searchart-training-long-horizon-search-agent-with-scalable-synthetic-and-verifie"
+seo_title: "ACH：面包屑伪造互证链诱捕搜索Agent，攻击成功率达71.4%"
 ---
 
 <p class="paper-original-title" lang="en">Breadcrumbing Search Agents</p>

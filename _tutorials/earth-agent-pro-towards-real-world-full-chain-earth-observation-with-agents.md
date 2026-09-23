@@ -20,6 +20,7 @@ related_tutorials:
   - "judging-llm-as-a-judge-with-mt-bench-and-chatbot-arena"
   - "llm-as-a-judge-toward-world-models-for-slate-recommendation-systems"
   - "swe-bench-can-language-models-resolve-real-world-github-issues"
+seo_title: "Earth-Agent-Pro：全链条遥感Agent，解耦规划与执行提升20.95分"
 ---
 
 <p class="paper-original-title" lang="en">Earth-Agent-Pro: Towards Real-World Full-Chain Earth Observation with Agents</p>

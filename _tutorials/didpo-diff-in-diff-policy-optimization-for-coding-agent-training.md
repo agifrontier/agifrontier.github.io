@@ -19,6 +19,7 @@ related_tutorials:
   - "coda-coordinating-the-cerebrum-and-cerebellum-for-a-dual-brain-computer-use-agen"
   - "mixture-of-minds-multi-agent-reinforcement-learning-for-table-understanding"
   - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
+seo_title: "DiDPO: Diff-in-Diff Policy Optimization for Coding Agent Training"
 ---
 
 <p class="paper-original-title" lang="en">DiDPO: Diff-in-Diff Policy Optimization for Coding Agent Training</p>

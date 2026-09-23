@@ -18,6 +18,7 @@ related_tutorials:
   - "beyond-turn-limits-training-deep-search-agents-with-dynamic-context-window"
   - "tthe-test-time-harness-evolution"
   - "mineru2-5-pro-pushing-the-limits-of-data-centric-document-parsing-at-scale"
+seo_title: "仅需100条数据超越GPT-5：RewardHarness自进化奖励框架解读"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">RewardHarness: Self-Evolving Agentic Post-Training</p>

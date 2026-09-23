@@ -18,6 +18,7 @@ related_tutorials:
   - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
   - "tthe-test-time-harness-evolution"
   - "skillaudit-ground-truth-free-skill-evolution-via-paired-trajectory-auditing"
+seo_title: "告别“阅后即焚”：435篇文献揭秘Agent持久化状态治理机制"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Always-OnAgents:A Survey of Persistent Memory, State, and Governance in LLMAgents</p>

@@ -14,6 +14,7 @@ related_tutorials:
   - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
   - "harnessing-uncertainty-entropy-modulated-policy-gradients-for-long-horizon-llm-a"
   - "learning-on-the-job-an-experience-driven-self-evolving-agent-for-long-horizon-ta"
+seo_title: "LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks"
 ---
 
 <p class="paper-original-title" lang="en">LongHorizon-Harness: Advancing Long-Horizon Agents for Real-World Tasks</p>

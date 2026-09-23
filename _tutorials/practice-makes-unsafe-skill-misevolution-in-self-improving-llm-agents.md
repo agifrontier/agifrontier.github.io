@@ -19,6 +19,7 @@ related_tutorials:
   - "gem-a-gym-for-agentic-llms"
   - "kimi-dev-agentless-training-as-skill-prior-for-swe-agents"
   - "search-over-self-edit-strategies-for-llm-adaptation"
+seo_title: "SafeEvolve：3个任务让Agent持续带毒，如何防范技能错误进化？"
 ---
 
 <p class="paper-original-title" lang="en">Practice Makes Unsafe: Skill Misevolution in Self-Improving LLM Agents</p>

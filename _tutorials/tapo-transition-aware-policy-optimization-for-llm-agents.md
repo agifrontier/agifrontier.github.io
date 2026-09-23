@@ -17,6 +17,7 @@ related_tutorials:
   - "robostral-navigate"
   - "autonomous-repair-for-multi-agent-systems-via-monte-carlo-tree-search"
   - "fapo-flawed-aware-policy-optimization-for-efficient-and-reliable-reasoning"
+seo_title: "TAPO：不靠额外数据，让大模型 Agent 学会“预判动作后果”"
 ---
 
 <p class="paper-original-title" lang="en">TAPO: Transition-Aware Policy Optimization for LLM Agents</p>

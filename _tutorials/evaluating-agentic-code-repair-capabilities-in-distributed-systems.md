@@ -19,6 +19,7 @@ related_tutorials:
   - "halumem-evaluating-hallucinations-in-memory-systems-of-agents"
   - "onepiece-bringing-context-engineering-and-reasoning-to-industrial-cascade-rankin"
   - "an-information-theoretic-perspective-on-agentic-system-design"
+seo_title: "DDBench：单进程基准扎堆7%，分布式Debug却拉开61%差距！"
 ---
 
 <p class="paper-original-title" lang="en">Evaluating Agentic Code Repair Capabilities in Distributed Systems</p>

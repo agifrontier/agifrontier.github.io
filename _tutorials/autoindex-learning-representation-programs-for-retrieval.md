@@ -19,6 +19,7 @@ related_tutorials:
   - "parrot-a-training-pipeline-enhances-both-program-cot-and-natural-language-cot-fo"
   - "scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-generation-for"
   - "mom-mixtures-of-scenario-aware-document-memories-for-retrieval-augmented-generat"
+seo_title: "AutoIndex: Learning Representation Programs for Retrieval"
 ---
 
 <p class="paper-original-title" lang="en">AutoIndex: Learning Representation Programs for Retrieval</p>

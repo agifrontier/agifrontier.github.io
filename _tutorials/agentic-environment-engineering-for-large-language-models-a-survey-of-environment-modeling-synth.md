@@ -17,6 +17,7 @@ related_tutorials:
   - "from-static-templates-to-dynamic-runtime-graphs-a-survey-of-workflow-optimizatio"
   - "os-agents-a-survey-on-mllm-based-agents-for-general-computing-devices-use"
   - "advances-and-challenges-in-foundation-agents-from-brain-inspired-intelligence-to-evolutionary-co"
+seo_title: "中科院万字长文揭秘：打破静态沙盒，大模型智能体与环境的“协同进化”"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Agentic Environment Engineering for Large Language Models: A Survey of Environment Modeling, Synthesis, Evaluation, and Application</p>

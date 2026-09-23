@@ -19,6 +19,7 @@ related_tutorials:
   - "livecodebench-holistic-and-contamination-free-evaluation-of-large-language-model"
   - "molecular-representations-for-large-language-models"
   - "predicting-task-performance-with-context-aware-scaling-laws"
+seo_title: "Zero-Shot Self-Orchestration with Ledger-Based Control for Improved LLM Coding Performance"
 ---
 
 <p class="paper-original-title" lang="en">Zero-Shot Self-Orchestration with Ledger-Based Control for Improved LLM Coding Performance</p>

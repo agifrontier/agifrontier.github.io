@@ -19,6 +19,7 @@ related_tutorials:
   - "harnessx-a-composable-adaptive-and-evolvable-agent-harness-foundry"
   - "skillos-learning-skill-curation-for-self-evolving-agents"
   - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
+seo_title: "SearchArt: Training Long-Horizon Search Agent with Scalable Synthetic and Verified Task"
 ---
 
 <p class="paper-original-title" lang="en">SearchArt: Training Long-Horizon Search Agent with Scalable Synthetic and Verified Task</p>

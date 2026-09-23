@@ -18,6 +18,7 @@ related_tutorials:
   - "ai-meets-brain-memory-systems-from-cognitive-neuroscience-to-autonomous-agents"
   - "thought-retriever-don-t-just-retrieve-raw-data-retrieve-thoughts-for-memory-augmented-agentic-sy"
   - "learning-agent-routing-from-early-experience"
+seo_title: "LightMem：小模型重构Agent记忆，检索仅83ms，F1提升2.5"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Lightweight LLM Agent Memory with Small Language Models</p>

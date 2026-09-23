@@ -19,6 +19,7 @@ related_tutorials:
   - "trainable-log-linear-sparse-attention-for-efficient-diffusion-transformers"
   - "vision-transformers-are-circulant-attention-learners"
   - "a-systematic-survey-on-large-language-models-for-evolutionary-optimization-from-"
+seo_title: "MOONSHOT : A Framework for Multi-Objective Pruning of Vision and Large Language Models"
 ---
 
 <p class="paper-original-title" lang="en">MOONSHOT : A Framework for Multi-Objective Pruning of Vision and Large Language Models</p>

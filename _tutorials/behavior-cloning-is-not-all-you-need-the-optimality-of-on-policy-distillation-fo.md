@@ -19,6 +19,7 @@ related_tutorials:
   - "ai-progress-should-be-measured-by-capability-per-resource-not-scale-alone-a-fram"
   - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
   - "gatepro-parameter-free-expert-selection-optimization-for-mixture-of-experts-mode"
+seo_title: "不是行为克隆！哥大证明同策略蒸馏可将噪声IL样本复杂度缩减至多项式级"
 ---
 
 <p class="paper-original-title" lang="en">Behavior Cloning is Not All You Need: The Optimality of On-Policy Distillation for Noisy Expert Feedback</p>

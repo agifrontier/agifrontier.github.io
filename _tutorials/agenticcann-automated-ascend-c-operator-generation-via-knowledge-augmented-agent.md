@@ -20,6 +20,7 @@ related_tutorials:
   - "towards-automated-kernel-generation-in-the-era-of-llms"
   - "retrieval-augmented-generation-rag-for-fintech-agentic-design-and-evaluation"
   - "alita-g-self-evolving-generative-agent-for-agent-generation"
+seo_title: "AgenticCANN: Automated Ascend C Operator Generation via Knowledge-Augmented Agentic Evolution"
 ---
 
 <p class="paper-original-title" lang="en">AgenticCANN: Automated Ascend C Operator Generation via Knowledge-Augmented Agentic Evolution</p>

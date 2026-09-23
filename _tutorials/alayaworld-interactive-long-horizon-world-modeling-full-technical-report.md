@@ -19,6 +19,7 @@ related_tutorials:
   - "gpt-4-technical-report"
   - "hunyuanvideo-15-technical-report"
   - "qwen2-technical-report"
+seo_title: "AlayaWorld：30步采样压缩至4步！有界记忆破解长程世界模型漂移魔咒"
 ---
 
 <p class="paper-original-title" lang="en">AlayaWorld: Interactive Long-Horizon World Modeling -- Full Technical Report</p>

@@ -18,6 +18,7 @@ related_tutorials:
   - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
   - "the-harness-effect-how-orchestration-design-sets-the-token-economics-of-enterprise-agentic-ai"
   - "rethinking-the-evaluation-of-harness-evolution-for-agents"
+seo_title: "大模型Agent的“缰绳”：4大标准重新定义Agent Harness与6大系统横测"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">What makes a harness a harness: necessary and sufficient conditions for an agent harness</p>

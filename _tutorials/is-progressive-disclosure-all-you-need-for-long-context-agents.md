@@ -19,6 +19,7 @@ related_tutorials:
   - "all-you-need-is-one-capsule-prompt-tuning-with-a-single-vector"
   - "camformer-associative-memory-is-all-you-need"
   - "increasing-the-thinking-budget-is-not-all-you-need"
+seo_title: "Agent渐进式披露买的不是智能而是上下文：港大等首测揭示深度陷阱"
 ---
 
 <p class="paper-original-title" lang="en">Is Progressive Disclosure All You Need for Long-Context Agents?</p>

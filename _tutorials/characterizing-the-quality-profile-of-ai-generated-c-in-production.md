@@ -19,6 +19,7 @@ related_tutorials:
   - "sigmoid-head-for-quality-estimation-under-language-ambiguity"
   - "agentic-harness-engineering-observability-driven-automatic-evolution-of-coding-agent-harnesses"
   - "cake-compiler-agent-co-design-for-frontier-kernel-evolution"
+seo_title: "Google实测352万次提交：AI代码很少急性崩溃，却让算力开销增加5-8%"
 ---
 
 <p class="paper-original-title" lang="en">Characterizing the Quality Profile of AI-Generated C++ in Production</p>

@@ -18,6 +18,7 @@ related_tutorials:
   - "nextflow-unified-sequential-modeling-activates-multimodal-understanding-and-gene"
   - "slideagent-hierarchical-agentic-framework-for-multi-page-visual-document-underst"
   - "ssl4rl-revisiting-self-supervised-learning-as-intrinsic-reward-for-visual-langua"
+seo_title: "Masked Visual Actions：哈佛斯坦福将动作变像素掩码，15小时数据统一正反向世界模型"
 ---
 
 <p class="paper-original-title" lang="en">Masked Visual Actions for Unified World Modeling</p>

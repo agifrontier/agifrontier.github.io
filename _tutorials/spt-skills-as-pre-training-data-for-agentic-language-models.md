@@ -20,6 +20,7 @@ related_tutorials:
   - "thinking-augmented-pre-training"
   - "reusing-pre-training-data-at-test-time-is-a-compute-multiplier"
   - "on-the-interplay-of-pre-training-mid-training-and-rl-on-reasoning-language-model"
+seo_title: "SPT：清华北邮把技能包做进预训练，Agent基准最高提升24.96分"
 ---
 
 <p class="paper-original-title" lang="en">SPT: Skills as Pre-Training Data for Agentic Language Models</p>

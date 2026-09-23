@@ -17,6 +17,7 @@ related_tutorials:
   - "transformers-are-ssms-generalized-models-and-efficient-algorithms-through-struct"
   - "large-language-model-brained-gui-agents-a-survey"
   - "a-survey-on-data-selection-for-language-models"
+seo_title: "Attention Sink in Transformers: A Survey on Utilization, Interpretation, and Mitigation"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Attention Sink in Transformers: A Survey on Utilization, Interpretation, and Mitigation</p>

@@ -18,6 +18,7 @@ related_tutorials:
   - "goagent-group-of-agents-communication-topology-generation-for-llm-based-multi-ag"
   - "a-multi-agent-framework-for-stateful-inference-time-search"
   - "datasage-multi-agent-collaboration-for-insight-discovery-with-external-knowledge"
+seo_title: "上海交大提出CoAgent：LLM自修复并发控制，多智能体提速1.4倍"
 ---
 
 <p class="paper-original-title" lang="en">CoAgent: Concurrency Control for Multi-Agent Systems</p>

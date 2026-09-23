@@ -15,6 +15,7 @@ related_tutorials:
   - "frontis-ma1-training-an-ai4ai-model-towards-recursive-self-improvement-in-machin"
   - "introduction-to-machine-learning"
   - "robostral-navigate"
+seo_title: "宁可多写兜底也不删废代码？CanItDelete揭示大模型编程硬伤"
 ---
 
 <p class="paper-original-title" lang="en">To Add Is Machine, To Delete Is Human: Measuring and Mitigating Deletion Avoidance in LLM Code Editing</p>

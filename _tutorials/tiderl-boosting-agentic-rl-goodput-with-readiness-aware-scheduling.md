@@ -19,6 +19,7 @@ related_tutorials:
   - "verltool-towards-holistic-agentic-reinforcement-learning-with-tool-use"
   - "a-practitioners-guide-to-multi-turn-agentic-reinforcement-learning"
   - "coda-coordinating-the-cerebrum-and-cerebellum-for-a-dual-brain-computer-use-agen"
+seo_title: "清华等提出 TideRL：就绪感知破除 Agent 强化学习死等，训练吞吐提升 5.6 倍"
 ---
 
 <p class="paper-original-title" lang="en">TideRL: Boosting Agentic RL Goodput with Readiness-Aware Scheduling</p>

@@ -20,6 +20,7 @@ related_tutorials:
   - "a-survey-on-multimodal-large-language-models"
   - "mixture-of-contexts-for-long-video-generation"
   - "budget-aware-tool-use-enables-effective-agent-scaling"
+seo_title: "VideoXAgent：告别离线预处理，纯在线长视频Agent将上下文降至15%"
 ---
 
 <p class="paper-original-title" lang="en">Online Video Agent Harness for Long Video Understanding</p>

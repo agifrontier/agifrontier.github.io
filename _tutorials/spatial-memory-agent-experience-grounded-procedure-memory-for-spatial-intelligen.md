@@ -19,6 +19,7 @@ related_tutorials:
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
   - "dynamic-affective-memory-management-for-personalized-llm-agents"
   - "forgetful-but-faithful-a-cognitive-memory-architecture-and-benchmark-for-privacy"
+seo_title: "Spatial Memory Agent: Experience-Grounded Procedure Memory for Spatial Intelligence"
 ---
 
 <p class="paper-original-title" lang="en">Spatial Memory Agent: Experience-Grounded Procedure Memory for Spatial Intelligence</p>

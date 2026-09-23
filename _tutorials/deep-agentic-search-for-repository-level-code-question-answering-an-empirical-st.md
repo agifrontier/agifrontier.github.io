@@ -16,6 +16,7 @@ related_tutorials:
   - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
   - "beyond-outcome-rewards-step-level-self-distilled-policy-optimization-for-deep-se"
   - "harnessx-a-composable-adaptive-and-evolvable-agent-harness-foundry"
+seo_title: "Deep Agentic Search未能超越向量检索：SWE-QA代码问答准确率65.2%对46.2%"
 ---
 
 <p class="paper-original-title" lang="en">Deep Agentic Search for Repository-Level Code Question Answering: An Empirical Study</p>

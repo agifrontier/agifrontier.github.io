@@ -20,6 +20,7 @@ related_tutorials:
   - "towards-automated-kernel-generation-in-the-era-of-llms"
   - "beyond-direct-access-resource-hijacking-in-llm-agents"
   - "retrieval-augmented-generation-rag-for-fintech-agentic-design-and-evaluation"
+seo_title: "Automating and Scaling Behavioral Scientific Research on AI Agents"
 ---
 
 <p class="paper-original-title" lang="en">Automating and Scaling Behavioral Scientific Research on AI Agents</p>

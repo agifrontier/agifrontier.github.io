@@ -17,6 +17,7 @@ related_tutorials:
   - "scaling-and-context-steer-llms-along-the-same-computational-path-as-the-human-br"
   - "peek-context-map-as-an-orientation-cache-for-long-context-llm-agents"
   - "toward-general-purpose-robots-via-foundation-models-a-survey-and-meta-analysis"
+seo_title: "Molecular Representations for Large Language Models"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Molecular Representations for Large Language Models</p>

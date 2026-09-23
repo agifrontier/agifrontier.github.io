@@ -19,6 +19,7 @@ related_tutorials:
   - "pptarena-a-benchmark-for-agentic-powerpoint-editing"
   - "rex-mle-the-autonomous-agent-benchmark-for-medical-imaging-challenges"
   - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
+seo_title: "PatientAgentBench：从答卷到替患者办事，分诊通过率相差56%"
 ---
 
 <p class="paper-original-title" lang="en">PatientAgentBench: A Benchmark Framework for Evaluating Patient-Facing Health AI Agents</p>

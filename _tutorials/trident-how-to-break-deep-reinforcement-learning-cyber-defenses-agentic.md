@@ -20,6 +20,7 @@ related_tutorials:
   - "reinforcement-learning"
   - "beyond-direct-access-resource-hijacking-in-llm-agents"
   - "dr-tulu-reinforcement-learning-with-evolving-rubrics-for-deep-research"
+seo_title: "Trident：不是防御不够强，而是7B模型把DRL安全防线击溃522%"
 ---
 
 <p class="paper-original-title" lang="en">Trident : How to Break Deep Reinforcement Learning Cyber Defenses (Agentic)</p>

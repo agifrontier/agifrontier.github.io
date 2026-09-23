@@ -20,6 +20,7 @@ related_tutorials:
   - "webweaver-structuring-web-scale-evidence-with-dynamic-outlines-for-open-ended-de"
   - "webswarm-recursive-multi-agent-orchestration-for-deep-and-wide-web-search"
   - "deepdive-advancing-deep-search-agents-with-knowledge-graphs-and-multi-turn-rl"
+seo_title: "HAE-GEO：深度搜索Agent遭遇分层网页投毒，为何验证了也很难纠错？"
 ---
 
 <p class="paper-original-title" lang="en">Evaluating Deep-Search Agents under Hierarchical Web Evidence Poisoning</p>

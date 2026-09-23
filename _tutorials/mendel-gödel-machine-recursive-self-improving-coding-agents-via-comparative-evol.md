@@ -19,6 +19,7 @@ related_tutorials:
   - "improving-recursive-transformers-with-mixture-of-loras"
   - "past-bench-benchmarking-the-foundations-of-recursive-self-improvement-in-persona"
   - "practice-makes-unsafe-skill-misevolution-in-self-improving-llm-agents"
+seo_title: "Mendel Gödel Machine：用比较进化自我重构，智能体准确率达93.3%"
 ---
 
 <p class="paper-original-title" lang="en">Mendel Gödel Machine: Recursive Self-Improving Coding Agents via Comparative Evolution</p>

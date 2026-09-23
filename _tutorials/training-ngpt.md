@@ -15,6 +15,7 @@ related_tutorials:
   - "frontis-ma1-training-an-ai4ai-model-towards-recursive-self-improvement-in-machin"
   - "docatlas-long-document-understanding-as-mutable-state-interaction"
   - "echoverse-deep-evolving-environments-for-training-computer-use-agents-at-scale"
+seo_title: "Training nGPT"
 ---
 
 <p class="paper-original-title" lang="en">Training nGPT</p>

@@ -18,6 +18,7 @@ related_tutorials:
   - "alpacafarm-a-simulation-framework-for-methods-that-learn-from-human-feedback"
   - "beyond-gemini-3-pro-revisiting-llm-routing-and-aggregation-at-scale"
   - "compress-to-impress-efficient-llm-adaptation-using-a-single-gradient-step-on-100"
+seo_title: "RCWT: Measuring Task-Budget Displacement from Coordination Content in LLM Calls"
 ---
 
 <p class="paper-original-title" lang="en">RCWT: Measuring Task-Budget Displacement from Coordination Content in LLM Calls</p>

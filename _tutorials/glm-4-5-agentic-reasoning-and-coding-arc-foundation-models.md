@@ -18,6 +18,7 @@ related_tutorials:
   - "skyrl-agent-efficient-rl-training-for-multi-turn-llm-agent"
   - "kimi-k2-open-agentic-intelligence"
   - "ragen-2-reasoning-collapse-in-agentic-rl"
+seo_title: "GLM-4.5开源：32B激活参数斩获AIME 91%，重塑ARC全能模型"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">GLM-4.5: Agentic, Reasoning, and Coding (ARC) Foundation Models</p>

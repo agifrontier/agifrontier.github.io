@@ -19,6 +19,7 @@ related_tutorials:
   - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"
   - "dynamic-affective-memory-management-for-personalized-llm-agents"
   - "forgetful-but-faithful-a-cognitive-memory-architecture-and-benchmark-for-privacy"
+seo_title: "Remember When It Matters: Proactive Memory Agent for Long-Horizon Agents"
 ---
 
 <p class="paper-original-title" lang="en">Remember When It Matters: Proactive Memory Agent for Long-Horizon Agents</p>

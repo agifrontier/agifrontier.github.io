@@ -18,6 +18,7 @@ related_tutorials:
   - "rethinking-supervised-fine-tuning-emphasizing-key-answer-tokens-for-improved-llm"
   - "kimi-k2-open-agentic-intelligence"
   - "introspective-diffusion-language-models"
+seo_title: "Nemotron 3 Super开源：提速7.5倍的120B混合架构MoE解读"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Nemotron 3 Super: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Model for Agentic Reasoning</p>

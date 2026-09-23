@@ -19,6 +19,7 @@ related_tutorials:
   - "retrospective-harness-optimization-improving-llm-agents-via-self-preference-over-trajectory-roll"
   - "online-monitoring-and-corrective-steering-of-programming-agents"
   - "swe-bench-can-language-models-resolve-real-world-github-issues"
+seo_title: "Evo-Harness: Context-to-Harness Skill Compilation for Self-Evolving Agents"
 ---
 
 <p class="paper-original-title" lang="en">Evo-Harness: Context-to-Harness Skill Compilation for Self-Evolving Agents</p>

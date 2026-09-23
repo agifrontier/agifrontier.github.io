@@ -19,6 +19,7 @@ related_tutorials:
   - "verltool-towards-holistic-agentic-reinforcement-learning-with-tool-use"
   - "agent-memory-distillation-empowering-small-llm-agents-with-hierarchical-teacher-"
   - "evomal-self-poisoning-in-self-evolving-coding-agents"
+seo_title: "LOPD：给自蒸馏换上可学习隐空间，不到30%采样预算超越GRPO"
 ---
 
 <p class="paper-original-title" lang="en">Latent On-Policy Self-Distillation</p>

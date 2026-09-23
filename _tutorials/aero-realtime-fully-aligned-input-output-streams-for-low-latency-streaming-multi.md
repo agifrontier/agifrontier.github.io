@@ -19,6 +19,7 @@ related_tutorials:
   - "rlhf-a-comprehensive-survey-for-cultural-multimodal-and-low-latency-alignment-me"
   - "learning-fine-grained-bimanual-manipulation-with-low-cost-hardware"
   - "llama-guard-llm-based-input-output-safeguard-for-human-ai-conversations"
+seo_title: "Aero Realtime: Fully Aligned Input-Output Streams for Low-Latency Streaming Multimodal Generation"
 ---
 
 <p class="paper-original-title" lang="en">Aero Realtime: Fully Aligned Input-Output Streams for Low-Latency Streaming Multimodal Generation</p>

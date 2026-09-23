@@ -16,6 +16,7 @@ related_tutorials:
   - "always-onagents-a-survey-of-persistent-memory-state-and-governance-in-llmagents"
   - "cake-compiler-agent-co-design-for-frontier-kernel-evolution"
   - "inside-the-skill-market-from-software-engineering-activities-to-reusable-agent-s"
+seo_title: "SeekBrain: An Autonomous Multi-Agent System for Accelerating Neuroscience Discovery"
 ---
 
 <p class="paper-original-title" lang="en">SeekBrain: An Autonomous Multi-Agent System for Accelerating Neuroscience Discovery</p>

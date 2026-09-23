@@ -15,6 +15,7 @@ related_tutorials:
   - "frontis-ma1-training-an-ai4ai-model-towards-recursive-self-improvement-in-machin"
   - "g-react-graph-guided-deep-search-via-structure-state-co-evolution"
   - "echoverse-deep-evolving-environments-for-training-computer-use-agents-at-scale"
+seo_title: "DocAtlas: Long-Document Understanding as Mutable-State Interaction"
 ---
 
 <p class="paper-original-title" lang="en">DocAtlas: Long-Document Understanding as Mutable-State Interaction</p>

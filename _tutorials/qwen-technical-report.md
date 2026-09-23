@@ -18,6 +18,7 @@ related_tutorials:
   - "tree-search-for-llm-agent-reinforcement-learning"
   - "toward-general-purpose-robots-via-foundation-models-a-survey-and-meta-analysis"
   - "palm-2-technical-report"
+seo_title: "阿里Qwen深度技术解密：3万亿Token与全面对齐的工程实践"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Qwen Technical Report</p>

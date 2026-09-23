@@ -20,6 +20,7 @@ related_tutorials:
   - "less-is-more-tokens-efficient-math-reasoning-via-difficulty-aware-chain-of-thoug"
   - "openvla-an-open-source-vision-language-action-model"
   - "\u03c0_0-a-vision-language-action-flow-model-for-general-robot-control"
+seo_title: "CoTinyVLA：0.9B小模型逆袭7B巨头，结构化监督跑赢机器人鲁棒性基准"
 ---
 
 <p class="paper-original-title" lang="en">CoTinyVLA: Chain-of-Thought Distillation for a Sub-Billion-Parameter Vision-Language-Action Model</p>

@@ -17,6 +17,7 @@ related_tutorials:
   - "tencent-workbuddy-bench-a-multi-domain-coding-agent-benchmark-with-contamination"
   - "qwen-ui-agent-technical-report-toward-next-generation-real-world-centric-foundat"
   - "path-bench-path-dependent-evaluation-of-lifelong-agents"
+seo_title: "ClawTrack：用轨迹级评分打破黑盒评估，过滤 21.2% 的“蒙对”现象"
 ---
 
 <p class="paper-original-title" lang="en">ClawTrack: Towards Trace-Level Evaluation and Improvement of Real-World Autonomous Agents</p>

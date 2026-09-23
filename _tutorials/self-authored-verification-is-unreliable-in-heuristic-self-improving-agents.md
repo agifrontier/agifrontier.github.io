@@ -20,6 +20,7 @@ related_tutorials:
   - "engineering-reliable-coding-agents-evaluating-and-operating-the-system-around-th"
   - "longhorizon-harness-advancing-long-horizon-agents-for-real-world-tasks"
   - "multi-turn-on-policy-distillation-with-prefix-replay"
+seo_title: "中科院SEAL：智能体自己打分必崩？1比特外生审计破解自测幻觉"
 ---
 
 <p class="paper-original-title" lang="en">Self-Authored Verification Is Unreliable in Heuristic Self-Improving Agents</p>

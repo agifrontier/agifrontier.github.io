@@ -18,6 +18,7 @@ related_tutorials:
   - "remember-me-refine-me-a-dynamic-procedural-memory-framework-for-experience-drive"
   - "skillos-learning-skill-curation-for-self-evolving-agents"
   - "resource2skill-distilling-executable-agent-skills-from-human-created-multimodal-resources"
+seo_title: "SkillComposer：Agent技能自我进化，跨级提升模型4.5分"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">SkillComposer: Learning to Evolve Agent Skills for Specification and Generalization</p>

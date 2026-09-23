@@ -17,6 +17,7 @@ related_tutorials:
   - "frontis-ma1-training-an-ai4ai-model-towards-recursive-self-improvement-in-machin"
   - "robostral-navigate"
   - "what-makes-low-bit-quantization-aware-training-work-for-reasoning-llms-a-systema"
+seo_title: "Attend to Your Own Thoughts: Breaking the Barrier for Post-Training Quantization of Reasoning LLMs through the Lens of 1.58-Bit Quantization"
 ---
 
 <p class="paper-original-title" lang="en">Attend to Your Own Thoughts: Breaking the Barrier for Post-Training Quantization of Reasoning LLMs through the Lens of 1.58-Bit Quantization</p>

@@ -17,6 +17,7 @@ related_tutorials:
   - "osreward-instituting-standardized-evaluation-for-cross-platform-computer-use-rew"
   - "a-survey-on-evaluation-of-large-language-models"
   - "dba-bench-a-production-fidelity-benchmark-for-llm-based-database-operations-agen"
+seo_title: "不是经验越多就越聪明：PATH-Bench揭示终身智能体的路径依赖困境"
 ---
 
 <p class="paper-original-title" lang="en">PATH-Bench: Path-Dependent Evaluation of Lifelong Agents</p>

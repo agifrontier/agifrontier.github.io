@@ -18,6 +18,7 @@ related_tutorials:
   - "a-subgoal-driven-framework-for-improving-long-horizon-llm-agents"
   - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
   - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
+seo_title: "TRACE: A Self-Evolving Skill Bank for Consistent, Limit-Aware LLM Agents"
 ---
 
 <p class="paper-original-title" lang="en">TRACE: A Self-Evolving Skill Bank for Consistent, Limit-Aware LLM Agents</p>

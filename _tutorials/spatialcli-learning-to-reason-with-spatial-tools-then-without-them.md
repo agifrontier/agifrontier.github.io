@@ -15,6 +15,7 @@ related_tutorials:
   - "deep-agentic-search-for-repository-level-code-question-answering-an-empirical-st"
   - "mechgeo-autoformalizing-and-proving-euclidean-geometry-in-lean-4"
   - "searchmaster-grounded-and-regulated-self-play-for-search-agents"
+seo_title: "SpatialCLI：先学会用工具再脱离工具，8B模型空间推理逆袭GPT-5.6 Sol"
 ---
 
 <p class="paper-original-title" lang="en">SpatialCLI: Learning to Reason With Spatial Tools, Then Without Them</p>

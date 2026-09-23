@@ -20,6 +20,7 @@ related_tutorials:
   - "a-survey-on-multimodal-large-language-models"
   - "turbovla-real-time-vision-language-action-model-at-32-hz-on-an-rtx-4090-with-1-g"
   - "multimodal-deep-learning"
+seo_title: "FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications"
 ---
 
 <p class="paper-original-title" lang="en">FlashRT: Agent Harness for Guiding Agents to Deploy Real-Time Multimodal Applications</p>

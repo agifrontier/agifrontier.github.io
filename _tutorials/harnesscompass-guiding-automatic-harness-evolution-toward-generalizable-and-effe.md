@@ -15,6 +15,7 @@ related_tutorials:
   - "harness-r1-learning-to-edit-executable-runtime-harnesses-from-agent-failure-traj"
   - "openforgerl-train-harness-native-agents-in-any-environment"
   - "the-harness-effect-how-orchestration-design-sets-the-token-economics-of-enterprise-agentic-ai"
+seo_title: "HarnessCompass：5轮迭代升至66%，Agent外壳为何能真正泛化？"
 ---
 
 <p class="paper-original-title" lang="en">HarnessCompass: Guiding Automatic Harness Evolution toward Generalizable and Effective Agent Harnesses</p>

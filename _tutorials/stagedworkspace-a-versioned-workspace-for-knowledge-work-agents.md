@@ -19,6 +19,7 @@ related_tutorials:
   - "seedance-15-pro-a-native-audio-visual-joint-generation-foundation-model"
   - "scienceflow-a-long-horizon-agent-for-ml-research-scientific-discovery-and-beyond"
   - "seedance-2-0-advancing-video-generation-for-world-complexity"
+seo_title: "StagedWorkspace: A Versioned Workspace for Knowledge-Work Agents"
 ---
 
 <p class="paper-original-title" lang="en">StagedWorkspace: A Versioned Workspace for Knowledge-Work Agents</p>

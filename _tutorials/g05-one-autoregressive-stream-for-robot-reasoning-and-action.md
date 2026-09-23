@@ -19,6 +19,7 @@ related_tutorials:
   - "π_0-a-vision-language-action-flow-model-for-general-robot-control"
   - "octo-an-open-source-generalist-robot-policy"
   - "atlasvla-persistent-world-ego-state-modeling-for-vision-language-action-models"
+seo_title: "G0.5：用单一自回归流统一推理与动作，登顶7大机器人基准！"
 ---
 
 <p class="paper-original-title" lang="en">G0.5: One Autoregressive Stream for Robot Reasoning and Action</p>

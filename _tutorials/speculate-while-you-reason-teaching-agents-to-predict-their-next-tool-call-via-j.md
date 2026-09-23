@@ -19,6 +19,7 @@ related_tutorials:
   - "autoregressive-language-models-are-secretly-energy-based-models-insights-into-th"
   - "verltool-towards-holistic-agentic-reinforcement-learning-with-tool-use"
   - "tunable-tool-call-rates-in-llm-agents-via-representation-steering"
+seo_title: "不用外挂小模型：Self-Speculation让工具预判命中率达66.3%"
 ---
 
 <p class="paper-original-title" lang="en">Speculate While You Reason: Teaching Agents to Predict Their Next Tool Call via Joint Agent-Speculator RL</p>

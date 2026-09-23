@@ -19,6 +19,7 @@ related_tutorials:
   - "always-onagents-a-survey-of-persistent-memory-state-and-governance-in-llmagents"
   - "cake-compiler-agent-co-design-for-frontier-kernel-evolution"
   - "inside-the-skill-market-from-software-engineering-activities-to-reusable-agent-s"
+seo_title: "SpecBox: Speculative Sandbox Scheduling for Efficient LLM Agent Serving"
 ---
 
 <p class="paper-original-title" lang="en">SpecBox: Speculative Sandbox Scheduling for Efficient LLM Agent Serving</p>

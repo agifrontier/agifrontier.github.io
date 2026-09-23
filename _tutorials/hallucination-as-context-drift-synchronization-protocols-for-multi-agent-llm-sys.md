@@ -19,6 +19,7 @@ related_tutorials:
   - "what-makes-a-harness-a-harness-necessary-and-sufficient-conditions-for-an-agent-harness"
   - "agentic-data-environments"
   - "auditing-agent-harness-safety"
+seo_title: "SSVP协议：全同步反致幻觉增加34%？Celabe破解多智能体污染"
 ---
 
 <p class="paper-original-title" lang="en">Hallucination as Context Drift: Synchronization Protocols for Multi-Agent LLM Systems</p>

@@ -19,6 +19,7 @@ related_tutorials:
   - "creativityprism-a-holistic-benchmark-for-large-language-model-creativity"
   - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"
   - "openvla-an-open-source-vision-language-action-model"
+seo_title: "Capek 0.5：小鹏机器人具身大模型，四大专家融合提质28项评测"
 ---
 
 <p class="paper-original-title" lang="en">Capek 0.5: An Execution-Centric Vision-Language Model for Embodied Intelligence</p>

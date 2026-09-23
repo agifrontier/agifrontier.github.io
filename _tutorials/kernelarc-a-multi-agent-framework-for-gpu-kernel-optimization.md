@@ -20,6 +20,7 @@ related_tutorials:
   - "gatepro-parameter-free-expert-selection-optimization-for-mixture-of-experts-mode"
   - "kimi-k2-open-agentic-intelligence"
   - "deepseek-v2-a-strong-economical-and-efficient-mixture-of-experts-language-model"
+seo_title: "KernelArc: A Multi-Agent Framework for GPU Kernel Optimization"
 ---
 
 <p class="paper-original-title" lang="en">KernelArc: A Multi-Agent Framework for GPU Kernel Optimization</p>

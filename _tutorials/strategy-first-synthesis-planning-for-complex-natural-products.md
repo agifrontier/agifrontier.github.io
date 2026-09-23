@@ -20,6 +20,7 @@ related_tutorials:
   - "first-try-matters-revisiting-the-role-of-reflection-in-reasoning-models"
   - "supporting-our-ai-overlords-redesigning-data-systems-to-be-agent-first"
   - "from-experience-to-strategy-empowering-llm-agents-with-trainable-graph-memory"
+seo_title: "Strategy-first synthesis planning for complex natural products"
 ---
 
 <p class="paper-original-title" lang="en">Strategy-first synthesis planning for complex natural products</p>

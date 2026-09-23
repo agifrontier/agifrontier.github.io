@@ -19,6 +19,7 @@ related_tutorials:
   - "the-alignment-waltz-jointly-training-agents-to-collaborate-for-safety"
   - "what-makes-a-harness-a-harness-necessary-and-sufficient-conditions-for-an-agent-harness"
   - "toucan-synthesizing-15m-tool-agentic-data-from-real-world-mcp-environments"
+seo_title: "Agentic Data Environments"
 ---
 
 <p class="paper-original-title" lang="en">Agentic Data Environments</p>

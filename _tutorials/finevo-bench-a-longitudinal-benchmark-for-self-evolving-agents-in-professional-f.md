@@ -19,6 +19,7 @@ related_tutorials:
   - "pptarena-a-benchmark-for-agentic-powerpoint-editing"
   - "rex-mle-the-autonomous-agent-benchmark-for-medical-imaging-challenges"
   - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
+seo_title: "FinEvo-Bench: A Longitudinal Benchmark for Self-Evolving Agents in Professional Financial Workflows"
 ---
 
 <p class="paper-original-title" lang="en">FinEvo-Bench: A Longitudinal Benchmark for Self-Evolving Agents in Professional Financial Workflows</p>

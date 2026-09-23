@@ -20,6 +20,7 @@ related_tutorials:
   - "searchauditor-auditing-and-attributing-failures-in-long-horizon-search-agents"
   - "intern-s2-preview-scientific-agentic-foundation-model"
   - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
+seo_title: "TurnSight: Turn-Level Hindsight Self-Distillation for Tool-Integrated Reasoning"
 ---
 
 <p class="paper-original-title" lang="en">TurnSight: Turn-Level Hindsight Self-Distillation for Tool-Integrated Reasoning</p>

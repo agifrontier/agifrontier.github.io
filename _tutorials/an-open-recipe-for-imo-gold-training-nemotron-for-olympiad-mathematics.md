@@ -19,6 +19,7 @@ related_tutorials:
   - "scaling-test-time-compute-to-achieve-ioi-gold-medal-with-open-weight-models"
   - "qwenlong-l15-post-training-recipe-for-long-context-reasoning-and-memory-manageme"
   - "beyond-two-stage-training-cooperative-sft-and-rl-for-llm-reasoning"
+seo_title: "An Open Recipe for IMO Gold: Training Nemotron for Olympiad Mathematics"
 ---
 
 <p class="paper-original-title" lang="en">An Open Recipe for IMO Gold: Training Nemotron for Olympiad Mathematics</p>

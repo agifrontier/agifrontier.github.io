@@ -18,6 +18,7 @@ related_tutorials:
   - "recursive-language-models"
   - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
   - "a-comprehensive-survey-on-pretrained-foundation-models-a-history-from-bert-to-chatgpt"
+seo_title: "EvoX Genesis：持久递归世界机制，44美元自主生成25万行代码"
 ---
 
 <p class="paper-original-title" lang="en">Persistent Recursive Worlds Enable Autonomous Software Evolution</p>

@@ -19,6 +19,7 @@ related_tutorials:
   - "mixture-of-contexts-for-long-video-generation"
   - "a-circular-argument-does-rope-need-to-be-equivariant-for-vision"
   - "ai4x-roadmap-artificial-intelligence-for-the-advancement-of-scientific-pursuit-a"
+seo_title: "DeepMind推出AMIE视频版：临床问诊得分83%超越人类医生"
 ---
 
 <p class="paper-original-title" lang="en">Towards Expert-level Medical AI for Real-time Video Consultations</p>

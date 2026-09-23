@@ -20,6 +20,7 @@ related_tutorials:
   - "latent-traits-and-cross-task-transfer-deconstructing-dataset-interactions-in-llm"
   - "small-llms-pruning-vs-training-from-scratch"
   - "an-empirical-study-of-sft-dpo-interaction-and-parameterization-in-small-language"
+seo_title: "From Passive Delegates to Strategic Negotiators: Reinforcing Social Reasoning in Small Language Models with SocialRL"
 ---
 
 <p class="paper-original-title" lang="en">From Passive Delegates to Strategic Negotiators: Reinforcing Social Reasoning in Small Language Models with SocialRL</p>

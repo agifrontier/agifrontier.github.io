@@ -19,6 +19,7 @@ related_tutorials:
   - "failure-makes-the-agent-stronger-enhancing-accuracy-through-structured-reflectio"
   - "agentdebugx-an-open-source-toolkit-for-failure-observability-attribution-and-rec"
   - "agentatlas-beyond-outcome-leaderboards-for-llm-agents"
+seo_title: "Outcome Monitors：给替补工具比报错更管用！任务完成率从10.9%提至28.1%"
 ---
 
 <p class="paper-original-title" lang="en">Outcome Monitors: Recovery Affordances for Silent Tool Failures</p>

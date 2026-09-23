@@ -20,6 +20,7 @@ related_tutorials:
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
   - "gam-hierarchical-graph-based-agentic-memory-for-llm-agents"
   - "beyond-scaling-self-evolving-llm-agents-for-hardware-kernel-optimization-via-an-"
+seo_title: "RippleMem：告别单次匹配，图构建降本30倍的智能体长记忆联想法"
 ---
 
 <p class="paper-original-title" lang="en">RippleMem: From Isolated Retrieval to Associative Recollection for Long-Term Agent Memory</p>

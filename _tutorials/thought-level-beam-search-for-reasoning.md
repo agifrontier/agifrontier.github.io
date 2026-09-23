@@ -19,6 +19,7 @@ related_tutorials:
   - "pacore-learning-to-scale-test-time-compute-with-parallel-coordinated-reasoning"
   - "large-language-monkeys-scaling-inference-compute-with-repeated-sampling"
   - "latent-planning-emerges-with-scale"
+seo_title: "Gambit：思维级束搜索重配算力，Token缩减68.5%且准确率提升6.7%"
 ---
 
 <p class="paper-original-title" lang="en">Thought-Level Beam Search for Reasoning</p>

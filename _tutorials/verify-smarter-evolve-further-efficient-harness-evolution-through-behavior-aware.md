@@ -19,6 +19,7 @@ related_tutorials:
   - "evolvenet-collaborative-harness-evolution-for-agent-self-improvement"
   - "emas-stabilizing-multi-agent-system-evolution-through-evidence-guided-revision"
   - "online-video-agent-harness-for-long-video-understanding"
+seo_title: "HarnessLens：仅需1/24验证预算，复旦让Agent框架自演进性能提升13.6%"
 ---
 
 <p class="paper-original-title" lang="en">Verify Smarter, Evolve Further: Efficient Harness Evolution through Behavior-Aware Verification</p>

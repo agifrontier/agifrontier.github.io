@@ -19,6 +19,7 @@ related_tutorials:
   - "cotinyvla-chain-of-thought-distillation-for-a-sub-billion-parameter-vision-langu"
   - "turbovla-real-time-vision-language-action-model-at-32-hz-on-an-rtx-4090-with-1-g"
   - "world-tokens-enhancing-embodied-policies-with-training-time-world-modeling"
+seo_title: "What Makes an Efficient VLA? Navigating Action-Head Design, Scaling, and Latency"
 ---
 
 <p class="paper-original-title" lang="en">What Makes an Efficient VLA? Navigating Action-Head Design, Scaling, and Latency</p>

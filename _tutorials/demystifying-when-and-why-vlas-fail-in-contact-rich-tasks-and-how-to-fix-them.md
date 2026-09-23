@@ -17,6 +17,7 @@ related_tutorials:
   - "wcm-a-world-critic-model-for-vision-language-action-reinforcement-learning"
   - "when-replanning-becomes-the-bottleneck-budgeted-replanning-for-embodied-agents"
   - "osreward-instituting-standardized-evaluation-for-cross-platform-computer-use-rew"
+seo_title: "FACT：攻克具身大模型接触难题，2500次真机评测成功率达66%"
 ---
 
 <p class="paper-original-title" lang="en">Demystifying When and Why VLAs Fail in Contact-Rich Tasks and How to Fix Them</p>

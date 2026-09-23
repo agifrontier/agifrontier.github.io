@@ -19,6 +19,7 @@ related_tutorials:
   - "coupling-planning-with-episodic-memory-in-llm-agents-for-software-issue-resoluti"
   - "online-monitoring-and-corrective-steering-of-programming-agents"
   - "lego-rl-harness-native-reinforcement-learning-for-coding-agents"
+seo_title: "ExecCritic：解耦测试生成与代码修复，SWE-bench提升11.4个百分点达到72.6%"
 ---
 
 <p class="paper-original-title" lang="en">ExecCritic: Learn to Test, Test to Improve for Coding Agents</p>

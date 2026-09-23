@@ -18,6 +18,7 @@ related_tutorials:
   - "scaling-environments-for-llm-agents-in-the-era-of-learning-from-interaction-a-su"
   - "tool-learning-with-foundation-models"
   - "large-language-model-brained-gui-agents-a-survey"
+seo_title: "迈向L5级智能：清华华为等九大机构联合定义个人LLM Agent"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Personal LLM Agents: Insights and Survey about the Capability, Efficiency and Security</p>

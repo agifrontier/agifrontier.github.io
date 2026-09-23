@@ -19,6 +19,7 @@ related_tutorials:
   - "when-self-evolution-backfires-pre-commit-gating-against-skill-contamination-in-l"
   - "continuitybench-a-benchmark-and-systems-study-of-stateful-failover-in-multi-prov"
   - "babybabellm-a-multilingual-benchmark-of-developmentally-plausible-training-data"
+seo_title: "SWE-Bench ProMax：大尺度多语言重构基准上线，前沿模型最高仅达41.2%"
 ---
 
 <p class="paper-original-title" lang="en">SWE-Bench ProMax: Benchmarking Agents on Large-Scale Multilingual Code Refactoring</p>

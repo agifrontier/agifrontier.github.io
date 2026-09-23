@@ -17,6 +17,7 @@ related_tutorials:
   - "llmtimesmapreduce-v3-enabling-interactive-in-depth-survey-generation-through-a-m"
   - "code-as-agent-harness"
   - "measuring-harness-induced-belief-divergence-in-multi-step-llm-agents"
+seo_title: "告别黑盒！GaP多智能体生成计算图，机器实操成功率飙升至99%"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">GaP: A Graph-as-Policy Multi-Agent Self-Learning Harness For Variational Automation Tasks</p>

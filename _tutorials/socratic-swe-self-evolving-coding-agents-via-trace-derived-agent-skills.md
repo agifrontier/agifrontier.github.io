@@ -18,6 +18,7 @@ related_tutorials:
   - "memrl-self-evolving-agents-via-runtime-reinforcement-learning-on-episodic-memory"
   - "alita-g-self-evolving-generative-agent-for-agent-generation"
   - "learning-on-the-job-an-experience-driven-self-evolving-agent-for-long-horizon-ta"
+seo_title: "阿里提出Socratic-SWE：轨迹驱动自我进化，SWE-bench突破50.40%！"
 ---
 
 <p class="paper-original-title" lang="en">Socratic-SWE: Self-Evolving Coding Agents via Trace-Derived Agent Skills</p>

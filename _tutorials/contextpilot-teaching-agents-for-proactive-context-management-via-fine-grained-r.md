@@ -18,6 +18,7 @@ related_tutorials:
   - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
   - "dynamic-affective-memory-management-for-personalized-llm-agents"
+seo_title: "ContextPilot：让Agent学会自主管理上下文，Token暴降三分之二且性能更强"
 ---
 
 <p class="paper-original-title" lang="en">ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL</p>

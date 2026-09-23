@@ -18,6 +18,7 @@ related_tutorials:
   - "internalizing-world-models-via-self-play-finetuning-for-agentic-rl"
   - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
   - "browseconf-confidence-guided-test-time-scaling-for-web-agents"
+seo_title: "WMRL：世界模型打破执行瓶颈，提速4倍，4B模型超越120B！"
 ---
 
 <p class="paper-original-title" lang="en">Scaling Automatic Research Agents via World Models</p>

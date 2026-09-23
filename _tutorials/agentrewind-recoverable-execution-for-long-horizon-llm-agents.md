@@ -19,6 +19,7 @@ related_tutorials:
   - "a-subgoal-driven-framework-for-improving-long-horizon-llm-agents"
   - "agentfold-long-horizon-web-agents-with-proactive-context-management"
   - "harnessing-uncertainty-entropy-modulated-policy-gradients-for-long-horizon-llm-a"
+seo_title: "清华等提出AgentRewind：长程智能体双重状态回退，成功率提升25.6%"
 ---
 
 <p class="paper-original-title" lang="en">AgentRewind: Recoverable Execution for Long-Horizon LLM Agents</p>

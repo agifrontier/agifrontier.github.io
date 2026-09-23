@@ -20,6 +20,7 @@ related_tutorials:
   - "searchauditor-auditing-and-attributing-failures-in-long-horizon-search-agents"
   - "rendering-in-the-loop-an-execution-driven-agent-for-interactive-web-development"
   - "coupling-planning-with-episodic-memory-in-llm-agents-for-software-issue-resoluti"
+seo_title: "From Memory to Skills: Evidence-Grounded Co-Evolution Governance for Long-Horizon LLM Agents"
 ---
 
 <p class="paper-original-title" lang="en">From Memory to Skills: Evidence-Grounded Co-Evolution Governance for Long-Horizon LLM Agents</p>

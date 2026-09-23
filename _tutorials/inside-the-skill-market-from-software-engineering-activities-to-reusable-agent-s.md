@@ -19,6 +19,7 @@ related_tutorials:
   - "agentic-software-engineering-foundational-pillars-and-a-research-roadmap"
   - "always-onagents-a-survey-of-persistent-memory-state-and-governance-in-llmagents"
   - "skillaudit-ground-truth-free-skill-evolution-via-paired-trajectory-auditing"
+seo_title: "中科院等最新实证！4大市场数据揭示Agent Skill复用真相"
 ---
 
 <p class="paper-original-title" lang="en">Inside the Skill Market: From Software Engineering Activities to Reusable Agent Skills</p>

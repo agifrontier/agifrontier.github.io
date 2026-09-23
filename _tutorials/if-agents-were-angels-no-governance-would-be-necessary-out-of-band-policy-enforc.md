@@ -18,6 +18,7 @@ related_tutorials:
   - "harnessing-uncertainty-entropy-modulated-policy-gradients-for-long-horizon-llm-a"
   - "process-supervised-reinforcement-learning-for-interactive-multimodal-tool-use-ag"
   - "a-subgoal-driven-framework-for-improving-long-horizon-llm-agents"
+seo_title: "If Agents Were Angels, No Governance Would Be Necessary: Out-of-Band Policy Enforcement at a Trusted Tool Boundary"
 ---
 
 <p class="paper-original-title" lang="en">If Agents Were Angels, No Governance Would Be Necessary: Out-of-Band Policy Enforcement at a Trusted Tool Boundary</p>

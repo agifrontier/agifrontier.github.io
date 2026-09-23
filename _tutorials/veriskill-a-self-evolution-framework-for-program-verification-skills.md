@@ -15,6 +15,7 @@ related_tutorials:
   - "dont-offer-what-cant-be-done-deterministic-executability-gating-for-llm-skill-se"
   - "echoverse-deep-evolving-environments-for-training-computer-use-agents-at-scale"
   - "workflow-localized-mechanism-learning-attribution-guided-repair-and-knowledge-re"
+seo_title: "VeriSkill: A Self-Evolution Framework for Program Verification Skills"
 ---
 
 <p class="paper-original-title" lang="en">VeriSkill: A Self-Evolution Framework for Program Verification Skills</p>

@@ -18,6 +18,7 @@ related_tutorials:
   - "datasage-multi-agent-collaboration-for-insight-discovery-with-external-knowledge"
   - "dynamic-agent-skills-a-lifecycle-survey-and-taxonomy-of-evolving-skill-libraries"
   - "back-to-basics-let-conversational-agents-remember-with-just-retrieval-and-generation"
+seo_title: "解构1947篇顶会论文：IdeaSpark提炼15大创新模式，重塑AI科研"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">ResearchStudio-Idea: An Evidence-Grounded Research-Ideation Skill Suite from ML Conference Outcomes</p>

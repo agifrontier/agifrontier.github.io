@@ -20,6 +20,7 @@ related_tutorials:
   - "the-missing-layer-of-agi-from-pattern-alchemy-to-coordination-physics"
   - "from-atomic-actions-to-standard-operating-procedures-iterative-tool-optimization"
   - "beyond-the-capability-boundary-zeroth-order-optimization-for-self-evolving-llm-a"
+seo_title: "MindMemOS: A Portable and Self-Evolving Memory Operating Layer for AI Agents"
 ---
 
 <p class="paper-original-title" lang="en">MindMemOS: A Portable and Self-Evolving Memory Operating Layer for AI Agents</p>

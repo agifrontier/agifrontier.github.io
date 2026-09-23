@@ -19,6 +19,7 @@ related_tutorials:
   - "jailbreaking-black-box-large-language-models-in-twenty-queries"
   - "daydreaming-stealing-hidden-agent-skills-through-black-box-task-interaction"
   - "no-box-vulnerability-analysis-description-only-detection-of-indirect-prompt-inje"
+seo_title: "Behavioral Skill Reconstruction: Reconstructing Hidden Functionality from LLM Agent Skills"
 ---
 
 <p class="paper-original-title" lang="en">Behavioral Skill Reconstruction: Reconstructing Hidden Functionality from LLM Agent Skills</p>

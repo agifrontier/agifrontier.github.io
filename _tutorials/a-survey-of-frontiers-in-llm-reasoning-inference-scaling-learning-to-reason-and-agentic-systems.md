@@ -18,6 +18,7 @@ related_tutorials:
   - "staircase-streaming-for-low-latency-multi-agent-inference"
   - "advances-and-challenges-in-foundation-agents-from-brain-inspired-intelligence-to-evolutionary-co"
   - "the-latent-space-foundation-evolution-mechanism-ability-and-outlook"
+seo_title: "突破大模型思考极限：最新推理前沿综述拆解两大核心演进路线"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">A Survey of Frontiers in LLM Reasoning: Inference Scaling, Learning to Reason, and Agentic Systems</p>

@@ -19,6 +19,7 @@ related_tutorials:
   - "gdpo-group-reward-decoupled-normalization-policy-optimization-for-multi-reward-r"
   - "sparse-attention-post-training-for-mechanistic-interpretability"
   - "kascade-a-practical-sparse-attention-method-for-long-context-llm-inference"
+seo_title: "MOPD: Multi-Teacher On-Policy Distillation for Capability Integration in LLM Post-Training"
 ---
 
 <p class="paper-original-title" lang="en">MOPD: Multi-Teacher On-Policy Distillation for Capability Integration in LLM Post-Training</p>

@@ -18,6 +18,7 @@ related_tutorials:
   - "rethinking-supervised-fine-tuning-emphasizing-key-answer-tokens-for-improved-llm"
   - "alpacafarm-a-simulation-framework-for-methods-that-learn-from-human-feedback"
   - "an-information-theoretic-framework-for-robust-large-language-model-editing"
+seo_title: "不是分散日志，而是持久化知识：LLM工作流语义框架"
 ---
 
 <p class="paper-original-title" lang="en">Workflow as Knowledge: Semantic Persistence for LLM-Mediated Workflows</p>

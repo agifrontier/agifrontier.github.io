@@ -19,6 +19,7 @@ related_tutorials:
   - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
   - "os-agents-a-survey-on-mllm-based-agents-for-general-computing-devices-use"
   - "pptarena-a-benchmark-for-agentic-powerpoint-editing"
+seo_title: "AppDeltaWorld：基于增量代码机制的GUI世界模型，评测达73.5分"
 ---
 
 <p class="paper-original-title" lang="en">AppDeltaWorld: Transition-Grounded Delta Code World Model for Mobile GUI Agents</p>

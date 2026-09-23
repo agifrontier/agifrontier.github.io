@@ -18,6 +18,7 @@ related_tutorials:
   - "memrl-self-evolving-agents-via-runtime-reinforcement-learning-on-episodic-memory"
   - "pave-a-cognitive-architecture-for-legitimate-violation-in-generative-agent-societies"
   - "dynamic-agent-skills-a-lifecycle-survey-and-taxonomy-of-evolving-skill-libraries"
+seo_title: "放弃提示词！Harness架构打造120/120满分企业级Agent"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">From Prompts to Contracts: Harness Engineering for Auditable Enterprise LLM Agents</p>

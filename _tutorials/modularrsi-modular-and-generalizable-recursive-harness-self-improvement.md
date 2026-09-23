@@ -19,6 +19,7 @@ related_tutorials:
   - "past-bench-benchmarking-the-foundations-of-recursive-self-improvement-in-persona"
   - "automem-a-text-gradient-recursive-self-improvement-framework-for-automated-memor"
   - "meta-task-turning-terminal-task-synthesis-into-a-terminal-task-for-scalable-agen"
+seo_title: "ModularRSI: Modular and Generalizable Recursive Harness Self-Improvement"
 ---
 
 <p class="paper-original-title" lang="en">ModularRSI: Modular and Generalizable Recursive Harness Self-Improvement</p>

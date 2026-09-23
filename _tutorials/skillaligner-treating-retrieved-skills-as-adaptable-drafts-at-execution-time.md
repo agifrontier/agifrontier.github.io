@@ -19,6 +19,7 @@ related_tutorials:
   - "towards-execution-grounded-automated-ai-research"
   - "evaluating-skills-not-just-agents-agentic-continuous-evaluation-of-skills"
   - "kimi-dev-agentless-training-as-skill-prior-for-swe-agents"
+seo_title: "SkillAligner: Treating Retrieved Skills as Adaptable Drafts at Execution Time"
 ---
 
 <p class="paper-original-title" lang="en">SkillAligner: Treating Retrieved Skills as Adaptable Drafts at Execution Time</p>

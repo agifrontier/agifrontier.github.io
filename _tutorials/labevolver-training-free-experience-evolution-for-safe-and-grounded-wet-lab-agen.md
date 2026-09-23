@@ -16,6 +16,7 @@ related_tutorials:
   - "in-context-distillation-with-self-consistency-cascades-a-simple-training-free-wa"
   - "skyrl-agent-efficient-rl-training-for-multi-turn-llm-agent"
   - "a-multi-agent-framework-for-stateful-inference-time-search"
+seo_title: "LabEvolver：无需训练的经验进化机制，湿实验耗时缩减48%！"
 ---
 
 <p class="paper-original-title" lang="en">LabEvolver: Training-Free Experience Evolution for Safe and Grounded Wet-Lab Agents</p>

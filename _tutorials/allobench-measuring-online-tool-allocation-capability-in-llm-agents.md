@@ -19,6 +19,7 @@ related_tutorials:
   - "agentic-data-environments"
   - "ai-progress-should-be-measured-by-capability-per-resource-not-scale-alone-a-fram"
   - "failure-makes-the-agent-stronger-enhancing-accuracy-through-structured-reflectio"
+seo_title: "耶鲁提出AlloBench：大模型懂抽象预算，为何一写代码就失去理性？"
 ---
 
 <p class="paper-original-title" lang="en">AlloBench: Measuring Online Tool Allocation Capability in LLM Agents</p>

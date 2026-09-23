@@ -19,6 +19,7 @@ related_tutorials:
   - "toward-general-purpose-robots-via-foundation-models-a-survey-and-meta-analysis"
   - "coda-coordinating-the-cerebrum-and-cerebellum-for-a-dual-brain-computer-use-agen"
   - "handbookmd-a-benchmark-for-long-context-agentic-instruction-following"
+seo_title: "ADeptS-Bench: Measuring the Trustworthiness of Computer Use Agents Across Devices"
 ---
 
 <p class="paper-original-title" lang="en">ADeptS-Bench: Measuring the Trustworthiness of Computer Use Agents Across Devices</p>

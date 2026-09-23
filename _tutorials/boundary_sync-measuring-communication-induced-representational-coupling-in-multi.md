@@ -18,6 +18,7 @@ related_tutorials:
   - "agentinit-initializing-llm-based-multi-agent-systems-via-diversity-and-expertise"
   - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"
   - "evoroute-experience-driven-self-routing-llm-agent-systems"
+seo_title: "Boundary_Sync：多智能体交流导致同质化？9900次API实验揭示无状态耦合"
 ---
 
 <p class="paper-original-title" lang="en">BOUNDARY_SYNC: Measuring Communication-Induced Representational Coupling in Multi-Agent LLM Systems</p>

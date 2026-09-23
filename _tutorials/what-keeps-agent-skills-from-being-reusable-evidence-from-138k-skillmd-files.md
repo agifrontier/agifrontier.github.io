@@ -19,6 +19,7 @@ related_tutorials:
   - "from-prompts-to-contracts-harness-engineering-for-auditable-enterprise-llm-agents"
   - "ai4ai-at-test-time-strong-to-weak-capability-transfer-via-harnesses"
   - "researchstudio-idea-an-evidence-grounded-research-ideation-skill-suite-from-ml-conference-outcom"
+seo_title: "分析13.8万个SKILL.md：91.8%存在缺陷，Agent技能为何难以复用？"
 ---
 
 <p class="paper-original-title" lang="en">What Keeps Agent Skills from Being Reusable? Evidence from 138K SKILL.md Files</p>

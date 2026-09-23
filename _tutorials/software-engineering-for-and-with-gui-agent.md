@@ -20,6 +20,7 @@ related_tutorials:
   - "agentic-software-engineering-foundational-pillars-and-a-research-roadmap"
   - "a-comprehensive-survey-on-benchmarks-and-solutions-in-software-engineering-of-ll"
   - "fars-a-fully-automated-research-system-deployed-at-scale"
+seo_title: "Software Engineering for and with GUI Agent"
 ---
 
 <p class="paper-original-title" lang="en">Software Engineering for and with GUI Agent</p>

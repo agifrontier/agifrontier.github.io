@@ -20,6 +20,7 @@ related_tutorials:
   - "the-evolution-of-reranking-models-in-information-retrieval-from-heuristic-method"
   - "multi-turn-on-policy-distillation-with-prefix-replay"
   - "task-decomposition-guided-reranking-for-adaptive-agent-skill-retrieval"
+seo_title: "MedClaw：不调权重，仅靠100条样本蒸馏拿下长程手术视频时序推理"
 ---
 
 <p class="paper-original-title" lang="en">MedClaw: Heuristic Agent Harness for Long-Horizon Surgical Video Reasoning</p>

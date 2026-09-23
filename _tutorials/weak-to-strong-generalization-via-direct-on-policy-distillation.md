@@ -18,6 +18,7 @@ related_tutorials:
   - "towards-flash-thinking-via-decoupled-advantage-policy-optimization"
   - "attention-illuminates-llm-reasoning-the-preplan-and-anchor-rhythm-enables-fine-g"
   - "gdpo-group-reward-decoupled-normalization-policy-optimization-for-multi-reward-r"
+seo_title: "Direct-OPD：不模仿小模型策略，而是转移隐式奖励，4小时提升Qwen3表现"
 ---
 
 <p class="paper-original-title" lang="en">Weak-to-Strong Generalization via Direct On-Policy Distillation</p>

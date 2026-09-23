@@ -15,6 +15,7 @@ related_tutorials:
   - "the-bitter-lesson-of-tool-calling"
   - "aospec-action-and-observation-co-speculation-for-low-latency-agent-serving"
   - "data-turnstile-a-scalable-open-framework-for-function-calling-data-generation"
+seo_title: "OoO-Spec：乱序语义推测破除串行限制，工具调用提速最高达5.34倍"
 ---
 
 <p class="paper-original-title" lang="en">OoO-Spec: Out-of-Order Semantic Speculation for Fast Tool Calling</p>

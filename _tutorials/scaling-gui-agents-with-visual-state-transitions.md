@@ -20,6 +20,7 @@ related_tutorials:
   - "vision-mamba-efficient-visual-representation-learning-with-bidirectional-state-s"
   - "visual-language-hypothesis"
   - "kimi-k25-visual-agentic-intelligence"
+seo_title: "不卷任务轨迹！NUS等提出STP：靠视觉状态转移预训练，GUI智能体最高提升6.2%"
 ---
 
 <p class="paper-original-title" lang="en">Scaling GUI Agents with Visual State Transitions</p>

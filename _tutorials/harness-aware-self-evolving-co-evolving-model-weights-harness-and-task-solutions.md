@@ -17,6 +17,7 @@ related_tutorials:
   - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
   - "tthe-test-time-harness-evolution"
   - "measuring-harness-induced-belief-divergence-in-multi-step-llm-agents"
+seo_title: "Harness-Aware Self-Evolving: Co-Evolving Model Weights, Harness, and Task Solutions"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Harness-Aware Self-Evolving: Co-Evolving Model Weights, Harness, and Task Solutions</p>

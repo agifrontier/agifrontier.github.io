@@ -19,6 +19,7 @@ related_tutorials:
   - "agent0-unleashing-self-evolving-agents-from-zero-data-via-tool-integrated-reason"
   - "harnessx-a-composable-adaptive-and-evolvable-agent-harness-foundry"
   - "skillos-learning-skill-curation-for-self-evolving-agents"
+seo_title: "Route, Communicate, and Reason: Gated Routing and Adaptive Depth for Efficient Multi-Agent Reasoning"
 ---
 
 <p class="paper-original-title" lang="en">Route, Communicate, and Reason: Gated Routing and Adaptive Depth for Efficient Multi-Agent Reasoning</p>

@@ -18,6 +18,7 @@ related_tutorials:
   - "alpacafarm-a-simulation-framework-for-methods-that-learn-from-human-feedback"
   - "an-information-theoretic-framework-for-robust-large-language-model-editing"
   - "artificial-hippocampus-networks-for-efficient-long-context-modeling"
+seo_title: "WebRider: Persona-Conditioned Intent Controllers for Live-Web Assistance"
 ---
 
 <p class="paper-original-title" lang="en">WebRider: Persona-Conditioned Intent Controllers for Live-Web Assistance</p>

@@ -18,6 +18,7 @@ related_tutorials:
   - "less-is-more-tokens-efficient-math-reasoning-via-difficulty-aware-chain-of-thoug"
   - "rethinking-the-evaluation-of-harness-evolution-for-agents"
   - "gemini-1-5-unlocking-multimodal-understanding-across-millions-of-tokens-of-context"
+seo_title: "PaLM 2技术深度拆解：摒弃参数暴政，1:1缩放与混合目标重构大模型基座"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">PaLM 2 Technical Report</p>

@@ -19,6 +19,7 @@ related_tutorials:
   - "a-survey-on-large-language-model-based-autonomous-agents"
   - "harness-if-evaluating-instruction-following-across-instruction-surfaces-in-codin"
   - "handbookmd-a-benchmark-for-long-context-agentic-instruction-following"
+seo_title: "MTAC-IFBench：代码能跑却难合规，多轮编程严格遵循率不足10%"
 ---
 
 <p class="paper-original-title" lang="en">MTAC-IFBench: Benchmarking Instruction-Following in Multi-Turn Agentic Coding</p>

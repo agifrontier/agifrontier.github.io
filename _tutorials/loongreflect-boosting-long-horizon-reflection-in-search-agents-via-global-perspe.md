@@ -20,6 +20,7 @@ related_tutorials:
   - "abseeker-training-long-horizon-search-agents-via-answer-backtracked-credit-assig"
   - "evoharness-rl-learning-self-evolving-runtime-harness-for-long-horizon-llm-agents"
   - "harnessing-uncertainty-entropy-modulated-policy-gradients-for-long-horizon-llm-a"
+seo_title: "LoongReflect: Boosting Long-Horizon Reflection in Search Agents via Global Perspective Distillation"
 ---
 
 <p class="paper-original-title" lang="en">LoongReflect: Boosting Long-Horizon Reflection in Search Agents via Global Perspective Distillation</p>

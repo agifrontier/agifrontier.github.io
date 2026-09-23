@@ -19,6 +19,7 @@ related_tutorials:
   - "hack-verifiable-terminal-bench-evaluating-reward-hacking-in-terminal-tasks"
   - "statem-reaching-953-raw-accuracy-or-a-15-frontier-run-on-terminal-bench-21-via-h"
   - "ouroboros-a-self-developing-frontier-coding-agent-with-reviewed-core-evolution"
+seo_title: "CalibForge：用对抗求解器校准合成终端任务，基准最高提升30个百分点"
 ---
 
 <p class="paper-original-title" lang="en">CalibForge: Adversarial Solver Calibration for Scaling Learnable Terminal Tasks</p>

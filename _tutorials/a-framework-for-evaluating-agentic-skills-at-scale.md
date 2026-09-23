@@ -19,6 +19,7 @@ related_tutorials:
   - "gui-360-a-comprehensive-dataset-and-benchmark-for-computer-using-agents"
   - "rex-mle-the-autonomous-agent-benchmark-for-medical-imaging-challenges"
   - "agentbeats-agentifying-agent-assessment-for-openness-standardization-and-reproducibility"
+seo_title: "19款大模型评测揭示：不是拼参数，而是拼Agent技能让小模型直追旗舰"
 ---
 
 <p class="paper-original-title" lang="en">A Framework for Evaluating Agentic Skills at Scale</p>

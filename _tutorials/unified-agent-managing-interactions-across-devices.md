@@ -19,6 +19,7 @@ related_tutorials:
   - "latent-traits-and-cross-task-transfer-deconstructing-dataset-interactions-in-llm"
   - "cap-a-scalable-benchmark-for-evaluating-cross-site-browser-agents-with-complex-a"
   - "the-latent-space-foundation-evolution-mechanism-ability-and-outlook"
+seo_title: "Unified Agent：跨设备AI不再追问“哪台设备”，性能最高提升40.8%"
 ---
 
 <p class="paper-original-title" lang="en">Unified Agent: Managing Interactions across Devices</p>

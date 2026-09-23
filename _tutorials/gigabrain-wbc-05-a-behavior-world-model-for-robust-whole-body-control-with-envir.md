@@ -19,6 +19,7 @@ related_tutorials:
   - "turbovla-real-time-vision-language-action-model-at-32-hz-on-an-rtx-4090-with-1-g"
   - "g05-one-autoregressive-stream-for-robot-reasoning-and-action"
   - "a-comprehensive-survey-on-world-models-for-embodied-ai"
+seo_title: "GigaBrain-WBC-0.5：首个行为世界模型，人形机器人地形交互成功率提升4.3倍"
 ---
 
 <p class="paper-original-title" lang="en">GigaBrain-WBC-0.5: A Behavior World Model for Robust Whole-Body Control with Environment Interaction</p>

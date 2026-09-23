@@ -20,6 +20,7 @@ related_tutorials:
   - "judging-llm-as-a-judge-with-mt-bench-and-chatbot-arena"
   - "a-survey-on-evaluation-of-large-language-models"
   - "llm-as-a-judge-toward-world-models-for-slate-recommendation-systems"
+seo_title: "Benchmarking LLM Judges for Mobile Agent Evaluation"
 ---
 
 <p class="paper-original-title" lang="en">Benchmarking LLM Judges for Mobile Agent Evaluation</p>

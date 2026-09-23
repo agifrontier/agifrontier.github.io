@@ -16,6 +16,7 @@ related_tutorials:
   - "skyrl-agent-efficient-rl-training-for-multi-turn-llm-agent"
   - "a-multi-agent-framework-for-stateful-inference-time-search"
   - "in-context-distillation-with-self-consistency-cascades-a-simple-training-free-wa"
+seo_title: "Echoverse：不是单纯堆数量，环境与模型协同进化让9B模型成功率达67.1%"
 ---
 
 <p class="paper-original-title" lang="en">Echoverse: Deep, Evolving Environments for Training Computer-Use Agents at Scale</p>

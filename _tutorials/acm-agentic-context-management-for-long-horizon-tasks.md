@@ -18,6 +18,7 @@ related_tutorials:
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
   - "learning-on-the-job-an-experience-driven-self-evolving-agent-for-long-horizon-ta"
   - "a-subgoal-driven-framework-for-improving-long-horizon-llm-agents"
+seo_title: "ACM：CMU提出自主无损上下文管理，Agent长程搜索提升27%"
 ---
 
 <p class="paper-original-title" lang="en">ACM: Agentic Context Management for Long Horizon Tasks</p>

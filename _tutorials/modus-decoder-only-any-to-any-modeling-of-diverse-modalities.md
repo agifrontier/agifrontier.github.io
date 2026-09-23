@@ -19,6 +19,7 @@ related_tutorials:
   - "causal-reasoning-favors-encoders-on-the-limits-of-decoder-only-models"
   - "nextflow-unified-sequential-modeling-activates-multimodal-understanding-and-gene"
   - "seedance-2-0-advancing-video-generation-for-world-complexity"
+seo_title: "Modus：单模型统一15种模态，Decoder-Only如何打破Any-to-Any壁垒？"
 ---
 
 <p class="paper-original-title" lang="en">MODUS: Decoder-Only Any-to-Any Modeling of Diverse Modalities</p>

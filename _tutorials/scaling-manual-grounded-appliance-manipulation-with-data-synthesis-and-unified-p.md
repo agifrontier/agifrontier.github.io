@@ -20,6 +20,7 @@ related_tutorials:
   - "wait-wait-wait-why-do-reasoning-models-loop"
   - "socratic-swe-self-evolving-coding-agents-via-trace-derived-agent-skills"
   - "agentfrontier-expanding-the-capability-frontier-of-llm-agents-with-zpd-guided-da"
+seo_title: "AppliancePlan：看说明书操作家电，7B端到端模型规划成功率超基线10倍"
 ---
 
 <p class="paper-original-title" lang="en">Scaling Manual-Grounded Appliance Manipulation with Data Synthesis and Unified Planning</p>

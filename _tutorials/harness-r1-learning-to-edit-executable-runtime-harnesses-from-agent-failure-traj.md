@@ -14,6 +14,7 @@ related_tutorials:
   - "agent-harness-engineering-a-survey"
   - "coda-coordinating-the-cerebrum-and-cerebellum-for-a-dual-brain-computer-use-agen"
   - "dr-well-dynamic-reasoning-and-learning-with-symbolic-world-model-for-embodied-ll"
+seo_title: "Harness-R1: Learning to Edit Executable Runtime Harnesses from Agent Failure Trajectories"
 ---
 
 <p class="paper-original-title" lang="en">Harness-R1: Learning to Edit Executable Runtime Harnesses from Agent Failure Trajectories</p>

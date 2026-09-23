@@ -19,6 +19,7 @@ related_tutorials:
   - "increasing-the-thinking-budget-is-not-all-you-need"
   - "itransformer-inverted-transformers-are-effective-for-time-series-forecasting"
   - "broken-words-broken-performance-effect-of-tokenization-on-performance-of-llms"
+seo_title: "WeatherNext 3：告别分析场，DeepMind用原始观测实现逐小时0.1°预报"
 ---
 
 <p class="paper-original-title" lang="en">WeatherNext 3: Increasing resolution and performance of global weather models with raw observations</p>

@@ -20,6 +20,7 @@ related_tutorials:
   - "ragen-2-reasoning-collapse-in-agentic-rl"
   - "agentbrew-offline-tool-use-agent-learning-from-raw-real-world-trajectories"
   - "multi-turn-on-policy-distillation-with-prefix-replay"
+seo_title: "SkillRise：单一策略边解题边进化技能，智能体RL性能提升达8.5%"
 ---
 
 <p class="paper-original-title" lang="en">SkillRise: Agentic Reinforcement Learning for Cross-Task Skill Evolution</p>

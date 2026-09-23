@@ -19,6 +19,7 @@ related_tutorials:
   - "tree-training-accelerating-agentic-llms-training-via-shared-prefix-reuse"
   - "beyond-direct-access-resource-hijacking-in-llm-agents"
   - "persistent-semantic-entities-in-tool-augmented-llm-systems"
+seo_title: "CDH：任务明明顺利完成，大模型Agent执行时间为何激增92%？"
 ---
 
 <p class="paper-original-title" lang="en">Convergent Detour Hijacking: Task-Preserving Resource Amplification in Skill-Based LLM Agents</p>

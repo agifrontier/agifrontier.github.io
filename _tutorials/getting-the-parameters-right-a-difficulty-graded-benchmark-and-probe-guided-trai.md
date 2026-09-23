@@ -20,6 +20,7 @@ related_tutorials:
   - "batch-normalization-accelerating-deep-network-training-by-reducing-internal-cova"
   - "babybabellm-a-multilingual-benchmark-of-developmentally-plausible-training-data"
   - "vakra-evaluating-multi-hop-reasoning-across-apis-and-retrieval-under-tool-use-po"
+seo_title: "Getting the Parameters Right: A Difficulty-Graded Benchmark and Probe-Guided Training for LLM Tool Calls"
 ---
 
 <p class="paper-original-title" lang="en">Getting the Parameters Right: A Difficulty-Graded Benchmark and Probe-Guided Training for LLM Tool Calls</p>

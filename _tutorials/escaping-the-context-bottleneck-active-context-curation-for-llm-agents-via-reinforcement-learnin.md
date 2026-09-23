@@ -18,6 +18,7 @@ related_tutorials:
   - "agentgym-rl-training-llm-agents-for-long-horizon-decision-making-through-multi-t"
   - "peek-context-map-as-an-orientation-cache-for-long-context-llm-agents"
   - "talk-is-cheap-communication-is-hard-dynamic-grounding-failures-and-repair-in-multi-agent-negotia"
+seo_title: "Escaping the Context Bottleneck: Active Context Curation for LLM Agents via Reinforcement Learning"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Escaping the Context Bottleneck: Active Context Curation for LLM Agents via Reinforcement Learning</p>

@@ -19,6 +19,7 @@ related_tutorials:
   - "verltool-towards-holistic-agentic-reinforcement-learning-with-tool-use"
   - "process-supervised-reinforcement-learning-for-interactive-multimodal-tool-use-ag"
   - "beyond-scaling-self-evolving-llm-agents-for-hardware-kernel-optimization-via-an-"
+seo_title: "Amazon提出BENCH2ROBUST：不是盲目重试！工具调用学会策略切换提升16.8%"
 ---
 
 <p class="paper-original-title" lang="en">Retry, Switch, or Abstain? Learning Strategy-Aware Tool-Use Policies via Controlled Error Injection</p>

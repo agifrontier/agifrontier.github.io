@@ -20,6 +20,7 @@ related_tutorials:
   - "a-survey-on-evaluation-of-large-language-models"
   - "mapex-a-multi-agent-pipeline-for-keyphrase-extraction"
   - "a-component-based-survey-of-interactions-between-large-language-models-and-multi"
+seo_title: "CAP：跨108个网站实测！顶尖浏览器Agent最高成功率仅8.0%"
 ---
 
 <p class="paper-original-title" lang="en">CAP: A Scalable Benchmark for Evaluating Cross-Site Browser Agents with Complex Actions and Perception</p>

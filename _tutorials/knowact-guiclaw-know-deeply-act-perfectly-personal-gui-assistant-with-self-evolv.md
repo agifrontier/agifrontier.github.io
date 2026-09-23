@@ -18,6 +18,7 @@ related_tutorials:
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
   - "efficient-memory-management-for-large-language-model-serving-with-pagedattention"
   - "forgetful-but-faithful-a-cognitive-memory-architecture-and-benchmark-for-privacy"
+seo_title: "哈工大提出KnowAct-GUIClaw：自进化记忆框架，MobileWorld胜率达64.1%！"
 ---
 
 <p class="paper-original-title" lang="en">KnowAct-GUIClaw: Know Deeply, Act Perfectly, Personal GUI Assistant with Self-Evolving Memory and Skill</p>

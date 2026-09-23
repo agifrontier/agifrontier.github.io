@@ -19,6 +19,7 @@ related_tutorials:
   - "a-prompt-pattern-catalog-to-enhance-prompt-engineering-with-chatgpt"
   - "riskpo-risk-based-policy-optimization-via-verifiable-reward-for-llm-post-trainin"
   - "the-prompt-engineering-report-distilled-quick-start-guide-for-life-sciences"
+seo_title: "HVTB：给大模型埋下蜜罐陷阱！2225次轨迹实测大模型奖励作弊"
 ---
 
 <p class="paper-original-title" lang="en">Hack-Verifiable Terminal Bench: Evaluating Reward Hacking in Terminal Tasks</p>

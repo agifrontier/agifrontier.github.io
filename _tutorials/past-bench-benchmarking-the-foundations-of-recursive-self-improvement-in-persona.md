@@ -19,6 +19,7 @@ related_tutorials:
   - "rsibench-data-benchmarking-data-centric-research-for-recursive-self-improvement"
   - "qwen25-math-technical-report-toward-mathematical-expert-model-via-self-improveme"
   - "socratic-swe-self-evolving-coding-agents-via-trace-derived-agent-skills"
+seo_title: "PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents"
 ---
 
 <p class="paper-original-title" lang="en">PAST-Bench: Benchmarking the Foundations of Recursive Self-Improvement in Personal Agents</p>

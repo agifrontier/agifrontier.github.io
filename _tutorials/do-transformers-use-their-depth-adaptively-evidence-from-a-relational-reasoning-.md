@@ -18,6 +18,7 @@ related_tutorials:
   - "cognitive-foundations-for-reasoning-and-their-manifestation-in-llms"
   - "how-and-why-llms-generalize-a-fine-grained-analysis-of-llm-reasoning-from-cognit"
   - "putting-on-the-thinking-hats-a-survey-on-chain-of-thought-fine-tuning-from-the-p"
+seo_title: "微软最新证据：Transformer并非层数闲置，而是按难度自适应！"
 ---
 
 <p class="paper-original-title" lang="en">Do Transformers Use their Depth Adaptively? Evidence from a Relational Reasoning Task</p>

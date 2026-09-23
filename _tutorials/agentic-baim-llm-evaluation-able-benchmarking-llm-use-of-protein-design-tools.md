@@ -20,6 +20,7 @@ related_tutorials:
   - "retrieval-augmented-generation-rag-for-fintech-agentic-design-and-evaluation"
   - "inefficiencies-of-meta-agents-for-agent-design"
   - "looparena-benchmarking-models-as-runtime-controllers-for-loop-engineering"
+seo_title: "Agentic BAIM-LLM Evaluation (ABLE): Benchmarking LLM Use of Protein Design Tools"
 ---
 
 <p class="paper-original-title" lang="en">Agentic BAIM-LLM Evaluation (ABLE): Benchmarking LLM Use of Protein Design Tools</p>

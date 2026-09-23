@@ -18,6 +18,7 @@ related_tutorials:
   - "scaling-beyond-context-a-survey-of-multimodal-retrieval-augmented-generation-for"
   - "os-agents-a-survey-on-mllm-based-agents-for-general-computing-devices-use"
   - "advances-and-challenges-in-foundation-agents-from-brain-inspired-intelligence-to-evolutionary-co"
+seo_title: "Large Language Model-Brained GUI Agents: A Survey"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Large Language Model-Brained GUI Agents: A Survey</p>

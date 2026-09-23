@@ -19,6 +19,7 @@ related_tutorials:
   - "jailbreaking-black-box-large-language-models-in-twenty-queries"
   - "clawgym-ii-exploring-black-box-rl-on-agent-harness"
   - "scaling-environments-for-llm-agents-in-the-era-of-learning-from-interaction-a-su"
+seo_title: "Daydreaming：无需套取提示词，32次黑盒交互窃取86.8%隐藏Agent技能"
 ---
 
 <p class="paper-original-title" lang="en">Daydreaming: Stealing Hidden Agent Skills through Black-Box Task Interaction</p>

@@ -20,6 +20,7 @@ related_tutorials:
   - "goagent-group-of-agents-communication-topology-generation-for-llm-based-multi-ag"
   - "evolvenet-collaborative-harness-evolution-for-agent-self-improvement"
   - "preventing-error-propagation-in-multi-agent-ai-through-runtime-monitoring"
+seo_title: "EMAS: Stabilizing Multi-Agent System Evolution through Evidence-Guided Revision"
 ---
 
 <p class="paper-original-title" lang="en">EMAS: Stabilizing Multi-Agent System Evolution through Evidence-Guided Revision</p>

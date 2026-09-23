@@ -17,6 +17,7 @@ related_tutorials:
   - "nextflow-unified-sequential-modeling-activates-multimodal-understanding-and-gene"
   - "large-language-model-brained-gui-agents-a-survey"
   - "gemini-1-5-unlocking-multimodal-understanding-across-millions-of-tokens-of-context"
+seo_title: "Seedance 2.0: Advancing Video Generation for World Complexity"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Seedance 2.0: Advancing Video Generation for World Complexity</p>

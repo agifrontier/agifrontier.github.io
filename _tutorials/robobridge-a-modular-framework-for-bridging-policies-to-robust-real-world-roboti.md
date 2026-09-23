@@ -15,6 +15,7 @@ related_tutorials:
   - "osreward-instituting-standardized-evaluation-for-cross-platform-computer-use-rew"
   - "qwen-ui-agent-technical-report-toward-next-generation-real-world-centric-foundat"
   - "an-information-theoretic-framework-for-robust-large-language-model-editing"
+seo_title: "RoboBRIDGE: A Modular Framework for Bridging Policies to Robust Real-World Robotic Agents"
 ---
 
 <p class="paper-original-title" lang="en">RoboBRIDGE: A Modular Framework for Bridging Policies to Robust Real-World Robotic Agents</p>

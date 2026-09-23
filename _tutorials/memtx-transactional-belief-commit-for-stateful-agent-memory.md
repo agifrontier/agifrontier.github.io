@@ -20,6 +20,7 @@ related_tutorials:
   - "swe-bench-promax-benchmarking-agents-on-large-scale-multilingual-code-refactorin"
   - "chronomem-version-control-and-semantic-rollback-for-large-language-model-agent-m"
   - "memory-in-the-age-of-ai-agents"
+seo_title: "MemTX: Transactional Belief Commit for Stateful Agent Memory"
 ---
 
 <p class="paper-original-title" lang="en">MemTX: Transactional Belief Commit for Stateful Agent Memory</p>

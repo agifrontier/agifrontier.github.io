@@ -18,6 +18,7 @@ related_tutorials:
   - "babybabellm-a-multilingual-benchmark-of-developmentally-plausible-training-data"
   - "creativityprism-a-holistic-benchmark-for-large-language-model-creativity"
   - "gpqa-a-graduate-level-google-proof-qa-benchmark"
+seo_title: "ContextWeave：记忆不是检索问答，真实工作流偏好分从41.5升至70.6"
 ---
 
 <p class="paper-original-title" lang="en">ContextWeave: A Real-World Workflow Benchmark</p>

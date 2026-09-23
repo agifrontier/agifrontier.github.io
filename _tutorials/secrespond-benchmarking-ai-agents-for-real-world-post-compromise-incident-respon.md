@@ -19,6 +19,7 @@ related_tutorials:
   - "empowering-real-world-a-survey-on-the-technology-practice-and-evaluation-of-llm-"
   - "mai-ui-technical-report-real-world-centric-foundation-gui-agents"
   - "toucan-synthesizing-15m-tool-agentic-data-from-real-world-mcp-environments"
+seo_title: "SecRespond：阿里联合港科大测评23款大模型，真实入侵应急响应竟无一通关"
 ---
 
 <p class="paper-original-title" lang="en">SecRespond: Benchmarking AI Agents for Real-World Post-Compromise Incident Response</p>

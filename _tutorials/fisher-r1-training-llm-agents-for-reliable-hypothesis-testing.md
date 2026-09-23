@@ -20,6 +20,7 @@ related_tutorials:
   - "paper2agent-reimagining-research-papers-as-interactive-and-reliable-ai-agents"
   - "ui-mate-advancing-open-weight-foundation-gui-agents-with-in-context-demonstratio"
   - "fapo-flawed-aware-policy-optimization-for-efficient-and-reliable-reasoning"
+seo_title: "Fisher-R1：用可验证强化学习终结大模型统计推断假象，复杂任务提升26%"
 ---
 
 <p class="paper-original-title" lang="en">Fisher-R1: Training LLM Agents for Reliable Hypothesis Testing</p>

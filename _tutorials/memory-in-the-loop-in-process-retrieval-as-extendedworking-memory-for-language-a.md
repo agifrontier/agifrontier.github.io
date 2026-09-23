@@ -19,6 +19,7 @@ related_tutorials:
   - "agentic-memory-learning-unified-long-term-and-short-term-memory-management-for-l"
   - "cogmem-a-cognitive-memory-architecture-for-sustained-multi-turn-reasoning-in-lar"
   - "dynamic-affective-memory-management-for-personalized-llm-agents"
+seo_title: "Memory in the Loop：进程内检索将延迟降至100μs，长上下文召回升至4.8/5"
 ---
 
 <p class="paper-original-title" lang="en">Memory in the Loop: In-Process Retrieval as ExtendedWorking Memory for Language Agents</p>

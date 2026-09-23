@@ -19,6 +19,7 @@ related_tutorials:
   - "short-context-dominance-how-much-local-context-natural-language-actually-needs"
   - "spotlight-attention-towards-efficient-llm-generation-via-non-linear-hashing-base"
   - "beyond-retrieval-query-conditioned-reuse-of-long-horizon-agent-trajectories"
+seo_title: "SkillSmith：不改参数，让27B端侧Agent单任务步数从36.1降至9.9"
 ---
 
 <p class="paper-original-title" lang="en">SkillSmith: Enhancing Locally Deployed Agents via Automatic Skill Construction and Evolution</p>

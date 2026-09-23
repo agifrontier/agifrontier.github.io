@@ -18,6 +18,7 @@ related_tutorials:
   - "an-information-theoretic-perspective-on-agentic-system-design"
   - "dynamic-agent-skills-a-lifecycle-survey-and-taxonomy-of-evolving-skill-libraries"
   - "webshaper-agentically-data-synthesizing-via-information-seeking-formalization"
+seo_title: "A Language for Describing Agentic LLM Contexts"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">A Language for Describing Agentic LLM Contexts</p>

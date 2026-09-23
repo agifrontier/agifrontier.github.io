@@ -20,6 +20,7 @@ related_tutorials:
   - "skillsmith-enhancing-locally-deployed-agents-via-automatic-skill-construction-an"
   - "evo-harness-context-to-harness-skill-compilation-for-self-evolving-agents"
   - "a-comprehensive-survey-on-world-models-for-embodied-ai"
+seo_title: "Self-Evolving Embodied Agents via Skill-Harness Evolution"
 ---
 
 <p class="paper-original-title" lang="en">Self-Evolving Embodied Agents via Skill-Harness Evolution</p>

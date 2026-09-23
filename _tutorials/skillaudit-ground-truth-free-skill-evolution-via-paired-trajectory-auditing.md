@@ -18,6 +18,7 @@ related_tutorials:
   - "agent-data-protocol-unifying-datasets-for-diverse-effective-fine-tuning-of-llm-a"
   - "tthe-test-time-harness-evolution"
   - "retrospective-harness-optimization-improving-llm-agents-via-self-preference-over-trajectory-roll"
+seo_title: "SkillAudit揭秘：无真值反馈的Agent技能自进化，任务胜率暴涨17%"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">SkillAudit: Ground-Truth-Free Skill Evolution via Paired Trajectory Auditing</p>

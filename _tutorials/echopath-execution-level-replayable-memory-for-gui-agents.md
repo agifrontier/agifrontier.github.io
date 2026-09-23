@@ -20,6 +20,7 @@ related_tutorials:
   - "terminal-agents-a-survey-of-ai-agents-in-command-line-environments"
   - "evaluating-agentic-code-repair-capabilities-in-distributed-systems"
   - "self-correcting-long-horizon-search-agents-via-tree-structured-memory"
+seo_title: "EchoPath：告别重复规划，执行级重放让GUI Agent的Token骤降90%"
 ---
 
 <p class="paper-original-title" lang="en">EchoPath: Execution-Level Replayable Memory for GUI Agents</p>

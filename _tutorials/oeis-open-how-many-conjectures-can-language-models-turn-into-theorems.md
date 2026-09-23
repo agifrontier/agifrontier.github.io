@@ -19,6 +19,7 @@ related_tutorials:
   - "sparsegpt-massive-language-models-can-be-accurately-pruned-in-one-shot"
   - "swe-bench-can-language-models-resolve-real-world-github-issues"
   - "gemma-2-improving-open-language-models-at-a-practical-size"
+seo_title: "OEIS Open：极简工具助大模型攻克147道数学猜想，解决率达44%"
 ---
 
 <p class="paper-original-title" lang="en">OEIS Open: How many conjectures can language models turn into theorems?</p>

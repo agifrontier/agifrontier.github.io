@@ -15,6 +15,7 @@ related_tutorials:
   - "chronomem-version-control-and-semantic-rollback-for-large-language-model-agent-m"
   - "understanding-is-done-early-a-depth-division-of-labor-in-large-language-models-a"
   - "frontis-ma1-training-an-ai4ai-model-towards-recursive-self-improvement-in-machin"
+seo_title: "Knowledge-Centric Self-Improvement"
 ---
 
 <p class="paper-original-title" lang="en">Knowledge-Centric Self-Improvement</p>

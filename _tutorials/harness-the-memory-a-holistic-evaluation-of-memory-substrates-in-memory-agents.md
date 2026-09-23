@@ -20,6 +20,7 @@ related_tutorials:
   - "livecodebench-holistic-and-contamination-free-evaluation-of-large-language-model"
   - "the-horizon-gap-planning-memory-execution-training-and-evaluation-for-long-horiz"
   - "maxshapley-towards-incentive-compatible-generative-search-with-fair-context-attr"
+seo_title: "Harness the Memory: A Holistic Evaluation of Memory Substrates in Memory Agents"
 ---
 
 <p class="paper-original-title" lang="en">Harness the Memory: A Holistic Evaluation of Memory Substrates in Memory Agents</p>

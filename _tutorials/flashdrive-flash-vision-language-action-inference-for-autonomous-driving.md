@@ -20,6 +20,7 @@ related_tutorials:
   - "accelerate-speculative-decoding-with-sparse-computation-in-verification"
   - "glancewam-sparse-test-time-imagination-for-world-action-models"
   - "openvla-an-open-source-vision-language-action-model"
+seo_title: "FlashDrive：打破VLA四级瓶颈，10B自动驾驶大模型提速4.7倍跨入实用门槛"
 ---
 
 <p class="paper-original-title" lang="en">FlashDrive: Flash Vision-Language-Action Inference for Autonomous Driving</p>

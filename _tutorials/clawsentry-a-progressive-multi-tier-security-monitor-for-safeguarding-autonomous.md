@@ -19,6 +19,7 @@ related_tutorials:
   - "agentic-data-environments"
   - "auditing-agent-harness-safety"
   - "hallucination-as-context-drift-synchronization-protocols-for-multi-agent-llm-sys"
+seo_title: "ClawSentry: A Progressive Multi-Tier Security Monitor for Safeguarding Autonomous LLM Agents"
 ---
 
 <p class="paper-original-title" lang="en">ClawSentry: A Progressive Multi-Tier Security Monitor for Safeguarding Autonomous LLM Agents</p>

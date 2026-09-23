@@ -19,6 +19,7 @@ related_tutorials:
   - "process-supervised-reinforcement-learning-for-interactive-multimodal-tool-use-ag"
   - "slideagent-hierarchical-agentic-framework-for-multi-page-visual-document-underst"
   - "kimi-k25-visual-agentic-intelligence"
+seo_title: "LUCAID: Agentic Multimodal AI for Lung Cancer Precision Pathology"
 ---
 
 <p class="paper-original-title" lang="en">LUCAID: Agentic Multimodal AI for Lung Cancer Precision Pathology</p>

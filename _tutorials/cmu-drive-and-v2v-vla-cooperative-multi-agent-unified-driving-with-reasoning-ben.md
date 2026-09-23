@@ -20,6 +20,7 @@ related_tutorials:
   - "wait-wait-wait-why-do-reasoning-models-loop"
   - "openvla-an-open-source-vision-language-action-model"
   - "reflex-enabling-fast-and-predictive-vision-language-action-models-for-reaction-c"
+seo_title: "CMU-Drive and V2V-VLA: Cooperative Multi-agent Unified Driving with Reasoning Benchmark and Vehicle-to-Vehicle Vision-Language-Action Models"
 ---
 
 <p class="paper-original-title" lang="en">CMU-Drive and V2V-VLA: Cooperative Multi-agent Unified Driving with Reasoning Benchmark and Vehicle-to-Vehicle Vision-Language-Action Models</p>

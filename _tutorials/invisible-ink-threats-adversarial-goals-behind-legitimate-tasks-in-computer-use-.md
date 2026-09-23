@@ -17,6 +17,7 @@ related_tutorials:
   - "robobridge-a-modular-framework-for-bridging-policies-to-robust-real-world-roboti"
   - "osreward-instituting-standardized-evaluation-for-cross-platform-computer-use-rew"
   - "dba-bench-a-production-fidelity-benchmark-for-llm-based-database-operations-agen"
+seo_title: "Invisible Ink Threats: Adversarial Goals Behind Legitimate Tasks in Computer-Use Agents"
 ---
 
 <p class="paper-original-title" lang="en">Invisible Ink Threats: Adversarial Goals Behind Legitimate Tasks in Computer-Use Agents</p>

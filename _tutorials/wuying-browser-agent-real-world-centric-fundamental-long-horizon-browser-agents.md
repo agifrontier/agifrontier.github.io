@@ -19,6 +19,7 @@ related_tutorials:
   - "beyond-turn-limits-training-deep-search-agents-with-dynamic-context-window"
   - "in-context-distillation-with-self-consistency-cascades-a-simple-training-free-wa"
   - "kimi-k2-open-agentic-intelligence"
+seo_title: "Wuying-Browser-Agent：结合课程微调与在线RL，长序列网页控制WebVoyager达80.6%！"
 ---
 
 <p class="paper-original-title" lang="en">Wuying-Browser-Agent: Real-World Centric Fundamental Long-Horizon Browser Agents</p>

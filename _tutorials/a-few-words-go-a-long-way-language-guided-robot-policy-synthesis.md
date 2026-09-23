@@ -18,6 +18,7 @@ related_tutorials:
   - "\u03c0_0-a-vision-language-action-flow-model-for-general-robot-control"
   - "bridgedata-v2-a-dataset-for-robot-learning-at-scale"
   - "openvla-an-open-source-vision-language-action-model"
+seo_title: "ARCHITECT：MIT等用大白话纠错机械臂代码，人类干预降至0.83次"
 ---
 
 <p class="paper-original-title" lang="en">A Few Words Go a Long Way: Language Guided Robot Policy Synthesis</p>

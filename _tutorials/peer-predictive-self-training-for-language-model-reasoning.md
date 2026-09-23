@@ -17,6 +17,7 @@ related_tutorials:
   - "less-is-more-tokens-efficient-math-reasoning-via-difficulty-aware-chain-of-thoug"
   - "rewardharness-self-evolving-agentic-post-training"
   - "mineru2-5-pro-pushing-the-limits-of-data-centric-document-parsing-at-scale"
+seo_title: "零标注自我进化：PST框架激发群体智慧，推理能力提升4.3%"
 ---
 
 <p class="paper-original-title" lang="en" style="font-size:1rem; line-height:1.5; color:var(--global-text-color-light, #6c757d); margin:-0.5rem 0 1.5rem;">Peer-Predictive Self-Training for Language Model Reasoning</p>

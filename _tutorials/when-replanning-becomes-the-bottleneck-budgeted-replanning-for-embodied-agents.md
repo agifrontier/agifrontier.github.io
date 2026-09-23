@@ -16,6 +16,7 @@ related_tutorials:
   - "voyager-an-open-ended-embodied-agent-with-large-language-models"
   - "learning-when-to-plan-efficiently-allocating-test-time-compute-for-llm-agents"
   - "scaling-environments-for-llm-agents-in-the-era-of-learning-from-interaction-a-su"
+seo_title: "BRACE：具身智能预算化重规划机制，SLO违规率降至4.7%"
 ---
 
 <p class="paper-original-title" lang="en">When Replanning Becomes the Bottleneck: Budgeted Replanning for Embodied Agents</p>

@@ -20,6 +20,7 @@ related_tutorials:
   - "skillos-learning-skill-curation-for-self-evolving-agents"
   - "training-task-reasoning-llm-agents-for-multi-turn-task-planning-via-single-turn-"
   - "mopd-multi-teacher-on-policy-distillation-for-capability-integration-in-llm-post"
+seo_title: "The Physics of Multi-Turn Long-Horizon Planning: From Pre-training to Post-training via Single- and Multi-Teacher On-Policy Agentic Distillation"
 ---
 
 <p class="paper-original-title" lang="en">The Physics of Multi-Turn Long-Horizon Planning: From Pre-training to Post-training via Single- and Multi-Teacher On-Policy Agentic Distillation</p>
