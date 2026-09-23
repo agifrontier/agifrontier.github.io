@@ -3,8 +3,40 @@ require 'ostruct'
 require 'jekyll'
 require_relative '../../_plugins/tutorial-presentation'
 require_relative '../../_plugins/article-image-filter'
+require_relative '../../_plugins/stable-lastmod'
 
 class TutorialPresentationTest < Minitest::Test
+  def test_title_experiment_freezes_navigation_but_not_sitemap_lastmod
+    current = Time.iso8601('2026-09-23T16:58:47+08:00')
+    previous = '2026-09-04T12:00:00+08:00'
+    item = OpenStruct.new(relative_path: '_tutorials/test.md', data: { 'seo_lastmod' => current })
+    site = OpenStruct.new(data: { 'seo_title_navigation_baseline' => { '_tutorials/test.md' => previous } })
+    result = Jekyll::StableLastmodGenerator.new.send(:navigation_lastmod, item, site, current)
+    assert_equal Time.iso8601(previous), result
+    assert_equal current, item.data['seo_lastmod']
+  end
+
+  def test_non_experiment_navigation_keeps_normal_lastmod
+    current = Time.iso8601('2026-09-23T16:58:47+08:00')
+    item = OpenStruct.new(relative_path: '_tutorials/other.md')
+    site = OpenStruct.new(data: {})
+    assert_equal current, Jekyll::StableLastmodGenerator.new.send(:navigation_lastmod, item, site, current)
+  end
+
+  def test_invalid_navigation_baseline_fails_instead_of_silently_reordering
+    item = OpenStruct.new(relative_path: '_tutorials/test.md')
+    site = OpenStruct.new(data: { 'seo_title_navigation_baseline' => { '_tutorials/test.md' => 'invalid-date' } })
+    assert_raises(Jekyll::Errors::FatalException) do
+      Jekyll::StableLastmodGenerator.new.send(:navigation_lastmod, item, site, Time.now)
+    end
+  end
+
+  def test_navigation_template_uses_frozen_date
+    template = File.read(File.expand_path('../../_includes/tutorial-navigation.liquid', __dir__))
+    assert_includes template, "sort: 'navigation_lastmod'"
+    refute_includes template, 'seo_lastmod'
+  end
+
   def prepare(data = {}, content = '', facts = {})
     document = OpenStruct.new(data: data, content: content)
     site = OpenStruct.new(collections: { 'tutorials' => OpenStruct.new(docs: [document]) },

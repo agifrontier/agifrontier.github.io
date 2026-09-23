@@ -1,4 +1,4 @@
-{% assign sorted_tutorials = site.tutorials | where_exp: 'item', 'item.sitemap != false' | sort: 'seo_lastmod' | reverse %}
+{% assign sorted_tutorials = site.tutorials | where_exp: 'item', 'item.sitemap != false' | sort: 'navigation_lastmod' | reverse %}
 {% assign newer_tutorial = nil %}
 {% assign older_tutorial = nil %}
 {% assign previous_item = nil %}
@@ -26,8 +26,8 @@
         <a class="tutorial-navigation__card" href="{{ newer_tutorial.url | relative_url }}" title="{{ newer_title }}">
           <span class="tutorial-navigation__label">上一篇</span>
           <span class="tutorial-navigation__title">{{ newer_title }}</span>
-          {% if newer_tutorial.seo_lastmod %}
-            <span class="tutorial-navigation__meta">{{ newer_tutorial.seo_lastmod | date: "%Y-%m-%d" }}</span>
+          {% if newer_tutorial.navigation_lastmod %}
+            <span class="tutorial-navigation__meta">{{ newer_tutorial.navigation_lastmod | date: "%Y-%m-%d" }}</span>
           {% endif %}
         </a>
       {% else %}
@@ -42,8 +42,8 @@
         <a class="tutorial-navigation__card" href="{{ older_tutorial.url | relative_url }}" title="{{ older_title }}">
           <span class="tutorial-navigation__label">下一篇</span>
           <span class="tutorial-navigation__title">{{ older_title }}</span>
-          {% if older_tutorial.seo_lastmod %}
-            <span class="tutorial-navigation__meta">{{ older_tutorial.seo_lastmod | date: "%Y-%m-%d" }}</span>
+          {% if older_tutorial.navigation_lastmod %}
+            <span class="tutorial-navigation__meta">{{ older_tutorial.navigation_lastmod | date: "%Y-%m-%d" }}</span>
           {% endif %}
         </a>
       {% else %}

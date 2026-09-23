@@ -18,6 +18,9 @@ module Jekyll
         lastmod ||= explicit_date(item)
 
         item.data['seo_lastmod'] = lastmod if lastmod
+        if tutorial?(item)
+          item.data['navigation_lastmod'] = navigation_lastmod(item, site, lastmod)
+        end
 
         published = manual_published(item)
         published ||= git_date(item, git_dates[:earliest])
@@ -27,6 +30,20 @@ module Jekyll
     end
 
     private
+
+    # An SEO-only title experiment must not reorder previous/next article links.
+    # Keep sitemap/JSON-LD lastmod truthful; freeze only the navigation date.
+    def navigation_lastmod(item, site, lastmod)
+      baselines = site.data.fetch('seo_title_navigation_baseline', {})
+      unless baselines.is_a?(Hash)
+        raise Jekyll::Errors::FatalException, 'SEO title navigation baseline must be a mapping'
+      end
+      value = baselines[relative_path_for(item)]
+      return lastmod if value.nil?
+
+      parse_time(value) || raise(Jekyll::Errors::FatalException,
+                                "Invalid SEO title navigation baseline: #{relative_path_for(item)}")
+    end
 
     def site_items(site)
       site.pages + site.collections.values.flat_map(&:docs)
