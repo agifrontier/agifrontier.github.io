@@ -13199,6 +13199,30 @@
     "height": 963,
     "width": 1600
   },
+  "/images/2608.01652/acd_architecture.webp": {
+    "height": 726,
+    "width": 1600
+  },
+  "/images/2608.01652/case2.webp": {
+    "height": 1509,
+    "width": 1600
+  },
+  "/images/2608.01652/merged_vis.webp": {
+    "height": 302,
+    "width": 1600
+  },
+  "/images/2608.01652/model_size.webp": {
+    "height": 370,
+    "width": 1600
+  },
+  "/images/2608.01652/pec_motivation.webp": {
+    "height": 772,
+    "width": 1600
+  },
+  "/images/2608.01652/pec_overview.webp": {
+    "height": 435,
+    "width": 1105
+  },
   "/images/2608.01662/fig_cli_overlap.webp": {
     "height": 475,
     "width": 1600
@@ -13294,6 +13318,10 @@
   "/images/2608.02143/fig2_iris_overview.webp": {
     "height": 714,
     "width": 1382
+  },
+  "/images/2608.02181/advantage_quality.webp": {
+    "height": 853,
+    "width": 1255
   },
   "/images/2608.02217/fig1-sub1.webp": {
     "height": 1194,
@@ -13450,6 +13478,14 @@
   "/images/2608.03137v1/VerMem_overview.webp": {
     "height": 405,
     "width": 933
+  },
+  "/images/2608.03206v1/A__title.webp": {
+    "height": 338,
+    "width": 1382
+  },
+  "/images/2608.03206v1/figure_260725.webp": {
+    "height": 694,
+    "width": 1533
   },
   "/images/2608.03391v1/A__title.webp": {
     "height": 338,
@@ -13663,6 +13699,18 @@
     "height": 756,
     "width": 1600
   },
+  "/images/2608.04124v1/dynamic_routing_vmme_kp4.webp": {
+    "height": 926,
+    "width": 1600
+  },
+  "/images/2608.04124v1/main_1.1.webp": {
+    "height": 456,
+    "width": 1569
+  },
+  "/images/2608.04124v1/viz.webp": {
+    "height": 665,
+    "width": 1517
+  },
   "/images/2608.04192v1/A__title.webp": {
     "height": 401,
     "width": 1049
@@ -13670,6 +13718,26 @@
   "/images/2608.04192v1/ndbr_overview.webp": {
     "height": 599,
     "width": 1600
+  },
+  "/images/2608.04196v1/A__title.webp": {
+    "height": 717,
+    "width": 1310
+  },
+  "/images/2608.04196v1/x1.webp": {
+    "height": 366,
+    "width": 793
+  },
+  "/images/2608.04196v1/x2.webp": {
+    "height": 237,
+    "width": 793
+  },
+  "/images/2608.04196v1/x3.webp": {
+    "height": 258,
+    "width": 996
+  },
+  "/images/2608.04196v1/x4.webp": {
+    "height": 410,
+    "width": 714
   },
   "/images/2608.04317v1/A__title.webp": {
     "height": 604,
@@ -13706,6 +13774,34 @@
   "/images/2608.04396v1/vis_real_gen.webp": {
     "height": 621,
     "width": 1600
+  },
+  "/images/2608.04428v1/A__title.webp": {
+    "height": 897,
+    "width": 1502
+  },
+  "/images/2608.04428v1/data_traffic_issues.webp": {
+    "height": 764,
+    "width": 1134
+  },
+  "/images/2608.04428v1/denoising_process.webp": {
+    "height": 460,
+    "width": 929
+  },
+  "/images/2608.04428v1/pe_array.webp": {
+    "height": 282,
+    "width": 1229
+  },
+  "/images/2608.04428v1/speculative_inference.webp": {
+    "height": 514,
+    "width": 1087
+  },
+  "/images/2608.04428v1/speedup_pe_buf.webp": {
+    "height": 627,
+    "width": 960
+  },
+  "/images/2608.04428v1/vla_workflow.webp": {
+    "height": 404,
+    "width": 1112
   },
   "/images/2608.04436v1/A__title.webp": {
     "height": 619,
@@ -13819,6 +13915,34 @@
     "height": 442,
     "width": 1005
   },
+  "/images/2608.04719v1/A__title.webp": {
+    "height": 405,
+    "width": 672
+  },
+  "/images/2608.04719v1/ctr_by_model.webp": {
+    "height": 800,
+    "width": 1400
+  },
+  "/images/2608.04719v1/radar_profiles.webp": {
+    "height": 1621,
+    "width": 1600
+  },
+  "/images/2608.04719v1/tsr_delta.webp": {
+    "height": 900,
+    "width": 1600
+  },
+  "/images/2608.04738v2/A__title.webp": {
+    "height": 338,
+    "width": 1277
+  },
+  "/images/2608.04738v2/case_study_arxiv.webp": {
+    "height": 2040,
+    "width": 1482
+  },
+  "/images/2608.04738v2/evigraph_arxiv.webp": {
+    "height": 808,
+    "width": 1600
+  },
   "/images/2608.04788v1/A__title.webp": {
     "height": 338,
     "width": 1334
@@ -13854,6 +13978,14 @@
   "/images/2608.04830v1/main.webp": {
     "height": 586,
     "width": 1600
+  },
+  "/images/2608.04934v1/State2State_Main_v4.webp": {
+    "height": 741,
+    "width": 1600
+  },
+  "/images/2608.04934v1/head_plot_v5.webp": {
+    "height": 609,
+    "width": 947
   },
   "/images/2608.04968v1/A__title.webp": {
     "height": 489,
@@ -13953,6 +14085,22 @@
   },
   "/images/2608.05212v1/method_figure.webp": {
     "height": 630,
+    "width": 1600
+  },
+  "/images/2608.05215v1/experiment.webp": {
+    "height": 710,
+    "width": 980
+  },
+  "/images/2608.05215v1/model_architecture.webp": {
+    "height": 649,
+    "width": 1394
+  },
+  "/images/2608.05215v1/overview.webp": {
+    "height": 532,
+    "width": 1600
+  },
+  "/images/2608.05215v1/visual_affordances.webp": {
+    "height": 378,
     "width": 1600
   },
   "/images/2608.05245v1/A__title.webp": {
@@ -14066,6 +14214,14 @@
   "/images/2608.05810v1/figure_main.webp": {
     "height": 432,
     "width": 768
+  },
+  "/images/2608.05886v1/A__title.webp": {
+    "height": 401,
+    "width": 1170
+  },
+  "/images/2608.05886v1/training_curves_main.webp": {
+    "height": 559,
+    "width": 1600
   },
   "/images/2608.05891v1/action_model_app_treemap.webp": {
     "height": 560,
@@ -14207,9 +14363,41 @@
     "height": 968,
     "width": 1600
   },
+  "/images/2608.06477v1/A__title.webp": {
+    "height": 500,
+    "width": 1143
+  },
+  "/images/2608.06477v1/illustration.webp": {
+    "height": 1427,
+    "width": 1489
+  },
+  "/images/2608.06503v1/A__title.webp": {
+    "height": 576,
+    "width": 1107
+  },
+  "/images/2608.06503v1/trace_pipeline.webp": {
+    "height": 545,
+    "width": 1600
+  },
   "/images/2608.06564v1/A__title.webp": {
     "height": 401,
     "width": 1110
+  },
+  "/images/2608.06632v1/A__title.webp": {
+    "height": 916,
+    "width": 1421
+  },
+  "/images/2608.06632v1/alignment_figure.webp": {
+    "height": 429,
+    "width": 1526
+  },
+  "/images/2608.06632v1/copy_of_serving.webp": {
+    "height": 392,
+    "width": 1600
+  },
+  "/images/2608.06632v1/system_figure.webp": {
+    "height": 462,
+    "width": 1600
   },
   "/images/2608.06640v1/A__title.webp": {
     "height": 1456,
@@ -14395,6 +14583,26 @@
     "height": 887,
     "width": 1600
   },
+  "/images/2608.07068v1/A__title.webp": {
+    "height": 351,
+    "width": 1359
+  },
+  "/images/2608.07068v1/memopd_main_method_figure.webp": {
+    "height": 642,
+    "width": 1500
+  },
+  "/images/2608.07107v1/A__title.webp": {
+    "height": 340,
+    "width": 1056
+  },
+  "/images/2608.07107v1/figure_2_1.webp": {
+    "height": 744,
+    "width": 1600
+  },
+  "/images/2608.07107v1/teasing_figure_4.webp": {
+    "height": 615,
+    "width": 1600
+  },
   "/images/2608.07118v1/A__title.webp": {
     "height": 402,
     "width": 1295
@@ -14527,9 +14735,29 @@
     "height": 1528,
     "width": 1600
   },
+  "/images/2608.07775v1/casedemo.webp": {
+    "height": 1176,
+    "width": 1216
+  },
+  "/images/2608.07775v1/examplesAppendix.webp": {
+    "height": 892,
+    "width": 1600
+  },
+  "/images/2608.07775v1/proposalmethod.webp": {
+    "height": 768,
+    "width": 736
+  },
+  "/images/2608.07775v1/recovery_number.webp": {
+    "height": 1136,
+    "width": 1600
+  },
   "/images/2608.07796v1/A__title.webp": {
     "height": 796,
     "width": 1390
+  },
+  "/images/2608.07855v1/A__title.webp": {
+    "height": 393,
+    "width": 1294
   },
   "/images/2608.07885v1/A__title.webp": {
     "height": 565,
@@ -14542,6 +14770,18 @@
   "/images/2608.07952v1/fig1_pse_overview.webp": {
     "height": 308,
     "width": 551
+  },
+  "/images/2608.07955v1/example_v2.webp": {
+    "height": 511,
+    "width": 1600
+  },
+  "/images/2608.07955v1/frame_v2.webp": {
+    "height": 717,
+    "width": 1600
+  },
+  "/images/2608.07955v1/intro_v1.webp": {
+    "height": 875,
+    "width": 1600
   },
   "/images/2608.07959v1/1_different_search.webp": {
     "height": 591,
@@ -14591,6 +14831,14 @@
     "height": 774,
     "width": 1534
   },
+  "/images/2608.08055v1/cost_accuracy_lme.webp": {
+    "height": 1086,
+    "width": 1448
+  },
+  "/images/2608.08055v1/sodamem_overview.webp": {
+    "height": 1024,
+    "width": 1536
+  },
   "/images/2608.08075v1/A__title.webp": {
     "height": 744,
     "width": 1162
@@ -14614,6 +14862,18 @@
   "/images/2608.08264v1/A__title.webp": {
     "height": 331,
     "width": 1288
+  },
+  "/images/2608.08303v1/A__title.webp": {
+    "height": 343,
+    "width": 1346
+  },
+  "/images/2608.08303v1/attack_pipeline_v4.webp": {
+    "height": 709,
+    "width": 1276
+  },
+  "/images/2608.08303v1/attack_threat_model_v7.webp": {
+    "height": 709,
+    "width": 1087
   },
   "/images/2608.08311v1/A__title.webp": {
     "height": 406,
@@ -14663,6 +14923,18 @@
     "height": 752,
     "width": 605
   },
+  "/images/2608.08557v2/A__title.webp": {
+    "height": 405,
+    "width": 1290
+  },
+  "/images/2608.08557v2/synthesis_pipeline.webp": {
+    "height": 751,
+    "width": 1600
+  },
+  "/images/2608.08557v2/traj_contrast.webp": {
+    "height": 329,
+    "width": 925
+  },
   "/images/2608.08570v1/intro.webp": {
     "height": 602,
     "width": 1555
@@ -14707,6 +14979,42 @@
     "height": 642,
     "width": 1600
   },
+  "/images/2608.08640v1/A__title.webp": {
+    "height": 390,
+    "width": 1406
+  },
+  "/images/2608.08640v1/introduction.webp": {
+    "height": 911,
+    "width": 1600
+  },
+  "/images/2608.08640v1/method.webp": {
+    "height": 782,
+    "width": 1600
+  },
+  "/images/2608.08640v1/skillbench.webp": {
+    "height": 770,
+    "width": 1600
+  },
+  "/images/2608.08677v1/example.webp": {
+    "height": 553,
+    "width": 1600
+  },
+  "/images/2608.08677v1/introtest6.webp": {
+    "height": 537,
+    "width": 1596
+  },
+  "/images/2608.08677v1/livemathheat.webp": {
+    "height": 720,
+    "width": 876
+  },
+  "/images/2608.08677v1/main8.webp": {
+    "height": 648,
+    "width": 1600
+  },
+  "/images/2608.08677v1/searchqaheat.webp": {
+    "height": 720,
+    "width": 876
+  },
   "/images/2608.08775v2/x1.webp": {
     "height": 759,
     "width": 947
@@ -14726,6 +15034,30 @@
   "/images/2608.08795v1/figure3.webp": {
     "height": 722,
     "width": 1379
+  },
+  "/images/2608.08814v1/360CityArena_example.webp": {
+    "height": 720,
+    "width": 1280
+  },
+  "/images/2608.08814v1/360_City_Arena_Teaser.webp": {
+    "height": 898,
+    "width": 1515
+  },
+  "/images/2608.08814v1/A__title.webp": {
+    "height": 1170,
+    "width": 1292
+  },
+  "/images/2608.08814v1/task_category.webp": {
+    "height": 684,
+    "width": 1600
+  },
+  "/images/2608.08888v1/A__title.webp": {
+    "height": 498,
+    "width": 1119
+  },
+  "/images/2608.08888v1/fig1.webp": {
+    "height": 815,
+    "width": 1573
   },
   "/images/2608.08907v1/A__title.webp": {
     "height": 341,
@@ -14907,6 +15239,26 @@
     "height": 539,
     "width": 1600
   },
+  "/images/2608.09316v1/A__title.webp": {
+    "height": 391,
+    "width": 1311
+  },
+  "/images/2608.09316v1/adaptation_behavior.webp": {
+    "height": 687,
+    "width": 934
+  },
+  "/images/2608.09316v1/data_chart.webp": {
+    "height": 717,
+    "width": 1600
+  },
+  "/images/2608.09316v1/figure1.webp": {
+    "height": 2235,
+    "width": 1600
+  },
+  "/images/2608.09316v1/learning_dynamics_train.webp": {
+    "height": 787,
+    "width": 1600
+  },
   "/images/2608.09443v1/A__title.webp": {
     "height": 597,
     "width": 1406
@@ -14963,6 +15315,26 @@
     "height": 511,
     "width": 1600
   },
+  "/images/2608.09573v1/A__title.webp": {
+    "height": 335,
+    "width": 1420
+  },
+  "/images/2608.09573v1/Intro.webp": {
+    "height": 606,
+    "width": 968
+  },
+  "/images/2608.09573v1/Videovibe.webp": {
+    "height": 457,
+    "width": 960
+  },
+  "/images/2608.09573v1/benchmark_pipeline.webp": {
+    "height": 711,
+    "width": 1600
+  },
+  "/images/2608.09573v1/final_fialuremode_total.webp": {
+    "height": 744,
+    "width": 1600
+  },
   "/images/2608.09577v1/A__title.webp": {
     "height": 342,
     "width": 1281
@@ -14982,6 +15354,18 @@
   "/images/2608.09577v1/alpha_lambda_fpr.webp": {
     "height": 408,
     "width": 468
+  },
+  "/images/2608.09629v1/A__title.webp": {
+    "height": 402,
+    "width": 1091
+  },
+  "/images/2608.09629v1/figure1_optimization_contract_v12.webp": {
+    "height": 824,
+    "width": 1600
+  },
+  "/images/2608.09629v1/obs3_path_function.webp": {
+    "height": 430,
+    "width": 735
   },
   "/images/2608.09654v1/1.webp": {
     "height": 445,
@@ -15182,6 +15566,10 @@
   "/images/2608.10232v1/x7.webp": {
     "height": 572,
     "width": 996
+  },
+  "/images/2608.10296v1/A__title.webp": {
+    "height": 513,
+    "width": 1059
   },
   "/images/2608.10333v1/A__title.webp": {
     "height": 1376,
