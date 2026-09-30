@@ -13731,6 +13731,18 @@
     "height": 537,
     "width": 1297
   },
+  "/images/2608.01867/failure_modes_diagnostic.webp": {
+    "height": 913,
+    "width": 1600
+  },
+  "/images/2608.01867/framework.webp": {
+    "height": 818,
+    "width": 1600
+  },
+  "/images/2608.01867/method.webp": {
+    "height": 614,
+    "width": 1600
+  },
   "/images/2608.01881/RL.webp": {
     "height": 695,
     "width": 1600
@@ -13810,6 +13822,18 @@
   "/images/2608.02018/platform.webp": {
     "height": 195,
     "width": 879
+  },
+  "/images/2608.02109/analysis_new.webp": {
+    "height": 467,
+    "width": 1305
+  },
+  "/images/2608.02109/figure1_new.webp": {
+    "height": 709,
+    "width": 1043
+  },
+  "/images/2608.02109/figure2_new.webp": {
+    "height": 854,
+    "width": 1600
   },
   "/images/2608.02113/alfworld_sr_at_k.webp": {
     "height": 732,
@@ -13955,6 +13979,14 @@
     "height": 639,
     "width": 1320
   },
+  "/images/2608.02680/fig_call_reduction.webp": {
+    "height": 687,
+    "width": 1487
+  },
+  "/images/2608.02680/pipeline.webp": {
+    "height": 1024,
+    "width": 1536
+  },
   "/images/2608.02694/mm-asia-regular-fig1.webp": {
     "height": 863,
     "width": 1600
@@ -13966,6 +13998,26 @@
   "/images/2608.02694/mm-asia-regular-fig3.webp": {
     "height": 977,
     "width": 1600
+  },
+  "/images/2608.02713/L1_to_L3.webp": {
+    "height": 618,
+    "width": 1149
+  },
+  "/images/2608.02713/agent_wm_env.webp": {
+    "height": 496,
+    "width": 1233
+  },
+  "/images/2608.02713/proxy_dimensions.webp": {
+    "height": 603,
+    "width": 1039
+  },
+  "/images/2608.02713/teaser.webp": {
+    "height": 432,
+    "width": 1054
+  },
+  "/images/2608.02713/world_proxy.webp": {
+    "height": 469,
+    "width": 1092
   },
   "/images/2608.02751/fig_architecture_compact.webp": {
     "height": 595,
@@ -13990,6 +14042,14 @@
   "/images/2608.03048v1/teaser.webp": {
     "height": 751,
     "width": 992
+  },
+  "/images/2608.03063v1/gradient1.webp": {
+    "height": 797,
+    "width": 1600
+  },
+  "/images/2608.03063v1/main.webp": {
+    "height": 618,
+    "width": 1600
   },
   "/images/2608.03071v1/A__title.webp": {
     "height": 338,
@@ -14018,6 +14078,18 @@
   "/images/2608.03206v1/figure_260725.webp": {
     "height": 694,
     "width": 1533
+  },
+  "/images/2608.03223v1/ADRS2.jpg": {
+    "height": 462,
+    "width": 1200
+  },
+  "/images/2608.03223v1/A__title.webp": {
+    "height": 599,
+    "width": 1306
+  },
+  "/images/2608.03335v1/A__title.webp": {
+    "height": 290,
+    "width": 1406
   },
   "/images/2608.03391v1/A__title.webp": {
     "height": 338,
@@ -14119,6 +14191,26 @@
     "height": 347,
     "width": 1600
   },
+  "/images/2608.03499v1/A__title.webp": {
+    "height": 689,
+    "width": 1419
+  },
+  "/images/2608.03499v1/main_model_cd_combined_v3.webp": {
+    "height": 296,
+    "width": 872
+  },
+  "/images/2608.03499v1/weclawarena_benchmark.webp": {
+    "height": 540,
+    "width": 1600
+  },
+  "/images/2608.03499v1/weclawarena_overreview.webp": {
+    "height": 780,
+    "width": 1600
+  },
+  "/images/2608.03499v1/x13.webp": {
+    "height": 296,
+    "width": 872
+  },
   "/images/2608.03682v2/A__title.webp": {
     "height": 508,
     "width": 1277
@@ -14151,6 +14243,30 @@
     "height": 608,
     "width": 1002
   },
+  "/images/2608.03735v1/02_opening_cc_taxonomy_pies_and_gaia_overall_uniform_2.webp": {
+    "height": 630,
+    "width": 1600
+  },
+  "/images/2608.03735v1/18a2_gaia_language_bars_all_models_stacked_run1_1.webp": {
+    "height": 1230,
+    "width": 1600
+  },
+  "/images/2608.03735v1/18c_failure_taxonomy_stacked_by_model_1.webp": {
+    "height": 1250,
+    "width": 1085
+  },
+  "/images/2608.03735v1/A__title.webp": {
+    "height": 401,
+    "width": 1226
+  },
+  "/images/2608.03735v1/tart_method.webp": {
+    "height": 523,
+    "width": 1600
+  },
+  "/images/2608.03735v1/taxonomy_v4.webp": {
+    "height": 897,
+    "width": 1600
+  },
   "/images/2608.03744v1/A__title.webp": {
     "height": 916,
     "width": 1278
@@ -14158,6 +14274,14 @@
   "/images/2608.03836v2/A__title.webp": {
     "height": 435,
     "width": 1368
+  },
+  "/images/2608.03874v1/A__title.webp": {
+    "height": 408,
+    "width": 1281
+  },
+  "/images/2608.03874v1/pipeline_preview_vector.webp": {
+    "height": 880,
+    "width": 1600
   },
   "/images/2608.03893v1/A__title.webp": {
     "height": 434,
@@ -14355,6 +14479,38 @@
     "height": 1500,
     "width": 1600
   },
+  "/images/2608.04439v1/A__title.webp": {
+    "height": 464,
+    "width": 1412
+  },
+  "/images/2608.04439v1/ExeCRE_Method_0327_2.webp": {
+    "height": 704,
+    "width": 1600
+  },
+  "/images/2608.04439v1/SelfCorrection_0327_4.webp": {
+    "height": 1044,
+    "width": 1357
+  },
+  "/images/2608.04530v1/TeaserFinal_cropped_final.webp": {
+    "height": 591,
+    "width": 1256
+  },
+  "/images/2608.04530v1/method_comic.drawio.clean.webp": {
+    "height": 554,
+    "width": 1179
+  },
+  "/images/2608.04530v1/oracle_expansion.webp": {
+    "height": 190,
+    "width": 380
+  },
+  "/images/2608.04562v1/A__title.webp": {
+    "height": 501,
+    "width": 1248
+  },
+  "/images/2608.04562v1/teaser.webp": {
+    "height": 519,
+    "width": 1470
+  },
   "/images/2608.04565v1/A__title.webp": {
     "height": 452,
     "width": 778
@@ -14374,6 +14530,26 @@
   "/images/2608.04565v1/main_results_asr_lift_panel.webp": {
     "height": 453,
     "width": 695
+  },
+  "/images/2608.04575v1/1_teaser.webp": {
+    "height": 607,
+    "width": 1600
+  },
+  "/images/2608.04575v1/2_overview.webp": {
+    "height": 793,
+    "width": 1600
+  },
+  "/images/2608.04575v1/3_token_cost.webp": {
+    "height": 599,
+    "width": 1600
+  },
+  "/images/2608.04575v1/4_ablation.webp": {
+    "height": 404,
+    "width": 1600
+  },
+  "/images/2608.04575v1/5_error_analysis.webp": {
+    "height": 664,
+    "width": 1600
   },
   "/images/2608.04588v1/A__title.webp": {
     "height": 464,
@@ -14502,6 +14678,18 @@
   "/images/2608.04788v1/methodology_v6.webp": {
     "height": 262,
     "width": 1600
+  },
+  "/images/2608.04828v1/A__title.webp": {
+    "height": 562,
+    "width": 1064
+  },
+  "/images/2608.04828v1/figure6_beautified_hd.webp": {
+    "height": 1024,
+    "width": 1536
+  },
+  "/images/2608.04828v1/skill-use.webp": {
+    "height": 216,
+    "width": 634
   },
   "/images/2608.04830v1/A__title.webp": {
     "height": 620,
@@ -14647,6 +14835,34 @@
     "height": 945,
     "width": 1245
   },
+  "/images/2608.05369v1/A__title.webp": {
+    "height": 610,
+    "width": 1170
+  },
+  "/images/2608.05369v1/new_teaser.webp": {
+    "height": 870,
+    "width": 1600
+  },
+  "/images/2608.05369v1/overview.webp": {
+    "height": 619,
+    "width": 1600
+  },
+  "/images/2608.05369v1/rollouts.webp": {
+    "height": 591,
+    "width": 1600
+  },
+  "/images/2608.05369v1/visual.webp": {
+    "height": 506,
+    "width": 1600
+  },
+  "/images/2608.05430v1/agent_tradeoff_main_all_baselines_log.webp": {
+    "height": 756,
+    "width": 1600
+  },
+  "/images/2608.05430v1/agent_tradeoff_suites_adaptive_cu.webp": {
+    "height": 825,
+    "width": 1600
+  },
   "/images/2608.05446v1/A__title.webp": {
     "height": 1104,
     "width": 1417
@@ -14691,6 +14907,14 @@
     "height": 436,
     "width": 1144
   },
+  "/images/2608.05628v1/A__title.webp": {
+    "height": 338,
+    "width": 1073
+  },
+  "/images/2608.05628v1/method.webp": {
+    "height": 816,
+    "width": 1600
+  },
   "/images/2608.05703v1/A__title.webp": {
     "height": 338,
     "width": 1142
@@ -14706,6 +14930,42 @@
   "/images/2608.05703v1/framework.webp": {
     "height": 917,
     "width": 1548
+  },
+  "/images/2608.05706v1/A__title.webp": {
+    "height": 338,
+    "width": 1389
+  },
+  "/images/2608.05706v1/datasets.webp": {
+    "height": 1391,
+    "width": 1600
+  },
+  "/images/2608.05706v1/fw.webp": {
+    "height": 896,
+    "width": 1505
+  },
+  "/images/2608.05706v1/lam3d.webp": {
+    "height": 847,
+    "width": 1590
+  },
+  "/images/2608.05706v1/ood.webp": {
+    "height": 621,
+    "width": 1459
+  },
+  "/images/2608.05714v1/CaseS.webp": {
+    "height": 526,
+    "width": 1600
+  },
+  "/images/2608.05714v1/Motivation.webp": {
+    "height": 478,
+    "width": 770
+  },
+  "/images/2608.05714v1/Pipeline_2.webp": {
+    "height": 435,
+    "width": 1600
+  },
+  "/images/2608.05714v1/Trajectory.webp": {
+    "height": 282,
+    "width": 1600
   },
   "/images/2608.05729v1/A__title.webp": {
     "height": 408,
@@ -14771,6 +15031,30 @@
     "height": 578,
     "width": 1600
   },
+  "/images/2608.05970v1/A__title.webp": {
+    "height": 501,
+    "width": 1105
+  },
+  "/images/2608.05970v1/Comparison.webp": {
+    "height": 544,
+    "width": 1590
+  },
+  "/images/2608.05970v1/Pipeline.webp": {
+    "height": 441,
+    "width": 1600
+  },
+  "/images/2608.05970v1/Visualization.webp": {
+    "height": 462,
+    "width": 1480
+  },
+  "/images/2608.05987v1/A__title.webp": {
+    "height": 586,
+    "width": 1140
+  },
+  "/images/2608.05987v1/final5.drawio.webp": {
+    "height": 873,
+    "width": 1600
+  },
   "/images/2608.06057v1/A__title.webp": {
     "height": 338,
     "width": 953
@@ -14830,6 +15114,18 @@
   "/images/2608.06197v1/share8b_tau2_avg_styled.webp": {
     "height": 377,
     "width": 669
+  },
+  "/images/2608.06296v1/A__title.webp": {
+    "height": 429,
+    "width": 1059
+  },
+  "/images/2608.06296v1/uopsd_figure_v6_p2.webp": {
+    "height": 337,
+    "width": 1221
+  },
+  "/images/2608.06296v1/uopsd_figure_v7_p1.webp": {
+    "height": 378,
+    "width": 941
   },
   "/images/2608.06301v1/A__title.webp": {
     "height": 647,
@@ -15075,6 +15371,22 @@
     "height": 544,
     "width": 1325
   },
+  "/images/2608.06791v1/C2HLS-case-study-v2.webp": {
+    "height": 124,
+    "width": 766
+  },
+  "/images/2608.06791v1/C2HLS-multi-step-v5-0.webp": {
+    "height": 993,
+    "width": 1404
+  },
+  "/images/2608.06791v1/C2HLS_2-Fig-system-v3-4.webp": {
+    "height": 499,
+    "width": 1485
+  },
+  "/images/2608.06791v1/hybrid_router_diagram_v2_4.webp": {
+    "height": 777,
+    "width": 1455
+  },
   "/images/2608.06811v1/case_django13516.webp": {
     "height": 517,
     "width": 1479
@@ -15115,6 +15427,14 @@
     "height": 887,
     "width": 1600
   },
+  "/images/2608.07056v1/A__title.webp": {
+    "height": 338,
+    "width": 1408
+  },
+  "/images/2608.07056v1/bonsai_v3.webp": {
+    "height": 1293,
+    "width": 1600
+  },
   "/images/2608.07068v1/A__title.webp": {
     "height": 351,
     "width": 1359
@@ -15122,6 +15442,38 @@
   "/images/2608.07068v1/memopd_main_method_figure.webp": {
     "height": 642,
     "width": 1500
+  },
+  "/images/2608.07079v1/A__title.webp": {
+    "height": 345,
+    "width": 1387
+  },
+  "/images/2608.07079v1/all_cond_spl.webp": {
+    "height": 635,
+    "width": 1600
+  },
+  "/images/2608.07079v1/all_cond_sr.webp": {
+    "height": 635,
+    "width": 1600
+  },
+  "/images/2608.07079v1/cfr_cond_sr.webp": {
+    "height": 635,
+    "width": 1600
+  },
+  "/images/2608.07079v1/framework.webp": {
+    "height": 710,
+    "width": 1600
+  },
+  "/images/2608.07079v1/frontier.webp": {
+    "height": 1086,
+    "width": 1448
+  },
+  "/images/2608.07079v1/overall_illustration.webp": {
+    "height": 949,
+    "width": 1360
+  },
+  "/images/2608.07079v1/posthoc_evaluation.webp": {
+    "height": 1071,
+    "width": 1600
   },
   "/images/2608.07107v1/A__title.webp": {
     "height": 340,
@@ -15227,6 +15579,10 @@
     "height": 377,
     "width": 864
   },
+  "/images/2608.07429v2/figure1_concept_recreated_editable.webp": {
+    "height": 900,
+    "width": 1600
+  },
   "/images/2608.07437v1/A__title.webp": {
     "height": 547,
     "width": 1193
@@ -15258,6 +15614,18 @@
   "/images/2608.07631v1/A__title.webp": {
     "height": 281,
     "width": 1202
+  },
+  "/images/2608.07639v1/A__title.webp": {
+    "height": 338,
+    "width": 1329
+  },
+  "/images/2608.07639v1/fig1_motivating_example.webp": {
+    "height": 696,
+    "width": 1600
+  },
+  "/images/2608.07639v1/fig2_pipeline.webp": {
+    "height": 637,
+    "width": 1600
   },
   "/images/2608.07645v1/MGM.drawio.webp": {
     "height": 579,
@@ -15363,6 +15731,22 @@
     "height": 774,
     "width": 1534
   },
+  "/images/2608.08045v1/A__title.webp": {
+    "height": 815,
+    "width": 1162
+  },
+  "/images/2608.08045v1/earth.webp": {
+    "height": 1171,
+    "width": 1564
+  },
+  "/images/2608.08045v1/framework.webp": {
+    "height": 1565,
+    "width": 1600
+  },
+  "/images/2608.08045v1/task.webp": {
+    "height": 418,
+    "width": 1600
+  },
   "/images/2608.08055v1/cost_accuracy_lme.webp": {
     "height": 1086,
     "width": 1448
@@ -15374,6 +15758,14 @@
   "/images/2608.08075v1/A__title.webp": {
     "height": 744,
     "width": 1162
+  },
+  "/images/2608.08077v1/A__title.webp": {
+    "height": 367,
+    "width": 1396
+  },
+  "/images/2608.08077v1/Office-Env.webp": {
+    "height": 668,
+    "width": 1600
   },
   "/images/2608.08160v1/A__title.webp": {
     "height": 319,
