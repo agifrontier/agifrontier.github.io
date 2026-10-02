@@ -12183,6 +12183,70 @@
     "height": 758,
     "width": 1392
   },
+  "/images/2607.25227v1/A__title.webp": {
+    "height": 768,
+    "width": 1464
+  },
+  "/images/2607.25227v1/Fig1.webp": {
+    "height": 548,
+    "width": 1550
+  },
+  "/images/2607.25227v1/Fig2.webp": {
+    "height": 493,
+    "width": 887
+  },
+  "/images/2607.25227v1/Fig3.webp": {
+    "height": 432,
+    "width": 1487
+  },
+  "/images/2607.25227v1/Fig6.webp": {
+    "height": 317,
+    "width": 638
+  },
+  "/images/2607.25227v1/Fig7.webp": {
+    "height": 342,
+    "width": 689
+  },
+  "/images/2607.25227v1/Fig8.webp": {
+    "height": 291,
+    "width": 626
+  },
+  "/images/2607.25227v1/Fig9.webp": {
+    "height": 386,
+    "width": 645
+  },
+  "/images/2607.25236v1/pipeline_figure1.webp": {
+    "height": 592,
+    "width": 1600
+  },
+  "/images/2607.25236v1/teaser.webp": {
+    "height": 1136,
+    "width": 855
+  },
+  "/images/2607.25236v1/two_stage_induction.webp": {
+    "height": 804,
+    "width": 1586
+  },
+  "/images/2607.25291v1/A__title.webp": {
+    "height": 338,
+    "width": 1075
+  },
+  "/images/2607.25291v1/overview.webp": {
+    "height": 399,
+    "width": 1124
+  },
+  "/images/2607.25291v1/pareto_longbenchv2.webp": {
+    "height": 196,
+    "width": 387
+  },
+  "/images/2607.25291v1/prefill_attention_speedup.webp": {
+    "height": 239,
+    "width": 900
+  },
+  "/images/2607.25291v1/top_stats.webp": {
+    "height": 417,
+    "width": 797
+  },
   "/images/2607.25297v1/MTGuard.webp": {
     "height": 450,
     "width": 1559
@@ -12190,6 +12254,14 @@
   "/images/2607.25297v1/time_overheads.webp": {
     "height": 782,
     "width": 1443
+  },
+  "/images/2607.25308v1/A__title.webp": {
+    "height": 561,
+    "width": 1116
+  },
+  "/images/2607.25308v1/Introduction.webp": {
+    "height": 567,
+    "width": 1417
   },
   "/images/2607.25333v1/A__title.webp": {
     "height": 544,
@@ -12282,6 +12354,14 @@
   "/images/2607.25656v1/overview.webp": {
     "height": 567,
     "width": 1185
+  },
+  "/images/2607.25718v2/Figure1.webp": {
+    "height": 1020,
+    "width": 1320
+  },
+  "/images/2607.25718v2/Figure2.webp": {
+    "height": 1020,
+    "width": 1320
   },
   "/images/2607.25765v1/A__title.webp": {
     "height": 328,
@@ -12439,9 +12519,21 @@
     "height": 962,
     "width": 1600
   },
+  "/images/2607.26117v1/A__title.webp": {
+    "height": 299,
+    "width": 1135
+  },
   "/images/2607.26155v1/A__title.webp": {
     "height": 396,
     "width": 1110
+  },
+  "/images/2607.26160v1/A__title.webp": {
+    "height": 338,
+    "width": 1106
+  },
+  "/images/2607.26160v1/main.webp": {
+    "height": 497,
+    "width": 1520
   },
   "/images/2607.26181v1/A__title.webp": {
     "height": 381,
@@ -12515,6 +12607,26 @@
     "height": 534,
     "width": 1215
   },
+  "/images/2607.26579v1/A__title.webp": {
+    "height": 338,
+    "width": 1006
+  },
+  "/images/2607.26579v1/rollout_ctrlnet14b_scen3.jpg": {
+    "height": 97,
+    "width": 1200
+  },
+  "/images/2607.26579v1/rollout_droid_14b.jpg": {
+    "height": 97,
+    "width": 1200
+  },
+  "/images/2607.26579v1/sim_robomme_crop.jpg": {
+    "height": 402,
+    "width": 512
+  },
+  "/images/2607.26587v1/idea_reliability_teaser.webp": {
+    "height": 533,
+    "width": 1600
+  },
   "/images/2607.26598v1/A__title.webp": {
     "height": 373,
     "width": 1119
@@ -12571,6 +12683,30 @@
     "height": 1461,
     "width": 1600
   },
+  "/images/2607.26657/analysis1.webp": {
+    "height": 581,
+    "width": 1600
+  },
+  "/images/2607.26657/analysis2.webp": {
+    "height": 603,
+    "width": 1600
+  },
+  "/images/2607.26657/cosmos_vs_student_stability.webp": {
+    "height": 348,
+    "width": 1224
+  },
+  "/images/2607.26657/framework_paper.webp": {
+    "height": 731,
+    "width": 1600
+  },
+  "/images/2607.26657/related_work.webp": {
+    "height": 294,
+    "width": 1600
+  },
+  "/images/2607.26657/rollout.webp": {
+    "height": 791,
+    "width": 1600
+  },
   "/images/2607.26661v1/framework.webp": {
     "height": 390,
     "width": 945
@@ -12602,6 +12738,18 @@
   "/images/2607.26710v1/fig7.webp": {
     "height": 900,
     "width": 1600
+  },
+  "/images/2607.26722v1/AAAI_method.webp": {
+    "height": 755,
+    "width": 1600
+  },
+  "/images/2607.26722v1/AAAI_motivation.webp": {
+    "height": 1092,
+    "width": 1600
+  },
+  "/images/2607.26722v1/A__title.webp": {
+    "height": 343,
+    "width": 1376
   },
   "/images/2607.26760v1/A__title.webp": {
     "height": 611,
@@ -12643,6 +12791,22 @@
     "height": 840,
     "width": 1500
   },
+  "/images/2607.26860v1/A__title.webp": {
+    "height": 522,
+    "width": 971
+  },
+  "/images/2607.26860v1/method.webp": {
+    "height": 113,
+    "width": 499
+  },
+  "/images/2607.26860v1/native_space.webp": {
+    "height": 301,
+    "width": 347
+  },
+  "/images/2607.26860v1/t2i_samples.webp": {
+    "height": 332,
+    "width": 829
+  },
   "/images/2607.26865v1/A__title.webp": {
     "height": 455,
     "width": 1110
@@ -12683,6 +12847,18 @@
     "height": 710,
     "width": 1550
   },
+  "/images/2607.27056v1/A__title.webp": {
+    "height": 338,
+    "width": 1406
+  },
+  "/images/2607.27056v1/setoka-overview.webp": {
+    "height": 884,
+    "width": 1600
+  },
+  "/images/2607.27056v1/setoka-pipeline.webp": {
+    "height": 455,
+    "width": 1600
+  },
   "/images/2607.27080v1/A__title.webp": {
     "height": 338,
     "width": 1260
@@ -12699,9 +12875,33 @@
     "height": 565,
     "width": 1314
   },
+  "/images/2607.27083v1/A__title.webp": {
+    "height": 338,
+    "width": 1306
+  },
+  "/images/2607.27083v1/fig1_placement_aaai.webp": {
+    "height": 755,
+    "width": 1600
+  },
   "/images/2607.27090v1/A__title.webp": {
     "height": 247,
     "width": 1410
+  },
+  "/images/2607.27138v1/dlam_real_world.webp": {
+    "height": 360,
+    "width": 1600
+  },
+  "/images/2607.27138v1/framework.webp": {
+    "height": 544,
+    "width": 1300
+  },
+  "/images/2607.27138v1/point_distrbution_dlam_visual.webp": {
+    "height": 434,
+    "width": 1600
+  },
+  "/images/2607.27138v1/teaser.webp": {
+    "height": 899,
+    "width": 1417
   },
   "/images/2607.27155v1/A__title.webp": {
     "height": 393,
@@ -12833,6 +13033,14 @@
   },
   "/images/2607.27372/xm_main_figure.webp": {
     "height": 483,
+    "width": 1600
+  },
+  "/images/2607.27415/inference_time.webp": {
+    "height": 580,
+    "width": 584
+  },
+  "/images/2607.27415/pipeline_0504.webp": {
+    "height": 1011,
     "width": 1600
   },
   "/images/2607.27484/depth_invariance.webp": {
@@ -13043,6 +13251,38 @@
     "height": 302,
     "width": 822
   },
+  "/images/2607.28103/difference1.webp": {
+    "height": 856,
+    "width": 1600
+  },
+  "/images/2607.28103/fig7_init_prev_cur_ratio.webp": {
+    "height": 1116,
+    "width": 1600
+  },
+  "/images/2607.28103/framework.webp": {
+    "height": 681,
+    "width": 1600
+  },
+  "/images/2607.28103/hidden_states_three_classes_diff_1.webp": {
+    "height": 1114,
+    "width": 1600
+  },
+  "/images/2607.28103/t-sne_ibpolytope_v5_6phi_compare.webp": {
+    "height": 426,
+    "width": 1600
+  },
+  "/images/2607.28156/figure1.jpg": {
+    "height": 496,
+    "width": 1200
+  },
+  "/images/2607.28156/figure2.jpg": {
+    "height": 493,
+    "width": 1200
+  },
+  "/images/2607.28156/figure3.webp": {
+    "height": 752,
+    "width": 1600
+  },
   "/images/2607.28227/Env.webp": {
     "height": 544,
     "width": 1600
@@ -13179,6 +13419,22 @@
     "height": 310,
     "width": 973
   },
+  "/images/2607.28737/018_000_1.webp": {
+    "height": 596,
+    "width": 1249
+  },
+  "/images/2607.28737/070_070.webp": {
+    "height": 476,
+    "width": 1249
+  },
+  "/images/2607.28737/mountain_stare.webp": {
+    "height": 476,
+    "width": 1249
+  },
+  "/images/2607.28737/video_token_dit_drawio_stripped.webp": {
+    "height": 528,
+    "width": 1600
+  },
   "/images/2607.28760/blfm_vs_jit_t2i_combined.webp": {
     "height": 382,
     "width": 1600
@@ -13209,6 +13465,26 @@
   },
   "/images/2607.28887/canitdelete_benchmark_overview.webp": {
     "height": 486,
+    "width": 1600
+  },
+  "/images/2607.28908/hrf_only_v2.webp": {
+    "height": 282,
+    "width": 1341
+  },
+  "/images/2607.28908/imdb_reflection_heatmap.webp": {
+    "height": 1291,
+    "width": 1600
+  },
+  "/images/2607.28908/info_gain_comparison.webp": {
+    "height": 545,
+    "width": 1600
+  },
+  "/images/2607.28908/malalgoqa_reflection_heatmap.webp": {
+    "height": 1291,
+    "width": 1600
+  },
+  "/images/2607.28908/tiser_reflection_heatmap.webp": {
+    "height": 1269,
     "width": 1600
   },
   "/images/2607.28990/framework.webp": {
@@ -13261,6 +13537,18 @@
   },
   "/images/2607.29055/mars.webp": {
     "height": 845,
+    "width": 1600
+  },
+  "/images/2607.29169/ActFovea_Framework.webp": {
+    "height": 512,
+    "width": 1600
+  },
+  "/images/2607.29169/dynamic_fovea_region_strategy_comparison.webp": {
+    "height": 1070,
+    "width": 1445
+  },
+  "/images/2607.29169/introduction_framework.webp": {
+    "height": 1027,
     "width": 1600
   },
   "/images/2607.29172/experiments.webp": {
@@ -13343,6 +13631,14 @@
     "height": 425,
     "width": 889
   },
+  "/images/2607.29405/prisma.jpg": {
+    "height": 758,
+    "width": 1200
+  },
+  "/images/2607.29405/yeardist_reduced.jpg": {
+    "height": 771,
+    "width": 1200
+  },
   "/images/2607.29422/agenticrepair_overview_v2.webp": {
     "height": 825,
     "width": 1124
@@ -13394,6 +13690,10 @@
   "/images/2607.29613/wcm_3_subplots_3d_ribbons.webp": {
     "height": 392,
     "width": 1447
+  },
+  "/images/2607.29677/gt_pipelines_opt1.webp": {
+    "height": 296,
+    "width": 780
   },
   "/images/2607.29678/fig_workload_joint.webp": {
     "height": 342,
@@ -13462,6 +13762,10 @@
   "/images/2608.00677/OpenART.webp": {
     "height": 648,
     "width": 1359
+  },
+  "/images/2608.00685/02_exploratory_model_specific_effects.webp": {
+    "height": 480,
+    "width": 960
   },
   "/images/2608.00711/acc_v_hallu.webp": {
     "height": 490,
@@ -13575,6 +13879,14 @@
     "height": 468,
     "width": 1296
   },
+  "/images/2608.01085/bcbi_and_latte.webp": {
+    "height": 749,
+    "width": 1600
+  },
+  "/images/2608.01085/single_vs_collective.webp": {
+    "height": 1529,
+    "width": 1600
+  },
   "/images/2608.01149/lifelong-overview.webp": {
     "height": 759,
     "width": 1600
@@ -13582,6 +13894,22 @@
   "/images/2608.01149/lifelongagentbench_rank_transition.webp": {
     "height": 194,
     "width": 335
+  },
+  "/images/2608.01234/1_PGchannel.webp": {
+    "height": 505,
+    "width": 1600
+  },
+  "/images/2608.01234/3_lean_error_types.webp": {
+    "height": 434,
+    "width": 734
+  },
+  "/images/2608.01234/4_framework.webp": {
+    "height": 811,
+    "width": 1600
+  },
+  "/images/2608.01234/5_antimem_all.webp": {
+    "height": 402,
+    "width": 1600
   },
   "/images/2608.01284/gatedadamw.webp": {
     "height": 700,
@@ -13610,6 +13938,10 @@
   "/images/2608.01324/framework.webp": {
     "height": 837,
     "width": 1463
+  },
+  "/images/2608.01326/agent-figure.webp": {
+    "height": 362,
+    "width": 1179
   },
   "/images/2608.01397/attention_map.webp": {
     "height": 380,
@@ -13919,6 +14251,18 @@
     "height": 900,
     "width": 1600
   },
+  "/images/2608.02441/demo.webp": {
+    "height": 595,
+    "width": 754
+  },
+  "/images/2608.02441/family-deficit-heatmap.webp": {
+    "height": 434,
+    "width": 373
+  },
+  "/images/2608.02441/framework.webp": {
+    "height": 537,
+    "width": 1098
+  },
   "/images/2608.02464/fig1_score_traces_real.webp": {
     "height": 840,
     "width": 1575
@@ -13938,6 +14282,22 @@
   "/images/2608.02464/hybrid_explain.webp": {
     "height": 864,
     "width": 1600
+  },
+  "/images/2608.02499/edit_frequency_ablation.webp": {
+    "height": 263,
+    "width": 401
+  },
+  "/images/2608.02499/failure_mode_analysis.webp": {
+    "height": 323,
+    "width": 861
+  },
+  "/images/2608.02499/method_pipeline.webp": {
+    "height": 669,
+    "width": 1600
+  },
+  "/images/2608.02499/shared_workspace_motivation.webp": {
+    "height": 759,
+    "width": 1446
   },
   "/images/2608.02508/mrt.webp": {
     "height": 552,
@@ -13998,6 +14358,30 @@
   "/images/2608.02694/mm-asia-regular-fig3.webp": {
     "height": 977,
     "width": 1600
+  },
+  "/images/2608.02711/Pipeline.webp": {
+    "height": 645,
+    "width": 1124
+  },
+  "/images/2608.02711/Teaser.webp": {
+    "height": 706,
+    "width": 1600
+  },
+  "/images/2608.02711/nano-v2-multiround.jpg": {
+    "height": 953,
+    "width": 1200
+  },
+  "/images/2608.02711/nano-v2-results.jpg": {
+    "height": 1267,
+    "width": 1200
+  },
+  "/images/2608.02711/nano3d-v2-pipeline.webp": {
+    "height": 1103,
+    "width": 1600
+  },
+  "/images/2608.02711/t23d-data-pipeline.jpg": {
+    "height": 692,
+    "width": 1200
   },
   "/images/2608.02713/L1_to_L3.webp": {
     "height": 618,
