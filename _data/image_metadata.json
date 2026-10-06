@@ -12455,6 +12455,42 @@
     "height": 398,
     "width": 1200
   },
+  "/images/2607.24588v1/main.webp": {
+    "height": 525,
+    "width": 1205
+  },
+  "/images/2607.24588v1/motivation.webp": {
+    "height": 454,
+    "width": 846
+  },
+  "/images/2607.24591v1/A__title.webp": {
+    "height": 146,
+    "width": 789
+  },
+  "/images/2607.24591v1/ablation.webp": {
+    "height": 579,
+    "width": 1289
+  },
+  "/images/2607.24591v1/camera.webp": {
+    "height": 497,
+    "width": 1229
+  },
+  "/images/2607.24591v1/more_results.webp": {
+    "height": 380,
+    "width": 1254
+  },
+  "/images/2607.24591v1/overview.webp": {
+    "height": 582,
+    "width": 1040
+  },
+  "/images/2607.24591v1/qualitative_comparison.webp": {
+    "height": 594,
+    "width": 1325
+  },
+  "/images/2607.24591v1/teaser_cameraready.webp": {
+    "height": 680,
+    "width": 924
+  },
   "/images/2607.24593v1/A__title.webp": {
     "height": 458,
     "width": 1283
@@ -12506,6 +12542,34 @@
   "/images/2607.24720v1/task.webp": {
     "height": 591,
     "width": 1526
+  },
+  "/images/2607.24743v2/A__title.webp": {
+    "height": 1577,
+    "width": 1419
+  },
+  "/images/2607.24744v1/A__title.webp": {
+    "height": 339,
+    "width": 1232
+  },
+  "/images/2607.24744v1/fig1.webp": {
+    "height": 583,
+    "width": 1600
+  },
+  "/images/2607.24744v1/fig2.webp": {
+    "height": 620,
+    "width": 1600
+  },
+  "/images/2607.24744v1/fig3.webp": {
+    "height": 1023,
+    "width": 1600
+  },
+  "/images/2607.24744v1/fig4.webp": {
+    "height": 809,
+    "width": 1600
+  },
+  "/images/2607.24744v1/fig5.webp": {
+    "height": 856,
+    "width": 1256
   },
   "/images/2607.24850v1/A__title.webp": {
     "height": 354,
@@ -12731,6 +12795,14 @@
     "height": 362,
     "width": 1460
   },
+  "/images/2607.25357v1/A__title.webp": {
+    "height": 485,
+    "width": 1362
+  },
+  "/images/2607.25357v1/RSM.webp": {
+    "height": 604,
+    "width": 1190
+  },
   "/images/2607.25369v1/A__title.webp": {
     "height": 459,
     "width": 1318
@@ -12842,6 +12914,22 @@
   "/images/2607.25816v1/intro_self_speculation.webp": {
     "height": 1033,
     "width": 1600
+  },
+  "/images/2607.25835v1/A__title.webp": {
+    "height": 618,
+    "width": 1190
+  },
+  "/images/2607.25835v1/fulfillment_bar-cropped.webp": {
+    "height": 1784,
+    "width": 1600
+  },
+  "/images/2607.25835v1/rescaled_combined_plot.webp": {
+    "height": 911,
+    "width": 1600
+  },
+  "/images/2607.25835v1/satellite-config.webp": {
+    "height": 688,
+    "width": 694
   },
   "/images/2607.25852v2/A__title.webp": {
     "height": 593,
@@ -12995,6 +13083,10 @@
     "height": 381,
     "width": 1389
   },
+  "/images/2607.26212v1/selection-process.webp": {
+    "height": 280,
+    "width": 1600
+  },
   "/images/2607.26228v1/A__title.webp": {
     "height": 492,
     "width": 920
@@ -13042,6 +13134,14 @@
   "/images/2607.26300v1/townview.webp": {
     "height": 640,
     "width": 1600
+  },
+  "/images/2607.26314v1/A__title.webp": {
+    "height": 342,
+    "width": 1223
+  },
+  "/images/2607.26470v1/A__title.webp": {
+    "height": 338,
+    "width": 1061
   },
   "/images/2607.26490v1/A__title.webp": {
     "height": 349,
@@ -13107,6 +13207,22 @@
     "height": 849,
     "width": 1559
   },
+  "/images/2607.26611v1/A__title.webp": {
+    "height": 342,
+    "width": 1389
+  },
+  "/images/2607.26611v1/Datapipeline.webp": {
+    "height": 340,
+    "width": 1600
+  },
+  "/images/2607.26611v1/Gate.webp": {
+    "height": 798,
+    "width": 1600
+  },
+  "/images/2607.26611v1/Task.webp": {
+    "height": 777,
+    "width": 1600
+  },
   "/images/2607.26637v1/A__title.webp": {
     "height": 448,
     "width": 1082
@@ -13170,6 +13286,18 @@
   "/images/2607.26661v1/pipeline.webp": {
     "height": 272,
     "width": 1178
+  },
+  "/images/2607.26694v1/A__title.webp": {
+    "height": 402,
+    "width": 1172
+  },
+  "/images/2607.26694v1/Data.webp": {
+    "height": 675,
+    "width": 1200
+  },
+  "/images/2607.26694v1/live-model-teaser.webp": {
+    "height": 455,
+    "width": 1200
   },
   "/images/2607.26710v1/A__title.webp": {
     "height": 657,
@@ -13387,6 +13515,10 @@
     "height": 850,
     "width": 1600
   },
+  "/images/2607.27178v1/A__title.webp": {
+    "height": 403,
+    "width": 1266
+  },
   "/images/2607.27180v1/fig__collision.webp": {
     "height": 1688,
     "width": 1600
@@ -13419,6 +13551,30 @@
     "height": 1185,
     "width": 1600
   },
+  "/images/2607.27191v1/A__title.webp": {
+    "height": 1412,
+    "width": 1404
+  },
+  "/images/2607.27194v1/A__title.webp": {
+    "height": 330,
+    "width": 781
+  },
+  "/images/2607.27194v1/multiflow_v3.webp": {
+    "height": 299,
+    "width": 1341
+  },
+  "/images/2607.27194v1/pipeline_v4.webp": {
+    "height": 722,
+    "width": 1417
+  },
+  "/images/2607.27194v1/teaser_v3.webp": {
+    "height": 732,
+    "width": 1534
+  },
+  "/images/2607.27194v1/track_v1.webp": {
+    "height": 341,
+    "width": 1363
+  },
   "/images/2607.27205v1/ablation-crop.webp": {
     "height": 445,
     "width": 1497
@@ -13438,6 +13594,10 @@
   "/images/2607.27205v1/teaser-crop.webp": {
     "height": 777,
     "width": 1569
+  },
+  "/images/2607.27267/overview.webp": {
+    "height": 677,
+    "width": 1600
   },
   "/images/2607.27348/fig_mesh_edge_coverage.webp": {
     "height": 452,
@@ -13505,6 +13665,38 @@
   },
   "/images/2607.27484/mas_organization_effect.webp": {
     "height": 1091,
+    "width": 1600
+  },
+  "/images/2607.27549/IIWAOmron_pick_the_cucumber_from_the_counter_and_place_it_in_the_sink_73_combined.webp": {
+    "height": 360,
+    "width": 640
+  },
+  "/images/2607.27549/Kinova3Omron_pick_the_cucumber_from_the_sink_and_place_it_on_the_plate_located_on_the_counter_73_combined.webp": {
+    "height": 360,
+    "width": 640
+  },
+  "/images/2607.27549/PandaOmron_pick_the_cucumber_from_the_sink_and_place_it_on_the_plate_located_on_the_counter_73_combined.webp": {
+    "height": 360,
+    "width": 640
+  },
+  "/images/2607.27549/Panda_pick_the_bell_pepper_from_the_sink_and_place_it_on_the_plate_located_on_the_counter_9_combined.jpg": {
+    "height": 360,
+    "width": 640
+  },
+  "/images/2607.27549/UR5eOmron_pick_the_cucumber_from_the_counter_and_place_it_in_the_sink_73_combined.webp": {
+    "height": 360,
+    "width": 640
+  },
+  "/images/2607.27549/Viper_pick_the_beans_from_the_counter_and_place_it_in_the_sink_5_combined.jpg": {
+    "height": 360,
+    "width": 640
+  },
+  "/images/2607.27549/icra_barx_figure.webp": {
+    "height": 660,
+    "width": 1500
+  },
+  "/images/2607.27549/robocasa_examples.webp": {
+    "height": 625,
     "width": 1600
   },
   "/images/2607.27599/fig1.webp": {
@@ -13755,6 +13947,10 @@
     "height": 900,
     "width": 1600
   },
+  "/images/2607.28229/PMC_Librarian_v5.webp": {
+    "height": 921,
+    "width": 1231
+  },
   "/images/2607.28263/Structure.webp": {
     "height": 410,
     "width": 615
@@ -13762,6 +13958,18 @@
   "/images/2607.28263/teaser.webp": {
     "height": 592,
     "width": 1183
+  },
+  "/images/2607.28374/fig1_hard200_combined_ledgermind.webp": {
+    "height": 793,
+    "width": 1501
+  },
+  "/images/2607.28374/fig_intro.webp": {
+    "height": 546,
+    "width": 1600
+  },
+  "/images/2607.28374/main_figure.webp": {
+    "height": 680,
+    "width": 1600
   },
   "/images/2607.28568/frontis-method-figure.webp": {
     "height": 1167,
@@ -13803,6 +14011,14 @@
     "height": 189,
     "width": 201
   },
+  "/images/2607.28595/RL.webp": {
+    "height": 482,
+    "width": 1237
+  },
+  "/images/2607.28595/teaser.webp": {
+    "height": 779,
+    "width": 1600
+  },
   "/images/2607.28609/D1_hardset_overlay_p1.webp": {
     "height": 981,
     "width": 1007
@@ -13821,6 +14037,18 @@
   },
   "/images/2607.28609/review-process.webp": {
     "height": 522,
+    "width": 1600
+  },
+  "/images/2607.28611/mConV1.webp": {
+    "height": 504,
+    "width": 1600
+  },
+  "/images/2607.28611/model_arch_v1.webp": {
+    "height": 966,
+    "width": 1600
+  },
+  "/images/2607.28611/teaser_update.webp": {
+    "height": 813,
     "width": 1600
   },
   "/images/2607.28618/screenshot_taxonomy.webp": {
@@ -13915,9 +14143,29 @@
     "height": 424,
     "width": 875
   },
+  "/images/2607.28777/dynamics.jpg": {
+    "height": 357,
+    "width": 1200
+  },
+  "/images/2607.28777/hyperparameters.jpg": {
+    "height": 359,
+    "width": 1200
+  },
   "/images/2607.28802/interaction-flowchart.webp": {
     "height": 1227,
     "width": 1227
+  },
+  "/images/2607.28829/ipccc2027.webp": {
+    "height": 476,
+    "width": 1579
+  },
+  "/images/2607.28829/ipccc2027_intro.webp": {
+    "height": 315,
+    "width": 466
+  },
+  "/images/2607.28829/ob3_tsne.webp": {
+    "height": 284,
+    "width": 379
   },
   "/images/2607.28887/canitdelete_benchmark_overview.webp": {
     "height": 486,
@@ -14123,6 +14371,14 @@
     "height": 766,
     "width": 771
   },
+  "/images/2607.29468/figure1.webp": {
+    "height": 800,
+    "width": 1228
+  },
+  "/images/2607.29468/figure3_cropped.webp": {
+    "height": 761,
+    "width": 1371
+  },
   "/images/2607.29516/arctic_system_30JUN_4.webp": {
     "height": 634,
     "width": 1600
@@ -14130,6 +14386,18 @@
   "/images/2607.29516/ux_mock_30JUN_2.webp": {
     "height": 2567,
     "width": 1600
+  },
+  "/images/2607.29586/output.webp": {
+    "height": 1206,
+    "width": 1492
+  },
+  "/images/2607.29586/pipeline.webp": {
+    "height": 781,
+    "width": 1600
+  },
+  "/images/2607.29586/teaser.webp": {
+    "height": 770,
+    "width": 1501
   },
   "/images/2607.29613/graphical_model.webp": {
     "height": 392,
@@ -14195,6 +14463,22 @@
     "height": 731,
     "width": 1600
   },
+  "/images/2608.00486/compare_main_arxiv.webp": {
+    "height": 554,
+    "width": 840
+  },
+  "/images/2608.00486/overview.webp": {
+    "height": 591,
+    "width": 1526
+  },
+  "/images/2608.00486/pipeline.webp": {
+    "height": 668,
+    "width": 1023
+  },
+  "/images/2608.00486/wild.webp": {
+    "height": 169,
+    "width": 840
+  },
   "/images/2608.00542/framework.webp": {
     "height": 622,
     "width": 1600
@@ -14209,6 +14493,26 @@
   },
   "/images/2608.00548/teaser2_model_icons.paper.webp": {
     "height": 813,
+    "width": 1600
+  },
+  "/images/2608.00554/faucet_curve_energy.webp": {
+    "height": 508,
+    "width": 1153
+  },
+  "/images/2608.00554/hardware.webp": {
+    "height": 647,
+    "width": 1350
+  },
+  "/images/2608.00554/pipeline.webp": {
+    "height": 644,
+    "width": 1600
+  },
+  "/images/2608.00554/real.webp": {
+    "height": 385,
+    "width": 837
+  },
+  "/images/2608.00554/teaser.webp": {
+    "height": 463,
     "width": 1600
   },
   "/images/2608.00677/OpenART-1.webp": {
@@ -14319,6 +14623,10 @@
     "height": 570,
     "width": 1406
   },
+  "/images/2608.00924/Approach.webp": {
+    "height": 220,
+    "width": 1096
+  },
   "/images/2608.00962/motivation.webp": {
     "height": 933,
     "width": 1600
@@ -14351,6 +14659,26 @@
     "height": 1529,
     "width": 1600
   },
+  "/images/2608.01127/fig_ablation_quality_droidv2.webp": {
+    "height": 860,
+    "width": 1600
+  },
+  "/images/2608.01127/fig_main_droid.webp": {
+    "height": 1741,
+    "width": 1559
+  },
+  "/images/2608.01127/fig_main_re10k.webp": {
+    "height": 1835,
+    "width": 1559
+  },
+  "/images/2608.01127/fig_re10k_scaling.webp": {
+    "height": 840,
+    "width": 1600
+  },
+  "/images/2608.01127/wm_dev.webp": {
+    "height": 629,
+    "width": 1033
+  },
   "/images/2608.01149/lifelong-overview.webp": {
     "height": 759,
     "width": 1600
@@ -14358,6 +14686,14 @@
   "/images/2608.01149/lifelongagentbench_rank_transition.webp": {
     "height": 194,
     "width": 335
+  },
+  "/images/2608.01204/1.webp": {
+    "height": 795,
+    "width": 702
+  },
+  "/images/2608.01204/fg2.webp": {
+    "height": 624,
+    "width": 1600
   },
   "/images/2608.01234/1_PGchannel.webp": {
     "height": 505,
@@ -14418,6 +14754,22 @@
   "/images/2608.01359/qwen3_1_7b_average_em.webp": {
     "height": 317,
     "width": 328
+  },
+  "/images/2608.01369/Figure1.webp": {
+    "height": 535,
+    "width": 1600
+  },
+  "/images/2608.01369/Figure2.webp": {
+    "height": 705,
+    "width": 1600
+  },
+  "/images/2608.01369/web_api_console_ngcc_demo.webp": {
+    "height": 1385,
+    "width": 1600
+  },
+  "/images/2608.01369/webapi_hda_flash_audit_bundle.webp": {
+    "height": 840,
+    "width": 960
   },
   "/images/2608.01397/attention_map.webp": {
     "height": 380,
