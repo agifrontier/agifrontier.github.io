@@ -2,10 +2,20 @@ from __future__ import annotations
 
 import unittest
 
-from scripts.check_built_site import PageParser, is_user_page, likely_kramdown_math_table
+from scripts.check_built_site import PageParser, is_user_page, likely_kramdown_math_table, topic_sitemap_issues
 
 
 class CheckBuiltSiteTest(unittest.TestCase):
+    def test_topic_root_must_remain_in_sitemap(self) -> None:
+        path = "topics/ai-agent/index.html"
+        self.assertTrue(topic_sitemap_issues(path, 1, ""))
+        self.assertEqual([], topic_sitemap_issues(path, 1, "https://agifrontier.github.io/topics/ai-agent/"))
+
+    def test_topic_pagination_must_be_excluded_from_sitemap(self) -> None:
+        path = "topics/ai-agent/page/2/index.html"
+        self.assertEqual([], topic_sitemap_issues(path, 2, ""))
+        self.assertTrue(topic_sitemap_issues(path, 2, "https://agifrontier.github.io/topics/ai-agent/page/2/"))
+
     def test_curated_guides_are_included_in_full_render_validation(self) -> None:
         self.assertTrue(is_user_page("guides/index.html"))
         self.assertTrue(is_user_page("guides/agent-memory/index.html"))

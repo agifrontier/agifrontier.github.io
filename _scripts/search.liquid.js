@@ -1,11 +1,8 @@
 ---
 permalink: /assets/js/search-data.js
 ---
-// get the ninja-keys element
-const ninja = document.querySelector('ninja-keys');
-
 // add navigation and content items
-ninja.data = [
+document.querySelector('ninja-keys').data = [
   {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
   {%- for p in sorted_pages -%}
     {%- if p.nav and p.autogen == null -%}

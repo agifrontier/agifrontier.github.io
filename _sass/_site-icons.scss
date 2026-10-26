@@ -1,0 +1,62 @@
+/*
+ * Subsets of Tabler Icons 3.20.0 (MIT) and Font Awesome Free 6.7.1
+ * (fonts: SIL OFL 1.1; code: MIT). Original licensed fonts remain in assets/.
+ * Regenerate with the existing fontTools environment, from the repository root:
+ * python -m fontTools.subset assets/fonts/tabler-icons.ttf --unicodes=U+EB1C,U+F4A3,U+F684,U+F6A9 --drop-tables+=GSUB --flavor=woff --name-IDs='*' --output-file=assets/fonts/site-tabler.woff
+ * python -m fontTools.subset assets/webfonts/fa-solid-900.ttf --unicodes=U+F133,U+F328,U+F46C --flavor=woff --name-IDs='*' --output-file=assets/fonts/site-fa-solid.woff
+ * check_resource_loading.py rejects rendered icon classes missing from this CSS.
+ * GSUB is omitted: these icons use Unicode, not the source font's ligature table.
+ */
+
+@font-face {
+  font-family: "Site Tabler Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/site-tabler.woff") format("woff");
+}
+
+.ti {
+  font-family: "Site Tabler Icons" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ti-search::before { content: "\eb1c"; }
+.ti-sun-moon::before { content: "\f4a3"; }
+.ti-moon-filled::before { content: "\f684"; }
+.ti-sun-filled::before { content: "\f6a9"; }
+
+@font-face {
+  font-family: "Site Font Awesome";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../fonts/site-fa-solid.woff") format("woff");
+}
+
+.fa-solid {
+  font-family: "Site Font Awesome";
+  font-style: normal;
+  font-weight: 900;
+  font-variant: normal;
+  display: inline-block;
+  line-height: 1;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-calendar::before { content: "\f133"; }
+.fa-clipboard::before { content: "\f328"; }
+.fa-clipboard-check::before { content: "\f46c"; }
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285714em;
+  vertical-align: 0.0535714286em;
+}

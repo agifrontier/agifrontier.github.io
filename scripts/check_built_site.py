@@ -199,6 +199,15 @@ def page_url(relative_path: str) -> str:
     return "/" + relative_path
 
 
+def topic_sitemap_issues(relative_path: str, page_number: int, sitemap: str) -> list[str]:
+    rendered_url = SITE_ORIGIN + page_url(relative_path)
+    if page_number == 1 and rendered_url not in sitemap:
+        return [f"{relative_path}: missing from sitemap.xml"]
+    if page_number > 1 and rendered_url in sitemap:
+        return [f"{relative_path}: pagination must be excluded from sitemap.xml"]
+    return []
+
+
 def local_target(site: Path, page_relative_path: str, raw_url: str) -> Path | None:
     raw_url = raw_url.strip()
     if not raw_url or raw_url.startswith(("#", "mailto:", "tel:", "javascript:", "data:")):
@@ -416,9 +425,7 @@ def main() -> int:
                     f"{relative_path}: pagination relations {page.pagination_relations} != {sorted(expected_relations)}"
                 )
 
-            rendered_url = SITE_ORIGIN + page_url(relative_path)
-            if rendered_url not in sitemap:
-                issues.append(f"{relative_path}: missing from sitemap.xml")
+            issues.extend(topic_sitemap_issues(relative_path, page_number, sitemap))
 
     if checked_pages == 0:
         issues.append(f"no user pages found under built site directory: {site}")
